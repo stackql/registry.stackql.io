@@ -16,20 +16,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.userfactor.transactions</code></td></tr>
+<tr><td><b>Name</b></td><td><code>transactions</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.userfactor.transactions</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `_embedded` | `object` |  |
-| `_links` | `object` |  |
-| `expiresAt` | `string` |  |
-| `factorResult` | `string` |  |
-| `factorResultMessage` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `_links` | `object` |
+| `expiresAt` | `string` |
+| `factorResult` | `string` |
+| `factorResultMessage` | `string` |
+| `_embedded` | `object` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `factorId, transactionId, userId` | Polls factors verification transaction for status. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get` | `SELECT` | `factorId, transactionId, userId` |

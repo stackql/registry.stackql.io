@@ -16,20 +16,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.build.builds_status</code></td></tr>
+<tr><td><b>Name</b></td><td><code>builds_status</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.build.builds_status</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `build_count` | `integer` |  |
-| `enqueued` | `integer` |  |
-| `minutes` | `object` |  |
-| `pending_concurrency` | `integer` |  |
-| `active` | `integer` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `enqueued` | `integer` |
+| `minutes` | `object` |
+| `pending_concurrency` | `integer` |
+| `active` | `integer` |
+| `build_count` | `integer` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `getAccountBuildStatus` | `account_id` |  | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `getAccountBuildStatus` | `SELECT` | `account_id` |

@@ -16,53 +16,52 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.site.sites</code></td></tr>
+<tr><td><b>Name</b></td><td><code>sites</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.site.sites</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `admin_url` | `string` |  |
-| `capabilities` | `object` |  |
-| `session_id` | `string` |  |
-| `deploy_hook` | `string` |  |
-| `prerender` | `string` |  |
-| `user_id` | `string` |  |
-| `git_provider` | `string` |  |
-| `password` | `string` |  |
-| `custom_domain` | `string` |  |
-| `managed_dns` | `boolean` |  |
-| `processing_settings` | `object` |  |
-| `account_slug` | `string` |  |
-| `state` | `string` |  |
-| `ssl_url` | `string` |  |
-| `account_name` | `string` |  |
-| `screenshot_url` | `string` |  |
-| `deploy_url` | `string` |  |
-| `url` | `string` |  |
-| `published_deploy` | `object` |  |
-| `notification_email` | `string` |  |
-| `plan` | `string` |  |
-| `build_settings` | `object` |  |
-| `updated_at` | `string` |  |
-| `build_image` | `string` |  |
-| `force_ssl` | `boolean` |  |
-| `id_domain` | `string` |  |
-| `ssl` | `boolean` |  |
-| `domain_aliases` | `array` |  |
-| `default_hooks_data` | `object` |  |
-| `created_at` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `session_id` | `string` |
+| `default_hooks_data` | `object` |
+| `state` | `string` |
+| `admin_url` | `string` |
+| `git_provider` | `string` |
+| `password` | `string` |
+| `account_slug` | `string` |
+| `published_deploy` | `object` |
+| `prerender` | `string` |
+| `ssl_url` | `string` |
+| `deploy_hook` | `string` |
+| `build_image` | `string` |
+| `domain_aliases` | `array` |
+| `id_domain` | `string` |
+| `notification_email` | `string` |
+| `user_id` | `string` |
+| `updated_at` | `string` |
+| `url` | `string` |
+| `capabilities` | `object` |
+| `created_at` | `string` |
+| `processing_settings` | `object` |
+| `deploy_url` | `string` |
+| `account_name` | `string` |
+| `build_settings` | `object` |
+| `plan` | `string` |
+| `ssl` | `boolean` |
+| `custom_domain` | `string` |
+| `screenshot_url` | `string` |
+| `force_ssl` | `boolean` |
+| `managed_dns` | `boolean` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `getSite` | `site_id` |  | SELECT |
-| `listSites` | `` |  | SELECT |
-| `listSitesForAccount` | `account_slug` |  | SELECT |
-| `createSite` | `` |  | INSERT |
-| `createSiteInTeam` | `account_slug` |  | INSERT |
-| `deleteSite` | `site_id` |  | DELETE |
-| `updateSite` | `site_id` |  | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `getSite` | `SELECT` | `site_id` |
+| `listSites` | `SELECT` |  |
+| `listSitesForAccount` | `SELECT` | `account_slug` |
+| `createSite` | `INSERT` |  |
+| `createSiteInTeam` | `INSERT` | `account_slug` |
+| `deleteSite` | `DELETE` | `site_id` |
+| `updateSite` | `EXEC` | `site_id` |

@@ -16,20 +16,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.actions.selected_repositories_enabled</code></td></tr>
+<tr><td><b>Name</b></td><td><code>selected_repositories_enabled</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.selected_repositories_enabled</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `repositories` | `array` |  |
-| `total_count` | `number` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `repositories` | `array` |
+| `total_count` | `number` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_selected_repositories_enabled_github_actions_organization` | `org` | Lists the selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API. | SELECT |
-| `disable_selected_repository_github_actions_organization` | `org, repository_id` | Removes a repository from the list of selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API. | EXEC |
-| `enable_selected_repository_github_actions_organization` | `org, repository_id` | Adds a repository to the list of selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API. | EXEC |
-| `set_selected_repositories_enabled_github_actions_organization` | `org, data__selected_repository_ids` | Replaces the list of selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list_selected_repositories_enabled_github_actions_organization` | `SELECT` | `org` | Lists the selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API. |
+| `disable_selected_repository_github_actions_organization` | `EXEC` | `org, repository_id` | Removes a repository from the list of selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API. |
+| `enable_selected_repository_github_actions_organization` | `EXEC` | `org, repository_id` | Adds a repository to the list of selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API. |
+| `set_selected_repositories_enabled_github_actions_organization` | `EXEC` | `org, data__selected_repository_ids` | Replaces the list of selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API. |

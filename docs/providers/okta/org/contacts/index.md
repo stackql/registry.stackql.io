@@ -16,19 +16,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.org.contacts</code></td></tr>
+<tr><td><b>Name</b></td><td><code>contacts</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.org.contacts</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `_links` | `object` |  |
-| `contactType` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `_links` | `object` |
+| `contactType` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `contactType` | Retrieves the URL of the User associated with the specified Contact Type. | SELECT |
-| `list` | `` | Gets Contact Types of your organization. | SELECT |
-| `update` | `contactType` | Updates the User associated with the specified Contact Type. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `contactType` | Retrieves the URL of the User associated with the specified Contact Type. |
+| `list` | `SELECT` |  | Gets Contact Types of your organization. |
+| `update` | `EXEC` | `contactType` | Updates the User associated with the specified Contact Type. |

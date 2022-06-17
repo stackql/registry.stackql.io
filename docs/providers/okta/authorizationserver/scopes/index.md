@@ -16,27 +16,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.authorizationserver.scopes</code></td></tr>
+<tr><td><b>Name</b></td><td><code>scopes</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.authorizationserver.scopes</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `description` | `string` |  |
-| `system` | `boolean` |  |
-| `consent` | `string` |  |
-| `default` | `boolean` |  |
-| `displayName` | `string` |  |
-| `metadataPublish` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `description` | `string` |
+| `metadataPublish` | `string` |
+| `system` | `boolean` |
+| `consent` | `string` |
+| `default` | `boolean` |
+| `displayName` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `authServerId, scopeId` | Success | SELECT |
-| `list` | `authServerId` | Success | SELECT |
-| `insert` | `authServerId` | Success | INSERT |
-| `delete` | `authServerId, scopeId` | Success | DELETE |
-| `update` | `authServerId, scopeId` | Success | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get` | `SELECT` | `authServerId, scopeId` |
+| `list` | `SELECT` | `authServerId` |
+| `insert` | `INSERT` | `authServerId` |
+| `delete` | `DELETE` | `authServerId, scopeId` |
+| `update` | `EXEC` | `authServerId, scopeId` |

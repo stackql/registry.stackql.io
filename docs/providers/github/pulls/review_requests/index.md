@@ -16,19 +16,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.pulls.review_requests</code></td></tr>
+<tr><td><b>Name</b></td><td><code>review_requests</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.pulls.review_requests</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `users` | `array` |  |
-| `teams` | `array` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `teams` | `array` |
+| `users` | `array` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_requested_reviewers` | `owner, pull_number, repo` |  | SELECT |
-| `remove_requested_reviewers` | `owner, pull_number, repo, data__reviewers` |  | DELETE |
-| `request_reviewers` | `owner, pull_number, repo` | This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list_requested_reviewers` | `SELECT` | `owner, pull_number, repo` |  |
+| `remove_requested_reviewers` | `DELETE` | `owner, pull_number, repo, data__reviewers` |  |
+| `request_reviewers` | `EXEC` | `owner, pull_number, repo` | This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details. |

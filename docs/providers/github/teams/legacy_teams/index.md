@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.teams.legacy_teams</code></td></tr>
+<tr><td><b>Name</b></td><td><code>legacy_teams</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.teams.legacy_teams</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -27,24 +26,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` | Unique identifier of the team |
 | `name` | `string` | Name of the team |
 | `description` | `string` |  |
-| `created_at` | `string` |  |
-| `privacy` | `string` | The level of privacy this team should have |
-| `node_id` | `string` |  |
-| `repositories_url` | `string` |  |
-| `permission` | `string` | Permission that the team will have for its repositories |
-| `members_url` | `string` |  |
-| `url` | `string` | URL for the team |
-| `members_count` | `integer` |  |
-| `repos_count` | `integer` |  |
-| `updated_at` | `string` |  |
-| `html_url` | `string` |  |
-| `ldap_dn` | `string` | Distinguished Name (DN) that team maps to within LDAP environment |
-| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `organization` | `object` | Organization Full |
 | `slug` | `string` |  |
+| `permission` | `string` | Permission that the team will have for its repositories |
+| `node_id` | `string` |  |
+| `html_url` | `string` |  |
+| `privacy` | `string` | The level of privacy this team should have |
+| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `url` | `string` | URL for the team |
+| `repositories_url` | `string` |  |
+| `repos_count` | `integer` |  |
+| `members_url` | `string` |  |
+| `organization` | `object` | Organization Full |
+| `created_at` | `string` |  |
+| `members_count` | `integer` |  |
+| `ldap_dn` | `string` | Distinguished Name (DN) that team maps to within LDAP environment |
+| `updated_at` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_legacy` | `team_id` | **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the [Get a team by name](https://docs.github.com/rest/reference/teams#get-a-team-by-name) endpoint. | SELECT |
-| `delete_legacy` | `team_id` | **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Delete a team](https://docs.github.com/rest/reference/teams#delete-a-team) endpoint.<br /><br />To delete a team, the authenticated user must be an organization owner or team maintainer.<br /><br />If you are an organization owner, deleting a parent team will delete all of its child teams as well. | DELETE |
-| `update_legacy` | `team_id, data__name` | **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Update a team](https://docs.github.com/rest/reference/teams#update-a-team) endpoint.<br /><br />To edit a team, the authenticated user must either be an organization owner or a team maintainer.<br /><br />**Note:** With nested teams, the `privacy` for parent teams cannot be `secret`. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get_legacy` | `SELECT` | `team_id` | **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the [Get a team by name](https://docs.github.com/rest/reference/teams#get-a-team-by-name) endpoint. |
+| `delete_legacy` | `DELETE` | `team_id` | **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Delete a team](https://docs.github.com/rest/reference/teams#delete-a-team) endpoint.<br /><br />To delete a team, the authenticated user must be an organization owner or team maintainer.<br /><br />If you are an organization owner, deleting a parent team will delete all of its child teams as well. |
+| `update_legacy` | `EXEC` | `team_id, data__name` | **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Update a team](https://docs.github.com/rest/reference/teams#update-a-team) endpoint.<br /><br />To edit a team, the authenticated user must either be an organization owner or a team maintainer.<br /><br />**Note:** With nested teams, the `privacy` for parent teams cannot be `secret`. |

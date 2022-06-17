@@ -16,43 +16,42 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.pulls.review_comments</code></td></tr>
+<tr><td><b>Name</b></td><td><code>review_comments</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.pulls.review_comments</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `author_association` | `string` | How the author is associated with the repository. |
-| `_links` | `object` |  |
-| `body_text` | `string` |  |
-| `start_line` | `integer` | The first line of the range for a multi-line comment. |
-| `start_side` | `string` | The side of the first line of the range for a multi-line comment. |
-| `original_line` | `integer` | The original line of the blob to which the comment applies. The last line of the range for a multi-line comment |
-| `diff_hunk` | `string` |  |
-| `side` | `string` | The side of the first line of the range for a multi-line comment. |
-| `pull_request_review_id` | `integer` |  |
-| `original_commit_id` | `string` |  |
-| `in_reply_to_id` | `integer` |  |
-| `pull_request_url` | `string` |  |
-| `node_id` | `string` |  |
-| `body_html` | `string` |  |
-| `url` | `string` |  |
-| `body` | `string` |  |
-| `html_url` | `string` |  |
-| `created_at` | `string` |  |
-| `updated_at` | `string` |  |
-| `position` | `integer` |  |
-| `path` | `string` |  |
 | `original_position` | `integer` |  |
 | `line` | `integer` | The line of the blob to which the comment applies. The last line of the range for a multi-line comment |
-| `commit_id` | `string` |  |
-| `original_start_line` | `integer` | The original first line of the range for a multi-line comment. |
-| `reactions` | `object` |  |
+| `in_reply_to_id` | `integer` |  |
+| `pull_request_url` | `string` |  |
+| `original_line` | `integer` | The original line of the blob to which the comment applies. The last line of the range for a multi-line comment |
+| `body` | `string` |  |
 | `user` | `object` | Simple User |
+| `updated_at` | `string` |  |
+| `created_at` | `string` |  |
+| `original_start_line` | `integer` | The original first line of the range for a multi-line comment. |
+| `commit_id` | `string` |  |
+| `body_text` | `string` |  |
+| `start_side` | `string` | The side of the first line of the range for a multi-line comment. |
+| `original_commit_id` | `string` |  |
+| `path` | `string` |  |
+| `body_html` | `string` |  |
+| `start_line` | `integer` | The first line of the range for a multi-line comment. |
+| `_links` | `object` |  |
+| `side` | `string` | The side of the first line of the range for a multi-line comment. |
+| `html_url` | `string` |  |
+| `url` | `string` |  |
+| `reactions` | `object` |  |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `pull_request_review_id` | `integer` |  |
+| `position` | `integer` |  |
+| `diff_hunk` | `string` |  |
+| `node_id` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_comments_for_review` | `owner, pull_number, repo, review_id` | List comments for a specific pull request review. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list_comments_for_review` | `SELECT` | `owner, pull_number, repo, review_id` |

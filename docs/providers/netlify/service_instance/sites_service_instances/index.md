@@ -16,27 +16,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.service_instance.sites_service_instances</code></td></tr>
+<tr><td><b>Name</b></td><td><code>sites_service_instances</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.service_instance.sites_service_instances</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `url` | `string` |  |
-| `service_path` | `string` |  |
-| `updated_at` | `string` |  |
-| `snippets` | `array` |  |
-| `service_name` | `string` |  |
-| `auth_url` | `string` |  |
-| `config` | `object` |  |
-| `env` | `object` |  |
-| `external_attributes` | `object` |  |
-| `created_at` | `string` |  |
-| `service_slug` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `service_path` | `string` |
+| `snippets` | `array` |
+| `service_name` | `string` |
+| `url` | `string` |
+| `env` | `object` |
+| `service_slug` | `string` |
+| `external_attributes` | `object` |
+| `created_at` | `string` |
+| `auth_url` | `string` |
+| `updated_at` | `string` |
+| `config` | `object` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `listServiceInstancesForSite` | `site_id` |  | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `listServiceInstancesForSite` | `SELECT` | `site_id` |

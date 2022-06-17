@@ -16,17 +16,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.service_instance.sites_services_instances</code></td></tr>
+<tr><td><b>Name</b></td><td><code>sites_services_instances</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.service_instance.sites_services_instances</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `createServiceInstance` | `addon, site_id` |  | INSERT |
-| `deleteServiceInstance` | `addon, instance_id, site_id` |  | DELETE |
-| `showServiceInstance` | `addon, instance_id, site_id` |  | EXEC |
-| `updateServiceInstance` | `addon, instance_id, site_id` |  | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `createServiceInstance` | `INSERT` | `addon, site_id` |
+| `deleteServiceInstance` | `DELETE` | `addon, instance_id, site_id` |
+| `showServiceInstance` | `EXEC` | `addon, instance_id, site_id` |
+| `updateServiceInstance` | `EXEC` | `addon, instance_id, site_id` |

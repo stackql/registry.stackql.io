@@ -16,21 +16,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.build.builds</code></td></tr>
+<tr><td><b>Name</b></td><td><code>builds</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.build.builds</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `sha` | `string` |  |
-| `created_at` | `string` |  |
-| `deploy_id` | `string` |  |
-| `done` | `boolean` |  |
-| `error` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `created_at` | `string` |
+| `deploy_id` | `string` |
+| `done` | `boolean` |
+| `error` | `string` |
+| `sha` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `getSiteBuild` | `build_id` |  | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `getSiteBuild` | `SELECT` | `build_id` |

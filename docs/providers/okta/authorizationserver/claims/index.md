@@ -16,30 +16,29 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.authorizationserver.claims</code></td></tr>
+<tr><td><b>Name</b></td><td><code>claims</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.authorizationserver.claims</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `group_filter_type` | `string` |  |
-| `value` | `string` |  |
-| `system` | `boolean` |  |
-| `valueType` | `string` |  |
-| `_links` | `object` |  |
-| `claimType` | `string` |  |
-| `conditions` | `object` |  |
-| `status` | `string` |  |
-| `alwaysIncludeInToken` | `boolean` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `conditions` | `object` |
+| `system` | `boolean` |
+| `valueType` | `string` |
+| `value` | `string` |
+| `claimType` | `string` |
+| `_links` | `object` |
+| `status` | `string` |
+| `group_filter_type` | `string` |
+| `alwaysIncludeInToken` | `boolean` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `authServerId, claimId` | Success | SELECT |
-| `list` | `authServerId` | Success | SELECT |
-| `insert` | `authServerId` | Success | INSERT |
-| `delete` | `authServerId, claimId` | Success | DELETE |
-| `update` | `authServerId, claimId` | Success | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get` | `SELECT` | `authServerId, claimId` |
+| `list` | `SELECT` | `authServerId` |
+| `insert` | `INSERT` | `authServerId` |
+| `delete` | `DELETE` | `authServerId, claimId` |
+| `update` | `EXEC` | `authServerId, claimId` |

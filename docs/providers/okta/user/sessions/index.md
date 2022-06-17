@@ -16,14 +16,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.user.sessions</code></td></tr>
+<tr><td><b>Name</b></td><td><code>sessions</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.user.sessions</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `delete` | `userId` | Removes all active identity provider sessions. This forces the user to authenticate on the next operation. Optionally revokes OpenID Connect and OAuth refresh and access tokens issued to the user. | DELETE |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `delete` | `DELETE` | `userId` |

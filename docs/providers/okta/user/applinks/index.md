@@ -16,25 +16,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.user.applinks</code></td></tr>
+<tr><td><b>Name</b></td><td><code>applinks</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.user.applinks</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `hidden` | `boolean` |  |
-| `appAssignmentId` | `string` |  |
-| `credentialsSetup` | `boolean` |  |
-| `linkUrl` | `string` |  |
-| `sortOrder` | `integer` |  |
-| `appName` | `string` |  |
-| `logoUrl` | `string` |  |
-| `appInstanceId` | `string` |  |
-| `label` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `appName` | `string` |
+| `logoUrl` | `string` |
+| `sortOrder` | `integer` |
+| `appInstanceId` | `string` |
+| `hidden` | `boolean` |
+| `appAssignmentId` | `string` |
+| `credentialsSetup` | `boolean` |
+| `label` | `string` |
+| `linkUrl` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `userId` | Fetches appLinks for all direct or indirect (via group membership) assigned applications. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list` | `SELECT` | `userId` |

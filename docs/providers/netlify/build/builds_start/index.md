@@ -16,14 +16,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.build.builds_start</code></td></tr>
+<tr><td><b>Name</b></td><td><code>builds_start</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.build.builds_start</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `notifyBuildStart` | `build_id` |  | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `notifyBuildStart` | `EXEC` | `build_id` |

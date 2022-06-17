@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.issues.milestones</code></td></tr>
+<tr><td><b>Name</b></td><td><code>milestones</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.issues.milestones</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -26,25 +25,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `description` | `string` |  |
-| `closed_issues` | `integer` |  |
-| `updated_at` | `string` |  |
-| `url` | `string` |  |
-| `open_issues` | `integer` |  |
-| `html_url` | `string` |  |
-| `number` | `integer` | The number of the milestone. |
-| `created_at` | `string` |  |
-| `closed_at` | `string` |  |
-| `state` | `string` | The state of the milestone. |
 | `title` | `string` | The title of the milestone. |
+| `closed_issues` | `integer` |  |
+| `closed_at` | `string` |  |
 | `creator` | `object` | Simple User |
-| `due_on` | `string` |  |
 | `node_id` | `string` |  |
+| `due_on` | `string` |  |
+| `number` | `integer` | The number of the milestone. |
+| `updated_at` | `string` |  |
+| `state` | `string` | The state of the milestone. |
+| `created_at` | `string` |  |
+| `url` | `string` |  |
+| `html_url` | `string` |  |
+| `open_issues` | `integer` |  |
 | `labels_url` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_milestone` | `milestone_number, owner, repo` |  | SELECT |
-| `list_milestones` | `owner, repo` |  | SELECT |
-| `create_milestone` | `owner, repo, data__title` |  | INSERT |
-| `delete_milestone` | `milestone_number, owner, repo` |  | DELETE |
-| `update_milestone` | `milestone_number, owner, repo` |  | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get_milestone` | `SELECT` | `milestone_number, owner, repo` |
+| `list_milestones` | `SELECT` | `owner, repo` |
+| `create_milestone` | `INSERT` | `owner, repo, data__title` |
+| `delete_milestone` | `DELETE` | `milestone_number, owner, repo` |
+| `update_milestone` | `EXEC` | `milestone_number, owner, repo` |

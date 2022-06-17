@@ -16,25 +16,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.user.idps</code></td></tr>
+<tr><td><b>Name</b></td><td><code>idps</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.user.idps</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `protocol` | `object` |  |
-| `_links` | `object` |  |
-| `status` | `string` |  |
-| `issuerMode` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `created` | `string` |  |
-| `policy` | `object` |  |
-| `type` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `_links` | `object` |
+| `created` | `string` |
+| `lastUpdated` | `string` |
+| `protocol` | `object` |
+| `status` | `string` |
+| `issuerMode` | `string` |
+| `type` | `string` |
+| `policy` | `object` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `userId` | Lists the IdPs associated with the user. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list` | `SELECT` | `userId` |

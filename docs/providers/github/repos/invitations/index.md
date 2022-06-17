@@ -16,30 +16,29 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.repos.invitations</code></td></tr>
+<tr><td><b>Name</b></td><td><code>invitations</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.invitations</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the repository invitation. |
-| `expired` | `boolean` | Whether or not the invitation has expired |
-| `inviter` | `object` | Simple User |
-| `url` | `string` | URL for the repository invitation |
-| `node_id` | `string` |  |
+| `permissions` | `string` | The permission associated with the invitation. |
 | `repository` | `object` | Minimal Repository |
 | `created_at` | `string` |  |
+| `inviter` | `object` | Simple User |
+| `expired` | `boolean` | Whether or not the invitation has expired |
+| `node_id` | `string` |  |
+| `url` | `string` | URL for the repository invitation |
 | `html_url` | `string` |  |
 | `invitee` | `object` | Simple User |
-| `permissions` | `string` | The permission associated with the invitation. |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_invitations` | `owner, repo` | When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations. | SELECT |
-| `list_invitations_for_authenticated_user` | `` | When authenticating as a user, this endpoint will list all currently open repository invitations for that user. | SELECT |
-| `delete_invitation` | `invitation_id, owner, repo` |  | DELETE |
-| `accept_invitation_for_authenticated_user` | `invitation_id` |  | EXEC |
-| `decline_invitation_for_authenticated_user` | `invitation_id` |  | EXEC |
-| `update_invitation` | `invitation_id, owner, repo` |  | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list_invitations` | `SELECT` | `owner, repo` | When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations. |
+| `list_invitations_for_authenticated_user` | `SELECT` |  | When authenticating as a user, this endpoint will list all currently open repository invitations for that user. |
+| `delete_invitation` | `DELETE` | `invitation_id, owner, repo` |  |
+| `accept_invitation_for_authenticated_user` | `EXEC` | `invitation_id` |  |
+| `decline_invitation_for_authenticated_user` | `EXEC` | `invitation_id` |  |
+| `update_invitation` | `EXEC` | `invitation_id, owner, repo` |  |

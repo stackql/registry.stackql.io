@@ -16,32 +16,31 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.authorizationserver.keys</code></td></tr>
+<tr><td><b>Name</b></td><td><code>keys</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.authorizationserver.keys</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `x5t#S256` | `string` |  |
-| `status` | `string` |  |
-| `kty` | `string` |  |
-| `kid` | `string` |  |
-| `_links` | `object` |  |
-| `e` | `string` |  |
-| `x5c` | `array` |  |
-| `x5u` | `string` |  |
-| `use` | `string` |  |
-| `expiresAt` | `string` |  |
-| `alg` | `string` |  |
-| `x5t` | `string` |  |
-| `false` | `string` |  |
-| `key_ops` | `array` |  |
-| `created` | `string` |  |
-| `lastUpdated` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `x5c` | `array` |
+| `kid` | `string` |
+| `lastUpdated` | `string` |
+| `false` | `string` |
+| `kty` | `string` |
+| `status` | `string` |
+| `created` | `string` |
+| `x5u` | `string` |
+| `_links` | `object` |
+| `key_ops` | `array` |
+| `expiresAt` | `string` |
+| `alg` | `string` |
+| `x5t#S256` | `string` |
+| `x5t` | `string` |
+| `use` | `string` |
+| `e` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `authServerId` | Success | SELECT |
-| `rotate` | `authServerId` | Success | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list` | `SELECT` | `authServerId` |
+| `rotate` | `EXEC` | `authServerId` |

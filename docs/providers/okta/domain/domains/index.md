@@ -16,18 +16,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.domain.domains</code></td></tr>
+<tr><td><b>Name</b></td><td><code>domains</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.domain.domains</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `domainId` | Fetches a Domain by `id`. | SELECT |
-| `list` | `` | List all verified custom Domains for the org. | SELECT |
-| `insert` | `` | Creates your domain. | INSERT |
-| `delete` | `domainId` | Deletes a Domain by `id`. | DELETE |
-| `verify` | `domainId` | Verifies the Domain by `id`. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `domainId` | Fetches a Domain by `id`. |
+| `list` | `SELECT` |  | List all verified custom Domains for the org. |
+| `insert` | `INSERT` |  | Creates your domain. |
+| `delete` | `DELETE` | `domainId` | Deletes a Domain by `id`. |
+| `verify` | `EXEC` | `domainId` | Verifies the Domain by `id`. |

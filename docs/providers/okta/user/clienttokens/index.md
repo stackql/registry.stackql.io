@@ -16,30 +16,29 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.user.clienttokens</code></td></tr>
+<tr><td><b>Name</b></td><td><code>clienttokens</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.user.clienttokens</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `created` | `string` |  |
-| `issuer` | `string` |  |
-| `clientId` | `string` |  |
-| `expiresAt` | `string` |  |
-| `_embedded` | `object` |  |
-| `lastUpdated` | `string` |  |
-| `_links` | `object` |  |
-| `userId` | `string` |  |
-| `createdBy` | `object` |  |
-| `status` | `string` |  |
-| `scopes` | `array` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `_embedded` | `object` |
+| `issuer` | `string` |
+| `lastUpdated` | `string` |
+| `status` | `string` |
+| `userId` | `string` |
+| `createdBy` | `object` |
+| `_links` | `object` |
+| `expiresAt` | `string` |
+| `scopes` | `array` |
+| `clientId` | `string` |
+| `created` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `clientId, tokenId, userId` | Gets a refresh token issued for the specified User and Client. | SELECT |
-| `list` | `clientId, userId` | Lists all refresh tokens issued for the specified User and Client. | SELECT |
-| `delete` | `clientId, tokenId, userId` | Revokes the specified refresh token. | DELETE |
-| `deleteAll` | `clientId, userId` | Revokes all refresh tokens issued for the specified User and Client. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `clientId, tokenId, userId` | Gets a refresh token issued for the specified User and Client. |
+| `list` | `SELECT` | `clientId, userId` | Lists all refresh tokens issued for the specified User and Client. |
+| `delete` | `DELETE` | `clientId, tokenId, userId` | Revokes the specified refresh token. |
+| `deleteAll` | `EXEC` | `clientId, userId` | Revokes all refresh tokens issued for the specified User and Client. |

@@ -16,28 +16,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.user.clientgrants</code></td></tr>
+<tr><td><b>Name</b></td><td><code>clientgrants</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.user.clientgrants</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `scopeId` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `status` | `string` |  |
-| `created` | `string` |  |
-| `issuer` | `string` |  |
-| `clientId` | `string` |  |
-| `createdBy` | `object` |  |
-| `_embedded` | `object` |  |
-| `userId` | `string` |  |
-| `_links` | `object` |  |
-| `source` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `lastUpdated` | `string` |
+| `userId` | `string` |
+| `created` | `string` |
+| `_embedded` | `object` |
+| `status` | `string` |
+| `clientId` | `string` |
+| `issuer` | `string` |
+| `scopeId` | `string` |
+| `_links` | `object` |
+| `createdBy` | `object` |
+| `source` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `clientId, userId` | Lists all grants for a specified user and client | SELECT |
-| `delete` | `clientId, userId` | Revokes all grants for the specified user and client | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list` | `SELECT` | `clientId, userId` | Lists all grants for a specified user and client |
+| `delete` | `DELETE` | `clientId, userId` | Revokes all grants for the specified user and client |

@@ -20,37 +20,36 @@ Okta user management.
 <tr><td><b>Title</b></td><td>IDP API</td></tr>
 <tr><td><b>Description</b></td><td>Okta user management.</td></tr>
 <tr><td><b>Id</b></td><td><code>identityprovider:v1</code></td></tr>
-<tr><td><b>Version</b></td><td>v1</td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/okta/identityprovider/application">application</a><br />
-<a href="/docs/providers/okta/identityprovider/authenticator">authenticator</a><br />
-<a href="/docs/providers/okta/identityprovider/authorizationserver">authorizationserver</a><br />
-<a href="/docs/providers/okta/identityprovider/domain">domain</a><br />
-<a href="/docs/providers/okta/identityprovider/eventhook">eventhook</a><br />
-<a href="/docs/providers/okta/identityprovider/feature">feature</a><br />
-<a href="/docs/providers/okta/identityprovider/group">group</a><br />
-<a href="/docs/providers/okta/identityprovider/groupschema">groupschema</a><br />
-<a href="/docs/providers/okta/identityprovider/identityprovider">identityprovider</a><br />
-<a href="/docs/providers/okta/identityprovider/inlinehook">inlinehook</a><br />
-<a href="/docs/providers/okta/identityprovider/linkedobject">linkedobject</a><br />
-<a href="/docs/providers/okta/identityprovider/log">log</a><br />
+<a href="/docs/providers/okta/identityprovider/application/index.md">application</a><br />
+<a href="/docs/providers/okta/identityprovider/authenticator/index.md">authenticator</a><br />
+<a href="/docs/providers/okta/identityprovider/authorizationserver/index.md">authorizationserver</a><br />
+<a href="/docs/providers/okta/identityprovider/domain/index.md">domain</a><br />
+<a href="/docs/providers/okta/identityprovider/eventhook/index.md">eventhook</a><br />
+<a href="/docs/providers/okta/identityprovider/feature/index.md">feature</a><br />
+<a href="/docs/providers/okta/identityprovider/group/index.md">group</a><br />
+<a href="/docs/providers/okta/identityprovider/groupschema/index.md">groupschema</a><br />
+<a href="/docs/providers/okta/identityprovider/identityprovider/index.md">identityprovider</a><br />
+<a href="/docs/providers/okta/identityprovider/inlinehook/index.md">inlinehook</a><br />
+<a href="/docs/providers/okta/identityprovider/linkedobject/index.md">linkedobject</a><br />
+<a href="/docs/providers/okta/identityprovider/log/index.md">log</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/okta/identityprovider/networkzone">networkzone</a><br />
-<a href="/docs/providers/okta/identityprovider/org">org</a><br />
-<a href="/docs/providers/okta/identityprovider/policy">policy</a><br />
-<a href="/docs/providers/okta/identityprovider/profilemapping">profilemapping</a><br />
-<a href="/docs/providers/okta/identityprovider/session">session</a><br />
-<a href="/docs/providers/okta/identityprovider/template">template</a><br />
-<a href="/docs/providers/okta/identityprovider/threatinsight">threatinsight</a><br />
-<a href="/docs/providers/okta/identityprovider/trustedorigin">trustedorigin</a><br />
-<a href="/docs/providers/okta/identityprovider/user">user</a><br />
-<a href="/docs/providers/okta/identityprovider/userfactor">userfactor</a><br />
-<a href="/docs/providers/okta/identityprovider/userschema">userschema</a><br />
-<a href="/docs/providers/okta/identityprovider/usertype">usertype</a><br />
+<a href="/docs/providers/okta/identityprovider/networkzone/index.md">networkzone</a><br />
+<a href="/docs/providers/okta/identityprovider/org/index.md">org</a><br />
+<a href="/docs/providers/okta/identityprovider/policy/index.md">policy</a><br />
+<a href="/docs/providers/okta/identityprovider/profilemapping/index.md">profilemapping</a><br />
+<a href="/docs/providers/okta/identityprovider/session/index.md">session</a><br />
+<a href="/docs/providers/okta/identityprovider/template/index.md">template</a><br />
+<a href="/docs/providers/okta/identityprovider/threatinsight/index.md">threatinsight</a><br />
+<a href="/docs/providers/okta/identityprovider/trustedorigin/index.md">trustedorigin</a><br />
+<a href="/docs/providers/okta/identityprovider/user/index.md">user</a><br />
+<a href="/docs/providers/okta/identityprovider/userfactor/index.md">userfactor</a><br />
+<a href="/docs/providers/okta/identityprovider/userschema/index.md">userschema</a><br />
+<a href="/docs/providers/okta/identityprovider/usertype/index.md">usertype</a><br />
 </div>
 </div>

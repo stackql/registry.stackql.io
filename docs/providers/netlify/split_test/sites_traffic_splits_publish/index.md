@@ -16,14 +16,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.split_test.sites_traffic_splits_publish</code></td></tr>
+<tr><td><b>Name</b></td><td><code>sites_traffic_splits_publish</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.split_test.sites_traffic_splits_publish</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `enableSplitTest` | `site_id, split_test_id` |  | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `enableSplitTest` | `EXEC` | `site_id, split_test_id` |

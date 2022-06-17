@@ -16,39 +16,38 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.issues.assignees</code></td></tr>
+<tr><td><b>Name</b></td><td><code>assignees</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.issues.assignees</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `integer` |  |
-| `name` | `string` |  |
-| `starred_at` | `string` |  |
-| `starred_url` | `string` |  |
-| `gravatar_id` | `string` |  |
-| `avatar_url` | `string` |  |
-| `url` | `string` |  |
-| `repos_url` | `string` |  |
-| `gists_url` | `string` |  |
-| `html_url` | `string` |  |
-| `email` | `string` |  |
-| `type` | `string` |  |
-| `received_events_url` | `string` |  |
-| `organizations_url` | `string` |  |
-| `subscriptions_url` | `string` |  |
-| `followers_url` | `string` |  |
-| `node_id` | `string` |  |
-| `site_admin` | `boolean` |  |
-| `events_url` | `string` |  |
-| `login` | `string` |  |
-| `following_url` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `integer` |
+| `name` | `string` |
+| `login` | `string` |
+| `node_id` | `string` |
+| `organizations_url` | `string` |
+| `followers_url` | `string` |
+| `type` | `string` |
+| `url` | `string` |
+| `starred_at` | `string` |
+| `html_url` | `string` |
+| `events_url` | `string` |
+| `subscriptions_url` | `string` |
+| `following_url` | `string` |
+| `gists_url` | `string` |
+| `site_admin` | `boolean` |
+| `avatar_url` | `string` |
+| `gravatar_id` | `string` |
+| `starred_url` | `string` |
+| `email` | `string` |
+| `received_events_url` | `string` |
+| `repos_url` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_assignees` | `owner, repo` | Lists the [available assignees](https://docs.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) for issues in a repository. | SELECT |
-| `add_assignees` | `issue_number, owner, repo` | Adds up to 10 assignees to an issue. Users already assigned to an issue are not replaced. | INSERT |
-| `remove_assignees` | `issue_number, owner, repo` | Removes one or more assignees from an issue. | DELETE |
-| `check_user_can_be_assigned` | `assignee, owner, repo` | Checks if a user has permission to be assigned to an issue in this repository.<br /><br />If the `assignee` can be assigned to issues in the repository, a `204` header with no content is returned.<br /><br />Otherwise a `404` status code is returned. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list_assignees` | `SELECT` | `owner, repo` | Lists the [available assignees](https://docs.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) for issues in a repository. |
+| `add_assignees` | `INSERT` | `issue_number, owner, repo` | Adds up to 10 assignees to an issue. Users already assigned to an issue are not replaced. |
+| `remove_assignees` | `DELETE` | `issue_number, owner, repo` | Removes one or more assignees from an issue. |
+| `check_user_can_be_assigned` | `EXEC` | `assignee, owner, repo` | Checks if a user has permission to be assigned to an issue in this repository.<br /><br />If the `assignee` can be assigned to issues in the repository, a `204` header with no content is returned.<br /><br />Otherwise a `404` status code is returned. |

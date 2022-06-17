@@ -16,46 +16,45 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.deploy.deploys</code></td></tr>
+<tr><td><b>Name</b></td><td><code>deploys</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.deploy.deploys</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `admin_url` | `string` |  |
-| `site_id` | `string` |  |
-| `url` | `string` |  |
-| `build_id` | `string` |  |
-| `user_id` | `string` |  |
-| `context` | `string` |  |
-| `published_at` | `string` |  |
-| `deploy_url` | `string` |  |
-| `created_at` | `string` |  |
-| `review_id` | `number` |  |
-| `updated_at` | `string` |  |
-| `commit_ref` | `string` |  |
-| `screenshot_url` | `string` |  |
-| `required` | `array` |  |
-| `framework` | `string` |  |
-| `state` | `string` |  |
-| `error_message` | `string` |  |
-| `function_schedules` | `array` |  |
-| `skipped` | `boolean` |  |
-| `required_functions` | `array` |  |
-| `commit_url` | `string` |  |
-| `site_capabilities` | `object` |  |
-| `review_url` | `string` |  |
-| `draft` | `boolean` |  |
-| `deploy_ssl_url` | `string` |  |
-| `title` | `string` |  |
-| `ssl_url` | `string` |  |
-| `branch` | `string` |  |
-| `locked` | `boolean` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `context` | `string` |
+| `screenshot_url` | `string` |
+| `required` | `array` |
+| `error_message` | `string` |
+| `function_schedules` | `array` |
+| `published_at` | `string` |
+| `user_id` | `string` |
+| `framework` | `string` |
+| `locked` | `boolean` |
+| `skipped` | `boolean` |
+| `updated_at` | `string` |
+| `build_id` | `string` |
+| `commit_ref` | `string` |
+| `title` | `string` |
+| `required_functions` | `array` |
+| `admin_url` | `string` |
+| `commit_url` | `string` |
+| `site_id` | `string` |
+| `created_at` | `string` |
+| `url` | `string` |
+| `review_id` | `number` |
+| `review_url` | `string` |
+| `deploy_url` | `string` |
+| `deploy_ssl_url` | `string` |
+| `site_capabilities` | `object` |
+| `draft` | `boolean` |
+| `state` | `string` |
+| `ssl_url` | `string` |
+| `branch` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `getDeploy` | `deploy_id` |  | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `getDeploy` | `SELECT` | `deploy_id` |

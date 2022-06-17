@@ -20,37 +20,36 @@ Okta user schema management.
 <tr><td><b>Title</b></td><td>User Schema API</td></tr>
 <tr><td><b>Description</b></td><td>Okta user schema management.</td></tr>
 <tr><td><b>Id</b></td><td><code>userschema:v1</code></td></tr>
-<tr><td><b>Version</b></td><td>v1</td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/okta/userschema/application">application</a><br />
-<a href="/docs/providers/okta/userschema/authenticator">authenticator</a><br />
-<a href="/docs/providers/okta/userschema/authorizationserver">authorizationserver</a><br />
-<a href="/docs/providers/okta/userschema/domain">domain</a><br />
-<a href="/docs/providers/okta/userschema/eventhook">eventhook</a><br />
-<a href="/docs/providers/okta/userschema/feature">feature</a><br />
-<a href="/docs/providers/okta/userschema/group">group</a><br />
-<a href="/docs/providers/okta/userschema/groupschema">groupschema</a><br />
-<a href="/docs/providers/okta/userschema/identityprovider">identityprovider</a><br />
-<a href="/docs/providers/okta/userschema/inlinehook">inlinehook</a><br />
-<a href="/docs/providers/okta/userschema/linkedobject">linkedobject</a><br />
-<a href="/docs/providers/okta/userschema/log">log</a><br />
+<a href="/docs/providers/okta/userschema/application/index.md">application</a><br />
+<a href="/docs/providers/okta/userschema/authenticator/index.md">authenticator</a><br />
+<a href="/docs/providers/okta/userschema/authorizationserver/index.md">authorizationserver</a><br />
+<a href="/docs/providers/okta/userschema/domain/index.md">domain</a><br />
+<a href="/docs/providers/okta/userschema/eventhook/index.md">eventhook</a><br />
+<a href="/docs/providers/okta/userschema/feature/index.md">feature</a><br />
+<a href="/docs/providers/okta/userschema/group/index.md">group</a><br />
+<a href="/docs/providers/okta/userschema/groupschema/index.md">groupschema</a><br />
+<a href="/docs/providers/okta/userschema/identityprovider/index.md">identityprovider</a><br />
+<a href="/docs/providers/okta/userschema/inlinehook/index.md">inlinehook</a><br />
+<a href="/docs/providers/okta/userschema/linkedobject/index.md">linkedobject</a><br />
+<a href="/docs/providers/okta/userschema/log/index.md">log</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/okta/userschema/networkzone">networkzone</a><br />
-<a href="/docs/providers/okta/userschema/org">org</a><br />
-<a href="/docs/providers/okta/userschema/policy">policy</a><br />
-<a href="/docs/providers/okta/userschema/profilemapping">profilemapping</a><br />
-<a href="/docs/providers/okta/userschema/session">session</a><br />
-<a href="/docs/providers/okta/userschema/template">template</a><br />
-<a href="/docs/providers/okta/userschema/threatinsight">threatinsight</a><br />
-<a href="/docs/providers/okta/userschema/trustedorigin">trustedorigin</a><br />
-<a href="/docs/providers/okta/userschema/user">user</a><br />
-<a href="/docs/providers/okta/userschema/userfactor">userfactor</a><br />
-<a href="/docs/providers/okta/userschema/userschema">userschema</a><br />
-<a href="/docs/providers/okta/userschema/usertype">usertype</a><br />
+<a href="/docs/providers/okta/userschema/networkzone/index.md">networkzone</a><br />
+<a href="/docs/providers/okta/userschema/org/index.md">org</a><br />
+<a href="/docs/providers/okta/userschema/policy/index.md">policy</a><br />
+<a href="/docs/providers/okta/userschema/profilemapping/index.md">profilemapping</a><br />
+<a href="/docs/providers/okta/userschema/session/index.md">session</a><br />
+<a href="/docs/providers/okta/userschema/template/index.md">template</a><br />
+<a href="/docs/providers/okta/userschema/threatinsight/index.md">threatinsight</a><br />
+<a href="/docs/providers/okta/userschema/trustedorigin/index.md">trustedorigin</a><br />
+<a href="/docs/providers/okta/userschema/user/index.md">user</a><br />
+<a href="/docs/providers/okta/userschema/userfactor/index.md">userfactor</a><br />
+<a href="/docs/providers/okta/userschema/userschema/index.md">userschema</a><br />
+<a href="/docs/providers/okta/userschema/usertype/index.md">usertype</a><br />
 </div>
 </div>

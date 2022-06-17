@@ -16,20 +16,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.enterprise_admin.org_access_to_self_hosted_runner_group</code></td></tr>
+<tr><td><b>Name</b></td><td><code>org_access_to_self_hosted_runner_group</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.enterprise_admin.org_access_to_self_hosted_runner_group</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `organizations` | `array` |  |
-| `total_count` | `number` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `organizations` | `array` |
+| `total_count` | `number` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_org_access_to_self_hosted_runner_group_in_enterprise` | `enterprise, runner_group_id` | Lists the organizations with access to a self-hosted runner group.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. | SELECT |
-| `add_org_access_to_self_hosted_runner_group_in_enterprise` | `enterprise, org_id, runner_group_id` | Adds an organization to the list of selected organizations that can access a self-hosted runner group. The runner group must have `visibility` set to `selected`. For more information, see "[Create a self-hosted runner group for an enterprise](#create-a-self-hosted-runner-group-for-an-enterprise)."<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. | INSERT |
-| `remove_org_access_to_self_hosted_runner_group_in_enterprise` | `enterprise, org_id, runner_group_id` | Removes an organization from the list of selected organizations that can access a self-hosted runner group. The runner group must have `visibility` set to `selected`. For more information, see "[Create a self-hosted runner group for an enterprise](#create-a-self-hosted-runner-group-for-an-enterprise)."<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. | DELETE |
-| `set_org_access_to_self_hosted_runner_group_in_enterprise` | `enterprise, runner_group_id, data__selected_organization_ids` | Replaces the list of organizations that have access to a self-hosted runner configured in an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list_org_access_to_self_hosted_runner_group_in_enterprise` | `SELECT` | `enterprise, runner_group_id` | Lists the organizations with access to a self-hosted runner group.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |
+| `add_org_access_to_self_hosted_runner_group_in_enterprise` | `INSERT` | `enterprise, org_id, runner_group_id` | Adds an organization to the list of selected organizations that can access a self-hosted runner group. The runner group must have `visibility` set to `selected`. For more information, see "[Create a self-hosted runner group for an enterprise](#create-a-self-hosted-runner-group-for-an-enterprise)."<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |
+| `remove_org_access_to_self_hosted_runner_group_in_enterprise` | `DELETE` | `enterprise, org_id, runner_group_id` | Removes an organization from the list of selected organizations that can access a self-hosted runner group. The runner group must have `visibility` set to `selected`. For more information, see "[Create a self-hosted runner group for an enterprise](#create-a-self-hosted-runner-group-for-an-enterprise)."<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |
+| `set_org_access_to_self_hosted_runner_group_in_enterprise` | `EXEC` | `enterprise, runner_group_id, data__selected_organization_ids` | Replaces the list of organizations that have access to a self-hosted runner configured in an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |

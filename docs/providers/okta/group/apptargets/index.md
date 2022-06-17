@@ -16,29 +16,28 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.group.apptargets</code></td></tr>
+<tr><td><b>Name</b></td><td><code>apptargets</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.group.apptargets</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `description` | `string` |  |
-| `displayName` | `string` |  |
-| `signOnModes` | `array` |  |
-| `features` | `array` |  |
-| `lastUpdated` | `string` |  |
-| `status` | `string` |  |
-| `website` | `string` |  |
-| `verificationStatus` | `string` |  |
-| `_links` | `object` |  |
-| `category` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `description` | `string` |
+| `lastUpdated` | `string` |
+| `signOnModes` | `array` |
+| `verificationStatus` | `string` |
+| `_links` | `object` |
+| `category` | `string` |
+| `features` | `array` |
+| `status` | `string` |
+| `website` | `string` |
+| `displayName` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `groupId, roleId` | Lists all App targets for an `APP_ADMIN` Role assigned to a Group. This methods return list may include full Applications or Instances. The response for an instance will have an `ID` value, while Application will not have an ID. | SELECT |
-| `insert` | `appName, groupId, roleId` | Success | INSERT |
-| `delete` | `appName, groupId, roleId` | Success | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list` | `SELECT` | `groupId, roleId` | Lists all App targets for an `APP_ADMIN` Role assigned to a Group. This methods return list may include full Applications or Instances. The response for an instance will have an `ID` value, while Application will not have an ID. |
+| `insert` | `INSERT` | `appName, groupId, roleId` | Success |
+| `delete` | `DELETE` | `appName, groupId, roleId` | Success |

@@ -16,33 +16,32 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.authorizationserver.policies</code></td></tr>
+<tr><td><b>Name</b></td><td><code>policies</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.authorizationserver.policies</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `description` | `string` |  |
-| `_links` | `object` |  |
-| `priority` | `integer` |  |
-| `lastUpdated` | `string` |  |
-| `conditions` | `object` |  |
-| `created` | `string` |  |
-| `_embedded` | `object` |  |
-| `status` | `string` |  |
-| `system` | `boolean` |  |
-| `type` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `description` | `string` |
+| `lastUpdated` | `string` |
+| `type` | `string` |
+| `conditions` | `object` |
+| `_embedded` | `object` |
+| `_links` | `object` |
+| `priority` | `integer` |
+| `created` | `string` |
+| `system` | `boolean` |
+| `status` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `authServerId, policyId` | Success | SELECT |
-| `list` | `authServerId` | Success | SELECT |
-| `insert` | `authServerId` | Success | INSERT |
-| `delete` | `authServerId, policyId` | Success | DELETE |
-| `activate` | `authServerId, policyId` | Activate Authorization Server Policy | EXEC |
-| `deactivate` | `authServerId, policyId` | Deactivate Authorization Server Policy | EXEC |
-| `update` | `authServerId, policyId` | Success | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `authServerId, policyId` | Success |
+| `list` | `SELECT` | `authServerId` | Success |
+| `insert` | `INSERT` | `authServerId` | Success |
+| `delete` | `DELETE` | `authServerId, policyId` | Success |
+| `activate` | `EXEC` | `authServerId, policyId` | Activate Authorization Server Policy |
+| `deactivate` | `EXEC` | `authServerId, policyId` | Deactivate Authorization Server Policy |
+| `update` | `EXEC` | `authServerId, policyId` | Success |

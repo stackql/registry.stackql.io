@@ -16,24 +16,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.search.labels</code></td></tr>
+<tr><td><b>Name</b></td><td><code>labels</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.search.labels</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `integer` |  |
-| `name` | `string` |  |
-| `description` | `string` |  |
-| `text_matches` | `array` |  |
-| `url` | `string` |  |
-| `score` | `number` |  |
-| `color` | `string` |  |
-| `default` | `boolean` |  |
-| `node_id` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `integer` |
+| `name` | `string` |
+| `description` | `string` |
+| `url` | `string` |
+| `color` | `string` |
+| `text_matches` | `array` |
+| `node_id` | `string` |
+| `score` | `number` |
+| `default` | `boolean` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `labels` | `q, repository_id` | Find labels in a repository with names or descriptions that match search keywords. Returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).<br /><br />When searching for labels, you can get text match metadata for the label **name** and **description** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://docs.github.com/rest/reference/search#text-match-metadata).<br /><br />For example, if you want to find labels in the `linguist` repository that match `bug`, `defect`, or `enhancement`. Your query might look like this:<br /><br />`q=bug+defect+enhancement&repository_id=64778136`<br /><br />The labels that best match the query appear first in the search results. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `labels` | `SELECT` | `q, repository_id` |

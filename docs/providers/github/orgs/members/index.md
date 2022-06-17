@@ -16,37 +16,36 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.orgs.members</code></td></tr>
+<tr><td><b>Name</b></td><td><code>members</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.members</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `integer` |  |
-| `name` | `string` |  |
-| `events_url` | `string` |  |
-| `html_url` | `string` |  |
-| `gists_url` | `string` |  |
-| `starred_url` | `string` |  |
-| `subscriptions_url` | `string` |  |
-| `email` | `string` |  |
-| `login` | `string` |  |
-| `url` | `string` |  |
-| `avatar_url` | `string` |  |
-| `site_admin` | `boolean` |  |
-| `type` | `string` |  |
-| `organizations_url` | `string` |  |
-| `followers_url` | `string` |  |
-| `following_url` | `string` |  |
-| `node_id` | `string` |  |
-| `starred_at` | `string` |  |
-| `repos_url` | `string` |  |
-| `gravatar_id` | `string` |  |
-| `received_events_url` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `integer` |
+| `name` | `string` |
+| `email` | `string` |
+| `followers_url` | `string` |
+| `avatar_url` | `string` |
+| `site_admin` | `boolean` |
+| `gists_url` | `string` |
+| `node_id` | `string` |
+| `html_url` | `string` |
+| `following_url` | `string` |
+| `subscriptions_url` | `string` |
+| `starred_at` | `string` |
+| `type` | `string` |
+| `gravatar_id` | `string` |
+| `received_events_url` | `string` |
+| `organizations_url` | `string` |
+| `url` | `string` |
+| `starred_url` | `string` |
+| `events_url` | `string` |
+| `repos_url` | `string` |
+| `login` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_members` | `org` | List all users who are members of an organization. If the authenticated user is also a member of this organization then both concealed and public members will be returned. | SELECT |
-| `remove_member` | `org, username` | Removing a user from this list will remove them from all teams and they will no longer have any access to the organization's repositories. | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list_members` | `SELECT` | `org` | List all users who are members of an organization. If the authenticated user is also a member of this organization then both concealed and public members will be returned. |
+| `remove_member` | `DELETE` | `org, username` | Removing a user from this list will remove them from all teams and they will no longer have any access to the organization's repositories. |

@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.gists.gist_forks</code></td></tr>
+<tr><td><b>Name</b></td><td><code>gist_forks</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.gists.gist_forks</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -26,27 +25,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
 | `description` | `string` |  |
-| `history` | `array` |  |
-| `comments_url` | `string` |  |
+| `created_at` | `string` |  |
+| `public` | `boolean` |  |
 | `updated_at` | `string` |  |
-| `node_id` | `string` |  |
-| `git_pull_url` | `string` |  |
-| `truncated` | `boolean` |  |
-| `user` | `string` |  |
-| `url` | `string` |  |
-| `forks_url` | `string` |  |
+| `forks` | `array` |  |
+| `owner` | `object` | Simple User |
 | `fork_of` | `object` | Gist |
+| `git_pull_url` | `string` |  |
+| `history` | `array` |  |
+| `forks_url` | `string` |  |
+| `node_id` | `string` |  |
+| `comments` | `integer` |  |
+| `html_url` | `string` |  |
 | `files` | `object` |  |
 | `git_push_url` | `string` |  |
-| `created_at` | `string` |  |
-| `owner` | `object` | Simple User |
-| `comments` | `integer` |  |
-| `forks` | `array` |  |
-| `public` | `boolean` |  |
+| `user` | `string` |  |
 | `commits_url` | `string` |  |
-| `html_url` | `string` |  |
+| `truncated` | `boolean` |  |
+| `comments_url` | `string` |  |
+| `url` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_forks` | `gist_id` |  | SELECT |
-| `fork` | `gist_id` | **Note**: This was previously `/gists/:gist_id/fork`. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list_forks` | `SELECT` | `gist_id` |  |
+| `fork` | `EXEC` | `gist_id` | **Note**: This was previously `/gists/:gist_id/fork`. |

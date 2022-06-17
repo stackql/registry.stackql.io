@@ -16,29 +16,28 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.dns_zone.dns_zones_dns_records</code></td></tr>
+<tr><td><b>Name</b></td><td><code>dns_zones_dns_records</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.dns_zone.dns_zones_dns_records</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `site_id` | `string` |  |
-| `type` | `string` |  |
-| `dns_zone_id` | `string` |  |
-| `flag` | `integer` |  |
-| `hostname` | `string` |  |
-| `value` | `string` |  |
-| `priority` | `integer` |  |
-| `managed` | `boolean` |  |
-| `tag` | `string` |  |
-| `ttl` | `integer` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `dns_zone_id` | `string` |
+| `tag` | `string` |
+| `type` | `string` |
+| `flag` | `integer` |
+| `hostname` | `string` |
+| `site_id` | `string` |
+| `value` | `string` |
+| `ttl` | `integer` |
+| `managed` | `boolean` |
+| `priority` | `integer` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `getDnsRecords` | `zone_id` |  | SELECT |
-| `getIndividualDnsRecord` | `dns_record_id, zone_id` |  | SELECT |
-| `createDnsRecord` | `zone_id` |  | INSERT |
-| `deleteDnsRecord` | `dns_record_id, zone_id` |  | DELETE |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `getDnsRecords` | `SELECT` | `zone_id` |
+| `getIndividualDnsRecord` | `SELECT` | `dns_record_id, zone_id` |
+| `createDnsRecord` | `INSERT` | `zone_id` |
+| `deleteDnsRecord` | `DELETE` | `dns_record_id, zone_id` |

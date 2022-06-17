@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.gists.gists</code></td></tr>
+<tr><td><b>Name</b></td><td><code>gists</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.gists.gists</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -26,32 +25,32 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
 | `description` | `string` |  |
-| `node_id` | `string` |  |
-| `forks` | `array` |  |
-| `created_at` | `string` |  |
-| `fork_of` | `object` | Gist |
-| `owner` | `object` | Simple User |
-| `forks_url` | `string` |  |
-| `comments` | `integer` |  |
-| `git_push_url` | `string` |  |
 | `history` | `array` |  |
-| `files` | `object` |  |
-| `comments_url` | `string` |  |
-| `git_pull_url` | `string` |  |
-| `public` | `boolean` |  |
-| `truncated` | `boolean` |  |
-| `html_url` | `string` |  |
-| `url` | `string` |  |
-| `commits_url` | `string` |  |
-| `updated_at` | `string` |  |
+| `fork_of` | `object` | Gist |
+| `created_at` | `string` |  |
 | `user` | `string` |  |
+| `truncated` | `boolean` |  |
+| `comments` | `integer` |  |
+| `html_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `files` | `object` |  |
+| `forks_url` | `string` |  |
+| `git_pull_url` | `string` |  |
+| `comments_url` | `string` |  |
+| `public` | `boolean` |  |
+| `url` | `string` |  |
+| `owner` | `object` | Simple User |
+| `commits_url` | `string` |  |
+| `forks` | `array` |  |
+| `node_id` | `string` |  |
+| `git_push_url` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `gist_id` |  | SELECT |
-| `get_revision` | `gist_id, sha` |  | SELECT |
-| `list` | `` | Lists the authenticated user's gists or if called anonymously, this endpoint returns all public gists: | SELECT |
-| `list_for_user` | `username` | Lists public gists for the specified user: | SELECT |
-| `create` | `data__files` | Allows you to add a new gist with one or more files.<br /><br />**Note:** Don't name your files "gistfile" with a numerical suffix. This is the format of the automatic naming scheme that Gist uses internally. | INSERT |
-| `delete` | `gist_id` |  | DELETE |
-| `update` | `gist_id` | Allows you to update or delete a gist file and rename gist files. Files from the previous version of the gist that aren't explicitly changed during an edit are unchanged. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `gist_id` |  |
+| `get_revision` | `SELECT` | `gist_id, sha` |  |
+| `list` | `SELECT` |  | Lists the authenticated user's gists or if called anonymously, this endpoint returns all public gists: |
+| `list_for_user` | `SELECT` | `username` | Lists public gists for the specified user: |
+| `create` | `INSERT` | `data__files` | Allows you to add a new gist with one or more files.<br /><br />**Note:** Don't name your files "gistfile" with a numerical suffix. This is the format of the automatic naming scheme that Gist uses internally. |
+| `delete` | `DELETE` | `gist_id` |  |
+| `update` | `EXEC` | `gist_id` | Allows you to update or delete a gist file and rename gist files. Files from the previous version of the gist that aren't explicitly changed during an edit are unchanged. |

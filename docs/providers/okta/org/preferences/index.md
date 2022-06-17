@@ -16,19 +16,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.org.preferences</code></td></tr>
+<tr><td><b>Name</b></td><td><code>preferences</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.org.preferences</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `_links` | `object` |  |
-| `showEndUserFooter` | `boolean` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `_links` | `object` |
+| `showEndUserFooter` | `boolean` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `` | Gets preferences of your organization. | SELECT |
-| `hideEndUserFooter` | `` | Hide the Okta UI footer for all end users of your organization. | EXEC |
-| `showEndUserFooter` | `` | Makes the Okta UI footer visible for all end users of your organization. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` |  | Gets preferences of your organization. |
+| `hideEndUserFooter` | `EXEC` |  | Hide the Okta UI footer for all end users of your organization. |
+| `showEndUserFooter` | `EXEC` |  | Makes the Okta UI footer visible for all end users of your organization. |

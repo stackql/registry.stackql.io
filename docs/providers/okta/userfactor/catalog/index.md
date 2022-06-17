@@ -16,24 +16,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.userfactor.catalog</code></td></tr>
+<tr><td><b>Name</b></td><td><code>catalog</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.userfactor.catalog</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `factorType` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `verify` | `object` |  |
-| `created` | `string` |  |
-| `_links` | `object` |  |
-| `provider` | `string` |  |
-| `_embedded` | `object` |  |
-| `status` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `_links` | `object` |
+| `factorType` | `string` |
+| `created` | `string` |
+| `_embedded` | `object` |
+| `lastUpdated` | `string` |
+| `status` | `string` |
+| `verify` | `object` |
+| `provider` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `userId` | Enumerates all the supported factors that can be enrolled for the specified user | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list` | `SELECT` | `userId` |

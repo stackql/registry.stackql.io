@@ -16,15 +16,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.group.appinstancetargets</code></td></tr>
+<tr><td><b>Name</b></td><td><code>appinstancetargets</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.group.appinstancetargets</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `insert` | `appName, applicationId, groupId, roleId` | Add App Instance Target to App Administrator Role given to a Group | INSERT |
-| `delete` | `appName, applicationId, groupId, roleId` | Remove App Instance Target to App Administrator Role given to a Group | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `insert` | `INSERT` | `appName, applicationId, groupId, roleId` | Add App Instance Target to App Administrator Role given to a Group |
+| `delete` | `DELETE` | `appName, applicationId, groupId, roleId` | Remove App Instance Target to App Administrator Role given to a Group |

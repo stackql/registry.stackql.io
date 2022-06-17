@@ -16,28 +16,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.application.tokens</code></td></tr>
+<tr><td><b>Name</b></td><td><code>tokens</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.application.tokens</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `issuer` | `string` |  |
-| `_embedded` | `object` |  |
-| `clientId` | `string` |  |
-| `userId` | `string` |  |
-| `expiresAt` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `scopes` | `array` |  |
-| `_links` | `object` |  |
-| `status` | `string` |  |
-| `created` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `userId` | `string` |
+| `created` | `string` |
+| `lastUpdated` | `string` |
+| `status` | `string` |
+| `issuer` | `string` |
+| `expiresAt` | `string` |
+| `scopes` | `array` |
+| `_embedded` | `object` |
+| `_links` | `object` |
+| `clientId` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `appId, tokenId` | Gets a token for the specified application | SELECT |
-| `list` | `appId` | Lists all tokens for the application | SELECT |
-| `delete` | `appId, tokenId` | Revokes the specified token for the specified application | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `appId, tokenId` | Gets a token for the specified application |
+| `list` | `SELECT` | `appId` | Lists all tokens for the application |
+| `delete` | `DELETE` | `appId, tokenId` | Revokes the specified token for the specified application |

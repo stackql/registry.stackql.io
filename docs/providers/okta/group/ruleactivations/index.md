@@ -16,15 +16,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.group.ruleactivations</code></td></tr>
+<tr><td><b>Name</b></td><td><code>ruleactivations</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.group.ruleactivations</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `insert` | `ruleId` | Activates a specific group rule by id from your organization | INSERT |
-| `delete` | `ruleId` | Deactivates a specific group rule by id from your organization | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `insert` | `INSERT` | `ruleId` | Activates a specific group rule by id from your organization |
+| `delete` | `DELETE` | `ruleId` | Deactivates a specific group rule by id from your organization |

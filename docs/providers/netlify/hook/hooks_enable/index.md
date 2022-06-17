@@ -16,14 +16,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.hook.hooks_enable</code></td></tr>
+<tr><td><b>Name</b></td><td><code>hooks_enable</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.hook.hooks_enable</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `enableHook` | `hook_id` |  | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `enableHook` | `EXEC` | `hook_id` |

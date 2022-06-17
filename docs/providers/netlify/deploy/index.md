@@ -20,43 +20,42 @@ deploy
 <tr><td><b>Title</b></td><td>Netlify's API documentation - deploy</td></tr>
 <tr><td><b>Description</b></td><td>deploy</td></tr>
 <tr><td><b>Id</b></td><td><code>deploy:v0.2.0</code></td></tr>
-<tr><td><b>Version</b></td><td>v0.2.0</td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/netlify/deploy/access_token">access_token</a><br />
-<a href="/docs/providers/netlify/deploy/account_membership">account_membership</a><br />
-<a href="/docs/providers/netlify/deploy/account_type">account_type</a><br />
-<a href="/docs/providers/netlify/deploy/asset">asset</a><br />
-<a href="/docs/providers/netlify/deploy/asset_public_signature">asset_public_signature</a><br />
-<a href="/docs/providers/netlify/deploy/audit_log">audit_log</a><br />
-<a href="/docs/providers/netlify/deploy/build">build</a><br />
-<a href="/docs/providers/netlify/deploy/build_hook">build_hook</a><br />
-<a href="/docs/providers/netlify/deploy/build_log_msg">build_log_msg</a><br />
-<a href="/docs/providers/netlify/deploy/deploy">deploy</a><br />
-<a href="/docs/providers/netlify/deploy/deploy_key">deploy_key</a><br />
-<a href="/docs/providers/netlify/deploy/deployed_branch">deployed_branch</a><br />
-<a href="/docs/providers/netlify/deploy/dns_zone">dns_zone</a><br />
-<a href="/docs/providers/netlify/deploy/file">file</a><br />
-<a href="/docs/providers/netlify/deploy/form">form</a><br />
+<a href="/docs/providers/netlify/deploy/access_token/index.md">access_token</a><br />
+<a href="/docs/providers/netlify/deploy/account_membership/index.md">account_membership</a><br />
+<a href="/docs/providers/netlify/deploy/account_type/index.md">account_type</a><br />
+<a href="/docs/providers/netlify/deploy/asset/index.md">asset</a><br />
+<a href="/docs/providers/netlify/deploy/asset_public_signature/index.md">asset_public_signature</a><br />
+<a href="/docs/providers/netlify/deploy/audit_log/index.md">audit_log</a><br />
+<a href="/docs/providers/netlify/deploy/build/index.md">build</a><br />
+<a href="/docs/providers/netlify/deploy/build_hook/index.md">build_hook</a><br />
+<a href="/docs/providers/netlify/deploy/build_log_msg/index.md">build_log_msg</a><br />
+<a href="/docs/providers/netlify/deploy/deploy/index.md">deploy</a><br />
+<a href="/docs/providers/netlify/deploy/deploy_key/index.md">deploy_key</a><br />
+<a href="/docs/providers/netlify/deploy/deployed_branch/index.md">deployed_branch</a><br />
+<a href="/docs/providers/netlify/deploy/dns_zone/index.md">dns_zone</a><br />
+<a href="/docs/providers/netlify/deploy/file/index.md">file</a><br />
+<a href="/docs/providers/netlify/deploy/form/index.md">form</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/netlify/deploy/function">function</a><br />
-<a href="/docs/providers/netlify/deploy/hook">hook</a><br />
-<a href="/docs/providers/netlify/deploy/hook_type">hook_type</a><br />
-<a href="/docs/providers/netlify/deploy/member">member</a><br />
-<a href="/docs/providers/netlify/deploy/metadata">metadata</a><br />
-<a href="/docs/providers/netlify/deploy/payment_method">payment_method</a><br />
-<a href="/docs/providers/netlify/deploy/service">service</a><br />
-<a href="/docs/providers/netlify/deploy/service_instance">service_instance</a><br />
-<a href="/docs/providers/netlify/deploy/site">site</a><br />
-<a href="/docs/providers/netlify/deploy/sni_certificate">sni_certificate</a><br />
-<a href="/docs/providers/netlify/deploy/snippet">snippet</a><br />
-<a href="/docs/providers/netlify/deploy/split_test">split_test</a><br />
-<a href="/docs/providers/netlify/deploy/submission">submission</a><br />
-<a href="/docs/providers/netlify/deploy/ticket">ticket</a><br />
-<a href="/docs/providers/netlify/deploy/user">user</a><br />
+<a href="/docs/providers/netlify/deploy/function/index.md">function</a><br />
+<a href="/docs/providers/netlify/deploy/hook/index.md">hook</a><br />
+<a href="/docs/providers/netlify/deploy/hook_type/index.md">hook_type</a><br />
+<a href="/docs/providers/netlify/deploy/member/index.md">member</a><br />
+<a href="/docs/providers/netlify/deploy/metadata/index.md">metadata</a><br />
+<a href="/docs/providers/netlify/deploy/payment_method/index.md">payment_method</a><br />
+<a href="/docs/providers/netlify/deploy/service/index.md">service</a><br />
+<a href="/docs/providers/netlify/deploy/service_instance/index.md">service_instance</a><br />
+<a href="/docs/providers/netlify/deploy/site/index.md">site</a><br />
+<a href="/docs/providers/netlify/deploy/sni_certificate/index.md">sni_certificate</a><br />
+<a href="/docs/providers/netlify/deploy/snippet/index.md">snippet</a><br />
+<a href="/docs/providers/netlify/deploy/split_test/index.md">split_test</a><br />
+<a href="/docs/providers/netlify/deploy/submission/index.md">submission</a><br />
+<a href="/docs/providers/netlify/deploy/ticket/index.md">ticket</a><br />
+<a href="/docs/providers/netlify/deploy/user/index.md">user</a><br />
 </div>
 </div>

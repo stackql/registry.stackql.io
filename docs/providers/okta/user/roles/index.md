@@ -16,28 +16,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.user.roles</code></td></tr>
+<tr><td><b>Name</b></td><td><code>roles</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.user.roles</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `description` | `string` |  |
-| `_embedded` | `object` |  |
-| `label` | `string` |  |
-| `_links` | `object` |  |
-| `created` | `string` |  |
-| `type` | `string` |  |
-| `assignmentType` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `status` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `description` | `string` |
+| `status` | `string` |
+| `assignmentType` | `string` |
+| `created` | `string` |
+| `lastUpdated` | `string` |
+| `type` | `string` |
+| `label` | `string` |
+| `_embedded` | `object` |
+| `_links` | `object` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `roleId, userId` | Gets role that is assigne to user. | SELECT |
-| `list` | `userId` | Lists all roles assigned to a user. | SELECT |
-| `insert` | `userId` | Assigns a role to a user. | INSERT |
-| `delete` | `roleId, userId` | Unassigns a role from a user. | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `roleId, userId` | Gets role that is assigne to user. |
+| `list` | `SELECT` | `userId` | Lists all roles assigned to a user. |
+| `insert` | `INSERT` | `userId` | Assigns a role to a user. |
+| `delete` | `DELETE` | `roleId, userId` | Unassigns a role from a user. |

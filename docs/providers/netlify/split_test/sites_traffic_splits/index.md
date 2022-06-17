@@ -16,27 +16,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.split_test.sites_traffic_splits</code></td></tr>
+<tr><td><b>Name</b></td><td><code>sites_traffic_splits</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.split_test.sites_traffic_splits</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `unpublished_at` | `string` |  |
-| `created_at` | `string` |  |
-| `site_id` | `string` |  |
-| `path` | `string` |  |
-| `updated_at` | `string` |  |
-| `active` | `boolean` |  |
-| `branches` | `array` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `active` | `boolean` |
+| `path` | `string` |
+| `branches` | `array` |
+| `created_at` | `string` |
+| `site_id` | `string` |
+| `unpublished_at` | `string` |
+| `updated_at` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `getSplitTest` | `site_id, split_test_id` |  | SELECT |
-| `getSplitTests` | `site_id` |  | SELECT |
-| `createSplitTest` | `site_id` |  | INSERT |
-| `updateSplitTest` | `site_id, split_test_id` |  | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `getSplitTest` | `SELECT` | `site_id, split_test_id` |
+| `getSplitTests` | `SELECT` | `site_id` |
+| `createSplitTest` | `INSERT` | `site_id` |
+| `updateSplitTest` | `EXEC` | `site_id, split_test_id` |

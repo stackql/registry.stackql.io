@@ -16,18 +16,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.repos.statistics_contributor_activity</code></td></tr>
+<tr><td><b>Name</b></td><td><code>statistics_contributor_activity</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.statistics_contributor_activity</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `weeks` | `array` |  |
 | `author` | `object` | Simple User |
 | `total` | `integer` |  |
+| `weeks` | `array` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_contributors_stats` | `owner, repo` | <br />Returns the `total` number of commits authored by the contributor. In addition, the response includes a Weekly Hash (`weeks` array) with the following information:<br /><br />*   `w` - Start of the week, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time).<br />*   `a` - Number of additions<br />*   `d` - Number of deletions<br />*   `c` - Number of commits | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get_contributors_stats` | `SELECT` | `owner, repo` |

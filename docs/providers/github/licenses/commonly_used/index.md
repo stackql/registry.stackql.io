@@ -16,21 +16,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.licenses.commonly_used</code></td></tr>
+<tr><td><b>Name</b></td><td><code>commonly_used</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.licenses.commonly_used</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `name` | `string` |  |
-| `html_url` | `string` |  |
-| `key` | `string` |  |
-| `node_id` | `string` |  |
-| `spdx_id` | `string` |  |
-| `url` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `name` | `string` |
+| `url` | `string` |
+| `html_url` | `string` |
+| `key` | `string` |
+| `node_id` | `string` |
+| `spdx_id` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_all_commonly_used` | `` |  | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get_all_commonly_used` | `SELECT` |  |

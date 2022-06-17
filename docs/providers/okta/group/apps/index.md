@@ -16,31 +16,30 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.group.apps</code></td></tr>
+<tr><td><b>Name</b></td><td><code>apps</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.group.apps</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `visibility` | `object` |  |
-| `profile` | `object` |  |
-| `_embedded` | `object` |  |
-| `credentials` | `object` |  |
-| `status` | `string` |  |
-| `signOnMode` | `string` |  |
-| `settings` | `object` |  |
-| `licensing` | `object` |  |
-| `lastUpdated` | `string` |  |
-| `_links` | `object` |  |
-| `created` | `string` |  |
-| `accessibility` | `object` |  |
-| `features` | `array` |  |
-| `label` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `signOnMode` | `string` |
+| `credentials` | `object` |
+| `_links` | `object` |
+| `accessibility` | `object` |
+| `lastUpdated` | `string` |
+| `features` | `array` |
+| `created` | `string` |
+| `profile` | `object` |
+| `visibility` | `object` |
+| `_embedded` | `object` |
+| `licensing` | `object` |
+| `status` | `string` |
+| `label` | `string` |
+| `settings` | `object` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `groupId` | Enumerates all applications that are assigned to a group. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list` | `SELECT` | `groupId` |

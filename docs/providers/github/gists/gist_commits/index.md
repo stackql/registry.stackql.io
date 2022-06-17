@@ -16,20 +16,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.gists.gist_commits</code></td></tr>
+<tr><td><b>Name</b></td><td><code>gist_commits</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.gists.gist_commits</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `change_status` | `object` |  |
+| `committed_at` | `string` |  |
 | `url` | `string` |  |
 | `user` | `object` | Simple User |
 | `version` | `string` |  |
-| `change_status` | `object` |  |
-| `committed_at` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_commits` | `gist_id` |  | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list_commits` | `SELECT` | `gist_id` |

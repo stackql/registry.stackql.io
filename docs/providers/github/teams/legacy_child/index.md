@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.teams.legacy_child</code></td></tr>
+<tr><td><b>Name</b></td><td><code>legacy_child</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.teams.legacy_child</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -28,16 +27,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `name` | `string` |  |
 | `description` | `string` |  |
 | `html_url` | `string` |  |
-| `node_id` | `string` |  |
-| `members_url` | `string` |  |
 | `permission` | `string` |  |
-| `url` | `string` |  |
-| `permissions` | `object` |  |
-| `repositories_url` | `string` |  |
-| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
 | `privacy` | `string` |  |
+| `members_url` | `string` |  |
+| `repositories_url` | `string` |  |
+| `url` | `string` |  |
+| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `permissions` | `object` |  |
+| `node_id` | `string` |  |
 | `slug` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_child_legacy` | `team_id` | **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [`List child teams`](https://docs.github.com/rest/reference/teams#list-child-teams) endpoint. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list_child_legacy` | `SELECT` | `team_id` |

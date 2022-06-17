@@ -16,23 +16,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.repos.access_restrictions</code></td></tr>
+<tr><td><b>Name</b></td><td><code>access_restrictions</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.access_restrictions</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `url` | `string` |  |
-| `users` | `array` |  |
-| `users_url` | `string` |  |
-| `apps` | `array` |  |
-| `apps_url` | `string` |  |
-| `teams` | `array` |  |
-| `teams_url` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `users_url` | `string` |
+| `apps` | `array` |
+| `apps_url` | `string` |
+| `teams` | `array` |
+| `teams_url` | `string` |
+| `url` | `string` |
+| `users` | `array` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_access_restrictions` | `branch, owner, repo` | Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.<br /><br />Lists who has access to this protected branch.<br /><br />**Note**: Users, apps, and teams `restrictions` are only available for organization-owned repositories. | SELECT |
-| `delete_access_restrictions` | `branch, owner, repo` | Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.<br /><br />Disables the ability to restrict who can push to this branch. | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get_access_restrictions` | `SELECT` | `branch, owner, repo` | Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.<br /><br />Lists who has access to this protected branch.<br /><br />**Note**: Users, apps, and teams `restrictions` are only available for organization-owned repositories. |
+| `delete_access_restrictions` | `DELETE` | `branch, owner, repo` | Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.<br /><br />Disables the ability to restrict who can push to this branch. |

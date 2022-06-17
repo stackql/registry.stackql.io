@@ -16,28 +16,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.group.roles</code></td></tr>
+<tr><td><b>Name</b></td><td><code>roles</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.group.roles</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `description` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `_links` | `object` |  |
-| `assignmentType` | `string` |  |
-| `status` | `string` |  |
-| `created` | `string` |  |
-| `label` | `string` |  |
-| `type` | `string` |  |
-| `_embedded` | `object` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `description` | `string` |
+| `type` | `string` |
+| `label` | `string` |
+| `created` | `string` |
+| `status` | `string` |
+| `_embedded` | `object` |
+| `_links` | `object` |
+| `lastUpdated` | `string` |
+| `assignmentType` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `groupId, roleId` | Success | SELECT |
-| `list` | `groupId` | Success | SELECT |
-| `insert` | `groupId` | Assigns a Role to a Group | INSERT |
-| `delete` | `groupId, roleId` | Unassigns a Role from a Group | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `groupId, roleId` | Success |
+| `list` | `SELECT` | `groupId` | Success |
+| `insert` | `INSERT` | `groupId` | Assigns a Role to a Group |
+| `delete` | `DELETE` | `groupId, roleId` | Unassigns a Role from a Group |

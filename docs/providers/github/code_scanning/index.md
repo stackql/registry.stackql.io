@@ -20,45 +20,44 @@ code_scanning
 <tr><td><b>Title</b></td><td>GitHub v3 REST API - code_scanning</td></tr>
 <tr><td><b>Description</b></td><td>code_scanning</td></tr>
 <tr><td><b>Id</b></td><td><code>code_scanning:v0.3.1</code></td></tr>
-<tr><td><b>Version</b></td><td>v0.3.1</td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/code_scanning/actions">actions</a><br />
-<a href="/docs/providers/github/code_scanning/activity">activity</a><br />
-<a href="/docs/providers/github/code_scanning/apps">apps</a><br />
-<a href="/docs/providers/github/code_scanning/billing">billing</a><br />
-<a href="/docs/providers/github/code_scanning/checks">checks</a><br />
-<a href="/docs/providers/github/code_scanning/code_scanning">code_scanning</a><br />
-<a href="/docs/providers/github/code_scanning/codes_of_conduct">codes_of_conduct</a><br />
-<a href="/docs/providers/github/code_scanning/codespaces">codespaces</a><br />
-<a href="/docs/providers/github/code_scanning/dependabot">dependabot</a><br />
-<a href="/docs/providers/github/code_scanning/enterprise_admin">enterprise_admin</a><br />
-<a href="/docs/providers/github/code_scanning/gists">gists</a><br />
-<a href="/docs/providers/github/code_scanning/git">git</a><br />
-<a href="/docs/providers/github/code_scanning/gitignore">gitignore</a><br />
-<a href="/docs/providers/github/code_scanning/interactions">interactions</a><br />
-<a href="/docs/providers/github/code_scanning/issues">issues</a><br />
-<a href="/docs/providers/github/code_scanning/licenses">licenses</a><br />
+<a href="/docs/providers/github/code_scanning/actions/index.md">actions</a><br />
+<a href="/docs/providers/github/code_scanning/activity/index.md">activity</a><br />
+<a href="/docs/providers/github/code_scanning/apps/index.md">apps</a><br />
+<a href="/docs/providers/github/code_scanning/billing/index.md">billing</a><br />
+<a href="/docs/providers/github/code_scanning/checks/index.md">checks</a><br />
+<a href="/docs/providers/github/code_scanning/code_scanning/index.md">code_scanning</a><br />
+<a href="/docs/providers/github/code_scanning/codes_of_conduct/index.md">codes_of_conduct</a><br />
+<a href="/docs/providers/github/code_scanning/codespaces/index.md">codespaces</a><br />
+<a href="/docs/providers/github/code_scanning/dependabot/index.md">dependabot</a><br />
+<a href="/docs/providers/github/code_scanning/enterprise_admin/index.md">enterprise_admin</a><br />
+<a href="/docs/providers/github/code_scanning/gists/index.md">gists</a><br />
+<a href="/docs/providers/github/code_scanning/git/index.md">git</a><br />
+<a href="/docs/providers/github/code_scanning/gitignore/index.md">gitignore</a><br />
+<a href="/docs/providers/github/code_scanning/interactions/index.md">interactions</a><br />
+<a href="/docs/providers/github/code_scanning/issues/index.md">issues</a><br />
+<a href="/docs/providers/github/code_scanning/licenses/index.md">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/code_scanning/markdown">markdown</a><br />
-<a href="/docs/providers/github/code_scanning/meta">meta</a><br />
-<a href="/docs/providers/github/code_scanning/migrations">migrations</a><br />
-<a href="/docs/providers/github/code_scanning/oauth_authorizations">oauth_authorizations</a><br />
-<a href="/docs/providers/github/code_scanning/orgs">orgs</a><br />
-<a href="/docs/providers/github/code_scanning/packages">packages</a><br />
-<a href="/docs/providers/github/code_scanning/projects">projects</a><br />
-<a href="/docs/providers/github/code_scanning/pulls">pulls</a><br />
-<a href="/docs/providers/github/code_scanning/rate_limit">rate_limit</a><br />
-<a href="/docs/providers/github/code_scanning/reactions">reactions</a><br />
-<a href="/docs/providers/github/code_scanning/repos">repos</a><br />
-<a href="/docs/providers/github/code_scanning/scim">scim</a><br />
-<a href="/docs/providers/github/code_scanning/search">search</a><br />
-<a href="/docs/providers/github/code_scanning/secret_scanning">secret_scanning</a><br />
-<a href="/docs/providers/github/code_scanning/teams">teams</a><br />
-<a href="/docs/providers/github/code_scanning/users">users</a><br />
+<a href="/docs/providers/github/code_scanning/markdown/index.md">markdown</a><br />
+<a href="/docs/providers/github/code_scanning/meta/index.md">meta</a><br />
+<a href="/docs/providers/github/code_scanning/migrations/index.md">migrations</a><br />
+<a href="/docs/providers/github/code_scanning/oauth_authorizations/index.md">oauth_authorizations</a><br />
+<a href="/docs/providers/github/code_scanning/orgs/index.md">orgs</a><br />
+<a href="/docs/providers/github/code_scanning/packages/index.md">packages</a><br />
+<a href="/docs/providers/github/code_scanning/projects/index.md">projects</a><br />
+<a href="/docs/providers/github/code_scanning/pulls/index.md">pulls</a><br />
+<a href="/docs/providers/github/code_scanning/rate_limit/index.md">rate_limit</a><br />
+<a href="/docs/providers/github/code_scanning/reactions/index.md">reactions</a><br />
+<a href="/docs/providers/github/code_scanning/repos/index.md">repos</a><br />
+<a href="/docs/providers/github/code_scanning/scim/index.md">scim</a><br />
+<a href="/docs/providers/github/code_scanning/search/index.md">search</a><br />
+<a href="/docs/providers/github/code_scanning/secret_scanning/index.md">secret_scanning</a><br />
+<a href="/docs/providers/github/code_scanning/teams/index.md">teams</a><br />
+<a href="/docs/providers/github/code_scanning/users/index.md">users</a><br />
 </div>
 </div>

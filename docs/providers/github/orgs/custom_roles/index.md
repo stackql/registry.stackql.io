@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.orgs.custom_roles</code></td></tr>
+<tr><td><b>Name</b></td><td><code>custom_roles</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.custom_roles</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -27,6 +26,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `total_count` | `integer` | The number of custom roles in this organization |
 | `custom_roles` | `array` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_custom_roles` | `organization_id` | List the custom repository roles available in this organization. In order to see custom<br />repository roles in an organization, the authenticated user must be an organization owner.<br /><br />For more information on custom repository roles, see "[Managing custom repository roles for an organization](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization)". | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list_custom_roles` | `SELECT` | `organization_id` |

@@ -16,31 +16,30 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.authorizationserver.rules</code></td></tr>
+<tr><td><b>Name</b></td><td><code>rules</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.authorizationserver.rules</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `type` | `string` |  |
-| `conditions` | `object` |  |
-| `priority` | `integer` |  |
-| `created` | `string` |  |
-| `system` | `boolean` |  |
-| `lastUpdated` | `string` |  |
-| `actions` | `object` |  |
-| `status` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `lastUpdated` | `string` |
+| `conditions` | `object` |
+| `status` | `string` |
+| `system` | `boolean` |
+| `actions` | `object` |
+| `created` | `string` |
+| `priority` | `integer` |
+| `type` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `authServerId, policyId, ruleId` | Returns a Policy Rule by ID that is defined in the specified Custom Authorization Server and Policy. | SELECT |
-| `list` | `authServerId, policyId` | Enumerates all policy rules for the specified Custom Authorization Server and Policy. | SELECT |
-| `insert` | `authServerId, policyId` | Creates a policy rule for the specified Custom Authorization Server and Policy. | INSERT |
-| `delete` | `authServerId, policyId, ruleId` | Deletes a Policy Rule defined in the specified Custom Authorization Server and Policy. | DELETE |
-| `activate` | `authServerId, policyId, ruleId` | Activate Authorization Server Policy Rule | EXEC |
-| `deactivate` | `authServerId, policyId, ruleId` | Deactivate Authorization Server Policy Rule | EXEC |
-| `update` | `authServerId, policyId, ruleId` | Updates the configuration of the Policy Rule defined in the specified Custom Authorization Server and Policy. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `authServerId, policyId, ruleId` | Returns a Policy Rule by ID that is defined in the specified Custom Authorization Server and Policy. |
+| `list` | `SELECT` | `authServerId, policyId` | Enumerates all policy rules for the specified Custom Authorization Server and Policy. |
+| `insert` | `INSERT` | `authServerId, policyId` | Creates a policy rule for the specified Custom Authorization Server and Policy. |
+| `delete` | `DELETE` | `authServerId, policyId, ruleId` | Deletes a Policy Rule defined in the specified Custom Authorization Server and Policy. |
+| `activate` | `EXEC` | `authServerId, policyId, ruleId` | Activate Authorization Server Policy Rule |
+| `deactivate` | `EXEC` | `authServerId, policyId, ruleId` | Deactivate Authorization Server Policy Rule |
+| `update` | `EXEC` | `authServerId, policyId, ruleId` | Updates the configuration of the Policy Rule defined in the specified Custom Authorization Server and Policy. |

@@ -20,37 +20,36 @@ Okta org management.
 <tr><td><b>Title</b></td><td>Org API</td></tr>
 <tr><td><b>Description</b></td><td>Okta org management.</td></tr>
 <tr><td><b>Id</b></td><td><code>org:v1</code></td></tr>
-<tr><td><b>Version</b></td><td>v1</td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/okta/org/application">application</a><br />
-<a href="/docs/providers/okta/org/authenticator">authenticator</a><br />
-<a href="/docs/providers/okta/org/authorizationserver">authorizationserver</a><br />
-<a href="/docs/providers/okta/org/domain">domain</a><br />
-<a href="/docs/providers/okta/org/eventhook">eventhook</a><br />
-<a href="/docs/providers/okta/org/feature">feature</a><br />
-<a href="/docs/providers/okta/org/group">group</a><br />
-<a href="/docs/providers/okta/org/groupschema">groupschema</a><br />
-<a href="/docs/providers/okta/org/identityprovider">identityprovider</a><br />
-<a href="/docs/providers/okta/org/inlinehook">inlinehook</a><br />
-<a href="/docs/providers/okta/org/linkedobject">linkedobject</a><br />
-<a href="/docs/providers/okta/org/log">log</a><br />
+<a href="/docs/providers/okta/org/application/index.md">application</a><br />
+<a href="/docs/providers/okta/org/authenticator/index.md">authenticator</a><br />
+<a href="/docs/providers/okta/org/authorizationserver/index.md">authorizationserver</a><br />
+<a href="/docs/providers/okta/org/domain/index.md">domain</a><br />
+<a href="/docs/providers/okta/org/eventhook/index.md">eventhook</a><br />
+<a href="/docs/providers/okta/org/feature/index.md">feature</a><br />
+<a href="/docs/providers/okta/org/group/index.md">group</a><br />
+<a href="/docs/providers/okta/org/groupschema/index.md">groupschema</a><br />
+<a href="/docs/providers/okta/org/identityprovider/index.md">identityprovider</a><br />
+<a href="/docs/providers/okta/org/inlinehook/index.md">inlinehook</a><br />
+<a href="/docs/providers/okta/org/linkedobject/index.md">linkedobject</a><br />
+<a href="/docs/providers/okta/org/log/index.md">log</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/okta/org/networkzone">networkzone</a><br />
-<a href="/docs/providers/okta/org/org">org</a><br />
-<a href="/docs/providers/okta/org/policy">policy</a><br />
-<a href="/docs/providers/okta/org/profilemapping">profilemapping</a><br />
-<a href="/docs/providers/okta/org/session">session</a><br />
-<a href="/docs/providers/okta/org/template">template</a><br />
-<a href="/docs/providers/okta/org/threatinsight">threatinsight</a><br />
-<a href="/docs/providers/okta/org/trustedorigin">trustedorigin</a><br />
-<a href="/docs/providers/okta/org/user">user</a><br />
-<a href="/docs/providers/okta/org/userfactor">userfactor</a><br />
-<a href="/docs/providers/okta/org/userschema">userschema</a><br />
-<a href="/docs/providers/okta/org/usertype">usertype</a><br />
+<a href="/docs/providers/okta/org/networkzone/index.md">networkzone</a><br />
+<a href="/docs/providers/okta/org/org/index.md">org</a><br />
+<a href="/docs/providers/okta/org/policy/index.md">policy</a><br />
+<a href="/docs/providers/okta/org/profilemapping/index.md">profilemapping</a><br />
+<a href="/docs/providers/okta/org/session/index.md">session</a><br />
+<a href="/docs/providers/okta/org/template/index.md">template</a><br />
+<a href="/docs/providers/okta/org/threatinsight/index.md">threatinsight</a><br />
+<a href="/docs/providers/okta/org/trustedorigin/index.md">trustedorigin</a><br />
+<a href="/docs/providers/okta/org/user/index.md">user</a><br />
+<a href="/docs/providers/okta/org/userfactor/index.md">userfactor</a><br />
+<a href="/docs/providers/okta/org/userschema/index.md">userschema</a><br />
+<a href="/docs/providers/okta/org/usertype/index.md">usertype</a><br />
 </div>
 </div>

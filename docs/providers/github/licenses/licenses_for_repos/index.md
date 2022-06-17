@@ -16,28 +16,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.licenses.licenses_for_repos</code></td></tr>
+<tr><td><b>Name</b></td><td><code>licenses_for_repos</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.licenses.licenses_for_repos</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
-| `license` | `object` | License Simple |
-| `download_url` | `string` |  |
-| `html_url` | `string` |  |
-| `type` | `string` |  |
-| `content` | `string` |  |
 | `path` | `string` |  |
-| `git_url` | `string` |  |
-| `_links` | `object` |  |
+| `html_url` | `string` |  |
+| `download_url` | `string` |  |
 | `url` | `string` |  |
+| `license` | `object` | License Simple |
+| `type` | `string` |  |
 | `size` | `integer` |  |
+| `_links` | `object` |  |
+| `content` | `string` |  |
 | `encoding` | `string` |  |
+| `git_url` | `string` |  |
 | `sha` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_for_repo` | `owner, repo` | This method returns the contents of the repository's license file, if one is detected.<br /><br />Similar to [Get repository content](https://docs.github.com/rest/reference/repos#get-repository-content), this method also supports [custom media types](https://docs.github.com/rest/overview/media-types) for retrieving the raw license content or rendered license HTML. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get_for_repo` | `SELECT` | `owner, repo` |

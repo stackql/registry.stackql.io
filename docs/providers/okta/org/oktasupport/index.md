@@ -16,21 +16,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.org.oktasupport</code></td></tr>
+<tr><td><b>Name</b></td><td><code>oktasupport</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.org.oktasupport</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `_links` | `object` |  |
-| `expiration` | `string` |  |
-| `support` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `_links` | `object` |
+| `expiration` | `string` |
+| `support` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `` | Gets Okta Support Settings of your organization. | SELECT |
-| `extend` | `` | Extends the length of time that Okta Support can access your org by 24 hours. This means that 24 hours are added to the remaining access time. | EXEC |
-| `grant` | `` | Enables you to temporarily allow Okta Support to access your org as an administrator for eight hours. | EXEC |
-| `revoke` | `` | Revokes Okta Support access to your organization. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` |  | Gets Okta Support Settings of your organization. |
+| `extend` | `EXEC` |  | Extends the length of time that Okta Support can access your org by 24 hours. This means that 24 hours are added to the remaining access time. |
+| `grant` | `EXEC` |  | Enables you to temporarily allow Okta Support to access your org as an administrator for eight hours. |
+| `revoke` | `EXEC` |  | Revokes Okta Support access to your organization. |

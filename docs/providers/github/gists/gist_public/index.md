@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.gists.gist_public</code></td></tr>
+<tr><td><b>Name</b></td><td><code>gist_public</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.gists.gist_public</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -26,25 +25,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
 | `description` | `string` |  |
+| `public` | `boolean` |  |
+| `git_pull_url` | `string` |  |
+| `commits_url` | `string` |  |
+| `forks_url` | `string` |  |
+| `history` | `array` |  |
+| `comments_url` | `string` |  |
+| `url` | `string` |  |
 | `files` | `object` |  |
 | `updated_at` | `string` |  |
 | `user` | `object` | Simple User |
-| `history` | `array` |  |
-| `comments` | `integer` |  |
 | `html_url` | `string` |  |
-| `git_pull_url` | `string` |  |
-| `forks_url` | `string` |  |
-| `truncated` | `boolean` |  |
-| `forks` | `array` |  |
-| `created_at` | `string` |  |
-| `comments_url` | `string` |  |
-| `public` | `boolean` |  |
-| `node_id` | `string` |  |
-| `url` | `string` |  |
 | `owner` | `object` | Simple User |
-| `commits_url` | `string` |  |
+| `comments` | `integer` |  |
+| `truncated` | `boolean` |  |
+| `created_at` | `string` |  |
+| `node_id` | `string` |  |
+| `forks` | `array` |  |
 | `git_push_url` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_public` | `` | List public gists sorted by most recently updated to least recently updated.<br /><br />Note: With [pagination](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination), you can fetch up to 3000 gists. For example, you can fetch 100 pages with 30 gists per page or 30 pages with 100 gists per page. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list_public` | `SELECT` |  |

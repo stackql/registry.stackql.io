@@ -16,35 +16,34 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.org.org</code></td></tr>
+<tr><td><b>Name</b></td><td><code>org</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.org.org</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `website` | `string` |  |
-| `country` | `string` |  |
-| `created` | `string` |  |
-| `expiresAt` | `string` |  |
-| `city` | `string` |  |
-| `postalCode` | `string` |  |
-| `state` | `string` |  |
-| `status` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `supportPhoneNumber` | `string` |  |
-| `address1` | `string` |  |
-| `phoneNumber` | `string` |  |
-| `_links` | `object` |  |
-| `companyName` | `string` |  |
-| `endUserSupportHelpURL` | `string` |  |
-| `address2` | `string` |  |
-| `subdomain` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `_links` | `object` |
+| `status` | `string` |
+| `created` | `string` |
+| `companyName` | `string` |
+| `state` | `string` |
+| `expiresAt` | `string` |
+| `lastUpdated` | `string` |
+| `subdomain` | `string` |
+| `address2` | `string` |
+| `postalCode` | `string` |
+| `address1` | `string` |
+| `supportPhoneNumber` | `string` |
+| `city` | `string` |
+| `phoneNumber` | `string` |
+| `country` | `string` |
+| `website` | `string` |
+| `endUserSupportHelpURL` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `` | Get settings of your organization. | SELECT |
-| `partialUpdate` | `` | Partial update settings of your organization. | EXEC |
-| `update` | `` | Update settings of your organization. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` |  | Get settings of your organization. |
+| `partialUpdate` | `EXEC` |  | Partial update settings of your organization. |
+| `update` | `EXEC` |  | Update settings of your organization. |

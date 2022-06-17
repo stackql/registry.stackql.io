@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.orgs.webhook_config</code></td></tr>
+<tr><td><b>Name</b></td><td><code>webhook_config</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.webhook_config</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -29,7 +28,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `secret` | `string` | If provided, the `secret` will be used as the `key` to generate the HMAC hex digest value for [delivery signature headers](https://docs.github.com/webhooks/event-payloads/#delivery-headers). |
 | `url` | `string` | The URL to which the payloads will be delivered. |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_webhook_config_for_org` | `hook_id, org` | Returns the webhook configuration for an organization. To get more information about the webhook, including the `active` state and `events`, use "[Get an organization webhook ](/rest/reference/orgs#get-an-organization-webhook)."<br /><br />Access tokens must have the `admin:org_hook` scope, and GitHub Apps must have the `organization_hooks:read` permission. | SELECT |
-| `update_webhook_config_for_org` | `hook_id, org` | Updates the webhook configuration for an organization. To update more information about the webhook, including the `active` state and `events`, use "[Update an organization webhook ](/rest/reference/orgs#update-an-organization-webhook)."<br /><br />Access tokens must have the `admin:org_hook` scope, and GitHub Apps must have the `organization_hooks:write` permission. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get_webhook_config_for_org` | `SELECT` | `hook_id, org` | Returns the webhook configuration for an organization. To get more information about the webhook, including the `active` state and `events`, use "[Get an organization webhook ](/rest/reference/orgs#get-an-organization-webhook)."<br /><br />Access tokens must have the `admin:org_hook` scope, and GitHub Apps must have the `organization_hooks:read` permission. |
+| `update_webhook_config_for_org` | `EXEC` | `hook_id, org` | Updates the webhook configuration for an organization. To update more information about the webhook, including the `active` state and `events`, use "[Update an organization webhook ](/rest/reference/orgs#update-an-organization-webhook)."<br /><br />Access tokens must have the `admin:org_hook` scope, and GitHub Apps must have the `organization_hooks:write` permission. |

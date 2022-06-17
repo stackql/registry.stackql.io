@@ -16,26 +16,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.userschema.schemas</code></td></tr>
+<tr><td><b>Name</b></td><td><code>schemas</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.userschema.schemas</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `title` | `string` |  |
-| `$schema` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `definitions` | `object` |  |
-| `properties` | `object` |  |
-| `created` | `string` |  |
-| `type` | `string` |  |
-| `_links` | `object` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `lastUpdated` | `string` |
+| `properties` | `object` |
+| `title` | `string` |
+| `type` | `string` |
+| `_links` | `object` |
+| `definitions` | `object` |
+| `created` | `string` |
+| `$schema` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `schemaId` | Fetches the schema for a Schema Id. | SELECT |
-| `partialUpdate` | `schemaId` | Partial updates on the User Profile properties of the user schema. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `schemaId` | Fetches the schema for a Schema Id. |
+| `partialUpdate` | `EXEC` | `schemaId` | Partial updates on the User Profile properties of the user schema. |

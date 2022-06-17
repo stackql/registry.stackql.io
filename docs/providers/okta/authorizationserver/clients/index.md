@@ -16,20 +16,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.authorizationserver.clients</code></td></tr>
+<tr><td><b>Name</b></td><td><code>clients</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.authorizationserver.clients</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `client_id` | `string` |  |
-| `client_name` | `string` |  |
-| `client_uri` | `string` |  |
-| `logo_uri` | `string` |  |
-| `_links` | `object` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `logo_uri` | `string` |
+| `_links` | `object` |
+| `client_id` | `string` |
+| `client_name` | `string` |
+| `client_uri` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `authServerId` | Success | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list` | `SELECT` | `authServerId` |

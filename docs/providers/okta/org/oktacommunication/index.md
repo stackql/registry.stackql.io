@@ -16,19 +16,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.org.oktacommunication</code></td></tr>
+<tr><td><b>Name</b></td><td><code>oktacommunication</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.org.oktacommunication</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `optOutEmailUsers` | `boolean` |  |
-| `_links` | `object` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `_links` | `object` |
+| `optOutEmailUsers` | `boolean` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `` | Gets Okta Communication Settings of your organization. | SELECT |
-| `optIn` | `` | Opts in all users of this org to Okta Communication emails. | EXEC |
-| `optOut` | `` | Opts out all users of this org from Okta Communication emails. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` |  | Gets Okta Communication Settings of your organization. |
+| `optIn` | `EXEC` |  | Opts in all users of this org to Okta Communication emails. |
+| `optOut` | `EXEC` |  | Opts out all users of this org from Okta Communication emails. |

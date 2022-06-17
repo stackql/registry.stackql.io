@@ -16,26 +16,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.userschema.default</code></td></tr>
+<tr><td><b>Name</b></td><td><code>default</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.userschema.default</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `$schema` | `string` |  |
-| `created` | `string` |  |
-| `type` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `_links` | `object` |  |
-| `properties` | `object` |  |
-| `definitions` | `object` |  |
-| `title` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `$schema` | `string` |
+| `title` | `string` |
+| `definitions` | `object` |
+| `type` | `string` |
+| `properties` | `object` |
+| `lastUpdated` | `string` |
+| `_links` | `object` |
+| `created` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `appInstanceId` | Fetches the Schema for an App User | SELECT |
-| `insert` | `appInstanceId` | Partial updates on the User Profile properties of the Application User Schema. | INSERT |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list` | `SELECT` | `appInstanceId` | Fetches the Schema for an App User |
+| `insert` | `INSERT` | `appInstanceId` | Partial updates on the User Profile properties of the Application User Schema. |

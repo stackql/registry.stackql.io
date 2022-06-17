@@ -16,18 +16,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.repos.traffic</code></td></tr>
+<tr><td><b>Name</b></td><td><code>traffic</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.traffic</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `uniques` | `integer` |  |
-| `views` | `array` |  |
-| `count` | `integer` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `uniques` | `integer` |
+| `views` | `array` |
+| `count` | `integer` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_views` | `owner, repo` | Get the total number of views and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get_views` | `SELECT` | `owner, repo` |

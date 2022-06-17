@@ -16,21 +16,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.identityprovider.usertokens</code></td></tr>
+<tr><td><b>Name</b></td><td><code>usertokens</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.identityprovider.usertokens</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `token` | `string` |  |
-| `tokenAuthScheme` | `string` |  |
-| `tokenType` | `string` |  |
-| `expiresAt` | `string` |  |
-| `scopes` | `array` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `scopes` | `array` |
+| `token` | `string` |
+| `tokenAuthScheme` | `string` |
+| `tokenType` | `string` |
+| `expiresAt` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `idpId, userId` | Fetches the tokens minted by the Social Authentication Provider when the user authenticates with Okta via Social Auth. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list` | `SELECT` | `idpId, userId` |

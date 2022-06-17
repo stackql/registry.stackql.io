@@ -16,25 +16,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.checks.annotations</code></td></tr>
+<tr><td><b>Name</b></td><td><code>annotations</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.checks.annotations</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `raw_details` | `string` |  |
-| `blob_href` | `string` |  |
-| `title` | `string` |  |
-| `end_column` | `integer` |  |
-| `annotation_level` | `string` |  |
-| `start_line` | `integer` |  |
-| `path` | `string` |  |
-| `start_column` | `integer` |  |
-| `end_line` | `integer` |  |
-| `message` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `end_column` | `integer` |
+| `raw_details` | `string` |
+| `end_line` | `integer` |
+| `path` | `string` |
+| `title` | `string` |
+| `start_column` | `integer` |
+| `start_line` | `integer` |
+| `blob_href` | `string` |
+| `annotation_level` | `string` |
+| `message` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_annotations` | `check_run_id, owner, repo` | Lists annotations for a check run using the annotation `id`. GitHub Apps must have the `checks:read` permission on a private repository or pull access to a public repository to get annotations for a check run. OAuth Apps and authenticated users must have the `repo` scope to get annotations for a check run in a private repository. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list_annotations` | `SELECT` | `check_run_id, owner, repo` |

@@ -16,22 +16,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.build.sites_builds</code></td></tr>
+<tr><td><b>Name</b></td><td><code>sites_builds</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.build.sites_builds</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `sha` | `string` |  |
-| `created_at` | `string` |  |
-| `deploy_id` | `string` |  |
-| `done` | `boolean` |  |
-| `error` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `sha` | `string` |
+| `created_at` | `string` |
+| `deploy_id` | `string` |
+| `done` | `boolean` |
+| `error` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `listSiteBuilds` | `site_id` |  | SELECT |
-| `createSiteBuild` | `site_id` |  | INSERT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `listSiteBuilds` | `SELECT` | `site_id` |
+| `createSiteBuild` | `INSERT` | `site_id` |

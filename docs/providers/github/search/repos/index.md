@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.search.repos</code></td></tr>
+<tr><td><b>Name</b></td><td><code>repos</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.search.repos</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -27,91 +26,91 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `fork` | `boolean` |  |
-| `subscribers_url` | `string` |  |
-| `topics` | `array` |  |
-| `full_name` | `string` |  |
-| `archive_url` | `string` |  |
-| `owner` | `object` | Simple User |
-| `issue_comment_url` | `string` |  |
-| `archived` | `boolean` |  |
 | `node_id` | `string` |  |
-| `events_url` | `string` |  |
-| `statuses_url` | `string` |  |
-| `disabled` | `boolean` | Returns whether or not this repository disabled. |
-| `tags_url` | `string` |  |
-| `milestones_url` | `string` |  |
-| `downloads_url` | `string` |  |
-| `hooks_url` | `string` |  |
-| `issue_events_url` | `string` |  |
-| `subscription_url` | `string` |  |
-| `stargazers_count` | `integer` |  |
-| `blobs_url` | `string` |  |
-| `homepage` | `string` |  |
-| `git_tags_url` | `string` |  |
-| `commits_url` | `string` |  |
-| `forks_count` | `integer` |  |
-| `allow_rebase_merge` | `boolean` |  |
-| `created_at` | `string` |  |
-| `stargazers_url` | `string` |  |
-| `score` | `number` |  |
-| `clone_url` | `string` |  |
-| `temp_clone_token` | `string` |  |
-| `comments_url` | `string` |  |
-| `teams_url` | `string` |  |
 | `git_url` | `string` |  |
-| `watchers_count` | `integer` |  |
-| `text_matches` | `array` |  |
-| `ssh_url` | `string` |  |
-| `allow_squash_merge` | `boolean` |  |
-| `git_commits_url` | `string` |  |
-| `html_url` | `string` |  |
-| `language` | `string` |  |
-| `allow_forking` | `boolean` |  |
-| `pulls_url` | `string` |  |
-| `open_issues_count` | `integer` |  |
-| `visibility` | `string` | The repository visibility: public, private, or internal. |
-| `merges_url` | `string` |  |
-| `svn_url` | `string` |  |
-| `url` | `string` |  |
-| `permissions` | `object` |  |
-| `master_branch` | `string` |  |
-| `contributors_url` | `string` |  |
-| `contents_url` | `string` |  |
-| `assignees_url` | `string` |  |
-| `private` | `boolean` |  |
-| `trees_url` | `string` |  |
-| `languages_url` | `string` |  |
-| `updated_at` | `string` |  |
-| `labels_url` | `string` |  |
-| `keys_url` | `string` |  |
-| `is_template` | `boolean` |  |
+| `topics` | `array` |  |
 | `open_issues` | `integer` |  |
-| `allow_auto_merge` | `boolean` |  |
-| `notifications_url` | `string` |  |
-| `has_pages` | `boolean` |  |
+| `size` | `integer` |  |
+| `subscription_url` | `string` |  |
+| `pulls_url` | `string` |  |
+| `allow_squash_merge` | `boolean` |  |
+| `full_name` | `string` |  |
+| `permissions` | `object` |  |
+| `score` | `number` |  |
+| `languages_url` | `string` |  |
+| `comments_url` | `string` |  |
+| `milestones_url` | `string` |  |
+| `git_refs_url` | `string` |  |
+| `assignees_url` | `string` |  |
+| `ssh_url` | `string` |  |
+| `has_projects` | `boolean` |  |
+| `temp_clone_token` | `string` |  |
+| `archive_url` | `string` |  |
+| `delete_branch_on_merge` | `boolean` |  |
+| `contributors_url` | `string` |  |
+| `git_commits_url` | `string` |  |
+| `merges_url` | `string` |  |
+| `watchers` | `integer` |  |
+| `default_branch` | `string` |  |
+| `disabled` | `boolean` | Returns whether or not this repository disabled. |
+| `svn_url` | `string` |  |
+| `releases_url` | `string` |  |
+| `allow_forking` | `boolean` |  |
+| `branches_url` | `string` |  |
 | `issues_url` | `string` |  |
+| `visibility` | `string` | The repository visibility: public, private, or internal. |
+| `has_issues` | `boolean` |  |
+| `issue_comment_url` | `string` |  |
+| `forks_count` | `integer` |  |
+| `url` | `string` |  |
+| `forks` | `integer` |  |
+| `issue_events_url` | `string` |  |
+| `git_tags_url` | `string` |  |
+| `forks_url` | `string` |  |
+| `has_downloads` | `boolean` |  |
+| `notifications_url` | `string` |  |
+| `contents_url` | `string` |  |
+| `collaborators_url` | `string` |  |
+| `html_url` | `string` |  |
+| `tags_url` | `string` |  |
+| `watchers_count` | `integer` |  |
+| `stargazers_count` | `integer` |  |
+| `archived` | `boolean` |  |
+| `has_wiki` | `boolean` |  |
+| `owner` | `object` | Simple User |
+| `blobs_url` | `string` |  |
+| `deployments_url` | `string` |  |
+| `subscribers_url` | `string` |  |
+| `clone_url` | `string` |  |
+| `allow_rebase_merge` | `boolean` |  |
+| `hooks_url` | `string` |  |
+| `pushed_at` | `string` |  |
+| `compare_url` | `string` |  |
+| `private` | `boolean` |  |
+| `teams_url` | `string` |  |
+| `keys_url` | `string` |  |
+| `created_at` | `string` |  |
+| `fork` | `boolean` |  |
 | `allow_merge_commit` | `boolean` |  |
 | `mirror_url` | `string` |  |
-| `watchers` | `integer` |  |
-| `releases_url` | `string` |  |
-| `compare_url` | `string` |  |
-| `has_projects` | `boolean` |  |
-| `git_refs_url` | `string` |  |
-| `pushed_at` | `string` |  |
-| `forks` | `integer` |  |
-| `default_branch` | `string` |  |
-| `has_downloads` | `boolean` |  |
-| `has_wiki` | `boolean` |  |
-| `deployments_url` | `string` |  |
-| `size` | `integer` |  |
-| `branches_url` | `string` |  |
-| `collaborators_url` | `string` |  |
-| `delete_branch_on_merge` | `boolean` |  |
-| `has_issues` | `boolean` |  |
+| `statuses_url` | `string` |  |
+| `events_url` | `string` |  |
+| `language` | `string` |  |
+| `labels_url` | `string` |  |
+| `commits_url` | `string` |  |
+| `has_pages` | `boolean` |  |
+| `trees_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `allow_auto_merge` | `boolean` |  |
+| `text_matches` | `array` |  |
+| `homepage` | `string` |  |
+| `is_template` | `boolean` |  |
+| `downloads_url` | `string` |  |
+| `stargazers_url` | `string` |  |
 | `license` | `object` | License Simple |
-| `forks_url` | `string` |  |
+| `open_issues_count` | `integer` |  |
+| `master_branch` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `repos` | `q` | Find repositories via various criteria. This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).<br /><br />When searching for repositories, you can get text match metadata for the **name** and **description** fields when you pass the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://docs.github.com/rest/reference/search#text-match-metadata).<br /><br />For example, if you want to search for popular Tetris repositories written in assembly code, your query might look like this:<br /><br />`q=tetris+language:assembly&sort=stars&order=desc`<br /><br />This query searches for repositories with the word `tetris` in the name, the description, or the README. The results are limited to repositories where the primary language is assembly. The results are sorted by stars in descending order, so that the most popular repositories appear first in the search results. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `repos` | `SELECT` | `q` |

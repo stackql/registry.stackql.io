@@ -16,21 +16,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.enterprise_admin.self_hosted_runner_applications</code></td></tr>
+<tr><td><b>Name</b></td><td><code>self_hosted_runner_applications</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.enterprise_admin.self_hosted_runner_applications</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `filename` | `string` |  |
 | `os` | `string` |  |
 | `sha256_checksum` | `string` |  |
 | `temp_download_token` | `string` | A short lived bearer token used to download the runner, if needed. |
 | `architecture` | `string` |  |
 | `download_url` | `string` |  |
-| `filename` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_runner_applications_for_enterprise` | `enterprise` | Lists binaries for the runner application that you can download and run.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list_runner_applications_for_enterprise` | `SELECT` | `enterprise` |

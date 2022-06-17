@@ -16,14 +16,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.site.sites_unlink_repo</code></td></tr>
+<tr><td><b>Name</b></td><td><code>sites_unlink_repo</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.site.sites_unlink_repo</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `unlinkSiteRepo` | `site_id` | [Beta] Unlinks the repo from the site.<br /><br />This action will also:<br />- Delete associated deploy keys<br />- Delete outgoing webhooks for the repo<br />- Delete the site's build hooks | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `unlinkSiteRepo` | `EXEC` | `site_id` |

@@ -20,45 +20,44 @@ Interact with GitHub Pull Requests.
 <tr><td><b>Title</b></td><td>GitHub v3 REST API - pulls</td></tr>
 <tr><td><b>Description</b></td><td>Interact with GitHub Pull Requests.</td></tr>
 <tr><td><b>Id</b></td><td><code>pulls:v0.3.1</code></td></tr>
-<tr><td><b>Version</b></td><td>v0.3.1</td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/pulls/actions">actions</a><br />
-<a href="/docs/providers/github/pulls/activity">activity</a><br />
-<a href="/docs/providers/github/pulls/apps">apps</a><br />
-<a href="/docs/providers/github/pulls/billing">billing</a><br />
-<a href="/docs/providers/github/pulls/checks">checks</a><br />
-<a href="/docs/providers/github/pulls/code_scanning">code_scanning</a><br />
-<a href="/docs/providers/github/pulls/codes_of_conduct">codes_of_conduct</a><br />
-<a href="/docs/providers/github/pulls/codespaces">codespaces</a><br />
-<a href="/docs/providers/github/pulls/dependabot">dependabot</a><br />
-<a href="/docs/providers/github/pulls/enterprise_admin">enterprise_admin</a><br />
-<a href="/docs/providers/github/pulls/gists">gists</a><br />
-<a href="/docs/providers/github/pulls/git">git</a><br />
-<a href="/docs/providers/github/pulls/gitignore">gitignore</a><br />
-<a href="/docs/providers/github/pulls/interactions">interactions</a><br />
-<a href="/docs/providers/github/pulls/issues">issues</a><br />
-<a href="/docs/providers/github/pulls/licenses">licenses</a><br />
+<a href="/docs/providers/github/pulls/actions/index.md">actions</a><br />
+<a href="/docs/providers/github/pulls/activity/index.md">activity</a><br />
+<a href="/docs/providers/github/pulls/apps/index.md">apps</a><br />
+<a href="/docs/providers/github/pulls/billing/index.md">billing</a><br />
+<a href="/docs/providers/github/pulls/checks/index.md">checks</a><br />
+<a href="/docs/providers/github/pulls/code_scanning/index.md">code_scanning</a><br />
+<a href="/docs/providers/github/pulls/codes_of_conduct/index.md">codes_of_conduct</a><br />
+<a href="/docs/providers/github/pulls/codespaces/index.md">codespaces</a><br />
+<a href="/docs/providers/github/pulls/dependabot/index.md">dependabot</a><br />
+<a href="/docs/providers/github/pulls/enterprise_admin/index.md">enterprise_admin</a><br />
+<a href="/docs/providers/github/pulls/gists/index.md">gists</a><br />
+<a href="/docs/providers/github/pulls/git/index.md">git</a><br />
+<a href="/docs/providers/github/pulls/gitignore/index.md">gitignore</a><br />
+<a href="/docs/providers/github/pulls/interactions/index.md">interactions</a><br />
+<a href="/docs/providers/github/pulls/issues/index.md">issues</a><br />
+<a href="/docs/providers/github/pulls/licenses/index.md">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/pulls/markdown">markdown</a><br />
-<a href="/docs/providers/github/pulls/meta">meta</a><br />
-<a href="/docs/providers/github/pulls/migrations">migrations</a><br />
-<a href="/docs/providers/github/pulls/oauth_authorizations">oauth_authorizations</a><br />
-<a href="/docs/providers/github/pulls/orgs">orgs</a><br />
-<a href="/docs/providers/github/pulls/packages">packages</a><br />
-<a href="/docs/providers/github/pulls/projects">projects</a><br />
-<a href="/docs/providers/github/pulls/pulls">pulls</a><br />
-<a href="/docs/providers/github/pulls/rate_limit">rate_limit</a><br />
-<a href="/docs/providers/github/pulls/reactions">reactions</a><br />
-<a href="/docs/providers/github/pulls/repos">repos</a><br />
-<a href="/docs/providers/github/pulls/scim">scim</a><br />
-<a href="/docs/providers/github/pulls/search">search</a><br />
-<a href="/docs/providers/github/pulls/secret_scanning">secret_scanning</a><br />
-<a href="/docs/providers/github/pulls/teams">teams</a><br />
-<a href="/docs/providers/github/pulls/users">users</a><br />
+<a href="/docs/providers/github/pulls/markdown/index.md">markdown</a><br />
+<a href="/docs/providers/github/pulls/meta/index.md">meta</a><br />
+<a href="/docs/providers/github/pulls/migrations/index.md">migrations</a><br />
+<a href="/docs/providers/github/pulls/oauth_authorizations/index.md">oauth_authorizations</a><br />
+<a href="/docs/providers/github/pulls/orgs/index.md">orgs</a><br />
+<a href="/docs/providers/github/pulls/packages/index.md">packages</a><br />
+<a href="/docs/providers/github/pulls/projects/index.md">projects</a><br />
+<a href="/docs/providers/github/pulls/pulls/index.md">pulls</a><br />
+<a href="/docs/providers/github/pulls/rate_limit/index.md">rate_limit</a><br />
+<a href="/docs/providers/github/pulls/reactions/index.md">reactions</a><br />
+<a href="/docs/providers/github/pulls/repos/index.md">repos</a><br />
+<a href="/docs/providers/github/pulls/scim/index.md">scim</a><br />
+<a href="/docs/providers/github/pulls/search/index.md">search</a><br />
+<a href="/docs/providers/github/pulls/secret_scanning/index.md">secret_scanning</a><br />
+<a href="/docs/providers/github/pulls/teams/index.md">teams</a><br />
+<a href="/docs/providers/github/pulls/users/index.md">users</a><br />
 </div>
 </div>

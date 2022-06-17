@@ -16,22 +16,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.application.csrs</code></td></tr>
+<tr><td><b>Name</b></td><td><code>csrs</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.application.csrs</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `kty` | `string` |  |
-| `created` | `string` |  |
-| `csr` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `kty` | `string` |
+| `created` | `string` |
+| `csr` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `appId, csrId` |  | SELECT |
-| `list` | `appId` | Enumerates Certificate Signing Requests for an application | SELECT |
-| `insert` | `appId` | Generates a new key pair and returns the Certificate Signing Request for it. | INSERT |
-| `delete` | `appId, csrId` |  | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `appId, csrId` |  |
+| `list` | `SELECT` | `appId` | Enumerates Certificate Signing Requests for an application |
+| `insert` | `INSERT` | `appId` | Generates a new key pair and returns the Certificate Signing Request for it. |
+| `delete` | `DELETE` | `appId, csrId` |  |

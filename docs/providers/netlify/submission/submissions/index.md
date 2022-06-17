@@ -16,28 +16,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.submission.submissions</code></td></tr>
+<tr><td><b>Name</b></td><td><code>submissions</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.submission.submissions</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `company` | `string` |  |
-| `data` | `object` |  |
-| `email` | `string` |  |
-| `number` | `integer` |  |
-| `body` | `string` |  |
-| `first_name` | `string` |  |
-| `last_name` | `string` |  |
-| `site_url` | `string` |  |
-| `summary` | `string` |  |
-| `created_at` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `first_name` | `string` |
+| `email` | `string` |
+| `data` | `object` |
+| `last_name` | `string` |
+| `number` | `integer` |
+| `site_url` | `string` |
+| `created_at` | `string` |
+| `summary` | `string` |
+| `body` | `string` |
+| `company` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `listFormSubmission` | `submission_id` |  | SELECT |
-| `deleteSubmission` | `submission_id` |  | DELETE |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `listFormSubmission` | `SELECT` | `submission_id` |
+| `deleteSubmission` | `DELETE` | `submission_id` |

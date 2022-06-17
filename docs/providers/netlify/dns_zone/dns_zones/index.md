@@ -16,34 +16,33 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.dns_zone.dns_zones</code></td></tr>
+<tr><td><b>Name</b></td><td><code>dns_zones</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.dns_zone.dns_zones</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `domain` | `string` |  |
-| `user_id` | `string` |  |
-| `account_slug` | `string` |  |
-| `account_name` | `string` |  |
-| `dns_servers` | `array` |  |
-| `records` | `array` |  |
-| `dedicated` | `boolean` |  |
-| `updated_at` | `string` |  |
-| `account_id` | `string` |  |
-| `supported_record_types` | `array` |  |
-| `site_id` | `string` |  |
-| `created_at` | `string` |  |
-| `ipv6_enabled` | `boolean` |  |
-| `errors` | `array` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `records` | `array` |
+| `site_id` | `string` |
+| `account_name` | `string` |
+| `user_id` | `string` |
+| `supported_record_types` | `array` |
+| `ipv6_enabled` | `boolean` |
+| `dedicated` | `boolean` |
+| `dns_servers` | `array` |
+| `account_slug` | `string` |
+| `created_at` | `string` |
+| `account_id` | `string` |
+| `domain` | `string` |
+| `errors` | `array` |
+| `updated_at` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `getDnsZone` | `zone_id` |  | SELECT |
-| `getDnsZones` | `` |  | SELECT |
-| `createDnsZone` | `` |  | INSERT |
-| `deleteDnsZone` | `zone_id` |  | DELETE |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `getDnsZone` | `SELECT` | `zone_id` |
+| `getDnsZones` | `SELECT` |  |
+| `createDnsZone` | `INSERT` |  |
+| `deleteDnsZone` | `DELETE` | `zone_id` |

@@ -16,29 +16,28 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.userfactor.factors</code></td></tr>
+<tr><td><b>Name</b></td><td><code>factors</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.userfactor.factors</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `provider` | `string` |  |
-| `_links` | `object` |  |
-| `verify` | `object` |  |
-| `created` | `string` |  |
-| `factorType` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `status` | `string` |  |
-| `_embedded` | `object` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `_links` | `object` |
+| `_embedded` | `object` |
+| `verify` | `object` |
+| `lastUpdated` | `string` |
+| `status` | `string` |
+| `created` | `string` |
+| `provider` | `string` |
+| `factorType` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `factorId, userId` | Fetches a factor for the specified user | SELECT |
-| `list` | `userId` | Enumerates all the enrolled factors for the specified user | SELECT |
-| `insert` | `userId` | Enrolls a user with a supported factor. | INSERT |
-| `delete` | `factorId, userId` | Unenrolls an existing factor for the specified user, allowing the user to enroll a new factor. | DELETE |
-| `activate` | `factorId, userId` | The `sms` and `token:software:totp` factor types require activation to complete the enrollment process. | EXEC |
-| `verify` | `factorId, userId` | Verifies an OTP for a `token` or `token:hardware` factor | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `factorId, userId` | Fetches a factor for the specified user |
+| `list` | `SELECT` | `userId` | Enumerates all the enrolled factors for the specified user |
+| `insert` | `INSERT` | `userId` | Enrolls a user with a supported factor. |
+| `delete` | `DELETE` | `factorId, userId` | Unenrolls an existing factor for the specified user, allowing the user to enroll a new factor. |
+| `activate` | `EXEC` | `factorId, userId` | The `sms` and `token:software:totp` factor types require activation to complete the enrollment process. |
+| `verify` | `EXEC` | `factorId, userId` | Verifies an OTP for a `token` or `token:hardware` factor |

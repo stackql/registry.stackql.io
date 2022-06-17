@@ -16,30 +16,29 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.authorizationserver.tokens</code></td></tr>
+<tr><td><b>Name</b></td><td><code>tokens</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.authorizationserver.tokens</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `status` | `string` |  |
-| `_embedded` | `object` |  |
-| `lastUpdated` | `string` |  |
-| `issuer` | `string` |  |
-| `_links` | `object` |  |
-| `clientId` | `string` |  |
-| `createdBy` | `object` |  |
-| `scopes` | `array` |  |
-| `created` | `string` |  |
-| `expiresAt` | `string` |  |
-| `userId` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `lastUpdated` | `string` |
+| `createdBy` | `object` |
+| `_embedded` | `object` |
+| `expiresAt` | `string` |
+| `status` | `string` |
+| `userId` | `string` |
+| `scopes` | `array` |
+| `clientId` | `string` |
+| `created` | `string` |
+| `_links` | `object` |
+| `issuer` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `authServerId, clientId, tokenId` | Success | SELECT |
-| `list` | `authServerId, clientId` | Success | SELECT |
-| `delete` | `authServerId, clientId, tokenId` | Success | DELETE |
-| `deleteall` | `authServerId, clientId` | Success | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get` | `SELECT` | `authServerId, clientId, tokenId` |
+| `list` | `SELECT` | `authServerId, clientId` |
+| `delete` | `DELETE` | `authServerId, clientId, tokenId` |
+| `deleteall` | `EXEC` | `authServerId, clientId` |

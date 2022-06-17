@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.orgs.invitation_teams</code></td></tr>
+<tr><td><b>Name</b></td><td><code>invitation_teams</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.invitation_teams</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -27,17 +26,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `slug` | `string` |  |
-| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `node_id` | `string` |  |
 | `repositories_url` | `string` |  |
-| `permissions` | `object` |  |
-| `permission` | `string` |  |
+| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
 | `html_url` | `string` |  |
+| `privacy` | `string` |  |
+| `slug` | `string` |  |
+| `permission` | `string` |  |
+| `permissions` | `object` |  |
 | `members_url` | `string` |  |
 | `url` | `string` |  |
-| `privacy` | `string` |  |
+| `node_id` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_invitation_teams` | `invitation_id, org` | List all teams associated with an invitation. In order to see invitations in an organization, the authenticated user must be an organization owner. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list_invitation_teams` | `SELECT` | `invitation_id, org` |

@@ -16,20 +16,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.user.clients</code></td></tr>
+<tr><td><b>Name</b></td><td><code>clients</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.user.clients</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `_links` | `object` |  |
-| `client_id` | `string` |  |
-| `client_name` | `string` |  |
-| `client_uri` | `string` |  |
-| `logo_uri` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `client_uri` | `string` |
+| `logo_uri` | `string` |
+| `_links` | `object` |
+| `client_id` | `string` |
+| `client_name` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `userId` | Lists all client resources for which the specified user has grants or tokens. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list` | `SELECT` | `userId` |

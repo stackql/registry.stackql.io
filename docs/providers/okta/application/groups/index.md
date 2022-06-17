@@ -16,24 +16,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.application.groups</code></td></tr>
+<tr><td><b>Name</b></td><td><code>groups</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.application.groups</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `priority` | `integer` |  |
-| `profile` | `object` |  |
-| `_embedded` | `object` |  |
-| `_links` | `object` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `lastUpdated` | `string` |
+| `priority` | `integer` |
+| `profile` | `object` |
+| `_embedded` | `object` |
+| `_links` | `object` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `appId, groupId` | Fetches an application group assignment | SELECT |
-| `list` | `appId` | Enumerates group assignments for an application. | SELECT |
-| `delete` | `appId, groupId` | Removes a group assignment from an application. | DELETE |
-| `update` | `appId, groupId` | Assigns a group to an application | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `appId, groupId` | Fetches an application group assignment |
+| `list` | `SELECT` | `appId` | Enumerates group assignments for an application. |
+| `delete` | `DELETE` | `appId, groupId` | Removes a group assignment from an application. |
+| `update` | `EXEC` | `appId, groupId` | Assigns a group to an application |

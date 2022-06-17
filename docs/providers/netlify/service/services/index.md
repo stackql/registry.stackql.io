@@ -16,29 +16,28 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.service.services</code></td></tr>
+<tr><td><b>Name</b></td><td><code>services</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.service.services</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `description` | `string` |  |
-| `icon` | `string` |  |
-| `service_path` | `string` |  |
-| `slug` | `string` |  |
-| `updated_at` | `string` |  |
-| `created_at` | `string` |  |
-| `tags` | `array` |  |
-| `environments` | `array` |  |
-| `events` | `array` |  |
-| `long_description` | `string` |  |
-| `manifest_url` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `description` | `string` |
+| `service_path` | `string` |
+| `slug` | `string` |
+| `events` | `array` |
+| `icon` | `string` |
+| `long_description` | `string` |
+| `updated_at` | `string` |
+| `environments` | `array` |
+| `manifest_url` | `string` |
+| `tags` | `array` |
+| `created_at` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `getServices` | `` |  | SELECT |
-| `showService` | `addonName` |  | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `getServices` | `SELECT` |  |
+| `showService` | `EXEC` | `addonName` |

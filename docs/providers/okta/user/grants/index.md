@@ -16,30 +16,29 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.user.grants</code></td></tr>
+<tr><td><b>Name</b></td><td><code>grants</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.user.grants</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `issuer` | `string` |  |
-| `_links` | `object` |  |
-| `_embedded` | `object` |  |
-| `created` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `userId` | `string` |  |
-| `createdBy` | `object` |  |
-| `source` | `string` |  |
-| `status` | `string` |  |
-| `scopeId` | `string` |  |
-| `clientId` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `_embedded` | `object` |
+| `clientId` | `string` |
+| `createdBy` | `object` |
+| `_links` | `object` |
+| `created` | `string` |
+| `lastUpdated` | `string` |
+| `issuer` | `string` |
+| `status` | `string` |
+| `userId` | `string` |
+| `scopeId` | `string` |
+| `source` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `grantId, userId` | Gets a grant for the specified user | SELECT |
-| `list` | `userId` | Lists all grants for the specified user | SELECT |
-| `delete` | `grantId, userId` | Revokes one grant for a specified user | DELETE |
-| `deleteAll` | `userId` | Revokes all grants for a specified user | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `grantId, userId` | Gets a grant for the specified user |
+| `list` | `SELECT` | `userId` | Lists all grants for the specified user |
+| `delete` | `DELETE` | `grantId, userId` | Revokes one grant for a specified user |
+| `deleteAll` | `EXEC` | `userId` | Revokes all grants for a specified user |

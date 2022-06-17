@@ -20,37 +20,36 @@ Okta application management.
 <tr><td><b>Title</b></td><td>Application API</td></tr>
 <tr><td><b>Description</b></td><td>Okta application management.</td></tr>
 <tr><td><b>Id</b></td><td><code>application:v1</code></td></tr>
-<tr><td><b>Version</b></td><td>v1</td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/okta/application/application">application</a><br />
-<a href="/docs/providers/okta/application/authenticator">authenticator</a><br />
-<a href="/docs/providers/okta/application/authorizationserver">authorizationserver</a><br />
-<a href="/docs/providers/okta/application/domain">domain</a><br />
-<a href="/docs/providers/okta/application/eventhook">eventhook</a><br />
-<a href="/docs/providers/okta/application/feature">feature</a><br />
-<a href="/docs/providers/okta/application/group">group</a><br />
-<a href="/docs/providers/okta/application/groupschema">groupschema</a><br />
-<a href="/docs/providers/okta/application/identityprovider">identityprovider</a><br />
-<a href="/docs/providers/okta/application/inlinehook">inlinehook</a><br />
-<a href="/docs/providers/okta/application/linkedobject">linkedobject</a><br />
-<a href="/docs/providers/okta/application/log">log</a><br />
+<a href="/docs/providers/okta/application/application/index.md">application</a><br />
+<a href="/docs/providers/okta/application/authenticator/index.md">authenticator</a><br />
+<a href="/docs/providers/okta/application/authorizationserver/index.md">authorizationserver</a><br />
+<a href="/docs/providers/okta/application/domain/index.md">domain</a><br />
+<a href="/docs/providers/okta/application/eventhook/index.md">eventhook</a><br />
+<a href="/docs/providers/okta/application/feature/index.md">feature</a><br />
+<a href="/docs/providers/okta/application/group/index.md">group</a><br />
+<a href="/docs/providers/okta/application/groupschema/index.md">groupschema</a><br />
+<a href="/docs/providers/okta/application/identityprovider/index.md">identityprovider</a><br />
+<a href="/docs/providers/okta/application/inlinehook/index.md">inlinehook</a><br />
+<a href="/docs/providers/okta/application/linkedobject/index.md">linkedobject</a><br />
+<a href="/docs/providers/okta/application/log/index.md">log</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/okta/application/networkzone">networkzone</a><br />
-<a href="/docs/providers/okta/application/org">org</a><br />
-<a href="/docs/providers/okta/application/policy">policy</a><br />
-<a href="/docs/providers/okta/application/profilemapping">profilemapping</a><br />
-<a href="/docs/providers/okta/application/session">session</a><br />
-<a href="/docs/providers/okta/application/template">template</a><br />
-<a href="/docs/providers/okta/application/threatinsight">threatinsight</a><br />
-<a href="/docs/providers/okta/application/trustedorigin">trustedorigin</a><br />
-<a href="/docs/providers/okta/application/user">user</a><br />
-<a href="/docs/providers/okta/application/userfactor">userfactor</a><br />
-<a href="/docs/providers/okta/application/userschema">userschema</a><br />
-<a href="/docs/providers/okta/application/usertype">usertype</a><br />
+<a href="/docs/providers/okta/application/networkzone/index.md">networkzone</a><br />
+<a href="/docs/providers/okta/application/org/index.md">org</a><br />
+<a href="/docs/providers/okta/application/policy/index.md">policy</a><br />
+<a href="/docs/providers/okta/application/profilemapping/index.md">profilemapping</a><br />
+<a href="/docs/providers/okta/application/session/index.md">session</a><br />
+<a href="/docs/providers/okta/application/template/index.md">template</a><br />
+<a href="/docs/providers/okta/application/threatinsight/index.md">threatinsight</a><br />
+<a href="/docs/providers/okta/application/trustedorigin/index.md">trustedorigin</a><br />
+<a href="/docs/providers/okta/application/user/index.md">user</a><br />
+<a href="/docs/providers/okta/application/userfactor/index.md">userfactor</a><br />
+<a href="/docs/providers/okta/application/userschema/index.md">userschema</a><br />
+<a href="/docs/providers/okta/application/usertype/index.md">usertype</a><br />
 </div>
 </div>

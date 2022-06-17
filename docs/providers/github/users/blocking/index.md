@@ -16,39 +16,38 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.users.blocking</code></td></tr>
+<tr><td><b>Name</b></td><td><code>blocking</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.users.blocking</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `integer` |  |
-| `name` | `string` |  |
-| `email` | `string` |  |
-| `subscriptions_url` | `string` |  |
-| `following_url` | `string` |  |
-| `gists_url` | `string` |  |
-| `site_admin` | `boolean` |  |
-| `url` | `string` |  |
-| `type` | `string` |  |
-| `starred_at` | `string` |  |
-| `gravatar_id` | `string` |  |
-| `organizations_url` | `string` |  |
-| `repos_url` | `string` |  |
-| `node_id` | `string` |  |
-| `followers_url` | `string` |  |
-| `login` | `string` |  |
-| `received_events_url` | `string` |  |
-| `starred_url` | `string` |  |
-| `events_url` | `string` |  |
-| `html_url` | `string` |  |
-| `avatar_url` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `integer` |
+| `name` | `string` |
+| `type` | `string` |
+| `url` | `string` |
+| `received_events_url` | `string` |
+| `starred_at` | `string` |
+| `avatar_url` | `string` |
+| `login` | `string` |
+| `repos_url` | `string` |
+| `subscriptions_url` | `string` |
+| `gravatar_id` | `string` |
+| `following_url` | `string` |
+| `email` | `string` |
+| `events_url` | `string` |
+| `starred_url` | `string` |
+| `html_url` | `string` |
+| `gists_url` | `string` |
+| `node_id` | `string` |
+| `site_admin` | `boolean` |
+| `followers_url` | `string` |
+| `organizations_url` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_blocked_by_authenticated_user` | `` | List the users you've blocked on your personal account. | SELECT |
-| `block` | `username` |  | EXEC |
-| `check_blocked` | `username` |  | EXEC |
-| `unblock` | `username` |  | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list_blocked_by_authenticated_user` | `SELECT` |  | List the users you've blocked on your personal account. |
+| `block` | `EXEC` | `username` |  |
+| `check_blocked` | `EXEC` | `username` |  |
+| `unblock` | `EXEC` | `username` |  |

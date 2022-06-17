@@ -16,27 +16,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.submission.sites_submissions</code></td></tr>
+<tr><td><b>Name</b></td><td><code>sites_submissions</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.submission.sites_submissions</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `company` | `string` |  |
-| `number` | `integer` |  |
-| `body` | `string` |  |
-| `first_name` | `string` |  |
-| `site_url` | `string` |  |
-| `summary` | `string` |  |
-| `created_at` | `string` |  |
-| `email` | `string` |  |
-| `data` | `object` |  |
-| `last_name` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `company` | `string` |
+| `last_name` | `string` |
+| `body` | `string` |
+| `created_at` | `string` |
+| `data` | `object` |
+| `site_url` | `string` |
+| `summary` | `string` |
+| `email` | `string` |
+| `first_name` | `string` |
+| `number` | `integer` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `listSiteSubmissions` | `site_id` |  | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `listSiteSubmissions` | `SELECT` | `site_id` |

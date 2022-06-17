@@ -16,21 +16,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.file.sites_files</code></td></tr>
+<tr><td><b>Name</b></td><td><code>sites_files</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.file.sites_files</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `path` | `string` |  |
-| `sha` | `string` |  |
-| `size` | `integer` |  |
-| `mime_type` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `mime_type` | `string` |
+| `path` | `string` |
+| `sha` | `string` |
+| `size` | `integer` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `getSiteFileByPathName` | `file_path, site_id` |  | SELECT |
-| `listSiteFiles` | `site_id` |  | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `getSiteFileByPathName` | `SELECT` | `file_path, site_id` |
+| `listSiteFiles` | `SELECT` | `site_id` |

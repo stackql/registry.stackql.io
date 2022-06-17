@@ -16,18 +16,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.userfactor.questions</code></td></tr>
+<tr><td><b>Name</b></td><td><code>questions</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.userfactor.questions</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `question` | `string` |  |
-| `questionText` | `string` |  |
-| `answer` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `answer` | `string` |
+| `question` | `string` |
+| `questionText` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `userId` | Enumerates all available security questions for a user's `question` factor | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list` | `SELECT` | `userId` |

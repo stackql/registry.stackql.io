@@ -16,38 +16,37 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.orgs.outside_collaborators</code></td></tr>
+<tr><td><b>Name</b></td><td><code>outside_collaborators</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.outside_collaborators</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `integer` |  |
-| `name` | `string` |  |
-| `gravatar_id` | `string` |  |
-| `organizations_url` | `string` |  |
-| `login` | `string` |  |
-| `site_admin` | `boolean` |  |
-| `gists_url` | `string` |  |
-| `repos_url` | `string` |  |
-| `type` | `string` |  |
-| `following_url` | `string` |  |
-| `subscriptions_url` | `string` |  |
-| `email` | `string` |  |
-| `url` | `string` |  |
-| `followers_url` | `string` |  |
-| `events_url` | `string` |  |
-| `received_events_url` | `string` |  |
-| `html_url` | `string` |  |
-| `starred_at` | `string` |  |
-| `starred_url` | `string` |  |
-| `node_id` | `string` |  |
-| `avatar_url` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `integer` |
+| `name` | `string` |
+| `following_url` | `string` |
+| `repos_url` | `string` |
+| `email` | `string` |
+| `followers_url` | `string` |
+| `url` | `string` |
+| `gists_url` | `string` |
+| `login` | `string` |
+| `subscriptions_url` | `string` |
+| `events_url` | `string` |
+| `site_admin` | `boolean` |
+| `node_id` | `string` |
+| `starred_url` | `string` |
+| `avatar_url` | `string` |
+| `organizations_url` | `string` |
+| `html_url` | `string` |
+| `starred_at` | `string` |
+| `received_events_url` | `string` |
+| `gravatar_id` | `string` |
+| `type` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_outside_collaborators` | `org` | List all users who are outside collaborators of an organization. | SELECT |
-| `remove_outside_collaborator` | `org, username` | Removing a user from this list will remove them from all the organization's repositories. | DELETE |
-| `convert_member_to_outside_collaborator` | `org, username` | When an organization member is converted to an outside collaborator, they'll only have access to the repositories that their current team membership allows. The user will no longer be a member of the organization. For more information, see "[Converting an organization member to an outside collaborator](https://docs.github.com/articles/converting-an-organization-member-to-an-outside-collaborator/)". | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list_outside_collaborators` | `SELECT` | `org` | List all users who are outside collaborators of an organization. |
+| `remove_outside_collaborator` | `DELETE` | `org, username` | Removing a user from this list will remove them from all the organization's repositories. |
+| `convert_member_to_outside_collaborator` | `EXEC` | `org, username` | When an organization member is converted to an outside collaborator, they'll only have access to the repositories that their current team membership allows. The user will no longer be a member of the organization. For more information, see "[Converting an organization member to an outside collaborator](https://docs.github.com/articles/converting-an-organization-member-to-an-outside-collaborator/)". |

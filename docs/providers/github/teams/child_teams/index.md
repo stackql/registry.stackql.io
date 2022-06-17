@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.teams.child_teams</code></td></tr>
+<tr><td><b>Name</b></td><td><code>child_teams</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.teams.child_teams</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -27,17 +26,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `slug` | `string` |  |
-| `url` | `string` |  |
-| `permission` | `string` |  |
-| `privacy` | `string` |  |
-| `node_id` | `string` |  |
-| `permissions` | `object` |  |
-| `repositories_url` | `string` |  |
 | `html_url` | `string` |  |
+| `permission` | `string` |  |
+| `node_id` | `string` |  |
 | `members_url` | `string` |  |
+| `url` | `string` |  |
+| `privacy` | `string` |  |
+| `slug` | `string` |  |
+| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `repositories_url` | `string` |  |
+| `permissions` | `object` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_child_in_org` | `org, team_slug` | Lists the child teams of the team specified by `{team_slug}`.<br /><br />**Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/teams`. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list_child_in_org` | `SELECT` | `org, team_slug` |

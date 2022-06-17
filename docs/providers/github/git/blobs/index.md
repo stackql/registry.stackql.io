@@ -16,23 +16,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.git.blobs</code></td></tr>
+<tr><td><b>Name</b></td><td><code>blobs</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.git.blobs</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `highlighted_content` | `string` |  |
-| `node_id` | `string` |  |
-| `sha` | `string` |  |
-| `size` | `integer` |  |
-| `url` | `string` |  |
-| `content` | `string` |  |
-| `encoding` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `size` | `integer` |
+| `url` | `string` |
+| `content` | `string` |
+| `encoding` | `string` |
+| `highlighted_content` | `string` |
+| `node_id` | `string` |
+| `sha` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_blob` | `file_sha, owner, repo` | The `content` in the response will always be Base64 encoded.<br /><br />_Note_: This API supports blobs up to 100 megabytes in size. | SELECT |
-| `create_blob` | `owner, repo, data__content` |  | INSERT |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get_blob` | `SELECT` | `file_sha, owner, repo` | The `content` in the response will always be Base64 encoded.<br /><br />_Note_: This API supports blobs up to 100 megabytes in size. |
+| `create_blob` | `INSERT` | `owner, repo, data__content` |  |

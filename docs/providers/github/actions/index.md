@@ -20,45 +20,44 @@ Endpoints to manage GitHub Actions using the REST API.
 <tr><td><b>Title</b></td><td>GitHub v3 REST API - actions</td></tr>
 <tr><td><b>Description</b></td><td>Endpoints to manage GitHub Actions using the REST API.</td></tr>
 <tr><td><b>Id</b></td><td><code>actions:v0.3.1</code></td></tr>
-<tr><td><b>Version</b></td><td>v0.3.1</td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/actions/actions">actions</a><br />
-<a href="/docs/providers/github/actions/activity">activity</a><br />
-<a href="/docs/providers/github/actions/apps">apps</a><br />
-<a href="/docs/providers/github/actions/billing">billing</a><br />
-<a href="/docs/providers/github/actions/checks">checks</a><br />
-<a href="/docs/providers/github/actions/code_scanning">code_scanning</a><br />
-<a href="/docs/providers/github/actions/codes_of_conduct">codes_of_conduct</a><br />
-<a href="/docs/providers/github/actions/codespaces">codespaces</a><br />
-<a href="/docs/providers/github/actions/dependabot">dependabot</a><br />
-<a href="/docs/providers/github/actions/enterprise_admin">enterprise_admin</a><br />
-<a href="/docs/providers/github/actions/gists">gists</a><br />
-<a href="/docs/providers/github/actions/git">git</a><br />
-<a href="/docs/providers/github/actions/gitignore">gitignore</a><br />
-<a href="/docs/providers/github/actions/interactions">interactions</a><br />
-<a href="/docs/providers/github/actions/issues">issues</a><br />
-<a href="/docs/providers/github/actions/licenses">licenses</a><br />
+<a href="/docs/providers/github/actions/actions/index.md">actions</a><br />
+<a href="/docs/providers/github/actions/activity/index.md">activity</a><br />
+<a href="/docs/providers/github/actions/apps/index.md">apps</a><br />
+<a href="/docs/providers/github/actions/billing/index.md">billing</a><br />
+<a href="/docs/providers/github/actions/checks/index.md">checks</a><br />
+<a href="/docs/providers/github/actions/code_scanning/index.md">code_scanning</a><br />
+<a href="/docs/providers/github/actions/codes_of_conduct/index.md">codes_of_conduct</a><br />
+<a href="/docs/providers/github/actions/codespaces/index.md">codespaces</a><br />
+<a href="/docs/providers/github/actions/dependabot/index.md">dependabot</a><br />
+<a href="/docs/providers/github/actions/enterprise_admin/index.md">enterprise_admin</a><br />
+<a href="/docs/providers/github/actions/gists/index.md">gists</a><br />
+<a href="/docs/providers/github/actions/git/index.md">git</a><br />
+<a href="/docs/providers/github/actions/gitignore/index.md">gitignore</a><br />
+<a href="/docs/providers/github/actions/interactions/index.md">interactions</a><br />
+<a href="/docs/providers/github/actions/issues/index.md">issues</a><br />
+<a href="/docs/providers/github/actions/licenses/index.md">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/actions/markdown">markdown</a><br />
-<a href="/docs/providers/github/actions/meta">meta</a><br />
-<a href="/docs/providers/github/actions/migrations">migrations</a><br />
-<a href="/docs/providers/github/actions/oauth_authorizations">oauth_authorizations</a><br />
-<a href="/docs/providers/github/actions/orgs">orgs</a><br />
-<a href="/docs/providers/github/actions/packages">packages</a><br />
-<a href="/docs/providers/github/actions/projects">projects</a><br />
-<a href="/docs/providers/github/actions/pulls">pulls</a><br />
-<a href="/docs/providers/github/actions/rate_limit">rate_limit</a><br />
-<a href="/docs/providers/github/actions/reactions">reactions</a><br />
-<a href="/docs/providers/github/actions/repos">repos</a><br />
-<a href="/docs/providers/github/actions/scim">scim</a><br />
-<a href="/docs/providers/github/actions/search">search</a><br />
-<a href="/docs/providers/github/actions/secret_scanning">secret_scanning</a><br />
-<a href="/docs/providers/github/actions/teams">teams</a><br />
-<a href="/docs/providers/github/actions/users">users</a><br />
+<a href="/docs/providers/github/actions/markdown/index.md">markdown</a><br />
+<a href="/docs/providers/github/actions/meta/index.md">meta</a><br />
+<a href="/docs/providers/github/actions/migrations/index.md">migrations</a><br />
+<a href="/docs/providers/github/actions/oauth_authorizations/index.md">oauth_authorizations</a><br />
+<a href="/docs/providers/github/actions/orgs/index.md">orgs</a><br />
+<a href="/docs/providers/github/actions/packages/index.md">packages</a><br />
+<a href="/docs/providers/github/actions/projects/index.md">projects</a><br />
+<a href="/docs/providers/github/actions/pulls/index.md">pulls</a><br />
+<a href="/docs/providers/github/actions/rate_limit/index.md">rate_limit</a><br />
+<a href="/docs/providers/github/actions/reactions/index.md">reactions</a><br />
+<a href="/docs/providers/github/actions/repos/index.md">repos</a><br />
+<a href="/docs/providers/github/actions/scim/index.md">scim</a><br />
+<a href="/docs/providers/github/actions/search/index.md">search</a><br />
+<a href="/docs/providers/github/actions/secret_scanning/index.md">secret_scanning</a><br />
+<a href="/docs/providers/github/actions/teams/index.md">teams</a><br />
+<a href="/docs/providers/github/actions/users/index.md">users</a><br />
 </div>
 </div>

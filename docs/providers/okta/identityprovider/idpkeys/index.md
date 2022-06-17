@@ -16,34 +16,33 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.identityprovider.idpkeys</code></td></tr>
+<tr><td><b>Name</b></td><td><code>idpkeys</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.identityprovider.idpkeys</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `e` | `string` |  |
-| `x5u` | `string` |  |
-| `kid` | `string` |  |
-| `_links` | `object` |  |
-| `created` | `string` |  |
-| `use` | `string` |  |
-| `false` | `string` |  |
-| `key_ops` | `array` |  |
-| `kty` | `string` |  |
-| `alg` | `string` |  |
-| `expiresAt` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `status` | `string` |  |
-| `x5t#S256` | `string` |  |
-| `x5t` | `string` |  |
-| `x5c` | `array` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `_links` | `object` |
+| `kid` | `string` |
+| `expiresAt` | `string` |
+| `use` | `string` |
+| `x5c` | `array` |
+| `status` | `string` |
+| `x5t` | `string` |
+| `key_ops` | `array` |
+| `created` | `string` |
+| `e` | `string` |
+| `alg` | `string` |
+| `x5t#S256` | `string` |
+| `kty` | `string` |
+| `x5u` | `string` |
+| `false` | `string` |
+| `lastUpdated` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `idpId, keyId` | Gets a specific IdP Key Credential by `kid` | SELECT |
-| `list` | `idpId` | Enumerates signing key credentials for an IdP | SELECT |
-| `insert` | `idpId, validityYears` | Generates a new X.509 certificate for an IdP signing key credential to be used for signing assertions sent to the IdP | INSERT |
-| `clone` | `idpId, keyId, targetIdpId` | Clones a X.509 certificate for an IdP signing key credential from a source IdP to target IdP | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `idpId, keyId` | Gets a specific IdP Key Credential by `kid` |
+| `list` | `SELECT` | `idpId` | Enumerates signing key credentials for an IdP |
+| `insert` | `INSERT` | `idpId, validityYears` | Generates a new X.509 certificate for an IdP signing key credential to be used for signing assertions sent to the IdP |
+| `clone` | `EXEC` | `idpId, keyId, targetIdpId` | Clones a X.509 certificate for an IdP signing key credential from a source IdP to target IdP |

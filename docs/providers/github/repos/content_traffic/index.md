@@ -16,19 +16,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.repos.content_traffic</code></td></tr>
+<tr><td><b>Name</b></td><td><code>content_traffic</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.content_traffic</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `uniques` | `integer` |  |
-| `count` | `integer` |  |
-| `path` | `string` |  |
-| `title` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `title` | `string` |
+| `uniques` | `integer` |
+| `count` | `integer` |
+| `path` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_top_paths` | `owner, repo` | Get the top 10 popular contents over the last 14 days. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get_top_paths` | `SELECT` | `owner, repo` |

@@ -16,26 +16,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.group.grouptargets</code></td></tr>
+<tr><td><b>Name</b></td><td><code>grouptargets</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.group.grouptargets</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `_embedded` | `object` |  |
-| `lastUpdated` | `string` |  |
-| `objectClass` | `array` |  |
-| `lastMembershipUpdated` | `string` |  |
-| `profile` | `object` |  |
-| `created` | `string` |  |
-| `type` | `string` |  |
-| `_links` | `object` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `_embedded` | `object` |
+| `lastMembershipUpdated` | `string` |
+| `_links` | `object` |
+| `lastUpdated` | `string` |
+| `profile` | `object` |
+| `objectClass` | `array` |
+| `created` | `string` |
+| `type` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list` | `groupId, roleId` | Success | SELECT |
-| `insert` | `groupId, roleId, targetGroupId` |  | INSERT |
-| `delete` | `groupId, roleId, targetGroupId` |  | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list` | `SELECT` | `groupId, roleId` | Success |
+| `insert` | `INSERT` | `groupId, roleId, targetGroupId` |  |
+| `delete` | `DELETE` | `groupId, roleId, targetGroupId` |  |

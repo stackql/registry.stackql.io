@@ -16,20 +16,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.repos.tags</code></td></tr>
+<tr><td><b>Name</b></td><td><code>tags</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.tags</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `name` | `string` |  |
-| `tarball_url` | `string` |  |
-| `zipball_url` | `string` |  |
-| `commit` | `object` |  |
-| `node_id` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `name` | `string` |
+| `zipball_url` | `string` |
+| `commit` | `object` |
+| `node_id` | `string` |
+| `tarball_url` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_tags` | `owner, repo` |  | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list_tags` | `SELECT` | `owner, repo` |

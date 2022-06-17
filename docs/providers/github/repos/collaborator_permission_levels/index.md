@@ -16,18 +16,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.repos.collaborator_permission_levels</code></td></tr>
+<tr><td><b>Name</b></td><td><code>collaborator_permission_levels</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.collaborator_permission_levels</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `role_name` | `string` |  |
 | `user` | `object` | Collaborator |
 | `permission` | `string` |  |
-| `role_name` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_collaborator_permission_level` | `owner, repo, username` | Checks the repository permission of a collaborator. The possible repository permissions are `admin`, `write`, `read`, and `none`. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get_collaborator_permission_level` | `SELECT` | `owner, repo, username` |

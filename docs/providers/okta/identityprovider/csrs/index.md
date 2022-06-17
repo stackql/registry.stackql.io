@@ -16,22 +16,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.identityprovider.csrs</code></td></tr>
+<tr><td><b>Name</b></td><td><code>csrs</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.identityprovider.csrs</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `created` | `string` |  |
-| `csr` | `string` |  |
-| `kty` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `created` | `string` |
+| `csr` | `string` |
+| `kty` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `csrId, idpId` | Gets a specific Certificate Signing Request model by id | SELECT |
-| `list` | `idpId` | Enumerates Certificate Signing Requests for an IdP | SELECT |
-| `insert` | `idpId` | Generates a new key pair and returns a Certificate Signing Request for it. | INSERT |
-| `delete` | `csrId, idpId` | Revoke a Certificate Signing Request and delete the key pair from the IdP | DELETE |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `csrId, idpId` | Gets a specific Certificate Signing Request model by id |
+| `list` | `SELECT` | `idpId` | Enumerates Certificate Signing Requests for an IdP |
+| `insert` | `INSERT` | `idpId` | Generates a new key pair and returns a Certificate Signing Request for it. |
+| `delete` | `DELETE` | `csrId, idpId` | Revoke a Certificate Signing Request and delete the key pair from the IdP |

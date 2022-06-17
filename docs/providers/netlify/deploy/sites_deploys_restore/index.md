@@ -16,14 +16,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.deploy.sites_deploys_restore</code></td></tr>
+<tr><td><b>Name</b></td><td><code>sites_deploys_restore</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.deploy.sites_deploys_restore</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `restoreSiteDeploy` | `deploy_id, site_id` |  | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `restoreSiteDeploy` | `EXEC` | `deploy_id, site_id` |

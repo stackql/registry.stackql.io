@@ -16,27 +16,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.group.rules</code></td></tr>
+<tr><td><b>Name</b></td><td><code>rules</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.group.rules</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `created` | `string` |  |
-| `lastUpdated` | `string` |  |
-| `status` | `string` |  |
-| `type` | `string` |  |
-| `actions` | `object` |  |
-| `conditions` | `object` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `lastUpdated` | `string` |
+| `status` | `string` |
+| `type` | `string` |
+| `actions` | `object` |
+| `conditions` | `object` |
+| `created` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `ruleId` | Fetches a specific group rule by id from your organization | SELECT |
-| `list` | `` | Lists all group rules for your organization. | SELECT |
-| `insert` | `` | Creates a group rule to dynamically add users to the specified group if they match the condition | INSERT |
-| `delete` | `ruleId` | Removes a specific group rule by id from your organization | DELETE |
-| `update` | `ruleId` | Updates a group rule. Only `INACTIVE` rules can be updated. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `ruleId` | Fetches a specific group rule by id from your organization |
+| `list` | `SELECT` |  | Lists all group rules for your organization. |
+| `insert` | `INSERT` |  | Creates a group rule to dynamically add users to the specified group if they match the condition |
+| `delete` | `DELETE` | `ruleId` | Removes a specific group rule by id from your organization |
+| `update` | `EXEC` | `ruleId` | Updates a group rule. Only `INACTIVE` rules can be updated. |

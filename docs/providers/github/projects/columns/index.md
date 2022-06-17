@@ -16,9 +16,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.projects.columns</code></td></tr>
+<tr><td><b>Name</b></td><td><code>columns</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.projects.columns</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
@@ -26,18 +25,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | The unique identifier of the project column |
 | `name` | `string` | Name of the project column |
+| `cards_url` | `string` |  |
+| `created_at` | `string` |  |
 | `node_id` | `string` |  |
 | `project_url` | `string` |  |
 | `updated_at` | `string` |  |
 | `url` | `string` |  |
-| `cards_url` | `string` |  |
-| `created_at` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_column` | `column_id` |  | SELECT |
-| `list_columns` | `project_id` |  | SELECT |
-| `create_column` | `project_id, data__name` |  | INSERT |
-| `delete_column` | `column_id` |  | DELETE |
-| `move_column` | `column_id, data__position` |  | EXEC |
-| `update_column` | `column_id, data__name` |  | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get_column` | `SELECT` | `column_id` |
+| `list_columns` | `SELECT` | `project_id` |
+| `create_column` | `INSERT` | `project_id, data__name` |
+| `delete_column` | `DELETE` | `column_id` |
+| `move_column` | `EXEC` | `column_id, data__position` |
+| `update_column` | `EXEC` | `column_id, data__name` |

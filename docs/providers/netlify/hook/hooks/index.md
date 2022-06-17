@@ -16,27 +16,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>netlify.hook.hooks</code></td></tr>
+<tr><td><b>Name</b></td><td><code>hooks</code></td></tr>
 <tr><td><b>Id</b></td><td><code>netlify.hook.hooks</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `site_id` | `string` |  |
-| `type` | `string` |  |
-| `updated_at` | `string` |  |
-| `created_at` | `string` |  |
-| `data` | `object` |  |
-| `disabled` | `boolean` |  |
-| `event` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `created_at` | `string` |
+| `data` | `object` |
+| `disabled` | `boolean` |
+| `event` | `string` |
+| `site_id` | `string` |
+| `type` | `string` |
+| `updated_at` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `getHook` | `hook_id` |  | SELECT |
-| `listHooksBySiteId` | `site_id` |  | SELECT |
-| `createHookBySiteId` | `site_id` |  | INSERT |
-| `deleteHook` | `hook_id` |  | DELETE |
-| `updateHook` | `hook_id` |  | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `getHook` | `SELECT` | `hook_id` |
+| `listHooksBySiteId` | `SELECT` | `site_id` |
+| `createHookBySiteId` | `INSERT` | `site_id` |
+| `deleteHook` | `DELETE` | `hook_id` |
+| `updateHook` | `EXEC` | `hook_id` |

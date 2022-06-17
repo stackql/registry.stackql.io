@@ -16,25 +16,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.activity.events</code></td></tr>
+<tr><td><b>Name</b></td><td><code>events</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.activity.events</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
+| `payload` | `object` |  |
 | `public` | `boolean` |  |
 | `repo` | `object` |  |
 | `type` | `string` |  |
 | `actor` | `object` | Actor |
 | `created_at` | `string` |  |
 | `org` | `object` | Actor |
-| `payload` | `object` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_events_for_authenticated_user` | `username` | If you are authenticated as the given user, you will see your private events. Otherwise, you'll only see public events. | SELECT |
-| `list_org_events_for_authenticated_user` | `org, username` | This is the user's organization dashboard. You must be authenticated as the user to view this. | SELECT |
-| `list_repo_events` | `owner, repo` |  | SELECT |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list_events_for_authenticated_user` | `SELECT` | `username` | If you are authenticated as the given user, you will see your private events. Otherwise, you'll only see public events. |
+| `list_org_events_for_authenticated_user` | `SELECT` | `org, username` | This is the user's organization dashboard. You must be authenticated as the user to view this. |
+| `list_repo_events` | `SELECT` | `owner, repo` |  |

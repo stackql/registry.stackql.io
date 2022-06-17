@@ -16,32 +16,31 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.policy.policies</code></td></tr>
+<tr><td><b>Name</b></td><td><code>policies</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.policy.policies</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `description` | `string` |  |
-| `_links` | `object` |  |
-| `system` | `boolean` |  |
-| `_embedded` | `object` |  |
-| `created` | `string` |  |
-| `status` | `string` |  |
-| `conditions` | `object` |  |
-| `priority` | `integer` |  |
-| `lastUpdated` | `string` |  |
-| `type` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `description` | `string` |
+| `priority` | `integer` |
+| `_embedded` | `object` |
+| `status` | `string` |
+| `conditions` | `object` |
+| `system` | `boolean` |
+| `created` | `string` |
+| `_links` | `object` |
+| `lastUpdated` | `string` |
+| `type` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `policyId` | Gets a policy. | SELECT |
-| `list` | `type` | Gets all policies with the specified type. | SELECT |
-| `insert` | `` | Creates a policy. | INSERT |
-| `delete` | `policyId` | Removes a policy. | DELETE |
-| `activate` | `policyId, ruleId` | Activates a policy rule. | EXEC |
-| `deactivate` | `policyId, ruleId` | Deactivates a policy rule. | EXEC |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `policyId` | Gets a policy. |
+| `list` | `SELECT` | `type` | Gets all policies with the specified type. |
+| `insert` | `INSERT` |  | Creates a policy. |
+| `delete` | `DELETE` | `policyId` | Removes a policy. |
+| `activate` | `EXEC` | `policyId, ruleId` | Activates a policy rule. |
+| `deactivate` | `EXEC` | `policyId, ruleId` | Deactivates a policy rule. |

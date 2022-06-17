@@ -16,32 +16,31 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>okta.authorizationserver.authorizationservers</code></td></tr>
+<tr><td><b>Name</b></td><td><code>authorizationservers</code></td></tr>
 <tr><td><b>Id</b></td><td><code>okta.authorizationserver.authorizationservers</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `string` |  |
-| `name` | `string` |  |
-| `description` | `string` |  |
-| `_links` | `object` |  |
-| `audiences` | `array` |  |
-| `issuerMode` | `string` |  |
-| `credentials` | `object` |  |
-| `lastUpdated` | `string` |  |
-| `status` | `string` |  |
-| `issuer` | `string` |  |
-| `created` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `string` |
+| `name` | `string` |
+| `description` | `string` |
+| `created` | `string` |
+| `issuer` | `string` |
+| `lastUpdated` | `string` |
+| `_links` | `object` |
+| `status` | `string` |
+| `credentials` | `object` |
+| `audiences` | `array` |
+| `issuerMode` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get` | `authServerId` | Success | SELECT |
-| `list` | `` | Success | SELECT |
-| `insert` | `` | Success | INSERT |
-| `delete` | `authServerId` | Success | DELETE |
-| `activate` | `authServerId` | Success | EXEC |
-| `deactivate` | `authServerId` | Success | EXEC |
-| `update` | `authServerId` | Success | EXEC |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get` | `SELECT` | `authServerId` |
+| `list` | `SELECT` |  |
+| `insert` | `INSERT` |  |
+| `delete` | `DELETE` | `authServerId` |
+| `activate` | `EXEC` | `authServerId` |
+| `deactivate` | `EXEC` | `authServerId` |
+| `update` | `EXEC` | `authServerId` |

@@ -16,14 +16,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.repos.statistics_code_frequency</code></td></tr>
+<tr><td><b>Name</b></td><td><code>statistics_code_frequency</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.statistics_code_frequency</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `get_code_frequency_stats` | `owner, repo` | Returns a weekly aggregate of the number of additions and deletions pushed to a repository. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `get_code_frequency_stats` | `SELECT` | `owner, repo` |

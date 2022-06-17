@@ -16,26 +16,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.orgs.failed_invitations</code></td></tr>
+<tr><td><b>Name</b></td><td><code>failed_invitations</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.failed_invitations</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `invitation_teams_url` | `string` |  |
-| `node_id` | `string` |  |
-| `created_at` | `string` |  |
-| `email` | `string` |  |
-| `failed_reason` | `string` |  |
-| `login` | `string` |  |
 | `role` | `string` |  |
 | `team_count` | `integer` |  |
-| `inviter` | `object` | Simple User |
+| `email` | `string` |  |
+| `login` | `string` |  |
+| `node_id` | `string` |  |
 | `failed_at` | `string` |  |
+| `invitation_teams_url` | `string` |  |
+| `inviter` | `object` | Simple User |
+| `created_at` | `string` |  |
+| `failed_reason` | `string` |  |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_failed_invitations` | `org` | The return hash contains `failed_at` and `failed_reason` fields which represent the time at which the invitation failed and the reason for the failure. | SELECT |
+| Name | Accessible by | Required Params |
+| ---- | ------------- | --------------- |
+| `list_failed_invitations` | `SELECT` | `org` |

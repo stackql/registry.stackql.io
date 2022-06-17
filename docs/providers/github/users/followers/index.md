@@ -16,37 +16,36 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>github.users.followers</code></td></tr>
+<tr><td><b>Name</b></td><td><code>followers</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.users.followers</code></td></tr>
-<tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `id` | `integer` |  |
-| `name` | `string` |  |
-| `gists_url` | `string` |  |
-| `avatar_url` | `string` |  |
-| `url` | `string` |  |
-| `html_url` | `string` |  |
-| `subscriptions_url` | `string` |  |
-| `starred_at` | `string` |  |
-| `site_admin` | `boolean` |  |
-| `email` | `string` |  |
-| `followers_url` | `string` |  |
-| `type` | `string` |  |
-| `following_url` | `string` |  |
-| `organizations_url` | `string` |  |
-| `repos_url` | `string` |  |
-| `starred_url` | `string` |  |
-| `events_url` | `string` |  |
-| `gravatar_id` | `string` |  |
-| `login` | `string` |  |
-| `node_id` | `string` |  |
-| `received_events_url` | `string` |  |
+| Name | Datatype |
+| ---- | -------- |
+| `id` | `integer` |
+| `name` | `string` |
+| `email` | `string` |
+| `received_events_url` | `string` |
+| `node_id` | `string` |
+| `following_url` | `string` |
+| `subscriptions_url` | `string` |
+| `type` | `string` |
+| `starred_at` | `string` |
+| `events_url` | `string` |
+| `repos_url` | `string` |
+| `starred_url` | `string` |
+| `login` | `string` |
+| `gists_url` | `string` |
+| `url` | `string` |
+| `organizations_url` | `string` |
+| `site_admin` | `boolean` |
+| `avatar_url` | `string` |
+| `gravatar_id` | `string` |
+| `html_url` | `string` |
+| `followers_url` | `string` |
 ## Methods
-| Name | Required Params | Description | Accessible by |
-| ---- | --------------- | ----------- | ------------- |
-| `list_followers_for_authenticated_user` | `` | Lists the people following the authenticated user. | SELECT |
-| `list_followers_for_user` | `username` | Lists the people following the specified user. | SELECT |
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `list_followers_for_authenticated_user` | `SELECT` |  | Lists the people following the authenticated user. |
+| `list_followers_for_user` | `SELECT` | `username` | Lists the people following the specified user. |
