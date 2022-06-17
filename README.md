@@ -2,7 +2,7 @@
 
 This repository contains documentation for StackQL providers, which is published to [registry.stackql.io](https://registry.stackql.io).  
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ad26d902-9cb1-43be-90d9-284e8c7ac687/deploy-status)](https://app.netlify.com/sites/stackql-io/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6d4dae53-745b-470e-a964-2c0676bfe165/deploy-status)](https://app.netlify.com/sites/registry-stackql-io/deploys)
 
 ## Website
 

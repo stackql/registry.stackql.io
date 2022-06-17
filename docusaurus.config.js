@@ -14,7 +14,7 @@ const config = {
   tagline: 'Provision and Query Cloud and SaaS Resources using SQL',
   url: 'https://registry.stackql.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'stackql', 
