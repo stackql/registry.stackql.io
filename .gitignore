@@ -22,6 +22,7 @@ __pycache__/
 .stackql/
 stackql
 pystackql/
+/pystackql
 
 npm-debug.log*
 yarn-debug.log*
