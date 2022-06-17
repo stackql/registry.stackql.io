@@ -1,0 +1,35 @@
+---
+title: required_pull_request_reviews
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - stackql
+  - infrastructure-as-code
+  - configuration-as-data
+  - cloud inventory
+description: Query and Deploy Cloud Infrastructure and Resources using SQL
+custom_edit_url: null
+image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
+---
+  
+    
+See also:   
+[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
+* * * 
+## Overview
+<table><tbody>
+<tr><td><b>Name</b></td><td><code>required_pull_request_reviews</code></td></tr>
+<tr><td><b>Id</b></td><td><code>github.repos.required_pull_request_reviews</code></td></tr>
+<tr><td><b>Description</b></td><td></td></tr>
+</tbody></table>
+
+## Fields
+| Name | Datatype | Description |
+| ---- | -------- | ----------- |
+| `url` | `string` |  |
+| `bypass_pull_request_allowances` | `object` | Allow specific users or teams to bypass pull request requirements. Set to `null` to disable. |
+| `dismiss_stale_reviews` | `boolean` |  |
+| `dismissal_restrictions` | `object` |  |
+| `require_code_owner_reviews` | `boolean` |  |
+| `required_approving_review_count` | `integer` |  |
+## Methods
