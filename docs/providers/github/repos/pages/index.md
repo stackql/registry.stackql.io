@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>pages</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.pages</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.pages</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,15 +24,21 @@ See also:
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `https_certificate` | `object` |  |
-| `url` | `string` | The API address for accessing this Page resource. |
+| `source` | `object` |  |
 | `pending_domain_unverified_at` | `string` | The timestamp when a pending domain becomes unverified. |
 | `protected_domain_state` | `string` | The state if the domain is verified |
-| `custom_404` | `boolean` | Whether the Page has a custom 404 page. |
-| `status` | `string` | The status of the most recent build of the Page. |
-| `public` | `boolean` | Whether the GitHub Pages site is publicly visible. If set to `true`, the site is accessible to anyone on the internet. If set to `false`, the site will only be accessible to users who have at least `read` access to the repository that published the site. |
-| `https_enforced` | `boolean` | Whether https is enabled on the domain |
 | `cname` | `string` | The Pages site's custom domain |
-| `source` | `object` |  |
 | `html_url` | `string` | The web address the Page can be accessed from. |
+| `custom_404` | `boolean` | Whether the Page has a custom 404 page. |
+| `https_certificate` | `object` |  |
+| `https_enforced` | `boolean` | Whether https is enabled on the domain |
+| `public` | `boolean` | Whether the GitHub Pages site is publicly visible. If set to `true`, the site is accessible to anyone on the internet. If set to `false`, the site will only be accessible to users who have at least `read` access to the repository that published the site. |
+| `status` | `string` | The status of the most recent build of the Page. |
+| `url` | `string` | The API address for accessing this Page resource. |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_pages` | `owner, repo` |  | SELECT |
+| `create_pages_site` | `owner, repo, data__source` | Configures a GitHub Pages site. For more information, see "[About GitHub Pages](/github/working-with-github-pages/about-github-pages)." | INSERT |
+| `delete_pages_site` | `owner, repo` |  | DELETE |
+| `update_information_about_pages_site` | `owner, repo` | Updates information for a GitHub Pages site. For more information, see "[About GitHub Pages](/github/working-with-github-pages/about-github-pages). | EXEC |

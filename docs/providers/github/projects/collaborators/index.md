@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>collaborators</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.projects.collaborators</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.projects.collaborators</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,23 +26,28 @@ See also:
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` |  |
-| `email` | `string` |  |
-| `followers_url` | `string` |  |
-| `type` | `string` |  |
-| `starred_at` | `string` |  |
-| `following_url` | `string` |  |
-| `login` | `string` |  |
 | `url` | `string` |  |
-| `received_events_url` | `string` |  |
-| `gravatar_id` | `string` |  |
-| `html_url` | `string` |  |
+| `login` | `string` |  |
 | `repos_url` | `string` |  |
-| `events_url` | `string` |  |
+| `followers_url` | `string` |  |
 | `site_admin` | `boolean` |  |
-| `starred_url` | `string` |  |
-| `avatar_url` | `string` |  |
-| `node_id` | `string` |  |
-| `organizations_url` | `string` |  |
-| `gists_url` | `string` |  |
 | `subscriptions_url` | `string` |  |
+| `gists_url` | `string` |  |
+| `organizations_url` | `string` |  |
+| `type` | `string` |  |
+| `email` | `string` |  |
+| `events_url` | `string` |  |
+| `received_events_url` | `string` |  |
+| `avatar_url` | `string` |  |
+| `starred_at` | `string` |  |
+| `html_url` | `string` |  |
+| `following_url` | `string` |  |
+| `gravatar_id` | `string` |  |
+| `node_id` | `string` |  |
+| `starred_url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_collaborators` | `project_id` | Lists the collaborators for an organization project. For a project, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners. You must be an organization owner or a project `admin` to list collaborators. | SELECT |
+| `add_collaborator` | `project_id, username` | Adds a collaborator to an organization project and sets their permission level. You must be an organization owner or a project `admin` to add a collaborator. | INSERT |
+| `remove_collaborator` | `project_id, username` | Removes a collaborator from an organization project. You must be an organization owner or a project `admin` to remove a collaborator. | DELETE |

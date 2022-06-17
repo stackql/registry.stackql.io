@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>org_restrictions</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.interactions.org_restrictions</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.interactions.org_restrictions</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -30,3 +28,8 @@ See also:
 | `origin` | `string` |  |
 | `expires_at` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_restrictions_for_org` | `org` | Shows which type of GitHub user can interact with this organization and when the restriction expires. If there is no restrictions, you will see an empty response. | SELECT |
+| `remove_restrictions_for_org` | `org` | Removes all interaction restrictions from public repositories in the given organization. You must be an organization owner to remove restrictions. | DELETE |
+| `set_restrictions_for_org` | `org, data__limit` | Temporarily restricts interactions to a certain type of GitHub user in any public repository in the given organization. You must be an organization owner to set these restrictions. Setting the interaction limit at the organization level will overwrite any interaction limits that are set for individual repositories owned by the organization. | EXEC |

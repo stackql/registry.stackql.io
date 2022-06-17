@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>gist_forks</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.gists.gist_forks</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.gists.gist_forks</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,23 +26,27 @@ See also:
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
 | `description` | `string` |  |
+| `history` | `array` |  |
+| `comments_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `node_id` | `string` |  |
+| `git_pull_url` | `string` |  |
+| `truncated` | `boolean` |  |
+| `user` | `string` |  |
+| `url` | `string` |  |
+| `forks_url` | `string` |  |
+| `fork_of` | `object` | Gist |
+| `files` | `object` |  |
+| `git_push_url` | `string` |  |
 | `created_at` | `string` |  |
 | `owner` | `object` | Simple User |
-| `fork_of` | `object` | Gist |
-| `updated_at` | `string` |  |
-| `public` | `boolean` |  |
-| `user` | `string` |  |
-| `node_id` | `string` |  |
 | `comments` | `integer` |  |
-| `comments_url` | `string` |  |
-| `html_url` | `string` |  |
-| `url` | `string` |  |
-| `history` | `array` |  |
-| `git_push_url` | `string` |  |
-| `forks_url` | `string` |  |
-| `truncated` | `boolean` |  |
-| `files` | `object` |  |
-| `commits_url` | `string` |  |
-| `git_pull_url` | `string` |  |
 | `forks` | `array` |  |
+| `public` | `boolean` |  |
+| `commits_url` | `string` |  |
+| `html_url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_forks` | `gist_id` |  | SELECT |
+| `fork` | `gist_id` | **Note**: This was previously `/gists/:gist_id/fork`. | EXEC |

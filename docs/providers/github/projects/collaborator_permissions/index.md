@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>collaborator_permissions</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.projects.collaborator_permissions</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.projects.collaborator_permissions</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,6 +24,9 @@ See also:
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `permission` | `string` |  |
 | `user` | `object` | Simple User |
+| `permission` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_permission_for_user` | `project_id, username` | Returns the collaborator's permission level for an organization project. Possible values for the `permission` key: `admin`, `write`, `read`, `none`. You must be an organization owner or a project `admin` to review a user's permission level. | SELECT |

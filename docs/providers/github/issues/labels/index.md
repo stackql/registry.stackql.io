@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>labels</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.issues.labels</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.issues.labels</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -34,3 +32,16 @@ See also:
 | `color` | `string` | 6-character hex code, without the leading #, identifying the color |
 | `default` | `boolean` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_label` | `name, owner, repo` |  | SELECT |
+| `list_labels_for_milestone` | `milestone_number, owner, repo` |  | SELECT |
+| `list_labels_for_repo` | `owner, repo` |  | SELECT |
+| `list_labels_on_issue` | `issue_number, owner, repo` |  | SELECT |
+| `add_labels` | `issue_number, owner, repo` |  | INSERT |
+| `create_label` | `owner, repo, data__name` |  | INSERT |
+| `delete_label` | `name, owner, repo` |  | DELETE |
+| `remove_all_labels` | `issue_number, owner, repo` |  | DELETE |
+| `remove_label` | `issue_number, name, owner, repo` | Removes the specified label from the issue, and returns the remaining labels on the issue. This endpoint returns a `404 Not Found` status if the label does not exist. | DELETE |
+| `set_labels` | `issue_number, owner, repo` | Removes any previous labels and sets the new labels for an issue. | EXEC |
+| `update_label` | `name, owner, repo` |  | EXEC |

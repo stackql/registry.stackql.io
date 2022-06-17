@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>received_public_events</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.activity.received_public_events</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.activity.received_public_events</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -27,11 +25,14 @@ See also:
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
-| `type` | `string` |  |
-| `actor` | `object` | Actor |
-| `created_at` | `string` |  |
 | `org` | `object` | Actor |
 | `payload` | `object` |  |
 | `public` | `boolean` |  |
 | `repo` | `object` |  |
+| `type` | `string` |  |
+| `actor` | `object` | Actor |
+| `created_at` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_received_public_events_for_user` | `username` |  | SELECT |

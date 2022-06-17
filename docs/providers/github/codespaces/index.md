@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 Endpoints to manage Codespaces using the REST API.  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.codespaces</code></td></tr>
@@ -28,12 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
+<a href="/docs/providers/github/codespaces/actions">actions</a><br />
+<a href="/docs/providers/github/codespaces/activity">activity</a><br />
+<a href="/docs/providers/github/codespaces/apps">apps</a><br />
+<a href="/docs/providers/github/codespaces/billing">billing</a><br />
+<a href="/docs/providers/github/codespaces/checks">checks</a><br />
+<a href="/docs/providers/github/codespaces/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/codespaces/codes_of_conduct">codes_of_conduct</a><br />
 <a href="/docs/providers/github/codespaces/codespaces">codespaces</a><br />
-<a href="/docs/providers/github/codespaces/machines">machines</a><br />
-<a href="/docs/providers/github/codespaces/public_keys">public_keys</a><br />
+<a href="/docs/providers/github/codespaces/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/codespaces/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/codespaces/gists">gists</a><br />
+<a href="/docs/providers/github/codespaces/git">git</a><br />
+<a href="/docs/providers/github/codespaces/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/codespaces/interactions">interactions</a><br />
+<a href="/docs/providers/github/codespaces/issues">issues</a><br />
+<a href="/docs/providers/github/codespaces/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/codespaces/repos_for_secrets">repos_for_secrets</a><br />
-<a href="/docs/providers/github/codespaces/secrets">secrets</a><br />
+<a href="/docs/providers/github/codespaces/markdown">markdown</a><br />
+<a href="/docs/providers/github/codespaces/meta">meta</a><br />
+<a href="/docs/providers/github/codespaces/migrations">migrations</a><br />
+<a href="/docs/providers/github/codespaces/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/codespaces/orgs">orgs</a><br />
+<a href="/docs/providers/github/codespaces/packages">packages</a><br />
+<a href="/docs/providers/github/codespaces/projects">projects</a><br />
+<a href="/docs/providers/github/codespaces/pulls">pulls</a><br />
+<a href="/docs/providers/github/codespaces/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/codespaces/reactions">reactions</a><br />
+<a href="/docs/providers/github/codespaces/repos">repos</a><br />
+<a href="/docs/providers/github/codespaces/scim">scim</a><br />
+<a href="/docs/providers/github/codespaces/search">search</a><br />
+<a href="/docs/providers/github/codespaces/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/codespaces/teams">teams</a><br />
+<a href="/docs/providers/github/codespaces/users">users</a><br />
 </div>
 </div>

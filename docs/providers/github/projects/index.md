@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 Interact with GitHub Projects.  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.projects</code></td></tr>
@@ -28,12 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/projects/cards">cards</a><br />
-<a href="/docs/providers/github/projects/collaborator_permissions">collaborator_permissions</a><br />
-<a href="/docs/providers/github/projects/collaborators">collaborators</a><br />
+<a href="/docs/providers/github/projects/actions">actions</a><br />
+<a href="/docs/providers/github/projects/activity">activity</a><br />
+<a href="/docs/providers/github/projects/apps">apps</a><br />
+<a href="/docs/providers/github/projects/billing">billing</a><br />
+<a href="/docs/providers/github/projects/checks">checks</a><br />
+<a href="/docs/providers/github/projects/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/projects/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/projects/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/projects/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/projects/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/projects/gists">gists</a><br />
+<a href="/docs/providers/github/projects/git">git</a><br />
+<a href="/docs/providers/github/projects/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/projects/interactions">interactions</a><br />
+<a href="/docs/providers/github/projects/issues">issues</a><br />
+<a href="/docs/providers/github/projects/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/projects/columns">columns</a><br />
+<a href="/docs/providers/github/projects/markdown">markdown</a><br />
+<a href="/docs/providers/github/projects/meta">meta</a><br />
+<a href="/docs/providers/github/projects/migrations">migrations</a><br />
+<a href="/docs/providers/github/projects/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/projects/orgs">orgs</a><br />
+<a href="/docs/providers/github/projects/packages">packages</a><br />
 <a href="/docs/providers/github/projects/projects">projects</a><br />
+<a href="/docs/providers/github/projects/pulls">pulls</a><br />
+<a href="/docs/providers/github/projects/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/projects/reactions">reactions</a><br />
+<a href="/docs/providers/github/projects/repos">repos</a><br />
+<a href="/docs/providers/github/projects/scim">scim</a><br />
+<a href="/docs/providers/github/projects/search">search</a><br />
+<a href="/docs/providers/github/projects/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/projects/teams">teams</a><br />
+<a href="/docs/providers/github/projects/users">users</a><br />
 </div>
 </div>

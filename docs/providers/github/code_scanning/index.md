@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 code_scanning  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.code_scanning</code></td></tr>
@@ -28,13 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/code_scanning/alert_instances">alert_instances</a><br />
-<a href="/docs/providers/github/code_scanning/alert_items">alert_items</a><br />
-<a href="/docs/providers/github/code_scanning/alerts">alerts</a><br />
+<a href="/docs/providers/github/code_scanning/actions">actions</a><br />
+<a href="/docs/providers/github/code_scanning/activity">activity</a><br />
+<a href="/docs/providers/github/code_scanning/apps">apps</a><br />
+<a href="/docs/providers/github/code_scanning/billing">billing</a><br />
+<a href="/docs/providers/github/code_scanning/checks">checks</a><br />
+<a href="/docs/providers/github/code_scanning/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/code_scanning/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/code_scanning/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/code_scanning/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/code_scanning/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/code_scanning/gists">gists</a><br />
+<a href="/docs/providers/github/code_scanning/git">git</a><br />
+<a href="/docs/providers/github/code_scanning/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/code_scanning/interactions">interactions</a><br />
+<a href="/docs/providers/github/code_scanning/issues">issues</a><br />
+<a href="/docs/providers/github/code_scanning/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/code_scanning/analyses">analyses</a><br />
-<a href="/docs/providers/github/code_scanning/org_alert_items">org_alert_items</a><br />
-<a href="/docs/providers/github/code_scanning/sarifs_status">sarifs_status</a><br />
+<a href="/docs/providers/github/code_scanning/markdown">markdown</a><br />
+<a href="/docs/providers/github/code_scanning/meta">meta</a><br />
+<a href="/docs/providers/github/code_scanning/migrations">migrations</a><br />
+<a href="/docs/providers/github/code_scanning/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/code_scanning/orgs">orgs</a><br />
+<a href="/docs/providers/github/code_scanning/packages">packages</a><br />
+<a href="/docs/providers/github/code_scanning/projects">projects</a><br />
+<a href="/docs/providers/github/code_scanning/pulls">pulls</a><br />
+<a href="/docs/providers/github/code_scanning/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/code_scanning/reactions">reactions</a><br />
+<a href="/docs/providers/github/code_scanning/repos">repos</a><br />
+<a href="/docs/providers/github/code_scanning/scim">scim</a><br />
+<a href="/docs/providers/github/code_scanning/search">search</a><br />
+<a href="/docs/providers/github/code_scanning/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/code_scanning/teams">teams</a><br />
+<a href="/docs/providers/github/code_scanning/users">users</a><br />
 </div>
 </div>

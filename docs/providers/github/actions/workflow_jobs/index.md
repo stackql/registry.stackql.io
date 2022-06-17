@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>workflow_jobs</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.actions.workflow_jobs</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.workflow_jobs</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -29,3 +27,9 @@ See also:
 | `jobs` | `array` |  |
 | `total_count` | `integer` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_job_for_workflow_run` | `job_id, owner, repo` | Gets a specific job in a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. | SELECT |
+| `list_jobs_for_workflow_run` | `owner, repo, run_id` | Lists jobs for a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://docs.github.com/rest/overview/resources-in-the-rest-api#parameters). | SELECT |
+| `list_jobs_for_workflow_run_attempt` | `attempt_number, owner, repo, run_id` | Lists jobs for a specific workflow run attempt. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://docs.github.com/rest/overview/resources-in-the-rest-api#parameters). | SELECT |
+| `download_job_logs_for_workflow_run` | `job_id, owner, repo` | Gets a redirect URL to download a plain text file of logs for a workflow job. This link expires after 1 minute. Look<br />for `Location:` in the response header to find the URL for the download. Anyone with read access to the repository can<br />use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must<br />have the `actions:read` permission to use this endpoint. | EXEC |

@@ -1,5 +1,5 @@
 ---
-title: github v0.3.1
+title: github
 hide_title: false
 hide_table_of_contents: false
 keywords:
@@ -13,10 +13,48 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 A description of the provider.  
     
+
 See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
+[[` SHOW `]](https://stackql.io/docs/language-spec/show) [[` DESCRIBE `]](https://stackql.io/docs/language-spec/describe)  [[` REGISTRY `]](https://stackql.io/docs/language-spec/registry)
 * * * 
+
+## Installation
+```bash
+REGISTRY PULL github v0.3.1;
+```
+
 ## Authentication
+```javascript
+{
+    "github": {
+        /**
+            * Type of authentication to use, suported values include: service_account, api_key, basic
+            * @type String
+            */
+        "type": string, 
+        /**
+            * path to service account key file.
+            * @type String
+            */
+        "credentialsfilepath": string, 
+        /**
+            * Environment variable name containing the api key or credentials.
+            * @type String
+            */
+        "credentialsenvvar": string, 
+        /**
+            * Value prepended to the request header, e.g. "Bearer "
+            * @type String
+            */
+        "valuePrefix": string, 
+    }
+}
+```
+### Example
+```bash
+AUTH='{ "github": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}
+stackql shell --auth="${AUTH}"
+```
 ## Services
 <div class="row">
 <div class="providerDocColumn">

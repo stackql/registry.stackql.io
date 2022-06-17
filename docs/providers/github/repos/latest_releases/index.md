@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>latest_releases</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.latest_releases</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.latest_releases</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,25 +26,28 @@ See also:
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` |  |
-| `url` | `string` |  |
-| `mentions_count` | `integer` |  |
-| `target_commitish` | `string` | Specifies the commitish value that determines where the Git tag is created from. |
-| `assets_url` | `string` |  |
 | `prerelease` | `boolean` | Whether to identify the release as a prerelease or a full release. |
-| `tag_name` | `string` | The name of the tag. |
-| `assets` | `array` |  |
-| `upload_url` | `string` |  |
-| `zipball_url` | `string` |  |
+| `published_at` | `string` |  |
 | `created_at` | `string` |  |
-| `html_url` | `string` |  |
 | `tarball_url` | `string` |  |
-| `body` | `string` |  |
+| `target_commitish` | `string` | Specifies the commitish value that determines where the Git tag is created from. |
 | `author` | `object` | Simple User |
 | `discussion_url` | `string` | The URL of the release discussion. |
-| `body_text` | `string` |  |
-| `reactions` | `object` |  |
-| `draft` | `boolean` | true to create a draft (unpublished) release, false to create a published one. |
-| `published_at` | `string` |  |
-| `node_id` | `string` |  |
+| `mentions_count` | `integer` |  |
 | `body_html` | `string` |  |
+| `url` | `string` |  |
+| `tag_name` | `string` | The name of the tag. |
+| `node_id` | `string` |  |
+| `html_url` | `string` |  |
+| `assets_url` | `string` |  |
+| `body` | `string` |  |
+| `assets` | `array` |  |
+| `body_text` | `string` |  |
+| `draft` | `boolean` | true to create a draft (unpublished) release, false to create a published one. |
+| `zipball_url` | `string` |  |
+| `reactions` | `object` |  |
+| `upload_url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_latest_release` | `owner, repo` | View the latest published full release for the repository.<br /><br />The latest release is the most recent non-prerelease, non-draft release, sorted by the `created_at` attribute. The `created_at` attribute is the date of the commit used for the release, and not the date when the release was drafted or published. | SELECT |

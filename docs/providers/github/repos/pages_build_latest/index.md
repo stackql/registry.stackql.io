@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>pages_build_latest</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.pages_build_latest</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.pages_build_latest</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,12 +24,15 @@ See also:
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `duration` | `integer` |  |
-| `error` | `object` |  |
-| `pusher` | `object` | Simple User |
 | `status` | `string` |  |
 | `updated_at` | `string` |  |
 | `url` | `string` |  |
 | `commit` | `string` |  |
 | `created_at` | `string` |  |
+| `duration` | `integer` |  |
+| `error` | `object` |  |
+| `pusher` | `object` | Simple User |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_latest_pages_build` | `owner, repo` |  | SELECT |

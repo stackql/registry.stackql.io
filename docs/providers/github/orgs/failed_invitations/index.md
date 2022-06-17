@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>failed_invitations</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.orgs.failed_invitations</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.failed_invitations</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -27,14 +25,17 @@ See also:
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `role` | `string` |  |
-| `inviter` | `object` | Simple User |
-| `node_id` | `string` |  |
-| `email` | `string` |  |
-| `created_at` | `string` |  |
 | `invitation_teams_url` | `string` |  |
+| `node_id` | `string` |  |
+| `created_at` | `string` |  |
+| `email` | `string` |  |
 | `failed_reason` | `string` |  |
 | `login` | `string` |  |
+| `role` | `string` |  |
 | `team_count` | `integer` |  |
+| `inviter` | `object` | Simple User |
 | `failed_at` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_failed_invitations` | `org` | The return hash contains `failed_at` and `failed_reason` fields which represent the time at which the invitation failed and the reason for the failure. | SELECT |

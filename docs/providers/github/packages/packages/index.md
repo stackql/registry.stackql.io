@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>packages</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.packages.packages</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.packages.packages</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,13 +26,27 @@ See also:
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the package. |
 | `name` | `string` | The name of the package. |
-| `html_url` | `string` |  |
-| `url` | `string` |  |
 | `created_at` | `string` |  |
-| `package_type` | `string` |  |
-| `owner` | `object` | Simple User |
-| `updated_at` | `string` |  |
+| `url` | `string` |  |
+| `html_url` | `string` |  |
 | `repository` | `object` | Minimal Repository |
 | `version_count` | `integer` | The number of versions of the package. |
 | `visibility` | `string` |  |
+| `package_type` | `string` |  |
+| `owner` | `object` | Simple User |
+| `updated_at` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_package_for_authenticated_user` | `package_name, package_type` | Gets a specific package for a package owned by the authenticated user.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. | SELECT |
+| `get_package_for_organization` | `org, package_name, package_type` | Gets a specific package in an organization.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. | SELECT |
+| `get_package_for_user` | `package_name, package_type, username` | Gets a specific package metadata for a public package owned by a user.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. | SELECT |
+| `list_packages_for_authenticated_user` | `package_type` | Lists packages owned by the authenticated user within the user's namespace.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. | SELECT |
+| `list_packages_for_organization` | `org, package_type` | Lists all packages in an organization readable by the user.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. | SELECT |
+| `list_packages_for_user` | `package_type, username` | Lists all packages in a user's namespace for which the requesting user has access.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. | SELECT |
+| `delete_package_for_authenticated_user` | `package_name, package_type` | Deletes a package owned by the authenticated user. You cannot delete a public package if any version of the package has more than 5,000 downloads. In this scenario, contact GitHub support for further assistance.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` and `packages:delete` scopes.<br />If `package_type` is not `container`, your token must also include the `repo` scope. | DELETE |
+| `delete_package_for_org` | `org, package_name, package_type` | Deletes an entire package in an organization. You cannot delete a public package if any version of the package has more than 5,000 downloads. In this scenario, contact GitHub support for further assistance.<br /><br />To use this endpoint, you must have admin permissions in the organization and authenticate using an access token with the `packages:read` and `packages:delete` scopes. In addition:<br />- If `package_type` is not `container`, your token must also include the `repo` scope.<br />- If `package_type` is `container`, you must also have admin permissions to the container you want to delete. | DELETE |
+| `delete_package_for_user` | `package_name, package_type, username` | Deletes an entire package for a user. You cannot delete a public package if any version of the package has more than 5,000 downloads. In this scenario, contact GitHub support for further assistance.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` and `packages:delete` scopes. In addition:<br />- If `package_type` is not `container`, your token must also include the `repo` scope.<br />- If `package_type` is `container`, you must also have admin permissions to the container you want to delete. | DELETE |
+| `restore_package_for_authenticated_user` | `package_name, package_type` | Restores a package owned by the authenticated user.<br /><br />You can restore a deleted package under the following conditions:<br />  - The package was deleted within the last 30 days.<br />  - The same package namespace and version is still available and not reused for a new package. If the same package namespace is not available, you will not be able to restore your package. In this scenario, to restore the deleted package, you must delete the new package that uses the deleted package's namespace first.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` and `packages:write` scopes. If `package_type` is not `container`, your token must also include the `repo` scope. | EXEC |
+| `restore_package_for_org` | `org, package_name, package_type` | Restores an entire package in an organization.<br /><br />You can restore a deleted package under the following conditions:<br />  - The package was deleted within the last 30 days.<br />  - The same package namespace and version is still available and not reused for a new package. If the same package namespace is not available, you will not be able to restore your package. In this scenario, to restore the deleted package, you must delete the new package that uses the deleted package's namespace first.<br /><br />To use this endpoint, you must have admin permissions in the organization and authenticate using an access token with the `packages:read` and `packages:write` scopes. In addition:<br />- If `package_type` is not `container`, your token must also include the `repo` scope.<br />- If `package_type` is `container`, you must also have admin permissions to the container that you want to restore. | EXEC |
+| `restore_package_for_user` | `package_name, package_type, username` | Restores an entire package for a user.<br /><br />You can restore a deleted package under the following conditions:<br />  - The package was deleted within the last 30 days.<br />  - The same package namespace and version is still available and not reused for a new package. If the same package namespace is not available, you will not be able to restore your package. In this scenario, to restore the deleted package, you must delete the new package that uses the deleted package's namespace first.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` and `packages:write` scopes. In addition:<br />- If `package_type` is not `container`, your token must also include the `repo` scope.<br />- If `package_type` is `container`, you must also have admin permissions to the container that you want to restore. | EXEC |

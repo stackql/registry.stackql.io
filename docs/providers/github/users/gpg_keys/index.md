@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>gpg_keys</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.users.gpg_keys</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.users.gpg_keys</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -27,16 +25,23 @@ See also:
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `key_id` | `string` |  |
-| `can_sign` | `boolean` |  |
-| `can_encrypt_storage` | `boolean` |  |
-| `created_at` | `string` |  |
-| `raw_key` | `string` |  |
-| `subkeys` | `array` |  |
-| `can_certify` | `boolean` |  |
 | `can_encrypt_comms` | `boolean` |  |
-| `emails` | `array` |  |
-| `public_key` | `string` |  |
-| `expires_at` | `string` |  |
 | `primary_key_id` | `integer` |  |
+| `expires_at` | `string` |  |
+| `subkeys` | `array` |  |
+| `raw_key` | `string` |  |
+| `can_sign` | `boolean` |  |
+| `emails` | `array` |  |
+| `can_certify` | `boolean` |  |
+| `key_id` | `string` |  |
+| `public_key` | `string` |  |
+| `created_at` | `string` |  |
+| `can_encrypt_storage` | `boolean` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_gpg_key_for_authenticated_user` | `gpg_key_id` | View extended details for a single GPG key. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:gpg_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). | SELECT |
+| `list_gpg_keys_for_authenticated_user` | `` | Lists the current user's GPG keys. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:gpg_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). | SELECT |
+| `list_gpg_keys_for_user` | `username` | Lists the GPG keys for a user. This information is accessible by anyone. | SELECT |
+| `create_gpg_key_for_authenticated_user` | `data__armored_public_key` | Adds a GPG key to the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth, or OAuth with at least `write:gpg_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). | INSERT |
+| `delete_gpg_key_for_authenticated_user` | `gpg_key_id` | Removes a GPG key from the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth or via OAuth with at least `admin:gpg_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). | DELETE |

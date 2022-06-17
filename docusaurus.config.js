@@ -22,8 +22,6 @@ const config = {
 
   plugins: [
     '@docusaurus/plugin-ideal-image',
-    //'docusaurus-plugin-hubspot',
-    'docusaurus-plugin-smartlook',
   ],
 
   presets: [
@@ -42,7 +40,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           path: 'docs',
 		      sidebarCollapsible: true, 
-          editUrl: 'https://github.com/stackql/stackql.io/edit/main/',
+          editUrl: 'https://github.com/stackql/registry.stackql.io/edit/main/',
         },
         blog: false,
         theme: {
@@ -67,10 +65,6 @@ const config = {
     //   accountId: '21220110',
     // },
     image: '/img/stackql-cover.png',        
-    smartlook: {
-      projectKey: '0b522f879953aea6bcb0f17f0e397f498d8eea32',
-      useBetaNextGen: true,
-    },    
     algolia: {
       appId: 'HYO8BM1W1Y',
       apiKey: 'a67a2d399f2e604202e82f8fd284b103',
@@ -91,38 +85,34 @@ const config = {
     navbar: {
       logo: {
         alt: 'StackQL',
-        href: '/',
+        href: '/home',
         src: 'img/logo-original.svg',
         srcDark: 'img/logo-white.svg',
       },
       items: [
         {
           to: '/features',
-          activeBasePath: 'features',
           label: 'Features',
           position: 'left',
         },
         {
           to: '/downloads',
-          activeBasePath: 'downloads',
           label: 'Downloads',
           position: 'left',
         },        
         {
-          to: 'docs',
-          //activeBaseRegex: '^((?!/blog).)*$',
+          to: '/docs',
           label: 'Documentation',
           position: 'left',
         },
         {
-          href: 'https://registry.stackql.io/',
+          to: '/',
           label: 'Providers',
           position: 'left',
         },        
         {
-          to: 'blog',
+          to: '/blog',
           label: 'Blog',
-          activeBasePath: 'blog',
           position: 'left',
         },
         {
@@ -147,7 +137,7 @@ const config = {
           items: [
             {
               label: 'Home',
-              to: '/',
+              to: '/home',
             },
             {
               label: 'Features',
@@ -172,7 +162,7 @@ const config = {
             },
             {
               label: 'Providers',
-              to: '/providers',
+              to: '/',
             },
             {
               label: 'Blog',

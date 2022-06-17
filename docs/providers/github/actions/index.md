@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 Endpoints to manage GitHub Actions using the REST API.  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.actions</code></td></tr>
@@ -28,30 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/actions/allowed_actions">allowed_actions</a><br />
-<a href="/docs/providers/github/actions/artifacts">artifacts</a><br />
-<a href="/docs/providers/github/actions/default_workflow_permissions">default_workflow_permissions</a><br />
-<a href="/docs/providers/github/actions/environment_secrets">environment_secrets</a><br />
-<a href="/docs/providers/github/actions/org_secrets">org_secrets</a><br />
-<a href="/docs/providers/github/actions/organization_permissions">organization_permissions</a><br />
-<a href="/docs/providers/github/actions/public_keys">public_keys</a><br />
-<a href="/docs/providers/github/actions/repo_secrets">repo_secrets</a><br />
-<a href="/docs/providers/github/actions/repository_permissions">repository_permissions</a><br />
-<a href="/docs/providers/github/actions/selected_repos_for_org_secret">selected_repos_for_org_secret</a><br />
-<a href="/docs/providers/github/actions/selected_repositories_enabled">selected_repositories_enabled</a><br />
-<a href="/docs/providers/github/actions/self_hosted_runner_applications">self_hosted_runner_applications</a><br />
+<a href="/docs/providers/github/actions/actions">actions</a><br />
+<a href="/docs/providers/github/actions/activity">activity</a><br />
+<a href="/docs/providers/github/actions/apps">apps</a><br />
+<a href="/docs/providers/github/actions/billing">billing</a><br />
+<a href="/docs/providers/github/actions/checks">checks</a><br />
+<a href="/docs/providers/github/actions/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/actions/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/actions/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/actions/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/actions/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/actions/gists">gists</a><br />
+<a href="/docs/providers/github/actions/git">git</a><br />
+<a href="/docs/providers/github/actions/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/actions/interactions">interactions</a><br />
+<a href="/docs/providers/github/actions/issues">issues</a><br />
+<a href="/docs/providers/github/actions/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/actions/self_hosted_runner_group_repo_access">self_hosted_runner_group_repo_access</a><br />
-<a href="/docs/providers/github/actions/self_hosted_runner_groups">self_hosted_runner_groups</a><br />
-<a href="/docs/providers/github/actions/self_hosted_runner_labels">self_hosted_runner_labels</a><br />
-<a href="/docs/providers/github/actions/self_hosted_runners">self_hosted_runners</a><br />
-<a href="/docs/providers/github/actions/workflow_jobs">workflow_jobs</a><br />
-<a href="/docs/providers/github/actions/workflow_run_approvals">workflow_run_approvals</a><br />
-<a href="/docs/providers/github/actions/workflow_run_pending_deployments">workflow_run_pending_deployments</a><br />
-<a href="/docs/providers/github/actions/workflow_run_usage">workflow_run_usage</a><br />
-<a href="/docs/providers/github/actions/workflow_runs">workflow_runs</a><br />
-<a href="/docs/providers/github/actions/workflow_usage">workflow_usage</a><br />
-<a href="/docs/providers/github/actions/workflows">workflows</a><br />
+<a href="/docs/providers/github/actions/markdown">markdown</a><br />
+<a href="/docs/providers/github/actions/meta">meta</a><br />
+<a href="/docs/providers/github/actions/migrations">migrations</a><br />
+<a href="/docs/providers/github/actions/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/actions/orgs">orgs</a><br />
+<a href="/docs/providers/github/actions/packages">packages</a><br />
+<a href="/docs/providers/github/actions/projects">projects</a><br />
+<a href="/docs/providers/github/actions/pulls">pulls</a><br />
+<a href="/docs/providers/github/actions/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/actions/reactions">reactions</a><br />
+<a href="/docs/providers/github/actions/repos">repos</a><br />
+<a href="/docs/providers/github/actions/scim">scim</a><br />
+<a href="/docs/providers/github/actions/search">search</a><br />
+<a href="/docs/providers/github/actions/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/actions/teams">teams</a><br />
+<a href="/docs/providers/github/actions/users">users</a><br />
 </div>
 </div>

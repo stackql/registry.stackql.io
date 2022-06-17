@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>rate_limits</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.rate_limit.rate_limits</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.rate_limits.rate_limits</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,6 +24,9 @@ See also:
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `resources` | `object` |  |
 | `rate` | `object` |  |
+| `resources` | `object` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get` | `` | **Note:** Accessing this endpoint does not count against your REST API rate limit.<br /><br />**Note:** The `rate` object is deprecated. If you're writing new API client code or updating existing code, you should use the `core` object instead of the `rate` object. The `core` object contains the same information that is present in the `rate` object. | SELECT |

@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>invitation_teams</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.orgs.invitation_teams</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.invitation_teams</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -29,14 +27,17 @@ See also:
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `repositories_url` | `string` |  |
-| `privacy` | `string` |  |
-| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `permission` | `string` |  |
-| `permissions` | `object` |  |
-| `url` | `string` |  |
-| `members_url` | `string` |  |
-| `node_id` | `string` |  |
-| `html_url` | `string` |  |
 | `slug` | `string` |  |
+| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `node_id` | `string` |  |
+| `repositories_url` | `string` |  |
+| `permissions` | `object` |  |
+| `permission` | `string` |  |
+| `html_url` | `string` |  |
+| `members_url` | `string` |  |
+| `url` | `string` |  |
+| `privacy` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_invitation_teams` | `invitation_id, org` | List all teams associated with an invitation. In order to see invitations in an organization, the authenticated user must be an organization owner. | SELECT |

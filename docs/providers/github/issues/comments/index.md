@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>comments</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.issues.comments</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.issues.comments</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -27,17 +25,25 @@ See also:
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the issue comment |
-| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `user` | `object` | Simple User |
-| `updated_at` | `string` |  |
-| `url` | `string` | URL for the issue comment |
-| `html_url` | `string` |  |
-| `reactions` | `object` |  |
-| `created_at` | `string` |  |
 | `node_id` | `string` |  |
-| `issue_url` | `string` |  |
-| `body_text` | `string` |  |
-| `body` | `string` | Contents of the issue comment |
-| `body_html` | `string` |  |
+| `updated_at` | `string` |  |
+| `html_url` | `string` |  |
 | `author_association` | `string` | How the author is associated with the repository. |
+| `user` | `object` | Simple User |
+| `issue_url` | `string` |  |
+| `url` | `string` | URL for the issue comment |
+| `reactions` | `object` |  |
+| `body_text` | `string` |  |
+| `created_at` | `string` |  |
+| `body` | `string` | Contents of the issue comment |
+| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `body_html` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_comment` | `comment_id, owner, repo` |  | SELECT |
+| `list_comments` | `issue_number, owner, repo` | Issue Comments are ordered by ascending ID. | SELECT |
+| `list_comments_for_repo` | `owner, repo` | By default, Issue Comments are ordered by ascending ID. | SELECT |
+| `create_comment` | `issue_number, owner, repo, data__body` | This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details. | INSERT |
+| `delete_comment` | `comment_id, owner, repo` |  | DELETE |
+| `update_comment` | `comment_id, owner, repo, data__body` |  | EXEC |

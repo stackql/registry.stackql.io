@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>licenses_for_repos</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.licenses.licenses_for_repos</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.licenses.licenses_for_repos</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -27,16 +25,19 @@ See also:
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
-| `url` | `string` |  |
-| `encoding` | `string` |  |
-| `git_url` | `string` |  |
-| `size` | `integer` |  |
-| `type` | `string` |  |
-| `html_url` | `string` |  |
-| `sha` | `string` |  |
-| `_links` | `object` |  |
 | `license` | `object` | License Simple |
-| `path` | `string` |  |
-| `content` | `string` |  |
 | `download_url` | `string` |  |
+| `html_url` | `string` |  |
+| `type` | `string` |  |
+| `content` | `string` |  |
+| `path` | `string` |  |
+| `git_url` | `string` |  |
+| `_links` | `object` |  |
+| `url` | `string` |  |
+| `size` | `integer` |  |
+| `encoding` | `string` |  |
+| `sha` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_for_repo` | `owner, repo` | This method returns the contents of the repository's license file, if one is detected.<br /><br />Similar to [Get repository content](https://docs.github.com/rest/reference/repos#get-repository-content), this method also supports [custom media types](https://docs.github.com/rest/overview/media-types) for retrieving the raw license content or rendered license HTML. | SELECT |

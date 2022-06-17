@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>actions_permissions</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.enterprise_admin.actions_permissions</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.enterprise_admin.actions_permissions</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -31,3 +29,7 @@ See also:
 | `selected_actions_url` | `string` | The API URL to use to get or set the actions that are allowed to run, when `allowed_actions` is set to `selected`. |
 | `selected_organizations_url` | `string` | The API URL to use to get or set the selected organizations that are allowed to run GitHub Actions, when `enabled_organizations` is set to `selected`. |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_github_actions_permissions_enterprise` | `enterprise` | Gets the GitHub Actions permissions policy for organizations and allowed actions in an enterprise.<br /><br />You must authenticate using an access token with the `admin:enterprise` scope to use this endpoint. | SELECT |
+| `set_github_actions_permissions_enterprise` | `enterprise, data__enabled_organizations` | Sets the GitHub Actions permissions policy for organizations and allowed actions in an enterprise.<br /><br />You must authenticate using an access token with the `admin:enterprise` scope to use this endpoint. | EXEC |

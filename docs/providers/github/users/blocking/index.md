@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>blocking</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.users.blocking</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.users.blocking</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,23 +26,29 @@ See also:
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` |  |
-| `followers_url` | `string` |  |
-| `events_url` | `string` |  |
-| `received_events_url` | `string` |  |
-| `url` | `string` |  |
-| `node_id` | `string` |  |
-| `starred_url` | `string` |  |
-| `repos_url` | `string` |  |
-| `avatar_url` | `string` |  |
-| `starred_at` | `string` |  |
-| `login` | `string` |  |
-| `html_url` | `string` |  |
-| `organizations_url` | `string` |  |
 | `email` | `string` |  |
-| `gravatar_id` | `string` |  |
-| `type` | `string` |  |
-| `following_url` | `string` |  |
 | `subscriptions_url` | `string` |  |
+| `following_url` | `string` |  |
 | `gists_url` | `string` |  |
 | `site_admin` | `boolean` |  |
+| `url` | `string` |  |
+| `type` | `string` |  |
+| `starred_at` | `string` |  |
+| `gravatar_id` | `string` |  |
+| `organizations_url` | `string` |  |
+| `repos_url` | `string` |  |
+| `node_id` | `string` |  |
+| `followers_url` | `string` |  |
+| `login` | `string` |  |
+| `received_events_url` | `string` |  |
+| `starred_url` | `string` |  |
+| `events_url` | `string` |  |
+| `html_url` | `string` |  |
+| `avatar_url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_blocked_by_authenticated_user` | `` | List the users you've blocked on your personal account. | SELECT |
+| `block` | `username` |  | EXEC |
+| `check_blocked` | `username` |  | EXEC |
+| `unblock` | `username` |  | EXEC |

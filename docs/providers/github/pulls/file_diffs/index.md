@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>file_diffs</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.pulls.file_diffs</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.pulls.file_diffs</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,15 +24,18 @@ See also:
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `sha` | `string` |  |
-| `status` | `string` |  |
 | `changes` | `integer` |  |
 | `contents_url` | `string` |  |
-| `deletions` | `integer` |  |
-| `filename` | `string` |  |
-| `additions` | `integer` |  |
-| `patch` | `string` |  |
-| `previous_filename` | `string` |  |
-| `raw_url` | `string` |  |
 | `blob_url` | `string` |  |
+| `filename` | `string` |  |
+| `previous_filename` | `string` |  |
+| `additions` | `integer` |  |
+| `deletions` | `integer` |  |
+| `status` | `string` |  |
+| `patch` | `string` |  |
+| `raw_url` | `string` |  |
+| `sha` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_files` | `owner, pull_number, repo` | **Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default. | SELECT |

@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 Interact with GitHub Issues.  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.issues</code></td></tr>
@@ -28,14 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/issues/assignees">assignees</a><br />
-<a href="/docs/providers/github/issues/comments">comments</a><br />
-<a href="/docs/providers/github/issues/events">events</a><br />
-<a href="/docs/providers/github/issues/events_for_issues">events_for_issues</a><br />
+<a href="/docs/providers/github/issues/actions">actions</a><br />
+<a href="/docs/providers/github/issues/activity">activity</a><br />
+<a href="/docs/providers/github/issues/apps">apps</a><br />
+<a href="/docs/providers/github/issues/billing">billing</a><br />
+<a href="/docs/providers/github/issues/checks">checks</a><br />
+<a href="/docs/providers/github/issues/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/issues/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/issues/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/issues/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/issues/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/issues/gists">gists</a><br />
+<a href="/docs/providers/github/issues/git">git</a><br />
+<a href="/docs/providers/github/issues/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/issues/interactions">interactions</a><br />
+<a href="/docs/providers/github/issues/issues">issues</a><br />
+<a href="/docs/providers/github/issues/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/issues/issues">issues</a><br />
-<a href="/docs/providers/github/issues/labels">labels</a><br />
-<a href="/docs/providers/github/issues/milestones">milestones</a><br />
+<a href="/docs/providers/github/issues/markdown">markdown</a><br />
+<a href="/docs/providers/github/issues/meta">meta</a><br />
+<a href="/docs/providers/github/issues/migrations">migrations</a><br />
+<a href="/docs/providers/github/issues/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/issues/orgs">orgs</a><br />
+<a href="/docs/providers/github/issues/packages">packages</a><br />
+<a href="/docs/providers/github/issues/projects">projects</a><br />
+<a href="/docs/providers/github/issues/pulls">pulls</a><br />
+<a href="/docs/providers/github/issues/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/issues/reactions">reactions</a><br />
+<a href="/docs/providers/github/issues/repos">repos</a><br />
+<a href="/docs/providers/github/issues/scim">scim</a><br />
+<a href="/docs/providers/github/issues/search">search</a><br />
+<a href="/docs/providers/github/issues/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/issues/teams">teams</a><br />
+<a href="/docs/providers/github/issues/users">users</a><br />
 </div>
 </div>

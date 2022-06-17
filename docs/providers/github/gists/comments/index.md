@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>comments</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.gists.comments</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.gists.comments</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -35,3 +33,10 @@ See also:
 | `created_at` | `string` |  |
 | `node_id` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_comment` | `comment_id, gist_id` |  | SELECT |
+| `list_comments` | `gist_id` |  | SELECT |
+| `create_comment` | `gist_id, data__body` |  | INSERT |
+| `delete_comment` | `comment_id, gist_id` |  | DELETE |
+| `update_comment` | `comment_id, gist_id, data__body` |  | EXEC |

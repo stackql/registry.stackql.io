@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>public_keys</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.codespaces.public_keys</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.codespaces.public_keys</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,6 +24,9 @@ See also:
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `key_id` | `string` | The identifier for the key. |
 | `key` | `string` | The Base64 encoded public key. |
+| `key_id` | `string` | The identifier for the key. |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_public_key_for_authenticated_user` | `` | Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. Anyone with one of the 'read:user' or 'user' scopes in their personal access token. User must have Codespaces access to use this endpoint. | SELECT |

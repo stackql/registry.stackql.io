@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>milestones</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.issues.milestones</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.issues.milestones</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,18 +26,25 @@ See also:
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `description` | `string` |  |
-| `title` | `string` | The title of the milestone. |
-| `closed_at` | `string` |  |
-| `state` | `string` | The state of the milestone. |
-| `creator` | `object` | Simple User |
-| `number` | `integer` | The number of the milestone. |
-| `open_issues` | `integer` |  |
-| `url` | `string` |  |
 | `closed_issues` | `integer` |  |
 | `updated_at` | `string` |  |
-| `due_on` | `string` |  |
-| `labels_url` | `string` |  |
-| `created_at` | `string` |  |
-| `node_id` | `string` |  |
+| `url` | `string` |  |
+| `open_issues` | `integer` |  |
 | `html_url` | `string` |  |
+| `number` | `integer` | The number of the milestone. |
+| `created_at` | `string` |  |
+| `closed_at` | `string` |  |
+| `state` | `string` | The state of the milestone. |
+| `title` | `string` | The title of the milestone. |
+| `creator` | `object` | Simple User |
+| `due_on` | `string` |  |
+| `node_id` | `string` |  |
+| `labels_url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_milestone` | `milestone_number, owner, repo` |  | SELECT |
+| `list_milestones` | `owner, repo` |  | SELECT |
+| `create_milestone` | `owner, repo, data__title` |  | INSERT |
+| `delete_milestone` | `milestone_number, owner, repo` |  | DELETE |
+| `update_milestone` | `milestone_number, owner, repo` |  | EXEC |

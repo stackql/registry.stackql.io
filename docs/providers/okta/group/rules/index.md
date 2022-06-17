@@ -1,0 +1,42 @@
+---
+title: rules
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - stackql
+  - infrastructure-as-code
+  - configuration-as-data
+  - cloud inventory
+description: Query and Deploy Cloud Infrastructure and Resources using SQL
+custom_edit_url: null
+image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
+---
+  
+    
+
+## Overview
+<table><tbody>
+<tr><td><b>Name</b></td><td><code>okta.group.rules</code></td></tr>
+<tr><td><b>Id</b></td><td><code>okta.group.rules</code></td></tr>
+<tr><td><b>Description</b></td><td></td></tr>
+</tbody></table>
+
+## Fields
+| Name | Datatype | Description |
+| ---- | -------- | ----------- |
+| `id` | `string` |  |
+| `name` | `string` |  |
+| `created` | `string` |  |
+| `lastUpdated` | `string` |  |
+| `status` | `string` |  |
+| `type` | `string` |  |
+| `actions` | `object` |  |
+| `conditions` | `object` |  |
+## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get` | `ruleId` | Fetches a specific group rule by id from your organization | SELECT |
+| `list` | `` | Lists all group rules for your organization. | SELECT |
+| `insert` | `` | Creates a group rule to dynamically add users to the specified group if they match the condition | INSERT |
+| `delete` | `ruleId` | Removes a specific group rule by id from your organization | DELETE |
+| `update` | `ruleId` | Updates a group rule. Only `INACTIVE` rules can be updated. | EXEC |

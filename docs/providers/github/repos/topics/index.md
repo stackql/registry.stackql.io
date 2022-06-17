@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>topics</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.topics</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.topics</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,3 +24,7 @@ See also:
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_all_topics` | `owner, repo` |  | SELECT |
+| `replace_all_topics` | `owner, repo, data__names` |  | EXEC |

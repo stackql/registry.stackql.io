@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>gist_stars</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.gists.gist_stars</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.gists.gist_stars</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,22 +26,28 @@ See also:
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
 | `description` | `string` |  |
-| `forks` | `array` |  |
-| `files` | `object` |  |
-| `forks_url` | `string` |  |
+| `created_at` | `string` |  |
 | `git_push_url` | `string` |  |
-| `user` | `object` | Simple User |
-| `commits_url` | `string` |  |
+| `files` | `object` |  |
 | `updated_at` | `string` |  |
 | `truncated` | `boolean` |  |
-| `created_at` | `string` |  |
-| `node_id` | `string` |  |
+| `forks_url` | `string` |  |
+| `forks` | `array` |  |
 | `html_url` | `string` |  |
-| `public` | `boolean` |  |
-| `url` | `string` |  |
-| `history` | `array` |  |
-| `comments_url` | `string` |  |
-| `owner` | `object` | Simple User |
 | `comments` | `integer` |  |
+| `owner` | `object` | Simple User |
+| `public` | `boolean` |  |
+| `comments_url` | `string` |  |
+| `commits_url` | `string` |  |
+| `history` | `array` |  |
+| `node_id` | `string` |  |
 | `git_pull_url` | `string` |  |
+| `url` | `string` |  |
+| `user` | `object` | Simple User |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `check_is_starred` | `gist_id` |  | SELECT |
+| `list_starred` | `` | List the authenticated user's starred gists: | SELECT |
+| `star` | `gist_id` | Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)." | EXEC |
+| `unstar` | `gist_id` |  | EXEC |

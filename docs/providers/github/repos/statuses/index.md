@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>statuses</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.statuses</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.statuses</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,13 +26,17 @@ See also:
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `description` | `string` |  |
+| `created_at` | `string` |  |
+| `node_id` | `string` |  |
+| `creator` | `object` | Simple User |
+| `avatar_url` | `string` |  |
+| `state` | `string` |  |
 | `target_url` | `string` |  |
 | `url` | `string` |  |
 | `context` | `string` |  |
-| `creator` | `object` | Simple User |
-| `state` | `string` |  |
-| `avatar_url` | `string` |  |
-| `created_at` | `string` |  |
 | `updated_at` | `string` |  |
-| `node_id` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_commit_statuses_for_ref` | `owner, ref, repo` | Users with pull access in a repository can view commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name. Statuses are returned in reverse chronological order. The first status in the list will be the latest one.<br /><br />This resource is also available via a legacy route: `GET /repos/:owner/:repo/statuses/:ref`. | SELECT |
+| `create_commit_status` | `owner, repo, sha, data__state` | Users with push access in a repository can create commit statuses for a given SHA.<br /><br />Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error. | INSERT |

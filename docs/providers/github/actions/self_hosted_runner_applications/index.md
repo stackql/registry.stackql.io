@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>self_hosted_runner_applications</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.actions.self_hosted_runner_applications</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.self_hosted_runner_applications</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,10 +24,14 @@ See also:
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `os` | `string` |  |
-| `sha256_checksum` | `string` |  |
-| `temp_download_token` | `string` | A short lived bearer token used to download the runner, if needed. |
 | `architecture` | `string` |  |
 | `download_url` | `string` |  |
 | `filename` | `string` |  |
+| `os` | `string` |  |
+| `sha256_checksum` | `string` |  |
+| `temp_download_token` | `string` | A short lived bearer token used to download the runner, if needed. |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_runner_applications_for_org` | `org` | Lists binaries for the runner application that you can download and run.<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. | SELECT |
+| `list_runner_applications_for_repo` | `owner, repo` | Lists binaries for the runner application that you can download and run.<br /><br />You must authenticate using an access token with the `repo` scope to use this endpoint. | SELECT |

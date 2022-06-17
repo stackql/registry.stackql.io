@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>clone_traffic</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.clone_traffic</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.clone_traffic</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,7 +24,10 @@ See also:
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `uniques` | `integer` |  |
 | `clones` | `array` |  |
 | `count` | `integer` |  |
-| `uniques` | `integer` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_clones` | `owner, repo` | Get the total number of clones and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday. | SELECT |

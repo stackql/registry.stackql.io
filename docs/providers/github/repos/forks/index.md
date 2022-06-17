@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>forks</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.forks</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.forks</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -29,86 +27,90 @@ See also:
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `keys_url` | `string` |  |
-| `is_template` | `boolean` |  |
-| `visibility` | `string` |  |
-| `has_wiki` | `boolean` |  |
-| `git_refs_url` | `string` |  |
-| `notifications_url` | `string` |  |
-| `statuses_url` | `string` |  |
-| `template_repository` | `object` | A git repository |
-| `pulls_url` | `string` |  |
-| `trees_url` | `string` |  |
-| `issue_comment_url` | `string` |  |
-| `url` | `string` |  |
-| `clone_url` | `string` |  |
-| `license` | `object` |  |
-| `issues_url` | `string` |  |
-| `has_downloads` | `boolean` |  |
+| `allow_forking` | `boolean` |  |
 | `events_url` | `string` |  |
-| `deployments_url` | `string` |  |
-| `code_of_conduct` | `object` | Code Of Conduct |
-| `ssh_url` | `string` |  |
-| `updated_at` | `string` |  |
-| `stargazers_url` | `string` |  |
-| `open_issues_count` | `integer` |  |
-| `temp_clone_token` | `string` |  |
-| `archived` | `boolean` |  |
-| `contributors_url` | `string` |  |
-| `svn_url` | `string` |  |
-| `milestones_url` | `string` |  |
-| `forks` | `integer` |  |
+| `issue_events_url` | `string` |  |
+| `delete_branch_on_merge` | `boolean` |  |
+| `license` | `object` |  |
+| `commits_url` | `string` |  |
+| `default_branch` | `string` |  |
+| `pulls_url` | `string` |  |
+| `watchers` | `integer` |  |
+| `git_url` | `string` |  |
+| `forks_url` | `string` |  |
 | `role_name` | `string` |  |
-| `stargazers_count` | `integer` |  |
-| `created_at` | `string` |  |
+| `url` | `string` |  |
 | `forks_count` | `integer` |  |
 | `subscribers_url` | `string` |  |
-| `collaborators_url` | `string` |  |
-| `assignees_url` | `string` |  |
-| `watchers_count` | `integer` |  |
-| `network_count` | `integer` |  |
-| `git_url` | `string` |  |
-| `disabled` | `boolean` |  |
-| `allow_forking` | `boolean` |  |
-| `open_issues` | `integer` |  |
-| `delete_branch_on_merge` | `boolean` |  |
-| `releases_url` | `string` |  |
-| `has_issues` | `boolean` |  |
-| `full_name` | `string` |  |
-| `mirror_url` | `string` |  |
+| `milestones_url` | `string` |  |
 | `comments_url` | `string` |  |
-| `default_branch` | `string` |  |
-| `watchers` | `integer` |  |
-| `git_commits_url` | `string` |  |
-| `has_projects` | `boolean` |  |
-| `labels_url` | `string` |  |
-| `html_url` | `string` |  |
-| `fork` | `boolean` |  |
-| `homepage` | `string` |  |
-| `blobs_url` | `string` |  |
-| `downloads_url` | `string` |  |
-| `contents_url` | `string` |  |
-| `topics` | `array` |  |
-| `git_tags_url` | `string` |  |
-| `hooks_url` | `string` |  |
-| `owner` | `object` | Simple User |
-| `language` | `string` |  |
-| `languages_url` | `string` |  |
-| `merges_url` | `string` |  |
-| `tags_url` | `string` |  |
-| `issue_events_url` | `string` |  |
-| `node_id` | `string` |  |
-| `pushed_at` | `string` |  |
-| `has_pages` | `boolean` |  |
-| `archive_url` | `string` |  |
-| `subscription_url` | `string` |  |
-| `private` | `boolean` |  |
-| `teams_url` | `string` |  |
-| `size` | `integer` |  |
-| `compare_url` | `string` |  |
-| `branches_url` | `string` |  |
-| `commits_url` | `string` |  |
-| `forks_url` | `string` |  |
+| `mirror_url` | `string` |  |
+| `ssh_url` | `string` |  |
 | `permissions` | `object` |  |
+| `git_commits_url` | `string` |  |
 | `subscribers_count` | `integer` |  |
+| `is_template` | `boolean` |  |
+| `stargazers_count` | `integer` |  |
+| `contributors_url` | `string` |  |
+| `visibility` | `string` |  |
+| `teams_url` | `string` |  |
+| `contents_url` | `string` |  |
+| `releases_url` | `string` |  |
+| `open_issues` | `integer` |  |
+| `topics` | `array` |  |
+| `size` | `integer` |  |
+| `has_wiki` | `boolean` |  |
+| `open_issues_count` | `integer` |  |
+| `owner` | `object` | Simple User |
+| `has_projects` | `boolean` |  |
+| `languages_url` | `string` |  |
+| `blobs_url` | `string` |  |
+| `archive_url` | `string` |  |
+| `fork` | `boolean` |  |
+| `created_at` | `string` |  |
+| `language` | `string` |  |
+| `pushed_at` | `string` |  |
+| `compare_url` | `string` |  |
+| `tags_url` | `string` |  |
+| `has_issues` | `boolean` |  |
+| `assignees_url` | `string` |  |
+| `homepage` | `string` |  |
+| `labels_url` | `string` |  |
+| `stargazers_url` | `string` |  |
+| `trees_url` | `string` |  |
+| `watchers_count` | `integer` |  |
+| `temp_clone_token` | `string` |  |
+| `archived` | `boolean` |  |
+| `deployments_url` | `string` |  |
+| `branches_url` | `string` |  |
+| `keys_url` | `string` |  |
+| `svn_url` | `string` |  |
+| `template_repository` | `object` | A git repository |
+| `network_count` | `integer` |  |
+| `code_of_conduct` | `object` | Code Of Conduct |
+| `statuses_url` | `string` |  |
+| `notifications_url` | `string` |  |
+| `full_name` | `string` |  |
+| `private` | `boolean` |  |
+| `git_refs_url` | `string` |  |
+| `hooks_url` | `string` |  |
+| `issues_url` | `string` |  |
+| `html_url` | `string` |  |
+| `downloads_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `node_id` | `string` |  |
+| `disabled` | `boolean` |  |
+| `merges_url` | `string` |  |
+| `has_pages` | `boolean` |  |
+| `forks` | `integer` |  |
+| `has_downloads` | `boolean` |  |
+| `collaborators_url` | `string` |  |
+| `git_tags_url` | `string` |  |
+| `subscription_url` | `string` |  |
+| `issue_comment_url` | `string` |  |
+| `clone_url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_forks` | `owner, repo` |  | SELECT |
+| `create_fork` | `owner, repo` | Create a fork for the authenticated user.<br /><br />**Note**: Forking a Repository happens asynchronously. You may have to wait a short period of time before you can access the git objects. If this takes longer than 5 minutes, be sure to contact [GitHub Support](https://support.github.com/contact?tags=dotcom-rest-api). | INSERT |

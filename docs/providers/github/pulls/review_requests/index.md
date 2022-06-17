@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>review_requests</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.pulls.review_requests</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.pulls.review_requests</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -29,3 +27,8 @@ See also:
 | `users` | `array` |  |
 | `teams` | `array` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_requested_reviewers` | `owner, pull_number, repo` |  | SELECT |
+| `remove_requested_reviewers` | `owner, pull_number, repo, data__reviewers` |  | DELETE |
+| `request_reviewers` | `owner, pull_number, repo` | This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details. | EXEC |

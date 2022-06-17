@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>public_repos</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.public_repos</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.public_repos</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -29,86 +27,89 @@ See also:
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `open_issues` | `integer` |  |
-| `contents_url` | `string` |  |
-| `milestones_url` | `string` |  |
-| `downloads_url` | `string` |  |
-| `teams_url` | `string` |  |
-| `code_of_conduct` | `object` | Code Of Conduct |
-| `collaborators_url` | `string` |  |
-| `template_repository` | `object` | A git repository |
-| `issue_comment_url` | `string` |  |
-| `trees_url` | `string` |  |
-| `issue_events_url` | `string` |  |
-| `language` | `string` |  |
-| `pulls_url` | `string` |  |
-| `releases_url` | `string` |  |
-| `stargazers_count` | `integer` |  |
-| `archived` | `boolean` |  |
-| `full_name` | `string` |  |
-| `assignees_url` | `string` |  |
-| `commits_url` | `string` |  |
-| `git_refs_url` | `string` |  |
-| `role_name` | `string` |  |
-| `has_wiki` | `boolean` |  |
-| `license` | `object` |  |
-| `watchers_count` | `integer` |  |
-| `keys_url` | `string` |  |
-| `subscribers_count` | `integer` |  |
-| `events_url` | `string` |  |
-| `html_url` | `string` |  |
-| `allow_forking` | `boolean` |  |
-| `node_id` | `string` |  |
-| `svn_url` | `string` |  |
-| `clone_url` | `string` |  |
-| `forks_url` | `string` |  |
-| `created_at` | `string` |  |
-| `is_template` | `boolean` |  |
-| `updated_at` | `string` |  |
-| `default_branch` | `string` |  |
-| `has_downloads` | `boolean` |  |
-| `pushed_at` | `string` |  |
-| `fork` | `boolean` |  |
-| `labels_url` | `string` |  |
-| `open_issues_count` | `integer` |  |
-| `private` | `boolean` |  |
-| `stargazers_url` | `string` |  |
-| `deployments_url` | `string` |  |
-| `blobs_url` | `string` |  |
-| `temp_clone_token` | `string` |  |
-| `hooks_url` | `string` |  |
-| `notifications_url` | `string` |  |
-| `delete_branch_on_merge` | `boolean` |  |
-| `url` | `string` |  |
-| `statuses_url` | `string` |  |
-| `mirror_url` | `string` |  |
-| `has_projects` | `boolean` |  |
-| `ssh_url` | `string` |  |
-| `forks` | `integer` |  |
-| `watchers` | `integer` |  |
-| `tags_url` | `string` |  |
-| `permissions` | `object` |  |
-| `merges_url` | `string` |  |
-| `archive_url` | `string` |  |
-| `has_pages` | `boolean` |  |
-| `branches_url` | `string` |  |
-| `network_count` | `integer` |  |
-| `topics` | `array` |  |
-| `owner` | `object` | Simple User |
-| `git_tags_url` | `string` |  |
 | `homepage` | `string` |  |
-| `comments_url` | `string` |  |
-| `issues_url` | `string` |  |
-| `languages_url` | `string` |  |
-| `compare_url` | `string` |  |
-| `visibility` | `string` |  |
-| `subscribers_url` | `string` |  |
-| `contributors_url` | `string` |  |
+| `fork` | `boolean` |  |
+| `template_repository` | `object` | A git repository |
 | `size` | `integer` |  |
-| `has_issues` | `boolean` |  |
-| `git_url` | `string` |  |
-| `disabled` | `boolean` |  |
-| `subscription_url` | `string` |  |
-| `forks_count` | `integer` |  |
+| `created_at` | `string` |  |
+| `merges_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `issue_comment_url` | `string` |  |
+| `has_wiki` | `boolean` |  |
+| `is_template` | `boolean` |  |
+| `assignees_url` | `string` |  |
+| `subscribers_count` | `integer` |  |
+| `has_downloads` | `boolean` |  |
+| `ssh_url` | `string` |  |
+| `compare_url` | `string` |  |
+| `url` | `string` |  |
+| `topics` | `array` |  |
+| `branches_url` | `string` |  |
+| `events_url` | `string` |  |
+| `comments_url` | `string` |  |
+| `role_name` | `string` |  |
+| `blobs_url` | `string` |  |
+| `git_refs_url` | `string` |  |
+| `languages_url` | `string` |  |
+| `code_of_conduct` | `object` | Code Of Conduct |
 | `git_commits_url` | `string` |  |
+| `visibility` | `string` |  |
+| `disabled` | `boolean` |  |
+| `stargazers_url` | `string` |  |
+| `releases_url` | `string` |  |
+| `open_issues_count` | `integer` |  |
+| `has_pages` | `boolean` |  |
+| `forks` | `integer` |  |
+| `downloads_url` | `string` |  |
+| `network_count` | `integer` |  |
+| `collaborators_url` | `string` |  |
+| `archived` | `boolean` |  |
+| `deployments_url` | `string` |  |
+| `full_name` | `string` |  |
+| `forks_url` | `string` |  |
+| `mirror_url` | `string` |  |
+| `pulls_url` | `string` |  |
+| `contents_url` | `string` |  |
+| `subscribers_url` | `string` |  |
+| `watchers` | `integer` |  |
+| `stargazers_count` | `integer` |  |
+| `labels_url` | `string` |  |
+| `license` | `object` |  |
+| `permissions` | `object` |  |
+| `owner` | `object` | Simple User |
+| `archive_url` | `string` |  |
+| `html_url` | `string` |  |
+| `temp_clone_token` | `string` |  |
+| `commits_url` | `string` |  |
+| `delete_branch_on_merge` | `boolean` |  |
+| `issues_url` | `string` |  |
+| `clone_url` | `string` |  |
+| `teams_url` | `string` |  |
+| `git_tags_url` | `string` |  |
+| `open_issues` | `integer` |  |
+| `watchers_count` | `integer` |  |
+| `trees_url` | `string` |  |
+| `statuses_url` | `string` |  |
+| `git_url` | `string` |  |
+| `allow_forking` | `boolean` |  |
+| `forks_count` | `integer` |  |
+| `node_id` | `string` |  |
+| `contributors_url` | `string` |  |
+| `tags_url` | `string` |  |
+| `issue_events_url` | `string` |  |
+| `hooks_url` | `string` |  |
+| `svn_url` | `string` |  |
+| `default_branch` | `string` |  |
+| `pushed_at` | `string` |  |
+| `keys_url` | `string` |  |
+| `milestones_url` | `string` |  |
+| `has_projects` | `boolean` |  |
+| `language` | `string` |  |
+| `private` | `boolean` |  |
+| `notifications_url` | `string` |  |
+| `subscription_url` | `string` |  |
+| `has_issues` | `boolean` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_public` | `` | Lists all public repositories in the order that they were created.<br /><br />Note:<br />- For GitHub Enterprise Server, this endpoint will only list repositories available to all users on the enterprise.<br />- Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/rest/overview/resources-in-the-rest-api#link-header) to get the URL for the next page of repositories. | SELECT |

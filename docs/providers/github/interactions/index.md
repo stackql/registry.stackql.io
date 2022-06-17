@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 Owner or admin management of users interactions.  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.interactions</code></td></tr>
@@ -28,10 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/interactions/org_restrictions">org_restrictions</a><br />
-<a href="/docs/providers/github/interactions/repo_restrictions">repo_restrictions</a><br />
+<a href="/docs/providers/github/interactions/actions">actions</a><br />
+<a href="/docs/providers/github/interactions/activity">activity</a><br />
+<a href="/docs/providers/github/interactions/apps">apps</a><br />
+<a href="/docs/providers/github/interactions/billing">billing</a><br />
+<a href="/docs/providers/github/interactions/checks">checks</a><br />
+<a href="/docs/providers/github/interactions/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/interactions/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/interactions/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/interactions/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/interactions/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/interactions/gists">gists</a><br />
+<a href="/docs/providers/github/interactions/git">git</a><br />
+<a href="/docs/providers/github/interactions/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/interactions/interactions">interactions</a><br />
+<a href="/docs/providers/github/interactions/issues">issues</a><br />
+<a href="/docs/providers/github/interactions/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/interactions/user_restrictions">user_restrictions</a><br />
+<a href="/docs/providers/github/interactions/markdown">markdown</a><br />
+<a href="/docs/providers/github/interactions/meta">meta</a><br />
+<a href="/docs/providers/github/interactions/migrations">migrations</a><br />
+<a href="/docs/providers/github/interactions/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/interactions/orgs">orgs</a><br />
+<a href="/docs/providers/github/interactions/packages">packages</a><br />
+<a href="/docs/providers/github/interactions/projects">projects</a><br />
+<a href="/docs/providers/github/interactions/pulls">pulls</a><br />
+<a href="/docs/providers/github/interactions/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/interactions/reactions">reactions</a><br />
+<a href="/docs/providers/github/interactions/repos">repos</a><br />
+<a href="/docs/providers/github/interactions/scim">scim</a><br />
+<a href="/docs/providers/github/interactions/search">search</a><br />
+<a href="/docs/providers/github/interactions/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/interactions/teams">teams</a><br />
+<a href="/docs/providers/github/interactions/users">users</a><br />
 </div>
 </div>

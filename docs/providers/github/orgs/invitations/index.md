@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>invitations</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.orgs.invitations</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.invitations</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -27,14 +25,19 @@ See also:
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `role` | `string` |  |
-| `invitation_teams_url` | `string` |  |
-| `team_count` | `integer` |  |
-| `login` | `string` |  |
-| `node_id` | `string` |  |
-| `inviter` | `object` | Simple User |
 | `created_at` | `string` |  |
-| `email` | `string` |  |
-| `failed_at` | `string` |  |
+| `inviter` | `object` | Simple User |
 | `failed_reason` | `string` |  |
+| `invitation_teams_url` | `string` |  |
+| `node_id` | `string` |  |
+| `role` | `string` |  |
+| `email` | `string` |  |
+| `login` | `string` |  |
+| `failed_at` | `string` |  |
+| `team_count` | `integer` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_pending_invitations` | `org` | The return hash contains a `role` field which refers to the Organization Invitation role and will be one of the following values: `direct_member`, `admin`, `billing_manager`, `hiring_manager`, or `reinstate`. If the invitee is not a GitHub member, the `login` field in the return hash will be `null`. | SELECT |
+| `create_invitation` | `org` | Invite people to an organization by using their GitHub user ID or their email address. In order to create invitations in an organization, the authenticated user must be an organization owner.<br /><br />This endpoint triggers [notifications](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details. | INSERT |
+| `cancel_invitation` | `invitation_id, org` | Cancel an organization invitation. In order to cancel an organization invitation, the authenticated user must be an organization owner.<br /><br />This endpoint triggers [notifications](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications). | EXEC |

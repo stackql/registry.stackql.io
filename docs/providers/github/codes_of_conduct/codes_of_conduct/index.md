@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>codes_of_conduct</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.codes_of_conduct.codes_of_conduct</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.codes_of_conduct.codes_of_conduct</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -27,8 +25,12 @@ See also:
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
-| `body` | `string` |  |
-| `html_url` | `string` |  |
 | `key` | `string` |  |
 | `url` | `string` |  |
+| `body` | `string` |  |
+| `html_url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_all_codes_of_conduct` | `` |  | SELECT |
+| `get_conduct_code` | `key` |  | SELECT |

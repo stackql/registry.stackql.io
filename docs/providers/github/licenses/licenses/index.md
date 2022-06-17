@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>licenses</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.licenses.licenses</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.licenses.licenses</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,15 +26,18 @@ See also:
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `key` | `string` |  |
+| `featured` | `boolean` |  |
 | `html_url` | `string` |  |
-| `spdx_id` | `string` |  |
-| `body` | `string` |  |
-| `url` | `string` |  |
-| `implementation` | `string` |  |
-| `node_id` | `string` |  |
-| `limitations` | `array` |  |
 | `permissions` | `array` |  |
 | `conditions` | `array` |  |
-| `featured` | `boolean` |  |
+| `implementation` | `string` |  |
+| `body` | `string` |  |
+| `spdx_id` | `string` |  |
+| `node_id` | `string` |  |
+| `key` | `string` |  |
+| `limitations` | `array` |  |
+| `url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get` | `license` |  | SELECT |

@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>collaborators</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.collaborators</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.collaborators</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,24 +26,30 @@ See also:
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` |  |
-| `events_url` | `string` |  |
-| `organizations_url` | `string` |  |
-| `subscriptions_url` | `string` |  |
-| `url` | `string` |  |
-| `followers_url` | `string` |  |
-| `permissions` | `object` |  |
-| `html_url` | `string` |  |
-| `following_url` | `string` |  |
-| `site_admin` | `boolean` |  |
-| `starred_url` | `string` |  |
-| `role_name` | `string` |  |
 | `login` | `string` |  |
-| `repos_url` | `string` |  |
+| `gravatar_id` | `string` |  |
+| `starred_url` | `string` |  |
+| `events_url` | `string` |  |
 | `received_events_url` | `string` |  |
+| `html_url` | `string` |  |
+| `node_id` | `string` |  |
+| `permissions` | `object` |  |
+| `repos_url` | `string` |  |
+| `followers_url` | `string` |  |
+| `site_admin` | `boolean` |  |
+| `role_name` | `string` |  |
+| `organizations_url` | `string` |  |
+| `type` | `string` |  |
 | `avatar_url` | `string` |  |
 | `gists_url` | `string` |  |
-| `gravatar_id` | `string` |  |
+| `following_url` | `string` |  |
+| `subscriptions_url` | `string` |  |
+| `url` | `string` |  |
 | `email` | `string` |  |
-| `node_id` | `string` |  |
-| `type` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_collaborators` | `owner, repo` | For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.<br /><br />Team members will include the members of child teams.<br /><br />You must authenticate using an access token with the `read:org` and `repo` scopes with push access to use this<br />endpoint. GitHub Apps must have the `members` organization permission and `metadata` repository permission to use this<br />endpoint. | SELECT |
+| `add_collaborator` | `owner, repo, username` | This endpoint triggers [notifications](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.<br /><br />For more information on permission levels, see "[Repository permission levels for an organization](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization)". There are restrictions on which permissions can be granted to organization members when an organization base role is in place. In this case, the permission being given must be equal to or higher than the org base permission. Otherwise, the request will fail with:<br /><br />```<br />Cannot assign {member} permission of {role name}<br />```<br /><br />Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."<br /><br />The invitee will receive a notification that they have been invited to the repository, which they must accept or decline. They may do this via the notifications page, the email they receive, or by using the [repository invitations API endpoints](https://docs.github.com/rest/reference/repos#invitations).<br /><br />**Rate limits**<br /><br />You are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository. | INSERT |
+| `remove_collaborator` | `owner, repo, username` |  | DELETE |
+| `check_collaborator` | `owner, repo, username` | For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.<br /><br />Team members will include the members of child teams.<br /><br />You must authenticate using an access token with the `read:org` and `repo` scopes with push access to use this<br />endpoint. GitHub Apps must have the `members` organization permission and `metadata` repository permission to use this<br />endpoint. | EXEC |

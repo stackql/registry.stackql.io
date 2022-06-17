@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 View, modify your gists.  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.gists</code></td></tr>
@@ -28,13 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/gists/comments">comments</a><br />
-<a href="/docs/providers/github/gists/gist_commits">gist_commits</a><br />
-<a href="/docs/providers/github/gists/gist_forks">gist_forks</a><br />
+<a href="/docs/providers/github/gists/actions">actions</a><br />
+<a href="/docs/providers/github/gists/activity">activity</a><br />
+<a href="/docs/providers/github/gists/apps">apps</a><br />
+<a href="/docs/providers/github/gists/billing">billing</a><br />
+<a href="/docs/providers/github/gists/checks">checks</a><br />
+<a href="/docs/providers/github/gists/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/gists/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/gists/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/gists/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/gists/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/gists/gists">gists</a><br />
+<a href="/docs/providers/github/gists/git">git</a><br />
+<a href="/docs/providers/github/gists/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/gists/interactions">interactions</a><br />
+<a href="/docs/providers/github/gists/issues">issues</a><br />
+<a href="/docs/providers/github/gists/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/gists/gist_public">gist_public</a><br />
-<a href="/docs/providers/github/gists/gist_stars">gist_stars</a><br />
-<a href="/docs/providers/github/gists/gists">gists</a><br />
+<a href="/docs/providers/github/gists/markdown">markdown</a><br />
+<a href="/docs/providers/github/gists/meta">meta</a><br />
+<a href="/docs/providers/github/gists/migrations">migrations</a><br />
+<a href="/docs/providers/github/gists/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/gists/orgs">orgs</a><br />
+<a href="/docs/providers/github/gists/packages">packages</a><br />
+<a href="/docs/providers/github/gists/projects">projects</a><br />
+<a href="/docs/providers/github/gists/pulls">pulls</a><br />
+<a href="/docs/providers/github/gists/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/gists/reactions">reactions</a><br />
+<a href="/docs/providers/github/gists/repos">repos</a><br />
+<a href="/docs/providers/github/gists/scim">scim</a><br />
+<a href="/docs/providers/github/gists/search">search</a><br />
+<a href="/docs/providers/github/gists/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/gists/teams">teams</a><br />
+<a href="/docs/providers/github/gists/users">users</a><br />
 </div>
 </div>

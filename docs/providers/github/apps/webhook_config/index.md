@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>webhook_config</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.apps.webhook_config</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.apps.webhook_config</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,12 +24,12 @@ See also:
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `plan` | `object` | Marketplace Listing Plan |
-| `unit_count` | `integer` |  |
-| `updated_at` | `string` |  |
-| `account` | `object` |  |
-| `billing_cycle` | `string` |  |
-| `free_trial_ends_on` | `string` |  |
-| `next_billing_date` | `string` |  |
-| `on_free_trial` | `boolean` |  |
+| `secret` | `string` | If provided, the `secret` will be used as the `key` to generate the HMAC hex digest value for [delivery signature headers](https://docs.github.com/webhooks/event-payloads/#delivery-headers). |
+| `url` | `string` | The URL to which the payloads will be delivered. |
+| `content_type` | `string` | The media type used to serialize the payloads. Supported values include `json` and `form`. The default is `form`. |
+| `insecure_ssl` | `` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_webhook_config_for_app` | `` | Returns the webhook configuration for a GitHub App. For more information about configuring a webhook for your app, see "[Creating a GitHub App](/developers/apps/creating-a-github-app)."<br /><br />You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. | SELECT |
+| `update_webhook_config_for_app` | `` | Updates the webhook configuration for a GitHub App. For more information about configuring a webhook for your app, see "[Creating a GitHub App](/developers/apps/creating-a-github-app)."<br /><br />You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. | EXEC |

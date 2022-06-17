@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 Monitor charges and usage from Actions and Packages.  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.billing</code></td></tr>
@@ -28,11 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/billing/actions_usage">actions_usage</a><br />
-<a href="/docs/providers/github/billing/advanced_security">advanced_security</a><br />
+<a href="/docs/providers/github/billing/actions">actions</a><br />
+<a href="/docs/providers/github/billing/activity">activity</a><br />
+<a href="/docs/providers/github/billing/apps">apps</a><br />
+<a href="/docs/providers/github/billing/billing">billing</a><br />
+<a href="/docs/providers/github/billing/checks">checks</a><br />
+<a href="/docs/providers/github/billing/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/billing/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/billing/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/billing/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/billing/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/billing/gists">gists</a><br />
+<a href="/docs/providers/github/billing/git">git</a><br />
+<a href="/docs/providers/github/billing/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/billing/interactions">interactions</a><br />
+<a href="/docs/providers/github/billing/issues">issues</a><br />
+<a href="/docs/providers/github/billing/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/billing/packages_usage">packages_usage</a><br />
-<a href="/docs/providers/github/billing/shared_storage">shared_storage</a><br />
+<a href="/docs/providers/github/billing/markdown">markdown</a><br />
+<a href="/docs/providers/github/billing/meta">meta</a><br />
+<a href="/docs/providers/github/billing/migrations">migrations</a><br />
+<a href="/docs/providers/github/billing/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/billing/orgs">orgs</a><br />
+<a href="/docs/providers/github/billing/packages">packages</a><br />
+<a href="/docs/providers/github/billing/projects">projects</a><br />
+<a href="/docs/providers/github/billing/pulls">pulls</a><br />
+<a href="/docs/providers/github/billing/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/billing/reactions">reactions</a><br />
+<a href="/docs/providers/github/billing/repos">repos</a><br />
+<a href="/docs/providers/github/billing/scim">scim</a><br />
+<a href="/docs/providers/github/billing/search">search</a><br />
+<a href="/docs/providers/github/billing/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/billing/teams">teams</a><br />
+<a href="/docs/providers/github/billing/users">users</a><br />
 </div>
 </div>

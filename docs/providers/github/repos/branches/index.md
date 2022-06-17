@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>branches</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.branches</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.branches</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -27,11 +25,17 @@ See also:
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
+| `protected` | `boolean` |  |
+| `protection` | `object` | Branch Protection |
 | `protection_url` | `string` |  |
 | `required_approving_review_count` | `integer` |  |
 | `_links` | `object` |  |
 | `commit` | `object` | Commit |
 | `pattern` | `string` |  |
-| `protected` | `boolean` |  |
-| `protection` | `object` | Branch Protection |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_branch` | `branch, owner, repo` |  | SELECT |
+| `list_branches` | `owner, repo` |  | SELECT |
+| `merge_upstream` | `owner, repo, data__branch` | Sync a branch of a forked repository to keep it up-to-date with the upstream repository. | EXEC |
+| `rename_branch` | `branch, owner, repo, data__new_name` | Renames a branch in a repository.<br /><br />**Note:** Although the API responds immediately, the branch rename process might take some extra time to complete in the background. You won't be able to push to the old branch name while the rename process is in progress. For more information, see "[Renaming a branch](https://docs.github.com/github/administering-a-repository/renaming-a-branch)".<br /><br />The permissions required to use this endpoint depends on whether you are renaming the default branch.<br /><br />To rename a non-default branch:<br /><br />* Users must have push access.<br />* GitHub Apps must have the `contents:write` repository permission.<br /><br />To rename the default branch:<br /><br />* Users must have admin or owner permissions.<br />* GitHub Apps must have the `administration:write` repository permission. | EXEC |

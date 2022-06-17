@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>keys</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.keys</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.keys</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -34,3 +32,9 @@ See also:
 | `title` | `string` |  |
 | `url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_deploy_key` | `key_id, owner, repo` |  | SELECT |
+| `list_deploy_keys` | `owner, repo` |  | SELECT |
+| `create_deploy_key` | `owner, repo, data__key` | You can create a read-only deploy key. | INSERT |
+| `delete_deploy_key` | `key_id, owner, repo` | Deploy keys are immutable. If you need to update a key, remove the key and create a new one instead. | DELETE |

@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>repository_permissions</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.actions.repository_permissions</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.repository_permissions</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -30,3 +28,7 @@ See also:
 | `selected_actions_url` | `string` | The API URL to use to get or set the actions that are allowed to run, when `allowed_actions` is set to `selected`. |
 | `allowed_actions` | `string` | The permissions policy that controls the actions that are allowed to run. Can be one of: `all`, `local_only`, or `selected`. |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_github_actions_permissions_repository` | `owner, repo` | Gets the GitHub Actions permissions policy for a repository, including whether GitHub Actions is enabled and the actions allowed to run in the repository.<br /><br />You must authenticate using an access token with the `repo` scope to use this<br />endpoint. GitHub Apps must have the `administration` repository permission to use this API. | SELECT |
+| `set_github_actions_permissions_repository` | `owner, repo, data__enabled` | Sets the GitHub Actions permissions policy for enabling GitHub Actions and allowed actions in the repository.<br /><br />If the repository belongs to an organization or enterprise that has set restrictive permissions at the organization or enterprise levels, such as `allowed_actions` to `selected` actions, then you cannot override them for the repository.<br /><br />You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration` repository permission to use this API. | EXEC |

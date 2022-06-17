@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 Interact with GitHub Repos.  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.repos</code></td></tr>
@@ -28,62 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/repos/access_restrictions">access_restrictions</a><br />
-<a href="/docs/providers/github/repos/admin_branch_protection">admin_branch_protection</a><br />
-<a href="/docs/providers/github/repos/app_access">app_access</a><br />
-<a href="/docs/providers/github/repos/autolinks">autolinks</a><br />
-<a href="/docs/providers/github/repos/branch_protection">branch_protection</a><br />
-<a href="/docs/providers/github/repos/branches">branches</a><br />
-<a href="/docs/providers/github/repos/clone_traffic">clone_traffic</a><br />
-<a href="/docs/providers/github/repos/collaborator_permission_levels">collaborator_permission_levels</a><br />
-<a href="/docs/providers/github/repos/collaborators">collaborators</a><br />
-<a href="/docs/providers/github/repos/combined_statuses">combined_statuses</a><br />
-<a href="/docs/providers/github/repos/comments">comments</a><br />
-<a href="/docs/providers/github/repos/commit_branches">commit_branches</a><br />
-<a href="/docs/providers/github/repos/commit_pull_requests">commit_pull_requests</a><br />
-<a href="/docs/providers/github/repos/commits">commits</a><br />
-<a href="/docs/providers/github/repos/community">community</a><br />
-<a href="/docs/providers/github/repos/content_traffic">content_traffic</a><br />
-<a href="/docs/providers/github/repos/contents">contents</a><br />
-<a href="/docs/providers/github/repos/contributors">contributors</a><br />
-<a href="/docs/providers/github/repos/deployment_statuses">deployment_statuses</a><br />
-<a href="/docs/providers/github/repos/deployments">deployments</a><br />
-<a href="/docs/providers/github/repos/environments">environments</a><br />
-<a href="/docs/providers/github/repos/forks">forks</a><br />
-<a href="/docs/providers/github/repos/invitations">invitations</a><br />
-<a href="/docs/providers/github/repos/keys">keys</a><br />
-<a href="/docs/providers/github/repos/latest_releases">latest_releases</a><br />
-<a href="/docs/providers/github/repos/lfs">lfs</a><br />
-<a href="/docs/providers/github/repos/merging">merging</a><br />
-<a href="/docs/providers/github/repos/pages">pages</a><br />
+<a href="/docs/providers/github/repos/actions">actions</a><br />
+<a href="/docs/providers/github/repos/activity">activity</a><br />
+<a href="/docs/providers/github/repos/apps">apps</a><br />
+<a href="/docs/providers/github/repos/billing">billing</a><br />
+<a href="/docs/providers/github/repos/checks">checks</a><br />
+<a href="/docs/providers/github/repos/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/repos/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/repos/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/repos/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/repos/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/repos/gists">gists</a><br />
+<a href="/docs/providers/github/repos/git">git</a><br />
+<a href="/docs/providers/github/repos/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/repos/interactions">interactions</a><br />
+<a href="/docs/providers/github/repos/issues">issues</a><br />
+<a href="/docs/providers/github/repos/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/repos/pages_build_latest">pages_build_latest</a><br />
-<a href="/docs/providers/github/repos/pages_builds">pages_builds</a><br />
-<a href="/docs/providers/github/repos/pages_health_checks">pages_health_checks</a><br />
-<a href="/docs/providers/github/repos/public_repos">public_repos</a><br />
-<a href="/docs/providers/github/repos/referrer_traffic">referrer_traffic</a><br />
-<a href="/docs/providers/github/repos/release_assets">release_assets</a><br />
-<a href="/docs/providers/github/repos/releases">releases</a><br />
+<a href="/docs/providers/github/repos/markdown">markdown</a><br />
+<a href="/docs/providers/github/repos/meta">meta</a><br />
+<a href="/docs/providers/github/repos/migrations">migrations</a><br />
+<a href="/docs/providers/github/repos/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/repos/orgs">orgs</a><br />
+<a href="/docs/providers/github/repos/packages">packages</a><br />
+<a href="/docs/providers/github/repos/projects">projects</a><br />
+<a href="/docs/providers/github/repos/pulls">pulls</a><br />
+<a href="/docs/providers/github/repos/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/repos/reactions">reactions</a><br />
 <a href="/docs/providers/github/repos/repos">repos</a><br />
-<a href="/docs/providers/github/repos/required_pull_request_reviews">required_pull_request_reviews</a><br />
-<a href="/docs/providers/github/repos/required_signatures">required_signatures</a><br />
-<a href="/docs/providers/github/repos/required_status_checks">required_status_checks</a><br />
-<a href="/docs/providers/github/repos/statistics_code_frequency">statistics_code_frequency</a><br />
-<a href="/docs/providers/github/repos/statistics_commit_activity">statistics_commit_activity</a><br />
-<a href="/docs/providers/github/repos/statistics_contributor_activity">statistics_contributor_activity</a><br />
-<a href="/docs/providers/github/repos/statistics_participation">statistics_participation</a><br />
-<a href="/docs/providers/github/repos/statistics_punch_cards">statistics_punch_cards</a><br />
-<a href="/docs/providers/github/repos/status_check_contexts">status_check_contexts</a><br />
-<a href="/docs/providers/github/repos/statuses">statuses</a><br />
-<a href="/docs/providers/github/repos/tags">tags</a><br />
-<a href="/docs/providers/github/repos/team_access">team_access</a><br />
+<a href="/docs/providers/github/repos/scim">scim</a><br />
+<a href="/docs/providers/github/repos/search">search</a><br />
+<a href="/docs/providers/github/repos/secret_scanning">secret_scanning</a><br />
 <a href="/docs/providers/github/repos/teams">teams</a><br />
-<a href="/docs/providers/github/repos/topics">topics</a><br />
-<a href="/docs/providers/github/repos/traffic">traffic</a><br />
-<a href="/docs/providers/github/repos/user_access">user_access</a><br />
-<a href="/docs/providers/github/repos/webhook_config">webhook_config</a><br />
-<a href="/docs/providers/github/repos/webhook_deliveries">webhook_deliveries</a><br />
-<a href="/docs/providers/github/repos/webhooks">webhooks</a><br />
+<a href="/docs/providers/github/repos/users">users</a><br />
 </div>
 </div>

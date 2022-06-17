@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>gitignore</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.gitignore.gitignore</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.gitignore.gitignore</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -29,3 +27,7 @@ See also:
 | `name` | `string` |  |
 | `source` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_all_templates` | `` | List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/reference/repos#create-a-repository-for-the-authenticated-user). | SELECT |
+| `get_template` | `name` | The API also allows fetching the source of a single template.<br />Use the raw [media type](https://docs.github.com/rest/overview/media-types/) to get the raw contents. | SELECT |

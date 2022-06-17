@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>statistics_commit_activity</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.statistics_commit_activity</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.statistics_commit_activity</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,7 +24,10 @@ See also:
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `week` | `integer` |  |
 | `days` | `array` |  |
 | `total` | `integer` |  |
-| `week` | `integer` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_commit_activity_stats` | `owner, repo` | Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`. | SELECT |

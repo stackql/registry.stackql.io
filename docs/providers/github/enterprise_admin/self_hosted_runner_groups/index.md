@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>self_hosted_runner_groups</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.enterprise_admin.self_hosted_runner_groups</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.enterprise_admin.self_hosted_runner_groups</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,9 +26,16 @@ See also:
 | ---- | -------- | ----------- |
 | `id` | `number` |  |
 | `name` | `string` |  |
-| `runners_url` | `string` |  |
-| `selected_organizations_url` | `string` |  |
 | `visibility` | `string` |  |
 | `allows_public_repositories` | `boolean` |  |
 | `default` | `boolean` |  |
+| `runners_url` | `string` |  |
+| `selected_organizations_url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_self_hosted_runner_group_for_enterprise` | `enterprise, runner_group_id` | Gets a specific self-hosted runner group for an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. | SELECT |
+| `list_self_hosted_runner_groups_for_enterprise` | `enterprise` | Lists all self-hosted runner groups for an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. | SELECT |
+| `create_self_hosted_runner_group_for_enterprise` | `enterprise, data__name` | Creates a new self-hosted runner group for an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. | INSERT |
+| `delete_self_hosted_runner_group_from_enterprise` | `enterprise, runner_group_id` | Deletes a self-hosted runner group for an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. | DELETE |
+| `update_self_hosted_runner_group_for_enterprise` | `enterprise, runner_group_id` | Updates the `name` and `visibility` of a self-hosted runner group in an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. | EXEC |

@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>workflow_run_approvals</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.actions.workflow_run_approvals</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.workflow_run_approvals</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -26,8 +24,12 @@ See also:
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `comment` | `string` | The comment submitted with the deployment review |
 | `environments` | `array` | The list of environments that were approved or rejected |
 | `state` | `string` | Whether deployment to the environment(s) was approved or rejected |
 | `user` | `object` | Simple User |
-| `comment` | `string` | The comment submitted with the deployment review |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_reviews_for_run` | `owner, repo, run_id` | Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. | SELECT |
+| `approve_workflow_run` | `owner, repo, run_id` | Approves a workflow run for a pull request from a public fork of a first time contributor. For more information, see ["Approving workflow runs from public forks](https://docs.github.com/actions/managing-workflow-runs/approving-workflow-runs-from-public-forks)."<br /><br />You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions:write` permission to use this endpoint. | EXEC |

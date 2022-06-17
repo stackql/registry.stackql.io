@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>shared_storage</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.billing.shared_storage</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.billing.shared_storage</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -30,3 +28,8 @@ See also:
 | `estimated_paid_storage_for_month` | `integer` | Estimated storage space (GB) used in billing cycle. |
 | `estimated_storage_for_month` | `integer` | Estimated sum of free and paid storage space (GB) used in billing cycle. |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_shared_storage_billing_ghe` | `enterprise` | Gets the estimated paid and estimated total storage used for GitHub Actions and GitHub Packages.<br /><br />Paid minutes only apply to packages stored for private repositories. For more information, see "[Managing billing for GitHub Packages](https://docs.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-packages)."<br /><br />The authenticated user must be an enterprise admin. | SELECT |
+| `get_shared_storage_billing_org` | `org` | Gets the estimated paid and estimated total storage used for GitHub Actions and GitHub Packages.<br /><br />Paid minutes only apply to packages stored for private repositories. For more information, see "[Managing billing for GitHub Packages](https://docs.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-packages)."<br /><br />Access tokens must have the `repo` or `admin:org` scope. | SELECT |
+| `get_shared_storage_billing_user` | `username` | Gets the estimated paid and estimated total storage used for GitHub Actions and GitHub Packages.<br /><br />Paid minutes only apply to packages stored for private repositories. For more information, see "[Managing billing for GitHub Packages](https://docs.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-packages)."<br /><br />Access tokens must have the `user` scope. | SELECT |

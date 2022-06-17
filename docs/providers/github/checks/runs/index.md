@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>runs</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.checks.runs</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.checks.runs</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -28,19 +26,27 @@ See also:
 | ---- | -------- | ----------- |
 | `id` | `integer` | The id of the check. |
 | `name` | `string` | The name of the check. |
-| `node_id` | `string` |  |
-| `head_sha` | `string` | The SHA of the commit that is being checked. |
-| `url` | `string` |  |
-| `deployment` | `object` | A deployment created as the result of an Actions check run from a workflow that references an environment |
-| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `html_url` | `string` |  |
-| `completed_at` | `string` |  |
 | `pull_requests` | `array` |  |
+| `external_id` | `string` |  |
+| `completed_at` | `string` |  |
+| `head_sha` | `string` | The SHA of the commit that is being checked. |
 | `status` | `string` | The phase of the lifecycle that the check is currently in. |
 | `check_suite` | `object` |  |
-| `output` | `object` |  |
-| `started_at` | `string` |  |
-| `details_url` | `string` |  |
 | `conclusion` | `string` |  |
-| `external_id` | `string` |  |
+| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `output` | `object` |  |
+| `node_id` | `string` |  |
+| `url` | `string` |  |
+| `started_at` | `string` |  |
+| `deployment` | `object` | A deployment created as the result of an Actions check run from a workflow that references an environment |
+| `html_url` | `string` |  |
+| `details_url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get` | `check_run_id, owner, repo` | **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.<br /><br />Gets a single check run using its `id`. GitHub Apps must have the `checks:read` permission on a private repository or pull access to a public repository to get check runs. OAuth Apps and authenticated users must have the `repo` scope to get check runs in a private repository. | SELECT |
+| `list_for_ref` | `owner, ref, repo` | **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.<br /><br />Lists check runs for a commit ref. The `ref` can be a SHA, branch name, or a tag name. GitHub Apps must have the `checks:read` permission on a private repository or pull access to a public repository to get check runs. OAuth Apps and authenticated users must have the `repo` scope to get check runs in a private repository. | SELECT |
+| `list_for_suite` | `check_suite_id, owner, repo` | **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.<br /><br />Lists check runs for a check suite using its `id`. GitHub Apps must have the `checks:read` permission on a private repository or pull access to a public repository to get check runs. OAuth Apps and authenticated users must have the `repo` scope to get check runs in a private repository. | SELECT |
+| `create` | `owner, repo, data__head_sha, data__name` | **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.<br /><br />Creates a new check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to create check runs.<br /><br />In a check suite, GitHub limits the number of check runs with the same name to 1000. Once these check runs exceed 1000, GitHub will start to automatically delete older check runs. | INSERT |
+| `rerequest_run` | `check_run_id, owner, repo` | Triggers GitHub to rerequest an existing check run, without pushing new code to a repository. This endpoint will trigger the [`check_run` webhook](https://docs.github.com/webhooks/event-payloads/#check_run) event with the action `rerequested`. When a check run is `rerequested`, its `status` is reset to `queued` and the `conclusion` is cleared.<br /><br />To rerequest a check run, your GitHub App must have the `checks:read` permission on a private repository or pull access to a public repository. | EXEC |
+| `update` | `check_run_id, owner, repo` | **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array.<br /><br />Updates a check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to edit check runs. | EXEC |

@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 enterprise_admin  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.enterprise_admin</code></td></tr>
@@ -28,18 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/enterprise_admin/actions_permissions">actions_permissions</a><br />
-<a href="/docs/providers/github/enterprise_admin/allowed_actions">allowed_actions</a><br />
-<a href="/docs/providers/github/enterprise_admin/audit_log_events">audit_log_events</a><br />
-<a href="/docs/providers/github/enterprise_admin/org_access_to_self_hosted_runner_group">org_access_to_self_hosted_runner_group</a><br />
-<a href="/docs/providers/github/enterprise_admin/orgs_enabled_for_actions">orgs_enabled_for_actions</a><br />
-<a href="/docs/providers/github/enterprise_admin/scim_enterprise_groups">scim_enterprise_groups</a><br />
+<a href="/docs/providers/github/enterprise_admin/actions">actions</a><br />
+<a href="/docs/providers/github/enterprise_admin/activity">activity</a><br />
+<a href="/docs/providers/github/enterprise_admin/apps">apps</a><br />
+<a href="/docs/providers/github/enterprise_admin/billing">billing</a><br />
+<a href="/docs/providers/github/enterprise_admin/checks">checks</a><br />
+<a href="/docs/providers/github/enterprise_admin/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/enterprise_admin/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/enterprise_admin/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/enterprise_admin/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/enterprise_admin/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/enterprise_admin/gists">gists</a><br />
+<a href="/docs/providers/github/enterprise_admin/git">git</a><br />
+<a href="/docs/providers/github/enterprise_admin/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/enterprise_admin/interactions">interactions</a><br />
+<a href="/docs/providers/github/enterprise_admin/issues">issues</a><br />
+<a href="/docs/providers/github/enterprise_admin/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/enterprise_admin/scim_enterprise_users">scim_enterprise_users</a><br />
-<a href="/docs/providers/github/enterprise_admin/self_hosted_runner_applications">self_hosted_runner_applications</a><br />
-<a href="/docs/providers/github/enterprise_admin/self_hosted_runner_groups">self_hosted_runner_groups</a><br />
-<a href="/docs/providers/github/enterprise_admin/self_hosted_runner_labels">self_hosted_runner_labels</a><br />
-<a href="/docs/providers/github/enterprise_admin/self_hosted_runners">self_hosted_runners</a><br />
+<a href="/docs/providers/github/enterprise_admin/markdown">markdown</a><br />
+<a href="/docs/providers/github/enterprise_admin/meta">meta</a><br />
+<a href="/docs/providers/github/enterprise_admin/migrations">migrations</a><br />
+<a href="/docs/providers/github/enterprise_admin/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/enterprise_admin/orgs">orgs</a><br />
+<a href="/docs/providers/github/enterprise_admin/packages">packages</a><br />
+<a href="/docs/providers/github/enterprise_admin/projects">projects</a><br />
+<a href="/docs/providers/github/enterprise_admin/pulls">pulls</a><br />
+<a href="/docs/providers/github/enterprise_admin/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/enterprise_admin/reactions">reactions</a><br />
+<a href="/docs/providers/github/enterprise_admin/repos">repos</a><br />
+<a href="/docs/providers/github/enterprise_admin/scim">scim</a><br />
+<a href="/docs/providers/github/enterprise_admin/search">search</a><br />
+<a href="/docs/providers/github/enterprise_admin/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/enterprise_admin/teams">teams</a><br />
+<a href="/docs/providers/github/enterprise_admin/users">users</a><br />
 </div>
 </div>

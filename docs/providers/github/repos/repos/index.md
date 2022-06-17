@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>repos</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.repos</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.repos</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -29,86 +27,105 @@ See also:
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `full_name` | `string` |  |
 | `archived` | `boolean` |  |
-| `teams_url` | `string` |  |
+| `network_count` | `integer` |  |
+| `disabled` | `boolean` |  |
+| `forks_url` | `string` |  |
+| `size` | `integer` |  |
+| `svn_url` | `string` |  |
 | `statuses_url` | `string` |  |
-| `url` | `string` |  |
-| `allow_forking` | `boolean` |  |
-| `branches_url` | `string` |  |
-| `temp_clone_token` | `string` |  |
-| `open_issues_count` | `integer` |  |
+| `issue_comment_url` | `string` |  |
+| `html_url` | `string` |  |
+| `merges_url` | `string` |  |
+| `compare_url` | `string` |  |
 | `language` | `string` |  |
+| `deployments_url` | `string` |  |
+| `watchers_count` | `integer` |  |
+| `has_issues` | `boolean` |  |
+| `git_url` | `string` |  |
+| `git_commits_url` | `string` |  |
+| `pushed_at` | `string` |  |
+| `template_repository` | `object` | A git repository |
+| `open_issues` | `integer` |  |
+| `languages_url` | `string` |  |
+| `subscribers_count` | `integer` |  |
+| `url` | `string` |  |
+| `tags_url` | `string` |  |
+| `mirror_url` | `string` |  |
+| `subscription_url` | `string` |  |
 | `commits_url` | `string` |  |
 | `is_template` | `boolean` |  |
-| `has_issues` | `boolean` |  |
-| `deployments_url` | `string` |  |
-| `downloads_url` | `string` |  |
-| `private` | `boolean` |  |
-| `subscribers_url` | `string` |  |
-| `topics` | `array` |  |
-| `delete_branch_on_merge` | `boolean` |  |
-| `forks` | `integer` |  |
 | `git_refs_url` | `string` |  |
-| `archive_url` | `string` |  |
-| `hooks_url` | `string` |  |
-| `template_repository` | `object` | A git repository |
-| `clone_url` | `string` |  |
-| `merges_url` | `string` |  |
-| `svn_url` | `string` |  |
-| `forks_url` | `string` |  |
-| `role_name` | `string` |  |
-| `pushed_at` | `string` |  |
-| `html_url` | `string` |  |
-| `git_tags_url` | `string` |  |
-| `keys_url` | `string` |  |
-| `open_issues` | `integer` |  |
-| `git_url` | `string` |  |
-| `languages_url` | `string` |  |
-| `watchers` | `integer` |  |
-| `fork` | `boolean` |  |
-| `issue_events_url` | `string` |  |
-| `tags_url` | `string` |  |
-| `assignees_url` | `string` |  |
-| `updated_at` | `string` |  |
-| `labels_url` | `string` |  |
-| `comments_url` | `string` |  |
-| `network_count` | `integer` |  |
-| `contributors_url` | `string` |  |
-| `has_downloads` | `boolean` |  |
-| `issues_url` | `string` |  |
-| `milestones_url` | `string` |  |
-| `blobs_url` | `string` |  |
-| `disabled` | `boolean` |  |
-| `stargazers_url` | `string` |  |
-| `git_commits_url` | `string` |  |
-| `notifications_url` | `string` |  |
-| `has_pages` | `boolean` |  |
-| `pulls_url` | `string` |  |
-| `collaborators_url` | `string` |  |
-| `node_id` | `string` |  |
-| `created_at` | `string` |  |
-| `issue_comment_url` | `string` |  |
-| `subscription_url` | `string` |  |
-| `contents_url` | `string` |  |
-| `permissions` | `object` |  |
-| `trees_url` | `string` |  |
-| `homepage` | `string` |  |
-| `mirror_url` | `string` |  |
-| `size` | `integer` |  |
-| `visibility` | `string` |  |
-| `events_url` | `string` |  |
-| `watchers_count` | `integer` |  |
 | `owner` | `object` | Simple User |
-| `license` | `object` |  |
-| `ssh_url` | `string` |  |
-| `forks_count` | `integer` |  |
-| `releases_url` | `string` |  |
-| `subscribers_count` | `integer` |  |
-| `code_of_conduct` | `object` | Code Of Conduct |
-| `compare_url` | `string` |  |
+| `forks` | `integer` |  |
+| `collaborators_url` | `string` |  |
+| `delete_branch_on_merge` | `boolean` |  |
 | `has_projects` | `boolean` |  |
-| `default_branch` | `string` |  |
-| `has_wiki` | `boolean` |  |
+| `visibility` | `string` |  |
+| `homepage` | `string` |  |
+| `comments_url` | `string` |  |
+| `temp_clone_token` | `string` |  |
+| `stargazers_url` | `string` |  |
+| `git_tags_url` | `string` |  |
+| `archive_url` | `string` |  |
+| `fork` | `boolean` |  |
+| `created_at` | `string` |  |
+| `releases_url` | `string` |  |
+| `private` | `boolean` |  |
 | `stargazers_count` | `integer` |  |
+| `issue_events_url` | `string` |  |
+| `default_branch` | `string` |  |
+| `contributors_url` | `string` |  |
+| `downloads_url` | `string` |  |
+| `license` | `object` |  |
+| `watchers` | `integer` |  |
+| `contents_url` | `string` |  |
+| `has_downloads` | `boolean` |  |
+| `code_of_conduct` | `object` | Code Of Conduct |
+| `has_wiki` | `boolean` |  |
+| `milestones_url` | `string` |  |
+| `notifications_url` | `string` |  |
+| `branches_url` | `string` |  |
+| `open_issues_count` | `integer` |  |
+| `updated_at` | `string` |  |
+| `full_name` | `string` |  |
+| `has_pages` | `boolean` |  |
+| `issues_url` | `string` |  |
+| `teams_url` | `string` |  |
+| `hooks_url` | `string` |  |
+| `pulls_url` | `string` |  |
+| `labels_url` | `string` |  |
+| `node_id` | `string` |  |
+| `clone_url` | `string` |  |
+| `blobs_url` | `string` |  |
+| `permissions` | `object` |  |
+| `role_name` | `string` |  |
+| `subscribers_url` | `string` |  |
+| `events_url` | `string` |  |
+| `trees_url` | `string` |  |
+| `keys_url` | `string` |  |
+| `topics` | `array` |  |
+| `forks_count` | `integer` |  |
+| `allow_forking` | `boolean` |  |
+| `assignees_url` | `string` |  |
+| `ssh_url` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get` | `owner, repo` | The `parent` and `source` objects are present when the repository is a fork. `parent` is the repository this repository was forked from, `source` is the ultimate source for the network. | SELECT |
+| `list_for_authenticated_user` | `` | Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.<br /><br />The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership. | SELECT |
+| `list_for_org` | `org` | Lists repositories for the specified organization. | SELECT |
+| `list_for_user` | `username` | Lists public repositories for the specified user. Note: For GitHub AE, this endpoint will list internal repositories for the specified user. | SELECT |
+| `create_for_authenticated_user` | `data__name` | Creates a new repository for the authenticated user.<br /><br />**OAuth scope requirements**<br /><br />When using [OAuth](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:<br /><br />*   `public_repo` scope or `repo` scope to create a public repository. Note: For GitHub AE, use `repo` scope to create an internal repository.<br />*   `repo` scope to create a private repository. | INSERT |
+| `create_in_org` | `org, data__name` | Creates a new repository in the specified organization. The authenticated user must be a member of the organization.<br /><br />**OAuth scope requirements**<br /><br />When using [OAuth](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:<br /><br />*   `public_repo` scope or `repo` scope to create a public repository. Note: For GitHub AE, use `repo` scope to create an internal repository.<br />*   `repo` scope to create a private repository | INSERT |
+| `create_using_template` | `template_owner, template_repo, data__name` | Creates a new repository using a repository template. Use the `template_owner` and `template_repo` route parameters to specify the repository to use as the template. The authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [Get a repository](https://docs.github.com/rest/reference/repos#get-a-repository) endpoint and check that the `is_template` key is `true`.<br /><br />**OAuth scope requirements**<br /><br />When using [OAuth](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:<br /><br />*   `public_repo` scope or `repo` scope to create a public repository. Note: For GitHub AE, use `repo` scope to create an internal repository.<br />*   `repo` scope to create a private repository | INSERT |
+| `delete` | `owner, repo` | Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.<br /><br />If an organization owner has configured the organization to prevent members from deleting organization-owned<br />repositories, you will get a `403 Forbidden` response. | DELETE |
+| `check_vulnerability_alerts` | `owner, repo` | Shows whether dependency alerts are enabled or disabled for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)". | EXEC |
+| `codeowners_errors` | `owner, repo` | List any syntax errors that are detected in the CODEOWNERS<br />file.<br /><br />For more information about the correct CODEOWNERS syntax,<br />see "[About code owners](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)." | EXEC |
+| `create_dispatch_event` | `owner, repo, data__event_type` | You can use this endpoint to trigger a webhook event called `repository_dispatch` when you want activity that happens outside of GitHub to trigger a GitHub Actions workflow or GitHub App webhook. You must configure your GitHub Actions workflow or GitHub App to run when the `repository_dispatch` event occurs. For an example `repository_dispatch` webhook payload, see "[RepositoryDispatchEvent](https://docs.github.com/webhooks/event-payloads/#repository_dispatch)."<br /><br />The `client_payload` parameter is available for any extra information that your workflow might need. This parameter is a JSON payload that will be passed on when the webhook event is dispatched. For example, the `client_payload` can include a message that a user would like to send using a GitHub Actions workflow. Or the `client_payload` can be used as a test to debug your workflow.<br /><br />This endpoint requires write access to the repository by providing either:<br /><br />  - Personal access tokens with `repo` scope. For more information, see "[Creating a personal access token for the command line](https://docs.github.com/articles/creating-a-personal-access-token-for-the-command-line)" in the GitHub Help documentation.<br />  - GitHub Apps with both `metadata:read` and `contents:read&write` permissions.<br /><br />This input example shows how you can use the `client_payload` as a test to debug your workflow. | EXEC |
+| `disable_automated_security_fixes` | `owner, repo` | Disables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://docs.github.com/en/articles/configuring-automated-security-fixes)". | EXEC |
+| `disable_vulnerability_alerts` | `owner, repo` | Disables dependency alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)". | EXEC |
+| `enable_automated_security_fixes` | `owner, repo` | Enables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://docs.github.com/en/articles/configuring-automated-security-fixes)". | EXEC |
+| `enable_vulnerability_alerts` | `owner, repo` | Enables dependency alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)". | EXEC |
+| `transfer` | `owner, repo, data__new_owner` | A transfer request will need to be accepted by the new owner when transferring a personal repository to another user. The response will contain the original `owner`, and the transfer will continue asynchronously. For more details on the requirements to transfer personal and organization-owned repositories, see [about repository transfers](https://docs.github.com/articles/about-repository-transfers/). | EXEC |
+| `update` | `owner, repo` | **Note**: To edit a repository's topics, use the [Replace all repository topics](https://docs.github.com/rest/reference/repos#replace-all-repository-topics) endpoint. | EXEC |

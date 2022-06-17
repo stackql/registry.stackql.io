@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>teams</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.teams</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.teams</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -29,14 +27,17 @@ See also:
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `node_id` | `string` |  |
-| `permission` | `string` |  |
-| `privacy` | `string` |  |
-| `permissions` | `object` |  |
+| `slug` | `string` |  |
 | `html_url` | `string` |  |
 | `repositories_url` | `string` |  |
-| `slug` | `string` |  |
-| `members_url` | `string` |  |
+| `node_id` | `string` |  |
+| `permissions` | `object` |  |
 | `url` | `string` |  |
 | `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `members_url` | `string` |  |
+| `permission` | `string` |  |
+| `privacy` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_teams` | `owner, repo` |  | SELECT |

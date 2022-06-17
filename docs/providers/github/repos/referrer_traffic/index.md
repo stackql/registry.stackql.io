@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>referrer_traffic</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.referrer_traffic</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.referrer_traffic</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -30,3 +28,6 @@ See also:
 | `referrer` | `string` |  |
 | `uniques` | `integer` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `get_top_referrers` | `owner, repo` | Get the top 10 referrers over the last 14 days. | SELECT |

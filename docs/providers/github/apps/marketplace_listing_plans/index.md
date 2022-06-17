@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>marketplace_listing_plans</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.apps.marketplace_listing_plans</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.apps.marketplace_listing_plans</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -29,14 +27,17 @@ See also:
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `url` | `string` |  |
-| `has_free_trial` | `boolean` |  |
-| `unit_name` | `string` |  |
-| `number` | `integer` |  |
 | `price_model` | `string` |  |
+| `state` | `string` |  |
+| `has_free_trial` | `boolean` |  |
+| `url` | `string` |  |
+| `bullets` | `array` |  |
+| `unit_name` | `string` |  |
+| `yearly_price_in_cents` | `integer` |  |
+| `number` | `integer` |  |
 | `accounts_url` | `string` |  |
 | `monthly_price_in_cents` | `integer` |  |
-| `state` | `string` |  |
-| `yearly_price_in_cents` | `integer` |  |
-| `bullets` | `array` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_plans` | `` | Lists all plans that are part of your GitHub Marketplace listing.<br /><br />GitHub Apps must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) with their client ID and client secret to access this endpoint. | SELECT |

@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>self_hosted_runner_group_repo_access</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.actions.self_hosted_runner_group_repo_access</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.self_hosted_runner_group_repo_access</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -29,3 +27,9 @@ See also:
 | `repositories` | `array` |  |
 | `total_count` | `number` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_repo_access_to_self_hosted_runner_group_in_org` | `org, runner_group_id` | The self-hosted runner groups REST API is available with GitHub Enterprise Cloud and GitHub Enterprise Server. For more information, see "[GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products)."<br /><br />Lists the repositories with access to a self-hosted runner group configured in an organization.<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. | SELECT |
+| `add_repo_access_to_self_hosted_runner_group_in_org` | `org, repository_id, runner_group_id` | The self-hosted runner groups REST API is available with GitHub Enterprise Cloud. For more information, see "[GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products)."<br /><br /><br />Adds a repository to the list of selected repositories that can access a self-hosted runner group. The runner group must have `visibility` set to `selected`. For more information, see "[Create a self-hosted runner group for an organization](#create-a-self-hosted-runner-group-for-an-organization)."<br /><br />You must authenticate using an access token with the `admin:org`<br />scope to use this endpoint. | EXEC |
+| `remove_repo_access_to_self_hosted_runner_group_in_org` | `org, repository_id, runner_group_id` | The self-hosted runner groups REST API is available with GitHub Enterprise Cloud. For more information, see "[GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products)."<br /><br /><br />Removes a repository from the list of selected repositories that can access a self-hosted runner group. The runner group must have `visibility` set to `selected`. For more information, see "[Create a self-hosted runner group for an organization](#create-a-self-hosted-runner-group-for-an-organization)."<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. | EXEC |
+| `set_repo_access_to_self_hosted_runner_group_in_org` | `org, runner_group_id, data__selected_repository_ids` | The self-hosted runner groups REST API is available with GitHub Enterprise Cloud. For more information, see "[GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products)."<br /><br />Replaces the list of repositories that have access to a self-hosted runner group configured in an organization.<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. | EXEC |

@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>tags</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.repos.tags</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.tags</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -27,8 +25,11 @@ See also:
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
-| `commit` | `object` |  |
-| `node_id` | `string` |  |
 | `tarball_url` | `string` |  |
 | `zipball_url` | `string` |  |
+| `commit` | `object` |  |
+| `node_id` | `string` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_tags` | `owner, repo` |  | SELECT |

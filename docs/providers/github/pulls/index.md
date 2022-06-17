@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 Interact with GitHub Pull Requests.  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.pulls</code></td></tr>
@@ -28,14 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/pulls/comments">comments</a><br />
-<a href="/docs/providers/github/pulls/commits">commits</a><br />
-<a href="/docs/providers/github/pulls/file_diffs">file_diffs</a><br />
-<a href="/docs/providers/github/pulls/pull_requests">pull_requests</a><br />
+<a href="/docs/providers/github/pulls/actions">actions</a><br />
+<a href="/docs/providers/github/pulls/activity">activity</a><br />
+<a href="/docs/providers/github/pulls/apps">apps</a><br />
+<a href="/docs/providers/github/pulls/billing">billing</a><br />
+<a href="/docs/providers/github/pulls/checks">checks</a><br />
+<a href="/docs/providers/github/pulls/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/pulls/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/pulls/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/pulls/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/pulls/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/pulls/gists">gists</a><br />
+<a href="/docs/providers/github/pulls/git">git</a><br />
+<a href="/docs/providers/github/pulls/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/pulls/interactions">interactions</a><br />
+<a href="/docs/providers/github/pulls/issues">issues</a><br />
+<a href="/docs/providers/github/pulls/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/pulls/review_comments">review_comments</a><br />
-<a href="/docs/providers/github/pulls/review_requests">review_requests</a><br />
-<a href="/docs/providers/github/pulls/reviews">reviews</a><br />
+<a href="/docs/providers/github/pulls/markdown">markdown</a><br />
+<a href="/docs/providers/github/pulls/meta">meta</a><br />
+<a href="/docs/providers/github/pulls/migrations">migrations</a><br />
+<a href="/docs/providers/github/pulls/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/pulls/orgs">orgs</a><br />
+<a href="/docs/providers/github/pulls/packages">packages</a><br />
+<a href="/docs/providers/github/pulls/projects">projects</a><br />
+<a href="/docs/providers/github/pulls/pulls">pulls</a><br />
+<a href="/docs/providers/github/pulls/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/pulls/reactions">reactions</a><br />
+<a href="/docs/providers/github/pulls/repos">repos</a><br />
+<a href="/docs/providers/github/pulls/scim">scim</a><br />
+<a href="/docs/providers/github/pulls/search">search</a><br />
+<a href="/docs/providers/github/pulls/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/pulls/teams">teams</a><br />
+<a href="/docs/providers/github/pulls/users">users</a><br />
 </div>
 </div>

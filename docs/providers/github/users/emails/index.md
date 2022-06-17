@@ -13,12 +13,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
   
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>emails</code></td></tr>
+<tr><td><b>Name</b></td><td><code>github.users.emails</code></td></tr>
 <tr><td><b>Id</b></td><td><code>github.users.emails</code></td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
 </tbody></table>
@@ -31,3 +29,9 @@ See also:
 | `email` | `string` |  |
 | `primary` | `boolean` |  |
 ## Methods
+| Name | Required Params | Description | Accessible by |
+| ---- | --------------- | ----------- | ------------- |
+| `list_emails_for_authenticated_user` | `` | Lists all of your email addresses, and specifies which one is visible to the public. This endpoint is accessible with the `user:email` scope. | SELECT |
+| `add_email_for_authenticated_user` | `` | This endpoint is accessible with the `user` scope. | INSERT |
+| `delete_email_for_authenticated_user` | `` | This endpoint is accessible with the `user` scope. | DELETE |
+| `set_primary_email_visibility_for_authenticated_user` | `data__visibility` | Sets the visibility for your primary email addresses. | EXEC |

@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 Activity APIs provide access to notifications, subscriptions, and timelines.  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.activity</code></td></tr>
@@ -28,19 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/activity/events">events</a><br />
-<a href="/docs/providers/github/activity/feeds">feeds</a><br />
-<a href="/docs/providers/github/activity/notification_subscriptions">notification_subscriptions</a><br />
-<a href="/docs/providers/github/activity/notifications">notifications</a><br />
-<a href="/docs/providers/github/activity/public_events">public_events</a><br />
-<a href="/docs/providers/github/activity/received_events">received_events</a><br />
+<a href="/docs/providers/github/activity/actions">actions</a><br />
+<a href="/docs/providers/github/activity/activity">activity</a><br />
+<a href="/docs/providers/github/activity/apps">apps</a><br />
+<a href="/docs/providers/github/activity/billing">billing</a><br />
+<a href="/docs/providers/github/activity/checks">checks</a><br />
+<a href="/docs/providers/github/activity/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/activity/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/activity/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/activity/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/activity/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/activity/gists">gists</a><br />
+<a href="/docs/providers/github/activity/git">git</a><br />
+<a href="/docs/providers/github/activity/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/activity/interactions">interactions</a><br />
+<a href="/docs/providers/github/activity/issues">issues</a><br />
+<a href="/docs/providers/github/activity/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/activity/received_public_events">received_public_events</a><br />
-<a href="/docs/providers/github/activity/repo_watchers">repo_watchers</a><br />
-<a href="/docs/providers/github/activity/stargazers">stargazers</a><br />
-<a href="/docs/providers/github/activity/starred_repos">starred_repos</a><br />
-<a href="/docs/providers/github/activity/watched_repos">watched_repos</a><br />
-<a href="/docs/providers/github/activity/watching">watching</a><br />
+<a href="/docs/providers/github/activity/markdown">markdown</a><br />
+<a href="/docs/providers/github/activity/meta">meta</a><br />
+<a href="/docs/providers/github/activity/migrations">migrations</a><br />
+<a href="/docs/providers/github/activity/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/activity/orgs">orgs</a><br />
+<a href="/docs/providers/github/activity/packages">packages</a><br />
+<a href="/docs/providers/github/activity/projects">projects</a><br />
+<a href="/docs/providers/github/activity/pulls">pulls</a><br />
+<a href="/docs/providers/github/activity/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/activity/reactions">reactions</a><br />
+<a href="/docs/providers/github/activity/repos">repos</a><br />
+<a href="/docs/providers/github/activity/scim">scim</a><br />
+<a href="/docs/providers/github/activity/search">search</a><br />
+<a href="/docs/providers/github/activity/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/activity/teams">teams</a><br />
+<a href="/docs/providers/github/activity/users">users</a><br />
 </div>
 </div>

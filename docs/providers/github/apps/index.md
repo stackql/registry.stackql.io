@@ -13,9 +13,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 Information for integrations and installations.  
     
-See also:   
-[[` SHOW `]](/docs/language-spec/show) [[` DESCRIBE `]](/docs/language-spec/describe)  
-* * * 
+
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.apps</code></td></tr>
@@ -28,20 +26,39 @@ See also:
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/github/apps/installations">installations</a><br />
-<a href="/docs/providers/github/apps/installations_repos">installations_repos</a><br />
-<a href="/docs/providers/github/apps/integrations">integrations</a><br />
-<a href="/docs/providers/github/apps/marketplace_listing_plans">marketplace_listing_plans</a><br />
-<a href="/docs/providers/github/apps/marketplace_listing_plans_stubbed">marketplace_listing_plans_stubbed</a><br />
-<a href="/docs/providers/github/apps/marketplace_purchases">marketplace_purchases</a><br />
-<a href="/docs/providers/github/apps/marketplace_purchases_stubbed">marketplace_purchases_stubbed</a><br />
+<a href="/docs/providers/github/apps/actions">actions</a><br />
+<a href="/docs/providers/github/apps/activity">activity</a><br />
+<a href="/docs/providers/github/apps/apps">apps</a><br />
+<a href="/docs/providers/github/apps/billing">billing</a><br />
+<a href="/docs/providers/github/apps/checks">checks</a><br />
+<a href="/docs/providers/github/apps/code_scanning">code_scanning</a><br />
+<a href="/docs/providers/github/apps/codes_of_conduct">codes_of_conduct</a><br />
+<a href="/docs/providers/github/apps/codespaces">codespaces</a><br />
+<a href="/docs/providers/github/apps/dependabot">dependabot</a><br />
+<a href="/docs/providers/github/apps/enterprise_admin">enterprise_admin</a><br />
+<a href="/docs/providers/github/apps/gists">gists</a><br />
+<a href="/docs/providers/github/apps/git">git</a><br />
+<a href="/docs/providers/github/apps/gitignore">gitignore</a><br />
+<a href="/docs/providers/github/apps/interactions">interactions</a><br />
+<a href="/docs/providers/github/apps/issues">issues</a><br />
+<a href="/docs/providers/github/apps/licenses">licenses</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/github/apps/oauth_applications">oauth_applications</a><br />
-<a href="/docs/providers/github/apps/user_installations">user_installations</a><br />
-<a href="/docs/providers/github/apps/user_marketplace_purchases">user_marketplace_purchases</a><br />
-<a href="/docs/providers/github/apps/user_marketplace_purchases_stubbed">user_marketplace_purchases_stubbed</a><br />
-<a href="/docs/providers/github/apps/webhook_config">webhook_config</a><br />
-<a href="/docs/providers/github/apps/webhook_deliveries">webhook_deliveries</a><br />
+<a href="/docs/providers/github/apps/markdown">markdown</a><br />
+<a href="/docs/providers/github/apps/meta">meta</a><br />
+<a href="/docs/providers/github/apps/migrations">migrations</a><br />
+<a href="/docs/providers/github/apps/oauth_authorizations">oauth_authorizations</a><br />
+<a href="/docs/providers/github/apps/orgs">orgs</a><br />
+<a href="/docs/providers/github/apps/packages">packages</a><br />
+<a href="/docs/providers/github/apps/projects">projects</a><br />
+<a href="/docs/providers/github/apps/pulls">pulls</a><br />
+<a href="/docs/providers/github/apps/rate_limit">rate_limit</a><br />
+<a href="/docs/providers/github/apps/reactions">reactions</a><br />
+<a href="/docs/providers/github/apps/repos">repos</a><br />
+<a href="/docs/providers/github/apps/scim">scim</a><br />
+<a href="/docs/providers/github/apps/search">search</a><br />
+<a href="/docs/providers/github/apps/secret_scanning">secret_scanning</a><br />
+<a href="/docs/providers/github/apps/teams">teams</a><br />
+<a href="/docs/providers/github/apps/users">users</a><br />
 </div>
 </div>
