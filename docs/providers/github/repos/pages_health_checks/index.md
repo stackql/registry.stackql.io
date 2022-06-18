@@ -23,8 +23,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `alt_domain` | `object` |
 | `domain` | `object` |
+| `alt_domain` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -26,21 +26,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` | Unique identifier of the team |
 | `name` | `string` | Name of the team |
 | `description` | `string` |  |
-| `members_url` | `string` |  |
-| `repositories_url` | `string` |  |
-| `permission` | `string` | Permission that the team will have for its repositories |
-| `updated_at` | `string` |  |
-| `organization` | `object` | Organization Full |
-| `privacy` | `string` | The level of privacy this team should have |
-| `html_url` | `string` |  |
-| `node_id` | `string` |  |
-| `repos_count` | `integer` |  |
-| `created_at` | `string` |  |
-| `members_count` | `integer` |  |
 | `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `slug` | `string` |  |
+| `members_count` | `integer` |  |
+| `permission` | `string` | Permission that the team will have for its repositories |
+| `privacy` | `string` | The level of privacy this team should have |
 | `url` | `string` | URL for the team |
+| `repos_count` | `integer` |  |
+| `repositories_url` | `string` |  |
+| `node_id` | `string` |  |
+| `organization` | `object` | Organization Full |
 | `ldap_dn` | `string` | Distinguished Name (DN) that team maps to within LDAP environment |
+| `created_at` | `string` |  |
+| `updated_at` | `string` |  |
+| `html_url` | `string` |  |
+| `slug` | `string` |  |
+| `members_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

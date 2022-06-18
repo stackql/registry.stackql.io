@@ -24,13 +24,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `integer` |
+| `login` | `string` |
 | `marketplace_pending_change` | `object` |
 | `marketplace_purchase` | `object` |
 | `organization_billing_email` | `string` |
 | `type` | `string` |
 | `url` | `string` |
 | `email` | `string` |
-| `login` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

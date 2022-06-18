@@ -24,18 +24,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the review |
+| `body_text` | `string` |  |
+| `body_html` | `string` |  |
+| `user` | `object` | Simple User |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `body` | `string` | The text of the review. |
+| `_links` | `object` |  |
+| `node_id` | `string` |  |
+| `pull_request_url` | `string` |  |
+| `html_url` | `string` |  |
 | `state` | `string` |  |
 | `submitted_at` | `string` |  |
-| `node_id` | `string` |  |
-| `_links` | `object` |  |
-| `body_html` | `string` |  |
-| `author_association` | `string` | How the author is associated with the repository. |
-| `html_url` | `string` |  |
-| `body` | `string` | The text of the review. |
 | `commit_id` | `string` | A commit SHA for the review. |
-| `pull_request_url` | `string` |  |
-| `body_text` | `string` |  |
-| `user` | `object` | Simple User |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -24,18 +24,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
-| `last_modified_at` | `string` |  |
-| `path` | `string` |  |
-| `sha` | `string` |  |
-| `text_matches` | `array` |  |
-| `repository` | `object` | Minimal Repository |
-| `file_size` | `integer` |  |
-| `score` | `number` |  |
 | `git_url` | `string` |  |
-| `html_url` | `string` |  |
+| `sha` | `string` |  |
+| `file_size` | `integer` |  |
 | `line_numbers` | `array` |  |
+| `repository` | `object` | Minimal Repository |
+| `score` | `number` |  |
 | `url` | `string` |  |
+| `path` | `string` |  |
 | `language` | `string` |  |
+| `text_matches` | `array` |  |
+| `last_modified_at` | `string` |  |
+| `html_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

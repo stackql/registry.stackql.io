@@ -25,20 +25,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` |  |
-| `owner_url` | `string` |  |
-| `url` | `string` |  |
-| `organization_permission` | `string` | The organization permission for this project. Only present when owner is an organization. |
-| `node_id` | `string` |  |
-| `updated_at` | `string` |  |
 | `created_at` | `string` |  |
-| `permissions` | `object` |  |
-| `state` | `string` |  |
-| `columns_url` | `string` |  |
 | `creator` | `object` | Simple User |
+| `columns_url` | `string` |  |
+| `html_url` | `string` |  |
+| `permissions` | `object` |  |
+| `node_id` | `string` |  |
+| `owner_url` | `string` |  |
+| `state` | `string` |  |
+| `updated_at` | `string` |  |
+| `private` | `boolean` | Whether the project is private or not. Only present when owner is an organization. |
+| `organization_permission` | `string` | The organization permission for this project. Only present when owner is an organization. |
+| `url` | `string` |  |
 | `number` | `integer` |  |
 | `body` | `string` |  |
-| `html_url` | `string` |  |
-| `private` | `boolean` | Whether the project is private or not. Only present when owner is an organization. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

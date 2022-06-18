@@ -24,33 +24,33 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | The ID of the pull request review comment. |
-| `body_text` | `string` |  |
-| `original_commit_id` | `string` | The SHA of the original commit to which the comment applies. |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `_links` | `object` |  |
 | `url` | `string` | URL for the pull request review comment |
 | `original_start_line` | `integer` | The first line of the range for a multi-line comment. |
-| `node_id` | `string` | The node ID of the pull request review comment. |
-| `side` | `string` | The side of the diff to which the comment applies. The side of the last line of the range for a multi-line comment |
-| `html_url` | `string` | HTML URL for the pull request review comment. |
-| `diff_hunk` | `string` | The diff of the line that the comment refers to. |
-| `original_line` | `integer` | The line of the blob to which the comment applies. The last line of the range for a multi-line comment |
-| `author_association` | `string` | How the author is associated with the repository. |
-| `updated_at` | `string` |  |
-| `in_reply_to_id` | `integer` | The comment ID to reply to. |
-| `start_side` | `string` | The side of the first line of the range for a multi-line comment. |
-| `pull_request_review_id` | `integer` | The ID of the pull request review to which the comment belongs. |
-| `body` | `string` | The text of the comment. |
-| `path` | `string` | The relative path of the file to which the comment applies. |
-| `start_line` | `integer` | The first line of the range for a multi-line comment. |
-| `commit_id` | `string` | The SHA of the commit to which the comment applies. |
-| `pull_request_url` | `string` | URL for the pull request that the review comment belongs to. |
-| `position` | `integer` | The line index in the diff to which the comment applies. |
-| `user` | `object` | Simple User |
-| `original_position` | `integer` | The index of the original line in the diff to which the comment applies. |
-| `body_html` | `string` |  |
-| `reactions` | `object` |  |
-| `created_at` | `string` |  |
 | `line` | `integer` | The line of the blob to which the comment applies. The last line of the range for a multi-line comment |
-| `_links` | `object` |  |
+| `updated_at` | `string` |  |
+| `start_side` | `string` | The side of the first line of the range for a multi-line comment. |
+| `body_text` | `string` |  |
+| `original_position` | `integer` | The index of the original line in the diff to which the comment applies. |
+| `reactions` | `object` |  |
+| `pull_request_review_id` | `integer` | The ID of the pull request review to which the comment belongs. |
+| `path` | `string` | The relative path of the file to which the comment applies. |
+| `body` | `string` | The text of the comment. |
+| `side` | `string` | The side of the diff to which the comment applies. The side of the last line of the range for a multi-line comment |
+| `original_line` | `integer` | The line of the blob to which the comment applies. The last line of the range for a multi-line comment |
+| `original_commit_id` | `string` | The SHA of the original commit to which the comment applies. |
+| `user` | `object` | Simple User |
+| `node_id` | `string` | The node ID of the pull request review comment. |
+| `pull_request_url` | `string` | URL for the pull request that the review comment belongs to. |
+| `in_reply_to_id` | `integer` | The comment ID to reply to. |
+| `position` | `integer` | The line index in the diff to which the comment applies. |
+| `commit_id` | `string` | The SHA of the commit to which the comment applies. |
+| `body_html` | `string` |  |
+| `start_line` | `integer` | The first line of the range for a multi-line comment. |
+| `diff_hunk` | `string` | The diff of the line that the comment refers to. |
+| `html_url` | `string` | HTML URL for the pull request review comment. |
+| `created_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

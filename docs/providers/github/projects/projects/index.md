@@ -25,19 +25,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` | Name of the project |
-| `created_at` | `string` |  |
-| `owner_url` | `string` |  |
-| `state` | `string` | State of the project; either 'open' or 'closed' |
-| `url` | `string` |  |
-| `organization_permission` | `string` | The baseline permission that all organization members have on this project. Only present if owner is an organization. |
 | `node_id` | `string` |  |
-| `creator` | `object` | Simple User |
 | `updated_at` | `string` |  |
+| `state` | `string` | State of the project; either 'open' or 'closed' |
 | `columns_url` | `string` |  |
-| `html_url` | `string` |  |
-| `body` | `string` | Body of the project |
-| `private` | `boolean` | Whether or not this project can be seen by everyone. Only present if owner is an organization. |
+| `owner_url` | `string` |  |
 | `number` | `integer` |  |
+| `html_url` | `string` |  |
+| `private` | `boolean` | Whether or not this project can be seen by everyone. Only present if owner is an organization. |
+| `url` | `string` |  |
+| `creator` | `object` | Simple User |
+| `organization_permission` | `string` | The baseline permission that all organization members have on this project. Only present if owner is an organization. |
+| `created_at` | `string` |  |
+| `body` | `string` | Body of the project |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

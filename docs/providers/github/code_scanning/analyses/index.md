@@ -24,20 +24,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier for this analysis. |
+| `warning` | `string` | Warning generated when processing the analysis |
 | `results_count` | `integer` | The total number of results in the analysis. |
-| `url` | `string` | The REST API URL of the analysis resource. |
-| `ref` | `string` | The full Git reference, formatted as `refs/heads/&#x7B;branch name&#x7D;`,<br />`refs/pull/&#x7B;number&#x7D;/merge`, or `refs/pull/&#x7B;number&#x7D;/head`. |
-| `error` | `string` |  |
-| `created_at` | `string` | The time that the analysis was created in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`. |
 | `tool` | `object` |  |
-| `sarif_id` | `string` | An identifier for the upload. |
-| `commit_sha` | `string` | The SHA of the commit to which the analysis you are uploading relates. |
-| `analysis_key` | `string` | Identifies the configuration under which the analysis was executed. For example, in GitHub Actions this includes the workflow filename and job name. |
 | `deletable` | `boolean` |  |
 | `category` | `string` | Identifies the configuration under which the analysis was executed. Used to distinguish between multiple analyses for the same tool and commit, but performed on different languages or different parts of the code. |
 | `environment` | `string` | Identifies the variable values associated with the environment in which this analysis was performed. |
-| `warning` | `string` | Warning generated when processing the analysis |
+| `sarif_id` | `string` | An identifier for the upload. |
+| `created_at` | `string` | The time that the analysis was created in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`. |
+| `error` | `string` |  |
+| `analysis_key` | `string` | Identifies the configuration under which the analysis was executed. For example, in GitHub Actions this includes the workflow filename and job name. |
 | `rules_count` | `integer` | The total number of rules used in the analysis. |
+| `url` | `string` | The REST API URL of the analysis resource. |
+| `commit_sha` | `string` | The SHA of the commit to which the analysis you are uploading relates. |
+| `ref` | `string` | The full Git reference, formatted as `refs/heads/&#x7B;branch name&#x7D;`,<br />`refs/pull/&#x7B;number&#x7D;/merge`, or `refs/pull/&#x7B;number&#x7D;/head`. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

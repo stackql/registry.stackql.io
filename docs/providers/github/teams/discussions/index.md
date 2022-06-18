@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `html_url` | `string` |  |
-| `updated_at` | `string` |  |
-| `author` | `object` | Simple User |
 | `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
-| `last_edited_at` | `string` |  |
-| `body` | `string` | The main text of the discussion. |
-| `title` | `string` | The title of the discussion. |
 | `node_id` | `string` |  |
+| `number` | `integer` | The unique sequence number of a team discussion. |
+| `author` | `object` | Simple User |
+| `html_url` | `string` |  |
+| `last_edited_at` | `string` |  |
 | `created_at` | `string` |  |
-| `pinned` | `boolean` | Whether or not this discussion should be pinned for easy retrieval. |
-| `private` | `boolean` | Whether or not this discussion should be restricted to team members and organization administrators. |
-| `comments_count` | `integer` |  |
+| `title` | `string` | The title of the discussion. |
 | `body_html` | `string` |  |
 | `comments_url` | `string` |  |
-| `number` | `integer` | The unique sequence number of a team discussion. |
-| `reactions` | `object` |  |
-| `url` | `string` |  |
 | `team_url` | `string` |  |
+| `reactions` | `object` |  |
+| `body` | `string` | The main text of the discussion. |
+| `updated_at` | `string` |  |
+| `pinned` | `boolean` | Whether or not this discussion should be pinned for easy retrieval. |
+| `comments_count` | `integer` |  |
+| `url` | `string` |  |
+| `private` | `boolean` | Whether or not this discussion should be restricted to team members and organization administrators. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

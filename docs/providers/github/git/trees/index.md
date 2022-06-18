@@ -23,10 +23,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `truncated` | `boolean` |  |
 | `url` | `string` |  |
 | `sha` | `string` |  |
 | `tree` | `array` | Objects specifying a tree structure |
+| `truncated` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -25,15 +25,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `description` | `string` |  |
-| `context` | `string` |  |
 | `created_at` | `string` |  |
 | `url` | `string` |  |
 | `target_url` | `string` |  |
-| `updated_at` | `string` |  |
-| `avatar_url` | `string` |  |
 | `state` | `string` |  |
+| `context` | `string` |  |
+| `updated_at` | `string` |  |
 | `creator` | `object` | Simple User |
 | `node_id` | `string` |  |
+| `avatar_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

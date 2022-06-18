@@ -25,17 +25,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `name` | `string` |
 | `description` | `string` |
-| `url` | `string` |
-| `node_id` | `string` |
-| `body` | `string` |
 | `featured` | `boolean` |
-| `conditions` | `array` |
 | `implementation` | `string` |
+| `limitations` | `array` |
+| `body` | `string` |
 | `spdx_id` | `string` |
 | `html_url` | `string` |
+| `conditions` | `array` |
 | `key` | `string` |
-| `limitations` | `array` |
+| `url` | `string` |
 | `permissions` | `array` |
+| `node_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

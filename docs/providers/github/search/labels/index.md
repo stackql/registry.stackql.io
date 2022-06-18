@@ -27,11 +27,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `name` | `string` |
 | `description` | `string` |
 | `node_id` | `string` |
-| `text_matches` | `array` |
-| `url` | `string` |
 | `default` | `boolean` |
-| `score` | `number` |
 | `color` | `string` |
+| `text_matches` | `array` |
+| `score` | `number` |
+| `url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

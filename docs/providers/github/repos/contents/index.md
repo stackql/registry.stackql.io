@@ -24,19 +24,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `name` | `string` |
-| `target` | `string` |
-| `type` | `string` |
-| `path` | `string` |
-| `encoding` | `string` |
 | `submodule_git_url` | `string` |
-| `git_url` | `string` |
-| `url` | `string` |
-| `html_url` | `string` |
-| `sha` | `string` |
-| `size` | `integer` |
-| `_links` | `object` |
-| `download_url` | `string` |
 | `content` | `string` |
+| `sha` | `string` |
+| `url` | `string` |
+| `_links` | `object` |
+| `size` | `integer` |
+| `download_url` | `string` |
+| `target` | `string` |
+| `path` | `string` |
+| `git_url` | `string` |
+| `encoding` | `string` |
+| `html_url` | `string` |
+| `type` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

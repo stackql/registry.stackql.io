@@ -25,13 +25,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `string` |
 | `name` | `object` |
-| `emails` | `array` |
-| `userName` | `string` |
-| `groups` | `array` |
-| `externalId` | `string` |
-| `schemas` | `array` |
-| `active` | `boolean` |
 | `meta` | `object` |
+| `groups` | `array` |
+| `emails` | `array` |
+| `externalId` | `string` |
+| `active` | `boolean` |
+| `schemas` | `array` |
+| `userName` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

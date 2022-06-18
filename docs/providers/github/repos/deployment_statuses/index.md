@@ -25,19 +25,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `description` | `string` | A short description of the status. |
-| `environment` | `string` | The environment of the deployment that the status is for. |
+| `url` | `string` |  |
 | `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `log_url` | `string` | The URL to associate with this status. |
-| `environment_url` | `string` | The URL for accessing your environment. |
-| `updated_at` | `string` |  |
-| `deployment_url` | `string` |  |
-| `repository_url` | `string` |  |
 | `state` | `string` | The state of the status. |
 | `node_id` | `string` |  |
+| `environment_url` | `string` | The URL for accessing your environment. |
 | `creator` | `object` | Simple User |
-| `url` | `string` |  |
 | `created_at` | `string` |  |
+| `deployment_url` | `string` |  |
+| `environment` | `string` | The environment of the deployment that the status is for. |
+| `log_url` | `string` | The URL to associate with this status. |
 | `target_url` | `string` | Deprecated: the URL to associate with this status. |
+| `repository_url` | `string` |  |
+| `updated_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

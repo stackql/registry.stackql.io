@@ -24,18 +24,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `integer` |
-| `subkeys` | `array` |
-| `can_encrypt_storage` | `boolean` |
-| `primary_key_id` | `integer` |
-| `emails` | `array` |
-| `created_at` | `string` |
 | `can_certify` | `boolean` |
-| `can_encrypt_comms` | `boolean` |
-| `can_sign` | `boolean` |
+| `emails` | `array` |
 | `expires_at` | `string` |
 | `key_id` | `string` |
+| `subkeys` | `array` |
+| `can_sign` | `boolean` |
+| `can_encrypt_comms` | `boolean` |
+| `created_at` | `string` |
 | `public_key` | `string` |
 | `raw_key` | `string` |
+| `primary_key_id` | `integer` |
+| `can_encrypt_storage` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

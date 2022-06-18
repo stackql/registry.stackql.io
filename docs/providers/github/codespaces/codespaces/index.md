@@ -23,8 +23,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `codespaces` | `array` |
 | `total_count` | `integer` |
+| `codespaces` | `array` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

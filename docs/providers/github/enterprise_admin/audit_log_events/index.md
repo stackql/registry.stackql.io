@@ -24,45 +24,45 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
+| `_document_id` | `string` | A unique identifier for an audit event. |
+| `openssh_public_key` | `string` |  |
 | `repo` | `string` | The name of the repository. |
-| `actor` | `string` | The actor who performed the action. |
-| `transport_protocol_name` | `string` | A human readable name for the protocol (for example, HTTP or SSH) used to transfer Git data. |
-| `events` | `array` |  |
-| `active` | `boolean` |  |
+| `fingerprint` | `string` |  |
+| `explanation` | `string` |  |
+| `@timestamp` | `integer` | The time the audit log event occurred, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time). |
+| `emoji` | `string` |  |
 | `config_was` | `array` |  |
-| `target_login` | `string` |  |
+| `repository` | `string` | The name of the repository. |
+| `visibility` | `string` | The repository visibility, for example `public` or `private`. |
 | `repository_public` | `boolean` |  |
 | `active_was` | `boolean` |  |
-| `deploy_key_fingerprint` | `string` |  |
-| `org` | `string` |  |
-| `team` | `string` |  |
-| `action` | `string` | The name of the action that was performed, for example `user.login` or `repo.create`. |
-| `transport_protocol` | `integer` | The type of protocol (for example, HTTP or SSH) used to transfer Git data. |
-| `created_at` | `integer` | The time the audit log event was recorded, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time). |
-| `old_user` | `string` |  |
-| `@timestamp` | `integer` | The time the audit log event occurred, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time). |
-| `data` | `object` |  |
-| `hook_id` | `integer` |  |
-| `emoji` | `string` |  |
-| `limited_availability` | `boolean` |  |
-| `events_were` | `array` |  |
-| `read_only` | `boolean` |  |
-| `business` | `string` |  |
-| `user` | `string` | The user that was affected by the action performed (if available). |
 | `actor_location` | `object` |  |
+| `active` | `boolean` |  |
+| `hook_id` | `integer` |  |
+| `team` | `string` |  |
+| `deploy_key_fingerprint` | `string` |  |
+| `old_user` | `string` |  |
+| `transport_protocol_name` | `string` | A human readable name for the protocol (for example, HTTP or SSH) used to transfer Git data. |
+| `created_at` | `integer` | The time the audit log event was recorded, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time). |
 | `actor_id` | `integer` | The id of the actor who performed the action. |
-| `previous_visibility` | `string` |  |
-| `_document_id` | `string` | A unique identifier for an audit event. |
-| `content_type` | `string` |  |
-| `org_id` | `integer` |  |
-| `config` | `array` |  |
-| `blocked_user` | `string` | The username of the account being blocked. |
+| `transport_protocol` | `integer` | The type of protocol (for example, HTTP or SSH) used to transfer Git data. |
 | `message` | `string` |  |
-| `repository` | `string` | The name of the repository. |
-| `explanation` | `string` |  |
-| `visibility` | `string` | The repository visibility, for example `public` or `private`. |
-| `openssh_public_key` | `string` |  |
-| `fingerprint` | `string` |  |
+| `read_only` | `boolean` |  |
+| `org` | `string` |  |
+| `action` | `string` | The name of the action that was performed, for example `user.login` or `repo.create`. |
+| `blocked_user` | `string` | The username of the account being blocked. |
+| `config` | `array` |  |
+| `target_login` | `string` |  |
+| `events_were` | `array` |  |
+| `business` | `string` |  |
+| `previous_visibility` | `string` |  |
+| `org_id` | `integer` |  |
+| `events` | `array` |  |
+| `actor` | `string` | The actor who performed the action. |
+| `user` | `string` | The user that was affected by the action performed (if available). |
+| `data` | `object` |  |
+| `content_type` | `string` |  |
+| `limited_availability` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

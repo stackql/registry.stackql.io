@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `dismissal_restrictions` | `object` |  |
-| `require_code_owner_reviews` | `boolean` |  |
-| `required_approving_review_count` | `integer` |  |
 | `url` | `string` |  |
 | `bypass_pull_request_allowances` | `object` | Allow specific users or teams to bypass pull request requirements. Set to `null` to disable. |
 | `dismiss_stale_reviews` | `boolean` |  |
+| `dismissal_restrictions` | `object` |  |
+| `require_code_owner_reviews` | `boolean` |  |
+| `required_approving_review_count` | `integer` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

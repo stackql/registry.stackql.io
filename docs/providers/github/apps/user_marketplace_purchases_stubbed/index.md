@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `updated_at` | `string` |  |
-| `account` | `object` |  |
 | `billing_cycle` | `string` |  |
 | `free_trial_ends_on` | `string` |  |
 | `next_billing_date` | `string` |  |
 | `on_free_trial` | `boolean` |  |
 | `plan` | `object` | Marketplace Listing Plan |
 | `unit_count` | `integer` |  |
+| `updated_at` | `string` |  |
+| `account` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

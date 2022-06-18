@@ -25,21 +25,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | The id of the check. |
 | `name` | `string` | The name of the check. |
-| `output` | `object` |  |
 | `status` | `string` | The phase of the lifecycle that the check is currently in. |
-| `node_id` | `string` |  |
-| `conclusion` | `string` |  |
-| `external_id` | `string` |  |
-| `completed_at` | `string` |  |
-| `url` | `string` |  |
-| `head_sha` | `string` | The SHA of the commit that is being checked. |
-| `started_at` | `string` |  |
+| `details_url` | `string` |  |
+| `output` | `object` |  |
 | `pull_requests` | `array` |  |
+| `check_suite` | `object` |  |
+| `node_id` | `string` |  |
+| `external_id` | `string` |  |
+| `started_at` | `string` |  |
+| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `completed_at` | `string` |  |
+| `head_sha` | `string` | The SHA of the commit that is being checked. |
 | `deployment` | `object` | A deployment created as the result of an Actions check run from a workflow that references an environment |
 | `html_url` | `string` |  |
-| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `check_suite` | `object` |  |
-| `details_url` | `string` |  |
+| `url` | `string` |  |
+| `conclusion` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

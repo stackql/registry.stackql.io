@@ -23,8 +23,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `can_approve_pull_request_reviews` | `boolean` | Whether GitHub Actions can submit approving pull request reviews. |
 | `default_workflow_permissions` | `string` | The default workflow permissions granted to the GITHUB_TOKEN when running workflows in an organization. |
+| `can_approve_pull_request_reviews` | `boolean` | Whether GitHub Actions can submit approving pull request reviews. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -23,8 +23,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `type` | `string` | The location type. Because secrets may be found in different types of resources (ie. code, comments, issues), this field identifies the type of resource where the secret was found. |
 | `details` | `` |  |
+| `type` | `string` | The location type. Because secrets may be found in different types of resources (ie. code, comments, issues), this field identifies the type of resource where the secret was found. |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

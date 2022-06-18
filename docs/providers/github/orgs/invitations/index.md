@@ -24,16 +24,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `failed_reason` | `string` |  |
-| `invitation_teams_url` | `string` |  |
-| `team_count` | `integer` |  |
-| `created_at` | `string` |  |
-| `inviter` | `object` | Simple User |
-| `node_id` | `string` |  |
-| `role` | `string` |  |
-| `login` | `string` |  |
 | `email` | `string` |  |
 | `failed_at` | `string` |  |
+| `inviter` | `object` | Simple User |
+| `node_id` | `string` |  |
+| `failed_reason` | `string` |  |
+| `created_at` | `string` |  |
+| `role` | `string` |  |
+| `login` | `string` |  |
+| `invitation_teams_url` | `string` |  |
+| `team_count` | `integer` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

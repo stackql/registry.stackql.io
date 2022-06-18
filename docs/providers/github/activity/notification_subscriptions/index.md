@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
+| `ignored` | `boolean` |
+| `reason` | `string` |
 | `repository_url` | `string` |
 | `subscribed` | `boolean` |
 | `thread_url` | `string` |
 | `url` | `string` |
 | `created_at` | `string` |
-| `ignored` | `boolean` |
-| `reason` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

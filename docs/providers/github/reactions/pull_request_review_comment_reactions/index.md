@@ -24,10 +24,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `node_id` | `string` |  |
-| `user` | `object` | Simple User |
 | `content` | `string` | The reaction to use |
 | `created_at` | `string` |  |
+| `node_id` | `string` |  |
+| `user` | `object` | Simple User |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

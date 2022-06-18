@@ -26,14 +26,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` | Unique identifier of the package version. |
 | `name` | `string` | The name of the package version. |
 | `description` | `string` |  |
-| `metadata` | `object` |  |
-| `html_url` | `string` |  |
-| `package_html_url` | `string` |  |
 | `url` | `string` |  |
-| `deleted_at` | `string` |  |
-| `updated_at` | `string` |  |
 | `created_at` | `string` |  |
+| `deleted_at` | `string` |  |
+| `metadata` | `object` |  |
+| `updated_at` | `string` |  |
+| `html_url` | `string` |  |
 | `license` | `string` |  |
+| `package_html_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

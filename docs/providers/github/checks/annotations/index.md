@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
+| `message` | `string` |
+| `raw_details` | `string` |
+| `end_column` | `integer` |
+| `start_column` | `integer` |
+| `end_line` | `integer` |
+| `start_line` | `integer` |
+| `annotation_level` | `string` |
+| `title` | `string` |
 | `path` | `string` |
 | `blob_href` | `string` |
-| `raw_details` | `string` |
-| `start_column` | `integer` |
-| `start_line` | `integer` |
-| `title` | `string` |
-| `end_column` | `integer` |
-| `end_line` | `integer` |
-| `annotation_level` | `string` |
-| `message` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

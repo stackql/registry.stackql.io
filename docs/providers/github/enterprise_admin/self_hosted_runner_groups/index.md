@@ -25,11 +25,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `number` |
 | `name` | `string` |
-| `visibility` | `string` |
-| `allows_public_repositories` | `boolean` |
 | `default` | `boolean` |
 | `runners_url` | `string` |
 | `selected_organizations_url` | `string` |
+| `visibility` | `string` |
+| `allows_public_repositories` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |
