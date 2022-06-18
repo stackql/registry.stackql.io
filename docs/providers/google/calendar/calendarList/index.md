@@ -1,0 +1,55 @@
+---
+title: calendarList
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - stackql
+  - infrastructure-as-code
+  - configuration-as-data
+  - cloud inventory
+description: Query and Deploy Cloud Infrastructure and Resources using SQL
+custom_edit_url: null
+image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
+---
+  
+    
+
+## Overview
+<table><tbody>
+<tr><td><b>Name</b></td><td><code>calendarList</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
+<tr><td><b>Id</b></td><td><code>google.calendar.calendarList</code></td></tr>
+</tbody></table>
+
+## Fields
+| Name | Datatype | Description |
+| ---- | -------- | ----------- |
+| `id` | `string` | Identifier of the calendar. |
+| `description` | `string` | Description of the calendar. Optional. Read-only. |
+| `selected` | `boolean` | Whether the calendar content shows up in the calendar UI. Optional. The default is False. |
+| `conferenceProperties` | `object` |  |
+| `location` | `string` | Geographic location of the calendar as free-form text. Optional. Read-only. |
+| `summaryOverride` | `string` | The summary that the authenticated user has set for this calendar. Optional. |
+| `colorId` | `string` | The color of the calendar. This is an ID referring to an entry in the calendar section of the colors definition (see the colors endpoint). This property is superseded by the backgroundColor and foregroundColor properties and can be ignored when using these properties. Optional. |
+| `defaultReminders` | `array` | The default reminders that the authenticated user has for this calendar. |
+| `foregroundColor` | `string` | The foreground color of the calendar in the hexadecimal format "#ffffff". This property supersedes the index-based colorId property. To set or change this property, you need to specify colorRgbFormat=true in the parameters of the insert, update and patch methods. Optional. |
+| `kind` | `string` | Type of the resource ("calendar#calendarListEntry"). |
+| `primary` | `boolean` | Whether the calendar is the primary calendar of the authenticated user. Read-only. Optional. The default is False. |
+| `accessRole` | `string` | The effective access role that the authenticated user has on the calendar. Read-only. Possible values are:  <br />- "freeBusyReader" - Provides read access to free/busy information. <br />- "reader" - Provides read access to the calendar. Private events will appear to users with reader access, but event details will be hidden. <br />- "writer" - Provides read and write access to the calendar. Private events will appear to users with writer access, and event details will be visible. <br />- "owner" - Provides ownership of the calendar. This role has all of the permissions of the writer role with the additional ability to see and manipulate ACLs. |
+| `etag` | `string` | ETag of the resource. |
+| `timeZone` | `string` | The time zone of the calendar. Optional. Read-only. |
+| `deleted` | `boolean` | Whether this calendar list entry has been deleted from the calendar list. Read-only. Optional. The default is False. |
+| `summary` | `string` | Title of the calendar. Read-only. |
+| `backgroundColor` | `string` | The main color of the calendar in the hexadecimal format "#0088aa". This property supersedes the index-based colorId property. To set or change this property, you need to specify colorRgbFormat=true in the parameters of the insert, update and patch methods. Optional. |
+| `hidden` | `boolean` | Whether the calendar has been hidden from the list. Optional. The attribute is only returned when the calendar is hidden, in which case the value is true. |
+| `notificationSettings` | `object` | The notifications that the authenticated user is receiving for this calendar. |
+## Methods
+| Name | Accessible by | Required Params | Description |
+| ---- | ------------- | --------------- | ----------- |
+| `get` | `SELECT` | `calendarId` | Returns a calendar from the user's calendar list. |
+| `list` | `SELECT` |  | Returns the calendars on the user's calendar list. |
+| `insert` | `INSERT` |  | Inserts an existing calendar into the user's calendar list. |
+| `delete` | `DELETE` | `calendarId` | Removes a calendar from the user's calendar list. |
+| `patch` | `EXEC` | `calendarId` | Updates an existing calendar on the user's calendar list. This method supports patch semantics. |
+| `update` | `EXEC` | `calendarId` | Updates an existing calendar on the user's calendar list. |
+| `watch` | `EXEC` |  | Watch for changes to CalendarList resources. |

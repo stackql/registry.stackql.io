@@ -55,7 +55,7 @@
 	*/
 	/*--ifm-font-family-base: 'Montserrat', sans-serif;
 	*/
-	 --ifm-font-family-base: 'Montserrat', sans-serif;
+	--ifm-font-family-base: 'Montserrat', sans-serif;
 	 --ifm-font-size-base: 16px;
 	 --ifm-code-font-size: 90%;
 	 --ifm-background-color: var(--white);
@@ -583,3 +583,15 @@ html[data-theme='dark'] .contactFormHeading {
   .cardDescription {
 	font-size: 0.8rem;
   }
+
+  @media screen and (max-width: 600px) {
+	.markdown h1:first-child {
+		--ifm-h1-font-size: 2rem;
+	
+		margin-bottom: calc(
+		  var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading)
+		);
+	  }
+  }
+
+
