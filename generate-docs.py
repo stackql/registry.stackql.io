@@ -63,7 +63,7 @@ for serviceIx, serviceRow in services.iterrows():
     if resources.shape[0] > 1:
    
         service_doc = service_doc + "## Resources\n"
-        service_doc = service_doc + generate_two_col_list(provider, services, serviceName)
+        service_doc = service_doc + generate_two_col_list(provider, resources, serviceName)
 
         # write service doc
         write_file("./docs/%s/%s/index.md" % (provider, serviceName), service_doc, verbose)

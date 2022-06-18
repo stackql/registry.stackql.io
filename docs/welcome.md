@@ -26,39 +26,57 @@ alttext="StackQL"/>
 
 <section class="row list">
   <article class="col col--4 margin-bottom--lg">
-    <a class="card padding--lg cardContainer" href="/docs/installation">
-      <h2 class="text--truncate cardTitle" title="Installation"><i class="fa-brands fa-google"></i>&nbsp;&nbsp;Google Cloud Platform</h2>
-      <p class="text--truncate cardDescription" title="Docusaurus is essentially a set of npm packages.">Docusaurus is essentially a set of npm packages.</p>
+    <a class="card padding--lg cardContainer" href="/providers/google/">
+      <div class="row">
+      <div class="col col--2"><img src="/img/providers/google.png" /></div>
+      <div class="col col--10"><h2 class="text--truncate cardTitle" title="Google Cloud Platform">Google Cloud Platform</h2></div>  
+      </div>
+      <p class="text--truncate cardDescription">Cloud computing services offered by Google.</p>
     </a>
   </article>
   <article class="col col--4 margin-bottom--lg">
-    <a class="card padding--lg cardContainer" href="/docs/configuration">
-      <h2 class="text--truncate cardTitle" title="Configuration">📄️ Configuration</h2>
-      <p class="text--truncate cardDescription" title="Docusaurus has a unique take on configurations. We encourage you to congregate information about your site into one place. We guard the fields of this file and facilitate making this data object accessible across your site.">Docusaurus has a unique take on configurations. We encourage you to congregate information about your site into one place. We guard the fields of this file and facilitate making this data object accessible across your site.</p>
+    <a class="card padding--lg cardContainer" href="/providers/github/">
+      <div class="row">
+      <div class="col col--2"><img src="/img/providers/github.png" /></div>
+      <div class="col col--10"><h2 class="text--truncate cardTitle" title="GitHub">GitHub</h2></div>  
+      </div>
+      <p class="text--truncate cardDescription">Web-based version-control and collaboration.</p>
     </a>
   </article>
   <article class="col col--4 margin-bottom--lg">
-    <a class="card padding--lg cardContainer" href="/docs/installation">
-      <h2 class="text--truncate cardTitle" title="Installation">📄️ Installation</h2>
-      <p class="text--truncate cardDescription" title="Docusaurus is essentially a set of npm packages.">Docusaurus is essentially a set of npm packages.</p>
+    <a class="card padding--lg cardContainer" href="/providers/kubernetes/">
+      <div class="row">
+      <div class="col col--2"><img src="/img/providers/kubernetes.png" /></div>
+      <div class="col col--10"><h2 class="text--truncate cardTitle" title="Kubernetes">Kubernetes</h2></div>  
+      </div>
+      <p class="text--truncate cardDescription">Open source container management platform.</p>
     </a>
   </article>
   <article class="col col--4 margin-bottom--lg">
-    <a class="card padding--lg cardContainer" href="/docs/playground">
-      <h2 class="text--truncate cardTitle" title="Playground">📄️ Playground</h2>
-      <p class="text--truncate cardDescription" title="Playgrounds allow you to run Docusaurus in your browser, without installing anything!">Playgrounds allow you to run Docusaurus in your browser, without installing anything!</p>
+    <a class="card padding--lg cardContainer" href="/providers/okta/">
+      <div class="row">
+      <div class="col col--2"><img src="/img/providers/okta.png" /></div>
+      <div class="col col--10"><h2 class="text--truncate cardTitle" title="Okta">Okta</h2></div>  
+      </div>
+      <p class="text--truncate cardDescription">Authentication and authorization services.</p>
     </a>
   </article>
   <article class="col col--4 margin-bottom--lg">
-    <a class="card padding--lg cardContainer" href="/docs/typescript-support">
-      <h2 class="text--truncate cardTitle" title="TypeScript Support">📄️ TypeScript Support</h2>
-      <p class="text--truncate cardDescription" title="Docusaurus is written in TypeScript and provides first-class TypeScript support.">Docusaurus is written in TypeScript and provides first-class TypeScript support.</p>
+    <a class="card padding--lg cardContainer" href="/providers/netlify/">
+      <div class="row">
+      <div class="col col--2"><img src="/img/providers/netlify.png" /></div>
+      <div class="col col--10"><h2 class="text--truncate cardTitle" title="Netlify">Netlify</h2></div>  
+      </div>
+      <p class="text--truncate cardDescription">Web development and content distribution platform.</p>
     </a>
   </article>
   <article class="col col--4 margin-bottom--lg">
-    <a class="card padding--lg cardContainer" href="/docs/installation">
-      <h2 class="text--truncate cardTitle" title="Installation">📄️ Installation</h2>
-      <p class="text--truncate cardDescription" title="Docusaurus is essentially a set of npm packages.">Docusaurus is essentially a set of npm packages.</p>
+    <a class="card padding--lg cardContainer" href="/providers/firebase/">
+      <div class="row">
+      <div class="col col--2"><img src="/img/providers/firebase.png" /></div>
+      <div class="col col--10"><h2 class="text--truncate cardTitle" title="Firebase">Firebase</h2></div>  
+      </div>
+      <p class="text--truncate cardDescription">Web, iOS and Android app development platform.</p>
     </a>
   </article>
 </section>

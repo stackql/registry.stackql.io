@@ -99,9 +99,9 @@ def generate_two_col_list(provider, list_of_objects, service_name=None):
     output = output + '<div class="providerDocColumn">\n'
     for ix, this_obj in list_of_objects.iterrows():
         if service_name is None:
-            link = create_html_link("/docs/providers/%s/%s" % (provider, this_obj["name"]), this_obj["name"])
+            link = create_html_link("/providers/%s/%s/" % (provider, this_obj["name"]), this_obj["name"])
         else:
-            link = create_html_link("/docs/providers/%s/%s/%s" % (provider, service_name, this_obj["name"]), this_obj["name"])
+            link = create_html_link("/providers/%s/%s/%s/" % (provider, service_name, this_obj["name"]), this_obj["name"])
         if ix < first_col_len:
             output = output + link + "<br />\n"
     output = output + '</div>\n'
@@ -109,9 +109,9 @@ def generate_two_col_list(provider, list_of_objects, service_name=None):
     output = output + '<div class="providerDocColumn">\n'
     for ix, this_obj in list_of_objects.iterrows():
         if service_name is None:
-            link = create_html_link("/docs/providers/%s/%s" % (provider, this_obj["name"]), this_obj["name"])
+            link = create_html_link("/providers/%s/%s/" % (provider, this_obj["name"]), this_obj["name"])
         else:
-            link = create_html_link("/docs/providers/%s/%s/%s" % (provider, service_name, this_obj["name"]), this_obj["name"])
+            link = create_html_link("/providers/%s/%s/%s/" % (provider, service_name, this_obj["name"]), this_obj["name"])
         if ix >= first_col_len:
             output = output + link + "<br />\n"
     output = output + '</div>\n'
@@ -123,43 +123,74 @@ def generate_service_overview(provider, serviceObj):
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>%s.%s</code></td></tr>
+<tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>%s</td></tr>
 <tr><td><b>Description</b></td><td>%s</td></tr>
 <tr><td><b>Id</b></td><td><code>%s</code></td></tr>
-<tr><td><b>Version</b></td><td>%s</td></tr>
 </tbody></table>
 
-""" % (provider, serviceObj["name"], serviceObj["title"], serviceObj["description"], serviceObj["id"], serviceObj["version"])
+""" % (provider, serviceObj["name"], serviceObj["title"], serviceObj["description"], serviceObj["id"])
 
 
 def generate_resource_overview(provider, serviceName, resourceObj):
-    return """
+    if (resourceObj["description"] == ""):
+        # no description, dont display the column
+        return """
 ## Overview
 <table><tbody>
-<tr><td><b>Name</b></td><td><code>%s.%s.%s</code></td></tr>
+<tr><td><b>Name</b></td><td><code>%s</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
+<tr><td><b>Id</b></td><td><code>%s</code></td></tr>
+</tbody></table>
+
+""" % (resourceObj["name"], resourceObj["id"])
+    else:
+        return """
+## Overview
+<table><tbody>
+<tr><td><b>Name</b></td><td><code>%s</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>%s</code></td></tr>
 <tr><td><b>Description</b></td><td>%s</td></tr>
 </tbody></table>
 
-""" % (provider, serviceName, resourceObj["name"], resourceObj["id"], resourceObj["description"])
+""" % (resourceObj["name"], resourceObj["id"], resourceObj["description"])
 
 def generate_fields_table(fields):
     output = "## Fields\n"
     if fields.shape[0] > 1:
-        output = output + "| Name | Datatype | Description |\n"
-        output = output + "| ---- | -------- | ----------- |\n"
-        for fieldIx, fieldRow in fields.iterrows():
-            output = output + "| `%s` | `%s` | %s |\n" % (fieldRow["name"], fieldRow["type"], fieldRow["description"].replace("<", "&#x7B;").replace(">", "&#x7D;").replace("\n", "<br />").replace("|", "\|"))
+        if (fields["description"] == fields["description"][0]).all():
+            output = output + "| Name | Datatype |\n"
+            output = output + "| ---- | -------- |\n"
+            for fieldIx, fieldRow in fields.iterrows():
+                output = output + "| `%s` | `%s` |\n" % (fieldRow["name"], fieldRow["type"])
+        else:
+            output = output + "| Name | Datatype | Description |\n"
+            output = output + "| ---- | -------- | ----------- |\n"
+            for fieldIx, fieldRow in fields.iterrows():
+                output = output + "| `%s` | `%s` | %s |\n" % (fieldRow["name"], fieldRow["type"], fieldRow["description"].replace("<", "&#x7B;").replace(">", "&#x7D;").replace("\n", "<br />").replace("|", "\|"))
     else:
         output = output + "`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  \n"
     return output
 
 def generate_methods_table(methods):
     output = "## Methods\n"
-    output = output + "| Name | Required Params | Description | Accessible by |\n"
-    output = output + "| ---- | --------------- | ----------- | ------------- |\n"
-    for methodIx, methodRow in methods.iterrows():
-        output = output + "| `%s` | `%s` | %s | %s |\n" % (methodRow["MethodName"], methodRow["RequiredParams"], methodRow["description"].replace("<", "&#x7B;").replace(">", "&#x7D;").replace("\n", "<br />").replace("|", "\|"), methodRow["SQLVerb"])
+    if (methods["description"] == methods["description"][0]).all():
+        output = output + "| Name | Accessible by | Required Params |\n"
+        output = output + "| ---- | ------------- | --------------- |\n"
+        for methodIx, methodRow in methods.iterrows():
+            if (methodRow["RequiredParams"] == ""):
+                output = output + "| `%s` | `%s` | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"])
+            else:
+                output = output + "| `%s` | `%s` | `%s` |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"])
+    else:
+        output = output + "| Name | Accessible by | Required Params | Description |\n"
+        output = output + "| ---- | ------------- | --------------- | ----------- |\n"
+        for methodIx, methodRow in methods.iterrows():
+            if (methodRow["RequiredParams"] == ""):
+                output = output + "| `%s` | `%s` | %s | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"], methodRow["description"].replace("<", "&#x7B;").replace(">", "&#x7D;").replace("\n", "<br />").replace("|", "\|"))
+            else:
+                output = output + "| `%s` | `%s` | `%s` | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"], methodRow["description"].replace("<", "&#x7B;").replace(">", "&#x7D;").replace("\n", "<br />").replace("|", "\|"))
     return output
 
 def run_stackql_query(query, verbose, retries):
