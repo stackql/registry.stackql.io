@@ -24,22 +24,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `lock_repositories` | `boolean` |  |
-| `exclude_metadata` | `boolean` |  |
-| `exclude_releases` | `boolean` |  |
-| `created_at` | `string` |  |
-| `updated_at` | `string` |  |
-| `url` | `string` |  |
-| `exclude` | `array` |  |
-| `node_id` | `string` |  |
-| `exclude_owner_projects` | `boolean` |  |
-| `owner` | `object` | Simple User |
 | `guid` | `string` |  |
-| `repositories` | `array` |  |
+| `url` | `string` |  |
+| `owner` | `object` | Simple User |
+| `lock_repositories` | `boolean` |  |
+| `created_at` | `string` |  |
 | `state` | `string` |  |
 | `archive_url` | `string` |  |
-| `exclude_attachments` | `boolean` |  |
 | `exclude_git_data` | `boolean` |  |
+| `exclude_owner_projects` | `boolean` |  |
+| `exclude_attachments` | `boolean` |  |
+| `exclude_releases` | `boolean` |  |
+| `exclude_metadata` | `boolean` |  |
+| `exclude` | `array` |  |
+| `repositories` | `array` |  |
+| `updated_at` | `string` |  |
+| `node_id` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

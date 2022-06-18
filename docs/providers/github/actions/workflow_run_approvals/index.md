@@ -23,10 +23,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `user` | `object` | Simple User |
-| `comment` | `string` | The comment submitted with the deployment review |
 | `environments` | `array` | The list of environments that were approved or rejected |
 | `state` | `string` | Whether deployment to the environment(s) was approved or rejected |
+| `user` | `object` | Simple User |
+| `comment` | `string` | The comment submitted with the deployment review |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

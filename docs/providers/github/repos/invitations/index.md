@@ -24,15 +24,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the repository invitation. |
-| `permissions` | `string` | The permission associated with the invitation. |
 | `repository` | `object` | Minimal Repository |
-| `created_at` | `string` |  |
-| `inviter` | `object` | Simple User |
-| `expired` | `boolean` | Whether or not the invitation has expired |
-| `node_id` | `string` |  |
-| `url` | `string` | URL for the repository invitation |
-| `html_url` | `string` |  |
 | `invitee` | `object` | Simple User |
+| `inviter` | `object` | Simple User |
+| `permissions` | `string` | The permission associated with the invitation. |
+| `html_url` | `string` |  |
+| `url` | `string` | URL for the repository invitation |
+| `node_id` | `string` |  |
+| `expired` | `boolean` | Whether or not the invitation has expired |
+| `created_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

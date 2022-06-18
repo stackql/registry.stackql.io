@@ -24,12 +24,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `integer` |
-| `url` | `string` |
-| `verified` | `boolean` |
 | `created_at` | `string` |
 | `key` | `string` |
 | `read_only` | `boolean` |
 | `title` | `string` |
+| `url` | `string` |
+| `verified` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

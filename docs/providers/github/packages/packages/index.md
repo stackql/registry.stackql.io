@@ -25,15 +25,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the package. |
 | `name` | `string` | The name of the package. |
-| `url` | `string` |  |
-| `created_at` | `string` |  |
-| `repository` | `object` | Minimal Repository |
-| `updated_at` | `string` |  |
-| `visibility` | `string` |  |
-| `html_url` | `string` |  |
-| `version_count` | `integer` | The number of versions of the package. |
 | `owner` | `object` | Simple User |
+| `url` | `string` |  |
+| `repository` | `object` | Minimal Repository |
+| `version_count` | `integer` | The number of versions of the package. |
+| `visibility` | `string` |  |
+| `created_at` | `string` |  |
 | `package_type` | `string` |  |
+| `updated_at` | `string` |  |
+| `html_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

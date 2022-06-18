@@ -25,20 +25,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `description` | `string` |  |
-| `title` | `string` | The title of the milestone. |
-| `closed_issues` | `integer` |  |
+| `due_on` | `string` |  |
 | `closed_at` | `string` |  |
 | `creator` | `object` | Simple User |
-| `node_id` | `string` |  |
-| `due_on` | `string` |  |
 | `number` | `integer` | The number of the milestone. |
-| `updated_at` | `string` |  |
-| `state` | `string` | The state of the milestone. |
-| `created_at` | `string` |  |
 | `url` | `string` |  |
-| `html_url` | `string` |  |
-| `open_issues` | `integer` |  |
+| `state` | `string` | The state of the milestone. |
+| `closed_issues` | `integer` |  |
 | `labels_url` | `string` |  |
+| `open_issues` | `integer` |  |
+| `updated_at` | `string` |  |
+| `created_at` | `string` |  |
+| `title` | `string` | The title of the milestone. |
+| `node_id` | `string` |  |
+| `html_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

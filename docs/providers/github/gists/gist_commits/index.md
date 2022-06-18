@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `change_status` | `object` |  |
-| `committed_at` | `string` |  |
 | `url` | `string` |  |
 | `user` | `object` | Simple User |
 | `version` | `string` |  |
+| `change_status` | `object` |  |
+| `committed_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -23,8 +23,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `run_duration_ms` | `integer` |
 | `billable` | `object` |
+| `run_duration_ms` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

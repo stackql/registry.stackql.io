@@ -24,19 +24,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the issue comment |
-| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `html_url` | `string` |  |
-| `body_html` | `string` |  |
-| `author_association` | `string` | How the author is associated with the repository. |
-| `issue_url` | `string` |  |
-| `reactions` | `object` |  |
-| `url` | `string` | URL for the issue comment |
 | `updated_at` | `string` |  |
-| `body` | `string` | Contents of the issue comment |
-| `body_text` | `string` |  |
-| `node_id` | `string` |  |
 | `user` | `object` | Simple User |
+| `node_id` | `string` |  |
+| `body_html` | `string` |  |
 | `created_at` | `string` |  |
+| `issue_url` | `string` |  |
+| `html_url` | `string` |  |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `body` | `string` | Contents of the issue comment |
+| `url` | `string` | URL for the issue comment |
+| `reactions` | `object` |  |
+| `body_text` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

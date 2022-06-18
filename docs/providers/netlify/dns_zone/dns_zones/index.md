@@ -25,20 +25,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `string` |
 | `name` | `string` |
-| `records` | `array` |
-| `site_id` | `string` |
-| `account_name` | `string` |
-| `user_id` | `string` |
-| `supported_record_types` | `array` |
 | `ipv6_enabled` | `boolean` |
-| `dedicated` | `boolean` |
-| `dns_servers` | `array` |
+| `records` | `array` |
+| `supported_record_types` | `array` |
 | `account_slug` | `string` |
+| `dns_servers` | `array` |
 | `created_at` | `string` |
+| `errors` | `array` |
+| `site_id` | `string` |
 | `account_id` | `string` |
 | `domain` | `string` |
-| `errors` | `array` |
 | `updated_at` | `string` |
+| `account_name` | `string` |
+| `dedicated` | `boolean` |
+| `user_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

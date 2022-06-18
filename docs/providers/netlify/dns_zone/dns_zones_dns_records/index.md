@@ -26,14 +26,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` |
 | `dns_zone_id` | `string` |
 | `tag` | `string` |
-| `type` | `string` |
-| `flag` | `integer` |
-| `hostname` | `string` |
-| `site_id` | `string` |
-| `value` | `string` |
 | `ttl` | `integer` |
-| `managed` | `boolean` |
+| `value` | `string` |
+| `type` | `string` |
+| `site_id` | `string` |
+| `hostname` | `string` |
 | `priority` | `integer` |
+| `flag` | `integer` |
+| `managed` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

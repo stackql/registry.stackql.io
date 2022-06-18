@@ -23,15 +23,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `current_user_public_url` | `string` |
 | `current_user_organization_urls` | `array` |
 | `current_user_url` | `string` |
-| `security_advisories_url` | `string` |
-| `_links` | `object` |
-| `current_user_actor_url` | `string` |
-| `timeline_url` | `string` |
 | `user_url` | `string` |
 | `current_user_organization_url` | `string` |
+| `security_advisories_url` | `string` |
+| `timeline_url` | `string` |
+| `_links` | `object` |
+| `current_user_public_url` | `string` |
+| `current_user_actor_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

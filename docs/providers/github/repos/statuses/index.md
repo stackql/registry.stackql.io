@@ -25,14 +25,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `description` | `string` |  |
-| `target_url` | `string` |  |
-| `avatar_url` | `string` |  |
 | `context` | `string` |  |
-| `state` | `string` |  |
 | `created_at` | `string` |  |
-| `creator` | `object` | Simple User |
-| `updated_at` | `string` |  |
 | `url` | `string` |  |
+| `target_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `avatar_url` | `string` |  |
+| `state` | `string` |  |
+| `creator` | `object` | Simple User |
 | `node_id` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |

@@ -26,16 +26,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `repositories_url` | `string` |  |
+| `url` | `string` |  |
+| `permissions` | `object` |  |
+| `node_id` | `string` |  |
 | `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `html_url` | `string` |  |
-| `privacy` | `string` |  |
+| `members_url` | `string` |  |
 | `slug` | `string` |  |
 | `permission` | `string` |  |
-| `permissions` | `object` |  |
-| `members_url` | `string` |  |
-| `url` | `string` |  |
-| `node_id` | `string` |  |
+| `html_url` | `string` |  |
+| `repositories_url` | `string` |  |
+| `privacy` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

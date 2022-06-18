@@ -24,13 +24,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `user` | `object` | Simple User |
-| `author_association` | `string` | How the author is associated with the repository. |
-| `body` | `string` | The comment text. |
 | `created_at` | `string` |  |
 | `node_id` | `string` |  |
 | `updated_at` | `string` |  |
 | `url` | `string` |  |
+| `user` | `object` | Simple User |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `body` | `string` | The comment text. |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -24,17 +24,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
-| `source` | `string` |
-| `createdBy` | `object` |
 | `scopeId` | `string` |
-| `created` | `string` |
 | `_embedded` | `object` |
-| `userId` | `string` |
-| `issuer` | `string` |
 | `lastUpdated` | `string` |
 | `clientId` | `string` |
-| `status` | `string` |
+| `userId` | `string` |
 | `_links` | `object` |
+| `status` | `string` |
+| `created` | `string` |
+| `createdBy` | `object` |
+| `issuer` | `string` |
+| `source` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

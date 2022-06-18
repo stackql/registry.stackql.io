@@ -24,24 +24,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
+| `status` | `string` |  |
+| `updated_at` | `string` |  |
+| `runs_rerequestable` | `boolean` |  |
+| `after` | `string` |  |
+| `head_commit` | `object` | Simple Commit |
+| `head_branch` | `string` |  |
 | `check_runs_url` | `string` |  |
 | `rerequestable` | `boolean` |  |
-| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `created_at` | `string` |  |
-| `head_commit` | `object` | Simple Commit |
-| `updated_at` | `string` |  |
 | `repository` | `object` | Minimal Repository |
-| `runs_rerequestable` | `boolean` |  |
-| `node_id` | `string` |  |
-| `status` | `string` |  |
-| `head_sha` | `string` | The SHA of the head commit that is being checked. |
 | `conclusion` | `string` |  |
-| `pull_requests` | `array` |  |
 | `before` | `string` |  |
-| `after` | `string` |  |
+| `node_id` | `string` |  |
+| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
 | `url` | `string` |  |
 | `latest_check_runs_count` | `integer` |  |
-| `head_branch` | `string` |  |
+| `pull_requests` | `array` |  |
+| `created_at` | `string` |  |
+| `head_sha` | `string` | The SHA of the head commit that is being checked. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

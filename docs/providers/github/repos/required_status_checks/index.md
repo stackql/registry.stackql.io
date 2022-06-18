@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `checks` | `array` |
-| `contexts` | `array` |
 | `contexts_url` | `string` |
 | `strict` | `boolean` |
 | `url` | `string` |
+| `checks` | `array` |
+| `contexts` | `array` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

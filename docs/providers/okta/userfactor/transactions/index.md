@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `_links` | `object` |
 | `expiresAt` | `string` |
 | `factorResult` | `string` |
 | `factorResultMessage` | `string` |
 | `_embedded` | `object` |
+| `_links` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

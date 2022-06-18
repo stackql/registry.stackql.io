@@ -24,18 +24,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
+| `git_url` | `string` |  |
+| `type` | `string` |  |
+| `sha` | `string` |  |
+| `size` | `integer` |  |
+| `encoding` | `string` |  |
 | `path` | `string` |  |
 | `html_url` | `string` |  |
-| `download_url` | `string` |  |
-| `url` | `string` |  |
-| `license` | `object` | License Simple |
-| `type` | `string` |  |
-| `size` | `integer` |  |
-| `_links` | `object` |  |
 | `content` | `string` |  |
-| `encoding` | `string` |  |
-| `git_url` | `string` |  |
-| `sha` | `string` |  |
+| `download_url` | `string` |  |
+| `license` | `object` | License Simple |
+| `_links` | `object` |  |
+| `url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

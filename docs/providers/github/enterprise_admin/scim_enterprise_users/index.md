@@ -26,11 +26,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` |
 | `name` | `object` |
 | `emails` | `array` |
-| `schemas` | `array` |
-| `externalId` | `string` |
 | `userName` | `string` |
-| `active` | `boolean` |
 | `groups` | `array` |
+| `externalId` | `string` |
+| `schemas` | `array` |
+| `active` | `boolean` |
 | `meta` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |

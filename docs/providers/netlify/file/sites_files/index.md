@@ -24,10 +24,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
-| `mime_type` | `string` |
-| `path` | `string` |
 | `sha` | `string` |
 | `size` | `integer` |
+| `mime_type` | `string` |
+| `path` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

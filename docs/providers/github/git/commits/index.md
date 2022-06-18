@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `sha` | `string` | SHA for the commit |
+| `node_id` | `string` |  |
+| `tree` | `object` |  |
+| `author` | `object` | Identifying information for the git-user |
+| `parents` | `array` |  |
+| `url` | `string` |  |
 | `message` | `string` | Message describing the purpose of the commit |
 | `committer` | `object` | Identifying information for the git-user |
-| `html_url` | `string` |  |
-| `sha` | `string` | SHA for the commit |
-| `tree` | `object` |  |
 | `verification` | `object` |  |
-| `parents` | `array` |  |
-| `author` | `object` | Identifying information for the git-user |
-| `url` | `string` |  |
-| `node_id` | `string` |  |
+| `html_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

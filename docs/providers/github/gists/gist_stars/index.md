@@ -25,24 +25,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
 | `description` | `string` |  |
-| `forks_url` | `string` |  |
-| `forks` | `array` |  |
-| `git_pull_url` | `string` |  |
-| `created_at` | `string` |  |
 | `user` | `object` | Simple User |
-| `comments` | `integer` |  |
-| `updated_at` | `string` |  |
 | `git_push_url` | `string` |  |
-| `html_url` | `string` |  |
-| `node_id` | `string` |  |
-| `truncated` | `boolean` |  |
 | `public` | `boolean` |  |
+| `git_pull_url` | `string` |  |
+| `html_url` | `string` |  |
+| `owner` | `object` | Simple User |
+| `forks_url` | `string` |  |
+| `created_at` | `string` |  |
+| `commits_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `url` | `string` |  |
+| `comments_url` | `string` |  |
+| `node_id` | `string` |  |
+| `comments` | `integer` |  |
 | `history` | `array` |  |
 | `files` | `object` |  |
-| `comments_url` | `string` |  |
-| `url` | `string` |  |
-| `commits_url` | `string` |  |
-| `owner` | `object` | Simple User |
+| `truncated` | `boolean` |  |
+| `forks` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

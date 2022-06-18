@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `end_column` | `integer` |
-| `raw_details` | `string` |
-| `end_line` | `integer` |
 | `path` | `string` |
-| `title` | `string` |
+| `blob_href` | `string` |
+| `raw_details` | `string` |
 | `start_column` | `integer` |
 | `start_line` | `integer` |
-| `blob_href` | `string` |
+| `title` | `string` |
+| `end_column` | `integer` |
+| `end_line` | `integer` |
 | `annotation_level` | `string` |
 | `message` | `string` |
 ## Methods

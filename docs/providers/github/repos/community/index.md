@@ -24,11 +24,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `description` | `string` |
+| `content_reports_enabled` | `boolean` |
 | `documentation` | `string` |
 | `files` | `object` |
 | `health_percentage` | `integer` |
 | `updated_at` | `string` |
-| `content_reports_enabled` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

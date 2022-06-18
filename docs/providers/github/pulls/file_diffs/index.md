@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `previous_filename` | `string` |
-| `changes` | `integer` |
-| `filename` | `string` |
-| `blob_url` | `string` |
-| `additions` | `integer` |
-| `patch` | `string` |
-| `raw_url` | `string` |
-| `deletions` | `integer` |
-| `status` | `string` |
-| `contents_url` | `string` |
 | `sha` | `string` |
+| `deletions` | `integer` |
+| `filename` | `string` |
+| `patch` | `string` |
+| `blob_url` | `string` |
+| `previous_filename` | `string` |
+| `raw_url` | `string` |
+| `status` | `string` |
+| `changes` | `integer` |
+| `contents_url` | `string` |
+| `additions` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

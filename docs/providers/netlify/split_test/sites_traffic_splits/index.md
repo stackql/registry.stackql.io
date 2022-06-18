@@ -25,13 +25,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `string` |
 | `name` | `string` |
-| `active` | `boolean` |
+| `unpublished_at` | `string` |
 | `path` | `string` |
-| `branches` | `array` |
+| `updated_at` | `string` |
 | `created_at` | `string` |
 | `site_id` | `string` |
-| `unpublished_at` | `string` |
-| `updated_at` | `string` |
+| `branches` | `array` |
+| `active` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

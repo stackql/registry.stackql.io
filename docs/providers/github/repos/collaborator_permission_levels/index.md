@@ -23,9 +23,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `permission` | `string` |  |
 | `role_name` | `string` |  |
 | `user` | `object` | Collaborator |
-| `permission` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -25,11 +25,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `integer` |
 | `name` | `string` |
-| `import_url` | `string` |
-| `remote_id` | `string` |
 | `remote_name` | `string` |
 | `url` | `string` |
 | `email` | `string` |
+| `import_url` | `string` |
+| `remote_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -25,13 +25,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `string` |
 | `description` | `string` |
-| `status` | `string` |
+| `_embedded` | `object` |
 | `assignmentType` | `string` |
+| `label` | `string` |
+| `status` | `string` |
 | `created` | `string` |
 | `lastUpdated` | `string` |
 | `type` | `string` |
-| `label` | `string` |
-| `_embedded` | `object` |
 | `_links` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |

@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `author` | `object` | Simple User |
-| `commit` | `object` |  |
-| `parents` | `array` |  |
-| `url` | `string` |  |
-| `sha` | `string` |  |
-| `html_url` | `string` |  |
 | `comments_url` | `string` |  |
+| `commit` | `object` |  |
 | `committer` | `object` | Simple User |
 | `node_id` | `string` |  |
+| `sha` | `string` |  |
 | `files` | `array` |  |
+| `html_url` | `string` |  |
+| `parents` | `array` |  |
+| `author` | `object` | Simple User |
+| `url` | `string` |  |
 | `stats` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |

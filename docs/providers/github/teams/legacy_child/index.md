@@ -26,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
+| `members_url` | `string` |  |
+| `url` | `string` |  |
+| `permissions` | `object` |  |
 | `html_url` | `string` |  |
+| `repositories_url` | `string` |  |
+| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `node_id` | `string` |  |
 | `permission` | `string` |  |
 | `privacy` | `string` |  |
-| `members_url` | `string` |  |
-| `repositories_url` | `string` |  |
-| `url` | `string` |  |
-| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `permissions` | `object` |  |
-| `node_id` | `string` |  |
 | `slug` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |

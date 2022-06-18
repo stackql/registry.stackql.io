@@ -23,9 +23,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
+| `repository_selection` | `string` |
 | `total_count` | `integer` |
 | `repositories` | `array` |
-| `repository_selection` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

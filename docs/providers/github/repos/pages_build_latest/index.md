@@ -23,6 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `status` | `string` |  |
 | `updated_at` | `string` |  |
 | `url` | `string` |  |
 | `commit` | `string` |  |
@@ -30,7 +31,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `duration` | `integer` |  |
 | `error` | `object` |  |
 | `pusher` | `object` | Simple User |
-| `status` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -25,15 +25,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `integer` |
 | `name` | `string` |
-| `deliveries_url` | `string` |
-| `config` | `object` |
-| `type` | `string` |
-| `active` | `boolean` |
 | `created_at` | `string` |
 | `updated_at` | `string` |
-| `url` | `string` |
-| `ping_url` | `string` |
 | `events` | `array` |
+| `ping_url` | `string` |
+| `deliveries_url` | `string` |
+| `active` | `boolean` |
+| `config` | `object` |
+| `url` | `string` |
+| `type` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

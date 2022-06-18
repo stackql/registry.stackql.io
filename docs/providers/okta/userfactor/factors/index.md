@@ -24,13 +24,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
-| `_links` | `object` |
-| `_embedded` | `object` |
 | `verify` | `object` |
+| `_embedded` | `object` |
+| `provider` | `string` |
 | `lastUpdated` | `string` |
 | `status` | `string` |
+| `_links` | `object` |
 | `created` | `string` |
-| `provider` | `string` |
 | `factorType` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |

@@ -24,10 +24,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `name` | `string` |
-| `zipball_url` | `string` |
 | `commit` | `object` |
 | `node_id` | `string` |
 | `tarball_url` | `string` |
+| `zipball_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

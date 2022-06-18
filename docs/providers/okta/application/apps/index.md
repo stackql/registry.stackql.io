@@ -26,17 +26,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` |
 | `name` | `string` |
 | `credentials` | `object` |
-| `label` | `string` |
-| `_links` | `object` |
+| `licensing` | `object` |
+| `visibility` | `object` |
+| `lastUpdated` | `string` |
 | `settings` | `object` |
 | `signOnMode` | `string` |
-| `lastUpdated` | `string` |
-| `accessibility` | `object` |
-| `licensing` | `object` |
-| `_embedded` | `object` |
 | `status` | `string` |
+| `label` | `string` |
+| `accessibility` | `object` |
+| `_links` | `object` |
+| `_embedded` | `object` |
 | `profile` | `object` |
-| `visibility` | `object` |
 | `created` | `string` |
 | `features` | `array` |
 ## Methods

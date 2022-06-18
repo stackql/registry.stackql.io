@@ -24,27 +24,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `requested_reviewer` | `object` | Simple User |
-| `dismissed_review` | `object` |  |
-| `url` | `string` |  |
-| `created_at` | `string` |  |
-| `lock_reason` | `string` |  |
 | `assigner` | `object` | Simple User |
+| `created_at` | `string` |  |
+| `actor` | `object` | Simple User |
+| `lock_reason` | `string` |  |
+| `milestone` | `object` | Issue Event Milestone |
+| `assignee` | `object` | Simple User |
+| `project_card` | `object` | Issue Event Project Card |
+| `commit_url` | `string` |  |
 | `node_id` | `string` |  |
 | `review_requester` | `object` | Simple User |
-| `project_card` | `object` | Issue Event Project Card |
-| `assignee` | `object` | Simple User |
+| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `url` | `string` |  |
+| `commit_id` | `string` |  |
+| `event` | `string` |  |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `requested_team` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `requested_reviewer` | `object` | Simple User |
+| `dismissed_review` | `object` |  |
+| `label` | `object` | Issue Event Label |
 | `issue` | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
 | `rename` | `object` | Issue Event Rename |
-| `requested_team` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `milestone` | `object` | Issue Event Milestone |
-| `commit_url` | `string` |  |
-| `label` | `object` | Issue Event Label |
-| `actor` | `object` | Simple User |
-| `event` | `string` |  |
-| `commit_id` | `string` |  |
-| `author_association` | `string` | How the author is associated with the repository. |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

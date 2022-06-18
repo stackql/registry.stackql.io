@@ -24,13 +24,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
+| `org` | `object` | Actor |
 | `payload` | `object` |  |
 | `public` | `boolean` |  |
 | `repo` | `object` |  |
 | `type` | `string` |  |
 | `actor` | `object` | Actor |
 | `created_at` | `string` |  |
-| `org` | `object` | Actor |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

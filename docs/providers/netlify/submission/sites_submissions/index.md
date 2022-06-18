@@ -26,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` |
 | `name` | `string` |
 | `company` | `string` |
-| `last_name` | `string` |
+| `email` | `string` |
+| `summary` | `string` |
 | `body` | `string` |
+| `last_name` | `string` |
 | `created_at` | `string` |
 | `data` | `object` |
-| `site_url` | `string` |
-| `summary` | `string` |
-| `email` | `string` |
 | `first_name` | `string` |
 | `number` | `integer` |
+| `site_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -26,14 +26,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` |
 | `name` | `string` |
 | `description` | `string` |
-| `priority` | `integer` |
-| `_embedded` | `object` |
-| `status` | `string` |
-| `conditions` | `object` |
-| `system` | `boolean` |
-| `created` | `string` |
-| `_links` | `object` |
 | `lastUpdated` | `string` |
+| `_links` | `object` |
+| `conditions` | `object` |
+| `status` | `string` |
+| `created` | `string` |
+| `system` | `boolean` |
+| `_embedded` | `object` |
+| `priority` | `integer` |
 | `type` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |

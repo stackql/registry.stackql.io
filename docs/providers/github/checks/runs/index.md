@@ -25,21 +25,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | The id of the check. |
 | `name` | `string` | The name of the check. |
-| `head_sha` | `string` | The SHA of the commit that is being checked. |
-| `completed_at` | `string` |  |
-| `node_id` | `string` |  |
-| `html_url` | `string` |  |
-| `deployment` | `object` | A deployment created as the result of an Actions check run from a workflow that references an environment |
-| `details_url` | `string` |  |
-| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `conclusion` | `string` |  |
-| `started_at` | `string` |  |
-| `url` | `string` |  |
 | `output` | `object` |  |
-| `external_id` | `string` |  |
 | `status` | `string` | The phase of the lifecycle that the check is currently in. |
-| `check_suite` | `object` |  |
+| `node_id` | `string` |  |
+| `conclusion` | `string` |  |
+| `external_id` | `string` |  |
+| `completed_at` | `string` |  |
+| `url` | `string` |  |
+| `head_sha` | `string` | The SHA of the commit that is being checked. |
+| `started_at` | `string` |  |
 | `pull_requests` | `array` |  |
+| `deployment` | `object` | A deployment created as the result of an Actions check run from a workflow that references an environment |
+| `html_url` | `string` |  |
+| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `check_suite` | `object` |  |
+| `details_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

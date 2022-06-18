@@ -25,31 +25,31 @@ Okta authorization server management.
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/docs/providers/okta/authorizationserver/application/index.md">application</a><br />
-<a href="/docs/providers/okta/authorizationserver/authenticator/index.md">authenticator</a><br />
-<a href="/docs/providers/okta/authorizationserver/authorizationserver/index.md">authorizationserver</a><br />
-<a href="/docs/providers/okta/authorizationserver/domain/index.md">domain</a><br />
-<a href="/docs/providers/okta/authorizationserver/eventhook/index.md">eventhook</a><br />
-<a href="/docs/providers/okta/authorizationserver/feature/index.md">feature</a><br />
-<a href="/docs/providers/okta/authorizationserver/group/index.md">group</a><br />
-<a href="/docs/providers/okta/authorizationserver/groupschema/index.md">groupschema</a><br />
-<a href="/docs/providers/okta/authorizationserver/identityprovider/index.md">identityprovider</a><br />
-<a href="/docs/providers/okta/authorizationserver/inlinehook/index.md">inlinehook</a><br />
-<a href="/docs/providers/okta/authorizationserver/linkedobject/index.md">linkedobject</a><br />
-<a href="/docs/providers/okta/authorizationserver/log/index.md">log</a><br />
+<a href="/providers/okta/authorizationserver/application/index.md">application</a><br />
+<a href="/providers/okta/authorizationserver/authenticator/index.md">authenticator</a><br />
+<a href="/providers/okta/authorizationserver/authorizationserver/index.md">authorizationserver</a><br />
+<a href="/providers/okta/authorizationserver/domain/index.md">domain</a><br />
+<a href="/providers/okta/authorizationserver/eventhook/index.md">eventhook</a><br />
+<a href="/providers/okta/authorizationserver/feature/index.md">feature</a><br />
+<a href="/providers/okta/authorizationserver/group/index.md">group</a><br />
+<a href="/providers/okta/authorizationserver/groupschema/index.md">groupschema</a><br />
+<a href="/providers/okta/authorizationserver/identityprovider/index.md">identityprovider</a><br />
+<a href="/providers/okta/authorizationserver/inlinehook/index.md">inlinehook</a><br />
+<a href="/providers/okta/authorizationserver/linkedobject/index.md">linkedobject</a><br />
+<a href="/providers/okta/authorizationserver/log/index.md">log</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/docs/providers/okta/authorizationserver/networkzone/index.md">networkzone</a><br />
-<a href="/docs/providers/okta/authorizationserver/org/index.md">org</a><br />
-<a href="/docs/providers/okta/authorizationserver/policy/index.md">policy</a><br />
-<a href="/docs/providers/okta/authorizationserver/profilemapping/index.md">profilemapping</a><br />
-<a href="/docs/providers/okta/authorizationserver/session/index.md">session</a><br />
-<a href="/docs/providers/okta/authorizationserver/template/index.md">template</a><br />
-<a href="/docs/providers/okta/authorizationserver/threatinsight/index.md">threatinsight</a><br />
-<a href="/docs/providers/okta/authorizationserver/trustedorigin/index.md">trustedorigin</a><br />
-<a href="/docs/providers/okta/authorizationserver/user/index.md">user</a><br />
-<a href="/docs/providers/okta/authorizationserver/userfactor/index.md">userfactor</a><br />
-<a href="/docs/providers/okta/authorizationserver/userschema/index.md">userschema</a><br />
-<a href="/docs/providers/okta/authorizationserver/usertype/index.md">usertype</a><br />
+<a href="/providers/okta/authorizationserver/networkzone/index.md">networkzone</a><br />
+<a href="/providers/okta/authorizationserver/org/index.md">org</a><br />
+<a href="/providers/okta/authorizationserver/policy/index.md">policy</a><br />
+<a href="/providers/okta/authorizationserver/profilemapping/index.md">profilemapping</a><br />
+<a href="/providers/okta/authorizationserver/session/index.md">session</a><br />
+<a href="/providers/okta/authorizationserver/template/index.md">template</a><br />
+<a href="/providers/okta/authorizationserver/threatinsight/index.md">threatinsight</a><br />
+<a href="/providers/okta/authorizationserver/trustedorigin/index.md">trustedorigin</a><br />
+<a href="/providers/okta/authorizationserver/user/index.md">user</a><br />
+<a href="/providers/okta/authorizationserver/userfactor/index.md">userfactor</a><br />
+<a href="/providers/okta/authorizationserver/userschema/index.md">userschema</a><br />
+<a href="/providers/okta/authorizationserver/usertype/index.md">usertype</a><br />
 </div>
 </div>

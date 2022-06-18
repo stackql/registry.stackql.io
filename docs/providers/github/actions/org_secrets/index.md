@@ -24,10 +24,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` | The name of the secret. |
-| `selected_repositories_url` | `string` |  |
 | `updated_at` | `string` |  |
 | `visibility` | `string` | Visibility of a secret |
 | `created_at` | `string` |  |
+| `selected_repositories_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

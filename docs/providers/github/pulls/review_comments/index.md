@@ -24,33 +24,33 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `original_position` | `integer` |  |
-| `line` | `integer` | The line of the blob to which the comment applies. The last line of the range for a multi-line comment |
-| `in_reply_to_id` | `integer` |  |
-| `pull_request_url` | `string` |  |
-| `original_line` | `integer` | The original line of the blob to which the comment applies. The last line of the range for a multi-line comment |
-| `body` | `string` |  |
-| `user` | `object` | Simple User |
-| `updated_at` | `string` |  |
-| `created_at` | `string` |  |
-| `original_start_line` | `integer` | The original first line of the range for a multi-line comment. |
-| `commit_id` | `string` |  |
-| `body_text` | `string` |  |
-| `start_side` | `string` | The side of the first line of the range for a multi-line comment. |
-| `original_commit_id` | `string` |  |
-| `path` | `string` |  |
-| `body_html` | `string` |  |
-| `start_line` | `integer` | The first line of the range for a multi-line comment. |
-| `_links` | `object` |  |
-| `side` | `string` | The side of the first line of the range for a multi-line comment. |
 | `html_url` | `string` |  |
-| `url` | `string` |  |
+| `line` | `integer` | The line of the blob to which the comment applies. The last line of the range for a multi-line comment |
+| `path` | `string` |  |
+| `side` | `string` | The side of the first line of the range for a multi-line comment. |
+| `node_id` | `string` |  |
+| `original_commit_id` | `string` |  |
+| `start_side` | `string` | The side of the first line of the range for a multi-line comment. |
+| `pull_request_url` | `string` |  |
+| `pull_request_review_id` | `integer` |  |
+| `original_position` | `integer` |  |
 | `reactions` | `object` |  |
 | `author_association` | `string` | How the author is associated with the repository. |
-| `pull_request_review_id` | `integer` |  |
+| `start_line` | `integer` | The first line of the range for a multi-line comment. |
+| `user` | `object` | Simple User |
+| `in_reply_to_id` | `integer` |  |
+| `original_line` | `integer` | The original line of the blob to which the comment applies. The last line of the range for a multi-line comment |
+| `original_start_line` | `integer` | The original first line of the range for a multi-line comment. |
+| `_links` | `object` |  |
 | `position` | `integer` |  |
+| `commit_id` | `string` |  |
+| `body` | `string` |  |
+| `created_at` | `string` |  |
+| `updated_at` | `string` |  |
+| `body_text` | `string` |  |
 | `diff_hunk` | `string` |  |
-| `node_id` | `string` |  |
+| `url` | `string` |  |
+| `body_html` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

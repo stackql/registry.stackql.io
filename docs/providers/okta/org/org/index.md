@@ -24,23 +24,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
-| `_links` | `object` |
 | `status` | `string` |
 | `created` | `string` |
-| `companyName` | `string` |
-| `state` | `string` |
-| `expiresAt` | `string` |
-| `lastUpdated` | `string` |
-| `subdomain` | `string` |
+| `phoneNumber` | `string` |
 | `address2` | `string` |
+| `_links` | `object` |
+| `website` | `string` |
+| `country` | `string` |
+| `endUserSupportHelpURL` | `string` |
+| `state` | `string` |
+| `subdomain` | `string` |
+| `companyName` | `string` |
 | `postalCode` | `string` |
 | `address1` | `string` |
+| `expiresAt` | `string` |
+| `lastUpdated` | `string` |
 | `supportPhoneNumber` | `string` |
 | `city` | `string` |
-| `phoneNumber` | `string` |
-| `country` | `string` |
-| `website` | `string` |
-| `endUserSupportHelpURL` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

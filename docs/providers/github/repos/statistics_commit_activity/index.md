@@ -23,9 +23,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `week` | `integer` |
 | `days` | `array` |
 | `total` | `integer` |
+| `week` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

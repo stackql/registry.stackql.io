@@ -24,13 +24,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
-| `appName` | `string` |
-| `logoUrl` | `string` |
 | `sortOrder` | `integer` |
 | `appInstanceId` | `string` |
-| `hidden` | `boolean` |
-| `appAssignmentId` | `string` |
+| `appName` | `string` |
 | `credentialsSetup` | `boolean` |
+| `hidden` | `boolean` |
+| `logoUrl` | `string` |
+| `appAssignmentId` | `string` |
 | `label` | `string` |
 | `linkUrl` | `string` |
 ## Methods

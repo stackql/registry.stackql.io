@@ -26,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` |
 | `name` | `string` |
 | `description` | `string` |
-| `lastUpdated` | `string` |
-| `signOnModes` | `array` |
-| `verificationStatus` | `string` |
+| `website` | `string` |
+| `status` | `string` |
 | `_links` | `object` |
+| `displayName` | `string` |
+| `verificationStatus` | `string` |
+| `signOnModes` | `array` |
 | `category` | `string` |
 | `features` | `array` |
-| `status` | `string` |
-| `website` | `string` |
-| `displayName` | `string` |
+| `lastUpdated` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

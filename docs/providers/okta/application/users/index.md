@@ -24,19 +24,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
+| `_links` | `object` |
+| `lastUpdated` | `string` |
+| `externalId` | `string` |
+| `statusChanged` | `string` |
+| `scope` | `string` |
+| `passwordChanged` | `string` |
+| `syncState` | `string` |
+| `credentials` | `object` |
+| `profile` | `object` |
+| `_embedded` | `object` |
 | `lastSync` | `string` |
 | `status` | `string` |
-| `externalId` | `string` |
-| `passwordChanged` | `string` |
 | `created` | `string` |
-| `_links` | `object` |
-| `syncState` | `string` |
-| `lastUpdated` | `string` |
-| `statusChanged` | `string` |
-| `_embedded` | `object` |
-| `scope` | `string` |
-| `profile` | `object` |
-| `credentials` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

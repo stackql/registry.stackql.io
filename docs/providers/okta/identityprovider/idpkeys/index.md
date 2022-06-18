@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `_links` | `object` |
-| `kid` | `string` |
-| `expiresAt` | `string` |
-| `use` | `string` |
-| `x5c` | `array` |
-| `status` | `string` |
 | `x5t` | `string` |
-| `key_ops` | `array` |
-| `created` | `string` |
-| `e` | `string` |
-| `alg` | `string` |
-| `x5t#S256` | `string` |
-| `kty` | `string` |
-| `x5u` | `string` |
-| `false` | `string` |
+| `use` | `string` |
 | `lastUpdated` | `string` |
+| `e` | `string` |
+| `_links` | `object` |
+| `x5c` | `array` |
+| `key_ops` | `array` |
+| `kty` | `string` |
+| `status` | `string` |
+| `created` | `string` |
+| `expiresAt` | `string` |
+| `false` | `string` |
+| `kid` | `string` |
+| `x5u` | `string` |
+| `x5t#S256` | `string` |
+| `alg` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

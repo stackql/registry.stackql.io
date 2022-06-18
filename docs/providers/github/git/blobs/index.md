@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `size` | `integer` |
 | `url` | `string` |
 | `content` | `string` |
 | `encoding` | `string` |
 | `highlighted_content` | `string` |
 | `node_id` | `string` |
 | `sha` | `string` |
+| `size` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

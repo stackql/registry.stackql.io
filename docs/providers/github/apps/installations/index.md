@@ -24,25 +24,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | The ID of the installation. |
-| `suspended_by` | `object` | Simple User |
-| `access_tokens_url` | `string` |  |
-| `suspended_at` | `string` |  |
-| `target_type` | `string` |  |
-| `created_at` | `string` |  |
-| `target_id` | `integer` | The ID of the user or organization this token is being scoped to. |
+| `html_url` | `string` |  |
 | `events` | `array` |  |
+| `access_tokens_url` | `string` |  |
+| `target_id` | `integer` | The ID of the user or organization this token is being scoped to. |
+| `single_file_name` | `string` |  |
+| `permissions` | `object` | The permissions granted to the user-to-server access token. |
+| `created_at` | `string` |  |
+| `updated_at` | `string` |  |
+| `suspended_at` | `string` |  |
+| `suspended_by` | `object` | Simple User |
+| `contact_email` | `string` |  |
+| `app_slug` | `string` |  |
+| `target_type` | `string` |  |
 | `repositories_url` | `string` |  |
+| `repository_selection` | `string` | Describe whether all repositories have been selected or there's a selection involved |
+| `account` | `` |  |
 | `app_id` | `integer` |  |
 | `has_multiple_single_files` | `boolean` |  |
-| `permissions` | `object` | The permissions granted to the user-to-server access token. |
-| `updated_at` | `string` |  |
-| `repository_selection` | `string` | Describe whether all repositories have been selected or there's a selection involved |
-| `contact_email` | `string` |  |
-| `html_url` | `string` |  |
 | `single_file_paths` | `array` |  |
-| `account` | `` |  |
-| `app_slug` | `string` |  |
-| `single_file_name` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

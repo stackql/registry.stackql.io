@@ -24,11 +24,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
-| `created_at` | `string` |
 | `deploy_id` | `string` |
 | `done` | `boolean` |
 | `error` | `string` |
 | `sha` | `string` |
+| `created_at` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

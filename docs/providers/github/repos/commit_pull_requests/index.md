@@ -24,41 +24,41 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
+| `merge_commit_sha` | `string` |  |
+| `locked` | `boolean` |  |
+| `review_comments_url` | `string` |  |
+| `commits_url` | `string` |  |
+| `auto_merge` | `object` | The status of auto merging a pull request. |
+| `base` | `object` |  |
+| `requested_reviewers` | `array` |  |
+| `body` | `string` |  |
+| `diff_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `assignees` | `array` |  |
+| `url` | `string` |  |
+| `comments_url` | `string` |  |
+| `number` | `integer` |  |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `requested_teams` | `array` |  |
+| `active_lock_reason` | `string` |  |
 | `title` | `string` |  |
+| `assignee` | `object` | Simple User |
+| `created_at` | `string` |  |
+| `issue_url` | `string` |  |
+| `_links` | `object` |  |
+| `closed_at` | `string` |  |
+| `merged_at` | `string` |  |
+| `node_id` | `string` |  |
+| `milestone` | `object` | A collection of related issues and pull requests. |
+| `state` | `string` |  |
+| `html_url` | `string` |  |
 | `review_comment_url` | `string` |  |
 | `labels` | `array` |  |
-| `assignee` | `object` | Simple User |
-| `updated_at` | `string` |  |
-| `review_comments_url` | `string` |  |
-| `head` | `object` |  |
-| `html_url` | `string` |  |
-| `diff_url` | `string` |  |
-| `auto_merge` | `object` | The status of auto merging a pull request. |
-| `commits_url` | `string` |  |
-| `milestone` | `object` | A collection of related issues and pull requests. |
-| `requested_teams` | `array` |  |
-| `locked` | `boolean` |  |
-| `assignees` | `array` |  |
-| `active_lock_reason` | `string` |  |
-| `requested_reviewers` | `array` |  |
 | `draft` | `boolean` | Indicates whether or not the pull request is a draft. |
-| `user` | `object` | Simple User |
-| `issue_url` | `string` |  |
-| `base` | `object` |  |
-| `_links` | `object` |  |
-| `merged_at` | `string` |  |
-| `merge_commit_sha` | `string` |  |
 | `patch_url` | `string` |  |
-| `url` | `string` |  |
-| `body` | `string` |  |
-| `comments_url` | `string` |  |
-| `node_id` | `string` |  |
-| `author_association` | `string` | How the author is associated with the repository. |
-| `created_at` | `string` |  |
-| `number` | `integer` |  |
-| `state` | `string` |  |
+| `user` | `object` | Simple User |
 | `statuses_url` | `string` |  |
-| `closed_at` | `string` |  |
+| `head` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

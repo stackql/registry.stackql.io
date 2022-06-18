@@ -25,14 +25,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` | The name of the artifact. |
-| `updated_at` | `string` |  |
-| `url` | `string` |  |
+| `archive_download_url` | `string` |  |
 | `expires_at` | `string` |  |
 | `created_at` | `string` |  |
 | `expired` | `boolean` | Whether or not the artifact has expired. |
 | `node_id` | `string` |  |
-| `archive_download_url` | `string` |  |
+| `url` | `string` |  |
 | `size_in_bytes` | `integer` | The size in bytes of the artifact. |
+| `updated_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

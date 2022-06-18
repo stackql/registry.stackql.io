@@ -23,10 +23,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `visibility` | `string` |
-| `email` | `string` |
 | `primary` | `boolean` |
 | `verified` | `boolean` |
+| `visibility` | `string` |
+| `email` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

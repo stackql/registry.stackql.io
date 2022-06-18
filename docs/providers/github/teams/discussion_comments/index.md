@@ -25,17 +25,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `number` | `integer` | The unique sequence number of a team discussion comment. |
 | `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
-| `created_at` | `string` |  |
-| `discussion_url` | `string` |  |
-| `last_edited_at` | `string` |  |
-| `node_id` | `string` |  |
-| `reactions` | `object` |  |
-| `author` | `object` | Simple User |
 | `body` | `string` | The main text of the comment. |
-| `body_html` | `string` |  |
+| `reactions` | `object` |  |
 | `url` | `string` |  |
 | `html_url` | `string` |  |
+| `node_id` | `string` |  |
+| `author` | `object` | Simple User |
+| `body_html` | `string` |  |
+| `created_at` | `string` |  |
 | `updated_at` | `string` |  |
+| `last_edited_at` | `string` |  |
+| `discussion_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

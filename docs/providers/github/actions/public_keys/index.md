@@ -24,11 +24,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `url` | `string` |  |
-| `created_at` | `string` |  |
 | `key` | `string` | The Base64 encoded public key. |
 | `key_id` | `string` | The identifier for the key. |
 | `title` | `string` |  |
+| `url` | `string` |  |
+| `created_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

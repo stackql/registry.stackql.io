@@ -25,15 +25,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `string` |
 | `userId` | `string` |
-| `created` | `string` |
+| `clientId` | `string` |
 | `lastUpdated` | `string` |
+| `scopes` | `array` |
+| `_links` | `object` |
 | `status` | `string` |
 | `issuer` | `string` |
-| `expiresAt` | `string` |
-| `scopes` | `array` |
 | `_embedded` | `object` |
-| `_links` | `object` |
-| `clientId` | `string` |
+| `expiresAt` | `string` |
+| `created` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

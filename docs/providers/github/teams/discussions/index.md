@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `body_html` | `string` |  |
-| `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
-| `author` | `object` | Simple User |
-| `created_at` | `string` |  |
-| `comments_count` | `integer` |  |
-| `reactions` | `object` |  |
-| `number` | `integer` | The unique sequence number of a team discussion. |
-| `updated_at` | `string` |  |
-| `team_url` | `string` |  |
-| `comments_url` | `string` |  |
-| `url` | `string` |  |
-| `pinned` | `boolean` | Whether or not this discussion should be pinned for easy retrieval. |
-| `body` | `string` | The main text of the discussion. |
-| `last_edited_at` | `string` |  |
 | `html_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `author` | `object` | Simple User |
+| `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
+| `last_edited_at` | `string` |  |
+| `body` | `string` | The main text of the discussion. |
 | `title` | `string` | The title of the discussion. |
-| `private` | `boolean` | Whether or not this discussion should be restricted to team members and organization administrators. |
 | `node_id` | `string` |  |
+| `created_at` | `string` |  |
+| `pinned` | `boolean` | Whether or not this discussion should be pinned for easy retrieval. |
+| `private` | `boolean` | Whether or not this discussion should be restricted to team members and organization administrators. |
+| `comments_count` | `integer` |  |
+| `body_html` | `string` |  |
+| `comments_url` | `string` |  |
+| `number` | `integer` | The unique sequence number of a team discussion. |
+| `reactions` | `object` |  |
+| `url` | `string` |  |
+| `team_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |
