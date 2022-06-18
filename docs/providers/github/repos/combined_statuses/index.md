@@ -17,19 +17,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>combined_statuses</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.combined_statuses</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `statuses` | `array` |  |
+| `total_count` | `integer` |  |
 | `url` | `string` |  |
 | `commit_url` | `string` |  |
 | `repository` | `object` | Minimal Repository |
 | `sha` | `string` |  |
 | `state` | `string` |  |
-| `statuses` | `array` |  |
-| `total_count` | `integer` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

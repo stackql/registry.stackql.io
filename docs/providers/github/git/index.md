@@ -17,6 +17,7 @@ Raw Git functionality.
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.git</code></td></tr>
+<tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>GitHub v3 REST API - git</td></tr>
 <tr><td><b>Description</b></td><td>Raw Git functionality.</td></tr>
 <tr><td><b>Id</b></td><td><code>git:v0.3.1</code></td></tr>
@@ -25,39 +26,13 @@ Raw Git functionality.
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/github/git/actions/">actions</a><br />
-<a href="/providers/github/git/activity/">activity</a><br />
-<a href="/providers/github/git/apps/">apps</a><br />
-<a href="/providers/github/git/billing/">billing</a><br />
-<a href="/providers/github/git/checks/">checks</a><br />
-<a href="/providers/github/git/code_scanning/">code_scanning</a><br />
-<a href="/providers/github/git/codes_of_conduct/">codes_of_conduct</a><br />
-<a href="/providers/github/git/codespaces/">codespaces</a><br />
-<a href="/providers/github/git/dependabot/">dependabot</a><br />
-<a href="/providers/github/git/enterprise_admin/">enterprise_admin</a><br />
-<a href="/providers/github/git/gists/">gists</a><br />
-<a href="/providers/github/git/git/">git</a><br />
-<a href="/providers/github/git/gitignore/">gitignore</a><br />
-<a href="/providers/github/git/interactions/">interactions</a><br />
-<a href="/providers/github/git/issues/">issues</a><br />
-<a href="/providers/github/git/licenses/">licenses</a><br />
+<a href="/providers/github/git/blobs/">blobs</a><br />
+<a href="/providers/github/git/commits/">commits</a><br />
+<a href="/providers/github/git/matching_refs/">matching_refs</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/github/git/markdown/">markdown</a><br />
-<a href="/providers/github/git/meta/">meta</a><br />
-<a href="/providers/github/git/migrations/">migrations</a><br />
-<a href="/providers/github/git/oauth_authorizations/">oauth_authorizations</a><br />
-<a href="/providers/github/git/orgs/">orgs</a><br />
-<a href="/providers/github/git/packages/">packages</a><br />
-<a href="/providers/github/git/projects/">projects</a><br />
-<a href="/providers/github/git/pulls/">pulls</a><br />
-<a href="/providers/github/git/rate_limit/">rate_limit</a><br />
-<a href="/providers/github/git/reactions/">reactions</a><br />
-<a href="/providers/github/git/repos/">repos</a><br />
-<a href="/providers/github/git/scim/">scim</a><br />
-<a href="/providers/github/git/search/">search</a><br />
-<a href="/providers/github/git/secret_scanning/">secret_scanning</a><br />
-<a href="/providers/github/git/teams/">teams</a><br />
-<a href="/providers/github/git/users/">users</a><br />
+<a href="/providers/github/git/refs/">refs</a><br />
+<a href="/providers/github/git/tags/">tags</a><br />
+<a href="/providers/github/git/trees/">trees</a><br />
 </div>
 </div>

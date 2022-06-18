@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>releases</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.releases</code></td></tr>
 </tbody></table>
 
@@ -25,27 +26,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` |  |
-| `target_commitish` | `string` | Specifies the commitish value that determines where the Git tag is created from. |
-| `body_html` | `string` |  |
-| `html_url` | `string` |  |
-| `published_at` | `string` |  |
-| `draft` | `boolean` | true to create a draft (unpublished) release, false to create a published one. |
-| `author` | `object` | Simple User |
-| `body_text` | `string` |  |
-| `zipball_url` | `string` |  |
-| `assets` | `array` |  |
-| `body` | `string` |  |
-| `reactions` | `object` |  |
-| `url` | `string` |  |
-| `created_at` | `string` |  |
-| `discussion_url` | `string` | The URL of the release discussion. |
-| `mentions_count` | `integer` |  |
-| `tarball_url` | `string` |  |
-| `upload_url` | `string` |  |
-| `prerelease` | `boolean` | Whether to identify the release as a prerelease or a full release. |
-| `node_id` | `string` |  |
 | `assets_url` | `string` |  |
+| `mentions_count` | `integer` |  |
+| `node_id` | `string` |  |
+| `body_text` | `string` |  |
+| `discussion_url` | `string` | The URL of the release discussion. |
+| `reactions` | `object` |  |
+| `body` | `string` |  |
+| `created_at` | `string` |  |
+| `html_url` | `string` |  |
 | `tag_name` | `string` | The name of the tag. |
+| `body_html` | `string` |  |
+| `target_commitish` | `string` | Specifies the commitish value that determines where the Git tag is created from. |
+| `url` | `string` |  |
+| `tarball_url` | `string` |  |
+| `zipball_url` | `string` |  |
+| `prerelease` | `boolean` | Whether to identify the release as a prerelease or a full release. |
+| `draft` | `boolean` | true to create a draft (unpublished) release, false to create a published one. |
+| `upload_url` | `string` |  |
+| `assets` | `array` |  |
+| `published_at` | `string` |  |
+| `author` | `object` | Simple User |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

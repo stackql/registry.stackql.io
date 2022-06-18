@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>issues</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.issues.issues</code></td></tr>
 </tbody></table>
 
@@ -24,38 +25,38 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `repository_url` | `string` |  |
-| `reactions` | `object` |  |
-| `html_url` | `string` |  |
-| `assignee` | `object` | Simple User |
-| `body_text` | `string` |  |
-| `body` | `string` | Contents of the issue |
-| `created_at` | `string` |  |
-| `repository` | `object` | A git repository |
-| `closed_at` | `string` |  |
-| `number` | `integer` | Number uniquely identifying the issue within its repository |
-| `user` | `object` | Simple User |
-| `node_id` | `string` |  |
-| `active_lock_reason` | `string` |  |
-| `locked` | `boolean` |  |
-| `draft` | `boolean` |  |
-| `body_html` | `string` |  |
-| `comments_url` | `string` |  |
-| `state` | `string` | State of the issue; either 'open' or 'closed' |
-| `milestone` | `object` | A collection of related issues and pull requests. |
 | `comments` | `integer` |  |
-| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `labels` | `array` | Labels to associate with this issue; pass one or more label names to replace the set of labels on this issue; send an empty array to clear all labels from the issue; note that the labels are silently dropped for users without push access to the repository |
-| `closed_by` | `object` | Simple User |
-| `author_association` | `string` | How the author is associated with the repository. |
-| `updated_at` | `string` |  |
+| `body_html` | `string` |  |
 | `labels_url` | `string` |  |
-| `assignees` | `array` |  |
-| `pull_request` | `object` |  |
-| `timeline_url` | `string` |  |
-| `title` | `string` | Title of the issue |
 | `url` | `string` | URL for the issue |
+| `body_text` | `string` |  |
+| `created_at` | `string` |  |
+| `node_id` | `string` |  |
+| `repository_url` | `string` |  |
+| `labels` | `array` | Labels to associate with this issue; pass one or more label names to replace the set of labels on this issue; send an empty array to clear all labels from the issue; note that the labels are silently dropped for users without push access to the repository |
+| `user` | `object` | Simple User |
 | `events_url` | `string` |  |
+| `number` | `integer` | Number uniquely identifying the issue within its repository |
+| `pull_request` | `object` |  |
+| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `assignees` | `array` |  |
+| `comments_url` | `string` |  |
+| `reactions` | `object` |  |
+| `title` | `string` | Title of the issue |
+| `html_url` | `string` |  |
+| `repository` | `object` | A git repository |
+| `timeline_url` | `string` |  |
+| `closed_at` | `string` |  |
+| `draft` | `boolean` |  |
+| `closed_by` | `object` | Simple User |
+| `milestone` | `object` | A collection of related issues and pull requests. |
+| `assignee` | `object` | Simple User |
+| `locked` | `boolean` |  |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `body` | `string` | Contents of the issue |
+| `active_lock_reason` | `string` |  |
+| `state` | `string` | State of the issue; either 'open' or 'closed' |
+| `updated_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>team_access</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.team_access</code></td></tr>
 </tbody></table>
 
@@ -26,16 +27,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `node_id` | `string` |  |
 | `privacy` | `string` |  |
-| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `slug` | `string` |  |
 | `permissions` | `object` |  |
-| `repositories_url` | `string` |  |
 | `url` | `string` |  |
+| `repositories_url` | `string` |  |
+| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
 | `html_url` | `string` |  |
-| `members_url` | `string` |  |
+| `node_id` | `string` |  |
 | `permission` | `string` |  |
+| `slug` | `string` |  |
+| `members_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

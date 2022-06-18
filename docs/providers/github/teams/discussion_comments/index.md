@@ -17,25 +17,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>discussion_comments</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.teams.discussion_comments</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `updated_at` | `string` |  |
-| `number` | `integer` | The unique sequence number of a team discussion comment. |
-| `html_url` | `string` |  |
-| `discussion_url` | `string` |  |
-| `url` | `string` |  |
-| `body_html` | `string` |  |
 | `last_edited_at` | `string` |  |
+| `html_url` | `string` |  |
+| `body_html` | `string` |  |
+| `number` | `integer` | The unique sequence number of a team discussion comment. |
+| `url` | `string` |  |
 | `created_at` | `string` |  |
-| `reactions` | `object` |  |
 | `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
 | `node_id` | `string` |  |
+| `discussion_url` | `string` |  |
+| `reactions` | `object` |  |
 | `author` | `object` | Simple User |
 | `body` | `string` | The main text of the comment. |
+| `updated_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>tags</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.tags</code></td></tr>
 </tbody></table>
 
@@ -24,10 +25,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `name` | `string` |
-| `zipball_url` | `string` |
-| `commit` | `object` |
 | `node_id` | `string` |
 | `tarball_url` | `string` |
+| `zipball_url` | `string` |
+| `commit` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -17,24 +17,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>commits</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.search.commits</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `sha` | `string` |  |
-| `url` | `string` |  |
 | `commit` | `object` |  |
 | `html_url` | `string` |  |
-| `score` | `number` |  |
-| `repository` | `object` | Minimal Repository |
 | `text_matches` | `array` |  |
-| `comments_url` | `string` |  |
-| `committer` | `object` | Metaproperties for Git author/committer information. |
-| `node_id` | `string` |  |
 | `parents` | `array` |  |
+| `node_id` | `string` |  |
+| `repository` | `object` | Minimal Repository |
+| `score` | `number` |  |
+| `committer` | `object` | Metaproperties for Git author/committer information. |
 | `author` | `object` | Simple User |
+| `sha` | `string` |  |
+| `url` | `string` |  |
+| `comments_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

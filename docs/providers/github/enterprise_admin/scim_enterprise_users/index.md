@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>scim_enterprise_users</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.enterprise_admin.scim_enterprise_users</code></td></tr>
 </tbody></table>
 
@@ -25,13 +26,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `string` |
 | `name` | `object` |
-| `meta` | `object` |
-| `groups` | `array` |
-| `emails` | `array` |
-| `externalId` | `string` |
 | `active` | `boolean` |
+| `emails` | `array` |
 | `schemas` | `array` |
+| `meta` | `object` |
 | `userName` | `string` |
+| `externalId` | `string` |
+| `groups` | `array` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

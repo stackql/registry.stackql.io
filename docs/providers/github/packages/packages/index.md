@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>packages</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.packages.packages</code></td></tr>
 </tbody></table>
 
@@ -25,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the package. |
 | `name` | `string` | The name of the package. |
-| `visibility` | `string` |  |
-| `package_type` | `string` |  |
-| `url` | `string` |  |
 | `owner` | `object` | Simple User |
-| `updated_at` | `string` |  |
-| `version_count` | `integer` | The number of versions of the package. |
-| `created_at` | `string` |  |
-| `html_url` | `string` |  |
 | `repository` | `object` | Minimal Repository |
+| `html_url` | `string` |  |
+| `package_type` | `string` |  |
+| `visibility` | `string` |  |
+| `updated_at` | `string` |  |
+| `created_at` | `string` |  |
+| `url` | `string` |  |
+| `version_count` | `integer` | The number of versions of the package. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

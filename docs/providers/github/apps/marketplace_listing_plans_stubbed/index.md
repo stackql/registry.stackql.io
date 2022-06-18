@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>marketplace_listing_plans_stubbed</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.apps.marketplace_listing_plans_stubbed</code></td></tr>
 </tbody></table>
 
@@ -26,16 +27,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |
 | `name` | `string` |
 | `description` | `string` |
-| `accounts_url` | `string` |
 | `has_free_trial` | `boolean` |
-| `state` | `string` |
 | `yearly_price_in_cents` | `integer` |
-| `number` | `integer` |
-| `monthly_price_in_cents` | `integer` |
-| `price_model` | `string` |
-| `bullets` | `array` |
-| `unit_name` | `string` |
 | `url` | `string` |
+| `accounts_url` | `string` |
+| `monthly_price_in_cents` | `integer` |
+| `unit_name` | `string` |
+| `bullets` | `array` |
+| `state` | `string` |
+| `number` | `integer` |
+| `price_model` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -17,14 +17,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>pages_health_checks</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.pages_health_checks</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `domain` | `object` |
 | `alt_domain` | `object` |
+| `domain` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

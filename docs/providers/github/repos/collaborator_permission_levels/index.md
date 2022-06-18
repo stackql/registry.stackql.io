@@ -17,15 +17,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>collaborator_permission_levels</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.collaborator_permission_levels</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `role_name` | `string` |  |
 | `user` | `object` | Collaborator |
 | `permission` | `string` |  |
+| `role_name` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

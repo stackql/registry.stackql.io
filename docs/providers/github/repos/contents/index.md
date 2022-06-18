@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>contents</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.contents</code></td></tr>
 </tbody></table>
 
@@ -24,19 +25,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `name` | `string` |
-| `submodule_git_url` | `string` |
-| `content` | `string` |
-| `sha` | `string` |
-| `url` | `string` |
-| `_links` | `object` |
-| `size` | `integer` |
-| `download_url` | `string` |
-| `target` | `string` |
 | `path` | `string` |
-| `git_url` | `string` |
+| `url` | `string` |
+| `size` | `integer` |
+| `target` | `string` |
 | `encoding` | `string` |
 | `html_url` | `string` |
 | `type` | `string` |
+| `content` | `string` |
+| `sha` | `string` |
+| `download_url` | `string` |
+| `submodule_git_url` | `string` |
+| `_links` | `object` |
+| `git_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

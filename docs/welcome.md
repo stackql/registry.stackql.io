@@ -27,7 +27,7 @@ alttext="StackQL"/>
 <section class="row list">
   <article class="col col--4 margin-bottom--lg">
     <a class="card padding--lg cardContainer" href="/docs/installation">
-      <h2 class="text--truncate cardTitle" title="Installation">📄️ Installation</h2>
+      <h2 class="text--truncate cardTitle" title="Installation"><i class="fa-brands fa-google"></i>&nbsp;&nbsp;Google Cloud Platform</h2>
       <p class="text--truncate cardDescription" title="Docusaurus is essentially a set of npm packages.">Docusaurus is essentially a set of npm packages.</p>
     </a>
   </article>

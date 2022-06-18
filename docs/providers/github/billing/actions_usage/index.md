@@ -17,16 +17,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>actions_usage</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.billing.actions_usage</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `total_minutes_used` | `integer` | The sum of the free and paid GitHub Actions minutes used. |
-| `total_paid_minutes_used` | `integer` | The total paid GitHub Actions minutes used. |
 | `included_minutes` | `integer` | The amount of free GitHub Actions minutes available. |
 | `minutes_used_breakdown` | `object` |  |
+| `total_minutes_used` | `integer` | The sum of the free and paid GitHub Actions minutes used. |
+| `total_paid_minutes_used` | `integer` | The total paid GitHub Actions minutes used. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

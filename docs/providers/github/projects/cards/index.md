@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>cards</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.projects.cards</code></td></tr>
 </tbody></table>
 
@@ -24,17 +25,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | The project card's ID |
-| `archived` | `boolean` | Whether or not the card is archived |
-| `project_url` | `string` |  |
-| `column_name` | `string` |  |
-| `content_url` | `string` |  |
 | `updated_at` | `string` |  |
-| `note` | `string` |  |
-| `created_at` | `string` |  |
-| `project_id` | `string` |  |
-| `url` | `string` |  |
 | `column_url` | `string` |  |
+| `content_url` | `string` |  |
+| `column_name` | `string` |  |
+| `project_url` | `string` |  |
+| `archived` | `boolean` | Whether or not the card is archived |
+| `note` | `string` |  |
+| `url` | `string` |  |
+| `created_at` | `string` |  |
 | `creator` | `object` | Simple User |
+| `project_id` | `string` |  |
 | `node_id` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |

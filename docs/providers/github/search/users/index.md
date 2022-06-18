@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>users</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.search.users</code></td></tr>
 </tbody></table>
 
@@ -25,38 +26,38 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `integer` |
 | `name` | `string` |
+| `repos_url` | `string` |
+| `hireable` | `boolean` |
+| `gravatar_id` | `string` |
+| `type` | `string` |
+| `score` | `number` |
+| `suspended_at` | `string` |
+| `text_matches` | `array` |
+| `site_admin` | `boolean` |
+| `following_url` | `string` |
+| `avatar_url` | `string` |
 | `public_repos` | `integer` |
 | `email` | `string` |
-| `login` | `string` |
-| `gravatar_id` | `string` |
-| `events_url` | `string` |
-| `score` | `number` |
-| `following` | `integer` |
-| `text_matches` | `array` |
-| `subscriptions_url` | `string` |
-| `hireable` | `boolean` |
-| `location` | `string` |
-| `gists_url` | `string` |
-| `followers` | `integer` |
-| `organizations_url` | `string` |
-| `html_url` | `string` |
-| `blog` | `string` |
-| `url` | `string` |
 | `public_gists` | `integer` |
-| `created_at` | `string` |
-| `following_url` | `string` |
-| `updated_at` | `string` |
-| `bio` | `string` |
-| `repos_url` | `string` |
-| `suspended_at` | `string` |
-| `node_id` | `string` |
-| `site_admin` | `boolean` |
+| `subscriptions_url` | `string` |
+| `following` | `integer` |
+| `login` | `string` |
+| `html_url` | `string` |
+| `followers` | `integer` |
 | `starred_url` | `string` |
-| `received_events_url` | `string` |
+| `blog` | `string` |
+| `bio` | `string` |
+| `url` | `string` |
+| `events_url` | `string` |
+| `updated_at` | `string` |
 | `company` | `string` |
-| `avatar_url` | `string` |
+| `created_at` | `string` |
+| `organizations_url` | `string` |
+| `gists_url` | `string` |
 | `followers_url` | `string` |
-| `type` | `string` |
+| `location` | `string` |
+| `node_id` | `string` |
+| `received_events_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>reviews</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.pulls.reviews</code></td></tr>
 </tbody></table>
 
@@ -24,18 +25,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the review |
-| `body_text` | `string` |  |
-| `body_html` | `string` |  |
 | `user` | `object` | Simple User |
-| `author_association` | `string` | How the author is associated with the repository. |
-| `body` | `string` | The text of the review. |
-| `_links` | `object` |  |
-| `node_id` | `string` |  |
-| `pull_request_url` | `string` |  |
-| `html_url` | `string` |  |
 | `state` | `string` |  |
-| `submitted_at` | `string` |  |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `body_html` | `string` |  |
+| `body_text` | `string` |  |
+| `pull_request_url` | `string` |  |
 | `commit_id` | `string` | A commit SHA for the review. |
+| `node_id` | `string` |  |
+| `submitted_at` | `string` |  |
+| `html_url` | `string` |  |
+| `_links` | `object` |  |
+| `body` | `string` | The text of the review. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>self_hosted_runner_groups</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.enterprise_admin.self_hosted_runner_groups</code></td></tr>
 </tbody></table>
 
@@ -25,11 +26,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `number` |
 | `name` | `string` |
-| `default` | `boolean` |
 | `runners_url` | `string` |
 | `selected_organizations_url` | `string` |
 | `visibility` | `string` |
 | `allows_public_repositories` | `boolean` |
+| `default` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

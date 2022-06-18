@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>webhooks</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.webhooks</code></td></tr>
 </tbody></table>
 
@@ -25,17 +26,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the webhook. |
 | `name` | `string` | The name of a valid service, use 'web' for a webhook. |
-| `created_at` | `string` |  |
-| `deliveries_url` | `string` |  |
-| `events` | `array` | Determines what events the hook is triggered for. Default: ['push']. |
+| `type` | `string` |  |
+| `config` | `object` |  |
+| `ping_url` | `string` |  |
+| `updated_at` | `string` |  |
 | `url` | `string` |  |
 | `active` | `boolean` | Determines whether the hook is actually triggered on pushes. |
 | `last_response` | `object` |  |
-| `ping_url` | `string` |  |
-| `config` | `object` |  |
-| `updated_at` | `string` |  |
 | `test_url` | `string` |  |
-| `type` | `string` |  |
+| `events` | `array` | Determines what events the hook is triggered for. Default: ['push']. |
+| `created_at` | `string` |  |
+| `deliveries_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>migrations</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.migrations.migrations</code></td></tr>
 </tbody></table>
 
@@ -24,22 +25,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `repositories` | `array` |  |
+| `exclude_owner_projects` | `boolean` |  |
+| `exclude_git_data` | `boolean` |  |
 | `lock_repositories` | `boolean` |  |
-| `created_at` | `string` |  |
+| `node_id` | `string` |  |
+| `repositories` | `array` |  |
+| `url` | `string` |  |
 | `exclude_metadata` | `boolean` |  |
+| `state` | `string` |  |
+| `owner` | `object` | Simple User |
+| `exclude` | `array` |  |
+| `exclude_attachments` | `boolean` |  |
 | `archive_url` | `string` |  |
 | `exclude_releases` | `boolean` |  |
-| `exclude_git_data` | `boolean` |  |
-| `updated_at` | `string` |  |
-| `node_id` | `string` |  |
-| `owner` | `object` | Simple User |
-| `exclude_attachments` | `boolean` |  |
+| `created_at` | `string` |  |
 | `guid` | `string` |  |
-| `exclude_owner_projects` | `boolean` |  |
-| `state` | `string` |  |
-| `exclude` | `array` |  |
-| `url` | `string` |  |
+| `updated_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

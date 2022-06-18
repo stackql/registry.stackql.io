@@ -17,23 +17,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>pages</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.pages</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `protected_domain_state` | `string` | The state if the domain is verified |
-| `source` | `object` |  |
-| `status` | `string` | The status of the most recent build of the Page. |
-| `html_url` | `string` | The web address the Page can be accessed from. |
-| `pending_domain_unverified_at` | `string` | The timestamp when a pending domain becomes unverified. |
-| `public` | `boolean` | Whether the GitHub Pages site is publicly visible. If set to `true`, the site is accessible to anyone on the internet. If set to `false`, the site will only be accessible to users who have at least `read` access to the repository that published the site. |
 | `cname` | `string` | The Pages site's custom domain |
-| `https_enforced` | `boolean` | Whether https is enabled on the domain |
+| `source` | `object` |  |
 | `custom_404` | `boolean` | Whether the Page has a custom 404 page. |
-| `url` | `string` | The API address for accessing this Page resource. |
+| `html_url` | `string` | The web address the Page can be accessed from. |
+| `status` | `string` | The status of the most recent build of the Page. |
+| `pending_domain_unverified_at` | `string` | The timestamp when a pending domain becomes unverified. |
+| `https_enforced` | `boolean` | Whether https is enabled on the domain |
 | `https_certificate` | `object` |  |
+| `public` | `boolean` | Whether the GitHub Pages site is publicly visible. If set to `true`, the site is accessible to anyone on the internet. If set to `false`, the site will only be accessible to users who have at least `read` access to the repository that published the site. |
+| `url` | `string` | The API address for accessing this Page resource. |
+| `protected_domain_state` | `string` | The state if the domain is verified |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

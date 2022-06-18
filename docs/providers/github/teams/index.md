@@ -17,6 +17,7 @@ Interact with GitHub Teams.
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.teams</code></td></tr>
+<tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>GitHub v3 REST API - teams</td></tr>
 <tr><td><b>Description</b></td><td>Interact with GitHub Teams.</td></tr>
 <tr><td><b>Id</b></td><td><code>teams:v0.3.1</code></td></tr>
@@ -25,39 +26,22 @@ Interact with GitHub Teams.
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/github/teams/actions/">actions</a><br />
-<a href="/providers/github/teams/activity/">activity</a><br />
-<a href="/providers/github/teams/apps/">apps</a><br />
-<a href="/providers/github/teams/billing/">billing</a><br />
-<a href="/providers/github/teams/checks/">checks</a><br />
-<a href="/providers/github/teams/code_scanning/">code_scanning</a><br />
-<a href="/providers/github/teams/codes_of_conduct/">codes_of_conduct</a><br />
-<a href="/providers/github/teams/codespaces/">codespaces</a><br />
-<a href="/providers/github/teams/dependabot/">dependabot</a><br />
-<a href="/providers/github/teams/enterprise_admin/">enterprise_admin</a><br />
-<a href="/providers/github/teams/gists/">gists</a><br />
-<a href="/providers/github/teams/git/">git</a><br />
-<a href="/providers/github/teams/gitignore/">gitignore</a><br />
-<a href="/providers/github/teams/interactions/">interactions</a><br />
-<a href="/providers/github/teams/issues/">issues</a><br />
-<a href="/providers/github/teams/licenses/">licenses</a><br />
+<a href="/providers/github/teams/child_teams/">child_teams</a><br />
+<a href="/providers/github/teams/discussion_comments/">discussion_comments</a><br />
+<a href="/providers/github/teams/discussions/">discussions</a><br />
+<a href="/providers/github/teams/external_groups/">external_groups</a><br />
+<a href="/providers/github/teams/legacy_child/">legacy_child</a><br />
+<a href="/providers/github/teams/legacy_projects/">legacy_projects</a><br />
+<a href="/providers/github/teams/legacy_repos/">legacy_repos</a><br />
+<a href="/providers/github/teams/legacy_teams/">legacy_teams</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/github/teams/markdown/">markdown</a><br />
-<a href="/providers/github/teams/meta/">meta</a><br />
-<a href="/providers/github/teams/migrations/">migrations</a><br />
-<a href="/providers/github/teams/oauth_authorizations/">oauth_authorizations</a><br />
-<a href="/providers/github/teams/orgs/">orgs</a><br />
-<a href="/providers/github/teams/packages/">packages</a><br />
+<a href="/providers/github/teams/members/">members</a><br />
+<a href="/providers/github/teams/membership/">membership</a><br />
+<a href="/providers/github/teams/pending_invitations/">pending_invitations</a><br />
 <a href="/providers/github/teams/projects/">projects</a><br />
-<a href="/providers/github/teams/pulls/">pulls</a><br />
-<a href="/providers/github/teams/rate_limit/">rate_limit</a><br />
-<a href="/providers/github/teams/reactions/">reactions</a><br />
 <a href="/providers/github/teams/repos/">repos</a><br />
-<a href="/providers/github/teams/scim/">scim</a><br />
-<a href="/providers/github/teams/search/">search</a><br />
-<a href="/providers/github/teams/secret_scanning/">secret_scanning</a><br />
+<a href="/providers/github/teams/team_sync/">team_sync</a><br />
 <a href="/providers/github/teams/teams/">teams</a><br />
-<a href="/providers/github/teams/users/">users</a><br />
 </div>
 </div>

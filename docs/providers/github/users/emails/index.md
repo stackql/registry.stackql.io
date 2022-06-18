@@ -17,16 +17,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>emails</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.users.emails</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `email` | `string` |
-| `primary` | `boolean` |
 | `verified` | `boolean` |
 | `visibility` | `string` |
+| `email` | `string` |
+| `primary` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

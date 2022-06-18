@@ -17,19 +17,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>blobs</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.git.blobs</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
+| `content` | `string` |
+| `encoding` | `string` |
+| `highlighted_content` | `string` |
 | `node_id` | `string` |
 | `sha` | `string` |
 | `size` | `integer` |
 | `url` | `string` |
-| `content` | `string` |
-| `encoding` | `string` |
-| `highlighted_content` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

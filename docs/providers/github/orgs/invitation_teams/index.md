@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>invitation_teams</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.invitation_teams</code></td></tr>
 </tbody></table>
 
@@ -26,16 +27,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
+| `permissions` | `object` |  |
+| `html_url` | `string` |  |
+| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `permission` | `string` |  |
+| `slug` | `string` |  |
+| `privacy` | `string` |  |
+| `url` | `string` |  |
 | `members_url` | `string` |  |
 | `node_id` | `string` |  |
 | `repositories_url` | `string` |  |
-| `slug` | `string` |  |
-| `html_url` | `string` |  |
-| `permissions` | `object` |  |
-| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `permission` | `string` |  |
-| `privacy` | `string` |  |
-| `url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

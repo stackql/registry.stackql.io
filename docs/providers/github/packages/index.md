@@ -17,6 +17,7 @@ Manage packages for authenticated users and organizations.
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.packages</code></td></tr>
+<tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>GitHub v3 REST API - packages</td></tr>
 <tr><td><b>Description</b></td><td>Manage packages for authenticated users and organizations.</td></tr>
 <tr><td><b>Id</b></td><td><code>packages:v0.3.1</code></td></tr>
@@ -25,39 +26,9 @@ Manage packages for authenticated users and organizations.
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/github/packages/actions/">actions</a><br />
-<a href="/providers/github/packages/activity/">activity</a><br />
-<a href="/providers/github/packages/apps/">apps</a><br />
-<a href="/providers/github/packages/billing/">billing</a><br />
-<a href="/providers/github/packages/checks/">checks</a><br />
-<a href="/providers/github/packages/code_scanning/">code_scanning</a><br />
-<a href="/providers/github/packages/codes_of_conduct/">codes_of_conduct</a><br />
-<a href="/providers/github/packages/codespaces/">codespaces</a><br />
-<a href="/providers/github/packages/dependabot/">dependabot</a><br />
-<a href="/providers/github/packages/enterprise_admin/">enterprise_admin</a><br />
-<a href="/providers/github/packages/gists/">gists</a><br />
-<a href="/providers/github/packages/git/">git</a><br />
-<a href="/providers/github/packages/gitignore/">gitignore</a><br />
-<a href="/providers/github/packages/interactions/">interactions</a><br />
-<a href="/providers/github/packages/issues/">issues</a><br />
-<a href="/providers/github/packages/licenses/">licenses</a><br />
+<a href="/providers/github/packages/package_versions/">package_versions</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/github/packages/markdown/">markdown</a><br />
-<a href="/providers/github/packages/meta/">meta</a><br />
-<a href="/providers/github/packages/migrations/">migrations</a><br />
-<a href="/providers/github/packages/oauth_authorizations/">oauth_authorizations</a><br />
-<a href="/providers/github/packages/orgs/">orgs</a><br />
 <a href="/providers/github/packages/packages/">packages</a><br />
-<a href="/providers/github/packages/projects/">projects</a><br />
-<a href="/providers/github/packages/pulls/">pulls</a><br />
-<a href="/providers/github/packages/rate_limit/">rate_limit</a><br />
-<a href="/providers/github/packages/reactions/">reactions</a><br />
-<a href="/providers/github/packages/repos/">repos</a><br />
-<a href="/providers/github/packages/scim/">scim</a><br />
-<a href="/providers/github/packages/search/">search</a><br />
-<a href="/providers/github/packages/secret_scanning/">secret_scanning</a><br />
-<a href="/providers/github/packages/teams/">teams</a><br />
-<a href="/providers/github/packages/users/">users</a><br />
 </div>
 </div>

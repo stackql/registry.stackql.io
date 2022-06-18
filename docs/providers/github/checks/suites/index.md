@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>suites</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.checks.suites</code></td></tr>
 </tbody></table>
 
@@ -24,24 +25,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `pull_requests` | `array` |  |
-| `repository` | `object` | Minimal Repository |
 | `node_id` | `string` |  |
+| `status` | `string` |  |
+| `head_commit` | `object` | Simple Commit |
+| `latest_check_runs_count` | `integer` |  |
+| `head_sha` | `string` | The SHA of the head commit that is being checked. |
+| `updated_at` | `string` |  |
 | `head_branch` | `string` |  |
 | `runs_rerequestable` | `boolean` |  |
-| `after` | `string` |  |
-| `rerequestable` | `boolean` |  |
-| `url` | `string` |  |
-| `conclusion` | `string` |  |
-| `before` | `string` |  |
-| `updated_at` | `string` |  |
-| `status` | `string` |  |
-| `latest_check_runs_count` | `integer` |  |
-| `head_commit` | `object` | Simple Commit |
 | `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `head_sha` | `string` | The SHA of the head commit that is being checked. |
-| `created_at` | `string` |  |
+| `before` | `string` |  |
+| `url` | `string` |  |
+| `rerequestable` | `boolean` |  |
+| `repository` | `object` | Minimal Repository |
 | `check_runs_url` | `string` |  |
+| `after` | `string` |  |
+| `created_at` | `string` |  |
+| `pull_requests` | `array` |  |
+| `conclusion` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>source_import_commit_authors</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.migrations.source_import_commit_authors</code></td></tr>
 </tbody></table>
 
@@ -25,11 +26,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `integer` |
 | `name` | `string` |
-| `email` | `string` |
-| `import_url` | `string` |
 | `remote_id` | `string` |
 | `remote_name` | `string` |
 | `url` | `string` |
+| `email` | `string` |
+| `import_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

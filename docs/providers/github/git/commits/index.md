@@ -17,22 +17,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>commits</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.git.commits</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `message` | `string` | Message describing the purpose of the commit |
-| `tree` | `object` |  |
-| `html_url` | `string` |  |
-| `sha` | `string` | SHA for the commit |
-| `url` | `string` |  |
-| `verification` | `object` |  |
 | `committer` | `object` | Identifying information for the git-user |
-| `parents` | `array` |  |
+| `url` | `string` |  |
+| `sha` | `string` | SHA for the commit |
+| `tree` | `object` |  |
+| `verification` | `object` |  |
 | `node_id` | `string` |  |
+| `message` | `string` | Message describing the purpose of the commit |
+| `html_url` | `string` |  |
 | `author` | `object` | Identifying information for the git-user |
+| `parents` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

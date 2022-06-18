@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>user_installations</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.apps.user_installations</code></td></tr>
 </tbody></table>
 
@@ -25,24 +26,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | The ID of the installation. |
 | `html_url` | `string` |  |
-| `repositories_url` | `string` |  |
-| `created_at` | `string` |  |
-| `permissions` | `object` | The permissions granted to the user-to-server access token. |
 | `target_type` | `string` |  |
-| `has_multiple_single_files` | `boolean` |  |
-| `app_slug` | `string` |  |
-| `single_file_paths` | `array` |  |
-| `app_id` | `integer` |  |
-| `single_file_name` | `string` |  |
+| `repositories_url` | `string` |  |
+| `permissions` | `object` | The permissions granted to the user-to-server access token. |
+| `created_at` | `string` |  |
 | `contact_email` | `string` |  |
-| `target_id` | `integer` | The ID of the user or organization this token is being scoped to. |
-| `suspended_by` | `object` | Simple User |
+| `single_file_name` | `string` |  |
+| `app_slug` | `string` |  |
+| `account` | `` |  |
 | `events` | `array` |  |
 | `updated_at` | `string` |  |
-| `suspended_at` | `string` |  |
+| `has_multiple_single_files` | `boolean` |  |
+| `app_id` | `integer` |  |
+| `target_id` | `integer` | The ID of the user or organization this token is being scoped to. |
 | `repository_selection` | `string` | Describe whether all repositories have been selected or there's a selection involved |
-| `account` | `` |  |
+| `suspended_by` | `object` | Simple User |
 | `access_tokens_url` | `string` |  |
+| `suspended_at` | `string` |  |
+| `single_file_paths` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

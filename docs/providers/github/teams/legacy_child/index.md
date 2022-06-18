@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>legacy_child</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.teams.legacy_child</code></td></tr>
 </tbody></table>
 
@@ -26,16 +27,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `members_url` | `string` |  |
-| `node_id` | `string` |  |
-| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `url` | `string` |  |
-| `permission` | `string` |  |
-| `repositories_url` | `string` |  |
-| `html_url` | `string` |  |
 | `slug` | `string` |  |
+| `permission` | `string` |  |
 | `permissions` | `object` |  |
+| `url` | `string` |  |
+| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `html_url` | `string` |  |
+| `node_id` | `string` |  |
 | `privacy` | `string` |  |
+| `members_url` | `string` |  |
+| `repositories_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

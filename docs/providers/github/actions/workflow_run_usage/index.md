@@ -17,14 +17,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>workflow_run_usage</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.workflow_run_usage</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `billable` | `object` |
 | `run_duration_ms` | `integer` |
+| `billable` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

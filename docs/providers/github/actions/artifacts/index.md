@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>artifacts</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.artifacts</code></td></tr>
 </tbody></table>
 
@@ -25,14 +26,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` | The name of the artifact. |
-| `created_at` | `string` |  |
-| `updated_at` | `string` |  |
+| `expired` | `boolean` | Whether or not the artifact has expired. |
 | `url` | `string` |  |
+| `node_id` | `string` |  |
+| `updated_at` | `string` |  |
 | `archive_download_url` | `string` |  |
 | `expires_at` | `string` |  |
-| `node_id` | `string` |  |
 | `size_in_bytes` | `integer` | The size in bytes of the artifact. |
-| `expired` | `boolean` | Whether or not the artifact has expired. |
+| `created_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

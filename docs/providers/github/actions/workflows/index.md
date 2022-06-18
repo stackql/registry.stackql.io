@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>workflows</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.workflows</code></td></tr>
 </tbody></table>
 
@@ -26,14 +27,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |
 | `name` | `string` |
 | `url` | `string` |
-| `badge_url` | `string` |
-| `state` | `string` |
-| `deleted_at` | `string` |
-| `updated_at` | `string` |
-| `node_id` | `string` |
 | `created_at` | `string` |
-| `html_url` | `string` |
+| `node_id` | `string` |
+| `deleted_at` | `string` |
 | `path` | `string` |
+| `html_url` | `string` |
+| `badge_url` | `string` |
+| `updated_at` | `string` |
+| `state` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

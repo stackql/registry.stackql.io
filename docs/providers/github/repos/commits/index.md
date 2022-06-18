@@ -17,23 +17,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>commits</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.commits</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `author` | `object` | Simple User |
-| `url` | `string` |  |
-| `commit` | `object` |  |
 | `stats` | `object` |  |
-| `files` | `array` |  |
-| `comments_url` | `string` |  |
-| `html_url` | `string` |  |
-| `parents` | `array` |  |
+| `commit` | `object` |  |
 | `committer` | `object` | Simple User |
 | `node_id` | `string` |  |
 | `sha` | `string` |  |
+| `files` | `array` |  |
+| `author` | `object` | Simple User |
+| `parents` | `array` |  |
+| `comments_url` | `string` |  |
+| `url` | `string` |  |
+| `html_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

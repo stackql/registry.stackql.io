@@ -17,19 +17,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>memberships</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.memberships</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `organization` | `object` | Organization Simple |
-| `organization_url` | `string` |  |
 | `permissions` | `object` |  |
 | `role` | `string` | The user's membership type in the organization. |
 | `state` | `string` | The state of the member in the organization. The `pending` state indicates the user has not yet accepted an invitation. |
 | `url` | `string` |  |
 | `user` | `object` | Simple User |
+| `organization` | `object` | Organization Simple |
+| `organization_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

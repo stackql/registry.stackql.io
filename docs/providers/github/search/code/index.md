@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>code</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.search.code</code></td></tr>
 </tbody></table>
 
@@ -24,18 +25,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
-| `git_url` | `string` |  |
-| `sha` | `string` |  |
 | `file_size` | `integer` |  |
+| `path` | `string` |  |
+| `score` | `number` |  |
+| `text_matches` | `array` |  |
+| `html_url` | `string` |  |
+| `last_modified_at` | `string` |  |
 | `line_numbers` | `array` |  |
 | `repository` | `object` | Minimal Repository |
-| `score` | `number` |  |
+| `sha` | `string` |  |
 | `url` | `string` |  |
-| `path` | `string` |  |
+| `git_url` | `string` |  |
 | `language` | `string` |  |
-| `text_matches` | `array` |  |
-| `last_modified_at` | `string` |  |
-| `html_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

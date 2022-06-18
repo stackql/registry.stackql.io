@@ -17,14 +17,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>orgs_enabled_for_actions</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.enterprise_admin.orgs_enabled_for_actions</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `total_count` | `number` |
 | `organizations` | `array` |
+| `total_count` | `number` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

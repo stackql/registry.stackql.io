@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>gist_stars</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.gists.gist_stars</code></td></tr>
 </tbody></table>
 
@@ -25,24 +26,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
 | `description` | `string` |  |
-| `url` | `string` |  |
-| `forks` | `array` |  |
-| `comments` | `integer` |  |
-| `updated_at` | `string` |  |
-| `git_pull_url` | `string` |  |
-| `comments_url` | `string` |  |
-| `commits_url` | `string` |  |
-| `node_id` | `string` |  |
 | `git_push_url` | `string` |  |
-| `user` | `object` | Simple User |
-| `html_url` | `string` |  |
-| `owner` | `object` | Simple User |
-| `history` | `array` |  |
 | `forks_url` | `string` |  |
 | `files` | `object` |  |
+| `commits_url` | `string` |  |
+| `git_pull_url` | `string` |  |
+| `user` | `object` | Simple User |
+| `url` | `string` |  |
+| `truncated` | `boolean` |  |
+| `node_id` | `string` |  |
+| `html_url` | `string` |  |
+| `forks` | `array` |  |
+| `history` | `array` |  |
+| `owner` | `object` | Simple User |
+| `updated_at` | `string` |  |
+| `comments` | `integer` |  |
+| `comments_url` | `string` |  |
 | `public` | `boolean` |  |
 | `created_at` | `string` |  |
-| `truncated` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

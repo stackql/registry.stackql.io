@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>webhook_deliveries</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.apps.webhook_deliveries</code></td></tr>
 </tbody></table>
 
@@ -24,19 +25,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the delivery. |
-| `delivered_at` | `string` | Time when the delivery was delivered. |
-| `request` | `object` |  |
-| `url` | `string` | The URL target of the delivery. |
-| `redelivery` | `boolean` | Whether the delivery is a redelivery. |
-| `action` | `string` | The type of activity for the event that triggered the delivery. |
 | `status` | `string` | Description of the status of the attempted delivery |
-| `duration` | `number` | Time spent delivering. |
+| `url` | `string` | The URL target of the delivery. |
+| `request` | `object` |  |
+| `action` | `string` | The type of activity for the event that triggered the delivery. |
+| `delivered_at` | `string` | Time when the delivery was delivered. |
 | `installation_id` | `integer` | The id of the GitHub App installation associated with this event. |
-| `status_code` | `integer` | Status code received when delivery was made. |
 | `response` | `object` |  |
-| `guid` | `string` | Unique identifier for the event (shared with all deliveries for all webhooks that subscribe to this event). |
-| `event` | `string` | The event that triggered the delivery. |
 | `repository_id` | `integer` | The id of the repository associated with this event. |
+| `event` | `string` | The event that triggered the delivery. |
+| `redelivery` | `boolean` | Whether the delivery is a redelivery. |
+| `duration` | `number` | Time spent delivering. |
+| `status_code` | `integer` | Status code received when delivery was made. |
+| `guid` | `string` | Unique identifier for the event (shared with all deliveries for all webhooks that subscribe to this event). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

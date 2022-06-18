@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>licenses</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.licenses.licenses</code></td></tr>
 </tbody></table>
 
@@ -25,17 +26,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `name` | `string` |
 | `description` | `string` |
+| `permissions` | `array` |
+| `key` | `string` |
+| `conditions` | `array` |
 | `featured` | `boolean` |
+| `spdx_id` | `string` |
+| `node_id` | `string` |
+| `body` | `string` |
 | `implementation` | `string` |
 | `limitations` | `array` |
-| `body` | `string` |
-| `spdx_id` | `string` |
-| `html_url` | `string` |
-| `conditions` | `array` |
-| `key` | `string` |
 | `url` | `string` |
-| `permissions` | `array` |
-| `node_id` | `string` |
+| `html_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

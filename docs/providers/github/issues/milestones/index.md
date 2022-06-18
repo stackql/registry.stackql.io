@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>milestones</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.issues.milestones</code></td></tr>
 </tbody></table>
 
@@ -26,19 +27,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |  |
 | `description` | `string` |  |
 | `labels_url` | `string` |  |
-| `due_on` | `string` |  |
 | `html_url` | `string` |  |
-| `closed_at` | `string` |  |
-| `title` | `string` | The title of the milestone. |
-| `closed_issues` | `integer` |  |
-| `node_id` | `string` |  |
 | `open_issues` | `integer` |  |
+| `state` | `string` | The state of the milestone. |
+| `created_at` | `string` |  |
+| `node_id` | `string` |  |
+| `due_on` | `string` |  |
+| `closed_issues` | `integer` |  |
+| `closed_at` | `string` |  |
+| `number` | `integer` | The number of the milestone. |
+| `title` | `string` | The title of the milestone. |
+| `url` | `string` |  |
 | `creator` | `object` | Simple User |
 | `updated_at` | `string` |  |
-| `state` | `string` | The state of the milestone. |
-| `number` | `integer` | The number of the milestone. |
-| `url` | `string` |  |
-| `created_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

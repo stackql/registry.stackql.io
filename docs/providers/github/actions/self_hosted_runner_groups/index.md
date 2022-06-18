@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>self_hosted_runner_groups</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.self_hosted_runner_groups</code></td></tr>
 </tbody></table>
 
@@ -25,13 +26,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `number` |  |
 | `name` | `string` |  |
-| `default` | `boolean` |  |
-| `inherited` | `boolean` |  |
 | `inherited_allows_public_repositories` | `boolean` |  |
-| `visibility` | `string` |  |
 | `allows_public_repositories` | `boolean` |  |
-| `selected_repositories_url` | `string` | Link to the selected repositories resource for this runner group. Not present unless visibility was set to `selected` |
+| `visibility` | `string` |  |
 | `runners_url` | `string` |  |
+| `inherited` | `boolean` |  |
+| `selected_repositories_url` | `string` | Link to the selected repositories resource for this runner group. Not present unless visibility was set to `selected` |
+| `default` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

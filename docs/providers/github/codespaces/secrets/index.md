@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>secrets</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.codespaces.secrets</code></td></tr>
 </tbody></table>
 
@@ -24,10 +25,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` | The name of the secret. |
+| `updated_at` | `string` |  |
 | `visibility` | `string` | Visibility of a secret |
 | `created_at` | `string` |  |
 | `selected_repositories_url` | `string` |  |
-| `updated_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

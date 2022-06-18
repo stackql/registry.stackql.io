@@ -17,6 +17,7 @@ Look for stuff on GitHub.
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.search</code></td></tr>
+<tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>GitHub v3 REST API - search</td></tr>
 <tr><td><b>Description</b></td><td>Look for stuff on GitHub.</td></tr>
 <tr><td><b>Id</b></td><td><code>search:v0.3.1</code></td></tr>
@@ -25,39 +26,14 @@ Look for stuff on GitHub.
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/github/search/actions/">actions</a><br />
-<a href="/providers/github/search/activity/">activity</a><br />
-<a href="/providers/github/search/apps/">apps</a><br />
-<a href="/providers/github/search/billing/">billing</a><br />
-<a href="/providers/github/search/checks/">checks</a><br />
-<a href="/providers/github/search/code_scanning/">code_scanning</a><br />
-<a href="/providers/github/search/codes_of_conduct/">codes_of_conduct</a><br />
-<a href="/providers/github/search/codespaces/">codespaces</a><br />
-<a href="/providers/github/search/dependabot/">dependabot</a><br />
-<a href="/providers/github/search/enterprise_admin/">enterprise_admin</a><br />
-<a href="/providers/github/search/gists/">gists</a><br />
-<a href="/providers/github/search/git/">git</a><br />
-<a href="/providers/github/search/gitignore/">gitignore</a><br />
-<a href="/providers/github/search/interactions/">interactions</a><br />
-<a href="/providers/github/search/issues/">issues</a><br />
-<a href="/providers/github/search/licenses/">licenses</a><br />
+<a href="/providers/github/search/code/">code</a><br />
+<a href="/providers/github/search/commits/">commits</a><br />
+<a href="/providers/github/search/issues_and_pull_requests/">issues_and_pull_requests</a><br />
+<a href="/providers/github/search/labels/">labels</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/github/search/markdown/">markdown</a><br />
-<a href="/providers/github/search/meta/">meta</a><br />
-<a href="/providers/github/search/migrations/">migrations</a><br />
-<a href="/providers/github/search/oauth_authorizations/">oauth_authorizations</a><br />
-<a href="/providers/github/search/orgs/">orgs</a><br />
-<a href="/providers/github/search/packages/">packages</a><br />
-<a href="/providers/github/search/projects/">projects</a><br />
-<a href="/providers/github/search/pulls/">pulls</a><br />
-<a href="/providers/github/search/rate_limit/">rate_limit</a><br />
-<a href="/providers/github/search/reactions/">reactions</a><br />
 <a href="/providers/github/search/repos/">repos</a><br />
-<a href="/providers/github/search/scim/">scim</a><br />
-<a href="/providers/github/search/search/">search</a><br />
-<a href="/providers/github/search/secret_scanning/">secret_scanning</a><br />
-<a href="/providers/github/search/teams/">teams</a><br />
+<a href="/providers/github/search/topics/">topics</a><br />
 <a href="/providers/github/search/users/">users</a><br />
 </div>
 </div>

@@ -17,19 +17,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>notification_subscriptions</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.activity.notification_subscriptions</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `ignored` | `boolean` |
-| `reason` | `string` |
-| `repository_url` | `string` |
 | `subscribed` | `boolean` |
 | `thread_url` | `string` |
 | `url` | `string` |
 | `created_at` | `string` |
+| `ignored` | `boolean` |
+| `reason` | `string` |
+| `repository_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

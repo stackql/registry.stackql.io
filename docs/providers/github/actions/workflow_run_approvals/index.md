@@ -17,16 +17,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>workflow_run_approvals</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.workflow_run_approvals</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `user` | `object` | Simple User |
 | `comment` | `string` | The comment submitted with the deployment review |
 | `environments` | `array` | The list of environments that were approved or rejected |
 | `state` | `string` | Whether deployment to the environment(s) was approved or rejected |
-| `user` | `object` | Simple User |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

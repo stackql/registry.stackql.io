@@ -17,30 +17,31 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>discussions</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.teams.discussions</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
-| `node_id` | `string` |  |
-| `number` | `integer` | The unique sequence number of a team discussion. |
-| `author` | `object` | Simple User |
-| `html_url` | `string` |  |
 | `last_edited_at` | `string` |  |
 | `created_at` | `string` |  |
-| `title` | `string` | The title of the discussion. |
-| `body_html` | `string` |  |
 | `comments_url` | `string` |  |
-| `team_url` | `string` |  |
-| `reactions` | `object` |  |
-| `body` | `string` | The main text of the discussion. |
 | `updated_at` | `string` |  |
-| `pinned` | `boolean` | Whether or not this discussion should be pinned for easy retrieval. |
-| `comments_count` | `integer` |  |
-| `url` | `string` |  |
+| `reactions` | `object` |  |
+| `body_html` | `string` |  |
 | `private` | `boolean` | Whether or not this discussion should be restricted to team members and organization administrators. |
+| `number` | `integer` | The unique sequence number of a team discussion. |
+| `html_url` | `string` |  |
+| `body` | `string` | The main text of the discussion. |
+| `author` | `object` | Simple User |
+| `comments_count` | `integer` |  |
+| `team_url` | `string` |  |
+| `url` | `string` |  |
+| `node_id` | `string` |  |
+| `pinned` | `boolean` | Whether or not this discussion should be pinned for easy retrieval. |
+| `title` | `string` | The title of the discussion. |
+| `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

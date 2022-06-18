@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>community</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.community</code></td></tr>
 </tbody></table>
 
@@ -24,11 +25,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `description` | `string` |
-| `documentation` | `string` |
-| `files` | `object` |
 | `health_percentage` | `integer` |
 | `updated_at` | `string` |
 | `content_reports_enabled` | `boolean` |
+| `documentation` | `string` |
+| `files` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

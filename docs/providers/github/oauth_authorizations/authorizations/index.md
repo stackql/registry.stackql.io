@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>authorizations</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.oauth_authorizations.authorizations</code></td></tr>
 </tbody></table>
 
@@ -24,20 +25,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
+| `fingerprint` | `string` |  |
+| `note` | `string` |  |
+| `app` | `object` |  |
 | `user` | `object` | Simple User |
+| `created_at` | `string` |  |
+| `hashed_token` | `string` |  |
+| `token_last_eight` | `string` |  |
+| `scopes` | `array` | A list of scopes that this authorization is in. |
+| `note_url` | `string` |  |
+| `token` | `string` |  |
+| `installation` | `object` |  |
 | `updated_at` | `string` |  |
 | `expires_at` | `string` |  |
-| `app` | `object` |  |
-| `scopes` | `array` | A list of scopes that this authorization is in. |
-| `created_at` | `string` |  |
 | `url` | `string` |  |
-| `fingerprint` | `string` |  |
-| `hashed_token` | `string` |  |
-| `note` | `string` |  |
-| `installation` | `object` |  |
-| `token_last_eight` | `string` |  |
-| `token` | `string` |  |
-| `note_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

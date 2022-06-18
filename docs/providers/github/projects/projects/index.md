@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>projects</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.projects.projects</code></td></tr>
 </tbody></table>
 
@@ -25,17 +26,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` | Name of the project |
-| `node_id` | `string` |  |
-| `updated_at` | `string` |  |
-| `state` | `string` | State of the project; either 'open' or 'closed' |
 | `columns_url` | `string` |  |
-| `owner_url` | `string` |  |
-| `number` | `integer` |  |
-| `html_url` | `string` |  |
-| `private` | `boolean` | Whether or not this project can be seen by everyone. Only present if owner is an organization. |
 | `url` | `string` |  |
-| `creator` | `object` | Simple User |
+| `state` | `string` | State of the project; either 'open' or 'closed' |
+| `owner_url` | `string` |  |
+| `updated_at` | `string` |  |
 | `organization_permission` | `string` | The baseline permission that all organization members have on this project. Only present if owner is an organization. |
+| `html_url` | `string` |  |
+| `creator` | `object` | Simple User |
+| `node_id` | `string` |  |
+| `number` | `integer` |  |
+| `private` | `boolean` | Whether or not this project can be seen by everyone. Only present if owner is an organization. |
 | `created_at` | `string` |  |
 | `body` | `string` | Body of the project |
 ## Methods

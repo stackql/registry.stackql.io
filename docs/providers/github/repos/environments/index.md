@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>environments</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.environments</code></td></tr>
 </tbody></table>
 
@@ -25,11 +26,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | The id of the environment. |
 | `name` | `string` | The name of the environment. |
-| `updated_at` | `string` | The time that the environment was last updated, in ISO 8601 format. |
-| `node_id` | `string` |  |
 | `html_url` | `string` |  |
+| `node_id` | `string` |  |
 | `created_at` | `string` | The time that the environment was created, in ISO 8601 format. |
 | `protection_rules` | `array` |  |
+| `updated_at` | `string` | The time that the environment was last updated, in ISO 8601 format. |
 | `url` | `string` |  |
 | `deployment_branch_policy` | `object` | The type of deployment branch policy for this environment. To allow all branches to deploy, set to `null`. |
 ## Methods

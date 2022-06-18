@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>runs</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.checks.runs</code></td></tr>
 </tbody></table>
 
@@ -25,21 +26,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | The id of the check. |
 | `name` | `string` | The name of the check. |
-| `status` | `string` | The phase of the lifecycle that the check is currently in. |
-| `details_url` | `string` |  |
-| `output` | `object` |  |
-| `pull_requests` | `array` |  |
-| `check_suite` | `object` |  |
+| `head_sha` | `string` | The SHA of the commit that is being checked. |
+| `url` | `string` |  |
 | `node_id` | `string` |  |
+| `details_url` | `string` |  |
+| `conclusion` | `string` |  |
 | `external_id` | `string` |  |
 | `started_at` | `string` |  |
-| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
 | `completed_at` | `string` |  |
-| `head_sha` | `string` | The SHA of the commit that is being checked. |
 | `deployment` | `object` | A deployment created as the result of an Actions check run from a workflow that references an environment |
+| `check_suite` | `object` |  |
+| `pull_requests` | `array` |  |
+| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
 | `html_url` | `string` |  |
-| `url` | `string` |  |
-| `conclusion` | `string` |  |
+| `output` | `object` |  |
+| `status` | `string` | The phase of the lifecycle that the check is currently in. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

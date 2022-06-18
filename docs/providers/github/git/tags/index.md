@@ -17,12 +17,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>tags</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.git.tags</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `sha` | `string` |  |
 | `tag` | `string` | Name of the tag |
 | `tagger` | `object` |  |
 | `url` | `string` | URL for the tag |
@@ -30,7 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `message` | `string` | Message describing the purpose of the tag |
 | `node_id` | `string` |  |
 | `object` | `object` |  |
-| `sha` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

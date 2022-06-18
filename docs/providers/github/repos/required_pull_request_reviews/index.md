@@ -17,18 +17,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>required_pull_request_reviews</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.required_pull_request_reviews</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `url` | `string` |  |
-| `bypass_pull_request_allowances` | `object` | Allow specific users or teams to bypass pull request requirements. Set to `null` to disable. |
-| `dismiss_stale_reviews` | `boolean` |  |
 | `dismissal_restrictions` | `object` |  |
 | `require_code_owner_reviews` | `boolean` |  |
 | `required_approving_review_count` | `integer` |  |
+| `url` | `string` |  |
+| `bypass_pull_request_allowances` | `object` | Allow specific users or teams to bypass pull request requirements. Set to `null` to disable. |
+| `dismiss_stale_reviews` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

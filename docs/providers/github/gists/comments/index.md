@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>comments</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.gists.comments</code></td></tr>
 </tbody></table>
 
@@ -24,13 +25,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `url` | `string` |  |
-| `user` | `object` | Simple User |
 | `author_association` | `string` | How the author is associated with the repository. |
 | `body` | `string` | The comment text. |
 | `created_at` | `string` |  |
 | `node_id` | `string` |  |
 | `updated_at` | `string` |  |
+| `url` | `string` |  |
+| `user` | `object` | Simple User |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

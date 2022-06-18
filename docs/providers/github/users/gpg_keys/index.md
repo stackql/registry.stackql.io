@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>gpg_keys</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.users.gpg_keys</code></td></tr>
 </tbody></table>
 
@@ -24,18 +25,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `integer` |
-| `can_certify` | `boolean` |
-| `emails` | `array` |
-| `expires_at` | `string` |
-| `key_id` | `string` |
-| `subkeys` | `array` |
-| `can_sign` | `boolean` |
-| `can_encrypt_comms` | `boolean` |
-| `created_at` | `string` |
+| `can_encrypt_storage` | `boolean` |
 | `public_key` | `string` |
 | `raw_key` | `string` |
+| `can_sign` | `boolean` |
+| `emails` | `array` |
+| `subkeys` | `array` |
+| `can_certify` | `boolean` |
+| `created_at` | `string` |
+| `expires_at` | `string` |
 | `primary_key_id` | `integer` |
-| `can_encrypt_storage` | `boolean` |
+| `can_encrypt_comms` | `boolean` |
+| `key_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

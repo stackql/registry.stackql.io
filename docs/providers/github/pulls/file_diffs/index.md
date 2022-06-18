@@ -17,23 +17,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>file_diffs</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.pulls.file_diffs</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
+| `patch` | `string` |
+| `raw_url` | `string` |
+| `contents_url` | `string` |
+| `previous_filename` | `string` |
+| `sha` | `string` |
+| `additions` | `integer` |
+| `blob_url` | `string` |
 | `filename` | `string` |
 | `changes` | `integer` |
 | `deletions` | `integer` |
 | `status` | `string` |
-| `blob_url` | `string` |
-| `patch` | `string` |
-| `raw_url` | `string` |
-| `contents_url` | `string` |
-| `additions` | `integer` |
-| `previous_filename` | `string` |
-| `sha` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>labels</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.search.labels</code></td></tr>
 </tbody></table>
 
@@ -26,12 +27,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |
 | `name` | `string` |
 | `description` | `string` |
-| `node_id` | `string` |
 | `default` | `boolean` |
-| `color` | `string` |
-| `text_matches` | `array` |
-| `score` | `number` |
 | `url` | `string` |
+| `score` | `number` |
+| `color` | `string` |
+| `node_id` | `string` |
+| `text_matches` | `array` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

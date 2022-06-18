@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>invitations</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.invitations</code></td></tr>
 </tbody></table>
 
@@ -24,16 +25,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `email` | `string` |  |
 | `failed_at` | `string` |  |
-| `inviter` | `object` | Simple User |
-| `node_id` | `string` |  |
-| `failed_reason` | `string` |  |
-| `created_at` | `string` |  |
-| `role` | `string` |  |
-| `login` | `string` |  |
-| `invitation_teams_url` | `string` |  |
+| `email` | `string` |  |
 | `team_count` | `integer` |  |
+| `role` | `string` |  |
+| `invitation_teams_url` | `string` |  |
+| `node_id` | `string` |  |
+| `inviter` | `object` | Simple User |
+| `created_at` | `string` |  |
+| `failed_reason` | `string` |  |
+| `login` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

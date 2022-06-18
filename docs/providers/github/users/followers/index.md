@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>followers</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.users.followers</code></td></tr>
 </tbody></table>
 
@@ -25,25 +26,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `integer` |
 | `name` | `string` |
-| `site_admin` | `boolean` |
-| `avatar_url` | `string` |
-| `gravatar_id` | `string` |
-| `node_id` | `string` |
-| `html_url` | `string` |
-| `subscriptions_url` | `string` |
-| `followers_url` | `string` |
+| `events_url` | `string` |
 | `gists_url` | `string` |
+| `organizations_url` | `string` |
+| `html_url` | `string` |
+| `site_admin` | `boolean` |
+| `url` | `string` |
+| `type` | `string` |
+| `avatar_url` | `string` |
+| `following_url` | `string` |
+| `node_id` | `string` |
 | `email` | `string` |
 | `login` | `string` |
-| `organizations_url` | `string` |
-| `following_url` | `string` |
-| `starred_url` | `string` |
-| `type` | `string` |
-| `starred_at` | `string` |
-| `events_url` | `string` |
+| `subscriptions_url` | `string` |
 | `repos_url` | `string` |
-| `url` | `string` |
+| `gravatar_id` | `string` |
+| `starred_at` | `string` |
 | `received_events_url` | `string` |
+| `followers_url` | `string` |
+| `starred_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

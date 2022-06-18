@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>legacy_teams</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.teams.legacy_teams</code></td></tr>
 </tbody></table>
 
@@ -26,21 +27,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` | Unique identifier of the team |
 | `name` | `string` | Name of the team |
 | `description` | `string` |  |
-| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `members_count` | `integer` |  |
+| `members_url` | `string` |  |
+| `ldap_dn` | `string` | Distinguished Name (DN) that team maps to within LDAP environment |
+| `organization` | `object` | Organization Full |
 | `permission` | `string` | Permission that the team will have for its repositories |
 | `privacy` | `string` | The level of privacy this team should have |
-| `url` | `string` | URL for the team |
-| `repos_count` | `integer` |  |
-| `repositories_url` | `string` |  |
-| `node_id` | `string` |  |
-| `organization` | `object` | Organization Full |
-| `ldap_dn` | `string` | Distinguished Name (DN) that team maps to within LDAP environment |
-| `created_at` | `string` |  |
+| `members_count` | `integer` |  |
 | `updated_at` | `string` |  |
 | `html_url` | `string` |  |
+| `node_id` | `string` |  |
 | `slug` | `string` |  |
-| `members_url` | `string` |  |
+| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `created_at` | `string` |  |
+| `repos_count` | `integer` |  |
+| `repositories_url` | `string` |  |
+| `url` | `string` | URL for the team |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>labels</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.issues.labels</code></td></tr>
 </tbody></table>
 
@@ -26,10 +27,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |  |
 | `name` | `string` | The name of the label. |
 | `description` | `string` |  |
-| `url` | `string` | URL for the label |
-| `color` | `string` | 6-character hex code, without the leading #, identifying the color |
 | `default` | `boolean` |  |
 | `node_id` | `string` |  |
+| `url` | `string` | URL for the label |
+| `color` | `string` | 6-character hex code, without the leading #, identifying the color |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

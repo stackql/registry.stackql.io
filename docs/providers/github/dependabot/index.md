@@ -17,6 +17,7 @@ Endpoints to manage Dependabot.
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.dependabot</code></td></tr>
+<tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>GitHub v3 REST API - dependabot</td></tr>
 <tr><td><b>Description</b></td><td>Endpoints to manage Dependabot.</td></tr>
 <tr><td><b>Id</b></td><td><code>dependabot:v0.3.1</code></td></tr>
@@ -25,39 +26,11 @@ Endpoints to manage Dependabot.
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/github/dependabot/actions/">actions</a><br />
-<a href="/providers/github/dependabot/activity/">activity</a><br />
-<a href="/providers/github/dependabot/apps/">apps</a><br />
-<a href="/providers/github/dependabot/billing/">billing</a><br />
-<a href="/providers/github/dependabot/checks/">checks</a><br />
-<a href="/providers/github/dependabot/code_scanning/">code_scanning</a><br />
-<a href="/providers/github/dependabot/codes_of_conduct/">codes_of_conduct</a><br />
-<a href="/providers/github/dependabot/codespaces/">codespaces</a><br />
-<a href="/providers/github/dependabot/dependabot/">dependabot</a><br />
-<a href="/providers/github/dependabot/enterprise_admin/">enterprise_admin</a><br />
-<a href="/providers/github/dependabot/gists/">gists</a><br />
-<a href="/providers/github/dependabot/git/">git</a><br />
-<a href="/providers/github/dependabot/gitignore/">gitignore</a><br />
-<a href="/providers/github/dependabot/interactions/">interactions</a><br />
-<a href="/providers/github/dependabot/issues/">issues</a><br />
-<a href="/providers/github/dependabot/licenses/">licenses</a><br />
+<a href="/providers/github/dependabot/org_secrets/">org_secrets</a><br />
+<a href="/providers/github/dependabot/public_keys/">public_keys</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/github/dependabot/markdown/">markdown</a><br />
-<a href="/providers/github/dependabot/meta/">meta</a><br />
-<a href="/providers/github/dependabot/migrations/">migrations</a><br />
-<a href="/providers/github/dependabot/oauth_authorizations/">oauth_authorizations</a><br />
-<a href="/providers/github/dependabot/orgs/">orgs</a><br />
-<a href="/providers/github/dependabot/packages/">packages</a><br />
-<a href="/providers/github/dependabot/projects/">projects</a><br />
-<a href="/providers/github/dependabot/pulls/">pulls</a><br />
-<a href="/providers/github/dependabot/rate_limit/">rate_limit</a><br />
-<a href="/providers/github/dependabot/reactions/">reactions</a><br />
-<a href="/providers/github/dependabot/repos/">repos</a><br />
-<a href="/providers/github/dependabot/scim/">scim</a><br />
-<a href="/providers/github/dependabot/search/">search</a><br />
-<a href="/providers/github/dependabot/secret_scanning/">secret_scanning</a><br />
-<a href="/providers/github/dependabot/teams/">teams</a><br />
-<a href="/providers/github/dependabot/users/">users</a><br />
+<a href="/providers/github/dependabot/repo_secrets/">repo_secrets</a><br />
+<a href="/providers/github/dependabot/selected_repos_for_org_secret/">selected_repos_for_org_secret</a><br />
 </div>
 </div>

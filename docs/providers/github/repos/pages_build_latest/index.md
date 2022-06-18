@@ -17,20 +17,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>pages_build_latest</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.pages_build_latest</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
+| `updated_at` | `string` |  |
+| `url` | `string` |  |
 | `commit` | `string` |  |
 | `created_at` | `string` |  |
 | `duration` | `integer` |  |
 | `error` | `object` |  |
 | `pusher` | `object` | Simple User |
 | `status` | `string` |  |
-| `updated_at` | `string` |  |
-| `url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

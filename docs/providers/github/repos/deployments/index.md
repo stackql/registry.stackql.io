@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>deployments</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.deployments</code></td></tr>
 </tbody></table>
 
@@ -26,21 +27,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` | Unique identifier of the deployment |
 | `description` | `string` |  |
 | `sha` | `string` |  |
-| `creator` | `object` | Simple User |
-| `updated_at` | `string` |  |
-| `ref` | `string` | The ref to deploy. This can be a branch, tag, or sha. |
-| `payload` | `` |  |
-| `production_environment` | `boolean` | Specifies if the given environment is one that end-users directly interact with. Default: false. |
-| `created_at` | `string` |  |
-| `repository_url` | `string` |  |
-| `statuses_url` | `string` |  |
-| `original_environment` | `string` |  |
-| `url` | `string` |  |
-| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `task` | `string` | Parameter to specify a task to execute |
-| `node_id` | `string` |  |
-| `environment` | `string` | Name for the target deployment environment. |
 | `transient_environment` | `boolean` | Specifies if the given environment is will no longer exist at some point in the future. Default: false. |
+| `updated_at` | `string` |  |
+| `url` | `string` |  |
+| `node_id` | `string` |  |
+| `statuses_url` | `string` |  |
+| `production_environment` | `boolean` | Specifies if the given environment is one that end-users directly interact with. Default: false. |
+| `task` | `string` | Parameter to specify a task to execute |
+| `repository_url` | `string` |  |
+| `ref` | `string` | The ref to deploy. This can be a branch, tag, or sha. |
+| `creator` | `object` | Simple User |
+| `original_environment` | `string` |  |
+| `created_at` | `string` |  |
+| `environment` | `string` | Name for the target deployment environment. |
+| `payload` | `` |  |
+| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

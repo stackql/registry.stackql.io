@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>events</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.activity.events</code></td></tr>
 </tbody></table>
 
@@ -24,13 +25,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
+| `public` | `boolean` |  |
+| `repo` | `object` |  |
+| `type` | `string` |  |
 | `actor` | `object` | Actor |
 | `created_at` | `string` |  |
 | `org` | `object` | Actor |
 | `payload` | `object` |  |
-| `public` | `boolean` |  |
-| `repo` | `object` |  |
-| `type` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

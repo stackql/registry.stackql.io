@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>invitations</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.invitations</code></td></tr>
 </tbody></table>
 
@@ -24,15 +25,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the repository invitation. |
-| `url` | `string` | URL for the repository invitation |
+| `invitee` | `object` | Simple User |
+| `html_url` | `string` |  |
 | `created_at` | `string` |  |
-| `repository` | `object` | Minimal Repository |
 | `expired` | `boolean` | Whether or not the invitation has expired |
 | `node_id` | `string` |  |
-| `inviter` | `object` | Simple User |
-| `html_url` | `string` |  |
-| `invitee` | `object` | Simple User |
+| `repository` | `object` | Minimal Repository |
 | `permissions` | `string` | The permission associated with the invitation. |
+| `url` | `string` | URL for the repository invitation |
+| `inviter` | `object` | Simple User |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

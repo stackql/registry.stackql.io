@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>webhooks</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.webhooks</code></td></tr>
 </tbody></table>
 
@@ -25,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `integer` |
 | `name` | `string` |
-| `created_at` | `string` |
-| `config` | `object` |
-| `ping_url` | `string` |
+| `type` | `string` |
 | `deliveries_url` | `string` |
 | `url` | `string` |
-| `active` | `boolean` |
-| `events` | `array` |
-| `type` | `string` |
+| `created_at` | `string` |
 | `updated_at` | `string` |
+| `events` | `array` |
+| `config` | `object` |
+| `ping_url` | `string` |
+| `active` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

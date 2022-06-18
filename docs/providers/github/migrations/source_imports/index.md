@@ -17,35 +17,36 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>source_imports</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.migrations.source_imports</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `url` | `string` |  |
-| `project_choices` | `array` |  |
 | `use_lfs` | `boolean` |  |
-| `message` | `string` |  |
-| `vcs_url` | `string` | The URL of the originating repository. |
-| `has_large_files` | `boolean` |  |
-| `vcs` | `string` |  |
-| `authors_count` | `integer` |  |
-| `push_percent` | `integer` |  |
+| `commit_count` | `integer` |  |
+| `status` | `string` |  |
 | `repository_url` | `string` |  |
 | `svc_root` | `string` |  |
-| `authors_url` | `string` |  |
-| `failed_step` | `string` |  |
-| `svn_root` | `string` |  |
-| `error_message` | `string` |  |
-| `html_url` | `string` |  |
-| `large_files_count` | `integer` |  |
 | `import_percent` | `integer` |  |
+| `failed_step` | `string` |  |
 | `large_files_size` | `integer` |  |
-| `commit_count` | `integer` |  |
-| `tfvc_project` | `string` |  |
+| `authors_url` | `string` |  |
+| `authors_count` | `integer` |  |
+| `vcs_url` | `string` | The URL of the originating repository. |
+| `has_large_files` | `boolean` |  |
+| `project_choices` | `array` |  |
 | `status_text` | `string` |  |
-| `status` | `string` |  |
+| `large_files_count` | `integer` |  |
+| `error_message` | `string` |  |
+| `svn_root` | `string` |  |
+| `url` | `string` |  |
+| `push_percent` | `integer` |  |
+| `vcs` | `string` |  |
+| `message` | `string` |  |
+| `html_url` | `string` |  |
+| `tfvc_project` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

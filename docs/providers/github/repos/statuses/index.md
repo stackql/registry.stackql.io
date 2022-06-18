@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>statuses</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.statuses</code></td></tr>
 </tbody></table>
 
@@ -25,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `description` | `string` |  |
-| `created_at` | `string` |  |
-| `url` | `string` |  |
 | `target_url` | `string` |  |
-| `state` | `string` |  |
-| `context` | `string` |  |
-| `updated_at` | `string` |  |
-| `creator` | `object` | Simple User |
+| `created_at` | `string` |  |
 | `node_id` | `string` |  |
 | `avatar_url` | `string` |  |
+| `state` | `string` |  |
+| `updated_at` | `string` |  |
+| `context` | `string` |  |
+| `creator` | `object` | Simple User |
+| `url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

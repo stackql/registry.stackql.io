@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>topics</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.search.topics</code></td></tr>
 </tbody></table>
 
@@ -25,20 +26,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `name` | `string` |
 | `description` | `string` |
-| `created_at` | `string` |
-| `score` | `number` |
-| `repository_count` | `integer` |
-| `logo_url` | `string` |
-| `related` | `array` |
-| `short_description` | `string` |
-| `text_matches` | `array` |
-| `created_by` | `string` |
-| `curated` | `boolean` |
 | `released` | `string` |
-| `aliases` | `array` |
-| `updated_at` | `string` |
-| `display_name` | `string` |
 | `featured` | `boolean` |
+| `curated` | `boolean` |
+| `created_at` | `string` |
+| `updated_at` | `string` |
+| `created_by` | `string` |
+| `text_matches` | `array` |
+| `aliases` | `array` |
+| `display_name` | `string` |
+| `short_description` | `string` |
+| `score` | `number` |
+| `related` | `array` |
+| `logo_url` | `string` |
+| `repository_count` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

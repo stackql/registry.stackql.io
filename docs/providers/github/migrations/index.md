@@ -17,6 +17,7 @@ Move projects to or from GitHub.
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>github.migrations</code></td></tr>
+<tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>GitHub v3 REST API - migrations</td></tr>
 <tr><td><b>Description</b></td><td>Move projects to or from GitHub.</td></tr>
 <tr><td><b>Id</b></td><td><code>migrations:v0.3.1</code></td></tr>
@@ -25,39 +26,13 @@ Move projects to or from GitHub.
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/github/migrations/actions/">actions</a><br />
-<a href="/providers/github/migrations/activity/">activity</a><br />
-<a href="/providers/github/migrations/apps/">apps</a><br />
-<a href="/providers/github/migrations/billing/">billing</a><br />
-<a href="/providers/github/migrations/checks/">checks</a><br />
-<a href="/providers/github/migrations/code_scanning/">code_scanning</a><br />
-<a href="/providers/github/migrations/codes_of_conduct/">codes_of_conduct</a><br />
-<a href="/providers/github/migrations/codespaces/">codespaces</a><br />
-<a href="/providers/github/migrations/dependabot/">dependabot</a><br />
-<a href="/providers/github/migrations/enterprise_admin/">enterprise_admin</a><br />
-<a href="/providers/github/migrations/gists/">gists</a><br />
-<a href="/providers/github/migrations/git/">git</a><br />
-<a href="/providers/github/migrations/gitignore/">gitignore</a><br />
-<a href="/providers/github/migrations/interactions/">interactions</a><br />
-<a href="/providers/github/migrations/issues/">issues</a><br />
-<a href="/providers/github/migrations/licenses/">licenses</a><br />
+<a href="/providers/github/migrations/archives/">archives</a><br />
+<a href="/providers/github/migrations/large_files/">large_files</a><br />
+<a href="/providers/github/migrations/migrations/">migrations</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/github/migrations/markdown/">markdown</a><br />
-<a href="/providers/github/migrations/meta/">meta</a><br />
-<a href="/providers/github/migrations/migrations/">migrations</a><br />
-<a href="/providers/github/migrations/oauth_authorizations/">oauth_authorizations</a><br />
-<a href="/providers/github/migrations/orgs/">orgs</a><br />
-<a href="/providers/github/migrations/packages/">packages</a><br />
-<a href="/providers/github/migrations/projects/">projects</a><br />
-<a href="/providers/github/migrations/pulls/">pulls</a><br />
-<a href="/providers/github/migrations/rate_limit/">rate_limit</a><br />
-<a href="/providers/github/migrations/reactions/">reactions</a><br />
 <a href="/providers/github/migrations/repos/">repos</a><br />
-<a href="/providers/github/migrations/scim/">scim</a><br />
-<a href="/providers/github/migrations/search/">search</a><br />
-<a href="/providers/github/migrations/secret_scanning/">secret_scanning</a><br />
-<a href="/providers/github/migrations/teams/">teams</a><br />
-<a href="/providers/github/migrations/users/">users</a><br />
+<a href="/providers/github/migrations/source_import_commit_authors/">source_import_commit_authors</a><br />
+<a href="/providers/github/migrations/source_imports/">source_imports</a><br />
 </div>
 </div>

@@ -17,23 +17,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>commits</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.pulls.commits</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `node_id` | `string` |  |
-| `comments_url` | `string` |  |
-| `files` | `array` |  |
-| `parents` | `array` |  |
 | `stats` | `object` |  |
-| `author` | `object` | Simple User |
-| `html_url` | `string` |  |
-| `sha` | `string` |  |
-| `url` | `string` |  |
-| `commit` | `object` |  |
 | `committer` | `object` | Simple User |
+| `node_id` | `string` |  |
+| `parents` | `array` |  |
+| `sha` | `string` |  |
+| `author` | `object` | Simple User |
+| `url` | `string` |  |
+| `files` | `array` |  |
+| `html_url` | `string` |  |
+| `comments_url` | `string` |  |
+| `commit` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

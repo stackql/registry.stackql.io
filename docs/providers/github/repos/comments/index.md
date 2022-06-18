@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>comments</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.comments</code></td></tr>
 </tbody></table>
 
@@ -24,19 +25,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `commit_id` | `string` |  |
-| `position` | `integer` |  |
-| `body` | `string` |  |
-| `url` | `string` |  |
-| `user` | `object` | Simple User |
-| `line` | `integer` |  |
-| `path` | `string` |  |
-| `created_at` | `string` |  |
 | `reactions` | `object` |  |
-| `updated_at` | `string` |  |
-| `html_url` | `string` |  |
-| `author_association` | `string` | How the author is associated with the repository. |
+| `url` | `string` |  |
+| `position` | `integer` |  |
 | `node_id` | `string` |  |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `user` | `object` | Simple User |
+| `updated_at` | `string` |  |
+| `created_at` | `string` |  |
+| `body` | `string` |  |
+| `commit_id` | `string` |  |
+| `line` | `integer` |  |
+| `html_url` | `string` |  |
+| `path` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

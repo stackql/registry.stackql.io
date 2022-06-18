@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>orgs</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.orgs.orgs</code></td></tr>
 </tbody></table>
 
@@ -26,50 +27,50 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |
 | `name` | `string` |
 | `description` | `string` |
-| `company` | `string` |
-| `billing_email` | `string` |
-| `location` | `string` |
-| `login` | `string` |
-| `email` | `string` |
-| `events_url` | `string` |
-| `following` | `integer` |
-| `public_members_url` | `string` |
 | `avatar_url` | `string` |
-| `blog` | `string` |
-| `members_url` | `string` |
-| `members_can_create_pages` | `boolean` |
-| `type` | `string` |
-| `plan` | `object` |
-| `has_organization_projects` | `boolean` |
-| `public_repos` | `integer` |
-| `members_can_create_internal_repositories` | `boolean` |
-| `url` | `string` |
-| `twitter_username` | `string` |
-| `updated_at` | `string` |
-| `followers` | `integer` |
-| `total_private_repos` | `integer` |
-| `members_can_fork_private_repositories` | `boolean` |
-| `issues_url` | `string` |
-| `private_gists` | `integer` |
-| `two_factor_requirement_enabled` | `boolean` |
-| `members_allowed_repository_creation_type` | `string` |
-| `disk_usage` | `integer` |
-| `members_can_create_public_pages` | `boolean` |
-| `owned_private_repos` | `integer` |
-| `created_at` | `string` |
-| `members_can_create_private_pages` | `boolean` |
-| `is_verified` | `boolean` |
-| `members_can_create_public_repositories` | `boolean` |
 | `default_repository_permission` | `string` |
-| `public_gists` | `integer` |
-| `has_repository_projects` | `boolean` |
-| `collaborators` | `integer` |
-| `hooks_url` | `string` |
-| `members_can_create_repositories` | `boolean` |
+| `two_factor_requirement_enabled` | `boolean` |
+| `url` | `string` |
 | `html_url` | `string` |
-| `repos_url` | `string` |
+| `twitter_username` | `string` |
+| `billing_email` | `string` |
+| `total_private_repos` | `integer` |
+| `members_can_create_public_pages` | `boolean` |
+| `plan` | `object` |
+| `company` | `string` |
 | `members_can_create_private_repositories` | `boolean` |
+| `public_members_url` | `string` |
+| `repos_url` | `string` |
+| `collaborators` | `integer` |
+| `disk_usage` | `integer` |
+| `followers` | `integer` |
+| `is_verified` | `boolean` |
+| `private_gists` | `integer` |
+| `members_can_create_internal_repositories` | `boolean` |
+| `type` | `string` |
+| `login` | `string` |
+| `members_can_create_private_pages` | `boolean` |
+| `issues_url` | `string` |
+| `members_can_create_repositories` | `boolean` |
+| `public_gists` | `integer` |
+| `public_repos` | `integer` |
+| `members_can_create_public_repositories` | `boolean` |
+| `members_url` | `string` |
+| `created_at` | `string` |
+| `has_organization_projects` | `boolean` |
+| `blog` | `string` |
+| `hooks_url` | `string` |
 | `node_id` | `string` |
+| `location` | `string` |
+| `members_can_fork_private_repositories` | `boolean` |
+| `owned_private_repos` | `integer` |
+| `email` | `string` |
+| `updated_at` | `string` |
+| `members_allowed_repository_creation_type` | `string` |
+| `members_can_create_pages` | `boolean` |
+| `has_repository_projects` | `boolean` |
+| `following` | `integer` |
+| `events_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

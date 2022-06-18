@@ -17,19 +17,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>access_restrictions</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.access_restrictions</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `apps_url` | `string` |
 | `teams` | `array` |
 | `teams_url` | `string` |
 | `url` | `string` |
 | `users` | `array` |
 | `users_url` | `string` |
 | `apps` | `array` |
+| `apps_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

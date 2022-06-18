@@ -17,22 +17,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>annotations</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.checks.annotations</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `message` | `string` |
-| `raw_details` | `string` |
-| `end_column` | `integer` |
-| `start_column` | `integer` |
-| `end_line` | `integer` |
+| `blob_href` | `string` |
 | `start_line` | `integer` |
+| `end_column` | `integer` |
+| `message` | `string` |
+| `end_line` | `integer` |
+| `raw_details` | `string` |
+| `start_column` | `integer` |
+| `path` | `string` |
 | `annotation_level` | `string` |
 | `title` | `string` |
-| `path` | `string` |
-| `blob_href` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

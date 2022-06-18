@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>comments</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.issues.comments</code></td></tr>
 </tbody></table>
 
@@ -25,18 +26,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the issue comment |
 | `node_id` | `string` |  |
-| `author_association` | `string` | How the author is associated with the repository. |
 | `created_at` | `string` |  |
 | `updated_at` | `string` |  |
-| `body_html` | `string` |  |
-| `body` | `string` | Contents of the issue comment |
-| `html_url` | `string` |  |
-| `issue_url` | `string` |  |
-| `user` | `object` | Simple User |
 | `reactions` | `object` |  |
-| `url` | `string` | URL for the issue comment |
 | `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `body` | `string` | Contents of the issue comment |
 | `body_text` | `string` |  |
+| `user` | `object` | Simple User |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `html_url` | `string` |  |
+| `body_html` | `string` |  |
+| `issue_url` | `string` |  |
+| `url` | `string` | URL for the issue comment |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

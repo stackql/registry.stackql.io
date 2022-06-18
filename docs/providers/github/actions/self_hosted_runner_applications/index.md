@@ -17,18 +17,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>self_hosted_runner_applications</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.actions.self_hosted_runner_applications</code></td></tr>
 </tbody></table>
 
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `os` | `string` |  |
-| `sha256_checksum` | `string` |  |
-| `temp_download_token` | `string` | A short lived bearer token used to download the runner, if needed. |
 | `architecture` | `string` |  |
 | `download_url` | `string` |  |
 | `filename` | `string` |  |
+| `os` | `string` |  |
+| `sha256_checksum` | `string` |  |
+| `temp_download_token` | `string` | A short lived bearer token used to download the runner, if needed. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

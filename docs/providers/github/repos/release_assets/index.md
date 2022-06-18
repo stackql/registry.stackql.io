@@ -17,6 +17,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>release_assets</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
 <tr><td><b>Id</b></td><td><code>github.repos.release_assets</code></td></tr>
 </tbody></table>
 
@@ -25,17 +26,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` | The file name of the asset. |
-| `state` | `string` | State of the release asset. |
-| `url` | `string` |  |
-| `browser_download_url` | `string` |  |
 | `node_id` | `string` |  |
+| `state` | `string` | State of the release asset. |
+| `browser_download_url` | `string` |  |
 | `label` | `string` |  |
-| `download_count` | `integer` |  |
-| `size` | `integer` |  |
-| `created_at` | `string` |  |
-| `updated_at` | `string` |  |
 | `content_type` | `string` |  |
+| `size` | `integer` |  |
 | `uploader` | `object` | Simple User |
+| `updated_at` | `string` |  |
+| `created_at` | `string` |  |
+| `url` | `string` |  |
+| `download_count` | `integer` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |
