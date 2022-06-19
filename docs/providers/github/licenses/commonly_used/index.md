@@ -25,11 +25,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `name` | `string` |
-| `url` | `string` |
-| `html_url` | `string` |
 | `key` | `string` |
 | `node_id` | `string` |
 | `spdx_id` | `string` |
+| `url` | `string` |
+| `html_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

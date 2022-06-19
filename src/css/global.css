@@ -584,14 +584,8 @@ html[data-theme='dark'] .contactFormHeading {
 	font-size: 0.8rem;
   }
 
-  @media screen and (max-width: 600px) {
-	.markdown h1:first-child {
-		--ifm-h1-font-size: 2rem;
-	
-		margin-bottom: calc(
-		  var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading)
-		);
-	  }
-  }
-
-
+  @media (max-width: 576px) {
+	h1 {
+		font-size: 1.75rem;
+	}
+}

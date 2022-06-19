@@ -26,17 +26,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` | The file name of the asset. |
-| `node_id` | `string` |  |
-| `state` | `string` | State of the release asset. |
+| `download_count` | `integer` |  |
 | `browser_download_url` | `string` |  |
 | `label` | `string` |  |
-| `content_type` | `string` |  |
-| `size` | `integer` |  |
 | `uploader` | `object` | Simple User |
-| `updated_at` | `string` |  |
+| `content_type` | `string` |  |
+| `state` | `string` | State of the release asset. |
 | `created_at` | `string` |  |
+| `updated_at` | `string` |  |
 | `url` | `string` |  |
-| `download_count` | `integer` |  |
+| `size` | `integer` |  |
+| `node_id` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

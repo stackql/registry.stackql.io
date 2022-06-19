@@ -27,13 +27,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |  |
 | `name` | `string` | The name of the artifact. |
 | `expired` | `boolean` | Whether or not the artifact has expired. |
-| `url` | `string` |  |
-| `node_id` | `string` |  |
+| `created_at` | `string` |  |
 | `updated_at` | `string` |  |
 | `archive_download_url` | `string` |  |
-| `expires_at` | `string` |  |
 | `size_in_bytes` | `integer` | The size in bytes of the artifact. |
-| `created_at` | `string` |  |
+| `node_id` | `string` |  |
+| `url` | `string` |  |
+| `expires_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -25,18 +25,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
-| `enforce_admins` | `object` | Protected Branch Admin Enforced |
-| `required_linear_history` | `object` |  |
-| `allow_force_pushes` | `object` |  |
-| `allow_deletions` | `object` |  |
-| `protection_url` | `string` |  |
-| `required_signatures` | `object` |  |
-| `enabled` | `boolean` |  |
-| `required_conversation_resolution` | `object` |  |
-| `required_status_checks` | `object` | Protected Branch Required Status Check |
-| `url` | `string` |  |
 | `required_pull_request_reviews` | `object` | Protected Branch Pull Request Review |
+| `enabled` | `boolean` |  |
+| `required_status_checks` | `object` | Protected Branch Required Status Check |
+| `protection_url` | `string` |  |
 | `restrictions` | `object` | Branch Restriction Policy |
+| `required_conversation_resolution` | `object` |  |
+| `allow_deletions` | `object` |  |
+| `allow_force_pushes` | `object` |  |
+| `enforce_admins` | `object` | Protected Branch Admin Enforced |
+| `required_signatures` | `object` |  |
+| `url` | `string` |  |
+| `required_linear_history` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

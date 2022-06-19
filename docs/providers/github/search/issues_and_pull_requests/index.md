@@ -25,39 +25,39 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `pull_request` | `object` |  |
-| `author_association` | `string` | How the author is associated with the repository. |
+| `html_url` | `string` |  |
+| `draft` | `boolean` |  |
+| `body` | `string` |  |
 | `updated_at` | `string` |  |
+| `node_id` | `string` |  |
+| `locked` | `boolean` |  |
+| `state` | `string` |  |
+| `timeline_url` | `string` |  |
+| `pull_request` | `object` |  |
 | `reactions` | `object` |  |
 | `milestone` | `object` | A collection of related issues and pull requests. |
-| `labels` | `array` |  |
-| `events_url` | `string` |  |
-| `user` | `object` | Simple User |
 | `body_text` | `string` |  |
-| `url` | `string` |  |
-| `score` | `number` |  |
-| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `state` | `string` |  |
-| `html_url` | `string` |  |
 | `labels_url` | `string` |  |
-| `active_lock_reason` | `string` |  |
-| `assignee` | `object` | Simple User |
-| `text_matches` | `array` |  |
-| `comments_url` | `string` |  |
-| `body` | `string` |  |
-| `closed_at` | `string` |  |
-| `created_at` | `string` |  |
-| `draft` | `boolean` |  |
+| `events_url` | `string` |  |
 | `assignees` | `array` |  |
-| `repository_url` | `string` |  |
-| `title` | `string` |  |
-| `number` | `integer` |  |
-| `timeline_url` | `string` |  |
-| `body_html` | `string` |  |
-| `locked` | `boolean` |  |
-| `comments` | `integer` |  |
-| `node_id` | `string` |  |
+| `score` | `number` |  |
 | `repository` | `object` | A git repository |
+| `title` | `string` |  |
+| `repository_url` | `string` |  |
+| `assignee` | `object` | Simple User |
+| `url` | `string` |  |
+| `text_matches` | `array` |  |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `comments_url` | `string` |  |
+| `created_at` | `string` |  |
+| `number` | `integer` |  |
+| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `closed_at` | `string` |  |
+| `user` | `object` | Simple User |
+| `body_html` | `string` |  |
+| `labels` | `array` |  |
+| `active_lock_reason` | `string` |  |
+| `comments` | `integer` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

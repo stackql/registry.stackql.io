@@ -24,18 +24,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `commit` | `object` |  |
-| `html_url` | `string` |  |
 | `text_matches` | `array` |  |
-| `parents` | `array` |  |
-| `node_id` | `string` |  |
-| `repository` | `object` | Minimal Repository |
-| `score` | `number` |  |
-| `committer` | `object` | Metaproperties for Git author/committer information. |
-| `author` | `object` | Simple User |
-| `sha` | `string` |  |
 | `url` | `string` |  |
+| `node_id` | `string` |  |
+| `score` | `number` |  |
+| `author` | `object` | Simple User |
+| `commit` | `object` |  |
 | `comments_url` | `string` |  |
+| `repository` | `object` | Minimal Repository |
+| `parents` | `array` |  |
+| `sha` | `string` |  |
+| `committer` | `object` | Metaproperties for Git author/committer information. |
+| `html_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

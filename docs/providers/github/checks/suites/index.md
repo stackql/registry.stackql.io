@@ -25,24 +25,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `node_id` | `string` |  |
-| `status` | `string` |  |
-| `head_commit` | `object` | Simple Commit |
-| `latest_check_runs_count` | `integer` |  |
-| `head_sha` | `string` | The SHA of the head commit that is being checked. |
-| `updated_at` | `string` |  |
 | `head_branch` | `string` |  |
 | `runs_rerequestable` | `boolean` |  |
+| `rerequestable` | `boolean` |  |
+| `head_commit` | `object` | Simple Commit |
 | `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `pull_requests` | `array` |  |
+| `latest_check_runs_count` | `integer` |  |
+| `conclusion` | `string` |  |
+| `head_sha` | `string` | The SHA of the head commit that is being checked. |
+| `status` | `string` |  |
+| `created_at` | `string` |  |
+| `check_runs_url` | `string` |  |
+| `node_id` | `string` |  |
+| `repository` | `object` | Minimal Repository |
+| `updated_at` | `string` |  |
 | `before` | `string` |  |
 | `url` | `string` |  |
-| `rerequestable` | `boolean` |  |
-| `repository` | `object` | Minimal Repository |
-| `check_runs_url` | `string` |  |
 | `after` | `string` |  |
-| `created_at` | `string` |  |
-| `pull_requests` | `array` |  |
-| `conclusion` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

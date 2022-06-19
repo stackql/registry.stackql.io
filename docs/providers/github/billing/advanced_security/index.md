@@ -24,8 +24,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `total_advanced_security_committers` | `integer` |
 | `repositories` | `array` |
+| `total_advanced_security_committers` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

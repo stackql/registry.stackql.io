@@ -24,8 +24,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `owner` | `array` |
 | `all` | `array` |
+| `owner` | `array` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

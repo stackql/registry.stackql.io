@@ -24,17 +24,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `stats` | `object` |  |
-| `committer` | `object` | Simple User |
-| `node_id` | `string` |  |
 | `parents` | `array` |  |
-| `sha` | `string` |  |
+| `node_id` | `string` |  |
 | `author` | `object` | Simple User |
+| `commit` | `object` |  |
 | `url` | `string` |  |
+| `comments_url` | `string` |  |
+| `sha` | `string` |  |
+| `committer` | `object` | Simple User |
 | `files` | `array` |  |
 | `html_url` | `string` |  |
-| `comments_url` | `string` |  |
-| `commit` | `object` |  |
+| `stats` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

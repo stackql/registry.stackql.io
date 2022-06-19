@@ -25,15 +25,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
-| `credentialsSetup` | `boolean` |
-| `logoUrl` | `string` |
 | `appAssignmentId` | `string` |
 | `linkUrl` | `string` |
-| `appName` | `string` |
-| `appInstanceId` | `string` |
 | `hidden` | `boolean` |
-| `label` | `string` |
+| `logoUrl` | `string` |
+| `appName` | `string` |
 | `sortOrder` | `integer` |
+| `appInstanceId` | `string` |
+| `label` | `string` |
+| `credentialsSetup` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

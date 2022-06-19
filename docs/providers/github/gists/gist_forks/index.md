@@ -26,25 +26,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
 | `description` | `string` |  |
-| `url` | `string` |  |
-| `node_id` | `string` |  |
-| `git_push_url` | `string` |  |
-| `comments` | `integer` |  |
-| `comments_url` | `string` |  |
-| `owner` | `object` | Simple User |
-| `history` | `array` |  |
-| `git_pull_url` | `string` |  |
-| `forks_url` | `string` |  |
-| `forks` | `array` |  |
-| `public` | `boolean` |  |
-| `html_url` | `string` |  |
-| `user` | `string` |  |
 | `updated_at` | `string` |  |
+| `user` | `string` |  |
+| `comments_url` | `string` |  |
 | `truncated` | `boolean` |  |
-| `created_at` | `string` |  |
-| `files` | `object` |  |
 | `commits_url` | `string` |  |
+| `forks` | `array` |  |
+| `created_at` | `string` |  |
 | `fork_of` | `object` | Gist |
+| `files` | `object` |  |
+| `history` | `array` |  |
+| `public` | `boolean` |  |
+| `git_pull_url` | `string` |  |
+| `git_push_url` | `string` |  |
+| `forks_url` | `string` |  |
+| `comments` | `integer` |  |
+| `node_id` | `string` |  |
+| `owner` | `object` | Simple User |
+| `html_url` | `string` |  |
+| `url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

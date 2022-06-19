@@ -26,18 +26,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `description` | `string` | A short description of the status. |
-| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `node_id` | `string` |  |
-| `repository_url` | `string` |  |
-| `environment` | `string` | The environment of the deployment that the status is for. |
-| `environment_url` | `string` | The URL for accessing your environment. |
-| `updated_at` | `string` |  |
-| `log_url` | `string` | The URL to associate with this status. |
 | `state` | `string` | The state of the status. |
-| `url` | `string` |  |
-| `target_url` | `string` | Deprecated: the URL to associate with this status. |
-| `created_at` | `string` |  |
 | `creator` | `object` | Simple User |
+| `created_at` | `string` |  |
+| `url` | `string` |  |
+| `repository_url` | `string` |  |
+| `environment_url` | `string` | The URL for accessing your environment. |
+| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `log_url` | `string` | The URL to associate with this status. |
+| `target_url` | `string` | Deprecated: the URL to associate with this status. |
+| `updated_at` | `string` |  |
+| `node_id` | `string` |  |
+| `environment` | `string` | The environment of the deployment that the status is for. |
 | `deployment_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |

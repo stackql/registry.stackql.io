@@ -27,15 +27,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` |
 | `name` | `string` |
 | `site_url` | `string` |
-| `company` | `string` |
+| `last_name` | `string` |
+| `body` | `string` |
 | `summary` | `string` |
 | `created_at` | `string` |
 | `email` | `string` |
-| `last_name` | `string` |
-| `body` | `string` |
-| `data` | `object` |
-| `number` | `integer` |
 | `first_name` | `string` |
+| `number` | `integer` |
+| `company` | `string` |
+| `data` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

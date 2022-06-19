@@ -26,27 +26,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` |  |
-| `tag_name` | `string` | The name of the tag. |
-| `upload_url` | `string` |  |
-| `assets` | `array` |  |
-| `mentions_count` | `integer` |  |
-| `node_id` | `string` |  |
-| `body_html` | `string` |  |
-| `author` | `object` | Simple User |
-| `prerelease` | `boolean` | Whether to identify the release as a prerelease or a full release. |
 | `discussion_url` | `string` | The URL of the release discussion. |
-| `tarball_url` | `string` |  |
-| `html_url` | `string` |  |
-| `zipball_url` | `string` |  |
-| `url` | `string` |  |
 | `assets_url` | `string` |  |
-| `reactions` | `object` |  |
-| `created_at` | `string` |  |
+| `tag_name` | `string` | The name of the tag. |
 | `body` | `string` |  |
-| `published_at` | `string` |  |
-| `body_text` | `string` |  |
-| `draft` | `boolean` | true to create a draft (unpublished) release, false to create a published one. |
+| `created_at` | `string` |  |
+| `tarball_url` | `string` |  |
+| `author` | `object` | Simple User |
 | `target_commitish` | `string` | Specifies the commitish value that determines where the Git tag is created from. |
+| `assets` | `array` |  |
+| `prerelease` | `boolean` | Whether to identify the release as a prerelease or a full release. |
+| `mentions_count` | `integer` |  |
+| `draft` | `boolean` | true to create a draft (unpublished) release, false to create a published one. |
+| `published_at` | `string` |  |
+| `html_url` | `string` |  |
+| `body_text` | `string` |  |
+| `zipball_url` | `string` |  |
+| `reactions` | `object` |  |
+| `body_html` | `string` |  |
+| `node_id` | `string` |  |
+| `url` | `string` |  |
+| `upload_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

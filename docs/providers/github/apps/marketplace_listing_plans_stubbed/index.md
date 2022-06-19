@@ -28,15 +28,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `name` | `string` |
 | `description` | `string` |
 | `has_free_trial` | `boolean` |
-| `yearly_price_in_cents` | `integer` |
-| `url` | `string` |
-| `accounts_url` | `string` |
+| `number` | `integer` |
 | `monthly_price_in_cents` | `integer` |
+| `price_model` | `string` |
+| `yearly_price_in_cents` | `integer` |
+| `state` | `string` |
 | `unit_name` | `string` |
 | `bullets` | `array` |
-| `state` | `string` |
-| `number` | `integer` |
-| `price_model` | `string` |
+| `url` | `string` |
+| `accounts_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

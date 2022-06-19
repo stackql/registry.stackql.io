@@ -27,16 +27,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` |
 | `name` | `string` |
 | `description` | `string` |
-| `icon` | `string` |
-| `service_path` | `string` |
-| `long_description` | `string` |
-| `tags` | `array` |
 | `slug` | `string` |
-| `updated_at` | `string` |
-| `created_at` | `string` |
 | `environments` | `array` |
-| `events` | `array` |
+| `long_description` | `string` |
+| `updated_at` | `string` |
+| `service_path` | `string` |
+| `created_at` | `string` |
+| `tags` | `array` |
+| `icon` | `string` |
 | `manifest_url` | `string` |
+| `events` | `array` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

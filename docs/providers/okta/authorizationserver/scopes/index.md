@@ -27,11 +27,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` |
 | `name` | `string` |
 | `description` | `string` |
+| `system` | `boolean` |
 | `consent` | `string` |
 | `default` | `boolean` |
 | `displayName` | `string` |
 | `metadataPublish` | `string` |
-| `system` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

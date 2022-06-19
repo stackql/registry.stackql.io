@@ -25,12 +25,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `created_at` | `string` |  |
 | `scopes` | `array` |  |
 | `updated_at` | `string` |  |
 | `url` | `string` |  |
 | `user` | `object` | Simple User |
 | `app` | `object` |  |
+| `created_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

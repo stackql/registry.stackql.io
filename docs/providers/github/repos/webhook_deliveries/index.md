@@ -25,19 +25,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the delivery. |
-| `request` | `object` |  |
-| `url` | `string` | The URL target of the delivery. |
-| `delivered_at` | `string` | Time when the delivery was delivered. |
 | `status_code` | `integer` | Status code received when delivery was made. |
-| `action` | `string` | The type of activity for the event that triggered the delivery. |
-| `duration` | `number` | Time spent delivering. |
-| `repository_id` | `integer` | The id of the repository associated with this event. |
-| `redelivery` | `boolean` | Whether the delivery is a redelivery. |
 | `installation_id` | `integer` | The id of the GitHub App installation associated with this event. |
-| `event` | `string` | The event that triggered the delivery. |
-| `response` | `object` |  |
+| `request` | `object` |  |
+| `repository_id` | `integer` | The id of the repository associated with this event. |
 | `status` | `string` | Description of the status of the attempted delivery |
+| `response` | `object` |  |
+| `redelivery` | `boolean` | Whether the delivery is a redelivery. |
+| `action` | `string` | The type of activity for the event that triggered the delivery. |
+| `delivered_at` | `string` | Time when the delivery was delivered. |
 | `guid` | `string` | Unique identifier for the event (shared with all deliveries for all webhooks that subscribe to this event). |
+| `url` | `string` | The URL target of the delivery. |
+| `duration` | `number` | Time spent delivering. |
+| `event` | `string` | The event that triggered the delivery. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -25,19 +25,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `reactions` | `object` |  |
-| `url` | `string` |  |
-| `position` | `integer` |  |
-| `node_id` | `string` |  |
-| `author_association` | `string` | How the author is associated with the repository. |
 | `user` | `object` | Simple User |
-| `updated_at` | `string` |  |
-| `created_at` | `string` |  |
-| `body` | `string` |  |
-| `commit_id` | `string` |  |
 | `line` | `integer` |  |
-| `html_url` | `string` |  |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `node_id` | `string` |  |
+| `body` | `string` |  |
+| `position` | `integer` |  |
+| `commit_id` | `string` |  |
+| `reactions` | `object` |  |
 | `path` | `string` |  |
+| `url` | `string` |  |
+| `updated_at` | `string` |  |
+| `html_url` | `string` |  |
+| `created_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

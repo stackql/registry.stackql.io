@@ -26,20 +26,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `name` | `string` |
 | `description` | `string` |
+| `created_by` | `string` |
 | `released` | `string` |
 | `featured` | `boolean` |
-| `curated` | `boolean` |
 | `created_at` | `string` |
 | `updated_at` | `string` |
-| `created_by` | `string` |
-| `text_matches` | `array` |
 | `aliases` | `array` |
 | `display_name` | `string` |
-| `short_description` | `string` |
-| `score` | `number` |
-| `related` | `array` |
-| `logo_url` | `string` |
 | `repository_count` | `integer` |
+| `short_description` | `string` |
+| `related` | `array` |
+| `score` | `number` |
+| `text_matches` | `array` |
+| `curated` | `boolean` |
+| `logo_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

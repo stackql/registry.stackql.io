@@ -22,7 +22,7 @@ alttext="StackQL"/>
 
 ## Available Providers
 
-> dont see yours here? [contact us](/contact)
+> dont see yours here? [reach out](https://github.com/stackql/stackql-provider-registry/issues/new?template=feature_request.md&title=%5BFEATURE%5D%20New%20Provider)
 
 <section class="row list">
   <article class="col col--4 margin-bottom--lg">
@@ -44,7 +44,7 @@ alttext="StackQL"/>
     </a>
   </article>
   <article class="col col--4 margin-bottom--lg">
-    <a class="card padding--lg cardContainer" href="/providers/kubernetes/">
+    <a class="card padding--lg cardContainer" href="/providers/k8s/">
       <div class="row">
       <div class="col col--2"><img src="/img/providers/kubernetes.png" /></div>
       <div class="col col--10"><h2 class="text--truncate cardTitle" title="Kubernetes">Kubernetes</h2></div>  

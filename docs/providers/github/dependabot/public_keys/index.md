@@ -24,8 +24,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `key_id` | `string` | The identifier for the key. |
 | `key` | `string` | The Base64 encoded public key. |
+| `key_id` | `string` | The identifier for the key. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

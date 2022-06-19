@@ -24,19 +24,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `last_edited_at` | `string` |  |
-| `html_url` | `string` |  |
-| `body_html` | `string` |  |
 | `number` | `integer` | The unique sequence number of a team discussion comment. |
-| `url` | `string` |  |
-| `created_at` | `string` |  |
-| `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
 | `node_id` | `string` |  |
-| `discussion_url` | `string` |  |
-| `reactions` | `object` |  |
-| `author` | `object` | Simple User |
-| `body` | `string` | The main text of the comment. |
 | `updated_at` | `string` |  |
+| `author` | `object` | Simple User |
+| `last_edited_at` | `string` |  |
+| `body_html` | `string` |  |
+| `url` | `string` |  |
+| `discussion_url` | `string` |  |
+| `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
+| `body` | `string` | The main text of the comment. |
+| `created_at` | `string` |  |
+| `html_url` | `string` |  |
+| `reactions` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

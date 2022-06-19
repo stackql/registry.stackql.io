@@ -27,16 +27,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |
 | `name` | `string` |
 | `description` | `string` |
+| `has_free_trial` | `boolean` |
 | `monthly_price_in_cents` | `integer` |
+| `accounts_url` | `string` |
+| `yearly_price_in_cents` | `integer` |
+| `unit_name` | `string` |
 | `bullets` | `array` |
 | `price_model` | `string` |
-| `unit_name` | `string` |
-| `accounts_url` | `string` |
+| `state` | `string` |
 | `number` | `integer` |
 | `url` | `string` |
-| `yearly_price_in_cents` | `integer` |
-| `has_free_trial` | `boolean` |
-| `state` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

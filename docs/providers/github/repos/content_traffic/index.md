@@ -24,10 +24,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `uniques` | `integer` |
-| `count` | `integer` |
 | `path` | `string` |
 | `title` | `string` |
+| `uniques` | `integer` |
+| `count` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

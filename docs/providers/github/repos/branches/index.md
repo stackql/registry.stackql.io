@@ -25,13 +25,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `name` | `string` |  |
-| `protected` | `boolean` |  |
-| `protection` | `object` | Branch Protection |
-| `protection_url` | `string` |  |
 | `required_approving_review_count` | `integer` |  |
 | `_links` | `object` |  |
 | `commit` | `object` | Commit |
 | `pattern` | `string` |  |
+| `protected` | `boolean` |  |
+| `protection` | `object` | Branch Protection |
+| `protection_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

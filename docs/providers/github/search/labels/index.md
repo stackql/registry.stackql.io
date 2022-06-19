@@ -27,12 +27,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` |
 | `name` | `string` |
 | `description` | `string` |
-| `default` | `boolean` |
-| `url` | `string` |
-| `score` | `number` |
-| `color` | `string` |
-| `node_id` | `string` |
 | `text_matches` | `array` |
+| `score` | `number` |
+| `node_id` | `string` |
+| `url` | `string` |
+| `color` | `string` |
+| `default` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

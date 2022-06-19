@@ -25,12 +25,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
+| `lastUpdated` | `string` |
+| `profile` | `object` |
 | `_embedded` | `object` |
 | `_links` | `object` |
 | `created` | `string` |
 | `externalId` | `string` |
-| `lastUpdated` | `string` |
-| `profile` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

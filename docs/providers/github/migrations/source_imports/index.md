@@ -24,29 +24,29 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
-| `use_lfs` | `boolean` |  |
-| `commit_count` | `integer` |  |
-| `status` | `string` |  |
-| `repository_url` | `string` |  |
-| `svc_root` | `string` |  |
-| `import_percent` | `integer` |  |
-| `failed_step` | `string` |  |
-| `large_files_size` | `integer` |  |
-| `authors_url` | `string` |  |
-| `authors_count` | `integer` |  |
-| `vcs_url` | `string` | The URL of the originating repository. |
-| `has_large_files` | `boolean` |  |
 | `project_choices` | `array` |  |
+| `commit_count` | `integer` |  |
 | `status_text` | `string` |  |
-| `large_files_count` | `integer` |  |
-| `error_message` | `string` |  |
+| `message` | `string` |  |
+| `authors_url` | `string` |  |
+| `push_percent` | `integer` |  |
+| `repository_url` | `string` |  |
 | `svn_root` | `string` |  |
 | `url` | `string` |  |
-| `push_percent` | `integer` |  |
+| `use_lfs` | `boolean` |  |
+| `large_files_count` | `integer` |  |
+| `status` | `string` |  |
+| `large_files_size` | `integer` |  |
 | `vcs` | `string` |  |
-| `message` | `string` |  |
+| `authors_count` | `integer` |  |
 | `html_url` | `string` |  |
+| `import_percent` | `integer` |  |
+| `svc_root` | `string` |  |
+| `failed_step` | `string` |  |
 | `tfvc_project` | `string` |  |
+| `error_message` | `string` |  |
+| `vcs_url` | `string` | The URL of the originating repository. |
+| `has_large_files` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

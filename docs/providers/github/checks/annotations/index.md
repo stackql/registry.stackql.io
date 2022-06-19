@@ -26,13 +26,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `blob_href` | `string` |
 | `start_line` | `integer` |
-| `end_column` | `integer` |
-| `message` | `string` |
-| `end_line` | `integer` |
-| `raw_details` | `string` |
 | `start_column` | `integer` |
-| `path` | `string` |
+| `end_column` | `integer` |
 | `annotation_level` | `string` |
+| `path` | `string` |
+| `raw_details` | `string` |
+| `end_line` | `integer` |
+| `message` | `string` |
 | `title` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |

@@ -25,16 +25,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
+| `site_id` | `string` |
+| `dns_zone_id` | `string` |
+| `tag` | `string` |
+| `value` | `string` |
+| `hostname` | `string` |
+| `priority` | `integer` |
 | `ttl` | `integer` |
 | `type` | `string` |
 | `managed` | `boolean` |
-| `hostname` | `string` |
-| `priority` | `integer` |
-| `tag` | `string` |
-| `dns_zone_id` | `string` |
 | `flag` | `integer` |
-| `value` | `string` |
-| `site_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

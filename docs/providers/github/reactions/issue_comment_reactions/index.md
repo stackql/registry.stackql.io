@@ -25,10 +25,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `content` | `string` | The reaction to use |
-| `created_at` | `string` |  |
 | `node_id` | `string` |  |
 | `user` | `object` | Simple User |
+| `content` | `string` | The reaction to use |
+| `created_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

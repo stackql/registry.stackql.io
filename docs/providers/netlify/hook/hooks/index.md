@@ -25,13 +25,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
+| `disabled` | `boolean` |
+| `event` | `string` |
+| `site_id` | `string` |
 | `type` | `string` |
 | `updated_at` | `string` |
 | `created_at` | `string` |
 | `data` | `object` |
-| `disabled` | `boolean` |
-| `event` | `string` |
-| `site_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

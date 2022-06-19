@@ -25,20 +25,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
+| `installation` | `object` |  |
+| `url` | `string` |  |
+| `note_url` | `string` |  |
+| `scopes` | `array` | A list of scopes that this authorization is in. |
+| `user` | `object` | Simple User |
+| `token` | `string` |  |
+| `expires_at` | `string` |  |
+| `created_at` | `string` |  |
 | `fingerprint` | `string` |  |
+| `token_last_eight` | `string` |  |
+| `updated_at` | `string` |  |
 | `note` | `string` |  |
 | `app` | `object` |  |
-| `user` | `object` | Simple User |
-| `created_at` | `string` |  |
 | `hashed_token` | `string` |  |
-| `token_last_eight` | `string` |  |
-| `scopes` | `array` | A list of scopes that this authorization is in. |
-| `note_url` | `string` |  |
-| `token` | `string` |  |
-| `installation` | `object` |  |
-| `updated_at` | `string` |  |
-| `expires_at` | `string` |  |
-| `url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

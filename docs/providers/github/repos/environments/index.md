@@ -26,13 +26,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | The id of the environment. |
 | `name` | `string` | The name of the environment. |
-| `html_url` | `string` |  |
 | `node_id` | `string` |  |
+| `deployment_branch_policy` | `object` | The type of deployment branch policy for this environment. To allow all branches to deploy, set to `null`. |
+| `html_url` | `string` |  |
 | `created_at` | `string` | The time that the environment was created, in ISO 8601 format. |
 | `protection_rules` | `array` |  |
-| `updated_at` | `string` | The time that the environment was last updated, in ISO 8601 format. |
 | `url` | `string` |  |
-| `deployment_branch_policy` | `object` | The type of deployment branch policy for this environment. To allow all branches to deploy, set to `null`. |
+| `updated_at` | `string` | The time that the environment was last updated, in ISO 8601 format. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

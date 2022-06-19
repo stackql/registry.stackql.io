@@ -24,9 +24,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
+| `views` | `array` |
 | `count` | `integer` |
 | `uniques` | `integer` |
-| `views` | `array` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

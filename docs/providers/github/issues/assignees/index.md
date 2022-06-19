@@ -26,25 +26,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `integer` |
 | `name` | `string` |
-| `subscriptions_url` | `string` |
-| `node_id` | `string` |
-| `gists_url` | `string` |
-| `events_url` | `string` |
-| `html_url` | `string` |
-| `repos_url` | `string` |
-| `url` | `string` |
-| `email` | `string` |
-| `received_events_url` | `string` |
-| `starred_url` | `string` |
-| `organizations_url` | `string` |
 | `avatar_url` | `string` |
-| `following_url` | `string` |
+| `gists_url` | `string` |
 | `gravatar_id` | `string` |
-| `type` | `string` |
-| `starred_at` | `string` |
+| `following_url` | `string` |
 | `site_admin` | `boolean` |
+| `events_url` | `string` |
 | `login` | `string` |
+| `email` | `string` |
+| `node_id` | `string` |
+| `organizations_url` | `string` |
+| `url` | `string` |
 | `followers_url` | `string` |
+| `received_events_url` | `string` |
+| `repos_url` | `string` |
+| `starred_at` | `string` |
+| `type` | `string` |
+| `html_url` | `string` |
+| `subscriptions_url` | `string` |
+| `starred_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

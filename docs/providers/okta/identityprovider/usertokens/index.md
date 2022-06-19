@@ -25,11 +25,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
-| `tokenType` | `string` |
 | `expiresAt` | `string` |
 | `scopes` | `array` |
 | `token` | `string` |
 | `tokenAuthScheme` | `string` |
+| `tokenType` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

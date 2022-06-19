@@ -26,10 +26,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | The id of the runner. |
 | `name` | `string` | The name of the runner. |
-| `busy` | `boolean` |  |
 | `labels` | `array` |  |
 | `os` | `string` | The Operating System of the runner. |
 | `status` | `string` | The status of the runner. |
+| `busy` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

@@ -25,22 +25,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `exclude_owner_projects` | `boolean` |  |
+| `exclude_attachments` | `boolean` |  |
+| `updated_at` | `string` |  |
+| `exclude_releases` | `boolean` |  |
+| `guid` | `string` |  |
+| `owner` | `object` | Simple User |
+| `archive_url` | `string` |  |
+| `node_id` | `string` |  |
+| `created_at` | `string` |  |
+| `repositories` | `array` |  |
+| `exclude` | `array` |  |
+| `exclude_metadata` | `boolean` |  |
+| `url` | `string` |  |
+| `state` | `string` |  |
 | `exclude_git_data` | `boolean` |  |
 | `lock_repositories` | `boolean` |  |
-| `node_id` | `string` |  |
-| `repositories` | `array` |  |
-| `url` | `string` |  |
-| `exclude_metadata` | `boolean` |  |
-| `state` | `string` |  |
-| `owner` | `object` | Simple User |
-| `exclude` | `array` |  |
-| `exclude_attachments` | `boolean` |  |
-| `archive_url` | `string` |  |
-| `exclude_releases` | `boolean` |  |
-| `created_at` | `string` |  |
-| `guid` | `string` |  |
-| `updated_at` | `string` |  |
+| `exclude_owner_projects` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

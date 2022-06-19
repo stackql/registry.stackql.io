@@ -25,53 +25,53 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `node_id` | `string` |  |
-| `issue_url` | `string` |  |
-| `_links` | `object` |  |
-| `review_comments_url` | `string` |  |
-| `rebaseable` | `boolean` |  |
-| `statuses_url` | `string` |  |
-| `merge_commit_sha` | `string` |  |
-| `commits_url` | `string` |  |
-| `merged_at` | `string` |  |
-| `review_comments` | `integer` |  |
+| `labels` | `array` |  |
 | `author_association` | `string` | How the author is associated with the repository. |
-| `changed_files` | `integer` |  |
-| `mergeable` | `boolean` |  |
-| `review_comment_url` | `string` |  |
-| `locked` | `boolean` |  |
-| `active_lock_reason` | `string` |  |
-| `created_at` | `string` |  |
-| `patch_url` | `string` |  |
-| `draft` | `boolean` | Indicates whether or not the pull request is a draft. |
-| `state` | `string` | State of this Pull Request. Either `open` or `closed`. |
-| `assignee` | `object` | Simple User |
-| `commits` | `integer` |  |
-| `comments_url` | `string` |  |
-| `merged` | `boolean` |  |
-| `number` | `integer` | Number uniquely identifying the pull request within its repository. |
-| `html_url` | `string` |  |
-| `assignees` | `array` |  |
-| `head` | `object` |  |
-| `base` | `object` |  |
-| `title` | `string` | The title of the pull request. |
 | `deletions` | `integer` |  |
-| `merged_by` | `object` | Simple User |
-| `url` | `string` |  |
-| `body` | `string` |  |
+| `node_id` | `string` |  |
+| `patch_url` | `string` |  |
+| `number` | `integer` | Number uniquely identifying the pull request within its repository. |
+| `assignee` | `object` | Simple User |
+| `base` | `object` |  |
+| `review_comment_url` | `string` |  |
 | `user` | `object` | Simple User |
 | `diff_url` | `string` |  |
-| `auto_merge` | `object` | The status of auto merging a pull request. |
-| `comments` | `integer` |  |
-| `closed_at` | `string` |  |
+| `rebaseable` | `boolean` |  |
+| `_links` | `object` |  |
 | `additions` | `integer` |  |
-| `labels` | `array` |  |
-| `milestone` | `object` | A collection of related issues and pull requests. |
-| `requested_teams` | `array` |  |
-| `maintainer_can_modify` | `boolean` | Indicates whether maintainers can modify the pull request. |
+| `comments` | `integer` |  |
+| `statuses_url` | `string` |  |
+| `merged` | `boolean` |  |
+| `html_url` | `string` |  |
+| `mergeable` | `boolean` |  |
+| `review_comments` | `integer` |  |
+| `assignees` | `array` |  |
+| `active_lock_reason` | `string` |  |
 | `mergeable_state` | `string` |  |
-| `updated_at` | `string` |  |
+| `draft` | `boolean` | Indicates whether or not the pull request is a draft. |
+| `created_at` | `string` |  |
+| `review_comments_url` | `string` |  |
 | `requested_reviewers` | `array` |  |
+| `title` | `string` | The title of the pull request. |
+| `maintainer_can_modify` | `boolean` | Indicates whether maintainers can modify the pull request. |
+| `issue_url` | `string` |  |
+| `merged_at` | `string` |  |
+| `body` | `string` |  |
+| `updated_at` | `string` |  |
+| `auto_merge` | `object` | The status of auto merging a pull request. |
+| `commits` | `integer` |  |
+| `merged_by` | `object` | Simple User |
+| `changed_files` | `integer` |  |
+| `requested_teams` | `array` |  |
+| `url` | `string` |  |
+| `state` | `string` | State of this Pull Request. Either `open` or `closed`. |
+| `head` | `object` |  |
+| `comments_url` | `string` |  |
+| `closed_at` | `string` |  |
+| `locked` | `boolean` |  |
+| `merge_commit_sha` | `string` |  |
+| `milestone` | `object` | A collection of related issues and pull requests. |
+| `commits_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

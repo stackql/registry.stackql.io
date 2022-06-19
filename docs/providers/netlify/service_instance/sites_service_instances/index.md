@@ -25,17 +25,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
-| `service_name` | `string` |
-| `url` | `string` |
-| `updated_at` | `string` |
-| `config` | `object` |
-| `env` | `object` |
-| `snippets` | `array` |
-| `service_path` | `string` |
-| `created_at` | `string` |
-| `auth_url` | `string` |
-| `external_attributes` | `object` |
 | `service_slug` | `string` |
+| `updated_at` | `string` |
+| `created_at` | `string` |
+| `service_path` | `string` |
+| `config` | `object` |
+| `url` | `string` |
+| `auth_url` | `string` |
+| `snippets` | `array` |
+| `service_name` | `string` |
+| `env` | `object` |
+| `external_attributes` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

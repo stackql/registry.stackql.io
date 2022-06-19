@@ -25,18 +25,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` | The project card's ID |
-| `updated_at` | `string` |  |
-| `column_url` | `string` |  |
-| `content_url` | `string` |  |
-| `column_name` | `string` |  |
 | `project_url` | `string` |  |
+| `creator` | `object` | Simple User |
+| `node_id` | `string` |  |
 | `archived` | `boolean` | Whether or not the card is archived |
+| `updated_at` | `string` |  |
+| `column_name` | `string` |  |
+| `column_url` | `string` |  |
 | `note` | `string` |  |
+| `content_url` | `string` |  |
+| `project_id` | `string` |  |
 | `url` | `string` |  |
 | `created_at` | `string` |  |
-| `creator` | `object` | Simple User |
-| `project_id` | `string` |  |
-| `node_id` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -26,27 +26,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
 | `name` | `string` |  |
-| `assets_url` | `string` |  |
-| `mentions_count` | `integer` |  |
 | `node_id` | `string` |  |
-| `body_text` | `string` |  |
-| `discussion_url` | `string` | The URL of the release discussion. |
-| `reactions` | `object` |  |
 | `body` | `string` |  |
-| `created_at` | `string` |  |
-| `html_url` | `string` |  |
-| `tag_name` | `string` | The name of the tag. |
 | `body_html` | `string` |  |
-| `target_commitish` | `string` | Specifies the commitish value that determines where the Git tag is created from. |
-| `url` | `string` |  |
-| `tarball_url` | `string` |  |
-| `zipball_url` | `string` |  |
-| `prerelease` | `boolean` | Whether to identify the release as a prerelease or a full release. |
-| `draft` | `boolean` | true to create a draft (unpublished) release, false to create a published one. |
-| `upload_url` | `string` |  |
+| `author` | `object` | Simple User |
+| `html_url` | `string` |  |
 | `assets` | `array` |  |
 | `published_at` | `string` |  |
-| `author` | `object` | Simple User |
+| `draft` | `boolean` | true to create a draft (unpublished) release, false to create a published one. |
+| `zipball_url` | `string` |  |
+| `upload_url` | `string` |  |
+| `prerelease` | `boolean` | Whether to identify the release as a prerelease or a full release. |
+| `tarball_url` | `string` |  |
+| `tag_name` | `string` | The name of the tag. |
+| `target_commitish` | `string` | Specifies the commitish value that determines where the Git tag is created from. |
+| `mentions_count` | `integer` |  |
+| `discussion_url` | `string` | The URL of the release discussion. |
+| `reactions` | `object` |  |
+| `body_text` | `string` |  |
+| `url` | `string` |  |
+| `assets_url` | `string` |  |
+| `created_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

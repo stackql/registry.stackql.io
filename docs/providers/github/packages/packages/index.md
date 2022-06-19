@@ -27,14 +27,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` | Unique identifier of the package. |
 | `name` | `string` | The name of the package. |
 | `owner` | `object` | Simple User |
+| `created_at` | `string` |  |
+| `updated_at` | `string` |  |
+| `url` | `string` |  |
 | `repository` | `object` | Minimal Repository |
+| `version_count` | `integer` | The number of versions of the package. |
 | `html_url` | `string` |  |
 | `package_type` | `string` |  |
 | `visibility` | `string` |  |
-| `updated_at` | `string` |  |
-| `created_at` | `string` |  |
-| `url` | `string` |  |
-| `version_count` | `integer` | The number of versions of the package. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

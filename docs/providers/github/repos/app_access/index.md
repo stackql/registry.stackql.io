@@ -27,20 +27,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `integer` | Unique identifier of the GitHub app |
 | `name` | `string` | The name of the GitHub app |
 | `description` | `string` |  |
-| `client_id` | `string` |  |
-| `owner` | `object` | Simple User |
+| `pem` | `string` |  |
+| `permissions` | `object` | The set of permissions for the GitHub app |
+| `webhook_secret` | `string` |  |
+| `events` | `array` | The list of events for the GitHub app |
+| `created_at` | `string` |  |
+| `client_secret` | `string` |  |
+| `installations_count` | `integer` | The number of installations associated with the GitHub app |
 | `slug` | `string` | The slug name of the GitHub app |
-| `external_url` | `string` |  |
 | `html_url` | `string` |  |
 | `updated_at` | `string` |  |
-| `client_secret` | `string` |  |
-| `permissions` | `object` | The set of permissions for the GitHub app |
+| `external_url` | `string` |  |
+| `client_id` | `string` |  |
 | `node_id` | `string` |  |
-| `webhook_secret` | `string` |  |
-| `created_at` | `string` |  |
-| `events` | `array` | The list of events for the GitHub app |
-| `installations_count` | `integer` | The number of installations associated with the GitHub app |
-| `pem` | `string` |  |
+| `owner` | `object` | Simple User |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

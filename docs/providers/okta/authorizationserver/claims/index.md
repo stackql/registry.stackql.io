@@ -26,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- |
 | `id` | `string` |
 | `name` | `string` |
-| `system` | `boolean` |
-| `status` | `string` |
-| `claimType` | `string` |
-| `_links` | `object` |
-| `value` | `string` |
 | `valueType` | `string` |
-| `group_filter_type` | `string` |
-| `alwaysIncludeInToken` | `boolean` |
+| `claimType` | `string` |
+| `status` | `string` |
+| `system` | `boolean` |
 | `conditions` | `object` |
+| `alwaysIncludeInToken` | `boolean` |
+| `value` | `string` |
+| `_links` | `object` |
+| `group_filter_type` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -24,13 +24,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
+| `apps_url` | `string` |
 | `teams` | `array` |
 | `teams_url` | `string` |
 | `url` | `string` |
 | `users` | `array` |
 | `users_url` | `string` |
 | `apps` | `array` |
-| `apps_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

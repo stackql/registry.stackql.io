@@ -24,11 +24,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype |
 | ---- | -------- |
-| `_links` | `object` |
 | `client_id` | `string` |
 | `client_name` | `string` |
 | `client_uri` | `string` |
 | `logo_uri` | `string` |
+| `_links` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

@@ -26,13 +26,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `number` |  |
 | `name` | `string` |  |
-| `inherited_allows_public_repositories` | `boolean` |  |
-| `allows_public_repositories` | `boolean` |  |
 | `visibility` | `string` |  |
+| `inherited_allows_public_repositories` | `boolean` |  |
 | `runners_url` | `string` |  |
 | `inherited` | `boolean` |  |
-| `selected_repositories_url` | `string` | Link to the selected repositories resource for this runner group. Not present unless visibility was set to `selected` |
+| `allows_public_repositories` | `boolean` |  |
 | `default` | `boolean` |  |
+| `selected_repositories_url` | `string` | Link to the selected repositories resource for this runner group. Not present unless visibility was set to `selected` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

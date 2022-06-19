@@ -25,41 +25,41 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `integer` |  |
-| `body` | `string` |  |
-| `html_url` | `string` |  |
-| `author_association` | `string` | How the author is associated with the repository. |
-| `requested_teams` | `array` |  |
-| `locked` | `boolean` |  |
-| `created_at` | `string` |  |
-| `auto_merge` | `object` | The status of auto merging a pull request. |
-| `url` | `string` |  |
-| `state` | `string` |  |
-| `commits_url` | `string` |  |
-| `patch_url` | `string` |  |
-| `active_lock_reason` | `string` |  |
 | `diff_url` | `string` |  |
-| `labels` | `array` |  |
 | `comments_url` | `string` |  |
-| `closed_at` | `string` |  |
-| `number` | `integer` |  |
+| `patch_url` | `string` |  |
 | `review_comment_url` | `string` |  |
-| `title` | `string` |  |
-| `user` | `object` | Simple User |
-| `node_id` | `string` |  |
-| `merge_commit_sha` | `string` |  |
-| `updated_at` | `string` |  |
-| `_links` | `object` |  |
-| `base` | `object` |  |
-| `milestone` | `object` | A collection of related issues and pull requests. |
-| `statuses_url` | `string` |  |
-| `assignee` | `object` | Simple User |
-| `merged_at` | `string` |  |
-| `assignees` | `array` |  |
-| `requested_reviewers` | `array` |  |
-| `issue_url` | `string` |  |
-| `draft` | `boolean` | Indicates whether or not the pull request is a draft. |
 | `review_comments_url` | `string` |  |
+| `merge_commit_sha` | `string` |  |
+| `assignee` | `object` | Simple User |
+| `state` | `string` |  |
+| `title` | `string` |  |
+| `milestone` | `object` | A collection of related issues and pull requests. |
+| `active_lock_reason` | `string` |  |
+| `body` | `string` |  |
+| `assignees` | `array` |  |
+| `url` | `string` |  |
+| `statuses_url` | `string` |  |
+| `node_id` | `string` |  |
+| `requested_reviewers` | `array` |  |
+| `locked` | `boolean` |  |
+| `auto_merge` | `object` | The status of auto merging a pull request. |
+| `user` | `object` | Simple User |
+| `number` | `integer` |  |
+| `issue_url` | `string` |  |
+| `_links` | `object` |  |
+| `created_at` | `string` |  |
+| `merged_at` | `string` |  |
+| `labels` | `array` |  |
 | `head` | `object` |  |
+| `draft` | `boolean` | Indicates whether or not the pull request is a draft. |
+| `base` | `object` |  |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `commits_url` | `string` |  |
+| `html_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `closed_at` | `string` |  |
+| `requested_teams` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 | ---- | ------------- | --------------- |

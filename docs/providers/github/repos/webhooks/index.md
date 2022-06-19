@@ -26,16 +26,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | Unique identifier of the webhook. |
 | `name` | `string` | The name of a valid service, use 'web' for a webhook. |
-| `type` | `string` |  |
-| `config` | `object` |  |
-| `ping_url` | `string` |  |
-| `updated_at` | `string` |  |
+| `test_url` | `string` |  |
 | `url` | `string` |  |
+| `ping_url` | `string` |  |
 | `active` | `boolean` | Determines whether the hook is actually triggered on pushes. |
 | `last_response` | `object` |  |
-| `test_url` | `string` |  |
-| `events` | `array` | Determines what events the hook is triggered for. Default: ['push']. |
+| `updated_at` | `string` |  |
+| `config` | `object` |  |
 | `created_at` | `string` |  |
+| `type` | `string` |  |
+| `events` | `array` | Determines what events the hook is triggered for. Default: ['push']. |
 | `deliveries_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |

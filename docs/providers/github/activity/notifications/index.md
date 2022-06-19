@@ -25,14 +25,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 | ---- | -------- | ----------- |
 | `id` | `string` |  |
-| `unread` | `boolean` |  |
-| `subject` | `object` |  |
 | `subscription_url` | `string` |  |
+| `unread` | `boolean` |  |
 | `updated_at` | `string` |  |
-| `last_read_at` | `string` |  |
-| `repository` | `object` | Minimal Repository |
-| `url` | `string` |  |
 | `reason` | `string` |  |
+| `last_read_at` | `string` |  |
+| `url` | `string` |  |
+| `repository` | `object` | Minimal Repository |
+| `subject` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

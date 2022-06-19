@@ -26,24 +26,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | ---- | -------- | ----------- |
 | `id` | `integer` | The ID of the installation. |
 | `html_url` | `string` |  |
-| `target_type` | `string` |  |
-| `repositories_url` | `string` |  |
-| `permissions` | `object` | The permissions granted to the user-to-server access token. |
-| `created_at` | `string` |  |
-| `contact_email` | `string` |  |
-| `single_file_name` | `string` |  |
-| `app_slug` | `string` |  |
-| `account` | `` |  |
-| `events` | `array` |  |
-| `updated_at` | `string` |  |
-| `has_multiple_single_files` | `boolean` |  |
-| `app_id` | `integer` |  |
 | `target_id` | `integer` | The ID of the user or organization this token is being scoped to. |
-| `repository_selection` | `string` | Describe whether all repositories have been selected or there's a selection involved |
-| `suspended_by` | `object` | Simple User |
-| `access_tokens_url` | `string` |  |
-| `suspended_at` | `string` |  |
+| `single_file_name` | `string` |  |
+| `contact_email` | `string` |  |
 | `single_file_paths` | `array` |  |
+| `access_tokens_url` | `string` |  |
+| `events` | `array` |  |
+| `has_multiple_single_files` | `boolean` |  |
+| `updated_at` | `string` |  |
+| `suspended_at` | `string` |  |
+| `app_id` | `integer` |  |
+| `target_type` | `string` |  |
+| `suspended_by` | `object` | Simple User |
+| `repositories_url` | `string` |  |
+| `created_at` | `string` |  |
+| `repository_selection` | `string` | Describe whether all repositories have been selected or there's a selection involved |
+| `permissions` | `object` | The permissions granted to the user-to-server access token. |
+| `account` | `` |  |
+| `app_slug` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |

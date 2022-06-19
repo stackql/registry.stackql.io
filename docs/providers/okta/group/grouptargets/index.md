@@ -25,14 +25,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype |
 | ---- | -------- |
 | `id` | `string` |
-| `lastMembershipUpdated` | `string` |
-| `profile` | `object` |
-| `objectClass` | `array` |
-| `lastUpdated` | `string` |
-| `_links` | `object` |
-| `created` | `string` |
 | `type` | `string` |
 | `_embedded` | `object` |
+| `lastUpdated` | `string` |
+| `objectClass` | `array` |
+| `lastMembershipUpdated` | `string` |
+| `profile` | `object` |
+| `created` | `string` |
+| `_links` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 | ---- | ------------- | --------------- | ----------- |
