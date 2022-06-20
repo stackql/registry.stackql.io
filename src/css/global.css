@@ -595,3 +595,9 @@ html[data-theme='dark'] .contactFormHeading {
 		font-size: 1.5rem;
 	}
 }
+
+.footer__items {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}

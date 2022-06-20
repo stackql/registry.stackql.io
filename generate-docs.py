@@ -12,8 +12,18 @@ if verbose == "true":
 else:
     verbose = False
 
+if "." in provider:
+    service_only = True
+    provider = provider.split(".")[0]
+    service = provider.split(".")[1]
+else:
+    service_only = False
+
 # clean output dir
-shutil.rmtree("./docs/%s" % provider, ignore_errors=True)
+if service_only:
+    shutil.rmtree("./docs/%s/%s" % (provider, service), ignore_errors=True)
+else:
+    shutil.rmtree("./docs/%s" % provider, ignore_errors=True)
 
 #
 # generate provider root doc
@@ -29,6 +39,7 @@ provider_doc = provider_doc + generate_auth_block(provider)
 # get services and add to provider doc
 iql_query = "SHOW EXTENDED SERVICES IN %s" % provider
 services = run_stackql_query(iql_query, verbose, 5)
+services = services.groupby("name", as_index=False).max()
 provider_doc = provider_doc + "## Services\n"
 provider_doc = provider_doc + generate_two_col_list(provider, services)
 
@@ -60,35 +71,36 @@ for serviceIx, serviceRow in services.iterrows():
     iql_query = "SHOW EXTENDED RESOURCES IN %s.%s" % (provider, serviceName)
     resources = run_stackql_query(iql_query, verbose, 5)
 
-    if resources.shape[0] > 1:
-   
-        service_doc = service_doc + "## Resources\n"
-        service_doc = service_doc + generate_two_col_list(provider, resources, serviceName)
+    service_doc = service_doc + "## Resources\n"
+    service_doc = service_doc + generate_two_col_list(provider, resources, serviceName)
 
-        # write service doc
-        write_file("./docs/%s/%s/index.md" % (provider, serviceName), service_doc, verbose)
+    # write service doc
+    write_file("./docs/%s/%s/index.md" % (provider, serviceName), service_doc, verbose)
 
-        for resourceIx, resourceRow in resources.iterrows():
+    for resourceIx, resourceRow in resources.iterrows():
+        try:
             resourceName = resourceRow["name"]
+        except:
+            break
 
-            # create resource dir
-            create_dir("./docs/%s/%s/%s" % (provider, serviceName, resourceName), verbose)
+        # create resource dir
+        create_dir("./docs/%s/%s/%s" % (provider, serviceName, resourceName), verbose)
 
-            # create resource doc
-            resource_doc = generate_front_matter(resourceName, resourceRow["description"])
-            resource_doc = resource_doc + generate_resource_overview(provider, serviceName, resourceRow)
+        # create resource doc
+        resource_doc = generate_front_matter(resourceName, resourceRow["description"])
+        resource_doc = resource_doc + generate_resource_overview(provider, serviceName, resourceRow)
 
-            # get fields
-            iql_query = "DESCRIBE EXTENDED %s.%s.`%s`" % (provider, serviceName, resourceName)
-            fields = run_stackql_query(iql_query, verbose, 5)
-            resource_doc = resource_doc + generate_fields_table(fields)
-            
-            # get methods
-            iql_query = "SHOW EXTENDED METHODS IN %s.%s.`%s`" % (provider, serviceName, resourceName)
-            methods = run_stackql_query(iql_query, verbose, 5)
-            resource_doc = resource_doc + generate_methods_table(methods)
+        # get fields
+        iql_query = "DESCRIBE EXTENDED %s.%s.`%s`" % (provider, serviceName, resourceName)
+        fields = run_stackql_query(iql_query, verbose, 5)
+        resource_doc = resource_doc + generate_fields_table(fields)
+        
+        # get methods
+        iql_query = "SHOW EXTENDED METHODS IN %s.%s.`%s`" % (provider, serviceName, resourceName)
+        methods = run_stackql_query(iql_query, verbose, 5)
+        resource_doc = resource_doc + generate_methods_table(methods)
 
-            # write resource doc
-            write_file("./docs/%s/%s/%s/index.md" % (provider, serviceName, resourceName), resource_doc, verbose)
+        # write resource doc
+        write_file("./docs/%s/%s/%s/index.md" % (provider, serviceName, resourceName), resource_doc, verbose)
 
     

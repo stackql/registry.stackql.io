@@ -3,6 +3,12 @@ from math import ceil
 from pystackql import StackQL
 iql = StackQL(exe="./stackql")
 
+def make_web_safe(str):
+    return str.replace("<", "&lt;").replace(">", "&gt;").replace("\n", "<br />")
+
+def make_markdown_table_safe(str):
+    return make_web_safe(str).replace("|", "\|")
+
 def create_dir(dirName, verbose):
     if verbose:
         print("creating directory %s..." % dirName)
@@ -10,7 +16,7 @@ def create_dir(dirName, verbose):
         os.mkdir(dirName)
     except FileExistsError:
         print("ERROR: directory already exists")
-        #sys.exit(1)
+        sys.exit(1)
     except:
         print("ERROR: unknown error")
         sys.exit(1)
@@ -92,31 +98,34 @@ stackql shell --auth="${AUTH}"
 """ % (provider, provider)
 
 def generate_two_col_list(provider, list_of_objects, service_name=None):
-    num_objects = list_of_objects.shape[0]
-    first_col_len = ceil(num_objects/2.0)
-    output = '<div class="row">\n'
-    # col1
-    output = output + '<div class="providerDocColumn">\n'
-    for ix, this_obj in list_of_objects.iterrows():
-        if service_name is None:
-            link = create_html_link("/providers/%s/%s/" % (provider, this_obj["name"]), this_obj["name"])
-        else:
-            link = create_html_link("/providers/%s/%s/%s/" % (provider, service_name, this_obj["name"]), this_obj["name"])
-        if ix < first_col_len:
-            output = output + link + "<br />\n"
-    output = output + '</div>\n'
-    # col2
-    output = output + '<div class="providerDocColumn">\n'
-    for ix, this_obj in list_of_objects.iterrows():
-        if service_name is None:
-            link = create_html_link("/providers/%s/%s/" % (provider, this_obj["name"]), this_obj["name"])
-        else:
-            link = create_html_link("/providers/%s/%s/%s/" % (provider, service_name, this_obj["name"]), this_obj["name"])
-        if ix >= first_col_len:
-            output = output + link + "<br />\n"
-    output = output + '</div>\n'
-    output = output + '</div>\n'
-    return output
+    try:
+        num_objects = list_of_objects.shape[0]
+        first_col_len = ceil(num_objects/2.0)
+        output = '<div class="row">\n'
+        # col1
+        output = output + '<div class="providerDocColumn">\n'
+        for ix, this_obj in list_of_objects.iterrows():
+            if service_name is None:
+                link = create_html_link("/providers/%s/%s/" % (provider, this_obj["name"]), this_obj["name"])
+            else:
+                link = create_html_link("/providers/%s/%s/%s/" % (provider, service_name, this_obj["name"]), this_obj["name"])
+            if ix < first_col_len:
+                output = output + link + "<br />\n"
+        output = output + '</div>\n'
+        # col2
+        output = output + '<div class="providerDocColumn">\n'
+        for ix, this_obj in list_of_objects.iterrows():
+            if service_name is None:
+                link = create_html_link("/providers/%s/%s/" % (provider, this_obj["name"]), this_obj["name"])
+            else:
+                link = create_html_link("/providers/%s/%s/%s/" % (provider, service_name, this_obj["name"]), this_obj["name"])
+            if ix >= first_col_len:
+                output = output + link + "<br />\n"
+        output = output + '</div>\n'
+        output = output + '</div>\n'
+        return output
+    except:
+        return '<div class="row"><div class="providerDocColumn">Not Available</div></div>'
 
 def generate_service_overview(provider, serviceObj):
     return """
@@ -129,7 +138,7 @@ def generate_service_overview(provider, serviceObj):
 <tr><td><b>Id</b></td><td><code>%s</code></td></tr>
 </tbody></table>
 
-""" % (provider, serviceObj["name"], serviceObj["title"], serviceObj["description"], serviceObj["id"])
+""" % (provider, serviceObj["name"], serviceObj["title"], make_web_safe(serviceObj["description"]), serviceObj["id"])
 
 
 def generate_resource_overview(provider, serviceName, resourceObj):
@@ -154,21 +163,21 @@ def generate_resource_overview(provider, serviceName, resourceObj):
 <tr><td><b>Description</b></td><td>%s</td></tr>
 </tbody></table>
 
-""" % (resourceObj["name"], resourceObj["id"], resourceObj["description"])
+""" % (resourceObj["name"], resourceObj["id"], make_web_safe(resourceObj["description"]))
 
 def generate_fields_table(fields):
     output = "## Fields\n"
     if fields.shape[0] > 1:
         if (fields["description"] == fields["description"][0]).all():
             output = output + "| Name | Datatype |\n"
-            output = output + "| ---- | -------- |\n"
+            output = output + "|:-----|:---------|\n"
             for fieldIx, fieldRow in fields.iterrows():
                 output = output + "| `%s` | `%s` |\n" % (fieldRow["name"], fieldRow["type"])
         else:
             output = output + "| Name | Datatype | Description |\n"
-            output = output + "| ---- | -------- | ----------- |\n"
+            output = output + "|:-----|:---------|:------------|\n"
             for fieldIx, fieldRow in fields.iterrows():
-                output = output + "| `%s` | `%s` | %s |\n" % (fieldRow["name"], fieldRow["type"], fieldRow["description"].replace("<", "&#x7B;").replace(">", "&#x7D;").replace("\n", "<br />").replace("|", "\|"))
+                output = output + "| `%s` | `%s` | %s |\n" % (fieldRow["name"], fieldRow["type"], make_markdown_table_safe(fieldRow["description"]))
     else:
         output = output + "`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  \n"
     return output
@@ -177,7 +186,7 @@ def generate_methods_table(methods):
     output = "## Methods\n"
     if (methods["description"] == methods["description"][0]).all():
         output = output + "| Name | Accessible by | Required Params |\n"
-        output = output + "| ---- | ------------- | --------------- |\n"
+        output = output + "|:-----|:--------------|:----------------|\n"
         for methodIx, methodRow in methods.iterrows():
             if (methodRow["RequiredParams"] == ""):
                 output = output + "| `%s` | `%s` | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"])
@@ -185,12 +194,12 @@ def generate_methods_table(methods):
                 output = output + "| `%s` | `%s` | `%s` |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"])
     else:
         output = output + "| Name | Accessible by | Required Params | Description |\n"
-        output = output + "| ---- | ------------- | --------------- | ----------- |\n"
+        output = output + "|:-----|:--------------|:----------------|:------------|\n"
         for methodIx, methodRow in methods.iterrows():
             if (methodRow["RequiredParams"] == ""):
-                output = output + "| `%s` | `%s` | %s | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"], methodRow["description"].replace("<", "&#x7B;").replace(">", "&#x7D;").replace("\n", "<br />").replace("|", "\|"))
+                output = output + "| `%s` | `%s` | %s | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"], make_markdown_table_safe(methodRow["description"]))
             else:
-                output = output + "| `%s` | `%s` | `%s` | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"], methodRow["description"].replace("<", "&#x7B;").replace(">", "&#x7D;").replace("\n", "<br />").replace("|", "\|"))
+                output = output + "| `%s` | `%s` | `%s` | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"], make_markdown_table_safe(methodRow["description"]))
     return output
 
 def run_stackql_query(query, verbose, retries):
