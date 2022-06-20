@@ -28,15 +28,10 @@ REGISTRY PULL k8s v0.1.0;
 {
     "k8s": {
         /**
-            * Type of authentication to use, suported values include: service_account, api_key, basic
+            * Type of authentication to use, suported values include: api_key
             * @type String
             */
         "type": string, 
-        /**
-            * path to service account key file.
-            * @type String
-            */
-        "credentialsfilepath": string, 
         /**
             * Environment variable name containing the api key or credentials.
             * @type String
@@ -44,15 +39,30 @@ REGISTRY PULL k8s v0.1.0;
         "credentialsenvvar": string, 
         /**
             * Value prepended to the request header, e.g. "Bearer "
+            * Must be set to "Bearer "
             * @type String
             */
         "valuePrefix": string, 
     }
 }
 ```
+
+:::note
+
+__`cluster_addr`__ is a required paramter for all operations using the `k8s` provider, for example:  
+
+```sql
+SELECT name, namespace, uid, creationTimestamp 
+FROM k8s.core_v1.service_account 
+WHERE cluster_addr = '35.244.65.136' AND namespace = 'kube-system' 
+ORDER BY name ASC;
+```
+:::
+
 ### Example
 ```bash
-AUTH='{ "k8s": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}
+export K8S_TOKEN='eyJhbGciOiJ...'
+AUTH='{ "k8s": { "type": "api_key", "valuePrefix": "Bearer ", "credentialsenvvar": "K8S_TOKEN" } }'
 stackql shell --auth="${AUTH}"
 ```
 ## Services

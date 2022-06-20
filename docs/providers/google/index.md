@@ -28,7 +28,7 @@ REGISTRY PULL google v0.1.2;
 {
     "google": {
         /**
-            * Type of authentication to use, suported values include: service_account, api_key, basic
+            * Type of authentication to use, suported values include: service_account, interactive
             * @type String
             */
         "type": string, 
@@ -37,16 +37,6 @@ REGISTRY PULL google v0.1.2;
             * @type String
             */
         "credentialsfilepath": string, 
-        /**
-            * Environment variable name containing the api key or credentials.
-            * @type String
-            */
-        "credentialsenvvar": string, 
-        /**
-            * Value prepended to the request header, e.g. "Bearer "
-            * @type String
-            */
-        "valuePrefix": string, 
     }
 }
 ```
