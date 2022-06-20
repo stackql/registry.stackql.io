@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | Unique identifier of the package version. |
 | `name` | `string` | The name of the package version. |
 | `description` | `string` |  |
-| `license` | `string` |  |
-| `url` | `string` |  |
-| `updated_at` | `string` |  |
-| `html_url` | `string` |  |
-| `metadata` | `object` |  |
 | `created_at` | `string` |  |
+| `metadata` | `object` |  |
+| `updated_at` | `string` |  |
+| `license` | `string` |  |
 | `package_html_url` | `string` |  |
 | `deleted_at` | `string` |  |
+| `url` | `string` |  |
+| `html_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_all_package_versions_for_package_owned_by_authenticated_user` | `SELECT` | `package_name, package_type` | Returns all package versions for a package owned by the authenticated user.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. |
 | `get_all_package_versions_for_package_owned_by_org` | `SELECT` | `org, package_name, package_type` | Returns all package versions for a package owned by an organization.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. |
 | `get_all_package_versions_for_package_owned_by_user` | `SELECT` | `package_name, package_type, username` | Returns all package versions for a public package owned by a specified user.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. |

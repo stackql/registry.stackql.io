@@ -23,18 +23,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `conditions` | `object` |
-| `created` | `string` |
 | `lastUpdated` | `string` |
 | `status` | `string` |
 | `type` | `string` |
 | `actions` | `object` |
+| `conditions` | `object` |
+| `created` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `ruleId` | Fetches a specific group rule by id from your organization |
 | `list` | `SELECT` |  | Lists all group rules for your organization. |
 | `insert` | `INSERT` |  | Creates a group rule to dynamically add users to the specified group if they match the condition |

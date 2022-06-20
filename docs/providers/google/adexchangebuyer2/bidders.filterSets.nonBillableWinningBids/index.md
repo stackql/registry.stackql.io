@@ -23,10 +23,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nonBillableWinningBidStatusRows` | `array` | List of rows, with counts of bids not billed aggregated by reason. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A token to retrieve the next page of results. Pass this value in the ListNonBillableWinningBidsRequest.pageToken field in the subsequent call to the nonBillableWinningBids.list method to retrieve the next page of results. |
+| `nonBillableWinningBidStatusRows` | `array` | List of rows, with counts of bids not billed aggregated by reason. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `biddersId, filterSetsId` |

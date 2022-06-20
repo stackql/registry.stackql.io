@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `connections` | `array` | The list of people that the requestor is connected to. |
 | `nextPageToken` | `string` | A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
 | `nextSyncToken` | `string` | A token, which can be sent as `sync_token` to retrieve changes since the last request. Request must set `request_sync_token` to return the sync token. When the response is paginated, only the last page will contain `nextSyncToken`. |
@@ -31,5 +31,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `totalPeople` | `integer` | **DEPRECATED** (Please use totalItems) The total number of people in the list without pagination. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `peopleId` |

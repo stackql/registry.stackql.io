@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The ID that YouTube uses to uniquely identify the activity. |
-| `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "youtube#activity". |
-| `snippet` | `object` | Basic details about an activity, including title, description, thumbnails, activity type and group. Next ID: 12 |
 | `contentDetails` | `object` | Details about the content of an activity: the video that was shared, the channel that was subscribed to, etc. |
 | `etag` | `string` | Etag of this resource |
+| `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "youtube#activity". |
+| `snippet` | `object` | Basic details about an activity, including title, description, thumbnails, activity type and group. Next ID: 12 |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `part` |

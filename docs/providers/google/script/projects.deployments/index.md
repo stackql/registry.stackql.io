@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | The token that can be used in the next call to get the next page of results. |
+|:-----|:---------|:------------|
 | `deployments` | `array` | The list of deployments. |
+| `nextPageToken` | `string` | The token that can be used in the next call to get the next page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `deploymentId, scriptId` | Gets a deployment of an Apps Script project. |
 | `list` | `SELECT` | `scriptId` | Lists the deployments of an Apps Script project. |
 | `create` | `INSERT` | `scriptId` | Creates a deployment of an Apps Script project. |

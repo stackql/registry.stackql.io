@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `action` | `string` |
 | `created` | `string` |
 | `excludeZones` | `array` |
@@ -31,5 +31,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `_links` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` |  |

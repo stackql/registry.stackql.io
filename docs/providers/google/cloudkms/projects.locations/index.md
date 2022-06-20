@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | The standard List next-page token. |
+|:-----|:---------|:------------|
 | `locations` | `array` | A list of locations that matches the specified filter in the request. |
+| `nextPageToken` | `string` | The standard List next-page token. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `locationsId, projectsId` | Returns metadata for a given ImportJob. |
 | `list` | `SELECT` | `projectsId` | Lists information about the supported locations for this service. |
 | `generateRandomBytes` | `EXEC` | `locationsId, projectsId` | Generate random bytes using the Cloud KMS randomness source in the provided location. |

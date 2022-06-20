@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `id, sendAsEmail, userId` | Gets the specified S/MIME config for the specified send-as alias. |
 | `list` | `SELECT` | `sendAsEmail, userId` | Lists S/MIME configs for the specified send-as alias. |
 | `insert` | `INSERT` | `sendAsEmail, userId` | Insert (upload) the given S/MIME config for the specified send-as alias. Note that pkcs12 format is required for the key. |

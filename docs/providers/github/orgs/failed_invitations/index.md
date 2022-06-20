@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
-| `email` | `string` |  |
-| `failed_at` | `string` |  |
-| `created_at` | `string` |  |
-| `invitation_teams_url` | `string` |  |
-| `inviter` | `object` | Simple User |
-| `team_count` | `integer` |  |
-| `node_id` | `string` |  |
-| `failed_reason` | `string` |  |
 | `role` | `string` |  |
+| `created_at` | `string` |  |
+| `failed_reason` | `string` |  |
+| `node_id` | `string` |  |
 | `login` | `string` |  |
+| `invitation_teams_url` | `string` |  |
+| `email` | `string` |  |
+| `inviter` | `object` | Simple User |
+| `failed_at` | `string` |  |
+| `team_count` | `integer` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_failed_invitations` | `SELECT` | `org` |

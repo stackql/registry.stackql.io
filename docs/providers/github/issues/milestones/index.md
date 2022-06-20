@@ -23,26 +23,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
 | `description` | `string` |  |
+| `closed_at` | `string` |  |
+| `created_at` | `string` |  |
+| `due_on` | `string` |  |
+| `creator` | `object` | Simple User |
 | `number` | `integer` | The number of the milestone. |
+| `closed_issues` | `integer` |  |
+| `labels_url` | `string` |  |
+| `open_issues` | `integer` |  |
+| `updated_at` | `string` |  |
+| `url` | `string` |  |
+| `state` | `string` | The state of the milestone. |
 | `node_id` | `string` |  |
 | `html_url` | `string` |  |
-| `labels_url` | `string` |  |
-| `url` | `string` |  |
-| `closed_at` | `string` |  |
-| `state` | `string` | The state of the milestone. |
-| `creator` | `object` | Simple User |
-| `created_at` | `string` |  |
-| `closed_issues` | `integer` |  |
-| `updated_at` | `string` |  |
-| `due_on` | `string` |  |
 | `title` | `string` | The title of the milestone. |
-| `open_issues` | `integer` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_milestone` | `SELECT` | `milestone_number, owner, repo` |
 | `list_milestones` | `SELECT` | `owner, repo` |
 | `create_milestone` | `INSERT` | `owner, repo, data__title` |

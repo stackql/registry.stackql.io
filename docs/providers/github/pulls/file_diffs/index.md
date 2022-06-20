@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `changes` | `integer` |
-| `contents_url` | `string` |
-| `deletions` | `integer` |
-| `sha` | `string` |
+|:-----|:---------|
 | `previous_filename` | `string` |
-| `additions` | `integer` |
-| `filename` | `string` |
 | `patch` | `string` |
 | `raw_url` | `string` |
-| `blob_url` | `string` |
+| `contents_url` | `string` |
 | `status` | `string` |
+| `changes` | `integer` |
+| `deletions` | `integer` |
+| `blob_url` | `string` |
+| `sha` | `string` |
+| `additions` | `integer` |
+| `filename` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_files` | `SELECT` | `owner, pull_number, repo` |

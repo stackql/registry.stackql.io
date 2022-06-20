@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Output only. Identifier of the edit. Can be used in subsequent API calls. |
 | `expiryTimeSeconds` | `string` | Output only. The time (as seconds since Epoch) at which the edit will expire and will be no longer valid for use. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `editId, packageName` | Gets an app edit. |
 | `insert` | `INSERT` | `packageName` | Creates a new edit for an app. |
 | `delete` | `DELETE` | `editId, packageName` | Deletes an app edit. |

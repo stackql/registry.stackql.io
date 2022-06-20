@@ -28,15 +28,10 @@ REGISTRY PULL netlify v0.2.0;
 {
     "netlify": {
         /**
-            * Type of authentication to use, suported values include: service_account, api_key, basic
+            * Type of authentication to use, suported values include: api_key
             * @type String
             */
         "type": string, 
-        /**
-            * path to service account key file.
-            * @type String
-            */
-        "credentialsfilepath": string, 
         /**
             * Environment variable name containing the api key or credentials.
             * @type String
@@ -44,6 +39,7 @@ REGISTRY PULL netlify v0.2.0;
         "credentialsenvvar": string, 
         /**
             * Value prepended to the request header, e.g. "Bearer "
+            * Must be set to "Bearer "
             * @type String
             */
         "valuePrefix": string, 
@@ -52,7 +48,8 @@ REGISTRY PULL netlify v0.2.0;
 ```
 ### Example
 ```bash
-AUTH='{ "netlify": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}
+NETLIFY_TOKEN=yourtoken
+AUTH='{ "netlify": { "type": "api_key",  "credentialsenvvar": "NETLIFY_TOKEN", "valuePrefix": "Bearer " }}'
 stackql shell --auth="${AUTH}"
 ```
 ## Services

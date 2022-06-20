@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `enterpriseId, managedConfigurationForUserId, userId` | Retrieves details of a per-user managed configuration for an app for the specified user. |
 | `list` | `SELECT` | `enterpriseId, userId` | Lists all the per-user managed configurations for the specified user. Only the ID is set. |
 | `delete` | `DELETE` | `enterpriseId, managedConfigurationForUserId, userId` | Removes a per-user managed configuration for an app for the specified user. |

@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `description` | `string` |
-| `_embedded` | `object` |
-| `lastUpdated` | `string` |
-| `created` | `string` |
 | `label` | `string` |
-| `status` | `string` |
 | `type` | `string` |
 | `_links` | `object` |
+| `created` | `string` |
+| `lastUpdated` | `string` |
 | `assignmentType` | `string` |
+| `_embedded` | `object` |
+| `status` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `roleId, userId` | Gets role that is assigne to user. |
 | `list` | `SELECT` | `userId` | Lists all roles assigned to a user. |
 | `insert` | `INSERT` | `userId` | Assigns a role to a user. |

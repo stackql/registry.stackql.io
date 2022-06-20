@@ -23,30 +23,30 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | The ID of the installation. |
-| `single_file_name` | `string` |  |
-| `has_multiple_single_files` | `boolean` |  |
+| `updated_at` | `string` |  |
+| `suspended_at` | `string` |  |
+| `repository_selection` | `string` | Describe whether all repositories have been selected or there's a selection involved |
+| `permissions` | `object` | The permissions granted to the user-to-server access token. |
 | `target_type` | `string` |  |
+| `single_file_paths` | `array` |  |
+| `access_tokens_url` | `string` |  |
+| `repositories_url` | `string` |  |
 | `account` | `` |  |
 | `app_id` | `integer` |  |
-| `suspended_at` | `string` |  |
-| `created_at` | `string` |  |
-| `app_slug` | `string` |  |
-| `repository_selection` | `string` | Describe whether all repositories have been selected or there's a selection involved |
-| `access_tokens_url` | `string` |  |
-| `events` | `array` |  |
 | `contact_email` | `string` |  |
 | `target_id` | `integer` | The ID of the user or organization this token is being scoped to. |
-| `updated_at` | `string` |  |
-| `repositories_url` | `string` |  |
-| `suspended_by` | `object` | Simple User |
+| `created_at` | `string` |  |
+| `single_file_name` | `string` |  |
+| `app_slug` | `string` |  |
+| `has_multiple_single_files` | `boolean` |  |
 | `html_url` | `string` |  |
-| `permissions` | `object` | The permissions granted to the user-to-server access token. |
-| `single_file_paths` | `array` |  |
+| `events` | `array` |  |
+| `suspended_by` | `object` | Simple User |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_installation` | `SELECT` | `installation_id` | Enables an authenticated GitHub App to find an installation's information using the installation id.<br /><br />You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. |
 | `get_org_installation` | `SELECT` | `org` | Enables an authenticated GitHub App to find the organization's installation information.<br /><br />You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. |
 | `get_repo_installation` | `SELECT` | `owner, repo` | Enables an authenticated GitHub App to find the repository's installation information. The installation's account type will be either an organization or a user account, depending which account the repository belongs to.<br /><br />You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. |

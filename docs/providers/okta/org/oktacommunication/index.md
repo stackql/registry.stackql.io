@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `_links` | `object` |
 | `optOutEmailUsers` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` |  | Gets Okta Communication Settings of your organization. |
 | `optIn` | `EXEC` |  | Opts in all users of this org to Okta Communication emails. |
 | `optOut` | `EXEC` |  | Opts out all users of this org from Okta Communication emails. |

@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | A token to retrieve next page of results. Pass this value in ListCryptoKeysRequest.page_token to retrieve the next page of results. |
+|:-----|:---------|:------------|
 | `totalSize` | `integer` | The total number of CryptoKeys that matched the query. |
 | `cryptoKeys` | `array` | The list of CryptoKeys. |
+| `nextPageToken` | `string` | A token to retrieve next page of results. Pass this value in ListCryptoKeysRequest.page_token to retrieve the next page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `cryptoKeysId, keyRingsId, locationsId, projectsId` | Returns metadata for a given ImportJob. |
 | `list` | `SELECT` | `keyRingsId, locationsId, projectsId` | Lists CryptoKeys. |
 | `create` | `INSERT` | `keyRingsId, locationsId, projectsId` | Create a new CryptoKey within a KeyRing. CryptoKey.purpose and CryptoKey.version_template.algorithm are required. |

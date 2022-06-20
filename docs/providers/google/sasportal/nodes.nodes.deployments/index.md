@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `deployments` | `array` | The deployments that match the request. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A pagination token returned from a previous call to ListDeployments that indicates from where listing should continue. If the field is missing or empty, it means there are no more deployments. |
+| `deployments` | `array` | The deployments that match the request. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `nodesId, nodesId1` | Lists deployments. |
 | `create` | `INSERT` | `nodesId, nodesId1` | Creates a new deployment. |

@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_all_status_check_contexts` | `SELECT` | `branch, owner, repo` |
 | `add_status_check_contexts` | `INSERT` | `branch, owner, repo` |
 | `remove_status_check_contexts` | `DELETE` | `branch, owner, repo` |

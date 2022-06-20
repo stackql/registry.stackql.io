@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `drives` | `array` | The list of shared drives. If nextPageToken is populated, then this list may be incomplete and an additional page of results should be fetched. |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "drive#driveList". |
 | `nextPageToken` | `string` | The page token for the next page of shared drives. This will be absent if the end of the list has been reached. If the token is rejected for any reason, it should be discarded, and pagination should be restarted from the first page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `driveId` | Gets a shared drive's metadata by ID. |
 | `list` | `SELECT` |  | Lists the user's shared drives. |
 | `create` | `INSERT` | `requestId` | Creates a new shared drive. |

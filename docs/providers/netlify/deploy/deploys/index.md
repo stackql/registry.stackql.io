@@ -23,39 +23,39 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
+| `framework` | `string` |
+| `title` | `string` |
+| `published_at` | `string` |
+| `locked` | `boolean` |
+| `branch` | `string` |
+| `admin_url` | `string` |
 | `error_message` | `string` |
+| `required_functions` | `array` |
+| `deploy_ssl_url` | `string` |
+| `skipped` | `boolean` |
+| `build_id` | `string` |
+| `ssl_url` | `string` |
+| `deploy_url` | `string` |
+| `user_id` | `string` |
+| `required` | `array` |
+| `updated_at` | `string` |
+| `screenshot_url` | `string` |
+| `created_at` | `string` |
+| `draft` | `boolean` |
+| `commit_url` | `string` |
+| `site_capabilities` | `object` |
+| `state` | `string` |
+| `review_id` | `number` |
+| `review_url` | `string` |
+| `site_id` | `string` |
+| `commit_ref` | `string` |
 | `function_schedules` | `array` |
 | `context` | `string` |
-| `build_id` | `string` |
-| `deploy_url` | `string` |
-| `site_id` | `string` |
-| `updated_at` | `string` |
-| `state` | `string` |
-| `framework` | `string` |
-| `branch` | `string` |
-| `draft` | `boolean` |
-| `locked` | `boolean` |
 | `url` | `string` |
-| `admin_url` | `string` |
-| `published_at` | `string` |
-| `skipped` | `boolean` |
-| `review_id` | `number` |
-| `user_id` | `string` |
-| `site_capabilities` | `object` |
-| `review_url` | `string` |
-| `commit_url` | `string` |
-| `deploy_ssl_url` | `string` |
-| `title` | `string` |
-| `created_at` | `string` |
-| `required` | `array` |
-| `required_functions` | `array` |
-| `ssl_url` | `string` |
-| `screenshot_url` | `string` |
-| `commit_ref` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getDeploy` | `SELECT` | `deploy_id` |

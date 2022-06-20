@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `lastUpdated` | `string` |
-| `definitions` | `object` |
+| `title` | `string` |
 | `$schema` | `string` |
+| `properties` | `object` |
+| `lastUpdated` | `string` |
 | `created` | `string` |
+| `definitions` | `object` |
 | `_links` | `object` |
 | `type` | `string` |
-| `properties` | `object` |
-| `title` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `appInstanceId` | Fetches the Schema for an App User |
 | `insert` | `INSERT` | `appInstanceId` | Partial updates on the User Profile properties of the Application User Schema. |

@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
 | `node_id` | `string` |  |
 | `updated_at` | `string` |  |
@@ -34,7 +34,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `created_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_comment` | `SELECT` | `comment_id, gist_id` |
 | `list_comments` | `SELECT` | `gist_id` |
 | `create_comment` | `INSERT` | `gist_id, data__body` |

@@ -23,23 +23,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
 | `name` | `string` | The file name of the asset. |
-| `download_count` | `integer` |  |
 | `browser_download_url` | `string` |  |
-| `label` | `string` |  |
 | `uploader` | `object` | Simple User |
-| `content_type` | `string` |  |
-| `state` | `string` | State of the release asset. |
-| `created_at` | `string` |  |
-| `updated_at` | `string` |  |
-| `url` | `string` |  |
-| `size` | `integer` |  |
 | `node_id` | `string` |  |
+| `url` | `string` |  |
+| `label` | `string` |  |
+| `content_type` | `string` |  |
+| `created_at` | `string` |  |
+| `size` | `integer` |  |
+| `state` | `string` | State of the release asset. |
+| `updated_at` | `string` |  |
+| `download_count` | `integer` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_release_asset` | `SELECT` | `asset_id, owner, repo` | To download the asset's binary content, set the `Accept` header of the request to [`application/octet-stream`](https://docs.github.com/rest/overview/media-types). The API will either redirect the client to the location, or stream it directly if possible. API clients should handle both a `200` or `302` response. |
 | `list_release_assets` | `SELECT` | `owner, release_id, repo` |  |
 | `delete_release_asset` | `DELETE` | `asset_id, owner, repo` |  |

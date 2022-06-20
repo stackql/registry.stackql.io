@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `clusterId, enterpriseId, pageId` | Retrieves details of a cluster. |
 | `list` | `SELECT` | `enterpriseId, pageId` | Retrieves the details of all clusters on the specified page. |
 | `insert` | `INSERT` | `enterpriseId, pageId` | Inserts a new cluster in a page. |

@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | The page token for the next page of Team Drives. This will be absent if the end of the Team Drives list has been reached. If the token is rejected for any reason, it should be discarded, and pagination should be restarted from the first page of results. |
+|:-----|:---------|:------------|
 | `teamDrives` | `array` | The list of Team Drives. If nextPageToken is populated, then this list may be incomplete and an additional page of results should be fetched. |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "drive#teamDriveList". |
+| `nextPageToken` | `string` | The page token for the next page of Team Drives. This will be absent if the end of the Team Drives list has been reached. If the token is rejected for any reason, it should be discarded, and pagination should be restarted from the first page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `teamDriveId` | Deprecated use drives.get instead. |
 | `list` | `SELECT` |  | Deprecated use drives.list instead. |
 | `create` | `INSERT` | `requestId` | Deprecated use drives.create instead. |

@@ -23,29 +23,29 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
+| `created_at` | `string` |  |
 | `head_branch` | `string` |  |
-| `runs_rerequestable` | `boolean` |  |
-| `rerequestable` | `boolean` |  |
-| `head_commit` | `object` | Simple Commit |
-| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
-| `pull_requests` | `array` |  |
+| `before` | `string` |  |
 | `latest_check_runs_count` | `integer` |  |
+| `updated_at` | `string` |  |
+| `repository` | `object` | Minimal Repository |
+| `after` | `string` |  |
+| `head_commit` | `object` | Simple Commit |
+| `check_runs_url` | `string` |  |
 | `conclusion` | `string` |  |
 | `head_sha` | `string` | The SHA of the head commit that is being checked. |
+| `runs_rerequestable` | `boolean` |  |
+| `rerequestable` | `boolean` |  |
+| `pull_requests` | `array` |  |
+| `app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
 | `status` | `string` |  |
-| `created_at` | `string` |  |
-| `check_runs_url` | `string` |  |
 | `node_id` | `string` |  |
-| `repository` | `object` | Minimal Repository |
-| `updated_at` | `string` |  |
-| `before` | `string` |  |
 | `url` | `string` |  |
-| `after` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_suite` | `SELECT` | `check_suite_id, owner, repo` | **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array and a `null` value for `head_branch`.<br /><br />Gets a single check suite using its `id`. GitHub Apps must have the `checks:read` permission on a private repository or pull access to a public repository to get check suites. OAuth Apps and authenticated users must have the `repo` scope to get check suites in a private repository. |
 | `list_suites_for_ref` | `SELECT` | `owner, ref, repo` | **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array and a `null` value for `head_branch`.<br /><br />Lists check suites for a commit `ref`. The `ref` can be a SHA, branch name, or a tag name. GitHub Apps must have the `checks:read` permission on a private repository or pull access to a public repository to list check suites. OAuth Apps and authenticated users must have the `repo` scope to get check suites in a private repository. |
 | `create_suite` | `INSERT` | `owner, repo, data__head_sha` | **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array and a `null` value for `head_branch`.<br /><br />By default, check suites are automatically created when you create a [check run](https://docs.github.com/rest/reference/checks#check-runs). You only need to use this endpoint for manually creating check suites when you've disabled automatic creation using "[Update repository preferences for check suites](https://docs.github.com/rest/reference/checks#update-repository-preferences-for-check-suites)". Your GitHub App must have the `checks:write` permission to create check suites. |

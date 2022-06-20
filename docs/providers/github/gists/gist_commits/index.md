@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `version` | `string` |  |
-| `change_status` | `object` |  |
+|:-----|:---------|:------------|
 | `committed_at` | `string` |  |
 | `url` | `string` |  |
 | `user` | `object` | Simple User |
+| `version` | `string` |  |
+| `change_status` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_commits` | `SELECT` | `gist_id` |

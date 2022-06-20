@@ -23,23 +23,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Unique id of this volume annotation. |
-| `annotationDataLink` | `string` | Link to get data for this annotation. |
-| `data` | `string` | Data for this annotation. |
-| `kind` | `string` | Resource Type |
-| `annotationDataId` | `string` | The annotation data id for this volume annotation. |
-| `layerId` | `string` | The Layer this annotation is for. |
 | `updated` | `string` | Timestamp for the last time this anntoation was updated. (RFC 3339 UTC date-time format). |
-| `selfLink` | `string` | URL to this resource. |
-| `pageIds` | `array` | Pages the annotation spans. |
-| `volumeId` | `string` | The Volume this annotation is for. |
 | `contentRanges` | `object` | The content ranges to identify the selected text. |
 | `selectedText` | `string` | Excerpt from the volume. |
+| `volumeId` | `string` | The Volume this annotation is for. |
+| `layerId` | `string` | The Layer this annotation is for. |
+| `annotationDataId` | `string` | The annotation data id for this volume annotation. |
 | `annotationType` | `string` | The type of annotation this is. |
+| `pageIds` | `array` | Pages the annotation spans. |
+| `data` | `string` | Data for this annotation. |
+| `kind` | `string` | Resource Type |
 | `deleted` | `boolean` | Indicates that this annotation is deleted. |
+| `annotationDataLink` | `string` | Link to get data for this annotation. |
+| `selfLink` | `string` | URL to this resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `annotationId, layerId, volumeId` | Gets the volume annotation. |
 | `list` | `SELECT` | `contentVersion, layerId, volumeId` | Gets the volume annotations for a volume and layer. |

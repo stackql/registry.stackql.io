@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `name` | `string` |
 | `url` | `string` |
 | `body` | `string` |
@@ -31,6 +31,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `key` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_all_codes_of_conduct` | `SELECT` |  |
 | `get_conduct_code` | `SELECT` | `key` |

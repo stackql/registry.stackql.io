@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` |  |
 | `payload` | `object` |  |
 | `public` | `boolean` |  |
@@ -34,7 +34,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `org` | `object` | Actor |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list_public_events` | `SELECT` |  | We delay the public events feed by five minutes, which means the most recent event returned by the public events API actually occurred at least five minutes ago. |
 | `list_public_events_for_repo_network` | `SELECT` | `owner, repo` |  |
 | `list_public_events_for_user` | `SELECT` | `username` |  |

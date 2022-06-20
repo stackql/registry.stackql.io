@@ -23,43 +23,43 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
-| `comments` | `integer` |  |
-| `repository_url` | `string` |  |
-| `closed_at` | `string` |  |
-| `events_url` | `string` |  |
-| `repository` | `object` | A git repository |
-| `assignee` | `object` | Simple User |
-| `labels_url` | `string` |  |
-| `user` | `object` | Simple User |
+| `title` | `string` | Title of the issue |
 | `closed_by` | `object` | Simple User |
-| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `updated_at` | `string` |  |
+| `comments` | `integer` |  |
 | `timeline_url` | `string` |  |
-| `labels` | `array` | Labels to associate with this issue; pass one or more label names to replace the set of labels on this issue; send an empty array to clear all labels from the issue; note that the labels are silently dropped for users without push access to the repository |
-| `milestone` | `object` | A collection of related issues and pull requests. |
-| `locked` | `boolean` |  |
-| `state` | `string` | State of the issue; either 'open' or 'closed' |
+| `created_at` | `string` |  |
+| `reactions` | `object` |  |
+| `node_id` | `string` |  |
 | `draft` | `boolean` |  |
 | `url` | `string` | URL for the issue |
-| `author_association` | `string` | How the author is associated with the repository. |
-| `updated_at` | `string` |  |
-| `reactions` | `object` |  |
-| `number` | `integer` | Number uniquely identifying the issue within its repository |
-| `node_id` | `string` |  |
-| `comments_url` | `string` |  |
-| `body_text` | `string` |  |
-| `body_html` | `string` |  |
-| `created_at` | `string` |  |
-| `title` | `string` | Title of the issue |
+| `labels_url` | `string` |  |
 | `body` | `string` | Contents of the issue |
-| `pull_request` | `object` |  |
-| `assignees` | `array` |  |
-| `active_lock_reason` | `string` |  |
+| `closed_at` | `string` |  |
+| `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `locked` | `boolean` |  |
 | `html_url` | `string` |  |
+| `number` | `integer` | Number uniquely identifying the issue within its repository |
+| `comments_url` | `string` |  |
+| `state` | `string` | State of the issue; either 'open' or 'closed' |
+| `milestone` | `object` | A collection of related issues and pull requests. |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `pull_request` | `object` |  |
+| `assignee` | `object` | Simple User |
+| `active_lock_reason` | `string` |  |
+| `body_html` | `string` |  |
+| `repository_url` | `string` |  |
+| `repository` | `object` | A git repository |
+| `assignees` | `array` |  |
+| `user` | `object` | Simple User |
+| `body_text` | `string` |  |
+| `events_url` | `string` |  |
+| `labels` | `array` | Labels to associate with this issue; pass one or more label names to replace the set of labels on this issue; send an empty array to clear all labels from the issue; note that the labels are silently dropped for users without push access to the repository |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `issue_number, owner, repo` | The API returns a [`301 Moved Permanently` status](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-redirects-redirects) if the issue was<br />[transferred](https://docs.github.com/articles/transferring-an-issue-to-another-repository/) to another repository. If<br />the issue was transferred to or deleted from a repository where the authenticated user lacks read access, the API<br />returns a `404 Not Found` status. If the issue was deleted from a repository where the authenticated user has read<br />access, the API returns a `410 Gone` status. To receive webhook events for transferred and deleted issues, subscribe<br />to the [`issues`](https://docs.github.com/webhooks/event-payloads/#issues) webhook.<br /><br />**Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this<br />reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by<br />the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull<br />request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint. |
 | `list` | `SELECT` |  | List issues assigned to the authenticated user across all visible repositories including owned repositories, member<br />repositories, and organization repositories. You can use the `filter` query parameter to fetch issues that are not<br />necessarily assigned to you.<br /><br /><br />**Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this<br />reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by<br />the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull<br />request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint. |
 | `list_for_org` | `SELECT` | `org` | List issues in an organization assigned to the authenticated user.<br /><br />**Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this<br />reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by<br />the `pull_request` key. Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull<br />request id, use the "[List pull requests](https://docs.github.com/rest/reference/pulls#list-pull-requests)" endpoint. |

@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
 | `description` | `string` |
 | `lastUpdated` | `string` |
-| `_embedded` | `object` |
+| `status` | `string` |
 | `type` | `string` |
 | `_links` | `object` |
 | `priority` | `integer` |
 | `created` | `string` |
 | `system` | `boolean` |
+| `_embedded` | `object` |
 | `conditions` | `object` |
-| `status` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `policyId, ruleId` | Gets a policy rule. |
 | `list` | `SELECT` | `type` | Gets all policies with the specified type. |
 | `insert` | `INSERT` | `policyId` | Creates a policy rule. |

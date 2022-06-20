@@ -23,23 +23,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | [Output Only] The unique identifier for the resource. This identifier is defined by the server. |
 | `name` | `string` | Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. |
 | `description` | `string` | An optional description of this resource. Provide this property when you create the resource. |
-| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
-| `region` | `string` | [Output Only] URI of the region where the router resides. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body. |
-| `bgpPeers` | `array` | BGP information that must be configured into the routing stack to establish BGP peering. This information must specify the peer ASN and either the interface name, IP address, or peer IP address. Please refer to RFC4273. |
-| `kind` | `string` | [Output Only] Type of resource. Always compute#router for routers. |
-| `interfaces` | `array` | Router interfaces. Each interface requires either one linked resource, (for example, linkedVpnTunnel), or IP address and IP address range (for example, ipRange), or both. |
-| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
-| `network` | `string` | URI of the network to which this router belongs. |
-| `bgp` | `object` |  |
 | `encryptedInterconnectRouter` | `boolean` | Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments). Not currently available publicly.  |
+| `bgpPeers` | `array` | BGP information that must be configured into the routing stack to establish BGP peering. This information must specify the peer ASN and either the interface name, IP address, or peer IP address. Please refer to RFC4273. |
+| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
+| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
 | `nats` | `array` | A list of NAT services created in this router. |
+| `interfaces` | `array` | Router interfaces. Each interface requires either one linked resource, (for example, linkedVpnTunnel), or IP address and IP address range (for example, ipRange), or both. |
+| `kind` | `string` | [Output Only] Type of resource. Always compute#router for routers. |
+| `region` | `string` | [Output Only] URI of the region where the router resides. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body. |
+| `bgp` | `object` |  |
+| `network` | `string` | URI of the network to which this router belongs. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `project, region, router` | Returns the specified Router resource. Gets a list of available routers by making a list() request. |
 | `list` | `SELECT` | `project, region` | Retrieves a list of Router resources available to the specified project. |
 | `insert` | `INSERT` | `project, region` | Creates a Router resource in the specified project and region using the data included in the request. |

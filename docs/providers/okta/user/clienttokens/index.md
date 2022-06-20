@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `_links` | `object` |
-| `scopes` | `array` |
 | `expiresAt` | `string` |
-| `_embedded` | `object` |
-| `created` | `string` |
-| `lastUpdated` | `string` |
-| `clientId` | `string` |
-| `userId` | `string` |
+| `scopes` | `array` |
 | `createdBy` | `object` |
-| `issuer` | `string` |
+| `lastUpdated` | `string` |
 | `status` | `string` |
+| `issuer` | `string` |
+| `userId` | `string` |
+| `clientId` | `string` |
+| `created` | `string` |
+| `_embedded` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `clientId, tokenId, userId` | Gets a refresh token issued for the specified User and Client. |
 | `list` | `SELECT` | `clientId, userId` | Lists all refresh tokens issued for the specified User and Client. |
 | `delete` | `DELETE` | `clientId, tokenId, userId` | Revokes the specified refresh token. |

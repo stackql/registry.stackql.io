@@ -23,10 +23,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | If not empty, indicates that there may be more devices that match the request; this value should be passed in a new `ListDevicesRequest`. |
+|:-----|:---------|:------------|
 | `devices` | `array` | The devices that match the request. |
+| `nextPageToken` | `string` | If not empty, indicates that there may be more devices that match the request; this value should be passed in a new `ListDevicesRequest`. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `groupsId, locationsId, projectsId, registriesId` |

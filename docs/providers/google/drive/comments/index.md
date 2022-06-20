@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "drive#commentList". |
 | `nextPageToken` | `string` | The page token for the next page of comments. This will be absent if the end of the comments list has been reached. If the token is rejected for any reason, it should be discarded, and pagination should be restarted from the first page of results. |
 | `comments` | `array` | The list of comments. If nextPageToken is populated, then this list may be incomplete and an additional page of results should be fetched. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `commentId, fileId` | Gets a comment by ID. |
 | `list` | `SELECT` | `fileId` | Lists a file's comments. |
 | `create` | `INSERT` | `fileId` | Creates a new comment on a file. |

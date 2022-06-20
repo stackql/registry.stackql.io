@@ -23,26 +23,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `billing_details` | `string` |
-| `updated_at` | `string` |
+| `billing_period` | `string` |
+| `slug` | `string` |
 | `created_at` | `string` |
+| `roles_allowed` | `array` |
+| `type_name` | `string` |
+| `billing_name` | `string` |
+| `owner_ids` | `array` |
+| `payment_method_id` | `string` |
+| `billing_details` | `string` |
+| `capabilities` | `object` |
+| `updated_at` | `string` |
+| `billing_email` | `string` |
 | `type` | `string` |
 | `type_id` | `string` |
-| `billing_period` | `string` |
-| `billing_name` | `string` |
-| `billing_email` | `string` |
-| `roles_allowed` | `array` |
-| `payment_method_id` | `string` |
-| `type_name` | `string` |
-| `owner_ids` | `array` |
-| `slug` | `string` |
-| `capabilities` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getAccount` | `SELECT` | `account_id` |
 | `listAccountsForUser` | `SELECT` |  |
 | `createAccount` | `INSERT` | `data__name, data__type_id` |

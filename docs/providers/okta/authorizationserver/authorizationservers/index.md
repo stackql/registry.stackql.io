@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
 | `description` | `string` |
+| `audiences` | `array` |
+| `issuerMode` | `string` |
+| `created` | `string` |
 | `credentials` | `object` |
 | `issuer` | `string` |
-| `issuerMode` | `string` |
 | `_links` | `object` |
-| `created` | `string` |
-| `audiences` | `array` |
-| `status` | `string` |
 | `lastUpdated` | `string` |
+| `status` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `authServerId` |
 | `list` | `SELECT` |  |
 | `insert` | `INSERT` |  |

@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
+| `clones` | `array` |
 | `count` | `integer` |
 | `uniques` | `integer` |
-| `clones` | `array` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_clones` | `SELECT` | `owner, repo` |

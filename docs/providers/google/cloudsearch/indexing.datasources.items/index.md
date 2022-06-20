@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `name` | `string` | Name of the Item. Format: datasources/{source_id}/items/{item_id} This is a required field. The maximum length is 1536 characters. |
-| `acl` | `object` | Access control list information for the item. For more information see [Map ACLs](/cloud-search/docs/guides/acls). |
 | `metadata` | `object` | Available metadata fields for the item. |
-| `payload` | `string` | Additional state connector can store for this item. The maximum length is 10000 bytes. |
-| `status` | `object` | This contains item's status and any errors. |
 | `version` | `string` | Required. The indexing system stores the version from the datasource as a byte string and compares the Item version in the index to the version of the queued Item using lexical ordering. Cloud Search Indexing won't index or delete any queued item with a version value that is less than or equal to the version of the currently indexed item. The maximum length for this field is 1024 bytes. |
-| `queue` | `string` | Queue this item belongs to. The maximum length is 100 characters. |
+| `status` | `object` | This contains item's status and any errors. |
+| `acl` | `object` | Access control list information for the item. For more information see [Map ACLs](/cloud-search/docs/guides/acls). |
 | `content` | `object` | Content of an item to be indexed and surfaced by Cloud Search. Only UTF-8 encoded strings are allowed as inlineContent. If the content is uploaded and not binary, it must be UTF-8 encoded. |
-| `structuredData` | `object` | Available structured data fields for the item. |
+| `queue` | `string` | Queue this item belongs to. The maximum length is 100 characters. |
 | `itemType` | `string` | Type for this item. |
+| `structuredData` | `object` | Available structured data fields for the item. |
+| `payload` | `string` | Additional state connector can store for this item. The maximum length is 10000 bytes. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `datasourcesId, itemsId` | Gets Item resource by item name. This API requires an admin or service account to execute. The service account used is the one whitelisted in the corresponding data source. |
 | `list` | `SELECT` | `datasourcesId` | Lists all or a subset of Item resources. This API requires an admin or service account to execute. The service account used is the one whitelisted in the corresponding data source. |
 | `delete` | `DELETE` | `datasourcesId, itemsId` | Deletes Item resource for the specified resource name. This API requires an admin or service account to execute. The service account used is the one whitelisted in the corresponding data source. |

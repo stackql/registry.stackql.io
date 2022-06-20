@@ -23,18 +23,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `blob_href` | `string` |
-| `start_line` | `integer` |
+|:-----|:---------|
 | `start_column` | `integer` |
+| `start_line` | `integer` |
 | `end_column` | `integer` |
-| `annotation_level` | `string` |
-| `path` | `string` |
-| `raw_details` | `string` |
-| `end_line` | `integer` |
 | `message` | `string` |
+| `raw_details` | `string` |
+| `annotation_level` | `string` |
+| `end_line` | `integer` |
+| `path` | `string` |
 | `title` | `string` |
+| `blob_href` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_annotations` | `SELECT` | `check_run_id, owner, repo` |

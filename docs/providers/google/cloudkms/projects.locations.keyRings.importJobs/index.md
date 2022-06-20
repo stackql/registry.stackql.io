@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `totalSize` | `integer` | The total number of ImportJobs that matched the query. |
 | `importJobs` | `array` | The list of ImportJobs. |
 | `nextPageToken` | `string` | A token to retrieve next page of results. Pass this value in ListImportJobsRequest.page_token to retrieve the next page of results. |
-| `totalSize` | `integer` | The total number of ImportJobs that matched the query. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `importJobsId, keyRingsId, locationsId, projectsId` | Returns metadata for a given ImportJob. |
 | `list` | `SELECT` | `keyRingsId, locationsId, projectsId` | Lists ImportJobs. |
 | `create` | `INSERT` | `keyRingsId, locationsId, projectsId` | Create a new ImportJob within a KeyRing. ImportJob.import_method is required. |

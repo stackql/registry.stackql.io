@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `labels` | `array` |
 | `total_count` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list_labels_for_self_hosted_runner_for_org` | `SELECT` | `org, runner_id` | Lists all labels for a self-hosted runner configured in an organization.<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. |
 | `list_labels_for_self_hosted_runner_for_repo` | `SELECT` | `owner, repo, runner_id` | Lists all labels for a self-hosted runner configured in a repository.<br /><br />You must authenticate using an access token with the `repo` scope to use this<br />endpoint. |
 | `add_custom_labels_to_self_hosted_runner_for_org` | `INSERT` | `org, runner_id, data__labels` | Add custom labels to a self-hosted runner configured in an organization.<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. |

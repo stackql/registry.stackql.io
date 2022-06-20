@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `devices` | `array` | The devices that match the request. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A pagination token returned from a previous call to ListDevices that indicates from where listing should continue. If the field is missing or empty, it means there is no more devices. |
+| `devices` | `array` | The devices that match the request. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `nodesId, nodesId1` | Lists devices under a node or customer. |
 | `create` | `INSERT` | `nodesId, nodesId1` | Creates a device under a node or customer. |
 | `createSigned` | `EXEC` | `nodesId, nodesId1` | Creates a signed device under a node or customer. |

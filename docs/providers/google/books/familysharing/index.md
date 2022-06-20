@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `getFamilyInfo` | `EXEC` |  | Gets information regarding the family that the user is part of. |
 | `share` | `EXEC` |  | Initiates sharing of the content with the user's family. Empty response indicates success. |
 | `unshare` | `EXEC` |  | Initiates revoking content that has already been shared with the user's family. Empty response indicates success. |

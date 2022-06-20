@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `locations` | `array` | Locations where at least one type of CMLE capability is available. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | Optional. Pass this token as the `page_token` field of the request for a subsequent call. |
+| `locations` | `array` | Locations where at least one type of CMLE capability is available. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `locationsId, projectsId` | Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service. |
 | `list` | `SELECT` | `projectsId` | List all locations that provides at least one type of CMLE capability. |

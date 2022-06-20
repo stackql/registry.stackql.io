@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `status` | `string` |
-| `origin` | `string` |
-| `scopes` | `array` |
-| `_links` | `object` |
-| `createdBy` | `string` |
-| `lastUpdatedBy` | `string` |
 | `created` | `string` |
+| `scopes` | `array` |
 | `lastUpdated` | `string` |
+| `origin` | `string` |
+| `createdBy` | `string` |
+| `_links` | `object` |
+| `status` | `string` |
+| `lastUpdatedBy` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `trustedOriginId` |
 | `list` | `SELECT` |  |
 | `insert` | `INSERT` |  |

@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `customers` | `array` | List of customers of the vendor. |
 | `nextPageToken` | `string` | A token to retrieve the next page of results. Omitted if no further results are available. |
 | `totalSize` | `integer` | The total count of items in the list irrespective of pagination. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `partnersId` | Lists the customers of the vendor. |
 | `create` | `INSERT` | `partnersId` | Creates a customer for zero-touch enrollment. After the method returns successfully, admin and owner roles can manage devices and EMM configs by calling API methods or using their zero-touch enrollment portal. The customer receives an email that welcomes them to zero-touch enrollment and explains how to sign into the portal. |

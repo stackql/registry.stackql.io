@@ -23,18 +23,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `appAssignmentId` | `string` |
-| `linkUrl` | `string` |
-| `hidden` | `boolean` |
 | `logoUrl` | `string` |
-| `appName` | `string` |
-| `sortOrder` | `integer` |
-| `appInstanceId` | `string` |
-| `label` | `string` |
+| `linkUrl` | `string` |
 | `credentialsSetup` | `boolean` |
+| `appInstanceId` | `string` |
+| `appAssignmentId` | `string` |
+| `appName` | `string` |
+| `hidden` | `boolean` |
+| `label` | `string` |
+| `sortOrder` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `userId` |

@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `catalogItems` | `array` | The catalog items. |
 | `nextPageToken` | `string` | If empty, the list is complete. If nonempty, the token to pass to the next request's ListCatalogItemRequest.page_token. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `catalogItemsId, catalogsId, locationsId, projectsId` | Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service. |
 | `list` | `SELECT` | `catalogsId, locationsId, projectsId` | Gets a list of catalog items. |
 | `create` | `INSERT` | `catalogsId, locationsId, projectsId` | Creates a catalog item. |

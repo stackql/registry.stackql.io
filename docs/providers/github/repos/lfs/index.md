@@ -25,6 +25,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `disable_lfs_for_repo` | `EXEC` | `owner, repo` |
 | `enable_lfs_for_repo` | `EXEC` | `owner, repo` |

@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `scoreValue` | `string` | The numerical value of this score. |
+| `timeSpan` | `string` | The time span of this high score. |
+| `formattedScore` | `string` | The localized string for the numerical value of this score. |
+| `player` | `object` | A Player resource. |
 | `writeTimestampMillis` | `string` | The timestamp at which this score was recorded, in milliseconds since the epoch in UTC. |
 | `scoreRank` | `string` | The rank of this score for this leaderboard. |
-| `formattedScore` | `string` | The localized string for the numerical value of this score. |
 | `kind` | `string` | Uniquely identifies the type of this resource. Value is always the fixed string `games#leaderboardEntry`. |
-| `player` | `object` | A Player resource. |
-| `timeSpan` | `string` | The time span of this high score. |
-| `scoreValue` | `string` | The numerical value of this score. |
-| `formattedScoreRank` | `string` | The localized string for the rank of this score for this leaderboard. |
 | `scoreTag` | `string` | Additional information about the score. Values must contain no more than 64 URI-safe characters as defined by section 2.3 of RFC 3986. |
+| `formattedScoreRank` | `string` | The localized string for the rank of this score for this leaderboard. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `leaderboardId, playerId, timeSpan` | Get high scores, and optionally ranks, in leaderboards for the currently authenticated player. For a specific time span, `leaderboardId` can be set to `ALL` to retrieve data for all leaderboards in a given time span. `NOTE: You cannot ask for 'ALL' leaderboards and 'ALL' timeSpans in the same request; only one parameter may be set to 'ALL'. |
 | `list` | `SELECT` | `collection, leaderboardId, timeSpan` | Lists the scores in a leaderboard, starting from the top. |
 | `listWindow` | `EXEC` | `collection, leaderboardId, timeSpan` | Lists the scores in a leaderboard around (and including) a player's score. |

@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `etag` | `string` | A hash of this page of results. |
 | `kind` | `string` | The resource type of the response. |
 | `pageToken` | `string` | A token used for paging results. Providing this token instead of the startIndex parameter can help you retrieve stable results when an underlying table is changing. |
 | `rows` | `array` | Rows of results. |
 | `totalRows` | `string` | The total number of rows in the complete table. |
-| `etag` | `string` | A hash of this page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `datasetId, projectId, tableId` | Retrieves table data from a specified set of rows. Requires the READER dataset role. |
 | `insertAll` | `EXEC` | `datasetId, projectId, tableId` | Streams data into BigQuery one record at a time without needing to run a load job. Requires the WRITER dataset role. |

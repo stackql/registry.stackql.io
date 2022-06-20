@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `resolution` | `string` | **Required when the `state` is `resolved`.** The reason for resolving the alert. Can be one of `false_positive`, `wont_fix`, `revoked`, or `used_in_tests`. |
-| `secret` | `string` | The secret that was detected. |
-| `created_at` | `string` | The time that the alert was created in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`. |
-| `state` | `string` | Sets the state of the secret scanning alert. Can be either `open` or `resolved`. You must provide `resolution` when you set the state to `resolved`. |
-| `url` | `string` | The REST API URL of the alert resource. |
-| `locations_url` | `string` | The REST API URL of the code locations for this alert. |
-| `number` | `integer` | The security alert number. |
-| `resolved_at` | `string` | The time that the alert was resolved in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`. |
-| `html_url` | `string` | The GitHub URL of the alert resource. |
+|:-----|:---------|:------------|
 | `resolved_by` | `object` | Simple User |
+| `resolved_at` | `string` | The time that the alert was resolved in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`. |
+| `url` | `string` | The REST API URL of the alert resource. |
+| `resolution` | `string` | **Required when the `state` is `resolved`.** The reason for resolving the alert. Can be one of `false_positive`, `wont_fix`, `revoked`, or `used_in_tests`. |
+| `created_at` | `string` | The time that the alert was created in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`. |
+| `number` | `integer` | The security alert number. |
+| `locations_url` | `string` | The REST API URL of the code locations for this alert. |
+| `state` | `string` | Sets the state of the secret scanning alert. Can be either `open` or `resolved`. You must provide `resolution` when you set the state to `resolved`. |
 | `secret_type` | `string` | The type of secret that secret scanning detected. |
+| `html_url` | `string` | The GitHub URL of the alert resource. |
+| `secret` | `string` | The secret that was detected. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_alert` | `SELECT` | `alert_number, owner, repo` | Gets a single secret scanning alert detected in a private repository. To use this endpoint, you must be an administrator for the repository or organization, and you must use an access token with the `repo` scope or `security_events` scope.<br /><br />GitHub Apps must have the `secret_scanning_alerts` read permission to use this endpoint. |
 | `list_alerts_for_enterprise` | `SELECT` | `enterprise` | Lists secret scanning alerts for eligible repositories in an enterprise, from newest to oldest.<br />To use this endpoint, you must be a member of the enterprise, and you must use an access token with the `repo` scope or `security_events` scope. Alerts are only returned for organizations in the enterprise for which you are an organization owner or a [security manager](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization). |
 | `list_alerts_for_org` | `SELECT` | `org` | Lists secret scanning alerts for eligible repositories in an organization, from newest to oldest.<br />To use this endpoint, you must be an administrator or security manager for the organization, and you must use an access token with the `repo` scope or `security_events` scope.<br /><br />GitHub Apps must have the `secret_scanning_alerts` read permission to use this endpoint. |

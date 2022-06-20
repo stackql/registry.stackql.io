@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `deploy_id` | `string` |
-| `done` | `boolean` |
 | `error` | `string` |
 | `sha` | `string` |
 | `created_at` | `string` |
+| `deploy_id` | `string` |
+| `done` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getSiteBuild` | `SELECT` | `build_id` |

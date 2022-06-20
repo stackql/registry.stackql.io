@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `kind` | `string` | Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds |
 | `metadata` | `object` | ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create. |
 | `spec` | `object` | LimitRangeSpec defines a min/max usage limit for resources that match on kind. |
 | `apiVersion` | `string` | APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `listCoreV1LimitRangeForAllNamespaces` | `SELECT` |  | list or watch objects of kind LimitRange |
 | `listCoreV1NamespacedLimitRange` | `SELECT` | `namespace` | list or watch objects of kind LimitRange |
 | `readCoreV1NamespacedLimitRange` | `SELECT` | `name, namespace` | read the specified LimitRange |

@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `accountId` | Lists available return carriers in the merchant account. |
 | `create` | `INSERT` | `accountId` | Links return carrier to a merchant account. |
 | `delete` | `DELETE` | `accountId, carrierAccountId` | Delete a return carrier in the merchant account. |

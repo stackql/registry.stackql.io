@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `getUserSettings` | `EXEC` |  | Gets the current settings for the user. |
 | `releaseDownloadAccess` | `EXEC` | `cpksver, volumeIds` | Release downloaded content access restriction. |
 | `requestAccess` | `EXEC` | `cpksver, nonce, source, volumeId` | Request concurrent and download access restrictions. |

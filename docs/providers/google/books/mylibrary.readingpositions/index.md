@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `updated` | `string` | Timestamp when this reading position was last updated (formatted UTC timestamp with millisecond resolution). |
+| `volumeId` | `string` | Volume id associated with this reading position. |
 | `epubCfiPosition` | `string` | Position in an EPUB as a CFI. |
 | `gbImagePosition` | `string` | Position in a volume for image-based content. |
 | `gbTextPosition` | `string` | Position in a volume for text-based content. |
 | `kind` | `string` | Resource type for a reading position. |
 | `pdfPosition` | `string` | Position in a PDF file. |
-| `updated` | `string` | Timestamp when this reading position was last updated (formatted UTC timestamp with millisecond resolution). |
-| `volumeId` | `string` | Volume id associated with this reading position. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `volumeId` | Retrieves my reading position information for a volume. |
 | `setPosition` | `EXEC` | `position, timestamp, volumeId` | Sets my reading position information for a volume. |

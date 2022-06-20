@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `content` | `string` |
+|:-----|:---------|
 | `encoding` | `string` |
 | `highlighted_content` | `string` |
 | `node_id` | `string` |
 | `sha` | `string` |
 | `size` | `integer` |
 | `url` | `string` |
+| `content` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_blob` | `SELECT` | `file_sha, owner, repo` | The `content` in the response will always be Base64 encoded.<br /><br />_Note_: This API supports blobs up to 100 megabytes in size. |
 | `create_blob` | `INSERT` | `owner, repo, data__content` |  |

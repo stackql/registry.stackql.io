@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
+| `csr` | `string` |
 | `kty` | `string` |
 | `created` | `string` |
-| `csr` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `csrId, idpId` | Gets a specific Certificate Signing Request model by id |
 | `list` | `SELECT` | `idpId` | Enumerates Certificate Signing Requests for an IdP |
 | `insert` | `INSERT` | `idpId` | Generates a new key pair and returns a Certificate Signing Request for it. |

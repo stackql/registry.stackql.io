@@ -23,26 +23,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `supported_record_types` | `array` |
 | `errors` | `array` |
+| `account_name` | `string` |
+| `account_slug` | `string` |
+| `supported_record_types` | `array` |
+| `records` | `array` |
 | `created_at` | `string` |
+| `updated_at` | `string` |
+| `ipv6_enabled` | `boolean` |
+| `domain` | `string` |
+| `dedicated` | `boolean` |
 | `account_id` | `string` |
 | `dns_servers` | `array` |
-| `dedicated` | `boolean` |
-| `site_id` | `string` |
-| `updated_at` | `string` |
-| `domain` | `string` |
-| `account_name` | `string` |
 | `user_id` | `string` |
-| `records` | `array` |
-| `ipv6_enabled` | `boolean` |
-| `account_slug` | `string` |
+| `site_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getDnsZone` | `SELECT` | `zone_id` |
 | `getDnsZones` | `SELECT` |  |
 | `createDnsZone` | `INSERT` |  |

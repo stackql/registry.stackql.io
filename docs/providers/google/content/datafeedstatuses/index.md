@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `resources` | `array` |  |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#datafeedstatusesListResponse`". |
 | `nextPageToken` | `string` | The token for the retrieval of the next page of datafeed statuses. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `datafeedId, merchantId` | Retrieves the status of a datafeed from your Merchant Center account. |
 | `list` | `SELECT` | `merchantId` | Lists the statuses of the datafeeds in your Merchant Center account. |
 | `custombatch` | `EXEC` |  | Gets multiple Merchant Center datafeed statuses in a single request. |

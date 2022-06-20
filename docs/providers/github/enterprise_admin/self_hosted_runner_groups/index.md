@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `number` |
 | `name` | `string` |
 | `runners_url` | `string` |
@@ -33,7 +33,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `default` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_self_hosted_runner_group_for_enterprise` | `SELECT` | `enterprise, runner_group_id` | Gets a specific self-hosted runner group for an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |
 | `list_self_hosted_runner_groups_for_enterprise` | `SELECT` | `enterprise` | Lists all self-hosted runner groups for an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |
 | `create_self_hosted_runner_group_for_enterprise` | `INSERT` | `enterprise, data__name` | Creates a new self-hosted runner group for an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |

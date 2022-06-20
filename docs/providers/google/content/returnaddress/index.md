@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#returnaddressListResponse`". |
 | `nextPageToken` | `string` | The token for the retrieval of the next page of addresses. |
 | `resources` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `merchantId, returnAddressId` | Gets a return address of the Merchant Center account. |
 | `list` | `SELECT` | `merchantId` | Lists the return addresses of the Merchant Center account. |
 | `insert` | `INSERT` | `merchantId` | Inserts a return address for the Merchant Center account. |

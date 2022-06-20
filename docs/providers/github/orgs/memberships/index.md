@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `state` | `string` | The state of the member in the organization. The `pending` state indicates the user has not yet accepted an invitation. |
+|:-----|:---------|:------------|
 | `url` | `string` |  |
 | `user` | `object` | Simple User |
 | `organization` | `object` | Organization Simple |
 | `organization_url` | `string` |  |
 | `permissions` | `object` |  |
 | `role` | `string` | The user's membership type in the organization. |
+| `state` | `string` | The state of the member in the organization. The `pending` state indicates the user has not yet accepted an invitation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_membership_for_authenticated_user` | `SELECT` | `org` |  |
 | `get_membership_for_user` | `SELECT` | `org, username` | In order to get a user's membership with an organization, the authenticated user must be an organization member. The `state` parameter in the response can be used to identify the user's membership status. |
 | `list_memberships_for_authenticated_user` | `SELECT` |  |  |

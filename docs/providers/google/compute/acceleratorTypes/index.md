@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | [Output Only] The unique identifier for the resource. This identifier is defined by the server. |
 | `name` | `string` | [Output Only] Name of the resource. |
 | `description` | `string` | [Output Only] An optional textual description of the resource. |
-| `kind` | `string` | [Output Only] The type of the resource. Always compute#acceleratorType for accelerator types. |
 | `zone` | `string` | [Output Only] The name of the zone where the accelerator type resides, such as us-central1-a. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body. |
-| `maximumCardsPerInstance` | `integer` | [Output Only] Maximum number of accelerator cards allowed per instance. |
 | `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
-| `selfLink` | `string` | [Output Only] Server-defined, fully qualified URL for this resource. |
 | `deprecated` | `object` | Deprecation status for a public resource. |
+| `kind` | `string` | [Output Only] The type of the resource. Always compute#acceleratorType for accelerator types. |
+| `maximumCardsPerInstance` | `integer` | [Output Only] Maximum number of accelerator cards allowed per instance. |
+| `selfLink` | `string` | [Output Only] Server-defined, fully qualified URL for this resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `acceleratorType, project, zone` | Returns the specified accelerator type. |
 | `list` | `SELECT` | `project, zone` | Retrieves a list of accelerator types that are available to the specified project. |
 | `aggregatedList` | `EXEC` | `project` | Retrieves an aggregated list of accelerator types. |

@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
 | `description` | `string` |
 | `signOnModes` | `array` |
-| `features` | `array` |
-| `category` | `string` |
-| `verificationStatus` | `string` |
+| `website` | `string` |
 | `_links` | `object` |
+| `verificationStatus` | `string` |
+| `category` | `string` |
+| `displayName` | `string` |
 | `status` | `string` |
 | `lastUpdated` | `string` |
-| `website` | `string` |
-| `displayName` | `string` |
+| `features` | `array` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `groupId, roleId` | Lists all App targets for an `APP_ADMIN` Role assigned to a Group. This methods return list may include full Applications or Instances. The response for an instance will have an `ID` value, while Application will not have an ID. |
 | `insert` | `INSERT` | `appName, groupId, roleId` | Success |
 | `delete` | `DELETE` | `appName, groupId, roleId` | Success |

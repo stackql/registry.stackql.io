@@ -23,15 +23,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `state` | `string` |
-| `type` | `string` |
-| `updated_at` | `string` |
 | `created_at` | `string` |
 | `data` | `object` |
 | `method_name` | `string` |
+| `state` | `string` |
+| `type` | `string` |
+| `updated_at` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `listPaymentMethodsForUser` | `SELECT` |  |

@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `datasets` | `array` | An array of the dataset resources in the project. Each resource contains basic information. For full information about a particular dataset resource, use the Datasets: get method. This property is omitted when there are no datasets in the project. |
 | `etag` | `string` | A hash value of the results page. You can use this property to determine if the page has changed since the last request. |
 | `kind` | `string` | The list type. This property always returns the value "bigquery#datasetList". |
 | `nextPageToken` | `string` | A token that can be used to request the next results page. This property is omitted on the final results page. |
-| `datasets` | `array` | An array of the dataset resources in the project. Each resource contains basic information. For full information about a particular dataset resource, use the Datasets: get method. This property is omitted when there are no datasets in the project. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `datasetId, projectId` | Returns the dataset specified by datasetID. |
 | `list` | `SELECT` | `projectId` | Lists all datasets in the specified project to which you have been granted the READER dataset role. |
 | `insert` | `INSERT` | `projectId, data__datasetReference` | Creates a new empty dataset. |

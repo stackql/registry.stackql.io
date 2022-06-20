@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `environments` | `array` | Environments. Always set. |
+| `executionId` | `string` | A Execution id Always set. |
 | `historyId` | `string` | A History id. Always set. |
 | `nextPageToken` | `string` | A continuation token to resume the query at the next item. Will only be set if there are more Environments to fetch. |
 | `projectId` | `string` | A Project id. Always set. |
-| `environments` | `array` | Environments. Always set. |
-| `executionId` | `string` | A Execution id Always set. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `environmentId, executionId, historyId, projectId` | Gets an Environment. May return any of the following canonical error codes: - PERMISSION_DENIED - if the user is not authorized to read project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the Environment does not exist |
 | `list` | `SELECT` | `executionId, historyId, projectId` | Lists Environments for a given Execution. The Environments are sorted by display name. May return any of the following canonical error codes: - PERMISSION_DENIED - if the user is not authorized to read project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the containing Execution does not exist |

@@ -23,30 +23,30 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` |  |
 | `description` | `string` |  |
-| `updated_at` | `string` |  |
-| `user` | `string` |  |
 | `comments_url` | `string` |  |
-| `truncated` | `boolean` |  |
 | `commits_url` | `string` |  |
 | `forks` | `array` |  |
+| `truncated` | `boolean` |  |
 | `created_at` | `string` |  |
-| `fork_of` | `object` | Gist |
-| `files` | `object` |  |
-| `history` | `array` |  |
-| `public` | `boolean` |  |
 | `git_pull_url` | `string` |  |
-| `git_push_url` | `string` |  |
-| `forks_url` | `string` |  |
 | `comments` | `integer` |  |
-| `node_id` | `string` |  |
-| `owner` | `object` | Simple User |
-| `html_url` | `string` |  |
 | `url` | `string` |  |
+| `node_id` | `string` |  |
+| `fork_of` | `object` | Gist |
+| `forks_url` | `string` |  |
+| `user` | `string` |  |
+| `owner` | `object` | Simple User |
+| `history` | `array` |  |
+| `files` | `object` |  |
+| `git_push_url` | `string` |  |
+| `html_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `public` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list_forks` | `SELECT` | `gist_id` |  |
 | `fork` | `EXEC` | `gist_id` | **Note**: This was previously `/gists/:gist_id/fork`. |

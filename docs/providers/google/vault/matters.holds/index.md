@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `holds` | `array` | The list of holds. |
 | `nextPageToken` | `string` | Page token to retrieve the next page of results in the list. If this is empty, then there are no more holds to list. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `holdId, matterId` | Gets the specified hold. |
 | `list` | `SELECT` | `matterId` | Lists the holds in a matter. |
 | `create` | `INSERT` | `matterId` | Creates a hold in the specified matter. |

@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `reservations` | `array` | List of reservations visible to the user. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | Token to retrieve the next page of results, or empty if there are no more results in the list. |
+| `reservations` | `array` | List of reservations visible to the user. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `locationsId, projectsId, reservationsId` | Returns information about the reservation. |
 | `list` | `SELECT` | `locationsId, projectsId` | Lists all the reservations for the project in the specified location. |
 | `create` | `INSERT` | `locationsId, projectsId` | Creates a new reservation resource. |

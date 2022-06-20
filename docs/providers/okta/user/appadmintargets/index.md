@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
 | `description` | `string` |
-| `features` | `array` |
-| `displayName` | `string` |
-| `website` | `string` |
-| `lastUpdated` | `string` |
-| `category` | `string` |
-| `_links` | `object` |
-| `signOnModes` | `array` |
-| `status` | `string` |
 | `verificationStatus` | `string` |
+| `displayName` | `string` |
+| `features` | `array` |
+| `lastUpdated` | `string` |
+| `website` | `string` |
+| `_links` | `object` |
+| `category` | `string` |
+| `status` | `string` |
+| `signOnModes` | `array` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `roleId, userId` | Lists all App targets for an `APP_ADMIN` Role assigned to a User. This methods return list may include full Applications or Instances. The response for an instance will have an `ID` value, while Application will not have an ID. |
 | `insert` | `INSERT` | `appName, applicationId, roleId, userId` | Add App Instance Target to App Administrator Role given to a User |
 | `delete` | `DELETE` | `appName, applicationId, roleId, userId` | Remove App Instance Target to App Administrator Role given to a User |

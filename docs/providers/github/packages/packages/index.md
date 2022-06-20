@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | Unique identifier of the package. |
 | `name` | `string` | The name of the package. |
-| `owner` | `object` | Simple User |
-| `created_at` | `string` |  |
-| `updated_at` | `string` |  |
-| `url` | `string` |  |
-| `repository` | `object` | Minimal Repository |
-| `version_count` | `integer` | The number of versions of the package. |
 | `html_url` | `string` |  |
+| `owner` | `object` | Simple User |
+| `url` | `string` |  |
 | `package_type` | `string` |  |
+| `repository` | `object` | Minimal Repository |
 | `visibility` | `string` |  |
+| `updated_at` | `string` |  |
+| `created_at` | `string` |  |
+| `version_count` | `integer` | The number of versions of the package. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_package_for_authenticated_user` | `SELECT` | `package_name, package_type` | Gets a specific package for a package owned by the authenticated user.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. |
 | `get_package_for_organization` | `SELECT` | `org, package_name, package_type` | Gets a specific package in an organization.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. |
 | `get_package_for_user` | `SELECT` | `package_name, package_type, username` | Gets a specific package metadata for a public package owned by a user.<br /><br />To use this endpoint, you must authenticate using an access token with the `packages:read` scope.<br />If `package_type` is not `container`, your token must also include the `repo` scope. |

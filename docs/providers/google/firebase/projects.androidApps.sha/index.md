@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `androidAppsId, projectsId` | Lists the SHA-1 and SHA-256 certificates for the specified AndroidApp. |
 | `create` | `INSERT` | `androidAppsId, projectsId` | Adds a ShaCertificate to the specified AndroidApp. |
 | `delete` | `DELETE` | `androidAppsId, projectsId, shaId` | Removes a ShaCertificate from the specified AndroidApp. |

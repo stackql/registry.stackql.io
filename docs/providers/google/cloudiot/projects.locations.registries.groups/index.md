@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `getIamPolicy` | `EXEC` | `groupsId, locationsId, projectsId, registriesId` | Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. |
 | `setIamPolicy` | `EXEC` | `groupsId, locationsId, projectsId, registriesId` | Sets the access control policy on the specified resource. Replaces any existing policy. |
 | `testIamPermissions` | `EXEC` | `groupsId, locationsId, projectsId, registriesId` | Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a NOT_FOUND error. |

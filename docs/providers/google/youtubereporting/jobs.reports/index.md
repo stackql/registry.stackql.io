@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | A token to retrieve next page of results. Pass this value in the ListReportsRequest.page_token field in the subsequent call to `ListReports` method to retrieve the next page of results. |
+|:-----|:---------|:------------|
 | `reports` | `array` | The list of report types. |
+| `nextPageToken` | `string` | A token to retrieve next page of results. Pass this value in the ListReportsRequest.page_token field in the subsequent call to `ListReports` method to retrieve the next page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `jobId, reportId` | Gets the metadata of a specific report. |
 | `list` | `SELECT` | `jobId` | Lists reports created by a specific job. Returns NOT_FOUND if the job does not exist. |

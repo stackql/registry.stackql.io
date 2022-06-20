@@ -25,6 +25,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `insert` | `INSERT` | `merchantId, productId` | Updates the local inventory of a product in your Merchant Center account. |
 | `custombatch` | `EXEC` |  | Updates local inventory for multiple products or stores in a single request. |

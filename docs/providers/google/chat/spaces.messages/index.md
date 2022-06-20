@@ -23,18 +23,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `name` | `string` | Resource name of the attachment, in the form "spaces/*/messages/*/attachments/*". |
-| `source` | `string` | The source of the attachment. |
 | `thumbnailUri` | `string` | Output only. The thumbnail URL which should be used to preview the attachment to a human user. Bots should not use this URL to download attachment content. |
 | `attachmentDataRef` | `object` | A reference to the data of an attachment. |
 | `contentName` | `string` | The original file name for the content, not the full path. |
 | `contentType` | `string` | The content type (MIME type) of the file. |
 | `downloadUri` | `string` | Output only. The download URL which should be used to allow a human user to download the attachment. Bots should not use this URL to download attachment content. |
 | `driveDataRef` | `object` | A reference to the data of a drive attachment. |
+| `source` | `string` | The source of the attachment. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `messagesId, spacesId` | Gets the metadata of a message attachment. The attachment data is fetched using the media API. |
 | `create` | `INSERT` | `spacesId` | Creates a message. |
 | `delete` | `DELETE` | `messagesId, spacesId` | Deletes a message. |

@@ -23,15 +23,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The ID that YouTube assigns to uniquely identify the message. |
-| `authorDetails` | `object` |  |
-| `etag` | `string` | Etag of this resource. |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "youtube#liveChatMessage". |
 | `snippet` | `object` | Next ID: 31 |
+| `authorDetails` | `object` |  |
+| `etag` | `string` | Etag of this resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `liveChatId, part` | Retrieves a list of resources, possibly filtered. |
 | `insert` | `INSERT` | `part` | Inserts a new resource into this collection. |
 | `delete` | `DELETE` | `id` | Deletes a chat message. |

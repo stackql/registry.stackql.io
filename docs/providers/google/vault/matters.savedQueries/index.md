@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | Page token to retrieve the next page of results in the list. If this is empty, then there are no more saved queries to list. |
 | `savedQueries` | `array` | List of saved queries. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `matterId, savedQueryId` | Retrieves the specified saved query. |
 | `list` | `SELECT` | `matterId` | Lists the saved queries in a matter. |
 | `create` | `INSERT` | `matterId` | Creates a saved query. |

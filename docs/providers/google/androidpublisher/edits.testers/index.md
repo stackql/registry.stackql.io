@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `editId, packageName, track` | Gets testers. |
 | `patch` | `EXEC` | `editId, packageName, track` | Patches testers. |
 | `update` | `EXEC` | `editId, packageName, track` | Updates testers. |

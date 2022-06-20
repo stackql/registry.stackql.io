@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `total_count` | `number` |
+|:-----|:---------|
 | `runners` | `array` |
+| `total_count` | `number` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_self_hosted_runner_for_enterprise` | `SELECT` | `enterprise, runner_id` | Gets a specific self-hosted runner configured in an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |
 | `list_self_hosted_runners_for_enterprise` | `SELECT` | `enterprise` | Lists all self-hosted runners configured for an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |
 | `list_self_hosted_runners_in_group_for_enterprise` | `SELECT` | `enterprise, runner_group_id` | Lists the self-hosted runners that are in a specific enterprise group.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |

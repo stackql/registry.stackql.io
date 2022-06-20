@@ -23,28 +23,28 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` |  |
 | `description` | `string` |  |
-| `public` | `boolean` |  |
-| `comments` | `integer` |  |
-| `owner` | `object` | Simple User |
 | `html_url` | `string` |  |
-| `url` | `string` |  |
-| `git_push_url` | `string` |  |
-| `node_id` | `string` |  |
 | `updated_at` | `string` |  |
-| `truncated` | `boolean` |  |
-| `user` | `object` | Simple User |
-| `forks` | `array` |  |
-| `git_pull_url` | `string` |  |
-| `comments_url` | `string` |  |
+| `owner` | `object` | Simple User |
 | `history` | `array` |  |
+| `forks` | `array` |  |
+| `node_id` | `string` |  |
 | `created_at` | `string` |  |
 | `files` | `object` |  |
+| `comments` | `integer` |  |
+| `url` | `string` |  |
 | `forks_url` | `string` |  |
+| `git_push_url` | `string` |  |
+| `git_pull_url` | `string` |  |
+| `comments_url` | `string` |  |
+| `user` | `object` | Simple User |
 | `commits_url` | `string` |  |
+| `public` | `boolean` |  |
+| `truncated` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_public` | `SELECT` |  |

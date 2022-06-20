@@ -23,10 +23,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `repricingRuleReports` | `array` | Daily reports for the given Repricing rule. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A token for retrieving the next page. Its absence means there is no subsequent page. |
+| `repricingRuleReports` | `array` | Daily reports for the given Repricing rule. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `merchantId, ruleId` |

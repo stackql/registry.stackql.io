@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | A token to retrieve the next page of results. Pass this value in the ListClientsRequest.pageToken field in the subsequent call to the accounts.clients.list method to retrieve the next page of results. |
+|:-----|:---------|:------------|
 | `clients` | `array` | The returned list of clients. |
+| `nextPageToken` | `string` | A token to retrieve the next page of results. Pass this value in the ListClientsRequest.pageToken field in the subsequent call to the accounts.clients.list method to retrieve the next page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, clientAccountId` | Gets a client buyer with a given client account ID. |
 | `list` | `SELECT` | `accountId` | Lists all the clients for the current sponsor buyer. |
 | `create` | `INSERT` | `accountId` | Creates a new client buyer. |

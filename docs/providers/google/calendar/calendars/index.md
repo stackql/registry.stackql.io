@@ -23,18 +23,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Identifier of the calendar. To retrieve IDs call the calendarList.list() method. |
 | `description` | `string` | Description of the calendar. Optional. |
-| `timeZone` | `string` | The time zone of the calendar. (Formatted as an IANA Time Zone Database name, e.g. "Europe/Zurich".) Optional. |
-| `conferenceProperties` | `object` |  |
 | `etag` | `string` | ETag of the resource. |
 | `kind` | `string` | Type of the resource ("calendar#calendar"). |
 | `location` | `string` | Geographic location of the calendar as free-form text. Optional. |
 | `summary` | `string` | Title of the calendar. |
+| `timeZone` | `string` | The time zone of the calendar. (Formatted as an IANA Time Zone Database name, e.g. "Europe/Zurich".) Optional. |
+| `conferenceProperties` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `calendarId` | Returns metadata for a calendar. |
 | `insert` | `INSERT` |  | Creates a secondary calendar. |
 | `delete` | `DELETE` | `calendarId` | Deletes a secondary calendar. Use calendars.clear for clearing all events on primary calendars. |

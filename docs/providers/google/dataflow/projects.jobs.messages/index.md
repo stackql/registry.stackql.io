@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `autoscalingEvents` | `array` | Autoscaling events in ascending timestamp order. |
 | `jobMessages` | `array` | Messages in ascending timestamp order. |
 | `nextPageToken` | `string` | The token to obtain the next page of results if there are more. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `jobId, projectId` |

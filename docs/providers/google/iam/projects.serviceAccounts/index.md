@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `accounts` | `array` | The list of matching service accounts. |
 | `nextPageToken` | `string` | To retrieve the next page of results, set ListServiceAccountsRequest.page_token to this value. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `projectsId, serviceAccountsId` | Gets the definition of a Role. |
 | `list` | `SELECT` | `projectsId` | Lists every ServiceAccount that belongs to a specific project. |
 | `create` | `INSERT` | `projectsId` | Creates a ServiceAccount. |

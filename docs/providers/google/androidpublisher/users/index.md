@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A token to pass to subsequent calls in order to retrieve subsequent results. This will not be set if there are no more results to return. |
 | `users` | `array` | The resulting users. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `developersId` | Lists all users with access to a developer account. |
 | `create` | `INSERT` | `developersId` | Grant access for a user to the given developer account. |
 | `delete` | `DELETE` | `developersId, usersId` | Removes all access for the user to the given developer account. |

@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | The unique identifier of the project column |
 | `name` | `string` | Name of the project column |
 | `url` | `string` |  |
@@ -34,7 +34,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `updated_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_column` | `SELECT` | `column_id` |
 | `list_columns` | `SELECT` | `project_id` |
 | `create_column` | `INSERT` | `project_id, data__name` |

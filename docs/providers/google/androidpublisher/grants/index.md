@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `create` | `INSERT` | `developersId, usersId` | Grant access for a user to the given package. |
 | `delete` | `DELETE` | `developersId, grantsId, usersId` | Removes all access for the user to the given developer account. |
 | `patch` | `EXEC` | `developersId, grantsId, usersId` | Updates access for the user to the developer account. |

@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `apks` | `array` | All APKs. |
+|:-----|:---------|:------------|
 | `kind` | `string` | The kind of this response ("androidpublisher#apksListResponse"). |
+| `apks` | `array` | All APKs. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `editId, packageName` | Lists all current APKs of the app and edit. |
 | `addexternallyhosted` | `EXEC` | `editId, packageName` | Creates a new APK without uploading the APK itself to Google Play, instead hosting the APK at a specified URL. This function is only available to organizations using Managed Play whose application is configured to restrict distribution to the organizations. |
 | `upload` | `EXEC` | `editId, packageName` | Uploads an APK and adds to the current edit. |

@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
-| `general_position` | `string` |
-| `goal` | `string` |
 | `goal_position` | `string` |
 | `site_id` | `string` |
 | `title` | `string` |
 | `general` | `string` |
+| `general_position` | `string` |
+| `goal` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getSiteSnippet` | `SELECT` | `site_id, snippet_id` |
 | `listSiteSnippets` | `SELECT` | `site_id` |
 | `createSiteSnippet` | `INSERT` | `site_id` |

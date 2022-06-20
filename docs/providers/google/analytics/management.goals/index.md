@@ -23,28 +23,28 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Goal ID. |
 | `name` | `string` | Goal name. |
-| `accountId` | `string` | Account ID to which this goal belongs. |
-| `type` | `string` | Goal type. Possible values are URL_DESTINATION, VISIT_TIME_ON_SITE, VISIT_NUM_PAGES, AND EVENT. |
-| `visitTimeOnSiteDetails` | `object` | Details for the goal of the type VISIT_TIME_ON_SITE. |
-| `profileId` | `string` | View (Profile) ID to which this goal belongs. |
-| `active` | `boolean` | Determines whether this goal is active. |
-| `webPropertyId` | `string` | Web property ID to which this goal belongs. The web property ID is of the form UA-XXXXX-YY. |
-| `eventDetails` | `object` | Details for the goal of the type EVENT. |
-| `parentLink` | `object` | Parent link for a goal. Points to the view (profile) to which this goal belongs. |
-| `internalWebPropertyId` | `string` | Internal ID for the web property to which this goal belongs. |
-| `selfLink` | `string` | Link for this goal. |
 | `created` | `string` | Time this goal was created. |
-| `visitNumPagesDetails` | `object` | Details for the goal of the type VISIT_NUM_PAGES. |
 | `updated` | `string` | Time this goal was last modified. |
-| `kind` | `string` | Resource type for an Analytics goal. |
-| `value` | `number` | Goal value. |
+| `visitNumPagesDetails` | `object` | Details for the goal of the type VISIT_NUM_PAGES. |
+| `active` | `boolean` | Determines whether this goal is active. |
+| `visitTimeOnSiteDetails` | `object` | Details for the goal of the type VISIT_TIME_ON_SITE. |
+| `accountId` | `string` | Account ID to which this goal belongs. |
+| `eventDetails` | `object` | Details for the goal of the type EVENT. |
+| `selfLink` | `string` | Link for this goal. |
 | `urlDestinationDetails` | `object` | Details for the goal of the type URL_DESTINATION. |
+| `parentLink` | `object` | Parent link for a goal. Points to the view (profile) to which this goal belongs. |
+| `value` | `number` | Goal value. |
+| `webPropertyId` | `string` | Web property ID to which this goal belongs. The web property ID is of the form UA-XXXXX-YY. |
+| `profileId` | `string` | View (Profile) ID to which this goal belongs. |
+| `kind` | `string` | Resource type for an Analytics goal. |
+| `internalWebPropertyId` | `string` | Internal ID for the web property to which this goal belongs. |
+| `type` | `string` | Goal type. Possible values are URL_DESTINATION, VISIT_TIME_ON_SITE, VISIT_NUM_PAGES, AND EVENT. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, goalId, profileId, webPropertyId` | Gets a goal to which the user has access. |
 | `list` | `SELECT` | `accountId, profileId, webPropertyId` | Lists goals to which the user has access. |
 | `insert` | `INSERT` | `accountId, profileId, webPropertyId` | Create a new goal. |

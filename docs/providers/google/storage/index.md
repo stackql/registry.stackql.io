@@ -11,7 +11,7 @@ description: Query and Deploy Cloud Infrastructure and Resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
-Lets you store and retrieve potentially-large, immutable data objects.  
+Stores and retrieves potentially large, immutable data objects.  
     
 
 ## Overview
@@ -19,7 +19,7 @@ Lets you store and retrieve potentially-large, immutable data objects.
 <tr><td><b>Name</b></td><td><code>google.storage</code></td></tr>
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Storage JSON API</td></tr>
-<tr><td><b>Description</b></td><td>Lets you store and retrieve potentially-large, immutable data objects.</td></tr>
+<tr><td><b>Description</b></td><td>Stores and retrieves potentially large, immutable data objects.</td></tr>
 <tr><td><b>Id</b></td><td><code>storage:v1beta2</code></td></tr>
 </tbody></table>
 

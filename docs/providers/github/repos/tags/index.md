@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `name` | `string` |
-| `node_id` | `string` |
 | `tarball_url` | `string` |
 | `zipball_url` | `string` |
 | `commit` | `object` |
+| `node_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_tags` | `SELECT` | `owner, repo` |

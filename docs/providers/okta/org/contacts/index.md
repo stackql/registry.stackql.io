@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `_links` | `object` |
 | `contactType` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `contactType` | Retrieves the URL of the User associated with the specified Contact Type. |
 | `list` | `SELECT` |  | Gets Contact Types of your organization. |
 | `update` | `EXEC` | `contactType` | Updates the User associated with the specified Contact Type. |

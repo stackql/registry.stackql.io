@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `publisherProfiles` | `array` | The list of matching publisher profiles. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | List pagination support |
+| `publisherProfiles` | `array` | The list of matching publisher profiles. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, publisherProfileId` | Gets the requested publisher profile by id. |
 | `list` | `SELECT` | `accountId` | List all publisher profiles visible to the buyer |

@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The leaderboard ID. |
 | `name` | `string` | The name of the leaderboard. |
 | `isIconUrlDefault` | `boolean` | Indicates whether the icon image being returned is a default image, or is game-provided. |
@@ -32,6 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `iconUrl` | `string` | The icon for the leaderboard. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `leaderboardId` | Retrieves the metadata of the leaderboard with the given ID. |
 | `list` | `SELECT` |  | Lists all the leaderboard metadata for your application. |

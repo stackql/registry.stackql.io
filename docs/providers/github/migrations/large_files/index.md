@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
+| `oid` | `string` |
 | `path` | `string` |
 | `ref_name` | `string` |
 | `size` | `integer` |
-| `oid` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_large_files` | `SELECT` | `owner, repo` | List files larger than 100MB found during the import |
 | `set_lfs_preference` | `EXEC` | `owner, repo, data__use_lfs` | You can import repositories from Subversion, Mercurial, and TFS that include files larger than 100MB. This ability is powered by [Git LFS](https://git-lfs.github.com). You can learn more about our LFS feature and working with large files [on our help site](https://docs.github.com/articles/versioning-large-files/). |

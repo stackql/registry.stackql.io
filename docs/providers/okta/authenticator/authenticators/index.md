@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `key` | `string` |
-| `settings` | `object` |
+| `lastUpdated` | `string` |
 | `status` | `string` |
+| `settings` | `object` |
 | `type` | `string` |
+| `key` | `string` |
 | `_links` | `object` |
 | `created` | `string` |
-| `lastUpdated` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `authenticatorId` |
 | `list` | `SELECT` |  |
 | `activate` | `EXEC` | `authenticatorId` |

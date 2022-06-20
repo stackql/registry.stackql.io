@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | A unique ID for this upload. |
-| `customDataSourceId` | `string` | Custom data source Id to which this data import belongs. |
-| `errors` | `array` | Data import errors collection. |
 | `kind` | `string` | Resource type for Analytics upload. |
 | `status` | `string` | Upload status. Possible values: PENDING, COMPLETED, FAILED, DELETING, DELETED. |
 | `uploadTime` | `string` | Time this file is uploaded. |
 | `accountId` | `string` | Account Id to which this upload belongs. |
+| `customDataSourceId` | `string` | Custom data source Id to which this data import belongs. |
+| `errors` | `array` | Data import errors collection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, customDataSourceId, uploadId, webPropertyId` | List uploads to which the user has access. |
 | `list` | `SELECT` | `accountId, customDataSourceId, webPropertyId` | List uploads to which the user has access. |
 | `deleteUploadData` | `EXEC` | `accountId, customDataSourceId, webPropertyId` | Delete data associated with a previous upload. |

@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The ID that YouTube uses to uniquely identify the channel section. |
 | `etag` | `string` | Etag of this resource. |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "youtube#channelSection". |
@@ -33,7 +33,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `contentDetails` | `object` | Details about a channelsection, including playlists and channels. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `part` | Retrieves a list of resources, possibly filtered. |
 | `insert` | `INSERT` | `part` | Inserts a new resource into this collection. |
 | `delete` | `DELETE` | `id` | Deletes a resource. |

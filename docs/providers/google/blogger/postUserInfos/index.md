@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `kind` | `string` | The kind of this entity. Always blogger#postUserInfo. |
 | `post` | `object` |  |
 | `post_user_info` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `blogId, postId, userId` | Gets one post and user info pair, by post_id and user_id. |
 | `list` | `SELECT` | `blogId, userId` | Lists post and user info pairs. |

@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `editId, imageType, language, packageName` | Lists all images. The response may be empty. |
 | `delete` | `DELETE` | `editId, imageId, imageType, language, packageName` | Deletes the image (specified by id) from the edit. |
 | `deleteall` | `EXEC` | `editId, imageType, language, packageName` | Deletes all images for the specified language and image type. Returns an empty response if no images are found. |

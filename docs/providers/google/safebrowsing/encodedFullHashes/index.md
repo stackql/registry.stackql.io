@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `matches` | `array` | The full hashes that matched the requested prefixes. |
 | `minimumWaitDuration` | `string` | The minimum duration the client must wait before issuing any find hashes request. If this field is not set, clients can issue a request as soon as they want. |
 | `negativeCacheDuration` | `string` | For requested entities that did not match the threat list, how long to cache the response. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `encodedRequest` |

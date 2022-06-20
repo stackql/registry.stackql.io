@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `getProfile` | `EXEC` | `userId` | Gets the current user's Gmail profile. |
 | `stop` | `EXEC` | `userId` | Stop receiving push notifications for the given user mailbox. |
 | `watch` | `EXEC` | `userId` | Set up or update a push notification watch on the given user mailbox. |

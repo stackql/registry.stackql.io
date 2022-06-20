@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | List pagination support. |
+|:-----|:---------|:------------|
 | `products` | `array` | The list of matching products at their head revision number. |
+| `nextPageToken` | `string` | List pagination support. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, productId` | Gets the requested product by ID. |
 | `list` | `SELECT` | `accountId` | List all products visible to the buyer (optionally filtered by the specified PQL query). |

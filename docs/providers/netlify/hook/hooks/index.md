@@ -23,18 +23,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `disabled` | `boolean` |
 | `event` | `string` |
 | `site_id` | `string` |
 | `type` | `string` |
 | `updated_at` | `string` |
 | `created_at` | `string` |
 | `data` | `object` |
+| `disabled` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getHook` | `SELECT` | `hook_id` |
 | `listHooksBySiteId` | `SELECT` | `site_id` |
 | `createHookBySiteId` | `INSERT` | `site_id` |

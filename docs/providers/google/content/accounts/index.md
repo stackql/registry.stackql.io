@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `resources` | `array` |  |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#accountsListResponse`". |
 | `nextPageToken` | `string` | The token for the retrieval of the next page of accounts. |
-| `resources` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, merchantId` | Retrieves a Merchant Center account. |
 | `list` | `SELECT` | `merchantId` | Lists the sub-accounts in your Merchant Center account. |
 | `insert` | `INSERT` | `merchantId` | Creates a Merchant Center sub-account. |

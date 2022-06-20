@@ -23,15 +23,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `metadata` | `object` | ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create. |
+| `spec` | `object` | PersistentVolumeClaimSpec describes the common attributes of storage devices and allows a Source for provider-specific attributes |
 | `status` | `object` | PersistentVolumeClaimStatus is the current status of a persistent volume claim. |
 | `apiVersion` | `string` | APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources |
 | `kind` | `string` | Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds |
-| `metadata` | `object` | ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create. |
-| `spec` | `object` | PersistentVolumeClaimSpec describes the common attributes of storage devices and allows a Source for provider-specific attributes |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `listCoreV1NamespacedPersistentVolumeClaim` | `SELECT` | `namespace` | list or watch objects of kind PersistentVolumeClaim |
 | `listCoreV1PersistentVolumeClaimForAllNamespaces` | `SELECT` |  | list or watch objects of kind PersistentVolumeClaim |
 | `readCoreV1NamespacedPersistentVolumeClaim` | `SELECT` | `name, namespace` | read the specified PersistentVolumeClaim |

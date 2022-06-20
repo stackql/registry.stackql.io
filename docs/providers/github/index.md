@@ -28,31 +28,23 @@ REGISTRY PULL github v0.3.1;
 {
     "github": {
         /**
-            * Type of authentication to use, suported values include: service_account, api_key, basic
+            * Type of authentication to use, suported values include: basic
             * @type String
             */
         "type": string, 
         /**
-            * path to service account key file.
-            * @type String
-            */
-        "credentialsfilepath": string, 
-        /**
             * Environment variable name containing the api key or credentials.
+            * Variable value must be a base64 encoded string of the form: username:password
             * @type String
             */
         "credentialsenvvar": string, 
-        /**
-            * Value prepended to the request header, e.g. "Bearer "
-            * @type String
-            */
-        "valuePrefix": string, 
     }
 }
 ```
 ### Example
 ```bash
-AUTH='{ "github": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}
+export GITHUB_CREDS=$(echo -n 'yourusername:ghp_YOURPERSONALACCESSTOKEN' | base64)
+AUTH='{ "github": { "type": "basic", "credentialsenvvar": "GITHUB_CREDS" } }'
 stackql shell --auth="${AUTH}"
 ```
 ## Services

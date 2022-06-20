@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | Unique identifier of the delivery. |
-| `status_code` | `integer` | Status code received when delivery was made. |
-| `status` | `string` | Description of the status of the attempted delivery |
+| `response` | `object` |  |
+| `event` | `string` | The event that triggered the delivery. |
+| `redelivery` | `boolean` | Whether the delivery is a redelivery. |
+| `repository_id` | `integer` | The id of the repository associated with this event. |
 | `url` | `string` | The URL target of the delivery. |
-| `guid` | `string` | Unique identifier for the event (shared with all deliveries for all webhooks that subscribe to this event). |
 | `duration` | `number` | Time spent delivering. |
+| `status_code` | `integer` | Status code received when delivery was made. |
+| `installation_id` | `integer` | The id of the GitHub App installation associated with this event. |
+| `status` | `string` | Description of the status of the attempted delivery |
+| `action` | `string` | The type of activity for the event that triggered the delivery. |
 | `request` | `object` |  |
 | `delivered_at` | `string` | Time when the delivery was delivered. |
-| `response` | `object` |  |
-| `repository_id` | `integer` | The id of the repository associated with this event. |
-| `action` | `string` | The type of activity for the event that triggered the delivery. |
-| `event` | `string` | The event that triggered the delivery. |
-| `installation_id` | `integer` | The id of the GitHub App installation associated with this event. |
-| `redelivery` | `boolean` | Whether the delivery is a redelivery. |
+| `guid` | `string` | Unique identifier for the event (shared with all deliveries for all webhooks that subscribe to this event). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_webhook_delivery` | `SELECT` | `delivery_id` | Returns a delivery for the webhook configured for a GitHub App.<br /><br />You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. |
 | `list_webhook_deliveries` | `SELECT` |  | Returns a list of webhook deliveries for the webhook configured for a GitHub App.<br /><br />You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. |
 | `redeliver_webhook_delivery` | `EXEC` | `delivery_id` | Redeliver a delivery for the webhook configured for a GitHub App.<br /><br />You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. |

@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `public_key` | `string` |
 | `created_at` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getDeployKey` | `SELECT` | `key_id` |
 | `listDeployKeys` | `SELECT` |  |
 | `createDeployKey` | `INSERT` |  |

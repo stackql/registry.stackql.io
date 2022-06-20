@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
+| `factorResult` | `string` |
 | `factorResultMessage` | `string` |
 | `_embedded` | `object` |
 | `_links` | `object` |
 | `expiresAt` | `string` |
-| `factorResult` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `factorId, transactionId, userId` |

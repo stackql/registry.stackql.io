@@ -25,6 +25,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `checkAccess` | `EXEC` | `datasourcesId, itemsId` | Checks whether an item is accessible by specified principal. **Note:** This API requires an admin account to execute. |
 | `searchByViewUrl` | `EXEC` | `datasourcesId` | Fetches the item whose viewUrl exactly matches that of the URL provided in the request. **Note:** This API requires an admin account to execute. |

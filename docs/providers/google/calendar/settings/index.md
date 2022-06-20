@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The id of the user setting. |
-| `kind` | `string` | Type of the resource ("calendar#setting"). |
 | `value` | `string` | Value of the user setting. The format of the value depends on the ID of the setting. It must always be a UTF-8 string of length up to 1024 characters. |
 | `etag` | `string` | ETag of the resource. |
+| `kind` | `string` | Type of the resource ("calendar#setting"). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `setting` | Returns a single user setting. |
 | `list` | `SELECT` |  | Returns all user settings for the authenticated user. |
 | `watch` | `EXEC` |  | Watch for changes to Settings resources. |

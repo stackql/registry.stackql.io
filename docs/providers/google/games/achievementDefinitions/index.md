@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The ID of the achievement. |
 | `name` | `string` | The name of the achievement. |
 | `description` | `string` | The description of the achievement. |
-| `initialState` | `string` | The initial state of the achievement. |
 | `revealedIconUrl` | `string` | The image URL for the revealed achievement icon. |
-| `achievementType` | `string` | The type of the achievement. |
-| `experiencePoints` | `string` | Experience points which will be earned when unlocking this achievement. |
-| `isUnlockedIconUrlDefault` | `boolean` | Indicates whether the unlocked icon image being returned is a default image, or is game-provided. |
-| `unlockedIconUrl` | `string` | The image URL for the unlocked achievement icon. |
-| `formattedTotalSteps` | `string` | The total steps for an incremental achievement as a string. |
-| `kind` | `string` | Uniquely identifies the type of this resource. Value is always the fixed string `games#achievementDefinition`. |
 | `isRevealedIconUrlDefault` | `boolean` | Indicates whether the revealed icon image being returned is a default image, or is provided by the game. |
+| `experiencePoints` | `string` | Experience points which will be earned when unlocking this achievement. |
+| `kind` | `string` | Uniquely identifies the type of this resource. Value is always the fixed string `games#achievementDefinition`. |
+| `initialState` | `string` | The initial state of the achievement. |
+| `isUnlockedIconUrlDefault` | `boolean` | Indicates whether the unlocked icon image being returned is a default image, or is game-provided. |
+| `achievementType` | `string` | The type of the achievement. |
+| `formattedTotalSteps` | `string` | The total steps for an incremental achievement as a string. |
 | `totalSteps` | `integer` | The total steps for an incremental achievement. |
+| `unlockedIconUrl` | `string` | The image URL for the unlocked achievement icon. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` |  |

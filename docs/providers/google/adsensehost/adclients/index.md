@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Unique identifier of this ad client. |
-| `kind` | `string` | Kind of resource this is, in this case adsensehost#adClient. |
-| `productCode` | `string` | This ad client's product code, which corresponds to the PRODUCT_CODE report dimension. |
 | `supportsReporting` | `boolean` | Whether this ad client supports being reported on. |
 | `arcOptIn` | `boolean` | Whether this ad client is opted in to ARC. |
+| `kind` | `string` | Kind of resource this is, in this case adsensehost#adClient. |
+| `productCode` | `string` | This ad client's product code, which corresponds to the PRODUCT_CODE report dimension. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `adClientId` | Get information about one of the ad clients in the Host AdSense account. |
 | `list` | `SELECT` |  | List all host ad clients in this AdSense account. |

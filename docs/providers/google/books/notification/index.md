@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `is_document_mature` | `boolean` |  |
-| `targetUrl` | `string` |  |
-| `kind` | `string` | Resource type. |
-| `reason` | `string` |  |
-| `doc_id` | `string` |  |
-| `crmExperimentIds` | `array` | The list of crm experiment ids. |
-| `notificationGroup` | `string` |  |
-| `pcampaign_id` | `string` |  |
-| `dont_show_notification` | `boolean` |  |
-| `notification_type` | `string` |  |
-| `show_notification_settings_action` | `boolean` |  |
-| `timeToExpireMs` | `string` |  |
+|:-----|:---------|:------------|
 | `doc_type` | `string` |  |
 | `iconUrl` | `string` |  |
-| `title` | `string` |  |
+| `is_document_mature` | `boolean` |  |
+| `doc_id` | `string` |  |
+| `targetUrl` | `string` |  |
+| `kind` | `string` | Resource type. |
+| `notification_type` | `string` |  |
+| `pcampaign_id` | `string` |  |
 | `body` | `string` |  |
+| `crmExperimentIds` | `array` | The list of crm experiment ids. |
+| `show_notification_settings_action` | `boolean` |  |
+| `title` | `string` |  |
+| `notificationGroup` | `string` |  |
+| `reason` | `string` |  |
+| `timeToExpireMs` | `string` |  |
+| `dont_show_notification` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `notification_id` |

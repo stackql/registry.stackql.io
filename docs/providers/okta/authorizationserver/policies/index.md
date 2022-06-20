@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
 | `description` | `string` |
-| `status` | `string` |
-| `_links` | `object` |
 | `system` | `boolean` |
 | `_embedded` | `object` |
-| `created` | `string` |
-| `conditions` | `object` |
-| `type` | `string` |
-| `lastUpdated` | `string` |
+| `status` | `string` |
+| `_links` | `object` |
 | `priority` | `integer` |
+| `created` | `string` |
+| `lastUpdated` | `string` |
+| `type` | `string` |
+| `conditions` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `authServerId, policyId` | Success |
 | `list` | `SELECT` | `authServerId` | Success |
 | `insert` | `INSERT` | `authServerId` | Success |

@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | A token to retrieve the next page of results. Omitted if no further results are available. |
+|:-----|:---------|:------------|
 | `totalSize` | `integer` | The total count of items in the list irrespective of pagination. |
 | `vendors` | `array` | List of vendors of the reseller partner. Fields `name`, `companyId` and `companyName` are populated to the Company object. |
+| `nextPageToken` | `string` | A token to retrieve the next page of results. Omitted if no further results are available. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `partnersId` |

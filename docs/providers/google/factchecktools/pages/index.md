@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `claimReviewMarkupPages` | `array` | The result list of pages of `ClaimReview` markup. |
 | `nextPageToken` | `string` | The next pagination token in the Search response. It should be used as the `page_token` for the following request. An empty value means no more results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `pagesId` | Get all `ClaimReview` markup on a page. |
 | `list` | `SELECT` |  | List the `ClaimReview` markup pages for a specific URL or for an organization. |
 | `create` | `INSERT` |  | Create `ClaimReview` markup on a page. |

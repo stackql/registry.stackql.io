@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `accountLabels` | `array` | The labels from the specified account. |
 | `nextPageToken` | `string` | A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `accountId` | Lists the labels assigned to an account. |
 | `create` | `INSERT` | `accountId` | Creates a new label, not assigned to any account. |
 | `delete` | `DELETE` | `accountId, labelId` | Deletes a label and removes it from all accounts to which it was assigned. |

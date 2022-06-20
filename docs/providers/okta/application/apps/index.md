@@ -23,26 +23,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `features` | `array` |
-| `settings` | `object` |
-| `status` | `string` |
-| `signOnMode` | `string` |
-| `created` | `string` |
-| `label` | `string` |
-| `_embedded` | `object` |
-| `profile` | `object` |
-| `visibility` | `object` |
-| `licensing` | `object` |
-| `credentials` | `object` |
-| `accessibility` | `object` |
-| `_links` | `object` |
 | `lastUpdated` | `string` |
+| `settings` | `object` |
+| `_links` | `object` |
+| `created` | `string` |
+| `_embedded` | `object` |
+| `status` | `string` |
+| `visibility` | `object` |
+| `features` | `array` |
+| `label` | `string` |
+| `credentials` | `object` |
+| `profile` | `object` |
+| `signOnMode` | `string` |
+| `licensing` | `object` |
+| `accessibility` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `appId` | Fetches an application from your Okta organization by `id`. |
 | `list` | `SELECT` |  | Enumerates apps added to your organization with pagination. A subset of apps can be returned that match a supported filter expression or query. |
 | `insert` | `INSERT` |  | Adds a new application to your Okta organization. |

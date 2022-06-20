@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `verify` | `object` |
-| `status` | `string` |
 | `factorType` | `string` |
-| `_links` | `object` |
 | `_embedded` | `object` |
 | `provider` | `string` |
-| `created` | `string` |
 | `lastUpdated` | `string` |
+| `status` | `string` |
+| `_links` | `object` |
+| `created` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `factorId, userId` | Fetches a factor for the specified user |
 | `list` | `SELECT` | `userId` | Enumerates all the enrolled factors for the specified user |
 | `insert` | `INSERT` | `userId` | Enrolls a user with a supported factor. |

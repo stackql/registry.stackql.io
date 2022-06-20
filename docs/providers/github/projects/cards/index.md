@@ -23,23 +23,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | The project card's ID |
+| `column_name` | `string` |  |
+| `content_url` | `string` |  |
+| `archived` | `boolean` | Whether or not the card is archived |
 | `project_url` | `string` |  |
+| `updated_at` | `string` |  |
 | `creator` | `object` | Simple User |
 | `node_id` | `string` |  |
-| `archived` | `boolean` | Whether or not the card is archived |
-| `updated_at` | `string` |  |
-| `column_name` | `string` |  |
+| `project_id` | `string` |  |
+| `created_at` | `string` |  |
+| `url` | `string` |  |
 | `column_url` | `string` |  |
 | `note` | `string` |  |
-| `content_url` | `string` |  |
-| `project_id` | `string` |  |
-| `url` | `string` |  |
-| `created_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_card` | `SELECT` | `card_id` |
 | `list_cards` | `SELECT` | `column_id` |
 | `create_card` | `INSERT` | `column_id` |

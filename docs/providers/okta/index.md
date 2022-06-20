@@ -28,31 +28,22 @@ REGISTRY PULL okta v0.1.0;
 {
     "okta": {
         /**
-            * Type of authentication to use, suported values include: service_account, api_key, basic
+            * Type of authentication to use, suported values include:  api_key
             * @type String
             */
         "type": string, 
-        /**
-            * path to service account key file.
-            * @type String
-            */
-        "credentialsfilepath": string, 
         /**
             * Environment variable name containing the api key or credentials.
             * @type String
             */
         "credentialsenvvar": string, 
-        /**
-            * Value prepended to the request header, e.g. "Bearer "
-            * @type String
-            */
-        "valuePrefix": string, 
     }
 }
 ```
 ### Example
 ```bash
-AUTH='{ "okta": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}
+OKTA_SECRET_KEY=yourapikey
+AUTH='{ "okta": { "type": "api_key",  "credentialsenvvar": "OKTA_SECRET_KEY" }}'
 stackql shell --auth="${AUTH}"
 ```
 ## Services

@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
 | `name` | `string` |
 | `description` | `string` |
-| `has_free_trial` | `boolean` |
-| `monthly_price_in_cents` | `integer` |
-| `accounts_url` | `string` |
-| `yearly_price_in_cents` | `integer` |
-| `unit_name` | `string` |
 | `bullets` | `array` |
-| `price_model` | `string` |
+| `monthly_price_in_cents` | `integer` |
 | `state` | `string` |
-| `number` | `integer` |
 | `url` | `string` |
+| `unit_name` | `string` |
+| `price_model` | `string` |
+| `yearly_price_in_cents` | `integer` |
+| `number` | `integer` |
+| `has_free_trial` | `boolean` |
+| `accounts_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_plans` | `SELECT` |  |

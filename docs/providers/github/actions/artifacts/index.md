@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
 | `name` | `string` | The name of the artifact. |
-| `expired` | `boolean` | Whether or not the artifact has expired. |
-| `created_at` | `string` |  |
-| `updated_at` | `string` |  |
-| `archive_download_url` | `string` |  |
-| `size_in_bytes` | `integer` | The size in bytes of the artifact. |
 | `node_id` | `string` |  |
+| `archive_download_url` | `string` |  |
+| `created_at` | `string` |  |
+| `size_in_bytes` | `integer` | The size in bytes of the artifact. |
+| `expired` | `boolean` | Whether or not the artifact has expired. |
 | `url` | `string` |  |
 | `expires_at` | `string` |  |
+| `updated_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_artifact` | `SELECT` | `artifact_id, owner, repo` | Gets a specific artifact for a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. |
 | `list_artifacts_for_repo` | `SELECT` | `owner, repo` | Lists all artifacts for a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. |
 | `list_workflow_run_artifacts` | `SELECT` | `owner, repo, run_id` | Lists artifacts for a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. |

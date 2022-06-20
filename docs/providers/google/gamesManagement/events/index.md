@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `reset` | `EXEC` | `eventId` | Resets all player progress on the event with the given ID for the currently authenticated player. This method is only accessible to whitelisted tester accounts for your application. |
 | `resetAll` | `EXEC` |  | Resets all player progress on all events for the currently authenticated player. This method is only accessible to whitelisted tester accounts for your application. |
 | `resetAllForAllPlayers` | `EXEC` |  | Resets all draft events for all players. This method is only available to user accounts for your developer console. |

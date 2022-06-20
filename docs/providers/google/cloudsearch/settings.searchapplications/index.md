@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `searchApplications` | `array` |  |
 | `nextPageToken` | `string` | Token to retrieve the next page of results, or empty if there are no more results in the list. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `searchapplicationsId` | Gets the specified search application. **Note:** This API requires an admin account to execute. |
 | `list` | `SELECT` |  | Lists all search applications. **Note:** This API requires an admin account to execute. |
 | `create` | `INSERT` |  | Creates a search application. **Note:** This API requires an admin account to execute. |

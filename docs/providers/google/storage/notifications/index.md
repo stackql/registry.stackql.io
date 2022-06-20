@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The ID of the notification. |
-| `payload_format` | `string` | The desired content of the Payload. |
+| `event_types` | `array` | If present, only send notifications about listed event types. If empty, sent notifications for all event types. |
 | `topic` | `string` | The Cloud PubSub topic to which this subscription publishes. Formatted as: '//pubsub.googleapis.com/projects/{project-identifier}/topics/{my-topic}' |
-| `custom_attributes` | `object` | An optional list of additional attributes to attach to each Cloud PubSub message published for this notification subscription. |
+| `payload_format` | `string` | The desired content of the Payload. |
+| `kind` | `string` | The kind of item this is. For notifications, this is always storage#notification. |
 | `object_name_prefix` | `string` | If present, only apply this notification configuration to object names that begin with this prefix. |
 | `selfLink` | `string` | The canonical URL of this notification. |
-| `event_types` | `array` | If present, only send notifications about listed event types. If empty, sent notifications for all event types. |
+| `custom_attributes` | `object` | An optional list of additional attributes to attach to each Cloud PubSub message published for this notification subscription. |
 | `etag` | `string` | HTTP 1.1 Entity tag for this subscription notification. |
-| `kind` | `string` | The kind of item this is. For notifications, this is always storage#notification. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `bucket, notification` | View a notification configuration. |
 | `list` | `SELECT` | `bucket` | Retrieves a list of notification subscriptions for a given bucket. |
 | `insert` | `INSERT` | `bucket` | Creates a notification subscription for a given bucket. |

@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `connectCoreV1DeleteNamespacedServiceProxy` | `EXEC` | `name, namespace` | connect DELETE requests to proxy of Service |
 | `connectCoreV1DeleteNamespacedServiceProxyWithPath` | `EXEC` | `name, namespace, path` | connect DELETE requests to proxy of Service |
 | `connectCoreV1GetNamespacedServiceProxy` | `EXEC` | `name, namespace` | connect GET requests to proxy of Service |

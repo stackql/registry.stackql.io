@@ -23,28 +23,28 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | Unique identifier of the team |
 | `name` | `string` | Name of the team |
 | `description` | `string` |  |
-| `members_count` | `integer` |  |
-| `repos_count` | `integer` |  |
-| `privacy` | `string` | The level of privacy this team should have |
-| `updated_at` | `string` |  |
-| `ldap_dn` | `string` | Distinguished Name (DN) that team maps to within LDAP environment |
 | `node_id` | `string` |  |
-| `members_url` | `string` |  |
-| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `url` | `string` | URL for the team |
-| `permission` | `string` | Permission that the team will have for its repositories |
-| `slug` | `string` |  |
 | `html_url` | `string` |  |
-| `repositories_url` | `string` |  |
+| `members_url` | `string` |  |
+| `privacy` | `string` | The level of privacy this team should have |
 | `created_at` | `string` |  |
 | `organization` | `object` | Organization Full |
+| `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `slug` | `string` |  |
+| `updated_at` | `string` |  |
+| `ldap_dn` | `string` | Distinguished Name (DN) that team maps to within LDAP environment |
+| `members_count` | `integer` |  |
+| `url` | `string` | URL for the team |
+| `repositories_url` | `string` |  |
+| `repos_count` | `integer` |  |
+| `permission` | `string` | Permission that the team will have for its repositories |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_by_name` | `SELECT` | `org, team_slug` | Gets a team using the team's `slug`. GitHub generates the `slug` from the team `name`.<br /><br />**Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}`. |
 | `list` | `SELECT` | `org` | Lists all teams in an organization that are visible to the authenticated user. |
 | `list_for_authenticated_user` | `SELECT` |  | List all of the teams across all of the organizations to which the authenticated user belongs. This method requires `user`, `repo`, or `read:org` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/) when authenticating via [OAuth](https://docs.github.com/apps/building-oauth-apps/). |

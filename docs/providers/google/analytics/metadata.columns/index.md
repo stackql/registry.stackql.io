@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Column id. |
-| `kind` | `string` | Resource type for Analytics column. |
 | `attributes` | `object` | Map of attribute name and value for this column. |
+| `kind` | `string` | Resource type for Analytics column. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `reportType` |

@@ -23,15 +23,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `apiVersion` | `string` | The API version for this call such as "serving.knative.dev/v1". |
+| `kind` | `string` | The kind of resource, in this case "Service". |
 | `metadata` | `object` | k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create. |
 | `spec` | `object` | ServiceSpec holds the desired state of the Route (from the client), which is used to manipulate the underlying Route and Configuration(s). |
 | `status` | `object` | The current state of the Service. Output only. |
-| `apiVersion` | `string` | The API version for this call such as "serving.knative.dev/v1". |
-| `kind` | `string` | The kind of resource, in this case "Service". |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `locationsId, projectsId, servicesId` | Get information about a service. |
 | `list` | `SELECT` | `locationsId, projectsId` | List services. |
 | `create` | `INSERT` | `locationsId, projectsId` | Create a service. |

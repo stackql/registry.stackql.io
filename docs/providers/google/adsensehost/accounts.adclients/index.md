@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Unique identifier of this ad client. |
 | `arcOptIn` | `boolean` | Whether this ad client is opted in to ARC. |
 | `kind` | `string` | Kind of resource this is, in this case adsensehost#adClient. |
@@ -31,6 +31,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `supportsReporting` | `boolean` | Whether this ad client supports being reported on. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, adClientId` | Get information about one of the ad clients in the specified publisher's AdSense account. |
 | `list` | `SELECT` | `accountId` | List all hosted ad clients in the specified hosted account. |

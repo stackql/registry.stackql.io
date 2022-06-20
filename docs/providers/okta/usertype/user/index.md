@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
 | `description` | `string` |
-| `default` | `boolean` |
-| `lastUpdated` | `string` |
-| `_links` | `object` |
-| `lastUpdatedBy` | `string` |
 | `createdBy` | `string` |
 | `displayName` | `string` |
+| `default` | `boolean` |
+| `_links` | `object` |
 | `created` | `string` |
+| `lastUpdatedBy` | `string` |
+| `lastUpdated` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `typeId` | Fetches a User Type by ID. The special identifier `default` may be used to fetch the default User Type. |
 | `list` | `SELECT` |  | Fetches all User Types in your org |
 | `insert` | `INSERT` |  | Creates a new User Type. A default User Type is automatically created along with your org, and you may add another 9 User Types for a maximum of 10. |

@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The obfuscated ID of the user. |
 | `name` | `string` | The user's full name. |
-| `link` | `string` | URL of the profile page. |
+| `given_name` | `string` | The user's first name. |
+| `gender` | `string` | The user's gender. |
 | `verified_email` | `boolean` | Boolean flag which is true if the email address is verified. Always verified because we only return the user's primary email address. |
+| `family_name` | `string` | The user's last name. |
+| `link` | `string` | URL of the profile page. |
+| `email` | `string` | The user's email address. |
 | `picture` | `string` | URL of the user's picture image. |
 | `hd` | `string` | The hosted domain e.g. example.com if the user is Google apps user. |
-| `email` | `string` | The user's email address. |
-| `family_name` | `string` | The user's last name. |
-| `gender` | `string` | The user's gender. |
-| `given_name` | `string` | The user's first name. |
 | `locale` | `string` | The user's preferred locale. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` |  |

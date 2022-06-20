@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `customers` | `array` | The list of customers that match the request. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A pagination token returned from a previous call to ListCustomers that indicates from where listing should continue. If the field is missing or empty, it means there are no more customers. |
+| `customers` | `array` | The list of customers that match the request. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `customersId` | Returns a requested node. |
 | `list` | `SELECT` |  | Returns a list of requested customers. |
 | `patch` | `EXEC` | `customersId` | Updates an existing node. |

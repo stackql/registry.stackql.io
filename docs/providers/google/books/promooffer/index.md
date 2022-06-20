@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `gservicesKey` | `string` |
 | `items` | `array` |
 | `artUrl` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` |  | Returns a list of promo offers available to the user |
 | `accept` | `EXEC` |  | Accepts the promo offer. |
 | `dismiss` | `EXEC` |  | Marks the promo offer as dismissed. |

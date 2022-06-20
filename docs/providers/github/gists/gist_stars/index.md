@@ -23,30 +23,30 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` |  |
 | `description` | `string` |  |
-| `git_pull_url` | `string` |  |
-| `commits_url` | `string` |  |
-| `node_id` | `string` |  |
-| `files` | `object` |  |
-| `updated_at` | `string` |  |
-| `public` | `boolean` |  |
-| `forks_url` | `string` |  |
-| `comments_url` | `string` |  |
+| `git_push_url` | `string` |  |
+| `truncated` | `boolean` |  |
 | `forks` | `array` |  |
 | `created_at` | `string` |  |
 | `user` | `object` | Simple User |
+| `history` | `array` |  |
+| `files` | `object` |  |
 | `owner` | `object` | Simple User |
+| `comments` | `integer` |  |
+| `git_pull_url` | `string` |  |
+| `public` | `boolean` |  |
+| `updated_at` | `string` |  |
+| `forks_url` | `string` |  |
+| `commits_url` | `string` |  |
+| `node_id` | `string` |  |
+| `comments_url` | `string` |  |
 | `url` | `string` |  |
 | `html_url` | `string` |  |
-| `comments` | `integer` |  |
-| `history` | `array` |  |
-| `truncated` | `boolean` |  |
-| `git_push_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `check_is_starred` | `SELECT` | `gist_id` |  |
 | `list_starred` | `SELECT` |  | List the authenticated user's starred gists: |
 | `star` | `EXEC` | `gist_id` | Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)." |

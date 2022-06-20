@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `delete_archive_for_authenticated_user` | `DELETE` | `migration_id` | Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [List user migrations](https://docs.github.com/rest/reference/migrations#list-user-migrations) and [Get a user migration status](https://docs.github.com/rest/reference/migrations#get-a-user-migration-status) endpoints, will continue to be available even after an archive is deleted. |
 | `delete_archive_for_org` | `DELETE` | `migration_id, org` | Deletes a previous migration archive. Migration archives are automatically deleted after seven days. |
 | `download_archive_for_org` | `EXEC` | `migration_id, org` | Fetches the URL to a migration archive. |

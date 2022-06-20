@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#settlementtransactionsListResponse`". |
 | `nextPageToken` | `string` | The token for the retrieval of the next page of returns. |
 | `resources` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `merchantId, settlementId` |

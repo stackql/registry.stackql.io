@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The ID of the achievement. |
 | `initialState` | `string` | The initial state of the achievement. |
 | `kind` | `string` | Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#achievementConfiguration`. |
@@ -34,7 +34,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `draft` | `object` | An achievement configuration detail. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `achievementId` | Retrieves the metadata of the achievement configuration with the given ID. |
 | `list` | `SELECT` | `applicationId` | Returns a list of the achievement configurations in this application. |
 | `insert` | `INSERT` | `applicationId` | Insert a new achievement configuration in this application. |

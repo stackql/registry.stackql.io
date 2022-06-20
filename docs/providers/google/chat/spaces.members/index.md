@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `memberships` | `array` | List of memberships in the requested (or first) page. |
 | `nextPageToken` | `string` | Continuation token to retrieve the next page of results. It will be empty for the last page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `membersId, spacesId` | Gets the metadata of a message attachment. The attachment data is fetched using the media API. |
 | `list` | `SELECT` | `spacesId` | Lists human memberships in a space. |

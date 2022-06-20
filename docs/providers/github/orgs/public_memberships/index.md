@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `remove_public_membership_for_authenticated_user` | `DELETE` | `org, username` |  |
 | `check_public_membership_for_user` | `EXEC` | `org, username` |  |
 | `set_public_membership_for_authenticated_user` | `EXEC` | `org, username` | The user can publicize their own membership. (A user cannot publicize the membership for another user.)<br /><br />Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)." |

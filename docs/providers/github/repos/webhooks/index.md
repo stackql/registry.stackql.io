@@ -23,23 +23,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | Unique identifier of the webhook. |
 | `name` | `string` | The name of a valid service, use 'web' for a webhook. |
-| `test_url` | `string` |  |
-| `url` | `string` |  |
 | `ping_url` | `string` |  |
+| `deliveries_url` | `string` |  |
+| `url` | `string` |  |
+| `test_url` | `string` |  |
+| `created_at` | `string` |  |
+| `events` | `array` | Determines what events the hook is triggered for. Default: ['push']. |
 | `active` | `boolean` | Determines whether the hook is actually triggered on pushes. |
-| `last_response` | `object` |  |
 | `updated_at` | `string` |  |
 | `config` | `object` |  |
-| `created_at` | `string` |  |
 | `type` | `string` |  |
-| `events` | `array` | Determines what events the hook is triggered for. Default: ['push']. |
-| `deliveries_url` | `string` |  |
+| `last_response` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_webhook` | `SELECT` | `hook_id, owner, repo` | Returns a webhook configured in a repository. To get only the webhook `config` properties, see "[Get a webhook configuration for a repository](/rest/reference/repos#get-a-webhook-configuration-for-a-repository)." |
 | `list_webhooks` | `SELECT` | `owner, repo` |  |
 | `create_webhook` | `INSERT` | `owner, repo` | Repositories can have multiple webhooks installed. Each webhook should have a unique `config`. Multiple webhooks can<br />share the same `config` as long as those webhooks do not have any `events` that overlap. |

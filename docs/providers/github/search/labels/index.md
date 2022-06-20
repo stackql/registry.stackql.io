@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
 | `name` | `string` |
 | `description` | `string` |
-| `text_matches` | `array` |
-| `score` | `number` |
-| `node_id` | `string` |
-| `url` | `string` |
 | `color` | `string` |
+| `score` | `number` |
+| `text_matches` | `array` |
+| `url` | `string` |
 | `default` | `boolean` |
+| `node_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `labels` | `SELECT` | `q, repository_id` |

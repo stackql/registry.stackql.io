@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#accountstatusesListResponse`". |
 | `nextPageToken` | `string` | The token for the retrieval of the next page of account statuses. |
 | `resources` | `array` |  |
-| `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#accountstatusesListResponse`". |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, merchantId` | Retrieves the status of a Merchant Center account. No itemLevelIssues are returned for multi-client accounts. |
 | `list` | `SELECT` | `merchantId` | Lists the statuses of the sub-accounts in your Merchant Center account. |
 | `custombatch` | `EXEC` |  | Retrieves multiple Merchant Center account statuses in a single request. |

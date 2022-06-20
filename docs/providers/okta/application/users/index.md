@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `statusChanged` | `string` |
 | `_links` | `object` |
-| `_embedded` | `object` |
-| `credentials` | `object` |
-| `syncState` | `string` |
-| `passwordChanged` | `string` |
-| `lastUpdated` | `string` |
-| `status` | `string` |
-| `created` | `string` |
-| `lastSync` | `string` |
 | `scope` | `string` |
-| `externalId` | `string` |
+| `status` | `string` |
+| `lastSync` | `string` |
+| `credentials` | `object` |
+| `lastUpdated` | `string` |
+| `statusChanged` | `string` |
 | `profile` | `object` |
+| `syncState` | `string` |
+| `externalId` | `string` |
+| `created` | `string` |
+| `_embedded` | `object` |
+| `passwordChanged` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `appId, userId` | Fetches a specific user assignment for application by `id`. |
 | `list` | `SELECT` | `appId` | Enumerates all assigned [application users](#application-user-model) for an application. |
 | `insert` | `INSERT` | `appId` | Assigns an user to an application with [credentials](#application-user-credentials-object) and an app-specific [profile](#application-user-profile-object). Profile mappings defined for the application are first applied before applying any profile properties specified in the request. |

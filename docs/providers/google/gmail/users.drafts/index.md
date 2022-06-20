@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `resultSizeEstimate` | `integer` | Estimated total number of results. |
 | `drafts` | `array` | List of drafts. Note that the `Message` property in each `Draft` resource only contains an `id` and a `threadId`. The messages.get method can fetch additional message details. |
 | `nextPageToken` | `string` | Token to retrieve the next page of results in the list. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `id, userId` | Gets the specified draft. |
 | `list` | `SELECT` | `userId` | Lists the drafts in the user's mailbox. |
 | `create` | `INSERT` | `userId` | Creates a new draft with the `DRAFT` label. |

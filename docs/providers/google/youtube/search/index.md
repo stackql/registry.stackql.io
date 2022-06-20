@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `object` | A resource id is a generic reference that points to another YouTube resource. |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "youtube#searchResult". |
 | `snippet` | `object` | Basic details about a search result, including title, description and thumbnails of the item referenced by the search result. |
 | `etag` | `string` | Etag of this resource. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `part` |

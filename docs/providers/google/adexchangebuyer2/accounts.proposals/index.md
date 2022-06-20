@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | Continuation token for fetching the next page of results. |
+|:-----|:---------|:------------|
 | `proposals` | `array` | The list of proposals. |
+| `nextPageToken` | `string` | Continuation token for fetching the next page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, proposalId` | Gets a proposal given its ID. The proposal is returned at its head revision. |
 | `list` | `SELECT` | `accountId` | List proposals. A filter expression (PQL query) may be specified to filter the results. To retrieve all finalized proposals, regardless if a proposal is being renegotiated, see the FinalizedProposals resource. Note that Bidder/ChildSeat relationships differ from the usual behavior. A Bidder account can only see its child seats' proposals by specifying the ChildSeat's accountId in the request path. |
 | `create` | `INSERT` | `accountId` | Create the given proposal. Each created proposal and any deals it contains are assigned a unique ID by the server. |

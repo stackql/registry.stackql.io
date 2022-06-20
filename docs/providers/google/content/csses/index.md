@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
+|:-----|:---------|:------------|
 | `csses` | `array` | The CSS domains affiliated with the specified CSS group. |
+| `nextPageToken` | `string` | A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `cssDomainId, cssGroupId` | Retrieves a single CSS domain by ID. |
 | `list` | `SELECT` | `cssGroupId` | Lists CSS domains affiliated with a CSS group. |
 | `updatelabels` | `EXEC` | `cssDomainId, cssGroupId` | Updates labels that are assigned to a CSS domain by its CSS group. |

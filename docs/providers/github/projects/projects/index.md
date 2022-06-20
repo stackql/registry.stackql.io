@@ -23,25 +23,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
 | `name` | `string` | Name of the project |
-| `url` | `string` |  |
-| `owner_url` | `string` |  |
-| `organization_permission` | `string` | The baseline permission that all organization members have on this project. Only present if owner is an organization. |
-| `number` | `integer` |  |
-| `created_at` | `string` |  |
-| `body` | `string` | Body of the project |
-| `html_url` | `string` |  |
-| `columns_url` | `string` |  |
-| `node_id` | `string` |  |
 | `creator` | `object` | Simple User |
+| `number` | `integer` |  |
+| `html_url` | `string` |  |
+| `created_at` | `string` |  |
+| `organization_permission` | `string` | The baseline permission that all organization members have on this project. Only present if owner is an organization. |
+| `url` | `string` |  |
+| `node_id` | `string` |  |
+| `owner_url` | `string` |  |
 | `updated_at` | `string` |  |
-| `state` | `string` | State of the project; either 'open' or 'closed' |
 | `private` | `boolean` | Whether or not this project can be seen by everyone. Only present if owner is an organization. |
+| `state` | `string` | State of the project; either 'open' or 'closed' |
+| `body` | `string` | Body of the project |
+| `columns_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `project_id` | Gets a project by its `id`. Returns a `404 Not Found` status if projects are disabled. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned. |
 | `list_for_org` | `SELECT` | `org` | Lists the projects in an organization. Returns a `404 Not Found` status if projects are disabled in the organization. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned. |
 | `list_for_repo` | `SELECT` | `owner, repo` | Lists the projects in a repository. Returns a `404 Not Found` status if projects are disabled in the repository. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned. |

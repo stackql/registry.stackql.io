@@ -23,15 +23,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
+| `done` | `boolean` |
+| `error` | `string` |
 | `sha` | `string` |
 | `created_at` | `string` |
 | `deploy_id` | `string` |
-| `done` | `boolean` |
-| `error` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `listSiteBuilds` | `SELECT` | `site_id` |
 | `createSiteBuild` | `INSERT` | `site_id` |

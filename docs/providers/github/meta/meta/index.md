@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `web` | `array` |
+|:-----|:---------|
 | `ssh_keys` | `array` |
-| `ssh_key_fingerprints` | `object` |
-| `verifiable_password_authentication` | `boolean` |
-| `dependabot` | `array` |
 | `git` | `array` |
-| `packages` | `array` |
 | `api` | `array` |
-| `importer` | `array` |
-| `actions` | `array` |
 | `pages` | `array` |
+| `verifiable_password_authentication` | `boolean` |
+| `web` | `array` |
 | `hooks` | `array` |
+| `actions` | `array` |
+| `packages` | `array` |
+| `importer` | `array` |
+| `dependabot` | `array` |
+| `ssh_key_fingerprints` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` |  | Returns meta information about GitHub, including a list of GitHub's IP addresses. For more information, see "[About GitHub's IP addresses](https://docs.github.com/articles/about-github-s-ip-addresses/)."<br /><br />**Note:** The IP addresses shown in the documentation's response are only example values. You must always query the API directly to get the latest list of IP addresses. |
 | `get_octocat` | `EXEC` |  | Get the octocat as ASCII art |
 | `get_zen` | `EXEC` |  | Get a random sentence from the Zen of GitHub |

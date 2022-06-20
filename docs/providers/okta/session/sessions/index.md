@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
+| `expiresAt` | `string` |
+| `login` | `string` |
+| `userId` | `string` |
+| `createdAt` | `string` |
+| `status` | `string` |
+| `amr` | `array` |
 | `_links` | `object` |
 | `lastPasswordVerification` | `string` |
-| `amr` | `array` |
-| `login` | `string` |
-| `createdAt` | `string` |
-| `userId` | `string` |
-| `lastFactorVerification` | `string` |
-| `status` | `string` |
-| `expiresAt` | `string` |
 | `idp` | `object` |
+| `lastFactorVerification` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `sessionId` | Get details about a session. |
 | `insert` | `INSERT` |  | Creates a new session for a user with a valid session token. Use this API if, for example, you want to set the session cookie yourself instead of allowing Okta to set it, or want to hold the session ID in order to delete a session via the API instead of visiting the logout URL. |
 | `delete` | `DELETE` | `sessionId` |  |

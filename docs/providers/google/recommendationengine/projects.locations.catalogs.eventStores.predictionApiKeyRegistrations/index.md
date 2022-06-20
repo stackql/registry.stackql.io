@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `predictionApiKeyRegistrations` | `array` | The list of registered API keys. |
 | `nextPageToken` | `string` | If empty, the list is complete. If nonempty, pass the token to the next request's `ListPredictionApiKeysRegistrationsRequest.pageToken`. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `catalogsId, eventStoresId, locationsId, projectsId` | List the registered apiKeys for use with predict method. |
 | `create` | `INSERT` | `catalogsId, eventStoresId, locationsId, projectsId` | Register an API key for use with predict method. |
 | `delete` | `DELETE` | `catalogsId, eventStoresId, locationsId, predictionApiKeyRegistrationsId, projectsId` | Unregister an apiKey from using for predict method. |

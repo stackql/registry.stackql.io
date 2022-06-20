@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `template` | `string` |
-| `translations` | `object` |
 | `type` | `string` |
 | `created` | `string` |
 | `lastUpdated` | `string` |
+| `template` | `string` |
+| `translations` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `templateId` | Fetches a specific template by `id` |
 | `list` | `SELECT` |  | Enumerates custom SMS templates in your organization. A subset of templates can be returned that match a template type. |
 | `insert` | `INSERT` |  | Adds a new custom SMS template to your organization. |

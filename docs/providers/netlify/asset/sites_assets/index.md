@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `created_at` | `string` |
 | `site_id` | `string` |
-| `content_type` | `string` |
 | `updated_at` | `string` |
-| `key` | `string` |
-| `state` | `string` |
 | `url` | `string` |
+| `size` | `integer` |
 | `visibility` | `string` |
 | `creator_id` | `string` |
-| `size` | `integer` |
+| `key` | `string` |
+| `state` | `string` |
+| `content_type` | `string` |
+| `created_at` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getSiteAssetInfo` | `SELECT` | `asset_id, site_id` |
 | `listSiteAssets` | `SELECT` | `site_id` |
 | `createSiteAsset` | `INSERT` | `site_id` |

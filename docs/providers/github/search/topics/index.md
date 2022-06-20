@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `name` | `string` |
 | `description` | `string` |
+| `curated` | `boolean` |
+| `short_description` | `string` |
 | `created_by` | `string` |
-| `released` | `string` |
 | `featured` | `boolean` |
+| `text_matches` | `array` |
 | `created_at` | `string` |
 | `updated_at` | `string` |
-| `aliases` | `array` |
-| `display_name` | `string` |
 | `repository_count` | `integer` |
-| `short_description` | `string` |
+| `logo_url` | `string` |
+| `released` | `string` |
 | `related` | `array` |
 | `score` | `number` |
-| `text_matches` | `array` |
-| `curated` | `boolean` |
-| `logo_url` | `string` |
+| `aliases` | `array` |
+| `display_name` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `topics` | `SELECT` | `q` |

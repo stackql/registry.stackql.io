@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `resources` | `array` | The collectionstatuses listed. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
+| `resources` | `array` | The collectionstatuses listed. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `collectionId, merchantId` | Gets the status of a collection from your Merchant Center account. |
 | `list` | `SELECT` | `merchantId` | Lists the statuses of the collections in your Merchant Center account. |

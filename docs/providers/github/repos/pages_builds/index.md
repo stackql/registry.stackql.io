@@ -23,18 +23,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `created_at` | `string` |  |
+| `duration` | `integer` |  |
+| `error` | `object` |  |
 | `pusher` | `object` | Simple User |
 | `status` | `string` |  |
 | `updated_at` | `string` |  |
 | `url` | `string` |  |
 | `commit` | `string` |  |
-| `created_at` | `string` |  |
-| `duration` | `integer` |  |
-| `error` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_pages_build` | `SELECT` | `build_id, owner, repo` |  |
 | `list_pages_builds` | `SELECT` | `owner, repo` |  |
 | `request_pages_build` | `EXEC` | `owner, repo` | You can request that your site be built from the latest revision on the default branch. This has the same effect as pushing a commit to your default branch, but does not require an additional commit. Manually triggering page builds can be helpful when diagnosing build warnings and failures.<br /><br />Build requests are limited to one concurrent build per repository and one concurrent build per requester. If you request a build while another is still in progress, the second request will be queued until the first completes. |

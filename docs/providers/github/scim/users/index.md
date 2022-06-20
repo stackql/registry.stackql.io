@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Unique identifier of an external identity |
 | `name` | `object` |  |
-| `schemas` | `array` | SCIM schema used. |
-| `active` | `boolean` | The active status of the User. |
-| `displayName` | `string` | The name of the user, suitable for display to end-users |
-| `emails` | `array` | user emails |
-| `groups` | `array` | associated groups |
 | `organization_id` | `integer` | The ID of the organization. |
-| `meta` | `object` |  |
-| `operations` | `array` | Set of operations to be performed |
-| `userName` | `string` | Configured by the admin. Could be an email, login, or username |
+| `emails` | `array` | user emails |
 | `externalId` | `string` | The ID of the User. |
+| `meta` | `object` |  |
+| `displayName` | `string` | The name of the user, suitable for display to end-users |
+| `groups` | `array` | associated groups |
+| `operations` | `array` | Set of operations to be performed |
+| `active` | `boolean` | The active status of the User. |
+| `schemas` | `array` | SCIM schema used. |
+| `userName` | `string` | Configured by the admin. Could be an email, login, or username |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_provisioning_information_for_user` | `SELECT` | `org, scim_user_id` |  |
 | `list_provisioned_identities` | `SELECT` | `org` | Retrieves a paginated list of all provisioned organization members, including pending invitations. If you provide the `filter` parameter, the resources for all matching provisions members are returned.<br /><br />When a user with a SAML-provisioned external identity leaves (or is removed from) an organization, the account's metadata is immediately removed. However, the returned list of user accounts might not always match the organization or enterprise member list you see on GitHub. This can happen in certain cases where an external identity associated with an organization will not match an organization member:<br />  - When a user with a SCIM-provisioned external identity is removed from an organization, the account's metadata is preserved to allow the user to re-join the organization in the future.<br />  - When inviting a user to join an organization, you can expect to see their external identity in the results before they accept the invitation, or if the invitation is cancelled (or never accepted).<br />  - When a user is invited over SCIM, an external identity is created that matches with the invitee's email address. However, this identity is only linked to a user account when the user accepts the invitation by going through SAML SSO.<br /><br />The returned list of external identities can include an entry for a `null` user. These are unlinked SAML identities that are created when a user goes through the following Single Sign-On (SSO) process but does not sign in to their GitHub account after completing SSO:<br /><br />1. The user is granted access by the IdP and is not a member of the GitHub organization.<br /><br />1. The user attempts to access the GitHub organization and initiates the SAML SSO process, and is not currently signed in to their GitHub account.<br /><br />1. After successfully authenticating with the SAML SSO IdP, the `null` external identity entry is created and the user is prompted to sign in to their GitHub account:<br />   - If the user signs in, their GitHub account is linked to this entry.<br />   - If the user does not sign in (or does not create a new account when prompted), they are not added to the GitHub organization, and the external identity `null` entry remains in place. |
 | `delete_user_from_org` | `DELETE` | `org, scim_user_id` |  |

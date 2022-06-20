@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `merchantId, returnPolicyId` | Gets an existing return policy. |
 | `list` | `SELECT` | `merchantId` | Lists all existing return policies. |
 | `create` | `INSERT` | `merchantId` | Creates a new return policy. |

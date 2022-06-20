@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The ID that YouTube uses to uniquely identify the playlist item. |
-| `contentDetails` | `object` |  |
-| `etag` | `string` | Etag of this resource. |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "youtube#playlistItem". |
 | `snippet` | `object` | Basic details about a playlist, including title, description and thumbnails. Basic details of a YouTube Playlist item provided by the author. Next ID: 15 |
 | `status` | `object` | Information about the playlist item's privacy status. |
+| `contentDetails` | `object` |  |
+| `etag` | `string` | Etag of this resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `part` | Retrieves a list of resources, possibly filtered. |
 | `insert` | `INSERT` | `part` | Inserts a new resource into this collection. |
 | `delete` | `DELETE` | `id` | Deletes a resource. |

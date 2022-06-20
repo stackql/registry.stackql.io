@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `credentials` | `object` |
-| `label` | `string` |
-| `settings` | `object` |
-| `licensing` | `object` |
-| `lastUpdated` | `string` |
-| `created` | `string` |
-| `signOnMode` | `string` |
-| `_embedded` | `object` |
-| `accessibility` | `object` |
-| `profile` | `object` |
-| `visibility` | `object` |
-| `_links` | `object` |
-| `features` | `array` |
 | `status` | `string` |
+| `signOnMode` | `string` |
+| `licensing` | `object` |
+| `settings` | `object` |
+| `_embedded` | `object` |
+| `features` | `array` |
+| `label` | `string` |
+| `_links` | `object` |
+| `accessibility` | `object` |
+| `credentials` | `object` |
+| `visibility` | `object` |
+| `profile` | `object` |
+| `created` | `string` |
+| `lastUpdated` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `groupId` |

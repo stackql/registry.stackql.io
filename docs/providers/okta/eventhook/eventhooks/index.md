@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `lastUpdated` | `string` |
-| `status` | `string` |
 | `channel` | `object` |
-| `created` | `string` |
-| `_links` | `object` |
-| `createdBy` | `string` |
-| `verificationStatus` | `string` |
+| `lastUpdated` | `string` |
 | `events` | `object` |
+| `status` | `string` |
+| `created` | `string` |
+| `createdBy` | `string` |
+| `_links` | `object` |
+| `verificationStatus` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `eventHookId` |
 | `list` | `SELECT` |  |
 | `insert` | `INSERT` |  |

@@ -23,38 +23,38 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | The ID of the pull request review comment. |
-| `original_line` | `integer` | The line of the blob to which the comment applies. The last line of the range for a multi-line comment |
-| `created_at` | `string` |  |
-| `side` | `string` | The side of the diff to which the comment applies. The side of the last line of the range for a multi-line comment |
-| `reactions` | `object` |  |
-| `original_position` | `integer` | The index of the original line in the diff to which the comment applies. |
-| `url` | `string` | URL for the pull request review comment |
-| `diff_hunk` | `string` | The diff of the line that the comment refers to. |
-| `html_url` | `string` | HTML URL for the pull request review comment. |
-| `start_side` | `string` | The side of the first line of the range for a multi-line comment. |
-| `_links` | `object` |  |
-| `start_line` | `integer` | The first line of the range for a multi-line comment. |
-| `in_reply_to_id` | `integer` | The comment ID to reply to. |
-| `updated_at` | `string` |  |
-| `position` | `integer` | The line index in the diff to which the comment applies. |
-| `body` | `string` | The text of the comment. |
-| `node_id` | `string` | The node ID of the pull request review comment. |
-| `user` | `object` | Simple User |
-| `author_association` | `string` | How the author is associated with the repository. |
 | `body_html` | `string` |  |
-| `line` | `integer` | The line of the blob to which the comment applies. The last line of the range for a multi-line comment |
-| `path` | `string` | The relative path of the file to which the comment applies. |
+| `diff_hunk` | `string` | The diff of the line that the comment refers to. |
+| `in_reply_to_id` | `integer` | The comment ID to reply to. |
+| `start_side` | `string` | The side of the first line of the range for a multi-line comment. |
+| `original_position` | `integer` | The index of the original line in the diff to which the comment applies. |
+| `body` | `string` | The text of the comment. |
+| `original_line` | `integer` | The line of the blob to which the comment applies. The last line of the range for a multi-line comment |
+| `url` | `string` | URL for the pull request review comment |
 | `original_commit_id` | `string` | The SHA of the original commit to which the comment applies. |
 | `commit_id` | `string` | The SHA of the commit to which the comment applies. |
-| `pull_request_url` | `string` | URL for the pull request that the review comment belongs to. |
-| `original_start_line` | `integer` | The first line of the range for a multi-line comment. |
-| `pull_request_review_id` | `integer` | The ID of the pull request review to which the comment belongs. |
+| `user` | `object` | Simple User |
+| `position` | `integer` | The line index in the diff to which the comment applies. |
 | `body_text` | `string` |  |
+| `side` | `string` | The side of the diff to which the comment applies. The side of the last line of the range for a multi-line comment |
+| `pull_request_review_id` | `integer` | The ID of the pull request review to which the comment belongs. |
+| `node_id` | `string` | The node ID of the pull request review comment. |
+| `updated_at` | `string` |  |
+| `start_line` | `integer` | The first line of the range for a multi-line comment. |
+| `reactions` | `object` |  |
+| `created_at` | `string` |  |
+| `pull_request_url` | `string` | URL for the pull request that the review comment belongs to. |
+| `_links` | `object` |  |
+| `line` | `integer` | The line of the blob to which the comment applies. The last line of the range for a multi-line comment |
+| `original_start_line` | `integer` | The first line of the range for a multi-line comment. |
+| `html_url` | `string` | HTML URL for the pull request review comment. |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `path` | `string` | The relative path of the file to which the comment applies. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_review_comment` | `SELECT` | `comment_id, owner, repo` | Provides details for a review comment. |
 | `list_review_comments` | `SELECT` | `owner, pull_number, repo` | Lists all review comments for a pull request. By default, review comments are in ascending order by ID. |
 | `list_review_comments_for_repo` | `SELECT` | `owner, repo` | Lists review comments for all pull requests in a repository. By default, review comments are in ascending order by ID. |

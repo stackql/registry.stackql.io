@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `enterpriseId, webAppId` | Gets an existing web app. |
 | `list` | `SELECT` | `enterpriseId` | Retrieves the details of all web apps for a given enterprise. |
 | `insert` | `INSERT` | `enterpriseId` | Creates a new web app for the enterprise. |

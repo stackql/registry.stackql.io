@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `support` | `string` |
+|:-----|:---------|
 | `_links` | `object` |
 | `expiration` | `string` |
+| `support` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` |  | Gets Okta Support Settings of your organization. |
 | `extend` | `EXEC` |  | Extends the length of time that Okta Support can access your org by 24 hours. This means that 24 hours are added to the remaining access time. |
 | `grant` | `EXEC` |  | Enables you to temporarily allow Okta Support to access your org as an administrator for eight hours. |

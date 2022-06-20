@@ -23,25 +23,25 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `site_id` | `string` |
-| `errors` | `array` |
-| `ipv6_enabled` | `boolean` |
-| `account_id` | `string` |
 | `supported_record_types` | `array` |
-| `account_slug` | `string` |
-| `user_id` | `string` |
-| `account_name` | `string` |
-| `updated_at` | `string` |
 | `domain` | `string` |
+| `site_id` | `string` |
+| `user_id` | `string` |
 | `dedicated` | `boolean` |
-| `created_at` | `string` |
-| `dns_servers` | `array` |
+| `ipv6_enabled` | `boolean` |
 | `records` | `array` |
+| `account_slug` | `string` |
+| `created_at` | `string` |
+| `updated_at` | `string` |
+| `account_name` | `string` |
+| `dns_servers` | `array` |
+| `errors` | `array` |
+| `account_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getDNSForSite` | `SELECT` | `site_id` |
 | `configureDNSForSite` | `EXEC` | `site_id` |

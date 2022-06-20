@@ -23,28 +23,28 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `address1` | `string` |
-| `state` | `string` |
 | `created` | `string` |
-| `phoneNumber` | `string` |
 | `endUserSupportHelpURL` | `string` |
-| `postalCode` | `string` |
-| `companyName` | `string` |
-| `supportPhoneNumber` | `string` |
-| `lastUpdated` | `string` |
 | `address2` | `string` |
-| `_links` | `object` |
-| `status` | `string` |
+| `lastUpdated` | `string` |
 | `expiresAt` | `string` |
-| `subdomain` | `string` |
+| `supportPhoneNumber` | `string` |
+| `companyName` | `string` |
+| `state` | `string` |
+| `city` | `string` |
+| `phoneNumber` | `string` |
+| `postalCode` | `string` |
+| `_links` | `object` |
 | `website` | `string` |
 | `country` | `string` |
-| `city` | `string` |
+| `address1` | `string` |
+| `subdomain` | `string` |
+| `status` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` |  | Get settings of your organization. |
 | `partialUpdate` | `EXEC` |  | Partial update settings of your organization. |
 | `update` | `EXEC` |  | Update settings of your organization. |

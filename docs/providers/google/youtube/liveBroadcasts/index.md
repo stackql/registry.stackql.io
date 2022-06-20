@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The ID that YouTube assigns to uniquely identify the broadcast. |
-| `status` | `object` | Live broadcast state. |
-| `contentDetails` | `object` | Detailed settings of a broadcast. |
-| `etag` | `string` | Etag of this resource. |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "youtube#liveBroadcast". |
 | `snippet` | `object` | Basic broadcast information. |
 | `statistics` | `object` | Statistics about the live broadcast. These represent a snapshot of the values at the time of the request. Statistics are only returned for live broadcasts. |
+| `status` | `object` | Live broadcast state. |
+| `contentDetails` | `object` | Detailed settings of a broadcast. |
+| `etag` | `string` | Etag of this resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `part` | Retrieve the list of broadcasts associated with the given channel. |
 | `insert` | `INSERT` | `part` | Inserts a new stream for the authenticated user. |
 | `delete` | `DELETE` | `id` | Delete a given broadcast. |

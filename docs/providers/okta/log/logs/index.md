@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `debugContext` | `object` |
-| `actor` | `object` |
-| `eventType` | `string` |
+|:-----|:---------|
+| `securityContext` | `object` |
 | `version` | `string` |
+| `published` | `string` |
+| `eventType` | `string` |
+| `actor` | `object` |
+| `legacyEventType` | `string` |
+| `displayMessage` | `string` |
+| `outcome` | `object` |
+| `debugContext` | `object` |
+| `severity` | `string` |
+| `request` | `object` |
+| `transaction` | `object` |
 | `authenticationContext` | `object` |
+| `uuid` | `string` |
 | `target` | `array` |
 | `client` | `object` |
-| `securityContext` | `object` |
-| `published` | `string` |
-| `uuid` | `string` |
-| `displayMessage` | `string` |
-| `request` | `object` |
-| `legacyEventType` | `string` |
-| `severity` | `string` |
-| `transaction` | `object` |
-| `outcome` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` |  |

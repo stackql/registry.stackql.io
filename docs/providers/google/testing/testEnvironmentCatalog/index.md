@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `iosDeviceCatalog` | `object` | The currently supported iOS devices. |
+| `networkConfigurationCatalog` | `object` |  |
 | `softwareCatalog` | `object` | The currently provided software environment on the devices under test. |
 | `androidDeviceCatalog` | `object` | The currently supported Android devices. |
 | `deviceIpBlockCatalog` | `object` | List of IP blocks used by the Firebase Test Lab |
-| `iosDeviceCatalog` | `object` | The currently supported iOS devices. |
-| `networkConfigurationCatalog` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `environmentType` |

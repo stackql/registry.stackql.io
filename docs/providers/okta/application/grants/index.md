@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `status` | `string` |
-| `_links` | `object` |
-| `clientId` | `string` |
-| `createdBy` | `object` |
-| `source` | `string` |
-| `userId` | `string` |
-| `issuer` | `string` |
 | `lastUpdated` | `string` |
+| `createdBy` | `object` |
 | `scopeId` | `string` |
-| `_embedded` | `object` |
 | `created` | `string` |
+| `source` | `string` |
+| `clientId` | `string` |
+| `issuer` | `string` |
+| `_embedded` | `object` |
+| `_links` | `object` |
+| `userId` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `appId, grantId` | Fetches a single scope consent grant for the application |
 | `list` | `SELECT` | `appId` | Lists all scope consent grants for the application |
 | `insert` | `INSERT` | `appId` | Grants consent for the application to request an OAuth 2.0 Okta scope |

@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Output only. The environment's identifier, unique among the user's environments. |
 | `name` | `string` | Immutable. Full name of this resource, in the format `users/{owner_email}/environments/{environment_id}`. `{owner_email}` is the email address of the user to whom this environment belongs, and `{environment_id}` is the identifier of this environment. For example, `users/someone@example.com/environments/default`. |
+| `sshUsername` | `string` | Output only. Username that clients should use when initiating SSH sessions with the environment. |
+| `publicKeys` | `array` | Output only. Public keys associated with the environment. Clients can connect to this environment via SSH only if they possess a private key corresponding to at least one of these public keys. Keys can be added to or removed from the environment using the AddPublicKey and RemovePublicKey methods. |
+| `sshHost` | `string` | Output only. Host to which clients can connect to initiate SSH sessions with the environment. |
+| `state` | `string` | Output only. Current execution state of this environment. |
 | `sshPort` | `integer` | Output only. Port to which clients can connect to initiate SSH sessions with the environment. |
 | `webHost` | `string` | Output only. Host to which clients can connect to initiate HTTPS or WSS connections with the environment. |
-| `publicKeys` | `array` | Output only. Public keys associated with the environment. Clients can connect to this environment via SSH only if they possess a private key corresponding to at least one of these public keys. Keys can be added to or removed from the environment using the AddPublicKey and RemovePublicKey methods. |
-| `state` | `string` | Output only. Current execution state of this environment. |
-| `sshUsername` | `string` | Output only. Username that clients should use when initiating SSH sessions with the environment. |
-| `sshHost` | `string` | Output only. Host to which clients can connect to initiate SSH sessions with the environment. |
 | `dockerImage` | `string` | Required. Immutable. Full path to the Docker image used to run this environment, e.g. "gcr.io/dev-con/cloud-devshell:latest". |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `operationsId` | Gets an environment. Returns NOT_FOUND if the environment does not exist. |
 | `list` | `SELECT` |  | Gets an environment. Returns NOT_FOUND if the environment does not exist. |
 | `delete` | `DELETE` | `operationsId` | Deletes a long-running operation. This method indicates that the client is no longer interested in the operation result. It does not cancel the operation. If the server doesn't support this method, it returns `google.rpc.Code.UNIMPLEMENTED`. |

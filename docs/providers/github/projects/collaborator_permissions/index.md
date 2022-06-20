@@ -23,10 +23,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `user` | `object` | Simple User |
+|:-----|:---------|:------------|
 | `permission` | `string` |  |
+| `user` | `object` | Simple User |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_permission_for_user` | `SELECT` | `project_id, username` |
