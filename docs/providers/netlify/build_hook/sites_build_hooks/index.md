@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `title` | `string` |
 | `url` | `string` |
 | `branch` | `string` |
 | `created_at` | `string` |
 | `site_id` | `string` |
+| `title` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getSiteBuildHook` | `SELECT` | `id, site_id` |
 | `listSiteBuildHooks` | `SELECT` | `site_id` |
 | `createSiteBuildHook` | `INSERT` | `site_id` |

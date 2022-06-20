@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The identifier for this resource. |
-| `selfLink` | `string` | The API REST URL to fetch this resource from. |
-| `content` | `string` | The body content of this Page, in HTML. |
+| `status` | `string` | The status of the page for admin resources (either LIVE or DRAFT). |
 | `published` | `string` | RFC 3339 date-time when this Page was published. |
+| `selfLink` | `string` | The API REST URL to fetch this resource from. |
+| `etag` | `string` | Etag of the resource. |
+| `kind` | `string` | The kind of this entity. Always blogger#page. |
 | `author` | `object` | The author of this Page. |
 | `blog` | `object` | Data about the blog containing this Page. |
-| `updated` | `string` | RFC 3339 date-time when this Page was last updated. |
-| `url` | `string` | The URL that this Page is displayed at. |
-| `kind` | `string` | The kind of this entity. Always blogger#page. |
-| `etag` | `string` | Etag of the resource. |
+| `content` | `string` | The body content of this Page, in HTML. |
 | `title` | `string` | The title of this entity. This is the name displayed in the Admin user interface. |
-| `status` | `string` | The status of the page for admin resources (either LIVE or DRAFT). |
+| `url` | `string` | The URL that this Page is displayed at. |
+| `updated` | `string` | RFC 3339 date-time when this Page was last updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `blogId, pageId` | Gets a page by blog id and page id. |
 | `list` | `SELECT` | `blogId` | Lists pages. |
 | `insert` | `INSERT` | `blogId` | Inserts a page. |

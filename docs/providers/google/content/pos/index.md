@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#posListResponse`". |
 | `resources` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `merchantId, storeCode, targetMerchantId` | Retrieves information about the given store. |
 | `list` | `SELECT` | `merchantId, targetMerchantId` | Lists the stores of the target merchant. |
 | `insert` | `INSERT` | `merchantId, targetMerchantId` | Creates a store for the given merchant. |

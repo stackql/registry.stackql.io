@@ -23,10 +23,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `customers` | `array` | The customer accounts the calling user is a member of. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A token used to access the next page of results. Omitted if no further results are available. |
+| `customers` | `array` | The customer accounts the calling user is a member of. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` |  |

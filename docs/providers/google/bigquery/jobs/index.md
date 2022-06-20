@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `kind` | `string` | The resource type of the response. |
 | `nextPageToken` | `string` | A token to request the next page of results. |
 | `etag` | `string` | A hash of this page of results. |
 | `jobs` | `array` | List of jobs that were requested. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `jobId, projectId` | Returns information about a specific job. Job information is available for a six month period after creation. Requires that you're the person who ran the job, or have the Is Owner project role. |
 | `list` | `SELECT` | `projectId` | Lists all jobs that you started in the specified project. Job information is available for a six month period after creation. The job list is sorted in reverse chronological order, by job creation time. Requires the Can View project role, or the Is Owner project role if you set the allUsers property. |
 | `insert` | `INSERT` | `projectId, data__configuration` | Starts a new asynchronous job. Requires the Can View project role. |

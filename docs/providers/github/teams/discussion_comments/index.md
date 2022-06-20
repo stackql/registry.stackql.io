@@ -23,23 +23,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `number` | `integer` | The unique sequence number of a team discussion comment. |
+|:-----|:---------|:------------|
+| `body` | `string` | The main text of the comment. |
 | `node_id` | `string` |  |
 | `updated_at` | `string` |  |
-| `author` | `object` | Simple User |
-| `last_edited_at` | `string` |  |
 | `body_html` | `string` |  |
+| `last_edited_at` | `string` |  |
+| `number` | `integer` | The unique sequence number of a team discussion comment. |
 | `url` | `string` |  |
-| `discussion_url` | `string` |  |
-| `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
-| `body` | `string` | The main text of the comment. |
-| `created_at` | `string` |  |
 | `html_url` | `string` |  |
 | `reactions` | `object` |  |
+| `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
+| `created_at` | `string` |  |
+| `discussion_url` | `string` |  |
+| `author` | `object` | Simple User |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_discussion_comment_in_org` | `SELECT` | `comment_number, discussion_number, org, team_slug` | Get a specific comment on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).<br /><br />**Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments/{comment_number}`. |
 | `get_discussion_comment_legacy` | `SELECT` | `comment_number, discussion_number, team_id` | **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Get a discussion comment](https://docs.github.com/rest/reference/teams#get-a-discussion-comment) endpoint.<br /><br />Get a specific comment on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). |
 | `list_discussion_comments_in_org` | `SELECT` | `discussion_number, org, team_slug` | List all comments on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).<br /><br />**Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments`. |

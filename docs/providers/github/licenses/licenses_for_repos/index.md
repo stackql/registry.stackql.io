@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `name` | `string` |  |
+| `license` | `object` | License Simple |
+| `_links` | `object` |  |
+| `content` | `string` |  |
 | `sha` | `string` |  |
-| `type` | `string` |  |
-| `url` | `string` |  |
-| `git_url` | `string` |  |
-| `html_url` | `string` |  |
-| `path` | `string` |  |
 | `size` | `integer` |  |
+| `html_url` | `string` |  |
+| `git_url` | `string` |  |
 | `download_url` | `string` |  |
 | `encoding` | `string` |  |
-| `content` | `string` |  |
-| `_links` | `object` |  |
-| `license` | `object` | License Simple |
+| `url` | `string` |  |
+| `type` | `string` |  |
+| `path` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_for_repo` | `SELECT` | `owner, repo` |

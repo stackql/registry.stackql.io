@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `lastUpdated` | `string` |
-| `status` | `string` |
-| `channel` | `object` |
-| `_links` | `object` |
-| `created` | `string` |
-| `version` | `string` |
 | `type` | `string` |
+| `version` | `string` |
+| `status` | `string` |
+| `_links` | `object` |
+| `channel` | `object` |
+| `lastUpdated` | `string` |
+| `created` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `inlineHookId` | Gets an inline hook by ID |
 | `list` | `SELECT` |  | Success |
 | `insert` | `INSERT` |  | Success |

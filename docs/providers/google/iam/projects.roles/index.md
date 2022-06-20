@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `roles` | `array` | The Roles defined on this resource. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | To retrieve the next page of results, set `ListRolesRequest.page_token` to this value. |
+| `roles` | `array` | The Roles defined on this resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `projectsId, rolesId` | Gets the definition of a Role. |
 | `list` | `SELECT` | `projectsId` | Lists every predefined Role that IAM supports, or every custom role that is defined for an organization or project. |
 | `create` | `INSERT` | `projectsId` | Creates a new custom Role. |

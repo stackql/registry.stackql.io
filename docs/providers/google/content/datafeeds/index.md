@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#datafeedsListResponse`". |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | The token for the retrieval of the next page of datafeeds. |
 | `resources` | `array` |  |
+| `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#datafeedsListResponse`". |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `datafeedId, merchantId` | Retrieves a datafeed configuration from your Merchant Center account. |
 | `list` | `SELECT` | `merchantId` | Lists the configurations for datafeeds in your Merchant Center account. |
 | `insert` | `INSERT` | `merchantId` | Registers a datafeed configuration with your Merchant Center account. |

@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | Output only. The next-pagination token. For multiple-page list results, this token can be used as the `ListTransferConfigsRequest.page_token` to request the next page of list results. |
+|:-----|:---------|:------------|
 | `transferConfigs` | `array` | Output only. The stored pipeline transfer configurations. |
+| `nextPageToken` | `string` | Output only. The next-pagination token. For multiple-page list results, this token can be used as the `ListTransferConfigsRequest.page_token` to request the next page of list results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `projectsId, transferConfigsId` | Returns information about the particular transfer run. |
 | `list` | `SELECT` | `projectsId` | Returns information about all transfer configs owned by a project in the specified location. |
 | `create` | `INSERT` | `projectsId` | Creates a new data transfer configuration. |

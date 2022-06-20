@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `kind` | `string` | Identifies this as a ConversionList resource. Value: the fixed string doubleclicksearch#conversionList. |
+|:-----|:---------|:------------|
 | `conversion` | `array` | The conversions being requested. |
+| `kind` | `string` | Identifies this as a ConversionList resource. Value: the fixed string doubleclicksearch#conversionList. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `advertiserId, agencyId, endDate, engineAccountId, rowCount, startDate, startRow` | Retrieves a list of conversions from a DoubleClick Search engine account. |
 | `insert` | `INSERT` |  | Inserts a batch of new conversions into DoubleClick Search. |
 | `update` | `EXEC` |  | Updates a batch of conversions in DoubleClick Search. |

@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `matters` | `array` | List of matters. |
 | `nextPageToken` | `string` | Page token to retrieve the next page of results in the list. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `matterId` | Gets the specified matter. |
 | `list` | `SELECT` |  | Lists matters the requestor has access to. |
 | `create` | `INSERT` |  | Creates a matter with the given name and description. The initial state is open, and the owner is the method caller. Returns the created matter with default view. |

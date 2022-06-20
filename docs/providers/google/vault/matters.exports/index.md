@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `exports` | `array` | The list of exports. |
 | `nextPageToken` | `string` | Page token to retrieve the next page of results in the list. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `exportId, matterId` | Gets an export. |
 | `list` | `SELECT` | `matterId` | Lists details about the exports in the specified matter. |
 | `create` | `INSERT` | `matterId` | Creates an export. |

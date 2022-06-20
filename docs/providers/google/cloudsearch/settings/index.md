@@ -25,6 +25,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `getCustomer` | `EXEC` |  | Get customer settings. **Note:** This API requires an admin account to execute. |
 | `updateCustomer` | `EXEC` |  | Update customer settings. **Note:** This API requires an admin account to execute. |

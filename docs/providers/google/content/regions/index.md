@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
+|:-----|:---------|:------------|
 | `regions` | `array` | The regions from the specified merchant. |
+| `nextPageToken` | `string` | A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `merchantId, regionId` | Retrieves a region defined in your Merchant Center account. |
 | `list` | `SELECT` | `merchantId` | Lists the regions in your Merchant Center account. |
 | `create` | `INSERT` | `merchantId` | Creates a region definition in your Merchant Center account. |

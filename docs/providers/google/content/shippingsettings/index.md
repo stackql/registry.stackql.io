@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#shippingsettingsListResponse`". |
 | `nextPageToken` | `string` | The token for the retrieval of the next page of shipping settings. |
 | `resources` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, merchantId` | Retrieves the shipping settings of the account. |
 | `list` | `SELECT` | `merchantId` | Lists the shipping settings of the sub-accounts in your Merchant Center account. |
 | `custombatch` | `EXEC` |  | Retrieves and updates the shipping settings of multiple accounts in a single request. |

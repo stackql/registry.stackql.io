@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
 | `_links` | `object` |
-| `created` | `string` |
-| `status` | `string` |
-| `issuerMode` | `string` |
 | `type` | `string` |
-| `protocol` | `object` |
+| `created` | `string` |
+| `issuerMode` | `string` |
 | `policy` | `object` |
 | `lastUpdated` | `string` |
+| `protocol` | `object` |
+| `status` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `idpId` | Fetches an IdP by `id`. |
 | `list` | `SELECT` |  | Enumerates IdPs in your organization with pagination. A subset of IdPs can be returned that match a supported filter expression or query. |
 | `insert` | `INSERT` |  | Adds a new IdP to your organization. |

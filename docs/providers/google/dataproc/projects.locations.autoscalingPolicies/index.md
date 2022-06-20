@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | Output only. This token is included in the response if there are more results to fetch. |
 | `policies` | `array` | Output only. Autoscaling policies list. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `autoscalingPoliciesId, locationsId, projectsId` | Retrieves the latest workflow template.Can retrieve previously instantiated template by specifying optional version parameter. |
 | `list` | `SELECT` | `locationsId, projectsId` | Lists autoscaling policies in the project. |
 | `create` | `INSERT` | `locationsId, projectsId` | Creates new autoscaling policy. |

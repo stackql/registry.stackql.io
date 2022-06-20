@@ -23,27 +23,27 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
+| `url` | `string` |  |
+| `exclude_metadata` | `boolean` |  |
+| `node_id` | `string` |  |
+| `lock_repositories` | `boolean` |  |
+| `exclude_git_data` | `boolean` |  |
+| `archive_url` | `string` |  |
 | `exclude_attachments` | `boolean` |  |
-| `updated_at` | `string` |  |
+| `exclude_owner_projects` | `boolean` |  |
 | `exclude_releases` | `boolean` |  |
+| `exclude` | `array` |  |
+| `repositories` | `array` |  |
+| `state` | `string` |  |
+| `created_at` | `string` |  |
 | `guid` | `string` |  |
 | `owner` | `object` | Simple User |
-| `archive_url` | `string` |  |
-| `node_id` | `string` |  |
-| `created_at` | `string` |  |
-| `repositories` | `array` |  |
-| `exclude` | `array` |  |
-| `exclude_metadata` | `boolean` |  |
-| `url` | `string` |  |
-| `state` | `string` |  |
-| `exclude_git_data` | `boolean` |  |
-| `lock_repositories` | `boolean` |  |
-| `exclude_owner_projects` | `boolean` |  |
+| `updated_at` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_status_for_authenticated_user` | `SELECT` | `migration_id` | Fetches a single user migration. The response includes the `state` of the migration, which can be one of the following values:<br /><br />*   `pending` - the migration hasn't started yet.<br />*   `exporting` - the migration is in progress.<br />*   `exported` - the migration finished successfully.<br />*   `failed` - the migration failed.<br /><br />Once the migration has been `exported` you can [download the migration archive](https://docs.github.com/rest/reference/migrations#download-a-user-migration-archive). |
 | `get_status_for_org` | `SELECT` | `migration_id, org` | Fetches the status of a migration.<br /><br />The `state` of a migration can be one of the following values:<br /><br />*   `pending`, which means the migration hasn't started yet.<br />*   `exporting`, which means the migration is in progress.<br />*   `exported`, which means the migration finished successfully.<br />*   `failed`, which means the migration failed. |
 | `list_for_authenticated_user` | `SELECT` |  | Lists all migrations a user has started. |

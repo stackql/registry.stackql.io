@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `metrics` | `array` | A list of logs-based metrics. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | If there might be more results than appear in this response, then nextPageToken is included. To get the next set of results, call this method again using the value of nextPageToken as pageToken. |
+| `metrics` | `array` | A list of logs-based metrics. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `metricsId, projectsId` | Gets a logs-based metric. |
 | `list` | `SELECT` | `projectsId` | Lists logs-based metrics. |
 | `create` | `INSERT` | `projectsId` | Creates a logs-based metric. |

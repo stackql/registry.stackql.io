@@ -23,18 +23,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The ID of the leaderboard. |
-| `scoreMin` | `string` | Minimum score that can be posted to this leaderboard. |
-| `scoreOrder` | `string` |  |
-| `token` | `string` | The token for this resource. |
 | `draft` | `object` | A leaderboard configuration detail. |
 | `kind` | `string` | Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#leaderboardConfiguration`. |
 | `published` | `object` | A leaderboard configuration detail. |
 | `scoreMax` | `string` | Maximum score that can be posted to this leaderboard. |
+| `scoreMin` | `string` | Minimum score that can be posted to this leaderboard. |
+| `scoreOrder` | `string` |  |
+| `token` | `string` | The token for this resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `leaderboardId` | Retrieves the metadata of the leaderboard configuration with the given ID. |
 | `list` | `SELECT` | `applicationId` | Returns a list of the leaderboard configurations in this application. |
 | `insert` | `INSERT` | `applicationId` | Insert a new leaderboard configuration in this application. |

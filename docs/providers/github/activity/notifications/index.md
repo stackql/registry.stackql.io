@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` |  |
-| `subscription_url` | `string` |  |
-| `unread` | `boolean` |  |
 | `updated_at` | `string` |  |
-| `reason` | `string` |  |
-| `last_read_at` | `string` |  |
-| `url` | `string` |  |
-| `repository` | `object` | Minimal Repository |
 | `subject` | `object` |  |
+| `last_read_at` | `string` |  |
+| `repository` | `object` | Minimal Repository |
+| `unread` | `boolean` |  |
+| `url` | `string` |  |
+| `reason` | `string` |  |
+| `subscription_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_thread` | `SELECT` | `thread_id` |  |
 | `list_notifications_for_authenticated_user` | `SELECT` |  | List all notifications for the current user, sorted by most recently updated. |
 | `list_repo_notifications_for_authenticated_user` | `SELECT` | `owner, repo` | List all notifications for the current user. |

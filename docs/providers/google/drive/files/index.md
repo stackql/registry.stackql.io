@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `files` | `array` | The list of files. If nextPageToken is populated, then this list may be incomplete and an additional page of results should be fetched. |
+|:-----|:---------|:------------|
 | `incompleteSearch` | `boolean` | Whether the search process was incomplete. If true, then some search results may be missing, since all documents were not searched. This may occur when searching multiple drives with the "allDrives" corpora, but all corpora could not be searched. When this happens, it is suggested that clients narrow their query by choosing a different corpus such as "user" or "drive". |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "drive#fileList". |
 | `nextPageToken` | `string` | The page token for the next page of files. This will be absent if the end of the files list has been reached. If the token is rejected for any reason, it should be discarded, and pagination should be restarted from the first page of results. |
+| `files` | `array` | The list of files. If nextPageToken is populated, then this list may be incomplete and an additional page of results should be fetched. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `fileId` | Gets a file's metadata or content by ID. |
 | `list` | `SELECT` |  | Lists or searches files. |
 | `create` | `INSERT` |  | Creates a new file. |

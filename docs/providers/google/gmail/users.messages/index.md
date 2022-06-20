@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `resultSizeEstimate` | `integer` | Estimated total number of results. |
+|:-----|:---------|:------------|
 | `messages` | `array` | List of messages. Note that each message resource contains only an `id` and a `threadId`. Additional message details can be fetched using the messages.get method. |
 | `nextPageToken` | `string` | Token to retrieve the next page of results in the list. |
+| `resultSizeEstimate` | `integer` | Estimated total number of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `id, userId` | Gets the specified message. |
 | `list` | `SELECT` | `userId` | Lists the messages in the user's mailbox. |
 | `insert` | `INSERT` | `userId` | Directly inserts a message into only this user's mailbox similar to `IMAP APPEND`, bypassing most scanning and classification. Does not send a message. |

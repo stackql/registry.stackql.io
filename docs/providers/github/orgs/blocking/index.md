@@ -23,31 +23,31 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
 | `name` | `string` |
-| `email` | `string` |
 | `node_id` | `string` |
-| `followers_url` | `string` |
-| `login` | `string` |
-| `site_admin` | `boolean` |
-| `organizations_url` | `string` |
-| `starred_url` | `string` |
-| `received_events_url` | `string` |
-| `gists_url` | `string` |
-| `repos_url` | `string` |
-| `events_url` | `string` |
-| `subscriptions_url` | `string` |
-| `starred_at` | `string` |
-| `html_url` | `string` |
-| `url` | `string` |
 | `type` | `string` |
+| `login` | `string` |
+| `gists_url` | `string` |
+| `received_events_url` | `string` |
 | `following_url` | `string` |
-| `avatar_url` | `string` |
+| `email` | `string` |
+| `subscriptions_url` | `string` |
+| `events_url` | `string` |
+| `repos_url` | `string` |
+| `site_admin` | `boolean` |
+| `starred_url` | `string` |
+| `starred_at` | `string` |
+| `followers_url` | `string` |
+| `organizations_url` | `string` |
+| `url` | `string` |
+| `html_url` | `string` |
 | `gravatar_id` | `string` |
+| `avatar_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list_blocked_users` | `SELECT` | `org` | List the users blocked by an organization. |
 | `block_user` | `EXEC` | `org, username` |  |
 | `check_blocked_user` | `EXEC` | `org, username` |  |

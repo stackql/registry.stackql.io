@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `deviceRegistries` | `array` | The registries that matched the query. |
 | `nextPageToken` | `string` | If not empty, indicates that there may be more registries that match the request; this value should be passed in a new `ListDeviceRegistriesRequest`. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `locationsId, projectsId, registriesId` | Gets details about a device. |
 | `list` | `SELECT` | `locationsId, projectsId` | Lists device registries. |
 | `create` | `INSERT` | `locationsId, projectsId` | Creates a device registry that contains devices. |

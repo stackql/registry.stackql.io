@@ -25,6 +25,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `lease` | `EXEC` | `jobId, projectId` | Leases a dataflow WorkItem to run. |
 | `reportStatus` | `EXEC` | `jobId, projectId` | Reports the status of dataflow WorkItems leased by a worker. |

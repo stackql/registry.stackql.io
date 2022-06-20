@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `system` | `boolean` |
+| `conditions` | `object` |
 | `priority` | `integer` |
 | `actions` | `object` |
-| `status` | `string` |
-| `conditions` | `object` |
-| `created` | `string` |
 | `lastUpdated` | `string` |
+| `status` | `string` |
 | `type` | `string` |
+| `system` | `boolean` |
+| `created` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `authServerId, policyId, ruleId` | Returns a Policy Rule by ID that is defined in the specified Custom Authorization Server and Policy. |
 | `list` | `SELECT` | `authServerId, policyId` | Enumerates all policy rules for the specified Custom Authorization Server and Policy. |
 | `insert` | `INSERT` | `authServerId, policyId` | Creates a policy rule for the specified Custom Authorization Server and Policy. |

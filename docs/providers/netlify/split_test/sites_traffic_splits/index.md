@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `path` | `string` |
-| `branches` | `array` |
-| `active` | `boolean` |
-| `updated_at` | `string` |
 | `created_at` | `string` |
+| `updated_at` | `string` |
 | `site_id` | `string` |
 | `unpublished_at` | `string` |
+| `path` | `string` |
+| `active` | `boolean` |
+| `branches` | `array` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getSplitTest` | `SELECT` | `site_id, split_test_id` |
 | `getSplitTests` | `SELECT` | `site_id` |
 | `createSplitTest` | `INSERT` | `site_id` |

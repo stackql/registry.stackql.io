@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `missingZones` | `array` | If any zones are listed here, the list of operations returned may be missing the operations from those zones. |
 | `operations` | `array` | A list of operations in the project in the specified zone. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `operationId, projectId, zone` | Gets the specified operation. |
 | `list` | `SELECT` | `projectId, zone` | Lists all operations in a project in a specific zone or all zones. |
 | `cancel` | `EXEC` | `operationId, projectId, zone` | Cancels the specified operation. |

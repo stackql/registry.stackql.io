@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `resources` | `array` |  |
+|:-----|:---------|:------------|
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#returnpolicyListResponse`". |
+| `resources` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `merchantId, returnPolicyId` | Gets a return policy of the Merchant Center account. |
 | `list` | `SELECT` | `merchantId` | Lists the return policies of the Merchant Center account. |
 | `insert` | `INSERT` | `merchantId` | Inserts a return policy for the Merchant Center account. |

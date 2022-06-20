@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Task list identifier. |
+| `kind` | `string` | Type of the resource. This is always "tasks#taskList". |
+| `selfLink` | `string` | URL pointing to this task list. Used to retrieve, update, or delete this task list. |
 | `title` | `string` | Title of the task list. |
 | `updated` | `string` | Last modification time of the task list (as a RFC 3339 timestamp). |
 | `etag` | `string` | ETag of the resource. |
-| `kind` | `string` | Type of the resource. This is always "tasks#taskList". |
-| `selfLink` | `string` | URL pointing to this task list. Used to retrieve, update, or delete this task list. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `tasklist` | Returns the authenticated user's specified task list. |
 | `list` | `SELECT` |  | Returns all the authenticated user's task lists. |
 | `insert` | `INSERT` |  | Creates a new task list and adds it to the authenticated user's task lists. |

@@ -23,31 +23,31 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
-| `url` | `string` |  |
-| `dismissed_review` | `object` |  |
-| `actor` | `object` | Simple User |
-| `node_id` | `string` |  |
-| `lock_reason` | `string` |  |
-| `requested_reviewer` | `object` | Simple User |
+| `commit_url` | `string` |  |
 | `label` | `object` | Issue Event Label |
-| `project_card` | `object` | Issue Event Project Card |
-| `event` | `string` |  |
-| `assignee` | `object` | Simple User |
+| `milestone` | `object` | Issue Event Milestone |
+| `requested_team` | `object` | Groups of organization members that gives permissions on specified repositories. |
+| `actor` | `object` | Simple User |
 | `author_association` | `string` | How the author is associated with the repository. |
-| `assigner` | `object` | Simple User |
+| `project_card` | `object` | Issue Event Project Card |
+| `review_requester` | `object` | Simple User |
+| `dismissed_review` | `object` |  |
+| `assignee` | `object` | Simple User |
+| `node_id` | `string` |  |
+| `url` | `string` |  |
+| `rename` | `object` | Issue Event Rename |
+| `event` | `string` |  |
 | `performed_via_github_app` | `object` | GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub. |
+| `assigner` | `object` | Simple User |
+| `lock_reason` | `string` |  |
 | `issue` | `object` | Issues are a great way to keep track of tasks, enhancements, and bugs for your projects. |
 | `created_at` | `string` |  |
-| `commit_url` | `string` |  |
-| `requested_team` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `rename` | `object` | Issue Event Rename |
-| `review_requester` | `object` | Simple User |
-| `milestone` | `object` | Issue Event Milestone |
+| `requested_reviewer` | `object` | Simple User |
 | `commit_id` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_event` | `SELECT` | `event_id, owner, repo` |
 | `list_events_for_repo` | `SELECT` | `owner, repo` |

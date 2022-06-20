@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Custom dimension ID. |
 | `name` | `string` | Name of the custom dimension. |
-| `selfLink` | `string` | Link for the custom dimension |
-| `active` | `boolean` | Boolean indicating whether the custom dimension is active. |
-| `kind` | `string` | Kind value for a custom dimension. Set to "analytics#customDimension". It is a read-only field. |
+| `created` | `string` | Time the custom dimension was created. |
+| `index` | `integer` | Index of the custom dimension. |
 | `parentLink` | `object` | Parent link for the custom dimension. Points to the property to which the custom dimension belongs. |
 | `updated` | `string` | Time the custom dimension was last modified. |
+| `kind` | `string` | Kind value for a custom dimension. Set to "analytics#customDimension". It is a read-only field. |
 | `webPropertyId` | `string` | Property ID. |
-| `index` | `integer` | Index of the custom dimension. |
-| `scope` | `string` | Scope of the custom dimension: HIT, SESSION, USER or PRODUCT. |
-| `created` | `string` | Time the custom dimension was created. |
 | `accountId` | `string` | Account ID. |
+| `active` | `boolean` | Boolean indicating whether the custom dimension is active. |
+| `scope` | `string` | Scope of the custom dimension: HIT, SESSION, USER or PRODUCT. |
+| `selfLink` | `string` | Link for the custom dimension |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, customDimensionId, webPropertyId` | Get a custom dimension to which the user has access. |
 | `list` | `SELECT` | `accountId, webPropertyId` | Lists custom dimensions to which the user has access. |
 | `insert` | `INSERT` | `accountId, webPropertyId` | Create a new custom dimension. |

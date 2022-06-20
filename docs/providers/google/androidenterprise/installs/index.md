@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `deviceId, enterpriseId, installId, userId` | Retrieves details of an installation of an app on a device. |
 | `list` | `SELECT` | `deviceId, enterpriseId, userId` | Retrieves the details of all apps installed on the specified device. |
 | `delete` | `DELETE` | `deviceId, enterpriseId, installId, userId` | Requests to remove an app from a device. A call to get or list will still show the app as installed on the device until it is actually removed. |

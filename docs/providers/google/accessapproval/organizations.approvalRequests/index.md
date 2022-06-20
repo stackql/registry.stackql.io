@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `approvalRequests` | `array` | Approval request details. |
 | `nextPageToken` | `string` | Token to retrieve the next page of results, or empty if there are no more. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `approvalRequestsId, organizationsId` | Gets an approval request. Returns NOT_FOUND if the request does not exist. |
 | `list` | `SELECT` | `organizationsId` | Lists approval requests associated with a project, folder, or organization. Approval requests can be filtered by state (pending, active, dismissed). The order is reverse chronological. |
 | `approve` | `EXEC` | `approvalRequestsId, organizationsId` | Approves a request and returns the updated ApprovalRequest. Returns NOT_FOUND if the request does not exist. Returns FAILED_PRECONDITION if the request exists but is not in a pending state. |

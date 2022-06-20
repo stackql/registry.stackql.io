@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | A token used to access the next page of results. Omitted if no further results are available. |
+|:-----|:---------|:------------|
 | `devices` | `array` | The customer's devices. |
+| `nextPageToken` | `string` | A token used to access the next page of results. Omitted if no further results are available. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `customersId, devicesId` | Gets a device. |
 | `list` | `SELECT` | `customersId` | Lists a customer's devices. |
 | `applyConfiguration` | `EXEC` | `customersId` | Applies a Configuration to the device to register the device for zero-touch enrollment. After applying a configuration to a device, the device automatically provisions itself on first boot, or next factory reset. |

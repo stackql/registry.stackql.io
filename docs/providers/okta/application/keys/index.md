@@ -23,26 +23,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `e` | `string` |
-| `x5t#S256` | `string` |
-| `x5u` | `string` |
-| `x5t` | `string` |
-| `_links` | `object` |
-| `alg` | `string` |
-| `key_ops` | `array` |
-| `kid` | `string` |
-| `expiresAt` | `string` |
-| `false` | `string` |
-| `x5c` | `array` |
-| `kty` | `string` |
+|:-----|:---------|
 | `created` | `string` |
+| `x5c` | `array` |
+| `_links` | `object` |
 | `lastUpdated` | `string` |
+| `e` | `string` |
 | `use` | `string` |
 | `status` | `string` |
+| `x5u` | `string` |
+| `kty` | `string` |
+| `false` | `string` |
+| `kid` | `string` |
+| `expiresAt` | `string` |
+| `x5t#S256` | `string` |
+| `alg` | `string` |
+| `x5t` | `string` |
+| `key_ops` | `array` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `appId, keyId` | Gets a specific application key credential by kid |
 | `list` | `SELECT` | `appId` | Enumerates key credentials for an application |
 | `insert` | `INSERT` | `appId` | Generates a new X.509 certificate for an application key credential |

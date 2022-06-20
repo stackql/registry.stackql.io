@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | If there are more results, a token to retrieve next page of results. |
 | `policies` | `array` | The list of policies. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `enterprisesId, policiesId` | Gets a web app. |
 | `list` | `SELECT` | `enterprisesId` | Lists policies for a given enterprise. |
 | `delete` | `DELETE` | `enterprisesId, policiesId` | Deletes a web app. |

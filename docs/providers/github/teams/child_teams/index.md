@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `url` | `string` |  |
-| `privacy` | `string` |  |
-| `permission` | `string` |  |
-| `members_url` | `string` |  |
-| `repositories_url` | `string` |  |
-| `slug` | `string` |  |
 | `parent` | `object` | Groups of organization members that gives permissions on specified repositories. |
-| `node_id` | `string` |  |
-| `permissions` | `object` |  |
+| `permission` | `string` |  |
 | `html_url` | `string` |  |
+| `slug` | `string` |  |
+| `repositories_url` | `string` |  |
+| `members_url` | `string` |  |
+| `node_id` | `string` |  |
+| `privacy` | `string` |  |
+| `url` | `string` |  |
+| `permissions` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_child_in_org` | `SELECT` | `org, team_slug` |

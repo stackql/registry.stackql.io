@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
 | `name` | `string` |
-| `active` | `boolean` |
 | `created_at` | `string` |
 | `ping_url` | `string` |
 | `url` | `string` |
-| `type` | `string` |
 | `events` | `array` |
-| `deliveries_url` | `string` |
-| `config` | `object` |
 | `updated_at` | `string` |
+| `config` | `object` |
+| `deliveries_url` | `string` |
+| `type` | `string` |
+| `active` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_webhook` | `SELECT` | `hook_id, org` | Returns a webhook configured in an organization. To get only the webhook `config` properties, see "[Get a webhook configuration for an organization](/rest/reference/orgs#get-a-webhook-configuration-for-an-organization)." |
 | `list_webhooks` | `SELECT` | `org` |  |
 | `create_webhook` | `INSERT` | `org, data__config, data__name` | Here's how you can create a hook that posts payloads in JSON format: |

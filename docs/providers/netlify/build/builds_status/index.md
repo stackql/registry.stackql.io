@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
+| `build_count` | `integer` |
+| `enqueued` | `integer` |
 | `minutes` | `object` |
 | `pending_concurrency` | `integer` |
 | `active` | `integer` |
-| `build_count` | `integer` |
-| `enqueued` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getAccountBuildStatus` | `SELECT` | `account_id` |

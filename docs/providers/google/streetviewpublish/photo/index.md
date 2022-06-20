@@ -23,23 +23,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `viewCount` | `string` | Output only. View count of the photo. |
-| `photoId` | `object` | Identifier for a Photo. |
-| `shareLink` | `string` | Output only. The share link for the photo. |
-| `transferStatus` | `string` | Output only. Status of rights transfer on this photo. |
-| `uploadReference` | `object` | Upload reference for media files. |
-| `connections` | `array` | Connections to other photos. A connection represents the link from this photo to another photo. |
-| `pose` | `object` | Raw pose measurement for an entity. |
-| `captureTime` | `string` | Absolute time when the photo was captured. When the photo has no exif timestamp, this is used to set a timestamp in the photo metadata. |
-| `downloadUrl` | `string` | Output only. The download URL for the photo bytes. This field is set only when GetPhotoRequest.view is set to PhotoView.INCLUDE_DOWNLOAD_URL. |
-| `places` | `array` | Places where this photo belongs. |
 | `thumbnailUrl` | `string` | Output only. The thumbnail URL for showing a preview of the given photo. |
 | `mapsPublishStatus` | `string` | Output only. Status in Google Maps, whether this photo was published or rejected. Not currently populated. |
+| `shareLink` | `string` | Output only. The share link for the photo. |
 | `uploadTime` | `string` | Time when the image was uploaded. |
+| `places` | `array` | Places where this photo belongs. |
+| `uploadReference` | `object` | Upload reference for media files. |
+| `pose` | `object` | Raw pose measurement for an entity. |
+| `transferStatus` | `string` | Output only. Status of rights transfer on this photo. |
+| `connections` | `array` | Connections to other photos. A connection represents the link from this photo to another photo. |
+| `downloadUrl` | `string` | Output only. The download URL for the photo bytes. This field is set only when GetPhotoRequest.view is set to PhotoView.INCLUDE_DOWNLOAD_URL. |
+| `photoId` | `object` | Identifier for a Photo. |
+| `captureTime` | `string` | Absolute time when the photo was captured. When the photo has no exif timestamp, this is used to set a timestamp in the photo metadata. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `photoId` | Gets the metadata of the specified Photo. This method returns the following error codes: * google.rpc.Code.PERMISSION_DENIED if the requesting user did not create the requested Photo. * google.rpc.Code.NOT_FOUND if the requested Photo does not exist. * google.rpc.Code.UNAVAILABLE if the requested Photo is still being indexed. |
 | `create` | `INSERT` |  | After the client finishes uploading the photo with the returned UploadRef, CreatePhoto publishes the uploaded Photo to Street View on Google Maps. Currently, the only way to set heading, pitch, and roll in CreatePhoto is through the [Photo Sphere XMP metadata](https://developers.google.com/streetview/spherical-metadata) in the photo bytes. CreatePhoto ignores the `pose.heading`, `pose.pitch`, `pose.roll`, `pose.altitude`, and `pose.level` fields in Pose. This method returns the following error codes: * google.rpc.Code.INVALID_ARGUMENT if the request is malformed or if the uploaded photo is not a 360 photo. * google.rpc.Code.NOT_FOUND if the upload reference does not exist. * google.rpc.Code.RESOURCE_EXHAUSTED if the account has reached the storage limit. |
 | `delete` | `DELETE` | `photoId` | Deletes a Photo and its metadata. This method returns the following error codes: * google.rpc.Code.PERMISSION_DENIED if the requesting user did not create the requested photo. * google.rpc.Code.NOT_FOUND if the photo ID does not exist. |

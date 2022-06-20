@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The ID that YouTube uses to uniquely identify the video category. |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "youtube#videoCategory". |
 | `snippet` | `object` | Basic details about a video category, such as its localized title. |
 | `etag` | `string` | Etag of this resource. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `part` |

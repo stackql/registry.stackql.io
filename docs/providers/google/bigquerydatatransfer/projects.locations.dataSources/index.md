@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `dataSources` | `array` | List of supported data sources and their transfer settings. |
 | `nextPageToken` | `string` | Output only. The next-pagination token. For multiple-page list results, this token can be used as the `ListDataSourcesRequest.page_token` to request the next page of list results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `dataSourcesId, locationsId, projectsId` | Returns information about the particular transfer run. |
 | `list` | `SELECT` | `locationsId, projectsId` | Lists supported data sources and returns their settings, which can be used for UI rendering. |
 | `checkValidCreds` | `EXEC` | `dataSourcesId, locationsId, projectsId` | Returns true if valid credentials exist for the given data source and requesting user. Some data sources doesn't support service account, so we need to talk to them on behalf of the end user. This API just checks whether we have OAuth token for the particular user, which is a pre-requisite before user can create a transfer config. |

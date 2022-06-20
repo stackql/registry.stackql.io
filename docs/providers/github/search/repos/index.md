@@ -23,95 +23,95 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `mirror_url` | `string` |  |
-| `has_issues` | `boolean` |  |
-| `homepage` | `string` |  |
-| `branches_url` | `string` |  |
-| `license` | `object` | License Simple |
-| `hooks_url` | `string` |  |
-| `delete_branch_on_merge` | `boolean` |  |
-| `issue_events_url` | `string` |  |
-| `has_wiki` | `boolean` |  |
-| `comments_url` | `string` |  |
-| `topics` | `array` |  |
-| `permissions` | `object` |  |
-| `open_issues_count` | `integer` |  |
-| `subscribers_url` | `string` |  |
-| `allow_auto_merge` | `boolean` |  |
-| `watchers` | `integer` |  |
-| `svn_url` | `string` |  |
-| `text_matches` | `array` |  |
-| `disabled` | `boolean` | Returns whether or not this repository disabled. |
-| `releases_url` | `string` |  |
-| `milestones_url` | `string` |  |
-| `size` | `integer` |  |
-| `collaborators_url` | `string` |  |
-| `visibility` | `string` | The repository visibility: public, private, or internal. |
 | `clone_url` | `string` |  |
-| `full_name` | `string` |  |
-| `pulls_url` | `string` |  |
-| `forks_url` | `string` |  |
-| `open_issues` | `integer` |  |
-| `has_projects` | `boolean` |  |
-| `issue_comment_url` | `string` |  |
-| `deployments_url` | `string` |  |
-| `subscription_url` | `string` |  |
-| `allow_forking` | `boolean` |  |
-| `stargazers_url` | `string` |  |
-| `allow_merge_commit` | `boolean` |  |
-| `private` | `boolean` |  |
-| `watchers_count` | `integer` |  |
 | `forks` | `integer` |  |
-| `stargazers_count` | `integer` |  |
-| `allow_rebase_merge` | `boolean` |  |
-| `contents_url` | `string` |  |
-| `temp_clone_token` | `string` |  |
-| `archived` | `boolean` |  |
-| `git_refs_url` | `string` |  |
-| `pushed_at` | `string` |  |
-| `is_template` | `boolean` |  |
-| `assignees_url` | `string` |  |
-| `statuses_url` | `string` |  |
-| `node_id` | `string` |  |
-| `has_downloads` | `boolean` |  |
-| `git_tags_url` | `string` |  |
-| `languages_url` | `string` |  |
-| `html_url` | `string` |  |
-| `issues_url` | `string` |  |
-| `downloads_url` | `string` |  |
-| `owner` | `object` | Simple User |
-| `events_url` | `string` |  |
-| `labels_url` | `string` |  |
-| `tags_url` | `string` |  |
-| `forks_count` | `integer` |  |
-| `created_at` | `string` |  |
-| `updated_at` | `string` |  |
+| `has_wiki` | `boolean` |  |
 | `default_branch` | `string` |  |
-| `keys_url` | `string` |  |
-| `archive_url` | `string` |  |
-| `teams_url` | `string` |  |
-| `blobs_url` | `string` |  |
-| `allow_squash_merge` | `boolean` |  |
-| `score` | `number` |  |
-| `url` | `string` |  |
-| `git_url` | `string` |  |
+| `allow_forking` | `boolean` |  |
+| `allow_rebase_merge` | `boolean` |  |
 | `ssh_url` | `string` |  |
-| `git_commits_url` | `string` |  |
-| `fork` | `boolean` |  |
-| `has_pages` | `boolean` |  |
+| `mirror_url` | `string` |  |
 | `compare_url` | `string` |  |
-| `notifications_url` | `string` |  |
-| `language` | `string` |  |
-| `merges_url` | `string` |  |
-| `trees_url` | `string` |  |
+| `forks_url` | `string` |  |
+| `stargazers_url` | `string` |  |
+| `teams_url` | `string` |  |
+| `labels_url` | `string` |  |
+| `subscription_url` | `string` |  |
+| `is_template` | `boolean` |  |
+| `git_commits_url` | `string` |  |
+| `assignees_url` | `string` |  |
+| `watchers` | `integer` |  |
+| `temp_clone_token` | `string` |  |
+| `issue_comment_url` | `string` |  |
+| `git_url` | `string` |  |
+| `full_name` | `string` |  |
+| `open_issues_count` | `integer` |  |
+| `keys_url` | `string` |  |
+| `text_matches` | `array` |  |
+| `created_at` | `string` |  |
+| `archived` | `boolean` |  |
+| `allow_auto_merge` | `boolean` |  |
+| `license` | `object` | License Simple |
+| `contents_url` | `string` |  |
 | `commits_url` | `string` |  |
-| `contributors_url` | `string` |  |
+| `has_projects` | `boolean` |  |
+| `updated_at` | `string` |  |
+| `git_tags_url` | `string` |  |
+| `pushed_at` | `string` |  |
+| `collaborators_url` | `string` |  |
+| `html_url` | `string` |  |
+| `deployments_url` | `string` |  |
+| `events_url` | `string` |  |
+| `blobs_url` | `string` |  |
+| `statuses_url` | `string` |  |
+| `notifications_url` | `string` |  |
+| `milestones_url` | `string` |  |
+| `private` | `boolean` |  |
+| `tags_url` | `string` |  |
+| `has_downloads` | `boolean` |  |
+| `git_refs_url` | `string` |  |
+| `subscribers_url` | `string` |  |
+| `issues_url` | `string` |  |
+| `open_issues` | `integer` |  |
+| `has_issues` | `boolean` |  |
+| `allow_merge_commit` | `boolean` |  |
+| `language` | `string` |  |
+| `trees_url` | `string` |  |
+| `topics` | `array` |  |
+| `comments_url` | `string` |  |
+| `owner` | `object` | Simple User |
+| `node_id` | `string` |  |
+| `branches_url` | `string` |  |
+| `archive_url` | `string` |  |
+| `url` | `string` |  |
+| `downloads_url` | `string` |  |
+| `visibility` | `string` | The repository visibility: public, private, or internal. |
+| `allow_squash_merge` | `boolean` |  |
+| `forks_count` | `integer` |  |
+| `issue_events_url` | `string` |  |
+| `watchers_count` | `integer` |  |
+| `stargazers_count` | `integer` |  |
+| `fork` | `boolean` |  |
+| `svn_url` | `string` |  |
+| `delete_branch_on_merge` | `boolean` |  |
+| `size` | `integer` |  |
 | `master_branch` | `string` |  |
+| `has_pages` | `boolean` |  |
+| `contributors_url` | `string` |  |
+| `releases_url` | `string` |  |
+| `pulls_url` | `string` |  |
+| `permissions` | `object` |  |
+| `score` | `number` |  |
+| `languages_url` | `string` |  |
+| `homepage` | `string` |  |
+| `merges_url` | `string` |  |
+| `disabled` | `boolean` | Returns whether or not this repository disabled. |
+| `hooks_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `repos` | `SELECT` | `q` |

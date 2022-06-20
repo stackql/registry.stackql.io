@@ -23,15 +23,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `tables` | `array` | Tables in the requested dataset. |
+|:-----|:---------|:------------|
 | `totalItems` | `integer` | The total number of tables in the dataset. |
 | `etag` | `string` | A hash of this page of results. |
 | `kind` | `string` | The type of list. |
 | `nextPageToken` | `string` | A token to request the next page of results. |
+| `tables` | `array` | Tables in the requested dataset. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `datasetId, projectId, tableId` | Gets the specified table resource by table ID. This method does not return the data in the table, it only returns the table resource, which describes the structure of this table. |
 | `list` | `SELECT` | `datasetId, projectId` | Lists all tables in the specified dataset. Requires the READER dataset role. |
 | `insert` | `INSERT` | `datasetId, projectId, data__tableReference` | Creates a new, empty table in the dataset. |

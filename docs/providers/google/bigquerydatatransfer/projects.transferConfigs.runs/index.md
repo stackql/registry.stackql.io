@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `transferRuns` | `array` | Output only. The stored pipeline transfer runs. |
 | `nextPageToken` | `string` | Output only. The next-pagination token. For multiple-page list results, this token can be used as the `ListTransferRunsRequest.page_token` to request the next page of list results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `projectsId, runsId, transferConfigsId` | Returns information about the particular transfer run. |
 | `list` | `SELECT` | `projectsId, transferConfigsId` | Returns information about running and completed jobs. |
 | `delete` | `DELETE` | `projectsId, runsId, transferConfigsId` | Deletes the specified transfer run. |

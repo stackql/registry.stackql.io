@@ -23,31 +23,31 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
 | `name` | `string` |
-| `avatar_url` | `string` |
-| `gists_url` | `string` |
+| `subscriptions_url` | `string` |
+| `html_url` | `string` |
+| `type` | `string` |
+| `received_events_url` | `string` |
 | `gravatar_id` | `string` |
 | `following_url` | `string` |
-| `site_admin` | `boolean` |
-| `events_url` | `string` |
-| `login` | `string` |
-| `email` | `string` |
-| `node_id` | `string` |
-| `organizations_url` | `string` |
-| `url` | `string` |
 | `followers_url` | `string` |
-| `received_events_url` | `string` |
+| `site_admin` | `boolean` |
+| `avatar_url` | `string` |
 | `repos_url` | `string` |
-| `starred_at` | `string` |
-| `type` | `string` |
-| `html_url` | `string` |
-| `subscriptions_url` | `string` |
+| `events_url` | `string` |
+| `node_id` | `string` |
 | `starred_url` | `string` |
+| `url` | `string` |
+| `organizations_url` | `string` |
+| `login` | `string` |
+| `gists_url` | `string` |
+| `starred_at` | `string` |
+| `email` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list_assignees` | `SELECT` | `owner, repo` | Lists the [available assignees](https://docs.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) for issues in a repository. |
 | `add_assignees` | `INSERT` | `issue_number, owner, repo` | Adds up to 10 assignees to an issue. Users already assigned to an issue are not replaced. |
 | `remove_assignees` | `DELETE` | `issue_number, owner, repo` | Removes one or more assignees from an issue. |

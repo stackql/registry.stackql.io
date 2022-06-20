@@ -23,15 +23,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `statuses` | `array` |  |
+|:-----|:---------|:------------|
 | `total_count` | `integer` |  |
 | `url` | `string` |  |
 | `commit_url` | `string` |  |
 | `repository` | `object` | Minimal Repository |
 | `sha` | `string` |  |
 | `state` | `string` |  |
+| `statuses` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_combined_status_for_ref` | `SELECT` | `owner, ref, repo` |

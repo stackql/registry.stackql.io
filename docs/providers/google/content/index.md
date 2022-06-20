@@ -20,7 +20,7 @@ Manages product items, inventory, and Merchant Center accounts for Google Shoppi
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Content API for Shopping</td></tr>
 <tr><td><b>Description</b></td><td>Manages product items, inventory, and Merchant Center accounts for Google Shopping.</td></tr>
-<tr><td><b>Id</b></td><td><code>content:v2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>content:v2.1</code></td></tr>
 </tbody></table>
 
 ## Resources

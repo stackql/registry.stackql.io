@@ -11,16 +11,16 @@ description: Query and Deploy Cloud Infrastructure and Resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
-Manages enterprise resources such as users and groups, administrative notifications, security features, and more.  
+Transfers user data from one user to another.  
     
 
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>google.admin</code></td></tr>
 <tr><td><b>Type</b></td><td>Service</td></tr>
-<tr><td><b>Title</b></td><td>Admin Directory API</td></tr>
-<tr><td><b>Description</b></td><td>Manages enterprise resources such as users and groups, administrative notifications, security features, and more.</td></tr>
-<tr><td><b>Id</b></td><td><code>admin:directory_v1</code></td></tr>
+<tr><td><b>Title</b></td><td>Admin Reports API</td></tr>
+<tr><td><b>Description</b></td><td>Transfers user data from one user to another.</td></tr>
+<tr><td><b>Id</b></td><td><code>admin:reports_v1</code></td></tr>
 </tbody></table>
 
 ## Resources

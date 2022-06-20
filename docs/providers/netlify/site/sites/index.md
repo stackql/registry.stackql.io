@@ -23,42 +23,42 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `git_provider` | `string` |
-| `url` | `string` |
-| `force_ssl` | `boolean` |
-| `published_deploy` | `object` |
-| `capabilities` | `object` |
-| `screenshot_url` | `string` |
-| `id_domain` | `string` |
-| `account_slug` | `string` |
-| `plan` | `string` |
-| `account_name` | `string` |
-| `admin_url` | `string` |
-| `deploy_hook` | `string` |
-| `default_hooks_data` | `object` |
-| `prerender` | `string` |
-| `password` | `string` |
-| `user_id` | `string` |
-| `processing_settings` | `object` |
-| `notification_email` | `string` |
-| `ssl` | `boolean` |
-| `managed_dns` | `boolean` |
-| `session_id` | `string` |
-| `deploy_url` | `string` |
-| `build_image` | `string` |
-| `build_settings` | `object` |
-| `created_at` | `string` |
-| `updated_at` | `string` |
 | `state` | `string` |
-| `custom_domain` | `string` |
+| `capabilities` | `object` |
+| `created_at` | `string` |
+| `build_settings` | `object` |
+| `git_provider` | `string` |
+| `id_domain` | `string` |
+| `url` | `string` |
+| `password` | `string` |
 | `domain_aliases` | `array` |
+| `build_image` | `string` |
+| `published_deploy` | `object` |
+| `user_id` | `string` |
+| `screenshot_url` | `string` |
+| `prerender` | `string` |
+| `account_slug` | `string` |
 | `ssl_url` | `string` |
+| `plan` | `string` |
+| `deploy_url` | `string` |
+| `managed_dns` | `boolean` |
+| `force_ssl` | `boolean` |
+| `deploy_hook` | `string` |
+| `account_name` | `string` |
+| `ssl` | `boolean` |
+| `session_id` | `string` |
+| `notification_email` | `string` |
+| `admin_url` | `string` |
+| `processing_settings` | `object` |
+| `updated_at` | `string` |
+| `default_hooks_data` | `object` |
+| `custom_domain` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getSite` | `SELECT` | `site_id` |
 | `listSites` | `SELECT` |  |
 | `listSitesForAccount` | `SELECT` | `account_slug` |

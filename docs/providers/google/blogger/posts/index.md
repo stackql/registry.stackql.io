@@ -23,29 +23,29 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The identifier of this Post. |
+| `content` | `string` | The content of the Post. May contain HTML markup. |
+| `updated` | `string` | RFC 3339 date-time when this Post was last updated. |
+| `replies` | `object` | The container of comments on this Post. |
+| `labels` | `array` | The list of labels this Post was tagged with. |
+| `etag` | `string` | Etag of the resource. |
+| `published` | `string` | RFC 3339 date-time when this Post was published. |
+| `customMetaData` | `string` | The JSON meta-data for the Post. |
+| `title` | `string` | The title of the Post. |
+| `location` | `object` | The location for geotagged posts. |
 | `author` | `object` | The author of this Post. |
 | `blog` | `object` | Data about the blog containing this Post. |
-| `status` | `string` | Status of the post. Only set for admin-level requests. |
 | `titleLink` | `string` | The title link URL, similar to atom's related link. |
-| `location` | `object` | The location for geotagged posts. |
-| `title` | `string` | The title of the Post. |
-| `kind` | `string` | The kind of this entity. Always blogger#post. |
-| `labels` | `array` | The list of labels this Post was tagged with. |
-| `content` | `string` | The content of the Post. May contain HTML markup. |
-| `etag` | `string` | Etag of the resource. |
 | `images` | `array` | Display image for the Post. |
-| `selfLink` | `string` | The API REST URL to fetch this resource from. |
-| `url` | `string` | The URL where this Post is displayed. |
-| `published` | `string` | RFC 3339 date-time when this Post was published. |
-| `replies` | `object` | The container of comments on this Post. |
-| `updated` | `string` | RFC 3339 date-time when this Post was last updated. |
 | `readerComments` | `string` | Comment control and display setting for readers of this post. |
-| `customMetaData` | `string` | The JSON meta-data for the Post. |
+| `url` | `string` | The URL where this Post is displayed. |
+| `selfLink` | `string` | The API REST URL to fetch this resource from. |
+| `kind` | `string` | The kind of this entity. Always blogger#post. |
+| `status` | `string` | Status of the post. Only set for admin-level requests. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `blogId, postId` | Gets a post by blog id and post id |
 | `list` | `SELECT` | `blogId` | Lists posts. |
 | `insert` | `INSERT` | `blogId` | Inserts a post. |

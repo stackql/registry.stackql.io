@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `name` | `string` |
-| `download_url` | `string` |
-| `url` | `string` |
-| `type` | `string` |
-| `size` | `integer` |
-| `path` | `string` |
-| `submodule_git_url` | `string` |
-| `_links` | `object` |
-| `sha` | `string` |
-| `encoding` | `string` |
 | `target` | `string` |
 | `git_url` | `string` |
+| `sha` | `string` |
+| `encoding` | `string` |
+| `path` | `string` |
+| `submodule_git_url` | `string` |
 | `html_url` | `string` |
+| `type` | `string` |
+| `download_url` | `string` |
 | `content` | `string` |
+| `url` | `string` |
+| `_links` | `object` |
+| `size` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_readme` | `SELECT` | `owner, repo` | Gets the preferred README for a repository.<br /><br />READMEs support [custom media types](https://docs.github.com/rest/reference/repos#custom-media-types) for retrieving the raw content or rendered HTML. |
 | `get_readme_in_directory` | `SELECT` | `dir, owner, repo` | Gets the README from a repository directory.<br /><br />READMEs support [custom media types](https://docs.github.com/rest/reference/repos#custom-media-types) for retrieving the raw content or rendered HTML. |
 | `create_or_update_file_contents` | `INSERT` | `owner, path, repo, data__content, data__message` | Creates a new file or replaces an existing file in a repository. |

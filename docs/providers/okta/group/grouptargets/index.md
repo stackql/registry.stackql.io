@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `type` | `string` |
-| `_embedded` | `object` |
-| `lastUpdated` | `string` |
 | `objectClass` | `array` |
 | `lastMembershipUpdated` | `string` |
+| `lastUpdated` | `string` |
 | `profile` | `object` |
+| `type` | `string` |
 | `created` | `string` |
 | `_links` | `object` |
+| `_embedded` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `groupId, roleId` | Success |
 | `insert` | `INSERT` | `groupId, roleId, targetGroupId` |  |
 | `delete` | `DELETE` | `groupId, roleId, targetGroupId` |  |

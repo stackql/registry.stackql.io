@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The identifier for this resource. |
+| `status` | `string` | The status of the comment (only populated for admin users). |
+| `post` | `object` | Data about the post containing this comment. |
+| `author` | `object` | The author of this Comment. |
+| `kind` | `string` | The kind of this entry. Always blogger#comment. |
 | `updated` | `string` | RFC 3339 date-time when this comment was last updated. |
-| `published` | `string` | RFC 3339 date-time when this comment was published. |
+| `content` | `string` | The actual content of the comment. May include HTML markup. |
+| `blog` | `object` | Data about the blog containing this comment. |
 | `selfLink` | `string` | The API REST URL to fetch this resource from. |
 | `inReplyTo` | `object` | Data about the comment this is in reply to. |
-| `author` | `object` | The author of this Comment. |
-| `blog` | `object` | Data about the blog containing this comment. |
-| `post` | `object` | Data about the post containing this comment. |
-| `status` | `string` | The status of the comment (only populated for admin users). |
-| `content` | `string` | The actual content of the comment. May include HTML markup. |
-| `kind` | `string` | The kind of this entry. Always blogger#comment. |
+| `published` | `string` | RFC 3339 date-time when this comment was published. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `blogId, commentId, postId` | Gets a comment by id. |
 | `list` | `SELECT` | `blogId, postId` | Lists comments. |
 | `delete` | `DELETE` | `blogId, commentId, postId` | Deletes a comment by blog id, post id and comment id. |

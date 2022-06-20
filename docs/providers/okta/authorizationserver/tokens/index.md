@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `expiresAt` | `string` |
 | `clientId` | `string` |
 | `lastUpdated` | `string` |
 | `created` | `string` |
-| `scopes` | `array` |
-| `issuer` | `string` |
-| `createdBy` | `object` |
 | `status` | `string` |
+| `createdBy` | `object` |
+| `issuer` | `string` |
 | `userId` | `string` |
-| `_links` | `object` |
+| `expiresAt` | `string` |
+| `scopes` | `array` |
 | `_embedded` | `object` |
+| `_links` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `authServerId, clientId, tokenId` |
 | `list` | `SELECT` | `authServerId, clientId` |
 | `delete` | `DELETE` | `authServerId, clientId, tokenId` |

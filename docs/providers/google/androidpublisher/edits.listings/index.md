@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `kind` | `string` | The kind of this response ("androidpublisher#listingsListResponse"). |
 | `listings` | `array` | All localized listings. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `editId, language, packageName` | Gets a localized store listing. |
 | `list` | `SELECT` | `editId, packageName` | Lists all localized store listings. |
 | `delete` | `DELETE` | `editId, language, packageName` | Deletes a localized store listing. |

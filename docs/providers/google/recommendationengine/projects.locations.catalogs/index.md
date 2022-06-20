@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `catalogs` | `array` | Output only. All the customer's catalogs. |
 | `nextPageToken` | `string` | Pagination token, if not returned indicates the last page. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `locationsId, projectsId` | Lists all the catalog configurations associated with the project. |
 | `patch` | `EXEC` | `catalogsId, locationsId, projectsId` | Updates a catalog item. Partial updating is supported. Non-existing items will be created. |

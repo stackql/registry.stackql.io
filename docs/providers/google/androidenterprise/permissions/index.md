@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `name` | `string` | The name of the permission. |
 | `description` | `string` | A longer description of the Permissions resource, giving more details of what it affects. |
 | `permissionId` | `string` | An opaque string uniquely identifying the permission. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `permissionId` |

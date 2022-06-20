@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | The id of the runner. |
 | `name` | `string` | The name of the runner. |
 | `labels` | `array` |  |
@@ -32,7 +32,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `busy` | `boolean` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_self_hosted_runner_for_org` | `SELECT` | `org, runner_id` | Gets a specific self-hosted runner configured in an organization.<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. |
 | `get_self_hosted_runner_for_repo` | `SELECT` | `owner, repo, runner_id` | Gets a specific self-hosted runner configured in a repository.<br /><br />You must authenticate using an access token with the `repo` scope to use this<br />endpoint. |
 | `list_self_hosted_runners_for_org` | `SELECT` | `org` | Lists all self-hosted runners configured in an organization.<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. |

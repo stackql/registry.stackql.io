@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | The list next page token. |
 | `transferJobs` | `array` | A list of transfer jobs. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `projectId, transferJobsId` | Gets a transfer job. |
 | `list` | `SELECT` | `filter` | Lists transfer jobs. |
 | `create` | `INSERT` |  | Creates a transfer job that runs periodically. |

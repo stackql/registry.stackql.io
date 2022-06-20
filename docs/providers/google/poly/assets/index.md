@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `assets` | `array` | A list of assets that match the criteria specified in the request. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | The continuation token for retrieving the next page. If empty, indicates that there are no more pages. To get the next page, submit the same request specifying this value as the page_token. |
 | `totalSize` | `integer` | The total number of assets in the list, without pagination. |
+| `assets` | `array` | A list of assets that match the criteria specified in the request. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `assetsId` | Returns detailed information about an asset given its name. PRIVATE assets are returned only if the currently authenticated user (via OAuth token) is the author of the asset. |
 | `list` | `SELECT` |  | Lists all public, remixable assets. These are assets with an access level of PUBLIC and published under the CC-By license. |

@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | Page token to retrieve the next page of results in the list. |
 | `resultSizeEstimate` | `integer` | Estimated total number of results. |
 | `threads` | `array` | List of threads. Note that each thread resource does not contain a list of `messages`. The list of `messages` for a given thread can be fetched using the threads.get method. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `id, userId` | Gets the specified thread. |
 | `list` | `SELECT` | `userId` | Lists the threads in the user's mailbox. |
 | `delete` | `DELETE` | `id, userId` | Immediately and permanently deletes the specified thread. This operation cannot be undone. Prefer `threads.trash` instead. |

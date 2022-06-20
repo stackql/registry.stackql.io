@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `regionStatuses` | `array` | Status of the program in each region. Regions with the same status and review eligibility are grouped together in `regionCodes`. |
 | `state` | `string` | If program is successfully onboarded for at least one region. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `merchantId` | Retrieves the status and review eligibility for the Shopping Ads program. |
 | `requestreview` | `EXEC` | `merchantId` | Requests a review for Shopping Ads program in the provided country. |

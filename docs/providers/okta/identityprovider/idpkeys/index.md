@@ -23,26 +23,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `_links` | `object` |
-| `use` | `string` |
-| `x5t` | `string` |
-| `kty` | `string` |
-| `alg` | `string` |
-| `status` | `string` |
-| `x5c` | `array` |
-| `x5t#S256` | `string` |
+|:-----|:---------|
 | `kid` | `string` |
+| `status` | `string` |
+| `x5t#S256` | `string` |
 | `expiresAt` | `string` |
-| `e` | `string` |
-| `key_ops` | `array` |
-| `x5u` | `string` |
 | `created` | `string` |
-| `false` | `string` |
+| `key_ops` | `array` |
+| `alg` | `string` |
+| `e` | `string` |
+| `x5u` | `string` |
 | `lastUpdated` | `string` |
+| `kty` | `string` |
+| `_links` | `object` |
+| `false` | `string` |
+| `x5t` | `string` |
+| `x5c` | `array` |
+| `use` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `idpId, keyId` | Gets a specific IdP Key Credential by `kid` |
 | `list` | `SELECT` | `idpId` | Enumerates signing key credentials for an IdP |
 | `insert` | `INSERT` | `idpId, validityYears` | Generates a new X.509 certificate for an IdP signing key credential to be used for signing assertions sent to the IdP |

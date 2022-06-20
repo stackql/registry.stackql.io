@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `repricingRules` | `array` | The rules from the specified merchant. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
+| `repricingRules` | `array` | The rules from the specified merchant. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `merchantId, ruleId` | Retrieves a repricing rule from your Merchant Center account. |
 | `list` | `SELECT` | `merchantId` | Lists the repricing rules in your Merchant Center account. |
 | `create` | `INSERT` | `merchantId` | Creates a repricing rule for your Merchant Center account. |

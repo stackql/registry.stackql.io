@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Account ID. |
 | `name` | `string` | Account name. |
+| `starred` | `boolean` | Indicates whether this account is starred or not. |
 | `webProperties` | `array` | List of web properties under this account. |
 | `kind` | `string` | Resource type for Analytics AccountSummary. |
-| `starred` | `boolean` | Indicates whether this account is starred or not. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` |  |

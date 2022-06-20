@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `enterprises` | `array` | The list of enterprises. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | If there are more results, a token to retrieve next page of results. |
+| `enterprises` | `array` | The list of enterprises. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `enterprisesId` | Gets a web app. |
 | `list` | `SELECT` |  | Lists EMM-managed enterprises. Only BASIC fields are returned. |
 | `create` | `INSERT` |  | Creates an enterprise. This is the last step in the enterprise signup flow. |

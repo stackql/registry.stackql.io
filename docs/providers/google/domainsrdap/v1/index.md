@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `getDomains` | `EXEC` |  | The RDAP API recognizes this command from the RDAP specification but does not support it. The response is a formatted 501 error. |
 | `getEntities` | `EXEC` |  | The RDAP API recognizes this command from the RDAP specification but does not support it. The response is a formatted 501 error. |
 | `getHelp` | `EXEC` |  | Get help information for the RDAP API, including links to documentation. |

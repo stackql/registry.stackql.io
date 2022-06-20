@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `listByPlayer` | `EXEC` |  | Returns a list showing the current progress on events in this application for the currently authenticated user. |
 | `listDefinitions` | `EXEC` |  | Returns a list of the event definitions in this application. |
 | `record` | `EXEC` |  | Records a batch of changes to the number of times events have occurred for the currently authenticated user of this application. |

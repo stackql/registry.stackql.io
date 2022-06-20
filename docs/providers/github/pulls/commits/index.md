@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `parents` | `array` |  |
-| `node_id` | `string` |  |
-| `author` | `object` | Simple User |
-| `commit` | `object` |  |
-| `url` | `string` |  |
-| `comments_url` | `string` |  |
-| `sha` | `string` |  |
-| `committer` | `object` | Simple User |
-| `files` | `array` |  |
+|:-----|:---------|:------------|
 | `html_url` | `string` |  |
+| `committer` | `object` | Simple User |
+| `author` | `object` | Simple User |
+| `url` | `string` |  |
+| `sha` | `string` |  |
+| `comments_url` | `string` |  |
+| `files` | `array` |  |
+| `node_id` | `string` |  |
+| `commit` | `object` |  |
+| `parents` | `array` |  |
 | `stats` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_commits` | `SELECT` | `owner, pull_number, repo` |

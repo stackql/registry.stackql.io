@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `kind` | `string` | The kind of this response ("androidpublisher#tracksListResponse"). |
 | `tracks` | `array` | All tracks. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `editId, packageName, track` | Gets a track. |
 | `list` | `SELECT` | `editId, packageName` | Lists all tracks. |
 | `patch` | `EXEC` | `editId, packageName, track` | Patches a track. |

@@ -23,22 +23,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
+| `createdBy` | `object` |
 | `issuer` | `string` |
-| `userId` | `string` |
-| `_embedded` | `object` |
+| `clientId` | `string` |
 | `scopeId` | `string` |
-| `source` | `string` |
 | `_links` | `object` |
 | `created` | `string` |
-| `createdBy` | `object` |
-| `lastUpdated` | `string` |
+| `userId` | `string` |
 | `status` | `string` |
-| `clientId` | `string` |
+| `source` | `string` |
+| `lastUpdated` | `string` |
+| `_embedded` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `grantId, userId` | Gets a grant for the specified user |
 | `list` | `SELECT` | `userId` | Lists all grants for the specified user |
 | `delete` | `DELETE` | `grantId, userId` | Revokes one grant for a specified user |

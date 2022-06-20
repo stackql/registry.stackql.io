@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `machines` | `array` |
 | `total_count` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `codespace_machines_for_authenticated_user` | `SELECT` | `codespace_name` | List the machine types a codespace can transition to use.<br /><br />You must authenticate using an access token with the `codespace` scope to use this endpoint. |
 | `repo_machines_for_authenticated_user` | `SELECT` | `location, owner, repo` | List the machine types available for a given repository based on its configuration.<br /><br />Location is required.<br /><br />You must authenticate using an access token with the `codespace` scope to use this endpoint. |

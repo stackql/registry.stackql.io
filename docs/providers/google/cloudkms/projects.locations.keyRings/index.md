@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `totalSize` | `integer` | The total number of KeyRings that matched the query. |
 | `keyRings` | `array` | The list of KeyRings. |
 | `nextPageToken` | `string` | A token to retrieve next page of results. Pass this value in ListKeyRingsRequest.page_token to retrieve the next page of results. |
-| `totalSize` | `integer` | The total number of KeyRings that matched the query. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `keyRingsId, locationsId, projectsId` | Returns metadata for a given ImportJob. |
 | `list` | `SELECT` | `locationsId, projectsId` | Lists KeyRings. |
 | `create` | `INSERT` | `locationsId, projectsId` | Create a new KeyRing in a given Project and Location. |

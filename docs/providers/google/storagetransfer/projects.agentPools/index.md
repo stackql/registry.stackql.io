@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `agentPools` | `array` | A list of agent pools. |
 | `nextPageToken` | `string` | The list next page token. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `agentPoolsId, filter, projectsId` | Lists transfer operations. Operations are ordered by their creation time in reverse chronological order. |
 | `list` | `SELECT` | `projectsId` | Lists agent pools. |
 | `create` | `INSERT` | `projectsId` | Creates an agent pool resource. |

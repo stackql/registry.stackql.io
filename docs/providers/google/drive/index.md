@@ -20,7 +20,7 @@ Manages files in Drive including uploading, downloading, searching, detecting ch
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Drive API</td></tr>
 <tr><td><b>Description</b></td><td>Manages files in Drive including uploading, downloading, searching, detecting changes, and updating sharing permissions.</td></tr>
-<tr><td><b>Id</b></td><td><code>drive:v2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>drive:v3</code></td></tr>
 </tbody></table>
 
 ## Resources

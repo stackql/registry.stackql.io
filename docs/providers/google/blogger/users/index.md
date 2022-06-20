@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The identifier for this User. |
+| `blogs` | `object` | The container of blogs for this user. |
+| `created` | `string` | The timestamp of when this profile was created, in seconds since epoch. |
+| `about` | `string` | Profile summary information. |
 | `selfLink` | `string` | The API REST URL to fetch this resource from. |
 | `kind` | `string` | The kind of this entity. Always blogger#user. |
-| `created` | `string` | The timestamp of when this profile was created, in seconds since epoch. |
-| `locale` | `object` | This user's locale |
 | `url` | `string` | The user's profile page. |
-| `about` | `string` | Profile summary information. |
-| `blogs` | `object` | The container of blogs for this user. |
+| `locale` | `object` | This user's locale |
 | `displayName` | `string` | The display name. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `userId` |

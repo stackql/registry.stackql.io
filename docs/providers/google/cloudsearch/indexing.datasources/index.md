@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `deleteSchema` | `EXEC` | `datasourcesId` | Deletes the schema of a data source. **Note:** This API requires an admin or service account to execute. |
 | `getSchema` | `EXEC` | `datasourcesId` | Gets the schema of a data source. **Note:** This API requires an admin or service account to execute. |
 | `updateSchema` | `EXEC` | `datasourcesId` | Updates the schema of a data source. This method does not perform incremental updates to the schema. Instead, this method updates the schema by overwriting the entire schema. **Note:** This API requires an admin or service account to execute. |

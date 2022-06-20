@@ -23,10 +23,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `transferMessages` | `array` | Output only. The stored pipeline transfer messages. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | Output only. The next-pagination token. For multiple-page list results, this token can be used as the `GetTransferRunLogRequest.page_token` to request the next page of list results. |
+| `transferMessages` | `array` | Output only. The stored pipeline transfer messages. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `projectsId, runsId, transferConfigsId` |

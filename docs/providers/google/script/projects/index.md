@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `parentId` | `string` | The parent's Drive ID that the script will be attached to. This is usually the ID of a Google Document or Google Sheet. This filed is optional, and if not set, a stand-alone script will be created. |
+| `scriptId` | `string` | The script project's Drive ID. |
 | `title` | `string` | The title for the project. |
 | `updateTime` | `string` | When the script was last updated. |
 | `createTime` | `string` | When the script was created. |
 | `creator` | `object` | A simple user profile resource. |
 | `lastModifyUser` | `object` | A simple user profile resource. |
-| `parentId` | `string` | The parent's Drive ID that the script will be attached to. This is usually the ID of a Google Document or Google Sheet. This filed is optional, and if not set, a stand-alone script will be created. |
-| `scriptId` | `string` | The script project's Drive ID. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `scriptId` | Gets a script project's metadata. |
 | `create` | `INSERT` |  | Creates a new, empty script project with no script files and a base manifest file. |
 | `getContent` | `EXEC` | `scriptId` | Gets the content of the script project, including the code source and metadata for each script file. |

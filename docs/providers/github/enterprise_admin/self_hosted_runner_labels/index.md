@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `labels` | `array` |
+|:-----|:---------|
 | `total_count` | `integer` |
+| `labels` | `array` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list_labels_for_self_hosted_runner_for_enterprise` | `SELECT` | `enterprise, runner_id` | Lists all labels for a self-hosted runner configured in an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |
 | `add_custom_labels_to_self_hosted_runner_for_enterprise` | `INSERT` | `enterprise, runner_id, data__labels` | Add custom labels to a self-hosted runner configured in an enterprise.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |
 | `remove_all_custom_labels_from_self_hosted_runner_for_enterprise` | `DELETE` | `enterprise, runner_id` | Remove all custom labels from a self-hosted runner configured in an<br />enterprise. Returns the remaining read-only labels from the runner.<br /><br />You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint. |

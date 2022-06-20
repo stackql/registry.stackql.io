@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `showEndUserFooter` | `boolean` |
+|:-----|:---------|
 | `_links` | `object` |
+| `showEndUserFooter` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` |  | Gets preferences of your organization. |
 | `hideEndUserFooter` | `EXEC` |  | Hide the Okta UI footer for all end users of your organization. |
 | `showEndUserFooter` | `EXEC` |  | Makes the Okta UI footer visible for all end users of your organization. |

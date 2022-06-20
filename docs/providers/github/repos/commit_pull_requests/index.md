@@ -23,44 +23,44 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
-| `diff_url` | `string` |  |
-| `comments_url` | `string` |  |
-| `patch_url` | `string` |  |
-| `review_comment_url` | `string` |  |
-| `review_comments_url` | `string` |  |
-| `merge_commit_sha` | `string` |  |
-| `assignee` | `object` | Simple User |
-| `state` | `string` |  |
-| `title` | `string` |  |
-| `milestone` | `object` | A collection of related issues and pull requests. |
-| `active_lock_reason` | `string` |  |
-| `body` | `string` |  |
-| `assignees` | `array` |  |
-| `url` | `string` |  |
-| `statuses_url` | `string` |  |
-| `node_id` | `string` |  |
 | `requested_reviewers` | `array` |  |
-| `locked` | `boolean` |  |
-| `auto_merge` | `object` | The status of auto merging a pull request. |
-| `user` | `object` | Simple User |
 | `number` | `integer` |  |
-| `issue_url` | `string` |  |
-| `_links` | `object` |  |
-| `created_at` | `string` |  |
 | `merged_at` | `string` |  |
-| `labels` | `array` |  |
-| `head` | `object` |  |
-| `draft` | `boolean` | Indicates whether or not the pull request is a draft. |
+| `diff_url` | `string` |  |
+| `user` | `object` | Simple User |
+| `locked` | `boolean` |  |
+| `issue_url` | `string` |  |
+| `milestone` | `object` | A collection of related issues and pull requests. |
+| `_links` | `object` |  |
 | `base` | `object` |  |
+| `state` | `string` |  |
+| `assignee` | `object` | Simple User |
+| `patch_url` | `string` |  |
 | `author_association` | `string` | How the author is associated with the repository. |
-| `commits_url` | `string` |  |
 | `html_url` | `string` |  |
+| `comments_url` | `string` |  |
+| `commits_url` | `string` |  |
+| `head` | `object` |  |
 | `updated_at` | `string` |  |
-| `closed_at` | `string` |  |
 | `requested_teams` | `array` |  |
+| `auto_merge` | `object` | The status of auto merging a pull request. |
+| `assignees` | `array` |  |
+| `labels` | `array` |  |
+| `title` | `string` |  |
+| `review_comments_url` | `string` |  |
+| `node_id` | `string` |  |
+| `statuses_url` | `string` |  |
+| `draft` | `boolean` | Indicates whether or not the pull request is a draft. |
+| `created_at` | `string` |  |
+| `closed_at` | `string` |  |
+| `url` | `string` |  |
+| `body` | `string` |  |
+| `merge_commit_sha` | `string` |  |
+| `review_comment_url` | `string` |  |
+| `active_lock_reason` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_pull_requests_associated_with_commit` | `SELECT` | `commit_sha, owner, repo` |

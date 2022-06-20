@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `name` | `string` | Resource name of the attachment, in the form "spaces/*/messages/*/attachments/*". |
 | `contentName` | `string` | The original file name for the content, not the full path. |
 | `contentType` | `string` | The content type (MIME type) of the file. |
@@ -34,5 +34,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `attachmentDataRef` | `object` | A reference to the data of an attachment. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `attachmentsId, messagesId, spacesId` |

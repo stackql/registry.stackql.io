@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `name` | `string` | Output only. Resource name. |
-| `displayName` | `string` | The node's display name. |
 | `sasUserIds` | `array` | User ids used by the devices belonging to this node. |
+| `displayName` | `string` | The node's display name. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `deploymentsId, devicesId` | Returns a requested node. |
 | `delete` | `DELETE` | `deploymentsId, devicesId` | Deletes a node. |
 | `move` | `EXEC` | `deploymentsId, devicesId` | Moves a node under another node or customer. |

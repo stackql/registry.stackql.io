@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Entity user link ID |
+| `entity` | `object` | Entity for this link. It can be an account, a web property, or a view (profile). |
 | `kind` | `string` | Resource type for entity user link. |
 | `permissions` | `object` | Permissions the user has for this entity. |
 | `selfLink` | `string` | Self link for this resource. |
 | `userRef` | `object` | JSON template for a user reference. |
-| `entity` | `object` | Entity for this link. It can be an account, a web property, or a view (profile). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `accountId, webPropertyId` | Lists webProperty-user links for a given web property. |
 | `insert` | `INSERT` | `accountId, webPropertyId` | Adds a new user to the given web property. |
 | `delete` | `DELETE` | `accountId, linkId, webPropertyId` | Removes a user from the given web property. |

@@ -23,31 +23,31 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
 | `name` | `string` |
-| `received_events_url` | `string` |
-| `starred_url` | `string` |
+| `html_url` | `string` |
+| `starred_at` | `string` |
 | `organizations_url` | `string` |
+| `repos_url` | `string` |
+| `site_admin` | `boolean` |
+| `type` | `string` |
+| `subscriptions_url` | `string` |
+| `following_url` | `string` |
+| `starred_url` | `string` |
+| `avatar_url` | `string` |
+| `events_url` | `string` |
 | `email` | `string` |
 | `login` | `string` |
-| `subscriptions_url` | `string` |
-| `repos_url` | `string` |
-| `url` | `string` |
-| `site_admin` | `boolean` |
-| `events_url` | `string` |
-| `type` | `string` |
-| `following_url` | `string` |
-| `avatar_url` | `string` |
-| `starred_at` | `string` |
-| `gravatar_id` | `string` |
 | `followers_url` | `string` |
-| `gists_url` | `string` |
+| `received_events_url` | `string` |
+| `gravatar_id` | `string` |
 | `node_id` | `string` |
-| `html_url` | `string` |
+| `url` | `string` |
+| `gists_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_member_legacy` | `SELECT` | `team_id, username` | The "Get team member" endpoint (described below) is deprecated.<br /><br />We recommend using the [Get team membership for a user](https://docs.github.com/rest/reference/teams#get-team-membership-for-a-user) endpoint instead. It allows you to get both active and pending memberships.<br /><br />To list members in a team, the team must be visible to the authenticated user. |
 | `list_members_in_org` | `SELECT` | `org, team_slug` | Team members will include the members of child teams.<br /><br />To list members in a team, the team must be visible to the authenticated user. |
 | `list_members_legacy` | `SELECT` | `team_id` | **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [`List team members`](https://docs.github.com/rest/reference/teams#list-team-members) endpoint.<br /><br />Team members will include the members of child teams. |

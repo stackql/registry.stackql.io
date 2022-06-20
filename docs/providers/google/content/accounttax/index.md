@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `resources` | `array` |  |
+|:-----|:---------|:------------|
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#accounttaxListResponse`". |
 | `nextPageToken` | `string` | The token for the retrieval of the next page of account tax settings. |
+| `resources` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, merchantId` | Retrieves the tax settings of the account. |
 | `list` | `SELECT` | `merchantId` | Lists the tax settings of the sub-accounts in your Merchant Center account. |
 | `custombatch` | `EXEC` |  | Retrieves and updates tax settings of multiple accounts in a single request. |

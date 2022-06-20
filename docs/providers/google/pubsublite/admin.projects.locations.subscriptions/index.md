@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A token that can be sent as `page_token` to retrieve the next page of results. If this field is omitted, there are no more results. |
 | `subscriptions` | `array` | The list of subscriptions in the requested parent. The order of the subscriptions is unspecified. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `locationsId, projectsId, subscriptionsId` | Returns the topic configuration. |
 | `list` | `SELECT` | `locationsId, projectsId` | Returns the list of subscriptions for the given project. |
 | `create` | `INSERT` | `locationsId, projectsId` | Creates a new subscription. |

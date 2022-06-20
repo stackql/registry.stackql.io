@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `processes` | `array` | List of processes matching request parameters. |
 | `nextPageToken` | `string` | Token for the next page of results. If empty, there are no more pages remaining. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` |  | List information about processes made by or on behalf of a user, such as process type and current status. |
 | `listScriptProcesses` | `EXEC` |  | List information about a script's executed processes, such as process type and current status. |

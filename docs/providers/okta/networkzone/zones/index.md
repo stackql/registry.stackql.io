@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
+| `gateways` | `array` |
+| `type` | `string` |
+| `proxies` | `array` |
 | `proxyType` | `string` |
 | `asns` | `array` |
-| `usage` | `string` |
-| `gateways` | `array` |
-| `_links` | `object` |
-| `lastUpdated` | `string` |
-| `created` | `string` |
 | `locations` | `array` |
-| `proxies` | `array` |
 | `status` | `string` |
-| `type` | `string` |
+| `created` | `string` |
+| `lastUpdated` | `string` |
 | `system` | `boolean` |
+| `_links` | `object` |
+| `usage` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `zoneId` | Fetches a network zone from your Okta organization by `id`. |
 | `list` | `SELECT` |  | Enumerates network zones added to your organization with pagination. A subset of zones can be returned that match a supported filter expression or query. |
 | `insert` | `INSERT` |  | Adds a new network zone to your Okta organization. |

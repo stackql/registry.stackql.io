@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `name` | `string` |  |
 | `git_url` | `string` |  |
-| `file_size` | `integer` |  |
-| `html_url` | `string` |  |
-| `line_numbers` | `array` |  |
+| `language` | `string` |  |
 | `path` | `string` |  |
 | `sha` | `string` |  |
-| `score` | `number` |  |
-| `language` | `string` |  |
-| `repository` | `object` | Minimal Repository |
+| `file_size` | `integer` |  |
 | `url` | `string` |  |
+| `line_numbers` | `array` |  |
 | `last_modified_at` | `string` |  |
+| `repository` | `object` | Minimal Repository |
+| `score` | `number` |  |
 | `text_matches` | `array` |  |
+| `html_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `code` | `SELECT` | `q` |

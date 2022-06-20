@@ -23,28 +23,28 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `url` | `string` |  |
-| `reactions` | `object` |  |
-| `author` | `object` | Simple User |
-| `title` | `string` | The title of the discussion. |
-| `body` | `string` | The main text of the discussion. |
-| `html_url` | `string` |  |
-| `comments_count` | `integer` |  |
-| `number` | `integer` | The unique sequence number of a team discussion. |
-| `team_url` | `string` |  |
-| `created_at` | `string` |  |
-| `comments_url` | `string` |  |
-| `pinned` | `boolean` | Whether or not this discussion should be pinned for easy retrieval. |
+|:-----|:---------|:------------|
 | `body_version` | `string` | The current version of the body content. If provided, this update operation will be rejected if the given version does not match the latest version on the server. |
+| `pinned` | `boolean` | Whether or not this discussion should be pinned for easy retrieval. |
+| `author` | `object` | Simple User |
+| `number` | `integer` | The unique sequence number of a team discussion. |
+| `created_at` | `string` |  |
 | `node_id` | `string` |  |
-| `updated_at` | `string` |  |
+| `url` | `string` |  |
 | `last_edited_at` | `string` |  |
+| `reactions` | `object` |  |
+| `title` | `string` | The title of the discussion. |
 | `private` | `boolean` | Whether or not this discussion should be restricted to team members and organization administrators. |
+| `html_url` | `string` |  |
 | `body_html` | `string` |  |
+| `body` | `string` | The main text of the discussion. |
+| `comments_count` | `integer` |  |
+| `updated_at` | `string` |  |
+| `comments_url` | `string` |  |
+| `team_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_discussion_in_org` | `SELECT` | `discussion_number, org, team_slug` | Get a specific discussion on a team's page. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).<br /><br />**Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}`. |
 | `get_discussion_legacy` | `SELECT` | `discussion_number, team_id` | **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Get a discussion](https://docs.github.com/rest/reference/teams#get-a-discussion) endpoint.<br /><br />Get a specific discussion on a team's page. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). |
 | `list_discussions_in_org` | `SELECT` | `org, team_slug` | List all discussions on a team's page. OAuth access tokens require the `read:discussion` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).<br /><br />**Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/{org_id}/team/{team_id}/discussions`. |

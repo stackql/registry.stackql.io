@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `data` | `object` |
-| `summary` | `string` |
-| `email` | `string` |
 | `last_name` | `string` |
 | `site_url` | `string` |
-| `company` | `string` |
-| `number` | `integer` |
-| `first_name` | `string` |
 | `body` | `string` |
+| `email` | `string` |
+| `company` | `string` |
+| `first_name` | `string` |
+| `summary` | `string` |
+| `data` | `object` |
+| `number` | `integer` |
 | `created_at` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `listFormSubmission` | `SELECT` | `submission_id` |
 | `deleteSubmission` | `DELETE` | `submission_id` |

@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
+| `created` | `string` |
+| `title` | `string` |
 | `$schema` | `string` |
 | `_links` | `object` |
-| `title` | `string` |
-| `type` | `string` |
-| `lastUpdated` | `string` |
 | `definitions` | `object` |
+| `lastUpdated` | `string` |
 | `properties` | `object` |
-| `created` | `string` |
+| `type` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `schemaId` | Fetches the schema for a Schema Id. |
 | `partialUpdate` | `EXEC` | `schemaId` | Partial updates on the User Profile properties of the user schema. |

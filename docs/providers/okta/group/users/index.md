@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `type` | `object` |
-| `lastLogin` | `string` |
 | `lastUpdated` | `string` |
-| `credentials` | `object` |
 | `_embedded` | `object` |
-| `passwordChanged` | `string` |
-| `statusChanged` | `string` |
+| `lastLogin` | `string` |
+| `credentials` | `object` |
 | `status` | `string` |
-| `created` | `string` |
 | `transitioningToStatus` | `string` |
+| `passwordChanged` | `string` |
 | `profile` | `object` |
-| `activated` | `string` |
+| `created` | `string` |
 | `_links` | `object` |
+| `activated` | `string` |
+| `statusChanged` | `string` |
+| `type` | `object` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `groupId` | Enumerates all users that are a member of a group. |
 | `insert` | `INSERT` | `groupId, userId` | Adds a user to a group with 'OKTA_GROUP' type. |
 | `delete` | `DELETE` | `groupId, userId` | Removes a user from a group with 'OKTA_GROUP' type. |

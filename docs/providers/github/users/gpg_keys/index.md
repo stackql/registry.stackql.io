@@ -23,23 +23,23 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
-| `primary_key_id` | `integer` |
-| `key_id` | `string` |
-| `can_encrypt_storage` | `boolean` |
-| `created_at` | `string` |
-| `subkeys` | `array` |
 | `can_sign` | `boolean` |
-| `expires_at` | `string` |
-| `emails` | `array` |
-| `can_certify` | `boolean` |
+| `created_at` | `string` |
+| `key_id` | `string` |
+| `primary_key_id` | `integer` |
 | `can_encrypt_comms` | `boolean` |
-| `raw_key` | `string` |
+| `can_certify` | `boolean` |
+| `can_encrypt_storage` | `boolean` |
+| `subkeys` | `array` |
+| `expires_at` | `string` |
 | `public_key` | `string` |
+| `raw_key` | `string` |
+| `emails` | `array` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_gpg_key_for_authenticated_user` | `SELECT` | `gpg_key_id` | View extended details for a single GPG key. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:gpg_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). |
 | `list_gpg_keys_for_authenticated_user` | `SELECT` |  | Lists the current user's GPG keys. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:gpg_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). |
 | `list_gpg_keys_for_user` | `SELECT` | `username` | Lists the GPG keys for a user. This information is accessible by anyone. |

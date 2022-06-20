@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
+| `lastUpdated` | `string` |
 | `userId` | `string` |
-| `_embedded` | `object` |
-| `status` | `string` |
+| `clientId` | `string` |
+| `created` | `string` |
+| `issuer` | `string` |
 | `_links` | `object` |
 | `expiresAt` | `string` |
 | `scopes` | `array` |
-| `clientId` | `string` |
-| `lastUpdated` | `string` |
-| `created` | `string` |
-| `issuer` | `string` |
+| `_embedded` | `object` |
+| `status` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `appId, tokenId` | Gets a token for the specified application |
 | `list` | `SELECT` | `appId` | Lists all tokens for the application |
 | `delete` | `DELETE` | `appId, tokenId` | Revokes the specified token for the specified application |

@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
+| `blogId` | `string` | Blog Id. |
 | `counts` | `array` | The container of posts in this blog. |
 | `kind` | `string` | The kind of this entry. Always blogger#page_views. |
-| `blogId` | `string` | Blog Id. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `blogId` |

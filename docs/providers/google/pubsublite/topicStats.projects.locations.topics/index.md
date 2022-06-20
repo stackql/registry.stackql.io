@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `computeHeadCursor` | `EXEC` | `locationsId, projectsId, topicsId` | Compute the head cursor for the partition. The head cursor's offset is guaranteed to be less than or equal to all messages which have not yet been acknowledged as published, and greater than the offset of any message whose publish has already been acknowledged. It is zero if there have never been messages in the partition. |
 | `computeMessageStats` | `EXEC` | `locationsId, projectsId, topicsId` | Compute statistics about a range of messages in a given topic and partition. |
 | `computeTimeCursor` | `EXEC` | `locationsId, projectsId, topicsId` | Compute the corresponding cursor for a publish or event time in a topic partition. |

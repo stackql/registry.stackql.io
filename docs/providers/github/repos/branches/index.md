@@ -23,18 +23,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `name` | `string` |  |
+| `protection_url` | `string` |  |
 | `required_approving_review_count` | `integer` |  |
 | `_links` | `object` |  |
 | `commit` | `object` | Commit |
 | `pattern` | `string` |  |
 | `protected` | `boolean` |  |
 | `protection` | `object` | Branch Protection |
-| `protection_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_branch` | `SELECT` | `branch, owner, repo` |  |
 | `list_branches` | `SELECT` | `owner, repo` |  |
 | `merge_upstream` | `EXEC` | `owner, repo, data__branch` | Sync a branch of a forked repository to keep it up-to-date with the upstream repository. |

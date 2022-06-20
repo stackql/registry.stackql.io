@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | If there are more results, a token to retrieve next page of results. |
 | `webApps` | `array` | The list of web apps. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `enterprisesId, webAppsId` | Gets a web app. |
 | `list` | `SELECT` | `enterprisesId` | Lists web apps for a given enterprise. |
 | `create` | `INSERT` | `enterprisesId` | Creates a web app. |

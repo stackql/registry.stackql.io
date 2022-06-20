@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `site_id` | `string` |
-| `dns_zone_id` | `string` |
-| `tag` | `string` |
-| `value` | `string` |
-| `hostname` | `string` |
-| `priority` | `integer` |
-| `ttl` | `integer` |
-| `type` | `string` |
-| `managed` | `boolean` |
 | `flag` | `integer` |
+| `dns_zone_id` | `string` |
+| `hostname` | `string` |
+| `site_id` | `string` |
+| `tag` | `string` |
+| `type` | `string` |
+| `priority` | `integer` |
+| `value` | `string` |
+| `managed` | `boolean` |
+| `ttl` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getDnsRecords` | `SELECT` | `zone_id` |
 | `getIndividualDnsRecord` | `SELECT` | `dns_record_id, zone_id` |
 | `createDnsRecord` | `INSERT` | `zone_id` |

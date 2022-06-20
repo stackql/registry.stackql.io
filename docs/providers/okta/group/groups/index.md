@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `profile` | `object` |
-| `type` | `string` |
-| `lastMembershipUpdated` | `string` |
 | `_links` | `object` |
-| `lastUpdated` | `string` |
 | `objectClass` | `array` |
-| `_embedded` | `object` |
 | `created` | `string` |
+| `lastMembershipUpdated` | `string` |
+| `type` | `string` |
+| `_embedded` | `object` |
+| `lastUpdated` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `groupId` | Fetches a group from your organization. |
 | `list` | `SELECT` |  | Enumerates groups in your organization with pagination. A subset of groups can be returned that match a supported filter expression or query. |
 | `insert` | `INSERT` |  | Adds a new group with `OKTA_GROUP` type to your organization. |

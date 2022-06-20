@@ -23,7 +23,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `metadata` | `object` | ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create. |
 | `spec` | `object` | PersistentVolumeSpec is the specification of a persistent volume. |
 | `status` | `object` | PersistentVolumeStatus is the current status of a persistent volume. |
@@ -31,7 +31,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `kind` | `string` | Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `listCoreV1PersistentVolume` | `SELECT` |  | list or watch objects of kind PersistentVolume |
 | `readCoreV1PersistentVolume` | `SELECT` | `name` | read the specified PersistentVolume |
 | `createCoreV1PersistentVolume` | `INSERT` |  | create a PersistentVolume |

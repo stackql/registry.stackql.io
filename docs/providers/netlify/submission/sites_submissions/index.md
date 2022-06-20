@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `site_url` | `string` |
-| `last_name` | `string` |
-| `body` | `string` |
-| `summary` | `string` |
-| `created_at` | `string` |
-| `email` | `string` |
-| `first_name` | `string` |
-| `number` | `integer` |
-| `company` | `string` |
 | `data` | `object` |
+| `number` | `integer` |
+| `body` | `string` |
+| `created_at` | `string` |
+| `first_name` | `string` |
+| `summary` | `string` |
+| `site_url` | `string` |
+| `company` | `string` |
+| `last_name` | `string` |
+| `email` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `listSiteSubmissions` | `SELECT` | `site_id` |

@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A token to retrieve the next page of results. Pass this value in the ListClientUsersRequest.pageToken field in the subsequent call to the clients.invitations.list method to retrieve the next page of results. |
 | `users` | `array` | The returned list of client users. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, clientAccountId, userId` | Retrieves an existing client user. |
 | `list` | `SELECT` | `accountId, clientAccountId` | Lists all the known client users for a specified sponsor buyer account ID. |
 | `update` | `EXEC` | `accountId, clientAccountId, userId` | Updates an existing client user. Only the user status can be changed on update. |

@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
+| `verified` | `boolean` |
 | `created_at` | `string` |
 | `key` | `string` |
 | `read_only` | `boolean` |
 | `title` | `string` |
 | `url` | `string` |
-| `verified` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_public_ssh_key_for_authenticated_user` | `SELECT` | `key_id` | View extended details for a single public SSH key. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:public_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). |
 | `list_public_keys_for_user` | `SELECT` | `username` | Lists the _verified_ public SSH keys for a user. This is accessible by anyone. |
 | `list_public_ssh_keys_for_authenticated_user` | `SELECT` |  | Lists the public SSH keys for the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:public_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). |

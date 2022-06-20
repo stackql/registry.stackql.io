@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
+| `deploy_id` | `string` |
 | `slug` | `string` |
 | `ssl_url` | `string` |
 | `url` | `string` |
-| `deploy_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `listSiteDeployedBranches` | `SELECT` | `site_id` |

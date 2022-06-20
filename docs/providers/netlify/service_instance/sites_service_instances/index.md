@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `service_slug` | `string` |
-| `updated_at` | `string` |
 | `created_at` | `string` |
+| `env` | `object` |
+| `auth_url` | `string` |
+| `external_attributes` | `object` |
 | `service_path` | `string` |
 | `config` | `object` |
-| `url` | `string` |
-| `auth_url` | `string` |
+| `service_slug` | `string` |
 | `snippets` | `array` |
+| `url` | `string` |
 | `service_name` | `string` |
-| `env` | `object` |
-| `external_attributes` | `object` |
+| `updated_at` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `listServiceInstancesForSite` | `SELECT` | `site_id` |

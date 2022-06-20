@@ -23,33 +23,33 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `node_id` | `string` |  |
-| `body` | `string` |  |
-| `body_html` | `string` |  |
-| `author` | `object` | Simple User |
-| `html_url` | `string` |  |
-| `assets` | `array` |  |
-| `published_at` | `string` |  |
-| `draft` | `boolean` | true to create a draft (unpublished) release, false to create a published one. |
-| `zipball_url` | `string` |  |
-| `upload_url` | `string` |  |
-| `prerelease` | `boolean` | Whether to identify the release as a prerelease or a full release. |
-| `tarball_url` | `string` |  |
-| `tag_name` | `string` | The name of the tag. |
-| `target_commitish` | `string` | Specifies the commitish value that determines where the Git tag is created from. |
-| `mentions_count` | `integer` |  |
-| `discussion_url` | `string` | The URL of the release discussion. |
 | `reactions` | `object` |  |
-| `body_text` | `string` |  |
-| `url` | `string` |  |
-| `assets_url` | `string` |  |
+| `draft` | `boolean` | true to create a draft (unpublished) release, false to create a published one. |
+| `html_url` | `string` |  |
+| `tarball_url` | `string` |  |
+| `assets` | `array` |  |
+| `body` | `string` |  |
+| `author` | `object` | Simple User |
+| `body_html` | `string` |  |
 | `created_at` | `string` |  |
+| `prerelease` | `boolean` | Whether to identify the release as a prerelease or a full release. |
+| `tag_name` | `string` | The name of the tag. |
+| `mentions_count` | `integer` |  |
+| `target_commitish` | `string` | Specifies the commitish value that determines where the Git tag is created from. |
+| `zipball_url` | `string` |  |
+| `body_text` | `string` |  |
+| `published_at` | `string` |  |
+| `url` | `string` |  |
+| `upload_url` | `string` |  |
+| `discussion_url` | `string` | The URL of the release discussion. |
+| `assets_url` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_release` | `SELECT` | `owner, release_id, repo` | **Note:** This returns an `upload_url` key corresponding to the endpoint for uploading release assets. This key is a [hypermedia resource](https://docs.github.com/rest/overview/resources-in-the-rest-api#hypermedia). |
 | `get_release_by_tag` | `SELECT` | `owner, repo, tag` | Get a published release with the specified tag. |
 | `list_releases` | `SELECT` | `owner, repo` | This returns a list of releases, which does not include regular Git tags that have not been associated with a release. To get a list of Git tags, use the [Repository Tags API](https://docs.github.com/rest/reference/repos#list-repository-tags).<br /><br />Information about published releases are available to everyone. Only users with push access will receive listings for draft releases. |

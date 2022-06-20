@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` |  |
-| `actor` | `object` | Actor |
 | `created_at` | `string` |  |
 | `org` | `object` | Actor |
 | `payload` | `object` |  |
 | `public` | `boolean` |  |
 | `repo` | `object` |  |
 | `type` | `string` |  |
+| `actor` | `object` | Actor |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_received_events_for_user` | `SELECT` | `username` |

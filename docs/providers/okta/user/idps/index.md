@@ -23,18 +23,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
+| `created` | `string` |
+| `policy` | `object` |
+| `status` | `string` |
 | `issuerMode` | `string` |
 | `type` | `string` |
-| `policy` | `object` |
-| `_links` | `object` |
 | `lastUpdated` | `string` |
-| `created` | `string` |
-| `status` | `string` |
 | `protocol` | `object` |
+| `_links` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `userId` |

@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `description` | `string` |
+| `updated_at` | `string` |
+| `content_reports_enabled` | `boolean` |
 | `documentation` | `string` |
 | `files` | `object` |
 | `health_percentage` | `integer` |
-| `updated_at` | `string` |
-| `content_reports_enabled` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_community_profile_metrics` | `SELECT` | `owner, repo` |

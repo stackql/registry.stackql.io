@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `apiVersion` | `string` | The API version for this call such as "serving.knative.dev/v1". |
-| `kind` | `string` | The kind of resource, in this case always "Configuration". |
+|:-----|:---------|:------------|
 | `metadata` | `object` | k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create. |
 | `spec` | `object` | ConfigurationSpec holds the desired state of the Configuration (from the client). |
 | `status` | `object` | ConfigurationStatus communicates the observed state of the Configuration (from the controller). |
+| `apiVersion` | `string` | The API version for this call such as "serving.knative.dev/v1". |
+| `kind` | `string` | The kind of resource, in this case always "Configuration". |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `configurationsId, namespacesId` | Get information about a service. |
 | `list` | `SELECT` | `namespacesId` | List configurations. |

@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `versions` | `array` | The list of versions. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | The token use to fetch the next page of records. if not exist in the response, that means no more versions to list. |
+| `versions` | `array` | The list of versions. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `scriptId, versionNumber` | Gets a version of a script project. |
 | `list` | `SELECT` | `scriptId` | List the versions of a script project. |
 | `create` | `INSERT` | `scriptId` | Creates a new immutable version using the current code, with a unique version number. |

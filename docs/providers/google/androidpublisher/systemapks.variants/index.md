@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `packageName, variantId, versionCode` | Returns a previously created system APK variant. |
 | `list` | `SELECT` | `packageName, versionCode` | Returns the list of previously created system APK variants. |
 | `create` | `INSERT` | `packageName, versionCode` | Creates an APK which is suitable for inclusion in a system image from an already uploaded Android App Bundle. |

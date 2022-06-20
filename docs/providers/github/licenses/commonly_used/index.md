@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `name` | `string` |
-| `key` | `string` |
 | `node_id` | `string` |
 | `spdx_id` | `string` |
 | `url` | `string` |
 | `html_url` | `string` |
+| `key` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get_all_commonly_used` | `SELECT` |  |

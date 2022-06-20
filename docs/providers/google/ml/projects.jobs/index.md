@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `jobs` | `array` | The list of jobs. |
 | `nextPageToken` | `string` | Optional. Pass this token as the `page_token` field of the request for a subsequent call. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `jobsId, projectsId` | Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service. |
 | `list` | `SELECT` | `projectsId` | Lists the jobs in the project. If there are no jobs that match the request parameters, the list request returns an empty response body: {}. |
 | `create` | `INSERT` | `projectsId` | Creates a training or a batch prediction job. |

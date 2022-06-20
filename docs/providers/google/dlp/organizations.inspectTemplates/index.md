@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `inspectTemplates` | `array` | List of inspectTemplates, up to page_size in ListInspectTemplatesRequest. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | If the next page is available then the next page token to be used in following ListInspectTemplates request. |
+| `inspectTemplates` | `array` | List of inspectTemplates, up to page_size in ListInspectTemplatesRequest. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `inspectTemplatesId, organizationsId` | Gets a stored infoType. See https://cloud.google.com/dlp/docs/creating-stored-infotypes to learn more. |
 | `list` | `SELECT` | `organizationsId` | Lists InspectTemplates. See https://cloud.google.com/dlp/docs/creating-templates to learn more. |
 | `create` | `INSERT` | `organizationsId` | Creates an InspectTemplate for re-using frequently used configuration for inspecting content, images, and storage. See https://cloud.google.com/dlp/docs/creating-templates to learn more. |

@@ -23,31 +23,31 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` |  |
 | `description` | `string` |  |
-| `commits_url` | `string` |  |
-| `fork_of` | `object` | Gist |
-| `user` | `string` |  |
-| `git_pull_url` | `string` |  |
 | `updated_at` | `string` |  |
-| `comments_url` | `string` |  |
-| `html_url` | `string` |  |
+| `owner` | `object` | Simple User |
+| `files` | `object` |  |
+| `user` | `string` |  |
 | `git_push_url` | `string` |  |
 | `node_id` | `string` |  |
-| `public` | `boolean` |  |
-| `forks_url` | `string` |  |
-| `files` | `object` |  |
-| `forks` | `array` |  |
-| `comments` | `integer` |  |
-| `truncated` | `boolean` |  |
-| `url` | `string` |  |
-| `owner` | `object` | Simple User |
 | `history` | `array` |  |
+| `public` | `boolean` |  |
+| `comments` | `integer` |  |
+| `git_pull_url` | `string` |  |
+| `url` | `string` |  |
+| `fork_of` | `object` | Gist |
+| `truncated` | `boolean` |  |
+| `html_url` | `string` |  |
+| `forks_url` | `string` |  |
+| `commits_url` | `string` |  |
 | `created_at` | `string` |  |
+| `comments_url` | `string` |  |
+| `forks` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `gist_id` |  |
 | `get_revision` | `SELECT` | `gist_id, sha` |  |
 | `list` | `SELECT` |  | Lists the authenticated user's gists or if called anonymously, this endpoint returns all public gists: |

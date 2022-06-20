@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `email` | `string` |
-| `primary` | `boolean` |
+|:-----|:---------|
 | `verified` | `boolean` |
 | `visibility` | `string` |
+| `email` | `string` |
+| `primary` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list_emails_for_authenticated_user` | `SELECT` |  | Lists all of your email addresses, and specifies which one is visible to the public. This endpoint is accessible with the `user:email` scope. |
 | `add_email_for_authenticated_user` | `INSERT` |  | This endpoint is accessible with the `user` scope. |
 | `delete_email_for_authenticated_user` | `DELETE` |  | This endpoint is accessible with the `user` scope. |

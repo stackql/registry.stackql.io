@@ -23,30 +23,30 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
 | `name` | `string` |
-| `subscriptions_url` | `string` |
-| `organizations_url` | `string` |
-| `email` | `string` |
-| `starred_at` | `string` |
 | `following_url` | `string` |
-| `starred_url` | `string` |
-| `login` | `string` |
-| `repos_url` | `string` |
-| `avatar_url` | `string` |
-| `events_url` | `string` |
-| `received_events_url` | `string` |
 | `site_admin` | `boolean` |
-| `gravatar_id` | `string` |
-| `url` | `string` |
-| `type` | `string` |
-| `followers_url` | `string` |
-| `html_url` | `string` |
-| `node_id` | `string` |
 | `gists_url` | `string` |
+| `node_id` | `string` |
+| `followers_url` | `string` |
+| `email` | `string` |
+| `starred_url` | `string` |
+| `subscriptions_url` | `string` |
+| `received_events_url` | `string` |
+| `organizations_url` | `string` |
+| `events_url` | `string` |
+| `url` | `string` |
+| `login` | `string` |
+| `starred_at` | `string` |
+| `avatar_url` | `string` |
+| `html_url` | `string` |
+| `type` | `string` |
+| `repos_url` | `string` |
+| `gravatar_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list_members` | `SELECT` | `org` | List all users who are members of an organization. If the authenticated user is also a member of this organization then both concealed and public members will be returned. |
 | `remove_member` | `DELETE` | `org, username` | Removing a user from this list will remove them from all teams and they will no longer have any access to the organization's repositories. |

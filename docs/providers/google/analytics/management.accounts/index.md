@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | Account ID. |
 | `name` | `string` | Account name. |
+| `updated` | `string` | Time the account was last modified. |
+| `starred` | `boolean` | Indicates whether this account is starred or not. |
+| `childLink` | `object` | Child link for an account entry. Points to the list of web properties for this account. |
 | `created` | `string` | Time the account was created. |
 | `permissions` | `object` | Permissions the user has for this account. |
-| `starred` | `boolean` | Indicates whether this account is starred or not. |
-| `updated` | `string` | Time the account was last modified. |
-| `selfLink` | `string` | Link for this account. |
 | `kind` | `string` | Resource type for Analytics account. |
-| `childLink` | `object` | Child link for an account entry. Points to the list of web properties for this account. |
+| `selfLink` | `string` | Link for this account. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` |  |

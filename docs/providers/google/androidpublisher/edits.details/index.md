@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `contactPhone` | `string` | The user-visible support telephone number for this app. |
 | `contactWebsite` | `string` | The user-visible website for this app. |
 | `defaultLanguage` | `string` | Default language code, in BCP 47 format (eg "en-US"). |
 | `contactEmail` | `string` | The user-visible support email for this app. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `editId, packageName` | Gets details of an app. |
 | `patch` | `EXEC` | `editId, packageName` | Patches details of an app. |
 | `update` | `EXEC` | `editId, packageName` | Updates details of an app. |

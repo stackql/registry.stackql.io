@@ -23,34 +23,34 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | [Output Only] The unique identifier for the operation. This identifier is defined by the server. |
 | `name` | `string` | [Output Only] Name of the operation. |
 | `description` | `string` | [Output Only] A textual description of the operation, which is set when the operation is created. |
+| `kind` | `string` | [Output Only] Type of the resource. Always `compute#operation` for Operation resources. |
+| `insertTime` | `string` | [Output Only] The time that this operation was requested. This value is in RFC3339 text format. |
+| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
+| `targetId` | `string` | [Output Only] The unique target ID, which identifies a specific incarnation of the target resource. |
+| `status` | `string` | [Output Only] The status of the operation, which can be one of the following: `PENDING`, `RUNNING`, or `DONE`. |
+| `region` | `string` | [Output Only] The URL of the region where the operation resides. Only applicable when performing regional operations. |
+| `clientOperationId` | `string` | [Output Only] The value of `requestId` if you provided it in the request. Not present otherwise. |
+| `progress` | `integer` | [Output Only] An optional progress indicator that ranges from 0 to 100. There is no requirement that this be linear or support any granularity of operations. This should not be used to guess when the operation will be complete. This number should monotonically increase as the operation progresses. |
+| `zone` | `string` | [Output Only] The URL of the zone where the operation resides. Only applicable when performing per-zone operations. |
+| `user` | `string` | [Output Only] User who requested the operation, for example: `user@example.com`. |
 | `endTime` | `string` | [Output Only] The time that this operation was completed. This value is in RFC3339 text format. |
+| `operationType` | `string` | [Output Only] The type of operation, such as `insert`, `update`, or `delete`, and so on. |
+| `startTime` | `string` | [Output Only] The time that this operation was started by the server. This value is in RFC3339 text format. |
+| `statusMessage` | `string` | [Output Only] An optional textual description of the current status of the operation. |
+| `error` | `object` | [Output Only] If errors are generated during processing of the operation, this field will be populated. |
+| `creationTimestamp` | `string` | [Deprecated] This field is deprecated. |
 | `httpErrorStatusCode` | `integer` | [Output Only] If the operation fails, this field contains the HTTP error status code that was returned. For example, a `404` means the resource was not found. |
 | `operationGroupId` | `string` | [Output Only] An ID that represents a group of operations, such as when a group of operations results from a `bulkInsert` API request. |
 | `warnings` | `array` | [Output Only] If warning messages are generated during processing of the operation, this field will be populated. |
-| `kind` | `string` | [Output Only] Type of the resource. Always `compute#operation` for Operation resources. |
-| `zone` | `string` | [Output Only] The URL of the zone where the operation resides. Only applicable when performing per-zone operations. |
-| `error` | `object` | [Output Only] If errors are generated during processing of the operation, this field will be populated. |
-| `creationTimestamp` | `string` | [Deprecated] This field is deprecated. |
 | `httpErrorMessage` | `string` | [Output Only] If the operation fails, this field contains the HTTP error message that was returned, such as `NOT FOUND`. |
-| `progress` | `integer` | [Output Only] An optional progress indicator that ranges from 0 to 100. There is no requirement that this be linear or support any granularity of operations. This should not be used to guess when the operation will be complete. This number should monotonically increase as the operation progresses. |
-| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
-| `insertTime` | `string` | [Output Only] The time that this operation was requested. This value is in RFC3339 text format. |
-| `region` | `string` | [Output Only] The URL of the region where the operation resides. Only applicable when performing regional operations. |
-| `startTime` | `string` | [Output Only] The time that this operation was started by the server. This value is in RFC3339 text format. |
 | `targetLink` | `string` | [Output Only] The URL of the resource that the operation modifies. For operations related to creating a snapshot, this points to the persistent disk that the snapshot was created from. |
-| `statusMessage` | `string` | [Output Only] An optional textual description of the current status of the operation. |
-| `clientOperationId` | `string` | [Output Only] The value of `requestId` if you provided it in the request. Not present otherwise. |
-| `operationType` | `string` | [Output Only] The type of operation, such as `insert`, `update`, or `delete`, and so on. |
-| `targetId` | `string` | [Output Only] The unique target ID, which identifies a specific incarnation of the target resource. |
-| `user` | `string` | [Output Only] User who requested the operation, for example: `user@example.com`. |
-| `status` | `string` | [Output Only] The status of the operation, which can be one of the following: `PENDING`, `RUNNING`, or `DONE`. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `operation, project, region` | Retrieves the specified region-specific Operations resource. |
 | `list` | `SELECT` | `project, region` | Retrieves a list of Operation resources contained within the specified region. |
 | `delete` | `DELETE` | `operation, project, region` | Deletes the specified region-specific Operations resource. |

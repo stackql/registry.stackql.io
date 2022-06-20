@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `capacityCommitments` | `array` | List of capacity commitments visible to the user. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | Token to retrieve the next page of results, or empty if there are no more results in the list. |
+| `capacityCommitments` | `array` | List of capacity commitments visible to the user. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `capacityCommitmentsId, locationsId, projectsId` | Returns information about the reservation. |
 | `list` | `SELECT` | `locationsId, projectsId` | Lists all the capacity commitments for the admin project. |
 | `create` | `INSERT` | `locationsId, projectsId` | Creates a new capacity commitment resource. |

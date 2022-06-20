@@ -25,6 +25,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `connectCoreV1GetNamespacedPodAttach` | `EXEC` | `name, namespace` | connect GET requests to attach of Pod |
 | `connectCoreV1PostNamespacedPodAttach` | `EXEC` | `name, namespace` | connect POST requests to attach of Pod |

@@ -23,30 +23,30 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
 | `name` | `string` |
-| `following_url` | `string` |
-| `type` | `string` |
-| `email` | `string` |
-| `avatar_url` | `string` |
-| `repos_url` | `string` |
-| `received_events_url` | `string` |
-| `site_admin` | `boolean` |
-| `starred_url` | `string` |
-| `subscriptions_url` | `string` |
-| `starred_at` | `string` |
-| `url` | `string` |
 | `organizations_url` | `string` |
-| `login` | `string` |
-| `gravatar_id` | `string` |
 | `html_url` | `string` |
+| `gravatar_id` | `string` |
+| `type` | `string` |
+| `node_id` | `string` |
+| `avatar_url` | `string` |
+| `received_events_url` | `string` |
 | `followers_url` | `string` |
 | `gists_url` | `string` |
-| `node_id` | `string` |
+| `following_url` | `string` |
+| `repos_url` | `string` |
+| `email` | `string` |
+| `url` | `string` |
+| `site_admin` | `boolean` |
 | `events_url` | `string` |
+| `starred_url` | `string` |
+| `starred_at` | `string` |
+| `login` | `string` |
+| `subscriptions_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list_followers_for_authenticated_user` | `SELECT` |  | Lists the people following the authenticated user. |
 | `list_followers_for_user` | `SELECT` | `username` | Lists the people following the specified user. |

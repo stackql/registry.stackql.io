@@ -23,21 +23,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `valueType` | `string` |
-| `claimType` | `string` |
 | `status` | `string` |
-| `system` | `boolean` |
-| `conditions` | `object` |
-| `alwaysIncludeInToken` | `boolean` |
 | `value` | `string` |
 | `_links` | `object` |
+| `alwaysIncludeInToken` | `boolean` |
+| `conditions` | `object` |
+| `system` | `boolean` |
+| `valueType` | `string` |
+| `claimType` | `string` |
 | `group_filter_type` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `authServerId, claimId` |
 | `list` | `SELECT` | `authServerId` |
 | `insert` | `INSERT` | `authServerId` |

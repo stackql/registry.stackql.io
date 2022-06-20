@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `creatives` | `array` | The list of creatives. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A token to retrieve the next page of results. Pass this value in the ListCreativesRequest.page_token field in the subsequent call to `ListCreatives` method to retrieve the next page of results. |
+| `creatives` | `array` | The list of creatives. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountId, creativeId` | Gets a creative. |
 | `list` | `SELECT` | `accountId` | Lists creatives. |
 | `create` | `INSERT` | `accountId` | Creates a creative. |

@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `number` |  |
 | `name` | `string` |  |
-| `visibility` | `string` |  |
-| `inherited_allows_public_repositories` | `boolean` |  |
-| `runners_url` | `string` |  |
 | `inherited` | `boolean` |  |
-| `allows_public_repositories` | `boolean` |  |
-| `default` | `boolean` |  |
 | `selected_repositories_url` | `string` | Link to the selected repositories resource for this runner group. Not present unless visibility was set to `selected` |
+| `allows_public_repositories` | `boolean` |  |
+| `inherited_allows_public_repositories` | `boolean` |  |
+| `default` | `boolean` |  |
+| `runners_url` | `string` |  |
+| `visibility` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_self_hosted_runner_group_for_org` | `SELECT` | `org, runner_group_id` | The self-hosted runner groups REST API is available with GitHub Enterprise Cloud. For more information, see "[GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products)."<br /><br />Gets a specific self-hosted runner group for an organization.<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. |
 | `list_self_hosted_runner_groups_for_org` | `SELECT` | `org` | The self-hosted runner groups REST API is available with GitHub Enterprise Cloud. For more information, see "[GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products)."<br /><br />Lists all self-hosted runner groups configured in an organization and inherited from an enterprise.<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. |
 | `create_self_hosted_runner_group_for_org` | `INSERT` | `org, data__name` | The self-hosted runner groups REST API is available with GitHub Enterprise Cloud and GitHub Enterprise Server. For more information, see "[GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products)."<br /><br />Creates a new self-hosted runner group for an organization.<br /><br />You must authenticate using an access token with the `admin:org` scope to use this endpoint. |

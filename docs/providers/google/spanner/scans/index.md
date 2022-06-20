@@ -23,10 +23,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `scans` | `array` | Available scans based on the list query parameters. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | Token to retrieve the next page of results, or empty if there are no more results in the list. |
+| `scans` | `array` | Available scans based on the list query parameters. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` |  |

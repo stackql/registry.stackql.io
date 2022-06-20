@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
+| `meta` | `object` |
+| `schemas` | `array` |
 | `displayName` | `string` |
 | `externalId` | `string` |
 | `members` | `array` |
-| `meta` | `object` |
-| `schemas` | `array` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_provisioning_information_for_enterprise_group` | `SELECT` | `enterprise, scim_group_id` | **Note:** The SCIM API endpoints for enterprise accounts are currently in beta and are subject to change. |
 | `list_provisioned_groups_enterprise` | `SELECT` | `enterprise` | **Note:** The SCIM API endpoints for enterprise accounts are currently in beta and are subject to change. |
 | `provision_and_invite_enterprise_group` | `INSERT` | `enterprise, data__displayName, data__schemas` | **Note:** The SCIM API endpoints for enterprise accounts are currently in beta and are subject to change.<br /><br />Provision an enterprise group, and invite users to the group. This sends invitation emails to the email address of the invited users to join the GitHub organization that the SCIM group corresponds to. |

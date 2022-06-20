@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `cloudTopicName` | `string` | Cloud pub/sub topic to which notifications are sent (read-only). |
 | `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "`content#pubsubNotificationSettings`" |
 | `registeredEvents` | `array` | List of event types. Acceptable values are: - "`orderPendingShipment`"  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `merchantId` | Retrieves a Merchant Center account's pubsub notification settings. |
 | `update` | `EXEC` | `merchantId` | Register a Merchant Center account for pubsub notifications. Note that cloud topic name should not be provided as part of the request. |

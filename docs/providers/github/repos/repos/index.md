@@ -23,95 +23,95 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
 | `name` | `string` |  |
 | `description` | `string` |  |
-| `languages_url` | `string` |  |
-| `created_at` | `string` |  |
-| `events_url` | `string` |  |
-| `default_branch` | `string` |  |
-| `private` | `boolean` |  |
-| `size` | `integer` |  |
-| `deployments_url` | `string` |  |
-| `branches_url` | `string` |  |
-| `permissions` | `object` |  |
-| `comments_url` | `string` |  |
-| `tags_url` | `string` |  |
-| `git_commits_url` | `string` |  |
-| `subscribers_url` | `string` |  |
-| `updated_at` | `string` |  |
-| `forks_count` | `integer` |  |
 | `issue_events_url` | `string` |  |
-| `assignees_url` | `string` |  |
-| `watchers` | `integer` |  |
-| `git_refs_url` | `string` |  |
-| `subscription_url` | `string` |  |
-| `open_issues_count` | `integer` |  |
-| `is_template` | `boolean` |  |
-| `stargazers_count` | `integer` |  |
-| `template_repository` | `object` | A git repository |
+| `stargazers_url` | `string` |  |
+| `teams_url` | `string` |  |
+| `compare_url` | `string` |  |
+| `has_issues` | `boolean` |  |
 | `node_id` | `string` |  |
-| `visibility` | `string` |  |
-| `blobs_url` | `string` |  |
+| `subscribers_count` | `integer` |  |
+| `clone_url` | `string` |  |
+| `template_repository` | `object` | A git repository |
+| `contents_url` | `string` |  |
+| `network_count` | `integer` |  |
+| `git_commits_url` | `string` |  |
+| `issue_comment_url` | `string` |  |
 | `homepage` | `string` |  |
-| `git_tags_url` | `string` |  |
-| `forks` | `integer` |  |
-| `owner` | `object` | Simple User |
-| `archived` | `boolean` |  |
+| `fork` | `boolean` |  |
+| `has_downloads` | `boolean` |  |
+| `comments_url` | `string` |  |
+| `contributors_url` | `string` |  |
+| `commits_url` | `string` |  |
 | `has_pages` | `boolean` |  |
 | `collaborators_url` | `string` |  |
-| `ssh_url` | `string` |  |
-| `html_url` | `string` |  |
-| `notifications_url` | `string` |  |
-| `allow_forking` | `boolean` |  |
-| `open_issues` | `integer` |  |
-| `downloads_url` | `string` |  |
-| `watchers_count` | `integer` |  |
-| `contents_url` | `string` |  |
-| `issue_comment_url` | `string` |  |
-| `mirror_url` | `string` |  |
-| `compare_url` | `string` |  |
-| `labels_url` | `string` |  |
-| `contributors_url` | `string` |  |
-| `releases_url` | `string` |  |
-| `git_url` | `string` |  |
-| `subscribers_count` | `integer` |  |
-| `hooks_url` | `string` |  |
-| `stargazers_url` | `string` |  |
-| `has_issues` | `boolean` |  |
-| `pushed_at` | `string` |  |
-| `issues_url` | `string` |  |
-| `license` | `object` |  |
-| `temp_clone_token` | `string` |  |
-| `commits_url` | `string` |  |
-| `archive_url` | `string` |  |
-| `network_count` | `integer` |  |
-| `has_wiki` | `boolean` |  |
-| `language` | `string` |  |
-| `delete_branch_on_merge` | `boolean` |  |
-| `has_downloads` | `boolean` |  |
-| `keys_url` | `string` |  |
 | `code_of_conduct` | `object` | Code Of Conduct |
-| `disabled` | `boolean` |  |
-| `forks_url` | `string` |  |
-| `merges_url` | `string` |  |
-| `svn_url` | `string` |  |
-| `milestones_url` | `string` |  |
-| `statuses_url` | `string` |  |
-| `fork` | `boolean` |  |
-| `clone_url` | `string` |  |
-| `trees_url` | `string` |  |
-| `url` | `string` |  |
-| `full_name` | `string` |  |
+| `tags_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `languages_url` | `string` |  |
 | `has_projects` | `boolean` |  |
-| `role_name` | `string` |  |
-| `topics` | `array` |  |
+| `archived` | `boolean` |  |
+| `subscription_url` | `string` |  |
+| `subscribers_url` | `string` |  |
+| `has_wiki` | `boolean` |  |
+| `ssh_url` | `string` |  |
+| `stargazers_count` | `integer` |  |
+| `releases_url` | `string` |  |
+| `url` | `string` |  |
+| `private` | `boolean` |  |
+| `allow_forking` | `boolean` |  |
+| `events_url` | `string` |  |
+| `disabled` | `boolean` |  |
+| `watchers_count` | `integer` |  |
+| `html_url` | `string` |  |
+| `hooks_url` | `string` |  |
+| `issues_url` | `string` |  |
+| `svn_url` | `string` |  |
+| `temp_clone_token` | `string` |  |
+| `git_tags_url` | `string` |  |
+| `owner` | `object` | Simple User |
+| `branches_url` | `string` |  |
+| `downloads_url` | `string` |  |
+| `language` | `string` |  |
+| `blobs_url` | `string` |  |
+| `labels_url` | `string` |  |
 | `pulls_url` | `string` |  |
-| `teams_url` | `string` |  |
+| `full_name` | `string` |  |
+| `notifications_url` | `string` |  |
+| `permissions` | `object` |  |
+| `forks` | `integer` |  |
+| `topics` | `array` |  |
+| `open_issues_count` | `integer` |  |
+| `assignees_url` | `string` |  |
+| `git_refs_url` | `string` |  |
+| `statuses_url` | `string` |  |
+| `forks_count` | `integer` |  |
+| `watchers` | `integer` |  |
+| `trees_url` | `string` |  |
+| `keys_url` | `string` |  |
+| `deployments_url` | `string` |  |
+| `license` | `object` |  |
+| `pushed_at` | `string` |  |
+| `forks_url` | `string` |  |
+| `is_template` | `boolean` |  |
+| `visibility` | `string` |  |
+| `merges_url` | `string` |  |
+| `open_issues` | `integer` |  |
+| `git_url` | `string` |  |
+| `milestones_url` | `string` |  |
+| `delete_branch_on_merge` | `boolean` |  |
+| `archive_url` | `string` |  |
+| `size` | `integer` |  |
+| `mirror_url` | `string` |  |
+| `role_name` | `string` |  |
+| `created_at` | `string` |  |
+| `default_branch` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `owner, repo` | The `parent` and `source` objects are present when the repository is a fork. `parent` is the repository this repository was forked from, `source` is the ultimate source for the network. |
 | `list_for_authenticated_user` | `SELECT` |  | Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.<br /><br />The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership. |
 | `list_for_org` | `SELECT` | `org` | Lists repositories for the specified organization. |

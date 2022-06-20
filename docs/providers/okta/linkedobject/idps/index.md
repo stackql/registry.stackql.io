@@ -23,13 +23,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `primary` | `object` |
+|:-----|:---------|
 | `_links` | `object` |
 | `associated` | `object` |
+| `primary` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `linkedObjectName` |
 | `list` | `SELECT` |  |
 | `insert` | `INSERT` |  |

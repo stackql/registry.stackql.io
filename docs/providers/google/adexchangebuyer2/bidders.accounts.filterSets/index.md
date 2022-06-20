@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | A token to retrieve the next page of results. Pass this value in the ListFilterSetsRequest.pageToken field in the subsequent call to the accounts.filterSets.list method to retrieve the next page of results. |
+|:-----|:---------|:------------|
 | `filterSets` | `array` | The filter sets belonging to the buyer. |
+| `nextPageToken` | `string` | A token to retrieve the next page of results. Pass this value in the ListFilterSetsRequest.pageToken field in the subsequent call to the accounts.filterSets.list method to retrieve the next page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `accountsId, biddersId, filterSetsId` | Retrieves the requested filter set for the account with the given account ID. |
 | `list` | `SELECT` | `accountsId, biddersId` | Lists all filter sets for the account with the given account ID. |
 | `create` | `INSERT` | `accountsId, biddersId` | Creates the specified filter set for the account with the given account ID. |

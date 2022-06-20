@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
-| `paths` | `array` |
-| `site_id` | `string` |
 | `submission_count` | `integer` |
 | `created_at` | `string` |
 | `fields` | `array` |
+| `paths` | `array` |
+| `site_id` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `listSiteForms` | `SELECT` | `site_id` |
 | `deleteSiteForm` | `DELETE` | `form_id, site_id` |

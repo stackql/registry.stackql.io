@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `referencesVersion` | `integer` | If set, this APK's expansion file references another APK's expansion file. The file_size field will not be set. |
+|:-----|:---------|:------------|
 | `fileSize` | `string` | If set, this field indicates that this APK has an expansion file uploaded to it: this APK does not reference another APK's expansion file. The field's value is the size of the uploaded expansion file in bytes. |
+| `referencesVersion` | `integer` | If set, this APK's expansion file references another APK's expansion file. The file_size field will not be set. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `apkVersionCode, editId, expansionFileType, packageName` | Fetches the expansion file configuration for the specified APK. |
 | `patch` | `EXEC` | `apkVersionCode, editId, expansionFileType, packageName` | Patches the APK's expansion file configuration to reference another APK's expansion file. To add a new expansion file use the Upload method. |
 | `update` | `EXEC` | `apkVersionCode, editId, expansionFileType, packageName` | Updates the APK's expansion file configuration to reference another APK's expansion file. To add a new expansion file use the Upload method. |

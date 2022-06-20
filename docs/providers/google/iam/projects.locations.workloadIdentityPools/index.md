@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
 | `workloadIdentityPools` | `array` | A list of pools. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `locationsId, projectsId, workloadIdentityPoolsId` | Gets the definition of a Role. |
 | `list` | `SELECT` | `locationsId, projectsId` | Lists all non-deleted WorkloadIdentityPools in a project. If `show_deleted` is set to `true`, then deleted pools are also listed. |
 | `create` | `INSERT` | `locationsId, projectsId` | Creates a new WorkloadIdentityPool. You cannot reuse the name of a deleted pool until 30 days after deletion. |

@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `email` | `string` |
-| `primary` | `boolean` |
+|:-----|:---------|
 | `verified` | `boolean` |
 | `visibility` | `string` |
+| `email` | `string` |
+| `primary` | `boolean` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list_public_emails_for_authenticated_user` | `SELECT` |  |

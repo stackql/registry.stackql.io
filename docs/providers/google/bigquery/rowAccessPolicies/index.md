@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `nextPageToken` | `string` | A token to request the next page of results. |
+|:-----|:---------|:------------|
 | `rowAccessPolicies` | `array` | Row access policies on the requested table. |
+| `nextPageToken` | `string` | A token to request the next page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `datasetsId, projectsId, tablesId` | Lists all row access policies on the specified table. |
 | `getIamPolicy` | `EXEC` | `datasetsId, projectsId, rowAccessPoliciesId, tablesId` | Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. |
 | `setIamPolicy` | `EXEC` | `datasetsId, projectsId, rowAccessPoliciesId, tablesId` | Sets the access control policy on the specified resource. Replaces any existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and `PERMISSION_DENIED` errors. |

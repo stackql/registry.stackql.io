@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `lastUpdated` | `string` |
-| `provider` | `string` |
-| `factorType` | `string` |
-| `_links` | `object` |
-| `verify` | `object` |
-| `status` | `string` |
-| `created` | `string` |
 | `_embedded` | `object` |
+| `factorType` | `string` |
+| `provider` | `string` |
+| `created` | `string` |
+| `status` | `string` |
+| `lastUpdated` | `string` |
+| `verify` | `object` |
+| `_links` | `object` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `userId` |

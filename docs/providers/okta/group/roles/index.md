@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `description` | `string` |
 | `label` | `string` |
-| `_links` | `object` |
-| `assignmentType` | `string` |
-| `created` | `string` |
-| `_embedded` | `object` |
-| `status` | `string` |
-| `type` | `string` |
 | `lastUpdated` | `string` |
+| `status` | `string` |
+| `assignmentType` | `string` |
+| `_embedded` | `object` |
+| `type` | `string` |
+| `_links` | `object` |
+| `created` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `groupId, roleId` | Success |
 | `list` | `SELECT` | `groupId` | Success |
 | `insert` | `INSERT` | `groupId` | Assigns a Role to a Group |

@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `listCoreV1NamespacedSecret` | `SELECT` | `namespace` | list or watch objects of kind Secret |
 | `listCoreV1SecretForAllNamespaces` | `SELECT` |  | list or watch objects of kind Secret |
 | `readCoreV1NamespacedSecret` | `SELECT` | `name, namespace` | read the specified Secret |

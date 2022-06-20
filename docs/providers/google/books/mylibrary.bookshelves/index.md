@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | Id of this bookshelf, only unique by user. |
 | `description` | `string` | Description of this bookshelf. |
-| `title` | `string` | Title of this bookshelf. |
-| `updated` | `string` | Last modified time of this bookshelf (formatted UTC timestamp with millisecond resolution). |
-| `access` | `string` | Whether this bookshelf is PUBLIC or PRIVATE. |
 | `selfLink` | `string` | URL to this resource. |
-| `created` | `string` | Created time for this bookshelf (formatted UTC timestamp with millisecond resolution). |
-| `kind` | `string` | Resource type for bookshelf metadata. |
+| `access` | `string` | Whether this bookshelf is PUBLIC or PRIVATE. |
 | `volumeCount` | `integer` | Number of volumes in this bookshelf. |
+| `kind` | `string` | Resource type for bookshelf metadata. |
+| `updated` | `string` | Last modified time of this bookshelf (formatted UTC timestamp with millisecond resolution). |
+| `title` | `string` | Title of this bookshelf. |
 | `volumesLastUpdated` | `string` | Last time a volume was added or removed from this bookshelf (formatted UTC timestamp with millisecond resolution). |
+| `created` | `string` | Created time for this bookshelf (formatted UTC timestamp with millisecond resolution). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `shelf` | Retrieves metadata for a specific bookshelf belonging to the authenticated user. |
 | `list` | `SELECT` |  | Retrieves a list of bookshelves belonging to the authenticated user. |
 | `addVolume` | `EXEC` | `shelf, volumeId` | Adds a volume to a bookshelf. |

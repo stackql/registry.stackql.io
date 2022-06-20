@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `full_name` | `string` |
-| `role` | `string` |
 | `avatar` | `string` |
 | `email` | `string` |
+| `full_name` | `string` |
+| `role` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `listMembersForAccount` | `SELECT` | `account_slug` |
 | `addMemberToAccount` | `INSERT` | `account_slug` |

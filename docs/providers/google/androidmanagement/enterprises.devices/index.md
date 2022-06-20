@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `devices` | `array` | The list of devices. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | If there are more results, a token to retrieve next page of results. |
+| `devices` | `array` | The list of devices. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `devicesId, enterprisesId` | Gets a web app. |
 | `list` | `SELECT` | `enterprisesId` | Lists devices for a given enterprise. |
 | `delete` | `DELETE` | `devicesId, enterprisesId` | Deletes a web app. |

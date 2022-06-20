@@ -23,11 +23,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `mobileSummary` | `object` | A site's Ad Experience Report summary on a single platform. |
 | `reviewedSite` | `string` | The name of the reviewed site, e.g. `google.com`. |
 | `desktopSummary` | `object` | A site's Ad Experience Report summary on a single platform. |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `get` | `SELECT` | `sitesId` |

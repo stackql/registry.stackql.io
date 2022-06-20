@@ -23,19 +23,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `login_providers` | `array` |
-| `onboarding_progress` | `object` |
+| `last_login` | `string` |
+| `uid` | `string` |
 | `created_at` | `string` |
+| `avatar_url` | `string` |
+| `full_name` | `string` |
+| `onboarding_progress` | `object` |
+| `email` | `string` |
 | `site_count` | `integer` |
 | `affiliate_id` | `string` |
-| `email` | `string` |
-| `uid` | `string` |
-| `last_login` | `string` |
-| `full_name` | `string` |
-| `avatar_url` | `string` |
+| `login_providers` | `array` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `getCurrentUser` | `SELECT` |  |

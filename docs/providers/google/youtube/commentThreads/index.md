@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `string` | The ID that YouTube uses to uniquely identify the comment thread. |
-| `etag` | `string` | Etag of this resource. |
-| `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "youtube#commentThread". |
 | `replies` | `object` | Comments written in (direct or indirect) reply to the top level comment. |
 | `snippet` | `object` | Basic details about a comment thread. |
+| `etag` | `string` | Etag of this resource. |
+| `kind` | `string` | Identifies what kind of resource this is. Value: the fixed string "youtube#commentThread". |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list` | `SELECT` | `part` | Retrieves a list of resources, possibly filtered. |
 | `insert` | `INSERT` | `part` | Inserts a new resource into this collection. |

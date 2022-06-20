@@ -23,16 +23,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `lastUpdated` | `string` |
-| `priority` | `integer` |
 | `profile` | `object` |
 | `_embedded` | `object` |
 | `_links` | `object` |
+| `lastUpdated` | `string` |
+| `priority` | `integer` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `appId, groupId` | Fetches an application group assignment |
 | `list` | `SELECT` | `appId` | Enumerates group assignments for an application. |
 | `delete` | `DELETE` | `appId, groupId` | Removes a group assignment from an application. |

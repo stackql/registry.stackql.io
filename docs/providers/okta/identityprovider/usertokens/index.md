@@ -23,14 +23,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `expiresAt` | `string` |
 | `scopes` | `array` |
 | `token` | `string` |
 | `tokenAuthScheme` | `string` |
 | `tokenType` | `string` |
+| `expiresAt` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `list` | `SELECT` | `idpId, userId` |

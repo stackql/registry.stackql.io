@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
 | `name` | `string` |
 | `description` | `string` |
-| `$schema` | `string` |
-| `_links` | `object` |
-| `properties` | `object` |
-| `title` | `string` |
-| `created` | `string` |
 | `lastUpdated` | `string` |
-| `type` | `string` |
+| `title` | `string` |
+| `$schema` | `string` |
 | `definitions` | `object` |
+| `properties` | `object` |
+| `type` | `string` |
+| `_links` | `object` |
+| `created` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` |  | Fetches the group schema |
 | `update` | `EXEC` |  | Updates, adds ore removes one or more custom Group Profile properties in the schema |

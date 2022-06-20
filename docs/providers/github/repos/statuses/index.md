@@ -23,20 +23,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
 | `description` | `string` |  |
-| `context` | `string` |  |
-| `target_url` | `string` |  |
 | `updated_at` | `string` |  |
-| `state` | `string` |  |
 | `avatar_url` | `string` |  |
-| `node_id` | `string` |  |
 | `url` | `string` |  |
-| `created_at` | `string` |  |
+| `context` | `string` |  |
 | `creator` | `object` | Simple User |
+| `target_url` | `string` |  |
+| `node_id` | `string` |  |
+| `created_at` | `string` |  |
+| `state` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `list_commit_statuses_for_ref` | `SELECT` | `owner, ref, repo` | Users with pull access in a repository can view commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name. Statuses are returned in reverse chronological order. The first status in the list will be the latest one.<br /><br />This resource is also available via a legacy route: `GET /repos/:owner/:repo/statuses/:ref`. |
 | `create_commit_status` | `INSERT` | `owner, repo, sha, data__state` | Users with push access in a repository can create commit statuses for a given SHA.<br /><br />Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error. |

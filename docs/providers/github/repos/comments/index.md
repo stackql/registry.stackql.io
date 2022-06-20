@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` |  |
-| `user` | `object` | Simple User |
-| `line` | `integer` |  |
-| `author_association` | `string` | How the author is associated with the repository. |
-| `node_id` | `string` |  |
 | `body` | `string` |  |
-| `position` | `integer` |  |
-| `commit_id` | `string` |  |
-| `reactions` | `object` |  |
-| `path` | `string` |  |
-| `url` | `string` |  |
-| `updated_at` | `string` |  |
-| `html_url` | `string` |  |
 | `created_at` | `string` |  |
+| `html_url` | `string` |  |
+| `node_id` | `string` |  |
+| `path` | `string` |  |
+| `reactions` | `object` |  |
+| `commit_id` | `string` |  |
+| `position` | `integer` |  |
+| `author_association` | `string` | How the author is associated with the repository. |
+| `line` | `integer` |  |
+| `updated_at` | `string` |  |
+| `url` | `string` |  |
+| `user` | `object` | Simple User |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_commit_comment` | `SELECT` | `comment_id, owner, repo` |  |
 | `list_comments_for_commit` | `SELECT` | `commit_sha, owner, repo` | Use the `:commit_sha` to specify the commit that will have its comments listed. |
 | `list_commit_comments_for_repo` | `SELECT` | `owner, repo` | Commit Comments use [these custom media types](https://docs.github.com/rest/reference/repos#custom-media-types). You can read more about the use of media types in the API [here](https://docs.github.com/rest/overview/media-types/).<br /><br />Comments are ordered by ascending ID. |

@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | Output only. This token is included in the response if there are more results to fetch. To fetch additional results, provide this value as the page_token in a subsequent ListWorkflowTemplatesRequest. |
 | `templates` | `array` | Output only. WorkflowTemplates list. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `projectsId, regionsId, workflowTemplatesId` | Retrieves the latest workflow template.Can retrieve previously instantiated template by specifying optional version parameter. |
 | `list` | `SELECT` | `projectsId, regionsId` | Lists workflows that match the specified filter in the request. |
 | `create` | `INSERT` | `projectsId, regionsId` | Creates new workflow template. |

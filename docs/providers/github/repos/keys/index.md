@@ -23,17 +23,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
-| `created_at` | `string` |
 | `key` | `string` |
 | `read_only` | `boolean` |
 | `title` | `string` |
 | `url` | `string` |
 | `verified` | `boolean` |
+| `created_at` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_deploy_key` | `SELECT` | `key_id, owner, repo` |  |
 | `list_deploy_keys` | `SELECT` | `owner, repo` |  |
 | `create_deploy_key` | `INSERT` | `owner, repo, data__key` | You can create a read-only deploy key. |

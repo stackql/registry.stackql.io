@@ -23,41 +23,41 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
+|:-----|:---------|:------------|
 | `id` | `integer` | The ID of the workflow run. |
 | `name` | `string` | The name of the workflow run. |
-| `status` | `string` |  |
-| `head_repository` | `object` | Minimal Repository |
-| `previous_attempt_url` | `string` | The URL to the previous attempted run of this workflow, if one exists. |
-| `cancel_url` | `string` | The URL to cancel the workflow run. |
-| `rerun_url` | `string` | The URL to rerun the workflow run. |
-| `repository` | `object` | Minimal Repository |
-| `head_repository_id` | `integer` |  |
-| `updated_at` | `string` |  |
-| `node_id` | `string` |  |
-| `head_branch` | `string` |  |
-| `check_suite_id` | `integer` | The ID of the associated check suite. |
-| `url` | `string` | The URL to the workflow run. |
-| `run_attempt` | `integer` | Attempt number of the run, 1 for first attempt and higher if the workflow was re-run. |
-| `check_suite_url` | `string` | The URL to the associated check suite. |
 | `logs_url` | `string` | The URL to download the logs for the workflow run. |
-| `pull_requests` | `array` |  |
-| `workflow_id` | `integer` | The ID of the parent workflow. |
-| `event` | `string` |  |
-| `created_at` | `string` |  |
-| `html_url` | `string` |  |
-| `run_number` | `integer` | The auto incrementing run number for the workflow run. |
-| `conclusion` | `string` |  |
+| `rerun_url` | `string` | The URL to rerun the workflow run. |
+| `url` | `string` | The URL to the workflow run. |
+| `head_repository` | `object` | Minimal Repository |
+| `head_repository_id` | `integer` |  |
 | `run_started_at` | `string` | The start time of the latest run. Resets on re-run. |
-| `head_sha` | `string` | The SHA of the head commit that points to the version of the worflow being run. |
-| `check_suite_node_id` | `string` | The node ID of the associated check suite. |
-| `jobs_url` | `string` | The URL to the jobs for the workflow run. |
-| `artifacts_url` | `string` | The URL to the artifacts for the workflow run. |
-| `head_commit` | `object` | Simple Commit |
+| `event` | `string` |  |
+| `run_number` | `integer` | The auto incrementing run number for the workflow run. |
+| `repository` | `object` | Minimal Repository |
+| `html_url` | `string` |  |
+| `updated_at` | `string` |  |
+| `pull_requests` | `array` |  |
+| `status` | `string` |  |
+| `check_suite_url` | `string` | The URL to the associated check suite. |
 | `workflow_url` | `string` | The URL to the workflow. |
+| `jobs_url` | `string` | The URL to the jobs for the workflow run. |
+| `node_id` | `string` |  |
+| `created_at` | `string` |  |
+| `conclusion` | `string` |  |
+| `workflow_id` | `integer` | The ID of the parent workflow. |
+| `artifacts_url` | `string` | The URL to the artifacts for the workflow run. |
+| `check_suite_node_id` | `string` | The node ID of the associated check suite. |
+| `run_attempt` | `integer` | Attempt number of the run, 1 for first attempt and higher if the workflow was re-run. |
+| `head_branch` | `string` |  |
+| `previous_attempt_url` | `string` | The URL to the previous attempted run of this workflow, if one exists. |
+| `check_suite_id` | `integer` | The ID of the associated check suite. |
+| `head_sha` | `string` | The SHA of the head commit that points to the version of the worflow being run. |
+| `head_commit` | `object` | Simple Commit |
+| `cancel_url` | `string` | The URL to cancel the workflow run. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get_workflow_run` | `SELECT` | `owner, repo, run_id` | Gets a specific workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. |
 | `get_workflow_run_attempt` | `SELECT` | `attempt_number, owner, repo, run_id` | Gets a specific workflow run attempt. Anyone with read access to the repository<br />can use this endpoint. If the repository is private you must use an access token<br />with the `repo` scope. GitHub Apps must have the `actions:read` permission to<br />use this endpoint. |
 | `list_workflow_runs` | `SELECT` | `owner, repo, workflow_id` | List all workflow runs for a workflow. You can replace `workflow_id` with the workflow file name. For example, you could use `main.yaml`. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://docs.github.com/rest/overview/resources-in-the-rest-api#parameters).<br /><br />Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. |

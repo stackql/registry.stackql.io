@@ -23,24 +23,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `string` |
-| `_links` | `object` |
-| `activated` | `string` |
 | `transitioningToStatus` | `string` |
-| `profile` | `object` |
-| `_embedded` | `object` |
-| `created` | `string` |
-| `passwordChanged` | `string` |
-| `statusChanged` | `string` |
 | `credentials` | `object` |
+| `_embedded` | `object` |
 | `status` | `string` |
-| `lastLogin` | `string` |
-| `type` | `object` |
+| `created` | `string` |
 | `lastUpdated` | `string` |
+| `activated` | `string` |
+| `statusChanged` | `string` |
+| `profile` | `object` |
+| `passwordChanged` | `string` |
+| `_links` | `object` |
+| `type` | `object` |
+| `lastLogin` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `userId` | Fetches a user from your Okta organization. |
 | `list` | `SELECT` |  | Lists users in your organization with pagination in most cases.  A subset of users can be returned that match a supported filter expression or search criteria. |
 | `insert` | `INSERT` |  | Creates a new user in your Okta organization with or without credentials. |

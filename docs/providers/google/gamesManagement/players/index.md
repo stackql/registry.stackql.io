@@ -25,6 +25,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `hide` | `EXEC` | `applicationId, playerId` | Hide the given player's leaderboard scores from the given application. This method is only available to user accounts for your developer console. |
 | `unhide` | `EXEC` | `applicationId, playerId` | Unhide the given player's leaderboard scores from the given application. This method is only available to user accounts for your developer console. |

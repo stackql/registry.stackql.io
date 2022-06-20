@@ -23,26 +23,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
-| `x5c` | `array` |
+|:-----|:---------|
 | `x5u` | `string` |
 | `created` | `string` |
-| `x5t#S256` | `string` |
-| `status` | `string` |
+| `use` | `string` |
 | `alg` | `string` |
-| `key_ops` | `array` |
-| `kty` | `string` |
-| `e` | `string` |
-| `kid` | `string` |
+| `status` | `string` |
+| `x5c` | `array` |
+| `expiresAt` | `string` |
 | `lastUpdated` | `string` |
 | `x5t` | `string` |
-| `use` | `string` |
-| `_links` | `object` |
 | `false` | `string` |
-| `expiresAt` | `string` |
+| `kty` | `string` |
+| `_links` | `object` |
+| `e` | `string` |
+| `key_ops` | `array` |
+| `x5t#S256` | `string` |
+| `kid` | `string` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `keyId` | Gets a specific IdP Key Credential by `kid` |
 | `list` | `SELECT` |  | Enumerates IdP key credentials. |
 | `insert` | `INSERT` |  | Adds a new X.509 certificate credential to the IdP key store. |

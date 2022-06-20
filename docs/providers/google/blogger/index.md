@@ -20,7 +20,7 @@ The Blogger API provides access to posts, comments and pages of a Blogger blog.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Blogger API v3</td></tr>
 <tr><td><b>Description</b></td><td>The Blogger API provides access to posts, comments and pages of a Blogger blog.</td></tr>
-<tr><td><b>Id</b></td><td><code>blogger:v2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>blogger:v3</code></td></tr>
 </tbody></table>
 
 ## Resources

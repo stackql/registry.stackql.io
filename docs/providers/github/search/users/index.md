@@ -23,42 +23,42 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype |
-| ---- | -------- |
+|:-----|:---------|
 | `id` | `integer` |
 | `name` | `string` |
-| `gravatar_id` | `string` |
 | `public_gists` | `integer` |
-| `created_at` | `string` |
-| `site_admin` | `boolean` |
-| `repos_url` | `string` |
-| `company` | `string` |
-| `gists_url` | `string` |
-| `organizations_url` | `string` |
-| `received_events_url` | `string` |
-| `html_url` | `string` |
-| `suspended_at` | `string` |
-| `updated_at` | `string` |
-| `followers_url` | `string` |
-| `following` | `integer` |
-| `starred_url` | `string` |
-| `blog` | `string` |
-| `subscriptions_url` | `string` |
-| `score` | `number` |
-| `text_matches` | `array` |
-| `events_url` | `string` |
-| `avatar_url` | `string` |
-| `email` | `string` |
-| `node_id` | `string` |
 | `bio` | `string` |
-| `public_repos` | `integer` |
-| `following_url` | `string` |
-| `url` | `string` |
-| `type` | `string` |
+| `created_at` | `string` |
+| `company` | `string` |
+| `blog` | `string` |
+| `avatar_url` | `string` |
+| `html_url` | `string` |
+| `subscriptions_url` | `string` |
+| `text_matches` | `array` |
 | `location` | `string` |
-| `hireable` | `boolean` |
-| `login` | `string` |
+| `public_repos` | `integer` |
+| `received_events_url` | `string` |
+| `email` | `string` |
+| `following_url` | `string` |
 | `followers` | `integer` |
+| `gravatar_id` | `string` |
+| `following` | `integer` |
+| `organizations_url` | `string` |
+| `gists_url` | `string` |
+| `hireable` | `boolean` |
+| `type` | `string` |
+| `score` | `number` |
+| `node_id` | `string` |
+| `repos_url` | `string` |
+| `login` | `string` |
+| `suspended_at` | `string` |
+| `site_admin` | `boolean` |
+| `url` | `string` |
+| `followers_url` | `string` |
+| `updated_at` | `string` |
+| `starred_url` | `string` |
+| `events_url` | `string` |
 ## Methods
 | Name | Accessible by | Required Params |
-| ---- | ------------- | --------------- |
+|:-----|:--------------|:----------------|
 | `users` | `SELECT` | `q` |

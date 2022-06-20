@@ -25,7 +25,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `getAutoForwarding` | `EXEC` | `userId` | Gets the auto-forwarding setting for the specified account. |
 | `getImap` | `EXEC` | `userId` | Gets IMAP settings. |
 | `getLanguage` | `EXEC` | `userId` | Gets language settings. |

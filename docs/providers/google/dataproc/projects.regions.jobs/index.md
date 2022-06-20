@@ -23,12 +23,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 
 ## Fields
 | Name | Datatype | Description |
-| ---- | -------- | ----------- |
-| `jobs` | `array` | Output only. Jobs list. |
+|:-----|:---------|:------------|
 | `nextPageToken` | `string` | Optional. This token is included in the response if there are more results to fetch. To fetch additional results, provide this value as the page_token in a subsequent ListJobsRequest. |
+| `jobs` | `array` | Output only. Jobs list. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
-| ---- | ------------- | --------------- | ----------- |
+|:-----|:--------------|:----------------|:------------|
 | `get` | `SELECT` | `jobId, projectId, region` | Gets the resource representation for a job in a project. |
 | `list` | `SELECT` | `projectId, region` | Lists regions/{region}/jobs in a project. |
 | `delete` | `DELETE` | `jobId, projectId, region` | Deletes the job from the project. If the job is active, the delete fails, and the response returns FAILED_PRECONDITION. |
