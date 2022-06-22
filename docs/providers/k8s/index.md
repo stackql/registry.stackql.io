@@ -20,7 +20,7 @@ See also:
 
 ## Installation
 ```bash
-REGISTRY PULL k8s v0.1.0;
+REGISTRY PULL k8s v0.1.1;
 ```
 
 ## Authentication
@@ -28,7 +28,7 @@ REGISTRY PULL k8s v0.1.0;
 {
     "k8s": {
         /**
-            * Type of authentication to use, suported values include: api_key
+            * Type of authentication to use, suported values include: api_key, null_auth
             * @type String
             */
         "type": string, 
@@ -59,12 +59,43 @@ ORDER BY name ASC;
 ```
 :::
 
-### Example
+### Example using `kubectl proxy`
+```bash
+AUTH='{ "k8s": { "type": "null_auth" } }'
+./stackql shell --auth="${AUTH}"
+```
+
+:::note
+
+The __`protocol`__ parameter is required when accessing a Kubernetes cluster via `kubectl proxy`, see the example below:  
+
+```sql
+select name, namespace, uid, creationTimestamp 
+from k8s.core_v1.pod 
+where protocol = 'http' 
+and cluster_addr = 'localhost:8080'  
+order by name asc limit 3;
+```
+:::
+
+### Example using direct cluster access
 ```bash
 export K8S_TOKEN='eyJhbGciOiJ...'
 AUTH='{ "k8s": { "type": "api_key", "valuePrefix": "Bearer ", "credentialsenvvar": "K8S_TOKEN" } }'
-stackql shell --auth="${AUTH}"
+stackql shell --auth="${AUTH}" --tls.CABundle k8s_cert_bundle.pem
 ```
+:::note
+
+You will need to generate a certificate bundle for your cluster (`k8s_cert_bundle.pem` in the preceeding example), you can use the following code to generate this (for MacOS or Linux):  
+
+```bash
+kubectl get secret -o jsonpath="{.items[?(@.type==\"kubernetes.io/service-account-token\")].data['ca\.crt']}" | base64 -i --decode > k8s_cert_bundle.pem
+```
+
+Alternatively, you could add the `--tls.allowInsecure=true` argument to the `stackql` command, it is not recommended however. 
+
+:::
+
 ## Services
 <div class="row">
 <div class="providerDocColumn">
