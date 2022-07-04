@@ -3,6 +3,7 @@ title: relyingparty
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - relyingparty
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -26,23 +27,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `createAuthUri` | `EXEC` |  | Creates the URI used by the IdP to authenticate the user. |
-| `deleteAccount` | `EXEC` |  | Delete user account. |
-| `downloadAccount` | `EXEC` |  | Batch download user accounts. |
-| `emailLinkSignin` | `EXEC` |  | Reset password for a user. |
-| `getAccountInfo` | `EXEC` |  | Returns the account info. |
-| `getOobConfirmationCode` | `EXEC` |  | Get a code for user action confirmation. |
-| `getProjectConfig` | `EXEC` |  | Get project configuration. |
-| `getPublicKeys` | `EXEC` |  | Get token signing public key. |
-| `getRecaptchaParam` | `EXEC` |  | Get recaptcha secure param. |
-| `resetPassword` | `EXEC` |  | Reset password for a user. |
-| `sendVerificationCode` | `EXEC` |  | Send SMS verification code. |
-| `setAccountInfo` | `EXEC` |  | Set account info for a user. |
-| `setProjectConfig` | `EXEC` |  | Set project configuration. |
-| `signOutUser` | `EXEC` |  | Sign out user. |
-| `signupNewUser` | `EXEC` |  | Signup new user. |
-| `uploadAccount` | `EXEC` |  | Batch upload existing user accounts. |
-| `verifyAssertion` | `EXEC` |  | Verifies the assertion returned by the IdP. |
-| `verifyCustomToken` | `EXEC` |  | Verifies the developer asserted ID token. |
-| `verifyPassword` | `EXEC` |  | Verifies the user entered password. |
-| `verifyPhoneNumber` | `EXEC` |  | Verifies ownership of a phone number and creates/updates the user account accordingly. |
+| `relyingparty_downloadAccount` | `EXEC` |  | Batch download user accounts. |
+| `relyingparty_emailLinkSignin` | `EXEC` |  | Reset password for a user. |
+| `relyingparty_resetPassword` | `EXEC` |  | Reset password for a user. |
+| `relyingparty_sendVerificationCode` | `EXEC` |  | Send SMS verification code. |
+| `relyingparty_setAccountInfo` | `EXEC` |  | Set account info for a user. |
+| `relyingparty_setProjectConfig` | `EXEC` |  | Set project configuration. |
+| `relyingparty_signOutUser` | `EXEC` |  | Sign out user. |
+| `relyingparty_signupNewUser` | `EXEC` |  | Signup new user. |
+| `relyingparty_uploadAccount` | `EXEC` |  | Batch upload existing user accounts. |
+| `relyingparty_verifyAssertion` | `EXEC` |  | Verifies the assertion returned by the IdP. |
+| `relyingparty_verifyCustomToken` | `EXEC` |  | Verifies the developer asserted ID token. |
+| `relyingparty_verifyPassword` | `EXEC` |  | Verifies the user entered password. |
+| `relyingparty_verifyPhoneNumber` | `EXEC` |  | Verifies ownership of a phone number and creates/updates the user account accordingly. |

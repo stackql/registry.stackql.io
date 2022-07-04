@@ -3,6 +3,7 @@ title: exclusions
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - exclusions
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,13 +25,37 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `exclusions` | `array` | A list of exclusions. |
-| `nextPageToken` | `string` | If there might be more results than appear in this response, then nextPageToken is included. To get the next set of results, call the same method again using the value of nextPageToken as pageToken. |
+| `name` | `string` | Required. A client-assigned identifier, such as "load-balancer-exclusion". Identifiers are limited to 100 characters and can include only letters, digits, underscores, hyphens, and periods. First character has to be alphanumeric. |
+| `description` | `string` | Optional. A description of this exclusion. |
+| `disabled` | `boolean` | Optional. If set to True, then this exclusion is disabled and it does not exclude any log entries. You can update an exclusion to change the value of this field. |
+| `filter` | `string` | Required. An advanced logs filter (https://cloud.google.com/logging/docs/view/advanced-queries) that matches the log entries to be excluded. By using the sample function (https://cloud.google.com/logging/docs/view/advanced-queries#sample), you can exclude less than 100% of the matching log entries.For example, the following query matches 99% of low-severity log entries from Google Cloud Storage buckets:resource.type=gcs_bucket severity&lt;ERROR sample(insertId, 0.99) |
+| `updateTime` | `string` | Output only. The last update timestamp of the exclusion.This field may not be present for older exclusions. |
+| `createTime` | `string` | Output only. The creation timestamp of the exclusion.This field may not be present for older exclusions. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `get` | `SELECT` | `exclusionsId, v2Id, v2Id1` | Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service. |
-| `list` | `SELECT` | `v2Id, v2Id1` | Lists all the exclusions on the _Default sink in a parent resource. |
-| `create` | `INSERT` | `v2Id, v2Id1` | Creates a new exclusion in the _Default sink in a specified parent resource. Only log entries belonging to that resource can be excluded. You can have up to 10 exclusions in a resource. |
-| `delete` | `DELETE` | `exclusionsId, v2Id, v2Id1` | Deletes a view on a log bucket. If an UNAVAILABLE error is returned, this indicates that system is not in a state where it can delete the view. If this occurs, please try again in a few minutes. |
-| `patch` | `EXEC` | `exclusionsId, v2Id, v2Id1` | Updates a view on a log bucket. This method replaces the following fields in the existing view with values from the new view: filter. If an UNAVAILABLE error is returned, this indicates that system is not in a state where it can update the view. If this occurs, please try again in a few minutes. |
+| `billingAccounts_exclusions_get` | `SELECT` | `name` | Gets the description of an exclusion in the _Default sink. |
+| `billingAccounts_exclusions_list` | `SELECT` | `parent` | Lists all the exclusions on the _Default sink in a parent resource. |
+| `exclusions_get` | `SELECT` | `name` | Gets the description of an exclusion in the _Default sink. |
+| `exclusions_list` | `SELECT` | `parent` | Lists all the exclusions on the _Default sink in a parent resource. |
+| `folders_exclusions_get` | `SELECT` | `name` | Gets the description of an exclusion in the _Default sink. |
+| `folders_exclusions_list` | `SELECT` | `parent` | Lists all the exclusions on the _Default sink in a parent resource. |
+| `organizations_exclusions_get` | `SELECT` | `name` | Gets the description of an exclusion in the _Default sink. |
+| `organizations_exclusions_list` | `SELECT` | `parent` | Lists all the exclusions on the _Default sink in a parent resource. |
+| `projects_exclusions_get` | `SELECT` | `name` | Gets the description of an exclusion in the _Default sink. |
+| `projects_exclusions_list` | `SELECT` | `parent` | Lists all the exclusions on the _Default sink in a parent resource. |
+| `billingAccounts_exclusions_create` | `INSERT` | `parent` | Creates a new exclusion in the _Default sink in a specified parent resource. Only log entries belonging to that resource can be excluded. You can have up to 10 exclusions in a resource. |
+| `exclusions_create` | `INSERT` | `parent` | Creates a new exclusion in the _Default sink in a specified parent resource. Only log entries belonging to that resource can be excluded. You can have up to 10 exclusions in a resource. |
+| `folders_exclusions_create` | `INSERT` | `parent` | Creates a new exclusion in the _Default sink in a specified parent resource. Only log entries belonging to that resource can be excluded. You can have up to 10 exclusions in a resource. |
+| `organizations_exclusions_create` | `INSERT` | `parent` | Creates a new exclusion in the _Default sink in a specified parent resource. Only log entries belonging to that resource can be excluded. You can have up to 10 exclusions in a resource. |
+| `projects_exclusions_create` | `INSERT` | `parent` | Creates a new exclusion in the _Default sink in a specified parent resource. Only log entries belonging to that resource can be excluded. You can have up to 10 exclusions in a resource. |
+| `billingAccounts_exclusions_delete` | `DELETE` | `name` | Deletes an exclusion in the _Default sink. |
+| `exclusions_delete` | `DELETE` | `name` | Deletes an exclusion in the _Default sink. |
+| `folders_exclusions_delete` | `DELETE` | `name` | Deletes an exclusion in the _Default sink. |
+| `organizations_exclusions_delete` | `DELETE` | `name` | Deletes an exclusion in the _Default sink. |
+| `projects_exclusions_delete` | `DELETE` | `name` | Deletes an exclusion in the _Default sink. |
+| `billingAccounts_exclusions_patch` | `EXEC` | `name` | Changes one or more properties of an existing exclusion in the _Default sink. |
+| `exclusions_patch` | `EXEC` | `name` | Changes one or more properties of an existing exclusion in the _Default sink. |
+| `folders_exclusions_patch` | `EXEC` | `name` | Changes one or more properties of an existing exclusion in the _Default sink. |
+| `organizations_exclusions_patch` | `EXEC` | `name` | Changes one or more properties of an existing exclusion in the _Default sink. |
+| `projects_exclusions_patch` | `EXEC` | `name` | Changes one or more properties of an existing exclusion in the _Default sink. |

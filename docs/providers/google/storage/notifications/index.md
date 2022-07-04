@@ -3,6 +3,7 @@ title: notifications
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - notifications
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -25,18 +26,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the notification. |
+| `kind` | `string` | The kind of item this is. For notifications, this is always storage#notification. |
+| `payload_format` | `string` | The desired content of the Payload. |
+| `object_name_prefix` | `string` | If present, only apply this notification configuration to object names that begin with this prefix. |
+| `custom_attributes` | `object` | An optional list of additional attributes to attach to each Cloud PubSub message published for this notification subscription. |
 | `event_types` | `array` | If present, only send notifications about listed event types. If empty, sent notifications for all event types. |
 | `topic` | `string` | The Cloud PubSub topic to which this subscription publishes. Formatted as: '//pubsub.googleapis.com/projects/{project-identifier}/topics/{my-topic}' |
-| `payload_format` | `string` | The desired content of the Payload. |
-| `kind` | `string` | The kind of item this is. For notifications, this is always storage#notification. |
-| `object_name_prefix` | `string` | If present, only apply this notification configuration to object names that begin with this prefix. |
-| `selfLink` | `string` | The canonical URL of this notification. |
-| `custom_attributes` | `object` | An optional list of additional attributes to attach to each Cloud PubSub message published for this notification subscription. |
 | `etag` | `string` | HTTP 1.1 Entity tag for this subscription notification. |
+| `selfLink` | `string` | The canonical URL of this notification. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `get` | `SELECT` | `bucket, notification` | View a notification configuration. |
-| `list` | `SELECT` | `bucket` | Retrieves a list of notification subscriptions for a given bucket. |
-| `insert` | `INSERT` | `bucket` | Creates a notification subscription for a given bucket. |
-| `delete` | `DELETE` | `bucket, notification` | Permanently deletes a notification subscription. |
+| `notifications_get` | `SELECT` | `bucket, notification` | View a notification configuration. |
+| `notifications_list` | `SELECT` | `bucket` | Retrieves a list of notification subscriptions for a given bucket. |
+| `notifications_insert` | `INSERT` | `bucket` | Creates a notification subscription for a given bucket. |
+| `notifications_delete` | `DELETE` | `bucket, notification` | Permanently deletes a notification subscription. |

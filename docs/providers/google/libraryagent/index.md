@@ -3,6 +3,7 @@ title: libraryagent
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - libraryagent
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,15 +21,15 @@ A simple Google Example Library API.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Library Agent API</td></tr>
 <tr><td><b>Description</b></td><td>A simple Google Example Library API.</td></tr>
-<tr><td><b>Id</b></td><td><code>libraryagent:v1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>libraryagent:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/google/libraryagent/shelves/">shelves</a><br />
+<a href="/providers/google/libraryagent/books/">books</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/google/libraryagent/shelves.books/">shelves.books</a><br />
+<a href="/providers/google/libraryagent/shelves/">shelves</a><br />
 </div>
 </div>

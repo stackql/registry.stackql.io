@@ -3,6 +3,7 @@ title: bigquery
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - bigquery
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,7 +21,7 @@ A data platform for customers to create, manage, share and query data.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>BigQuery API</td></tr>
 <tr><td><b>Description</b></td><td>A data platform for customers to create, manage, share and query data.</td></tr>
-<tr><td><b>Id</b></td><td><code>bigquery:v2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>bigquery:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -28,13 +29,17 @@ A data platform for customers to create, manage, share and query data.
 <div class="providerDocColumn">
 <a href="/providers/google/bigquery/datasets/">datasets</a><br />
 <a href="/providers/google/bigquery/jobs/">jobs</a><br />
+<a href="/providers/google/bigquery/jobs_query_results/">jobs_query_results</a><br />
 <a href="/providers/google/bigquery/models/">models</a><br />
 <a href="/providers/google/bigquery/projects/">projects</a><br />
+<a href="/providers/google/bigquery/projects_service_account/">projects_service_account</a><br />
 </div>
 <div class="providerDocColumn">
 <a href="/providers/google/bigquery/routines/">routines</a><br />
-<a href="/providers/google/bigquery/rowAccessPolicies/">rowAccessPolicies</a><br />
+<a href="/providers/google/bigquery/row_access_policies/">row_access_policies</a><br />
+<a href="/providers/google/bigquery/row_access_policies_iam_policies/">row_access_policies_iam_policies</a><br />
 <a href="/providers/google/bigquery/tabledata/">tabledata</a><br />
 <a href="/providers/google/bigquery/tables/">tables</a><br />
+<a href="/providers/google/bigquery/tables_iam_policies/">tables_iam_policies</a><br />
 </div>
 </div>

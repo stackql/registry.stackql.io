@@ -3,6 +3,7 @@ title: cloudresourcemanager
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - cloudresourcemanager
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,21 +21,28 @@ Creates, reads, and updates metadata for Google Cloud Platform resource containe
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Resource Manager API</td></tr>
 <tr><td><b>Description</b></td><td>Creates, reads, and updates metadata for Google Cloud Platform resource containers.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudresourcemanager:v3</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudresourcemanager:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
+<a href="/providers/google/cloudresourcemanager/effective_tags/">effective_tags</a><br />
 <a href="/providers/google/cloudresourcemanager/folders/">folders</a><br />
+<a href="/providers/google/cloudresourcemanager/folders_iam_policies/">folders_iam_policies</a><br />
 <a href="/providers/google/cloudresourcemanager/liens/">liens</a><br />
 <a href="/providers/google/cloudresourcemanager/operations/">operations</a><br />
 <a href="/providers/google/cloudresourcemanager/organizations/">organizations</a><br />
+<a href="/providers/google/cloudresourcemanager/organizations_iam_policies/">organizations_iam_policies</a><br />
+<a href="/providers/google/cloudresourcemanager/projects/">projects</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/google/cloudresourcemanager/projects/">projects</a><br />
-<a href="/providers/google/cloudresourcemanager/tagBindings/">tagBindings</a><br />
-<a href="/providers/google/cloudresourcemanager/tagKeys/">tagKeys</a><br />
-<a href="/providers/google/cloudresourcemanager/tagValues/">tagValues</a><br />
+<a href="/providers/google/cloudresourcemanager/projects_iam_policies/">projects_iam_policies</a><br />
+<a href="/providers/google/cloudresourcemanager/tag_bindings/">tag_bindings</a><br />
+<a href="/providers/google/cloudresourcemanager/tag_holds/">tag_holds</a><br />
+<a href="/providers/google/cloudresourcemanager/tag_keys/">tag_keys</a><br />
+<a href="/providers/google/cloudresourcemanager/tag_keys_iam_policies/">tag_keys_iam_policies</a><br />
+<a href="/providers/google/cloudresourcemanager/tag_values/">tag_values</a><br />
+<a href="/providers/google/cloudresourcemanager/tag_values_iam_policies/">tag_values_iam_policies</a><br />
 </div>
 </div>

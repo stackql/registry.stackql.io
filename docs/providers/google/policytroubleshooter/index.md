@@ -3,6 +3,7 @@ title: policytroubleshooter
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - policytroubleshooter
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Policy Troubleshooter API</td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
-<tr><td><b>Id</b></td><td><code>policytroubleshooter:v1beta</code></td></tr>
+<tr><td><b>Id</b></td><td><code>policytroubleshooter:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/policytroubleshooter/iam/">iam</a><br />
+</div>
+<div class="providerDocColumn">
+</div>
+</div>

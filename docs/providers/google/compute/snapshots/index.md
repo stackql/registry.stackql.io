@@ -3,6 +3,7 @@ title: snapshots
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - snapshots
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -27,34 +28,33 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` | [Output Only] The unique identifier for the resource. This identifier is defined by the server. |
 | `name` | `string` | Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. |
 | `description` | `string` | An optional description of this resource. Provide this property when you create the resource. |
-| `downloadBytes` | `string` | [Output Only] Number of bytes downloaded to restore a snapshot to a disk. |
-| `sourceDiskEncryptionKey` | `object` |  |
-| `labels` | `object` | Labels to apply to this snapshot. These can be later modified by the setLabels method. Label values may be empty. |
+| `architecture` | `string` | [Output Only] The architecture of the snapshot. Valid values are ARM64 or X86_64. |
 | `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
-| `storageLocations` | `array` | Cloud Storage bucket storage location of the snapshot (regional or multi-regional). |
-| `autoCreated` | `boolean` | [Output Only] Set to true if snapshots are automatically created by applying resource policy on the target disk. |
-| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
-| `storageBytes` | `string` | [Output Only] A size of the storage used by the snapshot. As snapshots share storage, this number is expected to change with snapshot creation/deletion. |
-| `diskSizeGb` | `string` | [Output Only] Size of the source disk, specified in GB. |
+| `labels` | `object` | Labels to apply to this snapshot. These can be later modified by the setLabels method. Label values may be empty. |
 | `sourceDisk` | `string` | The source disk used to create this snapshot. |
-| `chainName` | `string` | Creates the new snapshot in the snapshot chain labeled with the specified name. The chain name must be 1-63 characters long and comply with RFC1035. This is an uncommon option only for advanced service owners who needs to create separate snapshot chains, for example, for chargeback tracking. When you describe your snapshot resource, this field is visible only if it has a non-empty value. |
 | `licenses` | `array` | [Output Only] A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses attached (such as a Windows image). |
+| `diskSizeGb` | `string` | [Output Only] Size of the source disk, specified in GB. |
 | `snapshotEncryptionKey` | `object` |  |
-| `storageBytesStatus` | `string` | [Output Only] An indicator whether storageBytes is in a stable state or it is being adjusted as a result of shared storage reallocation. This status can either be UPDATING, meaning the size of the snapshot is being updated, or UP_TO_DATE, meaning the size of the snapshot is up-to-date. |
-| `satisfiesPzs` | `boolean` | [Output Only] Reserved for future use. |
-| `licenseCodes` | `array` | [Output Only] Integer license codes indicating which licenses are attached to this snapshot. |
+| `storageBytes` | `string` | [Output Only] A size of the storage used by the snapshot. As snapshots share storage, this number is expected to change with snapshot creation/deletion. |
+| `chainName` | `string` | Creates the new snapshot in the snapshot chain labeled with the specified name. The chain name must be 1-63 characters long and comply with RFC1035. This is an uncommon option only for advanced service owners who needs to create separate snapshot chains, for example, for chargeback tracking. When you describe your snapshot resource, this field is visible only if it has a non-empty value. |
 | `status` | `string` | [Output Only] The status of the snapshot. This can be CREATING, DELETING, FAILED, READY, or UPLOADING. |
-| `sourceDiskId` | `string` | [Output Only] The ID value of the disk used to create this snapshot. This value may be used to determine whether the snapshot was taken from the current or a previous instance of a given disk name. |
-| `locationHint` | `string` | An opaque location hint used to place the snapshot close to other resources. This field is for use by internal tools that use the public API. |
-| `kind` | `string` | [Output Only] Type of the resource. Always compute#snapshot for Snapshot resources. |
 | `labelFingerprint` | `string` | A fingerprint for the labels being applied to this snapshot, which is essentially a hash of the labels set used for optimistic locking. The fingerprint is initially generated by Compute Engine and changes after every request to modify or update labels. You must always provide an up-to-date fingerprint hash in order to update or change labels, otherwise the request will fail with error 412 conditionNotMet. To see the latest fingerprint, make a get() request to retrieve a snapshot. |
+| `sourceDiskId` | `string` | [Output Only] The ID value of the disk used to create this snapshot. This value may be used to determine whether the snapshot was taken from the current or a previous instance of a given disk name. |
+| `downloadBytes` | `string` | [Output Only] Number of bytes downloaded to restore a snapshot to a disk. |
+| `kind` | `string` | [Output Only] Type of the resource. Always compute#snapshot for Snapshot resources. |
+| `licenseCodes` | `array` | [Output Only] Integer license codes indicating which licenses are attached to this snapshot. |
+| `autoCreated` | `boolean` | [Output Only] Set to true if snapshots are automatically created by applying resource policy on the target disk. |
+| `storageBytesStatus` | `string` | [Output Only] An indicator whether storageBytes is in a stable state or it is being adjusted as a result of shared storage reallocation. This status can either be UPDATING, meaning the size of the snapshot is being updated, or UP_TO_DATE, meaning the size of the snapshot is up-to-date. |
+| `sourceDiskEncryptionKey` | `object` |  |
+| `locationHint` | `string` | An opaque location hint used to place the snapshot close to other resources. This field is for use by internal tools that use the public API. |
+| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
+| `storageLocations` | `array` | Cloud Storage bucket storage location of the snapshot (regional or multi-regional). |
+| `satisfiesPzs` | `boolean` | [Output Only] Reserved for future use. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `get` | `SELECT` | `project, snapshot` | Returns the specified Snapshot resource. Gets a list of available snapshots by making a list() request. |
-| `list` | `SELECT` | `project` | Retrieves the list of Snapshot resources contained within the specified project. |
-| `delete` | `DELETE` | `project, snapshot` | Deletes the specified Snapshot resource. Keep in mind that deleting a single snapshot might not necessarily delete all the data on that snapshot. If any data on the snapshot that is marked for deletion is needed for subsequent snapshots, the data will be moved to the next corresponding snapshot. For more information, see Deleting snapshots. |
-| `getIamPolicy` | `EXEC` | `project, resource` | Gets the access control policy for a resource. May be empty if no such policy or resource exists. |
-| `setIamPolicy` | `EXEC` | `project, resource` | Sets the access control policy on the specified resource. Replaces any existing policy. |
-| `setLabels` | `EXEC` | `project, resource` | Sets the labels on a snapshot. To learn more about labels, read the Labeling Resources documentation. |
-| `testIamPermissions` | `EXEC` | `project, resource` | Returns permissions that a caller has on the specified resource. |
+| `snapshots_get` | `SELECT` | `project, snapshot` | Returns the specified Snapshot resource. Gets a list of available snapshots by making a list() request. |
+| `snapshots_list` | `SELECT` | `project` | Retrieves the list of Snapshot resources contained within the specified project. |
+| `snapshots_insert` | `INSERT` | `project` | Creates a snapshot in the specified project using the data included in the request. For regular snapshot creation, consider using this method instead of disks.createSnapshot, as this method supports more features, such as creating snapshots in a project different from the source disk project. |
+| `snapshots_delete` | `DELETE` | `project, snapshot` | Deletes the specified Snapshot resource. Keep in mind that deleting a single snapshot might not necessarily delete all the data on that snapshot. If any data on the snapshot that is marked for deletion is needed for subsequent snapshots, the data will be moved to the next corresponding snapshot. For more information, see Deleting snapshots. |
+| `snapshots_setLabels` | `EXEC` | `project, resource` | Sets the labels on a snapshot. To learn more about labels, read the Labeling Resources documentation. |

@@ -3,6 +3,7 @@ title: secretmanager
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - secretmanager
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -11,7 +12,7 @@ description: Query and Deploy Cloud Infrastructure and Resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
-Stores sensitive data such as API keys, passwords, and certificates. Provides convenience while improving security.  
+Stores sensitive data such as API keys, passwords, and certificates. Provides convenience while improving security.   
     
 
 ## Overview
@@ -19,9 +20,19 @@ Stores sensitive data such as API keys, passwords, and certificates. Provides co
 <tr><td><b>Name</b></td><td><code>google.secretmanager</code></td></tr>
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Secret Manager API</td></tr>
-<tr><td><b>Description</b></td><td>Stores sensitive data such as API keys, passwords, and certificates. Provides convenience while improving security.</td></tr>
-<tr><td><b>Id</b></td><td><code>secretmanager:v1beta1</code></td></tr>
+<tr><td><b>Description</b></td><td>Stores sensitive data such as API keys, passwords, and certificates. Provides convenience while improving security. </td></tr>
+<tr><td><b>Id</b></td><td><code>secretmanager:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/secretmanager/locations/">locations</a><br />
+<a href="/providers/google/secretmanager/secrets/">secrets</a><br />
+<a href="/providers/google/secretmanager/secrets_iam_policies/">secrets_iam_policies</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/secretmanager/secrets_version/">secrets_version</a><br />
+<a href="/providers/google/secretmanager/versions/">versions</a><br />
+</div>
+</div>

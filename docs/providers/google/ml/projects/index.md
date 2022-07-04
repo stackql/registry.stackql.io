@@ -3,6 +3,7 @@ title: projects
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - projects
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -26,6 +27,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `explain` | `EXEC` | `projectsId` | Performs explanation on the data in the request. {% dynamic include "/ai-platform/includes/___explain-request" %}  |
-| `getConfig` | `EXEC` | `projectsId` | Get the service account information associated with your project. You need this information in order to grant the service account permissions for the Google Cloud Storage location where you put your model training code for training the model with Google Cloud Machine Learning. |
-| `predict` | `EXEC` | `projectsId` | Performs online prediction on the data in the request. {% dynamic include "/ai-platform/includes/___predict-request" %}  |
+| `projects_explain` | `EXEC` | `name` | Performs explanation on the data in the request. {% dynamic include "/ai-platform/includes/___explain-request" %}  |
+| `projects_predict` | `EXEC` | `name` | Performs online prediction on the data in the request. {% dynamic include "/ai-platform/includes/___predict-request" %}  |

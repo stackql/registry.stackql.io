@@ -3,6 +3,7 @@ title: cloudbilling
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - cloudbilling
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,18 +21,19 @@ Allows developers to manage billing for their Google Cloud Platform projects pro
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Billing API</td></tr>
 <tr><td><b>Description</b></td><td>Allows developers to manage billing for their Google Cloud Platform projects programmatically.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudbilling:v1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudbilling:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/google/cloudbilling/billingAccounts/">billingAccounts</a><br />
-<a href="/providers/google/cloudbilling/billingAccounts.projects/">billingAccounts.projects</a><br />
+<a href="/providers/google/cloudbilling/billing_accounts/">billing_accounts</a><br />
+<a href="/providers/google/cloudbilling/billing_accounts_iam_policies/">billing_accounts_iam_policies</a><br />
 <a href="/providers/google/cloudbilling/projects/">projects</a><br />
 </div>
 <div class="providerDocColumn">
+<a href="/providers/google/cloudbilling/projects_billing_info/">projects_billing_info</a><br />
 <a href="/providers/google/cloudbilling/services/">services</a><br />
-<a href="/providers/google/cloudbilling/services.skus/">services.skus</a><br />
+<a href="/providers/google/cloudbilling/skus/">skus</a><br />
 </div>
 </div>

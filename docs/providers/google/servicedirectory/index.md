@@ -3,6 +3,7 @@ title: servicedirectory
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - servicedirectory
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -11,7 +12,7 @@ description: Query and Deploy Cloud Infrastructure and Resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
-Service Directory is a platform for discovering, publishing, and connecting services.  
+Service Directory is a platform for discovering, publishing, and connecting services.   
     
 
 ## Overview
@@ -19,9 +20,20 @@ Service Directory is a platform for discovering, publishing, and connecting serv
 <tr><td><b>Name</b></td><td><code>google.servicedirectory</code></td></tr>
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Service Directory API</td></tr>
-<tr><td><b>Description</b></td><td>Service Directory is a platform for discovering, publishing, and connecting services.</td></tr>
-<tr><td><b>Id</b></td><td><code>servicedirectory:v1beta1</code></td></tr>
+<tr><td><b>Description</b></td><td>Service Directory is a platform for discovering, publishing, and connecting services. </td></tr>
+<tr><td><b>Id</b></td><td><code>servicedirectory:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/servicedirectory/endpoints/">endpoints</a><br />
+<a href="/providers/google/servicedirectory/locations/">locations</a><br />
+<a href="/providers/google/servicedirectory/namespaces/">namespaces</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/servicedirectory/namespaces_iam_policies/">namespaces_iam_policies</a><br />
+<a href="/providers/google/servicedirectory/services/">services</a><br />
+<a href="/providers/google/servicedirectory/services_iam_policies/">services_iam_policies</a><br />
+</div>
+</div>

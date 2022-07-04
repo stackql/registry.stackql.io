@@ -3,6 +3,7 @@ title: lifesciences
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - lifesciences
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,16 +21,16 @@ Cloud Life Sciences is a suite of services and tools for managing, processing, a
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Life Sciences API</td></tr>
 <tr><td><b>Description</b></td><td>Cloud Life Sciences is a suite of services and tools for managing, processing, and transforming life sciences data.</td></tr>
-<tr><td><b>Id</b></td><td><code>lifesciences:v2beta</code></td></tr>
+<tr><td><b>Id</b></td><td><code>lifesciences:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/google/lifesciences/projects.locations/">projects.locations</a><br />
-<a href="/providers/google/lifesciences/projects.locations.operations/">projects.locations.operations</a><br />
+<a href="/providers/google/lifesciences/locations/">locations</a><br />
+<a href="/providers/google/lifesciences/operations/">operations</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/google/lifesciences/projects.locations.pipelines/">projects.locations.pipelines</a><br />
+<a href="/providers/google/lifesciences/pipelines/">pipelines</a><br />
 </div>
 </div>

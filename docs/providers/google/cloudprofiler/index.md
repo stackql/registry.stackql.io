@@ -3,6 +3,7 @@ title: cloudprofiler
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - cloudprofiler
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,14 +21,15 @@ Manages continuous profiling information.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Stackdriver Profiler API</td></tr>
 <tr><td><b>Description</b></td><td>Manages continuous profiling information.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudprofiler:v2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudprofiler:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/google/cloudprofiler/projects.profiles/">projects.profiles</a><br />
+<a href="/providers/google/cloudprofiler/profiles/">profiles</a><br />
 </div>
 <div class="providerDocColumn">
+<a href="/providers/google/cloudprofiler/profiles_offline/">profiles_offline</a><br />
 </div>
 </div>

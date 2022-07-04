@@ -3,6 +3,7 @@ title: cloudtasks
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - cloudtasks
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,17 @@ Manages the execution of large numbers of distributed requests.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Tasks API</td></tr>
 <tr><td><b>Description</b></td><td>Manages the execution of large numbers of distributed requests.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudtasks:v2beta3</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudtasks:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/cloudtasks/locations/">locations</a><br />
+<a href="/providers/google/cloudtasks/queues/">queues</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/cloudtasks/queues_iam_policies/">queues_iam_policies</a><br />
+<a href="/providers/google/cloudtasks/tasks/">tasks</a><br />
+</div>
+</div>

@@ -3,6 +3,7 @@ title: bigtableadmin
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - bigtableadmin
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,24 @@ Administer your Cloud Bigtable tables and instances.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Bigtable Admin API</td></tr>
 <tr><td><b>Description</b></td><td>Administer your Cloud Bigtable tables and instances.</td></tr>
-<tr><td><b>Id</b></td><td><code>bigtableadmin:v2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>bigtableadmin:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/bigtableadmin/app_profiles/">app_profiles</a><br />
+<a href="/providers/google/bigtableadmin/backups/">backups</a><br />
+<a href="/providers/google/bigtableadmin/backups_iam_policies/">backups_iam_policies</a><br />
+<a href="/providers/google/bigtableadmin/clusters/">clusters</a><br />
+<a href="/providers/google/bigtableadmin/hot_tablets/">hot_tablets</a><br />
+<a href="/providers/google/bigtableadmin/instances/">instances</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/bigtableadmin/instances_iam_policies/">instances_iam_policies</a><br />
+<a href="/providers/google/bigtableadmin/locations/">locations</a><br />
+<a href="/providers/google/bigtableadmin/operations/">operations</a><br />
+<a href="/providers/google/bigtableadmin/tables/">tables</a><br />
+<a href="/providers/google/bigtableadmin/tables_iam_policies/">tables_iam_policies</a><br />
+</div>
+</div>

@@ -3,6 +3,7 @@ title: ml
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - ml
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,22 +21,26 @@ An API to enable creating and using machine learning models.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>AI Platform Training & Prediction API</td></tr>
 <tr><td><b>Description</b></td><td>An API to enable creating and using machine learning models.</td></tr>
-<tr><td><b>Id</b></td><td><code>ml:v1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>ml:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
+<a href="/providers/google/ml/jobs/">jobs</a><br />
+<a href="/providers/google/ml/jobs_iam_policies/">jobs_iam_policies</a><br />
+<a href="/providers/google/ml/locations/">locations</a><br />
+<a href="/providers/google/ml/models/">models</a><br />
+<a href="/providers/google/ml/models_iam_policies/">models_iam_policies</a><br />
+<a href="/providers/google/ml/operations/">operations</a><br />
 <a href="/providers/google/ml/projects/">projects</a><br />
-<a href="/providers/google/ml/projects.jobs/">projects.jobs</a><br />
-<a href="/providers/google/ml/projects.locations/">projects.locations</a><br />
-<a href="/providers/google/ml/projects.locations.operations/">projects.locations.operations</a><br />
-<a href="/providers/google/ml/projects.locations.studies/">projects.locations.studies</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/google/ml/projects.locations.studies.trials/">projects.locations.studies.trials</a><br />
-<a href="/providers/google/ml/projects.models/">projects.models</a><br />
-<a href="/providers/google/ml/projects.models.versions/">projects.models.versions</a><br />
-<a href="/providers/google/ml/projects.operations/">projects.operations</a><br />
+<a href="/providers/google/ml/projects_config/">projects_config</a><br />
+<a href="/providers/google/ml/studies/">studies</a><br />
+<a href="/providers/google/ml/trials/">trials</a><br />
+<a href="/providers/google/ml/trials_measurement/">trials_measurement</a><br />
+<a href="/providers/google/ml/trials_optimal_trials/">trials_optimal_trials</a><br />
+<a href="/providers/google/ml/versions/">versions</a><br />
 </div>
 </div>

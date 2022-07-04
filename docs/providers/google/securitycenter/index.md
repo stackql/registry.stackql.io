@@ -3,6 +3,7 @@ title: securitycenter
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - securitycenter
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,24 @@ Security Command Center API provides access to temporal views of assets and find
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Security Command Center API</td></tr>
 <tr><td><b>Description</b></td><td>Security Command Center API provides access to temporal views of assets and findings within an organization.</td></tr>
-<tr><td><b>Id</b></td><td><code>securitycenter:v1p1beta1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>securitycenter:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/securitycenter/assets/">assets</a><br />
+<a href="/providers/google/securitycenter/big_query_exports/">big_query_exports</a><br />
+<a href="/providers/google/securitycenter/external_systems/">external_systems</a><br />
+<a href="/providers/google/securitycenter/findings/">findings</a><br />
+<a href="/providers/google/securitycenter/mute_configs/">mute_configs</a><br />
+<a href="/providers/google/securitycenter/notification_configs/">notification_configs</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/securitycenter/operations/">operations</a><br />
+<a href="/providers/google/securitycenter/organizations/">organizations</a><br />
+<a href="/providers/google/securitycenter/organizations_organization_settings/">organizations_organization_settings</a><br />
+<a href="/providers/google/securitycenter/sources/">sources</a><br />
+<a href="/providers/google/securitycenter/sources_iam_policies/">sources_iam_policies</a><br />
+</div>
+</div>

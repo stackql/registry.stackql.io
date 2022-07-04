@@ -3,6 +3,7 @@ title: dns
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - dns
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -11,17 +12,32 @@ description: Query and Deploy Cloud Infrastructure and Resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
-Configures and serves authoritative DNS records.  
+  
     
 
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>google.dns</code></td></tr>
 <tr><td><b>Type</b></td><td>Service</td></tr>
-<tr><td><b>Title</b></td><td>Google Cloud DNS API</td></tr>
-<tr><td><b>Description</b></td><td>Configures and serves authoritative DNS records.</td></tr>
-<tr><td><b>Id</b></td><td><code>dns:v2beta1</code></td></tr>
+<tr><td><b>Title</b></td><td>Cloud DNS API</td></tr>
+<tr><td><b>Description</b></td><td></td></tr>
+<tr><td><b>Id</b></td><td><code>dns:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/dns/changes/">changes</a><br />
+<a href="/providers/google/dns/dns_keys/">dns_keys</a><br />
+<a href="/providers/google/dns/managed_zone_operations/">managed_zone_operations</a><br />
+<a href="/providers/google/dns/managed_zones/">managed_zones</a><br />
+<a href="/providers/google/dns/managed_zones_iam_policies/">managed_zones_iam_policies</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/dns/policies/">policies</a><br />
+<a href="/providers/google/dns/projects/">projects</a><br />
+<a href="/providers/google/dns/resource_record_sets/">resource_record_sets</a><br />
+<a href="/providers/google/dns/response_policies/">response_policies</a><br />
+<a href="/providers/google/dns/response_policy_rules/">response_policy_rules</a><br />
+</div>
+</div>

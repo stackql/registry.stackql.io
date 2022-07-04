@@ -3,6 +3,7 @@ title: language
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - language
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,14 @@ Provides natural language understanding technologies, such as sentiment analysis
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Natural Language API</td></tr>
 <tr><td><b>Description</b></td><td>Provides natural language understanding technologies, such as sentiment analysis, entity recognition, entity sentiment analysis, and other text annotations, to developers.</td></tr>
-<tr><td><b>Id</b></td><td><code>language:v1beta2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>language:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/language/documents/">documents</a><br />
+</div>
+<div class="providerDocColumn">
+</div>
+</div>

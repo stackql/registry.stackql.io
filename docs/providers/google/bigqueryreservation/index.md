@@ -3,6 +3,7 @@ title: bigqueryreservation
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - bigqueryreservation
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,17 +21,18 @@ A service to modify your BigQuery flat-rate reservations.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>BigQuery Reservation API</td></tr>
 <tr><td><b>Description</b></td><td>A service to modify your BigQuery flat-rate reservations.</td></tr>
-<tr><td><b>Id</b></td><td><code>bigqueryreservation:v1beta1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>bigqueryreservation:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/google/bigqueryreservation/projects.locations/">projects.locations</a><br />
-<a href="/providers/google/bigqueryreservation/projects.locations.capacityCommitments/">projects.locations.capacityCommitments</a><br />
+<a href="/providers/google/bigqueryreservation/assignments/">assignments</a><br />
+<a href="/providers/google/bigqueryreservation/capacity_commitments/">capacity_commitments</a><br />
+<a href="/providers/google/bigqueryreservation/locations/">locations</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/google/bigqueryreservation/projects.locations.reservations/">projects.locations.reservations</a><br />
-<a href="/providers/google/bigqueryreservation/projects.locations.reservations.assignments/">projects.locations.reservations.assignments</a><br />
+<a href="/providers/google/bigqueryreservation/locations_bi_reservation/">locations_bi_reservation</a><br />
+<a href="/providers/google/bigqueryreservation/reservations/">reservations</a><br />
 </div>
 </div>
