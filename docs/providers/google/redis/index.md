@@ -3,6 +3,7 @@ title: redis
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - redis
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,17 @@ Creates and manages Redis instances on the Google Cloud Platform.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Google Cloud Memorystore for Redis API</td></tr>
 <tr><td><b>Description</b></td><td>Creates and manages Redis instances on the Google Cloud Platform.</td></tr>
-<tr><td><b>Id</b></td><td><code>redis:v1beta1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>redis:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/redis/instances/">instances</a><br />
+<a href="/providers/google/redis/instances_auth_string/">instances_auth_string</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/redis/locations/">locations</a><br />
+<a href="/providers/google/redis/operations/">operations</a><br />
+</div>
+</div>

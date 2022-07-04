@@ -3,6 +3,7 @@ title: container
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - container
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,23 +21,22 @@ Builds and manages container-based applications, powered by the open source Kube
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Kubernetes Engine API</td></tr>
 <tr><td><b>Description</b></td><td>Builds and manages container-based applications, powered by the open source Kubernetes technology.</td></tr>
-<tr><td><b>Id</b></td><td><code>container:v1beta1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>container:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/google/container/projects.aggregated.usableSubnetworks/">projects.aggregated.usableSubnetworks</a><br />
-<a href="/providers/google/container/projects.locations/">projects.locations</a><br />
-<a href="/providers/google/container/projects.locations.clusters/">projects.locations.clusters</a><br />
-<a href="/providers/google/container/projects.locations.clusters.nodePools/">projects.locations.clusters.nodePools</a><br />
-<a href="/providers/google/container/projects.locations.clusters.well-known/">projects.locations.clusters.well-known</a><br />
+<a href="/providers/google/container/clusters/">clusters</a><br />
+<a href="/providers/google/container/clusters_jwks/">clusters_jwks</a><br />
+<a href="/providers/google/container/clusters_ons/">clusters_ons</a><br />
+<a href="/providers/google/container/locations_server_config/">locations_server_config</a><br />
+<a href="/providers/google/container/node_pools/">node_pools</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/google/container/projects.locations.operations/">projects.locations.operations</a><br />
-<a href="/providers/google/container/projects.zones/">projects.zones</a><br />
-<a href="/providers/google/container/projects.zones.clusters/">projects.zones.clusters</a><br />
-<a href="/providers/google/container/projects.zones.clusters.nodePools/">projects.zones.clusters.nodePools</a><br />
-<a href="/providers/google/container/projects.zones.operations/">projects.zones.operations</a><br />
+<a href="/providers/google/container/operations/">operations</a><br />
+<a href="/providers/google/container/usable_subnetworks/">usable_subnetworks</a><br />
+<a href="/providers/google/container/well_known_openid_configuration/">well_known_openid_configuration</a><br />
+<a href="/providers/google/container/zones_serverconfig/">zones_serverconfig</a><br />
 </div>
 </div>

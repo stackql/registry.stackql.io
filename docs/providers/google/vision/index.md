@@ -3,6 +3,7 @@ title: vision
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - vision
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,20 @@ Integrates Google Vision features, including image labeling, face, logo, and lan
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Vision API</td></tr>
 <tr><td><b>Description</b></td><td>Integrates Google Vision features, including image labeling, face, logo, and landmark detection, optical character recognition (OCR), and detection of explicit content, into applications.</td></tr>
-<tr><td><b>Id</b></td><td><code>vision:v1p2beta1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>vision:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/vision/files/">files</a><br />
+<a href="/providers/google/vision/images/">images</a><br />
+<a href="/providers/google/vision/operations/">operations</a><br />
+<a href="/providers/google/vision/product_sets/">product_sets</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/vision/product_sets_product/">product_sets_product</a><br />
+<a href="/providers/google/vision/products/">products</a><br />
+<a href="/providers/google/vision/reference_images/">reference_images</a><br />
+</div>
+</div>

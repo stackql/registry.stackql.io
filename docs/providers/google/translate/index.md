@@ -3,6 +3,7 @@ title: translate
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - translate
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,19 @@ Integrates text translation into your website or application.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Translation API</td></tr>
 <tr><td><b>Description</b></td><td>Integrates text translation into your website or application.</td></tr>
-<tr><td><b>Id</b></td><td><code>translate:v3beta1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>translate:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/translate/glossaries/">glossaries</a><br />
+<a href="/providers/google/translate/locations/">locations</a><br />
+<a href="/providers/google/translate/locations_supported_languages/">locations_supported_languages</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/translate/operations/">operations</a><br />
+<a href="/providers/google/translate/projects/">projects</a><br />
+<a href="/providers/google/translate/projects_supported_languages/">projects_supported_languages</a><br />
+</div>
+</div>

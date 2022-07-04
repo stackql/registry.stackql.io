@@ -3,6 +3,7 @@ title: tables
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - tables
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,20 +25,52 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `totalItems` | `integer` | The total number of tables in the dataset. |
-| `etag` | `string` | A hash of this page of results. |
-| `kind` | `string` | The type of list. |
-| `nextPageToken` | `string` | A token to request the next page of results. |
-| `tables` | `array` | Tables in the requested dataset. |
+| `id` | `string` | [Output-only] An opaque ID uniquely identifying the table. |
+| `description` | `string` | [Optional] A user-friendly description of this table. |
+| `requirePartitionFilter` | `boolean` | [Optional] If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified. |
+| `numPhysicalBytes` | `string` | [Output-only] [TrustedTester] The physical size of this table in bytes, excluding any data in the streaming buffer. This includes compression and storage used for time travel. |
+| `creationTime` | `string` | [Output-only] The time when this table was created, in milliseconds since the epoch. |
+| `defaultCollation` | `string` | [Output-only] The default collation of the table. |
+| `location` | `string` | [Output-only] The geographic location where the table resides. This value is inherited from the dataset. |
+| `num_total_logical_bytes` | `string` | [Output-only] Total number of logical bytes in the table or materialized view. |
+| `view` | `object` |  |
+| `num_active_physical_bytes` | `string` | [Output-only] Number of physical bytes less than 90 days old. This data is not kept in real time, and might be delayed by a few seconds to a few minutes. |
+| `expirationTime` | `string` | [Optional] The time when this table expires, in milliseconds since the epoch. If not present, the table will persist indefinitely. Expired tables will be deleted and their storage reclaimed. The defaultTableExpirationMs property of the encapsulating dataset can be used to set a default expirationTime on newly created tables. |
+| `numRows` | `string` | [Output-only] The number of rows of data in this table, excluding any data in the streaming buffer. |
+| `model` | `object` |  |
+| `num_long_term_physical_bytes` | `string` | [Output-only] Number of physical bytes more than 90 days old. This data is not kept in real time, and might be delayed by a few seconds to a few minutes. |
+| `labels` | `object` | The labels associated with this table. You can use these to organize and group your tables. Label keys and values can be no longer than 63 characters, can only contain lowercase letters, numeric characters, underscores and dashes. International characters are allowed. Label values are optional. Label keys must start with a letter and each label in the list must have a different key. |
+| `selfLink` | `string` | [Output-only] A URL that can be used to access this resource again. |
+| `num_long_term_logical_bytes` | `string` | [Output-only] Number of logical bytes that are more than 90 days old. |
+| `tableReference` | `object` |  |
+| `timePartitioning` | `object` |  |
+| `externalDataConfiguration` | `object` |  |
+| `lastModifiedTime` | `string` | [Output-only] The time when this table was last modified, in milliseconds since the epoch. |
+| `numBytes` | `string` | [Output-only] The size of this table in bytes, excluding any data in the streaming buffer. |
+| `num_time_travel_physical_bytes` | `string` | [Output-only] Number of physical bytes used by time travel storage (deleted or changed data). This data is not kept in real time, and might be delayed by a few seconds to a few minutes. |
+| `kind` | `string` | [Output-only] The type of the resource. |
+| `type` | `string` | [Output-only] Describes the table type. The following values are supported: TABLE: A normal BigQuery table. VIEW: A virtual table defined by a SQL query. SNAPSHOT: An immutable, read-only table that is a copy of another table. [TrustedTester] MATERIALIZED_VIEW: SQL query whose result is persisted. EXTERNAL: A table that references data stored in an external storage system, such as Google Cloud Storage. The default value is TABLE. |
+| `schema` | `object` |  |
+| `numLongTermBytes` | `string` | [Output-only] The number of bytes in the table that are considered "long-term storage". |
+| `num_partitions` | `string` | [Output-only] The number of partitions present in the table or materialized view. This data is not kept in real time, and might be delayed by a few seconds to a few minutes. |
+| `materializedView` | `object` |  |
+| `maxStaleness` | `string` | [Optional] Max staleness of data that could be returned when table or materialized view is queried (formatted as Google SQL Interval type). |
+| `num_total_physical_bytes` | `string` | [Output-only] The physical size of this table in bytes. This also includes storage used for time travel. This data is not kept in real time, and might be delayed by a few seconds to a few minutes. |
+| `num_active_logical_bytes` | `string` | [Output-only] Number of logical bytes that are less than 90 days old. |
+| `etag` | `string` | [Output-only] A hash of the table metadata. Used to ensure there were no concurrent modifications to the resource when attempting an update. Not guaranteed to change when the table contents or the fields numRows, numBytes, numLongTermBytes or lastModifiedTime change. |
+| `streamingBuffer` | `object` |  |
+| `cloneDefinition` | `object` |  |
+| `snapshotDefinition` | `object` |  |
+| `clustering` | `object` |  |
+| `rangePartitioning` | `object` |  |
+| `friendlyName` | `string` | [Optional] A descriptive name for this table. |
+| `encryptionConfiguration` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `get` | `SELECT` | `datasetId, projectId, tableId` | Gets the specified table resource by table ID. This method does not return the data in the table, it only returns the table resource, which describes the structure of this table. |
-| `list` | `SELECT` | `datasetId, projectId` | Lists all tables in the specified dataset. Requires the READER dataset role. |
-| `insert` | `INSERT` | `datasetId, projectId, data__tableReference` | Creates a new, empty table in the dataset. |
-| `delete` | `DELETE` | `datasetId, projectId, tableId` | Deletes the table specified by tableId from the dataset. If the table contains data, all the data will be deleted. |
-| `getIamPolicy` | `EXEC` | `datasetsId, projectsId, tablesId` | Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. |
-| `patch` | `EXEC` | `datasetId, projectId, tableId, data__tableReference` | Updates information in an existing table. The update method replaces the entire table resource, whereas the patch method only replaces fields that are provided in the submitted table resource. This method supports patch semantics. |
-| `setIamPolicy` | `EXEC` | `datasetsId, projectsId, tablesId` | Sets the access control policy on the specified resource. Replaces any existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and `PERMISSION_DENIED` errors. |
-| `testIamPermissions` | `EXEC` | `datasetsId, projectsId, tablesId` | Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a `NOT_FOUND` error. Note: This operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may "fail open" without warning. |
-| `update` | `EXEC` | `datasetId, projectId, tableId, data__tableReference` | Updates information in an existing table. The update method replaces the entire table resource, whereas the patch method only replaces fields that are provided in the submitted table resource. |
+| `tables_get` | `SELECT` | `datasetId, projectId, tableId` | Gets the specified table resource by table ID. This method does not return the data in the table, it only returns the table resource, which describes the structure of this table. |
+| `tables_list` | `SELECT` | `datasetId, projectId` | Lists all tables in the specified dataset. Requires the READER dataset role. |
+| `tables_insert` | `INSERT` | `datasetId, projectId` | Creates a new, empty table in the dataset. |
+| `tables_delete` | `DELETE` | `datasetId, projectId, tableId` | Deletes the table specified by tableId from the dataset. If the table contains data, all the data will be deleted. |
+| `tables_patch` | `EXEC` | `datasetId, projectId, tableId` | Updates information in an existing table. The update method replaces the entire table resource, whereas the patch method only replaces fields that are provided in the submitted table resource. This method supports patch semantics. |
+| `tables_update` | `EXEC` | `datasetId, projectId, tableId` | Updates information in an existing table. The update method replaces the entire table resource, whereas the patch method only replaces fields that are provided in the submitted table resource. |

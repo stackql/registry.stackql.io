@@ -70,6 +70,15 @@ alttext="StackQL"/>
       <p class="text--truncate cardDescription">Web development and content distribution platform.</p>
     </a>
   </article>
+  <article class="col col--4 margin-bottom--lg">
+    <a class="card padding--lg cardContainer" href="/providers/firebase/">
+      <div class="row">
+      <div class="col col--2"><img src="/img/providers/firebase.png" /></div>
+      <div class="col col--10"><h2 class="text--truncate cardTitle" title="Firebase">Firebase</h2></div>  
+      </div>
+      <p class="text--truncate cardDescription">Mobile and web application development platform.</p>
+    </a>
+  </article>  
 </section>
 
 ---

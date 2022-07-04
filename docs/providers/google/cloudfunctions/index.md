@@ -3,6 +3,7 @@ title: cloudfunctions
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - cloudfunctions
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,16 @@ Manages lightweight user-provided functions executed in response to events.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Functions API</td></tr>
 <tr><td><b>Description</b></td><td>Manages lightweight user-provided functions executed in response to events.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudfunctions:v1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudfunctions:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/cloudfunctions/functions_iam_policies/">functions_iam_policies</a><br />
+<a href="/providers/google/cloudfunctions/locations/">locations</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/cloudfunctions/operations/">operations</a><br />
+</div>
+</div>

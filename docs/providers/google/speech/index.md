@@ -3,6 +3,7 @@ title: speech
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - speech
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,17 @@ Converts audio to text by applying powerful neural network models.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Speech-to-Text API</td></tr>
 <tr><td><b>Description</b></td><td>Converts audio to text by applying powerful neural network models.</td></tr>
-<tr><td><b>Id</b></td><td><code>speech:v2beta1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>speech:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/speech/custom_classes/">custom_classes</a><br />
+<a href="/providers/google/speech/operations/">operations</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/speech/phrase_sets/">phrase_sets</a><br />
+<a href="/providers/google/speech/speech/">speech</a><br />
+</div>
+</div>

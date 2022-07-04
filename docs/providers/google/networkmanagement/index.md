@@ -3,6 +3,7 @@ title: networkmanagement
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - networkmanagement
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,17 @@ The Network Management API provides a collection of network performance monitori
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Network Management API</td></tr>
 <tr><td><b>Description</b></td><td>The Network Management API provides a collection of network performance monitoring and diagnostic capabilities.</td></tr>
-<tr><td><b>Id</b></td><td><code>networkmanagement:v1beta1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>networkmanagement:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/networkmanagement/connectivity_tests/">connectivity_tests</a><br />
+<a href="/providers/google/networkmanagement/connectivity_tests_iam_policies/">connectivity_tests_iam_policies</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/networkmanagement/locations/">locations</a><br />
+<a href="/providers/google/networkmanagement/operations/">operations</a><br />
+</div>
+</div>

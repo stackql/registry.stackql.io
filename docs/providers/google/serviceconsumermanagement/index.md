@@ -3,6 +3,7 @@ title: serviceconsumermanagement
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - serviceconsumermanagement
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,17 @@ Manages the service consumers of a Service Infrastructure service.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Service Consumer Management API</td></tr>
 <tr><td><b>Description</b></td><td>Manages the service consumers of a Service Infrastructure service.</td></tr>
-<tr><td><b>Id</b></td><td><code>serviceconsumermanagement:v1beta1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>serviceconsumermanagement:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/serviceconsumermanagement/operations/">operations</a><br />
+<a href="/providers/google/serviceconsumermanagement/services/">services</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/serviceconsumermanagement/tenancy_units/">tenancy_units</a><br />
+<a href="/providers/google/serviceconsumermanagement/tenancy_units_project/">tenancy_units_project</a><br />
+</div>
+</div>

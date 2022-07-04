@@ -3,6 +3,7 @@ title: cloudidentity
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - cloudidentity
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,20 @@ API for provisioning and managing identity resources.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Identity API</td></tr>
 <tr><td><b>Description</b></td><td>API for provisioning and managing identity resources.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudidentity:v1beta1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudidentity:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/cloudidentity/client_states/">client_states</a><br />
+<a href="/providers/google/cloudidentity/device_users/">device_users</a><br />
+<a href="/providers/google/cloudidentity/devices/">devices</a><br />
+<a href="/providers/google/cloudidentity/groups/">groups</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/cloudidentity/groups_security_settings/">groups_security_settings</a><br />
+<a href="/providers/google/cloudidentity/memberships/">memberships</a><br />
+<a href="/providers/google/cloudidentity/memberships_membership_graph/">memberships_membership_graph</a><br />
+</div>
+</div>

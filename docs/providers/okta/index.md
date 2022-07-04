@@ -3,6 +3,7 @@ title: okta
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - okta
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -11,8 +12,7 @@ description: Query and Deploy Cloud Infrastructure and Resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
-A description of the provider.  
-    
+Authentication and authorization services.  
 
 See also:   
 [[` SHOW `]](https://stackql.io/docs/language-spec/show) [[` DESCRIBE `]](https://stackql.io/docs/language-spec/describe)  [[` REGISTRY `]](https://stackql.io/docs/language-spec/registry)

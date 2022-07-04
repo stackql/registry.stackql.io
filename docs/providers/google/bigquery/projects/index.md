@@ -3,6 +3,7 @@ title: projects
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - projects
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,13 +25,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `etag` | `string` | A hash of the page of results |
 | `kind` | `string` | The type of list. |
 | `nextPageToken` | `string` | A token to request the next page of results. |
 | `projects` | `array` | Projects to which you have at least READ access. |
 | `totalItems` | `integer` | The total number of projects in the list. |
-| `etag` | `string` | A hash of the page of results |
 ## Methods
-| Name | Accessible by | Required Params | Description |
-|:-----|:--------------|:----------------|:------------|
-| `list` | `SELECT` |  | Lists all projects to which you have been granted any project role. |
-| `getServiceAccount` | `EXEC` | `projectId` | Returns the email address of the service account for your project used for interactions with Google Cloud KMS. |
+| Name | Accessible by | Required Params |
+|:-----|:--------------|:----------------|
+| `projects_list` | `SELECT` |  |

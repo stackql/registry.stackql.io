@@ -3,6 +3,7 @@ title: oslogin
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - oslogin
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,17 @@ You can use OS Login to manage access to your VM instances using IAM roles.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud OS Login API</td></tr>
 <tr><td><b>Description</b></td><td>You can use OS Login to manage access to your VM instances using IAM roles.</td></tr>
-<tr><td><b>Id</b></td><td><code>oslogin:v1beta</code></td></tr>
+<tr><td><b>Id</b></td><td><code>oslogin:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/oslogin/projects/">projects</a><br />
+<a href="/providers/google/oslogin/ssh_public_keys/">ssh_public_keys</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/oslogin/users/">users</a><br />
+<a href="/providers/google/oslogin/users_login_profile/">users_login_profile</a><br />
+</div>
+</div>

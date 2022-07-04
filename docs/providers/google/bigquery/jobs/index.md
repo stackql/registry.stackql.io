@@ -3,6 +3,7 @@ title: jobs
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - jobs
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,17 +25,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `kind` | `string` | The resource type of the response. |
-| `nextPageToken` | `string` | A token to request the next page of results. |
-| `etag` | `string` | A hash of this page of results. |
-| `jobs` | `array` | List of jobs that were requested. |
+| `id` | `string` | [Output-only] Opaque ID field of the job |
+| `etag` | `string` | [Output-only] A hash of this resource. |
+| `selfLink` | `string` | [Output-only] A URL that can be used to access this resource again. |
+| `configuration` | `object` |  |
+| `jobReference` | `object` |  |
+| `user_email` | `string` | [Output-only] Email address of the user who ran the job. |
+| `kind` | `string` | [Output-only] The type of the resource. |
+| `statistics` | `object` |  |
+| `status` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `get` | `SELECT` | `jobId, projectId` | Returns information about a specific job. Job information is available for a six month period after creation. Requires that you're the person who ran the job, or have the Is Owner project role. |
-| `list` | `SELECT` | `projectId` | Lists all jobs that you started in the specified project. Job information is available for a six month period after creation. The job list is sorted in reverse chronological order, by job creation time. Requires the Can View project role, or the Is Owner project role if you set the allUsers property. |
-| `insert` | `INSERT` | `projectId, data__configuration` | Starts a new asynchronous job. Requires the Can View project role. |
-| `delete` | `DELETE` | `jobsId, projectsId` | Requests the deletion of the metadata of a job. This call returns when the job's metadata is deleted. |
-| `cancel` | `EXEC` | `jobId, projectId` | Requests that a job be cancelled. This call will return immediately, and the client will need to poll for the job status to see if the cancel completed successfully. Cancelled jobs may still incur costs. |
-| `getQueryResults` | `EXEC` | `jobId, projectId` | Retrieves the results of a query job. |
-| `query` | `EXEC` | `projectId, data__query` | Runs a BigQuery SQL query synchronously and returns query results if the query completes within a specified timeout. |
+| `jobs_get` | `SELECT` | `jobId, projectId` | Returns information about a specific job. Job information is available for a six month period after creation. Requires that you're the person who ran the job, or have the Is Owner project role. |
+| `jobs_list` | `SELECT` | `projectId` | Lists all jobs that you started in the specified project. Job information is available for a six month period after creation. The job list is sorted in reverse chronological order, by job creation time. Requires the Can View project role, or the Is Owner project role if you set the allUsers property. |
+| `jobs_insert` | `INSERT` | `projectId` | Starts a new asynchronous job. Requires the Can View project role. |
+| `jobs_delete` | `DELETE` | `jobId, projectId` | Requests the deletion of the metadata of a job. This call returns when the job's metadata is deleted. |
+| `jobs_cancel` | `EXEC` | `jobId, projectId` | Requests that a job be cancelled. This call will return immediately, and the client will need to poll for the job status to see if the cancel completed successfully. Cancelled jobs may still incur costs. |
+| `jobs_query` | `EXEC` | `projectId` | Runs a BigQuery SQL query synchronously and returns query results if the query completes within a specified timeout. |

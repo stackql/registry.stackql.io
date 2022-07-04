@@ -3,6 +3,7 @@ title: sourcerepo
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - sourcerepo
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,8 +21,17 @@ Accesses source code repositories hosted by Google.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Source Repositories API</td></tr>
 <tr><td><b>Description</b></td><td>Accesses source code repositories hosted by Google.</td></tr>
-<tr><td><b>Id</b></td><td><code>sourcerepo:v1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>sourcerepo:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
-<div class="row"><div class="providerDocColumn">Not Available</div></div>
+<div class="row">
+<div class="providerDocColumn">
+<a href="/providers/google/sourcerepo/projects/">projects</a><br />
+<a href="/providers/google/sourcerepo/projects_config/">projects_config</a><br />
+</div>
+<div class="providerDocColumn">
+<a href="/providers/google/sourcerepo/repos/">repos</a><br />
+<a href="/providers/google/sourcerepo/repos_iam_policies/">repos_iam_policies</a><br />
+</div>
+</div>

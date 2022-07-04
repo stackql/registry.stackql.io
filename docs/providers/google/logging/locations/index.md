@@ -3,6 +3,7 @@ title: locations
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - locations
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,10 +25,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `locations` | `array` | A list of locations that matches the specified filter in the request. |
-| `nextPageToken` | `string` | The standard List next-page token. |
+| `name` | `string` | Resource name for the location, which may vary between implementations. For example: "projects/example-project/locations/us-east1" |
+| `displayName` | `string` | The friendly name for this location, typically a nearby city name. For example, "Tokyo". |
+| `labels` | `object` | Cross-service attributes for the location. For example {"cloud.googleapis.com/region": "us-east1"}  |
+| `locationId` | `string` | The canonical id for this location. For example: "us-east1". |
+| `metadata` | `object` | Service-specific metadata. For example the available capacity at the given location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `get` | `SELECT` | `locationsId, v2Id, v2Id1` | Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service. |
-| `list` | `SELECT` | `v2Id, v2Id1` | Lists information about the supported locations for this service. |
+| `billingAccounts_locations_get` | `SELECT` | `name` | Gets information about a location. |
+| `billingAccounts_locations_list` | `SELECT` | `name` | Lists information about the supported locations for this service. |
+| `folders_locations_get` | `SELECT` | `name` | Gets information about a location. |
+| `folders_locations_list` | `SELECT` | `name` | Lists information about the supported locations for this service. |
+| `locations_get` | `SELECT` | `name` | Gets information about a location. |
+| `locations_list` | `SELECT` | `name` | Lists information about the supported locations for this service. |
+| `organizations_locations_get` | `SELECT` | `name` | Gets information about a location. |
+| `organizations_locations_list` | `SELECT` | `name` | Lists information about the supported locations for this service. |
+| `projects_locations_get` | `SELECT` | `name` | Gets information about a location. |
+| `projects_locations_list` | `SELECT` | `name` | Lists information about the supported locations for this service. |

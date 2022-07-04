@@ -3,6 +3,7 @@ title: dataproc
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - dataproc
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,20 +21,24 @@ Manages Hadoop-based clusters and jobs on Google Cloud Platform.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Dataproc API</td></tr>
 <tr><td><b>Description</b></td><td>Manages Hadoop-based clusters and jobs on Google Cloud Platform.</td></tr>
-<tr><td><b>Id</b></td><td><code>dataproc:v1beta2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>dataproc:v1.0.0</code></td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
-<a href="/providers/google/dataproc/projects.locations.autoscalingPolicies/">projects.locations.autoscalingPolicies</a><br />
-<a href="/providers/google/dataproc/projects.locations.workflowTemplates/">projects.locations.workflowTemplates</a><br />
-<a href="/providers/google/dataproc/projects.regions.autoscalingPolicies/">projects.regions.autoscalingPolicies</a><br />
-<a href="/providers/google/dataproc/projects.regions.clusters/">projects.regions.clusters</a><br />
+<a href="/providers/google/dataproc/autoscaling_policies/">autoscaling_policies</a><br />
+<a href="/providers/google/dataproc/autoscaling_policies_iam_policies/">autoscaling_policies_iam_policies</a><br />
+<a href="/providers/google/dataproc/batches/">batches</a><br />
+<a href="/providers/google/dataproc/clusters/">clusters</a><br />
+<a href="/providers/google/dataproc/clusters_iam_policies/">clusters_iam_policies</a><br />
+<a href="/providers/google/dataproc/jobs/">jobs</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/google/dataproc/projects.regions.jobs/">projects.regions.jobs</a><br />
-<a href="/providers/google/dataproc/projects.regions.operations/">projects.regions.operations</a><br />
-<a href="/providers/google/dataproc/projects.regions.workflowTemplates/">projects.regions.workflowTemplates</a><br />
+<a href="/providers/google/dataproc/jobs_iam_policies/">jobs_iam_policies</a><br />
+<a href="/providers/google/dataproc/operations/">operations</a><br />
+<a href="/providers/google/dataproc/operations_iam_policies/">operations_iam_policies</a><br />
+<a href="/providers/google/dataproc/workflow_templates/">workflow_templates</a><br />
+<a href="/providers/google/dataproc/workflow_templates_iam_policies/">workflow_templates_iam_policies</a><br />
 </div>
 </div>
