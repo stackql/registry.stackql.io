@@ -27,16 +27,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The relative resource name of the lake, of the form: projects/{project_number}/locations/{location_id}/lakes/{lake_id}. |
 | `description` | `string` | Optional. Description of the lake. |
-| `state` | `string` | Output only. Current state of the lake. |
-| `uid` | `string` | Output only. System generated globally unique ID for the lake. This ID will be different if the lake is deleted and re-created with the same name. |
-| `displayName` | `string` | Optional. User friendly display name. |
 | `serviceAccount` | `string` | Output only. Service account associated with this lake. This service account must be authorized to access or operate on resources managed by the lake. |
-| `updateTime` | `string` | Output only. The time when the lake was last updated. |
-| `assetStatus` | `object` | Aggregated status of the underlying assets of a lake or zone. |
+| `state` | `string` | Output only. Current state of the lake. |
+| `displayName` | `string` | Optional. User friendly display name. |
 | `metastore` | `object` | Settings to manage association of Dataproc Metastore with a lake. |
+| `uid` | `string` | Output only. System generated globally unique ID for the lake. This ID will be different if the lake is deleted and re-created with the same name. |
+| `updateTime` | `string` | Output only. The time when the lake was last updated. |
+| `labels` | `object` | Optional. User-defined labels for the lake. |
 | `metastoreStatus` | `object` | Status of Lake and Dataproc Metastore service instance association. |
 | `createTime` | `string` | Output only. The time when the lake was created. |
-| `labels` | `object` | Optional. User-defined labels for the lake. |
+| `assetStatus` | `object` | Aggregated status of the underlying assets of a lake or zone. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

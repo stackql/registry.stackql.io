@@ -27,5 +27,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_detectLanguage` | `EXEC` | `parent` | Detects the language of text within a request. |
-| `projects_translateText` | `EXEC` | `parent` | Translates input text and returns translated text. |
+| `detectLanguage` | `EXEC` | `parent` | Detects the language of text within a request. |
+| `translateText` | `EXEC` | `parent` | Translates input text and returns translated text. |

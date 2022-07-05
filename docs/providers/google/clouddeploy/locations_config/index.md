@@ -26,8 +26,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Name of the configuration. |
-| `defaultSkaffoldVersion` | `string` | Output only. Default Skaffold version that is assigned when a Release is created without specifying a Skaffold version. |
 | `supportedVersions` | `array` | Output only. All supported versions of Skaffold. |
+| `defaultSkaffoldVersion` | `string` | Output only. Default Skaffold version that is assigned when a Release is created without specifying a Skaffold version. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

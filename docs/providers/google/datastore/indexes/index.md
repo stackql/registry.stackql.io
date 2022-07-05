@@ -25,12 +25,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `properties` | `array` | Required. An ordered sequence of property names and their index attributes. |
+| `state` | `string` | Output only. The state of the index. |
 | `ancestor` | `string` | Required. The index's ancestor mode. Must not be ANCESTOR_MODE_UNSPECIFIED. |
 | `indexId` | `string` | Output only. The resource ID of the index. |
 | `kind` | `string` | Required. The entity kind to which this index applies. |
 | `projectId` | `string` | Output only. Project ID. |
-| `properties` | `array` | Required. An ordered sequence of property names and their index attributes. |
-| `state` | `string` | Output only. The state of the index. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

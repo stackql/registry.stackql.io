@@ -22,7 +22,7 @@ See also:
 
 ## Installation
 ```bash
-REGISTRY PULL google v1.0.0;
+REGISTRY PULL google v1.0.1;
 ```
 
 ## Authentication

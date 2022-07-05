@@ -27,5 +27,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `media_download` | `EXEC` | `name` | Download a file attachment on a case. Note: HTTP requests must append "?alt=media" to the URL. |
-| `media_upload` | `EXEC` | `parent` | Create a file attachment on a case or Cloud resource. |
+| `download` | `EXEC` | `name` | Download a file attachment on a case. Note: HTTP requests must append "?alt=media" to the URL. |
+| `upload` | `EXEC` | `parent` | Create a file attachment on a case or Cloud resource. |

@@ -26,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Name of the trial assigned by the service. |
-| `measurements` | `array` | A list of measurements that are strictly lexicographically ordered by their induced tuples (steps, elapsed_time). These are used for early stopping computations. |
-| `parameters` | `array` | The parameters of the trial. |
 | `startTime` | `string` | Output only. Time at which the trial was started. |
-| `finalMeasurement` | `object` | A message representing a measurement. |
-| `clientId` | `string` | Output only. The identifier of the client that originally requested this trial. |
+| `measurements` | `array` | A list of measurements that are strictly lexicographically ordered by their induced tuples (steps, elapsed_time). These are used for early stopping computations. |
 | `endTime` | `string` | Output only. Time at which the trial's status changed to COMPLETED. |
 | `state` | `string` | The detailed state of a trial. |
+| `clientId` | `string` | Output only. The identifier of the client that originally requested this trial. |
+| `finalMeasurement` | `object` | A message representing a measurement. |
 | `infeasibleReason` | `string` | Output only. A human readable string describing why the trial is infeasible. This should only be set if trial_infeasible is true. |
 | `trialInfeasible` | `boolean` | Output only. If true, the parameters in this trial are not attempted again. |
+| `parameters` | `array` | The parameters of the trial. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

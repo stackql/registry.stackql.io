@@ -3,6 +3,7 @@ title: apps
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - apps
   - stackql
   - infrastructure-as-code
   - configuration-as-data

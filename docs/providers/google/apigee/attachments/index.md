@@ -26,9 +26,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | ID of the environment group attachment. |
+| `createdAt` | `string` | Output only. The time at which the environment group attachment was created as milliseconds since epoch. |
 | `environment` | `string` | Required. ID of the attached environment. |
 | `environmentGroupId` | `string` | Output only. ID of the environment group. |
-| `createdAt` | `string` | Output only. The time at which the environment group attachment was created as milliseconds since epoch. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

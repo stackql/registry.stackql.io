@@ -3,6 +3,7 @@ title: safety_net_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - safety_net_config
   - stackql
   - infrastructure-as-code
   - configuration-as-data

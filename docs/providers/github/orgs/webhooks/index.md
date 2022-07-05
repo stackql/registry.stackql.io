@@ -38,9 +38,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `get_webhook` | `SELECT` | `hook_id, org` | Returns a webhook configured in an organization. To get only the webhook `config` properties, see "[Get a webhook configuration for an organization](/rest/reference/orgs#get-a-webhook-configuration-for-an-organization)." |
+| `get_webhook` | `SELECT` | `hook_id, org` | Returns a webhook configured in an organization. To get only the webhook `config` properties, see "[Get a webhook configuration for an organization](https://docs.github.com/en/rest/orgs/webhooks#get-a-webhook-configuration-for-an-organization)." |
 | `list_webhooks` | `SELECT` | `org` |  |
 | `create_webhook` | `INSERT` | `org, data__config, data__name` | Here's how you can create a hook that posts payloads in JSON format: |
 | `delete_webhook` | `DELETE` | `hook_id, org` |  |
 | `ping_webhook` | `EXEC` | `hook_id, org` | This will trigger a [ping event](https://docs.github.com/webhooks/#ping-event) to be sent to the hook. |
-| `update_webhook` | `EXEC` | `hook_id, org` | Updates a webhook configured in an organization. When you update a webhook, the `secret` will be overwritten. If you previously had a `secret` set, you must provide the same `secret` or set a new `secret` or the secret will be removed. If you are only updating individual webhook `config` properties, use "[Update a webhook configuration for an organization](/rest/reference/orgs#update-a-webhook-configuration-for-an-organization)." |
+| `update_webhook` | `EXEC` | `hook_id, org` | Updates a webhook configured in an organization. When you update a webhook, the `secret` will be overwritten. If you previously had a `secret` set, you must provide the same `secret` or set a new `secret` or the secret will be removed. If you are only updating individual webhook `config` properties, use "[Update a webhook configuration for an organization](https://docs.github.com/en/rest/orgs/webhooks#update-a-webhook-configuration-for-an-organization)." |

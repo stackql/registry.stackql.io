@@ -26,16 +26,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource's name. |
-| `labels` | `object` | Labels. |
 | `displayName` | `string` | Required. Display name. |
+| `labels` | `object` | Labels. |
 | `gcsProfile` | `object` | Cloud Storage bucket profile. |
-| `createTime` | `string` | Output only. The create time of the resource. |
-| `staticServiceIpConnectivity` | `object` | Static IP address connectivity. |
-| `updateTime` | `string` | Output only. The update time of the resource. |
-| `privateConnectivity` | `object` | Private Connectivity |
 | `mysqlProfile` | `object` | MySQL database profile. |
-| `forwardSshConnectivity` | `object` | Forward SSH Tunnel connectivity. |
 | `oracleProfile` | `object` | Oracle database profile. |
+| `updateTime` | `string` | Output only. The update time of the resource. |
+| `forwardSshConnectivity` | `object` | Forward SSH Tunnel connectivity. |
+| `privateConnectivity` | `object` | Private Connectivity |
+| `staticServiceIpConnectivity` | `object` | Static IP address connectivity. |
+| `createTime` | `string` | Output only. The create time of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

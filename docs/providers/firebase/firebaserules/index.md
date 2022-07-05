@@ -3,6 +3,7 @@ title: firebaserules
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - firebaserules
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,7 +21,7 @@ Creates and manages rules that determine when a Firebase Rules-enabled service s
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Firebase Rules API</td></tr>
 <tr><td><b>Description</b></td><td>Creates and manages rules that determine when a Firebase Rules-enabled service should permit a request. </td></tr>
-<tr><td><b>Id</b></td><td><code>firebaserules:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>firebaserules:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

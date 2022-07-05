@@ -36,9 +36,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `policies_get` | `SELECT` | `policy, project` | Fetches the representation of an existing Policy. |
-| `policies_list` | `SELECT` | `project` | Enumerates all Policies associated with a project. |
-| `policies_create` | `INSERT` | `project` | Creates a new Policy. |
-| `policies_delete` | `DELETE` | `policy, project` | Deletes a previously created Policy. Fails if the policy is still being referenced by a network. |
-| `policies_patch` | `EXEC` | `policy, project` | Applies a partial update to an existing Policy. |
-| `policies_update` | `EXEC` | `policy, project` | Updates an existing Policy. |
+| `get` | `SELECT` | `policy, project` | Fetches the representation of an existing Policy. |
+| `list` | `SELECT` | `project` | Enumerates all Policies associated with a project. |
+| `create` | `INSERT` | `project` | Creates a new Policy. |
+| `delete` | `DELETE` | `policy, project` | Deletes a previously created Policy. Fails if the policy is still being referenced by a network. |
+| `patch` | `EXEC` | `policy, project` | Applies a partial update to an existing Policy. |
+| `update` | `EXEC` | `policy, project` | Updates an existing Policy. |

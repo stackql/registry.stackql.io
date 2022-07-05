@@ -21,7 +21,7 @@ The Org Policy API allows users to configure governance rules on their GCP resou
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Organization Policy API</td></tr>
 <tr><td><b>Description</b></td><td>The Org Policy API allows users to configure governance rules on their GCP resources across the Cloud Resource Hierarchy.</td></tr>
-<tr><td><b>Id</b></td><td><code>orgpolicy:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>orgpolicy:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

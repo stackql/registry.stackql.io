@@ -26,13 +26,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name of the processor version. Format: `projects/{project}/locations/{location}/processors/{processor}/processorVersions/{processor_version}` |
-| `createTime` | `string` | The time the processor version was created. |
-| `deprecationInfo` | `object` | Information about the upcoming deprecation of this processor version. |
-| `displayName` | `string` | The display name of the processor version. |
 | `googleManaged` | `boolean` | Denotes that this ProcessorVersion is managed by google. |
 | `kmsKeyName` | `string` | The KMS key name used for encryption. |
 | `kmsKeyVersionName` | `string` | The KMS key version with which data is encrypted. |
 | `state` | `string` | The state of the processor version. |
+| `createTime` | `string` | The time the processor version was created. |
+| `deprecationInfo` | `object` | Information about the upcoming deprecation of this processor version. |
+| `displayName` | `string` | The display name of the processor version. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

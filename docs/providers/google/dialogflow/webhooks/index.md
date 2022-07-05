@@ -26,11 +26,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The unique identifier of the webhook. Required for the Webhooks.UpdateWebhook method. Webhooks.CreateWebhook populates the name automatically. Format: `projects//locations//agents//webhooks/`. |
-| `timeout` | `string` | Webhook execution timeout. Execution is considered failed if Dialogflow doesn't receive a response from webhook at the end of the timeout period. Defaults to 5 seconds, maximum allowed timeout is 30 seconds. |
-| `disabled` | `boolean` | Indicates whether the webhook is disabled. |
 | `displayName` | `string` | Required. The human-readable name of the webhook, unique within the agent. |
 | `genericWebService` | `object` | Represents configuration for a generic web service. |
 | `serviceDirectory` | `object` | Represents configuration for a [Service Directory](https://cloud.google.com/service-directory) service. |
+| `timeout` | `string` | Webhook execution timeout. Execution is considered failed if Dialogflow doesn't receive a response from webhook at the end of the timeout period. Defaults to 5 seconds, maximum allowed timeout is 30 seconds. |
+| `disabled` | `boolean` | Indicates whether the webhook is disabled. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

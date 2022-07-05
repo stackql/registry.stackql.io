@@ -26,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name of the organization. This is the organization's relative path in the API. Its format is "organizations/[organization_id]". For example, "organizations/1234". |
+| `updateTime` | `string` | Output only. Timestamp when the Organization was last modified. |
+| `createTime` | `string` | Output only. Timestamp when the Organization was created. |
+| `deleteTime` | `string` | Output only. Timestamp when the Organization was requested for deletion. |
 | `directoryCustomerId` | `string` | Immutable. The G Suite / Workspace customer id used in the Directory API. |
 | `displayName` | `string` | Output only. A human-readable string that refers to the organization in the Google Cloud Console. This string is set by the server and cannot be changed. The string will be set to the primary domain (for example, "google.com") of the Google Workspace customer that owns the organization. |
 | `etag` | `string` | Output only. A checksum computed by the server based on the current value of the Organization resource. This may be sent on update and delete requests to ensure the client has an up-to-date value before proceeding. |
 | `state` | `string` | Output only. The organization's current lifecycle state. |
-| `updateTime` | `string` | Output only. Timestamp when the Organization was last modified. |
-| `createTime` | `string` | Output only. Timestamp when the Organization was created. |
-| `deleteTime` | `string` | Output only. Timestamp when the Organization was requested for deletion. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_get` | `SELECT` | `name` | Fetches an organization resource identified by the specified resource name. |
-| `organizations_search` | `EXEC` |  | Searches organization resources that are visible to the user and satisfy the specified filter. This method returns organizations in an unspecified order. New organizations do not necessarily appear at the end of the results, and may take a small amount of time to appear. Search will only return organizations on which the user has the permission `resourcemanager.organizations.get` |
+| `get` | `SELECT` | `name` | Fetches an organization resource identified by the specified resource name. |
+| `search` | `EXEC` |  | Searches organization resources that are visible to the user and satisfy the specified filter. This method returns organizations in an unspecified order. New organizations do not necessarily appear at the end of the results, and may take a small amount of time to appear. Search will only return organizations on which the user has the permission `resourcemanager.organizations.get` |

@@ -21,7 +21,7 @@ OS management tools that can be used for patch management, patch compliance, and
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>OS Config API</td></tr>
 <tr><td><b>Description</b></td><td>OS management tools that can be used for patch management, patch compliance, and configuration management on VM instances.</td></tr>
-<tr><td><b>Id</b></td><td><code>osconfig:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>osconfig:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

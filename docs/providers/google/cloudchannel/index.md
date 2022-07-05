@@ -21,7 +21,7 @@ The Cloud Channel API enables Google Cloud partners to have a single unified res
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Channel API</td></tr>
 <tr><td><b>Description</b></td><td>The Cloud Channel API enables Google Cloud partners to have a single unified resale platform and APIs across all of Google Cloud including GCP, Workspace, Maps and Chrome.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudchannel:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudchannel:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

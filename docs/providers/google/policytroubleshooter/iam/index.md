@@ -27,4 +27,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `iam_troubleshoot` | `EXEC` |  |
+| `troubleshoot` | `EXEC` |  |

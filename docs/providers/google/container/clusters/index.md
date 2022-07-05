@@ -28,64 +28,64 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` | Output only. Unique id for the cluster. |
 | `name` | `string` | The name of this cluster. The name must be unique within this project and location (e.g. zone or region), and can be up to 40 characters with the following restrictions: * Lowercase letters, numbers, and hyphens only. * Must start with a letter. * Must end with a number or a letter. |
 | `description` | `string` | An optional description of this cluster. |
-| `networkPolicy` | `object` | Configuration options for the NetworkPolicy feature. https://kubernetes.io/docs/concepts/services-networking/networkpolicies/ |
-| `loggingConfig` | `object` | LoggingConfig is cluster logging configuration. |
-| `monitoringConfig` | `object` | MonitoringConfig is cluster monitoring configuration. |
-| `endpoint` | `string` | [Output only] The IP address of this cluster's master endpoint. The endpoint can be accessed from the internet at `https://username:password@endpoint/`. See the `masterAuth` property of this resource for username and password information. |
-| `nodePoolDefaults` | `object` | Subset of Nodepool message that has defaults. |
-| `createTime` | `string` | [Output only] The time the cluster was created, in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. |
-| `autoscaling` | `object` | ClusterAutoscaling contains global, per-cluster information required by Cluster Autoscaler to automatically adjust the size of the cluster and create/delete node pools based on the current needs. |
-| `nodePoolAutoConfig` | `object` | Node pool configs that apply to all auto-provisioned node pools in autopilot clusters and node auto-provisioning enabled clusters. |
-| `location` | `string` | [Output only] The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/regions-zones/regions-zones#available) or [region](https://cloud.google.com/compute/docs/regions-zones/regions-zones#available) in which the cluster resides. |
-| `identityServiceConfig` | `object` | IdentityServiceConfig is configuration for Identity Service which allows customers to use external identity providers with the K8S API |
-| `authenticatorGroupsConfig` | `object` | Configuration for returning group information from authenticators. |
-| `legacyAbac` | `object` | Configuration for the legacy Attribute Based Access Control authorization mode. |
-| `currentNodeCount` | `integer` | [Output only] The number of nodes currently in the cluster. Deprecated. Call Kubernetes API directly to retrieve node information. |
-| `labelFingerprint` | `string` | The fingerprint of the set of labels for this cluster. |
-| `maintenancePolicy` | `object` | MaintenancePolicy defines the maintenance policy to be used for the cluster. |
-| `releaseChannel` | `object` | ReleaseChannel indicates which release channel a cluster is subscribed to. Release channels are arranged in order of risk. When a cluster is subscribed to a release channel, Google maintains both the master version and the node version. Node auto-upgrade defaults to true and cannot be disabled. |
 | `statusMessage` | `string` | [Output only] Deprecated. Use conditions instead. Additional information about the current status of this cluster, if available. |
-| `networkConfig` | `object` | NetworkConfig reports the relative names of network & subnetwork. |
-| `resourceLabels` | `object` | The resource labels for the cluster to use to annotate any related Google Compute Engine resources. |
-| `enableKubernetesAlpha` | `boolean` | Kubernetes alpha features are enabled on this cluster. This includes alpha API groups (e.g. v1alpha1) and features that may not be production ready in the kubernetes version of the master and nodes. The cluster has no SLA for uptime and master/node upgrades are disabled. Alpha enabled clusters are automatically deleted thirty days after creation. |
-| `selfLink` | `string` | [Output only] Server-defined URL for the resource. |
-| `status` | `string` | [Output only] The current status of this cluster. |
-| `nodeIpv4CidrSize` | `integer` | [Output only] The size of the address space on each node for hosting containers. This is provisioned from within the `container_ipv4_cidr` range. This field will only be set when cluster is in route-based network mode. |
-| `shieldedNodes` | `object` | Configuration of Shielded Nodes feature. |
-| `resourceUsageExportConfig` | `object` | Configuration for exporting cluster resource usages. |
-| `expireTime` | `string` | [Output only] The time the cluster will be automatically deleted in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. |
-| `autopilot` | `object` | Autopilot is the configuration for Autopilot settings on the cluster. |
-| `currentMasterVersion` | `string` | [Output only] The current software version of the master endpoint. |
 | `ipAllocationPolicy` | `object` | Configuration for controlling how IPs are allocated in the cluster. |
-| `conditions` | `array` | Which conditions caused the current cluster state. |
-| `defaultMaxPodsConstraint` | `object` | Constraints applied to pods. |
-| `nodePools` | `array` | The node pools associated with this cluster. This field should not be set if "node_config" or "initial_node_count" are specified. |
-| `zone` | `string` | [Output only] The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field is deprecated, use location instead. |
-| `databaseEncryption` | `object` | Configuration of etcd encryption. |
-| `verticalPodAutoscaling` | `object` | VerticalPodAutoscaling contains global, per-cluster information required by Vertical Pod Autoscaler to automatically adjust the resources of pods controlled by it. |
-| `masterAuth` | `object` | The authentication information for accessing the master endpoint. Authentication can be done using HTTP basic auth or using client certificates. |
-| `loggingService` | `string` | The logging service the cluster should use to write logs. Currently available options: * `logging.googleapis.com/kubernetes` - The Cloud Logging service with a Kubernetes-native resource model * `logging.googleapis.com` - The legacy Cloud Logging service (no longer available as of GKE 1.15). * `none` - no logs will be exported from the cluster. If left as an empty string,`logging.googleapis.com/kubernetes` will be used for GKE 1.14+ or `logging.googleapis.com` for earlier versions. |
-| `confidentialNodes` | `object` | ConfidentialNodes is configuration for the confidential nodes feature, which makes nodes run on confidential VMs. |
-| `tpuIpv4CidrBlock` | `string` | [Output only] The IP address range of the Cloud TPUs in this cluster, in [CIDR](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notation (e.g. `1.2.3.4/29`). |
-| `subnetwork` | `string` | The name of the Google Compute Engine [subnetwork](https://cloud.google.com/compute/docs/subnetworks) to which the cluster is connected. |
-| `initialClusterVersion` | `string` | The initial Kubernetes version for this cluster. Valid versions are those found in validMasterVersions returned by getServerConfig. The version can be upgraded over time; such upgrades are reflected in currentMasterVersion and currentNodeVersion. Users may specify either explicit versions offered by Kubernetes Engine or version aliases, which have the following behavior: - "latest": picks the highest valid Kubernetes version - "1.X": picks the highest valid patch+gke.N patch in the 1.X version - "1.X.Y": picks the highest valid gke.N patch in the 1.X.Y version - "1.X.Y-gke.N": picks an explicit Kubernetes version - "","-": picks the default Kubernetes version |
-| `addonsConfig` | `object` | Configuration for the addons that can be automatically spun up in the cluster, enabling additional functionality. |
-| `nodeConfig` | `object` | Parameters that describe the nodes in a cluster. GKE Autopilot clusters do not recognize parameters in `NodeConfig`. Use AutoprovisioningNodePoolDefaults instead. |
-| `instanceGroupUrls` | `array` | Deprecated. Use node_pools.instance_group_urls. |
-| `privateClusterConfig` | `object` | Configuration options for private clusters. |
-| `meshCertificates` | `object` | Configuration for issuance of mTLS keys and certificates to Kubernetes pods. |
-| `masterAuthorizedNetworksConfig` | `object` | Configuration options for the master authorized networks feature. Enabled master authorized networks will disallow all external traffic to access Kubernetes master through HTTPS except traffic from the given CIDR blocks, Google Compute Engine Public IPs and Google Prod IPs. |
-| `network` | `string` | The name of the Google Compute Engine [network](https://cloud.google.com/compute/docs/networks-and-firewalls#networks) to which the cluster is connected. If left unspecified, the `default` network will be used. |
-| `notificationConfig` | `object` | NotificationConfig is the configuration of notifications. |
-| `binaryAuthorization` | `object` | Configuration for Binary Authorization. |
-| `enableTpu` | `boolean` | Enable the ability to use Cloud TPUs in this cluster. |
+| `createTime` | `string` | [Output only] The time the cluster was created, in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. |
 | `initialNodeCount` | `integer` | The number of nodes to create in this cluster. You must ensure that your Compute Engine [resource quota](https://cloud.google.com/compute/quotas) is sufficient for this number of instances. You must also have available firewall and routes quota. For requests, this field should only be used in lieu of a "node_pool" object, since this configuration (along with the "node_config") will be used to create a "NodePool" object with an auto-generated name. Do not use this and a node_pool at the same time. This field is deprecated, use node_pool.initial_node_count instead. |
-| `monitoringService` | `string` | The monitoring service the cluster should use to write metrics. Currently available options: * "monitoring.googleapis.com/kubernetes" - The Cloud Monitoring service with a Kubernetes-native resource model * `monitoring.googleapis.com` - The legacy Cloud Monitoring service (no longer available as of GKE 1.15). * `none` - No metrics will be exported from the cluster. If left as an empty string,`monitoring.googleapis.com/kubernetes` will be used for GKE 1.14+ or `monitoring.googleapis.com` for earlier versions. |
+| `masterAuth` | `object` | The authentication information for accessing the master endpoint. Authentication can be done using HTTP basic auth or using client certificates. |
+| `legacyAbac` | `object` | Configuration for the legacy Attribute Based Access Control authorization mode. |
+| `networkPolicy` | `object` | Configuration options for the NetworkPolicy feature. https://kubernetes.io/docs/concepts/services-networking/networkpolicies/ |
 | `clusterIpv4Cidr` | `string` | The IP address range of the container pods in this cluster, in [CIDR](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notation (e.g. `10.96.0.0/14`). Leave blank to have one automatically chosen or specify a `/14` block in `10.0.0.0/8`. |
-| `locations` | `array` | The list of Google Compute Engine [zones](https://cloud.google.com/compute/docs/zones#available) in which the cluster's nodes should be located. This field provides a default value if [NodePool.Locations](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters.nodePools#NodePool.FIELDS.locations) are not specified during node pool creation. Warning: changing cluster locations will update the [NodePool.Locations](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters.nodePools#NodePool.FIELDS.locations) of all node pools and will result in nodes being added and/or removed. |
+| `enableTpu` | `boolean` | Enable the ability to use Cloud TPUs in this cluster. |
+| `nodePools` | `array` | The node pools associated with this cluster. This field should not be set if "node_config" or "initial_node_count" are specified. |
+| `autoscaling` | `object` | ClusterAutoscaling contains global, per-cluster information required by Cluster Autoscaler to automatically adjust the size of the cluster and create/delete node pools based on the current needs. |
 | `servicesIpv4Cidr` | `string` | [Output only] The IP address range of the Kubernetes services in this cluster, in [CIDR](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notation (e.g. `1.2.3.4/29`). Service addresses are typically put in the last `/16` from the container CIDR. |
+| `monitoringConfig` | `object` | MonitoringConfig is cluster monitoring configuration. |
+| `maintenancePolicy` | `object` | MaintenancePolicy defines the maintenance policy to be used for the cluster. |
+| `enableKubernetesAlpha` | `boolean` | Kubernetes alpha features are enabled on this cluster. This includes alpha API groups (e.g. v1alpha1) and features that may not be production ready in the kubernetes version of the master and nodes. The cluster has no SLA for uptime and master/node upgrades are disabled. Alpha enabled clusters are automatically deleted thirty days after creation. |
+| `databaseEncryption` | `object` | Configuration of etcd encryption. |
+| `conditions` | `array` | Which conditions caused the current cluster state. |
+| `nodePoolAutoConfig` | `object` | Node pool configs that apply to all auto-provisioned node pools in autopilot clusters and node auto-provisioning enabled clusters. |
+| `resourceLabels` | `object` | The resource labels for the cluster to use to annotate any related Google Compute Engine resources. |
+| `binaryAuthorization` | `object` | Configuration for Binary Authorization. |
+| `selfLink` | `string` | [Output only] Server-defined URL for the resource. |
 | `workloadIdentityConfig` | `object` | Configuration for the use of Kubernetes Service Accounts in GCP IAM policies. |
+| `defaultMaxPodsConstraint` | `object` | Constraints applied to pods. |
+| `network` | `string` | The name of the Google Compute Engine [network](https://cloud.google.com/compute/docs/networks-and-firewalls#networks) to which the cluster is connected. If left unspecified, the `default` network will be used. |
+| `meshCertificates` | `object` | Configuration for issuance of mTLS keys and certificates to Kubernetes pods. |
+| `loggingConfig` | `object` | LoggingConfig is cluster logging configuration. |
+| `currentNodeCount` | `integer` | [Output only] The number of nodes currently in the cluster. Deprecated. Call Kubernetes API directly to retrieve node information. |
+| `loggingService` | `string` | The logging service the cluster should use to write logs. Currently available options: * `logging.googleapis.com/kubernetes` - The Cloud Logging service with a Kubernetes-native resource model * `logging.googleapis.com` - The legacy Cloud Logging service (no longer available as of GKE 1.15). * `none` - no logs will be exported from the cluster. If left as an empty string,`logging.googleapis.com/kubernetes` will be used for GKE 1.14+ or `logging.googleapis.com` for earlier versions. |
+| `location` | `string` | [Output only] The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/regions-zones/regions-zones#available) or [region](https://cloud.google.com/compute/docs/regions-zones/regions-zones#available) in which the cluster resides. |
+| `nodeIpv4CidrSize` | `integer` | [Output only] The size of the address space on each node for hosting containers. This is provisioned from within the `container_ipv4_cidr` range. This field will only be set when cluster is in route-based network mode. |
+| `autopilot` | `object` | Autopilot is the configuration for Autopilot settings on the cluster. |
+| `notificationConfig` | `object` | NotificationConfig is the configuration of notifications. |
+| `expireTime` | `string` | [Output only] The time the cluster will be automatically deleted in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. |
+| `initialClusterVersion` | `string` | The initial Kubernetes version for this cluster. Valid versions are those found in validMasterVersions returned by getServerConfig. The version can be upgraded over time; such upgrades are reflected in currentMasterVersion and currentNodeVersion. Users may specify either explicit versions offered by Kubernetes Engine or version aliases, which have the following behavior: - "latest": picks the highest valid Kubernetes version - "1.X": picks the highest valid patch+gke.N patch in the 1.X version - "1.X.Y": picks the highest valid gke.N patch in the 1.X.Y version - "1.X.Y-gke.N": picks an explicit Kubernetes version - "","-": picks the default Kubernetes version |
+| `locations` | `array` | The list of Google Compute Engine [zones](https://cloud.google.com/compute/docs/zones#available) in which the cluster's nodes should be located. This field provides a default value if [NodePool.Locations](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters.nodePools#NodePool.FIELDS.locations) are not specified during node pool creation. Warning: changing cluster locations will update the [NodePool.Locations](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters.nodePools#NodePool.FIELDS.locations) of all node pools and will result in nodes being added and/or removed. |
+| `identityServiceConfig` | `object` | IdentityServiceConfig is configuration for Identity Service which allows customers to use external identity providers with the K8S API |
+| `currentMasterVersion` | `string` | [Output only] The current software version of the master endpoint. |
+| `nodeConfig` | `object` | Parameters that describe the nodes in a cluster. GKE Autopilot clusters do not recognize parameters in `NodeConfig`. Use AutoprovisioningNodePoolDefaults instead. |
+| `zone` | `string` | [Output only] The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field is deprecated, use location instead. |
+| `releaseChannel` | `object` | ReleaseChannel indicates which release channel a cluster is subscribed to. Release channels are arranged in order of risk. When a cluster is subscribed to a release channel, Google maintains both the master version and the node version. Node auto-upgrade defaults to true and cannot be disabled. |
+| `instanceGroupUrls` | `array` | Deprecated. Use node_pools.instance_group_urls. |
+| `nodePoolDefaults` | `object` | Subset of Nodepool message that has defaults. |
+| `status` | `string` | [Output only] The current status of this cluster. |
 | `currentNodeVersion` | `string` | [Output only] Deprecated, use [NodePools.version](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters.nodePools) instead. The current version of the node software components. If they are currently at multiple versions because they're in the process of being upgraded, this reflects the minimum version of all nodes. |
+| `labelFingerprint` | `string` | The fingerprint of the set of labels for this cluster. |
+| `resourceUsageExportConfig` | `object` | Configuration for exporting cluster resource usages. |
+| `masterAuthorizedNetworksConfig` | `object` | Configuration options for the master authorized networks feature. Enabled master authorized networks will disallow all external traffic to access Kubernetes master through HTTPS except traffic from the given CIDR blocks, Google Compute Engine Public IPs and Google Prod IPs. |
+| `endpoint` | `string` | [Output only] The IP address of this cluster's master endpoint. The endpoint can be accessed from the internet at `https://username:password@endpoint/`. See the `masterAuth` property of this resource for username and password information. |
+| `authenticatorGroupsConfig` | `object` | Configuration for returning group information from authenticators. |
+| `subnetwork` | `string` | The name of the Google Compute Engine [subnetwork](https://cloud.google.com/compute/docs/subnetworks) to which the cluster is connected. |
+| `privateClusterConfig` | `object` | Configuration options for private clusters. |
+| `monitoringService` | `string` | The monitoring service the cluster should use to write metrics. Currently available options: * "monitoring.googleapis.com/kubernetes" - The Cloud Monitoring service with a Kubernetes-native resource model * `monitoring.googleapis.com` - The legacy Cloud Monitoring service (no longer available as of GKE 1.15). * `none` - No metrics will be exported from the cluster. If left as an empty string,`monitoring.googleapis.com/kubernetes` will be used for GKE 1.14+ or `monitoring.googleapis.com` for earlier versions. |
+| `shieldedNodes` | `object` | Configuration of Shielded Nodes feature. |
+| `addonsConfig` | `object` | Configuration for the addons that can be automatically spun up in the cluster, enabling additional functionality. |
+| `networkConfig` | `object` | NetworkConfig reports the relative names of network & subnetwork. |
+| `tpuIpv4CidrBlock` | `string` | [Output only] The IP address range of the Cloud TPUs in this cluster, in [CIDR](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notation (e.g. `1.2.3.4/29`). |
+| `verticalPodAutoscaling` | `object` | VerticalPodAutoscaling contains global, per-cluster information required by Vertical Pod Autoscaler to automatically adjust the resources of pods controlled by it. |
+| `confidentialNodes` | `object` | ConfidentialNodes is configuration for the confidential nodes feature, which makes nodes run on confidential VMs. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

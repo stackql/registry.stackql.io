@@ -3,6 +3,7 @@ title: debug_tokens
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - debug_tokens
   - stackql
   - infrastructure-as-code
   - configuration-as-data

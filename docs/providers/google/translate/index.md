@@ -21,7 +21,7 @@ Integrates text translation into your website or application.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Translation API</td></tr>
 <tr><td><b>Description</b></td><td>Integrates text translation into your website or application.</td></tr>
-<tr><td><b>Id</b></td><td><code>translate:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>translate:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

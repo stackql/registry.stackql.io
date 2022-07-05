@@ -25,19 +25,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `envgroupHostname` | `string` | Hostname is available only when query is executed at host level. |
-| `updated` | `string` | Output only. Last updated timestamp for the query. |
-| `self` | `string` | Self link of the query. Example: `/organizations/myorg/environments/myenv/securityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query is running at host level: `/organizations/myorg/hostSecurityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` |
-| `created` | `string` | Creation time of the query. |
-| `displayName` | `string` | Display Name specified by the user. |
-| `queryParams` | `object` | Metadata for the security report. |
-| `resultFileSize` | `string` | ResultFileSize is available only after the query is completed. |
-| `result` | `object` | Contains informations about the security report results. |
 | `error` | `string` | Error is set when query fails. |
-| `executionTime` | `string` | ExecutionTime is available only after the query is completed. |
-| `state` | `string` | Query state could be "enqueued", "running", "completed", "failed". |
+| `resultFileSize` | `string` | ResultFileSize is available only after the query is completed. |
+| `envgroupHostname` | `string` | Hostname is available only when query is executed at host level. |
+| `displayName` | `string` | Display Name specified by the user. |
 | `resultRows` | `string` | ResultRows is available only after the query is completed. |
+| `created` | `string` | Creation time of the query. |
 | `reportDefinitionId` | `string` | Report Definition ID. |
+| `queryParams` | `object` | Metadata for the security report. |
+| `result` | `object` | Contains informations about the security report results. |
+| `updated` | `string` | Output only. Last updated timestamp for the query. |
+| `executionTime` | `string` | ExecutionTime is available only after the query is completed. |
+| `self` | `string` | Self link of the query. Example: `/organizations/myorg/environments/myenv/securityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query is running at host level: `/organizations/myorg/hostSecurityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` |
+| `state` | `string` | Query state could be "enqueued", "running", "completed", "failed". |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

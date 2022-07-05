@@ -27,17 +27,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name of the instance, in the format `projects/{project}/locations/{location}/instances/{instance}`. |
 | `description` | `string` | The description of the instance (2048 characters or less). |
-| `kmsKeyName` | `string` | KMS key name used for data encryption. |
-| `statusMessage` | `string` | Output only. Additional information about the instance state, if available. |
-| `tier` | `string` | The service tier of the instance. |
-| `createTime` | `string` | Output only. The time when the instance was created. |
-| `etag` | `string` | Server-specified ETag for the instance resource to prevent simultaneous updates from overwriting each other. |
-| `state` | `string` | Output only. The instance state. |
-| `suspensionReasons` | `array` | Output only. Field indicates all the reasons the instance is in "SUSPENDED" state. |
-| `fileShares` | `array` | File system shares on the instance. For this version, only a single file share is supported. |
-| `satisfiesPzs` | `boolean` | Output only. Reserved for future use. |
-| `networks` | `array` | VPC networks to which the instance is connected. For this version, only a single network is supported. |
 | `labels` | `object` | Resource labels to represent user provided metadata. |
+| `state` | `string` | Output only. The instance state. |
+| `createTime` | `string` | Output only. The time when the instance was created. |
+| `networks` | `array` | VPC networks to which the instance is connected. For this version, only a single network is supported. |
+| `statusMessage` | `string` | Output only. Additional information about the instance state, if available. |
+| `fileShares` | `array` | File system shares on the instance. For this version, only a single file share is supported. |
+| `kmsKeyName` | `string` | KMS key name used for data encryption. |
+| `suspensionReasons` | `array` | Output only. Field indicates all the reasons the instance is in "SUSPENDED" state. |
+| `tier` | `string` | The service tier of the instance. |
+| `etag` | `string` | Server-specified ETag for the instance resource to prevent simultaneous updates from overwriting each other. |
+| `satisfiesPzs` | `boolean` | Output only. Reserved for future use. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

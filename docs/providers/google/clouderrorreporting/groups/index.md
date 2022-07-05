@@ -26,9 +26,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The group resource name. Example: projects/my-project-123/groups/CNSgkpnppqKCUw |
-| `trackingIssues` | `array` | Associated tracking issues. |
 | `groupId` | `string` | Group IDs are unique for a given project. If the same kind of error occurs in different service contexts, it will receive the same group ID. |
 | `resolutionStatus` | `string` | Error group's resolution status. An unspecified resolution status will be interpreted as OPEN |
+| `trackingIssues` | `array` | Associated tracking issues. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

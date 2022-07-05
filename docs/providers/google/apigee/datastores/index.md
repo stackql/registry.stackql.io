@@ -25,13 +25,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `displayName` | `string` | Required. Display name in UI |
-| `lastUpdateTime` | `string` | Output only. Datastore last update time, in milliseconds since the epoch of 1970-01-01T00:00:00Z |
-| `org` | `string` | Output only. Organization that the datastore belongs to |
 | `self` | `string` | Output only. Resource link of Datastore. Example: `/organizations/{org}/analytics/datastores/{uuid}` |
 | `targetType` | `string` | Destination storage type. Supported types `gcs` or `bigquery`. |
 | `createTime` | `string` | Output only. Datastore create time, in milliseconds since the epoch of 1970-01-01T00:00:00Z |
 | `datastoreConfig` | `object` | Configuration detail for datastore |
+| `displayName` | `string` | Required. Display name in UI |
+| `lastUpdateTime` | `string` | Output only. Datastore last update time, in milliseconds since the epoch of 1970-01-01T00:00:00Z |
+| `org` | `string` | Output only. Organization that the datastore belongs to |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

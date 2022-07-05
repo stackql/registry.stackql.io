@@ -26,12 +26,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Required. The resource name of the glossary. Glossary names have the form `projects/{project-number-or-id}/locations/{location-id}/glossaries/{glossary-id}`. |
-| `submitTime` | `string` | Output only. When CreateGlossary was called. |
-| `endTime` | `string` | Output only. When the glossary creation was finished. |
 | `entryCount` | `integer` | Output only. The number of entries defined in the glossary. |
 | `inputConfig` | `object` | Input configuration for glossaries. |
 | `languageCodesSet` | `object` | Used with equivalent term set glossaries. |
 | `languagePair` | `object` | Used with unidirectional glossaries. |
+| `submitTime` | `string` | Output only. When CreateGlossary was called. |
+| `endTime` | `string` | Output only. When the glossary creation was finished. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

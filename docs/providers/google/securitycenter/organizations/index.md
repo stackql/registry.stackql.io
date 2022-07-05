@@ -27,4 +27,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_updateOrganizationSettings` | `EXEC` | `name` |
+| `updateOrganizationSettings` | `EXEC` | `name` |

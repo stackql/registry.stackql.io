@@ -26,17 +26,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Name of the developer app. |
-| `developerId` | `string` | ID of the developer. |
-| `scopes` | `array` | Scopes to apply to the developer app. The specified scopes must already exist for the API product that you associate with the developer app. |
-| `appFamily` | `string` | Developer app family. |
-| `callbackUrl` | `string` | Callback URL used by OAuth 2.0 authorization servers to communicate authorization codes back to developer apps. |
-| `createdAt` | `string` | Output only. Time the developer app was created in milliseconds since epoch. |
-| `attributes` | `array` | List of attributes for the developer app. |
-| `lastModifiedAt` | `string` | Output only. Time the developer app was modified in milliseconds since epoch. |
-| `apiProducts` | `array` | List of API products associated with the developer app. |
-| `credentials` | `array` | Output only. Set of credentials for the developer app consisting of the consumer key/secret pairs associated with the API products. |
 | `keyExpiresIn` | `string` | Expiration time, in milliseconds, for the consumer key that is generated for the developer app. If not set or left to the default value of `-1`, the API key never expires. The expiration time can't be updated after it is set. |
 | `appId` | `string` | ID of the developer app. |
+| `credentials` | `array` | Output only. Set of credentials for the developer app consisting of the consumer key/secret pairs associated with the API products. |
+| `lastModifiedAt` | `string` | Output only. Time the developer app was modified in milliseconds since epoch. |
+| `scopes` | `array` | Scopes to apply to the developer app. The specified scopes must already exist for the API product that you associate with the developer app. |
+| `apiProducts` | `array` | List of API products associated with the developer app. |
+| `callbackUrl` | `string` | Callback URL used by OAuth 2.0 authorization servers to communicate authorization codes back to developer apps. |
+| `createdAt` | `string` | Output only. Time the developer app was created in milliseconds since epoch. |
+| `developerId` | `string` | ID of the developer. |
+| `appFamily` | `string` | Developer app family. |
+| `attributes` | `array` | List of attributes for the developer app. |
 | `status` | `string` | Status of the credential. Valid values include `approved` or `revoked`. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

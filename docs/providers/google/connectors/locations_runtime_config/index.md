@@ -25,15 +25,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `runtimeEndpoint` | `string` | Output only. The endpoint of the connectors runtime ingress. |
-| `schemaGcsBucket` | `string` | Output only. The Cloud Storage bucket that stores connector's schema reports. |
-| `state` | `string` | Output only. The state of the location. |
-| `controlPlaneSubscription` | `string` | Output only. Pub/Sub subscription for control plane to receive message. E.g. projects/{project-id}/subscriptions/{topic-id} |
-| `locationId` | `string` | Output only. location_id of the runtime location. E.g. "us-west1". |
-| `serviceDirectory` | `string` | Output only. The name of the Service Directory service name. |
-| `controlPlaneTopic` | `string` | Output only. Pub/Sub topic for control plne to send message. communication. E.g. projects/{project-id}/topics/{topic-id} |
-| `conndTopic` | `string` | Output only. Pub/Sub topic for connd to send message. E.g. projects/{project-id}/topics/{topic-id} |
 | `conndSubscription` | `string` | Output only. Pub/Sub subscription for connd to receive message. E.g. projects/{project-id}/subscriptions/{topic-id} |
+| `schemaGcsBucket` | `string` | Output only. The Cloud Storage bucket that stores connector's schema reports. |
+| `controlPlaneSubscription` | `string` | Output only. Pub/Sub subscription for control plane to receive message. E.g. projects/{project-id}/subscriptions/{topic-id} |
+| `runtimeEndpoint` | `string` | Output only. The endpoint of the connectors runtime ingress. |
+| `controlPlaneTopic` | `string` | Output only. Pub/Sub topic for control plne to send message. communication. E.g. projects/{project-id}/topics/{topic-id} |
+| `locationId` | `string` | Output only. location_id of the runtime location. E.g. "us-west1". |
+| `state` | `string` | Output only. The state of the location. |
+| `conndTopic` | `string` | Output only. Pub/Sub topic for connd to send message. E.g. projects/{project-id}/topics/{topic-id} |
+| `serviceDirectory` | `string` | Output only. The name of the Service Directory service name. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

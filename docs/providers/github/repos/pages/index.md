@@ -39,6 +39,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
 | `get_pages` | `SELECT` | `owner, repo` |  |
-| `create_pages_site` | `INSERT` | `owner, repo, data__source` | Configures a GitHub Pages site. For more information, see "[About GitHub Pages](/github/working-with-github-pages/about-github-pages)." |
+| `create_pages_site` | `INSERT` | `owner, repo, data__source` | Configures a GitHub Pages site. For more information, see "[About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)." |
 | `delete_pages_site` | `DELETE` | `owner, repo` |  |
-| `update_information_about_pages_site` | `EXEC` | `owner, repo` | Updates information for a GitHub Pages site. For more information, see "[About GitHub Pages](/github/working-with-github-pages/about-github-pages). |
+| `update_information_about_pages_site` | `EXEC` | `owner, repo` | Updates information for a GitHub Pages site. For more information, see "[About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages). |

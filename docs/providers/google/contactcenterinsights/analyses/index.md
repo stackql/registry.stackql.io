@@ -26,9 +26,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Immutable. The resource name of the analysis. Format: projects/{project}/locations/{location}/conversations/{conversation}/analyses/{analysis} |
-| `createTime` | `string` | Output only. The time at which the analysis was created, which occurs when the long-running operation completes. |
 | `requestTime` | `string` | Output only. The time at which the analysis was requested. |
 | `analysisResult` | `object` | The result of an analysis. |
+| `createTime` | `string` | Output only. The time at which the analysis was created, which occurs when the long-running operation completes. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

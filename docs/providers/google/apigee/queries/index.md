@@ -26,18 +26,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Asynchronous Query Name. |
-| `resultFileSize` | `string` | ResultFileSize is available only after the query is completed. |
 | `queryParams` | `object` |  |
-| `reportDefinitionId` | `string` | Asynchronous Report ID. |
-| `executionTime` | `string` | ExecutionTime is available only after the query is completed. |
-| `created` | `string` | Creation time of the query. |
-| `resultRows` | `string` | ResultRows is available only after the query is completed. |
-| `state` | `string` | Query state could be "enqueued", "running", "completed", "failed". |
-| `error` | `string` | Error is set when query fails. |
-| `updated` | `string` | Last updated timestamp for the query. |
-| `envgroupHostname` | `string` | Hostname is available only when query is executed at host level. |
 | `result` | `object` |  |
 | `self` | `string` | Self link of the query. Example: `/organizations/myorg/environments/myenv/queries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query is running at host level: `/organizations/myorg/hostQueries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` |
+| `created` | `string` | Creation time of the query. |
+| `reportDefinitionId` | `string` | Asynchronous Report ID. |
+| `state` | `string` | Query state could be "enqueued", "running", "completed", "failed". |
+| `resultRows` | `string` | ResultRows is available only after the query is completed. |
+| `executionTime` | `string` | ExecutionTime is available only after the query is completed. |
+| `updated` | `string` | Last updated timestamp for the query. |
+| `envgroupHostname` | `string` | Hostname is available only when query is executed at host level. |
+| `error` | `string` | Error is set when query fails. |
+| `resultFileSize` | `string` | ResultFileSize is available only after the query is completed. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

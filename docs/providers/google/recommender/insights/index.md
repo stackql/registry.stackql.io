@@ -27,16 +27,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Name of the insight. |
 | `description` | `string` | Free-form human readable summary in English. The maximum length is 500 characters. |
+| `lastRefreshTime` | `string` | Timestamp of the latest data used to generate the insight. |
+| `category` | `string` | Category being targeted by the insight. |
+| `observationPeriod` | `string` | Observation period that led to the insight. The source data used to generate the insight ends at last_refresh_time and begins at (last_refresh_time - observation_period). |
+| `etag` | `string` | Fingerprint of the Insight. Provides optimistic locking when updating states. |
+| `targetResources` | `array` | Fully qualified resource names that this insight is targeting. |
 | `content` | `object` | A struct of custom fields to explain the insight. Example: "grantedPermissionsCount": "1000" |
+| `insightSubtype` | `string` | Insight subtype. Insight content schema will be stable for a given subtype. |
 | `associatedRecommendations` | `array` | Recommendations derived from this insight. |
 | `severity` | `string` | Insight's severity. |
-| `category` | `string` | Category being targeted by the insight. |
-| `lastRefreshTime` | `string` | Timestamp of the latest data used to generate the insight. |
-| `targetResources` | `array` | Fully qualified resource names that this insight is targeting. |
-| `insightSubtype` | `string` | Insight subtype. Insight content schema will be stable for a given subtype. |
-| `observationPeriod` | `string` | Observation period that led to the insight. The source data used to generate the insight ends at last_refresh_time and begins at (last_refresh_time - observation_period). |
 | `stateInfo` | `object` | Information related to insight state. |
-| `etag` | `string` | Fingerprint of the Insight. Provides optimistic locking when updating states. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

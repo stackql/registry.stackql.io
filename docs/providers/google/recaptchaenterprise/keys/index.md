@@ -26,14 +26,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name for the Key in the format "projects/{project}/keys/{key}". |
-| `wafSettings` | `object` | Settings specific to keys that can be used for WAF (Web Application Firewall). |
+| `testingOptions` | `object` | Options for user acceptance testing. |
 | `webSettings` | `object` | Settings specific to keys that can be used by websites. |
 | `androidSettings` | `object` | Settings specific to keys that can be used by Android apps. |
-| `iosSettings` | `object` | Settings specific to keys that can be used by iOS apps. |
-| `testingOptions` | `object` | Options for user acceptance testing. |
-| `createTime` | `string` | The timestamp corresponding to the creation of this Key. |
 | `displayName` | `string` | Human-readable display name of this key. Modifiable by user. |
 | `labels` | `object` | See Creating and managing labels. |
+| `wafSettings` | `object` | Settings specific to keys that can be used for WAF (Web Application Firewall). |
+| `createTime` | `string` | The timestamp corresponding to the creation of this Key. |
+| `iosSettings` | `object` | Settings specific to keys that can be used by iOS apps. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

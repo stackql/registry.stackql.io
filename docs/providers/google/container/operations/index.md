@@ -26,20 +26,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The server-assigned ID for the operation. |
-| `targetLink` | `string` | Server-defined URL for the target of the operation. |
-| `startTime` | `string` | [Output only] The time the operation started, in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. |
-| `selfLink` | `string` | Server-defined URL for the resource. |
-| `detail` | `string` | Detailed operation progress, if available. |
 | `progress` | `object` | Information about operation (or operation stage) progress. |
-| `zone` | `string` | The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the operation is taking place. This field is deprecated, use location instead. |
-| `endTime` | `string` | [Output only] The time the operation completed, in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. |
 | `operationType` | `string` | The operation type. |
-| `statusMessage` | `string` | Output only. If an error has occurred, a textual description of the error. Deprecated. Use the field error instead. |
+| `zone` | `string` | The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the operation is taking place. This field is deprecated, use location instead. |
 | `nodepoolConditions` | `array` | Which conditions caused the current node pool state. Deprecated. Use field error instead. |
+| `selfLink` | `string` | Server-defined URL for the resource. |
+| `startTime` | `string` | [Output only] The time the operation started, in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. |
+| `targetLink` | `string` | Server-defined URL for the target of the operation. |
+| `detail` | `string` | Detailed operation progress, if available. |
 | `clusterConditions` | `array` | Which conditions caused the current cluster state. Deprecated. Use field error instead. |
-| `location` | `string` | [Output only] The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/regions-zones/regions-zones#available) or [region](https://cloud.google.com/compute/docs/regions-zones/regions-zones#available) in which the cluster resides. |
-| `status` | `string` | The current status of the operation. |
+| `endTime` | `string` | [Output only] The time the operation completed, in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. |
 | `error` | `object` | The `Status` type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by [gRPC](https://github.com/grpc). Each `Status` message contains three pieces of data: error code, error message, and error details. You can find out more about this error model and how to work with it in the [API Design Guide](https://cloud.google.com/apis/design/errors). |
+| `location` | `string` | [Output only] The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/regions-zones/regions-zones#available) or [region](https://cloud.google.com/compute/docs/regions-zones/regions-zones#available) in which the cluster resides. |
+| `statusMessage` | `string` | Output only. If an error has occurred, a textual description of the error. Deprecated. Use the field error instead. |
+| `status` | `string` | The current status of the operation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

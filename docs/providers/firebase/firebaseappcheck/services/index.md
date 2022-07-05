@@ -3,6 +3,7 @@ title: services
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - services
   - stackql
   - infrastructure-as-code
   - configuration-as-data

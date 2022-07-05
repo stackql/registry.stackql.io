@@ -25,19 +25,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `displayName` | `string` | Display Name specified by the user. |
+| `state` | `string` | Query state could be "enqueued", "running", "completed", "failed". |
 | `updated` | `string` | Output only. Last updated timestamp for the query. |
-| `queryParams` | `object` | Metadata for the security report. |
 | `executionTime` | `string` | ExecutionTime is available only after the query is completed. |
-| `error` | `string` | Error is set when query fails. |
-| `resultFileSize` | `string` | ResultFileSize is available only after the query is completed. |
+| `envgroupHostname` | `string` | Hostname is available only when query is executed at host level. |
+| `queryParams` | `object` | Metadata for the security report. |
 | `result` | `object` | Contains informations about the security report results. |
 | `self` | `string` | Self link of the query. Example: `/organizations/myorg/environments/myenv/securityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query is running at host level: `/organizations/myorg/hostSecurityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` |
-| `created` | `string` | Creation time of the query. |
-| `reportDefinitionId` | `string` | Report Definition ID. |
-| `envgroupHostname` | `string` | Hostname is available only when query is executed at host level. |
-| `displayName` | `string` | Display Name specified by the user. |
 | `resultRows` | `string` | ResultRows is available only after the query is completed. |
-| `state` | `string` | Query state could be "enqueued", "running", "completed", "failed". |
+| `created` | `string` | Creation time of the query. |
+| `error` | `string` | Error is set when query fails. |
+| `resultFileSize` | `string` | ResultFileSize is available only after the query is completed. |
+| `reportDefinitionId` | `string` | Report Definition ID. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

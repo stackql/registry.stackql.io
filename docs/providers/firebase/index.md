@@ -20,7 +20,7 @@ See also:
 
 ## Installation
 ```bash
-REGISTRY PULL firebase v1.0.0;
+REGISTRY PULL firebase v1.0.1;
 ```
 
 ## Authentication
@@ -46,7 +46,6 @@ REGISTRY PULL firebase v1.0.0;
 AUTH='{ "firebase": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}'
 stackql shell --auth="${AUTH}"
 ```
-
 ## Services
 <div class="row">
 <div class="providerDocColumn">

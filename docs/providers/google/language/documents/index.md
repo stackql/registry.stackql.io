@@ -27,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `documents_analyzeEntities` | `EXEC` |  | Finds named entities (currently proper names and common nouns) in the text along with entity types, salience, mentions for each entity, and other properties. |
-| `documents_analyzeEntitySentiment` | `EXEC` |  | Finds entities, similar to AnalyzeEntities in the text and analyzes sentiment associated with each entity and its mentions. |
-| `documents_analyzeSentiment` | `EXEC` |  | Analyzes the sentiment of the provided text. |
-| `documents_analyzeSyntax` | `EXEC` |  | Analyzes the syntax of the text and provides sentence boundaries and tokenization along with part of speech tags, dependency trees, and other properties. |
-| `documents_annotateText` | `EXEC` |  | A convenience method that provides all the features that analyzeSentiment, analyzeEntities, and analyzeSyntax provide in one call. |
-| `documents_classifyText` | `EXEC` |  | Classifies a document into categories. |
+| `analyzeEntities` | `EXEC` |  | Finds named entities (currently proper names and common nouns) in the text along with entity types, salience, mentions for each entity, and other properties. |
+| `analyzeEntitySentiment` | `EXEC` |  | Finds entities, similar to AnalyzeEntities in the text and analyzes sentiment associated with each entity and its mentions. |
+| `analyzeSentiment` | `EXEC` |  | Analyzes the sentiment of the provided text. |
+| `analyzeSyntax` | `EXEC` |  | Analyzes the syntax of the text and provides sentence boundaries and tokenization along with part of speech tags, dependency trees, and other properties. |
+| `annotateText` | `EXEC` |  | A convenience method that provides all the features that analyzeSentiment, analyzeEntities, and analyzeSyntax provide in one call. |
+| `classifyText` | `EXEC` |  | Classifies a document into categories. |

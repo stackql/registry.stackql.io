@@ -25,8 +25,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `networkEndpoint` | `object` | The network endpoint. |
 | `healths` | `array` | [Output only] The health status of network endpoint; |
+| `networkEndpoint` | `object` | The network endpoint. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

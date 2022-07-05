@@ -27,7 +27,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `debugger_debuggees_breakpoints_get` | `SELECT` | `breakpointId, debuggeeId` | Gets breakpoint information. |
-| `debugger_debuggees_breakpoints_list` | `SELECT` | `debuggeeId` | Lists all breakpoints for the debuggee. |
-| `debugger_debuggees_breakpoints_delete` | `DELETE` | `breakpointId, debuggeeId` | Deletes the breakpoint from the debuggee. |
-| `debugger_debuggees_breakpoints_set` | `EXEC` | `debuggeeId` | Sets the breakpoint to the debuggee. |
+| `get` | `SELECT` | `breakpointId, debuggeeId` | Gets breakpoint information. |
+| `list` | `SELECT` | `debuggeeId` | Lists all breakpoints for the debuggee. |
+| `delete` | `DELETE` | `breakpointId, debuggeeId` | Deletes the breakpoint from the debuggee. |
+| `set` | `EXEC` | `debuggeeId` | Sets the breakpoint to the debuggee. |

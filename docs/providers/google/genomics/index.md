@@ -21,7 +21,7 @@ Uploads, processes, queries, and searches Genomics data in the cloud.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Genomics API</td></tr>
 <tr><td><b>Description</b></td><td>Uploads, processes, queries, and searches Genomics data in the cloud.</td></tr>
-<tr><td><b>Id</b></td><td><code>genomics:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>genomics:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

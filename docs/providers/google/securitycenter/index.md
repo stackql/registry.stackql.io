@@ -21,7 +21,7 @@ Security Command Center API provides access to temporal views of assets and find
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Security Command Center API</td></tr>
 <tr><td><b>Description</b></td><td>Security Command Center API provides access to temporal views of assets and findings within an organization.</td></tr>
-<tr><td><b>Id</b></td><td><code>securitycenter:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>securitycenter:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

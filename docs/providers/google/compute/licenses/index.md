@@ -29,16 +29,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `name` | `string` | Name of the resource. The name must be 1-63 characters long and comply with RFC1035. |
 | `description` | `string` | An optional textual description of the resource; provided by the client when the resource is created. |
 | `kind` | `string` | [Output Only] Type of resource. Always compute#license for licenses. |
-| `transferable` | `boolean` | If false, licenses will not be copied from the source resource when creating an image from a disk, disk from snapshot, or snapshot from disk. |
-| `chargesUseFee` | `boolean` | [Output Only] Deprecated. This field no longer reflects whether a license charges a usage fee. |
-| `licenseCode` | `string` | [Output Only] The unique code used to attach this license to images, snapshots, and disks. |
-| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
 | `resourceRequirements` | `object` |  |
+| `chargesUseFee` | `boolean` | [Output Only] Deprecated. This field no longer reflects whether a license charges a usage fee. |
+| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
 | `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
+| `licenseCode` | `string` | [Output Only] The unique code used to attach this license to images, snapshots, and disks. |
+| `transferable` | `boolean` | If false, licenses will not be copied from the source resource when creating an image from a disk, disk from snapshot, or snapshot from disk. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `licenses_get` | `SELECT` | `license, project` | Returns the specified License resource. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.  |
-| `licenses_list` | `SELECT` | `project` | Retrieves the list of licenses available in the specified project. This method does not get any licenses that belong to other projects, including licenses attached to publicly-available images, like Debian 9. If you want to get a list of publicly-available licenses, use this method to make a request to the respective image project, such as debian-cloud or windows-cloud. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.  |
-| `licenses_insert` | `INSERT` | `project` | Create a License resource in the specified project. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.  |
-| `licenses_delete` | `DELETE` | `license, project` | Deletes the specified license. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.  |
+| `get` | `SELECT` | `license, project` | Returns the specified License resource. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.  |
+| `list` | `SELECT` | `project` | Retrieves the list of licenses available in the specified project. This method does not get any licenses that belong to other projects, including licenses attached to publicly-available images, like Debian 9. If you want to get a list of publicly-available licenses, use this method to make a request to the respective image project, such as debian-cloud or windows-cloud. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.  |
+| `insert` | `INSERT` | `project` | Create a License resource in the specified project. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.  |
+| `delete` | `DELETE` | `license, project` | Deletes the specified license. *Caution* This resource is intended for use only by third-party partners who are creating Cloud Marketplace images.  |

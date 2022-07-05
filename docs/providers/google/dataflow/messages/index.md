@@ -25,9 +25,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `jobMessages` | `array` | Messages in ascending timestamp order. |
 | `nextPageToken` | `string` | The token to obtain the next page of results if there are more. |
 | `autoscalingEvents` | `array` | Autoscaling events in ascending timestamp order. |
+| `jobMessages` | `array` | Messages in ascending timestamp order. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

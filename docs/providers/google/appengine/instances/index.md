@@ -27,21 +27,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `id` | `string` | Output only. Relative name of the instance within the version. Example: instance-1. |
 | `name` | `string` | Output only. Full path to the Instance resource in the API. Example: apps/myapp/services/default/versions/v1/instances/instance-1. |
-| `errors` | `integer` | Output only. Number of errors since this instance was started. |
-| `vmId` | `string` | Output only. Virtual machine ID of this instance. Only applicable for instances in App Engine flexible environment. |
-| `averageLatency` | `integer` | Output only. Average latency (ms) over the last minute. |
-| `vmName` | `string` | Output only. Name of the virtual machine where this instance lives. Only applicable for instances in App Engine flexible environment. |
-| `qps` | `number` | Output only. Average queries per second (QPS) over the last minute. |
-| `appEngineRelease` | `string` | Output only. App Engine release this instance is running on. |
-| `availability` | `string` | Output only. Availability of the instance. |
-| `memoryUsage` | `string` | Output only. Total memory in use (bytes). |
 | `vmZoneName` | `string` | Output only. Zone where the virtual machine is located. Only applicable for instances in App Engine flexible environment. |
-| `vmDebugEnabled` | `boolean` | Output only. Whether this instance is in debug mode. Only applicable for instances in App Engine flexible environment. |
-| `vmStatus` | `string` | Output only. Status of the virtual machine where this instance lives. Only applicable for instances in App Engine flexible environment. |
-| `vmLiveness` | `string` | Output only. The liveness health check of this instance. Only applicable for instances in App Engine flexible environment. |
-| `requests` | `integer` | Output only. Number of requests since this instance was started. |
-| `startTime` | `string` | Output only. Time that this instance was started.@OutputOnly |
 | `vmIp` | `string` | Output only. The IP address of this instance. Only applicable for instances in App Engine flexible environment. |
+| `availability` | `string` | Output only. Availability of the instance. |
+| `appEngineRelease` | `string` | Output only. App Engine release this instance is running on. |
+| `vmId` | `string` | Output only. Virtual machine ID of this instance. Only applicable for instances in App Engine flexible environment. |
+| `vmName` | `string` | Output only. Name of the virtual machine where this instance lives. Only applicable for instances in App Engine flexible environment. |
+| `averageLatency` | `integer` | Output only. Average latency (ms) over the last minute. |
+| `startTime` | `string` | Output only. Time that this instance was started.@OutputOnly |
+| `vmStatus` | `string` | Output only. Status of the virtual machine where this instance lives. Only applicable for instances in App Engine flexible environment. |
+| `errors` | `integer` | Output only. Number of errors since this instance was started. |
+| `vmLiveness` | `string` | Output only. The liveness health check of this instance. Only applicable for instances in App Engine flexible environment. |
+| `memoryUsage` | `string` | Output only. Total memory in use (bytes). |
+| `requests` | `integer` | Output only. Number of requests since this instance was started. |
+| `vmDebugEnabled` | `boolean` | Output only. Whether this instance is in debug mode. Only applicable for instances in App Engine flexible environment. |
+| `qps` | `number` | Output only. Average queries per second (QPS) over the last minute. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

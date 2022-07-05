@@ -26,14 +26,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name of the runtime. Format: `projects/{project}/locations/{location}/runtimes/{runtimeId}` |
-| `softwareConfig` | `object` | Specifies the selection and configuration of software inside the runtime. The properties to set on runtime. Properties keys are specified in `key:value` format, for example: * `idle_shutdown: true` * `idle_shutdown_timeout: 180` * `enable_health_monitoring: true` |
-| `accessConfig` | `object` | Specifies the login configuration for Runtime |
 | `virtualMachine` | `object` | Runtime using Virtual Machine for computing. |
+| `accessConfig` | `object` | Specifies the login configuration for Runtime |
+| `state` | `string` | Output only. Runtime state. |
 | `updateTime` | `string` | Output only. Runtime update time. |
 | `healthState` | `string` | Output only. Runtime health_state. |
-| `state` | `string` | Output only. Runtime state. |
 | `createTime` | `string` | Output only. Runtime creation time. |
 | `metrics` | `object` | Contains runtime daemon metrics, such as OS and kernels and sessions stats. |
+| `softwareConfig` | `object` | Specifies the selection and configuration of software inside the runtime. The properties to set on runtime. Properties keys are specified in `key:value` format, for example: * `idle_shutdown: true` * `idle_shutdown_timeout: 180` * `enable_health_monitoring: true` |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

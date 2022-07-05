@@ -3,6 +3,7 @@ title: recaptcha_enterprise_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - recaptcha_enterprise_config
   - stackql
   - infrastructure-as-code
   - configuration-as-data

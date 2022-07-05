@@ -21,7 +21,7 @@ Service Directory is a platform for discovering, publishing, and connecting serv
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Service Directory API</td></tr>
 <tr><td><b>Description</b></td><td>Service Directory is a platform for discovering, publishing, and connecting services. </td></tr>
-<tr><td><b>Id</b></td><td><code>servicedirectory:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>servicedirectory:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

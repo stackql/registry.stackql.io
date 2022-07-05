@@ -3,6 +3,7 @@ title: delivery_data
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - delivery_data
   - stackql
   - infrastructure-as-code
   - configuration-as-data

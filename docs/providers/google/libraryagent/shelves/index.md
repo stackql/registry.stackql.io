@@ -30,5 +30,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `shelves_get` | `SELECT` | `name` | Gets a shelf. Returns NOT_FOUND if the shelf does not exist. |
-| `shelves_list` | `SELECT` |  | Lists shelves. The order is unspecified but deterministic. Newly created shelves will not necessarily be added to the end of this list. |
+| `get` | `SELECT` | `name` | Gets a shelf. Returns NOT_FOUND if the shelf does not exist. |
+| `list` | `SELECT` |  | Lists shelves. The order is unspecified but deterministic. Newly created shelves will not necessarily be added to the end of this list. |

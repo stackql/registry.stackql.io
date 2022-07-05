@@ -26,12 +26,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The unique name of the cluster. Values are of the form `projects/{project}/instances/{instance}/clusters/a-z*`. |
+| `defaultStorageType` | `string` | Immutable. The type of storage used by this cluster to serve its parent instance's tables, unless explicitly overridden. |
+| `encryptionConfig` | `object` | Cloud Key Management Service (Cloud KMS) settings for a CMEK-protected cluster. |
 | `location` | `string` | Immutable. The location where this cluster's nodes and storage reside. For best performance, clients should be located as close as possible to this cluster. Currently only zones are supported, so values should be of the form `projects/{project}/locations/{zone}`. |
 | `serveNodes` | `integer` | The number of nodes allocated to this cluster. More nodes enable higher throughput and more consistent performance. |
 | `state` | `string` | Output only. The current state of the cluster. |
 | `clusterConfig` | `object` | Configuration for a cluster. |
-| `defaultStorageType` | `string` | Immutable. The type of storage used by this cluster to serve its parent instance's tables, unless explicitly overridden. |
-| `encryptionConfig` | `object` | Cloud Key Management Service (Cloud KMS) settings for a CMEK-protected cluster. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

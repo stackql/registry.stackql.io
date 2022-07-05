@@ -25,10 +25,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `eventTime` | `string` | Time when the event occurred as provided in the error report. If the report did not contain a timestamp, the time the error was received by the Error Reporting system is used. |
-| `message` | `string` | The stack trace that was reported or logged by the service. |
 | `serviceContext` | `object` | Describes a running service that sends errors. Its version changes over time and multiple versions can run in parallel. |
 | `context` | `object` | A description of the context in which an error occurred. This data should be provided by the application when reporting an error, unless the error report has been generated automatically from Google App Engine logs. |
+| `eventTime` | `string` | Time when the event occurred as provided in the error report. If the report did not contain a timestamp, the time the error was received by the Error Reporting system is used. |
+| `message` | `string` | The stack trace that was reported or logged by the service. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

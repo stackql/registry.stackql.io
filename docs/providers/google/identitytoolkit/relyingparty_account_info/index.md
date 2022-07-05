@@ -25,8 +25,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `users` | `array` | The info of the users. |
 | `kind` | `string` | The fixed string "identitytoolkit#GetAccountInfoResponse". |
+| `users` | `array` | The info of the users. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

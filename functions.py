@@ -34,6 +34,7 @@ title: %s
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - %s
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -44,7 +45,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ---
 %s  
     
-""" % (title, description)
+""" % (title, title, description)
 
 def generate_see_also_links():
     return """
@@ -92,7 +93,7 @@ def generate_auth_block(provider):
 ```
 ### Example
 ```bash
-AUTH='{ "%s": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}
+AUTH='{ "%s": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}'
 stackql shell --auth="${AUTH}"
 ```
 """ % (provider, provider)

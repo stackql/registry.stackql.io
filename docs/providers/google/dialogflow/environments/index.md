@@ -27,11 +27,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | The name of the environment. Format: `projects//locations//agents//environments/`. |
 | `description` | `string` | The human-readable description of the environment. The maximum length is 500 characters. If exceeded, the request is rejected. |
+| `versionConfigs` | `array` | Required. A list of configurations for flow versions. You should include version configs for all flows that are reachable from `Start Flow` in the agent. Otherwise, an error will be returned. |
 | `webhookConfig` | `object` | Configuration for webhooks. |
 | `displayName` | `string` | Required. The human-readable name of the environment (unique in an agent). Limit of 64 characters. |
 | `testCasesConfig` | `object` | The configuration for continuous tests. |
 | `updateTime` | `string` | Output only. Update time of this environment. |
-| `versionConfigs` | `array` | Required. A list of configurations for flow versions. You should include version configs for all flows that are reachable from `Start Flow` in the agent. Otherwise, an error will be returned. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

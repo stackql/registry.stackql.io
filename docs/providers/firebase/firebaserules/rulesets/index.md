@@ -3,6 +3,7 @@ title: rulesets
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - rulesets
   - stackql
   - infrastructure-as-code
   - configuration-as-data

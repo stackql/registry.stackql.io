@@ -25,9 +25,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `config` | `object` |  |
 | `serviceAccount` | `string` | The service account Cloud ML uses to access resources in the project. |
 | `serviceAccountProject` | `string` | The project number for `service_account`. |
-| `config` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

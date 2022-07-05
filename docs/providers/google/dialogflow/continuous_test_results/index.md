@@ -25,8 +25,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `continuousTestResults` | `array` | The list of continuous test results. |
 | `nextPageToken` | `string` | Token to retrieve the next page of results, or empty if there are no more results in the list. |
+| `continuousTestResults` | `array` | The list of continuous test results. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

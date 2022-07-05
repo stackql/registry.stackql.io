@@ -26,12 +26,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Resource name of an evaluation. The name has the following format: "projects/{project_id}/datasets/{dataset_id}/evaluations/ {evaluation_id}' |
-| `config` | `object` | Configuration details used for calculating evaluation metrics and creating an Evaluation. |
-| `createTime` | `string` | Output only. Timestamp for when this evaluation was created. |
-| `evaluatedItemCount` | `string` | Output only. The number of items in the ground truth dataset that were used for this evaluation. Only populated when the evaulation is for certain AnnotationTypes. |
 | `evaluationJobRunTime` | `string` | Output only. Timestamp for when the evaluation job that created this evaluation ran. |
 | `evaluationMetrics` | `object` |  |
 | `annotationType` | `string` | Output only. Type of task that the model version being evaluated performs, as defined in the evaluationJobConfig.inputConfig.annotationType field of the evaluation job that created this evaluation. |
+| `config` | `object` | Configuration details used for calculating evaluation metrics and creating an Evaluation. |
+| `createTime` | `string` | Output only. Timestamp for when this evaluation was created. |
+| `evaluatedItemCount` | `string` | Output only. The number of items in the ground truth dataset that were used for this evaluation. Only populated when the evaulation is for certain AnnotationTypes. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

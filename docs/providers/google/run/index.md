@@ -21,7 +21,7 @@ Deploy and manage user provided container images that scale automatically based 
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Run Admin API</td></tr>
 <tr><td><b>Description</b></td><td>Deploy and manage user provided container images that scale automatically based on incoming requests. The Cloud Run Admin API v1 follows the Knative Serving API specification, while v2 is aligned with Google Cloud AIP-based API standards, as described in https://google.aip.dev/.</td></tr>
-<tr><td><b>Id</b></td><td><code>run:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>run:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

@@ -27,22 +27,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Data source resource name. |
 | `description` | `string` | User friendly data source description string. |
-| `updateDeadlineSeconds` | `integer` | The number of seconds to wait for an update from the data source before the Data Transfer Service marks the transfer as FAILED. |
+| `defaultDataRefreshWindowDays` | `integer` | Default data refresh window on days. Only meaningful when `data_refresh_type` = `SLIDING_WINDOW`. |
+| `supportsMultipleTransfers` | `boolean` | Deprecated. This field has no effect. |
+| `authorizationType` | `string` | Indicates the type of authorization. |
 | `manualRunsDisabled` | `boolean` | Disables backfilling and manual run scheduling for the data source. |
 | `parameters` | `array` | Data source parameters. |
-| `authorizationType` | `string` | Indicates the type of authorization. |
-| `minimumScheduleInterval` | `string` | The minimum interval for scheduler to schedule runs. |
-| `supportsMultipleTransfers` | `boolean` | Deprecated. This field has no effect. |
-| `scopes` | `array` | Api auth scopes for which refresh token needs to be obtained. These are scopes needed by a data source to prepare data and ingest them into BigQuery, e.g., https://www.googleapis.com/auth/bigquery |
 | `helpUrl` | `string` | Url for the help document for this data source. |
-| `defaultDataRefreshWindowDays` | `integer` | Default data refresh window on days. Only meaningful when `data_refresh_type` = `SLIDING_WINDOW`. |
-| `dataRefreshType` | `string` | Specifies whether the data source supports automatic data refresh for the past few days, and how it's supported. For some data sources, data might not be complete until a few days later, so it's useful to refresh data automatically. |
-| `supportsCustomSchedule` | `boolean` | Specifies whether the data source supports a user defined schedule, or operates on the default schedule. When set to `true`, user can override default schedule. |
 | `clientId` | `string` | Data source client id which should be used to receive refresh token. |
-| `transferType` | `string` | Deprecated. This field has no effect. |
+| `scopes` | `array` | Api auth scopes for which refresh token needs to be obtained. These are scopes needed by a data source to prepare data and ingest them into BigQuery, e.g., https://www.googleapis.com/auth/bigquery |
+| `updateDeadlineSeconds` | `integer` | The number of seconds to wait for an update from the data source before the Data Transfer Service marks the transfer as FAILED. |
 | `dataSourceId` | `string` | Data source id. |
 | `defaultSchedule` | `string` | Default data transfer schedule. Examples of valid schedules include: `1st,3rd monday of month 15:30`, `every wed,fri of jan,jun 13:15`, and `first sunday of quarter 00:00`. |
+| `dataRefreshType` | `string` | Specifies whether the data source supports automatic data refresh for the past few days, and how it's supported. For some data sources, data might not be complete until a few days later, so it's useful to refresh data automatically. |
+| `supportsCustomSchedule` | `boolean` | Specifies whether the data source supports a user defined schedule, or operates on the default schedule. When set to `true`, user can override default schedule. |
+| `transferType` | `string` | Deprecated. This field has no effect. |
 | `displayName` | `string` | User friendly data source name. |
+| `minimumScheduleInterval` | `string` | The minimum interval for scheduler to schedule runs. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

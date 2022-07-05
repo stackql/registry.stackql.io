@@ -27,10 +27,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name of the snapshot, in the format `projects/{project_id}/locations/{location_id}/instances/{instance_id}/snapshots/{snapshot_id}`. |
 | `description` | `string` | A description of the snapshot with 2048 characters or less. Requests with longer descriptions will be rejected. |
-| `state` | `string` | Output only. The snapshot state. |
-| `createTime` | `string` | Output only. The time when the snapshot was created. |
 | `filesystemUsedBytes` | `string` | Output only. The amount of bytes needed to allocate a full copy of the snapshot content |
 | `labels` | `object` | Resource labels to represent user provided metadata. |
+| `state` | `string` | Output only. The snapshot state. |
+| `createTime` | `string` | Output only. The time when the snapshot was created. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

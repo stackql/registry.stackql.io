@@ -26,13 +26,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name of the request. Format is "{projects\|folders\|organizations}/{id}/approvalRequests/{approval_request}". |
-| `requestedResourceProperties` | `object` | The properties associated with the resource of the request. |
 | `dismiss` | `object` | A decision that has been made to dismiss an approval request. |
-| `requestedExpiration` | `string` | The requested expiration for the approval. If the request is approved, access will be granted from the time of approval until the expiration time. |
-| `requestedResourceName` | `string` | The resource for which approval is being requested. The format of the resource name is defined at https://cloud.google.com/apis/design/resource_names. The resource name here may either be a "full" resource name (e.g. "//library.googleapis.com/shelves/shelf1/books/book2") or a "relative" resource name (e.g. "shelves/shelf1/books/book2") as described in the resource name specification. |
-| `approve` | `object` | A decision that has been made to approve access to a resource. |
 | `requestedReason` | `object` |  |
+| `requestedResourceName` | `string` | The resource for which approval is being requested. The format of the resource name is defined at https://cloud.google.com/apis/design/resource_names. The resource name here may either be a "full" resource name (e.g. "//library.googleapis.com/shelves/shelf1/books/book2") or a "relative" resource name (e.g. "shelves/shelf1/books/book2") as described in the resource name specification. |
 | `requestedLocations` | `object` | Home office and physical location of the principal. |
+| `approve` | `object` | A decision that has been made to approve access to a resource. |
+| `requestedExpiration` | `string` | The requested expiration for the approval. If the request is approved, access will be granted from the time of approval until the expiration time. |
+| `requestedResourceProperties` | `object` | The properties associated with the resource of the request. |
 | `requestTime` | `string` | The time at which approval was requested. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
