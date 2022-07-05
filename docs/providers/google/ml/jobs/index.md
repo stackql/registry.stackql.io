@@ -34,7 +34,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `state` | `string` | Output only. The detailed state of a job. |
 | `labels` | `object` | Optional. One or more labels that you can add, to organize your jobs. Each label is a key-value pair, where both the key and the value are arbitrary strings that you supply. For more information, see the documentation on using labels. |
 | `startTime` | `string` | Output only. When the job processing was started. |
-| `trainingInput` | `object` | Represents input parameters for a training job. When using the gcloud command to submit your training job, you can specify the input parameters as command-line arguments and/or in a YAML configuration file referenced from the --config command-line argument. For details, see the guide to [submitting a training job](/ai-platform/training/docs/training-jobs). |
+| `trainingInput` | `object` | Represents input parameters for a training job. When using the gcloud command to submit your training job, you can specify the input parameters as command-line arguments and/or in a YAML configuration file referenced from the --config command-line argument. For details, see the guide to [submitting a training job](https://cloud.google.com/ai-platform/training/docs/training-jobs). |
 | `createTime` | `string` | Output only. When the job was created. |
 | `jobId` | `string` | Required. The user-specified id of the job. |
 | `trainingOutput` | `object` | Represents results of a training job. Output only. |

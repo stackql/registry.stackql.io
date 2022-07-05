@@ -32,7 +32,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `title` | `string` | Required. Catalog item title. UTF-8 encoded string with a length limit of 1 KiB. |
 | `categoryHierarchies` | `array` | Required. Catalog item categories. This field is repeated for supporting one catalog item belonging to several parallel category hierarchies. For example, if a shoes product belongs to both ["Shoes & Accessories" -&gt; "Shoes"] and ["Sports & Fitness" -&gt; "Athletic Clothing" -&gt; "Shoes"], it could be represented as: "categoryHierarchies": [ { "categories": ["Shoes & Accessories", "Shoes"]}, { "categories": ["Sports & Fitness", "Athletic Clothing", "Shoes"] } ] |
 | `tags` | `array` | Optional. Filtering tags associated with the catalog item. Each tag should be a UTF-8 encoded string with a length limit of 1 KiB. This tag can be used for filtering recommendation results by passing the tag as part of the predict request filter. |
-| `itemGroupId` | `string` | Optional. Variant group identifier for prediction results. UTF-8 encoded string with a length limit of 128 bytes. This field must be enabled before it can be used. [Learn more](/recommendations-ai/docs/catalog#item-group-id). |
+| `itemGroupId` | `string` | Optional. Variant group identifier for prediction results. UTF-8 encoded string with a length limit of 128 bytes. This field must be enabled before it can be used. [Learn more](https://cloud.google.com/recommendations-ai/docs/catalog#item-group-id). |
 | `itemAttributes` | `object` | FeatureMap represents extra features that customers want to include in the recommendation model for catalogs/user events as categorical/numerical features. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

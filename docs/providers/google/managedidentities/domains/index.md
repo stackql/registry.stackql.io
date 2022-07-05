@@ -31,7 +31,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `locations` | `array` | Required. Locations where domain needs to be provisioned. regions e.g. us-west1 or us-east4 Service supports up to 4 locations at once. Each location will use a /26 block. |
 | `statusMessage` | `string` | Output only. Additional information about the current status of this domain, if available. |
 | `trusts` | `array` | Output only. The current trusts associated with the domain. |
-| `authorizedNetworks` | `array` | Optional. The full names of the Google Compute Engine [networks](/compute/docs/networks-and-firewalls#networks) the domain instance is connected to. Networks can be added using UpdateDomain. The domain is only available on networks listed in `authorized_networks`. If CIDR subnets overlap between networks, domain creation will fail. |
+| `authorizedNetworks` | `array` | Optional. The full names of the Google Compute Engine [networks](https://cloud.google.com/compute/docs/networks-and-firewalls#networks) the domain instance is connected to. Networks can be added using UpdateDomain. The domain is only available on networks listed in `authorized_networks`. If CIDR subnets overlap between networks, domain creation will fail. |
 | `labels` | `object` | Optional. Resource labels that can contain user-provided metadata. |
 | `state` | `string` | Output only. The current state of this domain. |
 | `updateTime` | `string` | Output only. The last update time. |
