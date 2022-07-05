@@ -26,14 +26,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Optional. The full resource name for the GitHubEnterpriseConfig For example: "projects/{$project_id}/githubEnterpriseConfigs/{$config_id}" |
-| `hostUrl` | `string` | The URL of the github enterprise host the configuration is for. |
 | `secrets` | `object` | GitHubEnterpriseSecrets represents the names of all necessary secrets in Secret Manager for a GitHub Enterprise server. Format is: projects//secrets/. |
+| `sslCa` | `string` | Optional. SSL certificate to use for requests to GitHub Enterprise. |
+| `displayName` | `string` | Name to display for this config. |
+| `createTime` | `string` | Output only. Time when the installation was associated with the project. |
+| `hostUrl` | `string` | The URL of the github enterprise host the configuration is for. |
 | `peeredNetwork` | `string` | Optional. The network to be used when reaching out to the GitHub Enterprise server. The VPC network must be enabled for private service connection. This should be set if the GitHub Enterprise server is hosted on-premises and not reachable by public internet. If this field is left empty, no network peering will occur and calls to the GitHub Enterprise server will be made over the public internet. Must be in the format `projects/{project}/global/networks/{network}`, where {project} is a project number or id and {network} is the name of a VPC network in the project. |
 | `appId` | `string` | Required. The GitHub app id of the Cloud Build app on the GitHub Enterprise server. |
 | `webhookKey` | `string` | The key that should be attached to webhook calls to the ReceiveWebhook endpoint. |
-| `displayName` | `string` | Name to display for this config. |
-| `sslCa` | `string` | Optional. SSL certificate to use for requests to GitHub Enterprise. |
-| `createTime` | `string` | Output only. Time when the installation was associated with the project. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

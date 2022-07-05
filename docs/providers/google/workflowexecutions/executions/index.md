@@ -26,13 +26,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name of the execution. Format: projects/{project}/locations/{location}/workflows/{workflow}/executions/{execution} |
-| `argument` | `string` | Input parameters of the execution represented as a JSON string. The size limit is 32KB. *Note*: If you are using the REST API directly to run your workflow, you must escape any JSON string value of `argument`. Example: `'{"argument":"{\"firstName\":\"FIRST\",\"lastName\":\"LAST\"}"}'` |
-| `callLogLevel` | `string` | The call logging level associated to this execution. |
-| `endTime` | `string` | Output only. Marks the end of execution, successful or not. |
+| `startTime` | `string` | Output only. Marks the beginning of execution. |
 | `state` | `string` | Output only. Current state of the execution. |
 | `result` | `string` | Output only. Output of the execution represented as a JSON string. The value can only be present if the execution's state is `SUCCEEDED`. |
-| `startTime` | `string` | Output only. Marks the beginning of execution. |
 | `workflowRevisionId` | `string` | Output only. Revision of the workflow this execution is using. |
+| `callLogLevel` | `string` | The call logging level associated to this execution. |
+| `endTime` | `string` | Output only. Marks the end of execution, successful or not. |
+| `argument` | `string` | Input parameters of the execution represented as a JSON string. The size limit is 32KB. *Note*: If you are using the REST API directly to run your workflow, you must escape any JSON string value of `argument`. Example: `'{"argument":"{\"firstName\":\"FIRST\",\"lastName\":\"LAST\"}"}'` |
 | `error` | `object` | Error describes why the execution was abnormally terminated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

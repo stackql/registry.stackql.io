@@ -21,7 +21,7 @@ Dataplex API is used to manage the lifecycle of data lakes.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Dataplex API</td></tr>
 <tr><td><b>Description</b></td><td>Dataplex API is used to manage the lifecycle of data lakes.</td></tr>
-<tr><td><b>Id</b></td><td><code>dataplex:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>dataplex:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

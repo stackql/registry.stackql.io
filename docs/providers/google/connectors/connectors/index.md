@@ -27,14 +27,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Resource name of the Connector. Format: projects/{project}/locations/{location}/providers/{provider}/connectors/{connector} |
 | `description` | `string` | Output only. Description of the resource. |
-| `launchStage` | `string` | Output only. Flag to mark the version indicating the launch stage. |
 | `createTime` | `string` | Output only. Created time. |
-| `labels` | `object` | Output only. Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources |
-| `updateTime` | `string` | Output only. Updated time. |
-| `documentationUri` | `string` | Output only. Link to documentation page. |
+| `launchStage` | `string` | Output only. Flag to mark the version indicating the launch stage. |
 | `webAssetsLocation` | `string` | Output only. Cloud storage location of icons etc consumed by UI. |
 | `displayName` | `string` | Output only. Display name. |
+| `documentationUri` | `string` | Output only. Link to documentation page. |
+| `updateTime` | `string` | Output only. Updated time. |
 | `externalUri` | `string` | Output only. Link to external page. |
+| `labels` | `object` | Output only. Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

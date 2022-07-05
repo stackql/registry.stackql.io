@@ -21,7 +21,7 @@ The Dataproc Metastore API is used to manage the lifecycle and configuration of 
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Dataproc Metastore API</td></tr>
 <tr><td><b>Description</b></td><td>The Dataproc Metastore API is used to manage the lifecycle and configuration of metastore services.</td></tr>
-<tr><td><b>Id</b></td><td><code>metastore:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>metastore:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

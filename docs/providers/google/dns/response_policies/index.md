@@ -27,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `id` | `string` | Unique identifier for the resource; defined by the server (output only). |
 | `description` | `string` | User-provided description for this Response Policy. |
+| `kind` | `string` |  |
 | `networks` | `array` | List of network names specifying networks to which this policy is applied. |
 | `responsePolicyName` | `string` | User assigned name for this Response Policy. |
-| `kind` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

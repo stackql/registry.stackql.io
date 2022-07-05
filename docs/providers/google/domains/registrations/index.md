@@ -26,19 +26,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Name of the `Registration` resource, in the format `projects/*/locations/*/registrations/`. |
-| `supportedPrivacy` | `array` | Output only. Set of options for the `contact_settings.privacy` field that this `Registration` supports. |
 | `labels` | `object` | Set of labels associated with the `Registration`. |
-| `registerFailureReason` | `string` | Output only. The reason the domain registration failed. Only set for domains in REGISTRATION_FAILED state. |
-| `domainName` | `string` | Required. Immutable. The domain name. Unicode domain names must be expressed in Punycode format. |
-| `dnsSettings` | `object` | Defines the DNS configuration of a `Registration`, including name servers, DNSSEC, and glue records. |
-| `contactSettings` | `object` | Defines the contact information associated with a `Registration`. [ICANN](https://icann.org/) requires all domain names to have associated contact information. The `registrant_contact` is considered the domain's legal owner, and often the other contacts are identical. |
-| `expireTime` | `string` | Output only. The expiration timestamp of the `Registration`. |
-| `pendingContactSettings` | `object` | Defines the contact information associated with a `Registration`. [ICANN](https://icann.org/) requires all domain names to have associated contact information. The `registrant_contact` is considered the domain's legal owner, and often the other contacts are identical. |
-| `createTime` | `string` | Output only. The creation timestamp of the `Registration` resource. |
-| `managementSettings` | `object` | Defines renewal, billing, and transfer settings for a `Registration`. |
-| `transferFailureReason` | `string` | Output only. The reason the domain transfer failed. Only set for domains in TRANSFER_FAILED state. |
-| `state` | `string` | Output only. The state of the `Registration` |
 | `issues` | `array` | Output only. The set of issues with the `Registration` that require attention. |
+| `dnsSettings` | `object` | Defines the DNS configuration of a `Registration`, including name servers, DNSSEC, and glue records. |
+| `domainName` | `string` | Required. Immutable. The domain name. Unicode domain names must be expressed in Punycode format. |
+| `supportedPrivacy` | `array` | Output only. Set of options for the `contact_settings.privacy` field that this `Registration` supports. |
+| `state` | `string` | Output only. The state of the `Registration` |
+| `createTime` | `string` | Output only. The creation timestamp of the `Registration` resource. |
+| `expireTime` | `string` | Output only. The expiration timestamp of the `Registration`. |
+| `registerFailureReason` | `string` | Output only. The reason the domain registration failed. Only set for domains in REGISTRATION_FAILED state. |
+| `pendingContactSettings` | `object` | Defines the contact information associated with a `Registration`. [ICANN](https://icann.org/) requires all domain names to have associated contact information. The `registrant_contact` is considered the domain's legal owner, and often the other contacts are identical. |
+| `managementSettings` | `object` | Defines renewal, billing, and transfer settings for a `Registration`. |
+| `contactSettings` | `object` | Defines the contact information associated with a `Registration`. [ICANN](https://icann.org/) requires all domain names to have associated contact information. The `registrant_contact` is considered the domain's legal owner, and often the other contacts are identical. |
+| `transferFailureReason` | `string` | Output only. The reason the domain transfer failed. Only set for domains in TRANSFER_FAILED state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

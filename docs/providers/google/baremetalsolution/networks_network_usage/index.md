@@ -25,8 +25,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `usedIps` | `array` | All used IP addresses in this network. |
 | `network` | `object` | A Network. |
+| `usedIps` | `array` | All used IP addresses in this network. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

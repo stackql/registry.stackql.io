@@ -27,5 +27,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `speech_longrunningrecognize` | `EXEC` |  | Performs asynchronous speech recognition: receive results via the google.longrunning.Operations interface. Returns either an `Operation.error` or an `Operation.response` which contains a `LongRunningRecognizeResponse` message. For more information on asynchronous speech recognition, see the [how-to](https://cloud.google.com/speech-to-text/docs/async-recognize). |
-| `speech_recognize` | `EXEC` |  | Performs synchronous speech recognition: receive results after all audio has been sent and processed. |
+| `longrunningrecognize` | `EXEC` |  | Performs asynchronous speech recognition: receive results via the google.longrunning.Operations interface. Returns either an `Operation.error` or an `Operation.response` which contains a `LongRunningRecognizeResponse` message. For more information on asynchronous speech recognition, see the [how-to](https://cloud.google.com/speech-to-text/docs/async-recognize). |
+| `recognize` | `EXEC` |  | Performs synchronous speech recognition: receive results after all audio has been sent and processed. |

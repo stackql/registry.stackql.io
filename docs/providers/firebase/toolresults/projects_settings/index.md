@@ -3,6 +3,7 @@ title: projects_settings
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - projects_settings
   - stackql
   - infrastructure-as-code
   - configuration-as-data

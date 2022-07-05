@@ -26,11 +26,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The identifier for the contact. Format: {resource_type}/{resource_id}/contacts/{contact_id} |
+| `email` | `string` | Required. The email address to send notifications to. This does not need to be a Google account. |
 | `languageTag` | `string` | The preferred language for notifications, as a ISO 639-1 language code. See [Supported languages](https://cloud.google.com/resource-manager/docs/managing-notification-contacts#supported-languages) for a list of supported languages. |
 | `notificationCategorySubscriptions` | `array` | The categories of notifications that the contact will receive communications for. |
 | `validateTime` | `string` | The last time the validation_state was updated, either manually or automatically. A contact is considered stale if its validation state was updated more than 1 year ago. |
 | `validationState` | `string` | The validity of the contact. A contact is considered valid if it is the correct recipient for notifications for a particular resource. |
-| `email` | `string` | Required. The email address to send notifications to. This does not need to be a Google account. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

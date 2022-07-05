@@ -26,13 +26,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Unique name of the peering in this scope including projects and location using the form: `projects/{project_id}/locations/global/peerings/{peering_id}`. |
+| `updateTime` | `string` | Output only. Last update time. |
+| `authorizedNetwork` | `string` | Required. The full names of the Google Compute Engine [networks](/compute/docs/networks-and-firewalls#networks) to which the instance is connected. Caller needs to make sure that CIDR subnets do not overlap between networks, else peering creation will fail. |
+| `createTime` | `string` | Output only. The time the instance was created. |
 | `domainResource` | `string` | Required. Full domain resource path for the Managed AD Domain involved in peering. The resource path should be in the form: `projects/{project_id}/locations/global/domains/{domain_name}` |
 | `labels` | `object` | Optional. Resource labels to represent user-provided metadata. |
 | `state` | `string` | Output only. The current state of this Peering. |
 | `statusMessage` | `string` | Output only. Additional information about the current status of this peering, if available. |
-| `updateTime` | `string` | Output only. Last update time. |
-| `authorizedNetwork` | `string` | Required. The full names of the Google Compute Engine [networks](/compute/docs/networks-and-firewalls#networks) to which the instance is connected. Caller needs to make sure that CIDR subnets do not overlap between networks, else peering creation will fail. |
-| `createTime` | `string` | Output only. The time the instance was created. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

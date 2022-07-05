@@ -26,10 +26,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name for this CaPool in the format `projects/*/locations/*/caPools/*`. |
-| `tier` | `string` | Required. Immutable. The Tier of this CaPool. |
 | `issuancePolicy` | `object` | Defines controls over all certificate issuance within a CaPool. |
 | `labels` | `object` | Optional. Labels with user-defined metadata. |
 | `publishingOptions` | `object` | Options relating to the publication of each CertificateAuthority's CA certificate and CRLs and their inclusion as extensions in issued Certificates. The options set here apply to certificates issued by any CertificateAuthority in the CaPool. |
+| `tier` | `string` | Required. Immutable. The Tier of this CaPool. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -25,18 +25,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `etag` | `string` | A hash of this response. |
-| `jobReference` | `object` |  |
+| `numDmlAffectedRows` | `string` | [Output-only] The number of rows affected by a DML statement. Present only for DML statements INSERT, UPDATE or DELETE. |
+| `rows` | `array` | An object with as many results as can be contained within the maximum permitted reply size. To get any additional rows, you can call GetQueryResults and specify the jobReference returned above. Present only when the query completes successfully. |
 | `cacheHit` | `boolean` | Whether the query result was fetched from the query cache. |
+| `totalBytesProcessed` | `string` | The total number of bytes processed for this query. |
+| `jobComplete` | `boolean` | Whether the query has completed or not. If rows or totalRows are present, this will always be true. If this is false, totalRows will not be available. |
 | `pageToken` | `string` | A token used for paging results. |
 | `totalRows` | `string` | The total number of rows in the complete query result set, which can be more than the number of rows in this single page of results. Present only when the query completes successfully. |
-| `rows` | `array` | An object with as many results as can be contained within the maximum permitted reply size. To get any additional rows, you can call GetQueryResults and specify the jobReference returned above. Present only when the query completes successfully. |
 | `schema` | `object` |  |
-| `errors` | `array` | [Output-only] The first errors or warnings encountered during the running of the job. The final message includes the number of errors that caused the process to stop. Errors here do not necessarily mean that the job has completed or was unsuccessful. |
-| `jobComplete` | `boolean` | Whether the query has completed or not. If rows or totalRows are present, this will always be true. If this is false, totalRows will not be available. |
-| `totalBytesProcessed` | `string` | The total number of bytes processed for this query. |
 | `kind` | `string` | The resource type of the response. |
-| `numDmlAffectedRows` | `string` | [Output-only] The number of rows affected by a DML statement. Present only for DML statements INSERT, UPDATE or DELETE. |
+| `errors` | `array` | [Output-only] The first errors or warnings encountered during the running of the job. The final message includes the number of errors that caused the process to stop. Errors here do not necessarily mean that the job has completed or was unsuccessful. |
+| `jobReference` | `object` |  |
+| `etag` | `string` | A hash of this response. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

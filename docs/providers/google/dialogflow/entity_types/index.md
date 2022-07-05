@@ -26,8 +26,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Required. The unique identifier of the session entity type. Format: `projects//locations//agents//sessions//entityTypes/` or `projects//locations//agents//environments//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. |
-| `entities` | `array` | Required. The collection of entities to override or supplement the custom entity type. |
 | `entityOverrideMode` | `string` | Required. Indicates whether the additional data should override or supplement the custom entity type definition. |
+| `entities` | `array` | Required. The collection of entities to override or supplement the custom entity type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

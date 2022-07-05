@@ -21,7 +21,7 @@ Accesses source code repositories hosted by Google.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Source Repositories API</td></tr>
 <tr><td><b>Description</b></td><td>Accesses source code repositories hosted by Google.</td></tr>
-<tr><td><b>Id</b></td><td><code>sourcerepo:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>sourcerepo:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

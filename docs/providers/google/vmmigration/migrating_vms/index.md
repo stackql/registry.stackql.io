@@ -27,22 +27,22 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The identifier of the MigratingVm. |
 | `description` | `string` | The description attached to the migrating VM by the user. |
-| `updateTime` | `string` | Output only. The last time the migrating VM resource was updated. |
-| `awsSourceVmDetails` | `object` | Represent the source AWS VM details. |
-| `recentCloneJobs` | `array` | Output only. The recent clone jobs performed on the migrating VM. This field holds the vm's last completed clone job and the vm's running clone job, if one exists. Note: To have this field populated you need to explicitly request it via the "view" parameter of the Get/List request. |
-| `sourceVmId` | `string` | The unique ID of the VM in the source. The VM's name in vSphere can be changed, so this is not the VM's name but rather its moRef id. This id is of the form vm-. |
-| `lastSync` | `object` | ReplicationSync contain information about the last replica sync to the cloud. |
-| `error` | `object` | The `Status` type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by [gRPC](https://github.com/grpc). Each `Status` message contains three pieces of data: error code, error message, and error details. You can find out more about this error model and how to work with it in the [API Design Guide](https://cloud.google.com/apis/design/errors). |
-| `recentCutoverJobs` | `array` | Output only. The recent cutover jobs performed on the migrating VM. This field holds the vm's last completed cutover job and the vm's running cutover job, if one exists. Note: To have this field populated you need to explicitly request it via the "view" parameter of the Get/List request. |
-| `policy` | `object` | A policy for scheduling replications. |
-| `displayName` | `string` | The display name attached to the MigratingVm by the user. |
-| `labels` | `object` | The labels of the migrating VM. |
-| `stateTime` | `string` | Output only. The last time the migrating VM state was updated. |
-| `currentSyncInfo` | `object` | ReplicationCycle contains information about the current replication cycle status. |
 | `group` | `string` | Output only. The group this migrating vm is included in, if any. The group is represented by the full path of the appropriate Group resource. |
-| `createTime` | `string` | Output only. The time the migrating VM was created (this refers to this resource and not to the time it was installed in the source). |
+| `labels` | `object` | The labels of the migrating VM. |
 | `state` | `string` | Output only. State of the MigratingVm. |
+| `currentSyncInfo` | `object` | ReplicationCycle contains information about the current replication cycle status. |
+| `lastSync` | `object` | ReplicationSync contain information about the last replica sync to the cloud. |
+| `displayName` | `string` | The display name attached to the MigratingVm by the user. |
+| `recentCloneJobs` | `array` | Output only. The recent clone jobs performed on the migrating VM. This field holds the vm's last completed clone job and the vm's running clone job, if one exists. Note: To have this field populated you need to explicitly request it via the "view" parameter of the Get/List request. |
+| `awsSourceVmDetails` | `object` | Represent the source AWS VM details. |
+| `error` | `object` | The `Status` type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by [gRPC](https://github.com/grpc). Each `Status` message contains three pieces of data: error code, error message, and error details. You can find out more about this error model and how to work with it in the [API Design Guide](https://cloud.google.com/apis/design/errors). |
+| `updateTime` | `string` | Output only. The last time the migrating VM resource was updated. |
+| `createTime` | `string` | Output only. The time the migrating VM was created (this refers to this resource and not to the time it was installed in the source). |
+| `recentCutoverJobs` | `array` | Output only. The recent cutover jobs performed on the migrating VM. This field holds the vm's last completed cutover job and the vm's running cutover job, if one exists. Note: To have this field populated you need to explicitly request it via the "view" parameter of the Get/List request. |
 | `computeEngineTargetDefaults` | `object` | ComputeEngineTargetDefaults is a collection of details for creating a VM in a target Compute Engine project. |
+| `policy` | `object` | A policy for scheduling replications. |
+| `sourceVmId` | `string` | The unique ID of the VM in the source. The VM's name in vSphere can be changed, so this is not the VM's name but rather its moRef id. This id is of the form vm-. |
+| `stateTime` | `string` | Output only. The last time the migrating VM state was updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

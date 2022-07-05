@@ -21,7 +21,7 @@ Registers and manages IoT (Internet of Things) devices that connect to the Googl
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud IoT API</td></tr>
 <tr><td><b>Description</b></td><td>Registers and manages IoT (Internet of Things) devices that connect to the Google Cloud Platform. </td></tr>
-<tr><td><b>Id</b></td><td><code>cloudiot:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudiot:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

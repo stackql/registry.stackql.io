@@ -27,14 +27,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Required. Unique name of the resource using the form: `projects/{project_id}/locations/global/connectivityTests/{test_id}` |
 | `description` | `string` | The user-supplied description of the Connectivity Test. Maximum of 512 characters. |
-| `updateTime` | `string` | Output only. The time the test's configuration was updated. |
-| `protocol` | `string` | IP Protocol of the test. When not provided, "TCP" is assumed. |
-| `relatedProjects` | `array` | Other projects that may be relevant for reachability analysis. This is applicable to scenarios where a test can cross project boundaries. |
-| `labels` | `object` | Resource labels to represent user-provided metadata. |
-| `createTime` | `string` | Output only. The time the test was created. |
 | `displayName` | `string` | Output only. The display name of a Connectivity Test. |
-| `source` | `object` | Source or destination of the Connectivity Test. |
+| `relatedProjects` | `array` | Other projects that may be relevant for reachability analysis. This is applicable to scenarios where a test can cross project boundaries. |
 | `destination` | `object` | Source or destination of the Connectivity Test. |
+| `protocol` | `string` | IP Protocol of the test. When not provided, "TCP" is assumed. |
+| `source` | `object` | Source or destination of the Connectivity Test. |
+| `updateTime` | `string` | Output only. The time the test's configuration was updated. |
+| `createTime` | `string` | Output only. The time the test was created. |
+| `labels` | `object` | Resource labels to represent user-provided metadata. |
 | `reachabilityDetails` | `object` | Results of the configuration analysis from the last run of the test. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

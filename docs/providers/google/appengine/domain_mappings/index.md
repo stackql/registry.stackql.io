@@ -27,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `id` | `string` | Relative name of the domain serving the application. Example: example.com. |
 | `name` | `string` | Full path to the DomainMapping resource in the API. Example: apps/myapp/domainMapping/example.com.@OutputOnly |
-| `sslSettings` | `object` | SSL configuration for a DomainMapping resource. |
 | `resourceRecords` | `array` | The resource records required to configure this domain mapping. These records must be added to the domain's DNS configuration in order to serve the application via this domain mapping.@OutputOnly |
+| `sslSettings` | `object` | SSL configuration for a DomainMapping resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

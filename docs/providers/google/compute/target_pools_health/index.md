@@ -25,8 +25,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `healthStatus` | `array` |  |
 | `kind` | `string` | [Output Only] Type of resource. Always compute#targetPoolInstanceHealth when checking the health of an instance. |
+| `healthStatus` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

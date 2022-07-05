@@ -21,7 +21,7 @@ Manage workflow definitions. To execute workflows and manage executions, see the
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Workflows API</td></tr>
 <tr><td><b>Description</b></td><td>Manage workflow definitions. To execute workflows and manage executions, see the Workflows Executions API.</td></tr>
-<tr><td><b>Id</b></td><td><code>workflows:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>workflows:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

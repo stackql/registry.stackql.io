@@ -25,8 +25,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `findingType` | `string` | Output only. The finding type associated with the stats. |
 | `findingCount` | `integer` | Output only. The count of findings belonging to this finding type. |
+| `findingType` | `string` | Output only. The finding type associated with the stats. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

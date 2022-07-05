@@ -3,6 +3,7 @@ title: firebasedatabase
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - firebasedatabase
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,7 +21,7 @@ The Firebase Realtime Database Management API enables programmatic provisioning 
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Firebase Realtime Database Management API</td></tr>
 <tr><td><b>Description</b></td><td>The Firebase Realtime Database Management API enables programmatic provisioning and management of Realtime Database instances.</td></tr>
-<tr><td><b>Id</b></td><td><code>firebasedatabase:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>firebasedatabase:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

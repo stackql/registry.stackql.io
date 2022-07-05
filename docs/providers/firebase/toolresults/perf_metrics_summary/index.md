@@ -3,6 +3,7 @@ title: perf_metrics_summary
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - perf_metrics_summary
   - stackql
   - infrastructure-as-code
   - configuration-as-data

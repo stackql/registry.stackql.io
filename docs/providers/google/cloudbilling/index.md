@@ -21,7 +21,7 @@ Allows developers to manage billing for their Google Cloud Platform projects pro
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Billing API</td></tr>
 <tr><td><b>Description</b></td><td>Allows developers to manage billing for their Google Cloud Platform projects programmatically.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudbilling:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudbilling:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

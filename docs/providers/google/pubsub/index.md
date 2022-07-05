@@ -21,7 +21,7 @@ Provides reliable, many-to-many, asynchronous messaging between applications.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Pub/Sub API</td></tr>
 <tr><td><b>Description</b></td><td>Provides reliable, many-to-many, asynchronous messaging between applications. </td></tr>
-<tr><td><b>Id</b></td><td><code>pubsub:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>pubsub:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

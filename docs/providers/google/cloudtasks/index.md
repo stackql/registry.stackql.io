@@ -21,7 +21,7 @@ Manages the execution of large numbers of distributed requests.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Tasks API</td></tr>
 <tr><td><b>Description</b></td><td>Manages the execution of large numbers of distributed requests.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudtasks:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudtasks:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

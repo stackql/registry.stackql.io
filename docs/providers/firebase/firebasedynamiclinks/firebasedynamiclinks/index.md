@@ -3,6 +3,7 @@ title: firebasedynamiclinks
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - firebasedynamiclinks
   - stackql
   - infrastructure-as-code
   - configuration-as-data

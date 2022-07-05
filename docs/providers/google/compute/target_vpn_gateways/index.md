@@ -29,13 +29,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `name` | `string` | Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. |
 | `description` | `string` | An optional description of this resource. Provide this property when you create the resource. |
 | `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
-| `tunnels` | `array` | [Output Only] A list of URLs to VpnTunnel resources. VpnTunnels are created using the compute.vpntunnels.insert method and associated with a VPN gateway. |
-| `kind` | `string` | [Output Only] Type of resource. Always compute#targetVpnGateway for target VPN gateways. |
-| `status` | `string` | [Output Only] The status of the VPN gateway, which can be one of the following: CREATING, READY, FAILED, or DELETING. |
 | `forwardingRules` | `array` | [Output Only] A list of URLs to the ForwardingRule resources. ForwardingRules are created using compute.forwardingRules.insert and associated with a VPN gateway. |
-| `region` | `string` | [Output Only] URL of the region where the target VPN gateway resides. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body. |
+| `status` | `string` | [Output Only] The status of the VPN gateway, which can be one of the following: CREATING, READY, FAILED, or DELETING. |
 | `network` | `string` | URL of the network to which this VPN gateway is attached. Provided by the client when the VPN gateway is created. |
+| `tunnels` | `array` | [Output Only] A list of URLs to VpnTunnel resources. VpnTunnels are created using the compute.vpntunnels.insert method and associated with a VPN gateway. |
 | `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
+| `region` | `string` | [Output Only] URL of the region where the target VPN gateway resides. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body. |
+| `kind` | `string` | [Output Only] Type of resource. Always compute#targetVpnGateway for target VPN gateways. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

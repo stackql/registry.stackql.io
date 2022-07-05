@@ -25,9 +25,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `alias` | `string` | Resource ID for this alias. Values must match the regular expression `[^/]{1,255}`. |
 | `certsInfo` | `object` |  |
 | `type` | `string` | Type of alias. |
+| `alias` | `string` | Resource ID for this alias. Values must match the regular expression `[^/]{1,255}`. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

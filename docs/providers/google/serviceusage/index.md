@@ -21,7 +21,7 @@ Enables services that service consumers want to use on Google Cloud Platform, li
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Service Usage API</td></tr>
 <tr><td><b>Description</b></td><td>Enables services that service consumers want to use on Google Cloud Platform, lists the available or enabled services, or disables services that service consumers no longer use.</td></tr>
-<tr><td><b>Id</b></td><td><code>serviceusage:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>serviceusage:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

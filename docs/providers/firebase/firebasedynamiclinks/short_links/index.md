@@ -3,6 +3,7 @@ title: short_links
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - short_links
   - stackql
   - infrastructure-as-code
   - configuration-as-data

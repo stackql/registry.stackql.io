@@ -3,6 +3,7 @@ title: play_integrity_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - play_integrity_config
   - stackql
   - infrastructure-as-code
   - configuration-as-data

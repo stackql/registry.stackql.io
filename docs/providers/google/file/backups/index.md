@@ -27,15 +27,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name of the backup, in the format `projects/{project_number}/locations/{location_id}/backups/{backup_id}`. |
 | `description` | `string` | A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected. |
+| `sourceInstanceTier` | `string` | Output only. The service tier of the source Cloud Filestore instance that this backup is created from. |
+| `state` | `string` | Output only. The backup state. |
 | `capacityGb` | `string` | Output only. Capacity of the source file share when the backup was created. |
+| `createTime` | `string` | Output only. The time when the backup was created. |
+| `downloadBytes` | `string` | Output only. Amount of bytes that will be downloaded if the backup is restored. This may be different than storage bytes, since sequential backups of the same disk will share storage. |
+| `storageBytes` | `string` | Output only. The size of the storage used by the backup. As backups share storage, this number is expected to change with backup creation/deletion. |
 | `labels` | `object` | Resource labels to represent user provided metadata. |
 | `satisfiesPzs` | `boolean` | Output only. Reserved for future use. |
-| `sourceInstanceTier` | `string` | Output only. The service tier of the source Cloud Filestore instance that this backup is created from. |
 | `sourceFileShare` | `string` | Name of the file share in the source Cloud Filestore instance that the backup is created from. |
-| `state` | `string` | Output only. The backup state. |
-| `storageBytes` | `string` | Output only. The size of the storage used by the backup. As backups share storage, this number is expected to change with backup creation/deletion. |
-| `downloadBytes` | `string` | Output only. Amount of bytes that will be downloaded if the backup is restored. This may be different than storage bytes, since sequential backups of the same disk will share storage. |
-| `createTime` | `string` | Output only. The time when the backup was created. |
 | `sourceInstance` | `string` | The resource name of the source Cloud Filestore instance, in the format `projects/{project_number}/locations/{location_id}/instances/{instance_id}`, used to create this backup. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

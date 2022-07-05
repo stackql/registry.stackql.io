@@ -25,11 +25,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `namespacedTagValue` | `string` | Namespaced name of the TagValue. Must be in the format `{organization_id}/{tag_key_short_name}/{tag_value_short_name}`. |
+| `tagKey` | `string` | The name of the TagKey, in the format `tagKeys/{id}`, such as `tagKeys/123`. |
 | `tagValue` | `string` | Resource name for TagValue in the format `tagValues/456`. |
 | `inherited` | `boolean` | Indicates the inheritance status of a tag value attached to the given resource. If the tag value is inherited from one of the resource's ancestors, inherited will be true. If false, then the tag value is directly attached to the resource, inherited will be false. |
 | `namespacedTagKey` | `string` | The namespaced_name of the TagKey, in the format of `{organization_id}/{tag_key_short_name}` |
-| `namespacedTagValue` | `string` | Namespaced name of the TagValue. Must be in the format `{organization_id}/{tag_key_short_name}/{tag_value_short_name}`. |
-| `tagKey` | `string` | The name of the TagKey, in the format `tagKeys/{id}`, such as `tagKeys/123`. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

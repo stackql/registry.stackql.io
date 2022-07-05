@@ -26,9 +26,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The canonical resource name. |
-| `key` | `string` | Public key text in SSH format, defined by RFC4253 section 6.6. |
 | `expirationTimeUsec` | `string` | An expiration time in microseconds since epoch. |
 | `fingerprint` | `string` | Output only. The SHA-256 fingerprint of the SSH public key. |
+| `key` | `string` | Public key text in SSH format, defined by RFC4253 section 6.6. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

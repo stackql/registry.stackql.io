@@ -26,12 +26,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Resource name of the API. Format: projects/{project}/locations/global/apis/{api} |
+| `displayName` | `string` | Optional. Display name. |
 | `labels` | `object` | Optional. Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources |
 | `managedService` | `string` | Optional. Immutable. The name of a Google Managed Service ( https://cloud.google.com/service-infrastructure/docs/glossary#managed). If not specified, a new Service will automatically be created in the same project as this API. |
 | `state` | `string` | Output only. State of the API. |
 | `updateTime` | `string` | Output only. Updated time. |
 | `createTime` | `string` | Output only. Created time. |
-| `displayName` | `string` | Optional. Display name. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

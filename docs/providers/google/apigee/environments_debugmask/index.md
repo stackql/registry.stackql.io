@@ -26,14 +26,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Name of the debug mask. |
-| `responseXPaths` | `array` | List of XPaths that specify the XML elements to be filtered from XML response message payloads. |
-| `faultJSONPaths` | `array` | List of JSON paths that specify the JSON elements to be filtered from JSON payloads in error flows. |
 | `faultXPaths` | `array` | List of XPaths that specify the XML elements to be filtered from XML payloads in error flows. |
-| `requestJSONPaths` | `array` | List of JSON paths that specify the JSON elements to be filtered from JSON request message payloads. |
-| `variables` | `array` | List of variables that should be masked from the debug output. |
-| `responseJSONPaths` | `array` | List of JSON paths that specify the JSON elements to be filtered from JSON response message payloads. |
-| `namespaces` | `object` | Map of namespaces to URIs. |
+| `faultJSONPaths` | `array` | List of JSON paths that specify the JSON elements to be filtered from JSON payloads in error flows. |
 | `requestXPaths` | `array` | List of XPaths that specify the XML elements to be filtered from XML request message payloads. |
+| `responseXPaths` | `array` | List of XPaths that specify the XML elements to be filtered from XML response message payloads. |
+| `requestJSONPaths` | `array` | List of JSON paths that specify the JSON elements to be filtered from JSON request message payloads. |
+| `responseJSONPaths` | `array` | List of JSON paths that specify the JSON elements to be filtered from JSON response message payloads. |
+| `variables` | `array` | List of variables that should be masked from the debug output. |
+| `namespaces` | `object` | Map of namespaces to URIs. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

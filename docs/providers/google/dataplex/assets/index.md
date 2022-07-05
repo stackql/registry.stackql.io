@@ -27,17 +27,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The relative resource name of the asset, of the form: projects/{project_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/assets/{asset_id}. |
 | `description` | `string` | Optional. Description of the asset. |
-| `securityStatus` | `object` | Security policy status of the asset. Data security policy, i.e., readers, writers & owners, should be specified in the lake/zone/asset IAM policy. |
-| `state` | `string` | Output only. Current state of the asset. |
-| `uid` | `string` | Output only. System generated globally unique ID for the asset. This ID will be different if the asset is deleted and re-created with the same name. |
-| `resourceStatus` | `object` | Status of the resource referenced by an asset. |
 | `updateTime` | `string` | Output only. The time when the asset was last updated. |
-| `discoverySpec` | `object` | Settings to manage the metadata discovery and publishing for an asset. |
 | `displayName` | `string` | Optional. User friendly display name. |
+| `discoverySpec` | `object` | Settings to manage the metadata discovery and publishing for an asset. |
+| `securityStatus` | `object` | Security policy status of the asset. Data security policy, i.e., readers, writers & owners, should be specified in the lake/zone/asset IAM policy. |
+| `resourceStatus` | `object` | Status of the resource referenced by an asset. |
+| `state` | `string` | Output only. Current state of the asset. |
 | `resourceSpec` | `object` | Identifies the cloud resource that is referenced by this asset. |
-| `labels` | `object` | Optional. User defined labels for the asset. |
-| `discoveryStatus` | `object` | Status of discovery for an asset. |
+| `uid` | `string` | Output only. System generated globally unique ID for the asset. This ID will be different if the asset is deleted and re-created with the same name. |
 | `createTime` | `string` | Output only. The time when the asset was created. |
+| `discoveryStatus` | `object` | Status of discovery for an asset. |
+| `labels` | `object` | Optional. User defined labels for the asset. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

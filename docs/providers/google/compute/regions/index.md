@@ -28,16 +28,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` | [Output Only] The unique identifier for the resource. This identifier is defined by the server. |
 | `name` | `string` | [Output Only] Name of the resource. |
 | `description` | `string` | [Output Only] Textual description of the resource. |
-| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
-| `supportsPzs` | `boolean` | [Output Only] Reserved for future use. |
-| `quotas` | `array` | [Output Only] Quotas assigned to this region. |
-| `zones` | `array` | [Output Only] A list of zones available in this region, in the form of resource URLs. |
-| `deprecated` | `object` | Deprecation status for a public resource. |
-| `status` | `string` | [Output Only] Status of the region, either UP or DOWN. |
 | `kind` | `string` | [Output Only] Type of the resource. Always compute#region for regions. |
 | `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
+| `deprecated` | `object` | Deprecation status for a public resource. |
+| `quotas` | `array` | [Output Only] Quotas assigned to this region. |
+| `zones` | `array` | [Output Only] A list of zones available in this region, in the form of resource URLs. |
+| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
+| `supportsPzs` | `boolean` | [Output Only] Reserved for future use. |
+| `status` | `string` | [Output Only] Status of the region, either UP or DOWN. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `regions_get` | `SELECT` | `project, region` | Returns the specified Region resource. Gets a list of available regions by making a list() request. To decrease latency for this method, you can optionally omit any unneeded information from the response by using a field mask. This practice is especially recommended for unused quota information (the `quotas` field). To exclude one or more fields, set your request's `fields` query parameter to only include the fields you need. For example, to only include the `id` and `selfLink` fields, add the query parameter `?fields=id,selfLink` to your request. |
-| `regions_list` | `SELECT` | `project` | Retrieves the list of region resources available to the specified project. To decrease latency for this method, you can optionally omit any unneeded information from the response by using a field mask. This practice is especially recommended for unused quota information (the `items.quotas` field). To exclude one or more fields, set your request's `fields` query parameter to only include the fields you need. For example, to only include the `id` and `selfLink` fields, add the query parameter `?fields=id,selfLink` to your request. |
+| `get` | `SELECT` | `project, region` | Returns the specified Region resource. Gets a list of available regions by making a list() request. To decrease latency for this method, you can optionally omit any unneeded information from the response by using a field mask. This practice is especially recommended for unused quota information (the `quotas` field). To exclude one or more fields, set your request's `fields` query parameter to only include the fields you need. For example, to only include the `id` and `selfLink` fields, add the query parameter `?fields=id,selfLink` to your request. |
+| `list` | `SELECT` | `project` | Retrieves the list of region resources available to the specified project. To decrease latency for this method, you can optionally omit any unneeded information from the response by using a field mask. This practice is especially recommended for unused quota information (the `items.quotas` field). To exclude one or more fields, set your request's `fields` query parameter to only include the fields you need. For example, to only include the `id` and `selfLink` fields, add the query parameter `?fields=id,selfLink` to your request. |

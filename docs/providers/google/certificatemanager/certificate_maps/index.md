@@ -27,10 +27,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | A user-defined name of the Certificate Map. Certificate Map names must be unique globally and match pattern `projects/*/locations/*/certificateMaps/*`. |
 | `description` | `string` | One or more paragraphs of text description of a certificate map. |
-| `labels` | `object` | Set of labels associated with a Certificate Map. |
 | `updateTime` | `string` | Output only. The update timestamp of a Certificate Map. |
 | `createTime` | `string` | Output only. The creation timestamp of a Certificate Map. |
 | `gclbTargets` | `array` | Output only. A list of GCLB targets which use this Certificate Map. |
+| `labels` | `object` | Set of labels associated with a Certificate Map. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

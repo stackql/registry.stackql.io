@@ -21,7 +21,7 @@ Use the Migrate for Compute Engine API to programmatically migrate workloads.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>VM Migration API</td></tr>
 <tr><td><b>Description</b></td><td>Use the Migrate for Compute Engine API to programmatically migrate workloads. </td></tr>
-<tr><td><b>Id</b></td><td><code>vmmigration:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>vmmigration:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

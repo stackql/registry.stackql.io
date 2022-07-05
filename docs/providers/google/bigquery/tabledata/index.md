@@ -33,5 +33,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `tabledata_list` | `SELECT` | `datasetId, projectId, tableId` | Retrieves table data from a specified set of rows. Requires the READER dataset role. |
-| `tabledata_insertAll` | `INSERT` | `datasetId, projectId, tableId` | Streams data into BigQuery one record at a time without needing to run a load job. Requires the WRITER dataset role. |
+| `list` | `SELECT` | `datasetId, projectId, tableId` | Retrieves table data from a specified set of rows. Requires the READER dataset role. |
+| `insertAll` | `INSERT` | `datasetId, projectId, tableId` | Streams data into BigQuery one record at a time without needing to run a load job. Requires the WRITER dataset role. |

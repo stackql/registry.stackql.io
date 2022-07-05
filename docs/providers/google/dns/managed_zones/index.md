@@ -28,19 +28,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` | Unique identifier for the resource; defined by the server (output only) |
 | `name` | `string` | User assigned name for this resource. Must be unique within the project. The name must be 1-63 characters long, must begin with a letter, end with a letter or digit, and only contain lowercase letters, digits or dashes. |
 | `description` | `string` | A mutable string of at most 1024 characters associated with this resource for the user's convenience. Has no effect on the managed zone's function. |
-| `creationTime` | `string` | The time that this resource was created on the server. This is in RFC3339 text format. Output only. |
-| `kind` | `string` |  |
-| `peeringConfig` | `object` |  |
-| `forwardingConfig` | `object` |  |
-| `visibility` | `string` | The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private Cloud resources. |
-| `nameServerSet` | `string` | Optionally specifies the NameServerSet for this ManagedZone. A NameServerSet is a set of DNS name servers that all host the same ManagedZones. Most users leave this field unset. If you need to use this field, contact your account team. |
-| `privateVisibilityConfig` | `object` |  |
-| `cloudLoggingConfig` | `object` | Cloud Logging configurations for publicly visible zones. |
 | `nameServers` | `array` | Delegate your managed_zone to these virtual name servers; defined by the server (output only) |
+| `peeringConfig` | `object` |  |
 | `reverseLookupConfig` | `object` |  |
-| `serviceDirectoryConfig` | `object` | Contains information about Service Directory-backed zones. |
 | `dnsName` | `string` | The DNS name of this managed zone, for instance "example.com.". |
+| `kind` | `string` |  |
 | `dnssecConfig` | `object` |  |
+| `serviceDirectoryConfig` | `object` | Contains information about Service Directory-backed zones. |
+| `forwardingConfig` | `object` |  |
+| `cloudLoggingConfig` | `object` | Cloud Logging configurations for publicly visible zones. |
+| `nameServerSet` | `string` | Optionally specifies the NameServerSet for this ManagedZone. A NameServerSet is a set of DNS name servers that all host the same ManagedZones. Most users leave this field unset. If you need to use this field, contact your account team. |
+| `creationTime` | `string` | The time that this resource was created on the server. This is in RFC3339 text format. Output only. |
+| `privateVisibilityConfig` | `object` |  |
+| `visibility` | `string` | The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private Cloud resources. |
 | `labels` | `object` | User labels. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

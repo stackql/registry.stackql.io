@@ -26,10 +26,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The unique name of the SQL integration in the form of `projects/{project_id}/locations/global/domains/{domain_name}/sqlIntegrations/{sql_integration}` |
-| `updateTime` | `string` | Output only. The time the SQL integration was updated. |
-| `createTime` | `string` | Output only. The time the SQL integration was created. |
 | `sqlInstance` | `string` | The full resource name of an integrated SQL instance |
 | `state` | `string` | Output only. The current state of the SQL integration. |
+| `updateTime` | `string` | Output only. The time the SQL integration was updated. |
+| `createTime` | `string` | Output only. The time the SQL integration was created. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

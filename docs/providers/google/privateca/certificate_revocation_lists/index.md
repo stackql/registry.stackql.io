@@ -26,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name for this CertificateRevocationList in the format `projects/*/locations/*/caPools/*certificateAuthorities/*/ certificateRevocationLists/*`. |
-| `pemCrl` | `string` | Output only. The PEM-encoded X.509 CRL. |
-| `updateTime` | `string` | Output only. The time at which this CertificateRevocationList was updated. |
-| `createTime` | `string` | Output only. The time at which this CertificateRevocationList was created. |
-| `state` | `string` | Output only. The State for this CertificateRevocationList. |
-| `revisionId` | `string` | Output only. The revision ID of this CertificateRevocationList. A new revision is committed whenever a new CRL is published. The format is an 8-character hexadecimal string. |
-| `revokedCertificates` | `array` | Output only. The revoked serial numbers that appear in pem_crl. |
-| `labels` | `object` | Optional. Labels with user-defined metadata. |
-| `accessUrl` | `string` | Output only. The location where 'pem_crl' can be accessed. |
 | `sequenceNumber` | `string` | Output only. The CRL sequence number that appears in pem_crl. |
+| `updateTime` | `string` | Output only. The time at which this CertificateRevocationList was updated. |
+| `revokedCertificates` | `array` | Output only. The revoked serial numbers that appear in pem_crl. |
+| `revisionId` | `string` | Output only. The revision ID of this CertificateRevocationList. A new revision is committed whenever a new CRL is published. The format is an 8-character hexadecimal string. |
+| `accessUrl` | `string` | Output only. The location where 'pem_crl' can be accessed. |
+| `state` | `string` | Output only. The State for this CertificateRevocationList. |
+| `labels` | `object` | Optional. Labels with user-defined metadata. |
+| `pemCrl` | `string` | Output only. The PEM-encoded X.509 CRL. |
+| `createTime` | `string` | Output only. The time at which this CertificateRevocationList was created. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

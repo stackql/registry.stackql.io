@@ -21,7 +21,7 @@ This API converts video files into formats suitable for consumer distribution.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Transcoder API</td></tr>
 <tr><td><b>Description</b></td><td>This API converts video files into formats suitable for consumer distribution. </td></tr>
-<tr><td><b>Id</b></td><td><code>transcoder:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>transcoder:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

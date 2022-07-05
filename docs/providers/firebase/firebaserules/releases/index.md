@@ -3,6 +3,7 @@ title: releases
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - releases
   - stackql
   - infrastructure-as-code
   - configuration-as-data

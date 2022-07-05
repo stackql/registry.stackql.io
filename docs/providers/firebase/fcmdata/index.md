@@ -3,6 +3,7 @@ title: fcmdata
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - fcmdata
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -20,7 +21,7 @@ Provides additional information about Firebase Cloud Messaging (FCM) message sen
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Firebase Cloud Messaging Data API</td></tr>
 <tr><td><b>Description</b></td><td>Provides additional information about Firebase Cloud Messaging (FCM) message sends and deliveries.</td></tr>
-<tr><td><b>Id</b></td><td><code>fcmdata:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>fcmdata:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

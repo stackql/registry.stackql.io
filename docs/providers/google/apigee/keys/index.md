@@ -25,15 +25,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `expiresInSeconds` | `string` | Input only. Expiration time, in seconds, for the consumer key. If not set or left to the default value of `-1`, the API key never expires. The expiration time can't be updated after it is set. |
 | `apiProducts` | `array` | List of API products for which the credential can be used. **Note**: Do not specify the list of API products when creating a consumer key and secret for a developer app. Instead, use the UpdateDeveloperAppKey API to make the association after the consumer key and secret are created. |
-| `status` | `string` | Status of the credential. Valid values include `approved` or `revoked`. |
-| `issuedAt` | `string` | Time the developer app was created in milliseconds since epoch. |
-| `scopes` | `array` | Scopes to apply to the app. The specified scope names must already be defined for the API product that you associate with the app. |
-| `attributes` | `array` | List of attributes associated with the credential. |
 | `consumerSecret` | `string` | Secret key. |
+| `issuedAt` | `string` | Time the developer app was created in milliseconds since epoch. |
+| `expiresInSeconds` | `string` | Input only. Expiration time, in seconds, for the consumer key. If not set or left to the default value of `-1`, the API key never expires. The expiration time can't be updated after it is set. |
+| `scopes` | `array` | Scopes to apply to the app. The specified scope names must already be defined for the API product that you associate with the app. |
+| `status` | `string` | Status of the credential. Valid values include `approved` or `revoked`. |
 | `expiresAt` | `string` | Time the developer app expires in milliseconds since epoch. |
 | `consumerKey` | `string` | Consumer key. |
+| `attributes` | `array` | List of attributes associated with the credential. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

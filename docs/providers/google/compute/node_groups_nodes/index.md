@@ -26,14 +26,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The name of the node. |
-| `status` | `string` |  |
-| `disks` | `array` | Local disk configurations. |
+| `satisfiesPzs` | `boolean` | [Output Only] Reserved for future use. |
+| `serverBinding` | `object` |  |
+| `serverId` | `string` | Server ID associated with this node. |
 | `nodeType` | `string` | The type of this node. |
 | `accelerators` | `array` | Accelerators for this node. |
 | `cpuOvercommitType` | `string` | CPU overcommit. |
-| `serverBinding` | `object` |  |
-| `satisfiesPzs` | `boolean` | [Output Only] Reserved for future use. |
-| `serverId` | `string` | Server ID associated with this node. |
+| `disks` | `array` | Local disk configurations. |
+| `status` | `string` |  |
 | `instances` | `array` | Instances scheduled on this node. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

@@ -3,6 +3,7 @@ title: buckets_firebase
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - buckets_firebase
   - stackql
   - infrastructure-as-code
   - configuration-as-data

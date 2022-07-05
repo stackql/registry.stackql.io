@@ -26,14 +26,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The relative resource name of the job, of the form: projects/{project_number}/locations/{location_id}/lakes/{lake_id}/ tasks/{task_id}/jobs/{job_id}. |
-| `uid` | `string` | Output only. System generated globally unique ID for the job. |
-| `message` | `string` | Output only. Additional information about the current state. |
-| `service` | `string` | Output only. The underlying service running a job. |
-| `serviceJob` | `string` | Output only. The full resource name for the job run under a particular service. |
-| `retryCount` | `integer` | Output only. . The number of times the job has been retried (excluding the initial attempt). |
-| `endTime` | `string` | Output only. The time when the job ended. |
-| `startTime` | `string` | Output only. The time when the job was started. |
 | `state` | `string` | Output only. Execution state for the job. |
+| `startTime` | `string` | Output only. The time when the job was started. |
+| `endTime` | `string` | Output only. The time when the job ended. |
+| `service` | `string` | Output only. The underlying service running a job. |
+| `retryCount` | `integer` | Output only. . The number of times the job has been retried (excluding the initial attempt). |
+| `serviceJob` | `string` | Output only. The full resource name for the job run under a particular service. |
+| `message` | `string` | Output only. Additional information about the current state. |
+| `uid` | `string` | Output only. System generated globally unique ID for the job. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

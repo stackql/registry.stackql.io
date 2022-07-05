@@ -27,12 +27,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Dataset resource name, format is: projects/{project_id}/datasets/{dataset_id} |
 | `description` | `string` | Optional. User-provided description of the annotation specification set. The description can be up to 10000 characters long. |
-| `blockingResources` | `array` | Output only. The names of any related resources that are blocking changes to the dataset. |
-| `createTime` | `string` | Output only. Time the dataset is created. |
-| `dataItemCount` | `string` | Output only. The number of data items in the dataset. |
 | `displayName` | `string` | Required. The display name of the dataset. Maximum of 64 characters. |
 | `inputConfigs` | `array` | Output only. This is populated with the original input configs where ImportData is called. It is available only after the clients import data to this dataset. |
 | `lastMigrateTime` | `string` | Last time that the Dataset is migrated to AI Platform V2. If any of the AnnotatedDataset is migrated, the last_migration_time in Dataset is also updated. |
+| `blockingResources` | `array` | Output only. The names of any related resources that are blocking changes to the dataset. |
+| `createTime` | `string` | Output only. Time the dataset is created. |
+| `dataItemCount` | `string` | Output only. The number of data items in the dataset. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

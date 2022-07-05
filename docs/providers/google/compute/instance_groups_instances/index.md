@@ -25,9 +25,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `instance` | `string` | [Output Only] The URL of the instance. |
 | `namedPorts` | `array` | [Output Only] The named ports that belong to this instance group. |
 | `status` | `string` | [Output Only] The status of the instance. |
+| `instance` | `string` | [Output Only] The URL of the instance. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

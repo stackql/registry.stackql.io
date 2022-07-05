@@ -3,6 +3,7 @@ title: link_stats
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - link_stats
   - stackql
   - infrastructure-as-code
   - configuration-as-data

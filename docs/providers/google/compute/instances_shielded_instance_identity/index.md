@@ -25,9 +25,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `signingKey` | `object` | A Shielded Instance Identity Entry. |
 | `encryptionKey` | `object` | A Shielded Instance Identity Entry. |
 | `kind` | `string` | [Output Only] Type of the resource. Always compute#shieldedInstanceIdentity for shielded Instance identity entry. |
-| `signingKey` | `object` | A Shielded Instance Identity Entry. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

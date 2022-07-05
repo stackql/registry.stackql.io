@@ -21,7 +21,7 @@ Beyondcorp Enterprise provides identity and context aware access controls for en
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>BeyondCorp API</td></tr>
 <tr><td><b>Description</b></td><td>Beyondcorp Enterprise provides identity and context aware access controls for enterprise resources and enables zero-trust access. Using the Beyondcorp Enterprise APIs, enterprises can set up multi-cloud and on-prem connectivity using the App Connector hybrid connectivity solution.</td></tr>
-<tr><td><b>Id</b></td><td><code>beyondcorp:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>beyondcorp:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

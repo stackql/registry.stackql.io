@@ -25,9 +25,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `setTime` | `string` | The time when this branch is set to default. |
 | `branch` | `string` | Full resource name of the branch id currently set as default branch. |
 | `note` | `string` | This corresponds to SetDefaultBranchRequest.note field, when this branch was set as default. |
-| `setTime` | `string` | The time when this branch is set to default. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

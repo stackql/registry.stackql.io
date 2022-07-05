@@ -21,7 +21,7 @@ Stores sensitive data such as API keys, passwords, and certificates. Provides co
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Secret Manager API</td></tr>
 <tr><td><b>Description</b></td><td>Stores sensitive data such as API keys, passwords, and certificates. Provides convenience while improving security. </td></tr>
-<tr><td><b>Id</b></td><td><code>secretmanager:v1.0.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>secretmanager:v1.0.1</code></td></tr>
 </tbody></table>
 
 ## Resources

@@ -26,18 +26,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The name of the provisioning config. |
-| `networks` | `array` | Networks to be created. |
-| `updateTime` | `string` | Output only. Last update timestamp. |
-| `volumes` | `array` | Volumes to be created. |
-| `vpcScEnabled` | `boolean` | If true, VPC SC is enabled for the cluster. |
-| `ticketId` | `string` | A generated ticket id to track provisioning request. |
-| `state` | `string` | Output only. State of ProvisioningConfig. |
-| `email` | `string` | Email provided to send a confirmation with provisioning config to. Deprecated in favour of email field in request messages. |
-| `location` | `string` | Optional. Location name of this ProvisioningConfig. It is optional only for Intake UI transition period. |
 | `handoverServiceAccount` | `string` | A service account to enable customers to access instance credentials upon handover. |
 | `cloudConsoleUri` | `string` | Output only. URI to Cloud Console UI view of this provisioning config. |
-| `statusMessage` | `string` | Optional status messages associated with the FAILED state. |
 | `instances` | `array` | Instances to be created. |
+| `networks` | `array` | Networks to be created. |
+| `location` | `string` | Optional. Location name of this ProvisioningConfig. It is optional only for Intake UI transition period. |
+| `updateTime` | `string` | Output only. Last update timestamp. |
+| `volumes` | `array` | Volumes to be created. |
+| `ticketId` | `string` | A generated ticket id to track provisioning request. |
+| `email` | `string` | Email provided to send a confirmation with provisioning config to. Deprecated in favour of email field in request messages. |
+| `state` | `string` | Output only. State of ProvisioningConfig. |
+| `statusMessage` | `string` | Optional status messages associated with the FAILED state. |
+| `vpcScEnabled` | `boolean` | If true, VPC SC is enabled for the cluster. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

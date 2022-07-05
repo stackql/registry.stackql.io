@@ -26,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the DeviceUser in format: `devices/{device}/deviceUsers/{device_user}`, where `device_user` uniquely identifies a user's use of a device. |
-| `firstSyncTime` | `string` | Output only. Most recent time when user registered with this service. |
 | `createTime` | `string` | When the user first signed in to the device |
-| `userEmail` | `string` | Email address of the user registered on the device. |
-| `userAgent` | `string` | Output only. User agent on the device for this specific user |
-| `compromisedState` | `string` | Compromised State of the DeviceUser object |
 | `languageCode` | `string` | Output only. Default locale used on device, in IETF BCP-47 format. |
-| `lastSyncTime` | `string` | Output only. Last time when user synced with policies. |
-| `passwordState` | `string` | Password state of the DeviceUser object |
 | `managementState` | `string` | Output only. Management state of the user on the device. |
+| `userEmail` | `string` | Email address of the user registered on the device. |
+| `firstSyncTime` | `string` | Output only. Most recent time when user registered with this service. |
+| `compromisedState` | `string` | Compromised State of the DeviceUser object |
+| `passwordState` | `string` | Password state of the DeviceUser object |
+| `userAgent` | `string` | Output only. User agent on the device for this specific user |
+| `lastSyncTime` | `string` | Output only. Last time when user synced with policies. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

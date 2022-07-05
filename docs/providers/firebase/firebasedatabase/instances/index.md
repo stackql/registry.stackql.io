@@ -3,6 +3,7 @@ title: instances
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - instances
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -25,10 +26,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The fully qualified resource name of the database instance, in the form: `projects/{project-number}/locations/{location-id}/instances/{database-id}`. |
-| `databaseUrl` | `string` | Output only. Output Only. The globally unique hostname of the database. |
-| `project` | `string` | Output only. The resource name of the project this instance belongs to. For example: `projects/{project-number}`. |
 | `state` | `string` | Output only. The database's lifecycle state. Read-only. |
 | `type` | `string` | Immutable. The database instance type. On creation only USER_DATABASE is allowed, which is also the default when omitted. |
+| `databaseUrl` | `string` | Output only. Output Only. The globally unique hostname of the database. |
+| `project` | `string` | Output only. The resource name of the project this instance belongs to. For example: `projects/{project-number}`. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

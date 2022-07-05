@@ -26,15 +26,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name of the `WorkerPool`, with format `projects/{project}/locations/{location}/workerPools/{worker_pool}`. The value of `{worker_pool}` is provided by `worker_pool_id` in `CreateWorkerPool` request and the value of `{location}` is determined by the endpoint accessed. |
-| `privatePoolV1Config` | `object` | Configuration for a V1 `PrivatePool`. |
-| `state` | `string` | Output only. `WorkerPool` state. |
-| `annotations` | `object` | User specified annotations. See https://google.aip.dev/128#annotations for more details such as format and size limitations. |
-| `uid` | `string` | Output only. A unique identifier for the `WorkerPool`. |
 | `createTime` | `string` | Output only. Time at which the request to create the `WorkerPool` was received. |
-| `deleteTime` | `string` | Output only. Time at which the request to delete the `WorkerPool` was received. |
-| `displayName` | `string` | A user-specified, human-readable name for the `WorkerPool`. If provided, this value must be 1-63 characters. |
+| `annotations` | `object` | User specified annotations. See https://google.aip.dev/128#annotations for more details such as format and size limitations. |
+| `state` | `string` | Output only. `WorkerPool` state. |
 | `updateTime` | `string` | Output only. Time at which the request to update the `WorkerPool` was received. |
+| `displayName` | `string` | A user-specified, human-readable name for the `WorkerPool`. If provided, this value must be 1-63 characters. |
 | `etag` | `string` | Output only. Checksum computed by the server. May be sent on update and delete requests to ensure that the client has an up-to-date value before proceeding. |
+| `privatePoolV1Config` | `object` | Configuration for a V1 `PrivatePool`. |
+| `uid` | `string` | Output only. A unique identifier for the `WorkerPool`. |
+| `deleteTime` | `string` | Output only. Time at which the request to delete the `WorkerPool` was received. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

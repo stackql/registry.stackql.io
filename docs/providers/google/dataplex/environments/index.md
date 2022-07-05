@@ -28,15 +28,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `name` | `string` | Output only. The relative resource name of the environment, of the form: projects/{project_id}/locations/{location_id}/lakes/{lake_id}/environment/{environment_id} |
 | `description` | `string` | Optional. Description of the environment. |
 | `sessionStatus` | `object` |  |
-| `createTime` | `string` | Output only. Environment creation time. |
-| `updateTime` | `string` | Output only. The time when the environment was last updated. |
-| `infrastructureSpec` | `object` | Configuration for the underlying infrastructure used to run workloads. |
-| `labels` | `object` | Optional. User defined labels for the environment. |
 | `sessionSpec` | `object` |  |
-| `state` | `string` | Output only. Current state of the environment. |
+| `updateTime` | `string` | Output only. The time when the environment was last updated. |
+| `createTime` | `string` | Output only. Environment creation time. |
 | `endpoints` | `object` |  |
+| `infrastructureSpec` | `object` | Configuration for the underlying infrastructure used to run workloads. |
 | `displayName` | `string` | Optional. User friendly display name. |
+| `labels` | `object` | Optional. User defined labels for the environment. |
 | `uid` | `string` | Output only. System generated globally unique ID for the environment. This ID will be different if the environment is deleted and re-created with the same name. |
+| `state` | `string` | Output only. Current state of the environment. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

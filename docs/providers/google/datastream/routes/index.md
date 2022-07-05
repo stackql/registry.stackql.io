@@ -26,12 +26,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource's name. |
+| `destinationAddress` | `string` | Required. Destination address for connection |
 | `destinationPort` | `integer` | Destination port for connection |
 | `displayName` | `string` | Required. Display name. |
 | `labels` | `object` | Labels. |
 | `updateTime` | `string` | Output only. The update time of the resource. |
 | `createTime` | `string` | Output only. The create time of the resource. |
-| `destinationAddress` | `string` | Required. Destination address for connection |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

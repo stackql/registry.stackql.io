@@ -3,6 +3,7 @@ title: app_attest_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - app_attest_config
   - stackql
   - infrastructure-as-code
   - configuration-as-data
