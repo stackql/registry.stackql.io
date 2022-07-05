@@ -3,12 +3,15 @@ title: projects
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - googlecloudplatform
+  - gcp
+  - google
   - projects
   - stackql
   - infrastructure-as-code
   - configuration-as-data
   - cloud inventory
-description: Query and Deploy Cloud Infrastructure and Resources using SQL
+description: Query, deploy and manage Google Cloud Platform (GCP) infrastructure and resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
@@ -47,7 +50,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `enableXpnHost` | `EXEC` | `project` | Enable this project as a shared VPC host project. |
 | `enableXpnResource` | `EXEC` | `project` | Enable service resource (a.k.a service project) for a host project, so that subnets in the host project can be used by instances in the service project. |
 | `moveDisk` | `EXEC` | `project` | Moves a persistent disk from one zone to another. |
-| `moveInstance` | `EXEC` | `project` | Moves an instance and its attached persistent disks from one zone to another. *Note*: Moving VMs or disks by using this method might cause unexpected behavior. For more information, see the [known issue](/compute/docs/troubleshooting/known-issues#moving_vms_or_disks_using_the_moveinstance_api_or_the_causes_unexpected_behavior). |
+| `moveInstance` | `EXEC` | `project` | Moves an instance and its attached persistent disks from one zone to another. *Note*: Moving VMs or disks by using this method might cause unexpected behavior. For more information, see the [known issue](https://cloud.google.com/compute/docs/troubleshooting/known-issues#moving_vms_or_disks_using_the_moveinstance_api_or_the_causes_unexpected_behavior). |
 | `setCommonInstanceMetadata` | `EXEC` | `project` | Sets metadata common to all instances within the specified project using the data included in the request. |
 | `setDefaultNetworkTier` | `EXEC` | `project` | Sets the default network tier of the project. The default network tier is used when an address/forwardingRule/instance is created without specifying the network tier field. |
 | `setUsageExportBucket` | `EXEC` | `project` | Enables the usage export feature and sets the usage export bucket where reports are stored. If you provide an empty request body using this method, the usage export feature will be disabled. |

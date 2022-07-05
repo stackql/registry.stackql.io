@@ -3,12 +3,15 @@ title: registrations
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - googlecloudplatform
+  - gcp
+  - google
   - registrations
   - stackql
   - infrastructure-as-code
   - configuration-as-data
   - cloud inventory
-description: Query and Deploy Cloud Infrastructure and Resources using SQL
+description: Query, deploy and manage Google Cloud Platform (GCP) infrastructure and resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
@@ -44,7 +47,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:--------------|:----------------|:------------|
 | `projects_locations_registrations_get` | `SELECT` | `name` | Gets the details of a `Registration` resource. |
 | `projects_locations_registrations_list` | `SELECT` | `parent` | Lists the `Registration` resources in a project. |
-| `projects_locations_registrations_delete` | `DELETE` | `name` | Deletes a `Registration` resource. This method works on any `Registration` resource using [Subscription or Commitment billing](/domains/pricing#billing-models), provided that the resource was created at least 1 day in the past. For `Registration` resources using [Monthly billing](/domains/pricing#billing-models), this method works if: * `state` is `EXPORTED` with `expire_time` in the past * `state` is `REGISTRATION_FAILED` * `state` is `TRANSFER_FAILED` When an active registration is successfully deleted, you can continue to use the domain in [Google Domains](https://domains.google/) until it expires. The calling user becomes the domain's sole owner in Google Domains, and permissions for the domain are subsequently managed there. The domain does not renew automatically unless the new owner sets up billing in Google Domains. |
+| `projects_locations_registrations_delete` | `DELETE` | `name` | Deletes a `Registration` resource. This method works on any `Registration` resource using [Subscription or Commitment billing](https://cloud.google.com/domains/pricing#billing-models), provided that the resource was created at least 1 day in the past. For `Registration` resources using [Monthly billing](https://cloud.google.com/domains/pricing#billing-models), this method works if: * `state` is `EXPORTED` with `expire_time` in the past * `state` is `REGISTRATION_FAILED` * `state` is `TRANSFER_FAILED` When an active registration is successfully deleted, you can continue to use the domain in [Google Domains](https://domains.google/) until it expires. The calling user becomes the domain's sole owner in Google Domains, and permissions for the domain are subsequently managed there. The domain does not renew automatically unless the new owner sets up billing in Google Domains. |
 | `projects_locations_registrations_configureContactSettings` | `EXEC` | `registration` | Updates a `Registration`'s contact settings. Some changes require confirmation by the domain's registrant contact . |
 | `projects_locations_registrations_configureDnsSettings` | `EXEC` | `registration` | Updates a `Registration`'s DNS settings. |
 | `projects_locations_registrations_configureManagementSettings` | `EXEC` | `registration` | Updates a `Registration`'s management settings. |

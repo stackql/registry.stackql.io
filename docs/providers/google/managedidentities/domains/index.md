@@ -3,12 +3,15 @@ title: domains
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - googlecloudplatform
+  - gcp
+  - google
   - domains
   - stackql
   - infrastructure-as-code
   - configuration-as-data
   - cloud inventory
-description: Query and Deploy Cloud Infrastructure and Resources using SQL
+description: Query, deploy and manage Google Cloud Platform (GCP) infrastructure and resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
@@ -31,7 +34,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `locations` | `array` | Required. Locations where domain needs to be provisioned. regions e.g. us-west1 or us-east4 Service supports up to 4 locations at once. Each location will use a /26 block. |
 | `statusMessage` | `string` | Output only. Additional information about the current status of this domain, if available. |
 | `trusts` | `array` | Output only. The current trusts associated with the domain. |
-| `authorizedNetworks` | `array` | Optional. The full names of the Google Compute Engine [networks](/compute/docs/networks-and-firewalls#networks) the domain instance is connected to. Networks can be added using UpdateDomain. The domain is only available on networks listed in `authorized_networks`. If CIDR subnets overlap between networks, domain creation will fail. |
+| `authorizedNetworks` | `array` | Optional. The full names of the Google Compute Engine [networks](https://cloud.google.com/compute/docs/networks-and-firewalls#networks) the domain instance is connected to. Networks can be added using UpdateDomain. The domain is only available on networks listed in `authorized_networks`. If CIDR subnets overlap between networks, domain creation will fail. |
 | `labels` | `object` | Optional. Resource labels that can contain user-provided metadata. |
 | `state` | `string` | Output only. The current state of this domain. |
 | `updateTime` | `string` | Output only. The last update time. |

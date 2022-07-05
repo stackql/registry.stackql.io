@@ -3,12 +3,15 @@ title: sessions
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - googlecloudplatform
+  - gcp
+  - google
   - sessions
   - stackql
   - infrastructure-as-code
   - configuration-as-data
   - cloud inventory
-description: Query and Deploy Cloud Infrastructure and Resources using SQL
+description: Query, deploy and manage Google Cloud Platform (GCP) infrastructure and resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
@@ -28,7 +31,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `name` | `string` | Output only. The name of the session. This is always system-assigned. |
 | `createTime` | `string` | Output only. The timestamp when the session is created. |
 | `creatorRole` | `string` | The database role which created this session. |
-| `labels` | `object` | The labels for the session. * Label keys must be between 1 and 63 characters long and must conform to the following regular expression: `[a-z]([-a-z0-9]*[a-z0-9])?`. * Label values must be between 0 and 63 characters long and must conform to the regular expression `([a-z]([-a-z0-9]*[a-z0-9])?)?`. * No more than 64 labels can be associated with a given session. See https://goo.gl/xmQnxf for more information on and examples of labels. |
+| `labels` | `object` | The labels for the session. * Label keys must be between 1 and 63 characters long and must conform to the following regular expression: `&lsqb;a-z&rsqb;(&lsqb;-a-z0-9&rsqb;*&lsqb;a-z0-9&rsqb;)?`. * Label values must be between 0 and 63 characters long and must conform to the regular expression `(&lsqb;a-z&rsqb;(&lsqb;-a-z0-9&rsqb;*&lsqb;a-z0-9&rsqb;)?)?`. * No more than 64 labels can be associated with a given session. See https://goo.gl/xmQnxf for more information on and examples of labels. |
 | `approximateLastUseTime` | `string` | Output only. The approximate timestamp when the session is last used. It is typically earlier than the actual last use time. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

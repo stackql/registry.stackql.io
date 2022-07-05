@@ -3,12 +3,15 @@ title: instances
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - googlecloudplatform
+  - gcp
+  - google
   - instances
   - stackql
   - infrastructure-as-code
   - configuration-as-data
   - cloud inventory
-description: Query and Deploy Cloud Infrastructure and Resources using SQL
+description: Query, deploy and manage Google Cloud Platform (GCP) infrastructure and resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
@@ -28,16 +31,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `name` | `string` | Output only. The name of this notebook instance. Format: `projects/{project_id}/locations/{location}/instances/{instance_id}` |
 | `nicType` | `string` | Optional. The type of vNIC to be used on this interface. This may be gVNIC or VirtioNet. |
 | `dataDiskSizeGb` | `string` | Input only. The size of the data disk in GB attached to this instance, up to a maximum of 64000 GB (64 TB). You can choose the size of the data disk based on how big your notebooks and data are. If not specified, this defaults to 100. |
-| `kmsKey` | `string` | Input only. The KMS key used to encrypt the disks, only applicable if disk_encryption is CMEK. Format: `projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}` Learn more about [using your own encryption keys](/kms/docs/quickstart). |
+| `kmsKey` | `string` | Input only. The KMS key used to encrypt the disks, only applicable if disk_encryption is CMEK. Format: `projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}` Learn more about [using your own encryption keys](https://cloud.google.com/kms/docs/quickstart). |
 | `noPublicIp` | `boolean` | If true, no public IP will be assigned to this instance. |
-| `acceleratorConfig` | `object` | Definition of a hardware accelerator. Note that not all combinations of `type` and `core_count` are valid. Check [GPUs on Compute Engine](/compute/docs/gpus/#gpus-list) to find a valid combination. TPUs are not supported. |
+| `acceleratorConfig` | `object` | Definition of a hardware accelerator. Note that not all combinations of `type` and `core_count` are valid. Check [GPUs on Compute Engine](https://cloud.google.com/compute/docs/gpus/#gpus-list) to find a valid combination. TPUs are not supported. |
 | `metadata` | `object` | Custom metadata to apply to this instance. |
 | `serviceAccount` | `string` | The service account on this instance, giving access to other Google Cloud services. You can use any service account within the same project, but you must have the service account user permission to use the instance. If not specified, the [Compute Engine default service account](https://cloud.google.com/compute/docs/access/service-accounts#default_service_account) is used. |
 | `state` | `string` | Output only. The state of this instance. |
 | `proxyUri` | `string` | Output only. The proxy endpoint that is used to access the Jupyter notebook. |
 | `network` | `string` | The name of the VPC that this instance is in. Format: `projects/{project_id}/global/networks/{network_id}` |
 | `labels` | `object` | Labels to apply to this instance. These can be later modified by the setLabels method. |
-| `machineType` | `string` | Required. The [Compute Engine machine type](/compute/docs/machine-types) of this instance. |
+| `machineType` | `string` | Required. The [Compute Engine machine type](https://cloud.google.com/compute/docs/machine-types) of this instance. |
 | `customGpuDriverPath` | `string` | Specify a custom Cloud Storage path where the GPU driver is stored. If not specified, we'll automatically choose from official GPU drivers. |
 | `createTime` | `string` | Output only. Instance creation time. |
 | `diskEncryption` | `string` | Input only. Disk encryption method used on the boot and data disks, defaults to GMEK. |

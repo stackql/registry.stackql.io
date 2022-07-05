@@ -3,12 +3,15 @@ title: url_maps
 hide_title: false
 hide_table_of_contents: false
 keywords:
+  - googlecloudplatform
+  - gcp
+  - google
   - url_maps
   - stackql
   - infrastructure-as-code
   - configuration-as-data
   - cloud inventory
-description: Query and Deploy Cloud Infrastructure and Resources using SQL
+description: Query, deploy and manage Google Cloud Platform (GCP) infrastructure and resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
@@ -47,7 +50,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `urlMaps_list` | `SELECT` | `project` | Retrieves the list of UrlMap resources available to the specified project. |
 | `urlMaps_insert` | `INSERT` | `project` | Creates a UrlMap resource in the specified project using the data included in the request. |
 | `urlMaps_delete` | `DELETE` | `project, urlMap` | Deletes the specified UrlMap resource. |
-| `urlMaps_invalidateCache` | `EXEC` | `project, urlMap` | Initiates a cache invalidation operation, invalidating the specified path, scoped to the specified UrlMap. For more information, see [Invalidating cached content](/cdn/docs/invalidating-cached-content). |
+| `urlMaps_invalidateCache` | `EXEC` | `project, urlMap` | Initiates a cache invalidation operation, invalidating the specified path, scoped to the specified UrlMap. For more information, see [Invalidating cached content](https://cloud.google.com/cdn/docs/invalidating-cached-content). |
 | `urlMaps_patch` | `EXEC` | `project, urlMap` | Patches the specified UrlMap resource with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules. |
 | `urlMaps_update` | `EXEC` | `project, urlMap` | Updates the specified UrlMap resource with the data included in the request. |
 | `urlMaps_validate` | `EXEC` | `project, urlMap` | Runs static validation for the UrlMap. In particular, the tests of the provided UrlMap will be run. Calling this method does NOT create the UrlMap. |
