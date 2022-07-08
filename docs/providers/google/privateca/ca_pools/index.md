@@ -3,10 +3,9 @@ title: ca_pools
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - ca_pools
+  - privateca
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,15 +28,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name for this CaPool in the format `projects/*/locations/*/caPools/*`. |
+| `tier` | `string` | Required. Immutable. The Tier of this CaPool. |
 | `issuancePolicy` | `object` | Defines controls over all certificate issuance within a CaPool. |
 | `labels` | `object` | Optional. Labels with user-defined metadata. |
 | `publishingOptions` | `object` | Options relating to the publication of each CertificateAuthority's CA certificate and CRLs and their inclusion as extensions in issued Certificates. The options set here apply to certificates issued by any CertificateAuthority in the CaPool. |
-| `tier` | `string` | Required. Immutable. The Tier of this CaPool. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_caPools_get` | `SELECT` | `name` | Returns a CaPool. |
-| `projects_locations_caPools_list` | `SELECT` | `parent` | Lists CaPools. |
-| `projects_locations_caPools_create` | `INSERT` | `parent` | Create a CaPool. |
-| `projects_locations_caPools_delete` | `DELETE` | `name` | Delete a CaPool. |
-| `projects_locations_caPools_patch` | `EXEC` | `name` | Update a CaPool. |
+| `projects_locations_caPools_get` | `SELECT` | `caPoolsId, locationsId, projectsId` | Returns a CaPool. |
+| `projects_locations_caPools_list` | `SELECT` | `locationsId, projectsId` | Lists CaPools. |
+| `projects_locations_caPools_create` | `INSERT` | `locationsId, projectsId` | Create a CaPool. |
+| `projects_locations_caPools_delete` | `DELETE` | `caPoolsId, locationsId, projectsId` | Delete a CaPool. |
+| `projects_locations_caPools_patch` | `EXEC` | `caPoolsId, locationsId, projectsId` | Update a CaPool. |

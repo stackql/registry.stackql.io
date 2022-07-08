@@ -3,10 +3,9 @@ title: environments_debugmask
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - environments_debugmask
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,15 +28,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Name of the debug mask. |
-| `faultXPaths` | `array` | List of XPaths that specify the XML elements to be filtered from XML payloads in error flows. |
-| `faultJSONPaths` | `array` | List of JSON paths that specify the JSON elements to be filtered from JSON payloads in error flows. |
-| `requestXPaths` | `array` | List of XPaths that specify the XML elements to be filtered from XML request message payloads. |
-| `responseXPaths` | `array` | List of XPaths that specify the XML elements to be filtered from XML response message payloads. |
 | `requestJSONPaths` | `array` | List of JSON paths that specify the JSON elements to be filtered from JSON request message payloads. |
+| `requestXPaths` | `array` | List of XPaths that specify the XML elements to be filtered from XML request message payloads. |
+| `faultXPaths` | `array` | List of XPaths that specify the XML elements to be filtered from XML payloads in error flows. |
 | `responseJSONPaths` | `array` | List of JSON paths that specify the JSON elements to be filtered from JSON response message payloads. |
-| `variables` | `array` | List of variables that should be masked from the debug output. |
 | `namespaces` | `object` | Map of namespaces to URIs. |
+| `faultJSONPaths` | `array` | List of JSON paths that specify the JSON elements to be filtered from JSON payloads in error flows. |
+| `responseXPaths` | `array` | List of XPaths that specify the XML elements to be filtered from XML response message payloads. |
+| `variables` | `array` | List of variables that should be masked from the debug output. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_environments_getDebugmask` | `SELECT` | `name` |
+| `organizations_environments_getDebugmask` | `SELECT` | `environmentsId, organizationsId` |

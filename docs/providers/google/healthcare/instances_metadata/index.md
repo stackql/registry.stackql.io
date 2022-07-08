@@ -3,10 +3,9 @@ title: instances_metadata
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - instances_metadata
+  - healthcare
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,10 +27,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `extensions` | `array` | Application specific response metadata. Must be set in the first response for streaming APIs. |
 | `contentType` | `string` | The HTTP Content-Type header value specifying the content type of the body. |
 | `data` | `string` | The HTTP request/response body as raw binary. |
+| `extensions` | `array` | Application specific response metadata. Must be set in the first response for streaming APIs. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_datasets_dicomStores_studies_series_instances_retrieveMetadata` | `SELECT` | `dicomWebPath, parent` |
+| `projects_locations_datasets_dicomStores_studies_series_instances_retrieveMetadata` | `SELECT` | `datasetsId, dicomStoresId, instancesId, locationsId, projectsId, seriesId, studiesId` |

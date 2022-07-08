@@ -3,10 +3,8 @@ title: billingbudgets
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - billingbudgets
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ The Cloud Billing Budget API stores Cloud Billing budgets, which define a budget
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Billing Budget API</td></tr>
 <tr><td><b>Description</b></td><td>The Cloud Billing Budget API stores Cloud Billing budgets, which define a budget plan and the rules to execute as spend is tracked against that plan.</td></tr>
-<tr><td><b>Id</b></td><td><code>billingbudgets:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>billingbudgets:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

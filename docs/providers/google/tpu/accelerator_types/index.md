@@ -3,10 +3,9 @@ title: accelerator_types
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - accelerator_types
+  - tpu
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,5 +32,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_acceleratorTypes_get` | `SELECT` | `name` | Gets AcceleratorType. |
-| `projects_locations_acceleratorTypes_list` | `SELECT` | `parent` | Lists accelerator types supported by this API. |
+| `projects_locations_acceleratorTypes_get` | `SELECT` | `acceleratorTypesId, locationsId, projectsId` | Gets AcceleratorType. |
+| `projects_locations_acceleratorTypes_list` | `SELECT` | `locationsId, projectsId` | Lists accelerator types supported by this API. |

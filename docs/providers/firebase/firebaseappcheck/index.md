@@ -3,8 +3,8 @@ title: firebaseappcheck
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - firebaseappcheck
+  - firebase
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -22,7 +22,7 @@ Firebase App Check works alongside other Firebase services to help protect your 
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Firebase App Check API</td></tr>
 <tr><td><b>Description</b></td><td>Firebase App Check works alongside other Firebase services to help protect your backend resources from abuse, such as billing fraud or phishing.</td></tr>
-<tr><td><b>Id</b></td><td><code>firebaseappcheck:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>firebaseappcheck:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

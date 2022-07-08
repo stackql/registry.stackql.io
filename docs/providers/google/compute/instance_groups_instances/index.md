@@ -3,10 +3,9 @@ title: instance_groups_instances
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - instance_groups_instances
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `namedPorts` | `array` | [Output Only] The named ports that belong to this instance group. |
 | `status` | `string` | [Output Only] The status of the instance. |
 | `instance` | `string` | [Output Only] The URL of the instance. |
+| `namedPorts` | `array` | [Output Only] The named ports that belong to this instance group. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

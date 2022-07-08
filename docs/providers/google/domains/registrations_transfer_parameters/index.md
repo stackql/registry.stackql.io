@@ -3,10 +3,9 @@ title: registrations_transfer_parameters
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - registrations_transfer_parameters
+  - domains
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_registrations_retrieveTransferParameters` | `SELECT` | `location` |
+| `projects_locations_registrations_retrieveTransferParameters` | `SELECT` | `locationsId, projectsId` |

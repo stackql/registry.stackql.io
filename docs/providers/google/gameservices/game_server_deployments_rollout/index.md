@@ -3,10 +3,9 @@ title: game_server_deployments_rollout
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - game_server_deployments_rollout
+  - gameservices
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,12 +28,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name of the game server deployment rollout, in the following form: `projects/{project}/locations/{locationId}/gameServerDeployments/{deploymentId}/rollout`. For example, `projects/my-project/locations/global/gameServerDeployments/my-deployment/rollout`. |
+| `updateTime` | `string` | Output only. The last-modified time. |
 | `createTime` | `string` | Output only. The creation time. |
 | `defaultGameServerConfig` | `string` | The default game server config is applied to all realms unless overridden in the rollout. For example, `projects/my-project/locations/global/gameServerDeployments/my-game/configs/my-config`. |
 | `etag` | `string` | ETag of the resource. |
 | `gameServerConfigOverrides` | `array` | Contains the game server config rollout overrides. Overrides are processed in the order they are listed. Once a match is found for a realm, the rest of the list is not processed. |
-| `updateTime` | `string` | Output only. The last-modified time. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_gameServerDeployments_getRollout` | `SELECT` | `name` |
+| `projects_locations_gameServerDeployments_getRollout` | `SELECT` | `gameServerDeploymentsId, locationsId, projectsId` |

@@ -3,10 +3,9 @@ title: fields
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - fields
+  - datacatalog
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,7 +29,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_tagTemplates_fields_create` | `INSERT` | `parent` | Creates a field in a tag template. You must enable the Data Catalog API in the project identified by the `parent` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). |
-| `projects_locations_tagTemplates_fields_delete` | `DELETE` | `name` | Deletes a field in a tag template and all uses of this field from the tags based on this template. You must enable the Data Catalog API in the project identified by the `name` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). |
-| `projects_locations_tagTemplates_fields_patch` | `EXEC` | `name` | Updates a field in a tag template. You can't update the field type with this method. You must enable the Data Catalog API in the project identified by the `name` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). |
-| `projects_locations_tagTemplates_fields_rename` | `EXEC` | `name` | Renames a field in a tag template. You must enable the Data Catalog API in the project identified by the `name` parameter. For more information, see [Data Catalog resource project] (https://cloud.google.com/data-catalog/docs/concepts/resource-project). |
+| `projects_locations_tagTemplates_fields_create` | `INSERT` | `locationsId, projectsId, tagTemplatesId` | Creates a field in a tag template. You must enable the Data Catalog API in the project identified by the `parent` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). |
+| `projects_locations_tagTemplates_fields_delete` | `DELETE` | `fieldsId, locationsId, projectsId, tagTemplatesId` | Deletes a field in a tag template and all uses of this field from the tags based on this template. You must enable the Data Catalog API in the project identified by the `name` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). |
+| `projects_locations_tagTemplates_fields_patch` | `EXEC` | `fieldsId, locationsId, projectsId, tagTemplatesId` | Updates a field in a tag template. You can't update the field type with this method. You must enable the Data Catalog API in the project identified by the `name` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). |
+| `projects_locations_tagTemplates_fields_rename` | `EXEC` | `fieldsId:rename, locationsId, projectsId, tagTemplatesId` | Renames a field in a tag template. You must enable the Data Catalog API in the project identified by the `name` parameter. For more information, see [Data Catalog resource project] (https://cloud.google.com/data-catalog/docs/concepts/resource-project). |

@@ -3,10 +3,9 @@ title: locations
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - locations
+  - gameservices
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,5 +35,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_get` | `SELECT` | `name` | Gets information about a location. |
-| `projects_locations_list` | `SELECT` | `name` | Lists information about the supported locations for this service. |
+| `projects_locations_get` | `SELECT` | `locationsId, projectsId` | Gets information about a location. |
+| `projects_locations_list` | `SELECT` | `projectsId` | Lists information about the supported locations for this service. |

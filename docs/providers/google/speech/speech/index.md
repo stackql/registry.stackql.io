@@ -3,10 +3,9 @@ title: speech
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - speech
+  - speech
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

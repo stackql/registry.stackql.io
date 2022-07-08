@@ -3,10 +3,9 @@ title: authorized_domains
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - authorized_domains
+  - appengine
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

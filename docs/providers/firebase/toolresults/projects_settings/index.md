@@ -3,8 +3,9 @@ title: projects_settings
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - projects_settings
+  - toolresults
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

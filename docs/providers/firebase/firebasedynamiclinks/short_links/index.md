@@ -3,8 +3,9 @@ title: short_links
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - short_links
+  - firebasedynamiclinks
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

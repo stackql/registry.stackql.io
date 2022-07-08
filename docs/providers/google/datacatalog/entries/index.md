@@ -3,10 +3,9 @@ title: entries
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - entries
+  - datacatalog
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,37 +29,37 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name of an entry in URL format. Note: The entry itself and its child resources might not be stored in the location specified in its name. |
 | `description` | `string` | Entry description that can consist of several sentences or paragraphs that describe entry contents. The description must not contain Unicode non-characters as well as C0 and C1 control codes except tabs (HT), new lines (LF), carriage returns (CR), and page breaks (FF). The maximum size is 2000 bytes when encoded in UTF-8. Default value is an empty string. |
-| `schema` | `object` | Represents a schema, for example, a BigQuery, GoogleSQL, or Avro schema. |
-| `businessContext` | `object` | Business Context of the entry. |
-| `userSpecifiedType` | `string` | Custom entry type that doesn't match any of the values allowed for input and listed in the `EntryType` enum. When creating an entry, first check the type values in the enum. If there are no appropriate types for the new entry, provide a custom value, for example, `my_special_type`. The `user_specified_type` string has the following limitations: * Is case insensitive. * Must begin with a letter or underscore. * Can only contain letters, numbers, and underscores. * Must be at least 1 character and at most 64 characters long. |
-| `usageSignal` | `object` | The set of all usage signals that Data Catalog stores. Note: Usually, these signals are updated daily. In rare cases, an update may fail but will be performed again on the next day. |
-| `bigqueryDateShardedSpec` | `object` | Specification for a group of BigQuery tables with the `[prefix]YYYYMMDD` name pattern. For more information, see [Introduction to partitioned tables] (https://cloud.google.com/bigquery/docs/partitioned-tables#partitioning_versus_sharding). |
+| `type` | `string` | The type of the entry. Only used for entries with types listed in the `EntryType` enum. Currently, only `FILESET` enum value is allowed. All other entries created in Data Catalog must use the `user_specified_type`. |
 | `fullyQualifiedName` | `string` | Fully qualified name (FQN) of the resource. Set automatically for entries representing resources from synced systems. Settable only during creation and read-only afterwards. Can be used for search and lookup of the entries. FQNs take two forms: * For non-regionalized resources: `{SYSTEM}:{PROJECT}.{PATH_TO_RESOURCE_SEPARATED_WITH_DOTS}` * For regionalized resources: `{SYSTEM}:{PROJECT}.{LOCATION_ID}.{PATH_TO_RESOURCE_SEPARATED_WITH_DOTS}` Example for a DPMS table: `dataproc_metastore:{PROJECT_ID}.{LOCATION_ID}.{INSTANCE_ID}.{DATABASE_ID}.{TABLE_ID}` |
-| `filesetSpec` | `object` | Specification that applies to a fileset. Valid only for entries with the 'FILESET' type. |
-| `integratedSystem` | `string` | Output only. Indicates the entry's source system that Data Catalog integrates with, such as BigQuery, Pub/Sub, or Dataproc Metastore. |
-| `dataSourceConnectionSpec` | `object` | Specification that applies to a data source connection. Valid only for entries with the `DATA_SOURCE_CONNECTION` type. |
+| `dataSource` | `object` | Physical location of an entry. |
 | `sourceSystemTimestamps` | `object` | Timestamps associated with this resource in a particular system. |
 | `personalDetails` | `object` | Entry metadata relevant only to the user and private to them. |
-| `dataSource` | `object` | Physical location of an entry. |
-| `userSpecifiedSystem` | `string` | Indicates the entry's source system that Data Catalog doesn't automatically integrate with. The `user_specified_system` string has the following limitations: * Is case insensitive. * Must begin with a letter or underscore. * Can only contain letters, numbers, and underscores. * Must be at least 1 character and at most 64 characters long. |
-| `labels` | `object` | Cloud labels attached to the entry. In Data Catalog, you can create and modify labels attached only to custom entries. Synced entries have unmodifiable labels that come from the source system. |
-| `bigqueryTableSpec` | `object` | Describes a BigQuery table. |
+| `bigqueryDateShardedSpec` | `object` | Specification for a group of BigQuery tables with the `[prefix]YYYYMMDD` name pattern. For more information, see [Introduction to partitioned tables] (https://cloud.google.com/bigquery/docs/partitioned-tables#partitioning_versus_sharding). |
+| `dataSourceConnectionSpec` | `object` | Specification that applies to a data source connection. Valid only for entries with the `DATA_SOURCE_CONNECTION` type. |
+| `filesetSpec` | `object` | Specification that applies to a fileset. Valid only for entries with the 'FILESET' type. |
+| `schema` | `object` | Represents a schema, for example, a BigQuery, GoogleSQL, or Avro schema. |
 | `gcsFilesetSpec` | `object` | Describes a Cloud Storage fileset entry. |
-| `type` | `string` | The type of the entry. Only used for entries with types listed in the `EntryType` enum. Currently, only `FILESET` enum value is allowed. All other entries created in Data Catalog must use the `user_specified_type`. |
 | `databaseTableSpec` | `object` | Specification that applies to a table resource. Valid only for entries with the `TABLE` type. |
-| `displayName` | `string` | Display name of an entry. The name must contain only Unicode letters, numbers (0-9), underscores (_), dashes (-), spaces ( ), and can't start or end with spaces. The maximum size is 200 bytes when encoded in UTF-8. Default value is an empty string. |
 | `routineSpec` | `object` | Specification that applies to a routine. Valid only for entries with the `ROUTINE` type. |
 | `linkedResource` | `string` | The resource this metadata entry refers to. For Google Cloud Platform resources, `linked_resource` is the [Full Resource Name] (https://cloud.google.com/apis/design/resource_names#full_resource_name). For example, the `linked_resource` for a table resource from BigQuery is: `//bigquery.googleapis.com/projects/{PROJECT_ID}/datasets/{DATASET_ID}/tables/{TABLE_ID}` Output only when the entry is one of the types in the `EntryType` enum. For entries with a `user_specified_type`, this field is optional and defaults to an empty string. The resource string must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), periods (.), colons (:), slashes (/), dashes (-), and hashes (#). The maximum size is 200 bytes when encoded in UTF-8. |
+| `labels` | `object` | Cloud labels attached to the entry. In Data Catalog, you can create and modify labels attached only to custom entries. Synced entries have unmodifiable labels that come from the source system. |
+| `businessContext` | `object` | Business Context of the entry. |
+| `usageSignal` | `object` | The set of all usage signals that Data Catalog stores. Note: Usually, these signals are updated daily. In rare cases, an update may fail but will be performed again on the next day. |
+| `userSpecifiedSystem` | `string` | Indicates the entry's source system that Data Catalog doesn't automatically integrate with. The `user_specified_system` string has the following limitations: * Is case insensitive. * Must begin with a letter or underscore. * Can only contain letters, numbers, and underscores. * Must be at least 1 character and at most 64 characters long. |
+| `displayName` | `string` | Display name of an entry. The name must contain only Unicode letters, numbers (0-9), underscores (_), dashes (-), spaces ( ), and can't start or end with spaces. The maximum size is 200 bytes when encoded in UTF-8. Default value is an empty string. |
+| `bigqueryTableSpec` | `object` | Describes a BigQuery table. |
+| `userSpecifiedType` | `string` | Custom entry type that doesn't match any of the values allowed for input and listed in the `EntryType` enum. When creating an entry, first check the type values in the enum. If there are no appropriate types for the new entry, provide a custom value, for example, `my_special_type`. The `user_specified_type` string has the following limitations: * Is case insensitive. * Must begin with a letter or underscore. * Can only contain letters, numbers, and underscores. * Must be at least 1 character and at most 64 characters long. |
+| `integratedSystem` | `string` | Output only. Indicates the entry's source system that Data Catalog integrates with, such as BigQuery, Pub/Sub, or Dataproc Metastore. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_entryGroups_entries_get` | `SELECT` | `name` | Gets an entry. |
-| `projects_locations_entryGroups_entries_list` | `SELECT` | `parent` | Lists entries. Note: Currently, this method can list only custom entries. To get a list of both custom and automatically created entries, use SearchCatalog. |
-| `projects_locations_entryGroups_entries_create` | `INSERT` | `parent` | Creates an entry. You can create entries only with 'FILESET', 'CLUSTER', 'DATA_STREAM', or custom types. Data Catalog automatically creates entries with other types during metadata ingestion from integrated systems. You must enable the Data Catalog API in the project identified by the `parent` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). An entry group can have a maximum of 100,000 entries. |
-| `projects_locations_entryGroups_entries_delete` | `DELETE` | `name` | Deletes an existing entry. You can delete only the entries created by the CreateEntry method. You must enable the Data Catalog API in the project identified by the `name` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). |
+| `projects_locations_entryGroups_entries_get` | `SELECT` | `entriesId, entryGroupsId, locationsId, projectsId` | Gets an entry. |
+| `projects_locations_entryGroups_entries_list` | `SELECT` | `entryGroupsId, locationsId, projectsId` | Lists entries. Note: Currently, this method can list only custom entries. To get a list of both custom and automatically created entries, use SearchCatalog. |
+| `projects_locations_entryGroups_entries_create` | `INSERT` | `entryGroupsId, locationsId, projectsId` | Creates an entry. You can create entries only with 'FILESET', 'CLUSTER', 'DATA_STREAM', or custom types. Data Catalog automatically creates entries with other types during metadata ingestion from integrated systems. You must enable the Data Catalog API in the project identified by the `parent` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). An entry group can have a maximum of 100,000 entries. |
+| `projects_locations_entryGroups_entries_delete` | `DELETE` | `entriesId, entryGroupsId, locationsId, projectsId` | Deletes an existing entry. You can delete only the entries created by the CreateEntry method. You must enable the Data Catalog API in the project identified by the `name` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). |
 | `lookup` | `EXEC` |  | Gets an entry by its target resource name. The resource name comes from the source Google Cloud Platform service. |
-| `projects_locations_entryGroups_entries_modifyEntryContacts` | `EXEC` | `name` | Modifies contacts, part of the business context of an Entry. To call this method, you must have the `datacatalog.entries.updateContacts` IAM permission on the corresponding project. |
-| `projects_locations_entryGroups_entries_modifyEntryOverview` | `EXEC` | `name` | Modifies entry overview, part of the business context of an Entry. To call this method, you must have the `datacatalog.entries.updateOverview` IAM permission on the corresponding project. |
-| `projects_locations_entryGroups_entries_patch` | `EXEC` | `name` | Updates an existing entry. You must enable the Data Catalog API in the project identified by the `entry.name` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). |
-| `projects_locations_entryGroups_entries_star` | `EXEC` | `name` | Marks an Entry as starred by the current user. Starring information is private to each user. |
-| `projects_locations_entryGroups_entries_unstar` | `EXEC` | `name` | Marks an Entry as NOT starred by the current user. Starring information is private to each user. |
+| `projects_locations_entryGroups_entries_modifyEntryContacts` | `EXEC` | `entriesId:modifyEntryContacts, entryGroupsId, locationsId, projectsId` | Modifies contacts, part of the business context of an Entry. To call this method, you must have the `datacatalog.entries.updateContacts` IAM permission on the corresponding project. |
+| `projects_locations_entryGroups_entries_modifyEntryOverview` | `EXEC` | `entriesId:modifyEntryOverview, entryGroupsId, locationsId, projectsId` | Modifies entry overview, part of the business context of an Entry. To call this method, you must have the `datacatalog.entries.updateOverview` IAM permission on the corresponding project. |
+| `projects_locations_entryGroups_entries_patch` | `EXEC` | `entriesId, entryGroupsId, locationsId, projectsId` | Updates an existing entry. You must enable the Data Catalog API in the project identified by the `entry.name` parameter. For more information, see [Data Catalog resource project](https://cloud.google.com/data-catalog/docs/concepts/resource-project). |
+| `projects_locations_entryGroups_entries_star` | `EXEC` | `entriesId:star, entryGroupsId, locationsId, projectsId` | Marks an Entry as starred by the current user. Starring information is private to each user. |
+| `projects_locations_entryGroups_entries_unstar` | `EXEC` | `entriesId:unstar, entryGroupsId, locationsId, projectsId` | Marks an Entry as NOT starred by the current user. Starring information is private to each user. |

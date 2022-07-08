@@ -3,10 +3,9 @@ title: memberships
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - memberships
+  - recaptchaenterprise
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `relatedAccountGroupMemberships` | `array` | The memberships listed by the query. |
 | `nextPageToken` | `string` | A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
+| `relatedAccountGroupMemberships` | `array` | The memberships listed by the query. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_relatedaccountgroups_memberships_list` | `SELECT` | `parent` |
+| `projects_relatedaccountgroups_memberships_list` | `SELECT` | `projectsId, relatedaccountgroupsId` |

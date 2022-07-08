@@ -3,10 +3,9 @@ title: backups_iam_policies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - backups_iam_policies
+  - bigtableadmin
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,6 +34,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_instances_clusters_backups_getIamPolicy` | `SELECT` | `resource` | Gets the access control policy for a Table resource. Returns an empty policy if the resource exists but does not have a policy set. |
-| `projects_instances_clusters_backups_setIamPolicy` | `EXEC` | `resource` | Sets the access control policy on a Table resource. Replaces any existing policy. |
-| `projects_instances_clusters_backups_testIamPermissions` | `EXEC` | `resource` | Returns permissions that the caller has on the specified table resource. |
+| `projects_instances_clusters_backups_getIamPolicy` | `SELECT` | `backupsId:getIamPolicy, clustersId, instancesId, projectsId` | Gets the access control policy for a Table resource. Returns an empty policy if the resource exists but does not have a policy set. |
+| `projects_instances_clusters_backups_setIamPolicy` | `EXEC` | `backupsId:setIamPolicy, clustersId, instancesId, projectsId` | Sets the access control policy on a Table resource. Replaces any existing policy. |
+| `projects_instances_clusters_backups_testIamPermissions` | `EXEC` | `backupsId:testIamPermissions, clustersId, instancesId, projectsId` | Returns permissions that the caller has on the specified table resource. |

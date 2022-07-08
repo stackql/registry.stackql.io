@@ -3,10 +3,9 @@ title: custom_classes
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - custom_classes
+  - speech
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,8 +29,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_customClasses_get` | `SELECT` | `name` | Get a custom class. |
-| `projects_locations_customClasses_list` | `SELECT` | `parent` | List custom classes. |
-| `projects_locations_customClasses_create` | `INSERT` | `parent` | Create a custom class. |
-| `projects_locations_customClasses_delete` | `DELETE` | `name` | Delete a custom class. |
-| `projects_locations_customClasses_patch` | `EXEC` | `name` | Update a custom class. |
+| `projects_locations_customClasses_get` | `SELECT` | `customClassesId, locationsId, projectsId` | Get a custom class. |
+| `projects_locations_customClasses_list` | `SELECT` | `locationsId, projectsId` | List custom classes. |
+| `projects_locations_customClasses_create` | `INSERT` | `locationsId, projectsId` | Create a custom class. |
+| `projects_locations_customClasses_delete` | `DELETE` | `customClassesId, locationsId, projectsId` | Delete a custom class. |
+| `projects_locations_customClasses_patch` | `EXEC` | `customClassesId, locationsId, projectsId` | Update a custom class. |

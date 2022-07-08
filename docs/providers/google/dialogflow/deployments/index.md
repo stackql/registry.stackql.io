@@ -3,10 +3,9 @@ title: deployments
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - deployments
+  - dialogflow
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,13 +28,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The name of the deployment. Format: projects//locations//agents//environments//deployments/. |
+| `flowVersion` | `string` | The name of the flow version for this deployment. Format: projects//locations//agents//flows//versions/. |
+| `result` | `object` | Result of the deployment. |
 | `startTime` | `string` | Start time of this deployment. |
 | `state` | `string` | The current state of the deployment. |
 | `endTime` | `string` | End time of this deployment. |
-| `flowVersion` | `string` | The name of the flow version for this deployment. Format: projects//locations//agents//flows//versions/. |
-| `result` | `object` | Result of the deployment. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_agents_environments_deployments_get` | `SELECT` | `name` | Retrieves the specified Deployment. |
-| `projects_locations_agents_environments_deployments_list` | `SELECT` | `parent` | Returns the list of all deployments in the specified Environment. |
+| `projects_locations_agents_environments_deployments_get` | `SELECT` | `agentsId, deploymentsId, environmentsId, locationsId, projectsId` | Retrieves the specified Deployment. |
+| `projects_locations_agents_environments_deployments_list` | `SELECT` | `agentsId, environmentsId, locationsId, projectsId` | Returns the list of all deployments in the specified Environment. |

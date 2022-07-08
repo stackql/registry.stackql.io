@@ -3,10 +3,9 @@ title: organizations_organization_settings
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - organizations_organization_settings
+  - securitycenter
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,4 +33,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_getOrganizationSettings` | `SELECT` | `name` |
+| `organizations_getOrganizationSettings` | `SELECT` | `organizationsId` |

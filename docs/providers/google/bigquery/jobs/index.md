@@ -3,10 +3,9 @@ title: jobs
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - jobs
+  - bigquery
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,14 +28,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `id` | `string` | [Output-only] Opaque ID field of the job |
-| `kind` | `string` | [Output-only] The type of the resource. |
-| `selfLink` | `string` | [Output-only] A URL that can be used to access this resource again. |
-| `status` | `object` |  |
-| `etag` | `string` | [Output-only] A hash of this resource. |
+| `configuration` | `object` |  |
 | `user_email` | `string` | [Output-only] Email address of the user who ran the job. |
 | `jobReference` | `object` |  |
+| `kind` | `string` | [Output-only] The type of the resource. |
+| `selfLink` | `string` | [Output-only] A URL that can be used to access this resource again. |
 | `statistics` | `object` |  |
-| `configuration` | `object` |  |
+| `status` | `object` |  |
+| `etag` | `string` | [Output-only] A hash of this resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

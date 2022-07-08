@@ -3,10 +3,9 @@ title: pipelines
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - pipelines
+  - genomics
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

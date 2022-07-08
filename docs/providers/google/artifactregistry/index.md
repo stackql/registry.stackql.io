@@ -3,10 +3,8 @@ title: artifactregistry
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - artifactregistry
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Store and manage build artifacts in a scalable and integrated service built on G
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Artifact Registry API</td></tr>
 <tr><td><b>Description</b></td><td>Store and manage build artifacts in a scalable and integrated service built on Google infrastructure.</td></tr>
-<tr><td><b>Id</b></td><td><code>artifactregistry:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>artifactregistry:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

@@ -3,10 +3,9 @@ title: clusters
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - clusters
+  - bigtableadmin
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -38,9 +37,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_instances_clusters_get` | `SELECT` | `name` | Gets information about a cluster. |
-| `projects_instances_clusters_list` | `SELECT` | `parent` | Lists information about clusters in an instance. |
-| `projects_instances_clusters_create` | `INSERT` | `parent` | Creates a cluster within an instance. Note that exactly one of Cluster.serve_nodes and Cluster.cluster_config.cluster_autoscaling_config can be set. If serve_nodes is set to non-zero, then the cluster is manually scaled. If cluster_config.cluster_autoscaling_config is non-empty, then autoscaling is enabled. |
-| `projects_instances_clusters_delete` | `DELETE` | `name` | Deletes a cluster from an instance. |
-| `projects_instances_clusters_partialUpdateCluster` | `EXEC` | `name` | Partially updates a cluster within a project. This method is the preferred way to update a Cluster. To enable and update autoscaling, set cluster_config.cluster_autoscaling_config. When autoscaling is enabled, serve_nodes is treated as an OUTPUT_ONLY field, meaning that updates to it are ignored. Note that an update cannot simultaneously set serve_nodes to non-zero and cluster_config.cluster_autoscaling_config to non-empty, and also specify both in the update_mask. To disable autoscaling, clear cluster_config.cluster_autoscaling_config, and explicitly set a serve_node count via the update_mask. |
-| `projects_instances_clusters_update` | `EXEC` | `name` | Updates a cluster within an instance. Note that UpdateCluster does not support updating cluster_config.cluster_autoscaling_config. In order to update it, you must use PartialUpdateCluster. |
+| `projects_instances_clusters_get` | `SELECT` | `clustersId, instancesId, projectsId` | Gets information about a cluster. |
+| `projects_instances_clusters_list` | `SELECT` | `instancesId, projectsId` | Lists information about clusters in an instance. |
+| `projects_instances_clusters_create` | `INSERT` | `instancesId, projectsId` | Creates a cluster within an instance. Note that exactly one of Cluster.serve_nodes and Cluster.cluster_config.cluster_autoscaling_config can be set. If serve_nodes is set to non-zero, then the cluster is manually scaled. If cluster_config.cluster_autoscaling_config is non-empty, then autoscaling is enabled. |
+| `projects_instances_clusters_delete` | `DELETE` | `clustersId, instancesId, projectsId` | Deletes a cluster from an instance. |
+| `projects_instances_clusters_partialUpdateCluster` | `EXEC` | `clustersId, instancesId, projectsId` | Partially updates a cluster within a project. This method is the preferred way to update a Cluster. To enable and update autoscaling, set cluster_config.cluster_autoscaling_config. When autoscaling is enabled, serve_nodes is treated as an OUTPUT_ONLY field, meaning that updates to it are ignored. Note that an update cannot simultaneously set serve_nodes to non-zero and cluster_config.cluster_autoscaling_config to non-empty, and also specify both in the update_mask. To disable autoscaling, clear cluster_config.cluster_autoscaling_config, and explicitly set a serve_node count via the update_mask. |
+| `projects_instances_clusters_update` | `EXEC` | `clustersId, instancesId, projectsId` | Updates a cluster within an instance. Note that UpdateCluster does not support updating cluster_config.cluster_autoscaling_config. In order to update it, you must use PartialUpdateCluster. |

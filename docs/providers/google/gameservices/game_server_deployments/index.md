@@ -3,10 +3,9 @@ title: game_server_deployments
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - game_server_deployments
+  - gameservices
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -37,10 +36,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_gameServerDeployments_get` | `SELECT` | `name` | Gets details of a single game server deployment. |
-| `projects_locations_gameServerDeployments_list` | `SELECT` | `parent` | Lists game server deployments in a given project and location. |
-| `projects_locations_gameServerDeployments_create` | `INSERT` | `parent` | Creates a new game server deployment in a given project and location. |
-| `projects_locations_gameServerDeployments_delete` | `DELETE` | `name` | Deletes a single game server deployment. |
-| `projects_locations_gameServerDeployments_patch` | `EXEC` | `name` | Patches a game server deployment. |
-| `projects_locations_gameServerDeployments_previewRollout` | `EXEC` | `name` | Previews the game server deployment rollout. This API does not mutate the rollout resource. |
-| `projects_locations_gameServerDeployments_updateRollout` | `EXEC` | `name` | Patches a single game server deployment rollout. The method will not return an error if the update does not affect any existing realms. For example, the following cases will not return an error: * The default_game_server_config is changed but all existing realms use the override. * A non-existing realm is explicitly called out in the game_server_config_overrides field. |
+| `projects_locations_gameServerDeployments_get` | `SELECT` | `gameServerDeploymentsId, locationsId, projectsId` | Gets details of a single game server deployment. |
+| `projects_locations_gameServerDeployments_list` | `SELECT` | `locationsId, projectsId` | Lists game server deployments in a given project and location. |
+| `projects_locations_gameServerDeployments_create` | `INSERT` | `locationsId, projectsId` | Creates a new game server deployment in a given project and location. |
+| `projects_locations_gameServerDeployments_delete` | `DELETE` | `gameServerDeploymentsId, locationsId, projectsId` | Deletes a single game server deployment. |
+| `projects_locations_gameServerDeployments_patch` | `EXEC` | `gameServerDeploymentsId, locationsId, projectsId` | Patches a game server deployment. |
+| `projects_locations_gameServerDeployments_previewRollout` | `EXEC` | `gameServerDeploymentsId, locationsId, projectsId` | Previews the game server deployment rollout. This API does not mutate the rollout resource. |
+| `projects_locations_gameServerDeployments_updateRollout` | `EXEC` | `gameServerDeploymentsId, locationsId, projectsId` | Patches a single game server deployment rollout. The method will not return an error if the update does not affect any existing realms. For example, the following cases will not return an error: * The default_game_server_config is changed but all existing realms use the override. * A non-existing realm is explicitly called out in the game_server_config_overrides field. |

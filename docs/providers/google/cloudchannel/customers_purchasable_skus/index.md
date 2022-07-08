@@ -3,10 +3,9 @@ title: customers_purchasable_skus
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - customers_purchasable_skus
+  - cloudchannel
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,4 +32,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `accounts_customers_listPurchasableSkus` | `SELECT` | `customer` |
+| `accounts_customers_listPurchasableSkus` | `SELECT` | `accountsId, customersId:listPurchasableSkus` |

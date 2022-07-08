@@ -3,10 +3,9 @@ title: response_policies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - response_policies
+  - dns
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

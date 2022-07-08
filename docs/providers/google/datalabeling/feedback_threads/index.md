@@ -3,10 +3,9 @@ title: feedback_threads
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - feedback_threads
+  - datalabeling
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,6 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_datasets_annotatedDatasets_feedbackThreads_get` | `SELECT` | `name` | Get a FeedbackThread object. |
-| `projects_datasets_annotatedDatasets_feedbackThreads_list` | `SELECT` | `parent` | List FeedbackThreads with pagination. |
-| `projects_datasets_annotatedDatasets_feedbackThreads_delete` | `DELETE` | `name` | Delete a FeedbackThread. |
+| `projects_datasets_annotatedDatasets_feedbackThreads_get` | `SELECT` | `annotatedDatasetsId, datasetsId, feedbackThreadsId, projectsId` | Get a FeedbackThread object. |
+| `projects_datasets_annotatedDatasets_feedbackThreads_list` | `SELECT` | `annotatedDatasetsId, datasetsId, projectsId` | List FeedbackThreads with pagination. |
+| `projects_datasets_annotatedDatasets_feedbackThreads_delete` | `DELETE` | `annotatedDatasetsId, datasetsId, feedbackThreadsId, projectsId` | Delete a FeedbackThread. |

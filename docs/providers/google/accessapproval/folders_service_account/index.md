@@ -3,10 +3,9 @@ title: folders_service_account
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - folders_service_account
+  - accessapproval
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,4 +32,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `folders_getServiceAccount` | `SELECT` | `name` |
+| `folders_getServiceAccount` | `SELECT` | `foldersId` |

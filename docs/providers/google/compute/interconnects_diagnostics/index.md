@@ -3,10 +3,9 @@ title: interconnects_diagnostics
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - interconnects_diagnostics
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

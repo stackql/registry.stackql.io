@@ -3,10 +3,9 @@ title: license_codes
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - license_codes
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,9 +33,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `kind` | `string` | [Output Only] Type of resource. Always compute#licenseCode for licenses. |
 | `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
 | `licenseAlias` | `array` | [Output Only] URL and description aliases of Licenses with the same License Code. |
-| `state` | `string` | [Output Only] Current state of this License Code. |
 | `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
 | `transferable` | `boolean` | [Output Only] If true, the license will remain attached when creating images or snapshots from disks. Otherwise, the license is not transferred. |
+| `state` | `string` | [Output Only] Current state of this License Code. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

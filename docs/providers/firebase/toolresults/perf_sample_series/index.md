@@ -3,8 +3,9 @@ title: perf_sample_series
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - perf_sample_series
+  - toolresults
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -26,12 +27,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `sampleSeriesId` | `string` | A sample series id @OutputOnly |
 | `stepId` | `string` | A tool results step ID. @OutputOnly |
 | `basicPerfSampleSeries` | `object` | Encapsulates the metadata for basic sample series represented by a line chart |
 | `executionId` | `string` | A tool results execution ID. @OutputOnly |
 | `historyId` | `string` | A tool results history ID. @OutputOnly |
 | `projectId` | `string` | The cloud project @OutputOnly |
-| `sampleSeriesId` | `string` | A sample series id @OutputOnly |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -3,8 +3,8 @@ title: fcm
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - fcm
+  - firebase
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -22,7 +22,7 @@ FCM send API that provides a cross-platform messaging solution to reliably deliv
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Firebase Cloud Messaging API</td></tr>
 <tr><td><b>Description</b></td><td>FCM send API that provides a cross-platform messaging solution to reliably deliver messages at no cost.</td></tr>
-<tr><td><b>Id</b></td><td><code>fcm:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>fcm:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

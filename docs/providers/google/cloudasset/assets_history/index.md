@@ -3,10 +3,9 @@ title: assets_history
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - assets_history
+  - cloudasset
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

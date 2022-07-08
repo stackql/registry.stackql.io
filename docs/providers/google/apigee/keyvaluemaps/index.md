@@ -3,10 +3,9 @@ title: keyvaluemaps
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - keyvaluemaps
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,9 +29,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_apis_keyvaluemaps_create` | `INSERT` | `parent` | Creates a key value map in an API proxy. |
-| `organizations_environments_keyvaluemaps_create` | `INSERT` | `parent` | Creates a key value map in an environment. |
-| `organizations_keyvaluemaps_create` | `INSERT` | `parent` | Creates a key value map in an organization. |
-| `organizations_apis_keyvaluemaps_delete` | `DELETE` | `name` | Deletes a key value map from an API proxy. |
-| `organizations_environments_keyvaluemaps_delete` | `DELETE` | `name` | Deletes a key value map from an environment. |
-| `organizations_keyvaluemaps_delete` | `DELETE` | `name` | Deletes a key value map from an organization. |
+| `organizations_apis_keyvaluemaps_create` | `INSERT` | `apisId, organizationsId` | Creates a key value map in an API proxy. |
+| `organizations_environments_keyvaluemaps_create` | `INSERT` | `environmentsId, organizationsId` | Creates a key value map in an environment. |
+| `organizations_keyvaluemaps_create` | `INSERT` | `organizationsId` | Creates a key value map in an organization. |
+| `organizations_apis_keyvaluemaps_delete` | `DELETE` | `apisId, keyvaluemapsId, organizationsId` | Deletes a key value map from an API proxy. |
+| `organizations_environments_keyvaluemaps_delete` | `DELETE` | `environmentsId, keyvaluemapsId, organizationsId` | Deletes a key value map from an environment. |
+| `organizations_keyvaluemaps_delete` | `DELETE` | `keyvaluemapsId, organizationsId` | Deletes a key value map from an organization. |

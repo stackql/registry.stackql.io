@@ -3,10 +3,9 @@ title: workers
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - workers
+  - genomics
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `checkIn` | `EXEC` | `id` |
-| `projects_workers_checkIn` | `EXEC` | `id` |
+| `checkIn` | `EXEC` | `id:checkIn` |
+| `projects_workers_checkIn` | `EXEC` | `projectsId, workersId:checkIn` |

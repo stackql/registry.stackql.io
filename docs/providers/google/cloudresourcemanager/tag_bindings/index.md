@@ -3,10 +3,9 @@ title: tag_bindings
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - tag_bindings
+  - cloudresourcemanager
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,4 +35,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:--------------|:----------------|:------------|
 | `tagBindings_list` | `SELECT` |  | Lists the TagBindings for the given cloud resource, as specified with `parent`. NOTE: The `parent` field is expected to be a full resource name: https://cloud.google.com/apis/design/resource_names#full_resource_name |
 | `tagBindings_create` | `INSERT` |  | Creates a TagBinding between a TagValue and a cloud resource (currently project, folder, or organization). |
-| `tagBindings_delete` | `DELETE` | `name` | Deletes a TagBinding. |
+| `tagBindings_delete` | `DELETE` | `tagBindingsId` | Deletes a TagBinding. |

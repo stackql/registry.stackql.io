@@ -3,10 +3,8 @@ title: bigquery
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - bigquery
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ A data platform for customers to create, manage, share and query data.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>BigQuery API</td></tr>
 <tr><td><b>Description</b></td><td>A data platform for customers to create, manage, share and query data.</td></tr>
-<tr><td><b>Id</b></td><td><code>bigquery:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>bigquery:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -40,7 +38,6 @@ A data platform for customers to create, manage, share and query data.
 <div class="providerDocColumn">
 <a href="/providers/google/bigquery/routines/">routines</a><br />
 <a href="/providers/google/bigquery/row_access_policies/">row_access_policies</a><br />
-<a href="/providers/google/bigquery/row_access_policies_iam_policies/">row_access_policies_iam_policies</a><br />
 <a href="/providers/google/bigquery/tabledata/">tabledata</a><br />
 <a href="/providers/google/bigquery/tables/">tables</a><br />
 <a href="/providers/google/bigquery/tables_iam_policies/">tables_iam_policies</a><br />

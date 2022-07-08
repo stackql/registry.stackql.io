@@ -3,8 +3,9 @@ title: services
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - services
+  - firebaseappcheck
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -31,7 +32,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_services_get` | `SELECT` | `name` | Gets the Service configuration for the specified service name. |
-| `projects_services_list` | `SELECT` | `parent` | Lists all Service configurations for the specified project. Only Services which were explicitly configured using UpdateService or BatchUpdateServices will be returned. |
-| `projects_services_batchUpdate` | `EXEC` | `parent` | Atomically updates the specified Service configurations. |
-| `projects_services_patch` | `EXEC` | `name` | Updates the specified Service configuration. |
+| `projects_services_get` | `SELECT` | `projectsId, servicesId` | Gets the Service configuration for the specified service name. |
+| `projects_services_list` | `SELECT` | `projectsId` | Lists all Service configurations for the specified project. Only Services which were explicitly configured using UpdateService or BatchUpdateServices will be returned. |
+| `projects_services_batchUpdate` | `EXEC` | `projectsId` | Atomically updates the specified Service configurations. |
+| `projects_services_patch` | `EXEC` | `projectsId, servicesId` | Updates the specified Service configuration. |

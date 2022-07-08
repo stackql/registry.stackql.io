@@ -3,10 +3,8 @@ title: analyticshub
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - analyticshub
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Exchange data and analytics assets securely and efficiently.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Analytics Hub API</td></tr>
 <tr><td><b>Description</b></td><td>Exchange data and analytics assets securely and efficiently.</td></tr>
-<tr><td><b>Id</b></td><td><code>analyticshub:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>analyticshub:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

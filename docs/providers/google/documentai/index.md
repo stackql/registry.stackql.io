@@ -3,10 +3,8 @@ title: documentai
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - documentai
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Service to parse structured information from unstructured or semi-structured doc
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Document AI API</td></tr>
 <tr><td><b>Description</b></td><td>Service to parse structured information from unstructured or semi-structured documents using state-of-the-art Google AI such as natural language, computer vision, translation, and AutoML.</td></tr>
-<tr><td><b>Id</b></td><td><code>documentai:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>documentai:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

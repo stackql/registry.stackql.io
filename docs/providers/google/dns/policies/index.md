@@ -3,10 +3,9 @@ title: policies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - policies
+  - dns
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -31,11 +30,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` | Unique identifier for the resource; defined by the server (output only). |
 | `name` | `string` | User-assigned name for this policy. |
 | `description` | `string` | A mutable string of at most 1024 characters associated with this resource for the user's convenience. Has no effect on the policy's function. |
-| `enableLogging` | `boolean` | Controls whether logging is enabled for the networks bound to this policy. Defaults to no logging if not set. |
 | `kind` | `string` |  |
 | `networks` | `array` | List of network names specifying networks to which this policy is applied. |
 | `alternativeNameServerConfig` | `object` |  |
 | `enableInboundForwarding` | `boolean` | Allows networks bound to this policy to receive DNS queries sent by VMs or applications over VPN connections. When enabled, a virtual IP address is allocated from each of the subnetworks that are bound to this policy. |
+| `enableLogging` | `boolean` | Controls whether logging is enabled for the networks bound to this policy. Defaults to no logging if not set. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

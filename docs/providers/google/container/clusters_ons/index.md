@@ -3,10 +3,9 @@ title: clusters_ons
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - clusters_ons
+  - container
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

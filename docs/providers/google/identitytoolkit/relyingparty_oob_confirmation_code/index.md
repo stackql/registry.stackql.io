@@ -3,10 +3,9 @@ title: relyingparty_oob_confirmation_code
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - relyingparty_oob_confirmation_code
+  - identitytoolkit
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `email` | `string` | The email address that the email is sent to. |
 | `kind` | `string` | The fixed string "identitytoolkit#GetOobConfirmationCodeResponse". |
 | `oobCode` | `string` | The code to be send to the user. |
+| `email` | `string` | The email address that the email is sent to. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

@@ -3,10 +3,9 @@ title: external_systems
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - external_systems
+  - securitycenter
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,6 +29,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `folders_sources_findings_externalSystems_patch` | `EXEC` | `name` |
-| `organizations_sources_findings_externalSystems_patch` | `EXEC` | `name` |
-| `projects_sources_findings_externalSystems_patch` | `EXEC` | `name` |
+| `folders_sources_findings_externalSystems_patch` | `EXEC` | `externalSystemsId, findingsId, foldersId, sourcesId` |
+| `organizations_sources_findings_externalSystems_patch` | `EXEC` | `externalSystemsId, findingsId, organizationsId, sourcesId` |
+| `projects_sources_findings_externalSystems_patch` | `EXEC` | `externalSystemsId, findingsId, projectsId, sourcesId` |

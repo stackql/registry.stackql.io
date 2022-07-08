@@ -3,10 +3,9 @@ title: debugsessions
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - debugsessions
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -38,6 +37,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_environments_apis_revisions_debugsessions_get` | `SELECT` | `name` | Retrieves a debug session. |
-| `organizations_environments_apis_revisions_debugsessions_list` | `SELECT` | `parent` | Lists debug sessions that are currently active in the given API Proxy revision. |
-| `organizations_environments_apis_revisions_debugsessions_create` | `INSERT` | `parent` | Creates a debug session for a deployed API Proxy revision. |
+| `organizations_environments_apis_revisions_debugsessions_get` | `SELECT` | `apisId, debugsessionsId, environmentsId, organizationsId, revisionsId` | Retrieves a debug session. |
+| `organizations_environments_apis_revisions_debugsessions_list` | `SELECT` | `apisId, environmentsId, organizationsId, revisionsId` | Lists debug sessions that are currently active in the given API Proxy revision. |
+| `organizations_environments_apis_revisions_debugsessions_create` | `INSERT` | `apisId, environmentsId, organizationsId, revisionsId` | Creates a debug session for a deployed API Proxy revision. |

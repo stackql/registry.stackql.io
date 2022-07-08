@@ -3,10 +3,9 @@ title: packet_mirrorings_iam_policies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - packet_mirrorings_iam_policies
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

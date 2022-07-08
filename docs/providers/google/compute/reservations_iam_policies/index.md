@@ -3,10 +3,9 @@ title: reservations_iam_policies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - reservations_iam_policies
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

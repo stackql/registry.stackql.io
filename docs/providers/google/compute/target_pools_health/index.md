@@ -3,10 +3,9 @@ title: target_pools_health
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - target_pools_health
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `kind` | `string` | [Output Only] Type of resource. Always compute#targetPoolInstanceHealth when checking the health of an instance. |
 | `healthStatus` | `array` |  |
+| `kind` | `string` | [Output Only] Type of resource. Always compute#targetPoolInstanceHealth when checking the health of an instance. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

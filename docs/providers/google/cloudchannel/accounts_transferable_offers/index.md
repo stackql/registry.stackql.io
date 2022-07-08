@@ -3,10 +3,9 @@ title: accounts_transferable_offers
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - accounts_transferable_offers
+  - cloudchannel
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,4 +32,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `accounts_listTransferableOffers` | `SELECT` | `parent` |
+| `accounts_listTransferableOffers` | `SELECT` | `accountsId:listTransferableOffers` |

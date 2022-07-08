@@ -3,10 +3,9 @@ title: security_policies_aggregated
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - security_policies_aggregated
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

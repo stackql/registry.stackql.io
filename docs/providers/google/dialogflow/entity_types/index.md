@@ -3,10 +3,9 @@ title: entity_types
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - entity_types
+  - dialogflow
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,18 +33,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_agents_entityTypes_get` | `SELECT` | `name` | Retrieves the specified entity type. |
-| `projects_locations_agents_entityTypes_list` | `SELECT` | `parent` | Returns the list of all entity types in the specified agent. |
-| `projects_locations_agents_environments_sessions_entityTypes_get` | `SELECT` | `name` | Retrieves the specified session entity type. |
-| `projects_locations_agents_environments_sessions_entityTypes_list` | `SELECT` | `parent` | Returns the list of all session entity types in the specified session. |
-| `projects_locations_agents_sessions_entityTypes_get` | `SELECT` | `name` | Retrieves the specified session entity type. |
-| `projects_locations_agents_sessions_entityTypes_list` | `SELECT` | `parent` | Returns the list of all session entity types in the specified session. |
-| `projects_locations_agents_entityTypes_create` | `INSERT` | `parent` | Creates an entity type in the specified agent. Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
-| `projects_locations_agents_environments_sessions_entityTypes_create` | `INSERT` | `parent` | Creates a session entity type. |
-| `projects_locations_agents_sessions_entityTypes_create` | `INSERT` | `parent` | Creates a session entity type. |
-| `projects_locations_agents_entityTypes_delete` | `DELETE` | `name` | Deletes the specified entity type. Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
-| `projects_locations_agents_environments_sessions_entityTypes_delete` | `DELETE` | `name` | Deletes the specified session entity type. |
-| `projects_locations_agents_sessions_entityTypes_delete` | `DELETE` | `name` | Deletes the specified session entity type. |
-| `projects_locations_agents_entityTypes_patch` | `EXEC` | `name` | Updates the specified entity type. Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
-| `projects_locations_agents_environments_sessions_entityTypes_patch` | `EXEC` | `name` | Updates the specified session entity type. |
-| `projects_locations_agents_sessions_entityTypes_patch` | `EXEC` | `name` | Updates the specified session entity type. |
+| `projects_locations_agents_entityTypes_get` | `SELECT` | `agentsId, entityTypesId, locationsId, projectsId` | Retrieves the specified entity type. |
+| `projects_locations_agents_entityTypes_list` | `SELECT` | `agentsId, locationsId, projectsId` | Returns the list of all entity types in the specified agent. |
+| `projects_locations_agents_environments_sessions_entityTypes_get` | `SELECT` | `agentsId, entityTypesId, environmentsId, locationsId, projectsId, sessionsId` | Retrieves the specified session entity type. |
+| `projects_locations_agents_environments_sessions_entityTypes_list` | `SELECT` | `agentsId, environmentsId, locationsId, projectsId, sessionsId` | Returns the list of all session entity types in the specified session. |
+| `projects_locations_agents_sessions_entityTypes_get` | `SELECT` | `agentsId, entityTypesId, locationsId, projectsId, sessionsId` | Retrieves the specified session entity type. |
+| `projects_locations_agents_sessions_entityTypes_list` | `SELECT` | `agentsId, locationsId, projectsId, sessionsId` | Returns the list of all session entity types in the specified session. |
+| `projects_locations_agents_entityTypes_create` | `INSERT` | `agentsId, locationsId, projectsId` | Creates an entity type in the specified agent. Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
+| `projects_locations_agents_environments_sessions_entityTypes_create` | `INSERT` | `agentsId, environmentsId, locationsId, projectsId, sessionsId` | Creates a session entity type. |
+| `projects_locations_agents_sessions_entityTypes_create` | `INSERT` | `agentsId, locationsId, projectsId, sessionsId` | Creates a session entity type. |
+| `projects_locations_agents_entityTypes_delete` | `DELETE` | `agentsId, entityTypesId, locationsId, projectsId` | Deletes the specified entity type. Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
+| `projects_locations_agents_environments_sessions_entityTypes_delete` | `DELETE` | `agentsId, entityTypesId, environmentsId, locationsId, projectsId, sessionsId` | Deletes the specified session entity type. |
+| `projects_locations_agents_sessions_entityTypes_delete` | `DELETE` | `agentsId, entityTypesId, locationsId, projectsId, sessionsId` | Deletes the specified session entity type. |
+| `projects_locations_agents_entityTypes_patch` | `EXEC` | `agentsId, entityTypesId, locationsId, projectsId` | Updates the specified entity type. Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
+| `projects_locations_agents_environments_sessions_entityTypes_patch` | `EXEC` | `agentsId, entityTypesId, environmentsId, locationsId, projectsId, sessionsId` | Updates the specified session entity type. |
+| `projects_locations_agents_sessions_entityTypes_patch` | `EXEC` | `agentsId, entityTypesId, locationsId, projectsId, sessionsId` | Updates the specified session entity type. |

@@ -3,8 +3,9 @@ title: play_integrity_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - play_integrity_config
+  - firebaseappcheck
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -31,6 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_apps_playIntegrityConfig_get` | `SELECT` | `name` | Gets the PlayIntegrityConfig for the specified app. |
-| `projects_apps_playIntegrityConfig_batchGet` | `EXEC` | `parent` | Atomically gets the PlayIntegrityConfigs for the specified list of apps. |
-| `projects_apps_playIntegrityConfig_patch` | `EXEC` | `name` | Updates the PlayIntegrityConfig for the specified app. While this configuration is incomplete or invalid, the app will be unable to exchange Play Integrity tokens for App Check tokens. |
+| `projects_apps_playIntegrityConfig_get` | `SELECT` | `appsId, projectsId` | Gets the PlayIntegrityConfig for the specified app. |
+| `projects_apps_playIntegrityConfig_batchGet` | `EXEC` | `projectsId` | Atomically gets the PlayIntegrityConfigs for the specified list of apps. |
+| `projects_apps_playIntegrityConfig_patch` | `EXEC` | `appsId, projectsId` | Updates the PlayIntegrityConfig for the specified app. While this configuration is incomplete or invalid, the app will be unable to exchange Play Integrity tokens for App Check tokens. |

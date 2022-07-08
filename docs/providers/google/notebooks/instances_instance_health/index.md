@@ -3,10 +3,9 @@ title: instances_instance_health
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - instances_instance_health
+  - notebooks
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,4 +32,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_instances_getInstanceHealth` | `SELECT` | `name` |
+| `projects_locations_instances_getInstanceHealth` | `SELECT` | `instancesId:getInstanceHealth, locationsId, projectsId` |

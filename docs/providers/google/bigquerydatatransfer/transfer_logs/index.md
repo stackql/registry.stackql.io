@@ -3,10 +3,9 @@ title: transfer_logs
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - transfer_logs
+  - bigquerydatatransfer
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,11 +27,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `messageText` | `string` | Message text. |
 | `messageTime` | `string` | Time when message was logged. |
 | `severity` | `string` | Message severity. |
+| `messageText` | `string` | Message text. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_transferConfigs_runs_transferLogs_list` | `SELECT` | `parent` |
-| `projects_transferConfigs_runs_transferLogs_list` | `SELECT` | `parent` |
+| `projects_locations_transferConfigs_runs_transferLogs_list` | `SELECT` | `locationsId, projectsId, runsId, transferConfigsId` |
+| `projects_transferConfigs_runs_transferLogs_list` | `SELECT` | `projectsId, runsId, transferConfigsId` |

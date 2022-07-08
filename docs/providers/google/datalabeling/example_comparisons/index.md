@@ -3,10 +3,9 @@ title: example_comparisons
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - example_comparisons
+  - datalabeling
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_datasets_evaluations_exampleComparisons_search` | `EXEC` | `parent` |
+| `projects_datasets_evaluations_exampleComparisons_search` | `EXEC` | `datasetsId, evaluationsId, projectsId` |

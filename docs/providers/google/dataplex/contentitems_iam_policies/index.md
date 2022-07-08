@@ -3,10 +3,9 @@ title: contentitems_iam_policies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - contentitems_iam_policies
+  - dataplex
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,6 +34,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_lakes_contentitems_getIamPolicy` | `SELECT` | `resource` | Gets the access control policy for a contentitem resource. A NOT_FOUND error is returned if the resource does not exist. An empty policy is returned if the resource exists but does not have a policy set on it.Caller must have Google IAM dataplex.content.getIamPolicy permission on the resource. |
-| `projects_locations_lakes_contentitems_setIamPolicy` | `EXEC` | `resource` | Sets the access control policy on the specified contentitem resource. Replaces any existing policy.Caller must have Google IAM dataplex.content.setIamPolicy permission on the resource. |
-| `projects_locations_lakes_contentitems_testIamPermissions` | `EXEC` | `resource` | Returns the caller's permissions on a resource. If the resource does not exist, an empty set of permissions is returned (a NOT_FOUND error is not returned).A caller is not required to have Google IAM permission to make this request.Note: This operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may "fail open" without warning. |
+| `projects_locations_lakes_contentitems_getIamPolicy` | `SELECT` | `contentitemsId:getIamPolicy, lakesId, locationsId, projectsId` | Gets the access control policy for a contentitem resource. A NOT_FOUND error is returned if the resource does not exist. An empty policy is returned if the resource exists but does not have a policy set on it.Caller must have Google IAM dataplex.content.getIamPolicy permission on the resource. |
+| `projects_locations_lakes_contentitems_setIamPolicy` | `EXEC` | `contentitemsId:setIamPolicy, lakesId, locationsId, projectsId` | Sets the access control policy on the specified contentitem resource. Replaces any existing policy.Caller must have Google IAM dataplex.content.setIamPolicy permission on the resource. |
+| `projects_locations_lakes_contentitems_testIamPermissions` | `EXEC` | `contentitemsId:testIamPermissions, lakesId, locationsId, projectsId` | Returns the caller's permissions on a resource. If the resource does not exist, an empty set of permissions is returned (a NOT_FOUND error is not returned).A caller is not required to have Google IAM permission to make this request.Note: This operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may "fail open" without warning. |

@@ -3,10 +3,9 @@ title: bitbucket_server_configs_bitbucket_server_connected_repository
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - bitbucket_server_configs_bitbucket_server_connected_repository
+  - cloudbuild
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_bitbucketServerConfigs_removeBitbucketServerConnectedRepository` | `DELETE` | `config` |
+| `projects_locations_bitbucketServerConfigs_removeBitbucketServerConnectedRepository` | `DELETE` | `bitbucketServerConfigsId:removeBitbucketServerConnectedRepository, locationsId, projectsId` |

@@ -3,10 +3,9 @@ title: prediction_api_key_registrations
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - prediction_api_key_registrations
+  - recommendationengine
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,6 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_catalogs_eventStores_predictionApiKeyRegistrations_list` | `SELECT` | `parent` | List the registered apiKeys for use with predict method. |
-| `projects_locations_catalogs_eventStores_predictionApiKeyRegistrations_create` | `INSERT` | `parent` | Register an API key for use with predict method. |
-| `projects_locations_catalogs_eventStores_predictionApiKeyRegistrations_delete` | `DELETE` | `name` | Unregister an apiKey from using for predict method. |
+| `projects_locations_catalogs_eventStores_predictionApiKeyRegistrations_list` | `SELECT` | `catalogsId, eventStoresId, locationsId, projectsId` | List the registered apiKeys for use with predict method. |
+| `projects_locations_catalogs_eventStores_predictionApiKeyRegistrations_create` | `INSERT` | `catalogsId, eventStoresId, locationsId, projectsId` | Register an API key for use with predict method. |
+| `projects_locations_catalogs_eventStores_predictionApiKeyRegistrations_delete` | `DELETE` | `catalogsId, eventStoresId, locationsId, predictionApiKeyRegistrationsId, projectsId` | Unregister an apiKey from using for predict method. |

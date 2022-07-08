@@ -3,10 +3,8 @@ title: bigqueryconnection
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - bigqueryconnection
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Allows users to manage BigQuery connections to external data sources.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>BigQuery Connection API</td></tr>
 <tr><td><b>Description</b></td><td>Allows users to manage BigQuery connections to external data sources.</td></tr>
-<tr><td><b>Id</b></td><td><code>bigqueryconnection:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>bigqueryconnection:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

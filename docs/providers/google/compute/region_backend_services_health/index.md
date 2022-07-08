@@ -3,10 +3,9 @@ title: region_backend_services_health
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - region_backend_services_health
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `kind` | `string` | [Output Only] Type of resource. Always compute#backendServiceGroupHealth for the health of backend services. |
 | `annotations` | `object` | Metadata defined as annotations on the network endpoint group. |
 | `healthStatus` | `array` | Health state of the backend instances or endpoints in requested instance or network endpoint group, determined based on configured health checks. |
-| `kind` | `string` | [Output Only] Type of resource. Always compute#backendServiceGroupHealth for the health of backend services. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

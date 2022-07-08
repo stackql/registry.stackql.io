@@ -3,10 +3,9 @@ title: locations_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - locations_config
+  - clouddeploy
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,4 +33,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_getConfig` | `SELECT` | `name` |
+| `projects_locations_getConfig` | `SELECT` | `locationsId, projectsId` |

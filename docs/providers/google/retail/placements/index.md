@@ -3,10 +3,9 @@ title: placements
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - placements
+  - retail
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_catalogs_placements_predict` | `EXEC` | `placement` | Makes a recommendation prediction. |
-| `projects_locations_catalogs_placements_search` | `EXEC` | `placement` | Performs a search. This feature is only available for users who have Retail Search enabled. Please enable Retail Search on Cloud Console before using this feature. |
+| `projects_locations_catalogs_placements_predict` | `EXEC` | `catalogsId, locationsId, placementsId:predict, projectsId` | Makes a recommendation prediction. |
+| `projects_locations_catalogs_placements_search` | `EXEC` | `catalogsId, locationsId, placementsId:search, projectsId` | Performs a search. This feature is only available for users who have Retail Search enabled. Please enable Retail Search on Cloud Console before using this feature. |

@@ -3,10 +3,9 @@ title: domains
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - domains
+  - managedidentities
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,30 +28,30 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Required. The unique name of the domain using the form: `projects/{project_id}/locations/global/domains/{domain_name}`. |
-| `admin` | `string` | Optional. The name of delegated administrator account used to perform Active Directory operations. If not specified, `setupadmin` will be used. |
-| `auditLogsEnabled` | `boolean` | Optional. Configuration for audit logs. True if audit logs are enabled, else false. Default is audit logs disabled. |
 | `locations` | `array` | Required. Locations where domain needs to be provisioned. regions e.g. us-west1 or us-east4 Service supports up to 4 locations at once. Each location will use a /26 block. |
-| `statusMessage` | `string` | Output only. Additional information about the current status of this domain, if available. |
-| `trusts` | `array` | Output only. The current trusts associated with the domain. |
-| `authorizedNetworks` | `array` | Optional. The full names of the Google Compute Engine [networks](https://cloud.google.com/compute/docs/networks-and-firewalls#networks) the domain instance is connected to. Networks can be added using UpdateDomain. The domain is only available on networks listed in `authorized_networks`. If CIDR subnets overlap between networks, domain creation will fail. |
 | `labels` | `object` | Optional. Resource labels that can contain user-provided metadata. |
 | `state` | `string` | Output only. The current state of this domain. |
-| `updateTime` | `string` | Output only. The last update time. |
-| `fqdn` | `string` | Output only. The fully-qualified domain name of the exposed domain used by clients to connect to the service. Similar to what would be chosen for an Active Directory set up on an internal network. |
-| `reservedIpRange` | `string` | Required. The CIDR range of internal addresses that are reserved for this domain. Reserved networks must be /24 or larger. Ranges must be unique and non-overlapping with existing subnets in [Domain].[authorized_networks]. |
+| `trusts` | `array` | Output only. The current trusts associated with the domain. |
+| `admin` | `string` | Optional. The name of delegated administrator account used to perform Active Directory operations. If not specified, `setupadmin` will be used. |
 | `createTime` | `string` | Output only. The time the instance was created. |
+| `fqdn` | `string` | Output only. The fully-qualified domain name of the exposed domain used by clients to connect to the service. Similar to what would be chosen for an Active Directory set up on an internal network. |
+| `auditLogsEnabled` | `boolean` | Optional. Configuration for audit logs. True if audit logs are enabled, else false. Default is audit logs disabled. |
+| `authorizedNetworks` | `array` | Optional. The full names of the Google Compute Engine [networks](https://cloud.google.com/compute/docs/networks-and-firewalls#networks) the domain instance is connected to. Networks can be added using UpdateDomain. The domain is only available on networks listed in `authorized_networks`. If CIDR subnets overlap between networks, domain creation will fail. |
+| `reservedIpRange` | `string` | Required. The CIDR range of internal addresses that are reserved for this domain. Reserved networks must be /24 or larger. Ranges must be unique and non-overlapping with existing subnets in [Domain].[authorized_networks]. |
+| `statusMessage` | `string` | Output only. Additional information about the current status of this domain, if available. |
+| `updateTime` | `string` | Output only. The last update time. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_global_domains_get` | `SELECT` | `name` | Gets information about a domain. |
-| `projects_locations_global_domains_list` | `SELECT` | `parent` | Lists domains in a project. |
-| `projects_locations_global_domains_create` | `INSERT` | `parent` | Creates a Microsoft AD domain. |
-| `projects_locations_global_domains_delete` | `DELETE` | `name` | Deletes a domain. |
-| `projects_locations_global_domains_attachTrust` | `EXEC` | `name` | Adds an AD trust to a domain. |
-| `projects_locations_global_domains_detachTrust` | `EXEC` | `name` | Removes an AD trust. |
-| `projects_locations_global_domains_patch` | `EXEC` | `name` | Updates the metadata and configuration of a domain. |
-| `projects_locations_global_domains_reconfigureTrust` | `EXEC` | `name` | Updates the DNS conditional forwarder. |
-| `projects_locations_global_domains_resetAdminPassword` | `EXEC` | `name` | Resets a domain's administrator password. |
-| `projects_locations_global_domains_restore` | `EXEC` | `name` | RestoreDomain restores domain backup mentioned in the RestoreDomainRequest |
-| `projects_locations_global_domains_updateLdapssettings` | `EXEC` | `name` | Patches a single ldaps settings. |
-| `projects_locations_global_domains_validateTrust` | `EXEC` | `name` | Validates a trust state, that the target domain is reachable, and that the target domain is able to accept incoming trust requests. |
+| `projects_locations_global_domains_get` | `SELECT` | `domainsId, projectsId` | Gets information about a domain. |
+| `projects_locations_global_domains_list` | `SELECT` | `projectsId` | Lists domains in a project. |
+| `projects_locations_global_domains_create` | `INSERT` | `projectsId` | Creates a Microsoft AD domain. |
+| `projects_locations_global_domains_delete` | `DELETE` | `domainsId, projectsId` | Deletes a domain. |
+| `projects_locations_global_domains_attachTrust` | `EXEC` | `domainsId:attachTrust, projectsId` | Adds an AD trust to a domain. |
+| `projects_locations_global_domains_detachTrust` | `EXEC` | `domainsId:detachTrust, projectsId` | Removes an AD trust. |
+| `projects_locations_global_domains_patch` | `EXEC` | `domainsId, projectsId` | Updates the metadata and configuration of a domain. |
+| `projects_locations_global_domains_reconfigureTrust` | `EXEC` | `domainsId:reconfigureTrust, projectsId` | Updates the DNS conditional forwarder. |
+| `projects_locations_global_domains_resetAdminPassword` | `EXEC` | `domainsId:resetAdminPassword, projectsId` | Resets a domain's administrator password. |
+| `projects_locations_global_domains_restore` | `EXEC` | `domainsId:restore, projectsId` | RestoreDomain restores domain backup mentioned in the RestoreDomainRequest |
+| `projects_locations_global_domains_updateLdapssettings` | `EXEC` | `domainsId, projectsId` | Patches a single ldaps settings. |
+| `projects_locations_global_domains_validateTrust` | `EXEC` | `domainsId:validateTrust, projectsId` | Validates a trust state, that the target domain is reachable, and that the target domain is able to accept incoming trust requests. |

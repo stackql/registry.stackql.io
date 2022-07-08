@@ -3,10 +3,9 @@ title: tag_holds
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - tag_holds
+  - cloudresourcemanager
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,6 +35,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `tagValues_tagHolds_list` | `SELECT` | `parent` | Lists TagHolds under a TagValue. |
-| `tagValues_tagHolds_create` | `INSERT` | `parent` | Creates a TagHold. Returns ALREADY_EXISTS if a TagHold with the same resource and origin exists under the same TagValue. |
-| `tagValues_tagHolds_delete` | `DELETE` | `name` | Deletes a TagHold. |
+| `tagValues_tagHolds_list` | `SELECT` | `tagValuesId` | Lists TagHolds under a TagValue. |
+| `tagValues_tagHolds_create` | `INSERT` | `tagValuesId` | Creates a TagHold. Returns ALREADY_EXISTS if a TagHold with the same resource and origin exists under the same TagValue. |
+| `tagValues_tagHolds_delete` | `DELETE` | `tagHoldsId, tagValuesId` | Deletes a TagHold. |

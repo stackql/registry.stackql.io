@@ -3,10 +3,9 @@ title: views
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - views
+  - contactcenterinsights
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,15 +28,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Immutable. The resource name of the view. Format: projects/{project}/locations/{location}/views/{view} |
+| `value` | `string` | String with specific view properties. |
 | `createTime` | `string` | Output only. The time at which this view was created. |
 | `displayName` | `string` | The human-readable display name of the view. |
 | `updateTime` | `string` | Output only. The most recent time at which the view was updated. |
-| `value` | `string` | String with specific view properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_views_get` | `SELECT` | `name` | Gets a view. |
-| `projects_locations_views_list` | `SELECT` | `parent` | Lists views. |
-| `projects_locations_views_create` | `INSERT` | `parent` | Creates a view. |
-| `projects_locations_views_delete` | `DELETE` | `name` | Deletes a view. |
-| `projects_locations_views_patch` | `EXEC` | `name` | Updates a view. |
+| `projects_locations_views_get` | `SELECT` | `locationsId, projectsId, viewsId` | Gets a view. |
+| `projects_locations_views_list` | `SELECT` | `locationsId, projectsId` | Lists views. |
+| `projects_locations_views_create` | `INSERT` | `locationsId, projectsId` | Creates a view. |
+| `projects_locations_views_delete` | `DELETE` | `locationsId, projectsId, viewsId` | Deletes a view. |
+| `projects_locations_views_patch` | `EXEC` | `locationsId, projectsId, viewsId` | Updates a view. |

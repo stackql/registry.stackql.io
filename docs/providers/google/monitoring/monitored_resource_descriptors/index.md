@@ -3,10 +3,9 @@ title: monitored_resource_descriptors
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - monitored_resource_descriptors
+  - monitoring
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -37,5 +36,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_monitoredResourceDescriptors_get` | `SELECT` | `name` | Gets a single monitored resource descriptor. |
-| `projects_monitoredResourceDescriptors_list` | `SELECT` | `name` | Lists monitored resource descriptors that match a filter. |
+| `projects_monitoredResourceDescriptors_get` | `SELECT` | `monitoredResourceDescriptorsId, projectsId` | Gets a single monitored resource descriptor. |
+| `projects_monitoredResourceDescriptors_list` | `SELECT` | `projectsId` | Lists monitored resource descriptors that match a filter. |

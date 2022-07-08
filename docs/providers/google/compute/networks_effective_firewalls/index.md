@@ -3,10 +3,9 @@ title: networks_effective_firewalls
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - networks_effective_firewalls
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

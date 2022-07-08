@@ -3,10 +3,9 @@ title: url_maps_aggregated
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - url_maps_aggregated
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

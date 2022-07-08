@@ -3,10 +3,9 @@ title: relyingparty
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - relyingparty
+  - identitytoolkit
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

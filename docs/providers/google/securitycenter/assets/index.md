@@ -3,10 +3,9 @@ title: assets
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - assets
+  - securitycenter
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,13 +32,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `folders_assets_list` | `SELECT` | `parent` | Lists an organization's assets. |
-| `organizations_assets_list` | `SELECT` | `parent` | Lists an organization's assets. |
-| `projects_assets_list` | `SELECT` | `parent` | Lists an organization's assets. |
-| `folders_assets_group` | `EXEC` | `parent` | Filters an organization's assets and groups them by their specified properties. |
-| `folders_assets_updateSecurityMarks` | `EXEC` | `name` | Updates security marks. |
-| `organizations_assets_group` | `EXEC` | `parent` | Filters an organization's assets and groups them by their specified properties. |
-| `organizations_assets_runDiscovery` | `EXEC` | `parent` | Runs asset discovery. The discovery is tracked with a long-running operation. This API can only be called with limited frequency for an organization. If it is called too frequently the caller will receive a TOO_MANY_REQUESTS error. |
-| `organizations_assets_updateSecurityMarks` | `EXEC` | `name` | Updates security marks. |
-| `projects_assets_group` | `EXEC` | `parent` | Filters an organization's assets and groups them by their specified properties. |
-| `projects_assets_updateSecurityMarks` | `EXEC` | `name` | Updates security marks. |
+| `folders_assets_list` | `SELECT` | `foldersId` | Lists an organization's assets. |
+| `organizations_assets_list` | `SELECT` | `organizationsId` | Lists an organization's assets. |
+| `projects_assets_list` | `SELECT` | `projectsId` | Lists an organization's assets. |
+| `folders_assets_group` | `EXEC` | `foldersId` | Filters an organization's assets and groups them by their specified properties. |
+| `folders_assets_updateSecurityMarks` | `EXEC` | `assetsId, foldersId` | Updates security marks. |
+| `organizations_assets_group` | `EXEC` | `organizationsId` | Filters an organization's assets and groups them by their specified properties. |
+| `organizations_assets_runDiscovery` | `EXEC` | `organizationsId` | Runs asset discovery. The discovery is tracked with a long-running operation. This API can only be called with limited frequency for an organization. If it is called too frequently the caller will receive a TOO_MANY_REQUESTS error. |
+| `organizations_assets_updateSecurityMarks` | `EXEC` | `assetsId, organizationsId` | Updates security marks. |
+| `projects_assets_group` | `EXEC` | `projectsId` | Filters an organization's assets and groups them by their specified properties. |
+| `projects_assets_updateSecurityMarks` | `EXEC` | `assetsId, projectsId` | Updates security marks. |

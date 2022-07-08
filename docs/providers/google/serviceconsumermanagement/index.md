@@ -3,10 +3,8 @@ title: serviceconsumermanagement
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - serviceconsumermanagement
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Manages the service consumers of a Service Infrastructure service.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Service Consumer Management API</td></tr>
 <tr><td><b>Description</b></td><td>Manages the service consumers of a Service Infrastructure service.</td></tr>
-<tr><td><b>Id</b></td><td><code>serviceconsumermanagement:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>serviceconsumermanagement:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

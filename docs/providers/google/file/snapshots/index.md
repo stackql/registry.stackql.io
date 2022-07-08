@@ -3,10 +3,9 @@ title: snapshots
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - snapshots
+  - file
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -37,8 +36,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_instances_snapshots_get` | `SELECT` | `name` | Gets the details of a specific snapshot. |
-| `projects_locations_instances_snapshots_list` | `SELECT` | `parent` | Lists all snapshots in a project for either a specified location or for all locations. |
-| `projects_locations_instances_snapshots_create` | `INSERT` | `parent` | Creates a snapshot. |
-| `projects_locations_instances_snapshots_delete` | `DELETE` | `name` | Deletes a snapshot. |
-| `projects_locations_instances_snapshots_patch` | `EXEC` | `name` | Updates the settings of a specific snapshot. |
+| `projects_locations_instances_snapshots_get` | `SELECT` | `instancesId, locationsId, projectsId, snapshotsId` | Gets the details of a specific snapshot. |
+| `projects_locations_instances_snapshots_list` | `SELECT` | `instancesId, locationsId, projectsId` | Lists all snapshots in a project for either a specified location or for all locations. |
+| `projects_locations_instances_snapshots_create` | `INSERT` | `instancesId, locationsId, projectsId` | Creates a snapshot. |
+| `projects_locations_instances_snapshots_delete` | `DELETE` | `instancesId, locationsId, projectsId, snapshotsId` | Deletes a snapshot. |
+| `projects_locations_instances_snapshots_patch` | `EXEC` | `instancesId, locationsId, projectsId, snapshotsId` | Updates the settings of a specific snapshot. |

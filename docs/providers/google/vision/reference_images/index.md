@@ -3,10 +3,9 @@ title: reference_images
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - reference_images
+  - vision
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,7 +33,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_products_referenceImages_get` | `SELECT` | `name` | Gets information associated with a ReferenceImage. Possible errors: * Returns NOT_FOUND if the specified image does not exist. |
-| `projects_locations_products_referenceImages_list` | `SELECT` | `parent` | Lists reference images. Possible errors: * Returns NOT_FOUND if the parent product does not exist. * Returns INVALID_ARGUMENT if the page_size is greater than 100, or less than 1. |
-| `projects_locations_products_referenceImages_create` | `INSERT` | `parent` | Creates and returns a new ReferenceImage resource. The `bounding_poly` field is optional. If `bounding_poly` is not specified, the system will try to detect regions of interest in the image that are compatible with the product_category on the parent product. If it is specified, detection is ALWAYS skipped. The system converts polygons into non-rotated rectangles. Note that the pipeline will resize the image if the image resolution is too large to process (above 50MP). Possible errors: * Returns INVALID_ARGUMENT if the image_uri is missing or longer than 4096 characters. * Returns INVALID_ARGUMENT if the product does not exist. * Returns INVALID_ARGUMENT if bounding_poly is not provided, and nothing compatible with the parent product's product_category is detected. * Returns INVALID_ARGUMENT if bounding_poly contains more than 10 polygons. |
-| `projects_locations_products_referenceImages_delete` | `DELETE` | `name` | Permanently deletes a reference image. The image metadata will be deleted right away, but search queries against ProductSets containing the image may still work until all related caches are refreshed. The actual image files are not deleted from Google Cloud Storage. |
+| `projects_locations_products_referenceImages_get` | `SELECT` | `locationsId, productsId, projectsId, referenceImagesId` | Gets information associated with a ReferenceImage. Possible errors: * Returns NOT_FOUND if the specified image does not exist. |
+| `projects_locations_products_referenceImages_list` | `SELECT` | `locationsId, productsId, projectsId` | Lists reference images. Possible errors: * Returns NOT_FOUND if the parent product does not exist. * Returns INVALID_ARGUMENT if the page_size is greater than 100, or less than 1. |
+| `projects_locations_products_referenceImages_create` | `INSERT` | `locationsId, productsId, projectsId` | Creates and returns a new ReferenceImage resource. The `bounding_poly` field is optional. If `bounding_poly` is not specified, the system will try to detect regions of interest in the image that are compatible with the product_category on the parent product. If it is specified, detection is ALWAYS skipped. The system converts polygons into non-rotated rectangles. Note that the pipeline will resize the image if the image resolution is too large to process (above 50MP). Possible errors: * Returns INVALID_ARGUMENT if the image_uri is missing or longer than 4096 characters. * Returns INVALID_ARGUMENT if the product does not exist. * Returns INVALID_ARGUMENT if bounding_poly is not provided, and nothing compatible with the parent product's product_category is detected. * Returns INVALID_ARGUMENT if bounding_poly contains more than 10 polygons. |
+| `projects_locations_products_referenceImages_delete` | `DELETE` | `locationsId, productsId, projectsId, referenceImagesId` | Permanently deletes a reference image. The image metadata will be deleted right away, but search queries against ProductSets containing the image may still work until all related caches are refreshed. The actual image files are not deleted from Google Cloud Storage. |

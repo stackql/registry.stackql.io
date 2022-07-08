@@ -3,10 +3,9 @@ title: messages
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - messages
+  - dataflow
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

@@ -3,10 +3,9 @@ title: region_disk_types
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - region_disk_types
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -31,14 +30,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` | [Output Only] The unique identifier for the resource. This identifier is defined by the server. |
 | `name` | `string` | [Output Only] Name of the resource. |
 | `description` | `string` | [Output Only] An optional description of this resource. |
-| `zone` | `string` | [Output Only] URL of the zone where the disk type resides. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body. |
-| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
-| `defaultDiskSizeGb` | `string` | [Output Only] Server-defined default disk size in GB. |
 | `deprecated` | `object` | Deprecation status for a public resource. |
-| `validDiskSize` | `string` | [Output Only] An optional textual description of the valid disk size, such as "10GB-10TB". |
-| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
 | `region` | `string` | [Output Only] URL of the region where the disk type resides. Only applicable for regional resources. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body. |
 | `kind` | `string` | [Output Only] Type of the resource. Always compute#diskType for disk types. |
+| `defaultDiskSizeGb` | `string` | [Output Only] Server-defined default disk size in GB. |
+| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
+| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
+| `validDiskSize` | `string` | [Output Only] An optional textual description of the valid disk size, such as "10GB-10TB". |
+| `zone` | `string` | [Output Only] URL of the zone where the disk type resides. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

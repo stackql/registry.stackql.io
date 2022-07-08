@@ -3,10 +3,9 @@ title: projects
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - projects
+  - translate
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `detectLanguage` | `EXEC` | `parent` | Detects the language of text within a request. |
-| `translateText` | `EXEC` | `parent` | Translates input text and returns translated text. |
+| `detectLanguage` | `EXEC` | `projectsId:detectLanguage` | Detects the language of text within a request. |
+| `translateText` | `EXEC` | `projectsId:translateText` | Translates input text and returns translated text. |

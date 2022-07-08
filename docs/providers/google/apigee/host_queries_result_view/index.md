@@ -3,10 +3,9 @@ title: host_queries_result_view
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - host_queries_result_view
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,12 +27,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `error` | `string` | Error message when there is a failure. |
-| `metadata` | `object` |  |
 | `rows` | `array` | Rows of query result. Each row is a JSON object. Example: {sum(message_count): 1, developer_app: "(not set)",…} |
 | `state` | `string` | State of retrieving ResultView. |
 | `code` | `integer` | Error code when there is a failure. |
+| `error` | `string` | Error message when there is a failure. |
+| `metadata` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_hostQueries_getResultView` | `SELECT` | `name` |
+| `organizations_hostQueries_getResultView` | `SELECT` | `hostQueriesId, organizationsId` |

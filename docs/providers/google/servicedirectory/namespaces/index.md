@@ -3,10 +3,9 @@ title: namespaces
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - namespaces
+  - servicedirectory
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,8 +32,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_namespaces_get` | `SELECT` | `name` | Gets a namespace. |
-| `projects_locations_namespaces_list` | `SELECT` | `parent` | Lists all namespaces. |
-| `projects_locations_namespaces_create` | `INSERT` | `parent` | Creates a namespace, and returns the new namespace. |
-| `projects_locations_namespaces_delete` | `DELETE` | `name` | Deletes a namespace. This also deletes all services and endpoints in the namespace. |
-| `projects_locations_namespaces_patch` | `EXEC` | `name` | Updates a namespace. |
+| `projects_locations_namespaces_get` | `SELECT` | `locationsId, namespacesId, projectsId` | Gets a namespace. |
+| `projects_locations_namespaces_list` | `SELECT` | `locationsId, projectsId` | Lists all namespaces. |
+| `projects_locations_namespaces_create` | `INSERT` | `locationsId, projectsId` | Creates a namespace, and returns the new namespace. |
+| `projects_locations_namespaces_delete` | `DELETE` | `locationsId, namespacesId, projectsId` | Deletes a namespace. This also deletes all services and endpoints in the namespace. |
+| `projects_locations_namespaces_patch` | `EXEC` | `locationsId, namespacesId, projectsId` | Updates a namespace. |

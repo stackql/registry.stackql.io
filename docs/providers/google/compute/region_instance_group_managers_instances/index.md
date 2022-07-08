@@ -3,10 +3,9 @@ title: region_instance_group_managers_instances
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - region_instance_group_managers_instances
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

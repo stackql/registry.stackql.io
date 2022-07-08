@@ -3,10 +3,9 @@ title: node_groups_nodes
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - node_groups_nodes
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,15 +28,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The name of the node. |
+| `nodeType` | `string` | The type of this node. |
 | `satisfiesPzs` | `boolean` | [Output Only] Reserved for future use. |
+| `cpuOvercommitType` | `string` | CPU overcommit. |
+| `accelerators` | `array` | Accelerators for this node. |
+| `instances` | `array` | Instances scheduled on this node. |
+| `disks` | `array` | Local disk configurations. |
 | `serverBinding` | `object` |  |
 | `serverId` | `string` | Server ID associated with this node. |
-| `nodeType` | `string` | The type of this node. |
-| `accelerators` | `array` | Accelerators for this node. |
-| `cpuOvercommitType` | `string` | CPU overcommit. |
-| `disks` | `array` | Local disk configurations. |
 | `status` | `string` |  |
-| `instances` | `array` | Instances scheduled on this node. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

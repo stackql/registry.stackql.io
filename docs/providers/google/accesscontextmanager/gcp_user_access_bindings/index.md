@@ -3,10 +3,9 @@ title: gcp_user_access_bindings
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - gcp_user_access_bindings
+  - accesscontextmanager
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,8 +33,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_gcpUserAccessBindings_get` | `SELECT` | `name` | Gets the GcpUserAccessBinding with the given name. |
-| `organizations_gcpUserAccessBindings_list` | `SELECT` | `parent` | Lists all GcpUserAccessBindings for a Google Cloud organization. |
-| `organizations_gcpUserAccessBindings_create` | `INSERT` | `parent` | Creates a GcpUserAccessBinding. If the client specifies a name, the server ignores it. Fails if a resource already exists with the same group_key. Completion of this long-running operation does not necessarily signify that the new binding is deployed onto all affected users, which may take more time. |
-| `organizations_gcpUserAccessBindings_delete` | `DELETE` | `name` | Deletes a GcpUserAccessBinding. Completion of this long-running operation does not necessarily signify that the binding deletion is deployed onto all affected users, which may take more time. |
-| `organizations_gcpUserAccessBindings_patch` | `EXEC` | `name` | Updates a GcpUserAccessBinding. Completion of this long-running operation does not necessarily signify that the changed binding is deployed onto all affected users, which may take more time. |
+| `organizations_gcpUserAccessBindings_get` | `SELECT` | `gcpUserAccessBindingsId, organizationsId` | Gets the GcpUserAccessBinding with the given name. |
+| `organizations_gcpUserAccessBindings_list` | `SELECT` | `organizationsId` | Lists all GcpUserAccessBindings for a Google Cloud organization. |
+| `organizations_gcpUserAccessBindings_create` | `INSERT` | `organizationsId` | Creates a GcpUserAccessBinding. If the client specifies a name, the server ignores it. Fails if a resource already exists with the same group_key. Completion of this long-running operation does not necessarily signify that the new binding is deployed onto all affected users, which may take more time. |
+| `organizations_gcpUserAccessBindings_delete` | `DELETE` | `gcpUserAccessBindingsId, organizationsId` | Deletes a GcpUserAccessBinding. Completion of this long-running operation does not necessarily signify that the binding deletion is deployed onto all affected users, which may take more time. |
+| `organizations_gcpUserAccessBindings_patch` | `EXEC` | `gcpUserAccessBindingsId, organizationsId` | Updates a GcpUserAccessBinding. Completion of this long-running operation does not necessarily signify that the changed binding is deployed onto all affected users, which may take more time. |

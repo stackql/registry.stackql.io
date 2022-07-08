@@ -3,10 +3,9 @@ title: organizations_project_mapping
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - organizations_project_mapping
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,4 +34,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_getProjectMapping` | `SELECT` | `name` |
+| `organizations_getProjectMapping` | `SELECT` | `organizationsId:getProjectMapping` |

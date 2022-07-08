@@ -3,10 +3,9 @@ title: gateways
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - gateways
+  - networkservices
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,19 +29,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Required. Name of the Gateway resource. It matches pattern `projects/*/locations/*/gateways/`. |
 | `description` | `string` | Optional. A free-text description of the resource. Max length 1024 characters. |
-| `scope` | `string` | Required. Immutable. Scope determines how configuration across multiple Gateway instances are merged. The configuration for multiple Gateway instances with the same scope will be merged as presented as a single coniguration to the proxy/load balancer. Max length 64 characters. Scope should start with a letter and can only have letters, numbers, hyphens. |
+| `createTime` | `string` | Output only. The timestamp when the resource was created. |
 | `serverTlsPolicy` | `string` | Optional. A fully-qualified ServerTLSPolicy URL reference. Specifies how TLS traffic is terminated. If empty, TLS termination is disabled. |
 | `updateTime` | `string` | Output only. The timestamp when the resource was updated. |
-| `createTime` | `string` | Output only. The timestamp when the resource was created. |
-| `selfLink` | `string` | Output only. Server-defined URL of this resource |
-| `labels` | `object` | Optional. Set of label tags associated with the Gateway resource. |
+| `scope` | `string` | Required. Immutable. Scope determines how configuration across multiple Gateway instances are merged. The configuration for multiple Gateway instances with the same scope will be merged as presented as a single coniguration to the proxy/load balancer. Max length 64 characters. Scope should start with a letter and can only have letters, numbers, hyphens. |
 | `type` | `string` | Immutable. The type of the customer managed gateway. |
+| `labels` | `object` | Optional. Set of label tags associated with the Gateway resource. |
 | `ports` | `array` | Required. One or more ports that the Gateway must receive traffic on. The proxy binds to the ports specified. Gateway listen on 0.0.0.0 on the ports specified below. |
+| `selfLink` | `string` | Output only. Server-defined URL of this resource |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_gateways_get` | `SELECT` | `name` | Gets details of a single Gateway. |
-| `projects_locations_gateways_list` | `SELECT` | `parent` | Lists Gateways in a given project and location. |
-| `projects_locations_gateways_create` | `INSERT` | `parent` | Creates a new Gateway in a given project and location. |
-| `projects_locations_gateways_delete` | `DELETE` | `name` | Deletes a single Gateway. |
-| `projects_locations_gateways_patch` | `EXEC` | `name` | Updates the parameters of a single Gateway. |
+| `projects_locations_gateways_get` | `SELECT` | `gatewaysId, locationsId, projectsId` | Gets details of a single Gateway. |
+| `projects_locations_gateways_list` | `SELECT` | `locationsId, projectsId` | Lists Gateways in a given project and location. |
+| `projects_locations_gateways_create` | `INSERT` | `locationsId, projectsId` | Creates a new Gateway in a given project and location. |
+| `projects_locations_gateways_delete` | `DELETE` | `gatewaysId, locationsId, projectsId` | Deletes a single Gateway. |
+| `projects_locations_gateways_patch` | `EXEC` | `gatewaysId, locationsId, projectsId` | Updates the parameters of a single Gateway. |

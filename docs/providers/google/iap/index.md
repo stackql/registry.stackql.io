@@ -3,10 +3,8 @@ title: iap
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - iap
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Controls access to cloud applications running on Google Cloud Platform.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Identity-Aware Proxy API</td></tr>
 <tr><td><b>Description</b></td><td>Controls access to cloud applications running on Google Cloud Platform.</td></tr>
-<tr><td><b>Id</b></td><td><code>iap:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>iap:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

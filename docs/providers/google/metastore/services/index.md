@@ -3,10 +3,9 @@ title: services
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - services
+  - metastore
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,31 +29,31 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Immutable. The relative resource name of the metastore service, of the form:projects/{project_number}/locations/{location_id}/services/{service_id}. |
 | `metadataIntegration` | `object` | Specifies how metastore metadata should be integrated with external services. |
-| `network` | `string` | Immutable. The relative resource name of the VPC network on which the instance can be accessed. It is specified in the following form:projects/{project_number}/global/networks/{network_id}. |
-| `updateTime` | `string` | Output only. The time when the metastore service was last updated. |
-| `port` | `integer` | The TCP port at which the metastore service is reached. Default: 9083. |
-| `releaseChannel` | `string` | Immutable. The release channel of the service. If unspecified, defaults to STABLE. |
+| `maintenanceWindow` | `object` | Maintenance window. This specifies when Dataproc Metastore may perform system maintenance operation to the service. |
+| `databaseType` | `string` | Immutable. The database type that the Metastore service stores its data. |
+| `artifactGcsUri` | `string` | Output only. A Cloud Storage URI (starting with gs://) that specifies where artifacts related to the metastore service are stored. |
 | `endpointUri` | `string` | Output only. The URI of the endpoint used to access the metastore service. |
+| `labels` | `object` | User-defined labels for the metastore service. |
 | `hiveMetastoreConfig` | `object` | Specifies configuration information specific to running Hive metastore software as the metastore service. |
-| `metadataManagementActivity` | `object` | The metadata management activities of the metastore service. |
-| `encryptionConfig` | `object` | Encryption settings for the service. |
-| `state` | `string` | Output only. The current state of the metastore service. |
 | `uid` | `string` | Output only. The globally unique resource identifier of the metastore service. |
 | `stateMessage` | `string` | Output only. Additional information about the current state of the metastore service, if available. |
-| `artifactGcsUri` | `string` | Output only. A Cloud Storage URI (starting with gs://) that specifies where artifacts related to the metastore service are stored. |
 | `createTime` | `string` | Output only. The time when the metastore service was created. |
+| `releaseChannel` | `string` | Immutable. The release channel of the service. If unspecified, defaults to STABLE. |
+| `encryptionConfig` | `object` | Encryption settings for the service. |
 | `tier` | `string` | The tier of the service. |
+| `state` | `string` | Output only. The current state of the metastore service. |
+| `port` | `integer` | The TCP port at which the metastore service is reached. Default: 9083. |
+| `updateTime` | `string` | Output only. The time when the metastore service was last updated. |
+| `metadataManagementActivity` | `object` | The metadata management activities of the metastore service. |
 | `networkConfig` | `object` | Network configuration for the Dataproc Metastore service. |
-| `maintenanceWindow` | `object` | Maintenance window. This specifies when Dataproc Metastore may perform system maintenance operation to the service. |
-| `labels` | `object` | User-defined labels for the metastore service. |
-| `databaseType` | `string` | Immutable. The database type that the Metastore service stores its data. |
+| `network` | `string` | Immutable. The relative resource name of the VPC network on which the instance can be accessed. It is specified in the following form:projects/{project_number}/global/networks/{network_id}. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_services_get` | `SELECT` | `name` | Gets the details of a single service. |
-| `projects_locations_services_list` | `SELECT` | `parent` | Lists services in a project and location. |
-| `projects_locations_services_create` | `INSERT` | `parent` | Creates a metastore service in a project and location. |
-| `projects_locations_services_delete` | `DELETE` | `name` | Deletes a single service. |
-| `projects_locations_services_exportMetadata` | `EXEC` | `service` | Exports metadata from a service. |
-| `projects_locations_services_patch` | `EXEC` | `name` | Updates the parameters of a single service. |
-| `projects_locations_services_restore` | `EXEC` | `service` | Restores a service from a backup. |
+| `projects_locations_services_get` | `SELECT` | `locationsId, projectsId, servicesId` | Gets the details of a single service. |
+| `projects_locations_services_list` | `SELECT` | `locationsId, projectsId` | Lists services in a project and location. |
+| `projects_locations_services_create` | `INSERT` | `locationsId, projectsId` | Creates a metastore service in a project and location. |
+| `projects_locations_services_delete` | `DELETE` | `locationsId, projectsId, servicesId` | Deletes a single service. |
+| `projects_locations_services_exportMetadata` | `EXEC` | `locationsId, projectsId, servicesId:exportMetadata` | Exports metadata from a service. |
+| `projects_locations_services_patch` | `EXEC` | `locationsId, projectsId, servicesId` | Updates the parameters of a single service. |
+| `projects_locations_services_restore` | `EXEC` | `locationsId, projectsId, servicesId:restore` | Restores a service from a backup. |

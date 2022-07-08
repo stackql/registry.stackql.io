@@ -3,10 +3,9 @@ title: states
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - states
+  - cloudiot
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,4 +32,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_registries_devices_states_list` | `SELECT` | `name` |
+| `projects_locations_registries_devices_states_list` | `SELECT` | `devicesId, locationsId, projectsId, registriesId` |

@@ -3,10 +3,9 @@ title: debugger_debuggees_breakpoints
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - debugger_debuggees_breakpoints
+  - clouddebugger
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

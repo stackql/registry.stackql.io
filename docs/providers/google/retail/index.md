@@ -3,10 +3,8 @@ title: retail
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - retail
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Cloud Retail service enables customers to build end-to-end personalized recommen
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Retail API</td></tr>
 <tr><td><b>Description</b></td><td>Cloud Retail service enables customers to build end-to-end personalized recommendation systems without requiring a high level of expertise in machine learning, recommendation system, or Google Cloud.</td></tr>
-<tr><td><b>Id</b></td><td><code>retail:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>retail:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

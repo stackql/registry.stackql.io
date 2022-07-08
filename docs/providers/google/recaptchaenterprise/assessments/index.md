@@ -3,10 +3,9 @@ title: assessments
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - assessments
+  - recaptchaenterprise
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_assessments_create` | `INSERT` | `parent` | Creates an Assessment of the likelihood an event is legitimate. |
-| `projects_assessments_annotate` | `EXEC` | `name` | Annotates a previously created Assessment to provide additional information on whether the event turned out to be authentic or fraudulent. |
+| `projects_assessments_create` | `INSERT` | `projectsId` | Creates an Assessment of the likelihood an event is legitimate. |
+| `projects_assessments_annotate` | `EXEC` | `assessmentsId:annotate, projectsId` | Annotates a previously created Assessment to provide additional information on whether the event turned out to be authentic or fraudulent. |

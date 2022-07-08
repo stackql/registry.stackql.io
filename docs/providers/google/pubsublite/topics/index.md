@@ -3,10 +3,9 @@ title: topics
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - topics
+  - pubsublite
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,12 +29,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `admin_projects_locations_reservations_topics_list` | `SELECT` | `name` | Lists the topics attached to the specified reservation. |
-| `admin_projects_locations_topics_get` | `SELECT` | `name` | Returns the topic configuration. |
-| `admin_projects_locations_topics_list` | `SELECT` | `parent` | Returns the list of topics for the given project. |
-| `admin_projects_locations_topics_create` | `INSERT` | `parent` | Creates a new topic. |
-| `admin_projects_locations_topics_delete` | `DELETE` | `name` | Deletes the specified topic. |
-| `admin_projects_locations_topics_patch` | `EXEC` | `name` | Updates properties of the specified topic. |
-| `topicStats_projects_locations_topics_computeHeadCursor` | `EXEC` | `topic` | Compute the head cursor for the partition. The head cursor's offset is guaranteed to be less than or equal to all messages which have not yet been acknowledged as published, and greater than the offset of any message whose publish has already been acknowledged. It is zero if there have never been messages in the partition. |
-| `topicStats_projects_locations_topics_computeMessageStats` | `EXEC` | `topic` | Compute statistics about a range of messages in a given topic and partition. |
-| `topicStats_projects_locations_topics_computeTimeCursor` | `EXEC` | `topic` | Compute the corresponding cursor for a publish or event time in a topic partition. |
+| `admin_projects_locations_reservations_topics_list` | `SELECT` | `locationsId, projectsId, reservationsId` | Lists the topics attached to the specified reservation. |
+| `admin_projects_locations_topics_get` | `SELECT` | `locationsId, projectsId, topicsId` | Returns the topic configuration. |
+| `admin_projects_locations_topics_list` | `SELECT` | `locationsId, projectsId` | Returns the list of topics for the given project. |
+| `admin_projects_locations_topics_create` | `INSERT` | `locationsId, projectsId` | Creates a new topic. |
+| `admin_projects_locations_topics_delete` | `DELETE` | `locationsId, projectsId, topicsId` | Deletes the specified topic. |
+| `admin_projects_locations_topics_patch` | `EXEC` | `locationsId, projectsId, topicsId` | Updates properties of the specified topic. |
+| `topicStats_projects_locations_topics_computeHeadCursor` | `EXEC` | `locationsId, projectsId, topicsId:computeHeadCursor` | Compute the head cursor for the partition. The head cursor's offset is guaranteed to be less than or equal to all messages which have not yet been acknowledged as published, and greater than the offset of any message whose publish has already been acknowledged. It is zero if there have never been messages in the partition. |
+| `topicStats_projects_locations_topics_computeMessageStats` | `EXEC` | `locationsId, projectsId, topicsId:computeMessageStats` | Compute statistics about a range of messages in a given topic and partition. |
+| `topicStats_projects_locations_topics_computeTimeCursor` | `EXEC` | `locationsId, projectsId, topicsId:computeTimeCursor` | Compute the corresponding cursor for a publish or event time in a topic partition. |

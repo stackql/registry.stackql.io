@@ -3,10 +3,9 @@ title: media
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - media
+  - cloudsupport
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,7 +27,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 `SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
-| Name | Accessible by | Required Params | Description |
-|:-----|:--------------|:----------------|:------------|
-| `download` | `EXEC` | `name` | Download a file attachment on a case. Note: HTTP requests must append "?alt=media" to the URL. |
-| `upload` | `EXEC` | `parent` | Create a file attachment on a case or Cloud resource. |
+| Name | Accessible by | Required Params |
+|:-----|:--------------|:----------------|
+| `upload` | `EXEC` | `parent` |

@@ -3,8 +3,9 @@ title: delivery_data
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - delivery_data
+  - fcmdata
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -26,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `androidDeliveryData` | `array` | The delivery data for the provided app. There will be one entry per combination of app, date, and analytics label. |
 | `nextPageToken` | `string` | A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
+| `androidDeliveryData` | `array` | The delivery data for the provided app. There will be one entry per combination of app, date, and analytics label. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_androidApps_deliveryData_list` | `SELECT` | `parent` |
+| `projects_androidApps_deliveryData_list` | `SELECT` | `androidAppsId, projectsId` |

@@ -3,10 +3,9 @@ title: actions
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - actions
+  - dataplex
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,11 +27,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `nextPageToken` | `string` | Token to retrieve the next page of results, or empty if there are no more results in the list. |
 | `actions` | `array` | Actions under the given parent lake/zone/asset. |
+| `nextPageToken` | `string` | Token to retrieve the next page of results, or empty if there are no more results in the list. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_lakes_actions_list` | `SELECT` | `parent` | Lists action resources in a lake. |
-| `projects_locations_lakes_zones_actions_list` | `SELECT` | `parent` | Lists action resources in a zone. |
-| `projects_locations_lakes_zones_assets_actions_list` | `SELECT` | `parent` | Lists action resources in an asset. |
+| `projects_locations_lakes_actions_list` | `SELECT` | `lakesId, locationsId, projectsId` | Lists action resources in a lake. |
+| `projects_locations_lakes_zones_actions_list` | `SELECT` | `lakesId, locationsId, projectsId, zonesId` | Lists action resources in a zone. |
+| `projects_locations_lakes_zones_assets_actions_list` | `SELECT` | `assetsId, lakesId, locationsId, projectsId, zonesId` | Lists action resources in an asset. |

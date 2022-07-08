@@ -3,10 +3,9 @@ title: app_profiles
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - app_profiles
+  - bigtableadmin
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,8 +35,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_instances_appProfiles_get` | `SELECT` | `name` | Gets information about an app profile. |
-| `projects_instances_appProfiles_list` | `SELECT` | `parent` | Lists information about app profiles in an instance. |
-| `projects_instances_appProfiles_create` | `INSERT` | `parent` | Creates an app profile within an instance. |
-| `projects_instances_appProfiles_delete` | `DELETE` | `name` | Deletes an app profile from an instance. |
-| `projects_instances_appProfiles_patch` | `EXEC` | `name` | Updates an app profile within an instance. |
+| `projects_instances_appProfiles_get` | `SELECT` | `appProfilesId, instancesId, projectsId` | Gets information about an app profile. |
+| `projects_instances_appProfiles_list` | `SELECT` | `instancesId, projectsId` | Lists information about app profiles in an instance. |
+| `projects_instances_appProfiles_create` | `INSERT` | `instancesId, projectsId` | Creates an app profile within an instance. |
+| `projects_instances_appProfiles_delete` | `DELETE` | `appProfilesId, instancesId, projectsId` | Deletes an app profile from an instance. |
+| `projects_instances_appProfiles_patch` | `EXEC` | `appProfilesId, instancesId, projectsId` | Updates an app profile within an instance. |

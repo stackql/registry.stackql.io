@@ -3,10 +3,9 @@ title: attachments
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - attachments
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,17 +28,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | ID of the environment group attachment. |
+| `environmentGroupId` | `string` | Output only. ID of the environment group. |
 | `createdAt` | `string` | Output only. The time at which the environment group attachment was created as milliseconds since epoch. |
 | `environment` | `string` | Required. ID of the attached environment. |
-| `environmentGroupId` | `string` | Output only. ID of the environment group. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_envgroups_attachments_get` | `SELECT` | `name` | Gets an environment group attachment. |
-| `organizations_envgroups_attachments_list` | `SELECT` | `parent` | Lists all attachments of an environment group. |
-| `organizations_instances_attachments_get` | `SELECT` | `name` | Gets an attachment. **Note:** Not supported for Apigee hybrid. |
-| `organizations_instances_attachments_list` | `SELECT` | `parent` | Lists all attachments to an instance. **Note:** Not supported for Apigee hybrid. |
-| `organizations_envgroups_attachments_create` | `INSERT` | `parent` | Creates a new attachment of an environment to an environment group. |
-| `organizations_instances_attachments_create` | `INSERT` | `parent` | Creates a new attachment of an environment to an instance. **Note:** Not supported for Apigee hybrid. |
-| `organizations_envgroups_attachments_delete` | `DELETE` | `name` | Deletes an environment group attachment. |
-| `organizations_instances_attachments_delete` | `DELETE` | `name` | Deletes an attachment. **Note:** Not supported for Apigee hybrid. |
+| `organizations_envgroups_attachments_get` | `SELECT` | `attachmentsId, envgroupsId, organizationsId` | Gets an environment group attachment. |
+| `organizations_envgroups_attachments_list` | `SELECT` | `envgroupsId, organizationsId` | Lists all attachments of an environment group. |
+| `organizations_instances_attachments_get` | `SELECT` | `attachmentsId, instancesId, organizationsId` | Gets an attachment. **Note:** Not supported for Apigee hybrid. |
+| `organizations_instances_attachments_list` | `SELECT` | `instancesId, organizationsId` | Lists all attachments to an instance. **Note:** Not supported for Apigee hybrid. |
+| `organizations_envgroups_attachments_create` | `INSERT` | `envgroupsId, organizationsId` | Creates a new attachment of an environment to an environment group. |
+| `organizations_instances_attachments_create` | `INSERT` | `instancesId, organizationsId` | Creates a new attachment of an environment to an instance. **Note:** Not supported for Apigee hybrid. |
+| `organizations_envgroups_attachments_delete` | `DELETE` | `attachmentsId, envgroupsId, organizationsId` | Deletes an environment group attachment. |
+| `organizations_instances_attachments_delete` | `DELETE` | `attachmentsId, instancesId, organizationsId` | Deletes an attachment. **Note:** Not supported for Apigee hybrid. |

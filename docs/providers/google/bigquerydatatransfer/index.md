@@ -3,10 +3,8 @@ title: bigquerydatatransfer
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - bigquerydatatransfer
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Schedule queries or transfer external data from SaaS applications to Google BigQ
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>BigQuery Data Transfer API</td></tr>
 <tr><td><b>Description</b></td><td>Schedule queries or transfer external data from SaaS applications to Google BigQuery on a regular basis.</td></tr>
-<tr><td><b>Id</b></td><td><code>bigquerydatatransfer:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>bigquerydatatransfer:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

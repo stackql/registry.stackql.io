@@ -3,10 +3,9 @@ title: service_account
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - service_account
+  - storage
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `email_address` | `string` | The ID of the notification. |
 | `kind` | `string` | The kind of item this is. For notifications, this is always storage#notification. |
+| `email_address` | `string` | The ID of the notification. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

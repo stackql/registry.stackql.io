@@ -3,10 +3,9 @@ title: metadata_imports
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - metadata_imports
+  - metastore
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -38,7 +37,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_services_metadataImports_get` | `SELECT` | `name` | Gets details of a single import. |
-| `projects_locations_services_metadataImports_list` | `SELECT` | `parent` | Lists imports in a service. |
-| `projects_locations_services_metadataImports_create` | `INSERT` | `parent` | Creates a new MetadataImport in a given project and location. |
-| `projects_locations_services_metadataImports_patch` | `EXEC` | `name` | Updates a single import. Only the description field of MetadataImport is supported to be updated. |
+| `projects_locations_services_metadataImports_get` | `SELECT` | `locationsId, metadataImportsId, projectsId, servicesId` | Gets details of a single import. |
+| `projects_locations_services_metadataImports_list` | `SELECT` | `locationsId, projectsId, servicesId` | Lists imports in a service. |
+| `projects_locations_services_metadataImports_create` | `INSERT` | `locationsId, projectsId, servicesId` | Creates a new MetadataImport in a given project and location. |
+| `projects_locations_services_metadataImports_patch` | `EXEC` | `locationsId, metadataImportsId, projectsId, servicesId` | Updates a single import. Only the description field of MetadataImport is supported to be updated. |

@@ -3,10 +3,9 @@ title: locations_runtime_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - locations_runtime_config
+  - connectors
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,16 +27,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `conndSubscription` | `string` | Output only. Pub/Sub subscription for connd to receive message. E.g. projects/{project-id}/subscriptions/{topic-id} |
-| `schemaGcsBucket` | `string` | Output only. The Cloud Storage bucket that stores connector's schema reports. |
-| `controlPlaneSubscription` | `string` | Output only. Pub/Sub subscription for control plane to receive message. E.g. projects/{project-id}/subscriptions/{topic-id} |
-| `runtimeEndpoint` | `string` | Output only. The endpoint of the connectors runtime ingress. |
-| `controlPlaneTopic` | `string` | Output only. Pub/Sub topic for control plne to send message. communication. E.g. projects/{project-id}/topics/{topic-id} |
-| `locationId` | `string` | Output only. location_id of the runtime location. E.g. "us-west1". |
 | `state` | `string` | Output only. The state of the location. |
 | `conndTopic` | `string` | Output only. Pub/Sub topic for connd to send message. E.g. projects/{project-id}/topics/{topic-id} |
+| `runtimeEndpoint` | `string` | Output only. The endpoint of the connectors runtime ingress. |
+| `schemaGcsBucket` | `string` | Output only. The Cloud Storage bucket that stores connector's schema reports. |
+| `controlPlaneSubscription` | `string` | Output only. Pub/Sub subscription for control plane to receive message. E.g. projects/{project-id}/subscriptions/{topic-id} |
+| `controlPlaneTopic` | `string` | Output only. Pub/Sub topic for control plne to send message. communication. E.g. projects/{project-id}/topics/{topic-id} |
 | `serviceDirectory` | `string` | Output only. The name of the Service Directory service name. |
+| `conndSubscription` | `string` | Output only. Pub/Sub subscription for connd to receive message. E.g. projects/{project-id}/subscriptions/{topic-id} |
+| `locationId` | `string` | Output only. location_id of the runtime location. E.g. "us-west1". |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_getRuntimeConfig` | `SELECT` | `name` |
+| `projects_locations_getRuntimeConfig` | `SELECT` | `locationsId, projectsId` |

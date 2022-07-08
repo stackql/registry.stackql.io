@@ -3,10 +3,9 @@ title: hmac_keys
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - hmac_keys
+  - storage
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,15 +28,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the HMAC key, including the Project ID and the Access ID. |
-| `timeCreated` | `string` | The creation time of the HMAC key in RFC 3339 format. |
-| `kind` | `string` | The kind of item this is. For HMAC Key metadata, this is always storage#hmacKeyMetadata. |
 | `selfLink` | `string` | The link to this resource. |
+| `etag` | `string` | HTTP 1.1 Entity tag for the HMAC key. |
+| `projectId` | `string` | Project ID owning the service account to which the key authenticates. |
+| `kind` | `string` | The kind of item this is. For HMAC Key metadata, this is always storage#hmacKeyMetadata. |
+| `timeCreated` | `string` | The creation time of the HMAC key in RFC 3339 format. |
+| `updated` | `string` | The last modification time of the HMAC key metadata in RFC 3339 format. |
+| `state` | `string` | The state of the key. Can be one of ACTIVE, INACTIVE, or DELETED. |
 | `serviceAccountEmail` | `string` | The email address of the key's associated service account. |
 | `accessId` | `string` | The ID of the HMAC Key. |
-| `state` | `string` | The state of the key. Can be one of ACTIVE, INACTIVE, or DELETED. |
-| `etag` | `string` | HTTP 1.1 Entity tag for the HMAC key. |
-| `updated` | `string` | The last modification time of the HMAC key metadata in RFC 3339 format. |
-| `projectId` | `string` | Project ID owning the service account to which the key authenticates. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

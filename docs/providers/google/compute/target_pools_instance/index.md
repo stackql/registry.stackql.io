@@ -3,10 +3,9 @@ title: target_pools_instance
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - target_pools_instance
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

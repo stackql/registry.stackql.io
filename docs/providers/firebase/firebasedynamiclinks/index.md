@@ -3,8 +3,8 @@ title: firebasedynamiclinks
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - firebasedynamiclinks
+  - firebase
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -22,7 +22,7 @@ Programmatically creates and manages Firebase Dynamic Links.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Firebase Dynamic Links API</td></tr>
 <tr><td><b>Description</b></td><td>Programmatically creates and manages Firebase Dynamic Links.</td></tr>
-<tr><td><b>Id</b></td><td><code>firebasedynamiclinks:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>firebasedynamiclinks:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

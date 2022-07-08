@@ -3,10 +3,8 @@ title: servicemanagement
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - servicemanagement
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Google Service Management allows service producers to publish their services on 
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Service Management API</td></tr>
 <tr><td><b>Description</b></td><td>Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers.</td></tr>
-<tr><td><b>Id</b></td><td><code>servicemanagement:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>servicemanagement:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

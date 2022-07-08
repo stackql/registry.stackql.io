@@ -3,10 +3,9 @@ title: constraints
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - constraints
+  - orgpolicy
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,6 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `folders_constraints_list` | `SELECT` | `parent` |
-| `organizations_constraints_list` | `SELECT` | `parent` |
-| `projects_constraints_list` | `SELECT` | `parent` |
+| `folders_constraints_list` | `SELECT` | `foldersId` |
+| `organizations_constraints_list` | `SELECT` | `organizationsId` |
+| `projects_constraints_list` | `SELECT` | `projectsId` |

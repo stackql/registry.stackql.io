@@ -3,10 +3,9 @@ title: agents_validation_result
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - agents_validation_result
+  - dialogflow
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,4 +32,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_agents_getValidationResult` | `SELECT` | `name` |
+| `projects_locations_agents_getValidationResult` | `SELECT` | `agentsId, locationsId, projectsId` |

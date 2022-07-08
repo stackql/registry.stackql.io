@@ -3,10 +3,9 @@ title: runtime_action_schemas
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - runtime_action_schemas
+  - connectors
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,10 +27,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `inputParameters` | `array` | Output only. List of input parameter metadata for the action. |
 | `resultMetadata` | `array` | Output only. List of result field metadata. |
 | `action` | `string` | Output only. Name of the action. |
+| `inputParameters` | `array` | Output only. List of input parameter metadata for the action. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_connections_runtimeActionSchemas_list` | `SELECT` | `parent` |
+| `projects_locations_connections_runtimeActionSchemas_list` | `SELECT` | `connectionsId, locationsId, projectsId` |

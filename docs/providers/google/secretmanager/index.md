@@ -3,10 +3,8 @@ title: secretmanager
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - secretmanager
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Stores sensitive data such as API keys, passwords, and certificates. Provides co
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Secret Manager API</td></tr>
 <tr><td><b>Description</b></td><td>Stores sensitive data such as API keys, passwords, and certificates. Provides convenience while improving security. </td></tr>
-<tr><td><b>Id</b></td><td><code>secretmanager:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>secretmanager:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

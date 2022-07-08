@@ -3,10 +3,9 @@ title: backups
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - backups
+  - bigtableadmin
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -39,8 +38,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_instances_clusters_backups_get` | `SELECT` | `name` | Gets metadata on a pending or completed Cloud Bigtable Backup. |
-| `projects_instances_clusters_backups_list` | `SELECT` | `parent` | Lists Cloud Bigtable backups. Returns both completed and pending backups. |
-| `projects_instances_clusters_backups_create` | `INSERT` | `parent` | Starts creating a new Cloud Bigtable Backup. The returned backup long-running operation can be used to track creation of the backup. The metadata field type is CreateBackupMetadata. The response field type is Backup, if successful. Cancelling the returned operation will stop the creation and delete the backup. |
-| `projects_instances_clusters_backups_delete` | `DELETE` | `name` | Deletes a pending or completed Cloud Bigtable backup. |
-| `projects_instances_clusters_backups_patch` | `EXEC` | `name` | Updates a pending or completed Cloud Bigtable Backup. |
+| `projects_instances_clusters_backups_get` | `SELECT` | `backupsId, clustersId, instancesId, projectsId` | Gets metadata on a pending or completed Cloud Bigtable Backup. |
+| `projects_instances_clusters_backups_list` | `SELECT` | `clustersId, instancesId, projectsId` | Lists Cloud Bigtable backups. Returns both completed and pending backups. |
+| `projects_instances_clusters_backups_create` | `INSERT` | `clustersId, instancesId, projectsId` | Starts creating a new Cloud Bigtable Backup. The returned backup long-running operation can be used to track creation of the backup. The metadata field type is CreateBackupMetadata. The response field type is Backup, if successful. Cancelling the returned operation will stop the creation and delete the backup. |
+| `projects_instances_clusters_backups_delete` | `DELETE` | `backupsId, clustersId, instancesId, projectsId` | Deletes a pending or completed Cloud Bigtable backup. |
+| `projects_instances_clusters_backups_patch` | `EXEC` | `backupsId, clustersId, instancesId, projectsId` | Updates a pending or completed Cloud Bigtable Backup. |

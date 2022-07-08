@@ -3,10 +3,9 @@ title: instance_configs
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - instance_configs
+  - spanner
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,11 +28,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | A unique identifier for the instance configuration. Values are of the form `projects//instanceConfigs/a-z*`. |
-| `leaderOptions` | `array` | Allowed values of the "default_leader" schema option for databases in instances that use this instance configuration. |
 | `replicas` | `array` | The geographic placement of nodes in this instance configuration and their replication properties. |
 | `displayName` | `string` | The name of this instance configuration as it appears in UIs. |
+| `leaderOptions` | `array` | Allowed values of the "default_leader" schema option for databases in instances that use this instance configuration. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_instanceConfigs_get` | `SELECT` | `name` | Gets information about a particular instance configuration. |
-| `projects_instanceConfigs_list` | `SELECT` | `parent` | Lists the supported instance configurations for a given project. |
+| `projects_instanceConfigs_get` | `SELECT` | `instanceConfigsId, projectsId` | Gets information about a particular instance configuration. |
+| `projects_instanceConfigs_list` | `SELECT` | `projectsId` | Lists the supported instance configurations for a given project. |

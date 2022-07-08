@@ -3,10 +3,9 @@ title: finding_type_stats
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - finding_type_stats
+  - websecurityscanner
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,4 +32,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_scanConfigs_scanRuns_findingTypeStats_list` | `SELECT` | `parent` |
+| `projects_scanConfigs_scanRuns_findingTypeStats_list` | `SELECT` | `projectsId, scanConfigsId, scanRunsId` |

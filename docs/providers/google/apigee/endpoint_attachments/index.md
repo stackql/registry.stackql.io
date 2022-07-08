@@ -3,10 +3,9 @@ title: endpoint_attachments
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - endpoint_attachments
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,7 +35,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_endpointAttachments_get` | `SELECT` | `name` | Gets the endpoint attachment. |
-| `organizations_endpointAttachments_list` | `SELECT` | `parent` | Lists the endpoint attachments in an organization. |
-| `organizations_endpointAttachments_create` | `INSERT` | `parent` | Creates an endpoint attachment. **Note:** Not supported for Apigee hybrid. |
-| `organizations_endpointAttachments_delete` | `DELETE` | `name` | Deletes an endpoint attachment. |
+| `organizations_endpointAttachments_get` | `SELECT` | `endpointAttachmentsId, organizationsId` | Gets the endpoint attachment. |
+| `organizations_endpointAttachments_list` | `SELECT` | `organizationsId` | Lists the endpoint attachments in an organization. |
+| `organizations_endpointAttachments_create` | `INSERT` | `organizationsId` | Creates an endpoint attachment. **Note:** Not supported for Apigee hybrid. |
+| `organizations_endpointAttachments_delete` | `DELETE` | `endpointAttachmentsId, organizationsId` | Deletes an endpoint attachment. |

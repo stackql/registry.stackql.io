@@ -3,10 +3,9 @@ title: tensorflow_versions
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - tensorflow_versions
+  - tpu
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,5 +32,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_tensorflowVersions_get` | `SELECT` | `name` | Gets TensorFlow Version. |
-| `projects_locations_tensorflowVersions_list` | `SELECT` | `parent` | List TensorFlow versions supported by this API. |
+| `projects_locations_tensorflowVersions_get` | `SELECT` | `locationsId, projectsId, tensorflowVersionsId` | Gets TensorFlow Version. |
+| `projects_locations_tensorflowVersions_list` | `SELECT` | `locationsId, projectsId` | List TensorFlow versions supported by this API. |

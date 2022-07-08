@@ -3,10 +3,9 @@ title: envgroups
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - envgroups
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,8 +35,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_envgroups_get` | `SELECT` | `name` | Gets an environment group. |
-| `organizations_envgroups_list` | `SELECT` | `parent` | Lists all environment groups. |
-| `organizations_envgroups_create` | `INSERT` | `parent` | Creates a new environment group. |
-| `organizations_envgroups_delete` | `DELETE` | `name` | Deletes an environment group. |
-| `organizations_envgroups_patch` | `EXEC` | `name` | Updates an environment group. |
+| `organizations_envgroups_get` | `SELECT` | `envgroupsId, organizationsId` | Gets an environment group. |
+| `organizations_envgroups_list` | `SELECT` | `organizationsId` | Lists all environment groups. |
+| `organizations_envgroups_create` | `INSERT` | `organizationsId` | Creates a new environment group. |
+| `organizations_envgroups_delete` | `DELETE` | `envgroupsId, organizationsId` | Deletes an environment group. |
+| `organizations_envgroups_patch` | `EXEC` | `envgroupsId, organizationsId` | Updates an environment group. |

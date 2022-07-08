@@ -3,10 +3,8 @@ title: pubsub
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - pubsub
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Provides reliable, many-to-many, asynchronous messaging between applications.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Pub/Sub API</td></tr>
 <tr><td><b>Description</b></td><td>Provides reliable, many-to-many, asynchronous messaging between applications. </td></tr>
-<tr><td><b>Id</b></td><td><code>pubsub:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>pubsub:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

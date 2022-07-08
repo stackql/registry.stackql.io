@@ -3,10 +3,9 @@ title: datacollectors
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - datacollectors
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,14 +29,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | ID of the data collector. Must begin with `dc_`. |
 | `description` | `string` | A description of the data collector. |
+| `type` | `string` | Immutable. The type of data this data collector will collect. |
 | `createdAt` | `string` | Output only. The time at which the data collector was created in milliseconds since the epoch. |
 | `lastModifiedAt` | `string` | Output only. The time at which the Data Collector was last updated in milliseconds since the epoch. |
-| `type` | `string` | Immutable. The type of data this data collector will collect. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_datacollectors_get` | `SELECT` | `name` | Gets a data collector. |
-| `organizations_datacollectors_list` | `SELECT` | `parent` | Lists all data collectors. |
-| `organizations_datacollectors_create` | `INSERT` | `parent` | Creates a new data collector. |
-| `organizations_datacollectors_delete` | `DELETE` | `name` | Deletes a data collector. |
-| `organizations_datacollectors_patch` | `EXEC` | `name` | Updates a data collector. |
+| `organizations_datacollectors_get` | `SELECT` | `datacollectorsId, organizationsId` | Gets a data collector. |
+| `organizations_datacollectors_list` | `SELECT` | `organizationsId` | Lists all data collectors. |
+| `organizations_datacollectors_create` | `INSERT` | `organizationsId` | Creates a new data collector. |
+| `organizations_datacollectors_delete` | `DELETE` | `datacollectorsId, organizationsId` | Deletes a data collector. |
+| `organizations_datacollectors_patch` | `EXEC` | `datacollectorsId, organizationsId` | Updates a data collector. |

@@ -3,10 +3,9 @@ title: locations_bi_reservation
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - locations_bi_reservation
+  - bigqueryreservation
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,10 +28,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name of the singleton BI reservation. Reservation names have the form `projects/{project_id}/locations/{location_id}/biReservation`. |
+| `updateTime` | `string` | Output only. The last update timestamp of a reservation. |
 | `preferredTables` | `array` | Preferred tables to use BI capacity for. |
 | `size` | `string` | Size of a reservation, in bytes. |
-| `updateTime` | `string` | Output only. The last update timestamp of a reservation. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_getBiReservation` | `SELECT` | `name` |
+| `projects_locations_getBiReservation` | `SELECT` | `locationsId, projectsId` |

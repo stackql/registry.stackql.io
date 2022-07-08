@@ -3,8 +3,9 @@ title: jwks
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - jwks
+  - firebaseappcheck
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `get` | `SELECT` | `name` |
+| `get` | `SELECT` |  |

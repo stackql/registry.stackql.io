@@ -3,10 +3,9 @@ title: resources
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - resources
+  - deploymentmanager
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,16 +29,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `id` | `string` |  |
 | `name` | `string` | Output only. The name of the resource as it appears in the YAML config. |
-| `update` | `object` |  |
-| `url` | `string` | Output only. The URL of the actual resource. |
 | `updateTime` | `string` | Output only. Update timestamp in RFC3339 text format. |
-| `manifest` | `string` | Output only. URL of the manifest representing the current configuration of this resource. |
-| `properties` | `string` | Output only. The current properties of the resource before any references have been filled in. Returned as serialized YAML. |
-| `insertTime` | `string` | Output only. Creation timestamp in RFC3339 text format. |
-| `type` | `string` | Output only. The type of the resource, for example `compute.v1.instance`, or `cloudfunctions.v1beta1.function`. |
 | `warnings` | `array` | Output only. If warning messages are generated during processing of this resource, this field will be populated. |
-| `finalProperties` | `string` | Output only. The evaluated properties of the resource with references expanded. Returned as serialized YAML. |
+| `properties` | `string` | Output only. The current properties of the resource before any references have been filled in. Returned as serialized YAML. |
 | `accessControl` | `object` | The access controls set on the resource. |
+| `finalProperties` | `string` | Output only. The evaluated properties of the resource with references expanded. Returned as serialized YAML. |
+| `manifest` | `string` | Output only. URL of the manifest representing the current configuration of this resource. |
+| `url` | `string` | Output only. The URL of the actual resource. |
+| `type` | `string` | Output only. The type of the resource, for example `compute.v1.instance`, or `cloudfunctions.v1beta1.function`. |
+| `update` | `object` |  |
+| `insertTime` | `string` | Output only. Creation timestamp in RFC3339 text format. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

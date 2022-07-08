@@ -3,10 +3,8 @@ title: videointelligence
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - videointelligence
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Detects objects, explicit content, and scene changes in videos. It also specifie
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Video Intelligence API</td></tr>
 <tr><td><b>Description</b></td><td>Detects objects, explicit content, and scene changes in videos. It also specifies the region for annotation and transcribes speech to text. Supports both asynchronous API and streaming API.</td></tr>
-<tr><td><b>Id</b></td><td><code>videointelligence:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>videointelligence:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

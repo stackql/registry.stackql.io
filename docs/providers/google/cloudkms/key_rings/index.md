@@ -3,10 +3,9 @@ title: key_rings
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - key_rings
+  - cloudkms
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,6 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_keyRings_get` | `SELECT` | `name` | Returns metadata for a given KeyRing. |
-| `projects_locations_keyRings_list` | `SELECT` | `parent` | Lists KeyRings. |
-| `projects_locations_keyRings_create` | `INSERT` | `parent` | Create a new KeyRing in a given Project and Location. |
+| `projects_locations_keyRings_get` | `SELECT` | `keyRingsId, locationsId, projectsId` | Returns metadata for a given KeyRing. |
+| `projects_locations_keyRings_list` | `SELECT` | `locationsId, projectsId` | Lists KeyRings. |
+| `projects_locations_keyRings_create` | `INSERT` | `locationsId, projectsId` | Create a new KeyRing in a given Project and Location. |

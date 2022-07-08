@@ -3,10 +3,9 @@ title: serving_configs
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - serving_configs
+  - retail
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_catalogs_servingConfigs_predict` | `EXEC` | `placement` | Makes a recommendation prediction. |
-| `projects_locations_catalogs_servingConfigs_search` | `EXEC` | `placement` | Performs a search. This feature is only available for users who have Retail Search enabled. Please enable Retail Search on Cloud Console before using this feature. |
+| `projects_locations_catalogs_servingConfigs_predict` | `EXEC` | `catalogsId, locationsId, projectsId, servingConfigsId:predict` | Makes a recommendation prediction. |
+| `projects_locations_catalogs_servingConfigs_search` | `EXEC` | `catalogsId, locationsId, projectsId, servingConfigsId:search` | Performs a search. This feature is only available for users who have Retail Search enabled. Please enable Retail Search on Cloud Console before using this feature. |

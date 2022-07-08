@@ -3,10 +3,8 @@ title: storagetransfer
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - storagetransfer
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Transfers data from external data sources to a Google Cloud Storage bucket or be
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Storage Transfer API</td></tr>
 <tr><td><b>Description</b></td><td>Transfers data from external data sources to a Google Cloud Storage bucket or between Google Cloud Storage buckets. </td></tr>
-<tr><td><b>Id</b></td><td><code>storagetransfer:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>storagetransfer:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

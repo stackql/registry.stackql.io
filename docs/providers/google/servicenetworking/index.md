@@ -3,10 +3,8 @@ title: servicenetworking
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - servicenetworking
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Provides automatic management of network configurations necessary for certain se
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Service Networking API</td></tr>
 <tr><td><b>Description</b></td><td>Provides automatic management of network configurations necessary for certain services.</td></tr>
-<tr><td><b>Id</b></td><td><code>servicenetworking:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>servicenetworking:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

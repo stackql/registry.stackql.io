@@ -3,10 +3,9 @@ title: connections
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - connections
+  - servicenetworking
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,6 +34,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `services_connections_list` | `SELECT` | `parent` | List the private connections that are configured in a service consumer's VPC network. |
-| `services_connections_create` | `INSERT` | `parent` | Creates a private connection that establishes a VPC Network Peering connection to a VPC network in the service producer's organization. The administrator of the service consumer's VPC network invokes this method. The administrator must assign one or more allocated IP ranges for provisioning subnetworks in the service producer's VPC network. This connection is used for all supported services in the service producer's organization, so it only needs to be invoked once. |
-| `services_connections_patch` | `EXEC` | `name` | Updates the allocated ranges that are assigned to a connection. |
+| `services_connections_list` | `SELECT` | `servicesId` | List the private connections that are configured in a service consumer's VPC network. |
+| `services_connections_create` | `INSERT` | `servicesId` | Creates a private connection that establishes a VPC Network Peering connection to a VPC network in the service producer's organization. The administrator of the service consumer's VPC network invokes this method. The administrator must assign one or more allocated IP ranges for provisioning subnetworks in the service producer's VPC network. This connection is used for all supported services in the service producer's organization, so it only needs to be invoked once. |
+| `services_connections_patch` | `EXEC` | `connectionsId, servicesId` | Updates the allocated ranges that are assigned to a connection. |

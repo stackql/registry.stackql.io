@@ -3,10 +3,9 @@ title: lakes
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - lakes
+  - dataplex
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -31,20 +30,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `name` | `string` | Output only. The relative resource name of the lake, of the form: projects/{project_number}/locations/{location_id}/lakes/{lake_id}. |
 | `description` | `string` | Optional. Description of the lake. |
 | `serviceAccount` | `string` | Output only. Service account associated with this lake. This service account must be authorized to access or operate on resources managed by the lake. |
-| `state` | `string` | Output only. Current state of the lake. |
-| `displayName` | `string` | Optional. User friendly display name. |
-| `metastore` | `object` | Settings to manage association of Dataproc Metastore with a lake. |
-| `uid` | `string` | Output only. System generated globally unique ID for the lake. This ID will be different if the lake is deleted and re-created with the same name. |
 | `updateTime` | `string` | Output only. The time when the lake was last updated. |
 | `labels` | `object` | Optional. User-defined labels for the lake. |
+| `metastore` | `object` | Settings to manage association of Dataproc Metastore with a lake. |
 | `metastoreStatus` | `object` | Status of Lake and Dataproc Metastore service instance association. |
-| `createTime` | `string` | Output only. The time when the lake was created. |
 | `assetStatus` | `object` | Aggregated status of the underlying assets of a lake or zone. |
+| `createTime` | `string` | Output only. The time when the lake was created. |
+| `uid` | `string` | Output only. System generated globally unique ID for the lake. This ID will be different if the lake is deleted and re-created with the same name. |
+| `state` | `string` | Output only. Current state of the lake. |
+| `displayName` | `string` | Optional. User friendly display name. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_lakes_get` | `SELECT` | `name` | Retrieves a lake resource. |
-| `projects_locations_lakes_list` | `SELECT` | `parent` | Lists lake resources in a project and location. |
-| `projects_locations_lakes_create` | `INSERT` | `parent` | Creates a lake resource. |
-| `projects_locations_lakes_delete` | `DELETE` | `name` | Deletes a lake resource. All zones within the lake must be deleted before the lake can be deleted. |
-| `projects_locations_lakes_patch` | `EXEC` | `name` | Updates a lake resource. |
+| `projects_locations_lakes_get` | `SELECT` | `lakesId, locationsId, projectsId` | Retrieves a lake resource. |
+| `projects_locations_lakes_list` | `SELECT` | `locationsId, projectsId` | Lists lake resources in a project and location. |
+| `projects_locations_lakes_create` | `INSERT` | `locationsId, projectsId` | Creates a lake resource. |
+| `projects_locations_lakes_delete` | `DELETE` | `lakesId, locationsId, projectsId` | Deletes a lake resource. All zones within the lake must be deleted before the lake can be deleted. |
+| `projects_locations_lakes_patch` | `EXEC` | `lakesId, locationsId, projectsId` | Updates a lake resource. |

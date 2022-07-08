@@ -3,10 +3,9 @@ title: sessions_batch
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - sessions_batch
+  - spanner
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_instances_databases_sessions_batchCreate` | `INSERT` | `database` |
+| `projects_instances_databases_sessions_batchCreate` | `INSERT` | `databasesId, instancesId, projectsId` |

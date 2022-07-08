@@ -3,10 +3,9 @@ title: tags
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - tags
+  - artifactregistry
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,8 +32,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_repositories_packages_tags_get` | `SELECT` | `name` | Gets a tag. |
-| `projects_locations_repositories_packages_tags_list` | `SELECT` | `parent` | Lists tags. |
-| `projects_locations_repositories_packages_tags_create` | `INSERT` | `parent` | Creates a tag. |
-| `projects_locations_repositories_packages_tags_delete` | `DELETE` | `name` | Deletes a tag. |
-| `projects_locations_repositories_packages_tags_patch` | `EXEC` | `name` | Updates a tag. |
+| `projects_locations_repositories_packages_tags_get` | `SELECT` | `locationsId, packagesId, projectsId, repositoriesId, tagsId` | Gets a tag. |
+| `projects_locations_repositories_packages_tags_list` | `SELECT` | `locationsId, packagesId, projectsId, repositoriesId` | Lists tags. |
+| `projects_locations_repositories_packages_tags_create` | `INSERT` | `locationsId, packagesId, projectsId, repositoriesId` | Creates a tag. |
+| `projects_locations_repositories_packages_tags_delete` | `DELETE` | `locationsId, packagesId, projectsId, repositoriesId, tagsId` | Deletes a tag. |
+| `projects_locations_repositories_packages_tags_patch` | `EXEC` | `locationsId, packagesId, projectsId, repositoriesId, tagsId` | Updates a tag. |

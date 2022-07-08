@@ -3,10 +3,9 @@ title: groups_group_migration
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - groups_group_migration
+  - vmmigration
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_groups_addGroupMigration` | `INSERT` | `group` | Adds a MigratingVm to a Group. |
-| `projects_locations_groups_removeGroupMigration` | `DELETE` | `group` | Removes a MigratingVm from a Group. |
+| `projects_locations_groups_addGroupMigration` | `INSERT` | `groupsId:addGroupMigration, locationsId, projectsId` | Adds a MigratingVm to a Group. |
+| `projects_locations_groups_removeGroupMigration` | `DELETE` | `groupsId:removeGroupMigration, locationsId, projectsId` | Removes a MigratingVm from a Group. |

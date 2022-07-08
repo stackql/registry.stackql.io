@@ -3,10 +3,9 @@ title: image_family_views
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - image_family_views
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

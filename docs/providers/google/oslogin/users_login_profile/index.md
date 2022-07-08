@@ -3,10 +3,9 @@ title: users_login_profile
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - users_login_profile
+  - oslogin
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,9 +28,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Required. A unique user ID. |
-| `sshPublicKeys` | `object` | A map from SSH public key fingerprint to the associated key object. |
 | `posixAccounts` | `array` | The list of POSIX accounts associated with the user. |
+| `sshPublicKeys` | `object` | A map from SSH public key fingerprint to the associated key object. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `users_getLoginProfile` | `SELECT` | `name` |
+| `users_getLoginProfile` | `SELECT` | `usersId` |

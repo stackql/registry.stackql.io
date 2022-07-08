@@ -3,10 +3,9 @@ title: dest_groups
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - dest_groups
+  - iap
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,8 +33,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_iap_tunnel_locations_destGroups_get` | `SELECT` | `name` | Retrieves an existing TunnelDestGroup. |
-| `projects_iap_tunnel_locations_destGroups_list` | `SELECT` | `parent` | Lists the existing TunnelDestGroups. To group across all locations, use a `-` as the location ID. For example: `/v1/projects/123/iap_tunnel/locations/-/destGroups` |
-| `projects_iap_tunnel_locations_destGroups_create` | `INSERT` | `parent` | Creates a new TunnelDestGroup. |
-| `projects_iap_tunnel_locations_destGroups_delete` | `DELETE` | `name` | Deletes a TunnelDestGroup. |
-| `projects_iap_tunnel_locations_destGroups_patch` | `EXEC` | `name` | Updates a TunnelDestGroup. |
+| `projects_iap_tunnel_locations_destGroups_get` | `SELECT` | `destGroupsId, locationsId, projectsId` | Retrieves an existing TunnelDestGroup. |
+| `projects_iap_tunnel_locations_destGroups_list` | `SELECT` | `locationsId, projectsId` | Lists the existing TunnelDestGroups. To group across all locations, use a `-` as the location ID. For example: `/v1/projects/123/iap_tunnel/locations/-/destGroups` |
+| `projects_iap_tunnel_locations_destGroups_create` | `INSERT` | `locationsId, projectsId` | Creates a new TunnelDestGroup. |
+| `projects_iap_tunnel_locations_destGroups_delete` | `DELETE` | `destGroupsId, locationsId, projectsId` | Deletes a TunnelDestGroup. |
+| `projects_iap_tunnel_locations_destGroups_patch` | `EXEC` | `destGroupsId, locationsId, projectsId` | Updates a TunnelDestGroup. |

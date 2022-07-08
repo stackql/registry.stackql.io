@@ -3,10 +3,9 @@ title: product_sets_product
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - product_sets_product
+  - vision
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_productSets_addProduct` | `INSERT` | `name` | Adds a Product to the specified ProductSet. If the Product is already present, no change is made. One Product can be added to at most 100 ProductSets. Possible errors: * Returns NOT_FOUND if the Product or the ProductSet doesn't exist. |
-| `projects_locations_productSets_removeProduct` | `DELETE` | `name` | Removes a Product from the specified ProductSet. |
+| `projects_locations_productSets_addProduct` | `INSERT` | `locationsId, productSetsId:addProduct, projectsId` | Adds a Product to the specified ProductSet. If the Product is already present, no change is made. One Product can be added to at most 100 ProductSets. Possible errors: * Returns NOT_FOUND if the Product or the ProductSet doesn't exist. |
+| `projects_locations_productSets_removeProduct` | `DELETE` | `locationsId, productSetsId:removeProduct, projectsId` | Removes a Product from the specified ProductSet. |
