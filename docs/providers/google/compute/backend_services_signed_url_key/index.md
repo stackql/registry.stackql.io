@@ -3,10 +3,9 @@ title: backend_services_signed_url_key
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - backend_services_signed_url_key
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

@@ -3,8 +3,9 @@ title: buckets
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - buckets
+  - firebasestorage
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -27,10 +28,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Resource name of the bucket. |
-| `reconciling` | `boolean` | Output only. Represents whether a bucket is being moved to a new location, in which case reconciling is set to true. |
 | `location` | `string` | Output only. Location of the storage bucket. |
+| `reconciling` | `boolean` | Output only. Represents whether a bucket is being moved to a new location, in which case reconciling is set to true. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_buckets_get` | `SELECT` | `name` | Gets a single linked storage bucket. |
-| `projects_buckets_list` | `SELECT` | `parent` | Lists the linked storage buckets for a project. |
+| `projects_buckets_get` | `SELECT` | `bucketsId, projectsId` | Gets a single linked storage bucket. |
+| `projects_buckets_list` | `SELECT` | `projectsId` | Lists the linked storage buckets for a project. |

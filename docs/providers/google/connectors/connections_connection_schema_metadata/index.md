@@ -3,10 +3,9 @@ title: connections_connection_schema_metadata
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - connections_connection_schema_metadata
+  - connectors
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `actions` | `array` | Output only. List of actions. |
 | `entities` | `array` | Output only. List of entity names. |
+| `actions` | `array` | Output only. List of actions. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_connections_getConnectionSchemaMetadata` | `SELECT` | `name` |
+| `projects_locations_connections_getConnectionSchemaMetadata` | `SELECT` | `connectionsId, locationsId, projectsId` |

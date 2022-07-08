@@ -3,10 +3,9 @@ title: jobs_aggregated
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - jobs_aggregated
+  - dataflow
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `nextPageToken` | `string` | Set if there may be more results than fit in this response. |
 | `failedLocation` | `array` | Zero or more messages describing the [regional endpoints] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that failed to respond. |
 | `jobs` | `array` | A subset of the requested job information. |
+| `nextPageToken` | `string` | Set if there may be more results than fit in this response. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

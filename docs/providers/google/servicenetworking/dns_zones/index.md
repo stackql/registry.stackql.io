@@ -3,10 +3,9 @@ title: dns_zones
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - dns_zones
+  - servicenetworking
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `services_dnsZones_add` | `INSERT` | `parent` | Service producers can use this method to add private DNS zones in the shared producer host project and matching peering zones in the consumer project. |
-| `services_dnsZones_remove` | `DELETE` | `parent` | Service producers can use this method to remove private DNS zones in the shared producer host project and matching peering zones in the consumer project. |
+| `services_dnsZones_add` | `INSERT` | `servicesId` | Service producers can use this method to add private DNS zones in the shared producer host project and matching peering zones in the consumer project. |
+| `services_dnsZones_remove` | `DELETE` | `servicesId` | Service producers can use this method to remove private DNS zones in the shared producer host project and matching peering zones in the consumer project. |

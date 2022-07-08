@@ -3,10 +3,9 @@ title: long_running_operations
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - long_running_operations
+  - videointelligence
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,6 +35,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `operations_projects_locations_operations_get` | `SELECT` | `name` | Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service. |
-| `operations_projects_locations_operations_delete` | `DELETE` | `name` | Deletes a long-running operation. This method indicates that the client is no longer interested in the operation result. It does not cancel the operation. If the server doesn't support this method, it returns `google.rpc.Code.UNIMPLEMENTED`. |
-| `operations_projects_locations_operations_cancel` | `EXEC` | `name` | Starts asynchronous cancellation on a long-running operation. The server makes a best effort to cancel the operation, but success is not guaranteed. If the server doesn't support this method, it returns `google.rpc.Code.UNIMPLEMENTED`. Clients can use Operations.GetOperation or other methods to check whether the cancellation succeeded or whether the operation completed despite cancellation. On successful cancellation, the operation is not deleted; instead, it becomes an operation with an Operation.error value with a google.rpc.Status.code of 1, corresponding to `Code.CANCELLED`. |
+| `operations_projects_locations_operations_get` | `SELECT` | `locationsId, operationsId, projectsId` | Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service. |
+| `operations_projects_locations_operations_delete` | `DELETE` | `locationsId, operationsId, projectsId` | Deletes a long-running operation. This method indicates that the client is no longer interested in the operation result. It does not cancel the operation. If the server doesn't support this method, it returns `google.rpc.Code.UNIMPLEMENTED`. |
+| `operations_projects_locations_operations_cancel` | `EXEC` | `locationsId, operationsId:cancel, projectsId` | Starts asynchronous cancellation on a long-running operation. The server makes a best effort to cancel the operation, but success is not guaranteed. If the server doesn't support this method, it returns `google.rpc.Code.UNIMPLEMENTED`. Clients can use Operations.GetOperation or other methods to check whether the cancellation succeeded or whether the operation completed despite cancellation. On successful cancellation, the operation is not deleted; instead, it becomes an operation with an Operation.error value with a google.rpc.Status.code of 1, corresponding to `Code.CANCELLED`. |

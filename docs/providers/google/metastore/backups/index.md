@@ -3,10 +3,9 @@ title: backups
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - backups
+  - metastore
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,15 +29,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Immutable. The relative resource name of the backup, in the following form:projects/{project_number}/locations/{location_id}/services/{service_id}/backups/{backup_id} |
 | `description` | `string` | The description of the backup. |
+| `restoringServices` | `array` | Output only. Services that are restoring from the backup. |
+| `serviceRevision` | `object` | A managed metastore service that serves metadata queries. |
 | `state` | `string` | Output only. The current state of the backup. |
 | `createTime` | `string` | Output only. The time when the backup was started. |
 | `endTime` | `string` | Output only. The time when the backup finished creating. |
-| `restoringServices` | `array` | Output only. Services that are restoring from the backup. |
-| `serviceRevision` | `object` | A managed metastore service that serves metadata queries. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_services_backups_get` | `SELECT` | `name` | Gets details of a single backup. |
-| `projects_locations_services_backups_list` | `SELECT` | `parent` | Lists backups in a service. |
-| `projects_locations_services_backups_create` | `INSERT` | `parent` | Creates a new backup in a given project and location. |
-| `projects_locations_services_backups_delete` | `DELETE` | `name` | Deletes a single backup. |
+| `projects_locations_services_backups_get` | `SELECT` | `backupsId, locationsId, projectsId, servicesId` | Gets details of a single backup. |
+| `projects_locations_services_backups_list` | `SELECT` | `locationsId, projectsId, servicesId` | Lists backups in a service. |
+| `projects_locations_services_backups_create` | `INSERT` | `locationsId, projectsId, servicesId` | Creates a new backup in a given project and location. |
+| `projects_locations_services_backups_delete` | `DELETE` | `backupsId, locationsId, projectsId, servicesId` | Deletes a single backup. |

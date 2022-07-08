@@ -3,10 +3,8 @@ title: jobs
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - jobs
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Cloud Talent Solution provides the capability to create, read, update, and delet
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Talent Solution API</td></tr>
 <tr><td><b>Description</b></td><td>Cloud Talent Solution provides the capability to create, read, update, and delete job postings, as well as search jobs based on keywords and filters. </td></tr>
-<tr><td><b>Id</b></td><td><code>jobs:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>jobs:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

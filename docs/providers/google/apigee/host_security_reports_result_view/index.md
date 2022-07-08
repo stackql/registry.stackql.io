@@ -3,10 +3,9 @@ title: host_security_reports_result_view
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - host_security_reports_result_view
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,4 +35,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_hostSecurityReports_getResultView` | `SELECT` | `name` |
+| `organizations_hostSecurityReports_getResultView` | `SELECT` | `hostSecurityReportsId, organizationsId` |

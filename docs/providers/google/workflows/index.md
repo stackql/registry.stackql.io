@@ -3,10 +3,8 @@ title: workflows
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - workflows
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Manage workflow definitions. To execute workflows and manage executions, see the
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Workflows API</td></tr>
 <tr><td><b>Description</b></td><td>Manage workflow definitions. To execute workflows and manage executions, see the Workflows Executions API.</td></tr>
-<tr><td><b>Id</b></td><td><code>workflows:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>workflows:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

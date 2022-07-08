@@ -3,10 +3,9 @@ title: instances_screenshot
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - instances_screenshot
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `contents` | `string` | [Output Only] The Base64-encoded screenshot data. |
 | `kind` | `string` | [Output Only] Type of the resource. Always compute#screenshot for the screenshots. |
+| `contents` | `string` | [Output Only] The Base64-encoded screenshot data. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

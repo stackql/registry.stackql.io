@@ -3,10 +3,9 @@ title: zones_serverconfig
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - zones_serverconfig
+  - container
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,12 +27,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `channels` | `array` | List of release channel configurations. |
-| `defaultClusterVersion` | `string` | Version of Kubernetes the service deploys by default. |
 | `defaultImageType` | `string` | Default image type. |
 | `validImageTypes` | `array` | List of valid image types. |
 | `validMasterVersions` | `array` | List of valid master versions, in descending order. |
 | `validNodeVersions` | `array` | List of valid node upgrade target versions, in descending order. |
+| `channels` | `array` | List of release channel configurations. |
+| `defaultClusterVersion` | `string` | Version of Kubernetes the service deploys by default. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

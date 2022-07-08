@@ -3,10 +3,8 @@ title: bigtableadmin
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - bigtableadmin
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Administer your Cloud Bigtable tables and instances.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Bigtable Admin API</td></tr>
 <tr><td><b>Description</b></td><td>Administer your Cloud Bigtable tables and instances.</td></tr>
-<tr><td><b>Id</b></td><td><code>bigtableadmin:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>bigtableadmin:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

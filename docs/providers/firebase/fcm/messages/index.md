@@ -3,8 +3,9 @@ title: messages
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - messages
+  - fcm
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_messages_send` | `EXEC` | `parent` |
+| `projects_messages_send` | `EXEC` | `projectsId` |

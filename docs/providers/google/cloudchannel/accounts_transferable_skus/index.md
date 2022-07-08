@@ -3,10 +3,9 @@ title: accounts_transferable_skus
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - accounts_transferable_skus
+  - cloudchannel
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `transferableSkus` | `array` | Information about existing SKUs for a customer that needs a transfer. |
 | `nextPageToken` | `string` | A token to retrieve the next page of results. Pass to ListTransferableSkusRequest.page_token to obtain that page. |
+| `transferableSkus` | `array` | Information about existing SKUs for a customer that needs a transfer. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `accounts_listTransferableSkus` | `SELECT` | `parent` |
+| `accounts_listTransferableSkus` | `SELECT` | `accountsId:listTransferableSkus` |

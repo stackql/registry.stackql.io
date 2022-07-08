@@ -3,8 +3,9 @@ title: safety_net_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - safety_net_config
+  - firebaseappcheck
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -31,6 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_apps_safetyNetConfig_get` | `SELECT` | `name` | Gets the SafetyNetConfig for the specified app. |
-| `projects_apps_safetyNetConfig_batchGet` | `EXEC` | `parent` | Atomically gets the SafetyNetConfigs for the specified list of apps. |
-| `projects_apps_safetyNetConfig_patch` | `EXEC` | `name` | Updates the SafetyNetConfig for the specified app. While this configuration is incomplete or invalid, the app will be unable to exchange SafetyNet tokens for App Check tokens. |
+| `projects_apps_safetyNetConfig_get` | `SELECT` | `appsId, projectsId` | Gets the SafetyNetConfig for the specified app. |
+| `projects_apps_safetyNetConfig_batchGet` | `EXEC` | `projectsId` | Atomically gets the SafetyNetConfigs for the specified list of apps. |
+| `projects_apps_safetyNetConfig_patch` | `EXEC` | `appsId, projectsId` | Updates the SafetyNetConfig for the specified app. While this configuration is incomplete or invalid, the app will be unable to exchange SafetyNet tokens for App Check tokens. |

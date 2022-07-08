@@ -3,10 +3,8 @@ title: dlp
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - dlp
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Provides methods for detection, risk analysis, and de-identification of privacy-
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Data Loss Prevention (DLP) API</td></tr>
 <tr><td><b>Description</b></td><td>Provides methods for detection, risk analysis, and de-identification of privacy-sensitive fragments in text, images, and Google Cloud Platform storage repositories.</td></tr>
-<tr><td><b>Id</b></td><td><code>dlp:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>dlp:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

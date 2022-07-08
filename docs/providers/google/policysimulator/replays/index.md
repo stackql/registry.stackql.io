@@ -3,10 +3,9 @@ title: replays
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - replays
+  - policysimulator
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,9 +34,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `folders_locations_replays_get` | `SELECT` | `name` | Gets the specified Replay. Each `Replay` is available for at least 7 days. |
-| `organizations_locations_replays_get` | `SELECT` | `name` | Gets the specified Replay. Each `Replay` is available for at least 7 days. |
-| `projects_locations_replays_get` | `SELECT` | `name` | Gets the specified Replay. Each `Replay` is available for at least 7 days. |
-| `folders_locations_replays_create` | `INSERT` | `parent` | Creates and starts a Replay using the given ReplayConfig. |
-| `organizations_locations_replays_create` | `INSERT` | `parent` | Creates and starts a Replay using the given ReplayConfig. |
-| `projects_locations_replays_create` | `INSERT` | `parent` | Creates and starts a Replay using the given ReplayConfig. |
+| `folders_locations_replays_get` | `SELECT` | `foldersId, locationsId, replaysId` | Gets the specified Replay. Each `Replay` is available for at least 7 days. |
+| `organizations_locations_replays_get` | `SELECT` | `locationsId, organizationsId, replaysId` | Gets the specified Replay. Each `Replay` is available for at least 7 days. |
+| `projects_locations_replays_get` | `SELECT` | `locationsId, projectsId, replaysId` | Gets the specified Replay. Each `Replay` is available for at least 7 days. |
+| `folders_locations_replays_create` | `INSERT` | `foldersId, locationsId` | Creates and starts a Replay using the given ReplayConfig. |
+| `organizations_locations_replays_create` | `INSERT` | `locationsId, organizationsId` | Creates and starts a Replay using the given ReplayConfig. |
+| `projects_locations_replays_create` | `INSERT` | `locationsId, projectsId` | Creates and starts a Replay using the given ReplayConfig. |

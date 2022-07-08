@@ -3,10 +3,9 @@ title: flowhooks
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - flowhooks
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,6 +34,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_environments_flowhooks_get` | `SELECT` | `name` | Returns the name of the shared flow attached to the specified flow hook. If there's no shared flow attached to the flow hook, the API does not return an error; it simply does not return a name in the response. |
-| `organizations_environments_flowhooks_attachSharedFlowToFlowHook` | `EXEC` | `name` | Attaches a shared flow to a flow hook. |
-| `organizations_environments_flowhooks_detachSharedFlowFromFlowHook` | `EXEC` | `name` | Detaches a shared flow from a flow hook. |
+| `organizations_environments_flowhooks_get` | `SELECT` | `environmentsId, flowhooksId, organizationsId` | Returns the name of the shared flow attached to the specified flow hook. If there's no shared flow attached to the flow hook, the API does not return an error; it simply does not return a name in the response. |
+| `organizations_environments_flowhooks_attachSharedFlowToFlowHook` | `EXEC` | `environmentsId, flowhooksId, organizationsId` | Attaches a shared flow to a flow hook. |
+| `organizations_environments_flowhooks_detachSharedFlowFromFlowHook` | `EXEC` | `environmentsId, flowhooksId, organizationsId` | Detaches a shared flow from a flow hook. |

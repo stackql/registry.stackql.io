@@ -3,10 +3,9 @@ title: machine_types
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - machine_types
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -31,19 +30,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` | [Output Only] The unique identifier for the resource. This identifier is defined by the server. |
 | `name` | `string` | [Output Only] Name of the resource. |
 | `description` | `string` | [Output Only] An optional textual description of the resource. |
-| `maximumPersistentDisksSizeGb` | `string` | [Output Only] Maximum total persistent disks size (GB) allowed. |
-| `isSharedCpu` | `boolean` | [Output Only] Whether this machine type has a shared CPU. See Shared-core machine types for more information. |
-| `zone` | `string` | [Output Only] The name of the zone where the machine type resides, such as us-central1-a. |
-| `maximumPersistentDisks` | `integer` | [Output Only] Maximum persistent disks allowed. |
 | `memoryMb` | `integer` | [Output Only] The amount of physical memory available to the instance, defined in MB. |
-| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
-| `kind` | `string` | [Output Only] The type of the resource. Always compute#machineType for machine types. |
 | `imageSpaceGb` | `integer` | [Deprecated] This property is deprecated and will never be populated with any relevant values. |
-| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
+| `isSharedCpu` | `boolean` | [Output Only] Whether this machine type has a shared CPU. See Shared-core machine types for more information. |
+| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
 | `scratchDisks` | `array` | [Output Only] A list of extended scratch disks assigned to the instance. |
+| `kind` | `string` | [Output Only] The type of the resource. Always compute#machineType for machine types. |
+| `maximumPersistentDisksSizeGb` | `string` | [Output Only] Maximum total persistent disks size (GB) allowed. |
+| `maximumPersistentDisks` | `integer` | [Output Only] Maximum persistent disks allowed. |
 | `guestCpus` | `integer` | [Output Only] The number of virtual CPUs that are available to the instance. |
-| `deprecated` | `object` | Deprecation status for a public resource. |
+| `zone` | `string` | [Output Only] The name of the zone where the machine type resides, such as us-central1-a. |
 | `accelerators` | `array` | [Output Only] A list of accelerator configurations assigned to this machine type. |
+| `deprecated` | `object` | Deprecation status for a public resource. |
+| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

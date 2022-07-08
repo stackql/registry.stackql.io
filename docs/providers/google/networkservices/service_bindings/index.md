@@ -3,10 +3,9 @@ title: service_bindings
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - service_bindings
+  - networkservices
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -37,7 +36,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_serviceBindings_get` | `SELECT` | `name` | Gets details of a single ServiceBinding. |
-| `projects_locations_serviceBindings_list` | `SELECT` | `parent` | Lists ServiceBinding in a given project and location. |
-| `projects_locations_serviceBindings_create` | `INSERT` | `parent` | Creates a new ServiceBinding in a given project and location. |
-| `projects_locations_serviceBindings_delete` | `DELETE` | `name` | Deletes a single ServiceBinding. |
+| `projects_locations_serviceBindings_get` | `SELECT` | `locationsId, projectsId, serviceBindingsId` | Gets details of a single ServiceBinding. |
+| `projects_locations_serviceBindings_list` | `SELECT` | `locationsId, projectsId` | Lists ServiceBinding in a given project and location. |
+| `projects_locations_serviceBindings_create` | `INSERT` | `locationsId, projectsId` | Creates a new ServiceBinding in a given project and location. |
+| `projects_locations_serviceBindings_delete` | `DELETE` | `locationsId, projectsId, serviceBindingsId` | Deletes a single ServiceBinding. |

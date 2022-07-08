@@ -3,10 +3,8 @@ title: datacatalog
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - datacatalog
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ A fully managed and highly scalable data discovery and metadata management servi
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Google Cloud Data Catalog API</td></tr>
 <tr><td><b>Description</b></td><td>A fully managed and highly scalable data discovery and metadata management service. </td></tr>
-<tr><td><b>Id</b></td><td><code>datacatalog:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>datacatalog:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

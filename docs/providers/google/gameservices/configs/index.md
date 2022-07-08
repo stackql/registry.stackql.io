@@ -3,10 +3,9 @@ title: configs
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - configs
+  - gameservices
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -38,7 +37,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_gameServerDeployments_configs_get` | `SELECT` | `name` | Gets details of a single game server config. |
-| `projects_locations_gameServerDeployments_configs_list` | `SELECT` | `parent` | Lists game server configs in a given project, location, and game server deployment. |
-| `projects_locations_gameServerDeployments_configs_create` | `INSERT` | `parent` | Creates a new game server config in a given project, location, and game server deployment. Game server configs are immutable, and are not applied until referenced in the game server deployment rollout resource. |
-| `projects_locations_gameServerDeployments_configs_delete` | `DELETE` | `name` | Deletes a single game server config. The deletion fails if the game server config is referenced in a game server deployment rollout. |
+| `projects_locations_gameServerDeployments_configs_get` | `SELECT` | `configsId, gameServerDeploymentsId, locationsId, projectsId` | Gets details of a single game server config. |
+| `projects_locations_gameServerDeployments_configs_list` | `SELECT` | `gameServerDeploymentsId, locationsId, projectsId` | Lists game server configs in a given project, location, and game server deployment. |
+| `projects_locations_gameServerDeployments_configs_create` | `INSERT` | `gameServerDeploymentsId, locationsId, projectsId` | Creates a new game server config in a given project, location, and game server deployment. Game server configs are immutable, and are not applied until referenced in the game server deployment rollout resource. |
+| `projects_locations_gameServerDeployments_configs_delete` | `DELETE` | `configsId, gameServerDeploymentsId, locationsId, projectsId` | Deletes a single game server config. The deletion fails if the game server config is referenced in a game server deployment rollout. |

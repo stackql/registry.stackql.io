@@ -3,10 +3,8 @@ title: cloudasset
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - cloudasset
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ The cloud asset API manages the history and inventory of cloud resources.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Asset API</td></tr>
 <tr><td><b>Description</b></td><td>The cloud asset API manages the history and inventory of cloud resources.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudasset:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudasset:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -38,7 +36,6 @@ The cloud asset API manages the history and inventory of cloud resources.
 <div class="providerDocColumn">
 <a href="/providers/google/cloudasset/feeds/">feeds</a><br />
 <a href="/providers/google/cloudasset/iam_policies/">iam_policies</a><br />
-<a href="/providers/google/cloudasset/operations/">operations</a><br />
 <a href="/providers/google/cloudasset/saved_queries/">saved_queries</a><br />
 </div>
 </div>

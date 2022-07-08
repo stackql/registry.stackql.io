@@ -3,10 +3,8 @@ title: recommendationengine
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - recommendationengine
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Note that we now highly recommend new customers to use Retail API, which incorpo
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Recommendations AI (Beta)</td></tr>
 <tr><td><b>Description</b></td><td>Note that we now highly recommend new customers to use Retail API, which incorporates the GA version of the Recommendations AI funtionalities. To enable Retail API, please visit https://console.cloud.google.com/apis/library/retail.googleapis.com. The Recommendations AI service enables customers to build end-to-end personalized recommendation systems without requiring a high level of expertise in machine learning, recommendation system, or Google Cloud.</td></tr>
-<tr><td><b>Id</b></td><td><code>recommendationengine:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>recommendationengine:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

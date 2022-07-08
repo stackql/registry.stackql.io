@@ -3,10 +3,8 @@ title: oslogin
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - oslogin
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ You can use OS Login to manage access to your VM instances using IAM roles.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud OS Login API</td></tr>
 <tr><td><b>Description</b></td><td>You can use OS Login to manage access to your VM instances using IAM roles.</td></tr>
-<tr><td><b>Id</b></td><td><code>oslogin:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>oslogin:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

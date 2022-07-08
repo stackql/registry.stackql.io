@@ -3,10 +3,8 @@ title: servicecontrol
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - servicecontrol
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Provides admission control and telemetry reporting for services integrated with 
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Service Control API</td></tr>
 <tr><td><b>Description</b></td><td>Provides admission control and telemetry reporting for services integrated with Service Infrastructure. </td></tr>
-<tr><td><b>Id</b></td><td><code>servicecontrol:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>servicecontrol:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

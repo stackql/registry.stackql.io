@@ -3,10 +3,9 @@ title: tags
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - tags
+  - datacatalog
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,11 +32,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_entryGroups_entries_tags_list` | `SELECT` | `parent` | Lists tags assigned to an Entry. The columns in the response are lowercased. |
-| `projects_locations_entryGroups_tags_list` | `SELECT` | `parent` | Lists tags assigned to an Entry. The columns in the response are lowercased. |
-| `projects_locations_entryGroups_entries_tags_create` | `INSERT` | `parent` | Creates a tag and assigns it to: * An Entry if the method name is `projects.locations.entryGroups.entries.tags.create`. * Or EntryGroupif the method name is `projects.locations.entryGroups.tags.create`. Note: The project identified by the `parent` parameter for the [tag] (https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.entryGroups.entries.tags/create#path-parameters) and the [tag template] (https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.tagTemplates/create#path-parameters) used to create the tag must be in the same organization. |
-| `projects_locations_entryGroups_tags_create` | `INSERT` | `parent` | Creates a tag and assigns it to: * An Entry if the method name is `projects.locations.entryGroups.entries.tags.create`. * Or EntryGroupif the method name is `projects.locations.entryGroups.tags.create`. Note: The project identified by the `parent` parameter for the [tag] (https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.entryGroups.entries.tags/create#path-parameters) and the [tag template] (https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.tagTemplates/create#path-parameters) used to create the tag must be in the same organization. |
-| `projects_locations_entryGroups_entries_tags_delete` | `DELETE` | `name` | Deletes a tag. |
-| `projects_locations_entryGroups_tags_delete` | `DELETE` | `name` | Deletes a tag. |
-| `projects_locations_entryGroups_entries_tags_patch` | `EXEC` | `name` | Updates an existing tag. |
-| `projects_locations_entryGroups_tags_patch` | `EXEC` | `name` | Updates an existing tag. |
+| `projects_locations_entryGroups_entries_tags_list` | `SELECT` | `entriesId, entryGroupsId, locationsId, projectsId` | Lists tags assigned to an Entry. The columns in the response are lowercased. |
+| `projects_locations_entryGroups_tags_list` | `SELECT` | `entryGroupsId, locationsId, projectsId` | Lists tags assigned to an Entry. The columns in the response are lowercased. |
+| `projects_locations_entryGroups_entries_tags_create` | `INSERT` | `entriesId, entryGroupsId, locationsId, projectsId` | Creates a tag and assigns it to: * An Entry if the method name is `projects.locations.entryGroups.entries.tags.create`. * Or EntryGroupif the method name is `projects.locations.entryGroups.tags.create`. Note: The project identified by the `parent` parameter for the [tag] (https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.entryGroups.entries.tags/create#path-parameters) and the [tag template] (https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.tagTemplates/create#path-parameters) used to create the tag must be in the same organization. |
+| `projects_locations_entryGroups_tags_create` | `INSERT` | `entryGroupsId, locationsId, projectsId` | Creates a tag and assigns it to: * An Entry if the method name is `projects.locations.entryGroups.entries.tags.create`. * Or EntryGroupif the method name is `projects.locations.entryGroups.tags.create`. Note: The project identified by the `parent` parameter for the [tag] (https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.entryGroups.entries.tags/create#path-parameters) and the [tag template] (https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.tagTemplates/create#path-parameters) used to create the tag must be in the same organization. |
+| `projects_locations_entryGroups_entries_tags_delete` | `DELETE` | `entriesId, entryGroupsId, locationsId, projectsId, tagsId` | Deletes a tag. |
+| `projects_locations_entryGroups_tags_delete` | `DELETE` | `entryGroupsId, locationsId, projectsId, tagsId` | Deletes a tag. |
+| `projects_locations_entryGroups_entries_tags_patch` | `EXEC` | `entriesId, entryGroupsId, locationsId, projectsId, tagsId` | Updates an existing tag. |
+| `projects_locations_entryGroups_tags_patch` | `EXEC` | `entryGroupsId, locationsId, projectsId, tagsId` | Updates an existing tag. |

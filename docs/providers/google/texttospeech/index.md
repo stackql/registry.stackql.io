@@ -3,10 +3,8 @@ title: texttospeech
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - texttospeech
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Synthesizes natural-sounding speech by applying powerful neural network models.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Text-to-Speech API</td></tr>
 <tr><td><b>Description</b></td><td>Synthesizes natural-sounding speech by applying powerful neural network models.</td></tr>
-<tr><td><b>Id</b></td><td><code>texttospeech:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>texttospeech:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

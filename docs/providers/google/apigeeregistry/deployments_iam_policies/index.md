@@ -3,10 +3,9 @@ title: deployments_iam_policies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - deployments_iam_policies
+  - apigeeregistry
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,6 +33,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_apis_deployments_getIamPolicy` | `SELECT` | `resource` | Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. |
-| `projects_locations_apis_deployments_setIamPolicy` | `EXEC` | `resource` | Sets the access control policy on the specified resource. Replaces any existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and `PERMISSION_DENIED` errors. |
-| `projects_locations_apis_deployments_testIamPermissions` | `EXEC` | `resource` | Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a `NOT_FOUND` error. Note: This operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may "fail open" without warning. |
+| `projects_locations_apis_deployments_getIamPolicy` | `SELECT` | `apisId, deploymentsId:getIamPolicy, locationsId, projectsId` | Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. |
+| `projects_locations_apis_deployments_setIamPolicy` | `EXEC` | `apisId, deploymentsId:setIamPolicy, locationsId, projectsId` | Sets the access control policy on the specified resource. Replaces any existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and `PERMISSION_DENIED` errors. |
+| `projects_locations_apis_deployments_testIamPermissions` | `EXEC` | `apisId, deploymentsId:testIamPermissions, locationsId, projectsId` | Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a `NOT_FOUND` error. Note: This operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may "fail open" without warning. |

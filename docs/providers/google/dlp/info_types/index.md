@@ -3,10 +3,9 @@ title: info_types
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - info_types
+  - dlp
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -31,4 +30,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
 | `infoTypes_list` | `SELECT` |  |
-| `locations_infoTypes_list` | `SELECT` | `parent` |
+| `locations_infoTypes_list` | `SELECT` | `locationsId` |

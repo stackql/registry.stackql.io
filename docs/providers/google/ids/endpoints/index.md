@@ -3,10 +3,9 @@ title: endpoints
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - endpoints
+  - ids
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,19 +29,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The name of the endpoint. |
 | `description` | `string` | User-provided description of the endpoint |
+| `trafficLogs` | `boolean` | Whether the endpoint should report traffic logs in addition to threat logs. |
+| `updateTime` | `string` | Output only. The update time timestamp. |
+| `endpointForwardingRule` | `string` | Output only. The fully qualified URL of the endpoint's ILB Forwarding Rule. |
+| `endpointIp` | `string` | Output only. The IP address of the IDS Endpoint's ILB. |
 | `labels` | `object` | The labels of the endpoint. |
 | `severity` | `string` | Required. Lowest threat severity that this endpoint will alert on. |
-| `updateTime` | `string` | Output only. The update time timestamp. |
-| `state` | `string` | Output only. Current state of the endpoint. |
-| `endpointIp` | `string` | Output only. The IP address of the IDS Endpoint's ILB. |
 | `network` | `string` | Required. The fully qualified URL of the network to which the IDS Endpoint is attached. |
+| `state` | `string` | Output only. Current state of the endpoint. |
 | `createTime` | `string` | Output only. The create time timestamp. |
-| `endpointForwardingRule` | `string` | Output only. The fully qualified URL of the endpoint's ILB Forwarding Rule. |
-| `trafficLogs` | `boolean` | Whether the endpoint should report traffic logs in addition to threat logs. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_endpoints_get` | `SELECT` | `name` | Gets details of a single Endpoint. |
-| `projects_locations_endpoints_list` | `SELECT` | `parent` | Lists Endpoints in a given project and location. |
-| `projects_locations_endpoints_create` | `INSERT` | `parent` | Creates a new Endpoint in a given project and location. |
-| `projects_locations_endpoints_delete` | `DELETE` | `name` | Deletes a single Endpoint. |
+| `projects_locations_endpoints_get` | `SELECT` | `endpointsId, locationsId, projectsId` | Gets details of a single Endpoint. |
+| `projects_locations_endpoints_list` | `SELECT` | `locationsId, projectsId` | Lists Endpoints in a given project and location. |
+| `projects_locations_endpoints_create` | `INSERT` | `locationsId, projectsId` | Creates a new Endpoint in a given project and location. |
+| `projects_locations_endpoints_delete` | `DELETE` | `endpointsId, locationsId, projectsId` | Deletes a single Endpoint. |

@@ -3,10 +3,9 @@ title: resourcefiles
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - resourcefiles
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,8 +33,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_environments_resourcefiles_get` | `SELECT` | `name, parent, type` | Gets the contents of a resource file. For more information about resource files, see [Resource files](https://cloud.google.com/apigee/docs/api-platform/develop/resource-files). |
-| `organizations_environments_resourcefiles_list` | `SELECT` | `parent` | Lists all resource files, optionally filtering by type. For more information about resource files, see [Resource files](https://cloud.google.com/apigee/docs/api-platform/develop/resource-files). |
-| `organizations_environments_resourcefiles_create` | `INSERT` | `parent` | Creates a resource file. Specify the `Content-Type` as `application/octet-stream` or `multipart/form-data`. For more information about resource files, see [Resource files](https://cloud.google.com/apigee/docs/api-platform/develop/resource-files). |
-| `organizations_environments_resourcefiles_delete` | `DELETE` | `name, parent, type` | Deletes a resource file. For more information about resource files, see [Resource files](https://cloud.google.com/apigee/docs/api-platform/develop/resource-files). |
-| `organizations_environments_resourcefiles_update` | `EXEC` | `name, parent, type` | Updates a resource file. Specify the `Content-Type` as `application/octet-stream` or `multipart/form-data`. For more information about resource files, see [Resource files](https://cloud.google.com/apigee/docs/api-platform/develop/resource-files). |
+| `organizations_environments_resourcefiles_get` | `SELECT` | `environmentsId, name, organizationsId, type` | Gets the contents of a resource file. For more information about resource files, see [Resource files](https://cloud.google.com/apigee/docs/api-platform/develop/resource-files). |
+| `organizations_environments_resourcefiles_list` | `SELECT` | `environmentsId, organizationsId` | Lists all resource files, optionally filtering by type. For more information about resource files, see [Resource files](https://cloud.google.com/apigee/docs/api-platform/develop/resource-files). |
+| `organizations_environments_resourcefiles_create` | `INSERT` | `environmentsId, organizationsId` | Creates a resource file. Specify the `Content-Type` as `application/octet-stream` or `multipart/form-data`. For more information about resource files, see [Resource files](https://cloud.google.com/apigee/docs/api-platform/develop/resource-files). |
+| `organizations_environments_resourcefiles_delete` | `DELETE` | `environmentsId, name, organizationsId, type` | Deletes a resource file. For more information about resource files, see [Resource files](https://cloud.google.com/apigee/docs/api-platform/develop/resource-files). |
+| `organizations_environments_resourcefiles_update` | `EXEC` | `environmentsId, name, organizationsId, type` | Updates a resource file. Specify the `Content-Type` as `application/octet-stream` or `multipart/form-data`. For more information about resource files, see [Resource files](https://cloud.google.com/apigee/docs/api-platform/develop/resource-files). |

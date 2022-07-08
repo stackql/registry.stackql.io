@@ -3,8 +3,9 @@ title: thumbnails
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - thumbnails
+  - toolresults
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

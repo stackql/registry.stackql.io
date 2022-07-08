@@ -3,10 +3,9 @@ title: os_policy_assignments_revisions
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - os_policy_assignments_revisions
+  - osconfig
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,18 +29,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Resource name. Format: `projects/{project_number}/locations/{location}/osPolicyAssignments/{os_policy_assignment_id}` This field is ignored when you create an OS policy assignment. |
 | `description` | `string` | OS policy assignment description. Length of the description is limited to 1024 characters. |
-| `revisionId` | `string` | Output only. The assignment revision ID A new revision is committed whenever a rollout is triggered for a OS policy assignment |
-| `uid` | `string` | Output only. Server generated unique id for the OS policy assignment resource. |
-| `baseline` | `boolean` | Output only. Indicates that this revision has been successfully rolled out in this zone and new VMs will be assigned OS policies from this revision. For a given OS policy assignment, there is only one revision with a value of `true` for this field. |
-| `rolloutState` | `string` | Output only. OS policy assignment rollout state |
 | `deleted` | `boolean` | Output only. Indicates that this revision deletes the OS policy assignment. |
 | `instanceFilter` | `object` | Filters to select target VMs for an assignment. If more than one filter criteria is specified below, a VM will be selected if and only if it satisfies all of them. |
+| `revisionId` | `string` | Output only. The assignment revision ID A new revision is committed whenever a rollout is triggered for a OS policy assignment |
 | `revisionCreateTime` | `string` | Output only. The timestamp that the revision was created. |
-| `etag` | `string` | The etag for this OS policy assignment. If this is provided on update, it must match the server's etag. |
-| `rollout` | `object` | Message to configure the rollout at the zonal level for the OS policy assignment. |
 | `osPolicies` | `array` | Required. List of OS policies to be applied to the VMs. |
+| `baseline` | `boolean` | Output only. Indicates that this revision has been successfully rolled out in this zone and new VMs will be assigned OS policies from this revision. For a given OS policy assignment, there is only one revision with a value of `true` for this field. |
+| `rollout` | `object` | Message to configure the rollout at the zonal level for the OS policy assignment. |
 | `reconciling` | `boolean` | Output only. Indicates that reconciliation is in progress for the revision. This value is `true` when the `rollout_state` is one of: * IN_PROGRESS * CANCELLING |
+| `uid` | `string` | Output only. Server generated unique id for the OS policy assignment resource. |
+| `rolloutState` | `string` | Output only. OS policy assignment rollout state |
+| `etag` | `string` | The etag for this OS policy assignment. If this is provided on update, it must match the server's etag. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_osPolicyAssignments_listRevisions` | `SELECT` | `name` |
+| `projects_locations_osPolicyAssignments_listRevisions` | `SELECT` | `locationsId, osPolicyAssignmentsId:listRevisions, projectsId` |

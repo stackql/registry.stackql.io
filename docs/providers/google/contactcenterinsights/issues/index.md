@@ -3,10 +3,9 @@ title: issues
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - issues
+  - contactcenterinsights
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,6 +34,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_issueModels_issues_get` | `SELECT` | `name` | Gets an issue. |
-| `projects_locations_issueModels_issues_list` | `SELECT` | `parent` | Lists issues. |
-| `projects_locations_issueModels_issues_patch` | `EXEC` | `name` | Updates an issue. |
+| `projects_locations_issueModels_issues_get` | `SELECT` | `issueModelsId, issuesId, locationsId, projectsId` | Gets an issue. |
+| `projects_locations_issueModels_issues_list` | `SELECT` | `issueModelsId, locationsId, projectsId` | Lists issues. |
+| `projects_locations_issueModels_issues_patch` | `EXEC` | `issueModelsId, issuesId, locationsId, projectsId` | Updates an issue. |

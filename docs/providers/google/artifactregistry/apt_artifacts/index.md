@@ -3,10 +3,9 @@ title: apt_artifacts
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - apt_artifacts
+  - artifactregistry
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_repositories_aptArtifacts_import` | `EXEC` | `parent` | Imports Apt artifacts. The returned Operation will complete once the resources are imported. Package, Version, and File resources are created based on the imported artifacts. Imported artifacts that conflict with existing resources are ignored. |
-| `projects_locations_repositories_aptArtifacts_upload` | `EXEC` | `parent` | Directly uploads an Apt artifact. The returned Operation will complete once the resources are uploaded. Package, Version, and File resources are created based on the imported artifact. Imported artifacts that conflict with existing resources are ignored. |
+| `projects_locations_repositories_aptArtifacts_import` | `EXEC` | `locationsId, projectsId, repositoriesId` | Imports Apt artifacts. The returned Operation will complete once the resources are imported. Package, Version, and File resources are created based on the imported artifacts. Imported artifacts that conflict with existing resources are ignored. |
+| `projects_locations_repositories_aptArtifacts_upload` | `EXEC` | `locationsId, projectsId, repositoriesId` | Directly uploads an Apt artifact. The returned Operation will complete once the resources are uploaded. Package, Version, and File resources are created based on the imported artifact. Imported artifacts that conflict with existing resources are ignored. |

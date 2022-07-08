@@ -3,10 +3,9 @@ title: provisioning_configs
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - provisioning_configs
+  - baremetalsolution
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,21 +29,21 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The name of the provisioning config. |
 | `handoverServiceAccount` | `string` | A service account to enable customers to access instance credentials upon handover. |
-| `cloudConsoleUri` | `string` | Output only. URI to Cloud Console UI view of this provisioning config. |
-| `instances` | `array` | Instances to be created. |
-| `networks` | `array` | Networks to be created. |
 | `location` | `string` | Optional. Location name of this ProvisioningConfig. It is optional only for Intake UI transition period. |
-| `updateTime` | `string` | Output only. Last update timestamp. |
-| `volumes` | `array` | Volumes to be created. |
-| `ticketId` | `string` | A generated ticket id to track provisioning request. |
+| `networks` | `array` | Networks to be created. |
 | `email` | `string` | Email provided to send a confirmation with provisioning config to. Deprecated in favour of email field in request messages. |
 | `state` | `string` | Output only. State of ProvisioningConfig. |
-| `statusMessage` | `string` | Optional status messages associated with the FAILED state. |
+| `cloudConsoleUri` | `string` | Output only. URI to Cloud Console UI view of this provisioning config. |
+| `instances` | `array` | Instances to be created. |
+| `updateTime` | `string` | Output only. Last update timestamp. |
 | `vpcScEnabled` | `boolean` | If true, VPC SC is enabled for the cluster. |
+| `statusMessage` | `string` | Optional status messages associated with the FAILED state. |
+| `ticketId` | `string` | A generated ticket id to track provisioning request. |
+| `volumes` | `array` | Volumes to be created. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_provisioningConfigs_get` | `SELECT` | `name` | Get ProvisioningConfig by name. |
-| `projects_locations_provisioningConfigs_create` | `INSERT` | `parent` | Create new ProvisioningConfig. |
-| `projects_locations_provisioningConfigs_patch` | `EXEC` | `name` | Update existing ProvisioningConfig. |
-| `projects_locations_provisioningConfigs_submit` | `EXEC` | `parent` | Submit a provisiong configuration for a given project. |
+| `projects_locations_provisioningConfigs_get` | `SELECT` | `locationsId, projectsId, provisioningConfigsId` | Get ProvisioningConfig by name. |
+| `projects_locations_provisioningConfigs_create` | `INSERT` | `locationsId, projectsId` | Create new ProvisioningConfig. |
+| `projects_locations_provisioningConfigs_patch` | `EXEC` | `locationsId, projectsId, provisioningConfigsId` | Update existing ProvisioningConfig. |
+| `projects_locations_provisioningConfigs_submit` | `EXEC` | `locationsId, projectsId` | Submit a provisiong configuration for a given project. |

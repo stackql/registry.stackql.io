@@ -3,10 +3,9 @@ title: licenses
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - licenses
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -31,13 +30,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` | [Output Only] The unique identifier for the resource. This identifier is defined by the server. |
 | `name` | `string` | Name of the resource. The name must be 1-63 characters long and comply with RFC1035. |
 | `description` | `string` | An optional textual description of the resource; provided by the client when the resource is created. |
-| `kind` | `string` | [Output Only] Type of resource. Always compute#license for licenses. |
 | `resourceRequirements` | `object` |  |
-| `chargesUseFee` | `boolean` | [Output Only] Deprecated. This field no longer reflects whether a license charges a usage fee. |
 | `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
-| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
-| `licenseCode` | `string` | [Output Only] The unique code used to attach this license to images, snapshots, and disks. |
+| `kind` | `string` | [Output Only] Type of resource. Always compute#license for licenses. |
 | `transferable` | `boolean` | If false, licenses will not be copied from the source resource when creating an image from a disk, disk from snapshot, or snapshot from disk. |
+| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
+| `chargesUseFee` | `boolean` | [Output Only] Deprecated. This field no longer reflects whether a license charges a usage fee. |
+| `licenseCode` | `string` | [Output Only] The unique code used to attach this license to images, snapshots, and disks. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

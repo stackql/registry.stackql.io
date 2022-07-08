@@ -3,10 +3,9 @@ title: google_service_accounts
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - google_service_accounts
+  - storagetransfer
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `subjectId` | `string` | Unique identifier for the service account. |
 | `accountEmail` | `string` | Email address of the service account. |
+| `subjectId` | `string` | Unique identifier for the service account. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

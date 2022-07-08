@@ -3,10 +3,9 @@ title: image
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - image
+  - dlp
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_image_redact` | `EXEC` | `parent` |
-| `projects_locations_image_redact` | `EXEC` | `parent` |
+| `projects_image_redact` | `EXEC` | `projectsId` |
+| `projects_locations_image_redact` | `EXEC` | `locationsId, projectsId` |

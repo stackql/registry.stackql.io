@@ -3,10 +3,9 @@ title: health_checks_aggregated
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - health_checks_aggregated
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

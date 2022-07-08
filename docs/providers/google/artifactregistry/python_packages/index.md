@@ -3,10 +3,9 @@ title: python_packages
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - python_packages
+  - artifactregistry
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -37,5 +36,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_repositories_pythonPackages_get` | `SELECT` | `name` | Gets a python package. |
-| `projects_locations_repositories_pythonPackages_list` | `SELECT` | `parent` | Lists python packages. |
+| `projects_locations_repositories_pythonPackages_get` | `SELECT` | `locationsId, projectsId, pythonPackagesId, repositoriesId` | Gets a python package. |
+| `projects_locations_repositories_pythonPackages_list` | `SELECT` | `locationsId, projectsId, repositoriesId` | Lists python packages. |

@@ -3,10 +3,9 @@ title: repos
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - repos
+  - cloudbuild
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,10 +29,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name of the repository. |
 | `description` | `string` | Description of the repository. |
-| `repoId` | `object` | BitbucketServerRepositoryId identifies a specific repository hosted on a Bitbucket Server. |
 | `browseUri` | `string` | Link to the browse repo page on the Bitbucket Server instance. |
 | `displayName` | `string` | Display name of the repository. |
+| `repoId` | `object` | BitbucketServerRepositoryId identifies a specific repository hosted on a Bitbucket Server. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_bitbucketServerConfigs_repos_list` | `SELECT` | `parent` |
+| `projects_locations_bitbucketServerConfigs_repos_list` | `SELECT` | `bitbucketServerConfigsId, locationsId, projectsId` |

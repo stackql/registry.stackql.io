@@ -3,10 +3,9 @@ title: groups_iam_policies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - groups_iam_policies
+  - cloudiot
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,6 +33,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_registries_groups_getIamPolicy` | `SELECT` | `resource` | Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. |
-| `projects_locations_registries_groups_setIamPolicy` | `EXEC` | `resource` | Sets the access control policy on the specified resource. Replaces any existing policy. |
-| `projects_locations_registries_groups_testIamPermissions` | `EXEC` | `resource` | Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a NOT_FOUND error. |
+| `projects_locations_registries_groups_getIamPolicy` | `SELECT` | `groupsId:getIamPolicy, locationsId, projectsId, registriesId` | Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. |
+| `projects_locations_registries_groups_setIamPolicy` | `EXEC` | `groupsId:setIamPolicy, locationsId, projectsId, registriesId` | Sets the access control policy on the specified resource. Replaces any existing policy. |
+| `projects_locations_registries_groups_testIamPermissions` | `EXEC` | `groupsId:testIamPermissions, locationsId, projectsId, registriesId` | Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a NOT_FOUND error. |

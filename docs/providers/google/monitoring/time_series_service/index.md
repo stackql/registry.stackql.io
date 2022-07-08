@@ -3,10 +3,9 @@ title: time_series_service
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - time_series_service
+  - monitoring
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_timeSeries_createService` | `INSERT` | `name` |
+| `projects_timeSeries_createService` | `INSERT` | `projectsId` |

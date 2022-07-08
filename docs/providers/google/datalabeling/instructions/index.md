@@ -3,10 +3,9 @@ title: instructions
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - instructions
+  - datalabeling
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,17 +29,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Instruction resource name, format: projects/{project_id}/instructions/{instruction_id} |
 | `description` | `string` | Optional. User-provided description of the instruction. The description can be up to 10000 characters long. |
-| `csvInstruction` | `object` | Deprecated: this instruction format is not supported any more. Instruction from a CSV file. |
-| `createTime` | `string` | Output only. Creation time of instruction. |
-| `dataType` | `string` | Required. The data type of this instruction. |
 | `blockingResources` | `array` | Output only. The names of any related resources that are blocking changes to the instruction. |
-| `updateTime` | `string` | Output only. Last update time of instruction. |
+| `csvInstruction` | `object` | Deprecated: this instruction format is not supported any more. Instruction from a CSV file. |
 | `displayName` | `string` | Required. The display name of the instruction. Maximum of 64 characters. |
 | `pdfInstruction` | `object` | Instruction from a PDF file. |
+| `updateTime` | `string` | Output only. Last update time of instruction. |
+| `dataType` | `string` | Required. The data type of this instruction. |
+| `createTime` | `string` | Output only. Creation time of instruction. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_instructions_get` | `SELECT` | `name` | Gets an instruction by resource name. |
-| `projects_instructions_list` | `SELECT` | `parent` | Lists instructions for a project. Pagination is supported. |
-| `projects_instructions_create` | `INSERT` | `parent` | Creates an instruction for how data should be labeled. |
-| `projects_instructions_delete` | `DELETE` | `name` | Deletes an instruction object by resource name. |
+| `projects_instructions_get` | `SELECT` | `instructionsId, projectsId` | Gets an instruction by resource name. |
+| `projects_instructions_list` | `SELECT` | `projectsId` | Lists instructions for a project. Pagination is supported. |
+| `projects_instructions_create` | `INSERT` | `projectsId` | Creates an instruction for how data should be labeled. |
+| `projects_instructions_delete` | `DELETE` | `instructionsId, projectsId` | Deletes an instruction object by resource name. |

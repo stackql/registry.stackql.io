@@ -3,10 +3,9 @@ title: routers_router_status
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - routers_router_status
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `result` | `object` |  |
 | `kind` | `string` | Type of resource. |
+| `result` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

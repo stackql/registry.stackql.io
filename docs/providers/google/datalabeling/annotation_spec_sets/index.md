@@ -3,10 +3,9 @@ title: annotation_spec_sets
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - annotation_spec_sets
+  - datalabeling
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,7 +35,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_annotationSpecSets_get` | `SELECT` | `name` | Gets an annotation spec set by resource name. |
-| `projects_annotationSpecSets_list` | `SELECT` | `parent` | Lists annotation spec sets for a project. Pagination is supported. |
-| `projects_annotationSpecSets_create` | `INSERT` | `parent` | Creates an annotation spec set by providing a set of labels. |
-| `projects_annotationSpecSets_delete` | `DELETE` | `name` | Deletes an annotation spec set by resource name. |
+| `projects_annotationSpecSets_get` | `SELECT` | `annotationSpecSetsId, projectsId` | Gets an annotation spec set by resource name. |
+| `projects_annotationSpecSets_list` | `SELECT` | `projectsId` | Lists annotation spec sets for a project. Pagination is supported. |
+| `projects_annotationSpecSets_create` | `INSERT` | `projectsId` | Creates an annotation spec set by providing a set of labels. |
+| `projects_annotationSpecSets_delete` | `DELETE` | `annotationSpecSetsId, projectsId` | Deletes an annotation spec set by resource name. |

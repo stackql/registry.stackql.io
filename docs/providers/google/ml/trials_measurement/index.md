@@ -3,10 +3,9 @@ title: trials_measurement
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - trials_measurement
+  - ml
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_studies_trials_addMeasurement` | `INSERT` | `name` |
+| `projects_locations_studies_trials_addMeasurement` | `INSERT` | `locationsId, projectsId, studiesId, trialsId:addMeasurement` |

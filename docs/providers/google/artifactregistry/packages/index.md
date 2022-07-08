@@ -3,10 +3,9 @@ title: packages
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - packages
+  - artifactregistry
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,6 +34,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_repositories_packages_get` | `SELECT` | `name` | Gets a package. |
-| `projects_locations_repositories_packages_list` | `SELECT` | `parent` | Lists packages. |
-| `projects_locations_repositories_packages_delete` | `DELETE` | `name` | Deletes a package and all of its versions and tags. The returned operation will complete once the package has been deleted. |
+| `projects_locations_repositories_packages_get` | `SELECT` | `locationsId, packagesId, projectsId, repositoriesId` | Gets a package. |
+| `projects_locations_repositories_packages_list` | `SELECT` | `locationsId, projectsId, repositoriesId` | Lists packages. |
+| `projects_locations_repositories_packages_delete` | `DELETE` | `locationsId, packagesId, projectsId, repositoriesId` | Deletes a package and all of its versions and tags. The returned operation will complete once the package has been deleted. |

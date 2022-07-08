@@ -3,10 +3,8 @@ title: dataflow
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - dataflow
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Manages Google Cloud Dataflow projects on Google Cloud Platform.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Dataflow API</td></tr>
 <tr><td><b>Description</b></td><td>Manages Google Cloud Dataflow projects on Google Cloud Platform.</td></tr>
-<tr><td><b>Id</b></td><td><code>dataflow:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>dataflow:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

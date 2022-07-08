@@ -3,10 +3,9 @@ title: region_network_firewall_policies_association
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - region_network_firewall_policies_association
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

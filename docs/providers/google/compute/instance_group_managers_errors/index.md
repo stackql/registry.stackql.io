@@ -3,10 +3,9 @@ title: instance_group_managers_errors
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - instance_group_managers_errors
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `instanceActionDetails` | `object` |  |
 | `timestamp` | `string` | [Output Only] The time that this error occurred. This value is in RFC3339 text format. |
 | `error` | `object` |  |
+| `instanceActionDetails` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

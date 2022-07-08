@@ -3,10 +3,9 @@ title: operations
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - operations
+  - iam
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,10 +35,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `locations_workforcePools_operations_get` | `SELECT` | `name` |
-| `locations_workforcePools_providers_keys_operations_get` | `SELECT` | `name` |
-| `locations_workforcePools_providers_operations_get` | `SELECT` | `name` |
-| `locations_workforcePools_subjects_operations_get` | `SELECT` | `name` |
-| `projects_locations_workloadIdentityPools_operations_get` | `SELECT` | `name` |
-| `projects_locations_workloadIdentityPools_providers_keys_operations_get` | `SELECT` | `name` |
-| `projects_locations_workloadIdentityPools_providers_operations_get` | `SELECT` | `name` |
+| `locations_workforcePools_operations_get` | `SELECT` | `locationsId, operationsId, workforcePoolsId` |
+| `locations_workforcePools_providers_keys_operations_get` | `SELECT` | `keysId, locationsId, operationsId, providersId, workforcePoolsId` |
+| `locations_workforcePools_providers_operations_get` | `SELECT` | `locationsId, operationsId, providersId, workforcePoolsId` |
+| `locations_workforcePools_subjects_operations_get` | `SELECT` | `locationsId, operationsId, subjectsId, workforcePoolsId` |
+| `projects_locations_workloadIdentityPools_operations_get` | `SELECT` | `locationsId, operationsId, projectsId, workloadIdentityPoolsId` |
+| `projects_locations_workloadIdentityPools_providers_keys_operations_get` | `SELECT` | `keysId, locationsId, operationsId, projectsId, providersId, workloadIdentityPoolsId` |
+| `projects_locations_workloadIdentityPools_providers_operations_get` | `SELECT` | `locationsId, operationsId, projectsId, providersId, workloadIdentityPoolsId` |

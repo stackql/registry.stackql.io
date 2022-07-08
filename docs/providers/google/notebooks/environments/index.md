@@ -3,10 +3,9 @@ title: environments
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - environments
+  - notebooks
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,15 +29,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Name of this environment. Format: `projects/{project_id}/locations/{location}/environments/{environment_id}` |
 | `description` | `string` | A brief description of this environment. |
+| `createTime` | `string` | Output only. The time at which this environment was created. |
 | `displayName` | `string` | Display name of this environment for the UI. |
 | `postStartupScript` | `string` | Path to a Bash script that automatically runs after a notebook instance fully boots up. The path must be a URL or Cloud Storage path. Example: `"gs://path-to-file/file-name"` |
 | `vmImage` | `object` | Definition of a custom Compute Engine virtual machine image for starting a notebook instance with the environment installed directly on the VM. |
 | `containerImage` | `object` | Definition of a container image for starting a notebook instance with the environment installed in a container. |
-| `createTime` | `string` | Output only. The time at which this environment was created. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_environments_get` | `SELECT` | `name` | Gets details of a single Environment. |
-| `projects_locations_environments_list` | `SELECT` | `parent` | Lists environments in a project. |
-| `projects_locations_environments_create` | `INSERT` | `parent` | Creates a new Environment. |
-| `projects_locations_environments_delete` | `DELETE` | `name` | Deletes a single Environment. |
+| `projects_locations_environments_get` | `SELECT` | `environmentsId, locationsId, projectsId` | Gets details of a single Environment. |
+| `projects_locations_environments_list` | `SELECT` | `locationsId, projectsId` | Lists environments in a project. |
+| `projects_locations_environments_create` | `INSERT` | `locationsId, projectsId` | Creates a new Environment. |
+| `projects_locations_environments_delete` | `DELETE` | `environmentsId, locationsId, projectsId` | Deletes a single Environment. |

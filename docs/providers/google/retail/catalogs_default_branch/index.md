@@ -3,10 +3,9 @@ title: catalogs_default_branch
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - catalogs_default_branch
+  - retail
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,10 +27,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `setTime` | `string` | The time when this branch is set to default. |
 | `branch` | `string` | Full resource name of the branch id currently set as default branch. |
 | `note` | `string` | This corresponds to SetDefaultBranchRequest.note field, when this branch was set as default. |
+| `setTime` | `string` | The time when this branch is set to default. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_catalogs_getDefaultBranch` | `SELECT` | `catalog` |
+| `projects_locations_catalogs_getDefaultBranch` | `SELECT` | `catalogsId:getDefaultBranch, locationsId, projectsId` |

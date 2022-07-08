@@ -3,10 +3,9 @@ title: connectors
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - connectors
+  - connectors
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,16 +29,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Resource name of the Connector. Format: projects/{project}/locations/{location}/providers/{provider}/connectors/{connector} |
 | `description` | `string` | Output only. Description of the resource. |
-| `createTime` | `string` | Output only. Created time. |
-| `launchStage` | `string` | Output only. Flag to mark the version indicating the launch stage. |
-| `webAssetsLocation` | `string` | Output only. Cloud storage location of icons etc consumed by UI. |
-| `displayName` | `string` | Output only. Display name. |
-| `documentationUri` | `string` | Output only. Link to documentation page. |
 | `updateTime` | `string` | Output only. Updated time. |
+| `createTime` | `string` | Output only. Created time. |
+| `documentationUri` | `string` | Output only. Link to documentation page. |
+| `launchStage` | `string` | Output only. Flag to mark the version indicating the launch stage. |
 | `externalUri` | `string` | Output only. Link to external page. |
 | `labels` | `object` | Output only. Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources |
+| `webAssetsLocation` | `string` | Output only. Cloud storage location of icons etc consumed by UI. |
+| `displayName` | `string` | Output only. Display name. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_global_providers_connectors_get` | `SELECT` | `name` | Gets details of a single Connector. |
-| `projects_locations_global_providers_connectors_list` | `SELECT` | `parent` | Lists Connectors in a given project and location. |
+| `projects_locations_global_providers_connectors_get` | `SELECT` | `connectorsId, projectsId, providersId` | Gets details of a single Connector. |
+| `projects_locations_global_providers_connectors_list` | `SELECT` | `projectsId, providersId` | Lists Connectors in a given project and location. |

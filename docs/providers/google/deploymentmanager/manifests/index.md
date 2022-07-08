@@ -3,10 +3,9 @@ title: manifests
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - manifests
+  - deploymentmanager
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,14 +29,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `id` | `string` |  |
 | `name` | `string` | Output only. The name of the manifest. |
+| `expandedConfig` | `string` | Output only. The fully-expanded configuration file, including any templates and references. |
 | `imports` | `array` | Output only. The imported files for this manifest. |
+| `insertTime` | `string` | Output only. Creation timestamp in RFC3339 text format. |
+| `manifestSizeLimitBytes` | `string` | Output only. The size limit for expanded manifests in the project. |
 | `manifestSizeBytes` | `string` | Output only. The computed size of the fully expanded manifest. |
 | `config` | `object` |  |
-| `manifestSizeLimitBytes` | `string` | Output only. The size limit for expanded manifests in the project. |
-| `selfLink` | `string` | Output only. Self link for the manifest. |
-| `insertTime` | `string` | Output only. Creation timestamp in RFC3339 text format. |
 | `layout` | `string` | Output only. The YAML layout for this manifest. |
-| `expandedConfig` | `string` | Output only. The fully-expanded configuration file, including any templates and references. |
+| `selfLink` | `string` | Output only. Self link for the manifest. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

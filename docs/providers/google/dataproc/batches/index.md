@@ -3,10 +3,9 @@ title: batches
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - batches
+  - dataproc
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,26 +28,26 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name of the batch. |
-| `pysparkBatch` | `object` | A configuration for running an Apache PySpark (https://spark.apache.org/docs/latest/api/python/getting_started/quickstart.html) batch workload. |
-| `state` | `string` | Output only. The state of the batch. |
-| `stateMessage` | `string` | Output only. Batch state details, such as a failure description if the state is FAILED. |
-| `runtimeInfo` | `object` | Runtime information about workload execution. |
-| `createTime` | `string` | Output only. The time when the batch was created. |
-| `environmentConfig` | `object` | Environment configuration for a workload. |
-| `stateTime` | `string` | Output only. The time when the batch entered a current state. |
-| `creator` | `string` | Output only. The email address of the user who created the batch. |
+| `uuid` | `string` | Output only. A batch UUID (Unique Universal Identifier). The service generates this value when it creates the batch. |
+| `runtimeConfig` | `object` | Runtime configuration for a workload. |
 | `stateHistory` | `array` | Output only. Historical state information for the batch. |
 | `sparkRBatch` | `object` | A configuration for running an Apache SparkR (https://spark.apache.org/docs/latest/sparkr.html) batch workload. |
-| `sparkBatch` | `object` | A configuration for running an Apache Spark (https://spark.apache.org/) batch workload. |
+| `stateMessage` | `string` | Output only. Batch state details, such as a failure description if the state is FAILED. |
+| `stateTime` | `string` | Output only. The time when the batch entered a current state. |
+| `environmentConfig` | `object` | Environment configuration for a workload. |
 | `operation` | `string` | Output only. The resource name of the operation associated with this batch. |
+| `pysparkBatch` | `object` | A configuration for running an Apache PySpark (https://spark.apache.org/docs/latest/api/python/getting_started/quickstart.html) batch workload. |
 | `labels` | `object` | Optional. The labels to associate with this batch. Label keys must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt). Label values may be empty, but, if present, must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be associated with a batch. |
-| `runtimeConfig` | `object` | Runtime configuration for a workload. |
+| `createTime` | `string` | Output only. The time when the batch was created. |
+| `creator` | `string` | Output only. The email address of the user who created the batch. |
+| `sparkBatch` | `object` | A configuration for running an Apache Spark (https://spark.apache.org/) batch workload. |
 | `sparkSqlBatch` | `object` | A configuration for running Apache Spark SQL (https://spark.apache.org/sql/) queries as a batch workload. |
-| `uuid` | `string` | Output only. A batch UUID (Unique Universal Identifier). The service generates this value when it creates the batch. |
+| `runtimeInfo` | `object` | Runtime information about workload execution. |
+| `state` | `string` | Output only. The state of the batch. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_batches_get` | `SELECT` | `name` | Gets the batch workload resource representation. |
-| `projects_locations_batches_list` | `SELECT` | `parent` | Lists batch workloads. |
-| `projects_locations_batches_create` | `INSERT` | `parent` | Creates a batch workload that executes asynchronously. |
-| `projects_locations_batches_delete` | `DELETE` | `name` | Deletes the batch workload resource. If the batch is not in terminal state, the delete fails and the response returns FAILED_PRECONDITION. |
+| `projects_locations_batches_get` | `SELECT` | `batchesId, locationsId, projectsId` | Gets the batch workload resource representation. |
+| `projects_locations_batches_list` | `SELECT` | `locationsId, projectsId` | Lists batch workloads. |
+| `projects_locations_batches_create` | `INSERT` | `locationsId, projectsId` | Creates a batch workload that executes asynchronously. |
+| `projects_locations_batches_delete` | `DELETE` | `batchesId, locationsId, projectsId` | Deletes the batch workload resource. If the batch is not in terminal state, the delete fails and the response returns FAILED_PRECONDITION. |

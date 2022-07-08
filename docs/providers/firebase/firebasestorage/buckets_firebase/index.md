@@ -3,8 +3,9 @@ title: buckets_firebase
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - buckets_firebase
+  - firebasestorage
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_buckets_addFirebase` | `EXEC` | `bucket` | Links a Google Cloud Storage bucket to a Firebase project. |
-| `projects_buckets_removeFirebase` | `EXEC` | `bucket` | Unlinks a linked Google Cloud Storage bucket from a Firebase project. |
+| `projects_buckets_addFirebase` | `EXEC` | `bucketsId:addFirebase, projectsId` | Links a Google Cloud Storage bucket to a Firebase project. |
+| `projects_buckets_removeFirebase` | `EXEC` | `bucketsId:removeFirebase, projectsId` | Unlinks a linked Google Cloud Storage bucket from a Firebase project. |

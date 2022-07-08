@@ -3,10 +3,9 @@ title: replication_cycles
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - replication_cycles
+  - vmmigration
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,5 +32,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_sources_migratingVms_replicationCycles_get` | `SELECT` | `name` | Gets details of a single ReplicationCycle. |
-| `projects_locations_sources_migratingVms_replicationCycles_list` | `SELECT` | `parent` | Lists ReplicationCycles in a given MigratingVM. |
+| `projects_locations_sources_migratingVms_replicationCycles_get` | `SELECT` | `locationsId, migratingVmsId, projectsId, replicationCyclesId, sourcesId` | Gets details of a single ReplicationCycle. |
+| `projects_locations_sources_migratingVms_replicationCycles_list` | `SELECT` | `locationsId, migratingVmsId, projectsId, sourcesId` | Lists ReplicationCycles in a given MigratingVM. |

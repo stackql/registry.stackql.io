@@ -3,10 +3,9 @@ title: channel_connections
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - channel_connections
+  - eventarc
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -37,7 +36,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_channelConnections_get` | `SELECT` | `name` | Get a single ChannelConnection. |
-| `projects_locations_channelConnections_list` | `SELECT` | `parent` | List channel connections. |
-| `projects_locations_channelConnections_create` | `INSERT` | `parent` | Create a new ChannelConnection in a particular project and location. |
-| `projects_locations_channelConnections_delete` | `DELETE` | `name` | Delete a single ChannelConnection. |
+| `projects_locations_channelConnections_get` | `SELECT` | `channelConnectionsId, locationsId, projectsId` | Get a single ChannelConnection. |
+| `projects_locations_channelConnections_list` | `SELECT` | `locationsId, projectsId` | List channel connections. |
+| `projects_locations_channelConnections_create` | `INSERT` | `locationsId, projectsId` | Create a new ChannelConnection in a particular project and location. |
+| `projects_locations_channelConnections_delete` | `DELETE` | `channelConnectionsId, locationsId, projectsId` | Delete a single ChannelConnection. |

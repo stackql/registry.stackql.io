@@ -3,10 +3,9 @@ title: resourcefiles_environment_resources
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - resourcefiles_environment_resources
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_environments_resourcefiles_listEnvironmentResources` | `SELECT` | `parent, type` |
+| `organizations_environments_resourcefiles_listEnvironmentResources` | `SELECT` | `environmentsId, organizationsId, type` |

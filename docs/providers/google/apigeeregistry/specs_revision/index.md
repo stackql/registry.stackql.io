@@ -3,10 +3,9 @@ title: specs_revision
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - specs_revision
+  - apigeeregistry
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_apis_versions_specs_deleteRevision` | `DELETE` | `name` |
+| `projects_locations_apis_versions_specs_deleteRevision` | `DELETE` | `apisId, locationsId, projectsId, specsId:deleteRevision, versionsId` |

@@ -3,10 +3,9 @@ title: policies_effective_policy
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - policies_effective_policy
+  - orgpolicy
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,6 +33,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `folders_policies_getEffectivePolicy` | `SELECT` | `name` |
-| `organizations_policies_getEffectivePolicy` | `SELECT` | `name` |
-| `projects_policies_getEffectivePolicy` | `SELECT` | `name` |
+| `folders_policies_getEffectivePolicy` | `SELECT` | `foldersId, policiesId:getEffectivePolicy` |
+| `organizations_policies_getEffectivePolicy` | `SELECT` | `organizationsId, policiesId:getEffectivePolicy` |
+| `projects_policies_getEffectivePolicy` | `SELECT` | `policiesId:getEffectivePolicy, projectsId` |

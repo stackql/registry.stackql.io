@@ -3,10 +3,9 @@ title: catalogs
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - catalogs
+  - recommendationengine
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,5 +32,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_catalogs_list` | `SELECT` | `parent` | Lists all the catalog configurations associated with the project. |
-| `projects_locations_catalogs_patch` | `EXEC` | `name` | Updates the catalog configuration. |
+| `projects_locations_catalogs_list` | `SELECT` | `locationsId, projectsId` | Lists all the catalog configurations associated with the project. |
+| `projects_locations_catalogs_patch` | `EXEC` | `catalogsId, locationsId, projectsId` | Updates the catalog configuration. |

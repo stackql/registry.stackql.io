@@ -3,10 +3,9 @@ title: documents_collection_ids
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - documents_collection_ids
+  - firestore
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_databases_documents_listCollectionIds` | `SELECT` | `parent` |
+| `projects_databases_documents_listCollectionIds` | `SELECT` | `databasesId, documentsId, documentsId1:listCollectionIds, projectsId` |

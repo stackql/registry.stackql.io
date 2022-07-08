@@ -3,10 +3,9 @@ title: groups
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - groups
+  - vmmigration
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,8 +35,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_groups_get` | `SELECT` | `name` | Gets details of a single Group. |
-| `projects_locations_groups_list` | `SELECT` | `parent` | Lists Groups in a given project and location. |
-| `projects_locations_groups_create` | `INSERT` | `parent` | Creates a new Group in a given project and location. |
-| `projects_locations_groups_delete` | `DELETE` | `name` | Deletes a single Group. |
-| `projects_locations_groups_patch` | `EXEC` | `name` | Updates the parameters of a single Group. |
+| `projects_locations_groups_get` | `SELECT` | `groupsId, locationsId, projectsId` | Gets details of a single Group. |
+| `projects_locations_groups_list` | `SELECT` | `locationsId, projectsId` | Lists Groups in a given project and location. |
+| `projects_locations_groups_create` | `INSERT` | `locationsId, projectsId` | Creates a new Group in a given project and location. |
+| `projects_locations_groups_delete` | `DELETE` | `groupsId, locationsId, projectsId` | Deletes a single Group. |
+| `projects_locations_groups_patch` | `EXEC` | `groupsId, locationsId, projectsId` | Updates the parameters of a single Group. |

@@ -3,10 +3,9 @@ title: runtime_entity_schemas
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - runtime_entity_schemas
+  - connectors
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `entity` | `string` | Output only. Name of the entity. |
 | `fields` | `array` | Output only. List of fields in the entity. |
+| `entity` | `string` | Output only. Name of the entity. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_connections_runtimeEntitySchemas_list` | `SELECT` | `parent` |
+| `projects_locations_connections_runtimeEntitySchemas_list` | `SELECT` | `connectionsId, locationsId, projectsId` |

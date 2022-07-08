@@ -3,10 +3,9 @@ title: instances_shielded_instance_identity
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - instances_shielded_instance_identity
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `kind` | `string` | [Output Only] Type of the resource. Always compute#shieldedInstanceIdentity for shielded Instance identity entry. |
 | `signingKey` | `object` | A Shielded Instance Identity Entry. |
 | `encryptionKey` | `object` | A Shielded Instance Identity Entry. |
-| `kind` | `string` | [Output Only] Type of the resource. Always compute#shieldedInstanceIdentity for shielded Instance identity entry. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

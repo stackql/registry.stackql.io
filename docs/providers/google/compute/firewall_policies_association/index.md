@@ -3,10 +3,9 @@ title: firewall_policies_association
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - firewall_policies_association
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,10 +28,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The name for an association. |
+| `firewallPolicyId` | `string` | [Output Only] The firewall policy ID of the association. |
 | `shortName` | `string` | [Output Only] The short name of the firewall policy of the association. |
 | `attachmentTarget` | `string` | The target that the firewall policy is attached to. |
 | `displayName` | `string` | [Output Only] Deprecated, please use short name instead. The display name of the firewall policy of the association. |
-| `firewallPolicyId` | `string` | [Output Only] The firewall policy ID of the association. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

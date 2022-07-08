@@ -3,10 +3,9 @@ title: versions
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - versions
+  - artifactregistry
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -37,6 +36,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_repositories_packages_versions_get` | `SELECT` | `name` | Gets a version |
-| `projects_locations_repositories_packages_versions_list` | `SELECT` | `parent` | Lists versions. |
-| `projects_locations_repositories_packages_versions_delete` | `DELETE` | `name` | Deletes a version and all of its content. The returned operation will complete once the version has been deleted. |
+| `projects_locations_repositories_packages_versions_get` | `SELECT` | `locationsId, packagesId, projectsId, repositoriesId, versionsId` | Gets a version |
+| `projects_locations_repositories_packages_versions_list` | `SELECT` | `locationsId, packagesId, projectsId, repositoriesId` | Lists versions. |
+| `projects_locations_repositories_packages_versions_delete` | `DELETE` | `locationsId, packagesId, projectsId, repositoriesId, versionsId` | Deletes a version and all of its content. The returned operation will complete once the version has been deleted. |

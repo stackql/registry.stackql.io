@@ -3,10 +3,9 @@ title: repos
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - repos
+  - sourcerepo
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,9 +35,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_repos_get` | `SELECT` | `name` | Returns information about a repo. |
-| `projects_repos_list` | `SELECT` | `name` | Returns all repos belonging to a project. The sizes of the repos are not set by ListRepos. To get the size of a repo, use GetRepo. |
-| `projects_repos_create` | `INSERT` | `parent` | Creates a repo in the given project with the given name. If the named repository already exists, `CreateRepo` returns `ALREADY_EXISTS`. |
-| `projects_repos_delete` | `DELETE` | `name` | Deletes a repo. |
-| `projects_repos_patch` | `EXEC` | `name` | Updates information about a repo. |
-| `projects_repos_sync` | `EXEC` | `name` | Synchronize a connected repo. The response contains SyncRepoMetadata in the metadata field. |
+| `projects_repos_get` | `SELECT` | `projectsId, reposId` | Returns information about a repo. |
+| `projects_repos_list` | `SELECT` | `projectsId` | Returns all repos belonging to a project. The sizes of the repos are not set by ListRepos. To get the size of a repo, use GetRepo. |
+| `projects_repos_create` | `INSERT` | `projectsId` | Creates a repo in the given project with the given name. If the named repository already exists, `CreateRepo` returns `ALREADY_EXISTS`. |
+| `projects_repos_delete` | `DELETE` | `projectsId, reposId` | Deletes a repo. |
+| `projects_repos_patch` | `EXEC` | `projectsId, reposId` | Updates information about a repo. |
+| `projects_repos_sync` | `EXEC` | `projectsId, reposId:sync` | Synchronize a connected repo. The response contains SyncRepoMetadata in the metadata field. |

@@ -3,10 +3,9 @@ title: sharedflows
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - sharedflows
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,7 +34,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_sharedflows_get` | `SELECT` | `name` | Gets a shared flow by name, including a list of its revisions. |
-| `organizations_sharedflows_list` | `SELECT` | `parent` | Lists all shared flows in the organization. |
-| `organizations_sharedflows_create` | `INSERT` | `parent` | Uploads a ZIP-formatted shared flow configuration bundle to an organization. If the shared flow already exists, this creates a new revision of it. If the shared flow does not exist, this creates it. Once imported, the shared flow revision must be deployed before it can be accessed at runtime. The size limit of a shared flow bundle is 15 MB. |
-| `organizations_sharedflows_delete` | `DELETE` | `name` | Deletes a shared flow and all it's revisions. The shared flow must be undeployed before you can delete it. |
+| `organizations_sharedflows_get` | `SELECT` | `organizationsId, sharedflowsId` | Gets a shared flow by name, including a list of its revisions. |
+| `organizations_sharedflows_list` | `SELECT` | `organizationsId` | Lists all shared flows in the organization. |
+| `organizations_sharedflows_create` | `INSERT` | `organizationsId` | Uploads a ZIP-formatted shared flow configuration bundle to an organization. If the shared flow already exists, this creates a new revision of it. If the shared flow does not exist, this creates it. Once imported, the shared flow revision must be deployed before it can be accessed at runtime. The size limit of a shared flow bundle is 15 MB. |
+| `organizations_sharedflows_delete` | `DELETE` | `organizationsId, sharedflowsId` | Deletes a shared flow and all it's revisions. The shared flow must be undeployed before you can delete it. |

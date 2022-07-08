@@ -3,10 +3,9 @@ title: studies_metadata
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - studies_metadata
+  - healthcare
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,4 +33,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_datasets_dicomStores_studies_retrieveMetadata` | `SELECT` | `dicomWebPath, parent` |
+| `projects_locations_datasets_dicomStores_studies_retrieveMetadata` | `SELECT` | `datasetsId, dicomStoresId, locationsId, projectsId, studiesId` |

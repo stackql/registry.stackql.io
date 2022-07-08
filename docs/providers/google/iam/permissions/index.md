@@ -3,10 +3,9 @@ title: permissions
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - permissions
+  - iam
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

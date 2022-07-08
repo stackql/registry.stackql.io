@@ -3,10 +3,9 @@ title: products_fulfillment_places
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - products_fulfillment_places
+  - retail
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_catalogs_branches_products_addFulfillmentPlaces` | `INSERT` | `product` | Incrementally adds place IDs to Product.fulfillment_info.place_ids. This process is asynchronous and does not require the Product to exist before updating fulfillment information. If the request is valid, the update will be enqueued and processed downstream. As a consequence, when a response is returned, the added place IDs are not immediately manifested in the Product queried by GetProduct or ListProducts. This feature is only available for users who have Retail Search enabled. Please enable Retail Search on Cloud Console before using this feature. |
-| `projects_locations_catalogs_branches_products_removeFulfillmentPlaces` | `DELETE` | `product` | Incrementally removes place IDs from a Product.fulfillment_info.place_ids. This process is asynchronous and does not require the Product to exist before updating fulfillment information. If the request is valid, the update will be enqueued and processed downstream. As a consequence, when a response is returned, the removed place IDs are not immediately manifested in the Product queried by GetProduct or ListProducts. This feature is only available for users who have Retail Search enabled. Please enable Retail Search on Cloud Console before using this feature. |
+| `projects_locations_catalogs_branches_products_addFulfillmentPlaces` | `INSERT` | `branchesId, catalogsId, locationsId, productsId:addFulfillmentPlaces, projectsId` | Incrementally adds place IDs to Product.fulfillment_info.place_ids. This process is asynchronous and does not require the Product to exist before updating fulfillment information. If the request is valid, the update will be enqueued and processed downstream. As a consequence, when a response is returned, the added place IDs are not immediately manifested in the Product queried by GetProduct or ListProducts. This feature is only available for users who have Retail Search enabled. Please enable Retail Search on Cloud Console before using this feature. |
+| `projects_locations_catalogs_branches_products_removeFulfillmentPlaces` | `DELETE` | `branchesId, catalogsId, locationsId, productsId:removeFulfillmentPlaces, projectsId` | Incrementally removes place IDs from a Product.fulfillment_info.place_ids. This process is asynchronous and does not require the Product to exist before updating fulfillment information. If the request is valid, the update will be enqueued and processed downstream. As a consequence, when a response is returned, the removed place IDs are not immediately manifested in the Product queried by GetProduct or ListProducts. This feature is only available for users who have Retail Search enabled. Please enable Retail Search on Cloud Console before using this feature. |

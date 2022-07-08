@@ -3,10 +3,9 @@ title: recommenders
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - recommenders
+  - recommender
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_locations_recommenders_updateConfig` | `EXEC` | `name` |
-| `projects_locations_recommenders_updateConfig` | `EXEC` | `name` |
+| `organizations_locations_recommenders_updateConfig` | `EXEC` | `locationsId, organizationsId, recommendersId` |
+| `projects_locations_recommenders_updateConfig` | `EXEC` | `locationsId, projectsId, recommendersId` |

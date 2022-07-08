@@ -3,10 +3,8 @@ title: dataproc
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - dataproc
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Manages Hadoop-based clusters and jobs on Google Cloud Platform.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Dataproc API</td></tr>
 <tr><td><b>Description</b></td><td>Manages Hadoop-based clusters and jobs on Google Cloud Platform.</td></tr>
-<tr><td><b>Id</b></td><td><code>dataproc:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>dataproc:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

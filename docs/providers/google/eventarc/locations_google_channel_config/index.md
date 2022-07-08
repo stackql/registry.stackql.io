@@ -3,10 +3,9 @@ title: locations_google_channel_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - locations_google_channel_config
+  - eventarc
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,4 +33,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_getGoogleChannelConfig` | `SELECT` | `name` |
+| `projects_locations_getGoogleChannelConfig` | `SELECT` | `locationsId, projectsId` |

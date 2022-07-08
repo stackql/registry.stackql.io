@@ -3,10 +3,9 @@ title: instances_effective_firewalls
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - instances_effective_firewalls
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `firewallPolicys` | `array` | Effective firewalls from firewall policies. |
 | `firewalls` | `array` | Effective firewalls on the instance. |
+| `firewallPolicys` | `array` | Effective firewalls from firewall policies. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

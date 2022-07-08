@@ -3,10 +3,9 @@ title: analyses
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - analyses
+  - contactcenterinsights
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,7 +34,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_conversations_analyses_get` | `SELECT` | `name` | Gets an analysis. |
-| `projects_locations_conversations_analyses_list` | `SELECT` | `parent` | Lists analyses. |
-| `projects_locations_conversations_analyses_create` | `INSERT` | `parent` | Creates an analysis. The long running operation is done when the analysis has completed. |
-| `projects_locations_conversations_analyses_delete` | `DELETE` | `name` | Deletes an analysis. |
+| `projects_locations_conversations_analyses_get` | `SELECT` | `analysesId, conversationsId, locationsId, projectsId` | Gets an analysis. |
+| `projects_locations_conversations_analyses_list` | `SELECT` | `conversationsId, locationsId, projectsId` | Lists analyses. |
+| `projects_locations_conversations_analyses_create` | `INSERT` | `conversationsId, locationsId, projectsId` | Creates an analysis. The long running operation is done when the analysis has completed. |
+| `projects_locations_conversations_analyses_delete` | `DELETE` | `analysesId, conversationsId, locationsId, projectsId` | Deletes an analysis. |

@@ -3,10 +3,9 @@ title: security_reports_result
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - security_reports_result
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,10 +27,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `data` | `string` | The HTTP request/response body as raw binary. |
 | `extensions` | `array` | Application specific response metadata. Must be set in the first response for streaming APIs. |
 | `contentType` | `string` | The HTTP Content-Type header value specifying the content type of the body. |
-| `data` | `string` | The HTTP request/response body as raw binary. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_environments_securityReports_getResult` | `SELECT` | `name` |
+| `organizations_environments_securityReports_getResult` | `SELECT` | `environmentsId, organizationsId, securityReportsId` |

@@ -3,10 +3,9 @@ title: keystores
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - keystores
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,6 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_environments_keystores_get` | `SELECT` | `name` | Gets a keystore or truststore. |
-| `organizations_environments_keystores_create` | `INSERT` | `parent` | Creates a keystore or truststore. - Keystore: Contains certificates and their associated keys. - Truststore: Contains trusted certificates used to validate a server's certificate. These certificates are typically self-signed certificates or certificates that are not signed by a trusted CA. |
-| `organizations_environments_keystores_delete` | `DELETE` | `name` | Deletes a keystore or truststore. |
+| `organizations_environments_keystores_get` | `SELECT` | `environmentsId, keystoresId, organizationsId` | Gets a keystore or truststore. |
+| `organizations_environments_keystores_create` | `INSERT` | `environmentsId, organizationsId` | Creates a keystore or truststore. - Keystore: Contains certificates and their associated keys. - Truststore: Contains trusted certificates used to validate a server's certificate. These certificates are typically self-signed certificates or certificates that are not signed by a trusted CA. |
+| `organizations_environments_keystores_delete` | `DELETE` | `environmentsId, keystoresId, organizationsId` | Deletes a keystore or truststore. |

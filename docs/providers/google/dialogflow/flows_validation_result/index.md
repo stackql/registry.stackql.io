@@ -3,10 +3,9 @@ title: flows_validation_result
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - flows_validation_result
+  - dialogflow
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,9 +28,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The unique identifier of the flow validation result. Format: `projects//locations//agents//flows//validationResult`. |
-| `validationMessages` | `array` | Contains all validation messages. |
 | `updateTime` | `string` | Last time the flow was validated. |
+| `validationMessages` | `array` | Contains all validation messages. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_agents_flows_getValidationResult` | `SELECT` | `name` |
+| `projects_locations_agents_flows_getValidationResult` | `SELECT` | `agentsId, flowsId, locationsId, projectsId` |

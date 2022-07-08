@@ -3,10 +3,9 @@ title: certificate_signing_request
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - certificate_signing_request
+  - privateca
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_caPools_certificateAuthorities_fetch` | `SELECT` | `name` |
+| `projects_locations_caPools_certificateAuthorities_fetch` | `SELECT` | `caPoolsId, certificateAuthoritiesId:fetch, locationsId, projectsId` |

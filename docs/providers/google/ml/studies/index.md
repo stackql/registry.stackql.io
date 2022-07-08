@@ -3,10 +3,9 @@ title: studies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - studies
+  - ml
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,7 +35,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_studies_get` | `SELECT` | `name` | Gets a study. |
-| `projects_locations_studies_list` | `SELECT` | `parent` | Lists all the studies in a region for an associated project. |
-| `projects_locations_studies_create` | `INSERT` | `parent` | Creates a study. |
-| `projects_locations_studies_delete` | `DELETE` | `name` | Deletes a study. |
+| `projects_locations_studies_get` | `SELECT` | `locationsId, projectsId, studiesId` | Gets a study. |
+| `projects_locations_studies_list` | `SELECT` | `locationsId, projectsId` | Lists all the studies in a region for an associated project. |
+| `projects_locations_studies_create` | `INSERT` | `locationsId, projectsId` | Creates a study. |
+| `projects_locations_studies_delete` | `DELETE` | `locationsId, projectsId, studiesId` | Deletes a study. |

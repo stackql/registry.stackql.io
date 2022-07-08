@@ -3,10 +3,9 @@ title: insight_types
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - insight_types
+  - recommender
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_locations_insightTypes_updateConfig` | `EXEC` | `name` |
-| `projects_locations_insightTypes_updateConfig` | `EXEC` | `name` |
+| `organizations_locations_insightTypes_updateConfig` | `EXEC` | `insightTypesId, locationsId, organizationsId` |
+| `projects_locations_insightTypes_updateConfig` | `EXEC` | `insightTypesId, locationsId, projectsId` |

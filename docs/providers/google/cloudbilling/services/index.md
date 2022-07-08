@@ -3,10 +3,9 @@ title: services
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - services
+  - cloudbilling
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,9 +28,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name for the service. Example: "services/DA34-426B-A397" |
-| `serviceId` | `string` | The identifier for the service. Example: "DA34-426B-A397" |
 | `businessEntityName` | `string` | The business under which the service is offered. Ex. "businessEntities/GCP", "businessEntities/Maps" |
 | `displayName` | `string` | A human readable display name for this service. |
+| `serviceId` | `string` | The identifier for the service. Example: "DA34-426B-A397" |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

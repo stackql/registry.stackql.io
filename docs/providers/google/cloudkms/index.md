@@ -3,10 +3,8 @@ title: cloudkms
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - cloudkms
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Manages keys and performs cryptographic operations in a central cloud service, f
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Key Management Service (KMS) API</td></tr>
 <tr><td><b>Description</b></td><td>Manages keys and performs cryptographic operations in a central cloud service, for direct use by other cloud resources and applications. </td></tr>
-<tr><td><b>Id</b></td><td><code>cloudkms:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudkms:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

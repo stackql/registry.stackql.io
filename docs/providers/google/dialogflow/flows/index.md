@@ -3,10 +3,9 @@ title: flows
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - flows
+  - dialogflow
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -38,12 +37,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_agents_flows_get` | `SELECT` | `name` | Retrieves the specified flow. |
-| `projects_locations_agents_flows_list` | `SELECT` | `parent` | Returns the list of all flows in the specified agent. |
-| `projects_locations_agents_flows_create` | `INSERT` | `parent` | Creates a flow in the specified agent. Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
-| `projects_locations_agents_flows_delete` | `DELETE` | `name` | Deletes a specified flow. |
-| `projects_locations_agents_flows_export` | `EXEC` | `name` | Exports the specified flow to a binary file. This method is a [long-running operation](https://cloud.google.com/dialogflow/cx/docs/how/long-running-operation). The returned `Operation` type has the following method-specific fields: - `metadata`: An empty [Struct message](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#struct) - `response`: ExportFlowResponse Note that resources (e.g. intents, entities, webhooks) that the flow references will also be exported. |
-| `projects_locations_agents_flows_import` | `EXEC` | `parent` | Imports the specified flow to the specified agent from a binary file. This method is a [long-running operation](https://cloud.google.com/dialogflow/cx/docs/how/long-running-operation). The returned `Operation` type has the following method-specific fields: - `metadata`: An empty [Struct message](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#struct) - `response`: ImportFlowResponse Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
-| `projects_locations_agents_flows_patch` | `EXEC` | `name` | Updates the specified flow. Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
-| `projects_locations_agents_flows_train` | `EXEC` | `name` | Trains the specified flow. Note that only the flow in 'draft' environment is trained. This method is a [long-running operation](https://cloud.google.com/dialogflow/cx/docs/how/long-running-operation). The returned `Operation` type has the following method-specific fields: - `metadata`: An empty [Struct message](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#struct) - `response`: An [Empty message](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#empty) Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
-| `projects_locations_agents_flows_validate` | `EXEC` | `name` | Validates the specified flow and creates or updates validation results. Please call this API after the training is completed to get the complete validation results. |
+| `projects_locations_agents_flows_get` | `SELECT` | `agentsId, flowsId, locationsId, projectsId` | Retrieves the specified flow. |
+| `projects_locations_agents_flows_list` | `SELECT` | `agentsId, locationsId, projectsId` | Returns the list of all flows in the specified agent. |
+| `projects_locations_agents_flows_create` | `INSERT` | `agentsId, locationsId, projectsId` | Creates a flow in the specified agent. Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
+| `projects_locations_agents_flows_delete` | `DELETE` | `agentsId, flowsId, locationsId, projectsId` | Deletes a specified flow. |
+| `projects_locations_agents_flows_export` | `EXEC` | `agentsId, flowsId:export, locationsId, projectsId` | Exports the specified flow to a binary file. This method is a [long-running operation](https://cloud.google.com/dialogflow/cx/docs/how/long-running-operation). The returned `Operation` type has the following method-specific fields: - `metadata`: An empty [Struct message](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#struct) - `response`: ExportFlowResponse Note that resources (e.g. intents, entities, webhooks) that the flow references will also be exported. |
+| `projects_locations_agents_flows_import` | `EXEC` | `agentsId, locationsId, projectsId` | Imports the specified flow to the specified agent from a binary file. This method is a [long-running operation](https://cloud.google.com/dialogflow/cx/docs/how/long-running-operation). The returned `Operation` type has the following method-specific fields: - `metadata`: An empty [Struct message](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#struct) - `response`: ImportFlowResponse Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
+| `projects_locations_agents_flows_patch` | `EXEC` | `agentsId, flowsId, locationsId, projectsId` | Updates the specified flow. Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
+| `projects_locations_agents_flows_train` | `EXEC` | `agentsId, flowsId:train, locationsId, projectsId` | Trains the specified flow. Note that only the flow in 'draft' environment is trained. This method is a [long-running operation](https://cloud.google.com/dialogflow/cx/docs/how/long-running-operation). The returned `Operation` type has the following method-specific fields: - `metadata`: An empty [Struct message](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#struct) - `response`: An [Empty message](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#empty) Note: You should always train a flow prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/cx/docs/concept/training). |
+| `projects_locations_agents_flows_validate` | `EXEC` | `agentsId, flowsId:validate, locationsId, projectsId` | Validates the specified flow and creates or updates validation results. Please call this API after the training is completed to get the complete validation results. |

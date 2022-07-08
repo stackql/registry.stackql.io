@@ -3,10 +3,9 @@ title: relyingparty_account_info
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - relyingparty_account_info
+  - identitytoolkit
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `kind` | `string` | The fixed string "identitytoolkit#GetAccountInfoResponse". |
 | `users` | `array` | The info of the users. |
+| `kind` | `string` | The fixed string "identitytoolkit#GetAccountInfoResponse". |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

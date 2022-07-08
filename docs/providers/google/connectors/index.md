@@ -3,10 +3,8 @@ title: connectors
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - connectors
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Enables users to create and manage connections to Google Cloud services and thir
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Connectors API</td></tr>
 <tr><td><b>Description</b></td><td>Enables users to create and manage connections to Google Cloud services and third-party business applications using the Connectors interface.</td></tr>
-<tr><td><b>Id</b></td><td><code>connectors:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>connectors:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

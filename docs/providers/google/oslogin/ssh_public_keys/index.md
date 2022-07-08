@@ -3,10 +3,9 @@ title: ssh_public_keys
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - ssh_public_keys
+  - oslogin
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,7 +34,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `users_sshPublicKeys_get` | `SELECT` | `name` | Retrieves an SSH public key. |
-| `users_sshPublicKeys_create` | `INSERT` | `parent` | Create an SSH public key |
-| `users_sshPublicKeys_delete` | `DELETE` | `name` | Deletes an SSH public key. |
-| `users_sshPublicKeys_patch` | `EXEC` | `name` | Updates an SSH public key and returns the profile information. This method supports patch semantics. |
+| `users_sshPublicKeys_get` | `SELECT` | `sshPublicKeysId, usersId` | Retrieves an SSH public key. |
+| `users_sshPublicKeys_create` | `INSERT` | `usersId` | Create an SSH public key |
+| `users_sshPublicKeys_delete` | `DELETE` | `sshPublicKeysId, usersId` | Deletes an SSH public key. |
+| `users_sshPublicKeys_patch` | `EXEC` | `sshPublicKeysId, usersId` | Updates an SSH public key and returns the profile information. This method supports patch semantics. |

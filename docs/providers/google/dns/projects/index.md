@@ -3,10 +3,9 @@ title: projects
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - projects
+  - dns
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,9 +28,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `id` | `string` | User assigned unique identifier for the resource (output only). |
+| `quota` | `object` | Limits associated with a Project. |
 | `kind` | `string` |  |
 | `number` | `string` | Unique numeric identifier for the resource; defined by the server (output only). |
-| `quota` | `object` | Limits associated with a Project. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

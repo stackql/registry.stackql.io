@@ -3,10 +3,9 @@ title: shelves
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - shelves
+  - libraryagent
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,5 +32,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `get` | `SELECT` | `name` | Gets a shelf. Returns NOT_FOUND if the shelf does not exist. |
+| `get` | `SELECT` | `shelvesId` | Gets a shelf. Returns NOT_FOUND if the shelf does not exist. |
 | `list` | `SELECT` |  | Lists shelves. The order is unspecified but deterministic. Newly created shelves will not necessarily be added to the end of this list. |

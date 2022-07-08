@@ -3,10 +3,9 @@ title: dns_record_sets
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - dns_record_sets
+  - servicenetworking
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,6 +29,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `services_dnsRecordSets_add` | `INSERT` | `parent` | Service producers can use this method to add DNS record sets to private DNS zones in the shared producer host project. |
-| `services_dnsRecordSets_remove` | `DELETE` | `parent` | Service producers can use this method to remove DNS record sets from private DNS zones in the shared producer host project. |
-| `services_dnsRecordSets_update` | `EXEC` | `parent` | Service producers can use this method to update DNS record sets from private DNS zones in the shared producer host project. |
+| `services_dnsRecordSets_add` | `INSERT` | `servicesId` | Service producers can use this method to add DNS record sets to private DNS zones in the shared producer host project. |
+| `services_dnsRecordSets_remove` | `DELETE` | `servicesId` | Service producers can use this method to remove DNS record sets from private DNS zones in the shared producer host project. |
+| `services_dnsRecordSets_update` | `EXEC` | `servicesId` | Service producers can use this method to update DNS record sets from private DNS zones in the shared producer host project. |

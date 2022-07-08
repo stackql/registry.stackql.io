@@ -3,10 +3,9 @@ title: reservations
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - reservations
+  - pubsublite
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,8 +32,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `admin_projects_locations_reservations_get` | `SELECT` | `name` | Returns the reservation configuration. |
-| `admin_projects_locations_reservations_list` | `SELECT` | `parent` | Returns the list of reservations for the given project. |
-| `admin_projects_locations_reservations_create` | `INSERT` | `parent` | Creates a new reservation. |
-| `admin_projects_locations_reservations_delete` | `DELETE` | `name` | Deletes the specified reservation. |
-| `admin_projects_locations_reservations_patch` | `EXEC` | `name` | Updates properties of the specified reservation. |
+| `admin_projects_locations_reservations_get` | `SELECT` | `locationsId, projectsId, reservationsId` | Returns the reservation configuration. |
+| `admin_projects_locations_reservations_list` | `SELECT` | `locationsId, projectsId` | Returns the list of reservations for the given project. |
+| `admin_projects_locations_reservations_create` | `INSERT` | `locationsId, projectsId` | Creates a new reservation. |
+| `admin_projects_locations_reservations_delete` | `DELETE` | `locationsId, projectsId, reservationsId` | Deletes the specified reservation. |
+| `admin_projects_locations_reservations_patch` | `EXEC` | `locationsId, projectsId, reservationsId` | Updates properties of the specified reservation. |

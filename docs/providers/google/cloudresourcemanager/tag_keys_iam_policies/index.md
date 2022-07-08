@@ -3,10 +3,9 @@ title: tag_keys_iam_policies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - tag_keys_iam_policies
+  - cloudresourcemanager
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,6 +34,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `tagKeys_getIamPolicy` | `SELECT` | `resource` | Gets the access control policy for a TagKey. The returned policy may be empty if no such policy or resource exists. The `resource` field should be the TagKey's resource name. For example, "tagKeys/1234". The caller must have `cloudresourcemanager.googleapis.com/tagKeys.getIamPolicy` permission on the specified TagKey. |
-| `tagKeys_setIamPolicy` | `EXEC` | `resource` | Sets the access control policy on a TagKey, replacing any existing policy. The `resource` field should be the TagKey's resource name. For example, "tagKeys/1234". The caller must have `resourcemanager.tagKeys.setIamPolicy` permission on the identified tagValue. |
-| `tagKeys_testIamPermissions` | `EXEC` | `resource` | Returns permissions that a caller has on the specified TagKey. The `resource` field should be the TagKey's resource name. For example, "tagKeys/1234". There are no permissions required for making this API call. |
+| `tagKeys_getIamPolicy` | `SELECT` | `tagKeysId:getIamPolicy` | Gets the access control policy for a TagKey. The returned policy may be empty if no such policy or resource exists. The `resource` field should be the TagKey's resource name. For example, "tagKeys/1234". The caller must have `cloudresourcemanager.googleapis.com/tagKeys.getIamPolicy` permission on the specified TagKey. |
+| `tagKeys_setIamPolicy` | `EXEC` | `tagKeysId:setIamPolicy` | Sets the access control policy on a TagKey, replacing any existing policy. The `resource` field should be the TagKey's resource name. For example, "tagKeys/1234". The caller must have `resourcemanager.tagKeys.setIamPolicy` permission on the identified tagValue. |
+| `tagKeys_testIamPermissions` | `EXEC` | `tagKeysId:testIamPermissions` | Returns permissions that a caller has on the specified TagKey. The `resource` field should be the TagKey's resource name. For example, "tagKeys/1234". There are no permissions required for making this API call. |

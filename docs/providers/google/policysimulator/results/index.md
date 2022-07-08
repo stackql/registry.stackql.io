@@ -3,10 +3,9 @@ title: results
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - results
+  - policysimulator
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,6 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `folders_locations_replays_results_list` | `SELECT` | `parent` |
-| `organizations_locations_replays_results_list` | `SELECT` | `parent` |
-| `projects_locations_replays_results_list` | `SELECT` | `parent` |
+| `folders_locations_replays_results_list` | `SELECT` | `foldersId, locationsId, replaysId` |
+| `organizations_locations_replays_results_list` | `SELECT` | `locationsId, organizationsId, replaysId` |
+| `projects_locations_replays_results_list` | `SELECT` | `locationsId, projectsId, replaysId` |

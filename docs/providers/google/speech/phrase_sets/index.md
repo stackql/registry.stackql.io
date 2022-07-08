@@ -3,10 +3,9 @@ title: phrase_sets
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - phrase_sets
+  - speech
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,8 +33,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_phraseSets_get` | `SELECT` | `name` | Get a phrase set. |
-| `projects_locations_phraseSets_list` | `SELECT` | `parent` | List phrase sets. |
-| `projects_locations_phraseSets_create` | `INSERT` | `parent` | Create a set of phrase hints. Each item in the set can be a single word or a multi-word phrase. The items in the PhraseSet are favored by the recognition model when you send a call that includes the PhraseSet. |
-| `projects_locations_phraseSets_delete` | `DELETE` | `name` | Delete a phrase set. |
-| `projects_locations_phraseSets_patch` | `EXEC` | `name` | Update a phrase set. |
+| `projects_locations_phraseSets_get` | `SELECT` | `locationsId, phraseSetsId, projectsId` | Get a phrase set. |
+| `projects_locations_phraseSets_list` | `SELECT` | `locationsId, projectsId` | List phrase sets. |
+| `projects_locations_phraseSets_create` | `INSERT` | `locationsId, projectsId` | Create a set of phrase hints. Each item in the set can be a single word or a multi-word phrase. The items in the PhraseSet are favored by the recognition model when you send a call that includes the PhraseSet. |
+| `projects_locations_phraseSets_delete` | `DELETE` | `locationsId, phraseSetsId, projectsId` | Delete a phrase set. |
+| `projects_locations_phraseSets_patch` | `EXEC` | `locationsId, phraseSetsId, projectsId` | Update a phrase set. |

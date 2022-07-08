@@ -3,10 +3,9 @@ title: references
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - references
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,7 +34,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_environments_references_get` | `SELECT` | `name` | Gets a Reference resource. |
-| `organizations_environments_references_create` | `INSERT` | `parent` | Creates a Reference in the specified environment. |
-| `organizations_environments_references_delete` | `DELETE` | `name` | Deletes a Reference from an environment. Returns the deleted Reference resource. |
-| `organizations_environments_references_update` | `EXEC` | `name` | Updates an existing Reference. Note that this operation has PUT semantics; it will replace the entirety of the existing Reference with the resource in the request body. |
+| `organizations_environments_references_get` | `SELECT` | `environmentsId, organizationsId, referencesId` | Gets a Reference resource. |
+| `organizations_environments_references_create` | `INSERT` | `environmentsId, organizationsId` | Creates a Reference in the specified environment. |
+| `organizations_environments_references_delete` | `DELETE` | `environmentsId, organizationsId, referencesId` | Deletes a Reference from an environment. Returns the deleted Reference resource. |
+| `organizations_environments_references_update` | `EXEC` | `environmentsId, organizationsId, referencesId` | Updates an existing Reference. Note that this operation has PUT semantics; it will replace the entirety of the existing Reference with the resource in the request body. |

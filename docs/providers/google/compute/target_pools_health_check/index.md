@@ -3,10 +3,9 @@ title: target_pools_health_check
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - target_pools_health_check
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

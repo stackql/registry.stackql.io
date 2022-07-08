@@ -3,8 +3,8 @@ title: firebasestorage
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - firebasestorage
+  - firebase
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -22,7 +22,7 @@ The Cloud Storage for Firebase API enables programmatic management of Cloud Stor
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Storage for Firebase API</td></tr>
 <tr><td><b>Description</b></td><td>The Cloud Storage for Firebase API enables programmatic management of Cloud Storage buckets for use in Firebase projects</td></tr>
-<tr><td><b>Id</b></td><td><code>firebasestorage:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>firebasestorage:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

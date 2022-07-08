@@ -3,10 +3,9 @@ title: jobs_iam_policies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - jobs_iam_policies
+  - dataproc
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,6 +33,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_regions_jobs_getIamPolicy` | `SELECT` | `resource` | Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. |
-| `projects_regions_jobs_setIamPolicy` | `EXEC` | `resource` | Sets the access control policy on the specified resource. Replaces any existing policy.Can return NOT_FOUND, INVALID_ARGUMENT, and PERMISSION_DENIED errors. |
-| `projects_regions_jobs_testIamPermissions` | `EXEC` | `resource` | Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a NOT_FOUND error.Note: This operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may "fail open" without warning. |
+| `projects_regions_jobs_getIamPolicy` | `SELECT` | `jobsId:getIamPolicy, projectsId, regionsId` | Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. |
+| `projects_regions_jobs_setIamPolicy` | `EXEC` | `jobsId:setIamPolicy, projectsId, regionsId` | Sets the access control policy on the specified resource. Replaces any existing policy.Can return NOT_FOUND, INVALID_ARGUMENT, and PERMISSION_DENIED errors. |
+| `projects_regions_jobs_testIamPermissions` | `EXEC` | `jobsId:testIamPermissions, projectsId, regionsId` | Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a NOT_FOUND error.Note: This operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may "fail open" without warning. |

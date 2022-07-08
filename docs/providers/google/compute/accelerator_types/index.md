@@ -3,10 +3,9 @@ title: accelerator_types
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - accelerator_types
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -31,12 +30,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` | [Output Only] The unique identifier for the resource. This identifier is defined by the server. |
 | `name` | `string` | [Output Only] Name of the resource. |
 | `description` | `string` | [Output Only] An optional textual description of the resource. |
-| `maximumCardsPerInstance` | `integer` | [Output Only] Maximum number of accelerator cards allowed per instance. |
 | `selfLink` | `string` | [Output Only] Server-defined, fully qualified URL for this resource. |
-| `kind` | `string` | [Output Only] The type of the resource. Always compute#acceleratorType for accelerator types. |
+| `maximumCardsPerInstance` | `integer` | [Output Only] Maximum number of accelerator cards allowed per instance. |
 | `zone` | `string` | [Output Only] The name of the zone where the accelerator type resides, such as us-central1-a. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body. |
-| `deprecated` | `object` | Deprecation status for a public resource. |
+| `kind` | `string` | [Output Only] The type of the resource. Always compute#acceleratorType for accelerator types. |
 | `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
+| `deprecated` | `object` | Deprecation status for a public resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

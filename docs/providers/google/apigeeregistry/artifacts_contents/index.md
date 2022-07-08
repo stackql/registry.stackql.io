@@ -3,10 +3,9 @@ title: artifacts_contents
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - artifacts_contents
+  - apigeeregistry
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,14 +27,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `extensions` | `array` | Application specific response metadata. Must be set in the first response for streaming APIs. |
 | `contentType` | `string` | The HTTP Content-Type header value specifying the content type of the body. |
 | `data` | `string` | The HTTP request/response body as raw binary. |
-| `extensions` | `array` | Application specific response metadata. Must be set in the first response for streaming APIs. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_apis_artifacts_getContents` | `SELECT` | `name` |
-| `projects_locations_apis_deployments_artifacts_getContents` | `SELECT` | `name` |
-| `projects_locations_apis_versions_artifacts_getContents` | `SELECT` | `name` |
-| `projects_locations_apis_versions_specs_artifacts_getContents` | `SELECT` | `name` |
-| `projects_locations_artifacts_getContents` | `SELECT` | `name` |
+| `projects_locations_apis_artifacts_getContents` | `SELECT` | `apisId, artifactsId:getContents, locationsId, projectsId` |
+| `projects_locations_apis_deployments_artifacts_getContents` | `SELECT` | `apisId, artifactsId:getContents, deploymentsId, locationsId, projectsId` |
+| `projects_locations_apis_versions_artifacts_getContents` | `SELECT` | `apisId, artifactsId:getContents, locationsId, projectsId, versionsId` |
+| `projects_locations_apis_versions_specs_artifacts_getContents` | `SELECT` | `apisId, artifactsId:getContents, locationsId, projectsId, specsId, versionsId` |
+| `projects_locations_artifacts_getContents` | `SELECT` | `artifactsId:getContents, locationsId, projectsId` |

@@ -3,10 +3,9 @@ title: organizations_iam_policies
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - organizations_iam_policies
+  - cloudresourcemanager
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -35,6 +34,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_getIamPolicy` | `SELECT` | `resource` | Gets the access control policy for an organization resource. The policy may be empty if no such policy or resource exists. The `resource` field should be the organization's resource name, for example: "organizations/123". Authorization requires the IAM permission `resourcemanager.organizations.getIamPolicy` on the specified organization. |
-| `organizations_setIamPolicy` | `EXEC` | `resource` | Sets the access control policy on an organization resource. Replaces any existing policy. The `resource` field should be the organization's resource name, for example: "organizations/123". Authorization requires the IAM permission `resourcemanager.organizations.setIamPolicy` on the specified organization. |
-| `organizations_testIamPermissions` | `EXEC` | `resource` | Returns the permissions that a caller has on the specified organization. The `resource` field should be the organization's resource name, for example: "organizations/123". There are no permissions required for making this API call. |
+| `organizations_getIamPolicy` | `SELECT` | `organizationsId:getIamPolicy` | Gets the access control policy for an organization resource. The policy may be empty if no such policy or resource exists. The `resource` field should be the organization's resource name, for example: "organizations/123". Authorization requires the IAM permission `resourcemanager.organizations.getIamPolicy` on the specified organization. |
+| `organizations_setIamPolicy` | `EXEC` | `organizationsId:setIamPolicy` | Sets the access control policy on an organization resource. Replaces any existing policy. The `resource` field should be the organization's resource name, for example: "organizations/123". Authorization requires the IAM permission `resourcemanager.organizations.setIamPolicy` on the specified organization. |
+| `organizations_testIamPermissions` | `EXEC` | `organizationsId:testIamPermissions` | Returns the permissions that a caller has on the specified organization. The `resource` field should be the organization's resource name, for example: "organizations/123". There are no permissions required for making this API call. |

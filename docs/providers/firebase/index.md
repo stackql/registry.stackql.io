@@ -13,6 +13,7 @@ custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
 Application development platform for creating mobile and web applications.  
+    
 
 See also:   
 [[` SHOW `]](https://stackql.io/docs/language-spec/show) [[` DESCRIBE `]](https://stackql.io/docs/language-spec/describe)  [[` REGISTRY `]](https://stackql.io/docs/language-spec/registry)
@@ -20,11 +21,12 @@ See also:
 
 ## Installation
 ```bash
-REGISTRY PULL firebase v1.0.1;
+REGISTRY PULL firebase v1.0.2;
 ```
 
 ## Authentication
 ```javascript
+
 {
     "firebase": {
         /**
@@ -38,13 +40,15 @@ REGISTRY PULL firebase v1.0.1;
             */
         "credentialsfilepath": string, 
     }
-}
-```
+}    
 
+```
 ### Example
 ```bash
+
 AUTH='{ "firebase": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}'
 stackql shell --auth="${AUTH}"
+
 ```
 ## Services
 <div class="row">

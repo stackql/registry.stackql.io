@@ -3,10 +3,9 @@ title: human_review_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - human_review_config
+  - documentai
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_processors_humanReviewConfig_reviewDocument` | `EXEC` | `humanReviewConfig` |
+| `projects_locations_processors_humanReviewConfig_reviewDocument` | `EXEC` | `locationsId, processorsId, projectsId` |

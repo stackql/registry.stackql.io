@@ -3,10 +3,9 @@ title: cursors
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - cursors
+  - pubsublite
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,4 +32,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `cursor_projects_locations_subscriptions_cursors_list` | `SELECT` | `parent` |
+| `cursor_projects_locations_subscriptions_cursors_list` | `SELECT` | `locationsId, projectsId, subscriptionsId` |

@@ -3,8 +3,9 @@ title: app_attest_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - app_attest_config
+  - firebaseappcheck
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -31,6 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_apps_appAttestConfig_get` | `SELECT` | `name` | Gets the AppAttestConfig for the specified app. |
-| `projects_apps_appAttestConfig_batchGet` | `EXEC` | `parent` | Atomically gets the AppAttestConfigs for the specified list of apps. |
-| `projects_apps_appAttestConfig_patch` | `EXEC` | `name` | Updates the AppAttestConfig for the specified app. While this configuration is incomplete or invalid, the app will be unable to exchange AppAttest tokens for App Check tokens. |
+| `projects_apps_appAttestConfig_get` | `SELECT` | `appsId, projectsId` | Gets the AppAttestConfig for the specified app. |
+| `projects_apps_appAttestConfig_batchGet` | `EXEC` | `projectsId` | Atomically gets the AppAttestConfigs for the specified list of apps. |
+| `projects_apps_appAttestConfig_patch` | `EXEC` | `appsId, projectsId` | Updates the AppAttestConfig for the specified app. While this configuration is incomplete or invalid, the app will be unable to exchange AppAttest tokens for App Check tokens. |

@@ -3,8 +3,9 @@ title: clusters
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - firebase
   - clusters
+  - toolresults
+  - firebase    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -26,10 +27,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `activity` | `string` | A string that describes the activity of every screen in the cluster. |
-| `clusterId` | `string` | A unique identifier for the cluster. @OutputOnly |
 | `keyScreen` | `object` |  |
 | `screens` | `array` | Full list of screens. |
+| `activity` | `string` | A string that describes the activity of every screen in the cluster. |
+| `clusterId` | `string` | A unique identifier for the cluster. @OutputOnly |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

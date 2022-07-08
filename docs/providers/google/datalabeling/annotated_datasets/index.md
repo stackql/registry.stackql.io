@@ -3,10 +3,9 @@ title: annotated_datasets
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - annotated_datasets
+  - datalabeling
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,18 +29,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. AnnotatedDataset resource name in format of: projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/ {annotated_dataset_id} |
 | `description` | `string` | Output only. The description of the AnnotatedDataset. It is specified in HumanAnnotationConfig when user starts a labeling task. Maximum of 10000 characters. |
-| `displayName` | `string` | Output only. The display name of the AnnotatedDataset. It is specified in HumanAnnotationConfig when user starts a labeling task. Maximum of 64 characters. |
+| `metadata` | `object` | Metadata on AnnotatedDataset. |
 | `exampleCount` | `string` | Output only. Number of examples in the annotated dataset. |
-| `blockingResources` | `array` | Output only. The names of any related resources that are blocking changes to the annotated dataset. |
 | `createTime` | `string` | Output only. Time the AnnotatedDataset was created. |
+| `displayName` | `string` | Output only. The display name of the AnnotatedDataset. It is specified in HumanAnnotationConfig when user starts a labeling task. Maximum of 64 characters. |
+| `blockingResources` | `array` | Output only. The names of any related resources that are blocking changes to the annotated dataset. |
+| `annotationSource` | `string` | Output only. Source of the annotation. |
 | `annotationType` | `string` | Output only. Type of the annotation. It is specified when starting labeling task. |
 | `completedExampleCount` | `string` | Output only. Number of examples that have annotation in the annotated dataset. |
-| `metadata` | `object` | Metadata on AnnotatedDataset. |
 | `labelStats` | `object` | Statistics about annotation specs. |
-| `annotationSource` | `string` | Output only. Source of the annotation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_datasets_annotatedDatasets_get` | `SELECT` | `name` | Gets an annotated dataset by resource name. |
-| `projects_datasets_annotatedDatasets_list` | `SELECT` | `parent` | Lists annotated datasets for a dataset. Pagination is supported. |
-| `projects_datasets_annotatedDatasets_delete` | `DELETE` | `name` | Deletes an annotated dataset by resource name. |
+| `projects_datasets_annotatedDatasets_get` | `SELECT` | `annotatedDatasetsId, datasetsId, projectsId` | Gets an annotated dataset by resource name. |
+| `projects_datasets_annotatedDatasets_list` | `SELECT` | `datasetsId, projectsId` | Lists annotated datasets for a dataset. Pagination is supported. |
+| `projects_datasets_annotatedDatasets_delete` | `DELETE` | `annotatedDatasetsId, datasetsId, projectsId` | Deletes an annotated dataset by resource name. |

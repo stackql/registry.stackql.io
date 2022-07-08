@@ -3,10 +3,9 @@ title: job_templates
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - job_templates
+  - transcoder
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,7 +33,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_jobTemplates_get` | `SELECT` | `name` | Returns the job template data. |
-| `projects_locations_jobTemplates_list` | `SELECT` | `parent` | Lists job templates in the specified region. |
-| `projects_locations_jobTemplates_create` | `INSERT` | `parent` | Creates a job template in the specified region. |
-| `projects_locations_jobTemplates_delete` | `DELETE` | `name` | Deletes a job template. |
+| `projects_locations_jobTemplates_get` | `SELECT` | `jobTemplatesId, locationsId, projectsId` | Returns the job template data. |
+| `projects_locations_jobTemplates_list` | `SELECT` | `locationsId, projectsId` | Lists job templates in the specified region. |
+| `projects_locations_jobTemplates_create` | `INSERT` | `locationsId, projectsId` | Creates a job template in the specified region. |
+| `projects_locations_jobTemplates_delete` | `DELETE` | `jobTemplatesId, locationsId, projectsId` | Deletes a job template. |

@@ -3,10 +3,9 @@ title: provisioning_quotas
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - provisioning_quotas
+  - baremetalsolution
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,15 +28,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The name of the provisioning quota. |
-| `gcpService` | `string` | The gcp service of the provisioning quota. |
 | `instanceQuota` | `object` | A resource budget. |
+| `networkBandwidth` | `string` | Network bandwidth, Gbps |
+| `assetType` | `string` | The asset type of this provisioning quota. |
 | `storageGib` | `string` | Storage size (GB). |
 | `availableCount` | `integer` | The available count of the provisioning quota. |
-| `assetType` | `string` | The asset type of this provisioning quota. |
-| `location` | `string` | The specific location of the provisioining quota. |
 | `serverCount` | `string` | Server count. |
-| `networkBandwidth` | `string` | Network bandwidth, Gbps |
+| `gcpService` | `string` | The gcp service of the provisioning quota. |
+| `location` | `string` | The specific location of the provisioining quota. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_provisioningQuotas_list` | `SELECT` | `parent` |
+| `projects_locations_provisioningQuotas_list` | `SELECT` | `locationsId, projectsId` |

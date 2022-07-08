@@ -3,10 +3,9 @@ title: apicategories
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - apicategories
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,8 +35,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `organizations_sites_apicategories_get` | `SELECT` | `name` | Gets a category on the portal. |
-| `organizations_sites_apicategories_list` | `SELECT` | `parent` | Lists the categories on the portal. |
-| `organizations_sites_apicategories_create` | `INSERT` | `parent` | Creates a new category on the portal. |
-| `organizations_sites_apicategories_delete` | `DELETE` | `name` | Deletes a category from the portal. |
-| `organizations_sites_apicategories_patch` | `EXEC` | `name` | Updates a category on the portal. |
+| `organizations_sites_apicategories_get` | `SELECT` | `apicategoriesId, organizationsId, sitesId` | Gets a category on the portal. |
+| `organizations_sites_apicategories_list` | `SELECT` | `organizationsId, sitesId` | Lists the categories on the portal. |
+| `organizations_sites_apicategories_create` | `INSERT` | `organizationsId, sitesId` | Creates a new category on the portal. |
+| `organizations_sites_apicategories_delete` | `DELETE` | `apicategoriesId, organizationsId, sitesId` | Deletes a category from the portal. |
+| `organizations_sites_apicategories_patch` | `EXEC` | `apicategoriesId, organizationsId, sitesId` | Updates a category on the portal. |

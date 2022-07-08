@@ -3,10 +3,8 @@ title: cloudiot
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - cloudiot
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Registers and manages IoT (Internet of Things) devices that connect to the Googl
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud IoT API</td></tr>
 <tr><td><b>Description</b></td><td>Registers and manages IoT (Internet of Things) devices that connect to the Google Cloud Platform. </td></tr>
-<tr><td><b>Id</b></td><td><code>cloudiot:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudiot:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

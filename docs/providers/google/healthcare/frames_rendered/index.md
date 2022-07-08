@@ -3,10 +3,9 @@ title: frames_rendered
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - frames_rendered
+  - healthcare
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,4 +33,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_datasets_dicomStores_studies_series_instances_frames_retrieveRendered` | `SELECT` | `dicomWebPath, parent` |
+| `projects_locations_datasets_dicomStores_studies_series_instances_frames_retrieveRendered` | `SELECT` | `datasetsId, dicomStoresId, framesId, instancesId, locationsId, projectsId, seriesId, studiesId` |

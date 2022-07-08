@@ -3,10 +3,9 @@ title: instances_access_config
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - instances_access_config
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

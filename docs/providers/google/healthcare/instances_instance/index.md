@@ -3,10 +3,9 @@ title: instances_instance
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - instances_instance
+  - healthcare
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,4 +33,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_datasets_dicomStores_studies_series_instances_retrieveInstance` | `SELECT` | `dicomWebPath, parent` |
+| `projects_locations_datasets_dicomStores_studies_series_instances_retrieveInstance` | `SELECT` | `datasetsId, dicomStoresId, instancesId, locationsId, projectsId, seriesId, studiesId` |

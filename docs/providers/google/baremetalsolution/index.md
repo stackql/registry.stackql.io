@@ -3,10 +3,8 @@ title: baremetalsolution
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - baremetalsolution
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Provides ways to manage Bare Metal Solution hardware installed in a regional ext
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Bare Metal Solution API</td></tr>
 <tr><td><b>Description</b></td><td>Provides ways to manage Bare Metal Solution hardware installed in a regional extension located near a Google Cloud data center.</td></tr>
-<tr><td><b>Id</b></td><td><code>baremetalsolution:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>baremetalsolution:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

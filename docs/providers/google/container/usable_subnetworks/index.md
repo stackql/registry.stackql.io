@@ -3,10 +3,9 @@ title: usable_subnetworks
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - usable_subnetworks
+  - container
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -28,12 +27,12 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `statusMessage` | `string` | A human readable status message representing the reasons for cases where the caller cannot use the secondary ranges under the subnet. For example if the secondary_ip_ranges is empty due to a permission issue, an insufficient permission message will be given by status_message. |
+| `subnetwork` | `string` | Subnetwork Name. Example: projects/my-project/regions/us-central1/subnetworks/my-subnet |
 | `ipCidrRange` | `string` | The range of internal addresses that are owned by this subnetwork. |
 | `network` | `string` | Network Name. Example: projects/my-project/global/networks/my-network |
 | `secondaryIpRanges` | `array` | Secondary IP ranges. |
-| `statusMessage` | `string` | A human readable status message representing the reasons for cases where the caller cannot use the secondary ranges under the subnet. For example if the secondary_ip_ranges is empty due to a permission issue, an insufficient permission message will be given by status_message. |
-| `subnetwork` | `string` | Subnetwork Name. Example: projects/my-project/regions/us-central1/subnetworks/my-subnet |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_aggregated_usableSubnetworks_list` | `SELECT` | `parent` |
+| `projects_aggregated_usableSubnetworks_list` | `SELECT` | `projectsId` |

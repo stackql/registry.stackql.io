@@ -3,10 +3,9 @@ title: peered_dns_domains
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - peered_dns_domains
+  - servicenetworking
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,6 +32,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `services_projects_global_networks_peeredDnsDomains_list` | `SELECT` | `parent` | Lists peered DNS domains for a connection. |
-| `services_projects_global_networks_peeredDnsDomains_create` | `INSERT` | `parent` | Creates a peered DNS domain which sends requests for records in given namespace originating in the service producer VPC network to the consumer VPC network to be resolved. |
-| `services_projects_global_networks_peeredDnsDomains_delete` | `DELETE` | `name` | Deletes a peered DNS domain. |
+| `services_projects_global_networks_peeredDnsDomains_list` | `SELECT` | `networksId, projectsId, servicesId` | Lists peered DNS domains for a connection. |
+| `services_projects_global_networks_peeredDnsDomains_create` | `INSERT` | `networksId, projectsId, servicesId` | Creates a peered DNS domain which sends requests for records in given namespace originating in the service producer VPC network to the consumer VPC network to be resolved. |
+| `services_projects_global_networks_peeredDnsDomains_delete` | `DELETE` | `networksId, peeredDnsDomainsId, projectsId, servicesId` | Deletes a peered DNS domain. |

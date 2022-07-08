@@ -3,10 +3,9 @@ title: registries
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - registries
+  - cloudiot
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -39,10 +38,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_registries_get` | `SELECT` | `name` | Gets a device registry configuration. |
-| `projects_locations_registries_list` | `SELECT` | `parent` | Lists device registries. |
-| `projects_locations_registries_create` | `INSERT` | `parent` | Creates a device registry that contains devices. |
-| `projects_locations_registries_delete` | `DELETE` | `name` | Deletes a device registry configuration. |
-| `projects_locations_registries_bindDeviceToGateway` | `EXEC` | `parent` | Associates the device with the gateway. |
-| `projects_locations_registries_patch` | `EXEC` | `name` | Updates a device registry configuration. |
-| `projects_locations_registries_unbindDeviceFromGateway` | `EXEC` | `parent` | Deletes the association between the device and the gateway. |
+| `projects_locations_registries_get` | `SELECT` | `locationsId, projectsId, registriesId` | Gets a device registry configuration. |
+| `projects_locations_registries_list` | `SELECT` | `locationsId, projectsId` | Lists device registries. |
+| `projects_locations_registries_create` | `INSERT` | `locationsId, projectsId` | Creates a device registry that contains devices. |
+| `projects_locations_registries_delete` | `DELETE` | `locationsId, projectsId, registriesId` | Deletes a device registry configuration. |
+| `projects_locations_registries_bindDeviceToGateway` | `EXEC` | `locationsId, projectsId, registriesId:bindDeviceToGateway` | Associates the device with the gateway. |
+| `projects_locations_registries_patch` | `EXEC` | `locationsId, projectsId, registriesId` | Updates a device registry configuration. |
+| `projects_locations_registries_unbindDeviceFromGateway` | `EXEC` | `locationsId, projectsId, registriesId:unbindDeviceFromGateway` | Deletes the association between the device and the gateway. |

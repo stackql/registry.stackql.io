@@ -3,10 +3,8 @@ title: notebooks
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - notebooks
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Notebooks API is used to manage notebook resources in Google Cloud.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Notebooks API</td></tr>
 <tr><td><b>Description</b></td><td>Notebooks API is used to manage notebook resources in Google Cloud.</td></tr>
-<tr><td><b>Id</b></td><td><code>notebooks:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>notebooks:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

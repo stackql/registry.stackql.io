@@ -3,8 +3,6 @@ title: google
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
   - google
   - stackql
   - infrastructure-as-code
@@ -14,7 +12,8 @@ description: Query, deploy and manage Google Cloud Platform (GCP) infrastructure
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
-Cloud computing services offered by Google.   
+Cloud computing services offered by Google.  
+    
 
 See also:   
 [[` SHOW `]](https://stackql.io/docs/language-spec/show) [[` DESCRIBE `]](https://stackql.io/docs/language-spec/describe)  [[` REGISTRY `]](https://stackql.io/docs/language-spec/registry)
@@ -22,11 +21,12 @@ See also:
 
 ## Installation
 ```bash
-REGISTRY PULL google v1.0.1;
+REGISTRY PULL google v1.0.2;
 ```
 
 ## Authentication
 ```javascript
+
 {
     "google": {
         /**
@@ -41,11 +41,14 @@ REGISTRY PULL google v1.0.1;
         "credentialsfilepath": string, 
     }
 }
+
 ```
 ### Example
 ```bash
+
 AUTH='{ "google": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}'
 stackql shell --auth="${AUTH}"
+
 ```
 ## Services
 <div class="row">

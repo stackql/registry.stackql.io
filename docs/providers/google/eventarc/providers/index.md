@@ -3,10 +3,9 @@ title: providers
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - providers
+  - eventarc
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -34,5 +33,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_providers_get` | `SELECT` | `name` | Get a single Provider. |
-| `projects_locations_providers_list` | `SELECT` | `parent` | List providers. |
+| `projects_locations_providers_get` | `SELECT` | `locationsId, projectsId, providersId` | Get a single Provider. |
+| `projects_locations_providers_list` | `SELECT` | `locationsId, projectsId` | List providers. |

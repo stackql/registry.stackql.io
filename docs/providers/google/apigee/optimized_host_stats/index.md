@@ -3,10 +3,9 @@ title: optimized_host_stats
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - optimized_host_stats
+  - apigee
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_optimizedHostStats_get` | `SELECT` | `name` |
+| `organizations_optimizedHostStats_get` | `SELECT` | `optimizedHostStatsId, organizationsId` |

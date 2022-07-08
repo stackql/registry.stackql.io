@@ -3,10 +3,9 @@ title: feeds
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - feeds
+  - cloudasset
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

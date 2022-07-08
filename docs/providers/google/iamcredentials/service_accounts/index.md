@@ -3,10 +3,9 @@ title: service_accounts
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - service_accounts
+  - iamcredentials
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -30,7 +29,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_serviceAccounts_generateAccessToken` | `EXEC` | `name` | Generates an OAuth 2.0 access token for a service account. |
-| `projects_serviceAccounts_generateIdToken` | `EXEC` | `name` | Generates an OpenID Connect ID token for a service account. |
-| `projects_serviceAccounts_signBlob` | `EXEC` | `name` | Signs a blob using a service account's system-managed private key. |
-| `projects_serviceAccounts_signJwt` | `EXEC` | `name` | Signs a JWT using a service account's system-managed private key. |
+| `projects_serviceAccounts_generateAccessToken` | `EXEC` | `projectsId, serviceAccountsId:generateAccessToken` | Generates an OAuth 2.0 access token for a service account. |
+| `projects_serviceAccounts_generateIdToken` | `EXEC` | `projectsId, serviceAccountsId:generateIdToken` | Generates an OpenID Connect ID token for a service account. |
+| `projects_serviceAccounts_signBlob` | `EXEC` | `projectsId, serviceAccountsId:signBlob` | Signs a blob using a service account's system-managed private key. |
+| `projects_serviceAccounts_signJwt` | `EXEC` | `projectsId, serviceAccountsId:signJwt` | Signs a JWT using a service account's system-managed private key. |

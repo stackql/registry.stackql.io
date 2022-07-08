@@ -3,10 +3,9 @@ title: sql
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - sql
+  - dataflow
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

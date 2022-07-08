@@ -3,10 +3,9 @@ title: bitbucket_server_configs
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - bitbucket_server_configs
+  - cloudbuild
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,20 +28,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name for the config. |
+| `webhookKey` | `string` | Output only. UUID included in webhook requests. The UUID is used to look up the corresponding config. |
 | `hostUri` | `string` | Required. Immutable. The URI of the Bitbucket Server host. Once this field has been set, it cannot be changed. If you need to change it, please create another BitbucketServerConfig. |
 | `createTime` | `string` | Time when the config was created. |
-| `webhookKey` | `string` | Output only. UUID included in webhook requests. The UUID is used to look up the corresponding config. |
-| `connectedRepositories` | `array` | Output only. Connected Bitbucket Server repositories for this config. |
-| `sslCa` | `string` | Optional. SSL certificate to use for requests to Bitbucket Server. The format should be PEM format but the extension can be one of .pem, .cer, or .crt. |
-| `apiKey` | `string` | Required. Immutable. API Key that will be attached to webhook. Once this field has been set, it cannot be changed. If you need to change it, please create another BitbucketServerConfig. |
 | `secrets` | `object` | BitbucketServerSecrets represents the secrets in Secret Manager for a Bitbucket Server. |
 | `username` | `string` | Username of the account Cloud Build will use on Bitbucket Server. |
+| `connectedRepositories` | `array` | Output only. Connected Bitbucket Server repositories for this config. |
 | `peeredNetwork` | `string` | Optional. The network to be used when reaching out to the Bitbucket Server instance. The VPC network must be enabled for private service connection. This should be set if the Bitbucket Server instance is hosted on-premises and not reachable by public internet. If this field is left empty, no network peering will occur and calls to the Bitbucket Server instance will be made over the public internet. Must be in the format `projects/{project}/global/networks/{network}`, where {project} is a project number or id and {network} is the name of a VPC network in the project. |
+| `sslCa` | `string` | Optional. SSL certificate to use for requests to Bitbucket Server. The format should be PEM format but the extension can be one of .pem, .cer, or .crt. |
+| `apiKey` | `string` | Required. Immutable. API Key that will be attached to webhook. Once this field has been set, it cannot be changed. If you need to change it, please create another BitbucketServerConfig. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_bitbucketServerConfigs_get` | `SELECT` | `name` | Retrieve a `BitbucketServerConfig`. This API is experimental. |
-| `projects_locations_bitbucketServerConfigs_list` | `SELECT` | `parent` | List all `BitbucketServerConfigs` for a given project. This API is experimental. |
-| `projects_locations_bitbucketServerConfigs_create` | `INSERT` | `parent` | Creates a new `BitbucketServerConfig`. This API is experimental. |
-| `projects_locations_bitbucketServerConfigs_delete` | `DELETE` | `name` | Delete a `BitbucketServerConfig`. This API is experimental. |
-| `projects_locations_bitbucketServerConfigs_patch` | `EXEC` | `name` | Updates an existing `BitbucketServerConfig`. This API is experimental. |
+| `projects_locations_bitbucketServerConfigs_get` | `SELECT` | `bitbucketServerConfigsId, locationsId, projectsId` | Retrieve a `BitbucketServerConfig`. This API is experimental. |
+| `projects_locations_bitbucketServerConfigs_list` | `SELECT` | `locationsId, projectsId` | List all `BitbucketServerConfigs` for a given project. This API is experimental. |
+| `projects_locations_bitbucketServerConfigs_create` | `INSERT` | `locationsId, projectsId` | Creates a new `BitbucketServerConfig`. This API is experimental. |
+| `projects_locations_bitbucketServerConfigs_delete` | `DELETE` | `bitbucketServerConfigsId, locationsId, projectsId` | Delete a `BitbucketServerConfig`. This API is experimental. |
+| `projects_locations_bitbucketServerConfigs_patch` | `EXEC` | `bitbucketServerConfigsId, locationsId, projectsId` | Updates an existing `BitbucketServerConfig`. This API is experimental. |

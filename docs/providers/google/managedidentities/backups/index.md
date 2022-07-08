@@ -3,10 +3,9 @@ title: backups
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - backups
+  - managedidentities
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -38,8 +37,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_global_domains_backups_get` | `SELECT` | `name` | Gets details of a single Backup. |
-| `projects_locations_global_domains_backups_list` | `SELECT` | `parent` | Lists Backup in a given project. |
-| `projects_locations_global_domains_backups_create` | `INSERT` | `parent` | Creates a Backup for a domain. |
-| `projects_locations_global_domains_backups_delete` | `DELETE` | `name` | Deletes identified Backup. |
-| `projects_locations_global_domains_backups_patch` | `EXEC` | `name` | Updates the labels for specified Backup. |
+| `projects_locations_global_domains_backups_get` | `SELECT` | `backupsId, domainsId, projectsId` | Gets details of a single Backup. |
+| `projects_locations_global_domains_backups_list` | `SELECT` | `domainsId, projectsId` | Lists Backup in a given project. |
+| `projects_locations_global_domains_backups_create` | `INSERT` | `domainsId, projectsId` | Creates a Backup for a domain. |
+| `projects_locations_global_domains_backups_delete` | `DELETE` | `backupsId, domainsId, projectsId` | Deletes identified Backup. |
+| `projects_locations_global_domains_backups_patch` | `EXEC` | `backupsId, domainsId, projectsId` | Updates the labels for specified Backup. |

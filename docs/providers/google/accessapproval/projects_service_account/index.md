@@ -3,10 +3,9 @@ title: projects_service_account
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - projects_service_account
+  - accessapproval
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -33,4 +32,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_getServiceAccount` | `SELECT` | `name` |
+| `projects_getServiceAccount` | `SELECT` | `projectsId` |

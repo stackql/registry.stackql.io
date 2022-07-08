@@ -3,10 +3,9 @@ title: operations
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - operations
+  - apikeys
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -36,4 +35,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `get` | `SELECT` | `name` |
+| `get` | `SELECT` | `operationsId` |

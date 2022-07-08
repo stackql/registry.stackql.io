@@ -3,10 +3,8 @@ title: lifesciences
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - lifesciences
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Cloud Life Sciences is a suite of services and tools for managing, processing, a
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Life Sciences API</td></tr>
 <tr><td><b>Description</b></td><td>Cloud Life Sciences is a suite of services and tools for managing, processing, and transforming life sciences data.</td></tr>
-<tr><td><b>Id</b></td><td><code>lifesciences:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>lifesciences:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

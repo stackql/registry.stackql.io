@@ -3,10 +3,9 @@ title: ssl_policies_available_features
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - ssl_policies_available_features
+  - compute
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data

@@ -3,10 +3,8 @@ title: cloudscheduler
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - cloudscheduler
+  - google
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -24,7 +22,7 @@ Creates and manages jobs run on a regular recurring schedule.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Scheduler API</td></tr>
 <tr><td><b>Description</b></td><td>Creates and manages jobs run on a regular recurring schedule.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudscheduler:v1.0.1</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudscheduler:v1.0.2</code></td></tr>
 </tbody></table>
 
 ## Resources

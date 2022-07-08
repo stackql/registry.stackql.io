@@ -3,10 +3,9 @@ title: jobs
 hide_title: false
 hide_table_of_contents: false
 keywords:
-  - googlecloudplatform
-  - gcp
-  - google
   - jobs
+  - dataplex
+  - google    
   - stackql
   - infrastructure-as-code
   - configuration-as-data
@@ -29,17 +28,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The relative resource name of the job, of the form: projects/{project_number}/locations/{location_id}/lakes/{lake_id}/ tasks/{task_id}/jobs/{job_id}. |
-| `state` | `string` | Output only. Execution state for the job. |
 | `startTime` | `string` | Output only. The time when the job was started. |
 | `endTime` | `string` | Output only. The time when the job ended. |
-| `service` | `string` | Output only. The underlying service running a job. |
 | `retryCount` | `integer` | Output only. . The number of times the job has been retried (excluding the initial attempt). |
 | `serviceJob` | `string` | Output only. The full resource name for the job run under a particular service. |
-| `message` | `string` | Output only. Additional information about the current state. |
 | `uid` | `string` | Output only. System generated globally unique ID for the job. |
+| `message` | `string` | Output only. Additional information about the current state. |
+| `service` | `string` | Output only. The underlying service running a job. |
+| `state` | `string` | Output only. Execution state for the job. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_lakes_tasks_jobs_get` | `SELECT` | `name` | Get job resource. |
-| `projects_locations_lakes_tasks_jobs_list` | `SELECT` | `parent` | Lists Jobs under the given task. |
-| `projects_locations_lakes_tasks_jobs_cancel` | `EXEC` | `name` | Cancel jobs running for the task resource. |
+| `projects_locations_lakes_tasks_jobs_get` | `SELECT` | `jobsId, lakesId, locationsId, projectsId, tasksId` | Get job resource. |
+| `projects_locations_lakes_tasks_jobs_list` | `SELECT` | `lakesId, locationsId, projectsId, tasksId` | Lists Jobs under the given task. |
+| `projects_locations_lakes_tasks_jobs_cancel` | `EXEC` | `jobsId:cancel, lakesId, locationsId, projectsId, tasksId` | Cancel jobs running for the task resource. |
