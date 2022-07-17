@@ -29,11 +29,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Immutable. The relative resource name of the backup, in the following form:projects/{project_number}/locations/{location_id}/services/{service_id}/backups/{backup_id} |
 | `description` | `string` | The description of the backup. |
+| `endTime` | `string` | Output only. The time when the backup finished creating. |
 | `restoringServices` | `array` | Output only. Services that are restoring from the backup. |
 | `serviceRevision` | `object` | A managed metastore service that serves metadata queries. |
 | `state` | `string` | Output only. The current state of the backup. |
 | `createTime` | `string` | Output only. The time when the backup was started. |
-| `endTime` | `string` | Output only. The time when the backup finished creating. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

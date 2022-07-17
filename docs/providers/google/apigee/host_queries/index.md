@@ -29,17 +29,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Asynchronous Query Name. |
 | `result` | `object` |  |
+| `resultRows` | `string` | ResultRows is available only after the query is completed. |
 | `state` | `string` | Query state could be "enqueued", "running", "completed", "failed". |
-| `created` | `string` | Creation time of the query. |
-| `error` | `string` | Error is set when query fails. |
 | `reportDefinitionId` | `string` | Asynchronous Report ID. |
 | `executionTime` | `string` | ExecutionTime is available only after the query is completed. |
-| `queryParams` | `object` |  |
-| `self` | `string` | Self link of the query. Example: `/organizations/myorg/environments/myenv/queries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query is running at host level: `/organizations/myorg/hostQueries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` |
-| `envgroupHostname` | `string` | Hostname is available only when query is executed at host level. |
-| `resultRows` | `string` | ResultRows is available only after the query is completed. |
-| `updated` | `string` | Last updated timestamp for the query. |
+| `error` | `string` | Error is set when query fails. |
 | `resultFileSize` | `string` | ResultFileSize is available only after the query is completed. |
+| `self` | `string` | Self link of the query. Example: `/organizations/myorg/environments/myenv/queries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query is running at host level: `/organizations/myorg/hostQueries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` |
+| `created` | `string` | Creation time of the query. |
+| `envgroupHostname` | `string` | Hostname is available only when query is executed at host level. |
+| `updated` | `string` | Last updated timestamp for the query. |
+| `queryParams` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

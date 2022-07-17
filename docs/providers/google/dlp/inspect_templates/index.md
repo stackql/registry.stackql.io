@@ -29,10 +29,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The template name. The template will have one of the following formats: `projects/PROJECT_ID/inspectTemplates/TEMPLATE_ID` OR `organizations/ORGANIZATION_ID/inspectTemplates/TEMPLATE_ID`; |
 | `description` | `string` | Short description (max 256 chars). |
-| `inspectConfig` | `object` | Configuration description of the scanning process. When used with redactContent only info_types and min_likelihood are currently used. |
 | `updateTime` | `string` | Output only. The last update timestamp of an inspectTemplate. |
 | `createTime` | `string` | Output only. The creation timestamp of an inspectTemplate. |
 | `displayName` | `string` | Display name (max 256 chars). |
+| `inspectConfig` | `object` | Configuration description of the scanning process. When used with redactContent only info_types and min_likelihood are currently used. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

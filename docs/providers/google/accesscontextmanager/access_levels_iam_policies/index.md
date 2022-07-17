@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `accessPolicies_accessLevels_testIamPermissions` | `EXEC` | `accessLevelsId:testIamPermissions, accessPoliciesId` |
+| `accessPolicies_accessLevels_testIamPermissions` | `EXEC` | `accessLevelsId, accessPoliciesId` |

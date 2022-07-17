@@ -27,18 +27,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `enableAnonymousUser` | `boolean` | Whether anonymous user is enabled. |
-| `allowPasswordUser` | `boolean` | Whether to allow password user sign in or sign up. |
-| `useEmailSending` | `boolean` | Whether to use email sending provided by Firebear. |
 | `projectId` | `string` | Project ID of the relying party. |
-| `idpConfig` | `array` | OAuth2 provider configuration. |
-| `legacyResetPasswordTemplate` | `object` | Template for an email template. |
-| `apiKey` | `string` | Browser API key, needed when making http request to Apiary. |
-| `changeEmailTemplate` | `object` | Template for an email template. |
-| `authorizedDomains` | `array` | Authorized domains. |
-| `verifyEmailTemplate` | `object` | Template for an email template. |
-| `resetPasswordTemplate` | `object` | Template for an email template. |
 | `dynamicLinksDomain` | `string` |  |
+| `legacyResetPasswordTemplate` | `object` | Template for an email template. |
+| `changeEmailTemplate` | `object` | Template for an email template. |
+| `useEmailSending` | `boolean` | Whether to use email sending provided by Firebear. |
+| `allowPasswordUser` | `boolean` | Whether to allow password user sign in or sign up. |
+| `enableAnonymousUser` | `boolean` | Whether anonymous user is enabled. |
+| `authorizedDomains` | `array` | Authorized domains. |
+| `resetPasswordTemplate` | `object` | Template for an email template. |
+| `verifyEmailTemplate` | `object` | Template for an email template. |
+| `idpConfig` | `array` | OAuth2 provider configuration. |
+| `apiKey` | `string` | Browser API key, needed when making http request to Apiary. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

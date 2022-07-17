@@ -28,17 +28,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The stream's name. |
-| `labels` | `object` | Labels. |
-| `updateTime` | `string` | Output only. The last update time of the stream. |
-| `backfillAll` | `object` | Backfill strategy to automatically backfill the Stream's objects. Specific objects can be excluded. |
-| `state` | `string` | The state of the stream. |
-| `createTime` | `string` | Output only. The creation time of the stream. |
-| `customerManagedEncryptionKey` | `string` | Immutable. A reference to a KMS encryption key. If provided, it will be used to encrypt the data. If left blank, data will be encrypted using an internal Stream-specific encryption key provisioned through KMS. |
 | `displayName` | `string` | Required. Display name. |
-| `destinationConfig` | `object` | The configuration of the stream destination. |
-| `errors` | `array` | Output only. Errors on the Stream. |
+| `updateTime` | `string` | Output only. The last update time of the stream. |
+| `createTime` | `string` | Output only. The creation time of the stream. |
+| `labels` | `object` | Labels. |
+| `state` | `string` | The state of the stream. |
+| `customerManagedEncryptionKey` | `string` | Immutable. A reference to a KMS encryption key. If provided, it will be used to encrypt the data. If left blank, data will be encrypted using an internal Stream-specific encryption key provisioned through KMS. |
 | `backfillNone` | `object` | Backfill strategy to disable automatic backfill for the Stream's objects. |
+| `destinationConfig` | `object` | The configuration of the stream destination. |
 | `sourceConfig` | `object` | The configuration of the stream source. |
+| `backfillAll` | `object` | Backfill strategy to automatically backfill the Stream's objects. Specific objects can be excluded. |
+| `errors` | `array` | Output only. Errors on the Stream. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

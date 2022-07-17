@@ -34,6 +34,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_services_getIamPolicy` | `SELECT` | `locationsId, projectsId, servicesId:getIamPolicy` | Get the IAM Access Control policy currently in effect for the given Cloud Run Service. This result does not include any inherited policies. |
-| `projects_locations_services_setIamPolicy` | `EXEC` | `locationsId, projectsId, servicesId:setIamPolicy` | Sets the IAM Access control policy for the specified Service. Overwrites any existing policy. |
-| `projects_locations_services_testIamPermissions` | `EXEC` | `locationsId, projectsId, servicesId:testIamPermissions` | Returns permissions that a caller has on the specified Project. There are no permissions required for making this API call. |
+| `projects_locations_services_getIamPolicy` | `SELECT` | `locationsId, projectsId, servicesId` | Get the IAM Access Control policy currently in effect for the given Cloud Run Service. This result does not include any inherited policies. |
+| `projects_locations_services_setIamPolicy` | `EXEC` | `locationsId, projectsId, servicesId` | Sets the IAM Access control policy for the specified Service. Overwrites any existing policy. |
+| `projects_locations_services_testIamPermissions` | `EXEC` | `locationsId, projectsId, servicesId` | Returns permissions that a caller has on the specified Project. There are no permissions required for making this API call. |

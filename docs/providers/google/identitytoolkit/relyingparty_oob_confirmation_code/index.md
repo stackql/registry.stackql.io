@@ -27,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `kind` | `string` | The fixed string "identitytoolkit#GetOobConfirmationCodeResponse". |
 | `oobCode` | `string` | The code to be send to the user. |
 | `email` | `string` | The email address that the email is sent to. |
+| `kind` | `string` | The fixed string "identitytoolkit#GetOobConfirmationCodeResponse". |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

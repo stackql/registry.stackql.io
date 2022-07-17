@@ -27,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `updateTime` | `string` | [Output only] The time at which this state version was updated in Cloud IoT Core. |
 | `binaryData` | `string` | The device state data. |
+| `updateTime` | `string` | [Output only] The time at which this state version was updated in Cloud IoT Core. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

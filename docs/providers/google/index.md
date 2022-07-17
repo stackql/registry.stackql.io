@@ -21,7 +21,7 @@ See also:
 
 ## Installation
 ```bash
-REGISTRY PULL google v1.0.2;
+REGISTRY PULL google v1.0.3;
 ```
 
 ## Authentication

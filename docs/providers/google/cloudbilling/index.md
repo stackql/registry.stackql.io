@@ -22,17 +22,19 @@ Allows developers to manage billing for their Google Cloud Platform projects pro
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Billing API</td></tr>
 <tr><td><b>Description</b></td><td>Allows developers to manage billing for their Google Cloud Platform projects programmatically.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudbilling:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudbilling:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
 <a href="/providers/google/cloudbilling/billing_accounts/">billing_accounts</a><br />
+<a href="/providers/google/cloudbilling/billing_accounts_iam_audit_configs/">billing_accounts_iam_audit_configs</a><br />
+<a href="/providers/google/cloudbilling/billing_accounts_iam_bindings/">billing_accounts_iam_bindings</a><br />
 <a href="/providers/google/cloudbilling/billing_accounts_iam_policies/">billing_accounts_iam_policies</a><br />
-<a href="/providers/google/cloudbilling/projects/">projects</a><br />
 </div>
 <div class="providerDocColumn">
+<a href="/providers/google/cloudbilling/projects/">projects</a><br />
 <a href="/providers/google/cloudbilling/projects_billing_info/">projects_billing_info</a><br />
 <a href="/providers/google/cloudbilling/services/">services</a><br />
 <a href="/providers/google/cloudbilling/skus/">skus</a><br />

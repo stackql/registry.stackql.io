@@ -28,10 +28,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name of the setting. Must be in one of the following forms: * `projects/{project_number}/settings/{setting_name}` * `folders/{folder_id}/settings/{setting_name}` * `organizations/{organization_id}/settings/{setting_name}` For example, "/projects/123/settings/gcp-enableMyFeature" |
+| `localValue` | `object` | The data in a setting value. |
 | `metadata` | `object` | Metadata about a setting which is not editable by the end user. |
 | `effectiveValue` | `object` | The data in a setting value. |
 | `etag` | `string` | A fingerprint used for optimistic concurrency. See UpdateSetting for more details. |
-| `localValue` | `object` | The data in a setting value. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

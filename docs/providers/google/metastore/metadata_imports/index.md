@@ -29,11 +29,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Immutable. The relative resource name of the metadata import, of the form:projects/{project_number}/locations/{location_id}/services/{service_id}/metadataImports/{metadata_import_id}. |
 | `description` | `string` | The description of the metadata import. |
+| `createTime` | `string` | Output only. The time when the metadata import was started. |
+| `databaseDump` | `object` | A specification of the location of and metadata about a database dump from a relational database management system. |
 | `endTime` | `string` | Output only. The time when the metadata import finished. |
 | `state` | `string` | Output only. The current state of the metadata import. |
 | `updateTime` | `string` | Output only. The time when the metadata import was last updated. |
-| `createTime` | `string` | Output only. The time when the metadata import was started. |
-| `databaseDump` | `object` | A specification of the location of and metadata about a database dump from a relational database management system. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

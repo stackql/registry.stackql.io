@@ -22,13 +22,15 @@ Google Service Management allows service producers to publish their services on 
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Service Management API</td></tr>
 <tr><td><b>Description</b></td><td>Google Service Management allows service producers to publish their services on Google Cloud Platform so that they can be discovered and used by service consumers.</td></tr>
-<tr><td><b>Id</b></td><td><code>servicemanagement:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>servicemanagement:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources
 <div class="row">
 <div class="providerDocColumn">
 <a href="/providers/google/servicemanagement/configs/">configs</a><br />
+<a href="/providers/google/servicemanagement/consumers_iam_audit_configs/">consumers_iam_audit_configs</a><br />
+<a href="/providers/google/servicemanagement/consumers_iam_bindings/">consumers_iam_bindings</a><br />
 <a href="/providers/google/servicemanagement/consumers_iam_policies/">consumers_iam_policies</a><br />
 <a href="/providers/google/servicemanagement/operations/">operations</a><br />
 <a href="/providers/google/servicemanagement/rollouts/">rollouts</a><br />
@@ -36,6 +38,8 @@ Google Service Management allows service producers to publish their services on 
 <div class="providerDocColumn">
 <a href="/providers/google/servicemanagement/services/">services</a><br />
 <a href="/providers/google/servicemanagement/services_config/">services_config</a><br />
+<a href="/providers/google/servicemanagement/services_iam_audit_configs/">services_iam_audit_configs</a><br />
+<a href="/providers/google/servicemanagement/services_iam_bindings/">services_iam_bindings</a><br />
 <a href="/providers/google/servicemanagement/services_iam_policies/">services_iam_policies</a><br />
 </div>
 </div>

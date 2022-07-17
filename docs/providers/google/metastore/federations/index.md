@@ -28,15 +28,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Immutable. The relative resource name of the federation, of the form: projects/{project_number}/locations/{location_id}/federations/{federation_id}`. |
-| `state` | `string` | Output only. The current state of the federation. |
-| `backendMetastores` | `object` | A map from BackendMetastore rank to BackendMetastores from which the federation service serves metadata at query time. The map key represents the order in which BackendMetastores should be evaluated to resolve database names at query time and should be greater than or equal to zero. A BackendMetastore with a lower number will be evaluated before a BackendMetastore with a higher number. |
-| `endpointUri` | `string` | Output only. The federation endpoint. |
-| `uid` | `string` | Output only. The globally unique resource identifier of the metastore federation. |
 | `updateTime` | `string` | Output only. The time when the metastore federation was last updated. |
 | `version` | `string` | Immutable. The Apache Hive metastore version of the federation. All backend metastore versions must be compatible with the federation version. |
+| `endpointUri` | `string` | Output only. The federation endpoint. |
+| `uid` | `string` | Output only. The globally unique resource identifier of the metastore federation. |
 | `labels` | `object` | User-defined labels for the metastore federation. |
-| `stateMessage` | `string` | Output only. Additional information about the current state of the metastore federation, if available. |
 | `createTime` | `string` | Output only. The time when the metastore federation was created. |
+| `state` | `string` | Output only. The current state of the federation. |
+| `stateMessage` | `string` | Output only. Additional information about the current state of the metastore federation, if available. |
+| `backendMetastores` | `object` | A map from BackendMetastore rank to BackendMetastores from which the federation service serves metadata at query time. The map key represents the order in which BackendMetastores should be evaluated to resolve database names at query time and should be greater than or equal to zero. A BackendMetastore with a lower number will be evaluated before a BackendMetastore with a higher number. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

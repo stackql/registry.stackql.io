@@ -27,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `error` | `object` |  |
 | `instanceActionDetails` | `object` |  |
 | `timestamp` | `string` | [Output Only] The time that this error occurred. This value is in RFC3339 text format. |
-| `error` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

@@ -28,17 +28,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The relative resource name of the job, of the form: projects/{project_number}/locations/{location_id}/lakes/{lake_id}/ tasks/{task_id}/jobs/{job_id}. |
-| `startTime` | `string` | Output only. The time when the job was started. |
-| `endTime` | `string` | Output only. The time when the job ended. |
-| `retryCount` | `integer` | Output only. . The number of times the job has been retried (excluding the initial attempt). |
 | `serviceJob` | `string` | Output only. The full resource name for the job run under a particular service. |
 | `uid` | `string` | Output only. System generated globally unique ID for the job. |
-| `message` | `string` | Output only. Additional information about the current state. |
+| `startTime` | `string` | Output only. The time when the job was started. |
+| `retryCount` | `integer` | Output only. . The number of times the job has been retried (excluding the initial attempt). |
 | `service` | `string` | Output only. The underlying service running a job. |
 | `state` | `string` | Output only. Execution state for the job. |
+| `endTime` | `string` | Output only. The time when the job ended. |
+| `message` | `string` | Output only. Additional information about the current state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
 | `projects_locations_lakes_tasks_jobs_get` | `SELECT` | `jobsId, lakesId, locationsId, projectsId, tasksId` | Get job resource. |
 | `projects_locations_lakes_tasks_jobs_list` | `SELECT` | `lakesId, locationsId, projectsId, tasksId` | Lists Jobs under the given task. |
-| `projects_locations_lakes_tasks_jobs_cancel` | `EXEC` | `jobsId:cancel, lakesId, locationsId, projectsId, tasksId` | Cancel jobs running for the task resource. |
+| `projects_locations_lakes_tasks_jobs_cancel` | `EXEC` | `jobsId, lakesId, locationsId, projectsId, tasksId` | Cancel jobs running for the task resource. |

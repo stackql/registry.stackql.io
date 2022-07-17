@@ -32,4 +32,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `accounts_customers_listPurchasableOffers` | `SELECT` | `accountsId, customersId:listPurchasableOffers` |
+| `accounts_customers_listPurchasableOffers` | `SELECT` | `accountsId, customersId` |

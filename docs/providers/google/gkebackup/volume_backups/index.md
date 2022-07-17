@@ -29,17 +29,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The full name of the VolumeBackup resource. Format: projects/*/locations/*/backupPlans/*/backups/*/volumeBackups/*. |
 | `uid` | `string` | Output only. Server generated global unique identifier of [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) format. |
-| `sourcePvc` | `object` | A reference to a namespaced resource in Kubernetes. |
-| `storageBytes` | `string` | Output only. The aggregate size of the underlying artifacts associated with this VolumeBackup in the backup storage. This may change over time when multiple backups of the same volume share the same backup storage location. In particular, this is likely to increase in size when the immediately preceding backup of the same volume is deleted. |
-| `completeTime` | `string` | Output only. The timestamp when the associated underlying volume backup operation completed. |
-| `createTime` | `string` | Output only. The timestamp when this VolumeBackup resource was created. |
-| `state` | `string` | Output only. The current state of this VolumeBackup. |
-| `volumeBackupHandle` | `string` | Output only. A storage system-specific opaque handle to the underlying volume backup. |
 | `stateMessage` | `string` | Output only. A human readable message explaining why the VolumeBackup is in its current state. |
-| `etag` | `string` | Output only. `etag` is used for optimistic concurrency control as a way to help prevent simultaneous updates of a volume backup from overwriting each other. It is strongly suggested that systems make use of the `etag` in the read-modify-write cycle to perform volume backup updates in order to avoid race conditions. |
-| `format` | `string` | Output only. The format used for the volume backup. |
-| `updateTime` | `string` | Output only. The timestamp when this VolumeBackup resource was last updated. |
 | `diskSizeBytes` | `string` | Output only. The minimum size of the disk to which this VolumeBackup can be restored. |
+| `etag` | `string` | Output only. `etag` is used for optimistic concurrency control as a way to help prevent simultaneous updates of a volume backup from overwriting each other. It is strongly suggested that systems make use of the `etag` in the read-modify-write cycle to perform volume backup updates in order to avoid race conditions. |
+| `sourcePvc` | `object` | A reference to a namespaced resource in Kubernetes. |
+| `state` | `string` | Output only. The current state of this VolumeBackup. |
+| `format` | `string` | Output only. The format used for the volume backup. |
+| `createTime` | `string` | Output only. The timestamp when this VolumeBackup resource was created. |
+| `volumeBackupHandle` | `string` | Output only. A storage system-specific opaque handle to the underlying volume backup. |
+| `completeTime` | `string` | Output only. The timestamp when the associated underlying volume backup operation completed. |
+| `storageBytes` | `string` | Output only. The aggregate size of the underlying artifacts associated with this VolumeBackup in the backup storage. This may change over time when multiple backups of the same volume share the same backup storage location. In particular, this is likely to increase in size when the immediately preceding backup of the same volume is deleted. |
+| `updateTime` | `string` | Output only. The timestamp when this VolumeBackup resource was last updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

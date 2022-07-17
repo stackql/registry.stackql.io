@@ -27,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `constraints` | `array` | The collection of constraints that are available on the targeted resource. |
 | `nextPageToken` | `string` | Page token used to retrieve the next page. This is currently not used. |
+| `constraints` | `array` | The collection of constraints that are available on the targeted resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

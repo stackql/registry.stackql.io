@@ -29,9 +29,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | The relative resource name of this notification config. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name Example: "organizations/{organization_id}/notificationConfigs/notify_public_bucket". |
 | `description` | `string` | The description of the notification config (max of 1024 characters). |
-| `streamingConfig` | `object` | The config for streaming-based notifications, which send each event as soon as it is detected. |
 | `pubsubTopic` | `string` | The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]". |
 | `serviceAccount` | `string` | Output only. The service account that needs "pubsub.topics.publish" permission to publish to the Pub/Sub topic. |
+| `streamingConfig` | `object` | The config for streaming-based notifications, which send each event as soon as it is detected. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

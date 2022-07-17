@@ -22,7 +22,7 @@ Allows users to start, configure, and connect to interactive shell sessions runn
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Shell API</td></tr>
 <tr><td><b>Description</b></td><td>Allows users to start, configure, and connect to interactive shell sessions running in the cloud. </td></tr>
-<tr><td><b>Id</b></td><td><code>cloudshell:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudshell:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources

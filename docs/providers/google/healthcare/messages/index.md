@@ -28,15 +28,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Resource name of the Message, of the form `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/hl7V2Stores/{hl7_v2_store_id}/messages/{message_id}`. Assigned by the server. |
-| `sendTime` | `string` | The datetime the sending application sent this message. MSH-7. |
-| `parsedData` | `object` | The content of a HL7v2 message in a structured format. |
-| `createTime` | `string` | Output only. The datetime when the message was created. Set by the server. |
-| `sendFacility` | `string` | The hospital that this message came from. MSH-4. |
-| `patientIds` | `array` | All patient IDs listed in the PID-2, PID-3, and PID-4 segments of this message. |
-| `data` | `string` | Raw message bytes. |
-| `messageType` | `string` | The message type for this message. MSH-9.1. |
 | `labels` | `object` | User-supplied key-value pairs used to organize HL7v2 stores. Label keys must be between 1 and 63 characters long, have a UTF-8 encoding of maximum 128 bytes, and must conform to the following PCRE regular expression: \p{Ll}\p{Lo}{0,62} Label values are optional, must be between 1 and 63 characters long, have a UTF-8 encoding of maximum 128 bytes, and must conform to the following PCRE regular expression: [\p{Ll}\p{Lo}\p{N}_-]{0,63} No more than 64 labels can be associated with a given store. |
+| `sendTime` | `string` | The datetime the sending application sent this message. MSH-7. |
+| `patientIds` | `array` | All patient IDs listed in the PID-2, PID-3, and PID-4 segments of this message. |
 | `schematizedData` | `object` | The content of an HL7v2 message in a structured format as specified by a schema. |
+| `sendFacility` | `string` | The hospital that this message came from. MSH-4. |
+| `createTime` | `string` | Output only. The datetime when the message was created. Set by the server. |
+| `messageType` | `string` | The message type for this message. MSH-9.1. |
+| `data` | `string` | Raw message bytes. |
+| `parsedData` | `object` | The content of a HL7v2 message in a structured format. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

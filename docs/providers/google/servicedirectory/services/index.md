@@ -38,4 +38,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `projects_locations_namespaces_services_create` | `INSERT` | `locationsId, namespacesId, projectsId` | Creates a service, and returns the new service. |
 | `projects_locations_namespaces_services_delete` | `DELETE` | `locationsId, namespacesId, projectsId, servicesId` | Deletes a service. This also deletes all endpoints associated with the service. |
 | `projects_locations_namespaces_services_patch` | `EXEC` | `locationsId, namespacesId, projectsId, servicesId` | Updates a service. |
-| `projects_locations_namespaces_services_resolve` | `EXEC` | `locationsId, namespacesId, projectsId, servicesId:resolve` | Returns a service and its associated endpoints. Resolving a service is not considered an active developer method. |
+| `projects_locations_namespaces_services_resolve` | `EXEC` | `locationsId, namespacesId, projectsId, servicesId` | Returns a service and its associated endpoints. Resolving a service is not considered an active developer method. |

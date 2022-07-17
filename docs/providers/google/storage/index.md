@@ -22,7 +22,7 @@ Stores and retrieves potentially large, immutable data objects.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Storage JSON API</td></tr>
 <tr><td><b>Description</b></td><td>Stores and retrieves potentially large, immutable data objects.</td></tr>
-<tr><td><b>Id</b></td><td><code>storage:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>storage:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -30,6 +30,7 @@ Stores and retrieves potentially large, immutable data objects.
 <div class="providerDocColumn">
 <a href="/providers/google/storage/bucket_access_controls/">bucket_access_controls</a><br />
 <a href="/providers/google/storage/buckets/">buckets</a><br />
+<a href="/providers/google/storage/buckets_iam_bindings/">buckets_iam_bindings</a><br />
 <a href="/providers/google/storage/buckets_iam_policies/">buckets_iam_policies</a><br />
 <a href="/providers/google/storage/channels/">channels</a><br />
 <a href="/providers/google/storage/default_object_access_controls/">default_object_access_controls</a><br />
@@ -39,6 +40,7 @@ Stores and retrieves potentially large, immutable data objects.
 <a href="/providers/google/storage/notifications/">notifications</a><br />
 <a href="/providers/google/storage/object_access_controls/">object_access_controls</a><br />
 <a href="/providers/google/storage/objects/">objects</a><br />
+<a href="/providers/google/storage/objects_iam_bindings/">objects_iam_bindings</a><br />
 <a href="/providers/google/storage/objects_iam_policies/">objects_iam_policies</a><br />
 <a href="/providers/google/storage/service_account/">service_account</a><br />
 </div>

@@ -32,4 +32,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_notificationChannels_getVerificationCode` | `SELECT` | `notificationChannelsId:getVerificationCode, projectsId` |
+| `projects_notificationChannels_getVerificationCode` | `SELECT` | `notificationChannelsId, projectsId` |

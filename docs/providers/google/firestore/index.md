@@ -22,7 +22,7 @@ Accesses the NoSQL document database built for automatic scaling, high performan
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Firestore API</td></tr>
 <tr><td><b>Description</b></td><td>Accesses the NoSQL document database built for automatic scaling, high performance, and ease of application development. </td></tr>
-<tr><td><b>Id</b></td><td><code>firestore:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>firestore:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources

@@ -28,9 +28,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Name of the data item, in format of: projects/{project_id}/datasets/{dataset_id}/dataItems/{data_item_id} |
+| `textPayload` | `object` | Container of information about a piece of text. |
 | `videoPayload` | `object` | Container of information of a video. |
 | `imagePayload` | `object` | Container of information about an image. |
-| `textPayload` | `object` | Container of information about a piece of text. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

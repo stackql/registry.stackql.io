@@ -28,10 +28,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Immutable. The resource name of the view. Format: projects/{project}/locations/{location}/views/{view} |
+| `updateTime` | `string` | Output only. The most recent time at which the view was updated. |
 | `value` | `string` | String with specific view properties. |
 | `createTime` | `string` | Output only. The time at which this view was created. |
 | `displayName` | `string` | The human-readable display name of the view. |
-| `updateTime` | `string` | Output only. The most recent time at which the view was updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

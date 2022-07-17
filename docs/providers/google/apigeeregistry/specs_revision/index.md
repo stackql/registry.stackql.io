@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_apis_versions_specs_deleteRevision` | `DELETE` | `apisId, locationsId, projectsId, specsId:deleteRevision, versionsId` |
+| `projects_locations_apis_versions_specs_deleteRevision` | `DELETE` | `apisId, locationsId, projectsId, specsId, versionsId` |

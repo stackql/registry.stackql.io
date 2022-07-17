@@ -33,4 +33,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_catalogs_getDefaultBranch` | `SELECT` | `catalogsId:getDefaultBranch, locationsId, projectsId` |
+| `projects_locations_catalogs_getDefaultBranch` | `SELECT` | `catalogsId, locationsId, projectsId` |

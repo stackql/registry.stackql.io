@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_datasets_consentStores_consents_deleteRevision` | `DELETE` | `consentStoresId, consentsId:deleteRevision, datasetsId, locationsId, projectsId` |
+| `projects_locations_datasets_consentStores_consents_deleteRevision` | `DELETE` | `consentStoresId, consentsId, datasetsId, locationsId, projectsId` |

@@ -40,4 +40,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `projects_attestors_create` | `INSERT` | `projectsId` | Creates an attestor, and returns a copy of the new attestor. Returns NOT_FOUND if the project does not exist, INVALID_ARGUMENT if the request is malformed, ALREADY_EXISTS if the attestor already exists. |
 | `projects_attestors_delete` | `DELETE` | `attestorsId, projectsId` | Deletes an attestor. Returns NOT_FOUND if the attestor does not exist. |
 | `projects_attestors_update` | `EXEC` | `attestorsId, projectsId` | Updates an attestor. Returns NOT_FOUND if the attestor does not exist. |
-| `projects_attestors_validateAttestationOccurrence` | `EXEC` | `attestorsId:validateAttestationOccurrence, projectsId` | Returns whether the given Attestation for the given image URI was signed by the given Attestor |
+| `projects_attestors_validateAttestationOccurrence` | `EXEC` | `attestorsId, projectsId` | Returns whether the given Attestation for the given image URI was signed by the given Attestor |

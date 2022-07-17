@@ -22,7 +22,7 @@ Examines the call stack and variables of a running application without stopping 
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Debugger API</td></tr>
 <tr><td><b>Description</b></td><td>Examines the call stack and variables of a running application without stopping or slowing it down. </td></tr>
-<tr><td><b>Id</b></td><td><code>clouddebugger:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>clouddebugger:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources

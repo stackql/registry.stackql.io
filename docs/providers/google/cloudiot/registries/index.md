@@ -42,6 +42,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `projects_locations_registries_list` | `SELECT` | `locationsId, projectsId` | Lists device registries. |
 | `projects_locations_registries_create` | `INSERT` | `locationsId, projectsId` | Creates a device registry that contains devices. |
 | `projects_locations_registries_delete` | `DELETE` | `locationsId, projectsId, registriesId` | Deletes a device registry configuration. |
-| `projects_locations_registries_bindDeviceToGateway` | `EXEC` | `locationsId, projectsId, registriesId:bindDeviceToGateway` | Associates the device with the gateway. |
+| `projects_locations_registries_bindDeviceToGateway` | `EXEC` | `locationsId, projectsId, registriesId` | Associates the device with the gateway. |
 | `projects_locations_registries_patch` | `EXEC` | `locationsId, projectsId, registriesId` | Updates a device registry configuration. |
-| `projects_locations_registries_unbindDeviceFromGateway` | `EXEC` | `locationsId, projectsId, registriesId:unbindDeviceFromGateway` | Deletes the association between the device and the gateway. |
+| `projects_locations_registries_unbindDeviceFromGateway` | `EXEC` | `locationsId, projectsId, registriesId` | Deletes the association between the device and the gateway. |

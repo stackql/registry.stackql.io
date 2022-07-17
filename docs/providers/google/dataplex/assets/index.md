@@ -29,17 +29,17 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The relative resource name of the asset, of the form: projects/{project_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/assets/{asset_id}. |
 | `description` | `string` | Optional. Description of the asset. |
+| `createTime` | `string` | Output only. The time when the asset was created. |
 | `uid` | `string` | Output only. System generated globally unique ID for the asset. This ID will be different if the asset is deleted and re-created with the same name. |
 | `discoveryStatus` | `object` | Status of discovery for an asset. |
-| `labels` | `object` | Optional. User defined labels for the asset. |
-| `resourceSpec` | `object` | Identifies the cloud resource that is referenced by this asset. |
-| `createTime` | `string` | Output only. The time when the asset was created. |
 | `updateTime` | `string` | Output only. The time when the asset was last updated. |
-| `discoverySpec` | `object` | Settings to manage the metadata discovery and publishing for an asset. |
-| `resourceStatus` | `object` | Status of the resource referenced by an asset. |
-| `securityStatus` | `object` | Security policy status of the asset. Data security policy, i.e., readers, writers & owners, should be specified in the lake/zone/asset IAM policy. |
+| `labels` | `object` | Optional. User defined labels for the asset. |
 | `displayName` | `string` | Optional. User friendly display name. |
+| `resourceSpec` | `object` | Identifies the cloud resource that is referenced by this asset. |
+| `resourceStatus` | `object` | Status of the resource referenced by an asset. |
 | `state` | `string` | Output only. Current state of the asset. |
+| `securityStatus` | `object` | Security policy status of the asset. Data security policy, i.e., readers, writers & owners, should be specified in the lake/zone/asset IAM policy. |
+| `discoverySpec` | `object` | Settings to manage the metadata discovery and publishing for an asset. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

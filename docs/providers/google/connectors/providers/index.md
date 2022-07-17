@@ -29,14 +29,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Resource name of the Provider. Format: projects/{project}/locations/{location}/providers/{provider} |
 | `description` | `string` | Output only. Description of the resource. |
-| `updateTime` | `string` | Output only. Updated time. |
-| `displayName` | `string` | Output only. Display name. |
-| `createTime` | `string` | Output only. Created time. |
-| `documentationUri` | `string` | Output only. Link to documentation page. |
-| `launchStage` | `string` | Output only. Flag to mark the version indicating the launch stage. |
-| `labels` | `object` | Output only. Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources |
 | `webAssetsLocation` | `string` | Output only. Cloud storage location of icons etc consumed by UI. |
+| `launchStage` | `string` | Output only. Flag to mark the version indicating the launch stage. |
+| `displayName` | `string` | Output only. Display name. |
 | `externalUri` | `string` | Output only. Link to external page. |
+| `documentationUri` | `string` | Output only. Link to documentation page. |
+| `labels` | `object` | Output only. Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources |
+| `updateTime` | `string` | Output only. Updated time. |
+| `createTime` | `string` | Output only. Created time. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

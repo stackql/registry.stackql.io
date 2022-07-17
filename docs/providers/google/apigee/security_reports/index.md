@@ -27,19 +27,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `updated` | `string` | Output only. Last updated timestamp for the query. |
-| `resultFileSize` | `string` | ResultFileSize is available only after the query is completed. |
-| `self` | `string` | Self link of the query. Example: `/organizations/myorg/environments/myenv/securityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query is running at host level: `/organizations/myorg/hostSecurityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` |
-| `envgroupHostname` | `string` | Hostname is available only when query is executed at host level. |
-| `executionTime` | `string` | ExecutionTime is available only after the query is completed. |
 | `resultRows` | `string` | ResultRows is available only after the query is completed. |
+| `self` | `string` | Self link of the query. Example: `/organizations/myorg/environments/myenv/securityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query is running at host level: `/organizations/myorg/hostSecurityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` |
+| `state` | `string` | Query state could be "enqueued", "running", "completed", "failed". |
+| `displayName` | `string` | Display Name specified by the user. |
+| `queryParams` | `object` | Metadata for the security report. |
+| `updated` | `string` | Output only. Last updated timestamp for the query. |
 | `result` | `object` | Contains informations about the security report results. |
+| `resultFileSize` | `string` | ResultFileSize is available only after the query is completed. |
+| `error` | `string` | Error is set when query fails. |
+| `envgroupHostname` | `string` | Hostname is available only when query is executed at host level. |
 | `reportDefinitionId` | `string` | Report Definition ID. |
 | `created` | `string` | Creation time of the query. |
-| `displayName` | `string` | Display Name specified by the user. |
-| `error` | `string` | Error is set when query fails. |
-| `queryParams` | `object` | Metadata for the security report. |
-| `state` | `string` | Query state could be "enqueued", "running", "completed", "failed". |
+| `executionTime` | `string` | ExecutionTime is available only after the query is completed. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

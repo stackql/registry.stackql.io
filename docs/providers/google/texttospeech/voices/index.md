@@ -28,9 +28,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The name of this voice. Each distinct voice has a unique name. |
-| `naturalSampleRateHertz` | `integer` | The natural sample rate (in hertz) for this voice. |
 | `ssmlGender` | `string` | The gender of this voice. |
 | `languageCodes` | `array` | The languages that this voice supports, expressed as [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tags (e.g. "en-US", "es-419", "cmn-tw"). |
+| `naturalSampleRateHertz` | `integer` | The natural sample rate (in hertz) for this voice. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

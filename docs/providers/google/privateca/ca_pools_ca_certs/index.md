@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_caPools_fetchCaCerts` | `SELECT` | `caPoolsId:fetchCaCerts, locationsId, projectsId` |
+| `projects_locations_caPools_fetchCaCerts` | `SELECT` | `caPoolsId, locationsId, projectsId` |
