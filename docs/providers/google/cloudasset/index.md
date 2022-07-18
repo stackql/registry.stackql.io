@@ -22,7 +22,7 @@ The cloud asset API manages the history and inventory of cloud resources.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Asset API</td></tr>
 <tr><td><b>Description</b></td><td>The cloud asset API manages the history and inventory of cloud resources.</td></tr>
-<tr><td><b>Id</b></td><td><code>cloudasset:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cloudasset:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources

@@ -27,10 +27,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `vmwareVms` | `object` | VmwareVmsDetails describes VMs in vCenter. |
 | `nextPageToken` | `string` | Output only. A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
 | `updateTime` | `string` | Output only. The timestamp when the source was last queried (if the result is from the cache). |
-| `vmwareVms` | `object` | VmwareVmsDetails describes VMs in vCenter. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_sources_fetchInventory` | `SELECT` | `locationsId, projectsId, sourcesId:fetchInventory` |
+| `projects_locations_sources_fetchInventory` | `SELECT` | `locationsId, projectsId, sourcesId` |

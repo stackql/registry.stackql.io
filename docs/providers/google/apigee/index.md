@@ -22,7 +22,7 @@ Use the Apigee API to programmatically develop and manage APIs with a set of RES
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Apigee API</td></tr>
 <tr><td><b>Description</b></td><td>Use the Apigee API to programmatically develop and manage APIs with a set of RESTful operations. Develop and secure API proxies, deploy and undeploy API proxy revisions, monitor APIs, configure environments, manage users, and more. Note: This product is available as a free trial for a time period of 60 days.</td></tr>
-<tr><td><b>Id</b></td><td><code>apigee:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>apigee:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -57,6 +57,8 @@ Use the Apigee API to programmatically develop and manage APIs with a set of RES
 <a href="/providers/google/apigee/environments/">environments</a><br />
 <a href="/providers/google/apigee/environments_debugmask/">environments_debugmask</a><br />
 <a href="/providers/google/apigee/environments_deployed_config/">environments_deployed_config</a><br />
+<a href="/providers/google/apigee/environments_iam_audit_configs/">environments_iam_audit_configs</a><br />
+<a href="/providers/google/apigee/environments_iam_bindings/">environments_iam_bindings</a><br />
 <a href="/providers/google/apigee/environments_iam_policies/">environments_iam_policies</a><br />
 <a href="/providers/google/apigee/environments_trace_config/">environments_trace_config</a><br />
 <a href="/providers/google/apigee/exports/">exports</a><br />
@@ -65,9 +67,9 @@ Use the Apigee API to programmatically develop and manage APIs with a set of RES
 <a href="/providers/google/apigee/host_queries_result/">host_queries_result</a><br />
 <a href="/providers/google/apigee/host_queries_result_view/">host_queries_result_view</a><br />
 <a href="/providers/google/apigee/host_security_reports/">host_security_reports</a><br />
-<a href="/providers/google/apigee/host_security_reports_result/">host_security_reports_result</a><br />
 </div>
 <div class="providerDocColumn">
+<a href="/providers/google/apigee/host_security_reports_result/">host_security_reports_result</a><br />
 <a href="/providers/google/apigee/host_security_reports_result_view/">host_security_reports_result_view</a><br />
 <a href="/providers/google/apigee/host_stats/">host_stats</a><br />
 <a href="/providers/google/apigee/instances/">instances</a><br />

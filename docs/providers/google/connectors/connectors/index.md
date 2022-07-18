@@ -30,13 +30,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `name` | `string` | Output only. Resource name of the Connector. Format: projects/{project}/locations/{location}/providers/{provider}/connectors/{connector} |
 | `description` | `string` | Output only. Description of the resource. |
 | `updateTime` | `string` | Output only. Updated time. |
-| `createTime` | `string` | Output only. Created time. |
-| `documentationUri` | `string` | Output only. Link to documentation page. |
-| `launchStage` | `string` | Output only. Flag to mark the version indicating the launch stage. |
-| `externalUri` | `string` | Output only. Link to external page. |
 | `labels` | `object` | Output only. Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources |
-| `webAssetsLocation` | `string` | Output only. Cloud storage location of icons etc consumed by UI. |
+| `externalUri` | `string` | Output only. Link to external page. |
 | `displayName` | `string` | Output only. Display name. |
+| `documentationUri` | `string` | Output only. Link to documentation page. |
+| `createTime` | `string` | Output only. Created time. |
+| `launchStage` | `string` | Output only. Flag to mark the version indicating the launch stage. |
+| `webAssetsLocation` | `string` | Output only. Cloud storage location of icons etc consumed by UI. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

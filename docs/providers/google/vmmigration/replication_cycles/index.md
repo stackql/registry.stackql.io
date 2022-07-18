@@ -27,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `progressPercent` | `integer` | The current progress in percentage of this cycle. |
 | `startTime` | `string` | The time the replication cycle has started. |
+| `progressPercent` | `integer` | The current progress in percentage of this cycle. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

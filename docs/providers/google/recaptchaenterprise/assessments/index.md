@@ -30,4 +30,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
 | `projects_assessments_create` | `INSERT` | `projectsId` | Creates an Assessment of the likelihood an event is legitimate. |
-| `projects_assessments_annotate` | `EXEC` | `assessmentsId:annotate, projectsId` | Annotates a previously created Assessment to provide additional information on whether the event turned out to be authentic or fraudulent. |
+| `projects_assessments_annotate` | `EXEC` | `assessmentsId, projectsId` | Annotates a previously created Assessment to provide additional information on whether the event turned out to be authentic or fraudulent. |

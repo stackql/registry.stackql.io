@@ -28,9 +28,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Immutable. The resource name of the issue. Format: projects/{project}/locations/{location}/issueModels/{issue_model}/issues/{issue} |
+| `updateTime` | `string` | Output only. The most recent time that this issue was updated. |
 | `createTime` | `string` | Output only. The time at which this issue was created. |
 | `displayName` | `string` | The representative name for the issue. |
-| `updateTime` | `string` | Output only. The most recent time that this issue was updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

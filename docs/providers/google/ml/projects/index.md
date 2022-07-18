@@ -29,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `explain` | `EXEC` | `projectsId:explain` | Performs explanation on the data in the request. {% dynamic include "/ai-platform/includes/___explain-request" %}  |
-| `predict` | `EXEC` | `projectsId:predict` | Performs online prediction on the data in the request. {% dynamic include "/ai-platform/includes/___predict-request" %}  |
+| `explain` | `EXEC` | `projectsId` | Performs explanation on the data in the request. {% dynamic include "/ai-platform/includes/___explain-request" %}  |
+| `predict` | `EXEC` | `projectsId` | Performs online prediction on the data in the request. {% dynamic include "/ai-platform/includes/___predict-request" %}  |

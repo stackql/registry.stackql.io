@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_secrets_addVersion` | `INSERT` | `projectsId, secretsId:addVersion` |
+| `projects_secrets_addVersion` | `INSERT` | `projectsId, secretsId` |

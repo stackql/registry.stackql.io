@@ -22,7 +22,7 @@ Service Directory is a platform for discovering, publishing, and connecting serv
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Service Directory API</td></tr>
 <tr><td><b>Description</b></td><td>Service Directory is a platform for discovering, publishing, and connecting services. </td></tr>
-<tr><td><b>Id</b></td><td><code>servicedirectory:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>servicedirectory:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -31,10 +31,12 @@ Service Directory is a platform for discovering, publishing, and connecting serv
 <a href="/providers/google/servicedirectory/endpoints/">endpoints</a><br />
 <a href="/providers/google/servicedirectory/locations/">locations</a><br />
 <a href="/providers/google/servicedirectory/namespaces/">namespaces</a><br />
+<a href="/providers/google/servicedirectory/namespaces_iam_bindings/">namespaces_iam_bindings</a><br />
 </div>
 <div class="providerDocColumn">
 <a href="/providers/google/servicedirectory/namespaces_iam_policies/">namespaces_iam_policies</a><br />
 <a href="/providers/google/servicedirectory/services/">services</a><br />
+<a href="/providers/google/servicedirectory/services_iam_bindings/">services_iam_bindings</a><br />
 <a href="/providers/google/servicedirectory/services_iam_policies/">services_iam_policies</a><br />
 </div>
 </div>

@@ -27,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `resultMetadata` | `array` | Output only. List of result field metadata. |
 | `action` | `string` | Output only. Name of the action. |
 | `inputParameters` | `array` | Output only. List of input parameter metadata for the action. |
+| `resultMetadata` | `array` | Output only. List of result field metadata. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

@@ -29,15 +29,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The name of the endpoint. |
 | `description` | `string` | User-provided description of the endpoint |
-| `trafficLogs` | `boolean` | Whether the endpoint should report traffic logs in addition to threat logs. |
-| `updateTime` | `string` | Output only. The update time timestamp. |
-| `endpointForwardingRule` | `string` | Output only. The fully qualified URL of the endpoint's ILB Forwarding Rule. |
+| `network` | `string` | Required. The fully qualified URL of the network to which the IDS Endpoint is attached. |
+| `createTime` | `string` | Output only. The create time timestamp. |
 | `endpointIp` | `string` | Output only. The IP address of the IDS Endpoint's ILB. |
 | `labels` | `object` | The labels of the endpoint. |
 | `severity` | `string` | Required. Lowest threat severity that this endpoint will alert on. |
-| `network` | `string` | Required. The fully qualified URL of the network to which the IDS Endpoint is attached. |
 | `state` | `string` | Output only. Current state of the endpoint. |
-| `createTime` | `string` | Output only. The create time timestamp. |
+| `trafficLogs` | `boolean` | Whether the endpoint should report traffic logs in addition to threat logs. |
+| `updateTime` | `string` | Output only. The update time timestamp. |
+| `endpointForwardingRule` | `string` | Output only. The fully qualified URL of the endpoint's ILB Forwarding Rule. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

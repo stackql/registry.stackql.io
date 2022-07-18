@@ -29,16 +29,16 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The relative resource name of the task, of the form: projects/{project_number}/locations/{location_id}/lakes/{lake_id}/ tasks/{task_id}. |
 | `description` | `string` | Optional. Description of the task. |
-| `state` | `string` | Output only. Current state of the task. |
-| `uid` | `string` | Output only. System generated globally unique ID for the task. This ID will be different if the task is deleted and re-created with the same name. |
-| `createTime` | `string` | Output only. The time when the task was created. |
-| `spark` | `object` | User-specified config for running a Spark task. |
-| `triggerSpec` | `object` | Task scheduling and trigger settings. |
 | `labels` | `object` | Optional. User-defined labels for the task. |
 | `executionSpec` | `object` | Execution related settings, like retry and service_account. |
-| `updateTime` | `string` | Output only. The time when the task was last updated. |
-| `displayName` | `string` | Optional. User friendly display name. |
+| `uid` | `string` | Output only. System generated globally unique ID for the task. This ID will be different if the task is deleted and re-created with the same name. |
+| `state` | `string` | Output only. Current state of the task. |
 | `executionStatus` | `object` | Status of the task execution (e.g. Jobs). |
+| `createTime` | `string` | Output only. The time when the task was created. |
+| `displayName` | `string` | Optional. User friendly display name. |
+| `spark` | `object` | User-specified config for running a Spark task. |
+| `triggerSpec` | `object` | Task scheduling and trigger settings. |
+| `updateTime` | `string` | Output only. The time when the task was last updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

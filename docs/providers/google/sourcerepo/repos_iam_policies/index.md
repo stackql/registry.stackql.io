@@ -34,6 +34,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_repos_getIamPolicy` | `SELECT` | `projectsId, reposId:getIamPolicy` | Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. |
-| `projects_repos_setIamPolicy` | `EXEC` | `projectsId, reposId:setIamPolicy` | Sets the access control policy on the specified resource. Replaces any existing policy. |
-| `projects_repos_testIamPermissions` | `EXEC` | `projectsId, reposId:testIamPermissions` | Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a NOT_FOUND error. |
+| `projects_repos_getIamPolicy` | `SELECT` | `projectsId, reposId` | Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. |
+| `projects_repos_setIamPolicy` | `EXEC` | `projectsId, reposId` | Sets the access control policy on the specified resource. Replaces any existing policy. |
+| `projects_repos_testIamPermissions` | `EXEC` | `projectsId, reposId` | Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a NOT_FOUND error. |

@@ -29,14 +29,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The resource name for this CertificateRevocationList in the format `projects/*/locations/*/caPools/*certificateAuthorities/*/ certificateRevocationLists/*`. |
 | `sequenceNumber` | `string` | Output only. The CRL sequence number that appears in pem_crl. |
-| `pemCrl` | `string` | Output only. The PEM-encoded X.509 CRL. |
-| `updateTime` | `string` | Output only. The time at which this CertificateRevocationList was updated. |
-| `labels` | `object` | Optional. Labels with user-defined metadata. |
-| `revisionId` | `string` | Output only. The revision ID of this CertificateRevocationList. A new revision is committed whenever a new CRL is published. The format is an 8-character hexadecimal string. |
 | `createTime` | `string` | Output only. The time at which this CertificateRevocationList was created. |
 | `revokedCertificates` | `array` | Output only. The revoked serial numbers that appear in pem_crl. |
-| `state` | `string` | Output only. The State for this CertificateRevocationList. |
+| `pemCrl` | `string` | Output only. The PEM-encoded X.509 CRL. |
 | `accessUrl` | `string` | Output only. The location where 'pem_crl' can be accessed. |
+| `labels` | `object` | Optional. Labels with user-defined metadata. |
+| `revisionId` | `string` | Output only. The revision ID of this CertificateRevocationList. A new revision is committed whenever a new CRL is published. The format is an 8-character hexadecimal string. |
+| `updateTime` | `string` | Output only. The time at which this CertificateRevocationList was updated. |
+| `state` | `string` | Output only. The State for this CertificateRevocationList. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

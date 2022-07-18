@@ -29,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `checkIn` | `EXEC` | `id:checkIn` |
-| `projects_workers_checkIn` | `EXEC` | `projectsId, workersId:checkIn` |
+| `checkIn` | `EXEC` | `id` |
+| `projects_workers_checkIn` | `EXEC` | `projectsId, workersId` |

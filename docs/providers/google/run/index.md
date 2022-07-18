@@ -22,7 +22,7 @@ Deploy and manage user provided container images that scale automatically based 
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud Run Admin API</td></tr>
 <tr><td><b>Description</b></td><td>Deploy and manage user provided container images that scale automatically based on incoming requests. The Cloud Run Admin API v1 follows the Knative Serving API specification, while v2 is aligned with Google Cloud AIP-based API standards, as described in https://google.aip.dev/.</td></tr>
-<tr><td><b>Id</b></td><td><code>run:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>run:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -30,12 +30,16 @@ Deploy and manage user provided container images that scale automatically based 
 <div class="providerDocColumn">
 <a href="/providers/google/run/executions/">executions</a><br />
 <a href="/providers/google/run/jobs/">jobs</a><br />
+<a href="/providers/google/run/jobs_iam_audit_configs/">jobs_iam_audit_configs</a><br />
+<a href="/providers/google/run/jobs_iam_bindings/">jobs_iam_bindings</a><br />
 <a href="/providers/google/run/jobs_iam_policies/">jobs_iam_policies</a><br />
 <a href="/providers/google/run/operations/">operations</a><br />
 </div>
 <div class="providerDocColumn">
 <a href="/providers/google/run/revisions/">revisions</a><br />
 <a href="/providers/google/run/services/">services</a><br />
+<a href="/providers/google/run/services_iam_audit_configs/">services_iam_audit_configs</a><br />
+<a href="/providers/google/run/services_iam_bindings/">services_iam_bindings</a><br />
 <a href="/providers/google/run/services_iam_policies/">services_iam_policies</a><br />
 <a href="/providers/google/run/tasks/">tasks</a><br />
 </div>

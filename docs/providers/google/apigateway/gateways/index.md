@@ -28,13 +28,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Resource name of the Gateway. Format: projects/{project}/locations/{location}/gateways/{gateway} |
-| `apiConfig` | `string` | Required. Resource name of the API Config for this Gateway. Format: projects/{project}/locations/global/apis/{api}/configs/{apiConfig} |
-| `createTime` | `string` | Output only. Created time. |
 | `defaultHostname` | `string` | Output only. The default API Gateway host name of the form `{gateway_id}-{hash}.{region_code}.gateway.dev`. |
 | `displayName` | `string` | Optional. Display name. |
 | `labels` | `object` | Optional. Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources |
 | `state` | `string` | Output only. The current state of the Gateway. |
 | `updateTime` | `string` | Output only. Updated time. |
+| `apiConfig` | `string` | Required. Resource name of the API Config for this Gateway. Format: projects/{project}/locations/global/apis/{api}/configs/{apiConfig} |
+| `createTime` | `string` | Output only. Created time. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -33,6 +33,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_namespaces_services_getIamPolicy` | `SELECT` | `locationsId, namespacesId, projectsId, servicesId:getIamPolicy` | Gets the IAM Policy for a resource (namespace or service only). |
-| `projects_locations_namespaces_services_setIamPolicy` | `EXEC` | `locationsId, namespacesId, projectsId, servicesId:setIamPolicy` | Sets the IAM Policy for a resource (namespace or service only). |
-| `projects_locations_namespaces_services_testIamPermissions` | `EXEC` | `locationsId, namespacesId, projectsId, servicesId:testIamPermissions` | Tests IAM permissions for a resource (namespace or service only). |
+| `projects_locations_namespaces_services_getIamPolicy` | `SELECT` | `locationsId, namespacesId, projectsId, servicesId` | Gets the IAM Policy for a resource (namespace or service only). |
+| `projects_locations_namespaces_services_setIamPolicy` | `EXEC` | `locationsId, namespacesId, projectsId, servicesId` | Sets the IAM Policy for a resource (namespace or service only). |
+| `projects_locations_namespaces_services_testIamPermissions` | `EXEC` | `locationsId, namespacesId, projectsId, servicesId` | Tests IAM permissions for a resource (namespace or service only). |

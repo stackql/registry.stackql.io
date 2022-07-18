@@ -27,9 +27,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `securityProfiles` | `array` | List of security profile revisions. The revisions may be attached or unattached to any environment. |
 | `nextPageToken` | `string` | A token that can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. |
+| `securityProfiles` | `array` | List of security profile revisions. The revisions may be attached or unattached to any environment. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `organizations_securityProfiles_listRevisions` | `SELECT` | `organizationsId, securityProfilesId:listRevisions` |
+| `organizations_securityProfiles_listRevisions` | `SELECT` | `organizationsId, securityProfilesId` |

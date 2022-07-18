@@ -29,13 +29,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `id` | `string` | The unique ID of this snapshot. |
 | `description` | `string` | User specified description of the snapshot. Maybe empty. |
-| `sourceJobId` | `string` | The job this snapshot was created from. |
-| `state` | `string` | State of the snapshot. |
-| `ttl` | `string` | The time after which this snapshot will be automatically deleted. |
-| `creationTime` | `string` | The time this snapshot was created. |
-| `pubsubMetadata` | `array` | Pub/Sub snapshot metadata. |
-| `region` | `string` | Cloud region where this snapshot lives in, e.g., "us-central1". |
 | `diskSizeBytes` | `string` | The disk byte size of the snapshot. Only available for snapshots in READY state. |
+| `creationTime` | `string` | The time this snapshot was created. |
+| `state` | `string` | State of the snapshot. |
+| `region` | `string` | Cloud region where this snapshot lives in, e.g., "us-central1". |
+| `ttl` | `string` | The time after which this snapshot will be automatically deleted. |
+| `pubsubMetadata` | `array` | Pub/Sub snapshot metadata. |
+| `sourceJobId` | `string` | The job this snapshot was created from. |
 | `projectId` | `string` | The project this snapshot belongs to. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

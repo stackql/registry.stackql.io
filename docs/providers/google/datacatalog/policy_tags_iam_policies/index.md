@@ -33,6 +33,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_taxonomies_policyTags_getIamPolicy` | `SELECT` | `locationsId, policyTagsId:getIamPolicy, projectsId, taxonomiesId` | Gets the IAM policy for a policy tag or a taxonomy. |
-| `projects_locations_taxonomies_policyTags_setIamPolicy` | `EXEC` | `locationsId, policyTagsId:setIamPolicy, projectsId, taxonomiesId` | Sets the IAM policy for a policy tag or a taxonomy. |
-| `projects_locations_taxonomies_policyTags_testIamPermissions` | `EXEC` | `locationsId, policyTagsId:testIamPermissions, projectsId, taxonomiesId` | Returns your permissions on a specified policy tag or taxonomy. |
+| `projects_locations_taxonomies_policyTags_getIamPolicy` | `SELECT` | `locationsId, policyTagsId, projectsId, taxonomiesId` | Gets the IAM policy for a policy tag or a taxonomy. |
+| `projects_locations_taxonomies_policyTags_setIamPolicy` | `EXEC` | `locationsId, policyTagsId, projectsId, taxonomiesId` | Sets the IAM policy for a policy tag or a taxonomy. |
+| `projects_locations_taxonomies_policyTags_testIamPermissions` | `EXEC` | `locationsId, policyTagsId, projectsId, taxonomiesId` | Returns your permissions on a specified policy tag or taxonomy. |

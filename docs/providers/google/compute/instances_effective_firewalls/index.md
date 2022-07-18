@@ -27,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `firewalls` | `array` | Effective firewalls on the instance. |
 | `firewallPolicys` | `array` | Effective firewalls from firewall policies. |
+| `firewalls` | `array` | Effective firewalls on the instance. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

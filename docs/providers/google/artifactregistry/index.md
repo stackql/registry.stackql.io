@@ -22,7 +22,7 @@ Store and manage build artifacts in a scalable and integrated service built on G
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Artifact Registry API</td></tr>
 <tr><td><b>Description</b></td><td>Store and manage build artifacts in a scalable and integrated service built on Google infrastructure.</td></tr>
-<tr><td><b>Id</b></td><td><code>artifactregistry:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>artifactregistry:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -36,12 +36,13 @@ Store and manage build artifacts in a scalable and integrated service built on G
 <a href="/providers/google/artifactregistry/npm_packages/">npm_packages</a><br />
 <a href="/providers/google/artifactregistry/operations/">operations</a><br />
 <a href="/providers/google/artifactregistry/packages/">packages</a><br />
+<a href="/providers/google/artifactregistry/projects/">projects</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/google/artifactregistry/projects/">projects</a><br />
 <a href="/providers/google/artifactregistry/projects_project_settings/">projects_project_settings</a><br />
 <a href="/providers/google/artifactregistry/python_packages/">python_packages</a><br />
 <a href="/providers/google/artifactregistry/repositories/">repositories</a><br />
+<a href="/providers/google/artifactregistry/repositories_iam_bindings/">repositories_iam_bindings</a><br />
 <a href="/providers/google/artifactregistry/repositories_iam_policies/">repositories_iam_policies</a><br />
 <a href="/providers/google/artifactregistry/tags/">tags</a><br />
 <a href="/providers/google/artifactregistry/versions/">versions</a><br />

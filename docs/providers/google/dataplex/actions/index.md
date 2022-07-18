@@ -27,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `actions` | `array` | Actions under the given parent lake/zone/asset. |
 | `nextPageToken` | `string` | Token to retrieve the next page of results, or empty if there are no more results in the list. |
+| `actions` | `array` | Actions under the given parent lake/zone/asset. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

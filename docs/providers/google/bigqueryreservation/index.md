@@ -22,7 +22,7 @@ A service to modify your BigQuery flat-rate reservations.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>BigQuery Reservation API</td></tr>
 <tr><td><b>Description</b></td><td>A service to modify your BigQuery flat-rate reservations.</td></tr>
-<tr><td><b>Id</b></td><td><code>bigqueryreservation:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>bigqueryreservation:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources

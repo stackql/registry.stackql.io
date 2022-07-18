@@ -29,11 +29,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name of the game server config, in the following form: `projects/{project}/locations/{locationId}/gameServerDeployments/{deploymentId}/configs/{configId}`. For example, `projects/my-project/locations/global/gameServerDeployments/my-game/configs/my-config`. |
 | `description` | `string` | The description of the game server config. |
-| `fleetConfigs` | `array` | FleetConfig contains a list of Agones fleet specs. Only one FleetConfig is allowed. |
-| `labels` | `object` | The labels associated with this game server config. Each label is a key-value pair. |
 | `scalingConfigs` | `array` | The autoscaling settings. |
 | `updateTime` | `string` | Output only. The last-modified time. |
 | `createTime` | `string` | Output only. The creation time. |
+| `fleetConfigs` | `array` | FleetConfig contains a list of Agones fleet specs. Only one FleetConfig is allowed. |
+| `labels` | `object` | The labels associated with this game server config. Each label is a key-value pair. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

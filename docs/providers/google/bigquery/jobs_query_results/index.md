@@ -27,18 +27,18 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `totalBytesProcessed` | `string` | The total number of bytes processed for this query. |
-| `numDmlAffectedRows` | `string` | [Output-only] The number of rows affected by a DML statement. Present only for DML statements INSERT, UPDATE or DELETE. |
-| `rows` | `array` | An object with as many results as can be contained within the maximum permitted reply size. To get any additional rows, you can call GetQueryResults and specify the jobReference returned above. Present only when the query completes successfully. |
-| `totalRows` | `string` | The total number of rows in the complete query result set, which can be more than the number of rows in this single page of results. Present only when the query completes successfully. |
-| `jobReference` | `object` |  |
-| `kind` | `string` | The resource type of the response. |
-| `jobComplete` | `boolean` | Whether the query has completed or not. If rows or totalRows are present, this will always be true. If this is false, totalRows will not be available. |
-| `pageToken` | `string` | A token used for paging results. |
-| `errors` | `array` | [Output-only] The first errors or warnings encountered during the running of the job. The final message includes the number of errors that caused the process to stop. Errors here do not necessarily mean that the job has completed or was unsuccessful. |
-| `schema` | `object` |  |
 | `cacheHit` | `boolean` | Whether the query result was fetched from the query cache. |
 | `etag` | `string` | A hash of this response. |
+| `jobReference` | `object` |  |
+| `pageToken` | `string` | A token used for paging results. |
+| `numDmlAffectedRows` | `string` | [Output-only] The number of rows affected by a DML statement. Present only for DML statements INSERT, UPDATE or DELETE. |
+| `totalBytesProcessed` | `string` | The total number of bytes processed for this query. |
+| `schema` | `object` |  |
+| `errors` | `array` | [Output-only] The first errors or warnings encountered during the running of the job. The final message includes the number of errors that caused the process to stop. Errors here do not necessarily mean that the job has completed or was unsuccessful. |
+| `kind` | `string` | The resource type of the response. |
+| `rows` | `array` | An object with as many results as can be contained within the maximum permitted reply size. To get any additional rows, you can call GetQueryResults and specify the jobReference returned above. Present only when the query completes successfully. |
+| `jobComplete` | `boolean` | Whether the query has completed or not. If rows or totalRows are present, this will always be true. If this is false, totalRows will not be available. |
+| `totalRows` | `string` | The total number of rows in the complete query result set, which can be more than the number of rows in this single page of results. Present only when the query completes successfully. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

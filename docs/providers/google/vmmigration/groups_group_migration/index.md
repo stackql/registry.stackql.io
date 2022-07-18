@@ -29,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_groups_addGroupMigration` | `INSERT` | `groupsId:addGroupMigration, locationsId, projectsId` | Adds a MigratingVm to a Group. |
-| `projects_locations_groups_removeGroupMigration` | `DELETE` | `groupsId:removeGroupMigration, locationsId, projectsId` | Removes a MigratingVm from a Group. |
+| `projects_locations_groups_addGroupMigration` | `INSERT` | `groupsId, locationsId, projectsId` | Adds a MigratingVm to a Group. |
+| `projects_locations_groups_removeGroupMigration` | `DELETE` | `groupsId, locationsId, projectsId` | Removes a MigratingVm from a Group. |

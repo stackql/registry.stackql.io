@@ -28,10 +28,10 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Name of the endpoint attachment. Use the following structure in your request: `organizations/{org}/endpointAttachments/{endpoint_attachment}` |
+| `location` | `string` | Required. Location of the endpoint attachment. |
 | `serviceAttachment` | `string` | Format: projects/*/regions/*/serviceAttachments/* |
 | `state` | `string` | Output only. State of the endpoint attachment. Values other than `ACTIVE` mean the resource is not ready to use. |
 | `host` | `string` | Output only. Host that can be used in either the HTTP target endpoint directly or as the host in target server. |
-| `location` | `string` | Required. Location of the endpoint attachment. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

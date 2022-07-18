@@ -27,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `entities` | `array` | Output only. List of entity names. |
 | `actions` | `array` | Output only. List of actions. |
+| `entities` | `array` | Output only. List of entity names. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

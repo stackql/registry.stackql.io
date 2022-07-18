@@ -22,7 +22,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cloud DNS API</td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
-<tr><td><b>Id</b></td><td><code>dns:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>dns:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -32,9 +32,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 <a href="/providers/google/dns/dns_keys/">dns_keys</a><br />
 <a href="/providers/google/dns/managed_zone_operations/">managed_zone_operations</a><br />
 <a href="/providers/google/dns/managed_zones/">managed_zones</a><br />
-<a href="/providers/google/dns/managed_zones_iam_policies/">managed_zones_iam_policies</a><br />
+<a href="/providers/google/dns/managed_zones_iam_audit_configs/">managed_zones_iam_audit_configs</a><br />
+<a href="/providers/google/dns/managed_zones_iam_bindings/">managed_zones_iam_bindings</a><br />
 </div>
 <div class="providerDocColumn">
+<a href="/providers/google/dns/managed_zones_iam_policies/">managed_zones_iam_policies</a><br />
 <a href="/providers/google/dns/policies/">policies</a><br />
 <a href="/providers/google/dns/projects/">projects</a><br />
 <a href="/providers/google/dns/resource_record_sets/">resource_record_sets</a><br />

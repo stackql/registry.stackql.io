@@ -29,9 +29,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. The Group name. |
 | `description` | `string` | User-provided description of the group. |
+| `updateTime` | `string` | Output only. The update time timestamp. |
 | `createTime` | `string` | Output only. The create time timestamp. |
 | `displayName` | `string` | Display name is a user defined name for this group which can be updated. |
-| `updateTime` | `string` | Output only. The update time timestamp. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

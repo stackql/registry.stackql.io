@@ -28,8 +28,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Resource name. |
-| `pendingVersions` | `array` | Pending versions of the stored info type. Empty if no versions are pending. |
 | `currentVersion` | `object` | Version of a StoredInfoType, including the configuration used to build it, create timestamp, and current state. |
+| `pendingVersions` | `array` | Pending versions of the stored info type. Empty if no versions are pending. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -28,14 +28,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `id` | `string` | [Output-only] Opaque ID field of the job |
-| `configuration` | `object` |  |
-| `user_email` | `string` | [Output-only] Email address of the user who ran the job. |
-| `jobReference` | `object` |  |
-| `kind` | `string` | [Output-only] The type of the resource. |
 | `selfLink` | `string` | [Output-only] A URL that can be used to access this resource again. |
 | `statistics` | `object` |  |
-| `status` | `object` |  |
+| `user_email` | `string` | [Output-only] Email address of the user who ran the job. |
+| `configuration` | `object` |  |
 | `etag` | `string` | [Output-only] A hash of this resource. |
+| `jobReference` | `object` |  |
+| `status` | `object` |  |
+| `kind` | `string` | [Output-only] The type of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

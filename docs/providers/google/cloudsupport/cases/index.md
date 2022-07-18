@@ -29,19 +29,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name for the case. |
 | `description` | `string` | A broad description of the issue. |
-| `projectId` | `string` | The ID of the project associated with the case. |
-| `priority` | `string` | The priority of this case. If this is set, do not set severity. |
-| `escalated` | `boolean` | Whether the case is currently escalated. |
-| `state` | `string` | Output only. The current status of the support case. |
-| `updateTime` | `string` | Output only. The time this case was last updated. |
-| `severity` | `string` | The severity of this case. Deprecated. Use priority instead. |
-| `displayName` | `string` | The short summary of the issue reported in this case. |
-| `testCase` | `boolean` | Whether this case was created for internal API testing and should not be acted on by the support team. |
 | `creator` | `object` | An object containing information about the effective user and authenticated principal responsible for an action. |
-| `classification` | `object` | A classification object with a product type and value. |
-| `subscriberEmailAddresses` | `array` | The email addresses to receive updates on this case. |
-| `timeZone` | `string` | The timezone of the user who created the support case. It should be in a format IANA recognizes: https://www.iana.org/time-zones. There is no additional validation done by the API. |
 | `createTime` | `string` | Output only. The time this case was created. |
+| `escalated` | `boolean` | Whether the case is currently escalated. |
+| `severity` | `string` | The severity of this case. Deprecated. Use priority instead. |
+| `state` | `string` | Output only. The current status of the support case. |
+| `displayName` | `string` | The short summary of the issue reported in this case. |
+| `subscriberEmailAddresses` | `array` | The email addresses to receive updates on this case. |
+| `classification` | `object` | A classification object with a product type and value. |
+| `projectId` | `string` | The ID of the project associated with the case. |
+| `updateTime` | `string` | Output only. The time this case was last updated. |
+| `testCase` | `boolean` | Whether this case was created for internal API testing and should not be acted on by the support team. |
+| `priority` | `string` | The priority of this case. If this is set, do not set severity. |
+| `timeZone` | `string` | The timezone of the user who created the support case. It should be in a format IANA recognizes: https://www.iana.org/time-zones. There is no additional validation done by the API. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

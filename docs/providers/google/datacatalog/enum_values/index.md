@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_tagTemplates_fields_enumValues_rename` | `EXEC` | `enumValuesId:rename, fieldsId, locationsId, projectsId, tagTemplatesId` |
+| `projects_locations_tagTemplates_fields_enumValues_rename` | `EXEC` | `enumValuesId, fieldsId, locationsId, projectsId, tagTemplatesId` |

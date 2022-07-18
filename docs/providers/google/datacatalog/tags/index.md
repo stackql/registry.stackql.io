@@ -27,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `nextPageToken` | `string` | Pagination token of the next results page. Empty if there are no more items in results. |
 | `tags` | `array` | Tag details. |
+| `nextPageToken` | `string` | Pagination token of the next results page. Empty if there are no more items in results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

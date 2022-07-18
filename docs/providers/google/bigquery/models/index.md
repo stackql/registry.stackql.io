@@ -28,24 +28,24 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | Optional. A user-friendly description of this model. |
-| `modelType` | `string` | Output only. Type of the model resource. |
-| `friendlyName` | `string` | Optional. A descriptive name for this model. |
-| `optimalTrialIds` | `array` | Output only. For single-objective [hyperparameter tuning](https://cloud.google.com/bigquery-ml/docs/reference/standard-sql/bigqueryml-syntax-hp-tuning-overview) models, it only contains the best trial. For multi-objective [hyperparameter tuning](https://cloud.google.com/bigquery-ml/docs/reference/standard-sql/bigqueryml-syntax-hp-tuning-overview) models, it contains all Pareto optimal trials sorted by trial_id. |
-| `labelColumns` | `array` | Output only. Label columns that were used to train this model. The output of the model will have a "predicted_" prefix to these columns. |
-| `encryptionConfiguration` | `object` |  |
-| `hparamTrials` | `array` | Output only. Trials of a [hyperparameter tuning](https://cloud.google.com/bigquery-ml/docs/reference/standard-sql/bigqueryml-syntax-hp-tuning-overview) model sorted by trial_id. |
-| `bestTrialId` | `string` | The best trial_id across all training runs. |
-| `labels` | `object` | The labels associated with this model. You can use these to organize and group your models. Label keys and values can be no longer than 63 characters, can only contain lowercase letters, numeric characters, underscores and dashes. International characters are allowed. Label values are optional. Label keys must start with a letter and each label in the list must have a different key. |
-| `creationTime` | `string` | Output only. The time when this model was created, in millisecs since the epoch. |
-| `trainingRuns` | `array` | Output only. Information for all training runs in increasing order of start_time. |
-| `hparamSearchSpaces` | `object` | Hyperparameter search spaces. These should be a subset of training_options. |
-| `expirationTime` | `string` | Optional. The time when this model expires, in milliseconds since the epoch. If not present, the model will persist indefinitely. Expired models will be deleted and their storage reclaimed. The defaultTableExpirationMs property of the encapsulating dataset can be used to set a default expirationTime on newly created models. |
-| `lastModifiedTime` | `string` | Output only. The time when this model was last modified, in millisecs since the epoch. |
 | `featureColumns` | `array` | Output only. Input feature columns that were used to train this model. |
+| `lastModifiedTime` | `string` | Output only. The time when this model was last modified, in millisecs since the epoch. |
+| `encryptionConfiguration` | `object` |  |
+| `creationTime` | `string` | Output only. The time when this model was created, in millisecs since the epoch. |
+| `etag` | `string` | Output only. A hash of this resource. |
+| `modelType` | `string` | Output only. Type of the model resource. |
+| `expirationTime` | `string` | Optional. The time when this model expires, in milliseconds since the epoch. If not present, the model will persist indefinitely. Expired models will be deleted and their storage reclaimed. The defaultTableExpirationMs property of the encapsulating dataset can be used to set a default expirationTime on newly created models. |
+| `labels` | `object` | The labels associated with this model. You can use these to organize and group your models. Label keys and values can be no longer than 63 characters, can only contain lowercase letters, numeric characters, underscores and dashes. International characters are allowed. Label values are optional. Label keys must start with a letter and each label in the list must have a different key. |
+| `labelColumns` | `array` | Output only. Label columns that were used to train this model. The output of the model will have a "predicted_" prefix to these columns. |
+| `hparamTrials` | `array` | Output only. Trials of a [hyperparameter tuning](/bigquery-ml/docs/reference/standard-sql/bigqueryml-syntax-hp-tuning-overview) model sorted by trial_id. |
+| `defaultTrialId` | `string` | Output only. The default trial_id to use in TVFs when the trial_id is not passed in. For single-objective [hyperparameter tuning](/bigquery-ml/docs/reference/standard-sql/bigqueryml-syntax-hp-tuning-overview) models, this is the best trial ID. For multi-objective [hyperparameter tuning](/bigquery-ml/docs/reference/standard-sql/bigqueryml-syntax-hp-tuning-overview) models, this is the smallest trial ID among all Pareto optimal trials. |
 | `location` | `string` | Output only. The geographic location where the model resides. This value is inherited from the dataset. |
 | `modelReference` | `object` |  |
-| `etag` | `string` | Output only. A hash of this resource. |
-| `defaultTrialId` | `string` | Output only. The default trial_id to use in TVFs when the trial_id is not passed in. For single-objective [hyperparameter tuning](https://cloud.google.com/bigquery-ml/docs/reference/standard-sql/bigqueryml-syntax-hp-tuning-overview) models, this is the best trial ID. For multi-objective [hyperparameter tuning](https://cloud.google.com/bigquery-ml/docs/reference/standard-sql/bigqueryml-syntax-hp-tuning-overview) models, this is the smallest trial ID among all Pareto optimal trials. |
+| `optimalTrialIds` | `array` | Output only. For single-objective [hyperparameter tuning](/bigquery-ml/docs/reference/standard-sql/bigqueryml-syntax-hp-tuning-overview) models, it only contains the best trial. For multi-objective [hyperparameter tuning](/bigquery-ml/docs/reference/standard-sql/bigqueryml-syntax-hp-tuning-overview) models, it contains all Pareto optimal trials sorted by trial_id. |
+| `bestTrialId` | `string` | The best trial_id across all training runs. |
+| `friendlyName` | `string` | Optional. A descriptive name for this model. |
+| `hparamSearchSpaces` | `object` | Hyperparameter search spaces. These should be a subset of training_options. |
+| `trainingRuns` | `array` | Output only. Information for all training runs in increasing order of start_time. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

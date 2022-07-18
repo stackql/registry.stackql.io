@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `services_addSubnetwork` | `INSERT` | `servicesId, servicesId1, servicesId2:addSubnetwork` |
+| `services_addSubnetwork` | `INSERT` | `servicesId, servicesId1, servicesId2` |

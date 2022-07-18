@@ -33,8 +33,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_apis_artifacts_getContents` | `SELECT` | `apisId, artifactsId:getContents, locationsId, projectsId` |
-| `projects_locations_apis_deployments_artifacts_getContents` | `SELECT` | `apisId, artifactsId:getContents, deploymentsId, locationsId, projectsId` |
-| `projects_locations_apis_versions_artifacts_getContents` | `SELECT` | `apisId, artifactsId:getContents, locationsId, projectsId, versionsId` |
-| `projects_locations_apis_versions_specs_artifacts_getContents` | `SELECT` | `apisId, artifactsId:getContents, locationsId, projectsId, specsId, versionsId` |
-| `projects_locations_artifacts_getContents` | `SELECT` | `artifactsId:getContents, locationsId, projectsId` |
+| `projects_locations_apis_artifacts_getContents` | `SELECT` | `apisId, artifactsId, locationsId, projectsId` |
+| `projects_locations_apis_deployments_artifacts_getContents` | `SELECT` | `apisId, artifactsId, deploymentsId, locationsId, projectsId` |
+| `projects_locations_apis_versions_artifacts_getContents` | `SELECT` | `apisId, artifactsId, locationsId, projectsId, versionsId` |
+| `projects_locations_apis_versions_specs_artifacts_getContents` | `SELECT` | `apisId, artifactsId, locationsId, projectsId, specsId, versionsId` |
+| `projects_locations_artifacts_getContents` | `SELECT` | `artifactsId, locationsId, projectsId` |

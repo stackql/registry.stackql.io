@@ -27,11 +27,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `message` | `string` | Description of the operation. |
 | `requestId` | `string` | ID that can be used to find request details in the log files. |
 | `status` | `string` | Status of the operation. |
 | `data` | `object` | the Api category resource. |
 | `errorCode` | `string` | ID that can be used to find errors in the log files. |
+| `message` | `string` | Description of the operation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

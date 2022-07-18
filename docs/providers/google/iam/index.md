@@ -22,7 +22,7 @@ Manages identity and access control for Google Cloud Platform resources, includi
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Identity and Access Management (IAM) API</td></tr>
 <tr><td><b>Description</b></td><td>Manages identity and access control for Google Cloud Platform resources, including the creation of service accounts, which you can use to authenticate to Google and make API calls. </td></tr>
-<tr><td><b>Id</b></td><td><code>iam:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>iam:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -33,10 +33,12 @@ Manages identity and access control for Google Cloud Platform resources, includi
 <a href="/providers/google/iam/operations/">operations</a><br />
 <a href="/providers/google/iam/permissions/">permissions</a><br />
 <a href="/providers/google/iam/providers/">providers</a><br />
+<a href="/providers/google/iam/roles/">roles</a><br />
 </div>
 <div class="providerDocColumn">
-<a href="/providers/google/iam/roles/">roles</a><br />
 <a href="/providers/google/iam/service_accounts/">service_accounts</a><br />
+<a href="/providers/google/iam/service_accounts_iam_audit_configs/">service_accounts_iam_audit_configs</a><br />
+<a href="/providers/google/iam/service_accounts_iam_bindings/">service_accounts_iam_bindings</a><br />
 <a href="/providers/google/iam/service_accounts_iam_policies/">service_accounts_iam_policies</a><br />
 <a href="/providers/google/iam/workload_identity_pools/">workload_identity_pools</a><br />
 </div>

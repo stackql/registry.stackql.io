@@ -27,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `nextPageToken` | `string` | A token used to continue a truncated list request. |
 | `types` | `array` | Output only. A list of resource types supported by Deployment Manager. |
+| `nextPageToken` | `string` | A token used to continue a truncated list request. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

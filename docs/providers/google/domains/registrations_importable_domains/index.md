@@ -27,8 +27,8 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `nextPageToken` | `string` | When present, there are more results to retrieve. Set `page_token` to this value on a subsequent call to get the next page of results. |
 | `domains` | `array` | A list of domains that the calling user manages in Google Domains. |
+| `nextPageToken` | `string` | When present, there are more results to retrieve. Set `page_token` to this value on a subsequent call to get the next page of results. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

@@ -28,13 +28,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Resource name for the location, which may vary between implementations. For example: `"projects/example-project/locations/us-east1"` |
-| `displayName` | `string` | The friendly name for this location, typically a nearby city name. For example, "Tokyo". |
 | `labels` | `object` | Cross-service attributes for the location. For example {"cloud.googleapis.com/region": "us-east1"} |
 | `locationId` | `string` | The canonical id for this location. For example: `"us-east1"`. |
 | `metadata` | `object` | Service-specific metadata. For example the available capacity at the given location. |
+| `displayName` | `string` | The friendly name for this location, typically a nearby city name. For example, "Tokyo". |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
 | `projects_locations_get` | `SELECT` | `locationsId, projectsId` | Gets information about a location. |
 | `projects_locations_list` | `SELECT` | `projectsId` | Lists information about the supported locations for this service. |
-| `projects_locations_enrollDataSources` | `EXEC` | `locationsId:enrollDataSources, projectsId` | Enroll data sources in a user project. This allows users to create transfer configurations for these data sources. They will also appear in the ListDataSources RPC and as such, will appear in the [BigQuery UI](https://console.cloud.google.com/bigquery), and the documents can be found in the public guide for [BigQuery Web UI](https://cloud.google.com/bigquery/bigquery-web-ui) and [Data Transfer Service](https://cloud.google.com/bigquery/docs/working-with-transfers). |
+| `projects_locations_enrollDataSources` | `EXEC` | `locationsId, projectsId` | Enroll data sources in a user project. This allows users to create transfer configurations for these data sources. They will also appear in the ListDataSources RPC and as such, will appear in the [BigQuery UI](https://console.cloud.google.com/bigquery), and the documents can be found in the public guide for [BigQuery Web UI](https://cloud.google.com/bigquery/bigquery-web-ui) and [Data Transfer Service](https://cloud.google.com/bigquery/docs/working-with-transfers). |

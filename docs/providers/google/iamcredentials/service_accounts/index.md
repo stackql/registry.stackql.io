@@ -29,7 +29,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_serviceAccounts_generateAccessToken` | `EXEC` | `projectsId, serviceAccountsId:generateAccessToken` | Generates an OAuth 2.0 access token for a service account. |
-| `projects_serviceAccounts_generateIdToken` | `EXEC` | `projectsId, serviceAccountsId:generateIdToken` | Generates an OpenID Connect ID token for a service account. |
-| `projects_serviceAccounts_signBlob` | `EXEC` | `projectsId, serviceAccountsId:signBlob` | Signs a blob using a service account's system-managed private key. |
-| `projects_serviceAccounts_signJwt` | `EXEC` | `projectsId, serviceAccountsId:signJwt` | Signs a JWT using a service account's system-managed private key. |
+| `projects_serviceAccounts_generateAccessToken` | `EXEC` | `projectsId, serviceAccountsId` | Generates an OAuth 2.0 access token for a service account. |
+| `projects_serviceAccounts_generateIdToken` | `EXEC` | `projectsId, serviceAccountsId` | Generates an OpenID Connect ID token for a service account. |
+| `projects_serviceAccounts_signBlob` | `EXEC` | `projectsId, serviceAccountsId` | Signs a blob using a service account's system-managed private key. |
+| `projects_serviceAccounts_signJwt` | `EXEC` | `projectsId, serviceAccountsId` | Signs a JWT using a service account's system-managed private key. |

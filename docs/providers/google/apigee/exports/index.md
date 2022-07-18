@@ -29,13 +29,13 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Display name of the export job. |
 | `description` | `string` | Description of the export job. |
-| `updated` | `string` | Output only. Time the export job was last updated. |
+| `datastoreName` | `string` | Name of the datastore that is the destination of the export job [datastore] |
 | `error` | `string` | Output only. Error is set when export fails |
+| `state` | `string` | Output only. Status of the export job. Valid values include `enqueued`, `running`, `completed`, and `failed`. |
+| `updated` | `string` | Output only. Time the export job was last updated. |
 | `executionTime` | `string` | Output only. Execution time for this export job. If the job is still in progress, it will be set to the amount of time that has elapsed since`created`, in seconds. Else, it will set to (`updated` - `created`), in seconds. |
 | `created` | `string` | Output only. Time the export job was created. |
 | `self` | `string` | Output only. Self link of the export job. A URI that can be used to retrieve the status of an export job. Example: `/organizations/myorg/environments/myenv/analytics/exports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` |
-| `datastoreName` | `string` | Name of the datastore that is the destination of the export job [datastore] |
-| `state` | `string` | Output only. Status of the export job. Valid values include `enqueued`, `running`, `completed`, and `failed`. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

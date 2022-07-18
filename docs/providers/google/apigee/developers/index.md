@@ -27,20 +27,20 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `attributes` | `array` | Optional. Developer attributes (name/value pairs). The custom attribute limit is 18. |
-| `companies` | `array` | List of companies associated with the developer. |
+| `appFamily` | `string` | Developer app family. |
+| `organizationName` | `string` | Output only. Name of the Apigee organization in which the developer resides. |
 | `firstName` | `string` | Required. First name of the developer. |
-| `lastModifiedAt` | `string` | Output only. Time at which the developer was last modified in milliseconds since epoch. |
-| `createdAt` | `string` | Output only. Time at which the developer was created in milliseconds since epoch. |
+| `lastName` | `string` | Required. Last name of the developer. |
 | `status` | `string` | Output only. Status of the developer. Valid values are `active` and `inactive`. |
 | `userName` | `string` | Required. User name of the developer. Not used by Apigee hybrid. |
-| `developerId` | `string` | ID of the developer. **Note**: IDs are generated internally by Apigee and are not guaranteed to stay the same over time. |
-| `lastName` | `string` | Required. Last name of the developer. |
-| `organizationName` | `string` | Output only. Name of the Apigee organization in which the developer resides. |
-| `appFamily` | `string` | Developer app family. |
 | `accessType` | `string` | Access type. |
+| `createdAt` | `string` | Output only. Time at which the developer was created in milliseconds since epoch. |
 | `email` | `string` | Required. Email address of the developer. This value is used to uniquely identify the developer in Apigee hybrid. Note that the email address has to be in lowercase only. |
+| `lastModifiedAt` | `string` | Output only. Time at which the developer was last modified in milliseconds since epoch. |
+| `attributes` | `array` | Optional. Developer attributes (name/value pairs). The custom attribute limit is 18. |
 | `apps` | `array` | List of apps associated with the developer. |
+| `companies` | `array` | List of companies associated with the developer. |
+| `developerId` | `string` | ID of the developer. **Note**: IDs are generated internally by Apigee and are not guaranteed to stay the same over time. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

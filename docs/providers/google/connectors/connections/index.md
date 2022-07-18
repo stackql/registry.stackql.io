@@ -29,20 +29,19 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. Resource name of the Connection. Format: projects/{project}/locations/{location}/connections/{connection} |
 | `description` | `string` | Optional. Description of the resource. |
+| `suspended` | `boolean` | Optional. Suspended indicates if a user has suspended a connection or not. |
 | `serviceAccount` | `string` | Optional. Service account needed for runtime plane to access GCP resources. |
-| `updateTime` | `string` | Output only. Updated time. |
+| `createTime` | `string` | Output only. Created time. |
 | `imageLocation` | `string` | Output only. GCR location where the runtime image is stored. formatted like: gcr.io/{bucketName}/{imageName} |
-| `lockConfig` | `object` | Determines whether or no a connection is locked. If locked, a reason must be specified. |
 | `status` | `object` | ConnectionStatus indicates the state of the connection. |
-| `egressBackends` | `array` | Output only. Outbound domains/hosts needs to be allowlisted. |
-| `authConfig` | `object` | AuthConfig defines details of a authentication type. |
+| `connectorVersion` | `string` | Required. Connector version on which the connection is created. The format is: projects/*/locations/global/providers/*/connectors/*/versions/* |
 | `configVariables` | `array` | Optional. Configuration for configuring the connection with an external system. |
 | `serviceDirectory` | `string` | Output only. The name of the Service Directory service name. Used for Private Harpoon to resolve the ILB address. e.g. "projects/cloud-connectors-e2e-testing/locations/us-central1/namespaces/istio-system/services/istio-ingressgateway-connectors" |
-| `suspended` | `boolean` | Optional. Suspended indicates if a user has suspended a connection or not. |
-| `connectorVersion` | `string` | Required. Connector version on which the connection is created. The format is: projects/*/locations/global/providers/*/connectors/*/versions/* |
-| `createTime` | `string` | Output only. Created time. |
-| `envoyImageLocation` | `string` | Output only. GCR location where the envoy image is stored. formatted like: gcr.io/{bucketName}/{imageName} |
+| `updateTime` | `string` | Output only. Updated time. |
+| `authConfig` | `object` | AuthConfig defines details of a authentication type. |
 | `labels` | `object` | Optional. Resource labels to represent user-provided metadata. Refer to cloud documentation on labels for more details. https://cloud.google.com/compute/docs/labeling-resources |
+| `envoyImageLocation` | `string` | Output only. GCR location where the envoy image is stored. formatted like: gcr.io/{bucketName}/{imageName} |
+| `lockConfig` | `object` | Determines whether or no a connection is locked. If locked, a reason must be specified. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_catalogs_eventStores_placements_predict` | `EXEC` | `catalogsId, eventStoresId, locationsId, placementsId:predict, projectsId` |
+| `projects_locations_catalogs_eventStores_placements_predict` | `EXEC` | `catalogsId, eventStoresId, locationsId, placementsId, projectsId` |

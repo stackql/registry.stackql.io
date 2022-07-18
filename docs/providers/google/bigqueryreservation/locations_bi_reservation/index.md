@@ -28,9 +28,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The resource name of the singleton BI reservation. Reservation names have the form `projects/{project_id}/locations/{location_id}/biReservation`. |
+| `size` | `string` | Size of a reservation, in bytes. |
 | `updateTime` | `string` | Output only. The last update timestamp of a reservation. |
 | `preferredTables` | `array` | Preferred tables to use BI capacity for. |
-| `size` | `string` | Size of a reservation, in bytes. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

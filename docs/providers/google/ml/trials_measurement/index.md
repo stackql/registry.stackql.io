@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_studies_trials_addMeasurement` | `INSERT` | `locationsId, projectsId, studiesId, trialsId:addMeasurement` |
+| `projects_locations_studies_trials_addMeasurement` | `INSERT` | `locationsId, projectsId, studiesId, trialsId` |

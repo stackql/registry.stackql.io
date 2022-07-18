@@ -22,7 +22,7 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Certificate Manager API</td></tr>
 <tr><td><b>Description</b></td><td></td></tr>
-<tr><td><b>Id</b></td><td><code>certificatemanager:v1.0.2</code></td></tr>
+<tr><td><b>Id</b></td><td><code>certificatemanager:v1.0.3</code></td></tr>
 </tbody></table>
 
 ## Resources

@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_services_removeIamPolicy` | `DELETE` | `locationsId, projectsId, servicesId, servicesId1:removeIamPolicy` |
+| `projects_locations_services_removeIamPolicy` | `DELETE` | `locationsId, projectsId, servicesId, servicesId1` |

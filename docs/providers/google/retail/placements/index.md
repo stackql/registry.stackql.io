@@ -29,5 +29,5 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_catalogs_placements_predict` | `EXEC` | `catalogsId, locationsId, placementsId:predict, projectsId` | Makes a recommendation prediction. |
-| `projects_locations_catalogs_placements_search` | `EXEC` | `catalogsId, locationsId, placementsId:search, projectsId` | Performs a search. This feature is only available for users who have Retail Search enabled. Please enable Retail Search on Cloud Console before using this feature. |
+| `projects_locations_catalogs_placements_predict` | `EXEC` | `catalogsId, locationsId, placementsId, projectsId` | Makes a recommendation prediction. |
+| `projects_locations_catalogs_placements_search` | `EXEC` | `catalogsId, locationsId, placementsId, projectsId` | Performs a search. This feature is only available for users who have Retail Search enabled. Please enable Retail Search on Cloud Console before using this feature. |

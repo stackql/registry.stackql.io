@@ -28,9 +28,9 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Required. The resource name of the IAP protected resource. |
-| `accessSettings` | `object` | Access related settings for IAP protected apps. |
 | `applicationSettings` | `object` | Wrapper over application specific settings for IAP. |
+| `accessSettings` | `object` | Access related settings for IAP protected apps. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `getIapSettings` | `SELECT` | `v1Id:iapSettings` |
+| `getIapSettings` | `SELECT` | `v1Id` |

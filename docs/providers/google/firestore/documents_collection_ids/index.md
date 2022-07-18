@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_databases_documents_listCollectionIds` | `SELECT` | `databasesId, documentsId, documentsId1:listCollectionIds, projectsId` |
+| `projects_databases_documents_listCollectionIds` | `SELECT` | `databasesId, documentsId, documentsId1, projectsId` |

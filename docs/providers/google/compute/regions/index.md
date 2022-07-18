@@ -30,14 +30,14 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | `id` | `string` | [Output Only] The unique identifier for the resource. This identifier is defined by the server. |
 | `name` | `string` | [Output Only] Name of the resource. |
 | `description` | `string` | [Output Only] Textual description of the resource. |
+| `supportsPzs` | `boolean` | [Output Only] Reserved for future use. |
 | `deprecated` | `object` | Deprecation status for a public resource. |
+| `status` | `string` | [Output Only] Status of the region, either UP or DOWN. |
+| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
 | `quotas` | `array` | [Output Only] Quotas assigned to this region. |
 | `zones` | `array` | [Output Only] A list of zones available in this region, in the form of resource URLs. |
-| `supportsPzs` | `boolean` | [Output Only] Reserved for future use. |
-| `selfLink` | `string` | [Output Only] Server-defined URL for the resource. |
-| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
 | `kind` | `string` | [Output Only] Type of the resource. Always compute#region for regions. |
-| `status` | `string` | [Output Only] Status of the region, either UP or DOWN. |
+| `creationTimestamp` | `string` | [Output Only] Creation timestamp in RFC3339 text format. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,15 +29,15 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 |:-----|:---------|:------------|
 | `name` | `string` | Output only. AnnotatedDataset resource name in format of: projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/ {annotated_dataset_id} |
 | `description` | `string` | Output only. The description of the AnnotatedDataset. It is specified in HumanAnnotationConfig when user starts a labeling task. Maximum of 10000 characters. |
-| `metadata` | `object` | Metadata on AnnotatedDataset. |
-| `exampleCount` | `string` | Output only. Number of examples in the annotated dataset. |
-| `createTime` | `string` | Output only. Time the AnnotatedDataset was created. |
-| `displayName` | `string` | Output only. The display name of the AnnotatedDataset. It is specified in HumanAnnotationConfig when user starts a labeling task. Maximum of 64 characters. |
-| `blockingResources` | `array` | Output only. The names of any related resources that are blocking changes to the annotated dataset. |
+| `labelStats` | `object` | Statistics about annotation specs. |
+| `completedExampleCount` | `string` | Output only. Number of examples that have annotation in the annotated dataset. |
 | `annotationSource` | `string` | Output only. Source of the annotation. |
 | `annotationType` | `string` | Output only. Type of the annotation. It is specified when starting labeling task. |
-| `completedExampleCount` | `string` | Output only. Number of examples that have annotation in the annotated dataset. |
-| `labelStats` | `object` | Statistics about annotation specs. |
+| `createTime` | `string` | Output only. Time the AnnotatedDataset was created. |
+| `exampleCount` | `string` | Output only. Number of examples in the annotated dataset. |
+| `blockingResources` | `array` | Output only. The names of any related resources that are blocking changes to the annotated dataset. |
+| `metadata` | `object` | Metadata on AnnotatedDataset. |
+| `displayName` | `string` | Output only. The display name of the AnnotatedDataset. It is specified in HumanAnnotationConfig when user starts a labeling task. Maximum of 64 characters. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -28,11 +28,11 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Name of the feedback message in a feedback thread. Format: 'project/{project_id}/datasets/{dataset_id}/annotatedDatasets/{annotated_dataset_id}/feedbackThreads/{feedback_thread_id}/feedbackMessage/{feedback_message_id}' |
-| `image` | `string` | The image storing this feedback if the feedback is an image representing operator's comments. |
 | `operatorFeedbackMetadata` | `object` | Metadata describing the feedback from the operator. |
 | `requesterFeedbackMetadata` | `object` | Metadata describing the feedback from the labeling task requester. |
 | `body` | `string` | String content of the feedback. Maximum of 10000 characters. |
 | `createTime` | `string` | Create time. |
+| `image` | `string` | The image storing this feedback if the feedback is an image representing operator's comments. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

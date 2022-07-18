@@ -34,6 +34,6 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `projects_locations_dataExchanges_listings_getIamPolicy` | `SELECT` | `dataExchangesId, listingsId:getIamPolicy, locationsId, projectsId` | Gets the IAM policy. |
-| `projects_locations_dataExchanges_listings_setIamPolicy` | `EXEC` | `dataExchangesId, listingsId:setIamPolicy, locationsId, projectsId` | Sets the IAM policy. |
-| `projects_locations_dataExchanges_listings_testIamPermissions` | `EXEC` | `dataExchangesId, listingsId:testIamPermissions, locationsId, projectsId` | Returns the permissions that a caller has. |
+| `projects_locations_dataExchanges_listings_getIamPolicy` | `SELECT` | `dataExchangesId, listingsId, locationsId, projectsId` | Gets the IAM policy. |
+| `projects_locations_dataExchanges_listings_setIamPolicy` | `EXEC` | `dataExchangesId, listingsId, locationsId, projectsId` | Sets the IAM policy. |
+| `projects_locations_dataExchanges_listings_testIamPermissions` | `EXEC` | `dataExchangesId, listingsId, locationsId, projectsId` | Returns the permissions that a caller has. |

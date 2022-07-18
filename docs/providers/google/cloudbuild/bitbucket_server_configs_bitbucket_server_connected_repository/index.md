@@ -29,4 +29,4 @@ image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `projects_locations_bitbucketServerConfigs_removeBitbucketServerConnectedRepository` | `DELETE` | `bitbucketServerConfigsId:removeBitbucketServerConnectedRepository, locationsId, projectsId` |
+| `projects_locations_bitbucketServerConfigs_removeBitbucketServerConnectedRepository` | `DELETE` | `bitbucketServerConfigsId, locationsId, projectsId` |
