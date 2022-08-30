@@ -14,7 +14,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import styles from './styles.module.css';
 import ThemedImage, {Props as ThemedImageProps} from '@theme/ThemedImage';
-import IconExternalLink from '@theme/IconExternalLink';
+import IconExternalLink from '@theme/Icon/ExternalLink';
 import { IconButton } from '@mui/material';
 import { useColorMode } from '@docusaurus/theme-common';
 
@@ -74,7 +74,7 @@ function Footer(): JSX.Element | null {
     twitter: "https://twitter.com/stackql",
     github: "https://github.com/stackql",
     discord: "https://discord.com/invite/xVXZ9d5NxN",
-    slack: "https://join.slack.com/t/stackqlcommunity/shared_invite/zt-1cbdq9s5v-CkY65IMAesCgFqjN6FU6hg",
+    slack: "https://join.slack.com/t/stackqlcommunity/shared_invite/zt-1cbdq9s5v-CkY65IMAesCgFqjN6FU6hg",    
   };
   
   // const { colorMode === 'dark' } = useThemeContext();
