@@ -80,9 +80,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 <br />REFERENCES
 <br />
 <br />The general form for defining an action to be audited is:
-<br />`{action} ON {object} BY {principal}`
+<br />&#123;action&#125; ON &#123;object&#125; BY &#123;principal&#125;
 <br />
-<br />Note that &lt;object&gt; in the above format can refer to an object like a table, view, or stored procedure, or an entire database or schema. For the latter cases, the forms `DATABASE::{db_name}` and `SCHEMA::{schema_name}` are used, respectively.
+<br />Note that &lt;object&gt; in the above format can refer to an object like a table, view, or stored procedure, or an entire database or schema. For the latter cases, the forms DATABASE::&#123;db_name&#125; and SCHEMA::&#123;schema_name&#125; are used, respectively.
 <br />
 <br />For example:
 <br />SELECT on dbo.myTable by public
@@ -96,10 +96,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 <br />In order to send the events to Azure Monitor, specify 'State' as 'Enabled' and 'IsAzureMonitorTargetEnabled' as true.
 <br />
 <br />When using REST API to configure auditing, Diagnostic Settings with 'SQLSecurityAuditEvents' diagnostic logs category on the database should be also created.
-<br />Note that for server level audit you should use the 'master' database as {databaseName}.
+<br />Note that for server level audit you should use the 'master' database as &#123;databaseName&#125;.
 <br />
 <br />Diagnostic Settings URI format:
-<br />PUT `https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/providers/microsoft.insights/diagnosticSettings/{settingsName}?api-version=2017-05-01-preview`
+<br />PUT https://management.azure.com/subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroup&#125;/providers/Microsoft.Sql/servers/&#123;serverName&#125;/databases/&#123;databaseName&#125;/providers/microsoft.insights/diagnosticSettings/&#123;settingsName&#125;?api-version=2017-05-01-preview
 <br />
 <br />For more information, see [Diagnostic Settings REST API](https://go.microsoft.com/fwlink/?linkid=2033207)
 <br />or [Diagnostic Settings PowerShell](https://go.microsoft.com/fwlink/?linkid=2033043)

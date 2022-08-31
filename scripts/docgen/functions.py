@@ -7,11 +7,8 @@ iql = StackQL(exe="./stackql")
 def make_web_safe(str):
     ## TODO
     # remove local md links
-    # escape {n}
-    # SCHEMA::{schema_name} should be `SCHEMA::{schema_name}`
-    # {principal} should be `{principal}`
-    # {action} ON {object} BY {principal} should be `{action} ON {object} BY {principal}`
-    # PUT https://management.azure.com/subscriptions/{subscriptionId}... should be `PUT https://management.azure.com/subscriptions/{subscriptionId}...`
+    # replace { with &#123;
+    # replace } with &#125;
     
     return str.replace("<", "&lt;").replace(">", "&gt;").replace("\n", "<br />")
 
