@@ -5,6 +5,9 @@ from pystackql import StackQL
 iql = StackQL(exe="./stackql")
 
 def make_web_safe(str):
+    ## TODO
+    # remove local md links
+    # escape {n}
     return str.replace("<", "&lt;").replace(">", "&gt;").replace("\n", "<br />")
 
 def make_markdown_table_safe(str):
