@@ -33,7 +33,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 <br />When using REST API to configure DevOps audit, Diagnostic Settings with 'DevOpsOperationsAudit' diagnostic logs category on the master database should be also created.
 <br />
 <br />Diagnostic Settings URI format:
-<br />PUT https://management.azure.com/subscriptions/\{subscriptionId\}/resourceGroups/\{resourceGroup\}/providers/Microsoft.Sql/servers/\{serverName\}/databases/master/providers/microsoft.insights/diagnosticSettings/\{settingsName\}?api-version=2017-05-01-preview
+<br />PUT `https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Sql/servers/{serverName}/databases/master/providers/microsoft.insights/diagnosticSettings/{settingsName}?api-version=2017-05-01-preview`
 <br />
 <br />For more information, see [Diagnostic Settings REST API](https://go.microsoft.com/fwlink/?linkid=2033207)
 <br />or [Diagnostic Settings PowerShell](https://go.microsoft.com/fwlink/?linkid=2033043)
