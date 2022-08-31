@@ -1,0 +1,47 @@
+---
+title: tasks
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - tasks
+  - security
+  - azure    
+  - stackql
+  - infrastructure-as-code
+  - configuration-as-data
+  - cloud inventory
+description: Query, deploy and manage Azure resources using SQL
+custom_edit_url: null
+image: /img/providers/azure/stackql-azure-provider-featured-image.png
+---
+  
+    
+
+## Overview
+<table><tbody>
+<tr><td><b>Name</b></td><td><code>tasks</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
+<tr><td><b>Id</b></td><td><code>azure.security.tasks</code></td></tr>
+</tbody></table>
+
+## Fields
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `name` | `string` | The name of the resource |
+| `lastStateChangeTimeUtc` | `string` | The time this task's details were last changed in UTC |
+| `securityTaskParameters` | `object` | Changing set of properties, depending on the task type that is derived from the name field |
+| `state` | `string` | State of the task (Active, Resolved etc.) |
+| `subState` | `string` | Additional data on the state of the task |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `creationTimeUtc` | `string` | The time this task was discovered in UTC |
+## Methods
+| Name | Accessible by | Required Params |
+|:-----|:--------------|:----------------|
+| `Tasks_List` | `SELECT` | `api-version, subscriptionId` |
+| `Tasks_ListByHomeRegion` | `SELECT` | `api-version, ascLocation, subscriptionId` |
+| `Tasks_ListByResourceGroup` | `SELECT` | `api-version, ascLocation, resourceGroupName, subscriptionId` |
+| `Tasks_GetResourceGroupLevelTask` | `EXEC` | `api-version, ascLocation, resourceGroupName, subscriptionId, taskName` |
+| `Tasks_GetSubscriptionLevelTask` | `EXEC` | `api-version, ascLocation, subscriptionId, taskName` |
+| `Tasks_UpdateResourceGroupLevelTaskState` | `EXEC` | `api-version, ascLocation, resourceGroupName, subscriptionId, taskName, taskUpdateActionType` |
+| `Tasks_UpdateSubscriptionLevelTaskState` | `EXEC` | `api-version, ascLocation, subscriptionId, taskName, taskUpdateActionType` |

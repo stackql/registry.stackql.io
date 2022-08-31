@@ -1,0 +1,37 @@
+---
+title: private_link_resources
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - private_link_resources
+  - web_pub_sub
+  - azure    
+  - stackql
+  - infrastructure-as-code
+  - configuration-as-data
+  - cloud inventory
+description: Query, deploy and manage Azure resources using SQL
+custom_edit_url: null
+image: /img/providers/azure/stackql-azure-provider-featured-image.png
+---
+  
+    
+
+## Overview
+<table><tbody>
+<tr><td><b>Name</b></td><td><code>private_link_resources</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
+<tr><td><b>Id</b></td><td><code>azure.web_pub_sub.private_link_resources</code></td></tr>
+</tbody></table>
+
+## Fields
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `groupId` | `string` | Group Id of the private link resource |
+| `requiredMembers` | `array` | Required members of the private link resource |
+| `requiredZoneNames` | `array` | Required private DNS zone names |
+| `shareablePrivateLinkResourceTypes` | `array` | The list of resources that are onboarded to private link service |
+## Methods
+| Name | Accessible by | Required Params |
+|:-----|:--------------|:----------------|
+| `WebPubSubPrivateLinkResources_List` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` |

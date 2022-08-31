@@ -28,7 +28,7 @@ alttext="StackQL"/>
   <article class="col col--4 margin-bottom--lg">
     <a class="card padding--lg cardContainer" href="/providers/google/">
       <div class="row">
-      <div class="col col--2 cardTitleCol"><img src="/img/providers/google.png" /></div>
+      <div class="col col--2 cardTitleCol"><img src="/img/providers/google/google.png" /></div>
       <div class="col col--10 cardTitleCol"><h2 class="text--truncate cardTitle" title="Google Cloud Platform">Google Cloud Platform</h2></div>  
       </div>
       <div class="row">
@@ -39,9 +39,22 @@ alttext="StackQL"/>
     </a>
   </article>
   <article class="col col--4 margin-bottom--lg">
+    <a class="card padding--lg cardContainer" href="/providers/azure/">
+      <div class="row">
+      <div class="col col--2 cardTitleCol"><img src="/img/providers/azure/azure.png" /></div>
+      <div class="col col--10 cardTitleCol"><h2 class="text--truncate cardTitle" title="Google Cloud Platform">Microsoft Azure</h2></div>  
+      </div>
+      <div class="row">
+      <div class="col col--12 cardTitleCol">
+      <p class="text--truncate cardDescription">Cloud computing services offered by Microsoft.</p>
+      </div>
+      </div>
+    </a>
+  </article>  
+  <article class="col col--4 margin-bottom--lg">
     <a class="card padding--lg cardContainer" href="/providers/github/">
       <div class="row">
-      <div class="col col--2 cardTitleCol"><img src="/img/providers/github.png" /></div>
+      <div class="col col--2 cardTitleCol"><img src="/img/providers/github/github.png" /></div>
       <div class="col col--10 cardTitleCol"><h2 class="text--truncate cardTitle" title="GitHub">GitHub</h2></div>  
       </div>
       <div class="row">
@@ -54,7 +67,7 @@ alttext="StackQL"/>
   <article class="col col--4 margin-bottom--lg">
     <a class="card padding--lg cardContainer" href="/providers/k8s/">
       <div class="row">
-      <div class="col col--2 cardTitleCol"><img src="/img/providers/kubernetes.png" /></div>
+      <div class="col col--2 cardTitleCol"><img src="/img/providers/kubernetes/kubernetes.png" /></div>
       <div class="col col--10 cardTitleCol"><h2 class="text--truncate cardTitle" title="Kubernetes">Kubernetes</h2></div>  
       </div>
       <div class="row">
@@ -67,7 +80,7 @@ alttext="StackQL"/>
   <article class="col col--4 margin-bottom--lg">
     <a class="card padding--lg cardContainer" href="/providers/okta/">
       <div class="row">
-      <div class="col col--2 cardTitleCol"><img src="/img/providers/okta.png" /></div>
+      <div class="col col--2 cardTitleCol"><img src="/img/providers/okta/okta.png" /></div>
       <div class="col col--10 cardTitleCol"><h2 class="text--truncate cardTitle" title="Okta">Okta</h2></div>  
       </div>
       <div class="row">
@@ -80,7 +93,7 @@ alttext="StackQL"/>
   <article class="col col--4 margin-bottom--lg">
     <a class="card padding--lg cardContainer" href="/providers/netlify/">
       <div class="row">
-      <div class="col col--2 cardTitleCol"><img src="/img/providers/netlify.png" /></div>
+      <div class="col col--2 cardTitleCol"><img src="/img/providers/netlify/netlify.png" /></div>
       <div class="col col--10 cardTitleCol"><h2 class="text--truncate cardTitle" title="Netlify">Netlify</h2></div>  
       </div>
       <div class="row">
@@ -93,7 +106,7 @@ alttext="StackQL"/>
   <article class="col col--4 margin-bottom--lg">
     <a class="card padding--lg cardContainer" href="/providers/firebase/">
       <div class="row">
-      <div class="col col--2 cardTitleCol"><img src="/img/providers/firebase.png" /></div>
+      <div class="col col--2 cardTitleCol"><img src="/img/providers/firebase/firebase.png" /></div>
       <div class="col col--10 cardTitleCol"><h2 class="text--truncate cardTitle" title="Firebase">Firebase</h2></div>  
       </div>
       <div class="row">
