@@ -9,7 +9,16 @@ def make_web_safe(str):
     # remove local md links
     # replace { with &#123;
     # replace } with &#125;
-    
+    # \r\n with <br />
+    # /providers/azure/sql/database_blob_auditing_policies
+    # /providers/azure/sql/extended_database_blob_auditing_policies
+    # /providers/azure/sql/extended_server_blob_auditing_policies
+    # /providers/azure/sql/server_blob_auditing_policies
+    # /providers/azure/sql/server_dev_ops_audit_settings
+    # /providers/azure/synapse/extended_sql_pool_blob_auditing_policies
+    # /providers/azure/synapse/sql_pool_blob_auditing_policies
+    # /providers/azure/synapse/workspace_managed_sql_server_blob_auditing_policies
+    # /providers/azure/synapse/workspace_managed_sql_server_extended_blob_auditing_policies
     return str.replace("<", "&lt;").replace(">", "&gt;").replace("\n", "<br />")
 
 def make_markdown_table_safe(str):
