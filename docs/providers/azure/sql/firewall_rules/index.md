@@ -1,0 +1,39 @@
+---
+title: firewall_rules
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - firewall_rules
+  - sql
+  - azure    
+  - stackql
+  - infrastructure-as-code
+  - configuration-as-data
+  - cloud inventory
+description: Query, deploy and manage Azure resources using SQL
+custom_edit_url: null
+image: /img/providers/azure/stackql-azure-provider-featured-image.png
+---
+  
+    
+
+## Overview
+<table><tbody>
+<tr><td><b>Name</b></td><td><code>firewall_rules</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
+<tr><td><b>Id</b></td><td><code>azure.sql.firewall_rules</code></td></tr>
+</tbody></table>
+
+## Fields
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `endIpAddress` | `string` | The end IP address of the firewall rule. Must be IPv4 format. Must be greater than or equal to startIpAddress. Use value '0.0.0.0' for all Azure-internal IP addresses. |
+| `startIpAddress` | `string` | The start IP address of the firewall rule. Must be IPv4 format. Use value '0.0.0.0' for all Azure-internal IP addresses. |
+## Methods
+| Name | Accessible by | Required Params | Description |
+|:-----|:--------------|:----------------|:------------|
+| `FirewallRules_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Gets a list of firewall rules. |
+| `FirewallRules_CreateOrUpdate` | `INSERT` | `firewallRuleName, resourceGroupName, serverName, subscriptionId` | Creates or updates a firewall rule. |
+| `FirewallRules_Delete` | `DELETE` | `firewallRuleName, resourceGroupName, serverName, subscriptionId` | Deletes a firewall rule. |
+| `FirewallRules_Get` | `EXEC` | `firewallRuleName, resourceGroupName, serverName, subscriptionId` | Gets a firewall rule. |
+| `FirewallRules_Replace` | `EXEC` | `resourceGroupName, serverName, subscriptionId` | Replaces all firewall rules on the server. |

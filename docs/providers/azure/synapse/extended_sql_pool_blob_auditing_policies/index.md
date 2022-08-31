@@ -1,0 +1,45 @@
+---
+title: extended_sql_pool_blob_auditing_policies
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - extended_sql_pool_blob_auditing_policies
+  - synapse
+  - azure    
+  - stackql
+  - infrastructure-as-code
+  - configuration-as-data
+  - cloud inventory
+description: Query, deploy and manage Azure resources using SQL
+custom_edit_url: null
+image: /img/providers/azure/stackql-azure-provider-featured-image.png
+---
+  
+    
+
+## Overview
+<table><tbody>
+<tr><td><b>Name</b></td><td><code>extended_sql_pool_blob_auditing_policies</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
+<tr><td><b>Id</b></td><td><code>azure.synapse.extended_sql_pool_blob_auditing_policies</code></td></tr>
+</tbody></table>
+
+## Fields
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `storageEndpoint` | `string` | Specifies the blob storage endpoint (e.g. https://MyAccount.blob.core.windows.net). If state is Enabled, storageEndpoint or isAzureMonitorTargetEnabled is required. |
+| `storageAccountAccessKey` | `string` | Specifies the identifier key of the auditing storage account. <br />If state is Enabled and storageEndpoint is specified, not specifying the storageAccountAccessKey will use SQL server system-assigned managed identity to access the storage.<br />Prerequisites for using managed identity authentication:<br />1. Assign SQL Server a system-assigned managed identity in Azure Active Directory (AAD).<br />2. Grant SQL Server identity access to the storage account by adding 'Storage Blob Data Contributor' RBAC role to the server identity.<br />For more information, see [Auditing to storage using Managed Identity authentication](https://go.microsoft.com/fwlink/?linkid=2114355) |
+| `queueDelayMs` | `integer` | Specifies the amount of time in milliseconds that can elapse before audit actions are forced to be processed.<br />The default minimum value is 1000 (1 second). The maximum is 2,147,483,647. |
+| `retentionDays` | `integer` | Specifies the number of days to keep in the audit logs in the storage account. |
+| `isStorageSecondaryKeyInUse` | `boolean` | Specifies whether storageAccountAccessKey value is the storage's secondary key. |
+| `predicateExpression` | `string` | Specifies condition of where clause when creating an audit. |
+| `storageAccountSubscriptionId` | `string` | Specifies the blob storage subscription Id. |
+| `isAzureMonitorTargetEnabled` | `boolean` | Specifies whether audit events are sent to Azure Monitor. <br />In order to send the events to Azure Monitor, specify 'state' as 'Enabled' and 'isAzureMonitorTargetEnabled' as true.<br /><br />When using REST API to configure auditing, Diagnostic Settings with 'SQLSecurityAuditEvents' diagnostic logs category on the database should be also created.<br />Note that for server level audit you should use the 'master' database as {databaseName}.<br /><br />Diagnostic Settings URI format:<br />PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/providers/microsoft.insights/diagnosticSettings/{settingsName}?api-version=2017-05-01-preview<br /><br />For more information, see [Diagnostic Settings REST API](https://go.microsoft.com/fwlink/?linkid=2033207)<br />or [Diagnostic Settings PowerShell](https://go.microsoft.com/fwlink/?linkid=2033043)<br /> |
+| `auditActionsAndGroups` | `array` | Specifies the Actions-Groups and Actions to audit.<br /><br />The recommended set of action groups to use is the following combination - this will audit all the queries and stored procedures executed against the database, as well as successful and failed logins:<br /><br />BATCH_COMPLETED_GROUP,<br />SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP,<br />FAILED_DATABASE_AUTHENTICATION_GROUP.<br /><br />This above combination is also the set that is configured by default when enabling auditing from the Azure portal.<br /><br />The supported action groups to audit are (note: choose only specific groups that cover your auditing needs. Using unnecessary groups could lead to very large quantities of audit records):<br /><br />APPLICATION_ROLE_CHANGE_PASSWORD_GROUP<br />BACKUP_RESTORE_GROUP<br />DATABASE_LOGOUT_GROUP<br />DATABASE_OBJECT_CHANGE_GROUP<br />DATABASE_OBJECT_OWNERSHIP_CHANGE_GROUP<br />DATABASE_OBJECT_PERMISSION_CHANGE_GROUP<br />DATABASE_OPERATION_GROUP<br />DATABASE_PERMISSION_CHANGE_GROUP<br />DATABASE_PRINCIPAL_CHANGE_GROUP<br />DATABASE_PRINCIPAL_IMPERSONATION_GROUP<br />DATABASE_ROLE_MEMBER_CHANGE_GROUP<br />FAILED_DATABASE_AUTHENTICATION_GROUP<br />SCHEMA_OBJECT_ACCESS_GROUP<br />SCHEMA_OBJECT_CHANGE_GROUP<br />SCHEMA_OBJECT_OWNERSHIP_CHANGE_GROUP<br />SCHEMA_OBJECT_PERMISSION_CHANGE_GROUP<br />SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP<br />USER_CHANGE_PASSWORD_GROUP<br />BATCH_STARTED_GROUP<br />BATCH_COMPLETED_GROUP<br /><br />These are groups that cover all sql statements and stored procedures executed against the database, and should not be used in combination with other groups as this will result in duplicate audit logs.<br /><br />For more information, see [Database-Level Audit Action Groups](https://docs.microsoft.com/en-us/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups).<br /><br />For Database auditing policy, specific Actions can also be specified (note that Actions cannot be specified for Server auditing policy). The supported actions to audit are:<br />SELECT<br />UPDATE<br />INSERT<br />DELETE<br />EXECUTE<br />RECEIVE<br />REFERENCES<br /><br />The general form for defining an action to be audited is:<br />{action} ON {object} BY {principal}<br /><br />Note that &lt;object&gt; in the above format can refer to an object like a table, view, or stored procedure, or an entire database or schema. For the latter cases, the forms DATABASE::{db_name} and SCHEMA::{schema_name} are used, respectively.<br /><br />For example:<br />SELECT on dbo.myTable by public<br />SELECT on DATABASE::myDatabase by public<br />SELECT on SCHEMA::mySchema by public<br /><br />For more information, see [Database-Level Audit Actions](https://docs.microsoft.com/en-us/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-actions) |
+| `state` | `string` | Specifies the state of the policy. If state is Enabled, storageEndpoint or isAzureMonitorTargetEnabled are required. |
+## Methods
+| Name | Accessible by | Required Params | Description |
+|:-----|:--------------|:----------------|:------------|
+| `ExtendedSqlPoolBlobAuditingPolicies_ListBySqlPool` | `SELECT` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Lists extended auditing settings of a Sql pool. |
+| `ExtendedSqlPoolBlobAuditingPolicies_CreateOrUpdate` | `INSERT` | `blobAuditingPolicyName, resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Creates or updates an extended Sql pool's blob auditing policy. |
+| `ExtendedSqlPoolBlobAuditingPolicies_Get` | `EXEC` | `blobAuditingPolicyName, resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Gets an extended Sql pool's blob auditing policy. |

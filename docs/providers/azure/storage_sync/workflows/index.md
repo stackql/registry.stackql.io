@@ -1,0 +1,43 @@
+---
+title: workflows
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - workflows
+  - storage_sync
+  - azure    
+  - stackql
+  - infrastructure-as-code
+  - configuration-as-data
+  - cloud inventory
+description: Query, deploy and manage Azure resources using SQL
+custom_edit_url: null
+image: /img/providers/azure/stackql-azure-provider-featured-image.png
+---
+  
+    
+
+## Overview
+<table><tbody>
+<tr><td><b>Name</b></td><td><code>workflows</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
+<tr><td><b>Id</b></td><td><code>azure.storage_sync.workflows</code></td></tr>
+</tbody></table>
+
+## Fields
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `operation` | `string` | Type of the Operation Direction |
+| `status` | `string` | Type of the Workflow Status |
+| `steps` | `string` | workflow steps |
+| `commandName` | `string` | workflow command name. |
+| `createdTimestamp` | `string` | workflow created timestamp. |
+| `lastOperationId` | `string` | workflow last operation identifier. |
+| `lastStatusTimestamp` | `string` | workflow last status timestamp. |
+| `lastStepName` | `string` | last step name |
+## Methods
+| Name | Accessible by | Required Params | Description |
+|:-----|:--------------|:----------------|:------------|
+| `Workflows_ListByStorageSyncService` | `SELECT` | `resourceGroupName, storageSyncServiceName, subscriptionId` | Get a Workflow List |
+| `Workflows_Abort` | `EXEC` | `resourceGroupName, storageSyncServiceName, subscriptionId, workflowId` | Abort the given workflow. |
+| `Workflows_Get` | `EXEC` | `resourceGroupName, storageSyncServiceName, subscriptionId, workflowId` | Get Workflows resource |

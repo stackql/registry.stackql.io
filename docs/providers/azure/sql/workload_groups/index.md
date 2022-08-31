@@ -1,0 +1,42 @@
+---
+title: workload_groups
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - workload_groups
+  - sql
+  - azure    
+  - stackql
+  - infrastructure-as-code
+  - configuration-as-data
+  - cloud inventory
+description: Query, deploy and manage Azure resources using SQL
+custom_edit_url: null
+image: /img/providers/azure/stackql-azure-provider-featured-image.png
+---
+  
+    
+
+## Overview
+<table><tbody>
+<tr><td><b>Name</b></td><td><code>workload_groups</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
+<tr><td><b>Id</b></td><td><code>azure.sql.workload_groups</code></td></tr>
+</tbody></table>
+
+## Fields
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `importance` | `string` | The workload group importance level. |
+| `maxResourcePercent` | `integer` | The workload group cap percentage resource. |
+| `maxResourcePercentPerRequest` | `number` | The workload group request maximum grant percentage. |
+| `minResourcePercent` | `integer` | The workload group minimum percentage resource. |
+| `minResourcePercentPerRequest` | `number` | The workload group request minimum grant percentage. |
+| `queryExecutionTimeout` | `integer` | The workload group query execution timeout. |
+## Methods
+| Name | Accessible by | Required Params | Description |
+|:-----|:--------------|:----------------|:------------|
+| `WorkloadGroups_ListByDatabase` | `SELECT` | `databaseName, resourceGroupName, serverName, subscriptionId` | Gets the list of workload groups |
+| `WorkloadGroups_CreateOrUpdate` | `INSERT` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadGroupName` | Creates or updates a workload group. |
+| `WorkloadGroups_Delete` | `DELETE` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadGroupName` | Deletes a workload group. |
+| `WorkloadGroups_Get` | `EXEC` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadGroupName` | Gets a workload group |

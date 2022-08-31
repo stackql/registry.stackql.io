@@ -1,0 +1,50 @@
+---
+title: projects
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - projects
+  - machine_learning_experimentation
+  - azure    
+  - stackql
+  - infrastructure-as-code
+  - configuration-as-data
+  - cloud inventory
+description: Query, deploy and manage Azure resources using SQL
+custom_edit_url: null
+image: /img/providers/azure/stackql-azure-provider-featured-image.png
+---
+  
+    
+
+## Overview
+<table><tbody>
+<tr><td><b>Name</b></td><td><code>projects</code></td></tr>
+<tr><td><b>Type</b></td><td>Resource</td></tr>
+<tr><td><b>Id</b></td><td><code>azure.machine_learning_experimentation.projects</code></td></tr>
+</tbody></table>
+
+## Fields
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | The resource ID. |
+| `name` | `string` | The name of the resource. |
+| `description` | `string` | The description of this project. |
+| `type` | `string` | The type of the resource. |
+| `workspaceId` | `string` | The immutable id of the workspace which contains this project. |
+| `creationDate` | `string` | The creation date of the project in ISO8601 format. |
+| `friendlyName` | `string` | The friendly name for this project. |
+| `gitrepo` | `string` | The reference to git repo for this project. |
+| `tags` | `object` | The tags of the resource. |
+| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
+| `provisioningState` | `string` | The current deployment state of project resource. The provisioningState is to indicate states for resource provisioning. |
+| `accountId` | `string` | The immutable id of the team account which contains this project. |
+| `projectId` | `string` | The immutable id of this project. |
+## Methods
+| Name | Accessible by | Required Params | Description |
+|:-----|:--------------|:----------------|:------------|
+| `Projects_ListByWorkspace` | `SELECT` | `accountName, resourceGroupName, subscriptionId, workspaceName` | Lists all the available machine learning projects under the specified workspace. |
+| `Projects_CreateOrUpdate` | `INSERT` | `accountName, projectName, resourceGroupName, subscriptionId, workspaceName` | Creates or updates a project with the specified parameters. |
+| `Projects_Delete` | `DELETE` | `accountName, projectName, resourceGroupName, subscriptionId, workspaceName` | Deletes a project. |
+| `Projects_Get` | `EXEC` | `accountName, projectName, resourceGroupName, subscriptionId, workspaceName` | Gets the properties of the specified machine learning project. |
+| `Projects_Update` | `EXEC` | `accountName, projectName, resourceGroupName, subscriptionId, workspaceName` | Updates a project with the specified parameters. |
