@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `deletionTime` | `string` | Deletion time of the deleted account. |
+| `location` | `string` | Location of the deleted account. |
 | `restoreReference` | `string` | Can be used to attempt recovering this deleted account via PutStorageAccount API. |
 | `storageAccountResourceId` | `string` | Full resource id of the original storage account. |
 | `creationTime` | `string` | Creation time of the deleted account. |
-| `deletionTime` | `string` | Deletion time of the deleted account. |
-| `location` | `string` | Location of the deleted account. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

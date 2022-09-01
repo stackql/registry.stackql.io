@@ -30,14 +30,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
 | `description` | `string` | Description of offer. |
-| `delegatedOfferId` | `string` | The delegated offer identifier. |
-| `location` | `string` | Location of the resource |
-| `subscriptionCount` | `integer` | Current subscription count. |
 | `tags` | `object` | List of key-value pairs. |
-| `displayName` | `string` | Display name of offer. |
-| `externalReferenceId` | `string` | External reference identifier. |
-| `accessibilityState` | `string` | Represents the state of the offer |
 | `type` | `string` | Type of resource. |
+| `externalReferenceId` | `string` | External reference identifier. |
+| `location` | `string` | Location of the resource |
+| `accessibilityState` | `string` | Represents the state of the offer |
+| `subscriptionCount` | `integer` | Current subscription count. |
+| `displayName` | `string` | Display name of offer. |
+| `delegatedOfferId` | `string` | The delegated offer identifier. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

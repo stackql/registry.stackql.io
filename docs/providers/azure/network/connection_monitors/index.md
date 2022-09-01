@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the connection monitor. |
 | `name` | `string` | Name of the connection monitor. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `startTime` | `string` | The date and time when the connection monitor was started. |
-| `location` | `string` | Connection monitor location. |
-| `tags` | `object` | Connection monitor tags. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `monitoringStatus` | `string` | The monitoring status of the connection monitor. |
-| `type` | `string` | Connection monitor type. |
 | `connectionMonitorType` | `string` | Type of connection monitor. |
+| `tags` | `object` | Connection monitor tags. |
+| `type` | `string` | Connection monitor type. |
+| `location` | `string` | Connection monitor location. |
+| `startTime` | `string` | The date and time when the connection monitor was started. |
+| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

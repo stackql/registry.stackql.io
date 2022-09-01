@@ -27,16 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `metricValueUnit` | `string` | Metric value unit. |
-| `aggregationFunction` | `string` | Aggregation function name. |
-| `metricValue` | `number` | Metric value. |
-| `metricName` | `string` | Metric name. |
 | `startTime` | `string` | Observation start time. |
-| `databaseNames` | `array` | The list of database names. |
-| `queryExecutionCount` | `integer` | Number of query executions in this time interval. |
 | `endTime` | `string` | Observation end time. |
-| `metricDisplayName` | `string` | Metric display name. |
+| `databaseNames` | `array` | The list of database names. |
+| `metricName` | `string` | Metric name. |
+| `metricValueUnit` | `string` | Metric value unit. |
+| `metricValue` | `number` | Metric value. |
 | `queryId` | `string` | Database query identifier. |
+| `aggregationFunction` | `string` | Aggregation function name. |
+| `queryExecutionCount` | `integer` | Number of query executions in this time interval. |
+| `metricDisplayName` | `string` | Metric display name. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

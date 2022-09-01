@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `sid` | `string` | The server administrator Sid (Secure ID). |
 | `tenantId` | `string` | The server Active Directory Administrator tenant id. |
 | `administratorType` | `string` | The type of administrator. |
 | `login` | `string` | The server administrator login account name. |
-| `sid` | `string` | The server administrator Sid (Secure ID). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

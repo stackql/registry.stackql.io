@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Gets the job collection resource identifier. |
 | `name` | `string` | Gets or sets the job collection resource name. |
+| `location` | `string` | Gets or sets the storage account location. |
 | `properties` | `object` |  |
 | `tags` | `object` | Gets or sets the tags. |
 | `type` | `string` | Gets the job collection resource type. |
-| `location` | `string` | Gets or sets the storage account location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

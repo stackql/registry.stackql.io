@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the workflow trigger history name. |
-| `endTime` | `string` | Gets the end time. |
-| `trackingId` | `string` | Gets the tracking id. |
-| `fired` | `boolean` | The value indicating whether trigger was fired. |
-| `scheduledTime` | `string` | The scheduled time. |
-| `run` | `object` | The resource reference. |
-| `code` | `string` | Gets the code. |
-| `correlation` | `object` | The correlation property. |
-| `type` | `string` | Gets the workflow trigger history type. |
-| `status` | `string` | The workflow status. |
-| `inputsLink` | `object` | The content link. |
 | `startTime` | `string` | Gets the start time. |
+| `trackingId` | `string` | Gets the tracking id. |
+| `code` | `string` | Gets the code. |
+| `fired` | `boolean` | The value indicating whether trigger was fired. |
+| `inputsLink` | `object` | The content link. |
+| `correlation` | `object` | The correlation property. |
 | `outputsLink` | `object` | The content link. |
+| `status` | `string` | The workflow status. |
+| `type` | `string` | Gets the workflow trigger history type. |
+| `endTime` | `string` | Gets the end time. |
+| `run` | `object` | The resource reference. |
 | `error` | `object` |  |
+| `scheduledTime` | `string` | The scheduled time. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

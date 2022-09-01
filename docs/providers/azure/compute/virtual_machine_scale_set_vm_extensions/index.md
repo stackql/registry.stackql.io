@@ -30,17 +30,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource Id |
 | `name` | `string` | The name of the extension. |
 | `forceUpdateTag` | `string` | How the extension handler should be forced to update even if the extension configuration has not changed. |
-| `publisher` | `string` | The name of the extension handler publisher. |
-| `type` | `string` | Resource type |
-| `settings` | `object` | Json formatted public settings for the extension. |
-| `suppressFailures` | `boolean` | Indicates whether failures stemming from the extension will be suppressed (Operational failures such as not connecting to the VM will not be suppressed regardless of this value). The default is false. |
-| `autoUpgradeMinorVersion` | `boolean` | Indicates whether the extension should use a newer minor version if one is available at deployment time. Once deployed, however, the extension will not upgrade minor versions unless redeployed, even with this property set to true. |
-| `protectedSettingsFromKeyVault` | `object` | The extensions protected settings that are passed by reference, and consumed from key vault |
-| `provisioningState` | `string` | The provisioning state, which only appears in the response. |
-| `instanceView` | `object` | The instance view of a virtual machine extension. |
 | `protectedSettings` | `object` | The extension can contain either protectedSettings or protectedSettingsFromKeyVault or no protected settings at all. |
-| `enableAutomaticUpgrade` | `boolean` | Indicates whether the extension should be automatically upgraded by the platform if there is a newer version of the extension available. |
+| `suppressFailures` | `boolean` | Indicates whether failures stemming from the extension will be suppressed (Operational failures such as not connecting to the VM will not be suppressed regardless of this value). The default is false. |
 | `typeHandlerVersion` | `string` | Specifies the version of the script handler. |
+| `instanceView` | `object` | The instance view of a virtual machine extension. |
+| `autoUpgradeMinorVersion` | `boolean` | Indicates whether the extension should use a newer minor version if one is available at deployment time. Once deployed, however, the extension will not upgrade minor versions unless redeployed, even with this property set to true. |
+| `type` | `string` | Resource type |
+| `protectedSettingsFromKeyVault` | `object` | The extensions protected settings that are passed by reference, and consumed from key vault |
+| `settings` | `object` | Json formatted public settings for the extension. |
+| `publisher` | `string` | The name of the extension handler publisher. |
+| `provisioningState` | `string` | The provisioning state, which only appears in the response. |
+| `enableAutomaticUpgrade` | `boolean` | Indicates whether the extension should be automatically upgraded by the platform if there is a newer version of the extension available. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

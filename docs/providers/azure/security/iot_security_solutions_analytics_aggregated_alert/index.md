@@ -27,23 +27,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `description` | `string` | Description of the suspected vulnerability and meaning. |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `alertType` | `string` | Name of the alert type. |
-| `systemSource` | `string` | The type of the alerted resource (Azure, Non-Azure). |
 | `tags` | `object` | Resource tags |
-| `count` | `integer` | Number of alerts occurrences within the aggregated time window. |
-| `vendorName` | `string` | Name of the organization that raised the alert. |
 | `logAnalyticsQuery` | `string` | Log analytics query for getting the list of affected devices/alerts. |
-| `actionTaken` | `string` | IoT Security solution alert response. |
-| `topDevicesList` | `array` | 10 devices with the highest number of occurrences of this alert type, on this day. |
+| `alertType` | `string` | Name of the alert type. |
 | `effectedResourceType` | `string` | Azure resource ID of the resource that received the alerts. |
-| `reportedSeverity` | `string` | Assessed alert severity. |
+| `actionTaken` | `string` | IoT Security solution alert response. |
 | `remediationSteps` | `string` | Recommended steps for remediation. |
+| `count` | `integer` | Number of alerts occurrences within the aggregated time window. |
+| `systemSource` | `string` | The type of the alerted resource (Azure, Non-Azure). |
 | `aggregatedDateUtc` | `string` | Date of detection. |
+| `reportedSeverity` | `string` | Assessed alert severity. |
+| `vendorName` | `string` | Name of the organization that raised the alert. |
+| `topDevicesList` | `array` | 10 devices with the highest number of occurrences of this alert type, on this day. |
 | `alertDisplayName` | `string` | Display name of the alert type. |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

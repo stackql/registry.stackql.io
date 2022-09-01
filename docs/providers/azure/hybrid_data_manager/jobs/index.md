@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Id of the object. |
 | `name` | `string` | Name of the object. |
-| `bytesProcessed` | `integer` | Number of bytes processed by the job as of now. |
-| `endTime` | `string` | Time at which the job ended in UTC ISO 8601 format. |
-| `dataSinkName` | `string` | Name of the data sink on which the job was triggered. |
-| `totalBytesToProcess` | `integer` | Number of bytes to be processed by the job in total. |
+| `totalItemsToProcess` | `integer` | Number of items to be processed by the job in total |
 | `status` | `string` | Status of the job. |
-| `itemsProcessed` | `integer` | Number of items processed by the job as of now |
+| `totalBytesToProcess` | `integer` | Number of bytes to be processed by the job in total. |
+| `dataSourceName` | `string` | Name of the data source on which the job was triggered. |
+| `type` | `string` | Type of the object. |
+| `isCancellable` | `string` | Describes whether the job is cancellable. |
+| `dataSinkName` | `string` | Name of the data sink on which the job was triggered. |
 | `details` | `object` | Job details. |
 | `startTime` | `string` | Time at which the job was started in UTC ISO 8601 format. |
-| `dataSourceName` | `string` | Name of the data source on which the job was triggered. |
-| `totalItemsToProcess` | `integer` | Number of items to be processed by the job in total |
-| `type` | `string` | Type of the object. |
+| `endTime` | `string` | Time at which the job ended in UTC ISO 8601 format. |
 | `error` | `object` | Top level error for the job. |
-| `isCancellable` | `string` | Describes whether the job is cancellable. |
+| `itemsProcessed` | `integer` | Number of items processed by the job as of now |
+| `bytesProcessed` | `integer` | Number of bytes processed by the job as of now. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `value` | `array` | List of CDN origin groups within an endpoint |
 | `nextLink` | `string` | URL to get the next set of origin objects if there are any. |
+| `value` | `array` | List of CDN origin groups within an endpoint |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

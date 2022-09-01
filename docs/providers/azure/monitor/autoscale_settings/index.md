@@ -30,15 +30,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | the name of the autoscale setting. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `enabled` | `boolean` | the enabled flag. Specifies whether automatic scaling is enabled for the resource. The default value is 'false'. |
 | `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
+| `enabled` | `boolean` | the enabled flag. Specifies whether automatic scaling is enabled for the resource. The default value is 'false'. |
+| `targetResourceLocation` | `string` | the location of the resource that the autoscale setting should be added to. |
 | `profiles` | `array` | the collection of automatic scaling profiles that specify different scaling parameters for different time periods. A maximum of 20 profiles can be specified. |
 | `targetResourceUri` | `string` | the resource identifier of the resource that the autoscale setting should be added to. |
-| `type` | `string` | Azure resource type |
 | `notifications` | `array` | the collection of notifications. |
-| `location` | `string` | Resource location |
 | `predictiveAutoscalePolicy` | `object` | The parameters for enabling predictive autoscale. |
-| `targetResourceLocation` | `string` | the location of the resource that the autoscale setting should be added to. |
+| `location` | `string` | Resource location |
+| `type` | `string` | Azure resource type |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

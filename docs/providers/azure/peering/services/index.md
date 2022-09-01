@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
+| `tags` | `object` | The resource tags. |
 | `providerPrimaryPeeringLocation` | `string` | The primary peering (Microsoft/service provider) location to be used for customer traffic. |
-| `provisioningState` | `string` | The provisioning state of the resource. |
-| `sku` | `object` | The SKU that defines the type of the peering service. |
+| `providerBackupPeeringLocation` | `string` | The backup peering (Microsoft/service provider) location to be used for customer traffic. |
 | `peeringServiceLocation` | `string` | The location (state/province) of the customer. |
+| `provisioningState` | `string` | The provisioning state of the resource. |
 | `peeringServiceProvider` | `string` | The name of the service provider. |
+| `sku` | `object` | The SKU that defines the type of the peering service. |
 | `logAnalyticsWorkspaceProperties` | `object` | The properties that define a Log Analytics Workspace. |
 | `type` | `string` | The type of the resource. |
 | `location` | `string` | The location of the resource. |
-| `providerBackupPeeringLocation` | `string` | The backup peering (Microsoft/service provider) location to be used for customer traffic. |
-| `tags` | `object` | The resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -30,12 +30,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Id of the resource. |
 | `name` | `string` | Name of the resource. |
 | `type` | `string` | Type of the resource 'Microsoft.Support/communications'. |
-| `body` | `string` | Body of the communication. |
 | `communicationDirection` | `string` | Direction of communication. |
-| `communicationType` | `string` | Communication type. |
 | `sender` | `string` | Email address of the sender. This property is required if called by a service principal. |
 | `subject` | `string` | Subject of the communication. |
+| `communicationType` | `string` | Communication type. |
 | `createdDate` | `string` | Time in UTC (ISO 8601 format) when the communication was created. |
+| `body` | `string` | Body of the communication. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

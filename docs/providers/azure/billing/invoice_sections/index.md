@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `targetCloud` | `string` | Possible cloud environments. |
-| `type` | `string` | Resource type. |
-| `displayName` | `string` | The name of the invoice section. |
 | `labels` | `object` | Dictionary of metadata associated with the invoice section. |
-| `systemId` | `string` | The system generated unique identifier for an invoice section. |
-| `tags` | `object` | Dictionary of metadata associated with the invoice section. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain &lt; &gt; % & \ ? / |
+| `targetCloud` | `string` | Possible cloud environments. |
 | `state` | `string` | Identifies the state of an invoice section. |
+| `displayName` | `string` | The name of the invoice section. |
+| `tags` | `object` | Dictionary of metadata associated with the invoice section. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain &lt; &gt; % & \ ? / |
+| `type` | `string` | Resource type. |
+| `systemId` | `string` | The system generated unique identifier for an invoice section. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

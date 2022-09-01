@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `status` | `string` | Status of the shared private link resource |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `groupId` | `string` | The group id from the provider of resource the shared private link resource is for |
 | `privateLinkResourceId` | `string` | The resource id of the resource the shared private link resource is for |
 | `provisioningState` | `string` | Provisioning state of the resource. |
 | `requestMessage` | `string` | The request message for requesting approval of the shared private link resource |
-| `status` | `string` | Status of the shared private link resource |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

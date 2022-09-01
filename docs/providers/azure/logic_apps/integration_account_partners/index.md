@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `changedTime` | `string` | The changed time. |
-| `location` | `string` | The resource location. |
-| `createdTime` | `string` | The created time. |
-| `metadata` | `object` | The metadata. |
-| `partnerType` | `string` | The partner type. |
-| `content` | `object` | The integration account partner content. |
-| `type` | `string` | Gets the resource type. |
 | `tags` | `object` | The resource tags. |
+| `type` | `string` | Gets the resource type. |
+| `location` | `string` | The resource location. |
+| `changedTime` | `string` | The changed time. |
+| `partnerType` | `string` | The partner type. |
+| `metadata` | `object` | The metadata. |
+| `createdTime` | `string` | The created time. |
+| `content` | `object` | The integration account partner content. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

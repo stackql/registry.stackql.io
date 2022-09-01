@@ -27,25 +27,25 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `cloudManagementEndpoint` | `string` | Endpoint configured for management from the Azure portal. |
-| `registrationTimestamp` | `string` | First cluster sync timestamp. |
-| `provisioningState` | `string` | Provisioning state. |
-| `location` | `string` | The geo-location where the resource lives |
-| `lastSyncTimestamp` | `string` | Most recent cluster sync timestamp. |
-| `reportedProperties` | `object` | Properties reported by cluster agent. |
-| `cloudId` | `string` | Unique, immutable resource id. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `aadClientId` | `string` | App id of cluster AAD identity. |
-| `aadServicePrincipalObjectId` | `string` | Id of cluster identity service principal. |
-| `tags` | `object` | Resource tags. |
-| `desiredProperties` | `object` | Desired properties of the cluster. |
-| `billingModel` | `string` | Type of billing applied to the resource. |
-| `status` | `string` | Status of the cluster agent. |
-| `aadTenantId` | `string` | Tenant id of cluster AAD identity. |
-| `lastBillingTimestamp` | `string` | Most recent billing meter timestamp. |
-| `trialDaysRemaining` | `number` | Number of days remaining in the trial period. |
-| `aadApplicationObjectId` | `string` | Object id of cluster AAD identity. |
 | `serviceEndpoint` | `string` | Region specific DataPath Endpoint of the cluster. |
+| `provisioningState` | `string` | Provisioning state. |
+| `cloudId` | `string` | Unique, immutable resource id. |
+| `tags` | `object` | Resource tags. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `trialDaysRemaining` | `number` | Number of days remaining in the trial period. |
+| `billingModel` | `string` | Type of billing applied to the resource. |
+| `lastBillingTimestamp` | `string` | Most recent billing meter timestamp. |
+| `aadApplicationObjectId` | `string` | Object id of cluster AAD identity. |
+| `registrationTimestamp` | `string` | First cluster sync timestamp. |
+| `aadServicePrincipalObjectId` | `string` | Id of cluster identity service principal. |
+| `desiredProperties` | `object` | Desired properties of the cluster. |
+| `aadClientId` | `string` | App id of cluster AAD identity. |
+| `cloudManagementEndpoint` | `string` | Endpoint configured for management from the Azure portal. |
+| `lastSyncTimestamp` | `string` | Most recent cluster sync timestamp. |
+| `aadTenantId` | `string` | Tenant id of cluster AAD identity. |
+| `location` | `string` | The geo-location where the resource lives |
+| `status` | `string` | Status of the cluster agent. |
+| `reportedProperties` | `object` | Properties reported by cluster agent. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,15 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `externalMappings` | `array` | The private IP address external mapping for NAT. |
-| `mode` | `string` | The Source NAT direction of a VPN NAT. |
-| `type` | `string` | Resource type. |
 | `egressVpnSiteLinkConnections` | `array` | List of egress VpnSiteLinkConnections. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `ipConfigurationId` | `string` | The IP Configuration ID this NAT rule applies to. |
-| `internalMappings` | `array` | The private IP address internal mapping for NAT. |
 | `ingressVpnSiteLinkConnections` | `array` | List of ingress VpnSiteLinkConnections. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `internalMappings` | `array` | The private IP address internal mapping for NAT. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `externalMappings` | `array` | The private IP address external mapping for NAT. |
+| `ipConfigurationId` | `string` | The IP Configuration ID this NAT rule applies to. |
+| `type` | `string` | Resource type. |
+| `mode` | `string` | The Source NAT direction of a VPN NAT. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

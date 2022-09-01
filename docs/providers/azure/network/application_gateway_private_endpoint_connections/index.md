@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Name of the private endpoint connection on an application gateway. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `type` | `string` | Type of the resource. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `linkIdentifier` | `string` | The consumer link id. |
 | `privateEndpoint` | `object` | Private endpoint resource. |
 | `privateLinkServiceConnectionState` | `object` | A collection of information about the state of the connection between service consumer and provider. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `type` | `string` | Type of the resource. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

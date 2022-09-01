@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `networkFunctionType` | `string` | The network function type. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `skuType` | `string` | Sku type. |
-| `managedApplicationTemplate` | `object` | The template for the managed application deployment. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `networkFunctionTemplate` | `object` | The network function template. |
 | `deploymentMode` | `string` | The sku deployment mode. |
 | `managedApplicationParameters` | `object` | The parameters for the managed application. |
+| `managedApplicationTemplate` | `object` | The template for the managed application deployment. |
+| `networkFunctionType` | `string` | The network function type. |
+| `skuType` | `string` | Sku type. |
+| `networkFunctionTemplate` | `object` | The network function template. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `preview` | `boolean` | Indicates if the vendor sku is in preview mode. |
+| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

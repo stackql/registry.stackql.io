@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `temporalType` | `string` | The table temporal type. |
 | `columnType` | `string` | The column data type. |
 | `isComputed` | `boolean` | Whether or not the column is computed. |
 | `memoryOptimized` | `boolean` | Whether or not the column belongs to a memory optimized table. |
+| `temporalType` | `string` | The table temporal type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

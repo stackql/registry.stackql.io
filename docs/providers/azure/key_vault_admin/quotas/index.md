@@ -29,9 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
+| `type` | `string` | Type of resource. |
 | `location` | `string` | Location where resource is location. |
 | `tags` | `object` | List of key value pairs. |
-| `type` | `string` | Type of resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

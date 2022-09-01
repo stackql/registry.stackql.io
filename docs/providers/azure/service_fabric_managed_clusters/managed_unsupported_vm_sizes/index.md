@@ -29,8 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | VM Size id. |
 | `name` | `string` | VM Size name. |
-| `properties` | `object` | VM Sizes properties. |
 | `type` | `string` | VM Size type. |
+| `properties` | `object` | VM Sizes properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

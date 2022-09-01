@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `enableIpConnect` | `boolean` | Enable/Disable IP Connect feature of the Bastion Host resource. |
-| `ipConfigurations` | `array` | IP configuration of the Bastion Host resource. |
-| `dnsName` | `string` | FQDN for the endpoint on which bastion host is accessible. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `scaleUnits` | `integer` | The scale units for the Bastion Host resource. |
-| `type` | `string` | Resource type. |
-| `tags` | `object` | Resource tags. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `enableFileCopy` | `boolean` | Enable/Disable File Copy feature of the Bastion Host resource. |
+| `enableIpConnect` | `boolean` | Enable/Disable IP Connect feature of the Bastion Host resource. |
 | `location` | `string` | Resource location. |
+| `dnsName` | `string` | FQDN for the endpoint on which bastion host is accessible. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `disableCopyPaste` | `boolean` | Enable/Disable Copy/Paste feature of the Bastion Host resource. |
-| `enableTunneling` | `boolean` | Enable/Disable Tunneling feature of the Bastion Host resource. |
 | `sku` | `object` | The sku of this Bastion Host. |
+| `type` | `string` | Resource type. |
+| `ipConfigurations` | `array` | IP configuration of the Bastion Host resource. |
+| `enableTunneling` | `boolean` | Enable/Disable Tunneling feature of the Bastion Host resource. |
+| `scaleUnits` | `integer` | The scale units for the Bastion Host resource. |
 | `enableShareableLink` | `boolean` | Enable/Disable Shareable Link of the Bastion Host resource. |
+| `tags` | `object` | Resource tags. |
+| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

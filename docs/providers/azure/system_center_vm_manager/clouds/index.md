@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
-| `tags` | `object` | Resource tags |
-| `inventoryItemId` | `string` | Gets or sets the inventory Item ID for the resource. |
-| `location` | `string` | Gets or sets the location. |
-| `storageQoSPolicies` | `array` | List of QoS policies available for the cloud. |
-| `uuid` | `string` | Unique ID of the cloud. |
-| `cloudName` | `string` | Name of the cloud in VMMServer. |
-| `type` | `string` | Resource Type |
-| `vmmServerId` | `string` | ARM Id of the vmmServer resource in which this resource resides. |
 | `provisioningState` | `string` | Gets or sets the provisioning state. |
-| `extendedLocation` | `object` | The extended location. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `storageQoSPolicies` | `array` | List of QoS policies available for the cloud. |
+| `cloudName` | `string` | Name of the cloud in VMMServer. |
 | `cloudCapacity` | `object` | Cloud Capacity model |
+| `type` | `string` | Resource Type |
+| `extendedLocation` | `object` | The extended location. |
+| `inventoryItemId` | `string` | Gets or sets the inventory Item ID for the resource. |
+| `tags` | `object` | Resource tags |
+| `vmmServerId` | `string` | ARM Id of the vmmServer resource in which this resource resides. |
+| `uuid` | `string` | Unique ID of the cloud. |
+| `location` | `string` | Gets or sets the location. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -27,25 +27,25 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `lastBackupName` | `string` | Last backup file name for restore of this managed database. |
 | `autoCompleteRestore` | `boolean` | Whether to auto complete restore of this managed database. |
-| `recoverableDatabaseId` | `string` | The resource identifier of the recoverable database associated with create operation of this database. |
-| `location` | `string` | Resource location. |
-| `storageContainerSasToken` | `string` | Conditional. If createMode is RestoreExternalBackup, this value is required. Specifies the storage container sas token. |
+| `lastBackupName` | `string` | Last backup file name for restore of this managed database. |
 | `failoverGroupId` | `string` | Instance Failover Group resource identifier that this managed database belongs to. |
-| `earliestRestorePoint` | `string` | Earliest restore point in time for point in time restore. |
-| `longTermRetentionBackupResourceId` | `string` | The name of the Long Term Retention backup to be used for restore of this managed database. |
-| `status` | `string` | Status of the database. |
-| `collation` | `string` | Collation of the managed database. |
-| `defaultSecondaryLocation` | `string` | Geo paired region. |
-| `tags` | `object` | Resource tags. |
-| `storageContainerUri` | `string` | Conditional. If createMode is RestoreExternalBackup, this value is required. Specifies the uri of the storage container where backups for this restore are stored. |
-| `sourceDatabaseId` | `string` | The resource identifier of the source database associated with create operation of this database. |
-| `restorePointInTime` | `string` | Conditional. If createMode is PointInTimeRestore, this value is required. Specifies the point in time (ISO8601 format) of the source database that will be restored to create the new database. |
-| `catalogCollation` | `string` | Collation of the metadata catalog. |
 | `restorableDroppedDatabaseId` | `string` | The restorable dropped database resource id to restore when creating this database. |
-| `creationDate` | `string` | Creation date of the database. |
+| `restorePointInTime` | `string` | Conditional. If createMode is PointInTimeRestore, this value is required. Specifies the point in time (ISO8601 format) of the source database that will be restored to create the new database. |
+| `status` | `string` | Status of the database. |
+| `tags` | `object` | Resource tags. |
+| `earliestRestorePoint` | `string` | Earliest restore point in time for point in time restore. |
+| `defaultSecondaryLocation` | `string` | Geo paired region. |
 | `createMode` | `string` | Managed database create mode. PointInTimeRestore: Create a database by restoring a point in time backup of an existing database. SourceDatabaseName, SourceManagedInstanceName and PointInTime must be specified. RestoreExternalBackup: Create a database by restoring from external backup files. Collation, StorageContainerUri and StorageContainerSasToken must be specified. Recovery: Creates a database by restoring a geo-replicated backup. RecoverableDatabaseId must be specified as the recoverable database resource ID to restore. RestoreLongTermRetentionBackup: Create a database by restoring from a long term retention backup (longTermRetentionBackupResourceId required). |
+| `recoverableDatabaseId` | `string` | The resource identifier of the recoverable database associated with create operation of this database. |
+| `catalogCollation` | `string` | Collation of the metadata catalog. |
+| `longTermRetentionBackupResourceId` | `string` | The name of the Long Term Retention backup to be used for restore of this managed database. |
+| `sourceDatabaseId` | `string` | The resource identifier of the source database associated with create operation of this database. |
+| `storageContainerUri` | `string` | Conditional. If createMode is RestoreExternalBackup, this value is required. Specifies the uri of the storage container where backups for this restore are stored. |
+| `location` | `string` | Resource location. |
+| `creationDate` | `string` | Creation date of the database. |
+| `collation` | `string` | Collation of the managed database. |
+| `storageContainerSasToken` | `string` | Conditional. If createMode is RestoreExternalBackup, this value is required. Specifies the storage container sas token. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

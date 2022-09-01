@@ -28,27 +28,27 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | A description of the watchlist |
-| `rawContent` | `string` | The raw content that represents to watchlist items to create. In case of csv/tsv content type, it's the content of the file that will parsed by the endpoint |
-| `sourceType` | `string` | The sourceType of the watchlist |
-| `provider` | `string` | The provider of the watchlist |
-| `updated` | `string` | The last time the watchlist was updated |
-| `labels` | `array` | List of labels relevant to this watchlist |
-| `source` | `string` | The filename of the watchlist, called 'source' |
-| `createdBy` | `object` | User information that made some action |
-| `watchlistType` | `string` | The type of the watchlist |
-| `displayName` | `string` | The display name of the watchlist |
 | `tenantId` | `string` | The tenantId where the watchlist belongs to |
-| `itemsSearchKey` | `string` | The search key is used to optimize query performance when using watchlists for joins with other data. For example, enable a column with IP addresses to be the designated SearchKey field, then use this field as the key field when joining to other event data by IP address. |
-| `contentType` | `string` | The content type of the raw content. Example : text/csv or text/tsv  |
-| `created` | `string` | The time the watchlist was created |
-| `watchlistAlias` | `string` | The alias of the watchlist |
-| `isDeleted` | `boolean` | A flag that indicates if the watchlist is deleted or not |
-| `uploadStatus` | `string` | The status of the Watchlist upload : New, InProgress or Complete. Pls note : When a Watchlist upload status is equal to InProgress, the Watchlist cannot be deleted |
-| `numberOfLinesToSkip` | `integer` | The number of lines in a csv/tsv content to skip before the header |
 | `defaultDuration` | `string` | The default duration of a watchlist (in ISO 8601 duration format) |
+| `createdBy` | `object` | User information that made some action |
+| `uploadStatus` | `string` | The status of the Watchlist upload : New, InProgress or Complete. Pls note : When a Watchlist upload status is equal to InProgress, the Watchlist cannot be deleted |
+| `source` | `string` | The filename of the watchlist, called 'source' |
+| `displayName` | `string` | The display name of the watchlist |
+| `created` | `string` | The time the watchlist was created |
+| `contentType` | `string` | The content type of the raw content. Example : text/csv or text/tsv  |
+| `updated` | `string` | The last time the watchlist was updated |
+| `rawContent` | `string` | The raw content that represents to watchlist items to create. In case of csv/tsv content type, it's the content of the file that will parsed by the endpoint |
+| `numberOfLinesToSkip` | `integer` | The number of lines in a csv/tsv content to skip before the header |
+| `watchlistType` | `string` | The type of the watchlist |
+| `sourceType` | `string` | The sourceType of the watchlist |
+| `updatedBy` | `object` | User information that made some action |
 | `etag` | `string` | Etag of the azure resource |
 | `watchlistId` | `string` | The id (a Guid) of the watchlist |
-| `updatedBy` | `object` | User information that made some action |
+| `itemsSearchKey` | `string` | The search key is used to optimize query performance when using watchlists for joins with other data. For example, enable a column with IP addresses to be the designated SearchKey field, then use this field as the key field when joining to other event data by IP address. |
+| `watchlistAlias` | `string` | The alias of the watchlist |
+| `provider` | `string` | The provider of the watchlist |
+| `labels` | `array` | List of labels relevant to this watchlist |
+| `isDeleted` | `boolean` | A flag that indicates if the watchlist is deleted or not |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

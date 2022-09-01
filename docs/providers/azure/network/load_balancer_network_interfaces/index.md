@@ -29,31 +29,31 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `privateEndpoint` | `object` | Private endpoint resource. |
-| `nicType` | `string` | Type of Network Interface resource. |
-| `resourceGuid` | `string` | The resource GUID property of the network interface resource. |
-| `tapConfigurations` | `array` | A list of TapConfigurations of the network interface. |
-| `virtualMachine` | `object` | Reference to another subresource. |
-| `enableAcceleratedNetworking` | `boolean` | If the network interface is configured for accelerated networking. Not applicable to VM sizes which require accelerated networking. |
-| `workloadType` | `string` | WorkloadType of the NetworkInterface for BareMetal resources |
-| `enableIPForwarding` | `boolean` | Indicates whether IP forwarding is enabled on this network interface. |
-| `tags` | `object` | Resource tags. |
-| `vnetEncryptionSupported` | `boolean` | Whether the virtual machine this nic is attached to supports encryption. |
-| `primary` | `boolean` | Whether this is a primary network interface on a virtual machine. |
-| `dnsSettings` | `object` | DNS settings of a network interface. |
-| `dscpConfiguration` | `object` | Reference to another subresource. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `privateLinkService` | `object` | Private link service resource. |
-| `ipConfigurations` | `array` | A list of IPConfigurations of the network interface. |
 | `hostedWorkloads` | `array` | A list of references to linked BareMetal resources. |
-| `extendedLocation` | `object` | ExtendedLocation complex type. |
-| `networkSecurityGroup` | `object` | NetworkSecurityGroup resource. |
-| `migrationPhase` | `string` | Migration phase of Network Interface resource. |
-| `auxiliaryMode` | `string` | Auxiliary mode of Network Interface resource. |
 | `location` | `string` | Resource location. |
+| `enableIPForwarding` | `boolean` | Indicates whether IP forwarding is enabled on this network interface. |
 | `macAddress` | `string` | The MAC address of the network interface. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `type` | `string` | Resource type. |
+| `extendedLocation` | `object` | ExtendedLocation complex type. |
+| `tags` | `object` | Resource tags. |
+| `dnsSettings` | `object` | DNS settings of a network interface. |
+| `tapConfigurations` | `array` | A list of TapConfigurations of the network interface. |
+| `primary` | `boolean` | Whether this is a primary network interface on a virtual machine. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `workloadType` | `string` | WorkloadType of the NetworkInterface for BareMetal resources |
+| `privateEndpoint` | `object` | Private endpoint resource. |
+| `vnetEncryptionSupported` | `boolean` | Whether the virtual machine this nic is attached to supports encryption. |
+| `auxiliaryMode` | `string` | Auxiliary mode of Network Interface resource. |
+| `enableAcceleratedNetworking` | `boolean` | If the network interface is configured for accelerated networking. Not applicable to VM sizes which require accelerated networking. |
+| `networkSecurityGroup` | `object` | NetworkSecurityGroup resource. |
+| `resourceGuid` | `string` | The resource GUID property of the network interface resource. |
+| `virtualMachine` | `object` | Reference to another subresource. |
+| `ipConfigurations` | `array` | A list of IPConfigurations of the network interface. |
+| `dscpConfiguration` | `object` | Reference to another subresource. |
+| `migrationPhase` | `string` | Migration phase of Network Interface resource. |
+| `nicType` | `string` | Type of Network Interface resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

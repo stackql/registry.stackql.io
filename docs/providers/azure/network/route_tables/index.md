@@ -29,15 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `resourceGuid` | `string` | The resource GUID property of the route table. |
-| `disableBgpRoutePropagation` | `boolean` | Whether to disable the routes learned by BGP on that route table. True means disable. |
-| `location` | `string` | Resource location. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `resourceGuid` | `string` | The resource GUID property of the route table. |
+| `subnets` | `array` | A collection of references to subnets. |
+| `location` | `string` | Resource location. |
 | `routes` | `array` | Collection of routes contained within a route table. |
 | `type` | `string` | Resource type. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `disableBgpRoutePropagation` | `boolean` | Whether to disable the routes learned by BGP on that route table. True means disable. |
 | `tags` | `object` | Resource tags. |
-| `subnets` | `array` | A collection of references to subnets. |
+| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

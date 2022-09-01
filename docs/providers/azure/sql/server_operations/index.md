@@ -28,18 +28,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | The operation description. |
-| `serverName` | `string` | The name of the server. |
-| `operation` | `string` | The name of operation. |
-| `operationFriendlyName` | `string` | The friendly name of operation. |
-| `errorDescription` | `string` | The operation error description. |
 | `estimatedCompletionTime` | `string` | The estimated completion time of the operation. |
+| `operation` | `string` | The name of operation. |
 | `errorCode` | `integer` | The operation error code. |
-| `errorSeverity` | `integer` | The operation error severity. |
-| `state` | `string` | The operation state. |
-| `percentComplete` | `integer` | The percentage of the operation completed. |
-| `startTime` | `string` | The operation start time. |
 | `isUserError` | `boolean` | Whether or not the error is a user error. |
 | `isCancellable` | `boolean` | Whether the operation can be cancelled. |
+| `serverName` | `string` | The name of the server. |
+| `errorDescription` | `string` | The operation error description. |
+| `startTime` | `string` | The operation start time. |
+| `percentComplete` | `integer` | The percentage of the operation completed. |
+| `operationFriendlyName` | `string` | The friendly name of operation. |
+| `state` | `string` | The operation state. |
+| `errorSeverity` | `integer` | The operation error severity. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

@@ -29,17 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `metadata` | `object` | The metadata. |
 | `tags` | `object` | The resource tags. |
-| `agreementType` | `string` | The agreement type. |
+| `hostPartner` | `string` | The integration account partner that is set as host partner for this agreement. |
 | `changedTime` | `string` | The changed time. |
 | `guestIdentity` | `object` | The integration account partner's business identity. |
-| `type` | `string` | Gets the resource type. |
-| `createdTime` | `string` | The created time. |
-| `guestPartner` | `string` | The integration account partner that is set as guest partner for this agreement. |
 | `hostIdentity` | `object` | The integration account partner's business identity. |
+| `agreementType` | `string` | The agreement type. |
+| `metadata` | `object` | The metadata. |
+| `type` | `string` | Gets the resource type. |
+| `guestPartner` | `string` | The integration account partner that is set as guest partner for this agreement. |
 | `location` | `string` | The resource location. |
-| `hostPartner` | `string` | The integration account partner that is set as host partner for this agreement. |
+| `createdTime` | `string` | The created time. |
 | `content` | `object` | The integration account agreement content. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

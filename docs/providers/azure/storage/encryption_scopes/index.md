@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `keyVaultProperties` | `object` | The key vault properties for the encryption scope. This is a required field if encryption scope 'source' attribute is set to 'Microsoft.KeyVault'. |
 | `state` | `string` | The state of the encryption scope. Possible values (case-insensitive):  Enabled, Disabled. |
+| `creationTime` | `string` | Gets the creation date and time of the encryption scope in UTC. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `requireInfrastructureEncryption` | `boolean` | A boolean indicating whether or not the service applies a secondary layer of encryption with platform managed keys for data at rest. |
 | `lastModifiedTime` | `string` | Gets the last modification date and time of the encryption scope in UTC. |
 | `source` | `string` | The provider for the encryption scope. Possible values (case-insensitive):  Microsoft.Storage, Microsoft.KeyVault. |
-| `creationTime` | `string` | Gets the creation date and time of the encryption scope in UTC. |
-| `requireInfrastructureEncryption` | `boolean` | A boolean indicating whether or not the service applies a secondary layer of encryption with platform managed keys for data at rest. |
+| `keyVaultProperties` | `object` | The key vault properties for the encryption scope. This is a required field if encryption scope 'source' attribute is set to 'Microsoft.KeyVault'. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

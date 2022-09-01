@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `creationDate` | `string` | The creation date of the database (ISO8601 format). |
 | `databaseName` | `string` | The name of the database. |
 | `deletionDate` | `string` | The deletion date of the database (ISO8601 format). |
 | `earliestRestoreDate` | `string` | The earliest restore date of the database (ISO8601 format). |
 | `location` | `string` | Resource location. |
 | `tags` | `object` | Resource tags. |
-| `creationDate` | `string` | The creation date of the database (ISO8601 format). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

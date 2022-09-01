@@ -27,7 +27,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `name` | `string` | The operation name: {provider}/{resource}/{operation} |
+| `name` | `string` | The operation name: &#123;provider&#125;/&#123;resource&#125;/&#123;operation&#125; |
 | `properties` | `object` | The details of operation. |
 | `display` | `object` | The object that represents the operation. |
 ## Methods

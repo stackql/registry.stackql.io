@@ -29,15 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The Azure Resource Manager resource ID for the managed HSM Pool. |
 | `name` | `string` | The name of the managed HSM Pool. |
-| `location` | `string` | The supported Azure location where the managed HSM Pool should be created. |
-| `privateEndpoint` | `object` | Private endpoint object properties. |
-| `etag` | `string` | Modified whenever there is a change in the state of private endpoint connection. |
 | `tags` | `object` | Resource tags |
-| `type` | `string` | The resource type of the managed HSM Pool. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the key vault resource. |
-| `privateLinkServiceConnectionState` | `object` | An object that represents the approval state of the private link connection. |
 | `sku` | `object` | SKU details |
+| `privateLinkServiceConnectionState` | `object` | An object that represents the approval state of the private link connection. |
+| `location` | `string` | The supported Azure location where the managed HSM Pool should be created. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `type` | `string` | The resource type of the managed HSM Pool. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the key vault resource. |
+| `etag` | `string` | Modified whenever there is a change in the state of private endpoint connection. |
+| `privateEndpoint` | `object` | Private endpoint object properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -28,11 +28,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | Description about the SparkConfiguration. |
-| `annotations` | `array` | Annotations for SparkConfiguration. |
 | `configs` | `object` | SparkConfiguration configs. |
 | `created` | `string` | The timestamp of resource creation. |
 | `createdBy` | `string` | The identity that created the resource. |
 | `notes` | `string` | additional Notes. |
+| `annotations` | `array` | Annotations for SparkConfiguration. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `sid` | `string` | SID (object ID) of the managed instance administrator. |
-| `tenantId` | `string` | Tenant ID of the managed instance administrator. |
 | `administratorType` | `string` | Type of the managed instance administrator. |
 | `login` | `string` | Login name of the managed instance administrator. |
+| `sid` | `string` | SID (object ID) of the managed instance administrator. |
+| `tenantId` | `string` | Tenant ID of the managed instance administrator. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -30,14 +30,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
 | `type` | `string` | The resource type. |
-| `endpoint` | `string` | The full CName endpoint for this account. |
-| `lastModifiedTime` | `string` | The account last modified time. |
-| `location` | `string` | The resource location. |
-| `tags` | `object` | The resource tags. |
 | `creationTime` | `string` | The account creation time. |
+| `endpoint` | `string` | The full CName endpoint for this account. |
 | `provisioningState` | `string` | The provisioning status of the Data Lake Store account. |
+| `location` | `string` | The resource location. |
 | `accountId` | `string` | The unique identifier associated with this Data Lake Store account. |
 | `state` | `string` | The state of the Data Lake Store account. |
+| `tags` | `object` | The resource tags. |
+| `lastModifiedTime` | `string` | The account last modified time. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

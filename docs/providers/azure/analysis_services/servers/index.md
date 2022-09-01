@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | An identifier that represents the Analysis Services resource. |
 | `name` | `string` | The name of the Analysis Services resource. |
-| `sku` | `object` | Represents the SKU name and Azure pricing tier for Analysis Services resource. |
+| `location` | `string` | Location of the Analysis Services resource. |
 | `serverFullName` | `string` | The full name of the Analysis Services resource. |
 | `tags` | `object` | Key-value pairs of additional resource provisioning properties. |
-| `location` | `string` | Location of the Analysis Services resource. |
+| `sku` | `object` | Represents the SKU name and Azure pricing tier for Analysis Services resource. |
+| `type` | `string` | The type of the Analysis Services resource. |
 | `state` | `string` | The current state of Analysis Services resource. The state is to indicate more states outside of resource provisioning. |
 | `provisioningState` | `string` | The current deployment state of Analysis Services resource. The provisioningState is to indicate states for resource provisioning. |
-| `type` | `string` | The type of the Analysis Services resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

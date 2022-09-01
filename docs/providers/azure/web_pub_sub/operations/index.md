@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `name` | `string` | Name of the operation with format: {provider}/{resource}/{operation} |
-| `origin` | `string` | Optional. The intended executor of the operation; governs the display of the operation in the RBAC UX and the audit logs UX. |
-| `properties` | `object` | Extra Operation properties. |
+| `name` | `string` | Name of the operation with format: &#123;provider&#125;/&#123;resource&#125;/&#123;operation&#125; |
 | `display` | `object` | The object that describes a operation. |
 | `isDataAction` | `boolean` | If the operation is a data action. (for data plane rbac) |
+| `origin` | `string` | Optional. The intended executor of the operation; governs the display of the operation in the RBAC UX and the audit logs UX. |
+| `properties` | `object` | Extra Operation properties. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

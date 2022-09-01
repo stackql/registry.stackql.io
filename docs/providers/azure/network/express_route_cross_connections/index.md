@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `location` | `string` | Resource location. |
-| `tags` | `object` | Resource tags. |
-| `peerings` | `array` | The list of peerings. |
 | `bandwidthInMbps` | `integer` | The circuit bandwidth In Mbps. |
-| `primaryAzurePort` | `string` | The name of the primary port. |
-| `expressRouteCircuit` | `object` | Reference to an express route circuit. |
-| `secondaryAzurePort` | `string` | The name of the secondary port. |
-| `serviceProviderNotes` | `string` | Additional read only notes set by the connectivity provider. |
-| `serviceProviderProvisioningState` | `string` | The ServiceProviderProvisioningState state of the resource. |
+| `tags` | `object` | Resource tags. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `type` | `string` | Resource type. |
+| `expressRouteCircuit` | `object` | Reference to an express route circuit. |
+| `peerings` | `array` | The list of peerings. |
+| `serviceProviderProvisioningState` | `string` | The ServiceProviderProvisioningState state of the resource. |
 | `sTag` | `integer` | The identifier of the circuit traffic. |
-| `peeringLocation` | `string` | The peering location of the ExpressRoute circuit. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `serviceProviderNotes` | `string` | Additional read only notes set by the connectivity provider. |
+| `peeringLocation` | `string` | The peering location of the ExpressRoute circuit. |
+| `type` | `string` | Resource type. |
+| `secondaryAzurePort` | `string` | The name of the secondary port. |
+| `location` | `string` | Resource location. |
+| `primaryAzurePort` | `string` | The name of the primary port. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

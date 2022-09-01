@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `tags` | `object` | Contains resource tags defined as key/value pairs. |
-| `identity` | `object` | Managed service identity (system assigned and/or user assigned identities) |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `sku` | `object` | The resource model definition representing SKU |
 | `location` | `string` | Specifies the location of the resource. |
-| `properties` | `object` | Machine Learning compute object. |
+| `tags` | `object` | Contains resource tags defined as key/value pairs. |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `sku` | `object` | The resource model definition representing SKU |
+| `identity` | `object` | Managed service identity (system assigned and/or user assigned identities) |
+| `properties` | `object` | Machine Learning compute object. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `vmOsType` | `string` | Operating system type. |
-| `publisher` | `string` | The publisher of the VM Extension |
-| `type` | `string` | Type of Resource. |
-| `computeRole` | `string` | Compute role |
+| `isSystemExtension` | `boolean` | Indicates if the extension is for the system. |
 | `provisioningState` | `string` | The provisioning state of the resource. |
+| `vmOsType` | `string` | Operating system type. |
+| `location` | `string` | Location of the resource. |
+| `vmScaleSetEnabled` | `boolean` | Value indicating whether the extension is enabled for virtual machine scale set support. |
+| `publisher` | `string` | The publisher of the VM Extension |
+| `computeRole` | `string` | Compute role |
+| `type` | `string` | Type of Resource. |
 | `sourceBlob` | `object` | Azure or AzureStack blob information. |
 | `supportMultipleExtensions` | `boolean` | True if supports multiple extensions. |
-| `isSystemExtension` | `boolean` | Indicates if the extension is for the system. |
-| `vmScaleSetEnabled` | `boolean` | Value indicating whether the extension is enabled for virtual machine scale set support. |
-| `location` | `string` | Location of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

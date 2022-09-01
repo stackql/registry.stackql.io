@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` |  |
 | `name` | `string` |  |
-| `virtualNicId` | `string` | The ID of the Microsoft.Network/networkInterfaces resource which the service have |
 | `systemData` | `object` |  |
-| `autoStopDelay` | `string` | The time delay before the service is auto-stopped when idle. |
-| `tags` | `object` |  |
 | `virtualSubnetId` | `string` | The ID of the Microsoft.Network/virtualNetworks/subnets resource to which the service should be joined |
 | `deleteResourcesOnStop` | `boolean` | Whether service resources should be deleted when stopped. (Turned on by default) |
-| `location` | `string` |  |
-| `publicKey` | `string` | The public key of the service, used to encrypt secrets sent to the service |
-| `sku` | `object` | An Azure SKU instance |
-| `type` | `string` |  |
 | `provisioningState` | `string` | The resource's provisioning state |
 | `etag` | `string` | HTTP strong entity tag value. Ignored if submitted |
+| `tags` | `object` |  |
+| `sku` | `object` | An Azure SKU instance |
+| `virtualNicId` | `string` | The ID of the Microsoft.Network/networkInterfaces resource which the service have |
+| `publicKey` | `string` | The public key of the service, used to encrypt secrets sent to the service |
 | `kind` | `string` | The resource kind. Only 'vm' (the default) is supported. |
+| `type` | `string` |  |
+| `location` | `string` |  |
+| `autoStopDelay` | `string` | The time delay before the service is auto-stopped when idle. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

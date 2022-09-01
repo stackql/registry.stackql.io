@@ -28,16 +28,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `location` | `string` | The geo-location where the resource lives |
-| `monthlyBackupsToKeep` | `integer` | Monthly backups count to keep |
-| `dailyBackupsToKeep` | `integer` | Daily backups count to keep |
-| `enabled` | `boolean` | The property to decide policy is enabled or not |
-| `volumeBackups` | `array` | A list of volumes assigned to this policy |
-| `volumesAssigned` | `integer` | Volumes using current backup policy |
-| `tags` | `object` | Resource tags. |
-| `backupPolicyId` | `string` | Backup Policy Resource ID |
-| `provisioningState` | `string` | Azure lifecycle management |
 | `weeklyBackupsToKeep` | `integer` | Weekly backups count to keep |
+| `tags` | `object` | Resource tags. |
+| `volumesAssigned` | `integer` | Volumes using current backup policy |
+| `dailyBackupsToKeep` | `integer` | Daily backups count to keep |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `monthlyBackupsToKeep` | `integer` | Monthly backups count to keep |
+| `volumeBackups` | `array` | A list of volumes assigned to this policy |
+| `backupPolicyId` | `string` | Backup Policy Resource ID |
+| `enabled` | `boolean` | The property to decide policy is enabled or not |
+| `provisioningState` | `string` | Azure lifecycle management |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

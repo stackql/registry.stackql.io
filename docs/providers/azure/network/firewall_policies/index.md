@@ -29,26 +29,26 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `tags` | `object` | Resource tags. |
-| `firewalls` | `array` | List of references to Azure Firewalls that this Firewall Policy is associated with. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `insights` | `object` | Firewall Policy Insights. |
-| `ruleCollectionGroups` | `array` | List of references to FirewallPolicyRuleCollectionGroups. |
 | `sku` | `object` | SKU of Firewall policy. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `location` | `string` | Resource location. |
-| `explicitProxy` | `object` | Explicit Proxy Settings in Firewall Policy. |
-| `threatIntelMode` | `string` | The operation mode for Threat Intel. |
-| `sql` | `object` | SQL Settings in Firewall Policy. |
-| `snat` | `object` | The private IP addresses/IP ranges to which traffic will not be SNAT. |
 | `identity` | `object` | Identity for the resource. |
-| `transportSecurity` | `object` | Configuration needed to perform TLS termination & initiation. |
 | `intrusionDetection` | `object` | Configuration for intrusion detection mode and rules. |
-| `threatIntelWhitelist` | `object` | ThreatIntel Whitelist for Firewall Policy. |
-| `type` | `string` | Resource type. |
-| `childPolicies` | `array` | List of references to Child Firewall Policies. |
-| `dnsSettings` | `object` | DNS Proxy Settings in Firewall Policy. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `basePolicy` | `object` | Reference to another subresource. |
+| `explicitProxy` | `object` | Explicit Proxy Settings in Firewall Policy. |
+| `transportSecurity` | `object` | Configuration needed to perform TLS termination & initiation. |
+| `dnsSettings` | `object` | DNS Proxy Settings in Firewall Policy. |
+| `threatIntelWhitelist` | `object` | ThreatIntel Whitelist for Firewall Policy. |
+| `location` | `string` | Resource location. |
+| `type` | `string` | Resource type. |
+| `ruleCollectionGroups` | `array` | List of references to FirewallPolicyRuleCollectionGroups. |
+| `snat` | `object` | The private IP addresses/IP ranges to which traffic will not be SNAT. |
+| `childPolicies` | `array` | List of references to Child Firewall Policies. |
+| `firewalls` | `array` | List of references to Azure Firewalls that this Firewall Policy is associated with. |
+| `sql` | `object` | SQL Settings in Firewall Policy. |
+| `threatIntelMode` | `string` | The operation mode for Threat Intel. |
+| `tags` | `object` | Resource tags. |
+| `insights` | `object` | Firewall Policy Insights. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

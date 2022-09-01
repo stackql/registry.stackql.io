@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `encryption` | `object` | The encryption settings for a configuration store. |
-| `lockbox` | `object` | Settings concerning lockbox. |
-| `networkInjection` | `object` | Settings concerning network injection. |
-| `systemId` | `string` | The internally assigned unique identifier of the resource. |
 | `location` | `string` | The geo-location where the resource lives |
-| `kind` | `string` | The Kind (type) of Enterprise Policy |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
+| `kind` | `string` | The Kind (type) of Enterprise Policy |
+| `systemId` | `string` | The internally assigned unique identifier of the resource. |
 | `identity` | `object` | The identity of the EnterprisePolicy. |
+| `lockbox` | `object` | Settings concerning lockbox. |
+| `encryption` | `object` | The encryption settings for a configuration store. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `networkInjection` | `object` | Settings concerning network injection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

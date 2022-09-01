@@ -27,28 +27,28 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `requiresDuplicateDetection` | `boolean` | Value indicating if this topic requires duplicate detection. |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.EventHub/Namespaces" or "Microsoft.EventHub/Namespaces/EventHubs" |
-| `location` | `string` | The geo-location where the resource lives |
-| `subscriptionCount` | `integer` | Number of subscriptions. |
-| `status` | `string` | Entity status. |
+| `countDetails` | `object` | Message Count Details. |
+| `accessedAt` | `string` | Last time the message was sent, or a request was received, for this topic. |
+| `duplicateDetectionHistoryTimeWindow` | `string` | ISO8601 timespan structure that defines the duration of the duplicate detection history. The default value is 10 minutes. |
+| `maxMessageSizeInKilobytes` | `integer` | Maximum size (in KB) of the message payload that can be accepted by the topic. This property is only used in Premium today and default is 1024. |
 | `maxSizeInMegabytes` | `integer` | Maximum size of the topic in megabytes, which is the size of the memory allocated for the topic. Default is 1024. |
 | `autoDeleteOnIdle` | `string` | ISO 8601 timespan idle interval after which the topic is automatically deleted. The minimum duration is 5 minutes. |
-| `duplicateDetectionHistoryTimeWindow` | `string` | ISO8601 timespan structure that defines the duration of the duplicate detection history. The default value is 10 minutes. |
-| `supportOrdering` | `boolean` | Value that indicates whether the topic supports ordering. |
-| `enableExpress` | `boolean` | Value that indicates whether Express Entities are enabled. An express topic holds a message in memory temporarily before writing it to persistent storage. |
-| `createdAt` | `string` | Exact time the message was created. |
-| `defaultMessageTimeToLive` | `string` | ISO 8601 Default message timespan to live value. This is the duration after which the message expires, starting from when the message is sent to Service Bus. This is the default value used when TimeToLive is not set on a message itself. |
-| `countDetails` | `object` | Message Count Details. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `enablePartitioning` | `boolean` | Value that indicates whether the topic to be partitioned across multiple message brokers is enabled. |
-| `updatedAt` | `string` | The exact time the message was updated. |
-| `enableBatchedOperations` | `boolean` | Value that indicates whether server-side batched operations are enabled. |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.EventHub/Namespaces" or "Microsoft.EventHub/Namespaces/EventHubs" |
 | `sizeInBytes` | `integer` | Size of the topic, in bytes. |
-| `maxMessageSizeInKilobytes` | `integer` | Maximum size (in KB) of the message payload that can be accepted by the topic. This property is only used in Premium today and default is 1024. |
-| `accessedAt` | `string` | Last time the message was sent, or a request was received, for this topic. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `location` | `string` | The geo-location where the resource lives |
+| `createdAt` | `string` | Exact time the message was created. |
+| `requiresDuplicateDetection` | `boolean` | Value indicating if this topic requires duplicate detection. |
+| `enableBatchedOperations` | `boolean` | Value that indicates whether server-side batched operations are enabled. |
+| `subscriptionCount` | `integer` | Number of subscriptions. |
+| `enablePartitioning` | `boolean` | Value that indicates whether the topic to be partitioned across multiple message brokers is enabled. |
+| `status` | `string` | Entity status. |
+| `updatedAt` | `string` | The exact time the message was updated. |
+| `supportOrdering` | `boolean` | Value that indicates whether the topic supports ordering. |
+| `defaultMessageTimeToLive` | `string` | ISO 8601 Default message timespan to live value. This is the duration after which the message expires, starting from when the message is sent to Service Bus. This is the default value used when TimeToLive is not set on a message itself. |
+| `enableExpress` | `boolean` | Value that indicates whether Express Entities are enabled. An express topic holds a message in memory temporarily before writing it to persistent storage. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

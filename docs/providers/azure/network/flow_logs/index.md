@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `location` | `string` | Resource location. |
-| `tags` | `object` | Resource tags. |
 | `enabled` | `boolean` | Flag to enable/disable flow logging. |
 | `format` | `object` | Parameters that define the flow log format. |
-| `flowAnalyticsConfiguration` | `object` | Parameters that define the configuration of traffic analytics. |
 | `targetResourceId` | `string` | ID of network security group to which flow log will be applied. |
+| `flowAnalyticsConfiguration` | `object` | Parameters that define the configuration of traffic analytics. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `location` | `string` | Resource location. |
 | `retentionPolicy` | `object` | Parameters that define the retention policy for flow log. |
 | `storageId` | `string` | ID of the storage account which is used to store the flow log. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `targetResourceGuid` | `string` | Guid of network security group to which flow log will be applied. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource type. |
+| `targetResourceGuid` | `string` | Guid of network security group to which flow log will be applied. |
+| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

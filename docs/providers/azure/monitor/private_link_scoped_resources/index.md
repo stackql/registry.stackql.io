@@ -27,9 +27,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `linkedResourceId` | `string` | The resource id of the scoped Azure monitor resource. |
 | `provisioningState` | `string` | State of the private endpoint connection. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `linkedResourceId` | `string` | The resource id of the scoped Azure monitor resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

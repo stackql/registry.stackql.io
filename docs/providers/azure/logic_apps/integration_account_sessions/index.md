@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `content` | `object` |  |
-| `createdTime` | `string` | The created time. |
-| `location` | `string` | The resource location. |
 | `tags` | `object` | The resource tags. |
 | `type` | `string` | Gets the resource type. |
 | `changedTime` | `string` | The changed time. |
+| `content` | `object` |  |
+| `createdTime` | `string` | The created time. |
+| `location` | `string` | The resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

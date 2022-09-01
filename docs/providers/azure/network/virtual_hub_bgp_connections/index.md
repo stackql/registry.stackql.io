@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Name of the connection. |
-| `peerIp` | `string` | Peer IP. |
-| `type` | `string` | Connection type. |
-| `connectionState` | `string` | The current state of the VirtualHub to Peer. |
-| `peerAsn` | `integer` | Peer ASN. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `provisioningState` | `string` | The current provisioning state. |
 | `hubVirtualNetworkConnection` | `object` | Reference to another subresource. |
+| `peerIp` | `string` | Peer IP. |
+| `peerAsn` | `integer` | Peer ASN. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `type` | `string` | Connection type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `connectionState` | `string` | The current state of the VirtualHub to Peer. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

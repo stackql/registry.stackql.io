@@ -28,15 +28,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified identifier. |
-| `owner` | `string` | Subscription owner. |
-| `offerId` | `string` | Identifier of the offer under the scope of a delegated provider. |
 | `routingResourceManagerType` | `string` | Resource manager type. |
-| `state` | `string` | Subscription notification state. |
-| `delegatedProviderSubscriptionId` | `string` | Parent DelegatedProvider subscription identifier. |
-| `subscriptionId` | `string` | Subscription identifier. |
-| `displayName` | `string` | Subscription name. |
 | `tenantId` | `string` | Directory tenant identifier. |
+| `offerId` | `string` | Identifier of the offer under the scope of a delegated provider. |
+| `subscriptionId` | `string` | Subscription identifier. |
+| `delegatedProviderSubscriptionId` | `string` | Parent DelegatedProvider subscription identifier. |
+| `displayName` | `string` | Subscription name. |
 | `externalReferenceId` | `string` | External reference identifier. |
+| `owner` | `string` | Subscription owner. |
+| `state` | `string` | Subscription notification state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

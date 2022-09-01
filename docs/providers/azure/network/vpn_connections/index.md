@@ -29,26 +29,26 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `enableInternetSecurity` | `boolean` | Enable internet security. |
-| `dpdTimeoutSeconds` | `integer` | DPD timeout in seconds for vpn connection. |
-| `useLocalAzureIpAddress` | `boolean` | Use local azure ip to initiate connection. |
-| `enableRateLimiting` | `boolean` | EnableBgp flag. |
-| `egressBytesTransferred` | `integer` | Egress bytes transferred. |
-| `vpnConnectionProtocolType` | `string` | Gateway connection protocol. |
-| `connectionStatus` | `string` | The current state of the vpn connection. |
-| `enableBgp` | `boolean` | EnableBgp flag. |
 | `routingConfiguration` | `object` | Routing Configuration indicating the associated and propagated route tables for this connection. |
+| `ingressBytesTransferred` | `integer` | Ingress bytes transferred. |
+| `ipsecPolicies` | `array` | The IPSec Policies to be considered by this connection. |
+| `trafficSelectorPolicies` | `array` | The Traffic Selector Policies to be considered by this connection. |
+| `useLocalAzureIpAddress` | `boolean` | Use local azure ip to initiate connection. |
+| `usePolicyBasedTrafficSelectors` | `boolean` | Enable policy-based traffic selectors. |
+| `enableInternetSecurity` | `boolean` | Enable internet security. |
 | `routingWeight` | `integer` | Routing weight for vpn connection. |
-| `vpnLinkConnections` | `array` | List of all vpn site link connections to the gateway. |
 | `remoteVpnSite` | `object` | Reference to another subresource. |
 | `sharedKey` | `string` | SharedKey for the vpn connection. |
-| `usePolicyBasedTrafficSelectors` | `boolean` | Enable policy-based traffic selectors. |
-| `connectionBandwidth` | `integer` | Expected bandwidth in MBPS. |
-| `trafficSelectorPolicies` | `array` | The Traffic Selector Policies to be considered by this connection. |
-| `ingressBytesTransferred` | `integer` | Ingress bytes transferred. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `enableBgp` | `boolean` | EnableBgp flag. |
+| `egressBytesTransferred` | `integer` | Egress bytes transferred. |
+| `dpdTimeoutSeconds` | `integer` | DPD timeout in seconds for vpn connection. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `ipsecPolicies` | `array` | The IPSec Policies to be considered by this connection. |
+| `vpnLinkConnections` | `array` | List of all vpn site link connections to the gateway. |
+| `connectionBandwidth` | `integer` | Expected bandwidth in MBPS. |
+| `vpnConnectionProtocolType` | `string` | Gateway connection protocol. |
+| `enableRateLimiting` | `boolean` | EnableBgp flag. |
+| `connectionStatus` | `string` | The current state of the vpn connection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

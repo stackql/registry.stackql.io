@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `privateEndpoint` | `object` | The private endpoint of the private endpoint connection. |
 | `privateLinkServiceConnectionState` | `object` | The private link service connection state of the private endpoint connection |
 | `provisioningState` | `string` |  |
 | `type` | `string` | The type of the resource. |
 | `etag` | `string` | The ETag of the resource, used for concurrency statements. |
 | `groupIds` | `array` | The value has one and only one group id. |
+| `privateEndpoint` | `object` | The private endpoint of the private endpoint connection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

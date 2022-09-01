@@ -28,11 +28,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | Description of the configuration. |
+| `allowedValues` | `string` | Allowed values of the configuration. |
 | `dataType` | `string` | Data type of the configuration. |
 | `defaultValue` | `string` | Default value of the configuration. |
 | `source` | `string` | Source of the configuration. |
 | `value` | `string` | Value of the configuration. |
-| `allowedValues` | `string` | Allowed values of the configuration. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

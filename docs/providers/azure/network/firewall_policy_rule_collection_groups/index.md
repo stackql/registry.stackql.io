@@ -29,11 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `priority` | `integer` | Priority of the Firewall Policy Rule Collection Group resource. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `ruleCollections` | `array` | Group of Firewall Policy rule collections. |
 | `type` | `string` | Rule Group type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `priority` | `integer` | Priority of the Firewall Policy Rule Collection Group resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

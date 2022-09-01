@@ -27,7 +27,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `tags` | `object` | Resource tags. |
 | `databases` | `array` | List of databases in the failover group. |
 | `location` | `string` | Resource location. |
 | `partnerServers` | `array` | List of partner server information for the failover group. |
@@ -35,6 +34,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `readWriteEndpoint` | `object` | Read-write endpoint of the failover group instance. |
 | `replicationRole` | `string` | Local replication role of the failover group instance. |
 | `replicationState` | `string` | Replication state of the failover group instance. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the workflow trigger name. |
+| `nextExecutionTime` | `string` | Gets the next execution time. |
+| `status` | `string` | The workflow status. |
+| `workflow` | `object` | The resource reference. |
+| `recurrence` | `object` | The workflow trigger recurrence. |
+| `type` | `string` | Gets the workflow trigger type. |
+| `lastExecutionTime` | `string` | Gets the last execution time. |
+| `state` | `string` | The workflow state. |
+| `changedTime` | `string` | Gets the changed time. |
 | `provisioningState` | `string` | The workflow trigger provisioning state. |
 | `createdTime` | `string` | Gets the created time. |
-| `nextExecutionTime` | `string` | Gets the next execution time. |
-| `state` | `string` | The workflow state. |
-| `type` | `string` | Gets the workflow trigger type. |
-| `status` | `string` | The workflow status. |
-| `lastExecutionTime` | `string` | Gets the last execution time. |
-| `recurrence` | `object` | The workflow trigger recurrence. |
-| `workflow` | `object` | The resource reference. |
-| `changedTime` | `string` | Gets the changed time. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

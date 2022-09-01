@@ -29,11 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `provisioningState` | `string` | Azure lifecycle management |
-| `snapshotId` | `string` | UUID v4 used to identify the Snapshot |
 | `type` | `string` | Resource type |
 | `created` | `string` | The creation date of the snapshot |
 | `location` | `string` | Resource location |
+| `provisioningState` | `string` | Azure lifecycle management |
+| `snapshotId` | `string` | UUID v4 used to identify the Snapshot |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

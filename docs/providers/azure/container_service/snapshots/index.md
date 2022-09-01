@@ -27,16 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `creationData` | `object` | Data used when creating a target resource from a source resource. |
-| `vmSize` | `string` | The size of the VM. |
-| `osSku` | `string` | Specifies an OS SKU. This value must not be specified if OSType is Windows. |
-| `tags` | `object` | Resource tags. |
-| `location` | `string` | The geo-location where the resource lives |
 | `snapshotType` | `string` | The type of a snapshot. The default is NodePool. |
-| `nodeImageVersion` | `string` | The version of node image. |
-| `osType` | `string` | The operating system type. The default is Linux. |
-| `enableFIPS` | `boolean` | Whether to use a FIPS-enabled OS. |
+| `vmSize` | `string` | The size of the VM. |
 | `kubernetesVersion` | `string` | The version of Kubernetes. |
+| `tags` | `object` | Resource tags. |
+| `osType` | `string` | The operating system type. The default is Linux. |
+| `nodeImageVersion` | `string` | The version of node image. |
+| `enableFIPS` | `boolean` | Whether to use a FIPS-enabled OS. |
+| `osSku` | `string` | Specifies an OS SKU. This value must not be specified if OSType is Windows. |
+| `creationData` | `object` | Data used when creating a target resource from a source resource. |
+| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

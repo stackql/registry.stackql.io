@@ -27,13 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `targetDnsServers` | `array` | DNS servers to forward the DNS query to. |
+| `domainName` | `string` | The domain name for the forwarding rule. |
 | `etag` | `string` | ETag of the forwarding rule. |
 | `forwardingRuleState` | `string` | The state of forwarding rule. |
 | `metadata` | `object` | Metadata attached to the forwarding rule. |
 | `provisioningState` | `string` | The current provisioning state of the resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `targetDnsServers` | `array` | DNS servers to forward the DNS query to. |
-| `domainName` | `string` | The domain name for the forwarding rule. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

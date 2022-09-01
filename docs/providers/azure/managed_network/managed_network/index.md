@@ -27,9 +27,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `tags` | `object` | Resource tags |
 | `connectivity` | `object` | The collection of Connectivity related groups and policies within the Managed Network |
 | `scope` | `object` | Scope of a Managed Network |
-| `tags` | `object` | Resource tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

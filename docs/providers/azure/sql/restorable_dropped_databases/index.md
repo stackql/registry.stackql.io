@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `maxSizeBytes` | `integer` | The max size of the database expressed in bytes. |
-| `deletionDate` | `string` | The deletion date of the database (ISO8601 format). |
-| `location` | `string` | Resource location. |
-| `databaseName` | `string` | The name of the database. |
-| `backupStorageRedundancy` | `string` | The storage account type used to store backups for this database. |
 | `earliestRestoreDate` | `string` | The earliest restore date of the database (ISO8601 format). |
-| `sku` | `object` | An ARM Resource SKU. |
+| `location` | `string` | Resource location. |
+| `maxSizeBytes` | `integer` | The max size of the database expressed in bytes. |
 | `tags` | `object` | Resource tags. |
+| `sku` | `object` | An ARM Resource SKU. |
+| `databaseName` | `string` | The name of the database. |
+| `deletionDate` | `string` | The deletion date of the database (ISO8601 format). |
+| `backupStorageRedundancy` | `string` | The storage account type used to store backups for this database. |
 | `creationDate` | `string` | The creation date of the database (ISO8601 format). |
 ## Methods
 | Name | Accessible by | Required Params | Description |

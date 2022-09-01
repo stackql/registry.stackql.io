@@ -27,17 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `provisioningState` | `string` | Table's current provisioning state. If set to 'updating', indicates a resource lock due to ongoing operation, forbidding any update to the table until the ongoing operation is concluded. |
-| `totalRetentionInDays` | `integer` | The table total retention in days, between 4 and 2555. Setting this property to -1 will default to table retention. |
 | `lastPlanModifiedDate` | `string` | The timestamp that table plan was last modified (UTC). |
 | `resultStatistics` | `object` | Search job execution statistics. |
+| `provisioningState` | `string` | Table's current provisioning state. If set to 'updating', indicates a resource lock due to ongoing operation, forbidding any update to the table until the ongoing operation is concluded. |
+| `schema` | `object` | Table's schema. |
+| `plan` | `string` | Instruct the system how to handle and charge the logs ingested to this table. |
 | `archiveRetentionInDays` | `integer` | The table data archive retention in days. Calculated as (totalRetentionInDays-retentionInDays) |
 | `restoredLogs` | `object` | Restore parameters. |
-| `plan` | `string` | Instruct the system how to handle and charge the logs ingested to this table. |
-| `retentionInDays` | `integer` | The table retention in days, between 4 and 730. Setting this property to -1 will default to the workspace retention. |
 | `searchResults` | `object` | Parameters of the search job that initiated this table. |
+| `totalRetentionInDays` | `integer` | The table total retention in days, between 4 and 2555. Setting this property to -1 will default to table retention. |
+| `retentionInDays` | `integer` | The table retention in days, between 4 and 730. Setting this property to -1 will default to the workspace retention. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `schema` | `object` | Table's schema. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

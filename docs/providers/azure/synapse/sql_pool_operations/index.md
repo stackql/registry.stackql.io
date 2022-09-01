@@ -28,19 +28,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | The operation description. |
+| `databaseName` | `string` | The name of the Sql pool the operation is being performed on. |
+| `estimatedCompletionTime` | `string` | The estimated completion time of the operation. |
+| `startTime` | `string` | The operation start time. |
+| `isUserError` | `boolean` | Whether or not the error is a user error. |
+| `errorCode` | `integer` | The operation error code. |
+| `operation` | `string` | The name of operation. |
+| `operationFriendlyName` | `string` | The friendly name of operation. |
 | `percentComplete` | `integer` | The percentage of the operation completed. |
 | `state` | `string` | The operation state. |
-| `serverName` | `string` | The name of the server. |
-| `operationFriendlyName` | `string` | The friendly name of operation. |
-| `operation` | `string` | The name of operation. |
-| `startTime` | `string` | The operation start time. |
-| `errorCode` | `integer` | The operation error code. |
 | `errorDescription` | `string` | The operation error description. |
-| `databaseName` | `string` | The name of the Sql pool the operation is being performed on. |
 | `isCancellable` | `boolean` | Whether the operation can be cancelled. |
 | `errorSeverity` | `integer` | The operation error severity. |
-| `estimatedCompletionTime` | `string` | The estimated completion time of the operation. |
-| `isUserError` | `boolean` | Whether or not the error is a user error. |
+| `serverName` | `string` | The name of the server. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

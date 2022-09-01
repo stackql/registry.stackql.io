@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `databaseName` | `string` | Database Name. |
-| `totalTimeInMs` | `number` | Total time of wait in milliseconds in this time interval. |
-| `userId` | `integer` | Database user identifier. |
-| `count` | `integer` | Wait event count observed in this time interval. |
-| `queryId` | `integer` | Database query identifier. |
 | `startTime` | `string` | Observation start time. |
+| `userId` | `integer` | Database user identifier. |
+| `eventTypeName` | `string` | Wait event type name. |
+| `databaseName` | `string` | Database Name. |
 | `endTime` | `string` | Observation end time. |
 | `eventName` | `string` | Wait event name. |
-| `eventTypeName` | `string` | Wait event type name. |
+| `queryId` | `integer` | Database query identifier. |
+| `totalTimeInMs` | `number` | Total time of wait in milliseconds in this time interval. |
+| `count` | `integer` | Wait event count observed in this time interval. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

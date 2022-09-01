@@ -28,20 +28,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | A description for the Job Definition. |
+| `agentResourceId` | `string` | Fully qualified resource id of the Agent to assign for new Job Runs of this Job Definition. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `copyMode` | `string` | Strategy to use for copy. |
 | `targetName` | `string` | The name of the target Endpoint. |
+| `latestJobRunStatus` | `string` | The current status of the Job Run in a non-terminal state, if exists. |
 | `agentName` | `string` | Name of the Agent to assign for new Job Runs of this Job Definition. |
 | `targetSubpath` | `string` | The subpath to use when writing to the target Endpoint. |
 | `latestJobRunName` | `string` | The name of the Job Run in a non-terminal state, if exists. |
-| `copyMode` | `string` | Strategy to use for copy. |
-| `sourceName` | `string` | The name of the source Endpoint. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `provisioningState` | `string` | The provisioning state of this resource. |
-| `agentResourceId` | `string` | Fully qualified resource id of the Agent to assign for new Job Runs of this Job Definition. |
-| `sourceResourceId` | `string` | Fully qualified resource ID of the source Endpoint. |
-| `latestJobRunStatus` | `string` | The current status of the Job Run in a non-terminal state, if exists. |
-| `latestJobRunResourceId` | `string` | The fully qualified resource ID of the Job Run in a non-terminal state, if exists. |
 | `sourceSubpath` | `string` | The subpath to use when reading from the source Endpoint. |
+| `provisioningState` | `string` | The provisioning state of this resource. |
 | `targetResourceId` | `string` | Fully qualified resource ID of the target Endpoint. |
+| `sourceName` | `string` | The name of the source Endpoint. |
+| `sourceResourceId` | `string` | Fully qualified resource ID of the source Endpoint. |
+| `latestJobRunResourceId` | `string` | The fully qualified resource ID of the Job Run in a non-terminal state, if exists. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

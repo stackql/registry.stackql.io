@@ -27,16 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `tags` | `object` | Resource tags. |
-| `dnsConfig` | `object` | Class containing DNS settings in a Traffic Manager profile. |
 | `monitorConfig` | `object` | Class containing endpoint monitoring settings in a Traffic Manager profile. |
-| `location` | `string` | The Azure Region where the resource lives |
-| `allowedEndpointRecordTypes` | `array` | The list of allowed endpoint record types. |
-| `maxReturn` | `integer` | Maximum number of endpoints to be returned for MultiValue routing type. |
-| `trafficRoutingMethod` | `string` | The traffic routing method of the Traffic Manager profile. |
-| `trafficViewEnrollmentStatus` | `string` | Indicates whether Traffic View is 'Enabled' or 'Disabled' for the Traffic Manager profile. Null, indicates 'Disabled'. Enabling this feature will increase the cost of the Traffic Manage profile. |
-| `endpoints` | `array` | The list of endpoints in the Traffic Manager profile. |
 | `profileStatus` | `string` | The status of the Traffic Manager profile. |
+| `allowedEndpointRecordTypes` | `array` | The list of allowed endpoint record types. |
+| `endpoints` | `array` | The list of endpoints in the Traffic Manager profile. |
+| `location` | `string` | The Azure Region where the resource lives |
+| `dnsConfig` | `object` | Class containing DNS settings in a Traffic Manager profile. |
+| `trafficRoutingMethod` | `string` | The traffic routing method of the Traffic Manager profile. |
+| `maxReturn` | `integer` | Maximum number of endpoints to be returned for MultiValue routing type. |
+| `tags` | `object` | Resource tags. |
+| `trafficViewEnrollmentStatus` | `string` | Indicates whether Traffic View is 'Enabled' or 'Disabled' for the Traffic Manager profile. Null, indicates 'Disabled'. Enabling this feature will increase the cost of the Traffic Manage profile. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

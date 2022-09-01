@@ -30,27 +30,27 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
 | `description` | `string` | The description of the transaction. |
-| `invoice` | `string` | Invoice Number |
-| `invoiceSectionId` | `string` | Invoice Section Id |
-| `currency` | `string` | The ISO currency in which the transaction is charged, for example, USD. |
-| `purchasingSubscriptionGuid` | `string` | The subscription guid that makes the transaction. |
-| `billingProfileId` | `string` | Billing profile Id. |
 | `billingFrequency` | `string` | The billing frequency, which can be either one-time or recurring. |
-| `invoiceSectionName` | `string` | Invoice Section Name. |
 | `reservationOrderId` | `string` | The reservation order ID is the identifier for a reservation purchase. Each reservation order ID represents a single purchase transaction. A reservation order contains reservations. The reservation order specifies the VM size and region for the reservations. |
-| `billingProfileName` | `string` | Billing profile name. |
-| `invoiceId` | `string` | Invoice Id as on the invoice where the specific transaction appears. |
-| `amount` | `number` | The charge of the transaction. |
-| `armSkuName` | `string` | This is the ARM Sku name. It can be used to join with the serviceType field in additional info in usage records. |
 | `tags` | `array` | Resource tags. |
-| `eventDate` | `string` | The date of the transaction |
-| `reservationOrderName` | `string` | The name of the reservation order. |
-| `region` | `string` | The region of the transaction. |
 | `eventType` | `string` | The type of the transaction (Purchase, Cancel or Refund). |
+| `billingProfileId` | `string` | Billing profile Id. |
+| `purchasingSubscriptionGuid` | `string` | The subscription guid that makes the transaction. |
 | `quantity` | `number` | The quantity of the transaction. |
-| `term` | `string` | This is the term of the transaction. |
+| `amount` | `number` | The charge of the transaction. |
+| `invoiceId` | `string` | Invoice Id as on the invoice where the specific transaction appears. |
 | `purchasingSubscriptionName` | `string` | The subscription name that makes the transaction. |
+| `region` | `string` | The region of the transaction. |
+| `term` | `string` | This is the term of the transaction. |
+| `reservationOrderName` | `string` | The name of the reservation order. |
 | `type` | `string` | Resource type. |
+| `billingProfileName` | `string` | Billing profile name. |
+| `eventDate` | `string` | The date of the transaction |
+| `invoiceSectionId` | `string` | Invoice Section Id |
+| `invoice` | `string` | Invoice Number |
+| `armSkuName` | `string` | This is the ARM Sku name. It can be used to join with the serviceType field in additional info in usage records. |
+| `invoiceSectionName` | `string` | Invoice Section Name. |
+| `currency` | `string` | The ISO currency in which the transaction is charged, for example, USD. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -30,16 +30,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | the name of the alert rule. |
 | `description` | `string` | the description of the alert rule that will be included in the alert email. |
-| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `isEnabled` | `boolean` | the flag that indicates whether the alert rule is enabled. |
-| `lastUpdatedTime` | `string` | Last time the rule was updated in ISO8601 format. |
-| `type` | `string` | Azure resource type |
-| `condition` | `object` | The condition that results in the alert rule being activated. |
-| `action` | `object` | The action that is performed when the alert rule becomes active, and when an alert condition is resolved. |
-| `provisioningState` | `string` | the provisioning state. |
-| `actions` | `array` | the array of actions that are performed when the alert rule becomes active, and when an alert condition is resolved. |
 | `location` | `string` | Resource location |
+| `isEnabled` | `boolean` | the flag that indicates whether the alert rule is enabled. |
+| `provisioningState` | `string` | the provisioning state. |
+| `lastUpdatedTime` | `string` | Last time the rule was updated in ISO8601 format. |
+| `condition` | `object` | The condition that results in the alert rule being activated. |
+| `actions` | `array` | the array of actions that are performed when the alert rule becomes active, and when an alert condition is resolved. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `action` | `object` | The action that is performed when the alert rule becomes active, and when an alert condition is resolved. |
+| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
+| `type` | `string` | Azure resource type |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

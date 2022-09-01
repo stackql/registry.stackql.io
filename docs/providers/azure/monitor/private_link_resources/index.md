@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
-| `groupId` | `string` | The private link resource group id. |
+| `requiredZoneNames` | `array` | The private link resource Private link DNS zone name. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `requiredMembers` | `array` | The private link resource required member names. |
-| `requiredZoneNames` | `array` | The private link resource Private link DNS zone name. |
-| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
 | `type` | `string` | Azure resource type |
+| `groupId` | `string` | The private link resource group id. |
+| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
 | `location` | `string` | Resource location |
 ## Methods
 | Name | Accessible by | Required Params |

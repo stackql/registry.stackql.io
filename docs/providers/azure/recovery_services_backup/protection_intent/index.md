@@ -31,5 +31,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:--------------|:----------------|:------------|
 | `ProtectionIntent_CreateOrUpdate` | `INSERT` | `api-version, fabricName, intentObjectName, resourceGroupName, subscriptionId, vaultName` | Create Intent for Enabling backup of an item. This is a synchronous operation. |
 | `ProtectionIntent_Delete` | `DELETE` | `api-version, fabricName, intentObjectName, resourceGroupName, subscriptionId, vaultName` | Used to remove intent from an item |
-| `ProtectionIntent_Get` | `EXEC` | `api-version, fabricName, intentObjectName, resourceGroupName, subscriptionId, vaultName` | Provides the details of the protection intent up item. This is an asynchronous operation. To know the status of the operation,<br />call the GetItemOperationResult API. |
+| `ProtectionIntent_Get` | `EXEC` | `api-version, fabricName, intentObjectName, resourceGroupName, subscriptionId, vaultName` | Provides the details of the protection intent up item. This is an asynchronous operation. To know the status of the operation,<br />call the GetItemOperationResult API. |
 | `ProtectionIntent_Validate` | `EXEC` | `api-version, azureRegion, subscriptionId` |  |

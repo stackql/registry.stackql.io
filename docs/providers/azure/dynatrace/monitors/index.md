@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `provisioningState` | `string` | Provisioning state of the monitoring resource |
-| `liftrResourceCategory` | `string` | Liftr resource category |
-| `location` | `string` | The geo-location where the resource lives |
-| `planData` | `object` | Billing plan information. |
-| `identity` | `object` | The properties of the managed service identities assigned to this resource. |
-| `marketplaceSubscriptionStatus` | `string` | Flag specifying the Marketplace Subscription Status of the resource. If payment is not made in time, the resource will go in Suspended state. |
-| `dynatraceEnvironmentProperties` | `object` | Properties of the Dynatrace environment. |
-| `monitoringStatus` | `string` | Flag specifying if the resource monitoring is enabled or disabled. |
 | `tags` | `object` | Resource tags. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `userInfo` | `object` | User info. |
+| `liftrResourceCategory` | `string` | Liftr resource category |
+| `marketplaceSubscriptionStatus` | `string` | Flag specifying the Marketplace Subscription Status of the resource. If payment is not made in time, the resource will go in Suspended state. |
+| `identity` | `object` | The properties of the managed service identities assigned to this resource. |
+| `provisioningState` | `string` | Provisioning state of the monitoring resource |
+| `monitoringStatus` | `string` | Flag specifying if the resource monitoring is enabled or disabled. |
+| `planData` | `object` | Billing plan information. |
 | `liftrResourcePreference` | `integer` | The priority of the resource. |
+| `userInfo` | `object` | User info. |
+| `location` | `string` | The geo-location where the resource lives |
+| `dynatraceEnvironmentProperties` | `object` | Properties of the Dynatrace environment. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

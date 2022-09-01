@@ -30,12 +30,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
 | `description` | `string` | A description of the scope connection. |
-| `connectionState` | `string` | The current scope connection state. |
 | `resourceId` | `string` | Resource ID. |
-| `type` | `string` | Resource type. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `tenantId` | `string` | Tenant ID. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `connectionState` | `string` | The current scope connection state. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

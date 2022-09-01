@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
+| `type` | `string` | Resource type. |
+| `bandwidthsOffered` | `array` | A list of bandwidths offered. |
 | `location` | `string` | Resource location. |
 | `peeringLocations` | `array` | A list of peering locations. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `tags` | `object` | Resource tags. |
-| `type` | `string` | Resource type. |
-| `bandwidthsOffered` | `array` | A list of bandwidths offered. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

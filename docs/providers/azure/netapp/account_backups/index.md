@@ -29,17 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `creationDate` | `string` | The creation date of the backup |
-| `provisioningState` | `string` | Azure lifecycle management |
-| `volumeName` | `string` | Volume name |
-| `backupType` | `string` | Type of backup Manual or Scheduled |
-| `location` | `string` | Resource location |
+| `type` | `string` | Resource type |
 | `failureReason` | `string` | Failure reason |
 | `label` | `string` | Label for backup |
 | `backupId` | `string` | UUID v4 used to identify the Backup |
-| `type` | `string` | Resource type |
+| `backupType` | `string` | Type of backup Manual or Scheduled |
+| `location` | `string` | Resource location |
+| `volumeName` | `string` | Volume name |
 | `size` | `integer` | Size of backup |
 | `useExistingSnapshot` | `boolean` | Manual backup an already existing snapshot. This will always be false for scheduled backups and true/false for manual backups |
+| `provisioningState` | `string` | Azure lifecycle management |
+| `creationDate` | `string` | The creation date of the backup |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

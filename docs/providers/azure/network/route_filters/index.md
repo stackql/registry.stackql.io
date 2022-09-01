@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `rules` | `array` | Collection of RouteFilterRules contained within a route filter. |
 | `tags` | `object` | Resource tags. |
 | `peerings` | `array` | A collection of references to express route circuit peerings. |
 | `location` | `string` | Resource location. |
 | `ipv6Peerings` | `array` | A collection of references to express route circuit ipv6 peerings. |
-| `type` | `string` | Resource type. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `rules` | `array` | Collection of RouteFilterRules contained within a route filter. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

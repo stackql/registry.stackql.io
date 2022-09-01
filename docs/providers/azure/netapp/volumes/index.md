@@ -27,54 +27,54 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `volumeType` | `string` | What type of volume is this. For destination volumes in Cross Region Replication, set type to DataProtection |
-| `isDefaultQuotaEnabled` | `boolean` | Specifies if default quota is enabled for the volume. |
-| `networkFeatures` | `string` | Basic network, or Standard features available to the volume. |
-| `t2Network` | `string` | T2 network information |
-| `volumeGroupName` | `string` | Volume Group Name |
-| `ldapEnabled` | `boolean` | Specifies whether LDAP is enabled or not for a given NFS volume. |
-| `encrypted` | `boolean` | Specifies if the volume is encrypted or not. Only available on volumes created or updated after 2022-01-01. |
-| `maximumNumberOfFiles` | `integer` | Maximum number of files allowed. Needs a service request in order to be changed. Only allowed to be changed if volume quota is more than 4TiB. |
-| `keyVaultPrivateEndpointResourceId` | `string` | The resource ID of private endpoint for KeyVault. It must reside in the same VNET as the volume. Only applicable if encryptionKeySource = 'Microsoft.KeyVault'. |
-| `provisioningState` | `string` | Azure lifecycle management |
-| `dataProtection` | `` | DataProtection type volumes include an object containing details of the replication |
-| `volumeSpecName` | `string` | Volume spec name is the application specific designation or identifier for the particular volume in a volume group for e.g. data, log |
-| `defaultUserQuotaInKiBs` | `integer` | Default user quota for volume in KiBs. If isDefaultQuotaEnabled is set, the minimum value of 4 KiBs applies . |
-| `avsDataStore` | `string` | Specifies whether the volume is enabled for Azure VMware Solution (AVS) datastore purpose |
-| `snapshotId` | `string` | UUID v4 or resource identifier used to identify the Snapshot. |
-| `proximityPlacementGroup` | `string` | Proximity placement group associated with the volume |
-| `encryptionKeySource` | `string` | Source of key used to encrypt data in volume. Applicable if NetApp account has encryption.keySource = 'Microsoft.KeyVault'. Possible values (case-insensitive) are: 'Microsoft.NetApp, Microsoft.KeyVault' |
-| `smbContinuouslyAvailable` | `boolean` | Enables continuously available share property for smb volume. Only applicable for SMB volume |
-| `baremetalTenantId` | `string` | Unique Baremetal Tenant Identifier. |
-| `throughputMibps` | `number` |  |
-| `securityStyle` | `string` | The security style of volume, default unix, defaults to ntfs for dual protocol or CIFS protocol |
+| `location` | `string` | The geo-location where the resource lives |
+| `kerberosEnabled` | `boolean` | Describe if a volume is KerberosEnabled. To be use with swagger version 2020-05-01 or later |
+| `exportPolicy` | `` | Set of export policy rules |
 | `tags` | `object` | Resource tags. |
-| `protocolTypes` | `array` | Set of protocol types, default NFSv3, CIFS for SMB protocol |
-| `storageToNetworkProximity` | `string` | Provides storage to network proximity information for the volume. |
+| `securityStyle` | `string` | The security style of volume, default unix, defaults to ntfs for dual protocol or CIFS protocol |
+| `encrypted` | `boolean` | Specifies if the volume is encrypted or not. Only available on volumes created or updated after 2022-01-01. |
+| `isDefaultQuotaEnabled` | `boolean` | Specifies if default quota is enabled for the volume. |
+| `defaultUserQuotaInKiBs` | `integer` | Default user quota for volume in KiBs. If isDefaultQuotaEnabled is set, the minimum value of 4 KiBs applies . |
+| `creationToken` | `string` | A unique file path for the volume. Used when creating mount targets |
+| `snapshotDirectoryVisible` | `boolean` | If enabled (true) the volume will contain a read-only snapshot directory which provides access to each of the volume's snapshots (default to true). |
+| `proximityPlacementGroup` | `string` | Proximity placement group associated with the volume |
 | `defaultGroupQuotaInKiBs` | `integer` | Default group quota for volume in KiBs. If isDefaultQuotaEnabled is set, the minimum value of 4 KiBs applies. |
+| `snapshotId` | `string` | UUID v4 or resource identifier used to identify the Snapshot. |
+| `volumeSpecName` | `string` | Volume spec name is the application specific designation or identifier for the particular volume in a volume group for e.g. data, log |
 | `isRestoring` | `boolean` | Restoring |
-| `usageThreshold` | `integer` | Maximum storage quota allowed for a file system in bytes. This is a soft quota used for alerting only. Minimum size is 100 GiB. Upper limit is 100TiB. Specified in bytes. |
+| `enableSubvolumes` | `string` | Flag indicating whether subvolume operations are enabled on the volume |
+| `coolnessPeriod` | `integer` | Specifies the number of days after which data that is not accessed by clients will be tiered. |
+| `throughputMibps` | `number` |  |
+| `fileSystemId` | `string` | Unique FileSystem Identifier. |
+| `networkFeatures` | `string` | Basic network, or Standard features available to the volume. |
+| `serviceLevel` | `string` | The service level of the file system |
+| `volumeGroupName` | `string` | Volume Group Name |
+| `avsDataStore` | `string` | Specifies whether the volume is enabled for Azure VMware Solution (AVS) datastore purpose |
+| `capacityPoolResourceId` | `string` | Pool Resource Id used in case of creating a volume through volume group |
+| `unixPermissions` | `string` | UNIX permissions for NFS volume accepted in octal 4 digit format. First digit selects the set user ID(4), set group ID (2) and sticky (1) attributes. Second digit selects permission for the owner of the file: read (4), write (2) and execute (1). Third selects permissions for other users in the same group. the fourth for other users not in the group. 0755 - gives read/write/execute permissions to owner and read/execute to group and other users. |
+| `networkSiblingSetId` | `string` | Network Sibling Set ID for the the group of volumes sharing networking resources. |
+| `placementRules` | `array` | Application specific placement rules for the particular volume |
+| `protocolTypes` | `array` | Set of protocol types, default NFSv3, CIFS for SMB protocol |
+| `coolAccess` | `boolean` | Specifies whether Cool Access(tiering) is enabled for the volume. |
 | `subnetId` | `string` | The Azure Resource URI for a delegated subnet. Must have the delegation Microsoft.NetApp/volumes |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `backupId` | `string` | UUID v4 or resource identifier used to identify the Backup. |
-| `unixPermissions` | `string` | UNIX permissions for NFS volume accepted in octal 4 digit format. First digit selects the set user ID(4), set group ID (2) and sticky (1) attributes. Second digit selects permission for the owner of the file: read (4), write (2) and execute (1). Third selects permissions for other users in the same group. the fourth for other users not in the group. 0755 - gives read/write/execute permissions to owner and read/execute to group and other users. |
+| `keyVaultPrivateEndpointResourceId` | `string` | The resource ID of private endpoint for KeyVault. It must reside in the same VNET as the volume. Only applicable if encryptionKeySource = 'Microsoft.KeyVault'. |
+| `smbContinuouslyAvailable` | `boolean` | Enables continuously available share property for smb volume. Only applicable for SMB volume |
+| `maximumNumberOfFiles` | `integer` | Maximum number of files allowed. Needs a service request in order to be changed. Only allowed to be changed if volume quota is more than 4TiB. |
+| `usageThreshold` | `integer` | Maximum storage quota allowed for a file system in bytes. This is a soft quota used for alerting only. Minimum size is 100 GiB. Upper limit is 100TiB. Specified in bytes. |
 | `smbEncryption` | `boolean` | Enables encryption for in-flight smb3 data. Only applicable for SMB/DualProtocol volume. To be used with swagger version 2020-08-01 or later |
-| `networkSiblingSetId` | `string` | Network Sibling Set ID for the the group of volumes sharing networking resources. |
+| `ldapEnabled` | `boolean` | Specifies whether LDAP is enabled or not for a given NFS volume. |
 | `zones` | `array` | Availability Zone |
-| `creationToken` | `string` | A unique file path for the volume. Used when creating mount targets |
-| `enableSubvolumes` | `string` | Flag indicating whether subvolume operations are enabled on the volume |
-| `coolAccess` | `boolean` | Specifies whether Cool Access(tiering) is enabled for the volume. |
-| `fileSystemId` | `string` | Unique FileSystem Identifier. |
+| `provisioningState` | `string` | Azure lifecycle management |
+| `encryptionKeySource` | `string` | Source of key used to encrypt data in volume. Applicable if NetApp account has encryption.keySource = 'Microsoft.KeyVault'. Possible values (case-insensitive) are: 'Microsoft.NetApp, Microsoft.KeyVault' |
+| `storageToNetworkProximity` | `string` | Provides storage to network proximity information for the volume. |
 | `cloneProgress` | `integer` | When a volume is being restored from another volume's snapshot, will show the percentage completion of this cloning process. When this value is empty/null there is no cloning process currently happening on this volume. This value will update every 5 minutes during cloning. |
-| `serviceLevel` | `string` | The service level of the file system |
-| `capacityPoolResourceId` | `string` | Pool Resource Id used in case of creating a volume through volume group |
-| `snapshotDirectoryVisible` | `boolean` | If enabled (true) the volume will contain a read-only snapshot directory which provides access to each of the volume's snapshots (default to true). |
-| `exportPolicy` | `` | Set of export policy rules |
-| `kerberosEnabled` | `boolean` | Describe if a volume is KerberosEnabled. To be use with swagger version 2020-05-01 or later |
-| `placementRules` | `array` | Application specific placement rules for the particular volume |
+| `volumeType` | `string` | What type of volume is this. For destination volumes in Cross Region Replication, set type to DataProtection |
+| `dataProtection` | `` | DataProtection type volumes include an object containing details of the replication |
+| `backupId` | `string` | UUID v4 or resource identifier used to identify the Backup. |
+| `t2Network` | `string` | T2 network information |
+| `baremetalTenantId` | `string` | Unique Baremetal Tenant Identifier. |
 | `mountTargets` | `array` | List of mount targets |
-| `location` | `string` | The geo-location where the resource lives |
-| `coolnessPeriod` | `integer` | Specifies the number of days after which data that is not accessed by clients will be tiered. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

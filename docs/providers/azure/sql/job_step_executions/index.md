@@ -27,19 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `createTime` | `string` | The time that the job execution was created. |
-| `jobExecutionId` | `string` | The unique identifier of the job execution. |
-| `endTime` | `string` | The time that the job execution completed. |
+| `target` | `object` | The target that a job execution is executed on. |
+| `jobVersion` | `integer` | The job version number. |
 | `lifecycle` | `string` | The detailed state of the job execution. |
-| `provisioningState` | `string` | The ARM provisioning state of the job execution. |
-| `stepId` | `integer` | The job step id. |
+| `jobExecutionId` | `string` | The unique identifier of the job execution. |
+| `currentAttemptStartTime` | `string` | Start time of the current attempt. |
+| `endTime` | `string` | The time that the job execution completed. |
 | `lastMessage` | `string` | The last status or error message. |
 | `startTime` | `string` | The time that the job execution started. |
 | `currentAttempts` | `integer` | Number of times the job execution has been attempted. |
-| `target` | `object` | The target that a job execution is executed on. |
-| `jobVersion` | `integer` | The job version number. |
+| `createTime` | `string` | The time that the job execution was created. |
 | `stepName` | `string` | The job step name. |
-| `currentAttemptStartTime` | `string` | Start time of the current attempt. |
+| `provisioningState` | `string` | The ARM provisioning state of the job execution. |
+| `stepId` | `integer` | The job step id. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

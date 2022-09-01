@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `ipConfigurations` | `array` | A list of IP configurations of the private endpoint. This will be used to map to the First Party Service's endpoints. |
-| `networkInterfaces` | `array` | An array of references to the network interfaces created for this private endpoint. |
-| `privateLinkServiceConnections` | `array` | A grouping of information about the connection to the remote resource. |
-| `customDnsConfigs` | `array` | An array of custom dns configurations. |
-| `manualPrivateLinkServiceConnections` | `array` | A grouping of information about the connection to the remote resource. Used when the network admin does not have access to approve connections to the remote resource. |
-| `type` | `string` | Resource type. |
-| `applicationSecurityGroups` | `array` | Application security groups in which the private endpoint IP configuration is included. |
-| `customNetworkInterfaceName` | `string` | The custom name of the network interface attached to the private endpoint. |
-| `location` | `string` | Resource location. |
 | `tags` | `object` | Resource tags. |
 | `provisioningState` | `string` | The current provisioning state. |
-| `subnet` | `object` | Subnet in a virtual network resource. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `privateLinkServiceConnections` | `array` | A grouping of information about the connection to the remote resource. |
+| `type` | `string` | Resource type. |
+| `location` | `string` | Resource location. |
+| `manualPrivateLinkServiceConnections` | `array` | A grouping of information about the connection to the remote resource. Used when the network admin does not have access to approve connections to the remote resource. |
+| `applicationSecurityGroups` | `array` | Application security groups in which the private endpoint IP configuration is included. |
 | `extendedLocation` | `object` | ExtendedLocation complex type. |
+| `ipConfigurations` | `array` | A list of IP configurations of the private endpoint. This will be used to map to the First Party Service's endpoints. |
+| `customDnsConfigs` | `array` | An array of custom dns configurations. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `networkInterfaces` | `array` | An array of references to the network interfaces created for this private endpoint. |
+| `subnet` | `object` | Subnet in a virtual network resource. |
+| `customNetworkInterfaceName` | `string` | The custom name of the network interface attached to the private endpoint. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

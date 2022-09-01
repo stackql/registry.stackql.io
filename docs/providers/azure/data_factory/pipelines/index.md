@@ -30,16 +30,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
 | `description` | `string` | The description of the pipeline. |
-| `parameters` | `object` | Definition of all parameters for an entity. |
-| `annotations` | `array` | List of tags that can be used for describing the Pipeline. |
-| `concurrency` | `integer` | The max number of concurrent runs for the pipeline. |
-| `policy` | `object` | Pipeline Policy. |
-| `type` | `string` | The resource type. |
-| `activities` | `array` | List of activities in pipeline. |
-| `folder` | `object` | The folder that this Pipeline is in. If not specified, Pipeline will appear at the root level. |
-| `runDimensions` | `object` | Dimensions emitted by Pipeline. |
 | `etag` | `string` | Etag identifies change in the resource. |
+| `policy` | `object` | Pipeline Policy. |
 | `variables` | `object` | Definition of variable for a Pipeline. |
+| `activities` | `array` | List of activities in pipeline. |
+| `parameters` | `object` | Definition of all parameters for an entity. |
+| `runDimensions` | `object` | Dimensions emitted by Pipeline. |
+| `folder` | `object` | The folder that this Pipeline is in. If not specified, Pipeline will appear at the root level. |
+| `type` | `string` | The resource type. |
+| `concurrency` | `integer` | The max number of concurrent runs for the pipeline. |
+| `annotations` | `array` | List of tags that can be used for describing the Pipeline. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

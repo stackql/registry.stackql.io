@@ -27,16 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `arcApplicationObjectId` | `string` | Object id of arc AAD identity. |
+| `arcApplicationClientId` | `string` | App id of arc AAD identity. |
+| `aggregateState` | `string` | Aggregate state of Arc agent across the nodes in this HCI cluster. |
+| `perNodeDetails` | `array` | State of Arc agent in each of the nodes. |
 | `arcServicePrincipalObjectId` | `string` | Object id of arc AAD service principal. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `arcInstanceResourceGroup` | `string` | The resource group that hosts the Arc agents, ie. Hybrid Compute Machine resources. |
-| `connectivityProperties` | `object` | contains connectivity related configuration for ARC resources |
-| `aggregateState` | `string` | Aggregate state of Arc agent across the nodes in this HCI cluster. |
-| `arcApplicationTenantId` | `string` | Tenant id of arc AAD identity. |
-| `arcApplicationClientId` | `string` | App id of arc AAD identity. |
-| `perNodeDetails` | `array` | State of Arc agent in each of the nodes. |
 | `provisioningState` | `string` | Provisioning state of the ArcSetting proxy resource. |
+| `arcApplicationObjectId` | `string` | Object id of arc AAD identity. |
+| `arcApplicationTenantId` | `string` | Tenant id of arc AAD identity. |
+| `connectivityProperties` | `object` | contains connectivity related configuration for ARC resources |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

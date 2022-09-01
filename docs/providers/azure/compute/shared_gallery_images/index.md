@@ -28,15 +28,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `endOfLifeDate` | `string` | The end of life date of the gallery image definition. This property can be used for decommissioning purposes. This property is updatable. |
+| `recommended` | `object` | The properties describe the recommended machine configuration for this Image Definition. These properties are updatable. |
+| `hyperVGeneration` | `string` | The hypervisor generation of the Virtual Machine. Applicable to OS disks only. |
+| `disallowed` | `object` | Describes the disallowed disk types. |
+| `purchasePlan` | `object` | Describes the gallery image definition purchase plan. This is used by marketplace images. |
 | `architecture` | `string` | The architecture of the image. Applicable to OS disks only. |
 | `features` | `array` | A list of gallery image features. |
-| `disallowed` | `object` | Describes the disallowed disk types. |
-| `hyperVGeneration` | `string` | The hypervisor generation of the Virtual Machine. Applicable to OS disks only. |
-| `identifier` | `object` | The identifier information of shared gallery. |
 | `osState` | `string` | This property allows the user to specify whether the virtual machines created under this image are 'Generalized' or 'Specialized'. |
-| `recommended` | `object` | The properties describe the recommended machine configuration for this Image Definition. These properties are updatable. |
-| `purchasePlan` | `object` | Describes the gallery image definition purchase plan. This is used by marketplace images. |
 | `osType` | `string` | This property allows you to specify the type of the OS that is included in the disk when creating a VM from a managed image. &lt;br&gt;&lt;br&gt; Possible values are: &lt;br&gt;&lt;br&gt; **Windows** &lt;br&gt;&lt;br&gt; **Linux** |
+| `identifier` | `object` | The identifier information of shared gallery. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

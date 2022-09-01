@@ -29,47 +29,47 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `enableHttp2` | `boolean` | Whether HTTP2 is enabled on the application gateway resource. |
-| `autoscaleConfiguration` | `object` | Application Gateway autoscale configuration. |
-| `sslPolicy` | `object` | Application Gateway Ssl policy. |
-| `trustedRootCertificates` | `array` | Trusted Root certificates of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `httpListeners` | `array` | Http listeners of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `gatewayIPConfigurations` | `array` | Subnets of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `sslProfiles` | `array` | SSL profiles of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `backendAddressPools` | `array` | Backend address pool of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `urlPathMaps` | `array` | URL path map of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `location` | `string` | Resource location. |
-| `backendHttpSettingsCollection` | `array` | Backend http settings of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `listeners` | `array` | Listeners of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `privateLinkConfigurations` | `array` | PrivateLink configurations on application gateway. |
-| `redirectConfigurations` | `array` | Redirect configurations of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `zones` | `array` | A list of availability zones denoting where the resource needs to come from. |
-| `firewallPolicy` | `object` | Reference to another subresource. |
-| `identity` | `object` | Identity for the resource. |
-| `sku` | `object` | SKU of an application gateway. |
-| `enableFips` | `boolean` | Whether FIPS is enabled on the application gateway resource. |
 | `rewriteRuleSets` | `array` | Rewrite rules for the application gateway resource. |
-| `authenticationCertificates` | `array` | Authentication certificates of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
 | `requestRoutingRules` | `array` | Request routing rules of the application gateway resource. |
+| `backendHttpSettingsCollection` | `array` | Backend http settings of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
+| `enableFips` | `boolean` | Whether FIPS is enabled on the application gateway resource. |
+| `loadDistributionPolicies` | `array` | Load distribution policies of the application gateway resource. |
+| `gatewayIPConfigurations` | `array` | Subnets of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
+| `forceFirewallPolicyAssociation` | `boolean` | If true, associates a firewall policy with an application gateway regardless whether the policy differs from the WAF Config. |
+| `backendAddressPools` | `array` | Backend address pool of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
+| `sku` | `object` | SKU of an application gateway. |
 | `frontendIPConfigurations` | `array` | Frontend IP addresses of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `resourceGuid` | `string` | The resource GUID property of the application gateway resource. |
-| `globalConfiguration` | `object` | Application Gateway global configuration. |
-| `type` | `string` | Resource type. |
 | `operationalState` | `string` | Operational state of the application gateway resource. |
-| `customErrorConfigurations` | `array` | Custom error configurations of the application gateway resource. |
-| `backendSettingsCollection` | `array` | Backend settings of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
+| `zones` | `array` | A list of availability zones denoting where the resource needs to come from. |
+| `location` | `string` | Resource location. |
+| `probes` | `array` | Probes of the application gateway resource. |
+| `firewallPolicy` | `object` | Reference to another subresource. |
+| `privateLinkConfigurations` | `array` | PrivateLink configurations on application gateway. |
+| `webApplicationFirewallConfiguration` | `object` | Application gateway web application firewall configuration. |
 | `privateEndpointConnections` | `array` | Private Endpoint connections on application gateway. |
 | `trustedClientCertificates` | `array` | Trusted client certificates of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `forceFirewallPolicyAssociation` | `boolean` | If true, associates a firewall policy with an application gateway regardless whether the policy differs from the WAF Config. |
-| `frontendPorts` | `array` | Frontend ports of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `sslCertificates` | `array` | SSL certificates of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
-| `tags` | `object` | Resource tags. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `loadDistributionPolicies` | `array` | Load distribution policies of the application gateway resource. |
+| `backendSettingsCollection` | `array` | Backend settings of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
 | `routingRules` | `array` | Routing rules of the application gateway resource. |
-| `probes` | `array` | Probes of the application gateway resource. |
-| `webApplicationFirewallConfiguration` | `object` | Application gateway web application firewall configuration. |
+| `autoscaleConfiguration` | `object` | Application Gateway autoscale configuration. |
+| `enableHttp2` | `boolean` | Whether HTTP2 is enabled on the application gateway resource. |
+| `frontendPorts` | `array` | Frontend ports of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
+| `redirectConfigurations` | `array` | Redirect configurations of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
+| `urlPathMaps` | `array` | URL path map of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
+| `identity` | `object` | Identity for the resource. |
+| `globalConfiguration` | `object` | Application Gateway global configuration. |
+| `authenticationCertificates` | `array` | Authentication certificates of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
+| `sslProfiles` | `array` | SSL profiles of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `customErrorConfigurations` | `array` | Custom error configurations of the application gateway resource. |
+| `tags` | `object` | Resource tags. |
+| `resourceGuid` | `string` | The resource GUID property of the application gateway resource. |
+| `httpListeners` | `array` | Http listeners of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
+| `sslCertificates` | `array` | SSL certificates of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
+| `sslPolicy` | `object` | Application Gateway Ssl policy. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `listeners` | `array` | Listeners of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
+| `type` | `string` | Resource type. |
+| `trustedRootCertificates` | `array` | Trusted Root certificates of the application gateway resource. For default limits, see [Application Gateway limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

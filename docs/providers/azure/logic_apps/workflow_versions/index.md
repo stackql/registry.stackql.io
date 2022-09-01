@@ -29,21 +29,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `tags` | `object` | The resource tags. |
-| `parameters` | `object` | The parameters. |
-| `integrationAccount` | `object` | The resource reference. |
-| `state` | `string` | The workflow state. |
-| `sku` | `object` | The sku type. |
-| `version` | `string` | Gets the version. |
-| `location` | `string` | The resource location. |
-| `accessControl` | `object` | The access control configuration. |
 | `definition` | `object` |  |
+| `parameters` | `object` | The parameters. |
 | `type` | `string` | Gets the resource type. |
-| `changedTime` | `string` | Gets the changed time. |
-| `accessEndpoint` | `string` | Gets the access endpoint. |
-| `createdTime` | `string` | Gets the created time. |
 | `provisioningState` | `string` | The workflow provisioning state. |
+| `version` | `string` | Gets the version. |
+| `createdTime` | `string` | Gets the created time. |
+| `changedTime` | `string` | Gets the changed time. |
 | `endpointsConfiguration` | `object` | The endpoints configuration. |
+| `accessControl` | `object` | The access control configuration. |
+| `accessEndpoint` | `string` | Gets the access endpoint. |
+| `state` | `string` | The workflow state. |
+| `location` | `string` | The resource location. |
+| `tags` | `object` | The resource tags. |
+| `integrationAccount` | `object` | The resource reference. |
+| `sku` | `object` | The sku type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

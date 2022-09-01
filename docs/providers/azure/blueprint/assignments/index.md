@@ -27,16 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `identity` | `object` | Managed identity generic object. |
-| `parameters` | `object` | Blueprint assignment parameter values. |
-| `tags` | `object` | Resource tags. |
-| `resourceGroups` | `object` | Names and locations of resource group placeholders. |
 | `location` | `string` | The geo-location where the resource lives |
+| `identity` | `object` | Managed identity generic object. |
+| `resourceGroups` | `object` | Names and locations of resource group placeholders. |
 | `blueprintId` | `string` | ID of the published version of a blueprint definition. |
 | `locks` | `object` | Defines how resources deployed by a blueprint assignment are locked. |
-| `status` | `object` | The status of a blueprint assignment. This field is readonly. |
-| `scope` | `string` | The target subscription scope of the blueprint assignment (format: '/subscriptions/{subscriptionId}'). For management group level assignments, the property is required. |
+| `parameters` | `object` | Blueprint assignment parameter values. |
 | `provisioningState` | `string` | State of the blueprint assignment. |
+| `status` | `object` | The status of a blueprint assignment. This field is readonly. |
+| `tags` | `object` | Resource tags. |
+| `scope` | `string` | The target subscription scope of the blueprint assignment (format: '/subscriptions/&#123;subscriptionId&#125;'). For management group level assignments, the property is required. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

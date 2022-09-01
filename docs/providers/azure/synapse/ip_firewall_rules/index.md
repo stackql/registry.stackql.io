@@ -27,9 +27,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `endIpAddress` | `string` | The end IP address of the firewall rule. Must be IPv4 format. Must be greater than or equal to startIpAddress |
 | `provisioningState` | `string` | Resource provisioning state |
 | `startIpAddress` | `string` | The start IP address of the firewall rule. Must be IPv4 format |
+| `endIpAddress` | `string` | The end IP address of the firewall rule. Must be IPv4 format. Must be greater than or equal to startIpAddress |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
+| `type` | `string` | Resource type |
 | `location` | `string` | Resource location |
 | `provisioningState` | `string` | The provisioning state, which only appears in the response. |
 | `publishingProfile` | `object` | The publishing profile of a gallery image version. |
 | `replicationStatus` | `object` | This is the replication status of the gallery image version. |
 | `tags` | `object` | Resource tags |
-| `type` | `string` | Resource type |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

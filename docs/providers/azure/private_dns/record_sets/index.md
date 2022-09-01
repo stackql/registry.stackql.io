@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the record set. |
 | `name` | `string` | The name of the record set. |
-| `aaaaRecords` | `array` | The list of AAAA records in the record set. |
-| `fqdn` | `string` | Fully qualified domain name of the record set. |
-| `cnameRecord` | `object` | A CNAME record. |
-| `aRecords` | `array` | The list of A records in the record set. |
-| `type` | `string` | The type of the record set. |
-| `mxRecords` | `array` | The list of MX records in the record set. |
-| `metadata` | `object` | The metadata attached to the record set. |
-| `soaRecord` | `object` | An SOA record. |
-| `ptrRecords` | `array` | The list of PTR records in the record set. |
 | `isAutoRegistered` | `boolean` | Is the record set auto-registered in the Private DNS zone through a virtual network link? |
-| `ttl` | `integer` | The TTL (time-to-live) of the records in the record set. |
-| `srvRecords` | `array` | The list of SRV records in the record set. |
-| `etag` | `string` | The ETag of the record set. |
+| `type` | `string` | The type of the record set. |
 | `txtRecords` | `array` | The list of TXT records in the record set. |
+| `etag` | `string` | The ETag of the record set. |
+| `mxRecords` | `array` | The list of MX records in the record set. |
+| `cnameRecord` | `object` | A CNAME record. |
+| `soaRecord` | `object` | An SOA record. |
+| `ttl` | `integer` | The TTL (time-to-live) of the records in the record set. |
+| `aRecords` | `array` | The list of A records in the record set. |
+| `ptrRecords` | `array` | The list of PTR records in the record set. |
+| `aaaaRecords` | `array` | The list of AAAA records in the record set. |
+| `metadata` | `object` | The metadata attached to the record set. |
+| `fqdn` | `string` | Fully qualified domain name of the record set. |
+| `srvRecords` | `array` | The list of SRV records in the record set. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

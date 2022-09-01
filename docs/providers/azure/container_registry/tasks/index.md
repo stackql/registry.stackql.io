@@ -29,23 +29,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `trigger` | `object` | The properties of a trigger. |
-| `isSystemTask` | `boolean` | The value of this property indicates whether the task resource is system task or not. |
-| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
-| `timeout` | `integer` | Run timeout in seconds. |
-| `identity` | `object` | Managed identity for the resource. |
-| `creationDate` | `string` | The creation date of task. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `identity` | `object` | Managed identity for the resource. |
+| `agentConfiguration` | `object` | The properties that determine the run agent configuration. |
+| `creationDate` | `string` | The creation date of task. |
+| `logTemplate` | `string` | The template that describes the repository and tag information for run log artifact. |
+| `provisioningState` | `string` | The provisioning state of the task. |
+| `type` | `string` | The type of the resource. |
+| `agentPoolName` | `string` | The dedicated agent pool for the task. |
+| `trigger` | `object` | The properties of a trigger. |
+| `step` | `object` | Base properties for any task step. |
+| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
+| `tags` | `object` | The tags of the resource. |
 | `platform` | `object` | The platform properties against which the run has to happen. |
 | `credentials` | `object` | The parameters that describes a set of credentials that will be used when a run is invoked. |
-| `logTemplate` | `string` | The template that describes the repository and tag information for run log artifact. |
-| `agentPoolName` | `string` | The dedicated agent pool for the task. |
-| `tags` | `object` | The tags of the resource. |
-| `step` | `object` | Base properties for any task step. |
 | `status` | `string` | The current status of task. |
-| `type` | `string` | The type of the resource. |
-| `agentConfiguration` | `object` | The properties that determine the run agent configuration. |
-| `provisioningState` | `string` | The provisioning state of the task. |
+| `timeout` | `integer` | Run timeout in seconds. |
+| `isSystemTask` | `boolean` | The value of this property indicates whether the task resource is system task or not. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

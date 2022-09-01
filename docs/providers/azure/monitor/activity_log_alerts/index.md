@@ -30,13 +30,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
 | `description` | `string` | A description of this Activity Log Alert rule. |
-| `type` | `string` | Azure resource type |
 | `condition` | `object` | An Activity Log Alert rule condition that is met when all its member conditions are met. |
 | `scopes` | `array` | A list of resource IDs that will be used as prefixes. The alert will only apply to Activity Log events with resource IDs that fall under one of these prefixes. This list must include at least one item. |
-| `location` | `string` | Resource location |
-| `actions` | `object` | A list of Activity Log Alert rule actions. |
+| `type` | `string` | Azure resource type |
 | `enabled` | `boolean` | Indicates whether this Activity Log Alert rule is enabled. If an Activity Log Alert rule is not enabled, then none of its actions will be activated. |
+| `actions` | `object` | A list of Activity Log Alert rule actions. |
 | `tags` | `object` | Resource tags |
+| `location` | `string` | Resource location |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

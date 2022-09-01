@@ -29,17 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The access review history definition id. |
 | `name` | `string` | The access review history definition unique id. |
-| `createdDateTime` | `string` | Date time when history definition was created |
-| `scopes` | `array` | A collection of scopes used when selecting review history data |
-| `displayName` | `string` | The display name for the history definition. |
-| `instances` | `array` | Set of access review history instances for this history definition. |
 | `reviewHistoryPeriodEndDateTime` | `string` | Date time used when selecting review data, all reviews included in data end on or before this date. For use only with one-time/non-recurring reports. |
+| `createdDateTime` | `string` | Date time when history definition was created |
 | `type` | `string` | The resource type. |
-| `decisions` | `array` | Collection of review decisions which the history data should be filtered on. For example if Approve and Deny are supplied the data will only contain review results in which the decision maker approved or denied a review request. |
-| `reviewHistoryPeriodStartDateTime` | `string` | Date time used when selecting review data, all reviews included in data start on or after this date. For use only with one-time/non-recurring reports. |
 | `createdBy` | `object` | Details of the actor identity |
-| `status` | `string` | This read-only field specifies the of the requested review history data. This is either requested, in-progress, done or error. |
 | `settings` | `object` | Recurrence settings of an Access Review History Definition. |
+| `instances` | `array` | Set of access review history instances for this history definition. |
+| `reviewHistoryPeriodStartDateTime` | `string` | Date time used when selecting review data, all reviews included in data start on or after this date. For use only with one-time/non-recurring reports. |
+| `decisions` | `array` | Collection of review decisions which the history data should be filtered on. For example if Approve and Deny are supplied the data will only contain review results in which the decision maker approved or denied a review request. |
+| `status` | `string` | This read-only field specifies the of the requested review history data. This is either requested, in-progress, done or error. |
+| `displayName` | `string` | The display name for the history definition. |
+| `scopes` | `array` | A collection of scopes used when selecting review history data |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `deviceProperties` | `object` | List of properties of the device. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `tags` | `object` | Resource tags. |
-| `bgpProperties` | `object` | BGP settings details. |
 | `isSecuritySite` | `boolean` | IsSecuritySite flag. |
+| `location` | `string` | Resource location. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `virtualWan` | `object` | Reference to another subresource. |
 | `vpnSiteLinks` | `array` | List of all vpn site links. |
-| `o365Policy` | `object` | The Office365 breakout policy. |
-| `location` | `string` | Resource location. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource type. |
+| `bgpProperties` | `object` | BGP settings details. |
+| `o365Policy` | `object` | The Office365 breakout policy. |
+| `siteKey` | `string` | The key for vpn-site that can be used for connections. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `ipAddress` | `string` | The ip-address for the vpn-site. |
 | `addressSpace` | `object` | AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network. |
-| `siteKey` | `string` | The key for vpn-site that can be used for connections. |
+| `deviceProperties` | `object` | List of properties of the device. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

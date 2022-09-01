@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `autoScaleConfiguration` | `` | Configuration for auto scaling. |
-| `tags` | `object` | Resource tags. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `location` | `string` | Resource location. |
-| `provisioningState` | `string` | The current provisioning state. |
 | `virtualHub` | `object` | Virtual Hub identifier. |
-| `expressRouteConnections` | `array` | List of ExpressRoute connections to the ExpressRoute gateway. |
 | `type` | `string` | Resource type. |
+| `tags` | `object` | Resource tags. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `autoScaleConfiguration` | `` | Configuration for auto scaling. |
+| `location` | `string` | Resource location. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `expressRouteConnections` | `array` | List of ExpressRoute connections to the ExpressRoute gateway. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

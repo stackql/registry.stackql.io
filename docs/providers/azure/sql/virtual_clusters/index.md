@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `tags` | `object` | Resource tags. |
-| `childResources` | `array` | List of resources in this virtual cluster. |
 | `family` | `string` | If the service has different generations of hardware, for the same SKU, then that can be captured here. |
 | `location` | `string` | Resource location. |
 | `maintenanceConfigurationId` | `string` | Specifies maintenance configuration id to apply to this virtual cluster. |
 | `subnetId` | `string` | Subnet resource ID for the virtual cluster. |
+| `tags` | `object` | Resource tags. |
+| `childResources` | `array` | List of resources in this virtual cluster. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `creationDate` | `string` | The creation date of scope map. |
 | `provisioningState` | `string` | Provisioning state of the resource. |
+| `scopeMapId` | `string` | The resource ID of the scope map to which the token will be associated with. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `creationDate` | `string` | The creation date of scope map. |
+| `credentials` | `object` | The properties of the credentials that can be used for authenticating the token. |
 | `status` | `string` | The status of the token example enabled or disabled. |
 | `type` | `string` | The type of the resource. |
-| `credentials` | `object` | The properties of the credentials that can be used for authenticating the token. |
-| `scopeMapId` | `string` | The resource ID of the scope map to which the token will be associated with. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

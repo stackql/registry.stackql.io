@@ -27,13 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `attestUri` | `string` | Gets the uri of attestation service |
-| `location` | `string` | The geo-location where the resource lives |
-| `privateEndpointConnections` | `array` | List of private endpoint connections associated with the attestation provider. |
 | `status` | `string` | Status of attestation service. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
 | `trustModel` | `string` | Trust model for the attestation provider. |
+| `attestUri` | `string` | Gets the uri of attestation service |
+| `location` | `string` | The geo-location where the resource lives |
+| `privateEndpointConnections` | `array` | List of private endpoint connections associated with the attestation provider. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

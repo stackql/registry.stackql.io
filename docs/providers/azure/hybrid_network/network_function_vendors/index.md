@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `vendorName` | `string` | The network function vendor name. |
 | `skuList` | `array` | The network function sku list. |
+| `vendorName` | `string` | The network function vendor name. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

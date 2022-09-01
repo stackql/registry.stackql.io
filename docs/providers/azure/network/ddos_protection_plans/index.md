@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `virtualNetworks` | `array` | The list of virtual networks associated with the DDoS protection plan resource. This list is read-only. |
-| `location` | `string` | Resource location. |
-| `type` | `string` | Resource type. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `location` | `string` | Resource location. |
 | `tags` | `object` | Resource tags. |
+| `virtualNetworks` | `array` | The list of virtual networks associated with the DDoS protection plan resource. This list is read-only. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `resourceGuid` | `string` | The resource GUID property of the DDoS protection plan resource. It uniquely identifies the resource, even if the user changes its name or migrate the resource across subscriptions or resource groups. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

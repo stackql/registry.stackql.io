@@ -27,24 +27,24 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `shareUsageBytes` | `integer` | The approximate size of the data stored on the share. Note that this value may not include all recently created or recently resized files. |
-| `lastModifiedTime` | `string` | Returns the date and time the share was last modified. |
-| `accessTierStatus` | `string` | Indicates if there is a pending transition for access tier. |
-| `deleted` | `boolean` | Indicates whether the share was deleted. |
-| `shareQuota` | `integer` | The maximum size of the share, in gigabytes. Must be greater than 0, and less than or equal to 5TB (5120). For Large File Shares, the maximum size is 102400. |
-| `leaseState` | `string` | Lease state of the share. |
-| `remainingRetentionDays` | `integer` | Remaining retention days for share that was soft deleted. |
-| `accessTierChangeTime` | `string` | Indicates the last modification time for share access tier. |
-| `snapshotTime` | `string` | Creation time of share snapshot returned in the response of list shares with expand param "snapshots". |
-| `enabledProtocols` | `string` | The authentication protocol that is used for the file share. Can only be specified when creating a share. |
-| `etag` | `string` | Resource Etag. |
 | `signedIdentifiers` | `array` | List of stored access policies specified on the share. |
-| `leaseStatus` | `string` | The lease status of the share. |
-| `metadata` | `object` | A name-value pair to associate with the share as metadata. |
-| `rootSquash` | `string` | The property is for NFS share only. The default is NoRootSquash. |
-| `leaseDuration` | `string` | Specifies whether the lease on a share is of infinite or fixed duration, only when the share is leased. |
 | `deletedTime` | `string` | The deleted time if the share was deleted. |
+| `remainingRetentionDays` | `integer` | Remaining retention days for share that was soft deleted. |
 | `accessTier` | `string` | Access tier for specific share. GpV2 account can choose between TransactionOptimized (default), Hot, and Cool. FileStorage account can choose Premium. |
+| `shareUsageBytes` | `integer` | The approximate size of the data stored on the share. Note that this value may not include all recently created or recently resized files. |
+| `snapshotTime` | `string` | Creation time of share snapshot returned in the response of list shares with expand param "snapshots". |
+| `shareQuota` | `integer` | The maximum size of the share, in gigabytes. Must be greater than 0, and less than or equal to 5TB (5120). For Large File Shares, the maximum size is 102400. |
+| `lastModifiedTime` | `string` | Returns the date and time the share was last modified. |
+| `accessTierChangeTime` | `string` | Indicates the last modification time for share access tier. |
+| `leaseDuration` | `string` | Specifies whether the lease on a share is of infinite or fixed duration, only when the share is leased. |
+| `deleted` | `boolean` | Indicates whether the share was deleted. |
+| `metadata` | `object` | A name-value pair to associate with the share as metadata. |
+| `leaseStatus` | `string` | The lease status of the share. |
+| `enabledProtocols` | `string` | The authentication protocol that is used for the file share. Can only be specified when creating a share. |
+| `leaseState` | `string` | Lease state of the share. |
+| `etag` | `string` | Resource Etag. |
+| `rootSquash` | `string` | The property is for NFS share only. The default is NoRootSquash. |
+| `accessTierStatus` | `string` | Indicates if there is a pending transition for access tier. |
 | `version` | `string` | The version of the share. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

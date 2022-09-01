@@ -29,26 +29,26 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `sku` | `object` | Contains SKU in an ExpressRouteCircuit. |
-| `expressRoutePort` | `object` | Reference to another subresource. |
-| `type` | `string` | Resource type. |
-| `serviceProviderProperties` | `object` | Contains ServiceProviderProperties in an ExpressRouteCircuit. |
-| `authorizations` | `array` | The list of authorizations. |
-| `allowClassicOperations` | `boolean` | Allow classic operations. |
-| `gatewayManagerEtag` | `string` | The GatewayManager Etag. |
-| `location` | `string` | Resource location. |
 | `bandwidthInGbps` | `number` | The bandwidth of the circuit when the circuit is provisioned on an ExpressRoutePort resource. |
-| `peerings` | `array` | The list of peerings. |
-| `authorizationKey` | `string` | The authorizationKey. |
-| `stag` | `integer` | The identifier of the circuit traffic. Outer tag for QinQ encapsulation. |
+| `expressRoutePort` | `object` | Reference to another subresource. |
+| `allowClassicOperations` | `boolean` | Allow classic operations. |
+| `sku` | `object` | Contains SKU in an ExpressRouteCircuit. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `serviceProviderNotes` | `string` | The ServiceProviderNotes. |
-| `serviceKey` | `string` | The ServiceKey. |
-| `serviceProviderProvisioningState` | `string` | The ServiceProviderProvisioningState state of the resource. |
-| `globalReachEnabled` | `boolean` | Flag denoting global reach status. |
-| `circuitProvisioningState` | `string` | The CircuitProvisioningState state of the resource. |
-| `tags` | `object` | Resource tags. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `globalReachEnabled` | `boolean` | Flag denoting global reach status. |
+| `peerings` | `array` | The list of peerings. |
+| `stag` | `integer` | The identifier of the circuit traffic. Outer tag for QinQ encapsulation. |
+| `location` | `string` | Resource location. |
+| `gatewayManagerEtag` | `string` | The GatewayManager Etag. |
+| `serviceProviderNotes` | `string` | The ServiceProviderNotes. |
+| `serviceProviderProvisioningState` | `string` | The ServiceProviderProvisioningState state of the resource. |
+| `type` | `string` | Resource type. |
+| `authorizationKey` | `string` | The authorizationKey. |
+| `serviceProviderProperties` | `object` | Contains ServiceProviderProperties in an ExpressRouteCircuit. |
+| `circuitProvisioningState` | `string` | The CircuitProvisioningState state of the resource. |
+| `serviceKey` | `string` | The ServiceKey. |
+| `authorizations` | `array` | The list of authorizations. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

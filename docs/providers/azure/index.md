@@ -51,8 +51,9 @@ REGISTRY PULL azure v0.2.0;
 ```
 ### Example
 ```bash
+
 AZ_ACCESS_TOKEN_RAW=$(az account get-access-token --query accessToken --output tsv)
-export AZ_ACCESS_TOKEN=`echo $AZ_ACCESS_TOKEN_RAW | tr -d '\r'`
+export AZ_ACCESS_TOKEN=`echo $AZ_ACCESS_TOKEN_RAW | tr -d ''`
 AUTH='{ "azure": { "type": "api_key", "valuePrefix": "Bearer ", "credentialsenvvar": "AZ_ACCESS_TOKEN" } }'
 stackql shell --auth="${AUTH}"
 

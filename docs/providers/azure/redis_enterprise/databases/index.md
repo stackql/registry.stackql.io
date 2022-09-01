@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `clusteringPolicy` | `string` | Clustering policy - default is OSSCluster. Specified at create time. |
-| `modules` | `array` | Optional set of redis modules to enable in this database - modules can only be added at creation time. |
-| `port` | `integer` | TCP port of the database endpoint. Specified at create time. Defaults to an available port. |
-| `geoReplication` | `object` | Optional set of properties to configure geo replication for this database. |
-| `persistence` | `object` | Persistence-related configuration for the RedisEnterprise database |
 | `resourceState` | `string` | Current resource status |
-| `provisioningState` | `string` | Current provisioning status |
+| `clusteringPolicy` | `string` | Clustering policy - default is OSSCluster. Specified at create time. |
+| `persistence` | `object` | Persistence-related configuration for the RedisEnterprise database |
 | `clientProtocol` | `string` | Specifies whether redis clients can connect using TLS-encrypted or plaintext redis protocols. Default is TLS-encrypted. |
+| `provisioningState` | `string` | Current provisioning status |
+| `modules` | `array` | Optional set of redis modules to enable in this database - modules can only be added at creation time. |
+| `geoReplication` | `object` | Optional set of properties to configure geo replication for this database. |
+| `port` | `integer` | TCP port of the database endpoint. Specified at create time. Defaults to an available port. |
 | `evictionPolicy` | `string` | Redis eviction policy - default is VolatileLRU |
 ## Methods
 | Name | Accessible by | Required Params | Description |

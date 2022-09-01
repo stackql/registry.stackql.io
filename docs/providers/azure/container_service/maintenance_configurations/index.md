@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `notAllowedTime` | `array` | Time slots on which upgrade is not allowed. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `timeInWeek` | `array` | If two array entries specify the same day of the week, the applied configuration is the union of times in both entries. |
 | `type` | `string` | Resource type |
+| `notAllowedTime` | `array` | Time slots on which upgrade is not allowed. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

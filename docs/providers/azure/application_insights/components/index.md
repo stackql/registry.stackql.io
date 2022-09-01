@@ -29,36 +29,36 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
-| `HockeyAppId` | `string` | The unique application ID created when a new application is added to HockeyApp, used for communications with HockeyApp. |
 | `ConnectionString` | `string` | Application Insights component connection string. |
-| `CreationDate` | `string` | Creation Date for the Application Insights component, in ISO 8601 format. |
-| `PrivateLinkScopedResources` | `array` | List of linked private link scope resources. |
-| `AppId` | `string` | Application Insights Unique ID for your Application. |
-| `Name` | `string` | Application name. |
-| `LaMigrationDate` | `string` | The date which the component got migrated to LA, in ISO 8601 format. |
 | `RetentionInDays` | `integer` | Retention period in days. |
-| `kind` | `string` | The kind of application that this component refers to, used to customize UI. This value is a freeform string, values should typically be one of the following: web, ios, other, store, java, phone. |
+| `tags` | `` | Resource tags |
 | `Request_Source` | `string` | Describes what tool created this Application Insights component. Customers using this API should set this to the default 'rest'. |
+| `DisableIpMasking` | `boolean` | Disable IP masking. |
+| `Name` | `string` | Application name. |
+| `DisableLocalAuth` | `boolean` | Disable Non-AAD based Auth. |
+| `etag` | `string` | Resource etag |
 | `publicNetworkAccessForQuery` | `string` | The network access type for operating on the Application Insights Component. By default it is Enabled |
 | `publicNetworkAccessForIngestion` | `string` | The network access type for operating on the Application Insights Component. By default it is Enabled |
-| `WorkspaceResourceId` | `string` | Resource Id of the log analytics workspace which the data will be ingested to. This property is required to create an application with this API version. Applications from older versions will not have this property. |
-| `HockeyAppToken` | `string` | Token used to authenticate communications with between Application Insights and HockeyApp. |
-| `location` | `string` | Resource location |
-| `Application_Type` | `string` | Type of application being monitored. |
 | `IngestionMode` | `string` | Indicates the flow of the ingestion. |
-| `InstrumentationKey` | `string` | Application Insights Instrumentation key. A read-only value that applications can use to identify the destination for all telemetry sent to Azure Application Insights. This value will be supplied upon construction of each new Application Insights component. |
-| `SamplingPercentage` | `number` | Percentage of the data produced by the application being monitored that is being sampled for Application Insights telemetry. |
-| `ImmediatePurgeDataOn30Days` | `boolean` | Purge data immediately after 30 days. |
-| `Flow_Type` | `string` | Used by the Application Insights system to determine what kind of flow this component was created by. This is to be set to 'Bluefield' when creating/updating a component via the REST API. |
-| `tags` | `` | Resource tags |
+| `kind` | `string` | The kind of application that this component refers to, used to customize UI. This value is a freeform string, values should typically be one of the following: web, ios, other, store, java, phone. |
+| `location` | `string` | Resource location |
 | `provisioningState` | `string` | Current state of this component: whether or not is has been provisioned within the resource group it is defined. Users cannot change this value but are able to read from it. Values will include Succeeded, Deploying, Canceled, and Failed. |
-| `etag` | `string` | Resource etag |
-| `type` | `string` | Azure resource type |
 | `ApplicationId` | `string` | The unique ID of your application. This field mirrors the 'Name' field and cannot be changed. |
-| `TenantId` | `string` | Azure Tenant Id. |
+| `SamplingPercentage` | `number` | Percentage of the data produced by the application being monitored that is being sampled for Application Insights telemetry. |
 | `ForceCustomerStorageForProfiler` | `boolean` | Force users to create their own storage account for profiler and debugger. |
-| `DisableIpMasking` | `boolean` | Disable IP masking. |
-| `DisableLocalAuth` | `boolean` | Disable Non-AAD based Auth. |
+| `HockeyAppId` | `string` | The unique application ID created when a new application is added to HockeyApp, used for communications with HockeyApp. |
+| `Application_Type` | `string` | Type of application being monitored. |
+| `type` | `string` | Azure resource type |
+| `CreationDate` | `string` | Creation Date for the Application Insights component, in ISO 8601 format. |
+| `Flow_Type` | `string` | Used by the Application Insights system to determine what kind of flow this component was created by. This is to be set to 'Bluefield' when creating/updating a component via the REST API. |
+| `TenantId` | `string` | Azure Tenant Id. |
+| `LaMigrationDate` | `string` | The date which the component got migrated to LA, in ISO 8601 format. |
+| `AppId` | `string` | Application Insights Unique ID for your Application. |
+| `PrivateLinkScopedResources` | `array` | List of linked private link scope resources. |
+| `WorkspaceResourceId` | `string` | Resource Id of the log analytics workspace which the data will be ingested to. This property is required to create an application with this API version. Applications from older versions will not have this property. |
+| `ImmediatePurgeDataOn30Days` | `boolean` | Purge data immediately after 30 days. |
+| `HockeyAppToken` | `string` | Token used to authenticate communications with between Application Insights and HockeyApp. |
+| `InstrumentationKey` | `string` | Application Insights Instrumentation key. A read-only value that applications can use to identify the destination for all telemetry sent to Azure Application Insights. This value will be supplied upon construction of each new Application Insights component. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

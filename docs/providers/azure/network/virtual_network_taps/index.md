@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
+| `location` | `string` | Resource location. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `destinationLoadBalancerFrontEndIPConfiguration` | `object` | Frontend IP address of the load balancer. |
-| `networkInterfaceTapConfigurations` | `array` | Specifies the list of resource IDs for the network interface IP configuration that needs to be tapped. |
 | `destinationPort` | `integer` | The VXLAN destination port that will receive the tapped traffic. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `location` | `string` | Resource location. |
-| `tags` | `object` | Resource tags. |
-| `destinationNetworkInterfaceIPConfiguration` | `object` | IPConfiguration in a network interface. |
 | `resourceGuid` | `string` | The resource GUID property of the virtual network tap resource. |
 | `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `networkInterfaceTapConfigurations` | `array` | Specifies the list of resource IDs for the network interface IP configuration that needs to be tapped. |
+| `tags` | `object` | Resource tags. |
+| `destinationNetworkInterfaceIPConfiguration` | `object` | IPConfiguration in a network interface. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

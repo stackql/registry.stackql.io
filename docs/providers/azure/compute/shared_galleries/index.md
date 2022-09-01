@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `value` | `array` | A list of shared galleries. |
 | `nextLink` | `string` | The uri to fetch the next page of shared galleries. Call ListNext() with this to fetch the next page of shared galleries. |
+| `value` | `array` | A list of shared galleries. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

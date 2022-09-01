@@ -27,7 +27,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `name` | `string` | Operation name, i.e., {provider}/{resource}/{operation}. |
+| `name` | `string` | Operation name, i.e., &#123;provider&#125;/&#123;resource&#125;/&#123;operation&#125;. |
 | `display` | `object` | The object that represents the operation. |
 | `isDataAction` | `boolean` | Indicates whether the operation is a data action |
 ## Methods

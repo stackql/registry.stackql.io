@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `sku` | `object` | An ARM Resource SKU. |
-| `kind` | `string` | Kind of elastic pool. This is metadata used for the Azure portal experience. |
+| `state` | `string` | The state of the elastic pool. |
 | `creationDate` | `string` | The creation date of the elastic pool (ISO8601 format). |
-| `highAvailabilityReplicaCount` | `integer` | The number of secondary replicas associated with the elastic pool that are used to provide high availability. |
+| `licenseType` | `string` | The license type to apply for this elastic pool. |
+| `location` | `string` | Resource location. |
+| `maxSizeBytes` | `integer` | The storage limit for the database elastic pool in bytes. |
+| `zoneRedundant` | `boolean` | Whether or not this elastic pool is zone redundant, which means the replicas of this elastic pool will be spread across multiple availability zones. |
+| `perDatabaseSettings` | `object` | Per database settings of an elastic pool. |
+| `sku` | `object` | An ARM Resource SKU. |
 | `tags` | `object` | Resource tags. |
 | `maintenanceConfigurationId` | `string` | Maintenance configuration id assigned to the elastic pool. This configuration defines the period when the maintenance updates will will occur. |
-| `maxSizeBytes` | `integer` | The storage limit for the database elastic pool in bytes. |
-| `perDatabaseSettings` | `object` | Per database settings of an elastic pool. |
-| `state` | `string` | The state of the elastic pool. |
-| `zoneRedundant` | `boolean` | Whether or not this elastic pool is zone redundant, which means the replicas of this elastic pool will be spread across multiple availability zones. |
-| `location` | `string` | Resource location. |
-| `licenseType` | `string` | The license type to apply for this elastic pool. |
+| `highAvailabilityReplicaCount` | `integer` | The number of secondary replicas associated with the elastic pool that are used to provide high availability. |
+| `kind` | `string` | Kind of elastic pool. This is metadata used for the Azure portal experience. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The access review schedule definition id. |
 | `name` | `string` | The access review schedule definition unique id. |
-| `createdBy` | `object` | Details of the actor identity |
-| `descriptionForAdmins` | `string` | The description provided by the access review creator and visible to admins. |
 | `status` | `string` | This read-only field specifies the status of an accessReview. |
-| `descriptionForReviewers` | `string` | The description provided by the access review creator to be shown to reviewers. |
-| `reviewersType` | `string` | This field specifies the type of reviewers for a review. Usually for a review, reviewers are explicitly assigned. However, in some cases, the reviewers may not be assigned and instead be chosen dynamically. For example managers review or self review. |
 | `scope` | `object` | Descriptor for what needs to be reviewed |
-| `instances` | `array` | This is the collection of instances returned when one does an expand on it. |
-| `settings` | `object` | Settings of an Access Review. |
-| `backupReviewers` | `array` | This is the collection of backup reviewers. |
+| `descriptionForAdmins` | `string` | The description provided by the access review creator and visible to admins. |
 | `displayName` | `string` | The display name for the schedule definition. |
-| `type` | `string` | The resource type. |
+| `instances` | `array` | This is the collection of instances returned when one does an expand on it. |
+| `backupReviewers` | `array` | This is the collection of backup reviewers. |
+| `createdBy` | `object` | Details of the actor identity |
+| `settings` | `object` | Settings of an Access Review. |
+| `reviewersType` | `string` | This field specifies the type of reviewers for a review. Usually for a review, reviewers are explicitly assigned. However, in some cases, the reviewers may not be assigned and instead be chosen dynamically. For example managers review or self review. |
 | `reviewers` | `array` | This is the collection of reviewers. |
+| `type` | `string` | The resource type. |
+| `descriptionForReviewers` | `string` | The description provided by the access review creator to be shown to reviewers. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

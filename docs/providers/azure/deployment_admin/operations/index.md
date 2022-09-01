@@ -28,8 +28,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The name of the operation being performed on this particular object. This name should match the name that appears in RBAC or the event service. |
-| `display` | `object` | Contains the localized display information for this particular operation or action. |
 | `origin` | `string` | Origin for the operation. Eg. User, System |
+| `display` | `object` | Contains the localized display information for this particular operation or action. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

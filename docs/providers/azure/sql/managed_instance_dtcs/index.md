@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `provisioningState` | `string` | Provisioning state of managed instance DTC. |
 | `securitySettings` | `object` | The Security Settings of managed instance DTC. |
 | `dtcEnabled` | `boolean` | Active status of managed instance DTC. |
 | `dtcHostNameDnsSuffix` | `string` | Host name dns suffix of managed instance DTC. |
 | `externalDnsSuffixSearchList` | `array` | External dns suffix search list of managed instance DTC. |
-| `provisioningState` | `string` | Provisioning state of managed instance DTC. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

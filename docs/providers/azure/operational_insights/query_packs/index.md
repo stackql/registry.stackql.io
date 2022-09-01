@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
-| `timeCreated` | `string` | Creation Date for the Log Analytics QueryPack, in ISO 8601 format. |
-| `timeModified` | `string` | Last modified date of the Log Analytics QueryPack, in ISO 8601 format. |
-| `location` | `string` | Resource location |
-| `type` | `string` | Azure resource type |
-| `provisioningState` | `string` | Current state of this QueryPack: whether or not is has been provisioned within the resource group it is defined. Users cannot change this value but are able to read from it. Values will include Succeeded, Deploying, Canceled, and Failed. |
-| `queryPackId` | `string` | The unique ID of your application. This field cannot be changed. |
 | `tags` | `object` | Resource tags |
+| `queryPackId` | `string` | The unique ID of your application. This field cannot be changed. |
+| `type` | `string` | Azure resource type |
+| `timeModified` | `string` | Last modified date of the Log Analytics QueryPack, in ISO 8601 format. |
+| `timeCreated` | `string` | Creation Date for the Log Analytics QueryPack, in ISO 8601 format. |
+| `provisioningState` | `string` | Current state of this QueryPack: whether or not is has been provisioned within the resource group it is defined. Users cannot change this value but are able to read from it. Values will include Succeeded, Deploying, Canceled, and Failed. |
+| `location` | `string` | Resource location |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

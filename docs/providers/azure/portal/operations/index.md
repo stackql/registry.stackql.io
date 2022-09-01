@@ -27,7 +27,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `name` | `string` | Operation name, in format of {provider}/{resource}/{operation} |
+| `name` | `string` | Operation name, in format of &#123;provider&#125;/&#123;resource&#125;/&#123;operation&#125; |
 | `display` | `` | Display metadata associated with the operation. |
 | `isDataAction` | `string` | Indicates whether the operation applies to data-plane. |
 ## Methods

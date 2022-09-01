@@ -29,15 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `peerExpressRouteCircuitPeering` | `object` | Reference to another subresource. |
-| `expressRouteCircuitPeering` | `object` | Reference to another subresource. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `type` | `string` | Type of the resource. |
-| `addressPrefix` | `string` | /29 IP address space to carve out Customer addresses for tunnels. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `ipv6CircuitConnectionConfig` | `object` | IPv6 Circuit Connection properties for global reach. |
+| `addressPrefix` | `string` | /29 IP address space to carve out Customer addresses for tunnels. |
 | `authorizationKey` | `string` | The authorization key. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `circuitConnectionStatus` | `string` | Express Route Circuit connection state. |
+| `type` | `string` | Type of the resource. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `expressRouteCircuitPeering` | `object` | Reference to another subresource. |
+| `peerExpressRouteCircuitPeering` | `object` | Reference to another subresource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

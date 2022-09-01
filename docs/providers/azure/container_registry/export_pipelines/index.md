@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `target` | `object` | The properties of the export pipeline target. |
-| `options` | `array` | The list of all options configured for the pipeline. |
 | `provisioningState` | `string` | The provisioning state of the pipeline at the time the operation was called. |
-| `type` | `string` | The type of the resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `options` | `array` | The list of all options configured for the pipeline. |
+| `type` | `string` | The type of the resource. |
 | `identity` | `object` | Managed identity for the resource. |
 | `location` | `string` | The location of the export pipeline. |
+| `target` | `object` | The properties of the export pipeline target. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -30,18 +30,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
 | `description` | `string` | The description of this workspace. |
-| `storageAccount` | `object` | The properties of a storage account for a machine learning team account. |
-| `friendlyName` | `string` | The friendly name for this workspace. This will be the workspace name in the arm id when the workspace object gets created |
-| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
+| `type` | `string` | The type of the resource. |
+| `keyVaultId` | `string` | The fully qualified arm id of the user key vault. |
+| `tags` | `object` | The tags of the resource. |
 | `discoveryUri` | `string` | The uri for this machine learning team account. |
 | `provisioningState` | `string` | The current deployment state of team account resource. The provisioningState is to indicate states for resource provisioning. |
-| `tags` | `object` | The tags of the resource. |
-| `accountId` | `string` | The immutable id associated with this team account. |
-| `creationDate` | `string` | The creation date of the machine learning team account in ISO8601 format. |
-| `keyVaultId` | `string` | The fully qualified arm id of the user key vault. |
-| `type` | `string` | The type of the resource. |
 | `seats` | `string` | The no of users/seats who can access this team account. This property defines the charge on the team account. |
+| `friendlyName` | `string` | The friendly name for this workspace. This will be the workspace name in the arm id when the workspace object gets created |
+| `storageAccount` | `object` | The properties of a storage account for a machine learning team account. |
 | `vsoAccountId` | `string` | The fully qualified arm id of the vso account to be used for this team account. |
+| `creationDate` | `string` | The creation date of the machine learning team account in ISO8601 format. |
+| `accountId` | `string` | The immutable id associated with this team account. |
+| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

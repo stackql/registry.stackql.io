@@ -29,24 +29,24 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `spendingLimit` | `string` | The billing profile spending limit. |
-| `billTo` | `object` | Address details. |
-| `billingRelationshipType` | `string` | Identifies which services and purchases are paid by a billing profile. |
-| `status` | `string` | The status of the billing profile. |
-| `displayName` | `string` | The name of the billing profile. |
-| `tags` | `object` | Tags of billing profiles. |
-| `targetClouds` | `array` | Identifies the cloud environments that are associated with a billing profile. This is a system managed optional field and gets updated as the billing profile gets associated with accounts in various clouds. |
-| `systemId` | `string` | The system generated unique identifier for a billing profile. |
 | `enabledAzurePlans` | `array` | Information about the enabled azure plans. |
+| `billingRelationshipType` | `string` | Identifies which services and purchases are paid by a billing profile. |
 | `invoiceDay` | `integer` | The day of the month when the invoice for the billing profile is generated. |
-| `indirectRelationshipInfo` | `object` | The billing profile details of the partner of the customer for an indirect motion. |
-| `invoiceEmailOptIn` | `boolean` | Flag controlling whether the invoices for the billing profile are sent through email. |
-| `currency` | `string` | The currency in which the charges for the billing profile are billed. |
-| `type` | `string` | Resource type. |
-| `hasReadAccess` | `boolean` | Indicates whether user has read access to the billing profile. |
-| `invoiceSections` | `object` | The invoice sections associated to the billing profile. By default this is not populated, unless it's specified in $expand. |
-| `poNumber` | `string` | The purchase order name that will appear on the invoices generated for the billing profile. |
 | `statusReasonCode` | `string` | Reason for the specified billing profile status. |
+| `billTo` | `object` | Address details. |
+| `targetClouds` | `array` | Identifies the cloud environments that are associated with a billing profile. This is a system managed optional field and gets updated as the billing profile gets associated with accounts in various clouds. |
+| `invoiceEmailOptIn` | `boolean` | Flag controlling whether the invoices for the billing profile are sent through email. |
+| `status` | `string` | The status of the billing profile. |
+| `poNumber` | `string` | The purchase order name that will appear on the invoices generated for the billing profile. |
+| `spendingLimit` | `string` | The billing profile spending limit. |
+| `hasReadAccess` | `boolean` | Indicates whether user has read access to the billing profile. |
+| `systemId` | `string` | The system generated unique identifier for a billing profile. |
+| `type` | `string` | Resource type. |
+| `displayName` | `string` | The name of the billing profile. |
+| `invoiceSections` | `object` | The invoice sections associated to the billing profile. By default this is not populated, unless it's specified in $expand. |
+| `indirectRelationshipInfo` | `object` | The billing profile details of the partner of the customer for an indirect motion. |
+| `currency` | `string` | The currency in which the charges for the billing profile are billed. |
+| `tags` | `object` | Tags of billing profiles. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

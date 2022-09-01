@@ -29,22 +29,22 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `mtu` | `string` | Maximum transmission unit of the physical port pair(s). |
-| `allocationDate` | `string` | Date of the physical port allocation to be used in Letter of Authorization. |
 | `etherType` | `string` | Ether type of the physical port. |
-| `location` | `string` | Resource location. |
-| `provisionedBandwidthInGbps` | `number` | Aggregate Gbps of associated circuit bandwidths. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `resourceGuid` | `string` | The resource GUID property of the express route port resource. |
 | `bandwidthInGbps` | `integer` | Bandwidth of procured ports in Gbps. |
-| `peeringLocation` | `string` | The name of the peering location that the ExpressRoutePort is mapped to physically. |
 | `provisioningState` | `string` | The current provisioning state. |
-| `tags` | `object` | Resource tags. |
-| `type` | `string` | Resource type. |
-| `circuits` | `array` | Reference the ExpressRoute circuit(s) that are provisioned on this ExpressRoutePort resource. |
-| `identity` | `object` | Identity for the resource. |
-| `encapsulation` | `string` | Encapsulation method on physical ports. |
+| `provisionedBandwidthInGbps` | `number` | Aggregate Gbps of associated circuit bandwidths. |
+| `allocationDate` | `string` | Date of the physical port allocation to be used in Letter of Authorization. |
 | `links` | `array` | The set of physical links of the ExpressRoutePort resource. |
+| `peeringLocation` | `string` | The name of the peering location that the ExpressRoutePort is mapped to physically. |
+| `tags` | `object` | Resource tags. |
+| `identity` | `object` | Identity for the resource. |
+| `type` | `string` | Resource type. |
+| `encapsulation` | `string` | Encapsulation method on physical ports. |
+| `resourceGuid` | `string` | The resource GUID property of the express route port resource. |
+| `mtu` | `string` | Maximum transmission unit of the physical port pair(s). |
+| `location` | `string` | Resource location. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `circuits` | `array` | Reference the ExpressRoute circuit(s) that are provisioned on this ExpressRoutePort resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

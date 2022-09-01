@@ -28,17 +28,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `partnerRegistrationImmutableId` | `string` | The immutableId of the corresponding partner registration. |
-| `messageForActivation` | `string` | Context or helpful message that can be used during the approval process by the subscriber. |
-| `eventTypeInfo` | `object` | The event type information for Channels. |
-| `partnerTopicFriendlyDescription` | `string` | Friendly description about the topic. This can be set by the publisher/partner to show custom description for the customer partner topic.<br />This will be helpful to remove any ambiguity of the origin of creation of the partner topic for the customer. |
-| `provisioningState` | `string` | Provisioning state of the partner topic. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `activationState` | `string` | Activation state of the partner topic. |
-| `tags` | `object` | Resource tags. |
-| `expirationTimeIfNotActivatedUtc` | `string` | Expiration time of the partner topic. If this timer expires while the partner topic is still never activated,<br />the partner topic and corresponding event channel are deleted. |
-| `identity` | `object` | The identity information for the resource. |
-| `location` | `string` | The geo-location where the resource lives |
 | `source` | `string` | Source associated with this partner topic. This represents a unique partner resource. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `expirationTimeIfNotActivatedUtc` | `string` | Expiration time of the partner topic. If this timer expires while the partner topic is still never activated,<br />the partner topic and corresponding event channel are deleted. |
+| `partnerTopicFriendlyDescription` | `string` | Friendly description about the topic. This can be set by the publisher/partner to show custom description for the customer partner topic.<br />This will be helpful to remove any ambiguity of the origin of creation of the partner topic for the customer. |
+| `identity` | `object` | The identity information for the resource. |
+| `eventTypeInfo` | `object` | The event type information for Channels. |
+| `location` | `string` | The geo-location where the resource lives |
+| `provisioningState` | `string` | Provisioning state of the partner topic. |
+| `tags` | `object` | Resource tags. |
+| `messageForActivation` | `string` | Context or helpful message that can be used during the approval process by the subscriber. |
+| `activationState` | `string` | Activation state of the partner topic. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

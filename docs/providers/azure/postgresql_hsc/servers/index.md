@@ -27,16 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `fullyQualifiedDomainName` | `string` | The fully qualified domain name of a server. |
-| `standbyAvailabilityZone` | `string` | Standby Availability Zone information of the server group. |
 | `postgresqlVersion` | `string` | The PostgreSQL version. |
-| `citusVersion` | `string` | The Citus version. |
-| `administratorLogin` | `string` | The administrator's login name of a servers in server group. |
-| `availabilityZone` | `string` | Availability Zone information of the server group. |
+| `state` | `string` | A state of a server group/server that is visible to user. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `standbyAvailabilityZone` | `string` | Standby Availability Zone information of the server group. |
+| `availabilityZone` | `string` | Availability Zone information of the server group. |
+| `fullyQualifiedDomainName` | `string` | The fully qualified domain name of a server. |
 | `role` | `string` | The role of a server. |
 | `haState` | `string` | A state of a server role group/server that is visible to user for HA feature. |
-| `state` | `string` | A state of a server group/server that is visible to user. |
+| `administratorLogin` | `string` | The administrator's login name of a servers in server group. |
+| `citusVersion` | `string` | The Citus version. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

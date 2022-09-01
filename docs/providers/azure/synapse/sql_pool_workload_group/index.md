@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `maxResourcePercentPerRequest` | `number` | The workload group request maximum grant percentage. |
-| `minResourcePercent` | `integer` | The workload group minimum percentage resource. |
-| `minResourcePercentPerRequest` | `number` | The workload group request minimum grant percentage. |
 | `queryExecutionTimeout` | `integer` | The workload group query execution timeout. |
 | `importance` | `string` | The workload group importance level. |
 | `maxResourcePercent` | `integer` | The workload group cap percentage resource. |
+| `maxResourcePercentPerRequest` | `number` | The workload group request maximum grant percentage. |
+| `minResourcePercent` | `integer` | The workload group minimum percentage resource. |
+| `minResourcePercentPerRequest` | `number` | The workload group request minimum grant percentage. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

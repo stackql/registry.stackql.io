@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `subscriptions` | `array` | The collection of subscriptions covered by the Managed Network |
-| `virtualNetworks` | `array` | The collection of virtual nets covered by the Managed Network |
 | `kind` | `string` | Responsibility role under which this Managed Network Group will be created |
 | `managementGroups` | `array` | The collection of management groups covered by the Managed Network |
 | `subnets` | `array` | The collection of  subnets covered by the Managed Network |
+| `subscriptions` | `array` | The collection of subscriptions covered by the Managed Network |
+| `virtualNetworks` | `array` | The collection of virtual nets covered by the Managed Network |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

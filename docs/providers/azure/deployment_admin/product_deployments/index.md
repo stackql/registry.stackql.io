@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
+| `externalAccess` | `object` | Resource provider deployment information |
+| `productId` | `string` | The product identifier |
+| `internalState` | `object` | Resource type internal state |
+| `lastSuccessfulDeployment` | `object` | Resource provider deployment information |
+| `status` | `string` | Status of an operation. |
 | `subscriptionId` | `string` | The product subscription identifier |
 | `type` | `string` | Type of Resource. |
-| `deployment` | `object` | Resource provider deployment information |
-| `productId` | `string` | The product identifier |
 | `location` | `string` | Location of the resource. |
-| `lastSuccessfulDeployment` | `object` | Resource provider deployment information |
-| `eTag` | `string` | entity tag |
+| `deployment` | `object` | Resource provider deployment information |
 | `provisioningState` | `string` | The provisioning state |
-| `internalState` | `object` | Resource type internal state |
+| `eTag` | `string` | entity tag |
 | `secretRotation` | `object` | Resource provider deployment information |
-| `externalAccess` | `object` | Resource provider deployment information |
 | `error` | `object` | Error response. |
-| `status` | `string` | Status of an operation. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

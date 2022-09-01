@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified identifier of the key vault resource. |
 | `name` | `string` | Name of the key vault resource. |
-| `privateEndpoint` | `object` | Private endpoint object properties. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `type` | `string` | Resource type of the key vault resource. |
-| `privateLinkServiceConnectionState` | `object` | An object that represents the approval state of the private link connection. |
-| `tags` | `object` | Tags assigned to the key vault resource. |
-| `location` | `string` | Azure location of the key vault resource. |
 | `etag` | `string` | Modified whenever there is a change in the state of private endpoint connection. |
+| `tags` | `object` | Tags assigned to the key vault resource. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `privateLinkServiceConnectionState` | `object` | An object that represents the approval state of the private link connection. |
+| `location` | `string` | Azure location of the key vault resource. |
+| `privateEndpoint` | `object` | Private endpoint object properties. |
+| `type` | `string` | Resource type of the key vault resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

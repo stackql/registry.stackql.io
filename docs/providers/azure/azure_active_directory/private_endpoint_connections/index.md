@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `provisioningState` | `string` | The current provisioning state. |
 | `privateEndpoint` | `object` | Private endpoint object properties. |
 | `privateLinkConnectionTags` | `object` | A container holding only the Tags for a resource, allowing the user to update the tags on a PrivateLinkConnection instance. |
 | `privateLinkServiceConnectionState` | `object` | An object that represents the approval state of the private link connection. |
+| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

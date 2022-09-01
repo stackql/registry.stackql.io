@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `type` | `string` | Resource type |
-| `outputBlobUri` | `string` | Specifies the Azure storage blob where script output stream will be uploaded. |
-| `asyncExecution` | `boolean` | Optional. If set to true, provisioning will complete as soon as the script starts and will not wait for script to complete. |
-| `tags` | `object` | Resource tags |
-| `location` | `string` | Resource location |
-| `protectedParameters` | `array` | The parameters used by the script. |
-| `parameters` | `array` | The parameters used by the script. |
-| `provisioningState` | `string` | The provisioning state, which only appears in the response. |
-| `instanceView` | `object` | The instance view of a virtual machine run command. |
-| `source` | `object` | Describes the script sources for run command. |
 | `runAsPassword` | `string` | Specifies the user account password on the VM when executing the run command. |
-| `errorBlobUri` | `string` | Specifies the Azure storage blob where script error stream will be uploaded. |
+| `parameters` | `array` | The parameters used by the script. |
+| `tags` | `object` | Resource tags |
+| `outputBlobUri` | `string` | Specifies the Azure storage blob where script output stream will be uploaded. |
 | `timeoutInSeconds` | `integer` | The timeout in seconds to execute the run command. |
+| `source` | `object` | Describes the script sources for run command. |
+| `provisioningState` | `string` | The provisioning state, which only appears in the response. |
+| `errorBlobUri` | `string` | Specifies the Azure storage blob where script error stream will be uploaded. |
+| `instanceView` | `object` | The instance view of a virtual machine run command. |
+| `protectedParameters` | `array` | The parameters used by the script. |
+| `asyncExecution` | `boolean` | Optional. If set to true, provisioning will complete as soon as the script starts and will not wait for script to complete. |
+| `location` | `string` | Resource location |
+| `type` | `string` | Resource type |
 | `runAsUser` | `string` | Specifies the user account on the VM when executing the run command. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

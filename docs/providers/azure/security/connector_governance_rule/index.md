@@ -27,20 +27,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `description` | `string` | description of the governanceRule |
-| `isDisabled` | `boolean` | Defines whether the rule is active/inactive |
-| `remediationTimeframe` | `string` | Governance rule remediation timeframe - this is the time that will affect on the grace-period duration e.g. 7.00:00:00 - means 7 days |
-| `rulePriority` | `integer` | The governance rule priority, priority to the lower number. Rules with the same priority on the same subscription will not be allowed |
-| `displayName` | `string` | display name of the governanceRule |
-| `ruleType` | `string` | The rule type of the governance rule, defines the source of the rule e.g. Integrated |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `sourceResourceType` | `string` | The governance rule source, what the rule affects, e.g. Assessments |
-| `conditionSets` | `array` | The governance rule conditionSets - see examples |
 | `ownerSource` | `object` | Describe the owner source of governance rule |
 | `governanceEmailNotification` | `object` | The governance email weekly notification configuration. |
+| `ruleType` | `string` | The rule type of the governance rule, defines the source of the rule e.g. Integrated |
+| `isDisabled` | `boolean` | Defines whether the rule is active/inactive |
+| `remediationTimeframe` | `string` | Governance rule remediation timeframe - this is the time that will affect on the grace-period duration e.g. 7.00:00:00 - means 7 days |
+| `conditionSets` | `array` | The governance rule conditionSets - see examples |
 | `isGracePeriod` | `boolean` | Defines whether there is a grace period on the governance rule |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `displayName` | `string` | display name of the governanceRule |
+| `sourceResourceType` | `string` | The governance rule source, what the rule affects, e.g. Assessments |
+| `rulePriority` | `integer` | The governance rule priority, priority to the lower number. Rules with the same priority on the same subscription will not be allowed |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

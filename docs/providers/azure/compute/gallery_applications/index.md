@@ -30,14 +30,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
 | `description` | `string` | The description of this gallery Application Definition resource. This property is updatable. |
-| `type` | `string` | Resource type |
-| `eula` | `string` | The Eula agreement for the gallery Application Definition. |
-| `releaseNoteUri` | `string` | The release note uri. |
-| `privacyStatementUri` | `string` | The privacy statement uri. |
-| `location` | `string` | Resource location |
-| `tags` | `object` | Resource tags |
-| `endOfLifeDate` | `string` | The end of life date of the gallery Application Definition. This property can be used for decommissioning purposes. This property is updatable. |
 | `supportedOSType` | `string` | This property allows you to specify the supported type of the OS that application is built for. &lt;br&gt;&lt;br&gt; Possible values are: &lt;br&gt;&lt;br&gt; **Windows** &lt;br&gt;&lt;br&gt; **Linux** |
+| `tags` | `object` | Resource tags |
+| `privacyStatementUri` | `string` | The privacy statement uri. |
+| `eula` | `string` | The Eula agreement for the gallery Application Definition. |
+| `type` | `string` | Resource type |
+| `endOfLifeDate` | `string` | The end of life date of the gallery Application Definition. This property can be used for decommissioning purposes. This property is updatable. |
+| `location` | `string` | Resource location |
+| `releaseNoteUri` | `string` | The release note uri. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

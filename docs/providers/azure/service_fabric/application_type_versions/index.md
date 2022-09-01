@@ -32,11 +32,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `defaultParameterList` | `object` | List of application type parameters that can be overridden when creating or updating the application. |
 | `etag` | `string` | Azure resource etag. |
 | `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `appPackageUrl` | `string` | The URL to the application package |
-| `tags` | `object` | Azure resource tags. |
 | `type` | `string` | Azure resource type. |
+| `appPackageUrl` | `string` | The URL to the application package |
 | `location` | `string` | It will be deprecated in New API, resource location depends on the parent resource. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `tags` | `object` | Azure resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

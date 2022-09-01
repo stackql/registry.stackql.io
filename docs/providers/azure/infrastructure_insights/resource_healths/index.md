@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `resourceDisplayName` | `string` | Resource display name. |
-| `tags` | `object` | Resource tags. |
-| `resourceLocation` | `string` | Resource location. |
+| `rpRegistrationId` | `string` | Gets or sets the resource provider registration ID. |
 | `resourceName` | `string` | Resource name. |
+| `resourceURI` | `string` | Gets or sets the resource URI. |
+| `tags` | `object` | Resource tags. |
 | `usageMetrics` | `array` | Usage metrics. |
 | `resourceType` | `string` | Resource type. |
-| `resourceURI` | `string` | Gets or sets the resource URI. |
+| `resourceDisplayName` | `string` | Resource display name. |
 | `location` | `string` | The Azure Region where the resource lives |
-| `rpRegistrationId` | `string` | Gets or sets the resource provider registration ID. |
+| `resourceLocation` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

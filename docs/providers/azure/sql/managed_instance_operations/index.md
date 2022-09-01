@@ -28,20 +28,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | The operation description. |
-| `errorCode` | `integer` | The operation error code. |
-| `operation` | `string` | The name of operation. |
-| `isCancellable` | `boolean` | Whether the operation can be cancelled. |
 | `operationFriendlyName` | `string` | The friendly name of operation. |
-| `errorDescription` | `string` | The operation error description. |
-| `operationSteps` | `object` | The steps of a managed instance operation. |
-| `percentComplete` | `integer` | The percentage of the operation completed. |
-| `startTime` | `string` | The operation start time. |
-| `estimatedCompletionTime` | `string` | The estimated completion time of the operation. |
-| `errorSeverity` | `integer` | The operation error severity. |
-| `operationParameters` | `object` | The parameters of a managed instance operation. |
-| `state` | `string` | The operation state. |
-| `managedInstanceName` | `string` | The name of the managed instance the operation is being performed on. |
 | `isUserError` | `boolean` | Whether or not the error is a user error. |
+| `operation` | `string` | The name of operation. |
+| `managedInstanceName` | `string` | The name of the managed instance the operation is being performed on. |
+| `operationSteps` | `object` | The steps of a managed instance operation. |
+| `errorCode` | `integer` | The operation error code. |
+| `percentComplete` | `integer` | The percentage of the operation completed. |
+| `errorSeverity` | `integer` | The operation error severity. |
+| `estimatedCompletionTime` | `string` | The estimated completion time of the operation. |
+| `startTime` | `string` | The operation start time. |
+| `operationParameters` | `object` | The parameters of a managed instance operation. |
+| `isCancellable` | `boolean` | Whether the operation can be cancelled. |
+| `errorDescription` | `string` | The operation error description. |
+| `state` | `string` | The operation state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `message` | `string` | The comment message |
 | `author` | `object` | Information on the client (user or application) that made some action |
 | `createdTimeUtc` | `string` | The time the comment was created |
 | `etag` | `string` | Etag of the azure resource |
 | `lastModifiedTimeUtc` | `string` | The time the comment was updated |
+| `message` | `string` | The comment message |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

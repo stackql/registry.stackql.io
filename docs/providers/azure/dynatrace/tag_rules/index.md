@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `logRules` | `object` | Set of rules for sending logs for the Monitor resource. |
 | `metricRules` | `object` | Set of rules for sending metrics for the Monitor resource. |
 | `provisioningState` | `string` | Provisioning state of the monitoring resource |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `logRules` | `object` | Set of rules for sending logs for the Monitor resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

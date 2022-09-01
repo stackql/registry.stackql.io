@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within the set of backend address pools used by the load balancer. This name can be used to access the resource. |
-| `location` | `string` | The location of the backend address pool. |
+| `type` | `string` | Type of the resource. |
 | `outboundRule` | `object` | Reference to another subresource. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `backendIPConfigurations` | `array` | An array of references to IP addresses defined in network interfaces. |
-| `loadBalancerBackendAddresses` | `array` | An array of backend addresses. |
-| `drainPeriodInSeconds` | `integer` | Amount of seconds Load Balancer waits for before sending RESET to client and backend address. |
-| `loadBalancingRules` | `array` | An array of references to load balancing rules that use this backend address pool. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `tunnelInterfaces` | `array` | An array of gateway load balancer tunnel interfaces. |
 | `inboundNatRules` | `array` | An array of references to inbound NAT rules that use this backend address pool. |
 | `outboundRules` | `array` | An array of references to outbound rules that use this backend address pool. |
-| `tunnelInterfaces` | `array` | An array of gateway load balancer tunnel interfaces. |
-| `type` | `string` | Type of the resource. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `loadBalancerBackendAddresses` | `array` | An array of backend addresses. |
+| `location` | `string` | The location of the backend address pool. |
+| `backendIPConfigurations` | `array` | An array of references to IP addresses defined in network interfaces. |
+| `drainPeriodInSeconds` | `integer` | Amount of seconds Load Balancer waits for before sending RESET to client and backend address. |
+| `loadBalancingRules` | `array` | An array of references to load balancing rules that use this backend address pool. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

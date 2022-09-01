@@ -27,41 +27,41 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `description` | `string` | The description of this workspace. |
-| `privateLinkCount` | `integer` | Count of private connections in the workspace |
-| `scheduledPurgeDate` | `string` | The timestamp when the soft deleted workspace is going to be purged |
-| `publicNetworkAccess` | `string` | Whether requests from Public Network are allowed. |
-| `serviceManagedResourcesSettings` | `object` |  |
-| `storageHnsEnabled` | `boolean` | If the storage associated with the workspace has hierarchical namespace(HNS) enabled. |
-| `softDeletedAt` | `string` | The timestamp when the workspace was soft deleted |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `tenantId` | `string` | The tenant id associated with this workspace. |
-| `primaryUserAssignedIdentity` | `string` | The user assigned identity resource id that represents the workspace identity. |
-| `workspaceId` | `string` | The immutable id associated with this workspace. |
-| `discoveryUrl` | `string` | Url for the discovery service to identify regional endpoints for machine learning experimentation services |
-| `keyVault` | `string` | ARM id of the key vault associated with this workspace. This cannot be changed once the workspace has been created |
-| `storageAccount` | `string` | ARM id of the storage account associated with this workspace. This cannot be changed once the workspace has been created |
-| `encryption` | `object` |  |
-| `allowPublicAccessWhenBehindVnet` | `boolean` | The flag to indicate whether to allow public access when behind VNet. |
-| `sharedPrivateLinkResources` | `array` | The list of shared private link resources in this workspace. |
-| `imageBuildCompute` | `string` | The compute name for image build |
-| `notebookInfo` | `object` |  |
 | `containerRegistry` | `string` | ARM id of the container registry associated with this workspace. |
+| `keyVault` | `string` | ARM id of the key vault associated with this workspace. This cannot be changed once the workspace has been created |
+| `privateEndpointConnections` | `array` | The list of private endpoint connections in the workspace. |
+| `serviceManagedResourcesSettings` | `object` |  |
+| `location` | `string` | Specifies the location of the resource. |
+| `tenantId` | `string` | The tenant id associated with this workspace. |
+| `tags` | `object` | Contains resource tags defined as key/value pairs. |
+| `hbiWorkspace` | `boolean` | The flag to signal HBI data in the workspace and reduce diagnostic data collected by the service |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `privateLinkCount` | `integer` | Count of private connections in the workspace |
+| `storageAccount` | `string` | ARM id of the storage account associated with this workspace. This cannot be changed once the workspace has been created |
+| `scheduledPurgeDate` | `string` | The timestamp when the soft deleted workspace is going to be purged |
+| `notebookInfo` | `object` |  |
 | `friendlyName` | `string` | The friendly name for this workspace. This name in mutable |
 | `provisioningState` | `string` | The current deployment state of workspace resource. The provisioningState is to indicate states for resource provisioning. |
-| `sku` | `object` | The resource model definition representing SKU |
-| `identity` | `object` | Managed service identity (system assigned and/or user assigned identities) |
-| `serviceProvisionedResourceGroup` | `string` | The name of the managed resource group created by workspace RP in customer subscription if the workspace is CMK workspace |
-| `v1LegacyMode` | `boolean` | Enabling v1_legacy_mode may prevent you from using features provided by the v2 API. |
-| `location` | `string` | Specifies the location of the resource. |
+| `workspaceId` | `string` | The immutable id associated with this workspace. |
 | `mlFlowTrackingUri` | `string` | The URI associated with this workspace that machine learning flow must point at to set up tracking. |
-| `hbiWorkspace` | `boolean` | The flag to signal HBI data in the workspace and reduce diagnostic data collected by the service |
-| `privateEndpointConnections` | `array` | The list of private endpoint connections in the workspace. |
-| `tags` | `object` | Contains resource tags defined as key/value pairs. |
+| `allowPublicAccessWhenBehindVnet` | `boolean` | The flag to indicate whether to allow public access when behind VNet. |
+| `sku` | `object` | The resource model definition representing SKU |
+| `v1LegacyMode` | `boolean` | Enabling v1_legacy_mode may prevent you from using features provided by the v2 API. |
+| `serviceProvisionedResourceGroup` | `string` | The name of the managed resource group created by workspace RP in customer subscription if the workspace is CMK workspace |
+| `identity` | `object` | Managed service identity (system assigned and/or user assigned identities) |
+| `sharedPrivateLinkResources` | `array` | The list of shared private link resources in this workspace. |
 | `applicationInsights` | `string` | ARM id of the application insights associated with this workspace. |
+| `primaryUserAssignedIdentity` | `string` | The user assigned identity resource id that represents the workspace identity. |
+| `storageHnsEnabled` | `boolean` | If the storage associated with the workspace has hierarchical namespace(HNS) enabled. |
+| `softDeletedAt` | `string` | The timestamp when the workspace was soft deleted |
+| `encryption` | `object` |  |
+| `discoveryUrl` | `string` | Url for the discovery service to identify regional endpoints for machine learning experimentation services |
+| `publicNetworkAccess` | `string` | Whether requests from Public Network are allowed. |
+| `imageBuildCompute` | `string` | The compute name for image build |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

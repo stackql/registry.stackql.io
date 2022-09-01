@@ -30,16 +30,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | The Azure Resource Manager resource ID for the dedicated HSM. |
 | `name` | `string` | The name of the dedicated HSM. |
 | `stampId` | `string` | This field will be used when RP does not support Availability zones. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of dedicated hsm resource. |
-| `zones` | `array` | The Dedicated Hsm zones. |
 | `networkProfile` | `object` | The network profile definition. |
-| `sku` | `object` | SKU of the dedicated HSM |
-| `location` | `string` | The supported Azure location where the dedicated HSM should be created. |
-| `statusMessage` | `string` | Resource Status Message. |
-| `tags` | `object` | Resource tags |
-| `managementNetworkProfile` | `object` | The network profile definition. |
 | `type` | `string` | The resource type of the dedicated HSM. |
+| `zones` | `array` | The Dedicated Hsm zones. |
+| `location` | `string` | The supported Azure location where the dedicated HSM should be created. |
 | `provisioningState` | `string` | Provisioning state. |
+| `sku` | `object` | SKU of the dedicated HSM |
+| `statusMessage` | `string` | Resource Status Message. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of dedicated hsm resource. |
+| `managementNetworkProfile` | `object` | The network profile definition. |
+| `tags` | `object` | Resource tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,8 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Id of the resource. |
 | `name` | `string` | Name of the resource. |
-| `type` | `string` | Type of the resource 'Microsoft.Support/problemClassification'. |
 | `displayName` | `string` | Localized name of problem classification. |
+| `type` | `string` | Type of the resource 'Microsoft.Support/problemClassification'. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

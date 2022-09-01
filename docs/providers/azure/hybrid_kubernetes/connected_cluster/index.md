@@ -27,22 +27,22 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `managedIdentityCertificateExpirationTime` | `string` | Expiration time of the managed identity certificate |
-| `infrastructure` | `string` | The infrastructure on which the Kubernetes cluster represented by this connected cluster is running on. |
-| `distribution` | `string` | The Kubernetes distribution running on this connected cluster. |
-| `agentVersion` | `string` | Version of the agent running on the connected cluster resource |
-| `agentPublicKeyCertificate` | `string` | Base64 encoded public certificate used by the agent to do the initial handshake to the backend services in Azure. |
-| `offering` | `string` | Connected cluster offering |
 | `lastConnectivityTime` | `string` | Time representing the last instance when heart beat was received from the cluster |
-| `totalNodeCount` | `integer` | Number of nodes present in the connected cluster resource |
-| `location` | `string` | The geo-location where the resource lives |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `connectivityStatus` | `string` | Represents the connectivity status of the connected cluster. |
-| `kubernetesVersion` | `string` | The Kubernetes version of the connected cluster resource |
-| `provisioningState` | `string` | The current deployment state of connectedClusters. |
-| `totalCoreCount` | `integer` | Number of CPU cores present in the connected cluster resource |
-| `identity` | `object` | Identity for the connected cluster. |
 | `tags` | `object` | Resource tags. |
+| `kubernetesVersion` | `string` | The Kubernetes version of the connected cluster resource |
+| `location` | `string` | The geo-location where the resource lives |
+| `agentPublicKeyCertificate` | `string` | Base64 encoded public certificate used by the agent to do the initial handshake to the backend services in Azure. |
+| `agentVersion` | `string` | Version of the agent running on the connected cluster resource |
+| `infrastructure` | `string` | The infrastructure on which the Kubernetes cluster represented by this connected cluster is running on. |
+| `provisioningState` | `string` | The current deployment state of connectedClusters. |
+| `managedIdentityCertificateExpirationTime` | `string` | Expiration time of the managed identity certificate |
+| `offering` | `string` | Connected cluster offering |
+| `identity` | `object` | Identity for the connected cluster. |
+| `totalNodeCount` | `integer` | Number of nodes present in the connected cluster resource |
+| `connectivityStatus` | `string` | Represents the connectivity status of the connected cluster. |
+| `totalCoreCount` | `integer` | Number of CPU cores present in the connected cluster resource |
+| `distribution` | `string` | The Kubernetes distribution running on this connected cluster. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

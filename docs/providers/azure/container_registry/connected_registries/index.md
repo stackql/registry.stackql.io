@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `parent` | `object` | The properties of the connected registry parent. |
-| `version` | `string` | The current version of ACR runtime on the connected registry. |
-| `lastActivityTime` | `string` | The last activity time of the connected registry. |
-| `provisioningState` | `string` | Provisioning state of the resource. |
 | `mode` | `string` | The mode of the connected registry resource that indicates the permissions of the registry. |
-| `activation` | `object` | The activation properties of the connected registry. |
 | `logging` | `object` | The logging properties of the connected registry. |
+| `parent` | `object` | The properties of the connected registry parent. |
 | `clientTokenIds` | `array` | The list of the ACR token resource IDs used to authenticate clients to the connected registry. |
+| `notificationsList` | `array` | The list of notifications subscription information for the connected registry. |
 | `statusDetails` | `array` | The list of current statuses of the connected registry. |
 | `loginServer` | `object` | The login server properties of the connected registry. |
-| `notificationsList` | `array` | The list of notifications subscription information for the connected registry. |
+| `provisioningState` | `string` | Provisioning state of the resource. |
+| `activation` | `object` | The activation properties of the connected registry. |
+| `version` | `string` | The current version of ACR runtime on the connected registry. |
+| `lastActivityTime` | `string` | The last activity time of the connected registry. |
 | `type` | `string` | The type of the resource. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `connectionState` | `string` | The current connection state of the connected registry. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

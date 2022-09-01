@@ -29,17 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `allocationTags` | `object` | IpAllocation tags. |
-| `location` | `string` | Resource location. |
-| `prefixLength` | `integer` | The address prefix length for the IpAllocation. |
-| `type` | `string` | Resource type. |
-| `prefix` | `string` | The address prefix for the IpAllocation. |
-| `tags` | `object` | Resource tags. |
-| `prefixType` | `string` | IP address version. |
-| `virtualNetwork` | `object` | Reference to another subresource. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `ipamAllocationId` | `string` | The IPAM allocation ID. |
+| `prefix` | `string` | The address prefix for the IpAllocation. |
+| `location` | `string` | Resource location. |
 | `subnet` | `object` | Reference to another subresource. |
+| `virtualNetwork` | `object` | Reference to another subresource. |
+| `tags` | `object` | Resource tags. |
+| `ipamAllocationId` | `string` | The IPAM allocation ID. |
+| `allocationTags` | `object` | IpAllocation tags. |
+| `prefixType` | `string` | IP address version. |
+| `type` | `string` | Resource type. |
+| `prefixLength` | `integer` | The address prefix length for the IpAllocation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

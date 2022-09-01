@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `sku` | `object` | Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. |
+| `type` | `string` | Resource type |
+| `virtualMachines` | `array` | A list of references to all virtual machines in the Dedicated Host. |
 | `location` | `string` | Resource location |
-| `instanceView` | `object` | The instance view of a dedicated host. |
-| `platformFaultDomain` | `integer` | Fault domain of the dedicated host within a dedicated host group. |
+| `licenseType` | `string` | Specifies the software license type that will be applied to the VMs deployed on the dedicated host. &lt;br&gt;&lt;br&gt; Possible values are: &lt;br&gt;&lt;br&gt; **None** &lt;br&gt;&lt;br&gt; **Windows_Server_Hybrid** &lt;br&gt;&lt;br&gt; **Windows_Server_Perpetual** &lt;br&gt;&lt;br&gt; Default: **None** |
 | `autoReplaceOnFailure` | `boolean` | Specifies whether the dedicated host should be replaced automatically in case of a failure. The value is defaulted to 'true' when not provided. |
 | `tags` | `object` | Resource tags |
 | `hostId` | `string` | A unique id generated and assigned to the dedicated host by the platform. &lt;br&gt;&lt;br&gt; Does not change throughout the lifetime of the host. |
-| `licenseType` | `string` | Specifies the software license type that will be applied to the VMs deployed on the dedicated host. &lt;br&gt;&lt;br&gt; Possible values are: &lt;br&gt;&lt;br&gt; **None** &lt;br&gt;&lt;br&gt; **Windows_Server_Hybrid** &lt;br&gt;&lt;br&gt; **Windows_Server_Perpetual** &lt;br&gt;&lt;br&gt; Default: **None** |
-| `provisioningState` | `string` | The provisioning state, which only appears in the response. |
-| `virtualMachines` | `array` | A list of references to all virtual machines in the Dedicated Host. |
+| `instanceView` | `object` | The instance view of a dedicated host. |
+| `platformFaultDomain` | `integer` | Fault domain of the dedicated host within a dedicated host group. |
 | `timeCreated` | `string` | Specifies the time at which the Dedicated Host resource was created.&lt;br&gt;&lt;br&gt;Minimum api-version: 2022-03-01. |
+| `provisioningState` | `string` | The provisioning state, which only appears in the response. |
+| `sku` | `object` | Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. |
 | `provisioningTime` | `string` | The date when the host was first provisioned. |
-| `type` | `string` | Resource type |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,11 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Quota request ID. |
 | `name` | `string` | Quota request name. |
-| `message` | `string` | User friendly status message. |
 | `provisioningState` | `string` | The quota request status. |
 | `requestSubmitTime` | `string` | The time when the quota request was submitted using format: yyyy-MM-ddTHH:mm:ssZ as specified by the ISO 8601 standard. |
 | `type` | `string` | Resource type |
 | `value` | `array` | The quotaRequests. |
+| `message` | `string` | User friendly status message. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

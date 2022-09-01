@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `elasticPoolName` | `string` | The elastic pool name of the database |
-| `lastAvailableBackupDate` | `string` | The last available backup date of the database (ISO8601 format) |
 | `serviceLevelObjective` | `string` | The service level objective name of the database |
 | `edition` | `string` | The edition of the database |
+| `elasticPoolName` | `string` | The elastic pool name of the database |
+| `lastAvailableBackupDate` | `string` | The last available backup date of the database (ISO8601 format) |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

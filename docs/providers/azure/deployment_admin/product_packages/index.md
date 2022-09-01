@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `location` | `string` | Location of the resource. |
-| `productDeploymentId` | `string` | The identifier of product deployment; null if this version is not installed. |
 | `fileContainerId` | `string` | File container resource identifier containing product manifest. |
-| `provisioningState` | `string` | Provisioning state of the resource. |
-| `type` | `string` | Type of Resource. |
-| `isDeployable` | `boolean` | Value indicating whether the package is applicable for deployment. |
 | `isUpdatable` | `boolean` | Value indicating whether the package is applicable for update. |
+| `type` | `string` | Type of Resource. |
+| `location` | `string` | Location of the resource. |
+| `isDeployable` | `boolean` | Value indicating whether the package is applicable for deployment. |
+| `provisioningState` | `string` | Provisioning state of the resource. |
+| `productDeploymentId` | `string` | The identifier of product deployment; null if this version is not installed. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

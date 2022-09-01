@@ -27,25 +27,25 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `keyVaultCredentialSettings` | `object` | Configure your SQL virtual machine to be able to connect to the Azure Key Vault service. |
-| `virtualMachineResourceId` | `string` | ARM Resource id of underlying virtual machine created from SQL marketplace image. |
-| `provisioningState` | `string` | Provisioning state to track the async operation status. |
-| `sqlImageSku` | `string` | SQL Server edition type. |
-| `location` | `string` | The geo-location where the resource lives |
-| `autoPatchingSettings` | `object` | Set a patching window during which Windows and SQL patches will be applied. |
-| `wsfcDomainCredentials` | `object` | Domain credentials for setting up Windows Server Failover Cluster for SQL availability group. |
-| `assessmentSettings` | `object` | Configure assessment for databases in your SQL virtual machine. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `wsfcStaticIp` | `string` | Domain credentials for setting up Windows Server Failover Cluster for SQL availability group. |
 | `serverConfigurationsManagementSettings` | `object` | Set the connectivity, storage and workload settings. |
-| `autoBackupSettings` | `object` | Configure backups for databases in your SQL virtual machine. |
-| `sqlVirtualMachineGroupResourceId` | `string` | ARM resource id of the SQL virtual machine group this SQL virtual machine is or will be part of. |
-| `sqlImageOffer` | `string` | SQL image offer. Examples include SQL2016-WS2016, SQL2017-WS2016. |
 | `storageConfigurationSettings` | `object` | Storage Configurations for SQL Data, Log and TempDb. |
+| `wsfcStaticIp` | `string` | Domain credentials for setting up Windows Server Failover Cluster for SQL availability group. |
+| `keyVaultCredentialSettings` | `object` | Configure your SQL virtual machine to be able to connect to the Azure Key Vault service. |
+| `autoPatchingSettings` | `object` | Set a patching window during which Windows and SQL patches will be applied. |
+| `location` | `string` | The geo-location where the resource lives |
 | `tags` | `object` | Resource tags. |
-| `sqlManagement` | `string` | SQL Server Management type. |
+| `provisioningState` | `string` | Provisioning state to track the async operation status. |
+| `sqlImageOffer` | `string` | SQL image offer. Examples include SQL2016-WS2016, SQL2017-WS2016. |
 | `sqlServerLicenseType` | `string` | SQL Server license type. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `autoBackupSettings` | `object` | Configure backups for databases in your SQL virtual machine. |
 | `identity` | `object` | Azure Active Directory identity configuration for a resource. |
+| `virtualMachineResourceId` | `string` | ARM Resource id of underlying virtual machine created from SQL marketplace image. |
+| `sqlImageSku` | `string` | SQL Server edition type. |
+| `assessmentSettings` | `object` | Configure assessment for databases in your SQL virtual machine. |
+| `wsfcDomainCredentials` | `object` | Domain credentials for setting up Windows Server Failover Cluster for SQL availability group. |
+| `sqlManagement` | `string` | SQL Server Management type. |
+| `sqlVirtualMachineGroupResourceId` | `string` | ARM resource id of the SQL virtual machine group this SQL virtual machine is or will be part of. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

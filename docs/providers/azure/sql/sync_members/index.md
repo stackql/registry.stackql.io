@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `sqlServerDatabaseId` | `string` | SQL Server database id of the sync member. |
-| `userName` | `string` | User name of the member database in the sync member. |
-| `password` | `string` | Password of the member database in the sync member. |
-| `privateEndpointName` | `string` | Private endpoint name of the sync member if use private link connection is enabled, for sync members in Azure. |
-| `serverName` | `string` | Server name of the member database in the sync member |
-| `syncAgentId` | `string` | ARM resource id of the sync agent in the sync member. |
 | `databaseType` | `string` | Database type of the sync member. |
-| `syncDirection` | `string` | Sync direction of the sync member. |
+| `privateEndpointName` | `string` | Private endpoint name of the sync member if use private link connection is enabled, for sync members in Azure. |
 | `syncMemberAzureDatabaseResourceId` | `string` | ARM resource id of the sync member logical database, for sync members in Azure. |
+| `password` | `string` | Password of the member database in the sync member. |
 | `usePrivateLinkConnection` | `boolean` | Whether to use private link connection. |
+| `serverName` | `string` | Server name of the member database in the sync member |
 | `databaseName` | `string` | Database name of the member database in the sync member. |
 | `syncState` | `string` | Sync state of the sync member. |
+| `syncDirection` | `string` | Sync direction of the sync member. |
+| `syncAgentId` | `string` | ARM resource id of the sync agent in the sync member. |
+| `userName` | `string` | User name of the member database in the sync member. |
+| `sqlServerDatabaseId` | `string` | SQL Server database id of the sync member. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

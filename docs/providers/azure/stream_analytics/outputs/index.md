@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
+| `type` | `string` | Resource type |
+| `timeWindow` | `string` | The time frame for filtering Stream Analytics job outputs. |
 | `datasource` | `object` | Describes the data source that output will be written to. |
 | `etag` | `string` | The current entity tag for the output. This is an opaque string. You can use it to detect whether the resource has changed between requests. You can also use it in the If-Match or If-None-Match headers for write operations for optimistic concurrency. |
-| `sizeWindow` | `number` | The size window to constrain a Stream Analytics output to. |
-| `type` | `string` | Resource type |
 | `diagnostics` | `object` | Describes conditions applicable to the Input, Output, or the job overall, that warrant customer attention. |
 | `serialization` | `object` | Describes how data from an input is serialized or how data is serialized when written to an output. |
-| `timeWindow` | `string` | The time frame for filtering Stream Analytics job outputs. |
+| `sizeWindow` | `number` | The size window to constrain a Stream Analytics output to. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

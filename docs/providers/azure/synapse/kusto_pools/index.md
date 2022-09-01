@@ -27,21 +27,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `sku` | `object` | Azure SKU definition. |
+| `enableStreamingIngest` | `boolean` | A boolean value that indicates if the streaming ingest is enabled. |
+| `languageExtensions` | `object` | The list of language extension objects. |
+| `provisioningState` | `string` | The provisioned state of the resource. |
+| `uri` | `string` | The Kusto Pool URI. |
+| `location` | `string` | The geo-location where the resource lives |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
+| `stateReason` | `string` | The reason for the Kusto Pool's current state. |
+| `workspaceUID` | `string` | The workspace unique identifier. |
+| `enablePurge` | `boolean` | A boolean value that indicates if the purge operations are enabled. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `dataIngestionUri` | `string` | The Kusto Pool data ingestion URI. |
 | `optimizedAutoscale` | `object` | A class that contains the optimized auto scale definition. |
 | `state` | `string` | The state of the resource. |
-| `enablePurge` | `boolean` | A boolean value that indicates if the purge operations are enabled. |
-| `sku` | `object` | Azure SKU definition. |
-| `dataIngestionUri` | `string` | The Kusto Pool data ingestion URI. |
-| `uri` | `string` | The Kusto Pool URI. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `workspaceUID` | `string` | The workspace unique identifier. |
-| `stateReason` | `string` | The reason for the Kusto Pool's current state. |
-| `enableStreamingIngest` | `boolean` | A boolean value that indicates if the streaming ingest is enabled. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `languageExtensions` | `object` | The list of language extension objects. |
-| `location` | `string` | The geo-location where the resource lives |
-| `provisioningState` | `string` | The provisioned state of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

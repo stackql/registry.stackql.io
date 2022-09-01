@@ -29,15 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `tags` | `object` | Resource tags |
-| `platformFaultDomainCount` | `integer` | Fault Domain count. |
 | `proximityPlacementGroup` | `object` |  |
-| `virtualMachines` | `array` | A list of references to all virtual machines in the availability set. |
-| `platformUpdateDomainCount` | `integer` | Update Domain count. |
 | `type` | `string` | Resource type |
-| `location` | `string` | Resource location |
+| `virtualMachines` | `array` | A list of references to all virtual machines in the availability set. |
 | `sku` | `object` | Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. |
+| `tags` | `object` | Resource tags |
+| `location` | `string` | Resource location |
+| `platformFaultDomainCount` | `integer` | Fault Domain count. |
 | `statuses` | `array` | The resource status information. |
+| `platformUpdateDomainCount` | `integer` | Update Domain count. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,29 +29,29 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `endDate` | `string` | The date when the product will be renewed or canceled. |
-| `skuId` | `string` | The sku ID of the product. |
-| `tenantId` | `string` | The id of the tenant in which the product is used. |
-| `productType` | `string` | The description of the type of product. |
-| `autoRenew` | `string` | Indicates whether auto renewal is turned on or off for a product. |
-| `productTypeId` | `string` | The ID of the type of product. |
-| `invoiceSectionDisplayName` | `string` | The name of the invoice section to which the product is billed. |
-| `lastChargeDate` | `string` | The date of the last charge. |
-| `customerId` | `string` | The ID of the customer for whom the product was purchased. The field is applicable only for Microsoft Partner Agreement billing account. |
-| `reseller` | `object` | Details of the reseller. |
-| `quantity` | `number` | The quantity purchased for the product. |
 | `billingProfileId` | `string` | The ID of the billing profile to which the product is billed. |
-| `availabilityId` | `string` | The availability of the product. |
-| `invoiceSectionId` | `string` | The ID of the invoice section to which the product is billed. |
-| `billingFrequency` | `string` | The frequency at which the product will be billed. |
-| `purchaseDate` | `string` | The date when the product was purchased. |
-| `status` | `string` | The current status of the product. |
+| `productTypeId` | `string` | The ID of the type of product. |
+| `quantity` | `number` | The quantity purchased for the product. |
+| `tenantId` | `string` | The id of the tenant in which the product is used. |
 | `billingProfileDisplayName` | `string` | The name of the billing profile to which the product is billed. |
+| `reseller` | `object` | Details of the reseller. |
 | `skuDescription` | `string` | The sku description of the product. |
+| `invoiceSectionDisplayName` | `string` | The name of the invoice section to which the product is billed. |
+| `billingFrequency` | `string` | The frequency at which the product will be billed. |
+| `lastChargeDate` | `string` | The date of the last charge. |
+| `endDate` | `string` | The date when the product will be renewed or canceled. |
+| `autoRenew` | `string` | Indicates whether auto renewal is turned on or off for a product. |
 | `type` | `string` | Resource type. |
+| `skuId` | `string` | The sku ID of the product. |
+| `availabilityId` | `string` | The availability of the product. |
 | `customerDisplayName` | `string` | The name of the customer for whom the product was purchased. The field is applicable only for Microsoft Partner Agreement billing account. |
+| `customerId` | `string` | The ID of the customer for whom the product was purchased. The field is applicable only for Microsoft Partner Agreement billing account. |
+| `status` | `string` | The current status of the product. |
 | `lastCharge` | `object` | The amount. |
 | `displayName` | `string` | The display name of the product. |
+| `invoiceSectionId` | `string` | The ID of the invoice section to which the product is billed. |
+| `productType` | `string` | The description of the type of product. |
+| `purchaseDate` | `string` | The date when the product was purchased. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

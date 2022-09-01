@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `createdDate` | `string` | The date this cluster was created. |
-| `tags` | `object` | Resource tags. |
-| `capacityAllocated` | `integer` | Represents the number of streaming units currently being used on the cluster. |
-| `location` | `string` | The geo-location where the resource lives |
-| `clusterId` | `string` | Unique identifier for the cluster. |
-| `provisioningState` | `string` | The status of the cluster provisioning. The three terminal states are: Succeeded, Failed and Canceled |
-| `sku` | `object` | The SKU of the cluster. This determines the size/capacity of the cluster. Required on PUT (CreateOrUpdate) requests. |
 | `capacityAssigned` | `integer` | Represents the sum of the SUs of all streaming jobs associated with the cluster. If all of the jobs were running, this would be the capacity allocated. |
 | `etag` | `string` | The current entity tag for the cluster. This is an opaque string. You can use it to detect whether the resource has changed between requests. You can also use it in the If-Match or If-None-Match headers for write operations for optimistic concurrency. |
+| `location` | `string` | The geo-location where the resource lives |
+| `tags` | `object` | Resource tags. |
+| `createdDate` | `string` | The date this cluster was created. |
+| `provisioningState` | `string` | The status of the cluster provisioning. The three terminal states are: Succeeded, Failed and Canceled |
+| `capacityAllocated` | `integer` | Represents the number of streaming units currently being used on the cluster. |
+| `clusterId` | `string` | Unique identifier for the cluster. |
+| `sku` | `object` | The SKU of the cluster. This determines the size/capacity of the cluster. Required on PUT (CreateOrUpdate) requests. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

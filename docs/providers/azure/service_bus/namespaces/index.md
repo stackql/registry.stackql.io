@@ -27,23 +27,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `sku` | `object` | SKU of the namespace. |
-| `encryption` | `object` | Properties to configure Encryption |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `metricId` | `string` | Identifier for Azure Insights metrics |
+| `createdAt` | `string` | The time the namespace was created |
+| `alternateName` | `string` | Alternate name for namespace |
 | `serviceBusEndpoint` | `string` | Endpoint you can use to perform Service Bus operations. |
+| `zoneRedundant` | `boolean` | Enabling this property creates a Premium Service Bus Namespace in regions supported availability zones. |
+| `tags` | `object` | Resource tags |
+| `minimumTlsVersion` | `string` | The minimum TLS version for the cluster to support, e.g. '1.2' |
+| `disableLocalAuth` | `boolean` | This property disables SAS authentication for the Service Bus namespace. |
 | `publicNetworkAccess` | `string` | This determines if traffic is allowed over public network. By default it is enabled. |
 | `status` | `string` | Status of the namespace. |
-| `zoneRedundant` | `boolean` | Enabling this property creates a Premium Service Bus Namespace in regions supported availability zones. |
-| `alternateName` | `string` | Alternate name for namespace |
+| `privateEndpointConnections` | `array` | List of private endpoint connections. |
+| `sku` | `object` | SKU of the namespace. |
 | `location` | `string` | The Geo-location where the resource lives |
 | `provisioningState` | `string` | Provisioning state of the namespace. |
-| `privateEndpointConnections` | `array` | List of private endpoint connections. |
-| `metricId` | `string` | Identifier for Azure Insights metrics |
-| `disableLocalAuth` | `boolean` | This property disables SAS authentication for the Service Bus namespace. |
 | `identity` | `object` | Properties to configure User Assigned Identities for Bring your Own Keys |
-| `minimumTlsVersion` | `string` | The minimum TLS version for the cluster to support, e.g. '1.2' |
-| `tags` | `object` | Resource tags |
-| `createdAt` | `string` | The time the namespace was created |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `encryption` | `object` | Properties to configure Encryption |
 | `updatedAt` | `string` | The time the namespace was updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

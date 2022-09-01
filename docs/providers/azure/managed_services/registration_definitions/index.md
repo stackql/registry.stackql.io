@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The fully qualified path of the registration definition. |
 | `name` | `string` | The name of the registration definition. |
+| `type` | `string` | The type of the Azure resource (Microsoft.ManagedServices/registrationDefinitions). |
 | `plan` | `object` | The details for the Managed Services offer’s plan in Azure Marketplace. |
 | `properties` | `object` | The properties of a registration definition. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `type` | `string` | The type of the Azure resource (Microsoft.ManagedServices/registrationDefinitions). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

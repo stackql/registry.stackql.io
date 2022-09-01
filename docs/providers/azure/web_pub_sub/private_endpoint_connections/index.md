@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `groupIds` | `array` | Group IDs |
 | `privateEndpoint` | `object` | Private endpoint |
 | `privateLinkServiceConnectionState` | `object` | Connection state of the private endpoint connection |
 | `provisioningState` | `string` | Provisioning state of the resource. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `groupIds` | `array` | Group IDs |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

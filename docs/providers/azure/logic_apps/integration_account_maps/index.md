@@ -29,17 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `createdTime` | `string` | The created time. |
-| `type` | `string` | Gets the resource type. |
-| `changedTime` | `string` | The changed time. |
-| `content` | `string` | The content. |
 | `mapType` | `string` | The map type. |
 | `tags` | `object` | The resource tags. |
-| `contentLink` | `object` | The content link. |
-| `metadata` | `object` | The metadata. |
-| `contentType` | `string` | The content type. |
 | `location` | `string` | The resource location. |
+| `metadata` | `object` | The metadata. |
 | `parametersSchema` | `object` | The parameters schema of integration account map. |
+| `content` | `string` | The content. |
+| `type` | `string` | Gets the resource type. |
+| `changedTime` | `string` | The changed time. |
+| `createdTime` | `string` | The created time. |
+| `contentLink` | `object` | The content link. |
+| `contentType` | `string` | The content type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,11 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The metric baseline Id. |
 | `name` | `string` | The name of the metric for which the baselines were retrieved. |
-| `namespace` | `string` | The namespace of the metrics been queried. |
-| `timespan` | `string` | The timespan for which the data was retrieved. Its value consists of two datetimes concatenated, separated by '/'.  This may be adjusted in the future and returned back from what was originally requested. |
 | `type` | `string` | The resource type of the metric baseline resource. |
 | `baselines` | `array` | The baseline for each time series that was queried. |
 | `interval` | `string` | The interval (window size) for which the metric data was returned in.  This may be adjusted in the future and returned back from what was originally requested.  This is not present if a metadata request was made. |
+| `namespace` | `string` | The namespace of the metrics been queried. |
+| `timespan` | `string` | The timespan for which the data was retrieved. Its value consists of two datetimes concatenated, separated by '/'.  This may be adjusted in the future and returned back from what was originally requested. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

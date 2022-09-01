@@ -27,13 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | The geo-location where the resource lives |
-| `dailySchedule` | `object` | Daily Schedule properties |
-| `monthlySchedule` | `object` | Monthly Schedule properties |
-| `enabled` | `boolean` | The property to decide policy is enabled or not |
 | `weeklySchedule` | `object` | Weekly Schedule properties, make a snapshot every week at a specific day or days |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `enabled` | `boolean` | The property to decide policy is enabled or not |
 | `provisioningState` | `string` | Azure lifecycle management |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `monthlySchedule` | `object` | Monthly Schedule properties |
+| `dailySchedule` | `object` | Daily Schedule properties |
+| `location` | `string` | The geo-location where the resource lives |
 | `tags` | `object` | Resource tags. |
 | `hourlySchedule` | `object` | Hourly Schedule properties |
 ## Methods

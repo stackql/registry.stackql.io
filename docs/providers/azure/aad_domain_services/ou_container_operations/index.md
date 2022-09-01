@@ -27,9 +27,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `name` | `string` | Operation name: {provider}/{resource}/{operation}. |
-| `display` | `object` | The operation supported by Domain Services. |
+| `name` | `string` | Operation name: &#123;provider&#125;/&#123;resource&#125;/&#123;operation&#125;. |
 | `origin` | `string` | The origin of the operation. |
+| `display` | `object` | The operation supported by Domain Services. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

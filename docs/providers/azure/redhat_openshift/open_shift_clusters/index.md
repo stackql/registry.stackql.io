@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `provisioningState` | `string` | ProvisioningState represents a provisioning state. |
-| `tags` | `object` | Resource tags. |
-| `ingressProfiles` | `array` | The cluster ingress profiles. |
 | `consoleProfile` | `object` | ConsoleProfile represents a console profile. |
-| `location` | `string` | The geo-location where the resource lives |
+| `ingressProfiles` | `array` | The cluster ingress profiles. |
 | `masterProfile` | `object` | MasterProfile represents a master profile. |
-| `servicePrincipalProfile` | `object` | ServicePrincipalProfile represents a service principal profile. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `apiserverProfile` | `object` | APIServerProfile represents an API server profile. |
 | `workerProfiles` | `array` | The cluster worker profiles. |
 | `clusterProfile` | `object` | ClusterProfile represents a cluster profile. |
 | `networkProfile` | `object` | NetworkProfile represents a network profile. |
+| `apiserverProfile` | `object` | APIServerProfile represents an API server profile. |
+| `location` | `string` | The geo-location where the resource lives |
+| `provisioningState` | `string` | ProvisioningState represents a provisioning state. |
+| `servicePrincipalProfile` | `object` | ServicePrincipalProfile represents a service principal profile. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

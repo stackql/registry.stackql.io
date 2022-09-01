@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `serverKeyType` | `string` | The key type like 'AzureKeyVault'. |
 | `uri` | `string` | The URI of the key. |
 | `creationDate` | `string` | The key creation date. |
 | `kind` | `string` | Kind of encryption protector used to protect the key. |
-| `serverKeyType` | `string` | The key type like 'AzureKeyVault'. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

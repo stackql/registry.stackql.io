@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `keyVaultUrl` | `string` | The Key Vault Url of the workspace key. |
 | `isActiveCMK` | `boolean` | Used to activate the workspace after a customer managed key is provided. |
+| `keyVaultUrl` | `string` | The Key Vault Url of the workspace key. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

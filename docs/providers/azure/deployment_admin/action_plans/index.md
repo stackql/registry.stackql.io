@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `actionPlanInstanceId` | `string` | Action plan instance identifier |
-| `actionPlanUri` | `string` | Action plan uri |
-| `location` | `string` | Location of the resource. |
-| `eTag` | `string` | Entity tag of the resource |
 | `error` | `object` | Error response. |
-| `provisioningState` | `string` | The provisioning state |
-| `type` | `string` | Type of Resource. |
-| `endTime` | `string` | The deployment end time |
-| `subscriptionId` | `string` | The target subscription identifier |
 | `resourceGroupName` | `string` | The target resource group name |
+| `location` | `string` | Location of the resource. |
+| `endTime` | `string` | The deployment end time |
+| `eTag` | `string` | Entity tag of the resource |
+| `actionPlanUri` | `string` | Action plan uri |
 | `startTime` | `string` | The deployment start time |
-| `blobContainerName` | `string` | Blob container name storing the deployment data |
+| `provisioningState` | `string` | The provisioning state |
+| `subscriptionId` | `string` | The target subscription identifier |
 | `parameters` | `object` | Error information |
+| `actionPlanInstanceId` | `string` | Action plan instance identifier |
+| `type` | `string` | Type of Resource. |
+| `blobContainerName` | `string` | Blob container name storing the deployment data |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

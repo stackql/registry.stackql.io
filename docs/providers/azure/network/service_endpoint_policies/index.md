@@ -29,17 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
+| `type` | `string` | Resource type. |
+| `kind` | `string` | Kind of service endpoint policy. This is metadata used for the Azure portal experience. |
+| `serviceEndpointPolicyDefinitions` | `array` | A collection of service endpoint policy definitions of the service endpoint policy. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `serviceAlias` | `string` | The alias indicating if the policy belongs to a service |
 | `subnets` | `array` | A collection of references to subnets. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `type` | `string` | Resource type. |
-| `location` | `string` | Resource location. |
-| `resourceGuid` | `string` | The resource GUID property of the service endpoint policy resource. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `serviceEndpointPolicyDefinitions` | `array` | A collection of service endpoint policy definitions of the service endpoint policy. |
-| `tags` | `object` | Resource tags. |
 | `contextualServiceEndpointPolicies` | `array` | A collection of contextual service endpoint policy. |
-| `kind` | `string` | Kind of service endpoint policy. This is metadata used for the Azure portal experience. |
+| `tags` | `object` | Resource tags. |
+| `location` | `string` | Resource location. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `resourceGuid` | `string` | The resource GUID property of the service endpoint policy resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

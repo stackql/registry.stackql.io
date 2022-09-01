@@ -27,9 +27,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `ignoreMissingVnetServiceEndpoint` | `boolean` | Create firewall rule before the virtual network has vnet service endpoint enabled. |
 | `state` | `string` | Virtual Network Rule State |
 | `virtualNetworkSubnetId` | `string` | The ARM resource id of the virtual network subnet. |
+| `ignoreMissingVnetServiceEndpoint` | `boolean` | Create firewall rule before the virtual network has vnet service endpoint enabled. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

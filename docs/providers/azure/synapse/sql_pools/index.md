@@ -27,20 +27,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `maxSizeBytes` | `integer` | Maximum size in bytes |
-| `location` | `string` | The geo-location where the resource lives |
-| `storageAccountType` | `string` | The storage account type used to store backups for this sql pool. |
-| `tags` | `object` | Resource tags. |
-| `provisioningState` | `string` | Resource state |
-| `restorePointInTime` | `string` | Snapshot time to restore |
-| `sourceDatabaseId` | `string` | Source database to create from |
-| `recoverableDatabaseId` | `string` | Backup database to restore from |
-| `sourceDatabaseDeletionDate` | `string` | Specifies the time that the sql pool was deleted |
 | `creationDate` | `string` | Date the SQL pool was created |
-| `sku` | `object` | SQL pool SKU |
+| `tags` | `object` | Resource tags. |
+| `recoverableDatabaseId` | `string` | Backup database to restore from |
 | `createMode` | `string` | Specifies the mode of sql pool creation.<br /><br />Default: regular sql pool creation.<br /><br />PointInTimeRestore: Creates a sql pool by restoring a point in time backup of an existing sql pool. sourceDatabaseId must be specified as the resource ID of the existing sql pool, and restorePointInTime must be specified.<br /><br />Recovery: Creates a sql pool by a geo-replicated backup. sourceDatabaseId  must be specified as the recoverableDatabaseId to restore.<br /><br />Restore: Creates a sql pool by restoring a backup of a deleted sql  pool. SourceDatabaseId should be the sql pool's original resource ID. SourceDatabaseId and sourceDatabaseDeletionDate must be specified. |
-| `status` | `string` | Resource status |
+| `restorePointInTime` | `string` | Snapshot time to restore |
+| `provisioningState` | `string` | Resource state |
 | `collation` | `string` | Collation mode |
+| `sku` | `object` | SQL pool SKU |
+| `location` | `string` | The geo-location where the resource lives |
+| `maxSizeBytes` | `integer` | Maximum size in bytes |
+| `sourceDatabaseId` | `string` | Source database to create from |
+| `sourceDatabaseDeletionDate` | `string` | Specifies the time that the sql pool was deleted |
+| `status` | `string` | Resource status |
+| `storageAccountType` | `string` | The storage account type used to store backups for this sql pool. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

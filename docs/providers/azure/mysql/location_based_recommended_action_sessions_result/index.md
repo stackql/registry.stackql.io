@@ -27,7 +27,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `reason` | `string` | Recommendation action reason. |
 | `recommendationType` | `string` | Recommendation action type. |
 | `sessionId` | `string` | Recommendation action session identifier. |
 | `actionId` | `integer` | Recommendation action identifier. |
@@ -35,6 +34,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `createdTime` | `string` | Recommendation action creation time. |
 | `details` | `object` | Recommendation action details. |
 | `expirationTime` | `string` | Recommendation action expiration time. |
+| `reason` | `string` | Recommendation action reason. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

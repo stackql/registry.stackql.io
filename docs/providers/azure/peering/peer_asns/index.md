@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `peerContactDetail` | `array` | The contact details of the peer. |
-| `peerName` | `string` | The name of the peer. |
 | `type` | `string` | The type of the resource. |
 | `validationState` | `string` | The validation state of the ASN associated with the peer. |
 | `errorMessage` | `string` | The error message for the validation state |
 | `peerAsn` | `integer` | The Autonomous System Number (ASN) of the peer. |
+| `peerContactDetail` | `array` | The contact details of the peer. |
+| `peerName` | `string` | The name of the peer. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

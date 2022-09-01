@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `privateLinkServiceConnectionState` | `object` | The state of a private link service connection. |
-| `provisioningState` | `string` | The provisioning status of the private endpoint connection. |
 | `type` | `string` | The type of the resource. |
 | `privateEndpoint` | `object` | Private endpoint which a connection belongs to. |
+| `privateLinkServiceConnectionState` | `object` | The state of a private link service connection. |
+| `provisioningState` | `string` | The provisioning status of the private endpoint connection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -27,19 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `lastSyncTime` | `string` | Last sync time of the sync group. |
-| `usePrivateLinkConnection` | `boolean` | If use private link connection is enabled. |
-| `sku` | `object` | An ARM Resource SKU. |
-| `hubDatabasePassword` | `string` | Password for the sync group hub database credential. |
-| `syncDatabaseId` | `string` | ARM resource id of the sync database in the sync group. |
-| `syncState` | `string` | Sync state of the sync group. |
-| `hubDatabaseUserName` | `string` | User name for the sync group hub database credential. |
-| `conflictResolutionPolicy` | `string` | Conflict resolution policy of the sync group. |
-| `conflictLoggingRetentionInDays` | `integer` | Conflict logging retention period. |
-| `interval` | `integer` | Sync interval of the sync group. |
 | `schema` | `object` | Properties of sync group schema. |
-| `privateEndpointName` | `string` | Private endpoint name of the sync group if use private link connection is enabled. |
+| `syncDatabaseId` | `string` | ARM resource id of the sync database in the sync group. |
 | `enableConflictLogging` | `boolean` | If conflict logging is enabled. |
+| `conflictResolutionPolicy` | `string` | Conflict resolution policy of the sync group. |
+| `hubDatabasePassword` | `string` | Password for the sync group hub database credential. |
+| `hubDatabaseUserName` | `string` | User name for the sync group hub database credential. |
+| `lastSyncTime` | `string` | Last sync time of the sync group. |
+| `privateEndpointName` | `string` | Private endpoint name of the sync group if use private link connection is enabled. |
+| `usePrivateLinkConnection` | `boolean` | If use private link connection is enabled. |
+| `interval` | `integer` | Sync interval of the sync group. |
+| `sku` | `object` | An ARM Resource SKU. |
+| `syncState` | `string` | Sync state of the sync group. |
+| `conflictLoggingRetentionInDays` | `integer` | Conflict logging retention period. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Identifier of the reservation |
 | `name` | `string` | Name of the reservation |
+| `type` | `string` | Type of resource. "Microsoft.Capacity/reservations" |
 | `displayName` | `string` | Friendly name for user to easily identified the reservation. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `createdDateTime` | `string` | This is the DateTime when the reservation was created. |
 | `etag` | `integer` |  |
+| `provisioningState` | `string` | Represent the current state of the Reservation. |
+| `billingPlan` | `string` | Represent the billing plans. |
+| `createdDateTime` | `string` | This is the DateTime when the reservation was created. |
 | `originalQuantity` | `integer` | Total Quantity of the SKUs purchased in the Reservation. |
+| `benefitStartTime` | `string` | This is the DateTime when the reservation benefit started. |
+| `expiryDate` | `string` | This is the date when the Reservation will expire. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `requestDateTime` | `string` | This is the DateTime when the reservation was initially requested for purchase. |
 | `term` | `string` | Represent the term of Reservation. |
 | `reservations` | `array` |  |
-| `requestDateTime` | `string` | This is the DateTime when the reservation was initially requested for purchase. |
-| `benefitStartTime` | `string` | This is the DateTime when the reservation benefit started. |
-| `billingPlan` | `string` | Represent the billing plans. |
-| `provisioningState` | `string` | Represent the current state of the Reservation. |
-| `expiryDate` | `string` | This is the date when the Reservation will expire. |
-| `type` | `string` | Type of resource. "Microsoft.Capacity/reservations" |
 | `planInformation` | `object` | Information describing the type of billing plan for this reservation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

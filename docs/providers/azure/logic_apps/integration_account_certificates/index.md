@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `location` | `string` | The resource location. |
-| `createdTime` | `string` | The created time. |
-| `tags` | `object` | The resource tags. |
 | `publicCertificate` | `string` | The public certificate. |
-| `changedTime` | `string` | The changed time. |
 | `key` | `object` | The reference to the key vault key. |
 | `metadata` | `object` | The metadata. |
 | `type` | `string` | Gets the resource type. |
+| `createdTime` | `string` | The created time. |
+| `changedTime` | `string` | The changed time. |
+| `tags` | `object` | The resource tags. |
+| `location` | `string` | The resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

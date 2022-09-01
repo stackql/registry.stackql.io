@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `role` | `string` | Cluster principal role. |
-| `provisioningState` | `string` | The provisioned state of the resource. |
-| `tenantName` | `string` | The tenant name of the principal |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `principalType` | `string` | Principal type. |
 | `aadObjectId` | `string` | The service principal object id in AAD (Azure active directory) |
+| `tenantId` | `string` | The tenant id of the principal |
+| `role` | `string` | Cluster principal role. |
+| `tenantName` | `string` | The tenant name of the principal |
 | `principalId` | `string` | The principal ID assigned to the cluster principal. It can be a user email, application ID, or security group name. |
 | `principalName` | `string` | The principal name |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `tenantId` | `string` | The tenant id of the principal |
+| `provisioningState` | `string` | The provisioned state of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

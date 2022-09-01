@@ -28,19 +28,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `inboundIpRules` | `array` | This can be used to restrict traffic from specific IPs instead of all IPs. Note: These are considered only if PublicNetworkAccess is enabled. |
-| `disableLocalAuth` | `boolean` | This boolean is used to enable or disable local auth. Default value is false. When the property is set to true, only AAD token will be used to authenticate if user is allowed to publish to the topic. |
-| `inputSchema` | `string` | This determines the format that Event Grid should expect for incoming events published to the topic. |
 | `endpoint` | `string` | Endpoint for the topic. |
-| `publicNetworkAccess` | `string` | This determines if traffic is allowed over public network. By default it is enabled. <br />You can further restrict to specific IPs by configuring &lt;seealso cref="P:Microsoft.Azure.Events.ResourceProvider.Common.Contracts.TopicProperties.InboundIpRules" /&gt; |
 | `metricResourceId` | `string` | Metric resource id for the topic. |
-| `provisioningState` | `string` | Provisioning state of the topic. |
-| `identity` | `object` | The identity information for the resource. |
 | `dataResidencyBoundary` | `string` | Data Residency Boundary of the resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `publicNetworkAccess` | `string` | This determines if traffic is allowed over public network. By default it is enabled. <br />You can further restrict to specific IPs by configuring &lt;seealso cref="P:Microsoft.Azure.Events.ResourceProvider.Common.Contracts.TopicProperties.InboundIpRules" /&gt; |
+| `inputSchemaMapping` | `object` | By default, Event Grid expects events to be in the Event Grid event schema. Specifying an input schema mapping enables publishing to Event Grid using a custom input schema. Currently, the only supported type of InputSchemaMapping is 'JsonInputSchemaMapping'. |
+| `inputSchema` | `string` | This determines the format that Event Grid should expect for incoming events published to the topic. |
+| `disableLocalAuth` | `boolean` | This boolean is used to enable or disable local auth. Default value is false. When the property is set to true, only AAD token will be used to authenticate if user is allowed to publish to the topic. |
+| `identity` | `object` | The identity information for the resource. |
+| `provisioningState` | `string` | Provisioning state of the topic. |
+| `location` | `string` | The geo-location where the resource lives |
 | `tags` | `object` | Resource tags. |
 | `privateEndpointConnections` | `array` |  |
-| `location` | `string` | The geo-location where the resource lives |
-| `inputSchemaMapping` | `object` | By default, Event Grid expects events to be in the Event Grid event schema. Specifying an input schema mapping enables publishing to Event Grid using a custom input schema. Currently, the only supported type of InputSchemaMapping is 'JsonInputSchemaMapping'. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

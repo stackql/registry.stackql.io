@@ -27,13 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `status` | `string` | Operation status. |
 | `databaseName` | `string` | Database name. |
 | `errorMessage` | `string` | Error message. |
 | `lastModifiedTime` | `string` | Last modified time. |
 | `requestId` | `string` | Request Id. |
 | `requestType` | `string` | Request type. |
 | `serverName` | `string` | Server name. |
-| `status` | `string` | Operation status. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

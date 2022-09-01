@@ -29,21 +29,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `creditCurrency` | `string` | The currency of the lot. |
-| `source` | `string` | The source of the lot. |
-| `poNumber` | `string` | The po number of the invoice on which the lot was added. This property is not available for ConsumptionCommitment lots. |
-| `closedBalance` | `object` | The amount plus currency . |
-| `type` | `string` | Resource type. |
-| `closedBalanceInBillingCurrency` | `object` | The amount with exchange rate. |
-| `expirationDate` | `string` | The expiration date of a lot. |
-| `startDate` | `string` | The date when the lot became effective. |
-| `reseller` | `object` | The reseller properties. |
-| `originalAmountInBillingCurrency` | `object` | The amount with exchange rate. |
-| `originalAmount` | `object` | The amount plus currency . |
-| `status` | `string` | The status of the lot. |
 | `purchasedDate` | `string` | The date when the lot was added. |
-| `eTag` | `string` | The eTag for the resource. |
+| `status` | `string` | The status of the lot. |
+| `originalAmount` | `object` | The amount plus currency . |
+| `source` | `string` | The source of the lot. |
+| `closedBalance` | `object` | The amount plus currency . |
+| `originalAmountInBillingCurrency` | `object` | The amount with exchange rate. |
+| `type` | `string` | Resource type. |
 | `billingCurrency` | `string` | The billing currency of the lot. |
+| `startDate` | `string` | The date when the lot became effective. |
+| `eTag` | `string` | The eTag for the resource. |
+| `expirationDate` | `string` | The expiration date of a lot. |
+| `closedBalanceInBillingCurrency` | `object` | The amount with exchange rate. |
+| `reseller` | `object` | The reseller properties. |
+| `creditCurrency` | `string` | The currency of the lot. |
+| `poNumber` | `string` | The po number of the invoice on which the lot was added. This property is not available for ConsumptionCommitment lots. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

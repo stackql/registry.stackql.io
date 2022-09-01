@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified identifier of the resource. |
 | `name` | `string` | Name of the resource. |
-| `groupId` | `string` | The private link resource group id. |
 | `requiredMembers` | `array` | The private link resource required member names. |
 | `requiredZoneNames` | `array` | The private link resource Private link DNS zone name. |
 | `type` | `string` | Type of the resource. |
+| `groupId` | `string` | The private link resource group id. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

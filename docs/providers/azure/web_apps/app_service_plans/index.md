@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource Name. |
-| `extendedLocation` | `object` | Extended Location. |
-| `sku` | `object` | Description of a SKU for a scalable resource. |
 | `properties` | `object` | AppServicePlan resource specific properties |
-| `kind` | `string` | Kind of resource. |
-| `location` | `string` | Resource Location. |
-| `tags` | `object` | Resource tags. |
+| `sku` | `object` | Description of a SKU for a scalable resource. |
 | `type` | `string` | Resource type. |
+| `location` | `string` | Resource Location. |
+| `kind` | `string` | Kind of resource. |
+| `extendedLocation` | `object` | Extended Location. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

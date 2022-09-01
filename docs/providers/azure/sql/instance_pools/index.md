@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `vCores` | `integer` | Count of vCores belonging to this instance pool. |
 | `licenseType` | `string` | The license type. Possible values are 'LicenseIncluded' (price for SQL license is included) and 'BasePrice' (without SQL license price). |
 | `location` | `string` | Resource location. |
 | `sku` | `object` | An ARM Resource SKU. |
 | `subnetId` | `string` | Resource ID of the subnet to place this instance pool in. |
 | `tags` | `object` | Resource tags. |
+| `vCores` | `integer` | Count of vCores belonging to this instance pool. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

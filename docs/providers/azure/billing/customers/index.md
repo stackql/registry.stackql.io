@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `resellers` | `array` | The list of resellers for which an Azure plan is enabled for the customer. |
-| `type` | `string` | Resource type. |
 | `billingProfileDisplayName` | `string` | The name of the billing profile for the invoice section. |
 | `billingProfileId` | `string` | The ID of the billing profile for the invoice section. |
 | `displayName` | `string` | The name of the customer. |
 | `enabledAzurePlans` | `array` | Azure plans enabled for the customer. |
+| `resellers` | `array` | The list of resellers for which an Azure plan is enabled for the customer. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

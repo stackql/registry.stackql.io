@@ -30,26 +30,26 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Id of the resource. |
 | `name` | `string` | Name of the resource. |
 | `description` | `string` | Detailed description of the question or issue. |
-| `supportTicketId` | `string` | System generated support ticket Id that is unique. |
+| `title` | `string` | Title of the support ticket. |
+| `serviceLevelAgreement` | `object` | Service Level Agreement details for a support ticket. |
+| `supportPlanType` | `string` | Support plan type associated with the support ticket. |
+| `supportEngineer` | `object` | Support engineer information. |
 | `problemStartTime` | `string` | Time in UTC (ISO 8601 format) when the problem started. |
+| `problemClassificationDisplayName` | `string` | Localized name of problem classification. |
+| `serviceDisplayName` | `string` | Localized name of the Azure service. |
+| `severity` | `string` | A value that indicates the urgency of the case, which in turn determines the response time according to the service level agreement of the technical support plan you have with Azure. Note: 'Highest critical impact', also known as the 'Emergency - Severe impact' level in the Azure portal is reserved only for our Premium customers. |
+| `modifiedDate` | `string` | Time in UTC (ISO 8601 format) when the support ticket was last modified. |
+| `supportTicketId` | `string` | System generated support ticket Id that is unique. |
+| `technicalTicketDetails` | `object` | Additional information for technical support ticket. |
+| `contactDetails` | `object` | Contact information associated with the support ticket. |
+| `status` | `string` | Status of the support ticket. |
+| `require24X7Response` | `boolean` | Indicates if this requires a 24x7 response from Azure. |
 | `enrollmentId` | `string` | Enrollment Id associated with the support ticket. |
 | `quotaTicketDetails` | `object` | Additional set of information required for quota increase support ticket for certain quota types, e.g.: Virtual machine cores. Get complete details about Quota payload support request along with examples at [Support quota request](https://aka.ms/supportrpquotarequestpayload). |
-| `technicalTicketDetails` | `object` | Additional information for technical support ticket. |
-| `problemClassificationDisplayName` | `string` | Localized name of problem classification. |
-| `contactDetails` | `object` | Contact information associated with the support ticket. |
-| `title` | `string` | Title of the support ticket. |
-| `serviceId` | `string` | This is the resource Id of the Azure service resource associated with the support ticket. |
 | `createdDate` | `string` | Time in UTC (ISO 8601 format) when the support ticket was created. |
-| `serviceLevelAgreement` | `object` | Service Level Agreement details for a support ticket. |
-| `severity` | `string` | A value that indicates the urgency of the case, which in turn determines the response time according to the service level agreement of the technical support plan you have with Azure. Note: 'Highest critical impact', also known as the 'Emergency - Severe impact' level in the Azure portal is reserved only for our Premium customers. |
-| `serviceDisplayName` | `string` | Localized name of the Azure service. |
-| `status` | `string` | Status of the support ticket. |
-| `type` | `string` | Type of the resource 'Microsoft.Support/supportTickets'. |
-| `require24X7Response` | `boolean` | Indicates if this requires a 24x7 response from Azure. |
-| `modifiedDate` | `string` | Time in UTC (ISO 8601 format) when the support ticket was last modified. |
-| `supportEngineer` | `object` | Support engineer information. |
-| `supportPlanType` | `string` | Support plan type associated with the support ticket. |
 | `problemClassificationId` | `string` | Each Azure service has its own set of issue categories, also known as problem classification. This parameter is the unique Id for the type of problem you are experiencing. |
+| `serviceId` | `string` | This is the resource Id of the Azure service resource associated with the support ticket. |
+| `type` | `string` | Type of the resource 'Microsoft.Support/supportTickets'. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

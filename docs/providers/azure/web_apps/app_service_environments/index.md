@@ -29,30 +29,30 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource Name. |
-| `tags` | `object` | Resource tags. |
-| `internalLoadBalancingMode` | `string` | Specifies which endpoints to serve internally in the Virtual Network for the App Service Environment. |
-| `location` | `string` | Resource Location. |
-| `maximumNumberOfMachines` | `integer` | Maximum number of VMs in the App Service Environment. |
-| `hasLinuxWorkers` | `boolean` | Flag that displays whether an ASE has linux workers or not |
-| `frontEndScaleFactor` | `integer` | Scale factor for front-ends. |
-| `multiRoleCount` | `integer` | Number of front-end instances. |
-| `status` | `string` | Current status of the App Service Environment. |
-| `dnsSuffix` | `string` | DNS suffix of the App Service Environment. |
-| `upgradeAvailability` | `string` | Whether an upgrade is available for this App Service Environment. |
-| `provisioningState` | `string` | Provisioning state of the App Service Environment. |
-| `ipsslAddressCount` | `integer` | Number of IP SSL addresses reserved for the App Service Environment. |
-| `dedicatedHostCount` | `integer` | Dedicated Host Count |
-| `clusterSettings` | `array` | Custom settings for changing the behavior of the App Service Environment. |
-| `userWhitelistedIpRanges` | `array` | User added ip ranges to whitelist on ASE db |
-| `type` | `string` | Resource type. |
 | `upgradePreference` | `string` | Upgrade Preference |
 | `suspended` | `boolean` | &lt;code&gt;true&lt;/code&gt; if the App Service Environment is suspended; otherwise, &lt;code&gt;false&lt;/code&gt;. The environment can be suspended, e.g. when the management endpoint is no longer available<br /> (most likely because NSG blocked the incoming traffic). |
-| `zoneRedundant` | `boolean` | Whether or not this App Service Environment is zone-redundant. |
-| `virtualNetwork` | `object` | Specification for using a Virtual Network. |
 | `networkingConfiguration` | `object` | Full view of networking configuration for an ASE. |
+| `dedicatedHostCount` | `integer` | Dedicated Host Count |
+| `hasLinuxWorkers` | `boolean` | Flag that displays whether an ASE has linux workers or not |
+| `userWhitelistedIpRanges` | `array` | User added ip ranges to whitelist on ASE db |
+| `internalLoadBalancingMode` | `string` | Specifies which endpoints to serve internally in the Virtual Network for the App Service Environment. |
+| `multiRoleCount` | `integer` | Number of front-end instances. |
 | `multiSize` | `string` | Front-end VM size, e.g. "Medium", "Large". |
-| `kind` | `string` | Kind of resource. |
+| `maximumNumberOfMachines` | `integer` | Maximum number of VMs in the App Service Environment. |
+| `frontEndScaleFactor` | `integer` | Scale factor for front-ends. |
+| `tags` | `object` | Resource tags. |
+| `location` | `string` | Resource Location. |
+| `dnsSuffix` | `string` | DNS suffix of the App Service Environment. |
+| `ipsslAddressCount` | `integer` | Number of IP SSL addresses reserved for the App Service Environment. |
 | `customDnsSuffixConfiguration` | `object` | Full view of the custom domain suffix configuration for ASEv3. |
+| `provisioningState` | `string` | Provisioning state of the App Service Environment. |
+| `upgradeAvailability` | `string` | Whether an upgrade is available for this App Service Environment. |
+| `virtualNetwork` | `object` | Specification for using a Virtual Network. |
+| `zoneRedundant` | `boolean` | Whether or not this App Service Environment is zone-redundant. |
+| `status` | `string` | Current status of the App Service Environment. |
+| `clusterSettings` | `array` | Custom settings for changing the behavior of the App Service Environment. |
+| `type` | `string` | Resource type. |
+| `kind` | `string` | Kind of resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

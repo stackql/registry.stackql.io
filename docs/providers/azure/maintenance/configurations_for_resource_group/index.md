@@ -27,17 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
+| `location` | `string` | Gets or sets location of the resource |
 | `extensionProperties` | `object` | Gets or sets extensionProperties of the maintenanceConfiguration |
 | `namespace` | `string` | Gets or sets namespace of the resource |
-| `location` | `string` | Gets or sets location of the resource |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `installPatches` | `object` | Input configuration for a patch run |
+| `visibility` | `string` | Gets or sets the visibility of the configuration. The default value is 'Custom' |
 | `maintenanceWindow` | `object` | Definition of a MaintenanceWindow |
 | `maintenanceScope` | `string` | Gets or sets maintenanceScope of the configuration |
+| `installPatches` | `object` | Input configuration for a patch run |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `tags` | `object` | Gets or sets tags of the resource |
-| `visibility` | `string` | Gets or sets the visibility of the configuration. The default value is 'Custom' |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

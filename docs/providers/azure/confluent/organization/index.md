@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ARM id of the resource. |
 | `name` | `string` | The name of the resource. |
-| `ssoUrl` | `string` | SSO url for the Confluent organization. |
-| `userDetail` | `object` | Subscriber detail |
-| `offerDetail` | `object` | Confluent Offer detail |
-| `provisioningState` | `string` | Provision states for confluent RP |
-| `organizationId` | `string` | Id of the Confluent organization. |
-| `type` | `string` | The type of the resource. |
-| `tags` | `object` | Organization resource tags |
 | `createdTime` | `string` | The creation time of the resource. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `userDetail` | `object` | Subscriber detail |
+| `organizationId` | `string` | Id of the Confluent organization. |
+| `tags` | `object` | Organization resource tags |
 | `location` | `string` | Location of Organization resource |
+| `type` | `string` | The type of the resource. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `provisioningState` | `string` | Provision states for confluent RP |
+| `ssoUrl` | `string` | SSO url for the Confluent organization. |
+| `offerDetail` | `object` | Confluent Offer detail |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

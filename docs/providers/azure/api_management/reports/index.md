@@ -28,31 +28,31 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Name depending on report endpoint specifies product, API, operation or developer name. |
-| `timestamp` | `string` | Start of aggregation period. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.<br /> |
-| `interval` | `string` | Length of aggregation period.  Interval must be multiple of 15 minutes and may not be zero. The value should be in ISO 8601 format (http://en.wikipedia.org/wiki/ISO_8601#Durations). |
-| `bandwidth` | `integer` | Bandwidth consumed. |
-| `cacheMissCount` | `integer` | Number of times content was fetched from backend. |
-| `apiTimeMin` | `number` | Minimum time it took to process request. |
 | `serviceTimeAvg` | `number` | Average time it took to process request on backend. |
-| `productId` | `string` | Product identifier path. /products/{productId} |
-| `operationId` | `string` | Operation identifier path. /apis/{apiId}/operations/{operationId} |
-| `subscriptionId` | `string` | Subscription identifier path. /subscriptions/{subscriptionId} |
-| `country` | `string` | Country to which this record data is related. |
-| `apiTimeMax` | `number` | Maximum time it took to process request. |
-| `apiId` | `string` | API identifier path. /apis/{apiId} |
-| `callCountBlocked` | `integer` | Number of calls blocked due to invalid credentials. This includes calls returning HttpStatusCode.Unauthorized and HttpStatusCode.Forbidden and HttpStatusCode.TooManyRequests |
-| `apiRegion` | `string` | API region identifier. |
-| `serviceTimeMin` | `number` | Minimum time it took to process request on backend. |
-| `serviceTimeMax` | `number` | Maximum time it took to process request on backend. |
-| `userId` | `string` | User identifier path. /users/{userId} |
-| `callCountOther` | `integer` | Number of other calls. |
-| `zip` | `string` | Zip code to which this record data is related. |
-| `region` | `string` | Country region to which this record data is related. |
-| `apiTimeAvg` | `number` | Average time it took to process request. |
-| `callCountSuccess` | `integer` | Number of successful calls. This includes calls returning HttpStatusCode &lt;= 301 and HttpStatusCode.NotModified and HttpStatusCode.TemporaryRedirect |
 | `callCountTotal` | `integer` | Total number of calls. |
+| `apiTimeMax` | `number` | Maximum time it took to process request. |
+| `subscriptionId` | `string` | Subscription identifier path. /subscriptions/&#123;subscriptionId&#125; |
+| `timestamp` | `string` | Start of aggregation period. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.<br /> |
+| `callCountBlocked` | `integer` | Number of calls blocked due to invalid credentials. This includes calls returning HttpStatusCode.Unauthorized and HttpStatusCode.Forbidden and HttpStatusCode.TooManyRequests |
+| `region` | `string` | Country region to which this record data is related. |
+| `zip` | `string` | Zip code to which this record data is related. |
+| `productId` | `string` | Product identifier path. /products/&#123;productId&#125; |
 | `callCountFailed` | `integer` | Number of calls failed due to proxy or backend errors. This includes calls returning HttpStatusCode.BadRequest(400) and any Code between HttpStatusCode.InternalServerError (500) and 600 |
+| `callCountOther` | `integer` | Number of other calls. |
 | `cacheHitCount` | `integer` | Number of times when content was served from cache policy. |
+| `callCountSuccess` | `integer` | Number of successful calls. This includes calls returning HttpStatusCode &lt;= 301 and HttpStatusCode.NotModified and HttpStatusCode.TemporaryRedirect |
+| `apiId` | `string` | API identifier path. /apis/&#123;apiId&#125; |
+| `country` | `string` | Country to which this record data is related. |
+| `serviceTimeMin` | `number` | Minimum time it took to process request on backend. |
+| `apiRegion` | `string` | API region identifier. |
+| `apiTimeAvg` | `number` | Average time it took to process request. |
+| `userId` | `string` | User identifier path. /users/&#123;userId&#125; |
+| `operationId` | `string` | Operation identifier path. /apis/&#123;apiId&#125;/operations/&#123;operationId&#125; |
+| `cacheMissCount` | `integer` | Number of times content was fetched from backend. |
+| `bandwidth` | `integer` | Bandwidth consumed. |
+| `interval` | `string` | Length of aggregation period.  Interval must be multiple of 15 minutes and may not be zero. The value should be in ISO 8601 format (http://en.wikipedia.org/wiki/ISO_8601#Durations). |
+| `apiTimeMin` | `number` | Minimum time it took to process request. |
+| `serviceTimeMax` | `number` | Maximum time it took to process request on backend. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `identity` | `object` | Managed identity for the resource. |
-| `type` | `string` | The type of the resource. |
-| `provisioningState` | `string` | The provisioning state of this task run |
-| `runResult` | `object` | Run resource properties |
+| `runRequest` | `object` | The request parameters for scheduling a run. |
 | `location` | `string` | The location of the resource |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `runRequest` | `object` | The request parameters for scheduling a run. |
+| `provisioningState` | `string` | The provisioning state of this task run |
+| `runResult` | `object` | Run resource properties |
 | `forceUpdateTag` | `string` | How the run should be forced to rerun even if the run request configuration has not changed |
+| `type` | `string` | The type of the resource. |
+| `identity` | `object` | Managed identity for the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

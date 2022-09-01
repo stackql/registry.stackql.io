@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
-| `tags` | `object` | List of key-value pairs. |
-| `type` | `string` | Type of resource. |
 | `allowCustomPortalBranding` | `boolean` | Value indicating whether custom portal branding is allowed. |
 | `location` | `string` | Location of the resource |
+| `tags` | `object` | List of key-value pairs. |
+| `type` | `string` | Type of resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

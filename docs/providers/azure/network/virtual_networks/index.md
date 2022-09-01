@@ -29,24 +29,24 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `tags` | `object` | Resource tags. |
-| `extendedLocation` | `object` | ExtendedLocation complex type. |
-| `type` | `string` | Resource type. |
 | `provisioningState` | `string` | The current provisioning state. |
-| `subnets` | `array` | A list of subnets in a Virtual Network. |
-| `flowTimeoutInMinutes` | `integer` | The FlowTimeout value (in minutes) for the Virtual Network |
-| `ipAllocations` | `array` | Array of IpAllocation which reference this VNET. |
-| `enableVmProtection` | `boolean` | Indicates if VM protection is enabled for all the subnets in the virtual network. |
+| `tags` | `object` | Resource tags. |
 | `addressSpace` | `object` | AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network. |
-| `resourceGuid` | `string` | The resourceGuid property of the Virtual Network resource. |
+| `extendedLocation` | `object` | ExtendedLocation complex type. |
+| `bgpCommunities` | `object` | Bgp Communities sent over ExpressRoute with each route corresponding to a prefix in this VNET. |
 | `location` | `string` | Resource location. |
 | `virtualNetworkPeerings` | `array` | A list of peerings in a Virtual Network. |
+| `type` | `string` | Resource type. |
+| `resourceGuid` | `string` | The resourceGuid property of the Virtual Network resource. |
 | `enableDdosProtection` | `boolean` | Indicates if DDoS protection is enabled for all the protected resources in the virtual network. It requires a DDoS protection plan associated with the resource. |
 | `encryption` | `object` | Indicates if encryption is enabled on virtual network and if VM without encryption is allowed in encrypted VNet. |
-| `bgpCommunities` | `object` | Bgp Communities sent over ExpressRoute with each route corresponding to a prefix in this VNET. |
-| `ddosProtectionPlan` | `object` | Reference to another subresource. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `subnets` | `array` | A list of subnets in a Virtual Network. |
+| `ipAllocations` | `array` | Array of IpAllocation which reference this VNET. |
 | `dhcpOptions` | `object` | DhcpOptions contains an array of DNS servers available to VMs deployed in the virtual network. Standard DHCP option for a subnet overrides VNET DHCP options. |
+| `flowTimeoutInMinutes` | `integer` | The FlowTimeout value (in minutes) for the Virtual Network |
+| `ddosProtectionPlan` | `object` | Reference to another subresource. |
+| `enableVmProtection` | `boolean` | Indicates if VM protection is enabled for all the subnets in the virtual network. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

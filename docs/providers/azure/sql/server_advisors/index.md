@@ -27,6 +27,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `autoExecuteStatusInheritedFrom` | `string` | Gets the resource from which current value of auto-execute status is inherited. Auto-execute status can be set on (and inherited from) different levels in the resource hierarchy. Possible values are 'Subscription', 'Server', 'ElasticPool', 'Database' and 'Default' (when status is not explicitly set on any level). |
 | `kind` | `string` | Resource kind. |
 | `lastChecked` | `string` | Gets the time when the current resource was analyzed for recommendations by this advisor. |
 | `location` | `string` | Resource location. |
@@ -34,7 +35,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `recommendedActions` | `array` | Gets the recommended actions for this advisor. |
 | `advisorStatus` | `string` | Gets the status of availability of this advisor to customers. Possible values are 'GA', 'PublicPreview', 'LimitedPublicPreview' and 'PrivatePreview'. |
 | `autoExecuteStatus` | `string` | Gets the auto-execute status (whether to let the system execute the recommendations) of this advisor. Possible values are 'Enabled' and 'Disabled' |
-| `autoExecuteStatusInheritedFrom` | `string` | Gets the resource from which current value of auto-execute status is inherited. Auto-execute status can be set on (and inherited from) different levels in the resource hierarchy. Possible values are 'Subscription', 'Server', 'ElasticPool', 'Database' and 'Default' (when status is not explicitly set on any level). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

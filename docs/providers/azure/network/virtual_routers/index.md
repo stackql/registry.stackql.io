@@ -30,15 +30,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
 | `virtualRouterAsn` | `integer` | VirtualRouter ASN. |
-| `virtualRouterIps` | `array` | VirtualRouter IPs. |
-| `hostedSubnet` | `object` | Reference to another subresource. |
-| `tags` | `object` | Resource tags. |
-| `hostedGateway` | `object` | Reference to another subresource. |
-| `peerings` | `array` | List of references to VirtualRouterPeerings. |
-| `location` | `string` | Resource location. |
 | `provisioningState` | `string` | The current provisioning state. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `virtualRouterIps` | `array` | VirtualRouter IPs. |
 | `type` | `string` | Resource type. |
+| `tags` | `object` | Resource tags. |
+| `hostedSubnet` | `object` | Reference to another subresource. |
+| `location` | `string` | Resource location. |
+| `peerings` | `array` | List of references to VirtualRouterPeerings. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `hostedGateway` | `object` | Reference to another subresource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

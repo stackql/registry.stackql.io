@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `syncGroupStatus` | `string` | Sync group status |
 | `uniqueId` | `string` | Unique Id |
+| `syncGroupStatus` | `string` | Sync group status |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

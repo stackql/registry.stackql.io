@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `description` | `string` | User-friendly description of OpenID Connect Provider. |
+| `clientId` | `string` | Client ID of developer console which is the client application. |
+| `clientSecret` | `string` | Client Secret of developer console which is the client application. |
 | `displayName` | `string` | User-friendly OpenID Connect Provider name. |
 | `metadataEndpoint` | `string` | Metadata endpoint URI. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `clientId` | `string` | Client ID of developer console which is the client application. |
-| `clientSecret` | `string` | Client Secret of developer console which is the client application. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

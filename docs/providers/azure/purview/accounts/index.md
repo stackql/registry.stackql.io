@@ -29,23 +29,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Gets or sets the identifier. |
 | `name` | `string` | Gets or sets the name. |
+| `createdAt` | `string` | Gets the time at which the entity was created. |
 | `provisioningState` | `string` | Gets or sets the state of the provisioning. |
+| `friendlyName` | `string` | Gets or sets the friendly name. |
+| `managedResourceGroupName` | `string` | Gets or sets the managed resource group name |
+| `tags` | `object` | Tags on the azure resource. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `endpoints` | `object` | The URIs that are the public endpoints of the account. |
+| `privateEndpointConnections` | `array` | Gets the private endpoint connections information. |
 | `location` | `string` | Gets or sets the location. |
-| `identity` | `object` | The Managed Identity of the resource |
+| `type` | `string` | Gets or sets the type. |
 | `publicNetworkAccess` | `string` | Gets or sets the public network access. |
 | `createdBy` | `string` | Gets the creator of the entity. |
-| `createdAt` | `string` | Gets the time at which the entity was created. |
-| `cloudConnectors` | `object` | External Cloud Service connectors |
 | `sku` | `object` | Gets or sets the Sku. |
-| `friendlyName` | `string` | Gets or sets the friendly name. |
-| `managedResources` | `object` | Gets the resource identifiers of the managed resources. |
-| `privateEndpointConnections` | `array` | Gets the private endpoint connections information. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `createdByObjectId` | `string` | Gets the creators of the entity's object id. |
-| `endpoints` | `object` | The URIs that are the public endpoints of the account. |
-| `tags` | `object` | Tags on the azure resource. |
-| `managedResourceGroupName` | `string` | Gets or sets the managed resource group name |
-| `type` | `string` | Gets or sets the type. |
+| `identity` | `object` | The Managed Identity of the resource |
+| `managedResources` | `object` | Gets the resource identifiers of the managed resources. |
+| `cloudConnectors` | `object` | External Cloud Service connectors |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Id of the object. |
 | `name` | `string` | Name of the object. |
-| `type` | `string` | Type of the object. |
-| `customerSecrets` | `array` | List of customer secrets containing a key identifier and key value. The key identifier is a way for the specific data source to understand the key. Value contains customer secret encrypted by the encryptionKeys. |
-| `dataStoreTypeId` | `string` | The arm id of the data store type. |
 | `extendedProperties` | `object` | A generic json used differently by each data source type. |
 | `repositoryId` | `string` | Arm Id for the manager resource to which the data source is associated. This is optional. |
 | `state` | `string` | State of the data source. |
+| `type` | `string` | Type of the object. |
+| `customerSecrets` | `array` | List of customer secrets containing a key identifier and key value. The key identifier is a way for the specific data source to understand the key. Value contains customer secret encrypted by the encryptionKeys. |
+| `dataStoreTypeId` | `string` | The arm id of the data store type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `label` | `string` | The workload classifier label. |
-| `memberName` | `string` | The workload classifier member name. |
 | `startTime` | `string` | The workload classifier start time for classification. |
 | `context` | `string` | The workload classifier context. |
 | `endTime` | `string` | The workload classifier end time for classification. |
 | `importance` | `string` | The workload classifier importance. |
+| `label` | `string` | The workload classifier label. |
+| `memberName` | `string` | The workload classifier member name. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

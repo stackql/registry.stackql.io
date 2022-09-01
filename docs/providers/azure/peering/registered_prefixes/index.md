@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `prefix` | `string` | The customer's prefix from which traffic originates. |
-| `prefixValidationState` | `string` | The prefix validation state. |
-| `provisioningState` | `string` | The provisioning state of the resource. |
 | `type` | `string` | The type of the resource. |
 | `errorMessage` | `string` | The error message associated with the validation state, if any. |
 | `peeringServicePrefixKey` | `string` | The peering service prefix key that is to be shared with the customer. |
+| `prefix` | `string` | The customer's prefix from which traffic originates. |
+| `prefixValidationState` | `string` | The prefix validation state. |
+| `provisioningState` | `string` | The provisioning state of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

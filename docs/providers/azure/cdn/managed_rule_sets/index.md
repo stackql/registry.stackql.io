@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `systemData` | `object` | Read only system data |
-| `ruleSetType` | `string` | Type of the managed rule set. |
 | `ruleSetVersion` | `string` | Version of the managed rule set type. |
-| `provisioningState` | `string` | Provisioning state of the managed rule set. |
-| `ruleGroups` | `array` | Rule groups of the managed rule set. |
 | `sku` | `object` | Standard_Verizon = The SKU name for a Standard Verizon CDN profile.<br />Premium_Verizon = The SKU name for a Premium Verizon CDN profile.<br />Custom_Verizon = The SKU name for a Custom Verizon CDN profile.<br />Standard_Akamai = The SKU name for an Akamai CDN profile.<br />Standard_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using GB based billing model.<br />Standard_Microsoft = The SKU name for a Standard Microsoft CDN profile.<br />Standard_AzureFrontDoor =  The SKU name for an Azure Front Door Standard profile.<br />Premium_AzureFrontDoor = The SKU name for an Azure Front Door Premium profile.<br />Standard_955BandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using 95-5 peak bandwidth billing model.<br />Standard_AvgBandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using monthly average peak bandwidth billing model.<br />StandardPlus_ChinaCdn = The SKU name for a China CDN profile for live-streaming using GB based billing model.<br />StandardPlus_955BandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using 95-5 peak bandwidth billing model.<br />StandardPlus_AvgBandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using monthly average peak bandwidth billing model.<br /> |
 | `type` | `string` | Resource type. |
+| `ruleSetType` | `string` | Type of the managed rule set. |
+| `systemData` | `object` | Read only system data |
+| `provisioningState` | `string` | Provisioning state of the managed rule set. |
+| `ruleGroups` | `array` | Rule groups of the managed rule set. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

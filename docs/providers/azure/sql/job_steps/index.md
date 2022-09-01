@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `executionOptions` | `object` | The execution options of a job step. |
+| `output` | `object` | The output configuration of a job step. |
 | `stepId` | `integer` | The job step's index within the job. If not specified when creating the job step, it will be created as the last step. If not specified when updating the job step, the step id is not modified. |
 | `targetGroup` | `string` | The resource ID of the target group that the job step will be executed on. |
 | `action` | `object` | The action to be executed by a job step. |
 | `credential` | `string` | The resource ID of the job credential that will be used to connect to the targets. |
-| `executionOptions` | `object` | The execution options of a job step. |
-| `output` | `object` | The output configuration of a job step. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

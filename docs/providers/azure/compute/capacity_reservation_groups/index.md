@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `instanceView` | `object` |  |
-| `location` | `string` | Resource location |
-| `virtualMachinesAssociated` | `array` | A list of references to all virtual machines associated to the capacity reservation group. |
-| `type` | `string` | Resource type |
-| `capacityReservations` | `array` | A list of all capacity reservation resource ids that belong to capacity reservation group. |
-| `zones` | `array` | Availability Zones to use for this capacity reservation group. The zones can be assigned only during creation. If not provided, the group supports only regional resources in the region. If provided, enforces each capacity reservation in the group to be in one of the zones. |
 | `tags` | `object` | Resource tags |
+| `virtualMachinesAssociated` | `array` | A list of references to all virtual machines associated to the capacity reservation group. |
+| `location` | `string` | Resource location |
+| `type` | `string` | Resource type |
+| `zones` | `array` | Availability Zones to use for this capacity reservation group. The zones can be assigned only during creation. If not provided, the group supports only regional resources in the region. If provided, enforces each capacity reservation in the group to be in one of the zones. |
+| `capacityReservations` | `array` | A list of all capacity reservation resource ids that belong to capacity reservation group. |
+| `instanceView` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

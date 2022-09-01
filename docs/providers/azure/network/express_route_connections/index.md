@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource. |
+| `expressRouteCircuitPeering` | `object` | ExpressRoute circuit peering identifier. |
+| `routingWeight` | `integer` | The routing weight associated to the connection. |
+| `expressRouteGatewayBypass` | `boolean` | Enable FastPath to vWan Firewall hub. |
 | `enableInternetSecurity` | `boolean` | Enable internet security. |
+| `routingConfiguration` | `object` | Routing Configuration indicating the associated and propagated route tables for this connection. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `authorizationKey` | `string` | Authorization key to establish the connection. |
-| `routingConfiguration` | `object` | Routing Configuration indicating the associated and propagated route tables for this connection. |
-| `expressRouteCircuitPeering` | `object` | ExpressRoute circuit peering identifier. |
-| `expressRouteGatewayBypass` | `boolean` | Enable FastPath to vWan Firewall hub. |
-| `routingWeight` | `integer` | The routing weight associated to the connection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

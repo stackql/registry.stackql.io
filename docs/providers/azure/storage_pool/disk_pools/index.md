@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `sku` | `object` | Sku for ARM resource |
+| `provisioningState` | `string` | Provisioning state of the iSCSI Target. |
 | `subnetId` | `string` | Azure Resource ID of a Subnet for the Disk Pool. |
+| `availabilityZones` | `array` | Logical zone for Disk Pool resource; example: ["1"]. |
+| `managedBy` | `string` | Azure resource id. Indicates if this resource is managed by another Azure resource. |
+| `disks` | `array` | List of Azure Managed Disks to attach to a Disk Pool. |
+| `sku` | `object` | Sku for ARM resource |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `managedByExtended` | `array` | List of Azure resource ids that manage this resource. |
 | `additionalCapabilities` | `array` | List of additional capabilities for Disk Pool. |
-| `disks` | `array` | List of Azure Managed Disks to attach to a Disk Pool. |
-| `availabilityZones` | `array` | Logical zone for Disk Pool resource; example: ["1"]. |
 | `status` | `string` | Operational status of the resource. |
-| `location` | `string` | The geo-location where the resource lives. |
-| `provisioningState` | `string` | Provisioning state of the iSCSI Target. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `managedBy` | `string` | Azure resource id. Indicates if this resource is managed by another Azure resource. |
 | `tags` | `object` | Resource tags. |
+| `location` | `string` | The geo-location where the resource lives. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

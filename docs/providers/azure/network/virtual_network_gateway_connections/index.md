@@ -29,36 +29,36 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `localNetworkGateway2` | `object` | A common class for general resource information. |
-| `ingressBytesTransferred` | `integer` | The ingress bytes transferred in this connection. |
-| `location` | `string` | Resource location. |
-| `egressNatRules` | `array` | List of egress NatRules. |
-| `peer` | `object` | Reference to another subresource. |
-| `expressRouteGatewayBypass` | `boolean` | Bypass ExpressRoute Gateway for data forwarding. |
-| `useLocalAzureIpAddress` | `boolean` | Use private local Azure IP for the connection. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `virtualNetworkGateway1` | `object` | A common class for general resource information. |
-| `dpdTimeoutSeconds` | `integer` | The dead peer detection timeout of this connection in seconds. |
+| `routingWeight` | `integer` | The routing weight. |
+| `tunnelConnectionStatus` | `array` | Collection of all tunnels' connection health status. |
 | `type` | `string` | Resource type. |
-| `trafficSelectorPolicies` | `array` | The Traffic Selector Policies to be considered by this connection. |
-| `connectionStatus` | `string` | Virtual Network Gateway connection status. |
-| `gatewayCustomBgpIpAddresses` | `array` | GatewayCustomBgpIpAddresses to be used for virtual network gateway Connection. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `tags` | `object` | Resource tags. |
+| `enableBgp` | `boolean` | EnableBgp flag. |
 | `usePolicyBasedTrafficSelectors` | `boolean` | Enable policy-based traffic selectors. |
-| `connectionMode` | `string` | Gateway connection type. |
+| `virtualNetworkGateway1` | `object` | A common class for general resource information. |
+| `authorizationKey` | `string` | The authorizationKey. |
+| `dpdTimeoutSeconds` | `integer` | The dead peer detection timeout of this connection in seconds. |
+| `trafficSelectorPolicies` | `array` | The Traffic Selector Policies to be considered by this connection. |
+| `location` | `string` | Resource location. |
+| `gatewayCustomBgpIpAddresses` | `array` | GatewayCustomBgpIpAddresses to be used for virtual network gateway Connection. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `ipsecPolicies` | `array` | The IPSec Policies to be considered by this connection. |
-| `sharedKey` | `string` | The IPSec shared key. |
-| `tags` | `object` | Resource tags. |
-| `virtualNetworkGateway2` | `object` | A common class for general resource information. |
-| `tunnelConnectionStatus` | `array` | Collection of all tunnels' connection health status. |
-| `connectionProtocol` | `string` | Gateway connection protocol. |
-| `ingressNatRules` | `array` | List of ingress NatRules. |
 | `connectionType` | `string` | Gateway connection type. |
-| `enableBgp` | `boolean` | EnableBgp flag. |
+| `ingressBytesTransferred` | `integer` | The ingress bytes transferred in this connection. |
+| `localNetworkGateway2` | `object` | A common class for general resource information. |
+| `connectionMode` | `string` | Gateway connection type. |
+| `virtualNetworkGateway2` | `object` | A common class for general resource information. |
+| `egressNatRules` | `array` | List of egress NatRules. |
 | `egressBytesTransferred` | `integer` | The egress bytes transferred in this connection. |
-| `authorizationKey` | `string` | The authorizationKey. |
+| `expressRouteGatewayBypass` | `boolean` | Bypass ExpressRoute Gateway for data forwarding. |
+| `sharedKey` | `string` | The IPSec shared key. |
+| `connectionProtocol` | `string` | Gateway connection protocol. |
+| `connectionStatus` | `string` | Virtual Network Gateway connection status. |
+| `useLocalAzureIpAddress` | `boolean` | Use private local Azure IP for the connection. |
+| `ingressNatRules` | `array` | List of ingress NatRules. |
+| `peer` | `object` | Reference to another subresource. |
 | `resourceGuid` | `string` | The resource GUID property of the virtual network gateway connection resource. |
-| `routingWeight` | `integer` | The routing weight. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

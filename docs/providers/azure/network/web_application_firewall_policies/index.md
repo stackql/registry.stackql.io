@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `type` | `string` | Resource type. |
-| `managedRules` | `object` | Allow to exclude some variable satisfy the condition for the WAF check. |
-| `httpListeners` | `array` | A collection of references to application gateway http listeners. |
+| `location` | `string` | Resource location. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `resourceState` | `string` | Resource status of the policy. |
-| `pathBasedRules` | `array` | A collection of references to application gateway path rules. |
 | `customRules` | `array` | The custom rules inside the policy. |
+| `applicationGateways` | `array` | A collection of references to application gateways. |
+| `pathBasedRules` | `array` | A collection of references to application gateway path rules. |
+| `managedRules` | `object` | Allow to exclude some variable satisfy the condition for the WAF check. |
 | `tags` | `object` | Resource tags. |
 | `policySettings` | `object` | Defines contents of a web application firewall global configuration. |
-| `location` | `string` | Resource location. |
-| `applicationGateways` | `array` | A collection of references to application gateways. |
+| `type` | `string` | Resource type. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `httpListeners` | `array` | A collection of references to application gateway http listeners. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

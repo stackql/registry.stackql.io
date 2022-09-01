@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `maxSizeBytes` | `string` | The max size in bytes of the database |
+| `location` | `string` | The geo-location where the resource lives |
+| `edition` | `string` | The edition of the database |
 | `elasticPoolName` | `string` | The elastic pool name of the database |
+| `creationDate` | `string` | The creation date of the database (ISO8601 format) |
+| `earliestRestoreDate` | `string` | The earliest restore date of the database (ISO8601 format) |
 | `serviceLevelObjective` | `string` | The service level objective name of the database |
 | `databaseName` | `string` | The name of the database |
 | `deletionDate` | `string` | The deletion date of the database (ISO8601 format) |
-| `edition` | `string` | The edition of the database |
-| `maxSizeBytes` | `string` | The max size in bytes of the database |
-| `earliestRestoreDate` | `string` | The earliest restore date of the database (ISO8601 format) |
-| `creationDate` | `string` | The creation date of the database (ISO8601 format) |
-| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

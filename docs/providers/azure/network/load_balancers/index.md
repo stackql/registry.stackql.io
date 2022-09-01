@@ -29,21 +29,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `frontendIPConfigurations` | `array` | Object representing the frontend IPs to be used for the load balancer. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `loadBalancingRules` | `array` | Object collection representing the load balancing rules Gets the provisioning. |
-| `probes` | `array` | Collection of probe objects used in the load balancer. |
-| `type` | `string` | Resource type. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `sku` | `object` | SKU of a load balancer. |
 | `resourceGuid` | `string` | The resource GUID property of the load balancer resource. |
+| `sku` | `object` | SKU of a load balancer. |
+| `frontendIPConfigurations` | `array` | Object representing the frontend IPs to be used for the load balancer. |
 | `tags` | `object` | Resource tags. |
-| `extendedLocation` | `object` | ExtendedLocation complex type. |
-| `inboundNatRules` | `array` | Collection of inbound NAT Rules used by a load balancer. Defining inbound NAT rules on your load balancer is mutually exclusive with defining an inbound NAT pool. Inbound NAT pools are referenced from virtual machine scale sets. NICs that are associated with individual virtual machines cannot reference an Inbound NAT pool. They have to reference individual inbound NAT rules. |
-| `backendAddressPools` | `array` | Collection of backend address pools used by a load balancer. |
+| `probes` | `array` | Collection of probe objects used in the load balancer. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `inboundNatPools` | `array` | Defines an external port range for inbound NAT to a single backend port on NICs associated with a load balancer. Inbound NAT rules are created automatically for each NIC associated with the Load Balancer using an external port from this range. Defining an Inbound NAT pool on your Load Balancer is mutually exclusive with defining inbound NAT rules. Inbound NAT pools are referenced from virtual machine scale sets. NICs that are associated with individual virtual machines cannot reference an inbound NAT pool. They have to reference individual inbound NAT rules. |
+| `inboundNatRules` | `array` | Collection of inbound NAT Rules used by a load balancer. Defining inbound NAT rules on your load balancer is mutually exclusive with defining an inbound NAT pool. Inbound NAT pools are referenced from virtual machine scale sets. NICs that are associated with individual virtual machines cannot reference an Inbound NAT pool. They have to reference individual inbound NAT rules. |
 | `location` | `string` | Resource location. |
 | `outboundRules` | `array` | The outbound rules. |
+| `extendedLocation` | `object` | ExtendedLocation complex type. |
+| `loadBalancingRules` | `array` | Object collection representing the load balancing rules Gets the provisioning. |
+| `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `backendAddressPools` | `array` | Collection of backend address pools used by a load balancer. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

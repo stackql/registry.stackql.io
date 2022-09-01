@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `retentionDays` | `integer` | Specifies the number of days to keep in the Threat Detection audit logs. |
-| `disabledAlerts` | `array` | Specifies an array of alerts that are disabled. Allowed values are: Sql_Injection, Sql_Injection_Vulnerability, Access_Anomaly, Data_Exfiltration, Unsafe_Action, Brute_Force |
-| `emailAddresses` | `array` | Specifies an array of e-mail addresses to which the alert is sent. |
 | `creationTime` | `string` | Specifies the UTC creation time of the policy. |
-| `storageAccountAccessKey` | `string` | Specifies the identifier key of the Threat Detection audit storage account. |
-| `emailAccountAdmins` | `boolean` | Specifies that the alert is sent to the account administrators. |
-| `state` | `string` | Specifies the state of the policy, whether it is enabled or disabled or a policy has not been applied yet on the specific database. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `emailAccountAdmins` | `boolean` | Specifies that the alert is sent to the account administrators. |
+| `disabledAlerts` | `array` | Specifies an array of alerts that are disabled. Allowed values are: Sql_Injection, Sql_Injection_Vulnerability, Access_Anomaly, Data_Exfiltration, Unsafe_Action, Brute_Force |
+| `state` | `string` | Specifies the state of the policy, whether it is enabled or disabled or a policy has not been applied yet on the specific database. |
+| `storageAccountAccessKey` | `string` | Specifies the identifier key of the Threat Detection audit storage account. |
 | `storageEndpoint` | `string` | Specifies the blob storage endpoint (e.g. https://MyAccount.blob.core.windows.net). This blob storage will hold all Threat Detection audit logs. |
+| `emailAddresses` | `array` | Specifies an array of e-mail addresses to which the alert is sent. |
+| `retentionDays` | `integer` | Specifies the number of days to keep in the Threat Detection audit logs. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

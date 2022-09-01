@@ -27,16 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | The geo-location where the resource lives |
-| `tags` | `object` | Resource tags. |
-| `version` | `string` | Version of the Appliance |
-| `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response. |
-| `identity` | `object` | Identity for the resource. |
-| `distro` | `string` | Represents a supported Fabric/Infra. (AKSEdge etc...). |
-| `infrastructureConfig` | `object` | Contains infrastructure information about the Appliance |
-| `publicKey` | `string` | Certificates pair used to download MSI certificate from HIS |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `status` | `string` | Appliance’s health and state of connection to on-prem |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `identity` | `object` | Identity for the resource. |
+| `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response. |
+| `version` | `string` | Version of the Appliance |
+| `infrastructureConfig` | `object` | Contains infrastructure information about the Appliance |
+| `tags` | `object` | Resource tags. |
+| `distro` | `string` | Represents a supported Fabric/Infra. (AKSEdge etc...). |
+| `publicKey` | `string` | Certificates pair used to download MSI certificate from HIS |
+| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

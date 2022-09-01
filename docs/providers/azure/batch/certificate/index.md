@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `provisioningState` | `string` |  |
-| `deleteCertificateError` | `object` | An error response from the Batch service. |
-| `provisioningStateTransitionTime` | `string` |  |
-| `previousProvisioningStateTransitionTime` | `string` |  |
-| `type` | `string` | The type of the resource. |
-| `previousProvisioningState` | `string` | The previous provisioned state of the resource |
-| `publicData` | `string` | The public key of the certificate. |
 | `etag` | `string` | The ETag of the resource, used for concurrency statements. |
+| `type` | `string` | The type of the resource. |
+| `deleteCertificateError` | `object` | An error response from the Batch service. |
+| `publicData` | `string` | The public key of the certificate. |
+| `provisioningState` | `string` |  |
+| `previousProvisioningStateTransitionTime` | `string` |  |
+| `previousProvisioningState` | `string` | The previous provisioned state of the resource |
+| `provisioningStateTransitionTime` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

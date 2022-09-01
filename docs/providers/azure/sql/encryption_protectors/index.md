@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `autoRotationEnabled` | `boolean` | Key auto rotation opt-in flag. Either true or false. |
-| `kind` | `string` | Kind of encryption protector. This is metadata used for the Azure portal experience. |
-| `location` | `string` | Resource location. |
 | `serverKeyName` | `string` | The name of the server key. |
 | `serverKeyType` | `string` | The encryption protector type like 'ServiceManaged', 'AzureKeyVault'. |
 | `subregion` | `string` | Subregion of the encryption protector. |
 | `thumbprint` | `string` | Thumbprint of the server key. |
 | `uri` | `string` | The URI of the server key. |
+| `autoRotationEnabled` | `boolean` | Key auto rotation opt-in flag. Either true or false. |
+| `kind` | `string` | Kind of encryption protector. This is metadata used for the Azure portal experience. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

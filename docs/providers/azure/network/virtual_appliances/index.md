@@ -29,23 +29,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `sshPublicKey` | `string` | Public key for SSH login. |
-| `location` | `string` | Resource location. |
-| `virtualHub` | `object` | Reference to another subresource. |
 | `cloudInitConfiguration` | `string` | CloudInitConfiguration string in plain text. |
-| `virtualApplianceAsn` | `integer` | VirtualAppliance ASN. |
-| `inboundSecurityRules` | `array` | List of references to InboundSecurityRules. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `virtualHub` | `object` | Reference to another subresource. |
 | `identity` | `object` | Identity for the resource. |
-| `addressPrefix` | `string` | Address Prefix. |
+| `location` | `string` | Resource location. |
+| `virtualApplianceAsn` | `integer` | VirtualAppliance ASN. |
+| `tags` | `object` | Resource tags. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `type` | `string` | Resource type. |
-| `cloudInitConfigurationBlobs` | `array` | CloudInitConfigurationBlob storage URLs. |
+| `addressPrefix` | `string` | Address Prefix. |
 | `nvaSku` | `object` | Network Virtual Appliance Sku Properties. |
 | `virtualApplianceNics` | `array` | List of Virtual Appliance Network Interfaces. |
-| `bootStrapConfigurationBlobs` | `array` | BootStrapConfigurationBlobs storage URLs. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `tags` | `object` | Resource tags. |
+| `cloudInitConfigurationBlobs` | `array` | CloudInitConfigurationBlob storage URLs. |
+| `inboundSecurityRules` | `array` | List of references to InboundSecurityRules. |
 | `virtualApplianceSites` | `array` | List of references to VirtualApplianceSite. |
+| `sshPublicKey` | `string` | Public key for SSH login. |
+| `bootStrapConfigurationBlobs` | `array` | BootStrapConfigurationBlobs storage URLs. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

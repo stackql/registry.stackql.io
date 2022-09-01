@@ -30,11 +30,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
 | `description` | `string` | The user friendly description of the scope map. |
-| `creationDate` | `string` | The creation date of scope map. |
 | `provisioningState` | `string` | Provisioning state of the resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | The type of the scope map. E.g. BuildIn scope map. |
-| `actions` | `array` | The list of scoped permissions for registry artifacts.<br />E.g. repositories/repository-name/content/read,<br />repositories/repository-name/metadata/write |
+| `actions` | `array` | The list of scoped permissions for registry artifacts.<br />E.g. repositories/repository-name/content/read,<br />repositories/repository-name/metadata/write |
+| `creationDate` | `string` | The creation date of scope map. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

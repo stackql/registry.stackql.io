@@ -30,13 +30,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | The Azure Resource Manager resource ID for the managed HSM Pool. |
 | `name` | `string` | The name of the managed HSM Pool. |
 | `requiredMembers` | `array` | Required member names of private link resource. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the key vault resource. |
-| `tags` | `object` | Resource tags |
-| `type` | `string` | The resource type of the managed HSM Pool. |
 | `groupId` | `string` | Group identifier of private link resource. |
-| `requiredZoneNames` | `array` | Required DNS zone names of the the private link resource. |
-| `location` | `string` | The supported Azure location where the managed HSM Pool should be created. |
 | `sku` | `object` | SKU details |
+| `type` | `string` | The resource type of the managed HSM Pool. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the key vault resource. |
+| `location` | `string` | The supported Azure location where the managed HSM Pool should be created. |
+| `tags` | `object` | Resource tags |
+| `requiredZoneNames` | `array` | Required DNS zone names of the the private link resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

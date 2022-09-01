@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `tags` | `object` | Resource tags. |
+| `containers` | `array` | The names of the blob containers that the workspace should read |
 | `eTag` | `string` | The ETag of the storage insight. |
 | `status` | `object` | The status of the storage insight. |
 | `storageAccount` | `object` | Describes a storage account connection. |
 | `tables` | `array` | The names of the Azure tables that the workspace should read |
-| `tags` | `object` | Resource tags. |
-| `containers` | `array` | The names of the blob containers that the workspace should read |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

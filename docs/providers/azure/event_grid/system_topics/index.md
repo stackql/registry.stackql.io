@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `tags` | `object` | Resource tags. |
 | `topicType` | `string` | TopicType for the system topic. |
 | `identity` | `object` | The identity information for the resource. |
 | `location` | `string` | The geo-location where the resource lives |
 | `metricResourceId` | `string` | Metric resource id for the system topic. |
 | `provisioningState` | `string` | Provisioning state of the system topic. |
 | `source` | `string` | Source for the system topic. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

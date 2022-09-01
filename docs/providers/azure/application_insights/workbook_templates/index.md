@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name. |
-| `priority` | `integer` | Priority of the template. Determines which template to open when a workbook gallery is opened in viewer mode. |
-| `location` | `string` | Resource location |
-| `templateData` | `object` | Valid JSON object containing workbook template payload. |
-| `author` | `string` | Information about the author of the workbook template. |
 | `localized` | `object` | Key value pair of localized gallery. Each key is the locale code of languages supported by the Azure portal. |
-| `type` | `string` | Azure resource type |
-| `tags` | `object` | Resource tags |
+| `templateData` | `object` | Valid JSON object containing workbook template payload. |
+| `location` | `string` | Resource location |
+| `author` | `string` | Information about the author of the workbook template. |
 | `galleries` | `array` | Workbook galleries supported by the template. |
+| `type` | `string` | Azure resource type |
+| `priority` | `integer` | Priority of the template. Determines which template to open when a workbook gallery is opened in viewer mode. |
+| `tags` | `object` | Resource tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

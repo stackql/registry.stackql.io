@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | Resource location. |
-| `originGroups` | `array` | The origin groups comprising of origins that are used for load balancing the traffic based on availability. |
 | `origins` | `array` | The source of the content being delivered via CDN. |
 | `provisioningState` | `string` | Provisioning status of the endpoint. |
 | `resourceState` | `string` | Resource status of the endpoint. |
 | `tags` | `object` | Resource tags. |
 | `customDomains` | `array` | The custom domains under the endpoint. |
-| `hostName` | `string` | The host name of the endpoint structured as {endpointName}.{DNSZone}, e.g. contoso.azureedge.net |
+| `hostName` | `string` | The host name of the endpoint structured as &#123;endpointName&#125;.&#123;DNSZone&#125;, e.g. contoso.azureedge.net |
+| `location` | `string` | Resource location. |
+| `originGroups` | `array` | The origin groups comprising of origins that are used for load balancing the traffic based on availability. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

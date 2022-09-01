@@ -27,21 +27,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `skuName` | `string` | The sku name for the network function. Once set, it cannot be updated. |
+| `skuType` | `string` | Sku type. |
+| `networkFunctionUserConfigurations` | `array` | The network function configurations from the user. |
 | `location` | `string` | The geo-location where the resource lives |
+| `tags` | `object` | Resource tags. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `managedApplicationParameters` | `object` | The parameters for the managed application. |
 | `device` | `object` | Reference to another sub resource. |
-| `managedApplication` | `object` | Reference to another sub resource. |
 | `vendorName` | `string` | The vendor name for the network function. Once set, it cannot be updated. |
+| `serviceKey` | `string` | The service key for the network function resource. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `vendorProvisioningState` | `string` | The current vendor provisioning state. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `networkFunctionUserConfigurations` | `array` | The network function configurations from the user. |
-| `serviceKey` | `string` | The service key for the network function resource. |
+| `skuName` | `string` | The sku name for the network function. Once set, it cannot be updated. |
 | `networkFunctionContainerConfigurations` | `object` | The network function container configurations from the user. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `tags` | `object` | Resource tags. |
-| `managedApplicationParameters` | `object` | The parameters for the managed application. |
-| `skuType` | `string` | Sku type. |
+| `managedApplication` | `object` | Reference to another sub resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

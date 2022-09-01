@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `name` | `string` | Operation name: {provider}/{resource}/{read \| write \| action \| delete} |
+| `name` | `string` | Operation name: &#123;provider&#125;/&#123;resource&#125;/&#123;read \| write \| action \| delete&#125; |
+| `isDataAction` | `boolean` | Indicates whether the operation is a data action |
 | `origin` | `string` | Default value is 'user,system'. |
 | `display` | `object` | The object that represents the operation. |
-| `isDataAction` | `boolean` | Indicates whether the operation is a data action |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
