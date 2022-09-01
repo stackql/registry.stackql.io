@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `name` | `string` | This is of the format {provider}/{resource}/{operation} |
-| `origin` | `string` |  |
+| `name` | `string` | This is of the format &#123;provider&#125;/&#123;resource&#125;/&#123;operation&#125; |
 | `properties` | `object` |  |
 | `display` | `object` |  |
 | `isDataAction` | `boolean` |  |
+| `origin` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

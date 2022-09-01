@@ -5,21 +5,12 @@ from pystackql import StackQL
 iql = StackQL(exe="./stackql")
 
 def make_web_safe(str):
-    ## TODO
-    # remove local md links
-    # replace { with &#123;
-    # replace } with &#125;
-    # \r\n with <br />
-    # /providers/azure/sql/database_blob_auditing_policies
-    # /providers/azure/sql/extended_database_blob_auditing_policies
-    # /providers/azure/sql/extended_server_blob_auditing_policies
-    # /providers/azure/sql/server_blob_auditing_policies
-    # /providers/azure/sql/server_dev_ops_audit_settings
-    # /providers/azure/synapse/extended_sql_pool_blob_auditing_policies
-    # /providers/azure/synapse/sql_pool_blob_auditing_policies
-    # /providers/azure/synapse/workspace_managed_sql_server_blob_auditing_policies
-    # /providers/azure/synapse/workspace_managed_sql_server_extended_blob_auditing_policies
-    return str.replace("<", "&lt;").replace(">", "&gt;").replace("\n", "<br />")
+    safe_str = str
+    safe_str = safe_str.replace("<", "&lt;").replace(">", "&gt;")
+    safe_str = safe_str.replace("{", "&#123;").replace("}", "&#125;")
+    safe_str = safe_str.replace("\r\n", "<br />")
+    safe_str = safe_str.replace("\n", "<br />")
+    return safe_str
 
 def make_markdown_table_safe(str):
     return make_web_safe(str).replace("|", "\|")

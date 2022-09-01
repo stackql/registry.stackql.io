@@ -30,16 +30,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
 | `vpnServerConfiguration` | `object` | Reference to another subresource. |
-| `customDnsServers` | `array` | List of all customer specified DNS servers IP addresses. |
-| `vpnGatewayScaleUnit` | `integer` | The scale unit for this p2s vpn gateway. |
-| `isRoutingPreferenceInternet` | `boolean` | Enable Routing Preference property for the Public IP Interface of the P2SVpnGateway. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `vpnClientConnectionHealth` | `object` | VpnClientConnectionHealth properties. |
-| `p2SConnectionConfigurations` | `array` | List of all p2s connection configurations of the gateway. |
 | `location` | `string` | Resource location. |
-| `tags` | `object` | Resource tags. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `type` | `string` | Resource type. |
+| `vpnClientConnectionHealth` | `object` | VpnClientConnectionHealth properties. |
+| `customDnsServers` | `array` | List of all customer specified DNS servers IP addresses. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `isRoutingPreferenceInternet` | `boolean` | Enable Routing Preference property for the Public IP Interface of the P2SVpnGateway. |
+| `p2SConnectionConfigurations` | `array` | List of all p2s connection configurations of the gateway. |
+| `tags` | `object` | Resource tags. |
+| `vpnGatewayScaleUnit` | `integer` | The scale unit for this p2s vpn gateway. |
 | `virtualHub` | `object` | Reference to another subresource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

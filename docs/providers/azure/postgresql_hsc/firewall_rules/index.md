@@ -27,9 +27,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `endIpAddress` | `string` | The end IP address of the server group firewall rule. Must be IPv4 format. |
 | `startIpAddress` | `string` | The start IP address of the server group firewall rule. Must be IPv4 format. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

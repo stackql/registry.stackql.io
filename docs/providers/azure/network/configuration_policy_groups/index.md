@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `type` | `string` | Resource type. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `isDefault` | `boolean` | Shows if this is a Default VpnServerConfigurationPolicyGroup or not. |
-| `policyMembers` | `array` | Multiple PolicyMembers for VpnServerConfigurationPolicyGroup. |
 | `priority` | `integer` | Priority for VpnServerConfigurationPolicyGroup. |
-| `type` | `string` | Resource type. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `policyMembers` | `array` | Multiple PolicyMembers for VpnServerConfigurationPolicyGroup. |
 | `p2SConnectionConfigurations` | `array` | List of references to P2SConnectionConfigurations. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

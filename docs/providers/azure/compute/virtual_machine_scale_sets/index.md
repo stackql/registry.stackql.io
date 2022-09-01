@@ -29,31 +29,31 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `plan` | `object` | Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use.  In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started -&gt;**. Enter any required information and then click **Save**. |
-| `zoneBalance` | `boolean` | Whether to force strictly even Virtual Machine distribution cross x-zones in case there is zone outage. zoneBalance property can only be set if the zones property of the scale set contains more than one zone. If there are no zones or only one zone specified, then zoneBalance property should not be set. |
-| `identity` | `object` | Identity for the virtual machine scale set. |
-| `hostGroup` | `object` |  |
-| `virtualMachineProfile` | `object` | Describes a virtual machine scale set virtual machine profile. |
-| `singlePlacementGroup` | `boolean` | When true this limits the scale set to a single placement group, of max size 100 virtual machines. NOTE: If singlePlacementGroup is true, it may be modified to false. However, if singlePlacementGroup is false, it may not be modified to true. |
-| `spotRestorePolicy` | `object` | Specifies the Spot-Try-Restore properties for the virtual machine scale set. &lt;br&gt;&lt;br&gt; With this property customer can enable or disable automatic restore of the evicted Spot VMSS VM instances opportunistically based on capacity availability and pricing constraint. |
-| `additionalCapabilities` | `object` | Enables or disables a capability on the virtual machine or virtual machine scale set. |
-| `location` | `string` | Resource location |
-| `provisioningState` | `string` | The provisioning state, which only appears in the response. |
-| `orchestrationMode` | `string` | Specifies the orchestration mode for the virtual machine scale set. |
-| `doNotRunExtensionsOnOverprovisionedVMs` | `boolean` | When Overprovision is enabled, extensions are launched only on the requested number of VMs which are finally kept. This property will hence ensure that the extensions do not run on the extra overprovisioned VMs. |
-| `overprovision` | `boolean` | Specifies whether the Virtual Machine Scale Set should be overprovisioned. |
-| `uniqueId` | `string` | Specifies the ID which uniquely identifies a Virtual Machine Scale Set. |
-| `automaticRepairsPolicy` | `object` | Specifies the configuration parameters for automatic repairs on the virtual machine scale set. |
 | `zones` | `array` | The virtual machine scale set zones. NOTE: Availability zones can only be set when you create the scale set |
-| `sku` | `object` | Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. |
-| `type` | `string` | Resource type |
-| `tags` | `object` | Resource tags |
-| `upgradePolicy` | `object` | Describes an upgrade policy - automatic, manual, or rolling. |
-| `platformFaultDomainCount` | `integer` | Fault Domain count for each placement group. |
 | `scaleInPolicy` | `object` | Describes a scale-in policy for a virtual machine scale set. |
-| `timeCreated` | `string` | Specifies the time at which the Virtual Machine Scale Set resource was created.&lt;br&gt;&lt;br&gt;Minimum api-version: 2022-03-01. |
-| `proximityPlacementGroup` | `object` |  |
 | `extendedLocation` | `object` | The complex type of the extended location. |
+| `sku` | `object` | Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. |
+| `spotRestorePolicy` | `object` | Specifies the Spot-Try-Restore properties for the virtual machine scale set. &lt;br&gt;&lt;br&gt; With this property customer can enable or disable automatic restore of the evicted Spot VMSS VM instances opportunistically based on capacity availability and pricing constraint. |
+| `orchestrationMode` | `string` | Specifies the orchestration mode for the virtual machine scale set. |
+| `location` | `string` | Resource location |
+| `singlePlacementGroup` | `boolean` | When true this limits the scale set to a single placement group, of max size 100 virtual machines. NOTE: If singlePlacementGroup is true, it may be modified to false. However, if singlePlacementGroup is false, it may not be modified to true. |
+| `platformFaultDomainCount` | `integer` | Fault Domain count for each placement group. |
+| `automaticRepairsPolicy` | `object` | Specifies the configuration parameters for automatic repairs on the virtual machine scale set. |
+| `identity` | `object` | Identity for the virtual machine scale set. |
+| `doNotRunExtensionsOnOverprovisionedVMs` | `boolean` | When Overprovision is enabled, extensions are launched only on the requested number of VMs which are finally kept. This property will hence ensure that the extensions do not run on the extra overprovisioned VMs. |
+| `proximityPlacementGroup` | `object` |  |
+| `virtualMachineProfile` | `object` | Describes a virtual machine scale set virtual machine profile. |
+| `upgradePolicy` | `object` | Describes an upgrade policy - automatic, manual, or rolling. |
+| `timeCreated` | `string` | Specifies the time at which the Virtual Machine Scale Set resource was created.&lt;br&gt;&lt;br&gt;Minimum api-version: 2022-03-01. |
+| `type` | `string` | Resource type |
+| `plan` | `object` | Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use.  In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started -&gt;**. Enter any required information and then click **Save**. |
+| `provisioningState` | `string` | The provisioning state, which only appears in the response. |
+| `uniqueId` | `string` | Specifies the ID which uniquely identifies a Virtual Machine Scale Set. |
+| `hostGroup` | `object` |  |
+| `overprovision` | `boolean` | Specifies whether the Virtual Machine Scale Set should be overprovisioned. |
+| `zoneBalance` | `boolean` | Whether to force strictly even Virtual Machine distribution cross x-zones in case there is zone outage. zoneBalance property can only be set if the zones property of the scale set contains more than one zone. If there are no zones or only one zone specified, then zoneBalance property should not be set. |
+| `additionalCapabilities` | `object` | Enables or disables a capability on the virtual machine or virtual machine scale set. |
+| `tags` | `object` | Resource tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

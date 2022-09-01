@@ -30,13 +30,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
 | `type` | `string` | Resource type. |
-| `ingestionPolicy` | `object` | Ingestion Policy properties. |
 | `location` | `string` | Resource location. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `emissionPolicies` | `array` | Emission policies. |
-| `tags` | `object` | Resource tags. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `ingestionPolicy` | `object` | Ingestion Policy properties. |
+| `tags` | `object` | Resource tags. |
+| `emissionPolicies` | `array` | Emission policies. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -28,15 +28,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `scaleType` | `string` | Scale type. |
-| `tags` | `object` | Resource tags. |
-| `clusterConfiguration` | `string` | Cluster type. |
-| `sqlImageSku` | `string` | SQL image sku. |
 | `clusterManagerType` | `string` | Type of cluster manager: Windows Server Failover Cluster (WSFC), implied by the scale type of the group and the OS type. |
 | `location` | `string` | The geo-location where the resource lives |
-| `provisioningState` | `string` | Provisioning state to track the async operation status. |
-| `wsfcDomainProfile` | `object` | Active Directory account details to operate Windows Server Failover Cluster. |
-| `sqlImageOffer` | `string` | SQL image offer. Examples may include SQL2016-WS2016, SQL2017-WS2016. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `wsfcDomainProfile` | `object` | Active Directory account details to operate Windows Server Failover Cluster. |
+| `provisioningState` | `string` | Provisioning state to track the async operation status. |
+| `clusterConfiguration` | `string` | Cluster type. |
+| `sqlImageSku` | `string` | SQL image sku. |
+| `tags` | `object` | Resource tags. |
+| `sqlImageOffer` | `string` | SQL image offer. Examples may include SQL2016-WS2016, SQL2017-WS2016. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

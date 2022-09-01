@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `storageUrlExpiry` | `string` | The UTC time at which the Azure Storage URL will expire. |
-| `storageUrl` | `string` | The URL for the application package in Azure Storage. |
-| `state` | `string` | The current state of the application package. |
 | `etag` | `string` | The ETag of the resource, used for concurrency statements. |
+| `state` | `string` | The current state of the application package. |
 | `format` | `string` | The format of the application package, if the package is active. |
 | `lastActivationTime` | `string` | The time at which the package was last activated, if the package is active. |
+| `storageUrlExpiry` | `string` | The UTC time at which the Azure Storage URL will expire. |
 | `type` | `string` | The type of the resource. |
+| `storageUrl` | `string` | The URL for the application package in Azure Storage. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

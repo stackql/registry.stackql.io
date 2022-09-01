@@ -29,24 +29,24 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `securityProfile` | `object` | Contains the security related information for the resource. |
-| `osType` | `string` | The Operating System type. |
-| `sourceUniqueId` | `string` | unique incarnation id of the source disk |
-| `supportedCapabilities` | `object` | List of supported capabilities persisted on the disk resource for VM use. |
-| `type` | `string` | Resource type |
-| `hyperVGeneration` | `string` | The hypervisor generation of the Virtual Machine. Applicable to OS disks only. |
-| `timeCreated` | `string` | The timestamp of restorePoint creation |
-| `encryption` | `object` | Encryption at rest settings for disk or snapshot |
-| `familyId` | `string` | id of the backing snapshot's MIS family |
-| `completionPercent` | `number` | Percentage complete for the background copy of disk restore point when source resource is from a different region. |
-| `diskAccessId` | `string` | ARM id of the DiskAccess resource for using private endpoints on disks. |
-| `publicNetworkAccess` | `string` | Policy for controlling export on the disk. |
-| `purchasePlan` | `object` | Used for establishing the purchase context of any 3rd Party artifact through MarketPlace. |
-| `replicationState` | `string` | Replication state of disk restore point when source resource is from a different region. |
 | `supportsHibernation` | `boolean` | Indicates the OS on a disk supports hibernation. |
+| `familyId` | `string` | id of the backing snapshot's MIS family |
+| `hyperVGeneration` | `string` | The hypervisor generation of the Virtual Machine. Applicable to OS disks only. |
 | `sourceResourceLocation` | `string` | Location of source disk or source disk restore point when source resource is from a different region. |
-| `networkAccessPolicy` | `string` | Policy for accessing the disk via network. |
+| `securityProfile` | `object` | Contains the security related information for the resource. |
+| `supportedCapabilities` | `object` | List of supported capabilities persisted on the disk resource for VM use. |
 | `sourceResourceId` | `string` | arm id of source disk or source disk restore point. |
+| `encryption` | `object` | Encryption at rest settings for disk or snapshot |
+| `timeCreated` | `string` | The timestamp of restorePoint creation |
+| `osType` | `string` | The Operating System type. |
+| `publicNetworkAccess` | `string` | Policy for controlling export on the disk. |
+| `type` | `string` | Resource type |
+| `replicationState` | `string` | Replication state of disk restore point when source resource is from a different region. |
+| `diskAccessId` | `string` | ARM id of the DiskAccess resource for using private endpoints on disks. |
+| `networkAccessPolicy` | `string` | Policy for accessing the disk via network. |
+| `purchasePlan` | `object` | Used for establishing the purchase context of any 3rd Party artifact through MarketPlace. |
+| `completionPercent` | `number` | Percentage complete for the background copy of disk restore point when source resource is from a different region. |
+| `sourceUniqueId` | `string` | unique incarnation id of the source disk |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,23 +29,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `updatedAt` | `string` | The time the namespace was updated. |
-| `region` | `string` | Specifies the targeted region in which the namespace should be created. It can be any of the following values: Australia East, Australia Southeast, Central US, East US, East US 2, West US, North Central US, South Central US, East Asia, Southeast Asia, Brazil South, Japan East, Japan West, North Europe, West Europe |
-| `critical` | `boolean` | Whether or not the namespace is set as Critical. |
 | `location` | `string` | Resource location |
-| `provisioningState` | `string` | Provisioning state of the Namespace. |
-| `serviceBusEndpoint` | `string` | Endpoint you can use to perform NotificationHub operations. |
 | `createdAt` | `string` | The time the namespace was created. |
-| `enabled` | `boolean` | Whether or not the namespace is currently enabled. |
-| `type` | `string` | Resource type |
-| `metricId` | `string` | Identifier for Azure Insights metrics |
-| `namespaceType` | `string` | The namespace type. |
-| `scaleUnit` | `string` | ScaleUnit where the namespace gets created |
 | `subscriptionId` | `string` | The Id of the Azure subscription associated with the namespace. |
-| `sku` | `object` | The Sku description for a namespace |
-| `status` | `string` | Status of the namespace. It can be any of these values:1 = Created/Active2 = Creating3 = Suspended4 = Deleting |
-| `dataCenter` | `string` | Data center for the namespace |
+| `serviceBusEndpoint` | `string` | Endpoint you can use to perform NotificationHub operations. |
 | `tags` | `object` | Resource tags |
+| `provisioningState` | `string` | Provisioning state of the Namespace. |
+| `enabled` | `boolean` | Whether or not the namespace is currently enabled. |
+| `scaleUnit` | `string` | ScaleUnit where the namespace gets created |
+| `critical` | `boolean` | Whether or not the namespace is set as Critical. |
+| `metricId` | `string` | Identifier for Azure Insights metrics |
+| `type` | `string` | Resource type |
+| `region` | `string` | Specifies the targeted region in which the namespace should be created. It can be any of the following values: Australia East, Australia Southeast, Central US, East US, East US 2, West US, North Central US, South Central US, East Asia, Southeast Asia, Brazil South, Japan East, Japan West, North Europe, West Europe |
+| `namespaceType` | `string` | The namespace type. |
+| `status` | `string` | Status of the namespace. It can be any of these values:1 = Created/Active2 = Creating3 = Suspended4 = Deleting |
+| `updatedAt` | `string` | The time the namespace was updated. |
+| `sku` | `object` | The Sku description for a namespace |
+| `dataCenter` | `string` | Data center for the namespace |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

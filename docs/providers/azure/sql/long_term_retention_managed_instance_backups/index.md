@@ -27,13 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `databaseName` | `string` | The name of the database the backup belong to |
 | `managedInstanceCreateTime` | `string` | The create time of the instance. |
 | `managedInstanceName` | `string` | The managed instance that the backup database belongs to. |
 | `backupExpirationTime` | `string` | The time the long term retention backup will expire. |
 | `backupStorageRedundancy` | `string` | The storage redundancy type of the backup |
 | `backupTime` | `string` | The time the backup was taken |
 | `databaseDeletionTime` | `string` | The delete time of the database |
+| `databaseName` | `string` | The name of the database the backup belong to |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

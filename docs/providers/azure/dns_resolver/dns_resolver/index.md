@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `nextLink` | `string` | The continuation token for the next page of results. |
 | `value` | `array` | Enumeration of the sub-resources. |
+| `nextLink` | `string` | The continuation token for the next page of results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

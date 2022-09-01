@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `type` | `string` | Resource type. |
-| `metric` | `string` | Metric to use when displaying costs. |
-| `pivots` | `array` | Configuration of 3 sub-views in the Cost Analysis UI. |
-| `modifiedOn` | `string` | Date when the user last modified this view. |
-| `currency` | `string` | Currency of the current view. |
-| `chart` | `string` | Chart type of the main view in Cost Analysis. Required. |
-| `dateRange` | `string` | Date range of the current view. |
-| `query` | `object` | The definition of a report config. |
-| `eTag` | `string` | eTag of the resource. To handle concurrent update scenario, this field will be used to determine whether the user is updating the latest version or not. |
-| `scope` | `string` | Cost Management scope to save the view on. This includes 'subscriptions/{subscriptionId}' for subscription scope, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' for resourceGroup scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' for Billing Account scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' for Department scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{enrollmentAccountId}' for EnrollmentAccount scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' for BillingProfile scope, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/invoiceSections/{invoiceSectionId}' for InvoiceSection scope, 'providers/Microsoft.Management/managementGroups/{managementGroupId}' for Management Group scope, '/providers/Microsoft.CostManagement/externalBillingAccounts/{externalBillingAccountName}' for ExternalBillingAccount scope, and '/providers/Microsoft.CostManagement/externalSubscriptions/{externalSubscriptionName}' for ExternalSubscription scope. |
-| `createdOn` | `string` | Date the user created this view. |
-| `kpis` | `array` | List of KPIs to show in Cost Analysis UI. |
 | `accumulated` | `string` | Show costs accumulated over time. |
+| `query` | `object` | The definition of a report config. |
+| `currency` | `string` | Currency of the current view. |
+| `dateRange` | `string` | Date range of the current view. |
+| `eTag` | `string` | eTag of the resource. To handle concurrent update scenario, this field will be used to determine whether the user is updating the latest version or not. |
 | `displayName` | `string` | User input name of the view. Required. |
+| `modifiedOn` | `string` | Date when the user last modified this view. |
+| `scope` | `string` | Cost Management scope to save the view on. This includes 'subscriptions/&#123;subscriptionId&#125;' for subscription scope, 'subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;' for resourceGroup scope, 'providers/Microsoft.Billing/billingAccounts/&#123;billingAccountId&#125;' for Billing Account scope, 'providers/Microsoft.Billing/billingAccounts/&#123;billingAccountId&#125;/departments/&#123;departmentId&#125;' for Department scope, 'providers/Microsoft.Billing/billingAccounts/&#123;billingAccountId&#125;/enrollmentAccounts/&#123;enrollmentAccountId&#125;' for EnrollmentAccount scope, 'providers/Microsoft.Billing/billingAccounts/&#123;billingAccountId&#125;/billingProfiles/&#123;billingProfileId&#125;' for BillingProfile scope, 'providers/Microsoft.Billing/billingAccounts/&#123;billingAccountId&#125;/invoiceSections/&#123;invoiceSectionId&#125;' for InvoiceSection scope, 'providers/Microsoft.Management/managementGroups/&#123;managementGroupId&#125;' for Management Group scope, '/providers/Microsoft.CostManagement/externalBillingAccounts/&#123;externalBillingAccountName&#125;' for ExternalBillingAccount scope, and '/providers/Microsoft.CostManagement/externalSubscriptions/&#123;externalSubscriptionName&#125;' for ExternalSubscription scope. |
+| `kpis` | `array` | List of KPIs to show in Cost Analysis UI. |
+| `pivots` | `array` | Configuration of 3 sub-views in the Cost Analysis UI. |
+| `metric` | `string` | Metric to use when displaying costs. |
+| `chart` | `string` | Chart type of the main view in Cost Analysis. Required. |
+| `type` | `string` | Resource type. |
+| `createdOn` | `string` | Date the user created this view. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

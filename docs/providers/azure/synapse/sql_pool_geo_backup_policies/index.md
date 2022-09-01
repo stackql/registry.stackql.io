@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | Backup policy location. |
 | `state` | `string` | The state of the geo backup policy. |
 | `storageType` | `string` | The storage type of the geo backup policy. |
 | `kind` | `string` | Kind of geo backup policy.  This is metadata used for the Azure portal experience. |
+| `location` | `string` | Backup policy location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -27,9 +27,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `provisioningState` | `string` | State of the private endpoint connection. |
 | `privateEndpoint` | `object` |  |
 | `privateLinkServiceConnectionState` | `object` |  |
-| `provisioningState` | `string` | State of the private endpoint connection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

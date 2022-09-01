@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The id (a Guid) of the source control |
 | `description` | `string` | A description of the source control |
-| `lastDeploymentInfo` | `object` | Information regarding a deployment. |
-| `contentTypes` | `array` | Array of source control content types. |
-| `displayName` | `string` | The display name of the source control |
-| `repoType` | `string` | The type of repository. |
 | `version` | `string` | The version of the source control. |
-| `repository` | `object` | metadata of a repository. |
+| `repoType` | `string` | The type of repository. |
+| `displayName` | `string` | The display name of the source control |
 | `etag` | `string` | Etag of the azure resource |
+| `lastDeploymentInfo` | `object` | Information regarding a deployment. |
+| `repository` | `object` | metadata of a repository. |
 | `repositoryResourceInfo` | `object` | Resources created in user's repository for the source-control. |
+| `contentTypes` | `array` | Array of source control content types. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -27,6 +27,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `tags` | `object` | Resource tags. |
 | `environmentData` | `object` | The security connector environment data. |
 | `environmentName` | `string` | The multi cloud resource's cloud name. |
 | `hierarchyIdentifier` | `string` | The multi cloud resource identifier (account id in case of AWS connector, project number in case of GCP connector). |
@@ -34,7 +35,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `location` | `string` | The geo-location where the resource lives |
 | `offerings` | `array` | A collection of offerings for the security connector. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

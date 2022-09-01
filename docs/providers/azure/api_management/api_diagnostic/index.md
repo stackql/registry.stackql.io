@@ -27,19 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `verbosity` | `string` | The verbosity level applied to traces emitted by trace policies. |
 | `httpCorrelationProtocol` | `string` | Sets correlation protocol to use for Application Insights diagnostics. |
-| `logClientIp` | `boolean` | Log the ClientIP. Default is false. |
-| `loggerId` | `string` | Resource Id of a target logger. |
 | `operationNameFormat` | `string` | The format of the Operation Name for Application Insights telemetries. Default is Name. |
-| `alwaysLog` | `string` | Specifies for what type of messages sampling settings should not apply. |
-| `sampling` | `object` | Sampling settings for Diagnostic. |
 | `backend` | `object` | Diagnostic settings for incoming/outgoing HTTP messages to the Gateway. |
-| `metrics` | `boolean` | Emit custom metrics via emit-metric policy. Applicable only to Application Insights diagnostic settings. |
+| `sampling` | `object` | Sampling settings for Diagnostic. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `frontend` | `object` | Diagnostic settings for incoming/outgoing HTTP messages to the Gateway. |
+| `alwaysLog` | `string` | Specifies for what type of messages sampling settings should not apply. |
+| `loggerId` | `string` | Resource Id of a target logger. |
+| `logClientIp` | `boolean` | Log the ClientIP. Default is false. |
+| `verbosity` | `string` | The verbosity level applied to traces emitted by trace policies. |
+| `metrics` | `boolean` | Emit custom metrics via emit-metric policy. Applicable only to Application Insights diagnostic settings. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

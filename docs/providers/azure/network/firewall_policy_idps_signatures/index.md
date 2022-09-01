@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `matchingRecordsCount` | `integer` | Number of total records matching the query. |
 | `signatures` | `array` | Array containing the results of the query |
+| `matchingRecordsCount` | `integer` | Number of total records matching the query. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

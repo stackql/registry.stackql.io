@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `bgpSettings` | `object` | BGP settings details. |
-| `virtualHub` | `object` | Reference to another subresource. |
-| `type` | `string` | Resource type. |
-| `vpnGatewayScaleUnit` | `integer` | The scale unit for this vpn gateway. |
-| `isRoutingPreferenceInternet` | `boolean` | Enable Routing Preference property for the Public IP Interface of the VpnGateway. |
-| `enableBgpRouteTranslationForNat` | `boolean` | Enable BGP routes translation for NAT on this VpnGateway. |
 | `natRules` | `array` | List of all the nat Rules associated with the gateway. |
+| `enableBgpRouteTranslationForNat` | `boolean` | Enable BGP routes translation for NAT on this VpnGateway. |
 | `tags` | `object` | Resource tags. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `ipConfigurations` | `array` | List of all IPs configured on the gateway. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `location` | `string` | Resource location. |
 | `connections` | `array` | List of all vpn connections to the gateway. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `virtualHub` | `object` | Reference to another subresource. |
+| `bgpSettings` | `object` | BGP settings details. |
+| `vpnGatewayScaleUnit` | `integer` | The scale unit for this vpn gateway. |
+| `type` | `string` | Resource type. |
+| `ipConfigurations` | `array` | List of all IPs configured on the gateway. |
+| `isRoutingPreferenceInternet` | `boolean` | Enable Routing Preference property for the Public IP Interface of the VpnGateway. |
+| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

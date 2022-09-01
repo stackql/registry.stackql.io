@@ -29,23 +29,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `ipPrefix` | `string` | The allocated Prefix. |
-| `natGateway` | `object` | Nat Gateway resource. |
-| `tags` | `object` | Resource tags. |
-| `sku` | `object` | SKU of a public IP prefix. |
-| `publicIPAddressVersion` | `string` | IP address version. |
-| `prefixLength` | `integer` | The Length of the Public IP Prefix. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `publicIPAddresses` | `array` | The list of all referenced PublicIPAddresses. |
-| `type` | `string` | Resource type. |
-| `customIPPrefix` | `object` | Reference to another subresource. |
-| `loadBalancerFrontendIpConfiguration` | `object` | Reference to another subresource. |
-| `resourceGuid` | `string` | The resource GUID property of the public IP prefix resource. |
-| `extendedLocation` | `object` | ExtendedLocation complex type. |
-| `zones` | `array` | A list of availability zones denoting the IP allocated for the resource needs to come from. |
-| `location` | `string` | Resource location. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `type` | `string` | Resource type. |
+| `publicIPAddresses` | `array` | The list of all referenced PublicIPAddresses. |
+| `ipPrefix` | `string` | The allocated Prefix. |
+| `tags` | `object` | Resource tags. |
+| `zones` | `array` | A list of availability zones denoting the IP allocated for the resource needs to come from. |
+| `extendedLocation` | `object` | ExtendedLocation complex type. |
+| `prefixLength` | `integer` | The Length of the Public IP Prefix. |
+| `customIPPrefix` | `object` | Reference to another subresource. |
+| `resourceGuid` | `string` | The resource GUID property of the public IP prefix resource. |
 | `ipTags` | `array` | The list of tags associated with the public IP prefix. |
+| `publicIPAddressVersion` | `string` | IP address version. |
+| `location` | `string` | Resource location. |
+| `sku` | `object` | SKU of a public IP prefix. |
+| `natGateway` | `object` | Nat Gateway resource. |
+| `loadBalancerFrontendIpConfiguration` | `object` | Reference to another subresource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

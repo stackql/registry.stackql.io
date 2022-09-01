@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `tags` | `object` | Resource tags. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `type` | `string` | Resource type. |
+| `location` | `string` | Resource location. |
+| `connectionStatus` | `string` | The current state of the connection with Security Partner Provider. |
 | `virtualHub` | `object` | Reference to another subresource. |
 | `securityProviderName` | `string` | The Security Providers. |
-| `connectionStatus` | `string` | The current state of the connection with Security Partner Provider. |
-| `location` | `string` | Resource location. |
-| `tags` | `object` | Resource tags. |
-| `type` | `string` | Resource type. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

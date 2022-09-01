@@ -29,15 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `type` | `string` | Resource type. |
-| `fqdn` | `string` | FQDN of local network gateway. |
 | `resourceGuid` | `string` | The resource GUID property of the local network gateway resource. |
 | `gatewayIpAddress` | `string` | IP address of local network gateway. |
-| `tags` | `object` | Resource tags. |
-| `location` | `string` | Resource location. |
+| `type` | `string` | Resource type. |
 | `localNetworkAddressSpace` | `object` | AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network. |
-| `bgpSettings` | `object` | BGP settings details. |
+| `tags` | `object` | Resource tags. |
+| `fqdn` | `string` | FQDN of local network gateway. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `bgpSettings` | `object` | BGP settings details. |
+| `location` | `string` | Resource location. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

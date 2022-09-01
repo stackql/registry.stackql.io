@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Id of the object. |
 | `name` | `string` | Name of the object. |
-| `schedules` | `array` | Schedule for running the job definition |
-| `userConfirmation` | `string` | Enum to detect if user confirmation is required. If not passed will default to NotRequired. |
-| `runLocation` | `string` | This is the preferred geo location for the job to run. |
-| `lastModifiedTime` | `string` | Last modified time of the job definition. |
 | `type` | `string` | Type of the object. |
-| `state` | `string` | State of the job definition. |
+| `userConfirmation` | `string` | Enum to detect if user confirmation is required. If not passed will default to NotRequired. |
+| `dataServiceInput` | `object` | A generic json used differently by each data service type. |
+| `lastModifiedTime` | `string` | Last modified time of the job definition. |
 | `dataSinkId` | `string` | Data Sink Id associated to the job definition. |
 | `dataSourceId` | `string` | Data Source Id associated to the job definition. |
+| `state` | `string` | State of the job definition. |
+| `schedules` | `array` | Schedule for running the job definition |
+| `runLocation` | `string` | This is the preferred geo location for the job to run. |
 | `customerSecrets` | `array` | List of customer secrets containing a key identifier and key value. The key identifier is a way for the specific data source to understand the key. Value contains customer secret encrypted by the encryptionKeys. |
-| `dataServiceInput` | `object` | A generic json used differently by each data service type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

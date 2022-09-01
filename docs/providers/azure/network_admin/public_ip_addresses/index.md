@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
+| `ipAddress` | `string` | The IP address. |
+| `ipPool` | `string` | The IP pool. |
 | `location` | `string` | Region location of resource. |
 | `tags` | `object` | List of key value pairs. |
 | `type` | `string` | Type of resource. |
 | `allocationMethod` | `string` | The allocation method. |
-| `ipAddress` | `string` | The IP address. |
-| `ipPool` | `string` | The IP pool. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

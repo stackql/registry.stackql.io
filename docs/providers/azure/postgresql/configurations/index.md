@@ -28,17 +28,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | Description of the configuration. |
-| `dataType` | `string` | Data type of the configuration. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `isReadOnly` | `boolean` | Configuration read-only or not. |
-| `unit` | `string` | Configuration unit. |
-| `defaultValue` | `string` | Default value of the configuration. |
 | `isConfigPendingRestart` | `boolean` | Configuration is pending restart or not. |
-| `allowedValues` | `string` | Allowed values of the configuration. |
-| `value` | `string` | Value of the configuration. |
-| `documentationLink` | `string` | Configuration documentation link. |
-| `isDynamicConfig` | `boolean` | Configuration dynamic or static. |
 | `source` | `string` | Source of the configuration. |
+| `dataType` | `string` | Data type of the configuration. |
+| `allowedValues` | `string` | Allowed values of the configuration. |
+| `isReadOnly` | `boolean` | Configuration read-only or not. |
+| `isDynamicConfig` | `boolean` | Configuration dynamic or static. |
+| `defaultValue` | `string` | Default value of the configuration. |
+| `documentationLink` | `string` | Configuration documentation link. |
+| `unit` | `string` | Configuration unit. |
+| `value` | `string` | Value of the configuration. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

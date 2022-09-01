@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `verbosity` | `string` | The verbosity level applied to traces emitted by trace policies. |
 | `operationNameFormat` | `string` | The format of the Operation Name for Application Insights telemetries. Default is Name. |
-| `sampling` | `object` | Sampling settings for Diagnostic. |
-| `logClientIp` | `boolean` | Log the ClientIP. Default is false. |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `alwaysLog` | `string` | Specifies for what type of messages sampling settings should not apply. |
-| `frontend` | `object` | Diagnostic settings for incoming/outgoing HTTP messages to the Gateway. |
-| `httpCorrelationProtocol` | `string` | Sets correlation protocol to use for Application Insights diagnostics. |
-| `loggerId` | `string` | Resource Id of a target logger. |
 | `backend` | `object` | Diagnostic settings for incoming/outgoing HTTP messages to the Gateway. |
+| `sampling` | `object` | Sampling settings for Diagnostic. |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `httpCorrelationProtocol` | `string` | Sets correlation protocol to use for Application Insights diagnostics. |
+| `frontend` | `object` | Diagnostic settings for incoming/outgoing HTTP messages to the Gateway. |
+| `logClientIp` | `boolean` | Log the ClientIP. Default is false. |
+| `loggerId` | `string` | Resource Id of a target logger. |
+| `verbosity` | `string` | The verbosity level applied to traces emitted by trace policies. |
 | `metrics` | `boolean` | Emit custom metrics via emit-metric policy. Applicable only to Application Insights diagnostic settings. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

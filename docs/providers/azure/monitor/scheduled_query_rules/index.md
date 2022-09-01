@@ -30,20 +30,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
 | `description` | `string` | The description of the Log Search rule. |
-| `enabled` | `string` | The flag which indicates whether the Log Search rule is enabled. Value should be true or false |
-| `autoMitigate` | `boolean` | The flag that indicates whether the alert should be automatically resolved or not. The default is false. |
-| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
-| `displayName` | `string` | The display name of the alert rule |
-| `type` | `string` | Azure resource type |
-| `action` | `object` | Action descriptor. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `source` | `object` | Specifies the log search query. |
-| `provisioningState` | `string` | Provisioning state of the scheduled query rule |
-| `schedule` | `object` | Defines how often to run the search and the time interval. |
 | `lastUpdatedTime` | `string` | Last time the rule was updated in IS08601 format. |
+| `source` | `object` | Specifies the log search query. |
+| `enabled` | `string` | The flag which indicates whether the Log Search rule is enabled. Value should be true or false |
+| `action` | `object` | Action descriptor. |
 | `location` | `string` | Resource location |
 | `isLegacyLogAnalyticsRule` | `boolean` | True if alert rule is legacy Log Analytic rule |
+| `autoMitigate` | `boolean` | The flag that indicates whether the alert should be automatically resolved or not. The default is false. |
+| `displayName` | `string` | The display name of the alert rule |
+| `provisioningState` | `string` | Provisioning state of the scheduled query rule |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `type` | `string` | Azure resource type |
 | `createdWithApiVersion` | `string` | The api-version used when creating this alert rule |
+| `schedule` | `object` | Defines how often to run the search and the time interval. |
+| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

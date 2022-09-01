@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the workflow run name. |
-| `outputs` | `object` | Gets the outputs. |
+| `correlationId` | `string` | Gets the correlation id. |
+| `type` | `string` | Gets the workflow run type. |
 | `workflow` | `object` | The resource reference. |
+| `status` | `string` | The workflow status. |
 | `waitEndTime` | `string` | Gets the wait end time. |
 | `correlation` | `object` | The correlation property. |
-| `startTime` | `string` | Gets the start time. |
 | `endTime` | `string` | Gets the end time. |
 | `response` | `object` | The workflow run trigger. |
-| `code` | `string` | Gets the code. |
-| `status` | `string` | The workflow status. |
+| `outputs` | `object` | Gets the outputs. |
 | `trigger` | `object` | The workflow run trigger. |
+| `code` | `string` | Gets the code. |
+| `startTime` | `string` | Gets the start time. |
 | `error` | `object` |  |
-| `type` | `string` | Gets the workflow run type. |
-| `correlationId` | `string` | Gets the correlation id. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

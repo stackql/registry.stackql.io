@@ -29,15 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `provisioningState` | `string` | The provisioning state of this agent pool |
-| `type` | `string` | The type of the resource. |
-| `tags` | `object` | The tags of the resource. |
-| `os` | `string` | The OS of agent machine |
-| `virtualNetworkSubnetResourceId` | `string` | The Virtual Network Subnet Resource Id of the agent machine |
-| `count` | `integer` | The count of agent machine |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
 | `tier` | `string` | The Tier of agent machine |
+| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
+| `count` | `integer` | The count of agent machine |
+| `os` | `string` | The OS of agent machine |
+| `provisioningState` | `string` | The provisioning state of this agent pool |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `tags` | `object` | The tags of the resource. |
+| `type` | `string` | The type of the resource. |
+| `virtualNetworkSubnetResourceId` | `string` | The Virtual Network Subnet Resource Id of the agent machine |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

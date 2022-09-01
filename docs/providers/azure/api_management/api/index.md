@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `path` | `string` | Relative URL uniquely identifying this API and all of its resource paths within the API Management service instance. It is appended to the API endpoint base URL specified during the service instance creation to form a public URL for this API. |
+| `apiVersionSet` | `object` | An API Version Set contains the common configuration for a set of API Versions relating  |
 | `displayName` | `string` | API name. Must be 1 to 300 characters long. |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `protocols` | `array` | Describes on which protocols the operations in this API can be invoked. |
 | `sourceApiId` | `string` | API identifier of the source API. |
-| `apiVersionSet` | `object` | An API Version Set contains the common configuration for a set of API Versions relating  |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `serviceUrl` | `string` | Absolute URL of the backend service implementing this API. Cannot be more than 2000 characters long. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

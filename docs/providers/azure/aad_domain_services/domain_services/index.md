@@ -29,27 +29,27 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `location` | `string` | Resource location |
-| `provisioningState` | `string` | the current deployment or provisioning state, which only appears in the response. |
 | `resourceForestSettings` | `object` | Settings for Resource Forest |
-| `migrationProperties` | `object` | Migration Properties |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `deploymentId` | `string` | Deployment Id |
-| `notificationSettings` | `object` | Settings for notification |
-| `tags` | `object` | Resource tags |
-| `domainSecuritySettings` | `object` | Domain Security Settings |
-| `ldapsSettings` | `object` | Secure LDAP Settings |
-| `version` | `integer` | Data Model Version |
-| `replicaSets` | `array` | List of ReplicaSets |
-| `etag` | `string` | Resource etag |
-| `type` | `string` | Resource type |
-| `configDiagnostics` | `object` | Configuration Diagnostics |
 | `syncOwner` | `string` | SyncOwner ReplicaSet Id |
-| `domainConfigurationType` | `string` | Domain Configuration Type |
-| `domainName` | `string` | The name of the Azure domain that the user would like to deploy Domain Services to. |
-| `tenantId` | `string` | Azure Active Directory Tenant Id |
 | `filteredSync` | `string` | Enabled or Disabled flag to turn on Group-based filtered sync |
+| `tags` | `object` | Resource tags |
+| `type` | `string` | Resource type |
+| `domainName` | `string` | The name of the Azure domain that the user would like to deploy Domain Services to. |
+| `notificationSettings` | `object` | Settings for notification |
+| `domainSecuritySettings` | `object` | Domain Security Settings |
+| `location` | `string` | Resource location |
+| `ldapsSettings` | `object` | Secure LDAP Settings |
+| `etag` | `string` | Resource etag |
+| `domainConfigurationType` | `string` | Domain Configuration Type |
+| `provisioningState` | `string` | the current deployment or provisioning state, which only appears in the response. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `configDiagnostics` | `object` | Configuration Diagnostics |
 | `sku` | `string` | Sku Type |
+| `replicaSets` | `array` | List of ReplicaSets |
+| `deploymentId` | `string` | Deployment Id |
+| `version` | `integer` | Data Model Version |
+| `migrationProperties` | `object` | Migration Properties |
+| `tenantId` | `string` | Azure Active Directory Tenant Id |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

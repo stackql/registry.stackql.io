@@ -29,21 +29,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
-| `version` | `string` | This instance's version of the data model. This can change as new features are added that can be marked private workbook. |
 | `type` | `string` | Azure resource type |
-| `tags` | `array` | A list of 0 or more tags that are associated with this private workbook definition |
 | `kind` | `string` | The kind of workbook. Choices are user and shared. |
-| `storageUri` | `string` | BYOS Storage Account URI |
-| `etag` | `` | Resource etag |
-| `identity` | `object` | Customer Managed Identity |
-| `userId` | `string` | Unique user id of the specific user that owns this private workbook. |
-| `category` | `string` | Workbook category, as defined by the user at creation time. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `serializedData` | `string` | Configuration of this particular private workbook. Configuration data is a string containing valid JSON |
-| `sourceId` | `string` | Optional resourceId for a source resource. |
+| `storageUri` | `string` | BYOS Storage Account URI |
 | `location` | `string` | Resource location |
-| `timeModified` | `string` | Date and time in UTC of the last modification that was made to this private workbook definition. |
 | `displayName` | `string` | The user-defined name of the private workbook. |
+| `timeModified` | `string` | Date and time in UTC of the last modification that was made to this private workbook definition. |
+| `userId` | `string` | Unique user id of the specific user that owns this private workbook. |
+| `identity` | `object` | Customer Managed Identity |
+| `tags` | `array` | A list of 0 or more tags that are associated with this private workbook definition |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `category` | `string` | Workbook category, as defined by the user at creation time. |
+| `etag` | `` | Resource etag |
+| `version` | `string` | This instance's version of the data model. This can change as new features are added that can be marked private workbook. |
+| `sourceId` | `string` | Optional resourceId for a source resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

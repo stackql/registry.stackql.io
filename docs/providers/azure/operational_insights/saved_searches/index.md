@@ -27,7 +27,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `tags` | `array` | The tags attached to the saved search. |
 | `version` | `integer` | The version number of the query language. The current version is 2 and is the default. |
 | `category` | `string` | The category of the saved search. This helps the user to find a saved search faster.  |
 | `displayName` | `string` | Saved search display name. |
@@ -35,6 +34,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `functionAlias` | `string` | The function alias if query serves as a function. |
 | `functionParameters` | `string` | The optional function parameters if query serves as a function. Value should be in the following format: 'param-name1:type1 = default_value1, param-name2:type2 = default_value2'. For more examples and proper syntax please refer to https://docs.microsoft.com/en-us/azure/kusto/query/functions/user-defined-functions. |
 | `query` | `string` | The query expression for the saved search. |
+| `tags` | `array` | The tags attached to the saved search. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

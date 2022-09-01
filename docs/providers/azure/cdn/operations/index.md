@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `name` | `string` | Operation name: {provider}/{resource}/{operation} |
+| `name` | `string` | Operation name: &#123;provider&#125;/&#123;resource&#125;/&#123;operation&#125; |
+| `origin` | `string` | The origin of operations. |
 | `serviceSpecification` | `object` | One property of operation, include log specifications. |
 | `display` | `` | The object that represents the operation. |
 | `isDataAction` | `boolean` | Indicates whether the operation is a data action |
-| `origin` | `string` | The origin of operations. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

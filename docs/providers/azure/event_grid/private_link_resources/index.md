@@ -29,11 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified identifier of the resource. |
 | `name` | `string` | Name of the resource. |
-| `displayName` | `string` |  |
-| `groupId` | `string` |  |
 | `requiredMembers` | `array` |  |
 | `requiredZoneNames` | `array` |  |
 | `type` | `string` | Type of the resource. |
+| `displayName` | `string` |  |
+| `groupId` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

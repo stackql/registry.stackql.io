@@ -27,23 +27,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `createdTimeUTC` | `string` | The time the file was imported. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `state` | `string` | The state of the file import. |
-| `ingestedRecordCount` | `integer` | The number of records that have been successfully ingested. |
-| `importValidUntilTimeUTC` | `string` | The time the file import record is soft deleted from the database and history. |
+| `filesValidUntilTimeUTC` | `string` | The time the files associated with this import are deleted from the storage account. |
 | `errorsPreview` | `array` | An ordered list of some of the errors that were encountered during validation. |
+| `createdTimeUTC` | `string` | The time the file was imported. |
 | `validRecordCount` | `integer` | The number of records that have passed validation. |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `totalRecordCount` | `integer` | The number of records in the file. |
-| `importFile` | `object` | Represents a file. |
 | `ingestionMode` | `string` | Describes how to ingest the records in the file. |
-| `errorFile` | `object` | Represents a file. |
+| `totalRecordCount` | `integer` | The number of records in the file. |
+| `state` | `string` | The state of the file import. |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `importValidUntilTimeUTC` | `string` | The time the file import record is soft deleted from the database and history. |
+| `ingestedRecordCount` | `integer` | The number of records that have been successfully ingested. |
 | `source` | `string` | The source for the data in the file. |
 | `contentType` | `string` | The content type of this file. |
-| `filesValidUntilTimeUTC` | `string` | The time the files associated with this import are deleted from the storage account. |
+| `errorFile` | `object` | Represents a file. |
+| `importFile` | `object` | Represents a file. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

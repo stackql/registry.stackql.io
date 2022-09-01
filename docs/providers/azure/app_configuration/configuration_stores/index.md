@@ -27,21 +27,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `softDeleteRetentionInDays` | `integer` | The amount of time in days that the configuration store will be retained when it is soft deleted. |
-| `disableLocalAuth` | `boolean` | Disables all authentication methods other than AAD authentication. |
-| `publicNetworkAccess` | `string` | Control permission for data plane traffic coming from public networks while private endpoint is enabled. |
-| `identity` | `object` | An identity that can be associated with a resource. |
-| `sku` | `object` | Describes a configuration store SKU. |
-| `creationDate` | `string` | The creation date of configuration store. |
-| `privateEndpointConnections` | `array` | The list of private endpoint connections that are set up for this resource. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `createMode` | `string` | Indicates whether the configuration store need to be recovered. |
-| `encryption` | `object` | The encryption settings for a configuration store. |
-| `provisioningState` | `string` | The provisioning state of the configuration store. |
 | `enablePurgeProtection` | `boolean` | Property specifying whether protection against purge is enabled for this configuration store. |
-| `tags` | `object` | Resource tags. |
-| `endpoint` | `string` | The DNS endpoint where the configuration store API will be available. |
+| `provisioningState` | `string` | The provisioning state of the configuration store. |
+| `creationDate` | `string` | The creation date of configuration store. |
+| `softDeleteRetentionInDays` | `integer` | The amount of time in days that the configuration store will be retained when it is soft deleted. |
+| `publicNetworkAccess` | `string` | Control permission for data plane traffic coming from public networks while private endpoint is enabled. |
+| `sku` | `object` | Describes a configuration store SKU. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `identity` | `object` | An identity that can be associated with a resource. |
+| `encryption` | `object` | The encryption settings for a configuration store. |
 | `location` | `string` | The geo-location where the resource lives |
+| `tags` | `object` | Resource tags. |
+| `disableLocalAuth` | `boolean` | Disables all authentication methods other than AAD authentication. |
+| `endpoint` | `string` | The DNS endpoint where the configuration store API will be available. |
+| `createMode` | `string` | Indicates whether the configuration store need to be recovered. |
+| `privateEndpointConnections` | `array` | The list of private endpoint connections that are set up for this resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

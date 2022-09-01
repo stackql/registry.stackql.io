@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `ddagpuCount` | `integer` | Maximum number of dda gpus allowed. |
-| `location` | `string` | Location of the resource. |
-| `coresLimit` | `integer` | Maximum number of cores allowed. |
-| `maxAllocationPremiumManagedDisksAndSnapshots` | `integer` | Maximum number of managed disks and snapshots of type premium allowed. |
-| `maxAllocationStandardManagedDisksAndSnapshots` | `integer` | Maximum number of managed disks and snapshots of type standard allowed. |
 | `type` | `string` | Type of Resource. |
-| `vmScaleSetCount` | `integer` | Maximum number of scale sets allowed. |
-| `partitionedGpuCount` | `integer` | Maximum number of partitioned gpus allowed. |
 | `virtualMachineCount` | `integer` | Maximum number of virtual machines allowed. |
 | `availabilitySetCount` | `integer` | Maximum number of availability sets allowed. |
+| `partitionedGpuCount` | `integer` | Maximum number of partitioned gpus allowed. |
+| `maxAllocationPremiumManagedDisksAndSnapshots` | `integer` | Maximum number of managed disks and snapshots of type premium allowed. |
+| `location` | `string` | Location of the resource. |
+| `ddagpuCount` | `integer` | Maximum number of dda gpus allowed. |
+| `vmScaleSetCount` | `integer` | Maximum number of scale sets allowed. |
+| `coresLimit` | `integer` | Maximum number of cores allowed. |
+| `maxAllocationStandardManagedDisksAndSnapshots` | `integer` | Maximum number of managed disks and snapshots of type standard allowed. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

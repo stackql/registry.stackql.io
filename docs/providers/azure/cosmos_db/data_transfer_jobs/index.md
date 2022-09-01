@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The unique resource identifier of the database account. |
 | `name` | `string` | The name of the database account. |
-| `jobName` | `string` | Job Name |
 | `status` | `string` | Job Status |
-| `type` | `string` | The type of Azure resource. |
-| `workerCount` | `integer` | Worker count |
-| `lastUpdatedUtcTime` | `string` | Last Updated Time (ISO-8601 format). |
 | `source` | `object` | Base class for all DataTransfer source/sink |
 | `error` | `object` | Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also follows the OData error response format.) |
-| `destination` | `object` | Base class for all DataTransfer source/sink |
+| `type` | `string` | The type of Azure resource. |
 | `processedCount` | `integer` | Processed Count. |
 | `totalCount` | `integer` | Total Count. |
+| `destination` | `object` | Base class for all DataTransfer source/sink |
+| `workerCount` | `integer` | Worker count |
+| `jobName` | `string` | Job Name |
+| `lastUpdatedUtcTime` | `string` | Last Updated Time (ISO-8601 format). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

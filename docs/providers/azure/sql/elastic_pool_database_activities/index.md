@@ -27,22 +27,22 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `serverName` | `string` | The name of the server the elastic pool is in. |
-| `location` | `string` | The geo-location where the resource lives |
-| `state` | `string` | The current state of the operation. |
-| `operationId` | `string` | The unique operation ID. |
-| `currentElasticPoolName` | `string` | The name of the current elastic pool the database is in if available. |
-| `endTime` | `string` | The time the operation finished (ISO8601 format). |
+| `operation` | `string` | The operation name. |
+| `percentComplete` | `integer` | The percentage complete if available. |
 | `errorMessage` | `string` | The error message if available. |
-| `requestedElasticPoolName` | `string` | The name for the elastic pool the database is moving into if available. |
+| `requestedServiceObjective` | `string` | The name of the requested service objective if available. |
 | `databaseName` | `string` | The database name. |
+| `state` | `string` | The current state of the operation. |
+| `currentElasticPoolName` | `string` | The name of the current elastic pool the database is in if available. |
+| `startTime` | `string` | The time the operation started (ISO8601 format). |
 | `errorCode` | `integer` | The error code if available. |
 | `currentServiceObjective` | `string` | The name of the current service objective if available. |
-| `percentComplete` | `integer` | The percentage complete if available. |
-| `startTime` | `string` | The time the operation started (ISO8601 format). |
-| `requestedServiceObjective` | `string` | The name of the requested service objective if available. |
+| `operationId` | `string` | The unique operation ID. |
+| `location` | `string` | The geo-location where the resource lives |
+| `serverName` | `string` | The name of the server the elastic pool is in. |
 | `errorSeverity` | `integer` | The error severity if available. |
-| `operation` | `string` | The operation name. |
+| `requestedElasticPoolName` | `string` | The name for the elastic pool the database is moving into if available. |
+| `endTime` | `string` | The time the operation finished (ISO8601 format). |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

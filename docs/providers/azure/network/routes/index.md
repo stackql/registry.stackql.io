@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `addressPrefix` | `string` | The destination CIDR to which the route applies. |
-| `hasBgpOverride` | `boolean` | A value indicating whether this route overrides overlapping BGP routes regardless of LPM. |
-| `type` | `string` | The type of the resource. |
-| `nextHopType` | `string` | The type of Azure hop the packet should be sent to. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `nextHopIpAddress` | `string` | The IP address packets should be forwarded to. Next hop values are only allowed in routes where the next hop type is VirtualAppliance. |
+| `type` | `string` | The type of the resource. |
+| `addressPrefix` | `string` | The destination CIDR to which the route applies. |
+| `hasBgpOverride` | `boolean` | A value indicating whether this route overrides overlapping BGP routes regardless of LPM. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `nextHopType` | `string` | The type of Azure hop the packet should be sent to. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

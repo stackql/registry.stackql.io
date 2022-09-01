@@ -29,9 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Id of the object. |
 | `name` | `string` | Name of the object. |
+| `dataServiceLevel1Key` | `object` | Encryption Key. |
 | `dataServiceLevel2Key` | `object` | Encryption Key. |
 | `type` | `string` | Type of the object. |
-| `dataServiceLevel1Key` | `object` | Encryption Key. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

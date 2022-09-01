@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
-| `project` | `object` | Reference to an Azure DevOps Project. |
-| `tags` | `object` | Resource Tags |
-| `location` | `string` | Resource Location |
 | `organization` | `object` | Reference to an Azure DevOps Organization. |
-| `bootstrapConfiguration` | `object` | Configuration used to bootstrap a Pipeline. |
-| `type` | `string` | Resource Type |
 | `pipelineId` | `integer` | Unique identifier of the Azure Pipeline within the Azure DevOps Project. |
+| `project` | `object` | Reference to an Azure DevOps Project. |
+| `type` | `string` | Resource Type |
+| `bootstrapConfiguration` | `object` | Configuration used to bootstrap a Pipeline. |
+| `location` | `string` | Resource Location |
+| `tags` | `object` | Resource Tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

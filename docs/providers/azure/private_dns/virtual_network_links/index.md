@@ -27,13 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `virtualNetwork` | `object` | Reference to another subresource. |
-| `virtualNetworkLinkState` | `string` | The status of the virtual network link to the Private DNS zone. Possible values are 'InProgress' and 'Done'. This is a read-only property and any attempt to set this value will be ignored. |
 | `etag` | `string` | The ETag of the virtual network link. |
 | `location` | `string` | The Azure Region where the resource lives |
 | `provisioningState` | `string` | The provisioning state of the resource. This is a read-only property and any attempt to set this value will be ignored. |
 | `registrationEnabled` | `boolean` | Is auto-registration of virtual machine records in the virtual network in the Private DNS zone enabled? |
 | `tags` | `object` | Resource tags. |
+| `virtualNetwork` | `object` | Reference to another subresource. |
+| `virtualNetworkLinkState` | `string` | The status of the virtual network link to the Private DNS zone. Possible values are 'InProgress' and 'Done'. This is a read-only property and any attempt to set this value will be ignored. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

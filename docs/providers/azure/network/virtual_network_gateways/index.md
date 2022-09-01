@@ -29,31 +29,31 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `type` | `string` | Resource type. |
-| `inboundDnsForwardingEndpoint` | `string` | The IP address allocated by the gateway to which dns requests can be sent. |
-| `enableBgp` | `boolean` | Whether BGP is enabled for this virtual network gateway or not. |
-| `disableIPSecReplayProtection` | `boolean` | disableIPSecReplayProtection flag. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `sku` | `object` | VirtualNetworkGatewaySku details. |
-| `resourceGuid` | `string` | The resource GUID property of the virtual network gateway resource. |
-| `activeActive` | `boolean` | ActiveActive flag. |
 | `enablePrivateIpAddress` | `boolean` | Whether private IP needs to be enabled on this gateway for connections or not. |
-| `customRoutes` | `object` | AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network. |
-| `ipConfigurations` | `array` | IP configurations for virtual network gateway. |
-| `enableBgpRouteTranslationForNat` | `boolean` | EnableBgpRouteTranslationForNat flag. |
-| `vpnGatewayGeneration` | `string` | The generation for this VirtualNetworkGateway. Must be None if gatewayType is not VPN. |
 | `gatewayDefaultSite` | `object` | Reference to another subresource. |
-| `bgpSettings` | `object` | BGP settings details. |
-| `tags` | `object` | Resource tags. |
-| `vpnClientConfiguration` | `object` | VpnClientConfiguration for P2S client. |
+| `enableBgp` | `boolean` | Whether BGP is enabled for this virtual network gateway or not. |
 | `vpnType` | `string` | The type of this virtual network gateway. |
+| `type` | `string` | Resource type. |
 | `natRules` | `array` | NatRules for virtual network gateway. |
-| `extendedLocation` | `object` | ExtendedLocation complex type. |
-| `vNetExtendedLocationResourceId` | `string` | Customer vnet resource id. VirtualNetworkGateway of type local gateway is associated with the customer vnet. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `resourceGuid` | `string` | The resource GUID property of the virtual network gateway resource. |
 | `location` | `string` | Resource location. |
-| `gatewayType` | `string` | The type of this virtual network gateway. |
+| `customRoutes` | `object` | AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network. |
+| `vpnGatewayGeneration` | `string` | The generation for this VirtualNetworkGateway. Must be None if gatewayType is not VPN. |
+| `tags` | `object` | Resource tags. |
+| `ipConfigurations` | `array` | IP configurations for virtual network gateway. |
+| `inboundDnsForwardingEndpoint` | `string` | The IP address allocated by the gateway to which dns requests can be sent. |
+| `extendedLocation` | `object` | ExtendedLocation complex type. |
+| `vpnClientConfiguration` | `object` | VpnClientConfiguration for P2S client. |
+| `sku` | `object` | VirtualNetworkGatewaySku details. |
+| `activeActive` | `boolean` | ActiveActive flag. |
+| `disableIPSecReplayProtection` | `boolean` | disableIPSecReplayProtection flag. |
+| `enableBgpRouteTranslationForNat` | `boolean` | EnableBgpRouteTranslationForNat flag. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `enableDnsForwarding` | `boolean` | Whether dns forwarding is enabled or not. |
+| `vNetExtendedLocationResourceId` | `string` | Customer vnet resource id. VirtualNetworkGateway of type local gateway is associated with the customer vnet. |
+| `gatewayType` | `string` | The type of this virtual network gateway. |
+| `bgpSettings` | `object` | BGP settings details. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

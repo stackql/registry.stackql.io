@@ -28,12 +28,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Name of the library. |
-| `creatorId` | `string` | Creator Id of the library/package. |
-| `path` | `string` | Storage blob path of library. |
 | `provisioningStatus` | `string` | Provisioning status of the library/package. |
 | `type` | `string` | Type of the library. |
 | `uploadedTimestamp` | `string` | The last update time of the library. |
 | `containerName` | `string` | Storage blob container name. |
+| `creatorId` | `string` | Creator Id of the library/package. |
+| `path` | `string` | Storage blob path of library. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

@@ -31,5 +31,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:--------------|:----------------|:------------|
 | `ResourceGuardProxy_Delete` | `DELETE` | `api-version, resourceGroupName, resourceGuardProxyName, subscriptionId, vaultName` | Delete ResourceGuardProxy under vault |
 | `ResourceGuardProxy_Get` | `EXEC` | `api-version, resourceGroupName, resourceGuardProxyName, subscriptionId, vaultName` | Returns ResourceGuardProxy under vault and with the name referenced in request |
-| `ResourceGuardProxy_Put` | `EXEC` | `api-version, resourceGroupName, resourceGuardProxyName, subscriptionId, vaultName` | Add or Update ResourceGuardProxy under vault<br />Secures vault critical operations |
+| `ResourceGuardProxy_Put` | `EXEC` | `api-version, resourceGroupName, resourceGuardProxyName, subscriptionId, vaultName` | Add or Update ResourceGuardProxy under vault<br />Secures vault critical operations |
 | `ResourceGuardProxy_UnlockDelete` | `EXEC` | `api-version, resourceGroupName, resourceGuardProxyName, subscriptionId, vaultName` | Secures delete ResourceGuardProxy operations. |

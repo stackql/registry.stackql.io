@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the workflow run action name. |
+| `status` | `string` | The workflow status. |
+| `type` | `string` | Gets the workflow run action type. |
+| `trackingId` | `string` | Gets the tracking id. |
+| `outputsLink` | `object` | The content link. |
+| `code` | `string` | Gets the code. |
 | `error` | `object` |  |
 | `retryHistory` | `array` | Gets the retry histories. |
-| `status` | `string` | The workflow status. |
-| `code` | `string` | Gets the code. |
+| `startTime` | `string` | Gets the start time. |
+| `trackedProperties` | `object` |  |
+| `correlation` | `object` | The workflow run action correlation properties. |
 | `inputsLink` | `object` | The content link. |
 | `endTime` | `string` | Gets the end time. |
-| `correlation` | `object` | The workflow run action correlation properties. |
-| `type` | `string` | Gets the workflow run action type. |
-| `trackedProperties` | `object` |  |
-| `outputsLink` | `object` | The content link. |
-| `startTime` | `string` | Gets the start time. |
-| `trackingId` | `string` | Gets the tracking id. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

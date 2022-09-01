@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | String Id used to locate any resource on Azure. |
 | `name` | `string` | Name of this resource. |
-| `allTenants` | `boolean` | Flag indicating whether all tenants are allowed |
+| `subscriptionId` | `string` | Subscription Identifier |
+| `tenants` | `array` | The list of tenantIds. |
+| `ownerTenantId` | `string` | Guid of the owner tenant |
 | `resourceGroup` | `string` | Name of the resource group |
 | `tags` | `object` | Resource tags. |
-| `ownerTenantId` | `string` | Guid of the owner tenant |
-| `tenants` | `array` | The list of tenantIds. |
 | `resourceName` | `string` | Name of the private link policy resource |
-| `subscriptionId` | `string` | Subscription Identifier |
 | `type` | `string` | Type of this resource. |
+| `allTenants` | `boolean` | Flag indicating whether all tenants are allowed |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

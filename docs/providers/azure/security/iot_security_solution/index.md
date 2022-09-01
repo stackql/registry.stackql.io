@@ -27,22 +27,22 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `userDefinedResources` | `object` | Properties of the IoT Security solution's user defined resources. |
-| `export` | `array` | List of additional options for exporting to workspace data. |
-| `displayName` | `string` | Resource display name. |
-| `tags` | `object` | Resource tags |
-| `additionalWorkspaces` | `array` | List of additional workspaces |
-| `workspace` | `string` | Workspace resource ID |
-| `disabledDataSources` | `array` | Disabled data sources. Disabling these data sources compromises the system. |
 | `iotHubs` | `array` | IoT Hub resource IDs |
 | `status` | `string` | Status of the IoT Security solution. |
+| `disabledDataSources` | `array` | Disabled data sources. Disabling these data sources compromises the system. |
+| `export` | `array` | List of additional options for exporting to workspace data. |
+| `displayName` | `string` | Resource display name. |
+| `autoDiscoveredResources` | `array` | List of resources that were automatically discovered as relevant to the security solution. |
 | `recommendationsConfiguration` | `array` | List of the configuration status for each recommendation type. |
+| `tags` | `object` | Resource tags |
+| `workspace` | `string` | Workspace resource ID |
+| `additionalWorkspaces` | `array` | List of additional workspaces |
+| `unmaskedIpLoggingStatus` | `string` | Unmasked IP address logging status |
+| `userDefinedResources` | `object` | Properties of the IoT Security solution's user defined resources. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `unmaskedIpLoggingStatus` | `string` | Unmasked IP address logging status |
-| `autoDiscoveredResources` | `array` | List of resources that were automatically discovered as relevant to the security solution. |
 | `location` | `string` | The resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

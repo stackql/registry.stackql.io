@@ -27,25 +27,25 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `highAvailability` | `object` | High availability properties of a server |
-| `administratorLoginPassword` | `string` | The administrator login password (required for server creation). |
-| `minorVersion` | `string` | The minor version of the server. |
 | `location` | `string` | The geo-location where the resource lives |
+| `network` | `object` | Network properties of a server |
+| `tags` | `object` | Resource tags. |
+| `administratorLogin` | `string` | The administrator's login name of a server. Can only be specified when the server is being created (and is required for creation). |
+| `sku` | `object` | The resource model definition representing SKU |
 | `availabilityZone` | `string` | availability zone information of the server. |
 | `version` | `string` | The version of a server. |
-| `storage` | `object` | Storage properties of a server |
-| `sku` | `object` | The resource model definition representing SKU |
-| `network` | `object` | Network properties of a server |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `state` | `string` | A state of a server that is visible to user. |
-| `administratorLogin` | `string` | The administrator's login name of a server. Can only be specified when the server is being created (and is required for creation). |
-| `sourceServerResourceId` | `string` | The source server resource ID to restore from. It's required when 'createMode' is 'PointInTimeRestore'. |
-| `maintenanceWindow` | `object` | Maintenance window properties of a server. |
-| `fullyQualifiedDomainName` | `string` | The fully qualified domain name of a server. |
-| `pointInTimeUTC` | `string` | Restore point creation time (ISO8601 format), specifying the time to restore from. It's required when 'createMode' is 'PointInTimeRestore'. |
 | `createMode` | `string` | The mode to create a new PostgreSQL server. |
-| `tags` | `object` | Resource tags. |
+| `storage` | `object` | Storage properties of a server |
+| `administratorLoginPassword` | `string` | The administrator login password (required for server creation). |
+| `pointInTimeUTC` | `string` | Restore point creation time (ISO8601 format), specifying the time to restore from. It's required when 'createMode' is 'PointInTimeRestore'. |
+| `sourceServerResourceId` | `string` | The source server resource ID to restore from. It's required when 'createMode' is 'PointInTimeRestore'. |
+| `fullyQualifiedDomainName` | `string` | The fully qualified domain name of a server. |
 | `backup` | `object` | Backup properties of a server |
+| `state` | `string` | A state of a server that is visible to user. |
+| `highAvailability` | `object` | High availability properties of a server |
+| `maintenanceWindow` | `object` | Maintenance window properties of a server. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `minorVersion` | `string` | The minor version of the server. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

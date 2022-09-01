@@ -27,17 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `template` | `string` | The security solutions' template |
-| `alertVendorName` | `string` | The security solutions' vendor name |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `location` | `string` | Location where the resource is stored |
-| `packageInfoUrl` | `string` | The security solutions' package info url |
-| `securityFamily` | `string` | The security family of the security solution |
 | `productName` | `string` | The security solutions' product name |
 | `publisherDisplayName` | `string` | The security solutions' publisher display name |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `alertVendorName` | `string` | The security solutions' vendor name |
+| `securityFamily` | `string` | The security family of the security solution |
 | `publisher` | `string` | The security solutions' publisher |
+| `packageInfoUrl` | `string` | The security solutions' package info url |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

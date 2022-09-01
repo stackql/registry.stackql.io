@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `provisioningState` | `string` | The provisioning state of the pipeline at the time the operation was called. |
-| `identity` | `object` | Managed identity for the resource. |
-| `source` | `object` | The properties of the import pipeline source. |
 | `options` | `array` | The list of all options configured for the pipeline. |
+| `source` | `object` | The properties of the import pipeline source. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `trigger` | `object` |  |
-| `location` | `string` | The location of the import pipeline. |
 | `type` | `string` | The type of the resource. |
+| `provisioningState` | `string` | The provisioning state of the pipeline at the time the operation was called. |
+| `location` | `string` | The location of the import pipeline. |
+| `identity` | `object` | Managed identity for the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

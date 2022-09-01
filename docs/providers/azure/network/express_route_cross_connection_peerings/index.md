@@ -29,22 +29,22 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `gatewayManagerEtag` | `string` | The GatewayManager Etag. |
-| `microsoftPeeringConfig` | `object` | Specifies the peering configuration. |
-| `sharedKey` | `string` | The shared key. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `peerASN` | `integer` | The peer ASN. |
-| `secondaryAzurePort` | `string` | The secondary port. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `peeringType` | `string` | The peering type. |
-| `primaryPeerAddressPrefix` | `string` | The primary address prefix. |
+| `azureASN` | `integer` | The Azure ASN. |
 | `ipv6PeeringConfig` | `object` | Contains IPv6 peering config. |
-| `state` | `string` | The state of peering. |
+| `gatewayManagerEtag` | `string` | The GatewayManager Etag. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `sharedKey` | `string` | The shared key. |
+| `secondaryAzurePort` | `string` | The secondary port. |
+| `peeringType` | `string` | The peering type. |
+| `microsoftPeeringConfig` | `object` | Specifies the peering configuration. |
+| `primaryPeerAddressPrefix` | `string` | The primary address prefix. |
+| `primaryAzurePort` | `string` | The primary port. |
 | `secondaryPeerAddressPrefix` | `string` | The secondary address prefix. |
+| `state` | `string` | The state of peering. |
 | `vlanId` | `integer` | The VLAN ID. |
 | `lastModifiedBy` | `string` | Who was the last to modify the peering. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `azureASN` | `integer` | The Azure ASN. |
-| `primaryAzurePort` | `string` | The primary port. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

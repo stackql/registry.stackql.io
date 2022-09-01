@@ -28,24 +28,24 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `array` | Description of the alert. |
-| `remediation` | `array` | Gets or sets the admin friendly remediation instructions for the alert. |
-| `resourceRegistrationId` | `string` | Gets or sets the registration ID of the resource associated with the alert. If the alert is not associated with a resource, the resource registration ID is null. |
-| `state` | `string` | State of the alert. |
-| `faultTypeId` | `string` | Gets or sets the fault type ID of the alert. |
 | `location` | `string` | The Azure Region where the resource lives |
-| `resourceProviderRegistrationId` | `string` | Gets or sets the registration ID of the service the alert belongs to. |
-| `impactedResourceDisplayName` | `string` | Display name for the impacted item. |
-| `title` | `string` | Gets or sets the Resource ID for the impacted item. |
-| `alertProperties` | `object` | Properties of the alert. |
-| `faultId` | `string` | Gets or sets the fault ID of the alert. |
 | `lastUpdatedTimestamp` | `string` | Timestamp when the alert was last updated. |
-| `closedByUserAlias` | `string` | User alias who closed the alert. |
-| `closedTimestamp` | `string` | Timestamp when the alert was closed. |
-| `hasValidRemediationAction` | `boolean` | Indicates if the alert can be remediated. |
-| `createdTimestamp` | `string` | Timestamp when the alert was created. |
+| `resourceProviderRegistrationId` | `string` | Gets or sets the registration ID of the service the alert belongs to. |
+| `faultId` | `string` | Gets or sets the fault ID of the alert. |
 | `severity` | `string` | Severity of the alert. |
-| `alertId` | `string` | Gets or sets the ID of the alert. |
+| `closedTimestamp` | `string` | Timestamp when the alert was closed. |
+| `state` | `string` | State of the alert. |
+| `closedByUserAlias` | `string` | User alias who closed the alert. |
+| `alertProperties` | `object` | Properties of the alert. |
+| `faultTypeId` | `string` | Gets or sets the fault type ID of the alert. |
+| `createdTimestamp` | `string` | Timestamp when the alert was created. |
+| `resourceRegistrationId` | `string` | Gets or sets the registration ID of the resource associated with the alert. If the alert is not associated with a resource, the resource registration ID is null. |
+| `impactedResourceDisplayName` | `string` | Display name for the impacted item. |
+| `remediation` | `array` | Gets or sets the admin friendly remediation instructions for the alert. |
+| `title` | `string` | Gets or sets the Resource ID for the impacted item. |
 | `tags` | `object` | Resource tags. |
+| `hasValidRemediationAction` | `boolean` | Indicates if the alert can be remediated. |
+| `alertId` | `string` | Gets or sets the ID of the alert. |
 | `impactedResourceId` | `string` | Gets or sets the Resource ID for the impacted item. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

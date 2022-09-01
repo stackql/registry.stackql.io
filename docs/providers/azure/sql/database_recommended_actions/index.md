@@ -27,31 +27,31 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `isRevertableAction` | `boolean` | Gets if changes applied by this recommended action can be reverted by user |
-| `revertActionDuration` | `string` | Gets the time taken for reverting changes of this recommended action on user resource. e.g., time taken for dropping the created index. |
-| `isExecutableAction` | `boolean` | Gets if this recommended action is actionable by user |
-| `executeActionInitiatedTime` | `string` | Gets the time when this recommended action was approved for execution. |
-| `revertActionInitiatedBy` | `string` | Gets if approval for reverting this recommended action was given by user/system. |
-| `validSince` | `string` | Gets the time since when this recommended action is valid. |
-| `lastRefresh` | `string` | Gets time when this recommended action was last refreshed. |
+| `location` | `string` | Resource location. |
+| `recommendationReason` | `string` | Gets the reason for recommending this action. e.g., DuplicateIndex |
 | `score` | `integer` | Gets the impact of this recommended action. Possible values are 1 - Low impact, 2 - Medium Impact and 3 - High Impact |
 | `details` | `object` | Gets additional details specific to this recommended action. |
-| `revertActionInitiatedTime` | `string` | Gets the time when this recommended action was approved for revert. |
-| `recommendationReason` | `string` | Gets the reason for recommending this action. e.g., DuplicateIndex |
-| `timeSeries` | `array` | Gets the time series info of metrics for this recommended action e.g., CPU consumption time series |
-| `revertActionStartTime` | `string` | Gets the time when system started reverting changes of this recommended action on user resource. e.g., time when index drop is executed. |
-| `implementationDetails` | `object` | Contains information for manual implementation for an Azure SQL Database, Server or Elastic Pool Recommended Action. |
-| `observedImpact` | `array` | Gets the observed/actual impact info for this recommended action e.g., Actual CPU gain, Actual Disk Space change |
-| `executeActionInitiatedBy` | `string` | Gets if approval for applying this recommended action was given by user/system. |
-| `isArchivedAction` | `boolean` | Gets if this recommended action was suggested some time ago but user chose to ignore this and system added a new recommended action again. |
-| `linkedObjects` | `array` | Gets the linked objects, if any. |
-| `errorDetails` | `object` | Contains error information for an Azure SQL Database, Server or Elastic Pool Recommended Action. |
-| `kind` | `string` | Resource kind. |
+| `lastRefresh` | `string` | Gets time when this recommended action was last refreshed. |
 | `state` | `object` | Contains information of current state for an Azure SQL Database, Server or Elastic Pool Recommended Action. |
-| `location` | `string` | Resource location. |
-| `executeActionStartTime` | `string` | Gets the time when system started applying this recommended action on the user resource. e.g., index creation start time |
+| `isArchivedAction` | `boolean` | Gets if this recommended action was suggested some time ago but user chose to ignore this and system added a new recommended action again. |
 | `estimatedImpact` | `array` | Gets the estimated impact info for this recommended action e.g., Estimated CPU gain, Estimated Disk Space change |
+| `revertActionInitiatedBy` | `string` | Gets if approval for reverting this recommended action was given by user/system. |
+| `revertActionInitiatedTime` | `string` | Gets the time when this recommended action was approved for revert. |
+| `executeActionInitiatedBy` | `string` | Gets if approval for applying this recommended action was given by user/system. |
+| `timeSeries` | `array` | Gets the time series info of metrics for this recommended action e.g., CPU consumption time series |
 | `executeActionDuration` | `string` | Gets the time taken for applying this recommended action on user resource. e.g., time taken for index creation |
+| `executeActionInitiatedTime` | `string` | Gets the time when this recommended action was approved for execution. |
+| `errorDetails` | `object` | Contains error information for an Azure SQL Database, Server or Elastic Pool Recommended Action. |
+| `implementationDetails` | `object` | Contains information for manual implementation for an Azure SQL Database, Server or Elastic Pool Recommended Action. |
+| `isExecutableAction` | `boolean` | Gets if this recommended action is actionable by user |
+| `revertActionDuration` | `string` | Gets the time taken for reverting changes of this recommended action on user resource. e.g., time taken for dropping the created index. |
+| `observedImpact` | `array` | Gets the observed/actual impact info for this recommended action e.g., Actual CPU gain, Actual Disk Space change |
+| `linkedObjects` | `array` | Gets the linked objects, if any. |
+| `isRevertableAction` | `boolean` | Gets if changes applied by this recommended action can be reverted by user |
+| `kind` | `string` | Resource kind. |
+| `executeActionStartTime` | `string` | Gets the time when system started applying this recommended action on the user resource. e.g., index creation start time |
+| `revertActionStartTime` | `string` | Gets the time when system started reverting changes of this recommended action on user resource. e.g., time when index drop is executed. |
+| `validSince` | `string` | Gets the time since when this recommended action is valid. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

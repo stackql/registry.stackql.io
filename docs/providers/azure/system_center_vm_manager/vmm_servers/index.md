@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
-| `connectionStatus` | `string` | Gets or sets the connection status to the vmmServer. |
-| `provisioningState` | `string` | Gets or sets the provisioning state. |
-| `location` | `string` | Gets or sets the location. |
+| `credentials` | `object` | Credentials to connect to VMMServer. |
 | `errorMessage` | `string` | Gets or sets any error message if connection to vmmServer is having any issue. |
+| `location` | `string` | Gets or sets the location. |
+| `tags` | `object` | Resource tags |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `version` | `string` | Version is the version of the vmmSever. |
+| `extendedLocation` | `object` | The extended location. |
+| `uuid` | `string` | Unique ID of vmmServer. |
+| `connectionStatus` | `string` | Gets or sets the connection status to the vmmServer. |
+| `type` | `string` | Resource Type |
 | `port` | `integer` | Port is the port on which the vmmServer is listening. |
 | `fqdn` | `string` | Fqdn is the hostname/ip of the vmmServer. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `extendedLocation` | `object` | The extended location. |
-| `version` | `string` | Version is the version of the vmmSever. |
-| `tags` | `object` | Resource tags |
-| `uuid` | `string` | Unique ID of vmmServer. |
-| `type` | `string` | Resource Type |
-| `credentials` | `object` | Credentials to connect to VMMServer. |
+| `provisioningState` | `string` | Gets or sets the provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

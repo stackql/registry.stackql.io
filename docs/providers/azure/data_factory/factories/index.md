@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
-| `eTag` | `string` | Etag identifies change in the resource. |
-| `type` | `string` | The resource type. |
-| `identity` | `object` | Identity properties of the factory resource. |
-| `publicNetworkAccess` | `string` | Whether or not public network access is allowed for the data factory. |
-| `purviewConfiguration` | `object` | Purview configuration. |
 | `location` | `string` | The resource location. |
-| `encryption` | `object` | Definition of CMK for the factory. |
-| `repoConfiguration` | `object` | Factory's git repo information. |
-| `provisioningState` | `string` | Factory provisioning state, example Succeeded. |
-| `version` | `string` | Version of the factory. |
-| `createTime` | `string` | Time the factory was created in ISO8601 format. |
-| `globalParameters` | `object` | Definition of all parameters for an entity. |
 | `tags` | `object` | The resource tags. |
+| `createTime` | `string` | Time the factory was created in ISO8601 format. |
+| `repoConfiguration` | `object` | Factory's git repo information. |
+| `encryption` | `object` | Definition of CMK for the factory. |
+| `identity` | `object` | Identity properties of the factory resource. |
+| `eTag` | `string` | Etag identifies change in the resource. |
+| `version` | `string` | Version of the factory. |
+| `globalParameters` | `object` | Definition of all parameters for an entity. |
+| `type` | `string` | The resource type. |
+| `provisioningState` | `string` | Factory provisioning state, example Succeeded. |
+| `purviewConfiguration` | `object` | Purview configuration. |
+| `publicNetworkAccess` | `string` | Whether or not public network access is allowed for the data factory. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

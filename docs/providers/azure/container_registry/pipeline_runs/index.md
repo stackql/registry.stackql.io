@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `provisioningState` | `string` | The provisioning state of a pipeline run. |
-| `request` | `object` | The request properties provided for a pipeline run. |
 | `response` | `object` | The response properties returned for a pipeline run. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | The type of the resource. |
 | `forceUpdateTag` | `string` | How the pipeline run should be forced to recreate even if the pipeline run configuration has not changed. |
+| `provisioningState` | `string` | The provisioning state of a pipeline run. |
+| `request` | `object` | The request properties provided for a pipeline run. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

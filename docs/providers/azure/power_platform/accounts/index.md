@@ -28,10 +28,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | The description of the account. |
-| `location` | `string` | The geo-location where the resource lives |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `systemId` | `string` | The internally assigned unique identifier of the resource. |
 | `tags` | `object` | Resource tags. |
+| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

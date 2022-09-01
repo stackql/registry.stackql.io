@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `dataSourceType` | `string` | Linked storage accounts type. |
 | `storageAccountIds` | `array` | Linked storage accounts resources ids. |
+| `dataSourceType` | `string` | Linked storage accounts type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

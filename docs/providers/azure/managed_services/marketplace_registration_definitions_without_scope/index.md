@@ -29,9 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The fully qualified path of the marketplace registration definition. |
 | `name` | `string` | The name of the marketplace registration definition. |
+| `plan` | `object` | The details for the Managed Services offer’s plan in Azure Marketplace. |
 | `properties` | `object` | The properties of the marketplace registration definition. |
 | `type` | `string` | The type of the Azure resource (Microsoft.ManagedServices/marketplaceRegistrationDefinitions). |
-| `plan` | `object` | The details for the Managed Services offer’s plan in Azure Marketplace. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

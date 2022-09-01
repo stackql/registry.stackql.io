@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
-| `uuid` | `string` | Unique ID of the virtual network. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags |
-| `vmmServerId` | `string` | ARM Id of the vmmServer resource in which this resource resides. |
-| `networkName` | `string` | Name of the virtual network in vmmServer. |
 | `inventoryItemId` | `string` | Gets or sets the inventory Item ID for the resource. |
-| `extendedLocation` | `object` | The extended location. |
+| `networkName` | `string` | Name of the virtual network in vmmServer. |
 | `provisioningState` | `string` | Gets or sets the provisioning state. |
-| `type` | `string` | Resource Type |
 | `location` | `string` | Gets or sets the location. |
+| `type` | `string` | Resource Type |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `extendedLocation` | `object` | The extended location. |
+| `uuid` | `string` | Unique ID of the virtual network. |
+| `vmmServerId` | `string` | ARM Id of the vmmServer resource in which this resource resides. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

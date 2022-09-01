@@ -27,13 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `etag` | `string` | ETag of the inbound endpoint. |
+| `ipConfigurations` | `array` | IP configurations for the inbound endpoint. |
 | `location` | `string` | The geo-location where the resource lives |
 | `provisioningState` | `string` | The current provisioning state of the resource. |
 | `resourceGuid` | `string` | The Guid property of the resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
-| `etag` | `string` | ETag of the inbound endpoint. |
-| `ipConfigurations` | `array` | IP configurations for the inbound endpoint. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

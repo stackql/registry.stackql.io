@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `tags` | `object` | Resource tags. |
-| `identity` | `object` | Identity for the resource. |
-| `location` | `string` | The geo-location where the resource lives |
 | `properties` | `object` | Describes the properties of a hybrid machine. |
 | `resources` | `array` | The list of extensions affiliated to the machine |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `tags` | `object` | Resource tags. |
+| `identity` | `object` | Identity for the resource. |
+| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

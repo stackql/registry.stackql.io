@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `password` | `string` | The credential password. |
 | `username` | `string` | The credential user name. |
+| `password` | `string` | The credential password. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

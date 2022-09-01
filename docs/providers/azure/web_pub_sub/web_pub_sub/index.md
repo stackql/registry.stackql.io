@@ -27,27 +27,27 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `sku` | `object` | The billing information of the resource. |
-| `sharedPrivateLinkResources` | `array` | The list of shared private link resources. |
-| `resourceLogConfiguration` | `object` | Resource log configuration of a Microsoft.SignalRService resource. |
-| `externalIP` | `string` | The publicly accessible IP of the resource. |
-| `identity` | `object` | A class represent managed identities used for request and response |
 | `location` | `string` | The GEO location of the resource. e.g. West US \| East US \| North Central US \| South Central US. |
-| `liveTraceConfiguration` | `object` | Live trace configuration of a Microsoft.SignalRService resource. |
-| `disableAadAuth` | `boolean` | DisableLocalAuth<br />Enable or disable aad auth<br />When set as true, connection with AuthType=aad won't work. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `publicNetworkAccess` | `string` | Enable or disable public network access. Default to "Enabled".<br />When it's Enabled, network ACLs still apply.<br />When it's Disabled, public network access is always disabled no matter what you set in network ACLs. |
-| `tags` | `object` | Tags of the service which is a list of key value pairs that describe the resource. |
-| `version` | `string` | Version of the resource. Probably you need the same or higher version of client SDKs. |
 | `networkACLs` | `object` | Network ACLs for the resource |
-| `tls` | `object` | TLS settings for the resource |
-| `hostNamePrefix` | `string` | Deprecated. |
-| `privateEndpointConnections` | `array` | Private endpoint connections to the resource. |
 | `provisioningState` | `string` | Provisioning state of the resource. |
-| `disableLocalAuth` | `boolean` | DisableLocalAuth<br />Enable or disable local auth with AccessKey<br />When set as true, connection with AccessKey=xxx won't work. |
-| `publicPort` | `integer` | The publicly accessible port of the resource which is designed for browser/client side usage. |
+| `disableLocalAuth` | `boolean` | DisableLocalAuth<br />Enable or disable local auth with AccessKey<br />When set as true, connection with AccessKey=xxx won't work. |
+| `disableAadAuth` | `boolean` | DisableLocalAuth<br />Enable or disable aad auth<br />When set as true, connection with AuthType=aad won't work. |
+| `sharedPrivateLinkResources` | `array` | The list of shared private link resources. |
+| `tags` | `object` | Tags of the service which is a list of key value pairs that describe the resource. |
+| `tls` | `object` | TLS settings for the resource |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `privateEndpointConnections` | `array` | Private endpoint connections to the resource. |
 | `hostName` | `string` | FQDN of the service instance. |
 | `serverPort` | `integer` | The publicly accessible port of the resource which is designed for customer server side usage. |
+| `sku` | `object` | The billing information of the resource. |
+| `identity` | `object` | A class represent managed identities used for request and response |
+| `hostNamePrefix` | `string` | Deprecated. |
+| `liveTraceConfiguration` | `object` | Live trace configuration of a Microsoft.SignalRService resource. |
+| `publicPort` | `integer` | The publicly accessible port of the resource which is designed for browser/client side usage. |
+| `publicNetworkAccess` | `string` | Enable or disable public network access. Default to "Enabled".<br />When it's Enabled, network ACLs still apply.<br />When it's Disabled, public network access is always disabled no matter what you set in network ACLs. |
+| `externalIP` | `string` | The publicly accessible IP of the resource. |
+| `version` | `string` | Version of the resource. Probably you need the same or higher version of client SDKs. |
+| `resourceLogConfiguration` | `object` | Resource log configuration of a Microsoft.SignalRService resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

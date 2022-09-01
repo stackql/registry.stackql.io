@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `resourceState` | `string` | Resource status of the origin group. |
 | `provisioningState` | `string` | Provisioning status of the origin group. |
+| `resourceState` | `string` | Resource status of the origin group. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

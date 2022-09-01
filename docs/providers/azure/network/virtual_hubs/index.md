@@ -29,32 +29,32 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `securityProviderName` | `string` | The Security Provider name. |
-| `routingState` | `string` | The current routing state of the VirtualHub. |
-| `azureFirewall` | `object` | Reference to another subresource. |
-| `tags` | `object` | Resource tags. |
-| `virtualRouterIps` | `array` | VirtualRouter IPs. |
-| `virtualRouterAsn` | `integer` | VirtualRouter ASN. |
-| `hubRoutingPreference` | `string` | The hub routing preference gateway types |
 | `p2SVpnGateway` | `object` | Reference to another subresource. |
-| `ipConfigurations` | `array` | List of references to IpConfigurations. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `location` | `string` | Resource location. |
-| `virtualRouterAutoScaleConfiguration` | `object` | The VirtualHub Router autoscale configuration. |
-| `bgpConnections` | `array` | List of references to Bgp Connections. |
-| `type` | `string` | Resource type. |
-| `vpnGateway` | `object` | Reference to another subresource. |
-| `sku` | `string` | The sku of this VirtualHub. |
+| `virtualRouterIps` | `array` | VirtualRouter IPs. |
+| `routeTable` | `object` | VirtualHub route table. |
+| `tags` | `object` | Resource tags. |
+| `virtualWan` | `object` | Reference to another subresource. |
+| `virtualRouterAsn` | `integer` | VirtualRouter ASN. |
+| `securityPartnerProvider` | `object` | Reference to another subresource. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `virtualHubRouteTableV2s` | `array` | List of all virtual hub route table v2s associated with this VirtualHub. |
-| `allowBranchToBranchTraffic` | `boolean` | Flag to control transit for VirtualRouter hub. |
+| `securityProviderName` | `string` | The Security Provider name. |
+| `bgpConnections` | `array` | List of references to Bgp Connections. |
+| `kind` | `string` | Kind of service virtual hub. This is metadata used for the Azure portal experience for Route Server. |
+| `hubRoutingPreference` | `string` | The hub routing preference gateway types |
+| `azureFirewall` | `object` | Reference to another subresource. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `addressPrefix` | `string` | Address-prefix for this VirtualHub. |
 | `preferredRoutingGateway` | `string` | The preferred routing gateway types |
-| `virtualWan` | `object` | Reference to another subresource. |
-| `routeTable` | `object` | VirtualHub route table. |
-| `securityPartnerProvider` | `object` | Reference to another subresource. |
+| `routingState` | `string` | The current routing state of the VirtualHub. |
+| `virtualHubRouteTableV2s` | `array` | List of all virtual hub route table v2s associated with this VirtualHub. |
 | `expressRouteGateway` | `object` | Reference to another subresource. |
-| `kind` | `string` | Kind of service virtual hub. This is metadata used for the Azure portal experience for Route Server. |
+| `vpnGateway` | `object` | Reference to another subresource. |
+| `type` | `string` | Resource type. |
+| `sku` | `string` | The sku of this VirtualHub. |
+| `location` | `string` | Resource location. |
+| `virtualRouterAutoScaleConfiguration` | `object` | The VirtualHub Router autoscale configuration. |
+| `allowBranchToBranchTraffic` | `boolean` | Flag to control transit for VirtualRouter hub. |
+| `ipConfigurations` | `array` | List of references to IpConfigurations. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `location` | `string` | Resource location. |
 | `virtualHub` | `object` | Resource reference properties. |
-| `tags` | `object` | Resource tags. |
-| `type` | `string` | Resource type. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `collectorPolicies` | `array` | Collector Policies for Azure Traffic Collector. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `location` | `string` | Resource location. |
+| `collectorPolicies` | `array` | Collector Policies for Azure Traffic Collector. |
+| `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `tags` | `object` | Resource tags. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

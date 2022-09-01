@@ -29,28 +29,28 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource Name. |
-| `type` | `string` | Resource Type. |
-| `primaryLocation` | `string` | The primary location for the storage account. |
-| `tenantSubscriptionId` | `string` | Subscription ID of the subscription under which the storage account locates. |
-| `accountId` | `string` | Internal storage account ID, which is not visible to tenant. |
+| `accessTier` | `string` | Access tier for storage account |
 | `primaryEndpoints` | `object` | The URLs that are used to perform a retrieval of a public BLOB, queue, or table object. |
-| `tenantViewId` | `string` | Resource URI of storage account from tenant view. |
-| `creationTime` | `string` | The creation date and time of storage account in UTC. |
-| `kind` | `string` | The kind of storage account |
 | `supportsHttpsTrafficOnly` | `boolean` | Storage account supports https traffic only or not |
-| `encryption` | `object` | Storage encryption setting |
-| `provisioningState` | `string` | Storage account state. |
-| `healthState` | `string` | Health state for storage account |
 | `tenantResourceGroupName` | `string` | The name of resource group under which the storage account locates. |
 | `location` | `string` | Resource Location. |
-| `accountType` | `string` | Storage account type. |
-| `statusOfPrimary` | `string` | Gets the status indicating whether the primary location of the storage account is available or unavailable. |
-| `deletedTime` | `string` | The date-time when the storage account was deleted. |
 | `tenantStorageAccountName` | `string` | Storage account name from tenant view. |
-| `accountStatus` | `string` | The state of storage account in WAC. |
-| `faultDomain` | `string` | The fault domain for the storage account. |
 | `tags` | `object` | Resource tags. |
-| `accessTier` | `string` | Access tier for storage account |
+| `tenantSubscriptionId` | `string` | Subscription ID of the subscription under which the storage account locates. |
+| `provisioningState` | `string` | Storage account state. |
+| `type` | `string` | Resource Type. |
+| `healthState` | `string` | Health state for storage account |
+| `faultDomain` | `string` | The fault domain for the storage account. |
+| `kind` | `string` | The kind of storage account |
+| `accountType` | `string` | Storage account type. |
+| `encryption` | `object` | Storage encryption setting |
+| `statusOfPrimary` | `string` | Gets the status indicating whether the primary location of the storage account is available or unavailable. |
+| `accountStatus` | `string` | The state of storage account in WAC. |
+| `tenantViewId` | `string` | Resource URI of storage account from tenant view. |
+| `accountId` | `string` | Internal storage account ID, which is not visible to tenant. |
+| `deletedTime` | `string` | The date-time when the storage account was deleted. |
+| `creationTime` | `string` | The creation date and time of storage account in UTC. |
+| `primaryLocation` | `string` | The primary location for the storage account. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

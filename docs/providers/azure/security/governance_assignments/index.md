@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `additionalData` | `object` | Describe the additional data of GovernanceAssignment - optional |
 | `governanceEmailNotification` | `object` | The governance email weekly notification configuration. |
-| `remediationDueDate` | `string` | The remediation due-date - after this date Secure Score will be affected (in case of  active grace-period) |
-| `owner` | `string` | The Owner for the governance assignment - e.g. user@contoso.com - see example |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `remediationEta` | `object` | The ETA (estimated time of arrival) for remediation |
 | `isGracePeriod` | `boolean` | Defines whether there is a grace period on the governance assignment |
+| `remediationDueDate` | `string` | The remediation due-date - after this date Secure Score will be affected (in case of  active grace-period) |
+| `remediationEta` | `object` | The ETA (estimated time of arrival) for remediation |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `owner` | `string` | The Owner for the governance assignment - e.g. user@contoso.com - see example |
+| `additionalData` | `object` | Describe the additional data of GovernanceAssignment - optional |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

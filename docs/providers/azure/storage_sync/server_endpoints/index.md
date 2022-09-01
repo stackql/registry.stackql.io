@@ -27,26 +27,26 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `volumeFreeSpacePercent` | `integer` | Level of free space to be maintained by Cloud Tiering if it is enabled. |
-| `offlineDataTransferShareName` | `string` | Offline data transfer share name |
-| `lastOperationName` | `string` | Resource Last Operation Name |
-| `lastWorkflowId` | `string` | ServerEndpoint lastWorkflowId |
-| `serverResourceId` | `string` | Arm resource identifier. |
-| `offlineDataTransferStorageAccountResourceId` | `string` | Offline data transfer storage account resource ID |
-| `syncStatus` | `object` | Server Endpoint sync status |
-| `offlineDataTransferStorageAccountTenantId` | `string` | Offline data transfer storage account tenant ID |
-| `localCacheMode` | `string` | Policy for enabling follow-the-sun business models: link local cache to cloud behavior to pre-populate before local access. |
-| `initialDownloadPolicy` | `string` | Policy for how namespace and files are recalled during FastDr |
-| `serverName` | `string` | Server name |
-| `cloudTieringStatus` | `object` | Server endpoint cloud tiering status object. |
-| `friendlyName` | `string` | Friendly Name |
-| `provisioningState` | `string` | ServerEndpoint Provisioning State |
 | `serverLocalPath` | `string` | Server folder used for data synchronization |
-| `cloudTiering` | `string` | Type of the Feature Status |
+| `lastWorkflowId` | `string` | ServerEndpoint lastWorkflowId |
 | `tierFilesOlderThanDays` | `integer` | Tier files older than days. |
+| `syncStatus` | `object` | Server Endpoint sync status |
+| `offlineDataTransferShareName` | `string` | Offline data transfer share name |
+| `provisioningState` | `string` | ServerEndpoint Provisioning State |
+| `serverName` | `string` | Server name |
+| `offlineDataTransferStorageAccountTenantId` | `string` | Offline data transfer storage account tenant ID |
 | `initialUploadPolicy` | `string` | Policy for how the initial upload sync session is performed. |
 | `recallStatus` | `object` | Server endpoint recall status object. |
+| `friendlyName` | `string` | Friendly Name |
+| `lastOperationName` | `string` | Resource Last Operation Name |
+| `initialDownloadPolicy` | `string` | Policy for how namespace and files are recalled during FastDr |
+| `offlineDataTransferStorageAccountResourceId` | `string` | Offline data transfer storage account resource ID |
 | `offlineDataTransfer` | `string` | Type of the Feature Status |
+| `serverResourceId` | `string` | Arm resource identifier. |
+| `cloudTieringStatus` | `object` | Server endpoint cloud tiering status object. |
+| `cloudTiering` | `string` | Type of the Feature Status |
+| `localCacheMode` | `string` | Policy for enabling follow-the-sun business models: link local cache to cloud behavior to pre-populate before local access. |
+| `volumeFreeSpacePercent` | `integer` | Level of free space to be maintained by Cloud Tiering if it is enabled. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

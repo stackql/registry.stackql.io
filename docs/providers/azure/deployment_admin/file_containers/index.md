@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `provisioningState` | `string` | Provisioning state of the resource. |
-| `type` | `string` | Type of Resource. |
-| `error` | `object` | Extended Error Information. |
-| `fileContainerId` | `string` | File container resource identifier containing product manifest. |
 | `location` | `string` | Location of the resource. |
+| `fileContainerId` | `string` | File container resource identifier containing product manifest. |
+| `provisioningState` | `string` | Provisioning state of the resource. |
 | `postCopyAction` | `string` | Specifies the file post copy action. |
-| `uri` | `string` | The file or container Uri. This is read-only property; a user cannot set it. |
 | `sourceUri` | `string` | Specifies The remote file location. |
+| `uri` | `string` | The file or container Uri. This is read-only property; a user cannot set it. |
+| `error` | `object` | Extended Error Information. |
+| `type` | `string` | Type of Resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

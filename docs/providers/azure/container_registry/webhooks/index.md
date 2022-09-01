@@ -30,13 +30,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
 | `provisioningState` | `string` | The provisioning state of the webhook at the time the operation was called. |
-| `tags` | `object` | The tags of the resource. |
+| `status` | `string` | The status of the webhook at the time the operation was called. |
+| `type` | `string` | The type of the resource. |
+| `scope` | `string` | The scope of repositories where the event can be triggered. For example, 'foo:*' means events for all tags under repository 'foo'. 'foo:bar' means events for 'foo:bar' only. 'foo' is equivalent to 'foo:latest'. Empty means all events. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `actions` | `array` | The list of actions that trigger the webhook to post notifications. |
 | `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
-| `type` | `string` | The type of the resource. |
-| `status` | `string` | The status of the webhook at the time the operation was called. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `scope` | `string` | The scope of repositories where the event can be triggered. For example, 'foo:*' means events for all tags under repository 'foo'. 'foo:bar' means events for 'foo:bar' only. 'foo' is equivalent to 'foo:latest'. Empty means all events. |
+| `tags` | `object` | The tags of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

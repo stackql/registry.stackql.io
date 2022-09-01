@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `attachedDatabaseNames` | `array` | The list of databases from the clusterResourceId which are currently attached to the kusto pool. |
+| `clusterResourceId` | `string` | The resource id of the kusto pool where the databases you would like to attach reside. |
+| `databaseName` | `string` | The name of the database which you would like to attach, use * if you want to follow all current and future databases. |
 | `defaultPrincipalsModificationKind` | `string` | The default principals modification kind |
 | `location` | `string` | Resource location. |
 | `provisioningState` | `string` | The provisioned state of the resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tableLevelSharingProperties` | `object` | Tables that will be included and excluded in the follower database |
-| `attachedDatabaseNames` | `array` | The list of databases from the clusterResourceId which are currently attached to the kusto pool. |
-| `clusterResourceId` | `string` | The resource id of the kusto pool where the databases you would like to attach reside. |
-| `databaseName` | `string` | The name of the database which you would like to attach, use * if you want to follow all current and future databases. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

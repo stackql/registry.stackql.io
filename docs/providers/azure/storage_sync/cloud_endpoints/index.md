@@ -27,16 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `partnershipId` | `string` | Partnership Id |
-| `storageAccountResourceId` | `string` | Storage Account Resource Id |
-| `changeEnumerationStatus` | `object` | Cloud endpoint change enumeration status object |
-| `backupEnabled` | `string` | Backup Enabled |
-| `provisioningState` | `string` | CloudEndpoint Provisioning State |
-| `storageAccountTenantId` | `string` | Storage Account Tenant Id |
 | `lastOperationName` | `string` | Resource Last Operation Name |
+| `storageAccountTenantId` | `string` | Storage Account Tenant Id |
+| `changeEnumerationStatus` | `object` | Cloud endpoint change enumeration status object |
 | `azureFileShareName` | `string` | Azure file share name |
-| `friendlyName` | `string` | Friendly Name |
+| `backupEnabled` | `string` | Backup Enabled |
 | `lastWorkflowId` | `string` | CloudEndpoint lastWorkflowId |
+| `friendlyName` | `string` | Friendly Name |
+| `provisioningState` | `string` | CloudEndpoint Provisioning State |
+| `storageAccountResourceId` | `string` | Storage Account Resource Id |
+| `partnershipId` | `string` | Partnership Id |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

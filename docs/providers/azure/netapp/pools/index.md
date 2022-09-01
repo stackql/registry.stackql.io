@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `encryptionType` | `string` | Encryption type of the capacity pool, set encryption type for data at rest for this pool and all volumes in it. This value can only be set when creating new pool. |
+| `provisioningState` | `string` | Azure lifecycle management |
 | `poolId` | `string` | UUID v4 used to identify the Pool |
 | `utilizedThroughputMibps` | `number` | Utilized throughput of pool in MiB/s |
-| `tags` | `object` | Resource tags. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `location` | `string` | The geo-location where the resource lives |
-| `qosType` | `string` | The qos type of the pool |
-| `serviceLevel` | `string` | The service level of the file system |
-| `totalThroughputMibps` | `number` | Total throughput of pool in MiB/s |
 | `coolAccess` | `boolean` | If enabled (true) the pool can contain cool Access enabled volumes. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `encryptionType` | `string` | Encryption type of the capacity pool, set encryption type for data at rest for this pool and all volumes in it. This value can only be set when creating new pool. |
+| `qosType` | `string` | The qos type of the pool |
+| `tags` | `object` | Resource tags. |
+| `location` | `string` | The geo-location where the resource lives |
+| `totalThroughputMibps` | `number` | Total throughput of pool in MiB/s |
+| `serviceLevel` | `string` | The service level of the file system |
 | `size` | `integer` | Provisioned size of the pool (in bytes). Allowed values are in 1TiB chunks (value must be multiply of 4398046511104). |
-| `provisioningState` | `string` | Azure lifecycle management |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

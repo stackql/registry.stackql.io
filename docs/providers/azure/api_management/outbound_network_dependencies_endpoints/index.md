@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `category` | `string` | The type of service accessed by the Api Management Service, e.g., Azure Storage, Azure SQL Database, and Azure Active Directory. |
 | `endpoints` | `array` | The endpoints that the Api Management Service reaches the service at. |
+| `category` | `string` | The type of service accessed by the Api Management Service, e.g., Azure Storage, Azure SQL Database, and Azure Active Directory. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

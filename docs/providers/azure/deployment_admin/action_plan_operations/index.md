@@ -30,20 +30,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
 | `description` | `string` | The operation description |
-| `title` | `string` | The operation title |
-| `provisioningState` | `string` | The provisioning state |
-| `subscriptionId` | `string` | The target subscription identifier |
-| `actionPlanInstanceId` | `string` | Action plan instance identifier |
-| `startTime` | `string` | The deployment start time |
-| `parameters` | `object` | The deployment parameters in JToken format |
-| `endTime` | `string` | The deployment end time |
-| `location` | `string` | Location of the resource. |
-| `outputs` | `object` | The action plan operation outputs in JToken format |
-| `eTag` | `string` | Entity tag of the resource |
-| `type` | `string` | Type of Resource. |
-| `error` | `object` | Error response. |
 | `actionPlanOperationId` | `string` | Action plan operation identifier |
 | `blobContainerName` | `string` | Blob container name storing the deployment data |
+| `provisioningState` | `string` | The provisioning state |
+| `outputs` | `object` | The action plan operation outputs in JToken format |
+| `parameters` | `object` | The deployment parameters in JToken format |
+| `startTime` | `string` | The deployment start time |
+| `error` | `object` | Error response. |
+| `eTag` | `string` | Entity tag of the resource |
+| `location` | `string` | Location of the resource. |
+| `endTime` | `string` | The deployment end time |
+| `title` | `string` | The operation title |
+| `actionPlanInstanceId` | `string` | Action plan instance identifier |
+| `subscriptionId` | `string` | The target subscription identifier |
+| `type` | `string` | Type of Resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

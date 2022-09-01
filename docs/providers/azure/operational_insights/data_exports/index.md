@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `dataExportId` | `string` | The data export rule ID. |
 | `destination` | `object` | Destination properties. |
 | `enable` | `boolean` | Active when enabled. |
 | `lastModifiedDate` | `string` | Date and time when the export was last modified. |
 | `tableNames` | `array` | An array of tables to export, for example: [“Heartbeat, SecurityEvent”]. |
 | `createdDate` | `string` | The latest data export rule modification time. |
+| `dataExportId` | `string` | The data export rule ID. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

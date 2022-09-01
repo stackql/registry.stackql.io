@@ -29,11 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
+| `startDate` | `string` | The date this billing instruction goes into effect. |
+| `type` | `string` | Resource type. |
 | `amount` | `number` | The amount budgeted for this billing instruction. |
 | `creationDate` | `string` | The date this billing instruction was created. |
 | `endDate` | `string` | The date this billing instruction is no longer in effect. |
-| `startDate` | `string` | The date this billing instruction goes into effect. |
-| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

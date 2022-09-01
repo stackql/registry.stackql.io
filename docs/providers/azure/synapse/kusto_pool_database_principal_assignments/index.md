@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `principalType` | `string` | Principal type. |
-| `principalName` | `string` | The principal name |
+| `principalId` | `string` | The principal ID assigned to the database principal. It can be a user email, application ID, or security group name. |
+| `tenantName` | `string` | The tenant name of the principal |
+| `role` | `string` | Database principal role. |
 | `aadObjectId` | `string` | The service principal object id in AAD (Azure active directory) |
 | `provisioningState` | `string` | The provisioned state of the resource. |
-| `tenantName` | `string` | The tenant name of the principal |
-| `tenantId` | `string` | The tenant id of the principal |
-| `role` | `string` | Database principal role. |
-| `principalId` | `string` | The principal ID assigned to the database principal. It can be a user email, application ID, or security group name. |
+| `principalType` | `string` | Principal type. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `principalName` | `string` | The principal name |
+| `tenantId` | `string` | The tenant id of the principal |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

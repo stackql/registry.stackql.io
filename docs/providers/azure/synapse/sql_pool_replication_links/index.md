@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `percentComplete` | `integer` | The percentage of seeding complete for the replication link. |
-| `role` | `string` | The role of the Sql pool in the replication link. |
-| `startTime` | `string` | The start time for the replication link. |
-| `isTerminationAllowed` | `boolean` | Legacy value indicating whether termination is allowed.  Currently always returns true. |
-| `partnerLocation` | `string` | The Azure Region of the partner Sql pool. |
-| `replicationState` | `string` | The replication state for the replication link. |
-| `replicationMode` | `string` | Replication mode of this replication link. |
 | `partnerRole` | `string` | The role of the partner Sql pool in the replication link. |
+| `replicationMode` | `string` | Replication mode of this replication link. |
+| `partnerLocation` | `string` | The Azure Region of the partner Sql pool. |
+| `startTime` | `string` | The start time for the replication link. |
 | `type` | `string` | Type of resource this is. |
-| `partnerServer` | `string` | The name of the workspace hosting the partner Sql pool. |
-| `location` | `string` | Location of the workspace that contains this firewall rule. |
 | `partnerDatabase` | `string` | The name of the partner Sql pool. |
+| `role` | `string` | The role of the Sql pool in the replication link. |
+| `partnerServer` | `string` | The name of the workspace hosting the partner Sql pool. |
+| `percentComplete` | `integer` | The percentage of seeding complete for the replication link. |
+| `isTerminationAllowed` | `boolean` | Legacy value indicating whether termination is allowed.  Currently always returns true. |
+| `replicationState` | `string` | The replication state for the replication link. |
+| `location` | `string` | Location of the workspace that contains this firewall rule. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

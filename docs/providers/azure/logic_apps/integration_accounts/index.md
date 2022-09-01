@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `location` | `string` | The resource location. |
 | `sku` | `object` | The integration account sku. |
 | `state` | `string` | The workflow state. |
 | `tags` | `object` | The resource tags. |
 | `type` | `string` | Gets the resource type. |
 | `integrationServiceEnvironment` | `object` | The resource reference. |
+| `location` | `string` | The resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

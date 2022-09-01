@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `triggeringLogic` | `object` | Describes automation rule triggering logic. |
-| `lastModifiedBy` | `object` | Information on the client (user or application) that made some action |
 | `actions` | `array` | The actions to execute when the automation rule is triggered. |
-| `createdBy` | `object` | Information on the client (user or application) that made some action |
-| `etag` | `string` | Etag of the azure resource |
-| `displayName` | `string` | The display name of the automation rule. |
-| `order` | `integer` | The order of execution of the automation rule. |
-| `lastModifiedTimeUtc` | `string` | The last time the automation rule was updated. |
+| `triggeringLogic` | `object` | Describes automation rule triggering logic. |
 | `createdTimeUtc` | `string` | The time the automation rule was created. |
+| `lastModifiedTimeUtc` | `string` | The last time the automation rule was updated. |
+| `displayName` | `string` | The display name of the automation rule. |
+| `etag` | `string` | Etag of the azure resource |
+| `lastModifiedBy` | `object` | Information on the client (user or application) that made some action |
+| `order` | `integer` | The order of execution of the automation rule. |
+| `createdBy` | `object` | Information on the client (user or application) that made some action |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

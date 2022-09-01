@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `flowLogs` | `array` | A collection of references to flow log resources. |
-| `networkInterfaces` | `array` | A collection of references to network interfaces. |
-| `defaultSecurityRules` | `array` | The default security rules of network security group. |
-| `subnets` | `array` | A collection of references to subnets. |
-| `securityRules` | `array` | A collection of security rules of the network security group. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `tags` | `object` | Resource tags. |
-| `flushConnection` | `boolean` | When enabled, flows created from Network Security Group connections will be re-evaluated when rules are updates. Initial enablement will trigger re-evaluation. |
 | `type` | `string` | Resource type. |
+| `flushConnection` | `boolean` | When enabled, flows created from Network Security Group connections will be re-evaluated when rules are updates. Initial enablement will trigger re-evaluation. |
+| `securityRules` | `array` | A collection of security rules of the network security group. |
+| `subnets` | `array` | A collection of references to subnets. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `resourceGuid` | `string` | The resource GUID property of the network security group resource. |
+| `tags` | `object` | Resource tags. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `location` | `string` | Resource location. |
+| `flowLogs` | `array` | A collection of references to flow log resources. |
+| `defaultSecurityRules` | `array` | The default security rules of network security group. |
+| `networkInterfaces` | `array` | A collection of references to network interfaces. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `description` | `string` | Portal revision description. |
-| `isCurrent` | `boolean` | Indicates if the portal's revision is public. |
 | `updatedDateTime` | `string` | Last updated date and time. |
-| `statusDetails` | `string` | Portal revision publishing status details. |
+| `isCurrent` | `boolean` | Indicates if the portal's revision is public. |
 | `status` | `string` | Status of the portal's revision. |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `createdDateTime` | `string` | Portal's revision creation date and time. |
+| `statusDetails` | `string` | Portal revision publishing status details. |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

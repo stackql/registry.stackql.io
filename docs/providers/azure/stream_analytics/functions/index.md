@@ -29,8 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `type` | `string` | Resource type |
 | `properties` | `object` | The properties that are associated with a function. |
+| `type` | `string` | Resource type |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

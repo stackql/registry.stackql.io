@@ -27,9 +27,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `publicBlob` | `string` | The certificate public blob |
 | `thumbprint` | `string` | The certificate thumbprint |
 | `certificateName` | `string` | The certificate name |
-| `publicBlob` | `string` | The certificate public blob |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

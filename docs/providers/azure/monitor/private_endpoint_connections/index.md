@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
-| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
-| `privateLinkServiceConnectionState` | `object` | A collection of information about the state of the connection between service consumer and provider. |
 | `privateEndpoint` | `object` | The Private Endpoint resource. |
+| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `type` | `string` | Azure resource type |
 | `location` | `string` | Resource location |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `privateLinkServiceConnectionState` | `object` | A collection of information about the state of the connection between service consumer and provider. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

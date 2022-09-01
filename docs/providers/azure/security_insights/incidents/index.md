@@ -28,26 +28,26 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | The description of the incident |
-| `additionalData` | `object` | Incident additional data property bag. |
-| `providerIncidentId` | `string` | The incident ID assigned by the incident provider |
-| `etag` | `string` | Etag of the azure resource |
-| `incidentUrl` | `string` | The deep-link url to the incident in Azure portal |
-| `classification` | `string` | The reason the incident was closed |
-| `firstActivityTimeUtc` | `string` | The time of the first activity in the incident |
-| `createdTimeUtc` | `string` | The time the incident was created |
-| `teamInformation` | `object` | Describes team information |
-| `lastActivityTimeUtc` | `string` | The time of the last activity in the incident |
-| `severity` | `string` | The severity of the incident |
-| `classificationReason` | `string` | The classification reason the incident was closed with |
-| `status` | `string` | The status of the incident |
-| `incidentNumber` | `integer` | A sequential number |
 | `providerName` | `string` | The name of the source provider that generated the incident |
+| `etag` | `string` | Etag of the azure resource |
+| `status` | `string` | The status of the incident |
 | `title` | `string` | The title of the incident |
+| `owner` | `object` | Information on the user an incident is assigned to |
+| `providerIncidentId` | `string` | The incident ID assigned by the incident provider |
+| `severity` | `string` | The severity of the incident |
+| `labels` | `array` | List of labels relevant to this incident |
+| `lastModifiedTimeUtc` | `string` | The last time the incident was updated |
+| `createdTimeUtc` | `string` | The time the incident was created |
+| `firstActivityTimeUtc` | `string` | The time of the first activity in the incident |
+| `teamInformation` | `object` | Describes team information |
 | `classificationComment` | `string` | Describes the reason the incident was closed |
 | `relatedAnalyticRuleIds` | `array` | List of resource ids of Analytic rules related to the incident |
-| `owner` | `object` | Information on the user an incident is assigned to |
-| `lastModifiedTimeUtc` | `string` | The last time the incident was updated |
-| `labels` | `array` | List of labels relevant to this incident |
+| `incidentNumber` | `integer` | A sequential number |
+| `classificationReason` | `string` | The classification reason the incident was closed with |
+| `incidentUrl` | `string` | The deep-link url to the incident in Azure portal |
+| `classification` | `string` | The reason the incident was closed |
+| `lastActivityTimeUtc` | `string` | The time of the last activity in the incident |
+| `additionalData` | `object` | Incident additional data property bag. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

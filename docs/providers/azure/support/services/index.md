@@ -29,9 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Id of the resource. |
 | `name` | `string` | Name of the resource. |
-| `resourceTypes` | `array` | ARM Resource types. |
 | `type` | `string` | Type of the resource 'Microsoft.Support/services'. |
 | `displayName` | `string` | Localized name of the Azure service. |
+| `resourceTypes` | `array` | ARM Resource types. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

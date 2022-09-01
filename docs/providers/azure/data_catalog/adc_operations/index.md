@@ -27,7 +27,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `name` | `string` | Operation name: {provider}/{resource}/{operation}. |
+| `name` | `string` | Operation name: &#123;provider&#125;/&#123;resource&#125;/&#123;operation&#125;. |
 | `display` | `object` | The operation supported by Azure Data Catalog Service. |
 ## Methods
 | Name | Accessible by | Required Params |

@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `provisioningState` | `string` | The provisioning state of the restore point collection. |
-| `restorePoints` | `array` | A list containing all restore points created under this restore point collection. |
 | `location` | `string` | Resource location |
+| `restorePoints` | `array` | A list containing all restore points created under this restore point collection. |
+| `provisioningState` | `string` | The provisioning state of the restore point collection. |
 | `restorePointCollectionId` | `string` | The unique id of the restore point collection. |
 | `tags` | `object` | Resource tags |
-| `source` | `object` | The properties of the source resource that this restore point collection is created from. |
 | `type` | `string` | Resource type |
+| `source` | `object` | The properties of the source resource that this restore point collection is created from. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

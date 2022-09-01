@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `tags` | `object` | Resource tags. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `containerNetworkInterfaceConfigurations` | `array` | List of chid container network interface configurations. |
 | `type` | `string` | Resource type. |
-| `resourceGuid` | `string` | The resource GUID property of the network profile resource. |
+| `tags` | `object` | Resource tags. |
 | `containerNetworkInterfaces` | `array` | List of child container network interfaces. |
 | `location` | `string` | Resource location. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `containerNetworkInterfaceConfigurations` | `array` | List of chid container network interface configurations. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `resourceGuid` | `string` | The resource GUID property of the network profile resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -31,17 +31,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `name` | `string` | Resource name. |
 | `description` | `string` | Alert description |
 | `details` | `object` | Alert details |
-| `statusModificationUserName` | `string` | User who last modified the alert |
-| `eTag` | `string` | eTag of the resource. To handle concurrent update scenario, this field will be used to determine whether the user is updating the latest version or not. |
-| `creationTime` | `string` | dateTime in which alert was created |
-| `modificationTime` | `string` | dateTime in which alert was last modified |
-| `costEntityId` | `string` | related budget |
-| `type` | `string` | Resource type. |
 | `statusModificationTime` | `string` | dateTime in which the alert status was last modified |
-| `status` | `string` | alert status |
+| `modificationTime` | `string` | dateTime in which alert was last modified |
+| `type` | `string` | Resource type. |
 | `closeTime` | `string` | dateTime in which alert was closed |
-| `definition` | `object` | defines the type of alert |
+| `status` | `string` | alert status |
+| `costEntityId` | `string` | related budget |
+| `statusModificationUserName` | `string` | User who last modified the alert |
 | `source` | `string` | Source of alert |
+| `definition` | `object` | defines the type of alert |
+| `creationTime` | `string` | dateTime in which alert was created |
+| `eTag` | `string` | eTag of the resource. To handle concurrent update scenario, this field will be used to determine whether the user is updating the latest version or not. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

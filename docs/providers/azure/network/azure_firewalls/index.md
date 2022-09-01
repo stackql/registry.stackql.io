@@ -29,24 +29,24 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `additionalProperties` | `object` | The additional properties of azure firewall. |
-| `virtualHub` | `object` | Reference to another subresource. |
-| `firewallPolicy` | `object` | Reference to another subresource. |
-| `type` | `string` | Resource type. |
 | `tags` | `object` | Resource tags. |
-| `ipGroups` | `array` | List of IpGroups associated with azure firewall. |
-| `applicationRuleCollections` | `array` | Collection of application rule collections used by Azure Firewall. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `type` | `string` | Resource type. |
 | `zones` | `array` | A list of availability zones denoting where the resource needs to come from. |
-| `networkRuleCollections` | `array` | Collection of network rule collections used by Azure Firewall. |
-| `managementIpConfiguration` | `object` | IP configuration of an Azure Firewall. |
-| `natRuleCollections` | `array` | Collection of NAT rule collections used by Azure Firewall. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `ipGroups` | `array` | List of IpGroups associated with azure firewall. |
+| `location` | `string` | Resource location. |
+| `hubIPAddresses` | `object` | IP addresses associated with azure firewall. |
 | `ipConfigurations` | `array` | IP configuration of the Azure Firewall resource. |
 | `sku` | `object` | SKU of an Azure Firewall. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `hubIPAddresses` | `object` | IP addresses associated with azure firewall. |
+| `virtualHub` | `object` | Reference to another subresource. |
+| `firewallPolicy` | `object` | Reference to another subresource. |
+| `applicationRuleCollections` | `array` | Collection of application rule collections used by Azure Firewall. |
+| `managementIpConfiguration` | `object` | IP configuration of an Azure Firewall. |
+| `natRuleCollections` | `array` | Collection of NAT rule collections used by Azure Firewall. |
+| `networkRuleCollections` | `array` | Collection of network rule collections used by Azure Firewall. |
 | `threatIntelMode` | `string` | The operation mode for Threat Intel. |
-| `location` | `string` | Resource location. |
+| `additionalProperties` | `object` | The additional properties of azure firewall. |
+| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

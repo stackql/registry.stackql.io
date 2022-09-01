@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Name of the Ip Configuration. |
-| `privateIPAllocationMethod` | `string` | IP address allocation method. |
-| `type` | `string` | Ipconfiguration type. |
-| `privateIPAddress` | `string` | The private IP address of the IP configuration. |
-| `publicIPAddress` | `object` | Public IP address resource. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `subnet` | `object` | Subnet in a virtual network resource. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `subnet` | `object` | Subnet in a virtual network resource. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `publicIPAddress` | `object` | Public IP address resource. |
+| `type` | `string` | Ipconfiguration type. |
+| `privateIPAllocationMethod` | `string` | IP address allocation method. |
+| `privateIPAddress` | `string` | The private IP address of the IP configuration. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

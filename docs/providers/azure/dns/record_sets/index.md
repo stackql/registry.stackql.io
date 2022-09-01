@@ -29,23 +29,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the record set. |
 | `name` | `string` | The name of the record set. |
-| `TTL` | `integer` | The TTL (time-to-live) of the records in the record set. |
 | `MXRecords` | `array` | The list of MX records in the record set. |
 | `etag` | `string` | The etag of the record set. |
-| `fqdn` | `string` | Fully qualified domain name of the record set. |
-| `SOARecord` | `object` | An SOA record. |
-| `AAAARecords` | `array` | The list of AAAA records in the record set. |
-| `NSRecords` | `array` | The list of NS records in the record set. |
-| `TXTRecords` | `array` | The list of TXT records in the record set. |
-| `PTRRecords` | `array` | The list of PTR records in the record set. |
-| `ARecords` | `array` | The list of A records in the record set. |
-| `provisioningState` | `string` | provisioning State of the record set. |
-| `CNAMERecord` | `object` | A CNAME record. |
-| `SRVRecords` | `array` | The list of SRV records in the record set. |
-| `targetResource` | `object` | A reference to a another resource |
-| `caaRecords` | `array` | The list of CAA records in the record set. |
 | `type` | `string` | The type of the record set. |
+| `CNAMERecord` | `object` | A CNAME record. |
 | `metadata` | `object` | The metadata attached to the record set. |
+| `SOARecord` | `object` | An SOA record. |
+| `ARecords` | `array` | The list of A records in the record set. |
+| `SRVRecords` | `array` | The list of SRV records in the record set. |
+| `PTRRecords` | `array` | The list of PTR records in the record set. |
+| `TXTRecords` | `array` | The list of TXT records in the record set. |
+| `AAAARecords` | `array` | The list of AAAA records in the record set. |
+| `fqdn` | `string` | Fully qualified domain name of the record set. |
+| `caaRecords` | `array` | The list of CAA records in the record set. |
+| `NSRecords` | `array` | The list of NS records in the record set. |
+| `targetResource` | `object` | A reference to a another resource |
+| `TTL` | `integer` | The TTL (time-to-live) of the records in the record set. |
+| `provisioningState` | `string` | provisioning State of the record set. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

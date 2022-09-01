@@ -27,17 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `description` | `string` | Description of the topic type. |
-| `resourceRegionType` | `string` | Region type of the resource. |
-| `provisioningState` | `string` | Provisioning state of the topic type |
-| `sourceResourceFormat` | `string` | Source resource format. |
 | `supportedLocations` | `array` | List of locations supported by this topic type. |
+| `sourceResourceFormat` | `string` | Source resource format. |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `provisioningState` | `string` | Provisioning state of the topic type |
+| `displayName` | `string` | Display Name for the topic type. |
+| `resourceRegionType` | `string` | Region type of the resource. |
 | `provider` | `string` | Namespace of the provider of the topic type. |
 | `supportedScopesForSource` | `array` | Supported source scopes. |
-| `displayName` | `string` | Display Name for the topic type. |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

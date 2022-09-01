@@ -29,23 +29,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `displayName` | `string` | The name of the subscription. |
 | `monthToDateCharges` | `object` | The amount. |
-| `invoiceSectionDisplayName` | `string` | The name of the invoice section to which the subscription is billed. |
-| `subscriptionId` | `string` | The ID of the subscription. |
 | `skuDescription` | `string` | The sku description of the Azure plan for the subscription. |
+| `customerId` | `string` | The ID of the customer for whom the subscription was created. The field is applicable only for Microsoft Partner Agreement billing account. |
 | `billingProfileId` | `string` | The ID of the billing profile to which the subscription is billed. |
 | `skuId` | `string` | The sku ID of the Azure plan for the subscription. |
-| `reseller` | `object` | Details of the reseller. |
-| `costCenter` | `string` | The cost center applied to the subscription. |
-| `customerId` | `string` | The ID of the customer for whom the subscription was created. The field is applicable only for Microsoft Partner Agreement billing account. |
-| `customerDisplayName` | `string` | The name of the customer for whom the subscription was created. The field is applicable only for Microsoft Partner Agreement billing account. |
 | `type` | `string` | Resource type. |
-| `billingProfileDisplayName` | `string` | The name of the billing profile to which the subscription is billed. |
-| `subscriptionBillingStatus` | `string` | The current billing status of the subscription. |
+| `customerDisplayName` | `string` | The name of the customer for whom the subscription was created. The field is applicable only for Microsoft Partner Agreement billing account. |
 | `suspensionReasons` | `array` | The suspension reason for a subscription. Applies only to subscriptions in Microsoft Online Services Program billing accounts. |
-| `lastMonthCharges` | `object` | The amount. |
+| `reseller` | `object` | Details of the reseller. |
 | `invoiceSectionId` | `string` | The ID of the invoice section to which the subscription is billed. |
+| `lastMonthCharges` | `object` | The amount. |
+| `subscriptionBillingStatus` | `string` | The current billing status of the subscription. |
+| `subscriptionId` | `string` | The ID of the subscription. |
+| `billingProfileDisplayName` | `string` | The name of the billing profile to which the subscription is billed. |
+| `costCenter` | `string` | The cost center applied to the subscription. |
+| `invoiceSectionDisplayName` | `string` | The name of the invoice section to which the subscription is billed. |
+| `displayName` | `string` | The name of the subscription. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

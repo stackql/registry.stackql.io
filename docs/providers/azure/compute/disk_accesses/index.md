@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
+| `type` | `string` | Resource type |
+| `tags` | `object` | Resource tags |
+| `timeCreated` | `string` | The time when the disk access was created. |
+| `provisioningState` | `string` | The disk access resource provisioning state. |
 | `extendedLocation` | `object` | The complex type of the extended location. |
 | `privateEndpointConnections` | `array` | A readonly collection of private endpoint connections created on the disk. Currently only one endpoint connection is supported. |
-| `type` | `string` | Resource type |
-| `timeCreated` | `string` | The time when the disk access was created. |
 | `location` | `string` | Resource location |
-| `provisioningState` | `string` | The disk access resource provisioning state. |
-| `tags` | `object` | Resource tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

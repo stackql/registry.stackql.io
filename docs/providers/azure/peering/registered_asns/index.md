@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `peeringServicePrefixKey` | `string` | The peering service prefix key that is to be shared with the customer. |
 | `provisioningState` | `string` | The provisioning state of the resource. |
 | `type` | `string` | The type of the resource. |
 | `asn` | `integer` | The customer's ASN from which traffic originates. |
+| `peeringServicePrefixKey` | `string` | The peering service prefix key that is to be shared with the customer. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

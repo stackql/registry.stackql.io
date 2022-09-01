@@ -29,24 +29,24 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `vpnClientIpsecPolicies` | `array` | VpnClientIpsecPolicies for VpnServerConfiguration. |
-| `configurationPolicyGroups` | `array` | List of all VpnServerConfigurationPolicyGroups. |
-| `location` | `string` | Resource location. |
 | `tags` | `object` | Resource tags. |
-| `vpnClientRootCertificates` | `array` | VPN client root certificate of VpnServerConfiguration. |
-| `radiusServers` | `array` | Multiple Radius Server configuration for VpnServerConfiguration. |
+| `radiusServerSecret` | `string` | The radius secret property of the VpnServerConfiguration resource for point to site client connection. |
+| `vpnClientIpsecPolicies` | `array` | VpnClientIpsecPolicies for VpnServerConfiguration. |
 | `radiusServerAddress` | `string` | The radius server address property of the VpnServerConfiguration resource for point to site client connection. |
-| `aadAuthenticationParameters` | `object` | AAD Vpn authentication type related parameters. |
+| `vpnClientRevokedCertificates` | `array` | VPN client revoked certificate of VpnServerConfiguration. |
+| `p2SVpnGateways` | `array` | List of references to P2SVpnGateways. |
+| `radiusServers` | `array` | Multiple Radius Server configuration for VpnServerConfiguration. |
+| `type` | `string` | Resource type. |
 | `provisioningState` | `string` | The provisioning state of the VpnServerConfiguration resource. Possible values are: 'Updating', 'Deleting', and 'Failed'. |
 | `radiusClientRootCertificates` | `array` | Radius client root certificate of VpnServerConfiguration. |
-| `p2SVpnGateways` | `array` | List of references to P2SVpnGateways. |
-| `vpnClientRevokedCertificates` | `array` | VPN client revoked certificate of VpnServerConfiguration. |
-| `vpnProtocols` | `array` | VPN protocols for the VpnServerConfiguration. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `type` | `string` | Resource type. |
+| `vpnClientRootCertificates` | `array` | VPN client root certificate of VpnServerConfiguration. |
 | `radiusServerRootCertificates` | `array` | Radius Server root certificate of VpnServerConfiguration. |
+| `aadAuthenticationParameters` | `object` | AAD Vpn authentication type related parameters. |
+| `vpnProtocols` | `array` | VPN protocols for the VpnServerConfiguration. |
+| `location` | `string` | Resource location. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `vpnAuthenticationTypes` | `array` | VPN authentication types for the VpnServerConfiguration. |
-| `radiusServerSecret` | `string` | The radius secret property of the VpnServerConfiguration resource for point to site client connection. |
+| `configurationPolicyGroups` | `array` | List of all VpnServerConfigurationPolicyGroups. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

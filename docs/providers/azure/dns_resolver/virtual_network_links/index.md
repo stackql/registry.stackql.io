@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `virtualNetwork` | `object` | Reference to another ARM resource. |
 | `etag` | `string` | ETag of the virtual network link. |
 | `metadata` | `object` | Metadata attached to the virtual network link. |
 | `provisioningState` | `string` | The current provisioning state of the resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `virtualNetwork` | `object` | Reference to another ARM resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

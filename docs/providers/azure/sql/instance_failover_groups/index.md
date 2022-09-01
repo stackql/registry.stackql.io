@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `replicationState` | `string` | Replication state of the failover group instance. |
-| `managedInstancePairs` | `array` | List of managed instance pairs in the failover group. |
 | `partnerRegions` | `array` | Partner region information for the failover group. |
 | `readOnlyEndpoint` | `object` | Read-only endpoint of the failover group instance. |
 | `readWriteEndpoint` | `object` | Read-write endpoint of the failover group instance. |
 | `replicationRole` | `string` | Local replication role of the failover group instance. |
+| `replicationState` | `string` | Replication state of the failover group instance. |
+| `managedInstancePairs` | `array` | List of managed instance pairs in the failover group. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

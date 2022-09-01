@@ -29,15 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `instanceView` | `object` |  |
-| `tags` | `object` | Resource tags |
-| `hosts` | `array` | A list of references to all dedicated hosts in the dedicated host group. |
-| `zones` | `array` | Availability Zone to use for this host group. Only single zone is supported. The zone can be assigned only during creation. If not provided, the group supports all zones in the region. If provided, enforces each host in the group to be in the same zone. |
 | `supportAutomaticPlacement` | `boolean` | Specifies whether virtual machines or virtual machine scale sets can be placed automatically on the dedicated host group. Automatic placement means resources are allocated on dedicated hosts, that are chosen by Azure, under the dedicated host group. The value is defaulted to 'false' when not provided. &lt;br&gt;&lt;br&gt;Minimum api-version: 2020-06-01. |
-| `location` | `string` | Resource location |
 | `type` | `string` | Resource type |
-| `platformFaultDomainCount` | `integer` | Number of fault domains that the host group can span. |
+| `hosts` | `array` | A list of references to all dedicated hosts in the dedicated host group. |
+| `location` | `string` | Resource location |
 | `additionalCapabilities` | `object` | Enables or disables a capability on the dedicated host group.&lt;br&gt;&lt;br&gt;Minimum api-version: 2022-03-01. |
+| `tags` | `object` | Resource tags |
+| `platformFaultDomainCount` | `integer` | Number of fault domains that the host group can span. |
+| `zones` | `array` | Availability Zone to use for this host group. Only single zone is supported. The zone can be assigned only during creation. If not provided, the group supports all zones in the region. If provided, enforces each host in the group to be in the same zone. |
+| `instanceView` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

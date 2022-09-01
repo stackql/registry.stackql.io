@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `provisioningState` | `string` | The provisioning state. |
-| `storageProfile` | `object` | Describes a storage profile. |
-| `sourceVirtualMachine` | `object` |  |
-| `hyperVGeneration` | `string` | Specifies the HyperVGeneration Type |
+| `type` | `string` | Resource type |
 | `tags` | `object` | Resource tags |
+| `hyperVGeneration` | `string` | Specifies the HyperVGeneration Type |
 | `extendedLocation` | `object` | The complex type of the extended location. |
 | `location` | `string` | Resource location |
-| `type` | `string` | Resource type |
+| `provisioningState` | `string` | The provisioning state. |
+| `sourceVirtualMachine` | `object` |  |
+| `storageProfile` | `object` | Describes a storage profile. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

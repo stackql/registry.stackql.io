@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
+| `details` | `object` | Information about the disk image. |
 | `location` | `string` | Location of the resource. |
 | `osDisk` | `object` | Operating system disk. |
 | `provisioningState` | `string` | The provisioning state of the resource. |
 | `type` | `string` | Type of Resource. |
 | `dataDisks` | `array` | Data disks used by the platform image. |
-| `details` | `object` | Information about the disk image. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

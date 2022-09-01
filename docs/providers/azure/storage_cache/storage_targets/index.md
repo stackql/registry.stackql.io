@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID of the Storage Target. |
 | `name` | `string` | Schema for the name of resources served by this provider. Note that objects will contain an odata @id annotation as appropriate. This will contain the complete URL of the object. These names are case-preserving, but not case sensitive. |
-| `type` | `string` | Type of the Storage Target; Microsoft.StorageCache/Cache/StorageTarget |
-| `clfs` | `object` | Properties pertaining to the ClfsTarget |
-| `unknown` | `object` | Properties pertaining to the UnknownTarget |
-| `targetType` | `string` | Type of the Storage Target. |
-| `junctions` | `array` | List of Cache namespace junctions to target for namespace associations. |
-| `provisioningState` | `string` | ARM provisioning state, see https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/Addendum.md#provisioningstate-property |
-| `nfs3` | `object` | Properties pertaining to the Nfs3Target |
-| `blobNfs` | `object` | Properties pertaining to the BlobNfsTarget. |
 | `location` | `string` | Region name string. |
-| `allocationPercentage` | `integer` | The percentage of cache space allocated for this storage target |
+| `nfs3` | `object` | Properties pertaining to the Nfs3Target |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `state` | `string` | Storage target operational state. |
+| `junctions` | `array` | List of Cache namespace junctions to target for namespace associations. |
+| `blobNfs` | `object` | Properties pertaining to the BlobNfsTarget. |
+| `clfs` | `object` | Properties pertaining to the ClfsTarget |
+| `targetType` | `string` | Type of the Storage Target. |
+| `unknown` | `object` | Properties pertaining to the UnknownTarget |
+| `type` | `string` | Type of the Storage Target; Microsoft.StorageCache/Cache/StorageTarget |
+| `allocationPercentage` | `integer` | The percentage of cache space allocated for this storage target |
+| `provisioningState` | `string` | ARM provisioning state, see https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/Addendum.md#provisioningstate-property |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

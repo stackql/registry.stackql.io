@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `soldTo` | `object` | Address details. |
-| `billingProfiles` | `object` | The billing profiles associated with the billing account. By default this is not populated, unless it's specified in $expand. |
-| `hasReadAccess` | `boolean` | Indicates whether user has read access to the billing account. |
-| `enrollmentAccounts` | `array` | The accounts associated to the enrollment. |
-| `notificationEmailAddress` | `string` | Notification email address, only for legacy accounts |
-| `type` | `string` | Resource type. |
-| `enrollmentDetails` | `object` | The properties of an enrollment. |
 | `displayName` | `string` | The billing account name. |
-| `accountType` | `string` | The type of customer. |
-| `agreementType` | `string` | The type of agreement. |
+| `soldTo` | `object` | Address details. |
+| `enrollmentAccounts` | `array` | The accounts associated to the enrollment. |
+| `hasReadAccess` | `boolean` | Indicates whether user has read access to the billing account. |
 | `departments` | `array` | The departments associated to the enrollment. |
+| `agreementType` | `string` | The type of agreement. |
+| `notificationEmailAddress` | `string` | Notification email address, only for legacy accounts |
 | `accountStatus` | `string` | The current status of the billing account. |
+| `billingProfiles` | `object` | The billing profiles associated with the billing account. By default this is not populated, unless it's specified in $expand. |
+| `accountType` | `string` | The type of customer. |
+| `enrollmentDetails` | `object` | The properties of an enrollment. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

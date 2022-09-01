@@ -30,14 +30,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
 | `description` | `string` | The description of this Shared Image Gallery resource. This property is updatable. |
-| `location` | `string` | Resource location |
-| `tags` | `object` | Resource tags |
+| `identifier` | `object` | Describes the gallery unique name. |
 | `provisioningState` | `string` | The provisioning state, which only appears in the response. |
 | `type` | `string` | Resource type |
+| `location` | `string` | Resource location |
+| `sharingProfile` | `object` | Profile for gallery sharing to subscription or tenant |
 | `sharingStatus` | `object` | Sharing status of current gallery. |
 | `softDeletePolicy` | `object` | Contains information about the soft deletion policy of the gallery. |
-| `sharingProfile` | `object` | Profile for gallery sharing to subscription or tenant |
-| `identifier` | `object` | Describes the gallery unique name. |
+| `tags` | `object` | Resource tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

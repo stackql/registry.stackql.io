@@ -27,20 +27,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `alertType` | `string` | Type of the alert to automatically suppress. For all alert types, use '*' |
-| `expirationDateUtc` | `string` | Expiration date of the rule, if value is not provided or provided as null this field will default to the maximum allowed expiration date. |
-| `state` | `string` | Possible states of the rule |
-| `suppressionAlertsScope` | `object` |  |
 | `comment` | `string` | Any comment regarding the rule |
 | `lastModifiedUtc` | `string` | The last time this rule was modified |
+| `expirationDateUtc` | `string` | Expiration date of the rule, if value is not provided or provided as null this field will default to the maximum allowed expiration date. |
 | `reason` | `string` | The reason for dismissing the alert |
+| `suppressionAlertsScope` | `object` |  |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `alertType` | `string` | Type of the alert to automatically suppress. For all alert types, use '*' |
+| `state` | `string` | Possible states of the rule |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
 | `AlertsSuppressionRules_List` | `SELECT` | `api-version, subscriptionId` | List of all the dismiss rules for the given subscription |
 | `AlertsSuppressionRules_Delete` | `DELETE` | `alertsSuppressionRuleName, api-version, subscriptionId` | Delete dismiss alert rule for this subscription. |
-| `AlertsSuppressionRules_Get` | `EXEC` | `alertsSuppressionRuleName, api-version, subscriptionId` | Get dismiss rule, with name: {alertsSuppressionRuleName}, for the given subscription |
+| `AlertsSuppressionRules_Get` | `EXEC` | `alertsSuppressionRuleName, api-version, subscriptionId` | Get dismiss rule, with name: &#123;alertsSuppressionRuleName&#125;, for the given subscription |
 | `AlertsSuppressionRules_Update` | `EXEC` | `alertsSuppressionRuleName, api-version, subscriptionId` | Update existing rule or create new rule if it doesn't exist |

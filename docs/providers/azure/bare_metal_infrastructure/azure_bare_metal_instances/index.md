@@ -27,19 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `osProfile` | `object` | Specifies the operating system settings for the AzureBareMetal instance. |
-| `azureBareMetalInstanceId` | `string` | Specifies the AzureBareMetal instance unique ID. |
-| `storageProfile` | `object` | Specifies the storage settings for the AzureBareMetal instance disks. |
-| `partnerNodeId` | `string` | ARM ID of another AzureBareMetalInstance that will share a network with this AzureBareMetalInstance |
-| `tags` | `object` | Resource tags. |
-| `location` | `string` | The geo-location where the resource lives |
 | `powerState` | `string` | Resource power state |
-| `hwRevision` | `string` | Hardware revision of an AzureBareMetal instance |
-| `hardwareProfile` | `object` | Specifies the hardware settings for the AzureBareMetal instance. |
-| `provisioningState` | `string` | State of provisioning of the AzureBareMetalInstance |
+| `azureBareMetalInstanceId` | `string` | Specifies the AzureBareMetal instance unique ID. |
 | `networkProfile` | `object` | Specifies the network settings for the AzureBareMetal instance disks. |
-| `proximityPlacementGroup` | `string` | Resource proximity placement group |
+| `partnerNodeId` | `string` | ARM ID of another AzureBareMetalInstance that will share a network with this AzureBareMetalInstance |
+| `provisioningState` | `string` | State of provisioning of the AzureBareMetalInstance |
+| `tags` | `object` | Resource tags. |
+| `storageProfile` | `object` | Specifies the storage settings for the AzureBareMetal instance disks. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `osProfile` | `object` | Specifies the operating system settings for the AzureBareMetal instance. |
+| `proximityPlacementGroup` | `string` | Resource proximity placement group |
+| `hardwareProfile` | `object` | Specifies the hardware settings for the AzureBareMetal instance. |
+| `hwRevision` | `string` | Hardware revision of an AzureBareMetal instance |
+| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

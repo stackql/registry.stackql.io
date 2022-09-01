@@ -30,11 +30,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
 | `description` | `string` | A description for this rule. Restricted to 140 chars. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `service` | `string` | Service endpoint name. |
 | `serviceResources` | `array` | A list of service resources. |
 | `type` | `string` | The type of the resource. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

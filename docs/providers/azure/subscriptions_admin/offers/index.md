@@ -30,16 +30,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
 | `description` | `string` | Description of offer. |
+| `maxSubscriptionsPerAccount` | `integer` | Maximum subscriptions per account. |
+| `displayName` | `string` | Display name of offer. |
 | `type` | `string` | Type of resource. |
+| `externalReferenceId` | `string` | External reference identifier. |
+| `state` | `string` | Represents the state of the offer |
+| `basePlanIds` | `array` | Identifiers of the base plans that become available to the tenant immediately when a tenant subscribes to the offer. |
+| `subscriptionCount` | `integer` | Current subscription count. |
 | `location` | `string` | Location of the resource |
 | `tags` | `object` | List of key-value pairs. |
-| `displayName` | `string` | Display name of offer. |
-| `basePlanIds` | `array` | Identifiers of the base plans that become available to the tenant immediately when a tenant subscribes to the offer. |
 | `addonPlans` | `array` | References to add-on plans that a tenant can optionally acquire as a part of the offer. |
-| `externalReferenceId` | `string` | External reference identifier. |
-| `subscriptionCount` | `integer` | Current subscription count. |
-| `state` | `string` | Represents the state of the offer |
-| `maxSubscriptionsPerAccount` | `integer` | Maximum subscriptions per account. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

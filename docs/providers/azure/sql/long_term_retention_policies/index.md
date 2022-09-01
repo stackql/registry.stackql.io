@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `weeklyRetention` | `string` | The weekly retention policy for an LTR backup in an ISO 8601 format. |
-| `yearlyRetention` | `string` | The yearly retention policy for an LTR backup in an ISO 8601 format. |
 | `monthlyRetention` | `string` | The monthly retention policy for an LTR backup in an ISO 8601 format. |
 | `weekOfYear` | `integer` | The week of year to take the yearly backup in an ISO 8601 format. |
+| `weeklyRetention` | `string` | The weekly retention policy for an LTR backup in an ISO 8601 format. |
+| `yearlyRetention` | `string` | The yearly retention policy for an LTR backup in an ISO 8601 format. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

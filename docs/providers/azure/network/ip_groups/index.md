@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
+| `location` | `string` | Resource location. |
+| `type` | `string` | Resource type. |
+| `ipAddresses` | `array` | IpAddresses/IpAddressPrefixes in the IpGroups resource. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `tags` | `object` | Resource tags. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `firewallPolicies` | `array` | List of references to Firewall Policies resources that this IpGroups is associated with. |
-| `location` | `string` | Resource location. |
 | `firewalls` | `array` | List of references to Firewall resources that this IpGroups is associated with. |
-| `ipAddresses` | `array` | IpAddresses/IpAddressPrefixes in the IpGroups resource. |
-| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

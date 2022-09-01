@@ -27,24 +27,24 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `uiDefinitionUri` | `string` | The blob URI where the UI definition file is located. |
-| `updatedBy` | `object` | Provides details of the entity that created/updated the workspace. |
-| `parameters` | `object` | Custom Parameters used for Cluster Creation. |
-| `authorizations` | `array` | The workspace provider authorizations. |
-| `privateEndpointConnections` | `array` | Private endpoint connections created on the workspace |
+| `tags` | `object` | Resource tags. |
 | `encryption` | `object` | Encryption properties for databricks workspace |
-| `storageAccountIdentity` | `object` | The Managed Identity details for storage account. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `managedResourceGroupId` | `string` | The managed resource group Id. |
-| `sku` | `object` | SKU for the resource. |
-| `requiredNsgRules` | `string` | Gets or sets a value indicating whether data plane (clusters) to control plane communication happen over private endpoint. Supported values are 'AllRules' and 'NoAzureDatabricksRules'. 'NoAzureServiceRules' value is for internal use only. |
-| `location` | `string` | The geo-location where the resource lives |
-| `workspaceUrl` | `string` | The workspace URL which is of the format 'adb-{workspaceId}.{random}.azuredatabricks.net' |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `workspaceUrl` | `string` | The workspace URL which is of the format 'adb-&#123;workspaceId&#125;.&#123;random&#125;.azuredatabricks.net' |
+| `privateEndpointConnections` | `array` | Private endpoint connections created on the workspace |
 | `workspaceId` | `string` | The unique identifier of the databricks workspace in databricks control plane. |
 | `publicNetworkAccess` | `string` | The network access type for accessing workspace. Set value to disabled to access workspace only via private link. |
-| `createdDateTime` | `string` | The date and time stamp when the workspace was created. |
-| `tags` | `object` | Resource tags. |
+| `sku` | `object` | SKU for the resource. |
+| `authorizations` | `array` | The workspace provider authorizations. |
+| `requiredNsgRules` | `string` | Gets or sets a value indicating whether data plane (clusters) to control plane communication happen over private endpoint. Supported values are 'AllRules' and 'NoAzureDatabricksRules'. 'NoAzureServiceRules' value is for internal use only. |
+| `location` | `string` | The geo-location where the resource lives |
+| `storageAccountIdentity` | `object` | The Managed Identity details for storage account. |
+| `updatedBy` | `object` | Provides details of the entity that created/updated the workspace. |
 | `provisioningState` | `string` | Provisioning status of the workspace. |
+| `uiDefinitionUri` | `string` | The blob URI where the UI definition file is located. |
+| `createdDateTime` | `string` | The date and time stamp when the workspace was created. |
+| `parameters` | `object` | Custom Parameters used for Cluster Creation. |
 | `createdBy` | `object` | Provides details of the entity that created/updated the workspace. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

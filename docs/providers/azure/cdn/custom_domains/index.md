@@ -27,13 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `customHttpsProvisioningState` | `string` | Provisioning status of the custom domain. |
+| `customHttpsProvisioningSubstate` | `string` | Provisioning substate shows the progress of custom HTTPS enabling/disabling process step by step. |
 | `hostName` | `string` | The host name of the custom domain. Must be a domain name. |
 | `provisioningState` | `string` | Provisioning status of Custom Https of the custom domain. |
 | `resourceState` | `string` | Resource status of the custom domain. |
 | `validationData` | `string` | Special validation or data may be required when delivering CDN to some regions due to local compliance reasons. E.g. ICP license number of a custom domain is required to deliver content in China. |
 | `customHttpsParameters` | `object` | The JSON object that contains the properties to secure a custom domain. |
-| `customHttpsProvisioningState` | `string` | Provisioning status of the custom domain. |
-| `customHttpsProvisioningSubstate` | `string` | Provisioning substate shows the progress of custom HTTPS enabling/disabling process step by step. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

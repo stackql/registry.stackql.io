@@ -33,10 +33,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `etag` | `string` | Azure resource etag. |
 | `tags` | `object` | Azure resource tags. |
 | `typeName` | `string` | The application type name as defined in the application manifest. |
-| `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `location` | `string` | It will be deprecated in New API, resource location depends on the parent resource. |
 | `type` | `string` | Azure resource type. |
+| `location` | `string` | It will be deprecated in New API, resource location depends on the parent resource. |
+| `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

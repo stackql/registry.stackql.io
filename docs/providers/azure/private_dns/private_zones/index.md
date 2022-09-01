@@ -27,17 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `etag` | `string` | The ETag of the zone. |
-| `location` | `string` | The Azure Region where the resource lives |
+| `maxNumberOfVirtualNetworkLinks` | `integer` | The maximum number of virtual networks that can be linked to this Private DNS zone. This is a read-only property and any attempt to set this value will be ignored. |
 | `internalId` | `string` | Private zone internal Id |
 | `maxNumberOfRecordSets` | `integer` | The maximum number of record sets that can be created in this Private DNS zone. This is a read-only property and any attempt to set this value will be ignored. |
-| `numberOfVirtualNetworkLinks` | `integer` | The current number of virtual networks that are linked to this Private DNS zone. This is a read-only property and any attempt to set this value will be ignored. |
-| `numberOfVirtualNetworkLinksWithRegistration` | `integer` | The current number of virtual networks that are linked to this Private DNS zone with registration enabled. This is a read-only property and any attempt to set this value will be ignored. |
-| `maxNumberOfVirtualNetworkLinks` | `integer` | The maximum number of virtual networks that can be linked to this Private DNS zone. This is a read-only property and any attempt to set this value will be ignored. |
-| `maxNumberOfVirtualNetworkLinksWithRegistration` | `integer` | The maximum number of virtual networks that can be linked to this Private DNS zone with registration enabled. This is a read-only property and any attempt to set this value will be ignored. |
+| `location` | `string` | The Azure Region where the resource lives |
 | `tags` | `object` | Resource tags. |
+| `etag` | `string` | The ETag of the zone. |
+| `numberOfVirtualNetworkLinksWithRegistration` | `integer` | The current number of virtual networks that are linked to this Private DNS zone with registration enabled. This is a read-only property and any attempt to set this value will be ignored. |
 | `provisioningState` | `string` | The provisioning state of the resource. This is a read-only property and any attempt to set this value will be ignored. |
+| `maxNumberOfVirtualNetworkLinksWithRegistration` | `integer` | The maximum number of virtual networks that can be linked to this Private DNS zone with registration enabled. This is a read-only property and any attempt to set this value will be ignored. |
 | `numberOfRecordSets` | `integer` | The current number of record sets in this Private DNS zone. This is a read-only property and any attempt to set this value will be ignored. |
+| `numberOfVirtualNetworkLinks` | `integer` | The current number of virtual networks that are linked to this Private DNS zone. This is a read-only property and any attempt to set this value will be ignored. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

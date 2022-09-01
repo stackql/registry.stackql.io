@@ -27,20 +27,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `identity` | `object` | Identity for the resource. |
+| `lastModifiedDate` | `string` | The last time the cluster was updated. |
+| `capacityReservationProperties` | `object` | The Capacity Reservation properties. |
+| `billingType` | `string` | Configures whether billing will be only on the cluster or each workspace will be billed by its proportional use. This does not change the overall billing, only how it will be distributed. Default value is 'Cluster' |
+| `sku` | `object` | The cluster sku definition. |
 | `tags` | `object` | Resource tags. |
+| `provisioningState` | `string` | The provisioning state of the cluster. |
+| `associatedWorkspaces` | `array` | The list of Log Analytics workspaces associated with the cluster |
+| `identity` | `object` | Identity for the resource. |
+| `isAvailabilityZonesEnabled` | `boolean` | Sets whether the cluster will support availability zones. This can be set as true only in regions where Azure Data Explorer support Availability Zones. This Property can not be modified after cluster creation. Default value is 'true' if region supports Availability Zones. |
 | `location` | `string` | The geo-location where the resource lives |
 | `createdDate` | `string` | The cluster creation time |
-| `provisioningState` | `string` | The provisioning state of the cluster. |
-| `isDoubleEncryptionEnabled` | `boolean` | Configures whether cluster will use double encryption. This Property can not be modified after cluster creation. Default value is 'true' |
 | `clusterId` | `string` | The ID associated with the cluster. |
-| `capacityReservationProperties` | `object` | The Capacity Reservation properties. |
-| `lastModifiedDate` | `string` | The last time the cluster was updated. |
-| `associatedWorkspaces` | `array` | The list of Log Analytics workspaces associated with the cluster |
-| `billingType` | `string` | Configures whether billing will be only on the cluster or each workspace will be billed by its proportional use. This does not change the overall billing, only how it will be distributed. Default value is 'Cluster' |
+| `isDoubleEncryptionEnabled` | `boolean` | Configures whether cluster will use double encryption. This Property can not be modified after cluster creation. Default value is 'true' |
 | `keyVaultProperties` | `object` | The key vault properties. |
-| `sku` | `object` | The cluster sku definition. |
-| `isAvailabilityZonesEnabled` | `boolean` | Sets whether the cluster will support availability zones. This can be set as true only in regions where Azure Data Explorer support Availability Zones. This Property can not be modified after cluster creation. Default value is 'true' if region supports Availability Zones. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

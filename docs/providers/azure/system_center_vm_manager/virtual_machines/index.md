@@ -29,27 +29,27 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
-| `checkpointType` | `string` | Type of checkpoint supported for the vm. |
 | `type` | `string` | Resource Type |
-| `vmName` | `string` | VMName is the name of VM on the SCVMM server. |
-| `uuid` | `string` | Unique ID of the virtual machine. |
-| `inventoryItemId` | `string` | Gets or sets the inventory Item ID for the resource. |
-| `tags` | `object` | Resource tags |
-| `availabilitySets` | `array` | Availability Sets in vm. |
-| `hardwareProfile` | `object` | Defines the resource properties. |
 | `location` | `string` | Gets or sets the location. |
-| `cloudId` | `string` | ARM Id of the cloud resource to use for deploying the vm. |
-| `storageProfile` | `object` | Defines the resource properties. |
+| `checkpointType` | `string` | Type of checkpoint supported for the vm. |
+| `tags` | `object` | Resource tags |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `osProfile` | `object` | Defines the resource properties. |
-| `powerState` | `string` | Gets the power state of the virtual machine. |
-| `extendedLocation` | `object` | The extended location. |
-| `templateId` | `string` | ARM Id of the template resource to use for deploying the vm. |
-| `provisioningState` | `string` | Gets or sets the provisioning state. |
+| `inventoryItemId` | `string` | Gets or sets the inventory Item ID for the resource. |
+| `vmmServerId` | `string` | ARM Id of the vmmServer resource in which this resource resides. |
 | `generation` | `integer` | Gets or sets the generation for the vm. |
 | `checkpoints` | `array` | Checkpoints in the vm. |
-| `vmmServerId` | `string` | ARM Id of the vmmServer resource in which this resource resides. |
+| `provisioningState` | `string` | Gets or sets the provisioning state. |
+| `cloudId` | `string` | ARM Id of the cloud resource to use for deploying the vm. |
+| `extendedLocation` | `object` | The extended location. |
+| `powerState` | `string` | Gets the power state of the virtual machine. |
 | `networkProfile` | `object` | Defines the resource properties. |
+| `storageProfile` | `object` | Defines the resource properties. |
+| `hardwareProfile` | `object` | Defines the resource properties. |
+| `templateId` | `string` | ARM Id of the template resource to use for deploying the vm. |
+| `vmName` | `string` | VMName is the name of VM on the SCVMM server. |
+| `availabilitySets` | `array` | Availability Sets in vm. |
+| `uuid` | `string` | Unique ID of the virtual machine. |
+| `osProfile` | `object` | Defines the resource properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

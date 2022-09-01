@@ -29,23 +29,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
-| `Configuration` | `object` | An XML configuration specification for a WebTest. |
-| `Description` | `string` | User defined description for this WebTest. |
-| `location` | `string` | Resource location |
-| `Request` | `object` | The collection of request properties |
-| `ValidationRules` | `object` | The collection of validation rule properties |
-| `RetryEnabled` | `boolean` | Allow for retries should this WebTest fail. |
 | `provisioningState` | `string` | Current state of this component, whether or not is has been provisioned within the resource group it is defined. Users cannot change this value but are able to read from it. Values will include Succeeded, Deploying, Canceled, and Failed. |
 | `type` | `string` | Azure resource type |
-| `Timeout` | `integer` | Seconds until this WebTest will timeout and fail. Default value is 30. |
-| `Frequency` | `integer` | Interval in seconds between test runs for this WebTest. Default value is 300. |
 | `Kind` | `string` | The kind of web test this is, valid choices are ping, multistep and standard. |
-| `kind` | `string` | The kind of WebTest that this web test watches. Choices are ping, multistep and standard. |
-| `tags` | `` | Resource tags |
-| `SyntheticMonitorId` | `string` | Unique ID of this WebTest. This is typically the same value as the Name field. |
-| `Locations` | `array` | A list of where to physically run the tests from to give global coverage for accessibility of your application. |
 | `Name` | `string` | User defined name if this WebTest. |
+| `Frequency` | `integer` | Interval in seconds between test runs for this WebTest. Default value is 300. |
 | `Enabled` | `boolean` | Is the test actively being monitored. |
+| `ValidationRules` | `object` | The collection of validation rule properties |
+| `location` | `string` | Resource location |
+| `Locations` | `array` | A list of where to physically run the tests from to give global coverage for accessibility of your application. |
+| `tags` | `` | Resource tags |
+| `RetryEnabled` | `boolean` | Allow for retries should this WebTest fail. |
+| `Timeout` | `integer` | Seconds until this WebTest will timeout and fail. Default value is 30. |
+| `Description` | `string` | User defined description for this WebTest. |
+| `Configuration` | `object` | An XML configuration specification for a WebTest. |
+| `Request` | `object` | The collection of request properties |
+| `SyntheticMonitorId` | `string` | Unique ID of this WebTest. This is typically the same value as the Name field. |
+| `kind` | `string` | The kind of WebTest that this web test watches. Choices are ping, multistep and standard. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

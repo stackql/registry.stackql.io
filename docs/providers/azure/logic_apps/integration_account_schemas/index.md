@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
+| `schemaType` | `string` | The schema type. |
 | `metadata` | `object` | The metadata. |
-| `contentType` | `string` | The content type. |
-| `contentLink` | `object` | The content link. |
 | `type` | `string` | Gets the resource type. |
 | `tags` | `object` | The resource tags. |
-| `changedTime` | `string` | The changed time. |
-| `documentName` | `string` | The document name. |
-| `fileName` | `string` | The file name. |
 | `content` | `string` | The content. |
-| `location` | `string` | The resource location. |
+| `contentType` | `string` | The content type. |
 | `createdTime` | `string` | The created time. |
-| `schemaType` | `string` | The schema type. |
+| `contentLink` | `object` | The content link. |
 | `targetNamespace` | `string` | The target namespace of the schema. |
+| `fileName` | `string` | The file name. |
+| `changedTime` | `string` | The changed time. |
+| `location` | `string` | The resource location. |
+| `documentName` | `string` | The document name. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

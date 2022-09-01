@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified identifier of the key vault resource. |
 | `name` | `string` | Name of the key vault resource. |
-| `keyOps` | `array` |  |
-| `kty` | `string` | The type of the key. For valid values, see JsonWebKeyType. |
-| `attributes` | `object` | The object attributes managed by the Azure Key Vault service. |
-| `keyUri` | `string` | The URI to retrieve the current version of the key. |
-| `rotationPolicy` | `object` |  |
-| `keyUriWithVersion` | `string` | The URI to retrieve the specific version of the key. |
-| `curveName` | `string` | The elliptic curve name. For valid values, see JsonWebKeyCurveName. |
-| `location` | `string` | Azure location of the key vault resource. |
-| `release_policy` | `object` |  |
-| `tags` | `object` | Tags assigned to the key vault resource. |
-| `type` | `string` | Resource type of the key vault resource. |
 | `keySize` | `integer` | The key size in bits. For example: 2048, 3072, or 4096 for RSA. |
+| `kty` | `string` | The type of the key. For valid values, see JsonWebKeyType. |
+| `release_policy` | `object` |  |
+| `curveName` | `string` | The elliptic curve name. For valid values, see JsonWebKeyCurveName. |
+| `attributes` | `object` | The object attributes managed by the Azure Key Vault service. |
+| `location` | `string` | Azure location of the key vault resource. |
+| `keyUri` | `string` | The URI to retrieve the current version of the key. |
+| `type` | `string` | Resource type of the key vault resource. |
+| `keyOps` | `array` |  |
+| `keyUriWithVersion` | `string` | The URI to retrieve the specific version of the key. |
+| `tags` | `object` | Tags assigned to the key vault resource. |
+| `rotationPolicy` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `proximityPlacementGroupType` | `string` | Specifies the type of the proximity placement group. &lt;br&gt;&lt;br&gt; Possible values are: &lt;br&gt;&lt;br&gt; **Standard** : Co-locate resources within an Azure region or Availability Zone. &lt;br&gt;&lt;br&gt; **Ultra** : For future use. |
-| `intent` | `object` | Specifies the user intent of the proximity placement group. |
-| `tags` | `object` | Resource tags |
-| `availabilitySets` | `array` | A list of references to all availability sets in the proximity placement group. |
-| `type` | `string` | Resource type |
 | `virtualMachines` | `array` | A list of references to all virtual machines in the proximity placement group. |
-| `colocationStatus` | `object` | Instance view status. |
+| `type` | `string` | Resource type |
+| `tags` | `object` | Resource tags |
 | `location` | `string` | Resource location |
+| `proximityPlacementGroupType` | `string` | Specifies the type of the proximity placement group. &lt;br&gt;&lt;br&gt; Possible values are: &lt;br&gt;&lt;br&gt; **Standard** : Co-locate resources within an Azure region or Availability Zone. &lt;br&gt;&lt;br&gt; **Ultra** : For future use. |
+| `colocationStatus` | `object` | Instance view status. |
+| `availabilitySets` | `array` | A list of references to all availability sets in the proximity placement group. |
 | `virtualMachineScaleSets` | `array` | A list of references to all virtual machine scale sets in the proximity placement group. |
 | `zones` | `array` | Specifies the Availability Zone where virtual machine, virtual machine scale set or availability set associated with the  proximity placement group can be created. |
+| `intent` | `object` | Specifies the user intent of the proximity placement group. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

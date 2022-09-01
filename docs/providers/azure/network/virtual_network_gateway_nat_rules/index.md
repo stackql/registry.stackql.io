@@ -30,12 +30,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
 | `externalMappings` | `array` | The private IP address external mapping for NAT. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `ipConfigurationId` | `string` | The IP Configuration ID this NAT rule applies to. |
-| `internalMappings` | `array` | The private IP address internal mapping for NAT. |
-| `mode` | `string` | The Source NAT direction of a VPN NAT. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `type` | `string` | Resource type. |
+| `ipConfigurationId` | `string` | The IP Configuration ID this NAT rule applies to. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `mode` | `string` | The Source NAT direction of a VPN NAT. |
+| `internalMappings` | `array` | The private IP address internal mapping for NAT. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

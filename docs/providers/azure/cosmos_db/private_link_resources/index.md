@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The unique resource identifier of the database account. |
 | `name` | `string` | The name of the database account. |
-| `groupId` | `string` | The private link resource group id. |
 | `requiredMembers` | `array` | The private link resource required member names. |
 | `requiredZoneNames` | `array` | The private link resource required zone names. |
 | `type` | `string` | The type of Azure resource. |
+| `groupId` | `string` | The private link resource group id. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

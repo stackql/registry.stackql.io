@@ -27,19 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `networkRuleSets` | `object` | Network Rule Set Properties of this IoT Central application. |
 | `provisioningState` | `string` | The provisioning state of the application. |
-| `state` | `string` | The current state of the application. |
-| `applicationId` | `string` | The ID of the application. |
-| `sku` | `object` | Information about the SKU of the IoT Central application. |
-| `template` | `string` | The ID of the application template, which is a blueprint that defines the characteristics and behaviors of an application. Optional; if not specified, defaults to a blank blueprint and allows the application to be defined from scratch. |
-| `publicNetworkAccess` | `string` | Whether requests from the public network are allowed. |
-| `location` | `string` | The geo-location where the resource lives |
-| `privateEndpointConnections` | `array` | Private endpoint connections created on this IoT Central application. |
-| `subdomain` | `string` | The subdomain of the application. |
-| `identity` | `object` | Managed service identity (either system assigned, or none) |
+| `networkRuleSets` | `object` | Network Rule Set Properties of this IoT Central application. |
 | `tags` | `object` | Resource tags. |
+| `sku` | `object` | Information about the SKU of the IoT Central application. |
+| `publicNetworkAccess` | `string` | Whether requests from the public network are allowed. |
+| `subdomain` | `string` | The subdomain of the application. |
+| `privateEndpointConnections` | `array` | Private endpoint connections created on this IoT Central application. |
+| `template` | `string` | The ID of the application template, which is a blueprint that defines the characteristics and behaviors of an application. Optional; if not specified, defaults to a blank blueprint and allows the application to be defined from scratch. |
+| `applicationId` | `string` | The ID of the application. |
+| `state` | `string` | The current state of the application. |
 | `displayName` | `string` | The display name of the application. |
+| `identity` | `object` | Managed service identity (either system assigned, or none) |
+| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

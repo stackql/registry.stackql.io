@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `displayName` | `string` | Name of the service. |
-| `infraURI` | `string` | The route prefix to the service. |
 | `location` | `string` | The Azure Region where the resource lives |
 | `serviceLocation` | `string` | Location of the service. |
 | `tags` | `object` | Resource tags. |
+| `displayName` | `string` | Name of the service. |
+| `infraURI` | `string` | The route prefix to the service. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

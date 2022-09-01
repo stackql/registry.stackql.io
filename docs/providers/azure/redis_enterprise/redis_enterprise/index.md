@@ -27,16 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `sku` | `object` | SKU parameters supplied to the create RedisEnterprise operation. |
+| `resourceState` | `string` | Current resource status |
+| `privateEndpointConnections` | `array` | List of private endpoint connections associated with the specified RedisEnterprise cluster |
+| `redisVersion` | `string` | Version of redis the cluster supports, e.g. '6' |
 | `tags` | `object` | Resource tags. |
 | `minimumTlsVersion` | `string` | The minimum TLS version for the cluster to support, e.g. '1.2' |
+| `provisioningState` | `string` | Current provisioning status |
 | `hostName` | `string` | DNS name of the cluster endpoint |
-| `redisVersion` | `string` | Version of redis the cluster supports, e.g. '6' |
-| `resourceState` | `string` | Current resource status |
 | `location` | `string` | The geo-location where the resource lives |
 | `zones` | `array` | The Availability Zones where this cluster will be deployed. |
-| `privateEndpointConnections` | `array` | List of private endpoint connections associated with the specified RedisEnterprise cluster |
-| `provisioningState` | `string` | Current provisioning status |
+| `sku` | `object` | SKU parameters supplied to the create RedisEnterprise operation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

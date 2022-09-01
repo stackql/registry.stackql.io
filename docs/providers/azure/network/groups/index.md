@@ -30,10 +30,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
 | `description` | `string` | A description of the network group. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

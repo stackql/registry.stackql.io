@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The unique ID of the management group. |
 | `name` | `string` | The name of the management group. |
-| `dataReceived` | `string` | The last datetime that the management group received data. |
-| `isGateway` | `boolean` | Gets or sets a value indicating whether the management group is a gateway. |
 | `serverCount` | `integer` | The number of servers connected to the management group. |
 | `sku` | `string` | The SKU of System Center that is managing the management group. |
 | `version` | `string` | The version of System Center that is managing the management group. |
 | `created` | `string` | The datetime that the management group was created. |
+| `dataReceived` | `string` | The last datetime that the management group received data. |
+| `isGateway` | `boolean` | Gets or sets a value indicating whether the management group is a gateway. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

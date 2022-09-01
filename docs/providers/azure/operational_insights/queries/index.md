@@ -30,16 +30,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
 | `description` | `string` | Description of the query. |
-| `author` | `string` | Object Id of user creating the query. |
-| `systemData` | `object` | Read only system data |
-| `tags` | `object` | Tags associated with the query. |
-| `properties` | `object` | Additional properties that can be set for the query. |
 | `timeModified` | `string` | Last modified date of the Log Analytics Query, in ISO 8601 format. |
-| `type` | `string` | Azure resource type |
-| `timeCreated` | `string` | Creation Date for the Log Analytics Query, in ISO 8601 format. |
-| `body` | `string` | Body of the query. |
 | `displayName` | `string` | Unique display name for your query within the Query Pack. |
 | `related` | `object` | The related metadata items for the function. |
+| `author` | `string` | Object Id of user creating the query. |
+| `tags` | `object` | Tags associated with the query. |
+| `timeCreated` | `string` | Creation Date for the Log Analytics Query, in ISO 8601 format. |
+| `properties` | `object` | Additional properties that can be set for the query. |
+| `systemData` | `object` | Read only system data |
+| `type` | `string` | Azure resource type |
+| `body` | `string` | Body of the query. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

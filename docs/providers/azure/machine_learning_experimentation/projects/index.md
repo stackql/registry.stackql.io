@@ -30,16 +30,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
 | `description` | `string` | The description of this project. |
-| `type` | `string` | The type of the resource. |
-| `workspaceId` | `string` | The immutable id of the workspace which contains this project. |
-| `creationDate` | `string` | The creation date of the project in ISO8601 format. |
-| `friendlyName` | `string` | The friendly name for this project. |
 | `gitrepo` | `string` | The reference to git repo for this project. |
-| `tags` | `object` | The tags of the resource. |
-| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
-| `provisioningState` | `string` | The current deployment state of project resource. The provisioningState is to indicate states for resource provisioning. |
-| `accountId` | `string` | The immutable id of the team account which contains this project. |
+| `friendlyName` | `string` | The friendly name for this project. |
 | `projectId` | `string` | The immutable id of this project. |
+| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
+| `creationDate` | `string` | The creation date of the project in ISO8601 format. |
+| `type` | `string` | The type of the resource. |
+| `accountId` | `string` | The immutable id of the team account which contains this project. |
+| `provisioningState` | `string` | The current deployment state of project resource. The provisioningState is to indicate states for resource provisioning. |
+| `tags` | `object` | The tags of the resource. |
+| `workspaceId` | `string` | The immutable id of the workspace which contains this project. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

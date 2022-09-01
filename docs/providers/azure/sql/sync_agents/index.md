@@ -28,12 +28,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Name of the sync agent. |
-| `version` | `string` | Version of the sync agent. |
-| `expiryTime` | `string` | Expiration time of the sync agent version. |
 | `isUpToDate` | `boolean` | If the sync agent version is up to date. |
 | `lastAliveTime` | `string` | Last alive time of the sync agent. |
 | `state` | `string` | State of the sync agent. |
 | `syncDatabaseId` | `string` | ARM resource id of the sync database in the sync agent. |
+| `version` | `string` | Version of the sync agent. |
+| `expiryTime` | `string` | Expiration time of the sync agent version. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

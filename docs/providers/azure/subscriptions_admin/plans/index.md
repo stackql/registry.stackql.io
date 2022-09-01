@@ -30,14 +30,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
 | `description` | `string` | Description of the plan. |
+| `externalReferenceId` | `string` | External reference identifier. |
+| `tags` | `object` | List of key-value pairs. |
+| `type` | `string` | Type of resource. |
 | `displayName` | `string` | Display name. |
 | `skuIds` | `array` | SKU identifiers. |
-| `externalReferenceId` | `string` | External reference identifier. |
-| `type` | `string` | Type of resource. |
-| `subscriptionCount` | `integer` | Subscription count. |
-| `quotaIds` | `array` | Quota identifiers under the plan. |
-| `tags` | `object` | List of key-value pairs. |
 | `location` | `string` | Location of the resource |
+| `quotaIds` | `array` | Quota identifiers under the plan. |
+| `subscriptionCount` | `integer` | Subscription count. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

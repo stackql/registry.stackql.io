@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `endIPv6Address` | `string` | The end IP address of the firewall rule. Must be IPv6 format. Must be greater than or equal to startIpAddress. |
 | `startIPv6Address` | `string` | The start IP address of the firewall rule. Must be IPv6 format. |
+| `endIPv6Address` | `string` | The end IP address of the firewall rule. Must be IPv6 format. Must be greater than or equal to startIpAddress. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

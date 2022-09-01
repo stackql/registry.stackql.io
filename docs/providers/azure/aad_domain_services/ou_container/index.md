@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `deploymentId` | `string` | The Deployment id |
-| `distinguishedName` | `string` | Distinguished Name of OuContainer instance |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `type` | `string` | Resource type |
-| `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response. |
-| `location` | `string` | Resource location |
-| `tenantId` | `string` | Azure Active Directory tenant id |
 | `containerId` | `string` | The OuContainer name |
+| `location` | `string` | Resource location |
+| `distinguishedName` | `string` | Distinguished Name of OuContainer instance |
+| `type` | `string` | Resource type |
+| `tenantId` | `string` | Azure Active Directory tenant id |
+| `deploymentId` | `string` | The Deployment id |
 | `tags` | `object` | Resource tags |
 | `serviceStatus` | `string` | Status of OuContainer instance |
-| `accounts` | `array` | The list of container accounts |
 | `domainName` | `string` | The domain name of Domain Services. |
+| `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response. |
+| `accounts` | `array` | The list of container accounts |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `etag` | `string` | Resource etag |
 ## Methods
 | Name | Accessible by | Required Params | Description |

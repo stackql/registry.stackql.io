@@ -29,27 +29,27 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `privateLinkServiceNetworkPolicies` | `string` | Enable or Disable apply network policies on private link service in the subnet. |
-| `type` | `string` | Resource type. |
-| `ipAllocations` | `array` | Array of IpAllocation which reference this subnet. |
-| `privateEndpoints` | `array` | An array of references to private endpoints. |
-| `serviceAssociationLinks` | `array` | An array of references to services injecting into this subnet. |
-| `networkSecurityGroup` | `object` | NetworkSecurityGroup resource. |
-| `natGateway` | `object` | Reference to another subresource. |
-| `serviceEndpointPolicies` | `array` | An array of service endpoint policies. |
-| `privateEndpointNetworkPolicies` | `string` | Enable or Disable apply network policies on private end point in the subnet. |
-| `resourceNavigationLinks` | `array` | An array of references to the external resources using subnet. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `serviceEndpoints` | `array` | An array of service endpoints. |
-| `delegations` | `array` | An array of references to the delegations on the subnet. |
-| `purpose` | `string` | A read-only string identifying the intention of use for this subnet based on delegations and other user-defined properties. |
-| `ipConfigurations` | `array` | An array of references to the network interface IP configurations using subnet. |
-| `applicationGatewayIpConfigurations` | `array` | Application gateway IP configurations of virtual network resource. |
-| `routeTable` | `object` | Route table resource. |
-| `ipConfigurationProfiles` | `array` | Array of IP configuration profiles which reference this subnet. |
-| `addressPrefixes` | `array` | List of address prefixes for the subnet. |
 | `addressPrefix` | `string` | The address prefix for the subnet. |
+| `applicationGatewayIpConfigurations` | `array` | Application gateway IP configurations of virtual network resource. |
+| `delegations` | `array` | An array of references to the delegations on the subnet. |
+| `resourceNavigationLinks` | `array` | An array of references to the external resources using subnet. |
+| `privateEndpointNetworkPolicies` | `string` | Enable or Disable apply network policies on private end point in the subnet. |
+| `serviceEndpointPolicies` | `array` | An array of service endpoint policies. |
+| `type` | `string` | Resource type. |
+| `purpose` | `string` | A read-only string identifying the intention of use for this subnet based on delegations and other user-defined properties. |
+| `serviceAssociationLinks` | `array` | An array of references to services injecting into this subnet. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `natGateway` | `object` | Reference to another subresource. |
+| `addressPrefixes` | `array` | List of address prefixes for the subnet. |
+| `privateEndpoints` | `array` | An array of references to private endpoints. |
+| `ipConfigurations` | `array` | An array of references to the network interface IP configurations using subnet. |
+| `ipAllocations` | `array` | Array of IpAllocation which reference this subnet. |
+| `privateLinkServiceNetworkPolicies` | `string` | Enable or Disable apply network policies on private link service in the subnet. |
+| `ipConfigurationProfiles` | `array` | Array of IP configuration profiles which reference this subnet. |
+| `serviceEndpoints` | `array` | An array of service endpoints. |
+| `routeTable` | `object` | Route table resource. |
+| `networkSecurityGroup` | `object` | NetworkSecurityGroup resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

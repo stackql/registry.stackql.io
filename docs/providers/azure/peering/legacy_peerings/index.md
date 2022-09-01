@@ -30,13 +30,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
 | `direct` | `object` | The properties that define a direct peering. |
-| `sku` | `object` | The SKU that defines the tier and kind of the peering. |
 | `provisioningState` | `string` | The provisioning state of the resource. |
 | `kind` | `string` | The kind of the peering. |
-| `location` | `string` | The location of the resource. |
-| `exchange` | `object` | The properties that define an exchange peering. |
 | `tags` | `object` | The resource tags. |
+| `sku` | `object` | The SKU that defines the tier and kind of the peering. |
+| `exchange` | `object` | The properties that define an exchange peering. |
 | `type` | `string` | The type of the resource. |
+| `location` | `string` | The location of the resource. |
 | `peeringLocation` | `string` | The location of the peering. |
 ## Methods
 | Name | Accessible by | Required Params |

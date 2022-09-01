@@ -28,20 +28,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | The description of the workbook. |
-| `identity` | `object` | Identity used for BYOS |
-| `userId` | `string` | Unique user id of the specific user that owns this workbook. |
-| `version` | `string` | Workbook schema version format, like 'Notebook/1.0', which should match the workbook in serializedData |
-| `kind` | `string` | The kind of workbook. Only valid value is shared. |
-| `revision` | `string` | The unique revision id for this workbook definition |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `category` | `string` | Workbook category, as defined by the user at creation time. |
-| `displayName` | `string` | The user-defined name (display name) of the workbook. |
-| `timeModified` | `string` | Date and time in UTC of the last modification that was made to this workbook definition. |
-| `tags` | `array` | Being deprecated, please use the other tags field |
 | `serializedData` | `string` | Configuration of this particular workbook. Configuration data is a string containing valid JSON |
-| `sourceId` | `string` | ResourceId for a source resource. |
-| `storageUri` | `string` | The resourceId to the storage account when bring your own storage is used |
+| `revision` | `string` | The unique revision id for this workbook definition |
+| `userId` | `string` | Unique user id of the specific user that owns this workbook. |
+| `displayName` | `string` | The user-defined name (display name) of the workbook. |
+| `category` | `string` | Workbook category, as defined by the user at creation time. |
+| `timeModified` | `string` | Date and time in UTC of the last modification that was made to this workbook definition. |
+| `version` | `string` | Workbook schema version format, like 'Notebook/1.0', which should match the workbook in serializedData |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `etag` | `string` | Resource etag |
+| `sourceId` | `string` | ResourceId for a source resource. |
+| `kind` | `string` | The kind of workbook. Only valid value is shared. |
+| `identity` | `object` | Identity used for BYOS |
+| `storageUri` | `string` | The resourceId to the storage account when bring your own storage is used |
+| `tags` | `array` | Being deprecated, please use the other tags field |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

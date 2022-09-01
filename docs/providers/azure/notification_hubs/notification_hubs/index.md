@@ -29,17 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `baiduCredential` | `object` | Description of a NotificationHub BaiduCredential. |
-| `gcmCredential` | `object` | Description of a NotificationHub GcmCredential. |
-| `tags` | `object` | Resource tags |
-| `apnsCredential` | `object` | Description of a NotificationHub ApnsCredential. |
-| `type` | `string` | Resource type |
-| `admCredential` | `object` | Description of a NotificationHub AdmCredential. |
 | `authorizationRules` | `array` | The AuthorizationRules of the created NotificationHub |
+| `type` | `string` | Resource type |
 | `location` | `string` | Resource location |
-| `mpnsCredential` | `object` | Description of a NotificationHub MpnsCredential. |
-| `wnsCredential` | `object` | Description of a NotificationHub WnsCredential. |
+| `admCredential` | `object` | Description of a NotificationHub AdmCredential. |
 | `sku` | `object` | The Sku description for a namespace |
+| `gcmCredential` | `object` | Description of a NotificationHub GcmCredential. |
+| `mpnsCredential` | `object` | Description of a NotificationHub MpnsCredential. |
+| `apnsCredential` | `object` | Description of a NotificationHub ApnsCredential. |
+| `wnsCredential` | `object` | Description of a NotificationHub WnsCredential. |
+| `baiduCredential` | `object` | Description of a NotificationHub BaiduCredential. |
+| `tags` | `object` | Resource tags |
 | `registrationTtl` | `string` | The RegistrationTtl of the created NotificationHub |
 ## Methods
 | Name | Accessible by | Required Params | Description |

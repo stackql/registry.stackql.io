@@ -29,17 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `maxNumberOfRecordSets` | `integer` | The maximum number of record sets that can be created in this DNS zone.  This is a read-only property and any attempt to set this value will be ignored. |
-| `type` | `string` | Resource type. |
-| `etag` | `string` | The etag of the zone. |
-| `maxNumberOfRecordsPerRecordSet` | `integer` | The maximum number of records per record set that can be created in this DNS zone.  This is a read-only property and any attempt to set this value will be ignored. |
-| `numberOfRecordSets` | `integer` | The current number of record sets in this DNS zone.  This is a read-only property and any attempt to set this value will be ignored. |
-| `location` | `string` | Resource location. |
-| `tags` | `object` | Resource tags. |
 | `nameServers` | `array` | The name servers for this DNS zone. This is a read-only property and any attempt to set this value will be ignored. |
-| `zoneType` | `string` | The type of this DNS zone (Public or Private). |
+| `type` | `string` | Resource type. |
+| `location` | `string` | Resource location. |
+| `maxNumberOfRecordsPerRecordSet` | `integer` | The maximum number of records per record set that can be created in this DNS zone.  This is a read-only property and any attempt to set this value will be ignored. |
 | `resolutionVirtualNetworks` | `array` | A list of references to virtual networks that resolve records in this DNS zone. This is a only when ZoneType is Private. |
 | `registrationVirtualNetworks` | `array` | A list of references to virtual networks that register hostnames in this DNS zone. This is a only when ZoneType is Private. |
+| `numberOfRecordSets` | `integer` | The current number of record sets in this DNS zone.  This is a read-only property and any attempt to set this value will be ignored. |
+| `maxNumberOfRecordSets` | `integer` | The maximum number of record sets that can be created in this DNS zone.  This is a read-only property and any attempt to set this value will be ignored. |
+| `tags` | `object` | Resource tags. |
+| `zoneType` | `string` | The type of this DNS zone (Public or Private). |
+| `etag` | `string` | The etag of the zone. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -28,19 +28,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `description` | `string` | The operation description. |
+| `isUserError` | `boolean` | Whether or not the error is a user error. |
 | `estimatedCompletionTime` | `string` | The estimated completion time of the operation. |
+| `isCancellable` | `boolean` | Whether the operation can be cancelled. |
+| `percentComplete` | `integer` | The percentage of the operation completed. |
 | `serverName` | `string` | The name of the server. |
 | `state` | `string` | The operation state. |
-| `operationFriendlyName` | `string` | The friendly name of operation. |
 | `operation` | `string` | The name of operation. |
-| `isUserError` | `boolean` | Whether or not the error is a user error. |
-| `isCancellable` | `boolean` | Whether the operation can be cancelled. |
-| `startTime` | `string` | The operation start time. |
-| `errorDescription` | `string` | The operation error description. |
-| `percentComplete` | `integer` | The percentage of the operation completed. |
-| `errorSeverity` | `integer` | The operation error severity. |
-| `errorCode` | `integer` | The operation error code. |
 | `elasticPoolName` | `string` | The name of the elastic pool the operation is being performed on. |
+| `startTime` | `string` | The operation start time. |
+| `errorCode` | `integer` | The operation error code. |
+| `errorDescription` | `string` | The operation error description. |
+| `operationFriendlyName` | `string` | The friendly name of operation. |
+| `errorSeverity` | `integer` | The operation error severity. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

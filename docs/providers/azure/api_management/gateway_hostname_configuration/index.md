@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
+| `certificateId` | `string` | Identifier of Certificate entity that will be used for TLS connection establishment |
+| `tls10Enabled` | `boolean` | Specifies if TLS 1.0 is supported |
 | `negotiateClientCertificate` | `boolean` | Determines whether gateway requests client certificate |
 | `hostname` | `string` | Hostname value. Supports valid domain name, partial or full wildcard |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `tls10Enabled` | `boolean` | Specifies if TLS 1.0 is supported |
 | `http2Enabled` | `boolean` | Specifies if HTTP/2.0 is supported |
-| `certificateId` | `string` | Identifier of Certificate entity that will be used for TLS connection establishment |
 | `tls11Enabled` | `boolean` | Specifies if TLS 1.1 is supported |
 ## Methods
 | Name | Accessible by | Required Params | Description |

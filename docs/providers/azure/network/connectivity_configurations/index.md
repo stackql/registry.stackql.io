@@ -30,14 +30,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
 | `description` | `string` | A description of the connectivity configuration. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `hubs` | `array` | List of hubItems |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `hubs` | `array` | List of hubItems |
+| `type` | `string` | Resource type. |
 | `appliesToGroups` | `array` | Groups for configuration |
 | `connectivityTopology` | `string` | Connectivity topology type. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `isGlobal` | `string` | Flag if global mesh is supported. |
-| `type` | `string` | Resource type. |
 | `deleteExistingPeering` | `string` | Flag if need to remove current existing peerings. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

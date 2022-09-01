@@ -29,21 +29,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `autoApproval` | `object` | The auto-approval list of the private link service. |
-| `tags` | `object` | Resource tags. |
-| `fqdns` | `array` | The list of Fqdn. |
-| `networkInterfaces` | `array` | An array of references to the network interfaces created for this private link service. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `visibility` | `object` | The visibility list of the private link service. |
-| `loadBalancerFrontendIpConfigurations` | `array` | An array of references to the load balancer IP configurations. |
 | `type` | `string` | Resource type. |
-| `alias` | `string` | The alias of the private link service. |
-| `extendedLocation` | `object` | ExtendedLocation complex type. |
+| `visibility` | `object` | The visibility list of the private link service. |
 | `location` | `string` | Resource location. |
+| `ipConfigurations` | `array` | An array of private link service IP configurations. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `enableProxyProtocol` | `boolean` | Whether the private link service is enabled for proxy protocol or not. |
-| `ipConfigurations` | `array` | An array of private link service IP configurations. |
+| `networkInterfaces` | `array` | An array of references to the network interfaces created for this private link service. |
 | `privateEndpointConnections` | `array` | An array of list about connections to the private endpoint. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `alias` | `string` | The alias of the private link service. |
+| `autoApproval` | `object` | The auto-approval list of the private link service. |
+| `loadBalancerFrontendIpConfigurations` | `array` | An array of references to the load balancer IP configurations. |
+| `tags` | `object` | Resource tags. |
+| `fqdns` | `array` | The list of Fqdn. |
+| `extendedLocation` | `object` | ExtendedLocation complex type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

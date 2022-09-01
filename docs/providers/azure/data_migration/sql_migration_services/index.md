@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` |  |
 | `name` | `string` |  |
-| `type` | `string` |  |
 | `integrationRuntimeState` | `string` | Current state of the Integration runtime. |
 | `location` | `string` |  |
 | `provisioningState` | `string` | Provisioning state to track the async operation status. |
 | `systemData` | `object` |  |
 | `tags` | `object` |  |
+| `type` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

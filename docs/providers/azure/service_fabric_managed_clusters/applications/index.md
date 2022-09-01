@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource identifier. |
 | `name` | `string` | Azure resource name. |
-| `upgradePolicy` | `object` | Describes the policy for a monitored application upgrade. |
-| `tags` | `object` | Azure resource tags. |
-| `parameters` | `object` | List of application parameters with overridden values from their default values specified in the application manifest. |
 | `identity` | `object` | Describes the managed identities for an Azure resource. |
-| `location` | `string` | Resource location depends on the parent resource. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `version` | `string` | The version of the application type as defined in the application manifest.<br />This name must be the full Arm Resource ID for the referenced application type version.<br /> |
-| `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `managedIdentities` | `array` | List of user assigned identities for the application, each mapped to a friendly name. |
+| `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response |
+| `tags` | `object` | Azure resource tags. |
 | `type` | `string` | Azure resource type. |
+| `location` | `string` | Resource location depends on the parent resource. |
+| `parameters` | `object` | List of application parameters with overridden values from their default values specified in the application manifest. |
+| `upgradePolicy` | `object` | Describes the policy for a monitored application upgrade. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

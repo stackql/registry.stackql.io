@@ -29,23 +29,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `publicIpPrefixes` | `array` | The list of all referenced PublicIpPrefixes. |
-| `noInternetAdvertise` | `boolean` | Whether to Advertise the range to Internet. |
-| `resourceGuid` | `string` | The resource GUID property of the custom IP prefix resource. |
-| `type` | `string` | Resource type. |
-| `commissionedState` | `string` | The commissioned state of the Custom IP Prefix. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `failedReason` | `string` | The reason why resource is in failed state. |
-| `extendedLocation` | `object` | ExtendedLocation complex type. |
-| `zones` | `array` | A list of availability zones denoting the IP allocated for the resource needs to come from. |
-| `customIpPrefixParent` | `object` | Reference to another subresource. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `zones` | `array` | A list of availability zones denoting the IP allocated for the resource needs to come from. |
+| `failedReason` | `string` | The reason why resource is in failed state. |
+| `publicIpPrefixes` | `array` | The list of all referenced PublicIpPrefixes. |
+| `tags` | `object` | Resource tags. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `childCustomIpPrefixes` | `array` | The list of all Children for IPv6 /48 CustomIpPrefix. |
+| `extendedLocation` | `object` | ExtendedLocation complex type. |
+| `resourceGuid` | `string` | The resource GUID property of the custom IP prefix resource. |
 | `signedMessage` | `string` | Signed message for WAN validation. |
 | `cidr` | `string` | The prefix range in CIDR notation. Should include the start address and the prefix length. |
-| `tags` | `object` | Resource tags. |
-| `authorizationMessage` | `string` | Authorization message for WAN validation. |
-| `childCustomIpPrefixes` | `array` | The list of all Children for IPv6 /48 CustomIpPrefix. |
 | `location` | `string` | Resource location. |
+| `commissionedState` | `string` | The commissioned state of the Custom IP Prefix. |
+| `customIpPrefixParent` | `object` | Reference to another subresource. |
+| `noInternetAdvertise` | `boolean` | Whether to Advertise the range to Internet. |
+| `type` | `string` | Resource type. |
+| `authorizationMessage` | `string` | Authorization message for WAN validation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

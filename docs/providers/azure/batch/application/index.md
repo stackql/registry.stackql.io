@@ -29,11 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
+| `type` | `string` | The type of the resource. |
 | `allowUpdates` | `boolean` | A value indicating whether packages within the application may be overwritten using the same version string. |
 | `defaultVersion` | `string` | The package to use if a client requests the application but does not specify a version. This property can only be set to the name of an existing package. |
 | `displayName` | `string` | The display name for the application. |
 | `etag` | `string` | The ETag of the resource, used for concurrency statements. |
-| `type` | `string` | The type of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

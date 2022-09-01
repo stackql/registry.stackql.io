@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `vendorProvisioningState` | `string` | The current vendor provisioning state. |
 | `networkFunctionVendorConfigurations` | `array` | An array of network function vendor configurations. |
 | `provisioningState` | `string` | The current provisioning state. |
 | `skuName` | `string` | The name of the sku. Once set, it cannot be updated. |
 | `skuType` | `string` | Sku type. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `vendorProvisioningState` | `string` | The current vendor provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

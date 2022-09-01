@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `repetitionIndexes` | `array` | The repetition indexes. |
-| `tags` | `object` | The resource tags. |
 | `type` | `string` | Gets the resource type. |
 | `location` | `string` | The resource location. |
+| `repetitionIndexes` | `array` | The repetition indexes. |
+| `tags` | `object` | The resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -27,17 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `partnerRole` | `string` | Partner replication role. |
-| `replicationState` | `string` | Replication state (PENDING, SEEDING, CATCHUP, SUSPENDED). |
-| `startTime` | `string` | Time at which the link was created. |
-| `linkType` | `string` | Link type (GEO, NAMED, STANDBY). |
-| `isTerminationAllowed` | `boolean` | Whether the user is currently allowed to terminate the link. |
-| `partnerServer` | `string` | Resource partner server. |
 | `percentComplete` | `integer` | Seeding completion percentage for the link. |
-| `partnerDatabase` | `string` | Resource partner database. |
-| `role` | `string` | Local replication role. |
-| `partnerLocation` | `string` | Resource partner location. |
 | `replicationMode` | `string` | Replication mode. |
+| `role` | `string` | Local replication role. |
+| `isTerminationAllowed` | `boolean` | Whether the user is currently allowed to terminate the link. |
+| `partnerRole` | `string` | Partner replication role. |
+| `linkType` | `string` | Link type (GEO, NAMED, STANDBY). |
+| `replicationState` | `string` | Replication state (PENDING, SEEDING, CATCHUP, SUSPENDED). |
+| `partnerServer` | `string` | Resource partner server. |
+| `startTime` | `string` | Time at which the link was created. |
+| `partnerDatabase` | `string` | Resource partner database. |
+| `partnerLocation` | `string` | Resource partner location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

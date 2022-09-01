@@ -29,22 +29,22 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `primary` | `boolean` | Whether this is a primary customer address on the network interface. |
-| `loadBalancerInboundNatRules` | `array` | A list of references of LoadBalancerInboundNatRules. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `virtualNetworkTaps` | `array` | The reference to Virtual Network Taps. |
-| `applicationGatewayBackendAddressPools` | `array` | The reference to ApplicationGatewayBackendAddressPool resource. |
-| `type` | `string` | Resource type. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `loadBalancerBackendAddressPools` | `array` | The reference to LoadBalancerBackendAddressPool resource. |
-| `subnet` | `object` | Subnet in a virtual network resource. |
 | `privateIPAllocationMethod` | `string` | IP address allocation method. |
+| `subnet` | `object` | Subnet in a virtual network resource. |
+| `loadBalancerBackendAddressPools` | `array` | The reference to LoadBalancerBackendAddressPool resource. |
+| `applicationSecurityGroups` | `array` | Application security groups in which the IP configuration is included. |
+| `publicIPAddress` | `object` | Public IP address resource. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `type` | `string` | Resource type. |
+| `gatewayLoadBalancer` | `object` | Reference to another subresource. |
+| `loadBalancerInboundNatRules` | `array` | A list of references of LoadBalancerInboundNatRules. |
+| `provisioningState` | `string` | The current provisioning state. |
 | `privateIPAddressVersion` | `string` | IP address version. |
 | `privateIPAddress` | `string` | Private IP address of the IP configuration. |
-| `applicationSecurityGroups` | `array` | Application security groups in which the IP configuration is included. |
-| `gatewayLoadBalancer` | `object` | Reference to another subresource. |
+| `virtualNetworkTaps` | `array` | The reference to Virtual Network Taps. |
+| `applicationGatewayBackendAddressPools` | `array` | The reference to ApplicationGatewayBackendAddressPool resource. |
+| `primary` | `boolean` | Whether this is a primary customer address on the network interface. |
 | `privateLinkConnectionProperties` | `object` | PrivateLinkConnection properties for the network interface. |
-| `publicIPAddress` | `object` | Public IP address resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

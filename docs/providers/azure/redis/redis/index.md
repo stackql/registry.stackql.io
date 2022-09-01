@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `privateEndpointConnections` | `array` | List of private endpoint connection associated with the specified redis cache |
-| `hostName` | `string` | Redis host name. |
-| `location` | `string` | The geo-location where the resource lives |
-| `linkedServers` | `array` | List of the linked servers associated with the cache |
-| `tags` | `object` | Resource tags. |
-| `zones` | `array` | A list of availability zones denoting where the resource needs to come from. |
-| `identity` | `object` | Managed service identity (system assigned and/or user assigned identities) |
-| `sslPort` | `integer` | Redis SSL port. |
-| `port` | `integer` | Redis non-SSL port. |
-| `provisioningState` | `string` | Redis instance provisioning status. |
-| `accessKeys` | `object` | Redis cache access keys. |
 | `instances` | `array` | List of the Redis instances associated with the cache |
+| `accessKeys` | `object` | Redis cache access keys. |
+| `provisioningState` | `string` | Redis instance provisioning status. |
+| `port` | `integer` | Redis non-SSL port. |
+| `identity` | `object` | Managed service identity (system assigned and/or user assigned identities) |
+| `privateEndpointConnections` | `array` | List of private endpoint connection associated with the specified redis cache |
+| `linkedServers` | `array` | List of the linked servers associated with the cache |
+| `sslPort` | `integer` | Redis SSL port. |
+| `location` | `string` | The geo-location where the resource lives |
+| `hostName` | `string` | Redis host name. |
+| `zones` | `array` | A list of availability zones denoting where the resource needs to come from. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

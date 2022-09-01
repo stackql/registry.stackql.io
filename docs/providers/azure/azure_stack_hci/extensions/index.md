@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `extensionParameters` | `object` | Describes the properties of a Machine Extension. This object mirrors the definition in HybridCompute. |
-| `perNodeExtensionDetails` | `array` | State of Arc Extension in each of the nodes. |
 | `provisioningState` | `string` | Provisioning state of the Extension proxy resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `aggregateState` | `string` | Aggregate state of Arc Extensions across the nodes in this HCI cluster. |
+| `extensionParameters` | `object` | Describes the properties of a Machine Extension. This object mirrors the definition in HybridCompute. |
+| `perNodeExtensionDetails` | `array` | State of Arc Extension in each of the nodes. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

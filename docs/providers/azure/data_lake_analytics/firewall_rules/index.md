@@ -29,9 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
+| `endIpAddress` | `string` | The end IP address for the firewall rule. This can be either ipv4 or ipv6. Start and End should be in the same protocol. |
 | `startIpAddress` | `string` | The start IP address for the firewall rule. This can be either ipv4 or ipv6. Start and End should be in the same protocol. |
 | `type` | `string` | The resource type. |
-| `endIpAddress` | `string` | The end IP address for the firewall rule. This can be either ipv4 or ipv6. Start and End should be in the same protocol. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

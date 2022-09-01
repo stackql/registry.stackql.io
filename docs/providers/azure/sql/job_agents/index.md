@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `databaseId` | `string` | Resource ID of the database to store job metadata in. |
 | `location` | `string` | Resource location. |
 | `sku` | `object` | An ARM Resource SKU. |
 | `state` | `string` | The state of the job agent. |
 | `tags` | `object` | Resource tags. |
+| `databaseId` | `string` | Resource ID of the database to store job metadata in. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

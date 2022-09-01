@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
+| `address` | `string` | Address of peering location. |
+| `contact` | `string` | Contact details of peering locations. |
 | `location` | `string` | Resource location. |
 | `provisioningState` | `string` | The current provisioning state. |
-| `address` | `string` | Address of peering location. |
-| `type` | `string` | Resource type. |
-| `contact` | `string` | Contact details of peering locations. |
-| `availableBandwidths` | `array` | The inventory of available ExpressRoutePort bandwidths. |
 | `tags` | `object` | Resource tags. |
+| `availableBandwidths` | `array` | The inventory of available ExpressRoutePort bandwidths. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

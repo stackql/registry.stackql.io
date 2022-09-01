@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `login` | `string` | Login name of the server administrator. |
-| `sid` | `string` | SID (object ID) of the server administrator. |
 | `tenantId` | `string` | Tenant ID of the administrator. |
 | `administratorType` | `string` | Type of the sever administrator. |
 | `azureADOnlyAuthentication` | `boolean` | Azure Active Directory only Authentication enabled. |
+| `login` | `string` | Login name of the server administrator. |
+| `sid` | `string` | SID (object ID) of the server administrator. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

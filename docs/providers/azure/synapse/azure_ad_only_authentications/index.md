@@ -27,9 +27,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `creationDate` | `string` | property configuration date |
 | `state` | `string` | property configuration state |
 | `azureADOnlyAuthentication` | `boolean` | Azure Active Directory only Authentication enabled. |
-| `creationDate` | `string` | property configuration date |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

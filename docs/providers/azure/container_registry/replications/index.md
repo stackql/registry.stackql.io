@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `status` | `object` | The status of an Azure resource at the time the operation was called. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `type` | `string` | The type of the resource. |
-| `provisioningState` | `string` | The provisioning state of the replication at the time the operation was called. |
 | `tags` | `object` | The tags of the resource. |
+| `type` | `string` | The type of the resource. |
 | `zoneRedundancy` | `string` | Whether or not zone redundancy is enabled for this container registry replication |
-| `regionEndpointEnabled` | `boolean` | Specifies whether the replication's regional endpoint is enabled. Requests will not be routed to a replication whose regional endpoint is disabled, however its data will continue to be synced with other replications. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
+| `provisioningState` | `string` | The provisioning state of the replication at the time the operation was called. |
+| `regionEndpointEnabled` | `boolean` | Specifies whether the replication's regional endpoint is enabled. Requests will not be routed to a replication whose regional endpoint is disabled, however its data will continue to be synced with other replications. |
+| `status` | `object` | The status of an Azure resource at the time the operation was called. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

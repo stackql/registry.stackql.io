@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `staticAcls` | `array` | Access Control List (ACL) for an iSCSI Target; defines LUN masking policy |
-| `provisioningState` | `string` | Provisioning state of the iSCSI Target. |
-| `port` | `integer` | The port used by iSCSI Target portal group. |
-| `aclMode` | `string` | ACL mode for iSCSI Target. |
-| `targetIqn` | `string` | iSCSI Target IQN (iSCSI Qualified Name); example: "iqn.2005-03.org.iscsi:server". |
-| `sessions` | `array` | List of identifiers for active sessions on the iSCSI target |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `luns` | `array` | List of LUNs to be exposed through iSCSI Target. |
-| `endpoints` | `array` | List of private IPv4 addresses to connect to the iSCSI Target. |
-| `managedByExtended` | `array` | List of Azure resource ids that manage this resource. |
-| `managedBy` | `string` | Azure resource id. Indicates if this resource is managed by another Azure resource. |
 | `status` | `string` | Operational status of the resource. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `endpoints` | `array` | List of private IPv4 addresses to connect to the iSCSI Target. |
+| `provisioningState` | `string` | Provisioning state of the iSCSI Target. |
+| `managedBy` | `string` | Azure resource id. Indicates if this resource is managed by another Azure resource. |
+| `sessions` | `array` | List of identifiers for active sessions on the iSCSI target |
+| `targetIqn` | `string` | iSCSI Target IQN (iSCSI Qualified Name); example: "iqn.2005-03.org.iscsi:server". |
+| `port` | `integer` | The port used by iSCSI Target portal group. |
+| `luns` | `array` | List of LUNs to be exposed through iSCSI Target. |
+| `managedByExtended` | `array` | List of Azure resource ids that manage this resource. |
+| `aclMode` | `string` | ACL mode for iSCSI Target. |
+| `staticAcls` | `array` | Access Control List (ACL) for an iSCSI Target; defines LUN masking policy |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

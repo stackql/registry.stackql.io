@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `allowHubToRemoteVnetTransit` | `boolean` | Deprecated: VirtualHub to RemoteVnet transit to enabled or not. |
-| `allowRemoteVnetToUseHubVnetGateways` | `boolean` | Deprecated: Allow RemoteVnet to use Virtual Hub's gateways. |
-| `enableInternetSecurity` | `boolean` | Enable internet security. |
-| `remoteVirtualNetwork` | `object` | Reference to another subresource. |
-| `provisioningState` | `string` | The current provisioning state. |
 | `routingConfiguration` | `object` | Routing Configuration indicating the associated and propagated route tables for this connection. |
+| `allowHubToRemoteVnetTransit` | `boolean` | Deprecated: VirtualHub to RemoteVnet transit to enabled or not. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `enableInternetSecurity` | `boolean` | Enable internet security. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `allowRemoteVnetToUseHubVnetGateways` | `boolean` | Deprecated: Allow RemoteVnet to use Virtual Hub's gateways. |
+| `remoteVirtualNetwork` | `object` | Reference to another subresource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

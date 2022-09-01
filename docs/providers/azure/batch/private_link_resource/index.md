@@ -29,11 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `requiredMembers` | `array` |  |
 | `requiredZoneNames` | `array` |  |
 | `type` | `string` | The type of the resource. |
 | `etag` | `string` | The ETag of the resource, used for concurrency statements. |
 | `groupId` | `string` | The group id is used to establish the private link connection. |
+| `requiredMembers` | `array` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

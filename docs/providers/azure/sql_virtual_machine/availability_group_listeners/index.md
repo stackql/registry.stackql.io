@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `createDefaultAvailabilityGroupIfNotExist` | `boolean` | Create a default availability group if it does not exist. |
+| `loadBalancerConfigurations` | `array` | List of load balancer configurations for an availability group listener. |
 | `multiSubnetIpConfigurations` | `array` | List of multi subnet IP configurations for an AG listener. |
 | `port` | `integer` | Listener port. |
 | `provisioningState` | `string` | Provisioning state to track the async operation status. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `availabilityGroupConfiguration` | `object` | Availability group configuration. |
 | `availabilityGroupName` | `string` | Name of the availability group. |
-| `createDefaultAvailabilityGroupIfNotExist` | `boolean` | Create a default availability group if it does not exist. |
-| `loadBalancerConfigurations` | `array` | List of load balancer configurations for an availability group listener. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` |  |
 | `name` | `string` |  |
-| `sourcePlatform` | `string` | Source platform of the project |
-| `databasesInfo` | `array` | List of DatabaseInfo |
-| `etag` | `string` | HTTP strong entity tag value. This is ignored if submitted. |
-| `targetConnectionInfo` | `object` | Defines the connection properties of a server |
-| `location` | `string` |  |
-| `azureAuthenticationInfo` | `object` | Azure Active Directory Application |
-| `provisioningState` | `string` | The project's provisioning state |
-| `type` | `string` |  |
 | `targetPlatform` | `string` | Target platform of the project |
 | `systemData` | `object` |  |
+| `targetConnectionInfo` | `object` | Defines the connection properties of a server |
+| `type` | `string` |  |
+| `azureAuthenticationInfo` | `object` | Azure Active Directory Application |
+| `databasesInfo` | `array` | List of DatabaseInfo |
+| `location` | `string` |  |
+| `provisioningState` | `string` | The project's provisioning state |
+| `sourceConnectionInfo` | `object` | Defines the connection properties of a server |
+| `sourcePlatform` | `string` | Source platform of the project |
 | `creationTime` | `string` | UTC Date and time when project was created |
 | `tags` | `object` |  |
-| `sourceConnectionInfo` | `object` | Defines the connection properties of a server |
+| `etag` | `string` | HTTP strong entity tag value. This is ignored if submitted. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

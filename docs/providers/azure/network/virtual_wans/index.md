@@ -29,15 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `disableVpnEncryption` | `boolean` | Vpn encryption to be disabled or not. |
 | `type` | `string` | Resource type. |
 | `vpnSites` | `array` | List of VpnSites in the VirtualWAN. |
-| `office365LocalBreakoutCategory` | `string` | The office traffic category. |
-| `tags` | `object` | Resource tags. |
 | `location` | `string` | Resource location. |
 | `allowVnetToVnetTraffic` | `boolean` | True if Vnet to Vnet traffic is allowed. |
 | `virtualHubs` | `array` | List of VirtualHubs in the VirtualWAN. |
+| `disableVpnEncryption` | `boolean` | Vpn encryption to be disabled or not. |
+| `office365LocalBreakoutCategory` | `string` | The office traffic category. |
 | `provisioningState` | `string` | The current provisioning state. |
+| `tags` | `object` | Resource tags. |
 | `allowBranchToBranchTraffic` | `boolean` | True if branch to branch traffic is allowed. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods

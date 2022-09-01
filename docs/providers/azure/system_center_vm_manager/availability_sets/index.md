@@ -30,13 +30,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
 | `location` | `string` | Gets or sets the location. |
-| `vmmServerId` | `string` | ARM Id of the vmmServer resource in which this resource resides. |
-| `provisioningState` | `string` | Gets or sets the provisioning state. |
-| `extendedLocation` | `object` | The extended location. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `provisioningState` | `string` | Gets or sets the provisioning state. |
 | `type` | `string` | Resource Type |
+| `vmmServerId` | `string` | ARM Id of the vmmServer resource in which this resource resides. |
 | `availabilitySetName` | `string` | Name of the availability set. |
 | `tags` | `object` | Resource tags |
+| `extendedLocation` | `object` | The extended location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

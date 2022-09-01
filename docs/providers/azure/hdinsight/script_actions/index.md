@@ -28,17 +28,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The name of the script action. |
-| `parameters` | `string` | The parameters for the script |
-| `roles` | `array` | The list of roles where script will be executed. |
+| `startTime` | `string` | The start time of script action execution. |
+| `uri` | `string` | The URI to the script. |
+| `endTime` | `string` | The end time of script action execution. |
 | `executionSummary` | `array` | The summary of script action execution result. |
 | `debugInformation` | `string` | The script action execution debug information. |
-| `endTime` | `string` | The end time of script action execution. |
-| `operation` | `string` | The reason why the script action was executed. |
+| `parameters` | `string` | The parameters for the script |
 | `applicationName` | `string` | The application name of the script action, if any. |
-| `startTime` | `string` | The start time of script action execution. |
+| `operation` | `string` | The reason why the script action was executed. |
+| `roles` | `array` | The list of roles where script will be executed. |
 | `scriptExecutionId` | `integer` | The execution id of the script action. |
 | `status` | `string` | The current execution status of the script action. |
-| `uri` | `string` | The URI to the script. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

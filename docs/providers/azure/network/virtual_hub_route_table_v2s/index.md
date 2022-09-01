@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `routes` | `array` | List of all routes. |
 | `attachedConnections` | `array` | List of all connections attached to this route table v2. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `routes` | `array` | List of all routes. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

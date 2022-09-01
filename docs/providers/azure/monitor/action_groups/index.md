@@ -29,22 +29,22 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
-| `voiceReceivers` | `array` | The list of voice receivers that are part of this action group. |
-| `smsReceivers` | `array` | The list of SMS receivers that are part of this action group. |
-| `enabled` | `boolean` | Indicates whether this action group is enabled. If an action group is not enabled, then none of its receivers will receive communications. |
-| `azureAppPushReceivers` | `array` | The list of AzureAppPush receivers that are part of this action group. |
-| `location` | `string` | Resource location |
-| `tags` | `object` | Resource tags |
-| `eventHubReceivers` | `array` | The list of event hub receivers that are part of this action group. |
-| `armRoleReceivers` | `array` | The list of ARM role receivers that are part of this action group. Roles are Azure RBAC roles and only built-in roles are supported. |
-| `type` | `string` | Azure resource type |
-| `webhookReceivers` | `array` | The list of webhook receivers that are part of this action group. |
-| `emailReceivers` | `array` | The list of email receivers that are part of this action group. |
-| `logicAppReceivers` | `array` | The list of logic app receivers that are part of this action group. |
-| `groupShortName` | `string` | The short name of the action group. This will be used in SMS messages. |
-| `itsmReceivers` | `array` | The list of ITSM receivers that are part of this action group. |
-| `automationRunbookReceivers` | `array` | The list of AutomationRunbook receivers that are part of this action group. |
 | `azureFunctionReceivers` | `array` | The list of azure function receivers that are part of this action group. |
+| `tags` | `object` | Resource tags |
+| `automationRunbookReceivers` | `array` | The list of AutomationRunbook receivers that are part of this action group. |
+| `smsReceivers` | `array` | The list of SMS receivers that are part of this action group. |
+| `logicAppReceivers` | `array` | The list of logic app receivers that are part of this action group. |
+| `voiceReceivers` | `array` | The list of voice receivers that are part of this action group. |
+| `groupShortName` | `string` | The short name of the action group. This will be used in SMS messages. |
+| `webhookReceivers` | `array` | The list of webhook receivers that are part of this action group. |
+| `azureAppPushReceivers` | `array` | The list of AzureAppPush receivers that are part of this action group. |
+| `eventHubReceivers` | `array` | The list of event hub receivers that are part of this action group. |
+| `itsmReceivers` | `array` | The list of ITSM receivers that are part of this action group. |
+| `enabled` | `boolean` | Indicates whether this action group is enabled. If an action group is not enabled, then none of its receivers will receive communications. |
+| `location` | `string` | Resource location |
+| `armRoleReceivers` | `array` | The list of ARM role receivers that are part of this action group. Roles are Azure RBAC roles and only built-in roles are supported. |
+| `emailReceivers` | `array` | The list of email receivers that are part of this action group. |
+| `type` | `string` | Azure resource type |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -27,43 +27,43 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `nodeResourceGroup` | `string` | The name of the resource group containing agent pool nodes. |
-| `publicNetworkAccess` | `string` | Allow or deny public network access for AKS |
+| `enablePodSecurityPolicy` | `boolean` | (DEPRECATING) Whether to enable Kubernetes pod security policy (preview). This feature is set for removal on October 15th, 2020. Learn more at aka.ms/aks/azpodpolicy. |
+| `diskEncryptionSetID` | `string` | This is of the form: '/subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/Microsoft.Compute/diskEncryptionSets/&#123;encryptionSetName&#125;' |
+| `podIdentityProfile` | `object` | See [use AAD pod identity](https://docs.microsoft.com/azure/aks/use-azure-ad-pod-identity) for more details on pod identity integration. |
+| `extendedLocation` | `object` | The complex type of the extended location. |
+| `addonProfiles` | `object` | The profile of managed cluster add-on. |
+| `autoUpgradeProfile` | `object` | Auto upgrade profile for a managed cluster. |
+| `fqdnSubdomain` | `string` | This cannot be updated once the Managed Cluster has been created. |
+| `dnsPrefix` | `string` | This cannot be updated once the Managed Cluster has been created. |
 | `privateLinkResources` | `array` | Private link resources associated with the cluster. |
 | `maxAgentPools` | `integer` | The max number of agent pools for the managed cluster. |
-| `enablePodSecurityPolicy` | `boolean` | (DEPRECATING) Whether to enable Kubernetes pod security policy (preview). This feature is set for removal on October 15th, 2020. Learn more at aka.ms/aks/azpodpolicy. |
-| `azurePortalFQDN` | `string` | The Azure Portal requires certain Cross-Origin Resource Sharing (CORS) headers to be sent in some responses, which Kubernetes APIServer doesn't handle by default. This special FQDN supports CORS, allowing the Azure Portal to function properly. |
-| `currentKubernetesVersion` | `string` | If kubernetesVersion was a fully specified version &lt;major.minor.patch&gt;, this field will be exactly equal to it. If kubernetesVersion was &lt;major.minor&gt;, this field will contain the full &lt;major.minor.patch&gt; version being used. |
-| `storageProfile` | `object` | Storage profile for the container service cluster. |
-| `enableRBAC` | `boolean` | Whether to enable Kubernetes Role-Based Access Control. |
-| `securityProfile` | `object` | Security profile for the container service cluster. |
 | `kubernetesVersion` | `string` | Both patch version &lt;major.minor.patch&gt; (e.g. 1.20.13) and &lt;major.minor&gt; (e.g. 1.20) are supported. When &lt;major.minor&gt; is specified, the latest supported GA patch version is chosen automatically. Updating the cluster with the same &lt;major.minor&gt; once it has been created (e.g. 1.14.x -&gt; 1.14) will not trigger an upgrade, even if a newer patch version is available. When you upgrade a supported AKS cluster, Kubernetes minor versions cannot be skipped. All upgrades must be performed sequentially by major version number. For example, upgrades between 1.14.x -&gt; 1.15.x or 1.15.x -&gt; 1.16.x are allowed, however 1.14.x -&gt; 1.16.x is not allowed. See [upgrading an AKS cluster](https://docs.microsoft.com/azure/aks/upgrade-cluster) for more details. |
-| `autoUpgradeProfile` | `object` | Auto upgrade profile for a managed cluster. |
+| `servicePrincipalProfile` | `object` | Information about a service principal identity for the cluster to use for manipulating Azure APIs. |
+| `publicNetworkAccess` | `string` | Allow or deny public network access for AKS |
+| `windowsProfile` | `object` | Profile for Windows VMs in the managed cluster. |
+| `agentPoolProfiles` | `array` | The agent pool properties. |
 | `identityProfile` | `object` | Identities associated with the cluster. |
 | `tags` | `object` | Resource tags. |
-| `windowsProfile` | `object` | Profile for Windows VMs in the managed cluster. |
-| `autoScalerProfile` | `object` | Parameters to be applied to the cluster-autoscaler when enabled |
-| `fqdnSubdomain` | `string` | This cannot be updated once the Managed Cluster has been created. |
-| `networkProfile` | `object` | Profile of network configuration. |
-| `podIdentityProfile` | `object` | See [use AAD pod identity](https://docs.microsoft.com/azure/aks/use-azure-ad-pod-identity) for more details on pod identity integration. |
-| `powerState` | `object` | Describes the Power State of the cluster |
-| `httpProxyConfig` | `object` | Cluster HTTP proxy configuration. |
-| `sku` | `object` | The SKU of a Managed Cluster. |
-| `disableLocalAccounts` | `boolean` | If set to true, getting static credentials will be disabled for this cluster. This must only be used on Managed Clusters that are AAD enabled. For more details see [disable local accounts](https://docs.microsoft.com/azure/aks/managed-aad#disable-local-accounts-preview). |
-| `identity` | `object` | Identity for the managed cluster. |
-| `dnsPrefix` | `string` | This cannot be updated once the Managed Cluster has been created. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `aadProfile` | `object` | For more details see [managed AAD on AKS](https://docs.microsoft.com/azure/aks/managed-aad). |
-| `servicePrincipalProfile` | `object` | Information about a service principal identity for the cluster to use for manipulating Azure APIs. |
-| `agentPoolProfiles` | `array` | The agent pool properties. |
-| `linuxProfile` | `object` | Profile for Linux VMs in the container service cluster. |
-| `fqdn` | `string` | The FQDN of the master pool. |
-| `addonProfiles` | `object` | The profile of managed cluster add-on. |
-| `privateFQDN` | `string` | The FQDN of private cluster. |
-| `extendedLocation` | `object` | The complex type of the extended location. |
+| `nodeResourceGroup` | `string` | The name of the resource group containing agent pool nodes. |
 | `apiServerAccessProfile` | `object` | Access profile for managed cluster API server. |
-| `diskEncryptionSetID` | `string` | This is of the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{encryptionSetName}' |
+| `azurePortalFQDN` | `string` | The Azure Portal requires certain Cross-Origin Resource Sharing (CORS) headers to be sent in some responses, which Kubernetes APIServer doesn't handle by default. This special FQDN supports CORS, allowing the Azure Portal to function properly. |
+| `autoScalerProfile` | `object` | Parameters to be applied to the cluster-autoscaler when enabled |
+| `enableRBAC` | `boolean` | Whether to enable Kubernetes Role-Based Access Control. |
+| `sku` | `object` | The SKU of a Managed Cluster. |
+| `privateFQDN` | `string` | The FQDN of private cluster. |
+| `securityProfile` | `object` | Security profile for the container service cluster. |
+| `aadProfile` | `object` | For more details see [managed AAD on AKS](https://docs.microsoft.com/azure/aks/managed-aad). |
+| `provisioningState` | `string` | The current provisioning state. |
+| `identity` | `object` | Identity for the managed cluster. |
+| `powerState` | `object` | Describes the Power State of the cluster |
+| `storageProfile` | `object` | Storage profile for the container service cluster. |
+| `disableLocalAccounts` | `boolean` | If set to true, getting static credentials will be disabled for this cluster. This must only be used on Managed Clusters that are AAD enabled. For more details see [disable local accounts](https://docs.microsoft.com/azure/aks/managed-aad#disable-local-accounts-preview). |
 | `location` | `string` | The geo-location where the resource lives |
+| `networkProfile` | `object` | Profile of network configuration. |
+| `fqdn` | `string` | The FQDN of the master pool. |
+| `linuxProfile` | `object` | Profile for Linux VMs in the container service cluster. |
+| `currentKubernetesVersion` | `string` | If kubernetesVersion was a fully specified version &lt;major.minor.patch&gt;, this field will be exactly equal to it. If kubernetesVersion was &lt;major.minor&gt;, this field will contain the full &lt;major.minor.patch&gt; version being used. |
+| `httpProxyConfig` | `object` | Cluster HTTP proxy configuration. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

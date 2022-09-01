@@ -29,25 +29,25 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `vpnLinkConnectionMode` | `string` | Vpn link connection mode. |
-| `ingressBytesTransferred` | `integer` | Ingress bytes transferred. |
-| `usePolicyBasedTrafficSelectors` | `boolean` | Enable policy-based traffic selectors. |
-| `egressNatRules` | `array` | List of egress NatRules. |
-| `egressBytesTransferred` | `integer` | Egress bytes transferred. |
-| `ingressNatRules` | `array` | List of ingress NatRules. |
-| `enableBgp` | `boolean` | EnableBgp flag. |
-| `routingWeight` | `integer` | Routing weight for vpn connection. |
 | `sharedKey` | `string` | SharedKey for the vpn connection. |
-| `ipsecPolicies` | `array` | The IPSec Policies to be considered by this connection. |
-| `connectionBandwidth` | `integer` | Expected bandwidth in MBPS. |
-| `enableRateLimiting` | `boolean` | EnableBgp flag. |
-| `vpnConnectionProtocolType` | `string` | Gateway connection protocol. |
-| `connectionStatus` | `string` | The current state of the vpn connection. |
-| `type` | `string` | Resource type. |
-| `useLocalAzureIpAddress` | `boolean` | Use local azure ip to initiate connection. |
 | `vpnGatewayCustomBgpAddresses` | `array` | vpnGatewayCustomBgpAddresses used by this connection. |
+| `ipsecPolicies` | `array` | The IPSec Policies to be considered by this connection. |
+| `routingWeight` | `integer` | Routing weight for vpn connection. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `ingressBytesTransferred` | `integer` | Ingress bytes transferred. |
+| `vpnLinkConnectionMode` | `string` | Vpn link connection mode. |
+| `connectionBandwidth` | `integer` | Expected bandwidth in MBPS. |
+| `useLocalAzureIpAddress` | `boolean` | Use local azure ip to initiate connection. |
+| `type` | `string` | Resource type. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `ingressNatRules` | `array` | List of ingress NatRules. |
+| `egressNatRules` | `array` | List of egress NatRules. |
+| `vpnConnectionProtocolType` | `string` | Gateway connection protocol. |
+| `usePolicyBasedTrafficSelectors` | `boolean` | Enable policy-based traffic selectors. |
+| `enableBgp` | `boolean` | EnableBgp flag. |
+| `connectionStatus` | `string` | The current state of the vpn connection. |
+| `egressBytesTransferred` | `integer` | Egress bytes transferred. |
+| `enableRateLimiting` | `boolean` | EnableBgp flag. |
 | `vpnSiteLink` | `object` | Reference to another subresource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

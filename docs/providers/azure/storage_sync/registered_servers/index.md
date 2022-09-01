@@ -27,29 +27,29 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `monitoringEndpointUri` | `string` | Telemetry Endpoint Uri |
+| `serverOSVersion` | `string` | Registered Server OS Version |
+| `serviceLocation` | `string` | Service Location |
+| `agentVersionStatus` | `string` | Type of the registered server agent version status |
+| `lastWorkflowId` | `string` | Registered Server lastWorkflowId |
+| `provisioningState` | `string` | Registered Server Provisioning State |
+| `agentVersion` | `string` | Registered Server Agent Version |
+| `serverCertificate` | `string` | Registered Server Certificate |
 | `managementEndpointUri` | `string` | Management Endpoint Uri |
 | `agentVersionExpirationDate` | `string` | Registered Server Agent Version Expiration Date |
-| `lastOperationName` | `string` | Resource Last Operation Name |
-| `agentVersionStatus` | `string` | Type of the registered server agent version status |
-| `serverName` | `string` | Server name |
-| `serverManagementErrorCode` | `integer` | Registered Server Management Error Code |
-| `lastHeartBeat` | `string` | Registered Server last heart beat |
+| `storageSyncServiceUid` | `string` | Registered Server storageSyncServiceUid |
+| `friendlyName` | `string` | Friendly Name |
+| `monitoringConfiguration` | `string` | Monitoring Configuration |
 | `clusterName` | `string` | Registered Server clusterName |
 | `clusterId` | `string` | Registered Server clusterId |
-| `serverCertificate` | `string` | Registered Server Certificate |
-| `monitoringConfiguration` | `string` | Monitoring Configuration |
-| `serviceLocation` | `string` | Service Location |
-| `discoveryEndpointUri` | `string` | Resource discoveryEndpointUri |
-| `agentVersion` | `string` | Registered Server Agent Version |
-| `lastWorkflowId` | `string` | Registered Server lastWorkflowId |
-| `monitoringEndpointUri` | `string` | Telemetry Endpoint Uri |
-| `provisioningState` | `string` | Registered Server Provisioning State |
+| `serverManagementErrorCode` | `integer` | Registered Server Management Error Code |
 | `resourceLocation` | `string` | Resource Location |
-| `serverOSVersion` | `string` | Registered Server OS Version |
-| `friendlyName` | `string` | Friendly Name |
 | `serverId` | `string` | Registered Server serverId |
+| `lastHeartBeat` | `string` | Registered Server last heart beat |
+| `lastOperationName` | `string` | Resource Last Operation Name |
+| `discoveryEndpointUri` | `string` | Resource discoveryEndpointUri |
+| `serverName` | `string` | Server name |
 | `serverRole` | `string` | Registered Server serverRole |
-| `storageSyncServiceUid` | `string` | Registered Server storageSyncServiceUid |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

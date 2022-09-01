@@ -29,29 +29,29 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
+| `tags` | `object` | Resource tags. |
+| `publicIPAllocationMethod` | `string` | IP address allocation method. |
+| `ipConfiguration` | `object` | IP configuration. |
+| `zones` | `array` | A list of availability zones denoting the IP allocated for the resource needs to come from. |
 | `natGateway` | `object` | Nat Gateway resource. |
+| `linkedPublicIPAddress` | `object` | Public IP address resource. |
+| `publicIPPrefix` | `object` | Reference to another subresource. |
+| `dnsSettings` | `object` | Contains FQDN of the DNS record associated with the public IP address. |
 | `extendedLocation` | `object` | ExtendedLocation complex type. |
 | `deleteOption` | `string` | Specify what happens to the public IP address when the VM using it is deleted |
-| `resourceGuid` | `string` | The resource GUID property of the public IP address resource. |
-| `location` | `string` | Resource location. |
-| `type` | `string` | Resource type. |
-| `sku` | `object` | SKU of a public IP address. |
-| `ipAddress` | `string` | The IP address associated with the public IP address resource. |
-| `publicIPPrefix` | `object` | Reference to another subresource. |
-| `publicIPAllocationMethod` | `string` | IP address allocation method. |
-| `servicePublicIPAddress` | `object` | Public IP address resource. |
-| `migrationPhase` | `string` | Migration phase of Public IP Address. |
-| `ipTags` | `array` | The list of tags associated with the public IP address. |
-| `idleTimeoutInMinutes` | `integer` | The idle timeout of the public IP address. |
-| `linkedPublicIPAddress` | `object` | Public IP address resource. |
-| `ipConfiguration` | `object` | IP configuration. |
-| `publicIPAddressVersion` | `string` | IP address version. |
-| `zones` | `array` | A list of availability zones denoting the IP allocated for the resource needs to come from. |
-| `ddosSettings` | `object` | Contains the DDoS protection settings of the public IP. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `publicIPAddressVersion` | `string` | IP address version. |
+| `servicePublicIPAddress` | `object` | Public IP address resource. |
+| `ipAddress` | `string` | The IP address associated with the public IP address resource. |
+| `migrationPhase` | `string` | Migration phase of Public IP Address. |
+| `location` | `string` | Resource location. |
+| `ddosSettings` | `object` | Contains the DDoS protection settings of the public IP. |
+| `idleTimeoutInMinutes` | `integer` | The idle timeout of the public IP address. |
+| `type` | `string` | Resource type. |
+| `resourceGuid` | `string` | The resource GUID property of the public IP address resource. |
+| `sku` | `object` | SKU of a public IP address. |
+| `ipTags` | `array` | The list of tags associated with the public IP address. |
 | `provisioningState` | `string` | The current provisioning state. |
-| `dnsSettings` | `object` | Contains FQDN of the DNS record associated with the public IP address. |
-| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

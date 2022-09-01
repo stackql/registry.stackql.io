@@ -29,23 +29,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `location` | `string` | The resource location. |
+| `type` | `string` | Gets the resource type. |
 | `integrationServiceEnvironment` | `object` | The resource reference. |
+| `version` | `string` | Gets the version. |
+| `createdTime` | `string` | Gets the created time. |
+| `identity` | `object` | Managed service identity properties. |
+| `definition` | `object` |  |
+| `tags` | `object` | The resource tags. |
+| `parameters` | `object` | The parameters. |
+| `location` | `string` | The resource location. |
+| `accessEndpoint` | `string` | Gets the access endpoint. |
+| `integrationAccount` | `object` | The resource reference. |
 | `provisioningState` | `string` | The workflow provisioning state. |
 | `state` | `string` | The workflow state. |
-| `changedTime` | `string` | Gets the changed time. |
-| `parameters` | `object` | The parameters. |
-| `identity` | `object` | Managed service identity properties. |
-| `version` | `string` | Gets the version. |
 | `accessControl` | `object` | The access control configuration. |
-| `accessEndpoint` | `string` | Gets the access endpoint. |
-| `definition` | `object` |  |
-| `endpointsConfiguration` | `object` | The endpoints configuration. |
-| `integrationAccount` | `object` | The resource reference. |
 | `sku` | `object` | The sku type. |
-| `tags` | `object` | The resource tags. |
-| `createdTime` | `string` | Gets the created time. |
-| `type` | `string` | Gets the resource type. |
+| `endpointsConfiguration` | `object` | The endpoints configuration. |
+| `changedTime` | `string` | Gets the changed time. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

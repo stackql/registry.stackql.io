@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `description` | `string` | The operation description. |
 | `startTime` | `string` | The operation start time. |
-| `estimatedCompletionTime` | `string` | The estimated completion time of the operation. |
-| `serverName` | `string` | The name of the server. |
-| `operationFriendlyName` | `string` | The friendly name of operation. |
-| `errorCode` | `integer` | The operation error code. |
-| `percentComplete` | `integer` | The percentage of the operation completed. |
-| `errorDescription` | `string` | The operation error description. |
 | `isUserError` | `boolean` | Whether or not the error is a user error. |
-| `errorSeverity` | `integer` | The operation error severity. |
+| `errorDescription` | `string` | The operation error description. |
 | `databaseName` | `string` | The name of the database the operation is being performed on. |
-| `operation` | `string` | The name of operation. |
+| `serverName` | `string` | The name of the server. |
+| `errorSeverity` | `integer` | The operation error severity. |
+| `estimatedCompletionTime` | `string` | The estimated completion time of the operation. |
 | `state` | `string` | The operation state. |
+| `percentComplete` | `integer` | The percentage of the operation completed. |
+| `operationFriendlyName` | `string` | The friendly name of operation. |
+| `operation` | `string` | The name of operation. |
 | `isCancellable` | `boolean` | Whether the operation can be cancelled. |
+| `errorCode` | `integer` | The operation error code. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

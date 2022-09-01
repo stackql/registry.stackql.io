@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `createdByPrincipalTenantId` | `string` | The tenant Id of the user who created the role assignment. |
-| `userAuthenticationType` | `string` | The authentication type. |
-| `createdByPrincipalId` | `string` | The principal Id of the user who created the role assignment. |
-| `roleDefinitionId` | `string` | The ID of the role definition. |
-| `scope` | `string` | The scope at which the role was assigned. |
+| `createdOn` | `string` | The date the role assignment was created. |
 | `type` | `string` | Resource type. |
+| `createdByPrincipalTenantId` | `string` | The tenant Id of the user who created the role assignment. |
+| `createdByPrincipalId` | `string` | The principal Id of the user who created the role assignment. |
+| `scope` | `string` | The scope at which the role was assigned. |
 | `createdByUserEmailAddress` | `string` | The email address of the user who created the role assignment. |
+| `roleDefinitionId` | `string` | The ID of the role definition. |
+| `userAuthenticationType` | `string` | The authentication type. |
 | `userEmailAddress` | `string` | The email address of the user. |
 | `principalId` | `string` | The principal id of the user to whom the role was assigned. |
-| `createdOn` | `string` | The date the role assignment was created. |
 | `principalTenantId` | `string` | The principal tenant id of the user to whom the role was assigned. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

@@ -27,21 +27,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `diskId` | `string` | The disk id. |
-| `exclusiveAllocatedSize` | `integer` | The exclusive allocated size for the disk. |
-| `actualSizeGB` | `integer` | The actual size of disk in GB. |
+| `diskSku` | `string` | Disk Sku. |
 | `managedBy` | `string` | Compute resource Uri which owns this disk. |
 | `creationSourceUri` | `string` | The disk creation source uri. |
-| `diskSku` | `string` | Disk Sku. |
-| `status` | `string` | Disk State. |
 | `provisionSizeGB` | `integer` | The provision size of disk in GB. |
-| `userResourceId` | `string` | The disk resource Uri from user view. |
-| `creationOption` | `string` | Disk creation option. |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `status` | `string` | Disk State. |
 | `diskType` | `string` | Disk resource type. |
+| `userResourceId` | `string` | The disk resource Uri from user view. |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `sharePath` | `string` | The disk share path. |
+| `exclusiveAllocatedSize` | `integer` | The exclusive allocated size for the disk. |
+| `creationOption` | `string` | Disk creation option. |
+| `diskId` | `string` | The disk id. |
+| `actualSizeGB` | `integer` | The actual size of disk in GB. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `type` | `string` | Resource type. |
-| `availableScaleUnits` | `array` | The list of scale units available. |
 | `tags` | `object` | Resource tags. |
-| `availableVersions` | `array` | Available Network Virtual Appliance versions. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `location` | `string` | Resource location. |
 | `vendor` | `string` | Network Virtual Appliance Sku vendor. |
+| `availableScaleUnits` | `array` | The list of scale units available. |
+| `type` | `string` | Resource type. |
+| `availableVersions` | `array` | Available Network Virtual Appliance versions. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -30,19 +30,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Specifies the resource ID. |
 | `name` | `string` | Specifies the name of the resource. |
 | `description` | `string` | The description of the cluster. |
-| `globalServiceConfiguration` | `object` | Global configuration for services in the cluster. |
-| `containerRegistry` | `object` | Properties of Azure Container Registry. |
-| `clusterType` | `string` | The cluster type. |
-| `appInsights` | `object` | Properties of App Insights. |
-| `modifiedOn` | `string` | The date and time when the cluster was last modified. |
 | `provisioningState` | `string` | The provision state of the cluster. Valid values are Unknown, Updating, Provisioning, Succeeded, and Failed. |
-| `location` | `string` | Specifies the location of the resource. |
-| `containerService` | `object` | Information about the container service backing the cluster |
-| `type` | `string` | Specifies the type of the resource. |
+| `globalServiceConfiguration` | `object` | Global configuration for services in the cluster. |
 | `createdOn` | `string` | The date and time when the cluster was created. |
 | `provisioningErrors` | `array` | List of provisioning errors reported by the resource provider. |
-| `storageAccount` | `object` | Properties of Storage Account. |
+| `containerService` | `object` | Information about the container service backing the cluster |
+| `containerRegistry` | `object` | Properties of Azure Container Registry. |
+| `clusterType` | `string` | The cluster type. |
+| `type` | `string` | Specifies the type of the resource. |
+| `modifiedOn` | `string` | The date and time when the cluster was last modified. |
 | `tags` | `object` | Contains resource tags defined as key/value pairs. |
+| `appInsights` | `object` | Properties of App Insights. |
+| `storageAccount` | `object` | Properties of Storage Account. |
+| `location` | `string` | Specifies the location of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

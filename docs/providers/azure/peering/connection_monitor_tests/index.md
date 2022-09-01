@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `testFrequencyInSec` | `integer` | The Connection Monitor test frequency in seconds |
-| `provisioningState` | `string` | The provisioning state of the resource. |
-| `type` | `string` | The type of the resource. |
 | `destinationPort` | `integer` | The Connection Monitor test destination port |
+| `type` | `string` | The type of the resource. |
 | `sourceAgent` | `string` | The Connection Monitor test source agent |
 | `isTestSuccessful` | `boolean` | The flag that indicates if the Connection Monitor test is successful or not. |
-| `path` | `array` | The path representing the Connection Monitor test. |
+| `provisioningState` | `string` | The provisioning state of the resource. |
+| `testFrequencyInSec` | `integer` | The Connection Monitor test frequency in seconds |
 | `destination` | `string` | The Connection Monitor test destination |
+| `path` | `array` | The path representing the Connection Monitor test. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

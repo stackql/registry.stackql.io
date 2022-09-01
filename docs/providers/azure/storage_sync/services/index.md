@@ -27,15 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `storageSyncServiceUid` | `string` | Storage Sync service Uid |
-| `privateEndpointConnections` | `array` | List of private endpoint connection associated with the specified storage sync service |
-| `lastOperationName` | `string` | Resource Last Operation Name |
-| `lastWorkflowId` | `string` | StorageSyncService lastWorkflowId |
-| `provisioningState` | `string` | StorageSyncService Provisioning State |
-| `incomingTrafficPolicy` | `string` | Type of the Incoming Traffic Policy |
-| `location` | `string` | The geo-location where the resource lives |
 | `tags` | `object` | Resource tags. |
+| `lastWorkflowId` | `string` | StorageSyncService lastWorkflowId |
+| `lastOperationName` | `string` | Resource Last Operation Name |
+| `provisioningState` | `string` | StorageSyncService Provisioning State |
+| `privateEndpointConnections` | `array` | List of private endpoint connection associated with the specified storage sync service |
+| `incomingTrafficPolicy` | `string` | Type of the Incoming Traffic Policy |
+| `storageSyncServiceUid` | `string` | Storage Sync service Uid |
 | `storageSyncServiceStatus` | `integer` | Storage Sync service status. |
+| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

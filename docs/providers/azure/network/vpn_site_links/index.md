@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `fqdn` | `string` | FQDN of vpn-site-link. |
-| `linkProperties` | `object` | List of properties of a link provider. |
 | `ipAddress` | `string` | The ip-address for the vpn-site-link. |
+| `linkProperties` | `object` | List of properties of a link provider. |
+| `provisioningState` | `string` | The current provisioning state. |
+| `fqdn` | `string` | FQDN of vpn-site-link. |
 | `bgpProperties` | `object` | BGP settings details for a link. |
 | `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

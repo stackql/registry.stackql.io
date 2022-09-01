@@ -27,8 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `columnType` | `string` | The column data type. |
 | `isComputed` | `boolean` | Indicates whether column value is computed or not |
+| `columnType` | `string` | The column data type. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

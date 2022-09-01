@@ -29,27 +29,27 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `policies` | `object` | The policies for a container registry. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `publicNetworkAccess` | `string` | Whether or not public network access is allowed for the container registry. |
-| `dataEndpointEnabled` | `boolean` | Enable a single data endpoint per region for serving data. |
-| `creationDate` | `string` | The creation date of the container registry in ISO8601 format. |
-| `networkRuleSet` | `object` | The network rule set for a container registry. |
-| `dataEndpointHostNames` | `array` | List of host names that will serve data when dataEndpointEnabled is true. |
-| `encryption` | `object` |  |
-| `provisioningState` | `string` | The provisioning state of the container registry at the time the operation was called. |
 | `type` | `string` | The type of the resource. |
-| `status` | `object` | The status of an Azure resource at the time the operation was called. |
-| `tags` | `object` | The tags of the resource. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `loginServer` | `string` | The URL that can be used to log into the container registry. |
-| `identity` | `object` | Managed identity for the resource. |
 | `networkRuleBypassOptions` | `string` | Whether to allow trusted Azure services to access a network restricted registry. |
+| `status` | `object` | The status of an Azure resource at the time the operation was called. |
+| `dataEndpointEnabled` | `boolean` | Enable a single data endpoint per region for serving data. |
+| `dataEndpointHostNames` | `array` | List of host names that will serve data when dataEndpointEnabled is true. |
+| `publicNetworkAccess` | `string` | Whether or not public network access is allowed for the container registry. |
+| `tags` | `object` | The tags of the resource. |
+| `identity` | `object` | Managed identity for the resource. |
+| `anonymousPullEnabled` | `boolean` | Enables registry-wide pull from unauthenticated clients. |
+| `zoneRedundancy` | `string` | Whether or not zone redundancy is enabled for this container registry |
+| `sku` | `object` | The SKU of a container registry. |
 | `adminUserEnabled` | `boolean` | The value that indicates whether the admin user is enabled. |
 | `privateEndpointConnections` | `array` | List of private endpoint connections for a container registry. |
-| `zoneRedundancy` | `string` | Whether or not zone redundancy is enabled for this container registry |
+| `encryption` | `object` |  |
+| `provisioningState` | `string` | The provisioning state of the container registry at the time the operation was called. |
+| `networkRuleSet` | `object` | The network rule set for a container registry. |
+| `policies` | `object` | The policies for a container registry. |
+| `creationDate` | `string` | The creation date of the container registry in ISO8601 format. |
 | `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
-| `anonymousPullEnabled` | `boolean` | Enables registry-wide pull from unauthenticated clients. |
-| `sku` | `object` | The SKU of a container registry. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

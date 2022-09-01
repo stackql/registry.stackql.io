@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `name` | `string` | Operation name: {provider}/{resource}/{operation} |
-| `serviceSpecification` | `object` | One property of operation, include metric specifications. |
+| `name` | `string` | Operation name: &#123;provider&#125;/&#123;resource&#125;/&#123;operation&#125; |
 | `display` | `` | Display metadata associated with the operation. |
 | `origin` | `string` | The origin of operations. |
+| `serviceSpecification` | `object` | One property of operation, include metric specifications. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
