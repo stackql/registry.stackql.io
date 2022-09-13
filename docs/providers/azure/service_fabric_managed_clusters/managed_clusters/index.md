@@ -41,7 +41,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `fqdn` | `string` | The fully qualified domain name associated with the public load balancer of the cluster. |
 | `ipTags` | `array` | The list of IP tags associated with the default public IP address of the cluster. |
 | `clusterUpgradeMode` | `string` | The upgrade mode of the cluster when new Service Fabric runtime version is available.<br /> |
-| `clusterCodeVersion` | `string` | The Service Fabric runtime version of the cluster. This property is required when **clusterUpgradeMode** is set to 'Manual'. To get list of available Service Fabric versions for new clusters use [ClusterVersion API](./ClusterVersion.md). To get the list of available version for existing clusters use **availableClusterVersions**. |
+| `clusterCodeVersion` | `string` | The Service Fabric runtime version of the cluster. This property is required when **clusterUpgradeMode** is set to 'Manual'. To get list of available Service Fabric versions for new clusters use [ClusterVersion API](https://docs.microsoft.com/en-us/rest/api/servicefabric/sfrp-index-clusterversion). To get the list of available version for existing clusters use **availableClusterVersions**. |
 | `loadBalancingRules` | `array` | Load balancing rules that are applied to the public load balancer of the cluster. |
 | `fabricSettings` | `array` | The list of custom fabric settings to configure the cluster. |
 | `ipv6Address` | `string` | IPv6 address for the cluster if IPv6 is enabled. |

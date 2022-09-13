@@ -26,28 +26,33 @@ REGISTRY PULL firebase v1.0.2;
 
 ## Authentication
 ```javascript
-
 {
-    "firebase": {
-        /**
-            * Type of authentication to use, suported values include: service_account, interactive
-            * @type String
-            */
-        "type": string, 
-        /**
-            * path to service account key file.
-            * @type String
-            */
-        "credentialsfilepath": string, 
-    }
-}    
-
+  "firebase": {
+    /**
+      * Type of authentication to use, suported values include: service_account, interactive
+      * @type String
+      */
+    "type": string, 
+    /**
+      * path to service account key file.
+      * @type String
+      */
+    "credentialsfilepath": string, 
+  }
+}
 ```
-### Example
+### Example (Mac/Linux)
 ```bash
 
 AUTH='{ "firebase": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}'
 stackql shell --auth="${AUTH}"
+
+```
+### Example (PowerShell)
+```powershell
+
+$Auth = "{ 'firebase': { 'type': 'service_account',  'credentialsfilepath': 'creds/sa-key.json' }}'
+stackql.exe shell --auth=$Auth
 
 ```
 ## Services

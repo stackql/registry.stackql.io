@@ -27,24 +27,24 @@ REGISTRY PULL k8s v0.1.1;
 ## Authentication
 ```javascript
 {
-    "k8s": {
-        /**
-            * Type of authentication to use, suported values include: api_key, null_auth
-            * @type String
-            */
-        "type": string, 
-        /**
-            * Environment variable name containing the api key or credentials.
-            * @type String
-            */
-        "credentialsenvvar": string, 
-        /**
-            * Value prepended to the request header, e.g. "Bearer "
-            * Must be set to "Bearer "
-            * @type String
-            */
-        "valuePrefix": string, 
-    }
+  "k8s": {
+    /**
+      * Type of authentication to use, suported values include: api_key, null_auth
+      * @type String
+      */
+    "type": string, 
+    /**
+      * Environment variable name containing the api key or credentials.
+      * @type String
+      */
+    "credentialsenvvar": string, 
+    /**
+      * Value prepended to the request header, e.g. "Bearer "
+      * Must be set to "Bearer "
+      * @type String
+      */
+    "valuePrefix": string, 
+  }
 }
 ```
 
