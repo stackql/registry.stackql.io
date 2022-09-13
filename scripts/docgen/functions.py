@@ -10,6 +10,7 @@ def make_web_safe(str):
     safe_str = safe_str.replace("{", "&#123;").replace("}", "&#125;")
     safe_str = safe_str.replace("\r\n", "<br />")
     safe_str = safe_str.replace("\n", "<br />")
+    # TODO internal MD links
     return safe_str
 
 def make_markdown_table_safe(str):
@@ -113,11 +114,15 @@ def generate_auth_block(provider):
 ```javascript
 %s
 ```
-### Example
+### Example (Mac/Linux)
 ```bash
 %s
 ```
-""" % (auth_blocks[provider]['auth'], auth_blocks[provider]['example'])
+### Example (PowerShell)
+```powershell
+%s
+```
+""" % (auth_blocks[provider]['auth'], auth_blocks[provider]['example']['linux'], auth_blocks[provider]['example']['windows'])
 
 def generate_two_col_list(provider, list_of_objects, service_name=None):
     try:

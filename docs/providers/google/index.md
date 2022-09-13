@@ -26,28 +26,33 @@ REGISTRY PULL google v1.0.3;
 
 ## Authentication
 ```javascript
-
 {
-    "google": {
-        /**
-            * Type of authentication to use, suported values include: service_account, interactive
-            * @type String
-            */
-        "type": string, 
-        /**
-            * path to service account key file.
-            * @type String
-            */
-        "credentialsfilepath": string, 
-    }
+  "google": {
+    /**
+      * Type of authentication to use, suported values include: service_account, interactive
+      * @type String
+      */
+    "type": string, 
+    /**
+      * path to service account key file.
+      * @type String
+      */
+    "credentialsfilepath": string, 
+  }
 }
-
 ```
-### Example
+### Example (Mac/Linux)
 ```bash
 
 AUTH='{ "google": { "type": "service_account",  "credentialsfilepath": "creds/sa-key.json" }}'
 stackql shell --auth="${AUTH}"
+
+```
+### Example (PowerShell)
+```powershell
+
+$Auth = "{ 'google': { 'type': 'service_account',  'credentialsfilepath': 'creds/sa-key.json' }}'
+stackql.exe shell --auth=$Auth
 
 ```
 ## Services

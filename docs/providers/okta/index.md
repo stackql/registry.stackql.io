@@ -27,24 +27,34 @@ REGISTRY PULL okta v0.1.0;
 ```javascript
 {
     "okta": {
-        /**
-            * Type of authentication to use, suported values include:  api_key
-            * @type String
-            */
-        "type": string, 
-        /**
-            * Environment variable name containing the api key or credentials.
-            * @type String
-            */
-        "credentialsenvvar": string, 
+     /**
+      * Type of authentication to use, suported values include:  api_key
+      * @type String
+      */
+     "type": string, 
+     /**
+      * Environment variable name containing the api key or credentials.
+      * @type String
+      */
+     "credentialsenvvar": string, 
     }
 }
 ```
-### Example
+### Example (Mac/Linux)
 ```bash
+
 OKTA_SECRET_KEY=yourapikey
 AUTH='{ "okta": { "type": "api_key",  "credentialsenvvar": "OKTA_SECRET_KEY" }}'
 stackql shell --auth="${AUTH}"
+
+```
+### Example (PowerShell)
+```powershell
+
+$env:OKTA_SECRET_KEY = "yourapikey"
+$Auth = "{ 'okta': { 'type': 'api_key',  'credentialsenvvar': 'OKTA_SECRET_KEY' }}"
+stackql.exe shell --auth=$Auth
+
 ```
 ## Services
 <div class="row">

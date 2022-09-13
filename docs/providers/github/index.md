@@ -26,26 +26,36 @@ REGISTRY PULL github v0.3.1;
 ## Authentication
 ```javascript
 {
-    "github": {
-        /**
-            * Type of authentication to use, suported values include: basic
-            * @type String
-            */
-        "type": string, 
-        /**
-            * Environment variable name containing the api key or credentials.
-            * Variable value must be a base64 encoded string of the form: username:password
-            * @type String
-            */
-        "credentialsenvvar": string, 
-    }
+  "github": {
+    /**
+      * Type of authentication to use, suported values include: basic
+      * @type String
+      */
+    "type": string, 
+    /**
+      * Environment variable name containing the api key or credentials.
+      * Variable value must be a base64 encoded string of the form: username:password
+      * @type String
+      */
+    "credentialsenvvar": string, 
+  }
 }
 ```
-### Example
+### Example (Mac/Linux)
 ```bash
+
 export GITHUB_CREDS=$(echo -n 'yourusername:ghp_YOURPERSONALACCESSTOKEN' | base64)
 AUTH='{ "github": { "type": "basic", "credentialsenvvar": "GITHUB_CREDS" } }'
 stackql shell --auth="${AUTH}"
+
+```
+### Example (PowerShell)
+```powershell
+
+$env:GITHUB_CREDS = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("yourusername:ghp_YOURPERSONALACCESSTOKEN"))
+$Auth = "{ 'github': { 'type': 'basic', 'credentialsenvvar': 'GITHUB_CREDS' } }"
+stackql shell --auth=$Auth
+
 ```
 ## Services
 <div class="row">

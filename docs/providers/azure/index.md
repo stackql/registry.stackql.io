@@ -26,34 +26,40 @@ REGISTRY PULL azure v0.2.0;
 
 ## Authentication
 ```javascript
-
 {
-    "azure": {
-        /**
-            * Type of authentication to use, suported values include: api_key
-            * @type String
-            */
-        "type": string, 
-        /**
-            * Environment variable name containing the api token obtained using the azure cli or SDK.
-            * @type String
-            */
-        "credentialsenvvar": string, 
-        /**
-            * Value prepended to the request header, e.g. "Bearer "
-            * Must be set to "Bearer "
-            * @type String
-            */
-        "valuePrefix": string, 
-    }
+  "azure": {
+    /**
+      * Type of authentication to use, suported values include: api_key
+      * @type String
+      */
+    "type": string, 
+    /**
+      * Environment variable name containing the api token obtained using the azure cli or SDK.
+      * @type String
+      */
+    "credentialsenvvar": string, 
+    /**
+      * Value prepended to the request header, e.g. "Bearer "
+      * Must be set to "Bearer "
+      * @type String
+      */
+    "valuePrefix": string, 
+  }
 }
+```
+### Example (PowerShell)
+```powershell
+
+$Env:AZ_ACCESS_TOKEN = "$(az account get-access-token --query accessToken --output tsv)".Trim("`r")
+$Auth = "{ 'azure': { 'type': 'api_key', 'valuePrefix': 'Bearer ', 'credentialsenvvar': 'AZ_ACCESS_TOKEN' } }"
+stackql.exe shell --auth=$Auth
 
 ```
-### Example
+### Example (Mac/Linux)
 ```bash
 
 AZ_ACCESS_TOKEN_RAW=$(az account get-access-token --query accessToken --output tsv)
-export AZ_ACCESS_TOKEN=`echo $AZ_ACCESS_TOKEN_RAW | tr -d ''`
+export AZ_ACCESS_TOKEN=`echo $AZ_ACCESS_TOKEN_RAW | tr -d '\r'`
 AUTH='{ "azure": { "type": "api_key", "valuePrefix": "Bearer ", "credentialsenvvar": "AZ_ACCESS_TOKEN" } }'
 stackql shell --auth="${AUTH}"
 

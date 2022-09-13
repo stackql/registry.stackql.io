@@ -26,31 +26,41 @@ REGISTRY PULL netlify v0.2.0;
 ## Authentication
 ```javascript
 {
-    "netlify": {
-        /**
-            * Type of authentication to use, suported values include: api_key
-            * @type String
-            */
-        "type": string, 
-        /**
-            * Environment variable name containing the api key or credentials.
-            * @type String
-            */
-        "credentialsenvvar": string, 
-        /**
-            * Value prepended to the request header, e.g. "Bearer "
-            * Must be set to "Bearer "
-            * @type String
-            */
-        "valuePrefix": string, 
-    }
+  "netlify": {
+    /**
+      * Type of authentication to use, suported values include: api_key
+      * @type String
+      */
+    "type": string, 
+    /**
+      * Environment variable name containing the api key or credentials.
+      * @type String
+      */
+    "credentialsenvvar": string, 
+    /**
+      * Value prepended to the request header, e.g. "Bearer "
+      * Must be set to "Bearer "
+      * @type String
+      */
+    "valuePrefix": string, 
+  }
 }
 ```
-### Example
+### Example (Mac/Linux)
 ```bash
+
 NETLIFY_TOKEN=yourtoken
 AUTH='{ "netlify": { "type": "api_key",  "credentialsenvvar": "NETLIFY_TOKEN", "valuePrefix": "Bearer " }}'
 stackql shell --auth="${AUTH}"
+
+```
+### Example (PowerShell)
+```powershell
+
+$env:NETLIFY_TOKEN = "yourtoken"
+$Auth = "{ 'netlify': { 'type': 'api_key',  'credentialsenvvar': 'NETLIFY_TOKEN', 'valuePrefix': 'Bearer ' }}"
+stackql.exe shell --auth=$Auth
+
 ```
 ## Services
 <div class="row">
