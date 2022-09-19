@@ -13,8 +13,7 @@ description: Query, deploy and manage AWS resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
-s3  
-    
+Amazon Simple Storage Service (Amazon S3).  
 
 ## Overview
 <table><tbody>

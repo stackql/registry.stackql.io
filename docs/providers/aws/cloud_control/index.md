@@ -13,9 +13,8 @@ description: Query, deploy and manage AWS resources using SQL
 custom_edit_url: null
 image: https://storage.googleapis.com/stackql-web-assets/blog/stackql-blog-post-featured-image.png
 ---
-cloud_control  
+[AWS Cloud Control API](https://aws.amazon.com/cloudcontrolapi/)  
     
-
 ## Overview
 <table><tbody>
 <tr><td><b>Name</b></td><td><code>aws.cloud_control</code></td></tr>
