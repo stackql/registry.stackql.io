@@ -26,14 +26,14 @@ alttext="StackQL"/>
 
 <section class="row list">
   <article class="col col--4 margin-bottom--lg">
-    <a class="card padding--lg cardContainer" href="/providers/google/">
+    <a class="card padding--lg cardContainer" href="/providers/aws/">
       <div class="row">
-      <div class="col col--2 cardTitleCol"><img src="/img/providers/google/google.png" /></div>
-      <div class="col col--10 cardTitleCol"><h2 class="text--truncate cardTitle" title="Google Cloud Platform">Google Cloud Platform</h2></div>  
+      <div class="col col--2 cardTitleCol"><img src="/img/providers/aws/aws.png" /></div>
+      <div class="col col--10 cardTitleCol"><h2 class="text--truncate cardTitle" title="AWS">AWS</h2></div>  
       </div>
       <div class="row">
       <div class="col col--12 cardTitleCol">
-      <p class="text--truncate cardDescription">Cloud computing services offered by Google.</p>
+      <p class="text--truncate cardDescription">Cloud computing by Amazon Web Services.</p>
       </div>
       </div>
     </a>
@@ -50,7 +50,20 @@ alttext="StackQL"/>
       </div>
       </div>
     </a>
-  </article>  
+  </article>
+  <article class="col col--4 margin-bottom--lg">
+    <a class="card padding--lg cardContainer" href="/providers/google/">
+      <div class="row">
+      <div class="col col--2 cardTitleCol"><img src="/img/providers/google/google.png" /></div>
+      <div class="col col--10 cardTitleCol"><h2 class="text--truncate cardTitle" title="Google Cloud Platform">Google Cloud Platform</h2></div>  
+      </div>
+      <div class="row">
+      <div class="col col--12 cardTitleCol">
+      <p class="text--truncate cardDescription">Cloud computing services offered by Google.</p>
+      </div>
+      </div>
+    </a>
+  </article>
   <article class="col col--4 margin-bottom--lg">
     <a class="card padding--lg cardContainer" href="/providers/github/">
       <div class="row">

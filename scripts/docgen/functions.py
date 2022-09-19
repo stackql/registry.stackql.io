@@ -211,23 +211,28 @@ def generate_fields_table(fields):
 
 def generate_methods_table(methods):
     output = "## Methods\n"
-    if (methods["description"] == methods["description"][0]).all():
-        output = output + "| Name | Accessible by | Required Params |\n"
-        output = output + "|:-----|:--------------|:----------------|\n"
-        for methodIx, methodRow in methods.iterrows():
-            if (methodRow["RequiredParams"] == ""):
-                output = output + "| `%s` | `%s` | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"])
-            else:
-                output = output + "| `%s` | `%s` | `%s` |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"])
-    else:
-        output = output + "| Name | Accessible by | Required Params | Description |\n"
-        output = output + "|:-----|:--------------|:----------------|:------------|\n"
-        for methodIx, methodRow in methods.iterrows():
-            if (methodRow["RequiredParams"] == ""):
-                output = output + "| `%s` | `%s` | %s | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"], make_markdown_table_safe(methodRow["description"]))
-            else:
-                output = output + "| `%s` | `%s` | `%s` | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"], make_markdown_table_safe(methodRow["description"]))
-    return output
+    try:
+        if (methods["description"] == methods["description"][0]).all():
+            output = output + "| Name | Accessible by | Required Params |\n"
+            output = output + "|:-----|:--------------|:----------------|\n"
+            for methodIx, methodRow in methods.iterrows():
+                if (methodRow["RequiredParams"] == ""):
+                    output = output + "| `%s` | `%s` | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"])
+                else:
+                    output = output + "| `%s` | `%s` | `%s` |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"])
+        else:
+            output = output + "| Name | Accessible by | Required Params | Description |\n"
+            output = output + "|:-----|:--------------|:----------------|:------------|\n"
+            for methodIx, methodRow in methods.iterrows():
+                if (methodRow["RequiredParams"] == ""):
+                    output = output + "| `%s` | `%s` | %s | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"], make_markdown_table_safe(methodRow["description"]))
+                else:
+                    output = output + "| `%s` | `%s` | `%s` | %s |\n" % (methodRow["MethodName"], methodRow["SQLVerb"], methodRow["RequiredParams"], make_markdown_table_safe(methodRow["description"]))
+        return output
+    except:
+        output = output + "No methods available for the resource\n"
+        return output
+
 
 def run_stackql_query(query, retries):
     print("running %s..." % query)

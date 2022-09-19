@@ -22,6 +22,7 @@ for example...
 
 ```bash
 python3 docgen/generate_docs.py azure v0.2.0
+python3 docgen/generate_docs.py aws v0.1.3
 ```
 
 This command would generate the docs for the `v0.2.0` version of the `azure` StackQL provider, the docs would be created in the `docs/azure` folder, once they are verified the docs can be moved to `/docs/providers/azure`.  

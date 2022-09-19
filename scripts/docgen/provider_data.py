@@ -255,12 +255,12 @@ stackql.exe shell --auth=$Auth
     'example': {
         'linux':
 """
-AUTH='{ "aws": { "type": "aws_signing_v4",  "credentialsenvvar": "AWS_SECRET_ACCESS_KEY", "keyID": "ABCDEFGHUJKLMNOPQRS" }}'
+AUTH="{ \"aws\": { \"type\": \"aws_signing_v4\", \"credentialsenvvar\": \"AWS_SECRET_ACCESS_KEY\", \"keyID\": \"${AWS_ACCESS_KEY_ID}\" }}"
 stackql shell --auth="${AUTH}"
 """,
         'windows':  
 """
-$Auth = "{ 'aws': { 'type': 'aws_signing_v4',  'credentialsenvvar': 'AWS_SECRET_ACCESS_KEY', 'keyID': 'ABCDEFGHUJKLMNOPQRS' }}"
+$Auth = "{ 'aws': { 'type': 'aws_signing_v4',  'credentialsenvvar': 'AWS_SECRET_ACCESS_KEY', 'keyID': '$Env.AWS_ACCESS_KEY_ID' }}"
 stackql.exe shell --auth=$Auth
 """
     }
