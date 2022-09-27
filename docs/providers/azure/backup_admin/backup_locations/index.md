@@ -29,15 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
+| `location` | `string` | Location of the resource. |
+| `properties` | `object` | Properties of a backup location. |
 | `tags` | `object` | List of key value pairs. |
 | `type` | `string` | Type of resource. |
-| `externalStoreDefault` | `object` | Information about an external storage location. |
-| `location` | `string` | Location of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `BackupLocations_Get` | `SELECT` | `location, resourceGroupName, subscriptionId` | Returns a specific backup location based on name. |
 | `BackupLocations_List` | `SELECT` | `resourceGroupName, subscriptionId` | Returns the list of backup locations. |
 | `BackupLocations_CreateBackup` | `EXEC` | `location, resourceGroupName, subscriptionId` | Back up a specific location. |
-| `BackupLocations_Get` | `EXEC` | `location, resourceGroupName, subscriptionId` | Returns a specific backup location based on name. |
 | `BackupLocations_PruneExternalStore` | `EXEC` | `location, resourceGroupName, subscriptionId` | Prune the external backup store. |
 | `BackupLocations_Update` | `EXEC` | `location, resourceGroupName, subscriptionId` | Update a backup location. |

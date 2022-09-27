@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ARM ID of the resource. |
 | `name` | `string` | The preview subscription ID. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `properties` | `object` | PreviewSubscription properties |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | The type of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VendorSkuPreview_Get` | `SELECT` | `previewSubscription, skuName, subscriptionId, vendorName` | Gets the preview information of a vendor sku. |
 | `VendorSkuPreview_List` | `SELECT` | `skuName, subscriptionId, vendorName` | Lists all the preview information of a vendor sku. |
 | `VendorSkuPreview_CreateOrUpdate` | `INSERT` | `previewSubscription, skuName, subscriptionId, vendorName` | Creates or updates preview information of a vendor sku. |
 | `VendorSkuPreview_Delete` | `DELETE` | `previewSubscription, skuName, subscriptionId, vendorName` | Deletes the preview information of a vendor sku. |
-| `VendorSkuPreview_Get` | `EXEC` | `previewSubscription, skuName, subscriptionId, vendorName` | Gets the preview information of a vendor sku. |

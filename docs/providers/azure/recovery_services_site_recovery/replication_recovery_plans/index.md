@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
-| `properties` | `object` | Recovery plan properties. |
 | `type` | `string` | Resource Type |
 | `location` | `string` | Resource Location |
+| `properties` | `object` | Recovery plan properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReplicationRecoveryPlans_Get` | `SELECT` | `api-version, recoveryPlanName, resourceGroupName, resourceName, subscriptionId` | Gets the details of the recovery plan. |
 | `ReplicationRecoveryPlans_List` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` | Lists the recovery plans in the vault. |
 | `ReplicationRecoveryPlans_Create` | `INSERT` | `api-version, recoveryPlanName, resourceGroupName, resourceName, subscriptionId, data__properties` | The operation to create a recovery plan. |
 | `ReplicationRecoveryPlans_Delete` | `DELETE` | `api-version, recoveryPlanName, resourceGroupName, resourceName, subscriptionId` | Delete a recovery plan. |
 | `ReplicationRecoveryPlans_FailoverCancel` | `EXEC` | `api-version, recoveryPlanName, resourceGroupName, resourceName, subscriptionId` | The operation to cancel the failover of a recovery plan. |
 | `ReplicationRecoveryPlans_FailoverCommit` | `EXEC` | `api-version, recoveryPlanName, resourceGroupName, resourceName, subscriptionId` | The operation to commit the failover of a recovery plan. |
-| `ReplicationRecoveryPlans_Get` | `EXEC` | `api-version, recoveryPlanName, resourceGroupName, resourceName, subscriptionId` | Gets the details of the recovery plan. |
 | `ReplicationRecoveryPlans_PlannedFailover` | `EXEC` | `api-version, recoveryPlanName, resourceGroupName, resourceName, subscriptionId, data__properties` | The operation to start the planned failover of a recovery plan. |
 | `ReplicationRecoveryPlans_Reprotect` | `EXEC` | `api-version, recoveryPlanName, resourceGroupName, resourceName, subscriptionId` | The operation to reprotect(reverse replicate) a recovery plan. |
 | `ReplicationRecoveryPlans_TestFailover` | `EXEC` | `api-version, recoveryPlanName, resourceGroupName, resourceName, subscriptionId, data__properties` | The operation to start the test failover of a recovery plan. |

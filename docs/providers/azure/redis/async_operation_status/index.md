@@ -25,8 +25,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Fully qualified ID for the async operation. |
+| `name` | `string` | Name of the async operation. |
+| `status` | `string` | Operation status. |
+| `startTime` | `string` | The start time of the operation. |
+| `properties` | `object` | Additional properties from RP, only when operation is successful |
+| `operations` | `array` | The operations list. |
+| `percentComplete` | `number` | Percent of the operation that is complete. |
+| `endTime` | `string` | The end time of the operation. |
+| `error` | `object` | The error detail. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `AsyncOperationStatus_Get` | `EXEC` | `location, operationId, subscriptionId` |
+| `AsyncOperationStatus_Get` | `SELECT` | `location, operationId, subscriptionId` |

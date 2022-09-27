@@ -25,8 +25,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `targetResourceId` | `string` | resource of the predictive metric. |
+| `timespan` | `string` | The timespan for which the data was retrieved. Its value consists of two datetimes concatenated, separated by '/'.  This may be adjusted in the future and returned back from what was originally requested. |
+| `data` | `array` | the value of the collection. |
+| `interval` | `string` | The interval (window size) for which the metric data was returned in.  This may be adjusted in the future and returned back from what was originally requested.  This is not present if a metadata request was made. |
+| `metricName` | `string` | The metrics being queried |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `PredictiveMetric_Get` | `EXEC` | `aggregation, autoscaleSettingName, interval, metricName, metricNamespace, resourceGroupName, subscriptionId, timespan` |
+| `PredictiveMetric_Get` | `SELECT` | `aggregation, autoscaleSettingName, resourceGroupName, subscriptionId` |

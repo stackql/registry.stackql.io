@@ -25,8 +25,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `hostServiceUri` | `string` | The on-premises integration runtime host URL. |
+| `identityCertThumbprint` | `string` | The integration runtime SSL certificate thumbprint. Click-Once application uses it to do server validation. |
+| `isIdentityCertExprired` | `boolean` | Whether the identity certificate is expired. |
+| `publicKey` | `string` | The public key for encrypting a credential when transferring the credential to the integration runtime. |
+| `serviceToken` | `string` | The token generated in service. Callers use this token to authenticate to integration runtime. |
+| `version` | `string` | The integration runtime version. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `IntegrationRuntimeConnectionInfos_Get` | `EXEC` | `integrationRuntimeName, resourceGroupName, subscriptionId, workspaceName` |
+| `IntegrationRuntimeConnectionInfos_Get` | `SELECT` | `integrationRuntimeName, resourceGroupName, subscriptionId, workspaceName` |

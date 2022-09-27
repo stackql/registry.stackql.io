@@ -27,23 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
-| `name` | `string` | The name of the resource |
-| `diskSku` | `string` | Disk Sku. |
-| `managedBy` | `string` | Compute resource Uri which owns this disk. |
-| `creationSourceUri` | `string` | The disk creation source uri. |
-| `provisionSizeGB` | `integer` | The provision size of disk in GB. |
-| `status` | `string` | Disk State. |
-| `diskType` | `string` | Disk resource type. |
-| `userResourceId` | `string` | The disk resource Uri from user view. |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `sharePath` | `string` | The disk share path. |
-| `exclusiveAllocatedSize` | `integer` | The exclusive allocated size for the disk. |
-| `creationOption` | `string` | Disk creation option. |
-| `diskId` | `string` | The disk id. |
-| `actualSizeGB` | `integer` | The actual size of disk in GB. |
+| `id` | `string` | ID of the resource. |
+| `name` | `string` | Name of the resource. |
+| `properties` | `object` | Managed disk properties. |
+| `type` | `string` | Type of Resource. |
+| `location` | `string` | Location of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Disks_Get` | `SELECT` | `diskId, location, subscriptionId` | Returns the disk. |
 | `Disks_List` | `SELECT` | `location, subscriptionId` | Returns a list of disks. |
-| `Disks_Get` | `EXEC` | `diskId, location, subscriptionId` | Returns the disk. |

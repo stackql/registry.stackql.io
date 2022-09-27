@@ -25,13 +25,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `evaluationEndTime` | `string` | End time of the evaluation period, if such exist |
-| `mdeIntegration` | `object` | MDE integration configuration |
-| `onboardingKind` | `string` | The kind of onboarding for the subscription |
-| `sentinelWorkspaceResourceIds` | `array` | Sentinel Workspace Resource Ids |
-| `deviceQuota` | `integer` | Size of the device quota. Value is required to be in multiples of 100. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

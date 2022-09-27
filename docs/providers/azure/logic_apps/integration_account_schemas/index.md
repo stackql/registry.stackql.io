@@ -29,24 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `schemaType` | `string` | The schema type. |
-| `metadata` | `object` | The metadata. |
 | `type` | `string` | Gets the resource type. |
-| `tags` | `object` | The resource tags. |
-| `content` | `string` | The content. |
-| `contentType` | `string` | The content type. |
-| `createdTime` | `string` | The created time. |
-| `contentLink` | `object` | The content link. |
-| `targetNamespace` | `string` | The target namespace of the schema. |
-| `fileName` | `string` | The file name. |
-| `changedTime` | `string` | The changed time. |
 | `location` | `string` | The resource location. |
-| `documentName` | `string` | The document name. |
+| `properties` | `object` | The integration account schema properties. |
+| `tags` | `object` | The resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IntegrationAccountSchemas_Get` | `SELECT` | `api-version, integrationAccountName, resourceGroupName, schemaName, subscriptionId` | Gets an integration account schema. |
 | `IntegrationAccountSchemas_List` | `SELECT` | `api-version, integrationAccountName, resourceGroupName, subscriptionId` | Gets a list of integration account schemas. |
-| `IntegrationAccountSchemas_CreateOrUpdate` | `INSERT` | `api-version, integrationAccountName, resourceGroupName, schemaName, subscriptionId` | Creates or updates an integration account schema. |
+| `IntegrationAccountSchemas_CreateOrUpdate` | `INSERT` | `api-version, integrationAccountName, resourceGroupName, schemaName, subscriptionId, data__properties` | Creates or updates an integration account schema. |
 | `IntegrationAccountSchemas_Delete` | `DELETE` | `api-version, integrationAccountName, resourceGroupName, schemaName, subscriptionId` | Deletes an integration account schema. |
-| `IntegrationAccountSchemas_Get` | `EXEC` | `api-version, integrationAccountName, resourceGroupName, schemaName, subscriptionId` | Gets an integration account schema. |
 | `IntegrationAccountSchemas_ListContentCallbackUrl` | `EXEC` | `api-version, integrationAccountName, resourceGroupName, schemaName, subscriptionId` | Get the content callback url. |

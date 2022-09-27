@@ -25,15 +25,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `nextLink` | `string` | URL to get the next set of origin objects if there are any. |
-| `value` | `array` | List of CDN origins within an endpoint |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AFDOrigins_Get` | `SELECT` | `originGroupName, originName, profileName, resourceGroupName, subscriptionId` | Gets an existing origin within an origin group. |
 | `AFDOrigins_ListByOriginGroup` | `SELECT` | `originGroupName, profileName, resourceGroupName, subscriptionId` | Lists all of the existing origins within an origin group. |
 | `AFDOrigins_Create` | `INSERT` | `originGroupName, originName, profileName, resourceGroupName, subscriptionId` | Creates a new origin within the specified origin group. |
 | `AFDOrigins_Delete` | `DELETE` | `originGroupName, originName, profileName, resourceGroupName, subscriptionId` | Deletes an existing origin within an origin group. |
-| `AFDOrigins_Get` | `EXEC` | `originGroupName, originName, profileName, resourceGroupName, subscriptionId` | Gets an existing origin within an origin group. |
 | `AFDOrigins_Update` | `EXEC` | `originGroupName, originName, profileName, resourceGroupName, subscriptionId` | Updates an existing origin within an origin group. |

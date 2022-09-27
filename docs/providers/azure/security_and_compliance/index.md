@@ -22,7 +22,7 @@ Security and Compliance
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Security and Compliance (Microsoft.SecurityAndCompliance)</td></tr>
 <tr><td><b>Description</b></td><td>Security and Compliance</td></tr>
-<tr><td><b>Id</b></td><td><code>security_and_compliance:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>security_and_compliance:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

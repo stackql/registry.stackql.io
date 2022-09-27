@@ -29,23 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `enabled` | `boolean` | Flag to enable/disable flow logging. |
-| `format` | `object` | Parameters that define the flow log format. |
-| `targetResourceId` | `string` | ID of network security group to which flow log will be applied. |
-| `flowAnalyticsConfiguration` | `object` | Parameters that define the configuration of traffic analytics. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `location` | `string` | Resource location. |
-| `retentionPolicy` | `object` | Parameters that define the retention policy for flow log. |
-| `storageId` | `string` | ID of the storage account which is used to store the flow log. |
+| `properties` | `object` | Parameters that define the configuration of flow log. |
 | `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource type. |
-| `targetResourceGuid` | `string` | Guid of network security group to which flow log will be applied. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `FlowLogs_Get` | `SELECT` | `flowLogName, networkWatcherName, resourceGroupName, subscriptionId` | Gets a flow log resource by name. |
 | `FlowLogs_List` | `SELECT` | `networkWatcherName, resourceGroupName, subscriptionId` | Lists all flow log resources for the specified Network Watcher. |
 | `FlowLogs_CreateOrUpdate` | `INSERT` | `flowLogName, networkWatcherName, resourceGroupName, subscriptionId` | Create or update a flow log for the specified network security group. |
 | `FlowLogs_Delete` | `DELETE` | `flowLogName, networkWatcherName, resourceGroupName, subscriptionId` | Deletes the specified flow log resource. |
-| `FlowLogs_Get` | `EXEC` | `flowLogName, networkWatcherName, resourceGroupName, subscriptionId` | Gets a flow log resource by name. |
 | `FlowLogs_UpdateTags` | `EXEC` | `flowLogName, networkWatcherName, resourceGroupName, subscriptionId` | Update tags of the specified flow log. |

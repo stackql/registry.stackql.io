@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `resourceStatus` | `string` | The status of the resource regarding a single assessment |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `properties` | `object` | Compliance result data |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ComplianceResults_Get` | `SELECT` | `api-version, complianceResultName, resourceId` | Security Compliance Result |
 | `ComplianceResults_List` | `SELECT` | `api-version, scope` | Security compliance results in the subscription |
-| `ComplianceResults_Get` | `EXEC` | `api-version, complianceResultName, resourceId` | Security Compliance Result |

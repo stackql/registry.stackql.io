@@ -29,5 +29,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `ServerAutomaticTuning_Get` | `EXEC` | `resourceGroupName, serverName, subscriptionId` | Retrieves server automatic tuning options. |
+| `ServerAutomaticTuning_Get` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Retrieves server automatic tuning options. |
 | `ServerAutomaticTuning_Update` | `EXEC` | `resourceGroupName, serverName, subscriptionId` | Update automatic tuning options on server. |

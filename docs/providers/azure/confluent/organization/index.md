@@ -29,22 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ARM id of the resource. |
 | `name` | `string` | The name of the resource. |
-| `createdTime` | `string` | The creation time of the resource. |
-| `userDetail` | `object` | Subscriber detail |
-| `organizationId` | `string` | Id of the Confluent organization. |
-| `tags` | `object` | Organization resource tags |
 | `location` | `string` | Location of Organization resource |
-| `type` | `string` | The type of the resource. |
+| `properties` | `object` | Organization resource property |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `provisioningState` | `string` | Provision states for confluent RP |
-| `ssoUrl` | `string` | SSO url for the Confluent organization. |
-| `offerDetail` | `object` | Confluent Offer detail |
+| `tags` | `object` | Organization resource tags |
+| `type` | `string` | The type of the resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `Organization_Get` | `SELECT` | `organizationName, resourceGroupName, subscriptionId` |
 | `Organization_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` |
 | `Organization_ListBySubscription` | `SELECT` | `subscriptionId` |
-| `Organization_Create` | `INSERT` | `organizationName, resourceGroupName, subscriptionId` |
+| `Organization_Create` | `INSERT` | `organizationName, resourceGroupName, subscriptionId, data__properties` |
 | `Organization_Delete` | `DELETE` | `organizationName, resourceGroupName, subscriptionId` |
-| `Organization_Get` | `EXEC` | `organizationName, resourceGroupName, subscriptionId` |
 | `Organization_Update` | `EXEC` | `organizationName, resourceGroupName, subscriptionId` |

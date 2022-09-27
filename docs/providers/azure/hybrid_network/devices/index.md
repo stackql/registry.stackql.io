@@ -27,20 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Device properties. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
-| `deviceType` | `string` | The type of the device. |
-| `location` | `string` | The geo-location where the resource lives |
-| `networkFunctions` | `array` | The list of network functions deployed on the device. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `status` | `string` | The current device status. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Devices_Get` | `SELECT` | `deviceName, resourceGroupName, subscriptionId` | Gets information about the specified device. |
 | `Devices_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all the device resource in a resource group. |
 | `Devices_ListBySubscription` | `SELECT` | `subscriptionId` | Lists all the devices in a subscription. |
 | `Devices_CreateOrUpdate` | `INSERT` | `deviceName, resourceGroupName, subscriptionId` | Creates or updates a device. |
 | `Devices_Delete` | `DELETE` | `deviceName, resourceGroupName, subscriptionId` | Deletes the specified device. |
-| `Devices_Get` | `EXEC` | `deviceName, resourceGroupName, subscriptionId` | Gets information about the specified device. |
 | `Devices_ListRegistrationKey` | `EXEC` | `deviceName, resourceGroupName, subscriptionId` | List the registration key for the device. |
 | `Devices_UpdateTags` | `EXEC` | `deviceName, resourceGroupName, subscriptionId` | Updates device tags. |

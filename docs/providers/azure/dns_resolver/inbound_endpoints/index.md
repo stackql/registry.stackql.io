@@ -27,18 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `etag` | `string` | ETag of the inbound endpoint. |
-| `ipConfigurations` | `array` | IP configurations for the inbound endpoint. |
-| `location` | `string` | The geo-location where the resource lives |
-| `provisioningState` | `string` | The current provisioning state of the resource. |
-| `resourceGuid` | `string` | The Guid property of the resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
+| `etag` | `string` | ETag of the inbound endpoint. |
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Represents the properties of an inbound endpoint for a DNS resolver. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `InboundEndpoints_Get` | `SELECT` | `dnsResolverName, inboundEndpointName, resourceGroupName, subscriptionId` | Gets properties of an inbound endpoint for a DNS resolver. |
 | `InboundEndpoints_List` | `SELECT` | `dnsResolverName, resourceGroupName, subscriptionId` | Lists inbound endpoints for a DNS resolver. |
-| `InboundEndpoints_CreateOrUpdate` | `INSERT` | `dnsResolverName, inboundEndpointName, resourceGroupName, subscriptionId` | Creates or updates an inbound endpoint for a DNS resolver. |
+| `InboundEndpoints_CreateOrUpdate` | `INSERT` | `dnsResolverName, inboundEndpointName, resourceGroupName, subscriptionId, data__properties` | Creates or updates an inbound endpoint for a DNS resolver. |
 | `InboundEndpoints_Delete` | `DELETE` | `dnsResolverName, inboundEndpointName, resourceGroupName, subscriptionId` | Deletes an inbound endpoint for a DNS resolver. WARNING: This operation cannot be undone. |
-| `InboundEndpoints_Get` | `EXEC` | `dnsResolverName, inboundEndpointName, resourceGroupName, subscriptionId` | Gets properties of an inbound endpoint for a DNS resolver. |
 | `InboundEndpoints_Update` | `EXEC` | `dnsResolverName, inboundEndpointName, resourceGroupName, subscriptionId` | Updates an inbound endpoint for a DNS resolver. |

@@ -34,8 +34,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Applications_Get` | `SELECT` | `applicationName, clusterName, resourceGroupName, subscriptionId` | Gets properties of the specified application. |
 | `Applications_ListByCluster` | `SELECT` | `clusterName, resourceGroupName, subscriptionId` | Lists all of the applications for the HDInsight cluster. |
 | `Applications_Create` | `INSERT` | `applicationName, clusterName, resourceGroupName, subscriptionId` | Creates applications for the HDInsight cluster. |
 | `Applications_Delete` | `DELETE` | `applicationName, clusterName, resourceGroupName, subscriptionId` | Deletes the specified application on the HDInsight cluster. |
-| `Applications_Get` | `EXEC` | `applicationName, clusterName, resourceGroupName, subscriptionId` | Gets properties of the specified application. |
 | `Applications_GetAzureAsyncOperationStatus` | `EXEC` | `applicationName, clusterName, operationId, resourceGroupName, subscriptionId` | Gets the async operation status. |

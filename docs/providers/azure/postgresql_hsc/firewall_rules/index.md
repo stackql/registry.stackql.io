@@ -27,13 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `endIpAddress` | `string` | The end IP address of the server group firewall rule. Must be IPv4 format. |
-| `startIpAddress` | `string` | The start IP address of the server group firewall rule. Must be IPv4 format. |
+| `properties` | `object` | The properties of a server group firewall rule. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `FirewallRules_Get` | `SELECT` | `firewallRuleName, resourceGroupName, serverGroupName, subscriptionId` | Gets information about a server group firewall rule. |
 | `FirewallRules_ListByServerGroup` | `SELECT` | `resourceGroupName, serverGroupName, subscriptionId` | List all the firewall rules in a given server group. |
-| `FirewallRules_CreateOrUpdate` | `INSERT` | `firewallRuleName, resourceGroupName, serverGroupName, subscriptionId` | Creates a new firewall rule or updates an existing firewall rule. |
+| `FirewallRules_CreateOrUpdate` | `INSERT` | `firewallRuleName, resourceGroupName, serverGroupName, subscriptionId, data__properties` | Creates a new firewall rule or updates an existing firewall rule. |
 | `FirewallRules_Delete` | `DELETE` | `firewallRuleName, resourceGroupName, serverGroupName, subscriptionId` | Deletes a server group firewall rule. |
-| `FirewallRules_Get` | `EXEC` | `firewallRuleName, resourceGroupName, serverGroupName, subscriptionId` | Gets information about a server group firewall rule. |

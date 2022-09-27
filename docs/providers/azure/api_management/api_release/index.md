@@ -30,16 +30,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `updatedDateTime` | `string` | The time the API release was updated. |
-| `apiId` | `string` | Identifier of the API the release belongs to. |
-| `createdDateTime` | `string` | The time the API was released. The date conforms to the following format: yyyy-MM-ddTHH:mm:ssZ as specified by the ISO 8601 standard. |
-| `notes` | `string` | Release Notes |
+| `properties` | `object` | API Release details |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ApiRelease_Get` | `SELECT` | `apiId, releaseId, resourceGroupName, serviceName, subscriptionId` | Returns the details of an API release. |
 | `ApiRelease_ListByService` | `SELECT` | `apiId, resourceGroupName, serviceName, subscriptionId` | Lists all releases of an API. An API release is created when making an API Revision current. Releases are also used to rollback to previous revisions. Results will be paged and can be constrained by the $top and $skip parameters. |
 | `ApiRelease_CreateOrUpdate` | `INSERT` | `apiId, releaseId, resourceGroupName, serviceName, subscriptionId` | Creates a new Release for the API. |
 | `ApiRelease_Delete` | `DELETE` | `If-Match, apiId, releaseId, resourceGroupName, serviceName, subscriptionId` | Deletes the specified release in the API. |
-| `ApiRelease_Get` | `EXEC` | `apiId, releaseId, resourceGroupName, serviceName, subscriptionId` | Returns the details of an API release. |
 | `ApiRelease_GetEntityTag` | `EXEC` | `apiId, releaseId, resourceGroupName, serviceName, subscriptionId` | Returns the etag of an API release. |
 | `ApiRelease_Update` | `EXEC` | `If-Match, apiId, releaseId, resourceGroupName, serviceName, subscriptionId` | Updates the details of the release of the API specified by its identifier. |

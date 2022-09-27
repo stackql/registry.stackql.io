@@ -29,29 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `cloudInitConfiguration` | `string` | CloudInitConfiguration string in plain text. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `virtualHub` | `object` | Reference to another subresource. |
 | `identity` | `object` | Identity for the resource. |
 | `location` | `string` | Resource location. |
-| `virtualApplianceAsn` | `integer` | VirtualAppliance ASN. |
+| `properties` | `object` | Network Virtual Appliance definition. |
 | `tags` | `object` | Resource tags. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `type` | `string` | Resource type. |
-| `addressPrefix` | `string` | Address Prefix. |
-| `nvaSku` | `object` | Network Virtual Appliance Sku Properties. |
-| `virtualApplianceNics` | `array` | List of Virtual Appliance Network Interfaces. |
-| `cloudInitConfigurationBlobs` | `array` | CloudInitConfigurationBlob storage URLs. |
-| `inboundSecurityRules` | `array` | List of references to InboundSecurityRules. |
-| `virtualApplianceSites` | `array` | List of references to VirtualApplianceSite. |
-| `sshPublicKey` | `string` | Public key for SSH login. |
-| `bootStrapConfigurationBlobs` | `array` | BootStrapConfigurationBlobs storage URLs. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `NetworkVirtualAppliances_Get` | `SELECT` | `networkVirtualApplianceName, resourceGroupName, subscriptionId` | Gets the specified Network Virtual Appliance. |
 | `NetworkVirtualAppliances_List` | `SELECT` | `subscriptionId` | Gets all Network Virtual Appliances in a subscription. |
 | `NetworkVirtualAppliances_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all Network Virtual Appliances in a resource group. |
 | `NetworkVirtualAppliances_CreateOrUpdate` | `INSERT` | `networkVirtualApplianceName, resourceGroupName, subscriptionId` | Creates or updates the specified Network Virtual Appliance. |
 | `NetworkVirtualAppliances_Delete` | `DELETE` | `networkVirtualApplianceName, resourceGroupName, subscriptionId` | Deletes the specified Network Virtual Appliance. |
-| `NetworkVirtualAppliances_Get` | `EXEC` | `networkVirtualApplianceName, resourceGroupName, subscriptionId` | Gets the specified Network Virtual Appliance. |
 | `NetworkVirtualAppliances_UpdateTags` | `EXEC` | `networkVirtualApplianceName, resourceGroupName, subscriptionId` | Updates a Network Virtual Appliance. |

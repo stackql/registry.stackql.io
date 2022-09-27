@@ -27,13 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `tags` | `object` | Resource tags. |
 | `location` | `string` | The geo-location where the resource lives |
 | `properties` | `object` | The properties that define the service topology. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ServiceTopologies_Get` | `SELECT` | `resourceGroupName, serviceTopologyName, subscriptionId` |  |
 | `ServiceTopologies_List` | `SELECT` | `resourceGroupName, subscriptionId` |  |
 | `ServiceTopologies_CreateOrUpdate` | `INSERT` | `resourceGroupName, serviceTopologyName, subscriptionId, data__properties` | Synchronously creates a new service topology or updates an existing service topology. |
 | `ServiceTopologies_Delete` | `DELETE` | `resourceGroupName, serviceTopologyName, subscriptionId` |  |
-| `ServiceTopologies_Get` | `EXEC` | `resourceGroupName, serviceTopologyName, subscriptionId` |  |

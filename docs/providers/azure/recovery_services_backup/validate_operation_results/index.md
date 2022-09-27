@@ -29,4 +29,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `ValidateOperationResults_Get` | `EXEC` | `api-version, operationId, resourceGroupName, subscriptionId, vaultName` |
+| `ValidateOperationResults_Get` | `SELECT` | `api-version, operationId, resourceGroupName, subscriptionId, vaultName` |

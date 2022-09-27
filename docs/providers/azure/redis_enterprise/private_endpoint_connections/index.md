@@ -29,14 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
+| `properties` | `object` | Properties of the PrivateEndpointConnectProperties. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `privateEndpoint` | `object` | The Private Endpoint resource. |
-| `privateLinkServiceConnectionState` | `object` | A collection of information about the state of the connection between service consumer and provider. |
-| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnections_Get` | `SELECT` | `clusterName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the specified private endpoint connection associated with the RedisEnterprise cluster. |
 | `PrivateEndpointConnections_List` | `SELECT` | `clusterName, resourceGroupName, subscriptionId` | Lists all the private endpoint connections associated with the RedisEnterprise cluster. |
 | `PrivateEndpointConnections_Delete` | `DELETE` | `clusterName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Deletes the specified private endpoint connection associated with the RedisEnterprise cluster. |
-| `PrivateEndpointConnections_Get` | `EXEC` | `clusterName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the specified private endpoint connection associated with the RedisEnterprise cluster. |
 | `PrivateEndpointConnections_Put` | `EXEC` | `clusterName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Updates the state of the specified private endpoint connection associated with the RedisEnterprise cluster. |

@@ -30,16 +30,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
 | `type` | `string` | Resource type |
-| `created` | `string` | The creation date of the snapshot |
 | `location` | `string` | Resource location |
-| `provisioningState` | `string` | Azure lifecycle management |
-| `snapshotId` | `string` | UUID v4 used to identify the Snapshot |
+| `properties` | `object` | Snapshot properties |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Snapshots_Get` | `SELECT` | `accountName, poolName, resourceGroupName, snapshotName, subscriptionId, volumeName` | Get details of the specified snapshot |
 | `Snapshots_List` | `SELECT` | `accountName, poolName, resourceGroupName, subscriptionId, volumeName` | List all snapshots associated with the volume |
 | `Snapshots_Create` | `INSERT` | `accountName, poolName, resourceGroupName, snapshotName, subscriptionId, volumeName, data__location` | Create the specified snapshot within the given volume |
 | `Snapshots_Delete` | `DELETE` | `accountName, poolName, resourceGroupName, snapshotName, subscriptionId, volumeName` | Delete snapshot |
-| `Snapshots_Get` | `EXEC` | `accountName, poolName, resourceGroupName, snapshotName, subscriptionId, volumeName` | Get details of the specified snapshot |
 | `Snapshots_RestoreFiles` | `EXEC` | `accountName, poolName, resourceGroupName, snapshotName, subscriptionId, volumeName, data__filePaths` | Restore the specified files from the specified snapshot to the active filesystem |
 | `Snapshots_Update` | `EXEC` | `accountName, poolName, resourceGroupName, snapshotName, subscriptionId, volumeName` | Patch a snapshot |

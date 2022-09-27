@@ -29,16 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `description` | `string` | A description of the admin rule collection. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | Resource type. |
-| `appliesToGroups` | `array` | Groups for configuration |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `properties` | `object` | Defines the admin rule collection properties. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AdminRuleCollections_Get` | `SELECT` |  | Gets a network manager security admin configuration rule collection. |
 | `AdminRuleCollections_List` | `SELECT` | `configurationName, networkManagerName, resourceGroupName, subscriptionId` | Lists all the rule collections in a security admin configuration, in a paginated format. |
 | `AdminRuleCollections_CreateOrUpdate` | `INSERT` |  | Creates or updates an admin rule collection. |
 | `AdminRuleCollections_Delete` | `DELETE` |  | Deletes an admin rule collection. |
-| `AdminRuleCollections_Get` | `EXEC` |  | Gets a network manager security admin configuration rule collection. |

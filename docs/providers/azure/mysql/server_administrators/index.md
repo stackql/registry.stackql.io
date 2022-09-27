@@ -25,12 +25,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `sid` | `string` | The server administrator Sid (Secure ID). |
-| `tenantId` | `string` | The server Active Directory Administrator tenant id. |
-| `administratorType` | `string` | The type of administrator. |
-| `login` | `string` | The server administrator login account name. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

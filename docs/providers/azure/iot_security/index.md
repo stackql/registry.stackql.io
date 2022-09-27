@@ -22,7 +22,7 @@ IoT Security
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>IoT Security (Microsoft.IoTSecurity)</td></tr>
 <tr><td><b>Description</b></td><td>IoT Security</td></tr>
-<tr><td><b>Id</b></td><td><code>iot_security:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>iot_security:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

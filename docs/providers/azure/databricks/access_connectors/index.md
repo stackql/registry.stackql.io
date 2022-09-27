@@ -27,16 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `identity` | `object` | Managed service identity (system assigned and/or user assigned identities) |
+| `identity` | `object` | Identity for the resource. |
 | `location` | `string` | The geo-location where the resource lives |
 | `properties` | `object` |  |
 | `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AccessConnectors_Get` | `SELECT` | `connectorName, resourceGroupName, subscriptionId` | Gets an azure databricks accessConnector. |
 | `AccessConnectors_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all the azure databricks accessConnectors within a resource group. |
 | `AccessConnectors_ListBySubscription` | `SELECT` | `subscriptionId` | Gets all the azure databricks accessConnectors within a subscription. |
 | `AccessConnectors_CreateOrUpdate` | `INSERT` | `connectorName, resourceGroupName, subscriptionId` | Creates or updates azure databricks accessConnector. |
 | `AccessConnectors_Delete` | `DELETE` | `connectorName, resourceGroupName, subscriptionId` | Deletes the azure databricks accessConnector. |
-| `AccessConnectors_Get` | `EXEC` | `connectorName, resourceGroupName, subscriptionId` | Gets an azure databricks accessConnector. |
 | `AccessConnectors_Update` | `EXEC` | `connectorName, resourceGroupName, subscriptionId` | Updates an azure databricks accessConnector. |

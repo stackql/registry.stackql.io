@@ -29,19 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name. |
-| `localized` | `object` | Key value pair of localized gallery. Each key is the locale code of languages supported by the Azure portal. |
-| `templateData` | `object` | Valid JSON object containing workbook template payload. |
-| `location` | `string` | Resource location |
-| `author` | `string` | Information about the author of the workbook template. |
-| `galleries` | `array` | Workbook galleries supported by the template. |
 | `type` | `string` | Azure resource type |
-| `priority` | `integer` | Priority of the template. Determines which template to open when a workbook gallery is opened in viewer mode. |
+| `location` | `string` | Resource location |
+| `properties` | `object` | Properties that contain a workbook template. |
 | `tags` | `object` | Resource tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WorkbookTemplates_Get` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | Get a single workbook template by its resourceName. |
 | `WorkbookTemplates_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Get all Workbook templates defined within a specified resource group. |
 | `WorkbookTemplates_CreateOrUpdate` | `INSERT` | `resourceGroupName, resourceName, subscriptionId` | Create a new workbook template. |
 | `WorkbookTemplates_Delete` | `DELETE` | `resourceGroupName, resourceName, subscriptionId` | Delete a workbook template. |
-| `WorkbookTemplates_Get` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Get a single workbook template by its resourceName. |
 | `WorkbookTemplates_Update` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Updates a workbook template that has already been added. |

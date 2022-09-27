@@ -29,16 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource Name. |
+| `kind` | `string` | Kind of resource. |
+| `identity` | `object` | Managed service identity. |
+| `properties` | `object` | Site resource specific properties |
+| `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource type. |
 | `extendedLocation` | `object` | Extended Location. |
-| `identity` | `object` | Managed service identity. |
-| `tags` | `object` | Resource tags. |
-| `kind` | `string` | Kind of resource. |
 | `location` | `string` | Resource Location. |
-| `properties` | `object` | Site resource specific properties |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WebApps_Get` | `SELECT` | `name, resourceGroupName, subscriptionId` | Description for Gets the details of a web, mobile, or API app. |
 | `WebApps_List` | `SELECT` | `subscriptionId` | Description for Get all apps for a subscription. |
 | `WebApps_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Description for Gets all web, mobile, and API apps in the specified resource group. |
 | `WebApps_CreateOrUpdate` | `INSERT` | `name, resourceGroupName, subscriptionId` | Description for Creates a new web, mobile, or API app in an existing resource group, or updates an existing app. |
@@ -134,7 +135,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `WebApps_DiscoverBackupSlot` | `EXEC` | `name, resourceGroupName, slot, subscriptionId` | Description for Discovers an existing app backup that can be restored from a blob in Azure storage. Use this to get information about the databases stored in a backup. |
 | `WebApps_GenerateNewSitePublishingPassword` | `EXEC` | `name, resourceGroupName, subscriptionId` | Description for Generates a new publishing password for an app (or deployment slot, if specified). |
 | `WebApps_GenerateNewSitePublishingPasswordSlot` | `EXEC` | `name, resourceGroupName, slot, subscriptionId` | Description for Generates a new publishing password for an app (or deployment slot, if specified). |
-| `WebApps_Get` | `EXEC` | `name, resourceGroupName, subscriptionId` | Description for Gets the details of a web, mobile, or API app. |
 | `WebApps_GetAppSettingKeyVaultReference` | `EXEC` | `appSettingKey, name, resourceGroupName, subscriptionId` | Description for Gets the config reference and status of an app |
 | `WebApps_GetAppSettingKeyVaultReferenceSlot` | `EXEC` | `appSettingKey, name, resourceGroupName, slot, subscriptionId` | Description for Gets the config reference and status of an app |
 | `WebApps_GetAppSettingsKeyVaultReferences` | `EXEC` | `name, resourceGroupName, subscriptionId` | Description for Gets the config reference app settings and status of an app |

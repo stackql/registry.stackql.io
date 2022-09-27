@@ -29,7 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedBackupShortTermRetentionPolicies_Get` | `SELECT` | `databaseName, managedInstanceName, policyName, resourceGroupName, subscriptionId` | Gets a managed database's short term retention policy. |
 | `ManagedBackupShortTermRetentionPolicies_ListByDatabase` | `SELECT` | `databaseName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a managed database's short term retention policy list. |
 | `ManagedBackupShortTermRetentionPolicies_CreateOrUpdate` | `INSERT` | `databaseName, managedInstanceName, policyName, resourceGroupName, subscriptionId` | Updates a managed database's short term retention policy. |
-| `ManagedBackupShortTermRetentionPolicies_Get` | `EXEC` | `databaseName, managedInstanceName, policyName, resourceGroupName, subscriptionId` | Gets a managed database's short term retention policy. |
 | `ManagedBackupShortTermRetentionPolicies_Update` | `EXEC` | `databaseName, managedInstanceName, policyName, resourceGroupName, subscriptionId` | Updates a managed database's short term retention policy. |

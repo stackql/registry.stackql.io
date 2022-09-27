@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `systemData` | `object` | The system meta data relating to this resource. |
 | `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource type. |
 | `location` | `string` | Resource location. |
 | `properties` | `object` | Cloud service properties |
+| `systemData` | `object` | The system meta data relating to this resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `CloudServices_Get` | `SELECT` | `cloudServiceName, resourceGroupName, subscriptionId` | Display information about a cloud service. |
 | `CloudServices_List` | `SELECT` | `resourceGroupName, subscriptionId` | Gets a list of all cloud services under a resource group. Use nextLink property in the response to get the next page of Cloud Services. Do this till nextLink is null to fetch all the Cloud Services. |
 | `CloudServices_ListAll` | `SELECT` | `subscriptionId` | Gets a list of all cloud services in the subscription, regardless of the associated resource group. Use nextLink property in the response to get the next page of Cloud Services. Do this till nextLink is null to fetch all the Cloud Services. |
 | `CloudServices_CreateOrUpdate` | `INSERT` | `cloudServiceName, resourceGroupName, subscriptionId, data__location` | Create or update a cloud service. Please note some properties can be set only during cloud service creation. |
 | `CloudServices_Delete` | `DELETE` | `cloudServiceName, resourceGroupName, subscriptionId` | Deletes a cloud service. |
 | `CloudServices_DeleteInstances` | `EXEC` | `cloudServiceName, resourceGroupName, subscriptionId, data__roleInstances` | Deletes role instances in a cloud service. |
-| `CloudServices_Get` | `EXEC` | `cloudServiceName, resourceGroupName, subscriptionId` | Display information about a cloud service. |
 | `CloudServices_GetInstanceView` | `EXEC` | `cloudServiceName, resourceGroupName, subscriptionId` | Gets the status of a cloud service. |
 | `CloudServices_PowerOff` | `EXEC` | `cloudServiceName, resourceGroupName, subscriptionId` | Power off the cloud service. Note that resources are still attached and you are getting charged for the resources. |
 | `CloudServices_Rebuild` | `EXEC` | `cloudServiceName, resourceGroupName, subscriptionId, data__roleInstances` | Rebuild Role Instances reinstalls the operating system on instances of web roles or worker roles and initializes the storage resources that are used by them. If you do not want to initialize storage resources, you can use Reimage Role Instances. |

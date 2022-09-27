@@ -29,4 +29,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `SubscriptionGovernanceRulesExecuteStatus_Get` | `EXEC` | `api-version, operationId, ruleId, subscriptionId` |
+| `SubscriptionGovernanceRulesExecuteStatus_Get` | `SELECT` | `api-version, operationId, ruleId, subscriptionId` |

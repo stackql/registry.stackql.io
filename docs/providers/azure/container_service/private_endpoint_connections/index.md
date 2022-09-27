@@ -29,14 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the private endpoint connection. |
 | `name` | `string` | The name of the private endpoint connection. |
-| `privateEndpoint` | `object` | Private endpoint which a connection belongs to. |
-| `privateLinkServiceConnectionState` | `object` | The state of a private link service connection. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `properties` | `object` | Properties of a private endpoint connection. |
 | `type` | `string` | The resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnections_Get` | `SELECT` | `privateEndpointConnectionName, resourceGroupName, resourceName, subscriptionId` | To learn more about private clusters, see: https://docs.microsoft.com/azure/aks/private-clusters |
 | `PrivateEndpointConnections_List` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | To learn more about private clusters, see: https://docs.microsoft.com/azure/aks/private-clusters |
 | `PrivateEndpointConnections_Delete` | `DELETE` | `privateEndpointConnectionName, resourceGroupName, resourceName, subscriptionId` |  |
-| `PrivateEndpointConnections_Get` | `EXEC` | `privateEndpointConnectionName, resourceGroupName, resourceName, subscriptionId` | To learn more about private clusters, see: https://docs.microsoft.com/azure/aks/private-clusters |
 | `PrivateEndpointConnections_Update` | `EXEC` | `privateEndpointConnectionName, resourceGroupName, resourceName, subscriptionId` |  |

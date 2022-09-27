@@ -31,11 +31,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `name` | `string` | The name of the PowerBI Dedicated resource. |
 | `type` | `string` | The type of the PowerBI Dedicated resource. |
 | `location` | `string` | Location of the PowerBI Dedicated resource. |
+| `properties` | `object` | Properties of Dedicated Capacity resource. |
 | `sku` | `object` | Represents the SKU name and Azure pricing tier for PowerBI Dedicated capacity resource. |
-| `tags` | `object` | Key-value pairs of additional resource provisioning properties. |
-| `provisioningState` | `string` | The current deployment state of PowerBI Dedicated resource. The provisioningState is to indicate states for resource provisioning. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `state` | `string` | The current state of PowerBI Dedicated resource. The state is to indicate more states outside of resource provisioning. |
+| `tags` | `object` | Key-value pairs of additional resource provisioning properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

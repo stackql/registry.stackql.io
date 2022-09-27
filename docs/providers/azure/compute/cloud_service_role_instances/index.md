@@ -29,17 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name. |
-| `sku` | `object` | The role instance SKU. |
 | `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource Type. |
 | `location` | `string` | Resource Location. |
 | `properties` | `object` | Role instance properties. |
+| `sku` | `object` | The role instance SKU. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `CloudServiceRoleInstances_Get` | `SELECT` | `cloudServiceName, resourceGroupName, roleInstanceName, subscriptionId` | Gets a role instance from a cloud service. |
 | `CloudServiceRoleInstances_List` | `SELECT` | `cloudServiceName, resourceGroupName, subscriptionId` | Gets the list of all role instances in a cloud service. Use nextLink property in the response to get the next page of role instances. Do this till nextLink is null to fetch all the role instances. |
 | `CloudServiceRoleInstances_Delete` | `DELETE` | `cloudServiceName, resourceGroupName, roleInstanceName, subscriptionId` | Deletes a role instance from a cloud service. |
-| `CloudServiceRoleInstances_Get` | `EXEC` | `cloudServiceName, resourceGroupName, roleInstanceName, subscriptionId` | Gets a role instance from a cloud service. |
 | `CloudServiceRoleInstances_GetInstanceView` | `EXEC` | `cloudServiceName, resourceGroupName, roleInstanceName, subscriptionId` | Retrieves information about the run-time state of a role instance in a cloud service. |
 | `CloudServiceRoleInstances_GetRemoteDesktopFile` | `EXEC` | `cloudServiceName, resourceGroupName, roleInstanceName, subscriptionId` | Gets a remote desktop file for a role instance in a cloud service. |
 | `CloudServiceRoleInstances_Rebuild` | `EXEC` | `cloudServiceName, resourceGroupName, roleInstanceName, subscriptionId` | The Rebuild Role Instance asynchronous operation reinstalls the operating system on instances of web roles or worker roles and initializes the storage resources that are used by them. If you do not want to initialize storage resources, you can use Reimage Role Instance. |

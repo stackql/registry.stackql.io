@@ -25,9 +25,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | identifier |
+| `properties` | `object` | Properties of a private endpoint connection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnectionsPrivateLinkHub_Get` | `SELECT` |  | Get all PrivateEndpointConnection in the PrivateLinkHub by name |
 | `PrivateEndpointConnectionsPrivateLinkHub_List` | `SELECT` |  | Get all PrivateEndpointConnections in the PrivateLinkHub |
-| `PrivateEndpointConnectionsPrivateLinkHub_Get` | `EXEC` |  | Get all PrivateEndpointConnection in the PrivateLinkHub by name |

@@ -29,12 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `assessmentTimestampUtcDate` | `string` | The timestamp when the Compliance calculation was conducted. |
-| `resourceCount` | `integer` | The resource count of the given subscription for which the Compliance calculation was conducted (needed for Management Group Compliance calculation). |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `assessmentResult` | `array` | An array of segment, which is the actually the compliance assessment. |
+| `properties` | `object` | The Compliance score (percentage) of a Subscription is a sum of all Resources' Compliances under the given Subscription. A Resource Compliance is defined as the compliant ('healthy') Policy Definitions out of all Policy Definitions applicable to a given resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Compliances_Get` | `SELECT` | `api-version, complianceName, scope` | Details of a specific Compliance. |
 | `Compliances_List` | `SELECT` | `api-version, scope` | The Compliance scores of the specific management group. |
-| `Compliances_Get` | `EXEC` | `api-version, complianceName, scope` | Details of a specific Compliance. |

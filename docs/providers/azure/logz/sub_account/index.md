@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ARM id of the monitor resource. |
 | `name` | `string` | Name of the monitor resource. |
-| `identity` | `object` |  |
-| `location` | `string` |  |
 | `properties` | `object` | Properties specific to the monitor resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` |  |
 | `type` | `string` | The type of the monitor resource. |
+| `identity` | `object` |  |
+| `location` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `SubAccount_Get` | `SELECT` | `monitorName, resourceGroupName, subAccountName, subscriptionId` |
 | `SubAccount_List` | `SELECT` | `monitorName, resourceGroupName, subscriptionId` |
 | `SubAccount_Create` | `INSERT` | `monitorName, resourceGroupName, subAccountName, subscriptionId, data__location` |
 | `SubAccount_Delete` | `DELETE` | `monitorName, resourceGroupName, subAccountName, subscriptionId` |
-| `SubAccount_Get` | `EXEC` | `monitorName, resourceGroupName, subAccountName, subscriptionId` |
 | `SubAccount_ListMonitoredResources` | `EXEC` | `monitorName, resourceGroupName, subAccountName, subscriptionId` |
 | `SubAccount_ListVMHosts` | `EXEC` | `monitorName, resourceGroupName, subAccountName, subscriptionId` |
 | `SubAccount_ListVmHostUpdate` | `EXEC` | `monitorName, resourceGroupName, subAccountName, subscriptionId` |

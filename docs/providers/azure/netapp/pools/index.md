@@ -27,23 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `provisioningState` | `string` | Azure lifecycle management |
-| `poolId` | `string` | UUID v4 used to identify the Pool |
-| `utilizedThroughputMibps` | `number` | Utilized throughput of pool in MiB/s |
-| `coolAccess` | `boolean` | If enabled (true) the pool can contain cool Access enabled volumes. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `encryptionType` | `string` | Encryption type of the capacity pool, set encryption type for data at rest for this pool and all volumes in it. This value can only be set when creating new pool. |
-| `qosType` | `string` | The qos type of the pool |
 | `tags` | `object` | Resource tags. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `location` | `string` | The geo-location where the resource lives |
-| `totalThroughputMibps` | `number` | Total throughput of pool in MiB/s |
-| `serviceLevel` | `string` | The service level of the file system |
-| `size` | `integer` | Provisioned size of the pool (in bytes). Allowed values are in 1TiB chunks (value must be multiply of 4398046511104). |
+| `properties` | `object` | Pool properties |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Pools_Get` | `SELECT` | `accountName, poolName, resourceGroupName, subscriptionId` | Get details of the specified capacity pool |
 | `Pools_List` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | List all capacity pools in the NetApp Account |
-| `Pools_CreateOrUpdate` | `INSERT` | `accountName, poolName, resourceGroupName, subscriptionId, data__location` | Create or Update a capacity pool |
+| `Pools_CreateOrUpdate` | `INSERT` | `accountName, poolName, resourceGroupName, subscriptionId, data__location, data__properties` | Create or Update a capacity pool |
 | `Pools_Delete` | `DELETE` | `accountName, poolName, resourceGroupName, subscriptionId` | Delete the specified capacity pool |
-| `Pools_Get` | `EXEC` | `accountName, poolName, resourceGroupName, subscriptionId` | Get details of the specified capacity pool |
 | `Pools_Update` | `EXEC` | `accountName, poolName, resourceGroupName, subscriptionId` | Patch the specified capacity pool |

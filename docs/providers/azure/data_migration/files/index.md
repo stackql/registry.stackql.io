@@ -36,10 +36,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Files_Get` | `SELECT` |  | The files resource is a nested, proxy-only resource representing a file stored under the project resource. This method retrieves information about a file. |
 | `Files_List` | `SELECT` | `api-version, groupName, projectName, serviceName, subscriptionId` | The project resource is a nested resource representing a stored migration project. This method returns a list of files owned by a project resource. |
 | `Files_CreateOrUpdate` | `INSERT` |  | The PUT method creates a new file or updates an existing one. |
 | `Files_Delete` | `DELETE` |  | This method deletes a file. |
-| `Files_Get` | `EXEC` |  | The files resource is a nested, proxy-only resource representing a file stored under the project resource. This method retrieves information about a file. |
 | `Files_Read` | `EXEC` | `api-version, fileName, groupName, projectName, serviceName, subscriptionId` | This method is used for requesting storage information using which contents of the file can be downloaded. |
 | `Files_ReadWrite` | `EXEC` | `api-version, fileName, groupName, projectName, serviceName, subscriptionId` | This method is used for requesting information for reading and writing the file content. |
 | `Files_Update` | `EXEC` |  | This method updates an existing file. |

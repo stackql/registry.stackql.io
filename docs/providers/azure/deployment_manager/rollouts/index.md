@@ -34,9 +34,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Rollouts_Get` | `SELECT` | `resourceGroupName, rolloutName, subscriptionId` |  |
 | `Rollouts_List` | `SELECT` | `resourceGroupName, subscriptionId` |  |
-| `Rollouts_CreateOrUpdate` | `INSERT` | `resourceGroupName, rolloutName, subscriptionId, data__identity` | This is an asynchronous operation and can be polled to completion using the location header returned by this operation. |
+| `Rollouts_CreateOrUpdate` | `INSERT` | `resourceGroupName, rolloutName, subscriptionId, data__identity, data__properties` | This is an asynchronous operation and can be polled to completion using the location header returned by this operation. |
 | `Rollouts_Delete` | `DELETE` | `resourceGroupName, rolloutName, subscriptionId` | Only rollouts in terminal state can be deleted. |
 | `Rollouts_Cancel` | `EXEC` | `resourceGroupName, rolloutName, subscriptionId` | Only running rollouts can be canceled. |
-| `Rollouts_Get` | `EXEC` | `resourceGroupName, rolloutName, subscriptionId` |  |
 | `Rollouts_Restart` | `EXEC` | `resourceGroupName, rolloutName, subscriptionId` | Only failed rollouts can be restarted. |

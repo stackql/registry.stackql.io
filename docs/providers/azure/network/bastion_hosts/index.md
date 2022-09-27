@@ -29,28 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `enableFileCopy` | `boolean` | Enable/Disable File Copy feature of the Bastion Host resource. |
-| `enableIpConnect` | `boolean` | Enable/Disable IP Connect feature of the Bastion Host resource. |
-| `location` | `string` | Resource location. |
-| `dnsName` | `string` | FQDN for the endpoint on which bastion host is accessible. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `disableCopyPaste` | `boolean` | Enable/Disable Copy/Paste feature of the Bastion Host resource. |
+| `properties` | `object` | Properties of the Bastion Host. |
 | `sku` | `object` | The sku of this Bastion Host. |
-| `type` | `string` | Resource type. |
-| `ipConfigurations` | `array` | IP configuration of the Bastion Host resource. |
-| `enableTunneling` | `boolean` | Enable/Disable Tunneling feature of the Bastion Host resource. |
-| `scaleUnits` | `integer` | The scale units for the Bastion Host resource. |
-| `enableShareableLink` | `boolean` | Enable/Disable Shareable Link of the Bastion Host resource. |
 | `tags` | `object` | Resource tags. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `BastionHosts_Get` | `SELECT` | `bastionHostName, resourceGroupName, subscriptionId` | Gets the specified Bastion Host. |
 | `BastionHosts_List` | `SELECT` | `subscriptionId` | Lists all Bastion Hosts in a subscription. |
 | `BastionHosts_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all Bastion Hosts in a resource group. |
 | `BastionHosts_CreateOrUpdate` | `INSERT` | `bastionHostName, resourceGroupName, subscriptionId` | Creates or updates the specified Bastion Host. |
 | `BastionHosts_Delete` | `DELETE` | `bastionHostName, resourceGroupName, subscriptionId` | Deletes the specified Bastion Host. |
-| `BastionHosts_Get` | `EXEC` | `bastionHostName, resourceGroupName, subscriptionId` | Gets the specified Bastion Host. |
 | `BastionHosts_UpdateTags` | `EXEC` | `bastionHostName, resourceGroupName, subscriptionId` | Updates Tags for BastionHost resource |
 | `DeleteBastionShareableLink` | `EXEC` | `bastionHostName, resourceGroupName, subscriptionId` | Deletes the Bastion Shareable Links for all the VMs specified in the request. |
 | `DisconnectActiveSessions` | `EXEC` | `bastionHostName, resourceGroupName, subscriptionId` | Returns the list of currently active sessions on the Bastion. |

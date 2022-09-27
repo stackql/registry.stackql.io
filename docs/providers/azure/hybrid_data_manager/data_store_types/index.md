@@ -29,13 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Id of the object. |
 | `name` | `string` | Name of the object. |
-| `supportedDataServicesAsSink` | `array` | Supported data services where it can be used as a sink. |
-| `supportedDataServicesAsSource` | `array` | Supported data services where it can be used as a source. |
 | `type` | `string` | Type of the object. |
-| `repositoryType` | `string` | Arm type for the manager resource to which the data source type is associated. This is optional. |
-| `state` | `string` | State of the data store type. |
+| `properties` | `object` | Data Store Type properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DataStoreTypes_Get` | `SELECT` | `dataManagerName, dataStoreTypeName, resourceGroupName, subscriptionId` | Gets the data store/repository type given its name. |
 | `DataStoreTypes_ListByDataManager` | `SELECT` | `dataManagerName, resourceGroupName, subscriptionId` | Gets all the data store/repository types that the resource supports. |
-| `DataStoreTypes_Get` | `EXEC` | `dataManagerName, dataStoreTypeName, resourceGroupName, subscriptionId` | Gets the data store/repository type given its name. |

@@ -25,16 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `privateEndpoint` | `object` | Private endpoint which the connection belongs to. |
-| `privateLinkServiceConnectionState` | `object` | Connection State of the Private Endpoint Connection. |
-| `provisioningState` | `string` | Provisioning state of the private endpoint. |
-| `groupId` | `string` | Group id of the private endpoint. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnections_Get` | `SELECT` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets a private endpoint connection. |
 | `PrivateEndpointConnections_ListByDatabaseAccount` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | List all private endpoint connections on a Cosmos DB account. |
 | `PrivateEndpointConnections_CreateOrUpdate` | `INSERT` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Approve or reject a private endpoint connection with a given name. |
 | `PrivateEndpointConnections_Delete` | `DELETE` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Deletes a private endpoint connection with a given name. |
-| `PrivateEndpointConnections_Get` | `EXEC` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets a private endpoint connection. |

@@ -29,13 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
+| `properties` | `object` | Security analytics properties of your IoT Security solution |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `topAlertedDevices` | `array` | List of devices with open alerts including the count of alerts per device. |
-| `metrics` | `object` | IoT Security solution analytics severity metrics. |
-| `mostPrevalentDeviceRecommendations` | `array` | List of aggregated recommendation data, per recommendation type, per device. |
-| `unhealthyDeviceCount` | `integer` | Number of unhealthy devices within your IoT Security solution. |
-| `devicesMetrics` | `array` | List of device metrics by the aggregation date. |
-| `mostPrevalentDeviceAlerts` | `array` | List of alerts with the count of raised alerts |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -25,14 +25,24 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id represents the complete path to the resource. |
+| `name` | `string` | Resource name associated with the resource. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `type` | `string` | Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/... |
+| `location` | `string` | Resource location. |
+| `eTag` | `string` | Optional ETag. |
+| `properties` | `object` | Backup Vault |
+| `tags` | `object` | Resource tags. |
+| `identity` | `object` | Identity details |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `BackupVaults_Get` | `SELECT` | `api-version, resourceGroupName, subscriptionId, vaultName` | Returns a resource belonging to a resource group. |
 | `BackupVaults_CreateOrUpdate` | `INSERT` | `api-version, resourceGroupName, subscriptionId, vaultName, data__location, data__properties` | Creates or updates a BackupVault resource belonging to a resource group. |
 | `BackupVaults_Delete` | `DELETE` | `api-version, resourceGroupName, subscriptionId, vaultName` | Deletes a BackupVault resource from the resource group. |
 | `BackupVaults_CheckNameAvailability` | `EXEC` | `api-version, location, resourceGroupName, subscriptionId` |  |
-| `BackupVaults_Get` | `EXEC` | `api-version, resourceGroupName, subscriptionId, vaultName` | Returns a resource belonging to a resource group. |
 | `BackupVaults_GetInResourceGroup` | `EXEC` | `api-version, resourceGroupName, subscriptionId` | Returns resource collection belonging to a resource group. |
 | `BackupVaults_GetInSubscription` | `EXEC` | `api-version, subscriptionId` | Returns resource collection belonging to a subscription. |
 | `BackupVaults_Update` | `EXEC` | `api-version, resourceGroupName, subscriptionId, vaultName` | Updates a BackupVault resource belonging to a resource group. For example, updating tags for a resource. |

@@ -22,7 +22,7 @@ Scheduler
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Scheduler (Microsoft.Scheduler)</td></tr>
 <tr><td><b>Description</b></td><td>Scheduler</td></tr>
-<tr><td><b>Id</b></td><td><code>scheduler:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>scheduler:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

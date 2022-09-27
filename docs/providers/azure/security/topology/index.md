@@ -29,13 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `calculatedDateTime` | `string` | The UTC time on which the topology was calculated |
 | `location` | `string` | Location where the resource is stored |
-| `topologyResources` | `array` | Azure resources which are part of this topology resource |
+| `properties` | `object` |  |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Topology_Get` | `SELECT` | `api-version, ascLocation, resourceGroupName, subscriptionId, topologyResourceName` | Gets a specific topology component. |
 | `Topology_List` | `SELECT` | `api-version, subscriptionId` | Gets a list that allows to build a topology view of a subscription. |
 | `Topology_ListByHomeRegion` | `SELECT` | `api-version, ascLocation, subscriptionId` | Gets a list that allows to build a topology view of a subscription and location. |
-| `Topology_Get` | `EXEC` | `api-version, ascLocation, resourceGroupName, subscriptionId, topologyResourceName` | Gets a specific topology component. |

@@ -25,18 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `destination` | `object` | Destination properties. |
-| `enable` | `boolean` | Active when enabled. |
-| `lastModifiedDate` | `string` | Date and time when the export was last modified. |
-| `tableNames` | `array` | An array of tables to export, for example: [“Heartbeat, SecurityEvent”]. |
-| `createdDate` | `string` | The latest data export rule modification time. |
-| `dataExportId` | `string` | The data export rule ID. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DataExports_Get` | `SELECT` | `dataExportName, resourceGroupName, subscriptionId, workspaceName` | Gets a data export instance. |
 | `DataExports_ListByWorkspace` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Lists the data export instances within a workspace. |
 | `DataExports_CreateOrUpdate` | `INSERT` | `dataExportName, resourceGroupName, subscriptionId, workspaceName` | Create or update a data export. |
 | `DataExports_Delete` | `DELETE` | `dataExportName, resourceGroupName, subscriptionId, workspaceName` | Deletes the specified data export in a given workspace.. |
-| `DataExports_Get` | `EXEC` | `dataExportName, resourceGroupName, subscriptionId, workspaceName` | Gets a data export instance. |

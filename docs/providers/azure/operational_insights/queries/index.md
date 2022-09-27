@@ -29,23 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
-| `description` | `string` | Description of the query. |
-| `timeModified` | `string` | Last modified date of the Log Analytics Query, in ISO 8601 format. |
-| `displayName` | `string` | Unique display name for your query within the Query Pack. |
-| `related` | `object` | The related metadata items for the function. |
-| `author` | `string` | Object Id of user creating the query. |
-| `tags` | `object` | Tags associated with the query. |
-| `timeCreated` | `string` | Creation Date for the Log Analytics Query, in ISO 8601 format. |
-| `properties` | `object` | Additional properties that can be set for the query. |
-| `systemData` | `object` | Read only system data |
 | `type` | `string` | Azure resource type |
-| `body` | `string` | Body of the query. |
+| `properties` | `object` | Properties that define an Log Analytics QueryPack-Query resource. |
+| `systemData` | `object` | Read only system data |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Queries_Get` | `SELECT` | `id, queryPackName, resourceGroupName, subscriptionId` | Gets a specific Log Analytics Query defined within a Log Analytics QueryPack. |
 | `Queries_List` | `SELECT` | `queryPackName, resourceGroupName, subscriptionId` | Gets a list of Queries defined within a Log Analytics QueryPack. |
 | `Queries_Delete` | `DELETE` | `id, queryPackName, resourceGroupName, subscriptionId` | Deletes a specific Query defined within an Log Analytics QueryPack. |
-| `Queries_Get` | `EXEC` | `id, queryPackName, resourceGroupName, subscriptionId` | Gets a specific Log Analytics Query defined within a Log Analytics QueryPack. |
 | `Queries_Put` | `EXEC` | `id, queryPackName, resourceGroupName, subscriptionId` | Adds or Updates a specific Query within a Log Analytics QueryPack. |
 | `Queries_Search` | `EXEC` | `queryPackName, resourceGroupName, subscriptionId` | Search a list of Queries defined within a Log Analytics QueryPack according to given search properties. |
 | `Queries_Update` | `EXEC` | `id, queryPackName, resourceGroupName, subscriptionId` | Adds or Updates a specific Query within a Log Analytics QueryPack. |

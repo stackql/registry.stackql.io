@@ -29,14 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
-| `startIpAddress` | `string` | The start IP address for the firewall rule. This can be either ipv4 or ipv6. Start and End should be in the same protocol. |
 | `type` | `string` | The resource type. |
-| `endIpAddress` | `string` | The end IP address for the firewall rule. This can be either ipv4 or ipv6. Start and End should be in the same protocol. |
+| `properties` | `object` | The firewall rule properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `FirewallRules_Get` | `SELECT` | `accountName, firewallRuleName, resourceGroupName, subscriptionId` | Gets the specified Data Lake Store firewall rule. |
 | `FirewallRules_ListByAccount` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | Lists the Data Lake Store firewall rules within the specified Data Lake Store account. |
-| `FirewallRules_CreateOrUpdate` | `INSERT` | `accountName, firewallRuleName, resourceGroupName, subscriptionId` | Creates or updates the specified firewall rule. During update, the firewall rule with the specified name will be replaced with this new firewall rule. |
+| `FirewallRules_CreateOrUpdate` | `INSERT` | `accountName, firewallRuleName, resourceGroupName, subscriptionId, data__properties` | Creates or updates the specified firewall rule. During update, the firewall rule with the specified name will be replaced with this new firewall rule. |
 | `FirewallRules_Delete` | `DELETE` | `accountName, firewallRuleName, resourceGroupName, subscriptionId` | Deletes the specified firewall rule from the specified Data Lake Store account. |
-| `FirewallRules_Get` | `EXEC` | `accountName, firewallRuleName, resourceGroupName, subscriptionId` | Gets the specified Data Lake Store firewall rule. |
 | `FirewallRules_Update` | `EXEC` | `accountName, firewallRuleName, resourceGroupName, subscriptionId` | Updates the specified firewall rule. |

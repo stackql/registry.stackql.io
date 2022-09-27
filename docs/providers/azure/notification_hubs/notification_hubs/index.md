@@ -29,29 +29,22 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `authorizationRules` | `array` | The AuthorizationRules of the created NotificationHub |
-| `type` | `string` | Resource type |
 | `location` | `string` | Resource location |
-| `admCredential` | `object` | Description of a NotificationHub AdmCredential. |
+| `properties` | `object` | NotificationHub properties. |
 | `sku` | `object` | The Sku description for a namespace |
-| `gcmCredential` | `object` | Description of a NotificationHub GcmCredential. |
-| `mpnsCredential` | `object` | Description of a NotificationHub MpnsCredential. |
-| `apnsCredential` | `object` | Description of a NotificationHub ApnsCredential. |
-| `wnsCredential` | `object` | Description of a NotificationHub WnsCredential. |
-| `baiduCredential` | `object` | Description of a NotificationHub BaiduCredential. |
 | `tags` | `object` | Resource tags |
-| `registrationTtl` | `string` | The RegistrationTtl of the created NotificationHub |
+| `type` | `string` | Resource type |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `NotificationHubs_Get` | `SELECT` | `namespaceName, notificationHubName, resourceGroupName, subscriptionId` | Lists the notification hubs associated with a namespace. |
 | `NotificationHubs_List` | `SELECT` | `namespaceName, resourceGroupName, subscriptionId` | Lists the notification hubs associated with a namespace. |
-| `NotificationHubs_CreateOrUpdate` | `INSERT` | `namespaceName, notificationHubName, resourceGroupName, subscriptionId` | Creates/Update a NotificationHub in a namespace. |
+| `NotificationHubs_CreateOrUpdate` | `INSERT` | `namespaceName, notificationHubName, resourceGroupName, subscriptionId, data__properties` | Creates/Update a NotificationHub in a namespace. |
 | `NotificationHubs_Delete` | `DELETE` | `namespaceName, notificationHubName, resourceGroupName, subscriptionId` | Deletes a notification hub associated with a namespace. |
 | `NotificationHubs_CheckNotificationHubAvailability` | `EXEC` | `namespaceName, resourceGroupName, subscriptionId, data__name` | Checks the availability of the given notificationHub in a namespace. |
 | `NotificationHubs_CreateOrUpdateAuthorizationRule` | `EXEC` | `authorizationRuleName, namespaceName, notificationHubName, resourceGroupName, subscriptionId, data__properties` | Creates/Updates an authorization rule for a NotificationHub |
 | `NotificationHubs_DebugSend` | `EXEC` | `namespaceName, notificationHubName, resourceGroupName, subscriptionId` | test send a push notification |
 | `NotificationHubs_DeleteAuthorizationRule` | `EXEC` | `authorizationRuleName, namespaceName, notificationHubName, resourceGroupName, subscriptionId` | Deletes a notificationHub authorization rule |
-| `NotificationHubs_Get` | `EXEC` | `namespaceName, notificationHubName, resourceGroupName, subscriptionId` | Lists the notification hubs associated with a namespace. |
 | `NotificationHubs_GetAuthorizationRule` | `EXEC` | `authorizationRuleName, namespaceName, notificationHubName, resourceGroupName, subscriptionId` | Gets an authorization rule for a NotificationHub by name. |
 | `NotificationHubs_GetPnsCredentials` | `EXEC` | `namespaceName, notificationHubName, resourceGroupName, subscriptionId` | Lists the PNS Credentials associated with a notification hub . |
 | `NotificationHubs_ListAuthorizationRules` | `EXEC` | `namespaceName, notificationHubName, resourceGroupName, subscriptionId` | Gets the authorization rules for a NotificationHub. |

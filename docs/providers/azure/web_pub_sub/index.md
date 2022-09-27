@@ -22,7 +22,7 @@ Web Pub Sub
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Web Pub Sub (Microsoft.SignalRService)</td></tr>
 <tr><td><b>Description</b></td><td>Web Pub Sub</td></tr>
-<tr><td><b>Id</b></td><td><code>web_pub_sub:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>web_pub_sub:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

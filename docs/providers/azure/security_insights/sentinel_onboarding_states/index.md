@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `customerManagedKey` | `boolean` | Flag that indicates the status of the CMK setting |
+| `properties` | `object` | The Sentinel onboarding state properties |
 | `etag` | `string` | Etag of the azure resource |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SentinelOnboardingStates_Get` | `SELECT` | `resourceGroupName, sentinelOnboardingStateName, subscriptionId, workspaceName` | Get Sentinel onboarding state |
 | `SentinelOnboardingStates_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets all Sentinel onboarding states |
 | `SentinelOnboardingStates_Create` | `INSERT` | `resourceGroupName, sentinelOnboardingStateName, subscriptionId, workspaceName` | Create Sentinel onboarding state |
 | `SentinelOnboardingStates_Delete` | `DELETE` | `resourceGroupName, sentinelOnboardingStateName, subscriptionId, workspaceName` | Delete Sentinel onboarding state |
-| `SentinelOnboardingStates_Get` | `EXEC` | `resourceGroupName, sentinelOnboardingStateName, subscriptionId, workspaceName` | Get Sentinel onboarding state |

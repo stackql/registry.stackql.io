@@ -25,13 +25,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `properties` | `object` | On-premise IoT sensor properties |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `OnPremiseSensors_Get` | `SELECT` | `onPremiseSensorName, subscriptionId` | Get on-premise IoT sensor |
 | `OnPremiseSensors_List` | `SELECT` | `subscriptionId` | List on-premise IoT sensors |
 | `OnPremiseSensors_CreateOrUpdate` | `INSERT` | `onPremiseSensorName, subscriptionId` | Create or update on-premise IoT sensor |
 | `OnPremiseSensors_Delete` | `DELETE` | `onPremiseSensorName, subscriptionId` | Delete on-premise IoT sensor |
 | `OnPremiseSensors_DownloadActivation` | `EXEC` | `onPremiseSensorName, subscriptionId` | Download sensor activation file |
 | `OnPremiseSensors_DownloadResetPassword` | `EXEC` | `onPremiseSensorName, subscriptionId` | Download file for reset password of the sensor |
-| `OnPremiseSensors_Get` | `EXEC` | `onPremiseSensorName, subscriptionId` | Get on-premise IoT sensor |

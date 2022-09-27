@@ -27,12 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
-| `name` | `string` | The name of the resource |
+| `id` | `string` | Resource ID |
+| `name` | `string` | Resource name |
+| `tags` | `object` | Resource tags |
+| `type` | `string` | Resource type |
+| `extendedLocation` | `object` | Resource extended location. |
+| `location` | `string` | Resource location |
 | `properties` | `object` | The properties of a change |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Changes_Get` | `SELECT` | `changeResourceId, resourceGroupName, resourceName, resourceProviderNamespace, resourceType, subscriptionId` | Obtains the specified change resource for the target resource |
 | `Changes_List` | `SELECT` | `resourceGroupName, resourceName, resourceProviderNamespace, resourceType, subscriptionId` | Obtains a list of change resources from the past 14 days for the target resource |
-| `Changes_Get` | `EXEC` | `changeResourceId, resourceGroupName, resourceName, resourceProviderNamespace, resourceType, subscriptionId` | Obtains the specified change resource for the target resource |

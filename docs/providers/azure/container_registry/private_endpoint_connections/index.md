@@ -29,15 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `privateEndpoint` | `object` | The Private Endpoint resource. |
-| `privateLinkServiceConnectionState` | `object` | The state of a private link service connection. |
-| `provisioningState` | `string` | The provisioning state of private endpoint connection resource. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | The type of the resource. |
+| `properties` | `object` | The properties of a private endpoint connection. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnections_Get` | `SELECT` | `privateEndpointConnectionName, registryName, resourceGroupName, subscriptionId` | Get the specified private endpoint connection associated with the container registry. |
 | `PrivateEndpointConnections_List` | `SELECT` | `registryName, resourceGroupName, subscriptionId` | List all private endpoint connections in a container registry. |
 | `PrivateEndpointConnections_CreateOrUpdate` | `INSERT` | `privateEndpointConnectionName, registryName, resourceGroupName, subscriptionId` | Update the state of specified private endpoint connection associated with the container registry. |
 | `PrivateEndpointConnections_Delete` | `DELETE` | `privateEndpointConnectionName, registryName, resourceGroupName, subscriptionId` | Deletes the specified private endpoint connection associated with the container registry. |
-| `PrivateEndpointConnections_Get` | `EXEC` | `privateEndpointConnectionName, registryName, resourceGroupName, subscriptionId` | Get the specified private endpoint connection associated with the container registry. |

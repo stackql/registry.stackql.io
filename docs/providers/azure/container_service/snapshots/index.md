@@ -27,22 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `snapshotType` | `string` | The type of a snapshot. The default is NodePool. |
-| `vmSize` | `string` | The size of the VM. |
-| `kubernetesVersion` | `string` | The version of Kubernetes. |
 | `tags` | `object` | Resource tags. |
-| `osType` | `string` | The operating system type. The default is Linux. |
-| `nodeImageVersion` | `string` | The version of node image. |
-| `enableFIPS` | `boolean` | Whether to use a FIPS-enabled OS. |
-| `osSku` | `string` | Specifies an OS SKU. This value must not be specified if OSType is Windows. |
-| `creationData` | `object` | Data used when creating a target resource from a source resource. |
 | `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Properties used to configure a node pool snapshot. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `Snapshots_Get` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` |
 | `Snapshots_List` | `SELECT` | `subscriptionId` |
 | `Snapshots_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` |
 | `Snapshots_CreateOrUpdate` | `INSERT` | `resourceGroupName, resourceName, subscriptionId` |
 | `Snapshots_Delete` | `DELETE` | `resourceGroupName, resourceName, subscriptionId` |
-| `Snapshots_Get` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` |
 | `Snapshots_UpdateTags` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` |

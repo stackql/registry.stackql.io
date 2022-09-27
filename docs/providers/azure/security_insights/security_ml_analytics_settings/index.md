@@ -32,7 +32,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SecurityMLAnalyticsSettings_Get` | `SELECT` | `resourceGroupName, settingsResourceName, subscriptionId, workspaceName` | Gets the Security ML Analytics Settings. |
 | `SecurityMLAnalyticsSettings_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets all Security ML Analytics Settings. |
 | `SecurityMLAnalyticsSettings_CreateOrUpdate` | `INSERT` | `resourceGroupName, settingsResourceName, subscriptionId, workspaceName, data__kind` | Creates or updates the Security ML Analytics Settings. |
 | `SecurityMLAnalyticsSettings_Delete` | `DELETE` | `resourceGroupName, settingsResourceName, subscriptionId, workspaceName` | Delete the Security ML Analytics Settings. |
-| `SecurityMLAnalyticsSettings_Get` | `EXEC` | `resourceGroupName, settingsResourceName, subscriptionId, workspaceName` | Gets the Security ML Analytics Settings. |

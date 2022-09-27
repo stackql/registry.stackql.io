@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | String Id used to locate any resource on Azure. |
 | `name` | `string` | Name of this resource. |
-| `type` | `string` | Type of this resource. |
 | `kind` | `string` | Specifies the kind of blueprint artifact. |
+| `type` | `string` | Type of this resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PublishedArtifacts_Get` | `SELECT` | `artifactName, blueprintName, resourceScope, versionId` | Get an artifact for a published blueprint definition. |
 | `PublishedArtifacts_List` | `SELECT` | `blueprintName, resourceScope, versionId` | List artifacts for a version of a published blueprint definition. |
-| `PublishedArtifacts_Get` | `EXEC` | `artifactName, blueprintName, resourceScope, versionId` | Get an artifact for a published blueprint definition. |

@@ -29,18 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `description` | `string` | The secret description. |
-| `secretKind` | `string` | Specifies the secret kind. |
-| `provisioningState` | `string` | Provisioning state of the resource. |
-| `secretDescriptor` | `object` | The secret type-specific descriptor. |
+| `properties` | `object` | Properties of product secret. |
 | `type` | `string` | Type of Resource. |
 | `location` | `string` | Location of the resource. |
-| `expiresAfter` | `string` | The expiration period of the secret (in ISO8601 format). |
-| `secretState` | `object` | Represents the secret state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ProductSecrets_GET` | `SELECT` | `packageId, secretName, subscriptionId` | Returns the specific product secret. |
 | `ProductSecrets_List` | `SELECT` | `packageId, subscriptionId` | Returns an array of product secrets. |
-| `ProductSecrets_GET` | `EXEC` | `packageId, secretName, subscriptionId` | Returns the specific product secret. |
 | `ProductSecrets_Set` | `EXEC` | `packageId, secretName, subscriptionId` | Imports a product secret. |
 | `ProductSecrets_Validate` | `EXEC` | `packageId, secretName, subscriptionId` | Validates a product secret. |

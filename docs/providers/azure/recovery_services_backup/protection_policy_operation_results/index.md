@@ -25,8 +25,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id represents the complete path to the resource. |
+| `name` | `string` | Resource name associated with the resource. |
+| `eTag` | `string` | Optional ETag. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | Base class for backup policy. Workload-specific backup policies are derived from this class. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/... |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `ProtectionPolicyOperationResults_Get` | `EXEC` | `api-version, operationId, policyName, resourceGroupName, subscriptionId, vaultName` |
+| `ProtectionPolicyOperationResults_Get` | `SELECT` | `api-version, operationId, policyName, resourceGroupName, subscriptionId, vaultName` |

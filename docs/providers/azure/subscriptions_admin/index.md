@@ -22,7 +22,7 @@ The Admin Subscriptions Management Client.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Subscriptions Management Client (Microsoft.Subscriptions.Admin)</td></tr>
 <tr><td><b>Description</b></td><td>The Admin Subscriptions Management Client.</td></tr>
-<tr><td><b>Id</b></td><td><code>subscriptions_admin:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>subscriptions_admin:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

@@ -25,18 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `startTime` | `string` | The workload classifier start time for classification. |
-| `context` | `string` | The workload classifier context. |
-| `endTime` | `string` | The workload classifier end time for classification. |
-| `importance` | `string` | The workload classifier importance. |
-| `label` | `string` | The workload classifier label. |
-| `memberName` | `string` | The workload classifier member name. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WorkloadClassifiers_Get` | `SELECT` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadClassifierName, workloadGroupName` | Gets a workload classifier |
 | `WorkloadClassifiers_ListByWorkloadGroup` | `SELECT` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadGroupName` | Gets the list of workload classifiers for a workload group |
 | `WorkloadClassifiers_CreateOrUpdate` | `INSERT` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadClassifierName, workloadGroupName` | Creates or updates a workload classifier. |
 | `WorkloadClassifiers_Delete` | `DELETE` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadClassifierName, workloadGroupName` | Deletes a workload classifier. |
-| `WorkloadClassifiers_Get` | `EXEC` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadClassifierName, workloadGroupName` | Gets a workload classifier |

@@ -29,22 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `mapType` | `string` | The map type. |
-| `tags` | `object` | The resource tags. |
-| `location` | `string` | The resource location. |
-| `metadata` | `object` | The metadata. |
-| `parametersSchema` | `object` | The parameters schema of integration account map. |
-| `content` | `string` | The content. |
 | `type` | `string` | Gets the resource type. |
-| `changedTime` | `string` | The changed time. |
-| `createdTime` | `string` | The created time. |
-| `contentLink` | `object` | The content link. |
-| `contentType` | `string` | The content type. |
+| `location` | `string` | The resource location. |
+| `properties` | `object` | The integration account map. |
+| `tags` | `object` | The resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IntegrationAccountMaps_Get` | `SELECT` | `api-version, integrationAccountName, mapName, resourceGroupName, subscriptionId` | Gets an integration account map. |
 | `IntegrationAccountMaps_List` | `SELECT` | `api-version, integrationAccountName, resourceGroupName, subscriptionId` | Gets a list of integration account maps. |
-| `IntegrationAccountMaps_CreateOrUpdate` | `INSERT` | `api-version, integrationAccountName, mapName, resourceGroupName, subscriptionId` | Creates or updates an integration account map. If the map is larger than 4 MB, you need to store the map in an Azure blob and use the blob's Shared Access Signature (SAS) URL as the 'contentLink' property value. |
+| `IntegrationAccountMaps_CreateOrUpdate` | `INSERT` | `api-version, integrationAccountName, mapName, resourceGroupName, subscriptionId, data__properties` | Creates or updates an integration account map. If the map is larger than 4 MB, you need to store the map in an Azure blob and use the blob's Shared Access Signature (SAS) URL as the 'contentLink' property value. |
 | `IntegrationAccountMaps_Delete` | `DELETE` | `api-version, integrationAccountName, mapName, resourceGroupName, subscriptionId` | Deletes an integration account map. |
-| `IntegrationAccountMaps_Get` | `EXEC` | `api-version, integrationAccountName, mapName, resourceGroupName, subscriptionId` | Gets an integration account map. |
 | `IntegrationAccountMaps_ListContentCallbackUrl` | `EXEC` | `api-version, integrationAccountName, mapName, resourceGroupName, subscriptionId` | Get the content callback url. |

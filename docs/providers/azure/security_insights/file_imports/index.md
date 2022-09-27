@@ -29,25 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `filesValidUntilTimeUTC` | `string` | The time the files associated with this import are deleted from the storage account. |
-| `errorsPreview` | `array` | An ordered list of some of the errors that were encountered during validation. |
-| `createdTimeUTC` | `string` | The time the file was imported. |
-| `validRecordCount` | `integer` | The number of records that have passed validation. |
-| `ingestionMode` | `string` | Describes how to ingest the records in the file. |
-| `totalRecordCount` | `integer` | The number of records in the file. |
-| `state` | `string` | The state of the file import. |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `importValidUntilTimeUTC` | `string` | The time the file import record is soft deleted from the database and history. |
-| `ingestedRecordCount` | `integer` | The number of records that have been successfully ingested. |
-| `source` | `string` | The source for the data in the file. |
-| `contentType` | `string` | The content type of this file. |
-| `errorFile` | `object` | Represents a file. |
-| `importFile` | `object` | Represents a file. |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `properties` | `object` | Describes the FileImport's properties |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `FileImports_Get` | `SELECT` | `fileImportId, resourceGroupName, subscriptionId, workspaceName` | Gets a file import. |
 | `FileImports_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets all file imports. |
 | `FileImports_Create` | `INSERT` | `fileImportId, resourceGroupName, subscriptionId, workspaceName` | Creates the file import. |
 | `FileImports_Delete` | `DELETE` | `fileImportId, resourceGroupName, subscriptionId, workspaceName` | Delete the file import. |
-| `FileImports_Get` | `EXEC` | `fileImportId, resourceGroupName, subscriptionId, workspaceName` | Gets a file import. |

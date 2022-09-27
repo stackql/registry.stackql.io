@@ -29,13 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
+| `properties` | `object` | Properties of a private link resource. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `groupId` | `string` | The private link resource group id. |
-| `requiredMembers` | `array` | The private link resource required member names. |
-| `requiredZoneNames` | `array` | The private link resource Private link DNS zone name. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateLinkResources_Get` | `SELECT` | `clusterName, privateLinkResourceName, resourceGroupName, subscriptionId` | Gets the specific private link resource. |
 | `PrivateLinkResources_ListByCluster` | `SELECT` | `clusterName, resourceGroupName, subscriptionId` | Lists the private link resources in a HDInsight cluster. |
-| `PrivateLinkResources_Get` | `EXEC` | `clusterName, privateLinkResourceName, resourceGroupName, subscriptionId` | Gets the specific private link resource. |

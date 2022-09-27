@@ -22,7 +22,7 @@ Logz.io Cloud-Native Observability Platform
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Logz.io Cloud-Native Observability Platform (Microsoft.Logz)</td></tr>
 <tr><td><b>Description</b></td><td>Logz.io Cloud-Native Observability Platform</td></tr>
-<tr><td><b>Id</b></td><td><code>logz:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>logz:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

@@ -22,7 +22,7 @@ The Azure management API provides a RESTful set of web services that interact wi
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Key Vault Management Client (Microsoft.KeyVault)</td></tr>
 <tr><td><b>Description</b></td><td>The Azure management API provides a RESTful set of web services that interact with Azure Key Vault.</td></tr>
-<tr><td><b>Id</b></td><td><code>key_vault:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>key_vault:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

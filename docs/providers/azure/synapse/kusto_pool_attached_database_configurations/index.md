@@ -27,18 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `attachedDatabaseNames` | `array` | The list of databases from the clusterResourceId which are currently attached to the kusto pool. |
-| `clusterResourceId` | `string` | The resource id of the kusto pool where the databases you would like to attach reside. |
-| `databaseName` | `string` | The name of the database which you would like to attach, use * if you want to follow all current and future databases. |
-| `defaultPrincipalsModificationKind` | `string` | The default principals modification kind |
 | `location` | `string` | Resource location. |
-| `provisioningState` | `string` | The provisioned state of the resource. |
+| `properties` | `object` | Class representing the an attached database configuration properties of kind specific. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `tableLevelSharingProperties` | `object` | Tables that will be included and excluded in the follower database |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `KustoPoolAttachedDatabaseConfigurations_Get` | `SELECT` | `attachedDatabaseConfigurationName, kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Returns an attached database configuration. |
 | `KustoPoolAttachedDatabaseConfigurations_ListByKustoPool` | `SELECT` | `kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Returns the list of attached database configurations of the given Kusto Pool. |
 | `KustoPoolAttachedDatabaseConfigurations_CreateOrUpdate` | `INSERT` | `attachedDatabaseConfigurationName, kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Creates or updates an attached database configuration. |
 | `KustoPoolAttachedDatabaseConfigurations_Delete` | `DELETE` | `attachedDatabaseConfigurationName, kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Deletes the attached database configuration with the given name. |
-| `KustoPoolAttachedDatabaseConfigurations_Get` | `EXEC` | `attachedDatabaseConfigurationName, kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Returns an attached database configuration. |

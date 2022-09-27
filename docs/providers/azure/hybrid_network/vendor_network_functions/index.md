@@ -27,15 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `networkFunctionVendorConfigurations` | `array` | An array of network function vendor configurations. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `skuName` | `string` | The name of the sku. Once set, it cannot be updated. |
-| `skuType` | `string` | Sku type. |
+| `properties` | `object` | Vendor network function properties. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `vendorProvisioningState` | `string` | The current vendor provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VendorNetworkFunctions_Get` | `SELECT` | `locationName, serviceKey, subscriptionId, vendorName` | Gets information about the specified vendor network function. |
 | `VendorNetworkFunctions_List` | `SELECT` | `locationName, subscriptionId, vendorName` | Lists all the vendor network function sub resources in an Azure region, filtered by skuType, skuName, vendorProvisioningState. |
 | `VendorNetworkFunctions_CreateOrUpdate` | `INSERT` | `locationName, serviceKey, subscriptionId, vendorName` | Creates or updates a vendor network function. This operation can take up to 6 hours to complete. This is expected service behavior. |
-| `VendorNetworkFunctions_Get` | `EXEC` | `locationName, serviceKey, subscriptionId, vendorName` | Gets information about the specified vendor network function. |

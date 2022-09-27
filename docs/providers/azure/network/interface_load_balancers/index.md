@@ -29,21 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `extendedLocation` | `object` | ExtendedLocation complex type. |
 | `tags` | `object` | Resource tags. |
-| `backendAddressPools` | `array` | Collection of backend address pools used by a load balancer. |
-| `probes` | `array` | Collection of probe objects used in the load balancer. |
-| `inboundNatRules` | `array` | Collection of inbound NAT Rules used by a load balancer. Defining inbound NAT rules on your load balancer is mutually exclusive with defining an inbound NAT pool. Inbound NAT pools are referenced from virtual machine scale sets. NICs that are associated with individual virtual machines cannot reference an Inbound NAT pool. They have to reference individual inbound NAT rules. |
-| `resourceGuid` | `string` | The resource GUID property of the load balancer resource. |
-| `frontendIPConfigurations` | `array` | Object representing the frontend IPs to be used for the load balancer. |
-| `location` | `string` | Resource location. |
 | `type` | `string` | Resource type. |
-| `inboundNatPools` | `array` | Defines an external port range for inbound NAT to a single backend port on NICs associated with a load balancer. Inbound NAT rules are created automatically for each NIC associated with the Load Balancer using an external port from this range. Defining an Inbound NAT pool on your Load Balancer is mutually exclusive with defining inbound NAT rules. Inbound NAT pools are referenced from virtual machine scale sets. NICs that are associated with individual virtual machines cannot reference an inbound NAT pool. They have to reference individual inbound NAT rules. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `location` | `string` | Resource location. |
 | `sku` | `object` | SKU of a load balancer. |
-| `outboundRules` | `array` | The outbound rules. |
-| `loadBalancingRules` | `array` | Object collection representing the load balancing rules Gets the provisioning. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `properties` | `object` | Properties of the load balancer. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

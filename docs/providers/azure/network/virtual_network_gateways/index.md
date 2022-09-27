@@ -29,41 +29,22 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `enablePrivateIpAddress` | `boolean` | Whether private IP needs to be enabled on this gateway for connections or not. |
-| `gatewayDefaultSite` | `object` | Reference to another subresource. |
-| `enableBgp` | `boolean` | Whether BGP is enabled for this virtual network gateway or not. |
-| `vpnType` | `string` | The type of this virtual network gateway. |
-| `type` | `string` | Resource type. |
-| `natRules` | `array` | NatRules for virtual network gateway. |
-| `resourceGuid` | `string` | The resource GUID property of the virtual network gateway resource. |
-| `location` | `string` | Resource location. |
-| `customRoutes` | `object` | AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network. |
-| `vpnGatewayGeneration` | `string` | The generation for this VirtualNetworkGateway. Must be None if gatewayType is not VPN. |
-| `tags` | `object` | Resource tags. |
-| `ipConfigurations` | `array` | IP configurations for virtual network gateway. |
-| `inboundDnsForwardingEndpoint` | `string` | The IP address allocated by the gateway to which dns requests can be sent. |
-| `extendedLocation` | `object` | ExtendedLocation complex type. |
-| `vpnClientConfiguration` | `object` | VpnClientConfiguration for P2S client. |
-| `sku` | `object` | VirtualNetworkGatewaySku details. |
-| `activeActive` | `boolean` | ActiveActive flag. |
-| `disableIPSecReplayProtection` | `boolean` | disableIPSecReplayProtection flag. |
-| `enableBgpRouteTranslationForNat` | `boolean` | EnableBgpRouteTranslationForNat flag. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `enableDnsForwarding` | `boolean` | Whether dns forwarding is enabled or not. |
-| `vNetExtendedLocationResourceId` | `string` | Customer vnet resource id. VirtualNetworkGateway of type local gateway is associated with the customer vnet. |
-| `gatewayType` | `string` | The type of this virtual network gateway. |
-| `bgpSettings` | `object` | BGP settings details. |
+| `extendedLocation` | `object` | ExtendedLocation complex type. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | VirtualNetworkGateway properties. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualNetworkGateways_Get` | `SELECT` | `resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Gets the specified virtual network gateway by resource group. |
 | `VirtualNetworkGateways_List` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all virtual network gateways by resource group. |
-| `VirtualNetworkGateways_CreateOrUpdate` | `INSERT` | `resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Creates or updates a virtual network gateway in the specified resource group. |
+| `VirtualNetworkGateways_CreateOrUpdate` | `INSERT` | `resourceGroupName, subscriptionId, virtualNetworkGatewayName, data__properties` | Creates or updates a virtual network gateway in the specified resource group. |
 | `VirtualNetworkGateways_Delete` | `DELETE` | `resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Deletes the specified virtual network gateway. |
 | `VirtualNetworkGateways_DisconnectVirtualNetworkGatewayVpnConnections` | `EXEC` | `resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Disconnect vpn connections of virtual network gateway in the specified resource group. |
 | `VirtualNetworkGateways_GenerateVpnProfile` | `EXEC` | `resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Generates VPN profile for P2S client of the virtual network gateway in the specified resource group. Used for IKEV2 and radius based authentication. |
 | `VirtualNetworkGateways_Generatevpnclientpackage` | `EXEC` | `resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Generates VPN client package for P2S client of the virtual network gateway in the specified resource group. |
-| `VirtualNetworkGateways_Get` | `EXEC` | `resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Gets the specified virtual network gateway by resource group. |
 | `VirtualNetworkGateways_GetAdvertisedRoutes` | `EXEC` | `peer, resourceGroupName, subscriptionId, virtualNetworkGatewayName` | This operation retrieves a list of routes the virtual network gateway is advertising to the specified peer. |
 | `VirtualNetworkGateways_GetBgpPeerStatus` | `EXEC` | `resourceGroupName, subscriptionId, virtualNetworkGatewayName` | The GetBgpPeerStatus operation retrieves the status of all BGP peers. |
 | `VirtualNetworkGateways_GetLearnedRoutes` | `EXEC` | `resourceGroupName, subscriptionId, virtualNetworkGatewayName` | This operation retrieves a list of routes the virtual network gateway has learned, including routes learned from BGP peers. |

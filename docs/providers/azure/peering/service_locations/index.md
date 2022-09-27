@@ -29,10 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `state` | `string` | State of the customer |
+| `properties` | `object` | The properties that define connectivity to the Peering Service Location. |
 | `type` | `string` | The type of the resource. |
-| `azureRegion` | `string` | Azure region for the location |
-| `country` | `string` | Country of the customer |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

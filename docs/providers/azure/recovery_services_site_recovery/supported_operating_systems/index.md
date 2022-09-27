@@ -25,8 +25,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id |
+| `name` | `string` | Resource Name |
+| `location` | `string` | Resource Location |
+| `properties` | `object` | Supported operating systems properties. |
+| `type` | `string` | Resource Type |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `SupportedOperatingSystems_Get` | `EXEC` | `api-version, resourceGroupName, resourceName, subscriptionId` |
+| `SupportedOperatingSystems_Get` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` |

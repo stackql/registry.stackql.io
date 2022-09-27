@@ -29,14 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `routingPolicies` | `array` | List of routing policies. |
+| `properties` | `object` | The properties of a RoutingIntent resource. |
 | `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RoutingIntent_Get` | `SELECT` | `resourceGroupName, routingIntentName, subscriptionId, virtualHubName` | Retrieves the details of a RoutingIntent. |
 | `RoutingIntent_List` | `SELECT` | `resourceGroupName, subscriptionId, virtualHubName` | Retrieves the details of all RoutingIntent child resources of the VirtualHub. |
 | `RoutingIntent_CreateOrUpdate` | `INSERT` | `resourceGroupName, routingIntentName, subscriptionId, virtualHubName` | Creates a RoutingIntent resource if it doesn't exist else updates the existing RoutingIntent. |
 | `RoutingIntent_Delete` | `DELETE` | `resourceGroupName, routingIntentName, subscriptionId, virtualHubName` | Deletes a RoutingIntent. |
-| `RoutingIntent_Get` | `EXEC` | `resourceGroupName, routingIntentName, subscriptionId, virtualHubName` | Retrieves the details of a RoutingIntent. |

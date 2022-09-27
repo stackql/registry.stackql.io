@@ -25,12 +25,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `memoryOptimized` | `boolean` | Whether or not the table is memory optimized. |
-| `temporalType` | `string` | The table temporal type. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DatabaseTables_Get` | `SELECT` | `databaseName, resourceGroupName, schemaName, serverName, subscriptionId, tableName` | Get database table |
 | `DatabaseTables_ListBySchema` | `SELECT` | `databaseName, resourceGroupName, schemaName, serverName, subscriptionId` | List database tables |
-| `DatabaseTables_Get` | `EXEC` | `databaseName, resourceGroupName, schemaName, serverName, subscriptionId, tableName` | Get database table |

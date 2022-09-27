@@ -25,18 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `managedInstanceCreateTime` | `string` | The create time of the instance. |
-| `managedInstanceName` | `string` | The managed instance that the backup database belongs to. |
-| `backupExpirationTime` | `string` | The time the long term retention backup will expire. |
-| `backupStorageRedundancy` | `string` | The storage redundancy type of the backup |
-| `backupTime` | `string` | The time the backup was taken |
-| `databaseDeletionTime` | `string` | The delete time of the database |
-| `databaseName` | `string` | The name of the database the backup belong to |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `LongTermRetentionManagedInstanceBackups_Get` | `SELECT` | `backupName, databaseName, locationName, managedInstanceName, subscriptionId` | Gets a long term retention backup for a managed database. |
 | `LongTermRetentionManagedInstanceBackups_ListByDatabase` | `SELECT` | `databaseName, locationName, managedInstanceName, subscriptionId` | Lists all long term retention backups for a managed database. |
 | `LongTermRetentionManagedInstanceBackups_ListByInstance` | `SELECT` | `locationName, managedInstanceName, subscriptionId` | Lists the long term retention backups for a given managed instance. |
 | `LongTermRetentionManagedInstanceBackups_ListByLocation` | `SELECT` | `locationName, subscriptionId` | Lists the long term retention backups for managed databases in a given location. |
@@ -45,5 +38,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `LongTermRetentionManagedInstanceBackups_ListByResourceGroupLocation` | `SELECT` | `locationName, resourceGroupName, subscriptionId` | Lists the long term retention backups for managed databases in a given location. |
 | `LongTermRetentionManagedInstanceBackups_Delete` | `DELETE` | `backupName, databaseName, locationName, managedInstanceName, subscriptionId` | Deletes a long term retention backup. |
 | `LongTermRetentionManagedInstanceBackups_DeleteByResourceGroup` | `DELETE` | `backupName, databaseName, locationName, managedInstanceName, resourceGroupName, subscriptionId` | Deletes a long term retention backup. |
-| `LongTermRetentionManagedInstanceBackups_Get` | `EXEC` | `backupName, databaseName, locationName, managedInstanceName, subscriptionId` | Gets a long term retention backup for a managed database. |
 | `LongTermRetentionManagedInstanceBackups_GetByResourceGroup` | `EXEC` | `backupName, databaseName, locationName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a long term retention backup for a managed database. |

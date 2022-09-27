@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
+| `location` | `string` | The resource location. |
+| `properties` | `object` | The integration service environment managed api properties. |
 | `tags` | `object` | The resource tags. |
 | `type` | `string` | Gets the resource type. |
-| `deploymentParameters` | `object` | The integration service environment managed api deployment parameters. |
-| `location` | `string` | The resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IntegrationServiceEnvironmentManagedApis_Get` | `SELECT` | `api-version, apiName, integrationServiceEnvironmentName, resourceGroup, subscriptionId` | Gets the integration service environment managed Api. |
 | `IntegrationServiceEnvironmentManagedApis_List` | `SELECT` | `api-version, integrationServiceEnvironmentName, resourceGroup, subscriptionId` | Gets the integration service environment managed Apis. |
 | `IntegrationServiceEnvironmentManagedApis_Delete` | `DELETE` | `api-version, apiName, integrationServiceEnvironmentName, resourceGroup, subscriptionId` | Deletes the integration service environment managed Api. |
-| `IntegrationServiceEnvironmentManagedApis_Get` | `EXEC` | `api-version, apiName, integrationServiceEnvironmentName, resourceGroup, subscriptionId` | Gets the integration service environment managed Api. |
 | `IntegrationServiceEnvironmentManagedApis_Put` | `EXEC` | `api-version, apiName, integrationServiceEnvironmentName, resourceGroup, subscriptionId` | Puts the integration service environment managed Api. |

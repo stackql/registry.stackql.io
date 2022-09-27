@@ -27,25 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Azure resource Id |
-| `name` | `string` | Azure resource name |
-| `serviceBusRuleId` | `string` | The service bus rule Id of the diagnostic setting. This is here to maintain backwards compatibility. |
-| `eventHubName` | `string` | The name of the event hub. If none is specified, the default event hub will be selected. |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
+| `name` | `string` | The name of the resource |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `properties` | `object` | The diagnostic settings. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `logAnalyticsDestinationType` | `string` | A string indicating whether the export to Log Analytics should use the default destination type, i.e. AzureDiagnostics, or use a destination type constructed as follows: &lt;normalized service identity&gt;_&lt;normalized category name&gt;. Possible values are: Dedicated and null (null is default.) |
-| `metrics` | `array` | The list of metric settings. |
-| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
-| `marketplacePartnerId` | `string` | The full ARM resource ID of the Marketplace resource to which you would like to send Diagnostic Logs. |
-| `location` | `string` | Resource location |
-| `storageAccountId` | `string` | The resource ID of the storage account to which you would like to send Diagnostic Logs. |
-| `logs` | `array` | The list of logs settings. |
-| `type` | `string` | Azure resource type |
-| `eventHubAuthorizationRuleId` | `string` | The resource Id for the event hub authorization rule. |
-| `workspaceId` | `string` | The full ARM resource ID of the Log Analytics workspace to which you would like to send Diagnostic Logs. Example: /subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2 |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DiagnosticSettings_Get` | `SELECT` | `name, resourceUri` | Gets the active diagnostic settings for the specified resource. |
 | `DiagnosticSettings_List` | `SELECT` | `resourceUri` | Gets the active diagnostic settings list for the specified resource. |
 | `DiagnosticSettings_CreateOrUpdate` | `INSERT` | `name, resourceUri` | Creates or updates diagnostic settings for the specified resource. |
 | `DiagnosticSettings_Delete` | `DELETE` | `name, resourceUri` | Deletes existing diagnostic settings for the specified resource. |
-| `DiagnosticSettings_Get` | `EXEC` | `name, resourceUri` | Gets the active diagnostic settings for the specified resource. |

@@ -27,21 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `databases` | `array` | List of databases in the failover group. |
 | `location` | `string` | Resource location. |
-| `partnerServers` | `array` | List of partner server information for the failover group. |
-| `readOnlyEndpoint` | `object` | Read-only endpoint of the failover group instance. |
-| `readWriteEndpoint` | `object` | Read-write endpoint of the failover group instance. |
-| `replicationRole` | `string` | Local replication role of the failover group instance. |
-| `replicationState` | `string` | Replication state of the failover group instance. |
+| `properties` | `object` | Properties of a failover group. |
 | `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `FailoverGroups_Get` | `SELECT` | `failoverGroupName, resourceGroupName, serverName, subscriptionId` | Gets a failover group. |
 | `FailoverGroups_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Lists the failover groups in a server. |
 | `FailoverGroups_CreateOrUpdate` | `INSERT` | `failoverGroupName, resourceGroupName, serverName, subscriptionId` | Creates or updates a failover group. |
 | `FailoverGroups_Delete` | `DELETE` | `failoverGroupName, resourceGroupName, serverName, subscriptionId` | Deletes a failover group. |
 | `FailoverGroups_Failover` | `EXEC` | `failoverGroupName, resourceGroupName, serverName, subscriptionId` | Fails over from the current primary server to this server. |
 | `FailoverGroups_ForceFailoverAllowDataLoss` | `EXEC` | `failoverGroupName, resourceGroupName, serverName, subscriptionId` | Fails over from the current primary server to this server. This operation might result in data loss. |
-| `FailoverGroups_Get` | `EXEC` | `failoverGroupName, resourceGroupName, serverName, subscriptionId` | Gets a failover group. |
 | `FailoverGroups_Update` | `EXEC` | `failoverGroupName, resourceGroupName, serverName, subscriptionId` | Updates a failover group. |

@@ -27,16 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `autoRotationEnabled` | `boolean` | Key auto rotation opt-in flag. Either true or false. |
 | `kind` | `string` | Kind of encryption protector. This is metadata used for the Azure portal experience. |
-| `serverKeyName` | `string` | The name of the managed instance key. |
-| `serverKeyType` | `string` | The encryption protector type like 'ServiceManaged', 'AzureKeyVault'. |
-| `thumbprint` | `string` | Thumbprint of the server key. |
-| `uri` | `string` | The URI of the server key. |
+| `properties` | `object` | Properties for an encryption protector execution. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedInstanceEncryptionProtectors_Get` | `SELECT` | `encryptionProtectorName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a managed instance encryption protector. |
 | `ManagedInstanceEncryptionProtectors_ListByInstance` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId` | Gets a list of managed instance encryption protectors |
 | `ManagedInstanceEncryptionProtectors_CreateOrUpdate` | `INSERT` | `encryptionProtectorName, managedInstanceName, resourceGroupName, subscriptionId` | Updates an existing encryption protector. |
-| `ManagedInstanceEncryptionProtectors_Get` | `EXEC` | `encryptionProtectorName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a managed instance encryption protector. |
 | `ManagedInstanceEncryptionProtectors_Revalidate` | `EXEC` | `encryptionProtectorName, managedInstanceName, resourceGroupName, subscriptionId` | Revalidates an existing encryption protector. |

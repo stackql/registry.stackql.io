@@ -27,15 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `privateEndpoint` | `object` | Private endpoint |
-| `privateLinkServiceConnectionState` | `object` | Connection state of the private endpoint connection |
-| `provisioningState` | `string` | Provisioning state of the resource. |
+| `properties` | `object` | Private endpoint connection properties |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `groupIds` | `array` | Group IDs |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WebPubSubPrivateEndpointConnections_Get` | `SELECT` | `privateEndpointConnectionName, resourceGroupName, resourceName, subscriptionId` | Get the specified private endpoint connection |
 | `WebPubSubPrivateEndpointConnections_List` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | List private endpoint connections |
 | `WebPubSubPrivateEndpointConnections_Delete` | `DELETE` | `privateEndpointConnectionName, resourceGroupName, resourceName, subscriptionId` | Delete the specified private endpoint connection |
-| `WebPubSubPrivateEndpointConnections_Get` | `EXEC` | `privateEndpointConnectionName, resourceGroupName, resourceName, subscriptionId` | Get the specified private endpoint connection |
 | `WebPubSubPrivateEndpointConnections_Update` | `EXEC` | `privateEndpointConnectionName, resourceGroupName, resourceName, subscriptionId` | Update the state of specified private endpoint connection |

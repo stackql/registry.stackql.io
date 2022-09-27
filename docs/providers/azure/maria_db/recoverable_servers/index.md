@@ -29,4 +29,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `RecoverableServers_Get` | `EXEC` | `resourceGroupName, serverName, subscriptionId` |
+| `RecoverableServers_Get` | `SELECT` | `resourceGroupName, serverName, subscriptionId` |

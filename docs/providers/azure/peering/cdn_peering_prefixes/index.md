@@ -29,12 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `isPrimaryRegion` | `boolean` | The flag that indicates whether or not this is the primary region. |
-| `prefix` | `string` | The prefix. |
+| `properties` | `object` | The properties that define a CDN peering prefix |
 | `type` | `string` | The type of the resource. |
-| `azureRegion` | `string` | The Azure region. |
-| `azureService` | `string` | The Azure service. |
-| `bgpCommunity` | `string` | The BGP Community |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

@@ -27,17 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `earliestRestoreDate` | `string` | The earliest restore date of the database (ISO8601 format). |
-| `location` | `string` | Resource location. |
-| `maxSizeBytes` | `integer` | The max size of the database expressed in bytes. |
 | `tags` | `object` | Resource tags. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | The restorable dropped database's properties. |
 | `sku` | `object` | An ARM Resource SKU. |
-| `databaseName` | `string` | The name of the database. |
-| `deletionDate` | `string` | The deletion date of the database (ISO8601 format). |
-| `backupStorageRedundancy` | `string` | The storage account type used to store backups for this database. |
-| `creationDate` | `string` | The creation date of the database (ISO8601 format). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RestorableDroppedDatabases_Get` | `SELECT` | `resourceGroupName, restorableDroppedDatabaseId, serverName, subscriptionId` | Gets a restorable dropped database. |
 | `RestorableDroppedDatabases_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Gets a list of restorable dropped databases. |
-| `RestorableDroppedDatabases_Get` | `EXEC` | `resourceGroupName, restorableDroppedDatabaseId, serverName, subscriptionId` | Gets a restorable dropped database. |

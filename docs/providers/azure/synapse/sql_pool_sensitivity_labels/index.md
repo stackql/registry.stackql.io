@@ -25,15 +25,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `managedBy` | `string` | managed by |
+| `properties` | `object` | Properties of a sensitivity label. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SqlPoolSensitivityLabels_Get` | `SELECT` | `columnName, resourceGroupName, schemaName, sensitivityLabelSource, sqlPoolName, subscriptionId, tableName, workspaceName` | Gets the sensitivity label of a given column |
 | `SqlPoolSensitivityLabels_CreateOrUpdate` | `INSERT` | `columnName, resourceGroupName, schemaName, sensitivityLabelSource, sqlPoolName, subscriptionId, tableName, workspaceName` | Creates or updates the sensitivity label of a given column in a Sql pool |
 | `SqlPoolSensitivityLabels_Delete` | `DELETE` | `columnName, resourceGroupName, schemaName, sensitivityLabelSource, sqlPoolName, subscriptionId, tableName, workspaceName` | Deletes the sensitivity label of a given column in a Sql pool |
 | `SqlPoolSensitivityLabels_DisableRecommendation` | `EXEC` | `columnName, resourceGroupName, schemaName, sensitivityLabelSource, sqlPoolName, subscriptionId, tableName, workspaceName` | Disables sensitivity recommendations on a given column |
 | `SqlPoolSensitivityLabels_EnableRecommendation` | `EXEC` | `columnName, resourceGroupName, schemaName, sensitivityLabelSource, sqlPoolName, subscriptionId, tableName, workspaceName` | Enables sensitivity recommendations on a given column (recommendations are enabled by default on all columns) |
-| `SqlPoolSensitivityLabels_Get` | `EXEC` | `columnName, resourceGroupName, schemaName, sensitivityLabelSource, sqlPoolName, subscriptionId, tableName, workspaceName` | Gets the sensitivity label of a given column |
 | `SqlPoolSensitivityLabels_ListCurrent` | `EXEC` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Gets SQL pool sensitivity labels. |
 | `SqlPoolSensitivityLabels_ListRecommended` | `EXEC` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Gets sensitivity labels of a given SQL pool. |
 | `SqlPoolSensitivityLabels_Update` | `EXEC` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Update sensitivity labels of a given SQL Pool using an operations batch. |

@@ -22,7 +22,7 @@ Storage Pool
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Storage Pool (Microsoft.StoragePool)</td></tr>
 <tr><td><b>Description</b></td><td>Storage Pool</td></tr>
-<tr><td><b>Id</b></td><td><code>storage_pool:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>storage_pool:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

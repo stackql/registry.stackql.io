@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `SqlResources_CreateUpdateClientEncryptionKey` | `EXEC` | `accountName, clientEncryptionKeyName, databaseName, resourceGroupName, subscriptionId` | Create or update a ClientEncryptionKey. This API is meant to be invoked via tools such as the Azure Powershell (instead of directly). |
-| `SqlResources_CreateUpdateSqlContainer` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId` | Create or update an Azure Cosmos DB SQL container |
-| `SqlResources_CreateUpdateSqlDatabase` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Create or update an Azure Cosmos DB SQL database |
+| `SqlResources_CreateUpdateClientEncryptionKey` | `EXEC` | `accountName, clientEncryptionKeyName, databaseName, resourceGroupName, subscriptionId, data__properties` | Create or update a ClientEncryptionKey. This API is meant to be invoked via tools such as the Azure Powershell (instead of directly). |
+| `SqlResources_CreateUpdateSqlContainer` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId, data__properties` | Create or update an Azure Cosmos DB SQL container |
+| `SqlResources_CreateUpdateSqlDatabase` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId, data__properties` | Create or update an Azure Cosmos DB SQL database |
 | `SqlResources_CreateUpdateSqlRoleAssignment` | `EXEC` | `accountName, resourceGroupName, roleAssignmentId, subscriptionId` | Creates or updates an Azure Cosmos DB SQL Role Assignment. |
 | `SqlResources_CreateUpdateSqlRoleDefinition` | `EXEC` | `accountName, resourceGroupName, roleDefinitionId, subscriptionId` | Creates or updates an Azure Cosmos DB SQL Role Definition. |
-| `SqlResources_CreateUpdateSqlStoredProcedure` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, storedProcedureName, subscriptionId` | Create or update an Azure Cosmos DB SQL storedProcedure |
-| `SqlResources_CreateUpdateSqlTrigger` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId, triggerName` | Create or update an Azure Cosmos DB SQL trigger |
-| `SqlResources_CreateUpdateSqlUserDefinedFunction` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId, userDefinedFunctionName` | Create or update an Azure Cosmos DB SQL userDefinedFunction |
+| `SqlResources_CreateUpdateSqlStoredProcedure` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, storedProcedureName, subscriptionId, data__properties` | Create or update an Azure Cosmos DB SQL storedProcedure |
+| `SqlResources_CreateUpdateSqlTrigger` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId, triggerName, data__properties` | Create or update an Azure Cosmos DB SQL trigger |
+| `SqlResources_CreateUpdateSqlUserDefinedFunction` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId, userDefinedFunctionName, data__properties` | Create or update an Azure Cosmos DB SQL userDefinedFunction |
 | `SqlResources_DeleteSqlContainer` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId` | Deletes an existing Azure Cosmos DB SQL container. |
 | `SqlResources_DeleteSqlDatabase` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Deletes an existing Azure Cosmos DB SQL database. |
 | `SqlResources_DeleteSqlRoleAssignment` | `EXEC` | `accountName, resourceGroupName, roleAssignmentId, subscriptionId` | Deletes an existing Azure Cosmos DB SQL Role Assignment. |
@@ -68,7 +68,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `SqlResources_MigrateSqlDatabaseToAutoscale` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Migrate an Azure Cosmos DB SQL database from manual throughput to autoscale |
 | `SqlResources_MigrateSqlDatabaseToManualThroughput` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Migrate an Azure Cosmos DB SQL database from autoscale to manual throughput |
 | `SqlResources_RetrieveContinuousBackupInformation` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId` | Retrieves continuous backup information for a container resource. |
-| `SqlResources_SqlContainerRedistributeThroughput` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId` | Redistribute throughput for an Azure Cosmos DB SQL container |
-| `SqlResources_SqlContainerRetrieveThroughputDistribution` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId` | Retrieve throughput distribution for an Azure Cosmos DB SQL container |
-| `SqlResources_UpdateSqlContainerThroughput` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId` | Update RUs per second of an Azure Cosmos DB SQL container |
-| `SqlResources_UpdateSqlDatabaseThroughput` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Update RUs per second of an Azure Cosmos DB SQL database |
+| `SqlResources_SqlContainerRedistributeThroughput` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId, data__properties` | Redistribute throughput for an Azure Cosmos DB SQL container |
+| `SqlResources_SqlContainerRetrieveThroughputDistribution` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId, data__properties` | Retrieve throughput distribution for an Azure Cosmos DB SQL container |
+| `SqlResources_SqlDatabaseRedistributeThroughput` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId, data__properties` | Redistribute throughput for an Azure Cosmos DB SQL database |
+| `SqlResources_SqlDatabaseRetrieveThroughputDistribution` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId, data__properties` | Retrieve throughput distribution for an Azure Cosmos DB SQL database |
+| `SqlResources_UpdateSqlContainerThroughput` | `EXEC` | `accountName, containerName, databaseName, resourceGroupName, subscriptionId, data__properties` | Update RUs per second of an Azure Cosmos DB SQL container |
+| `SqlResources_UpdateSqlDatabaseThroughput` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId, data__properties` | Update RUs per second of an Azure Cosmos DB SQL database |

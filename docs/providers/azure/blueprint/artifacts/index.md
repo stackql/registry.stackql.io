@@ -34,7 +34,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Artifacts_Get` | `SELECT` | `artifactName, blueprintName, resourceScope` | Get a blueprint artifact. |
 | `Artifacts_List` | `SELECT` | `blueprintName, resourceScope` | List artifacts for a given blueprint definition. |
 | `Artifacts_CreateOrUpdate` | `INSERT` | `artifactName, blueprintName, resourceScope, data__kind` | Create or update blueprint artifact. |
 | `Artifacts_Delete` | `DELETE` | `artifactName, blueprintName, resourceScope` | Delete a blueprint artifact. |
-| `Artifacts_Get` | `EXEC` | `artifactName, blueprintName, resourceScope` | Get a blueprint artifact. |

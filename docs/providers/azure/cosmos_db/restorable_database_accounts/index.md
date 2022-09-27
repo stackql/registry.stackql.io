@@ -29,14 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The unique resource identifier of the ARM resource. |
 | `name` | `string` | The name of the ARM resource. |
-| `oldestRestorableTime` | `string` | The least recent time at which the database account can be restored to (ISO-8601 format). |
-| `deletionTime` | `string` | The time at which the restorable database account has been deleted (ISO-8601 format). |
+| `properties` | `object` | The properties of a restorable database account. |
 | `type` | `string` | The type of Azure resource. |
-| `accountName` | `string` | The name of the global database account |
-| `restorableLocations` | `array` | List of regions where the of the database account can be restored from. |
 | `location` | `string` | The location of the resource group to which the resource belongs. |
-| `apiType` | `string` | Enum to indicate the API type of the restorable database account. |
-| `creationTime` | `string` | The creation time of the restorable database account (ISO-8601 format). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

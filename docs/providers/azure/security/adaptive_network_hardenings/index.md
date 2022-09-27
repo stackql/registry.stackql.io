@@ -29,13 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `rules` | `array` | The security rules which are recommended to be effective on the VM |
-| `rulesCalculationTime` | `string` | The UTC time on which the rules were calculated |
+| `properties` | `object` | Adaptive Network Hardening resource properties |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `effectiveNetworkSecurityGroups` | `array` | The Network Security Groups effective on the network interfaces of the protected resource |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AdaptiveNetworkHardenings_Get` | `SELECT` | `adaptiveNetworkHardeningResourceName, api-version, resourceGroupName, resourceName, resourceNamespace, resourceType, subscriptionId` | Gets a single Adaptive Network Hardening resource |
 | `AdaptiveNetworkHardenings_ListByExtendedResource` | `SELECT` | `api-version, resourceGroupName, resourceName, resourceNamespace, resourceType, subscriptionId` | Gets a list of Adaptive Network Hardenings resources in scope of an extended resource. |
 | `AdaptiveNetworkHardenings_Enforce` | `EXEC` | `adaptiveNetworkHardeningEnforceAction, adaptiveNetworkHardeningResourceName, api-version, resourceGroupName, resourceName, resourceNamespace, resourceType, subscriptionId, data__networkSecurityGroups, data__rules` | Enforces the given rules on the NSG(s) listed in the request |
-| `AdaptiveNetworkHardenings_Get` | `EXEC` | `adaptiveNetworkHardeningResourceName, api-version, resourceGroupName, resourceName, resourceNamespace, resourceType, subscriptionId` | Gets a single Adaptive Network Hardening resource |

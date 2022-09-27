@@ -29,17 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `location` | `string` | Resource location |
 | `plan` | `object` | Plan for solution object supported by the OperationsManagement resource provider. |
 | `properties` | `object` | Solution properties supported by the OperationsManagement resource provider. |
 | `tags` | `object` | Resource tags |
 | `type` | `string` | Resource type. |
+| `location` | `string` | Resource location |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Solutions_Get` | `SELECT` | `resourceGroupName, solutionName, subscriptionId` | Retrieves the user solution. |
 | `Solutions_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Retrieves the solution list. It will retrieve both first party and third party solutions |
 | `Solutions_ListBySubscription` | `SELECT` | `subscriptionId` | Retrieves the solution list. It will retrieve both first party and third party solutions |
 | `Solutions_CreateOrUpdate` | `INSERT` | `resourceGroupName, solutionName, subscriptionId` | Creates or updates the Solution. |
 | `Solutions_Delete` | `DELETE` | `resourceGroupName, solutionName, subscriptionId` | Deletes the solution in the subscription. |
-| `Solutions_Get` | `EXEC` | `resourceGroupName, solutionName, subscriptionId` | Retrieves the user solution. |
 | `Solutions_Update` | `EXEC` | `resourceGroupName, solutionName, subscriptionId` | Patch a Solution. Only updating tags supported. |

@@ -29,16 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `region` | `string` | Resource region. |
-| `resourceId` | `string` | Resource Id. |
+| `properties` | `object` | Properties of static member. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `StaticMembers_Get` | `SELECT` |  | Gets the specified static member. |
 | `StaticMembers_List` | `SELECT` | `networkGroupName, networkManagerName, resourceGroupName, subscriptionId` | Lists the specified static member. |
 | `StaticMembers_CreateOrUpdate` | `INSERT` |  | Creates or updates a static member. |
 | `StaticMembers_Delete` | `DELETE` |  | Deletes a static member. |
-| `StaticMembers_Get` | `EXEC` |  | Gets the specified static member. |

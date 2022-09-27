@@ -27,36 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `encryption` | `object` | Details of the encryption associated with the workspace |
-| `virtualNetworkProfile` | `object` | Virtual Network Profile |
-| `purviewConfiguration` | `object` | Purview Configuration |
-| `azureADOnlyAuthentication` | `boolean` | Enable or Disable AzureADOnlyAuthentication on All Workspace subresource |
-| `workspaceUID` | `string` | The workspace unique identifier |
-| `provisioningState` | `string` | Resource provisioning state |
-| `connectivityEndpoints` | `object` | Connectivity endpoints |
-| `settings` | `object` | Workspace settings |
-| `trustedServiceBypassEnabled` | `boolean` | Is trustedServiceBypassEnabled for the workspace |
-| `extraProperties` | `object` | Workspace level configs and feature flags |
 | `location` | `string` | The geo-location where the resource lives |
-| `adlaResourceId` | `string` | The ADLA resource ID. |
-| `managedVirtualNetworkSettings` | `object` | Managed Virtual Network Settings |
-| `defaultDataLakeStorage` | `object` | Details of the data lake storage account associated with the workspace |
-| `cspWorkspaceAdminProperties` | `object` | Initial workspace AAD admin properties for a CSP subscription |
-| `sqlAdministratorLoginPassword` | `string` | SQL administrator login password |
+| `properties` | `object` | Workspace properties |
 | `tags` | `object` | Resource tags. |
 | `identity` | `object` | The workspace managed identity |
-| `privateEndpointConnections` | `array` | Private endpoint connections to the workspace |
-| `publicNetworkAccess` | `string` | Enable or Disable public network access to workspace |
-| `managedVirtualNetwork` | `string` | Setting this to 'default' will ensure that all compute for this workspace is in a virtual network managed on behalf of the user. |
-| `workspaceRepositoryConfiguration` | `object` | Git integration settings |
-| `managedResourceGroupName` | `string` | Workspace managed resource group. The resource group name uniquely identifies the resource group within the user subscriptionId. The resource group name must be no longer than 90 characters long, and must be alphanumeric characters (Char.IsLetterOrDigit()) and '-', '_', '(', ')' and'.'. Note that the name cannot end with '.' |
-| `sqlAdministratorLogin` | `string` | Login for workspace SQL active directory administrator |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Workspaces_Get` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets a workspace |
 | `Workspaces_List` | `SELECT` | `subscriptionId` | Returns a list of workspaces in a subscription |
 | `Workspaces_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Returns a list of workspaces in a resource group |
 | `Workspaces_CreateOrUpdate` | `INSERT` | `resourceGroupName, subscriptionId, workspaceName` | Creates or updates a workspace |
 | `Workspaces_Delete` | `DELETE` | `resourceGroupName, subscriptionId, workspaceName` | Deletes a workspace |
-| `Workspaces_Get` | `EXEC` | `resourceGroupName, subscriptionId, workspaceName` | Gets a workspace |
 | `Workspaces_Update` | `EXEC` | `resourceGroupName, subscriptionId, workspaceName` | Updates a workspace |

@@ -29,20 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `etag` | `string` | The ETag of the resource, used for concurrency statements. |
+| `properties` | `object` | Certificate properties. |
 | `type` | `string` | The type of the resource. |
-| `deleteCertificateError` | `object` | An error response from the Batch service. |
-| `publicData` | `string` | The public key of the certificate. |
-| `provisioningState` | `string` |  |
-| `previousProvisioningStateTransitionTime` | `string` |  |
-| `previousProvisioningState` | `string` | The previous provisioned state of the resource |
-| `provisioningStateTransitionTime` | `string` |  |
+| `etag` | `string` | The ETag of the resource, used for concurrency statements. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Certificate_Get` | `SELECT` | `accountName, certificateName, resourceGroupName, subscriptionId` | Gets information about the specified certificate. |
 | `Certificate_ListByBatchAccount` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | Lists all of the certificates in the specified account. |
 | `Certificate_Create` | `INSERT` | `accountName, certificateName, resourceGroupName, subscriptionId` | Creates a new certificate inside the specified account. |
 | `Certificate_Delete` | `DELETE` | `accountName, certificateName, resourceGroupName, subscriptionId` | Deletes the specified certificate. |
 | `Certificate_CancelDeletion` | `EXEC` | `accountName, certificateName, resourceGroupName, subscriptionId` | If you try to delete a certificate that is being used by a pool or compute node, the status of the certificate changes to deleteFailed. If you decide that you want to continue using the certificate, you can use this operation to set the status of the certificate back to active. If you intend to delete the certificate, you do not need to run this operation after the deletion failed. You must make sure that the certificate is not being used by any resources, and then you can try again to delete the certificate. |
-| `Certificate_Get` | `EXEC` | `accountName, certificateName, resourceGroupName, subscriptionId` | Gets information about the specified certificate. |
 | `Certificate_Update` | `EXEC` | `accountName, certificateName, resourceGroupName, subscriptionId` | Updates the properties of an existing certificate. |

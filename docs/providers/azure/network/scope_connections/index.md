@@ -29,17 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `description` | `string` | A description of the scope connection. |
-| `resourceId` | `string` | Resource ID. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `tenantId` | `string` | Tenant ID. |
-| `connectionState` | `string` | The current scope connection state. |
 | `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `properties` | `object` | Scope connection. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ScopeConnections_Get` | `SELECT` |  | Get specified scope connection created by this Network Manager. |
 | `ScopeConnections_List` | `SELECT` | `networkManagerName, resourceGroupName, subscriptionId` | List all scope connections created by this network manager. |
 | `ScopeConnections_CreateOrUpdate` | `INSERT` |  | Creates or updates scope connection from Network Manager |
 | `ScopeConnections_Delete` | `DELETE` |  | Delete the pending scope connection created by this network manager. |
-| `ScopeConnections_Get` | `EXEC` |  | Get specified scope connection created by this Network Manager. |

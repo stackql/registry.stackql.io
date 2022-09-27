@@ -29,17 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `tactics` | `array` |  |
-| `techniques` | `array` |  |
+| `properties` | `object` | Describes properties of an assessment metadata response. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `plannedDeprecationDate` | `string` |  |
-| `publishDates` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AssessmentsMetadata_Get` | `SELECT` | `api-version, assessmentMetadataName` | Get metadata information on an assessment type |
 | `AssessmentsMetadata_List` | `SELECT` | `api-version` | Get metadata information on all assessment types |
 | `AssessmentsMetadata_ListBySubscription` | `SELECT` | `api-version, subscriptionId` | Get metadata information on all assessment types in a specific subscription |
 | `AssessmentsMetadata_CreateInSubscription` | `EXEC` | `api-version, assessmentMetadataName, subscriptionId` | Create metadata information on an assessment type in a specific subscription |
 | `AssessmentsMetadata_DeleteInSubscription` | `EXEC` | `api-version, assessmentMetadataName, subscriptionId` | Delete metadata information on an assessment type in a specific subscription, will cause the deletion of all the assessments of that type in that subscription |
-| `AssessmentsMetadata_Get` | `EXEC` | `api-version, assessmentMetadataName` | Get metadata information on an assessment type |
 | `AssessmentsMetadata_GetInSubscription` | `EXEC` | `api-version, assessmentMetadataName, subscriptionId` | Get metadata information on an assessment type in a specific subscription |

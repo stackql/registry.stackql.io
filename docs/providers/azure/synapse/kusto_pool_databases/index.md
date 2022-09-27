@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `kind` | `string` | Kind of the database |
 | `location` | `string` | Resource location. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `KustoPoolDatabases_Get` | `SELECT` | `databaseName, kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Returns a database. |
 | `KustoPoolDatabases_ListByKustoPool` | `SELECT` | `kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Returns the list of databases of the given Kusto pool. |
 | `KustoPoolDatabases_CreateOrUpdate` | `INSERT` | `databaseName, kustoPoolName, resourceGroupName, subscriptionId, workspaceName, data__kind` | Creates or updates a database. |
 | `KustoPoolDatabases_Delete` | `DELETE` | `databaseName, kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Deletes the database with the given name. |
-| `KustoPoolDatabases_Get` | `EXEC` | `databaseName, kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Returns a database. |
 | `KustoPoolDatabases_Update` | `EXEC` | `databaseName, kustoPoolName, resourceGroupName, subscriptionId, workspaceName, data__kind` | Updates a database. |

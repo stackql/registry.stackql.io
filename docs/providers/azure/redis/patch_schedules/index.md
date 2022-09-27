@@ -28,11 +28,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `location` | `string` | The geo-location where the resource lives |
-| `scheduleEntries` | `array` | List of patch schedules for a Redis cache. |
+| `properties` | `object` | List of patch schedules for a Redis cache. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PatchSchedules_Get` | `SELECT` | `default, name, resourceGroupName, subscriptionId` | Gets the patching schedule of a redis cache. |
 | `PatchSchedules_ListByRedisResource` | `SELECT` | `cacheName, resourceGroupName, subscriptionId` | Gets all patch schedules in the specified redis cache (there is only one). |
-| `PatchSchedules_CreateOrUpdate` | `INSERT` | `default, name, resourceGroupName, subscriptionId` | Create or replace the patching schedule for Redis cache. |
+| `PatchSchedules_CreateOrUpdate` | `INSERT` | `default, name, resourceGroupName, subscriptionId, data__properties` | Create or replace the patching schedule for Redis cache. |
 | `PatchSchedules_Delete` | `DELETE` | `default, name, resourceGroupName, subscriptionId` | Deletes the patching schedule of a redis cache. |
-| `PatchSchedules_Get` | `EXEC` | `default, name, resourceGroupName, subscriptionId` | Gets the patching schedule of a redis cache. |

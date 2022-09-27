@@ -29,23 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `description` | `string` | Alert description |
-| `details` | `object` | Alert details |
-| `statusModificationTime` | `string` | dateTime in which the alert status was last modified |
-| `modificationTime` | `string` | dateTime in which alert was last modified |
+| `properties` | `object` | Alert properties. |
 | `type` | `string` | Resource type. |
-| `closeTime` | `string` | dateTime in which alert was closed |
-| `status` | `string` | alert status |
-| `costEntityId` | `string` | related budget |
-| `statusModificationUserName` | `string` | User who last modified the alert |
-| `source` | `string` | Source of alert |
-| `definition` | `object` | defines the type of alert |
-| `creationTime` | `string` | dateTime in which alert was created |
 | `eTag` | `string` | eTag of the resource. To handle concurrent update scenario, this field will be used to determine whether the user is updating the latest version or not. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Alerts_Get` | `SELECT` | `alertId, scope` | Gets the alert for the scope by alert ID. |
 | `Alerts_List` | `SELECT` | `scope` | Lists the alerts for scope defined. |
 | `Alerts_Dismiss` | `EXEC` | `alertId, scope` | Dismisses the specified alert |
-| `Alerts_Get` | `EXEC` | `alertId, scope` | Gets the alert for the scope by alert ID. |
 | `Alerts_ListExternal` | `EXEC` | `externalCloudProviderId, externalCloudProviderType` | Lists the Alerts for external cloud provider type defined. |

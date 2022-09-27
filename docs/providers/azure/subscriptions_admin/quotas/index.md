@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
-| `allowCustomPortalBranding` | `boolean` | Value indicating whether custom portal branding is allowed. |
-| `location` | `string` | Location of the resource |
+| `properties` | `object` | Quotas for DelegatedProviders. |
 | `tags` | `object` | List of key-value pairs. |
 | `type` | `string` | Type of resource. |
+| `location` | `string` | Location of the resource |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Quotas_Get` | `SELECT` | `location, quota, subscriptionId` | Gets a quota by name. |
 | `Quotas_List` | `SELECT` | `location, subscriptionId` | Get the list of quotas at a location. |
-| `Quotas_Get` | `EXEC` | `location, quota, subscriptionId` | Gets a quota by name. |

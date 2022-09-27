@@ -25,18 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `minResourcePercent` | `integer` | The workload group minimum percentage resource. |
-| `minResourcePercentPerRequest` | `number` | The workload group request minimum grant percentage. |
-| `queryExecutionTimeout` | `integer` | The workload group query execution timeout. |
-| `importance` | `string` | The workload group importance level. |
-| `maxResourcePercent` | `integer` | The workload group cap percentage resource. |
-| `maxResourcePercentPerRequest` | `number` | The workload group request maximum grant percentage. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WorkloadGroups_Get` | `SELECT` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadGroupName` | Gets a workload group |
 | `WorkloadGroups_ListByDatabase` | `SELECT` | `databaseName, resourceGroupName, serverName, subscriptionId` | Gets the list of workload groups |
 | `WorkloadGroups_CreateOrUpdate` | `INSERT` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadGroupName` | Creates or updates a workload group. |
 | `WorkloadGroups_Delete` | `DELETE` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadGroupName` | Deletes a workload group. |
-| `WorkloadGroups_Get` | `EXEC` | `databaseName, resourceGroupName, serverName, subscriptionId, workloadGroupName` | Gets a workload group |

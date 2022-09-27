@@ -27,26 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `state` | `string` | The state of the elastic pool. |
-| `creationDate` | `string` | The creation date of the elastic pool (ISO8601 format). |
-| `licenseType` | `string` | The license type to apply for this elastic pool. |
+| `kind` | `string` | Kind of elastic pool. This is metadata used for the Azure portal experience. |
 | `location` | `string` | Resource location. |
-| `maxSizeBytes` | `integer` | The storage limit for the database elastic pool in bytes. |
-| `zoneRedundant` | `boolean` | Whether or not this elastic pool is zone redundant, which means the replicas of this elastic pool will be spread across multiple availability zones. |
-| `perDatabaseSettings` | `object` | Per database settings of an elastic pool. |
+| `properties` | `object` | Properties of an elastic pool |
 | `sku` | `object` | An ARM Resource SKU. |
 | `tags` | `object` | Resource tags. |
-| `maintenanceConfigurationId` | `string` | Maintenance configuration id assigned to the elastic pool. This configuration defines the period when the maintenance updates will will occur. |
-| `highAvailabilityReplicaCount` | `integer` | The number of secondary replicas associated with the elastic pool that are used to provide high availability. |
-| `kind` | `string` | Kind of elastic pool. This is metadata used for the Azure portal experience. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ElasticPools_Get` | `SELECT` | `elasticPoolName, resourceGroupName, serverName, subscriptionId` | Gets an elastic pool. |
 | `ElasticPools_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Gets all elastic pools in a server. |
 | `ElasticPools_CreateOrUpdate` | `INSERT` | `elasticPoolName, resourceGroupName, serverName, subscriptionId, data__location` | Creates or updates an elastic pool. |
 | `ElasticPools_Delete` | `DELETE` | `elasticPoolName, resourceGroupName, serverName, subscriptionId` | Deletes an elastic pool. |
 | `ElasticPools_Failover` | `EXEC` | `elasticPoolName, resourceGroupName, serverName, subscriptionId` | Failovers an elastic pool. |
-| `ElasticPools_Get` | `EXEC` | `elasticPoolName, resourceGroupName, serverName, subscriptionId` | Gets an elastic pool. |
 | `ElasticPools_ListMetricDefinitions` | `EXEC` | `elasticPoolName, resourceGroupName, serverName, subscriptionId` | Returns elastic pool metric definitions. |
 | `ElasticPools_ListMetrics` | `EXEC` | `$filter, elasticPoolName, resourceGroupName, serverName, subscriptionId` | Returns elastic pool  metrics. |
 | `ElasticPools_Update` | `EXEC` | `elasticPoolName, resourceGroupName, serverName, subscriptionId` | Updates an elastic pool. |

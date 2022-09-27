@@ -29,8 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `GremlinResources_CreateUpdateGremlinDatabase` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Create or update an Azure Cosmos DB Gremlin database |
-| `GremlinResources_CreateUpdateGremlinGraph` | `EXEC` | `accountName, databaseName, graphName, resourceGroupName, subscriptionId` | Create or update an Azure Cosmos DB Gremlin graph |
+| `GremlinResources_CreateUpdateGremlinDatabase` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId, data__properties` | Create or update an Azure Cosmos DB Gremlin database |
+| `GremlinResources_CreateUpdateGremlinGraph` | `EXEC` | `accountName, databaseName, graphName, resourceGroupName, subscriptionId, data__properties` | Create or update an Azure Cosmos DB Gremlin graph |
 | `GremlinResources_DeleteGremlinDatabase` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Deletes an existing Azure Cosmos DB Gremlin database. |
 | `GremlinResources_DeleteGremlinGraph` | `EXEC` | `accountName, databaseName, graphName, resourceGroupName, subscriptionId` | Deletes an existing Azure Cosmos DB Gremlin graph. |
 | `GremlinResources_GetGremlinDatabase` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Gets the Gremlin databases under an existing Azure Cosmos DB database account with the provided name. |
@@ -44,5 +44,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `GremlinResources_MigrateGremlinGraphToAutoscale` | `EXEC` | `accountName, databaseName, graphName, resourceGroupName, subscriptionId` | Migrate an Azure Cosmos DB Gremlin graph from manual throughput to autoscale |
 | `GremlinResources_MigrateGremlinGraphToManualThroughput` | `EXEC` | `accountName, databaseName, graphName, resourceGroupName, subscriptionId` | Migrate an Azure Cosmos DB Gremlin graph from autoscale to manual throughput |
 | `GremlinResources_RetrieveContinuousBackupInformation` | `EXEC` | `accountName, databaseName, graphName, resourceGroupName, subscriptionId` | Retrieves continuous backup information for a gremlin graph. |
-| `GremlinResources_UpdateGremlinDatabaseThroughput` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Update RUs per second of an Azure Cosmos DB Gremlin database |
-| `GremlinResources_UpdateGremlinGraphThroughput` | `EXEC` | `accountName, databaseName, graphName, resourceGroupName, subscriptionId` | Update RUs per second of an Azure Cosmos DB Gremlin graph |
+| `GremlinResources_UpdateGremlinDatabaseThroughput` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId, data__properties` | Update RUs per second of an Azure Cosmos DB Gremlin database |
+| `GremlinResources_UpdateGremlinGraphThroughput` | `EXEC` | `accountName, databaseName, graphName, resourceGroupName, subscriptionId, data__properties` | Update RUs per second of an Azure Cosmos DB Gremlin graph |

@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The unique resource identifier of the database account. |
 | `name` | `string` | The name of the database account. |
-| `type` | `string` | The type of Azure resource. |
 | `properties` | `object` | Services response resource. |
+| `type` | `string` | The type of Azure resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Service_Get` | `SELECT` | `accountName, resourceGroupName, serviceName, subscriptionId` | Gets the status of service. |
 | `Service_List` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | Gets the status of service. |
 | `Service_Create` | `INSERT` | `accountName, resourceGroupName, serviceName, subscriptionId` | Creates a service. |
 | `Service_Delete` | `DELETE` | `accountName, resourceGroupName, serviceName, subscriptionId` | Deletes service with the given serviceName. |
-| `Service_Get` | `EXEC` | `accountName, resourceGroupName, serviceName, subscriptionId` | Gets the status of service. |

@@ -22,7 +22,7 @@ Azure Application Insights client for web tests.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Application Insights Management Client (Microsoft.Insights)</td></tr>
 <tr><td><b>Description</b></td><td>Azure Application Insights client for web tests.</td></tr>
-<tr><td><b>Id</b></td><td><code>application_insights:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>application_insights:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

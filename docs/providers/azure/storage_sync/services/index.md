@@ -27,22 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `tags` | `object` | Resource tags. |
-| `lastWorkflowId` | `string` | StorageSyncService lastWorkflowId |
-| `lastOperationName` | `string` | Resource Last Operation Name |
-| `provisioningState` | `string` | StorageSyncService Provisioning State |
-| `privateEndpointConnections` | `array` | List of private endpoint connection associated with the specified storage sync service |
-| `incomingTrafficPolicy` | `string` | Type of the Incoming Traffic Policy |
-| `storageSyncServiceUid` | `string` | Storage Sync service Uid |
-| `storageSyncServiceStatus` | `integer` | Storage Sync service status. |
 | `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Storage Sync Service Properties object. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `StorageSyncServices_Get` | `SELECT` | `resourceGroupName, storageSyncServiceName, subscriptionId` | Get a given StorageSyncService. |
 | `StorageSyncServices_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Get a StorageSyncService list by Resource group name. |
 | `StorageSyncServices_ListBySubscription` | `SELECT` | `subscriptionId` | Get a StorageSyncService list by subscription. |
 | `StorageSyncServices_Create` | `INSERT` | `resourceGroupName, storageSyncServiceName, subscriptionId, data__location` | Create a new StorageSyncService. |
 | `StorageSyncServices_Delete` | `DELETE` | `resourceGroupName, storageSyncServiceName, subscriptionId` | Delete a given StorageSyncService. |
 | `StorageSyncServices_CheckNameAvailability` | `EXEC` | `locationName, subscriptionId, data__name, data__type` | Check the give namespace name availability. |
-| `StorageSyncServices_Get` | `EXEC` | `resourceGroupName, storageSyncServiceName, subscriptionId` | Get a given StorageSyncService. |
 | `StorageSyncServices_Update` | `EXEC` | `resourceGroupName, storageSyncServiceName, subscriptionId` | Patch a given StorageSyncService. |

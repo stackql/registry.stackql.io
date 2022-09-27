@@ -29,19 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The access review decision id. |
 | `name` | `string` | The access review decision name. |
-| `resource` | `object` | Target of the decision. |
-| `principal` | `object` | Target of the decision. |
-| `appliedDateTime` | `string` | The date and time when the review decision was applied. |
-| `decision` | `string` | The decision on the approval step. This value is initially set to NotReviewed. Approvers can take action of Approve/Deny |
-| `applyResult` | `string` | The outcome of applying the decision. |
-| `justification` | `string` | Justification provided by approvers for their action |
+| `properties` | `object` | Approval Step. |
 | `type` | `string` | The resource type. |
-| `principalResourceMembership` | `object` | Target of the decision. |
-| `recommendation` | `string` | The feature- generated recommendation shown to the reviewer. |
-| `reviewedDateTime` | `string` | Date Time when a decision was taken. |
-| `insights` | `array` | This is the collection of insights for this decision item. |
-| `reviewedBy` | `object` | Details of the actor identity |
-| `appliedBy` | `object` | Details of the actor identity |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

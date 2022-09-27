@@ -35,8 +35,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReplicationStorageClassificationMappings_Get` | `SELECT` | `api-version, fabricName, resourceGroupName, resourceName, storageClassificationMappingName, storageClassificationName, subscriptionId` | Gets the details of the specified storage classification mapping. |
 | `ReplicationStorageClassificationMappings_List` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` | Lists the storage classification mappings in the vault. |
 | `ReplicationStorageClassificationMappings_ListByReplicationStorageClassifications` | `SELECT` | `api-version, fabricName, resourceGroupName, resourceName, storageClassificationName, subscriptionId` | Lists the storage classification mappings for the fabric. |
 | `ReplicationStorageClassificationMappings_Create` | `INSERT` | `api-version, fabricName, resourceGroupName, resourceName, storageClassificationMappingName, storageClassificationName, subscriptionId` | The operation to create a storage classification mapping. |
 | `ReplicationStorageClassificationMappings_Delete` | `DELETE` | `api-version, fabricName, resourceGroupName, resourceName, storageClassificationMappingName, storageClassificationName, subscriptionId` | The operation to delete a storage classification mapping. |
-| `ReplicationStorageClassificationMappings_Get` | `EXEC` | `api-version, fabricName, resourceGroupName, resourceName, storageClassificationMappingName, storageClassificationName, subscriptionId` | Gets the details of the specified storage classification mapping. |

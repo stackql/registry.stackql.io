@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The unique ID of the API key inside an Application Insights component. It is auto generated when the API key is created. |
 | `name` | `string` | The name of the API key. |
+| `linkedWriteProperties` | `array` | The write access rights of this API Key. |
 | `apiKey` | `string` | The API key value. It will be only return once when the API Key was created. |
 | `createdDate` | `string` | The create date of this API key. |
 | `linkedReadProperties` | `array` | The read access rights of this API Key. |
-| `linkedWriteProperties` | `array` | The write access rights of this API Key. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `APIKeys_Get` | `SELECT` | `keyId, resourceGroupName, resourceName, subscriptionId` | Get the API Key for this key id. |
 | `APIKeys_List` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | Gets a list of API keys of an Application Insights component. |
 | `APIKeys_Create` | `INSERT` | `resourceGroupName, resourceName, subscriptionId` | Create an API Key of an Application Insights component. |
 | `APIKeys_Delete` | `DELETE` | `keyId, resourceGroupName, resourceName, subscriptionId` | Delete an API Key of an Application Insights component. |
-| `APIKeys_Get` | `EXEC` | `keyId, resourceGroupName, resourceName, subscriptionId` | Get the API Key for this key id. |

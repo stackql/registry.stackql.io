@@ -27,50 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `statusOfSecondary` | `string` | Gets the status indicating whether the secondary location of the storage account is available or unavailable. Only available if the SKU name is Standard_GRS or Standard_RAGRS. |
-| `networkAcls` | `object` | Network rule set |
-| `sasPolicy` | `object` | SasPolicy assigned to the storage account. |
-| `sku` | `object` | The resource model definition representing SKU |
-| `allowedCopyScope` | `string` | Restrict copy to and from Storage Accounts within an AAD tenant or with Private Links to the same VNet. |
-| `allowSharedKeyAccess` | `boolean` | Indicates whether the storage account permits requests to be authorized with the account access key via Shared Key. If false, then all requests, including shared access signatures, must be authorized with Azure Active Directory (Azure AD). The default value is null, which is equivalent to true. |
-| `largeFileSharesState` | `string` | Allow large file shares if sets to Enabled. It cannot be disabled once it is enabled. |
-| `primaryEndpoints` | `object` | The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object. |
-| `defaultToOAuthAuthentication` | `boolean` | A boolean flag which indicates whether the default authentication is OAuth or not. The default interpretation is false for this property. |
-| `provisioningState` | `string` | Gets the status of the storage account at the time the operation was called. |
-| `primaryLocation` | `string` | Gets the location of the primary data center for the storage account. |
-| `isNfsV3Enabled` | `boolean` | NFS 3.0 protocol support enabled if set to true. |
-| `dnsEndpointType` | `string` | Allows you to specify the type of endpoint. Set this to AzureDNSZone to create a large number of accounts in a single subscription, which creates accounts in an Azure DNS Zone and the endpoint URL will have an alphanumeric DNS Zone identifier. |
-| `tags` | `object` | Resource tags. |
-| `supportsHttpsTrafficOnly` | `boolean` | Allows https traffic only to storage service if sets to true. |
-| `failoverInProgress` | `boolean` | If the failover is in progress, the value will be true, otherwise, it will be null. |
-| `immutableStorageWithVersioning` | `object` | This property enables and defines account-level immutability. Enabling the feature auto-enables Blob Versioning. |
-| `isHnsEnabled` | `boolean` | Account HierarchicalNamespace enabled if sets to true. |
-| `accessTier` | `string` | Required for storage accounts where kind = BlobStorage. The access tier is used for billing. The 'Premium' access tier is the default value for premium block blobs storage account type and it cannot be changed for the premium block blobs storage account type. |
-| `statusOfPrimary` | `string` | Gets the status indicating whether the primary location of the storage account is available or unavailable. |
-| `creationTime` | `string` | Gets the creation date and time of the storage account in UTC. |
-| `location` | `string` | The geo-location where the resource lives |
-| `identity` | `object` | Identity for the resource. |
-| `storageAccountSkuConversionStatus` | `object` | This defines the sku conversion status object for asynchronous sku conversions. |
-| `azureFilesIdentityBasedAuthentication` | `object` | Settings for Azure Files identity based authentication. |
-| `geoReplicationStats` | `object` | Statistics related to replication for storage account's Blob, Table, Queue and File services. It is only available when geo-redundant replication is enabled for the storage account. |
-| `lastGeoFailoverTime` | `string` | Gets the timestamp of the most recent instance of a failover to the secondary location. Only the most recent timestamp is retained. This element is not returned if there has never been a failover instance. Only available if the accountType is Standard_GRS or Standard_RAGRS. |
-| `encryption` | `object` | The encryption settings on the storage account. |
-| `minimumTlsVersion` | `string` | Set the minimum TLS version to be permitted on requests to storage. The default interpretation is TLS 1.0 for this property. |
-| `blobRestoreStatus` | `object` | Blob restore status. |
-| `secondaryEndpoints` | `object` | The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object. |
-| `isSftpEnabled` | `boolean` | Enables Secure File Transfer Protocol, if set to true |
-| `allowCrossTenantReplication` | `boolean` | Allow or disallow cross AAD tenant object replication. The default interpretation is true for this property. |
-| `keyCreationTime` | `object` | Storage account keys creation time. |
-| `isLocalUserEnabled` | `boolean` | Enables local users feature, if set to true |
-| `customDomain` | `object` | The custom domain assigned to this storage account. This can be set via Update. |
-| `secondaryLocation` | `string` | Gets the location of the geo-replicated secondary for the storage account. Only available if the accountType is Standard_GRS or Standard_RAGRS. |
-| `extendedLocation` | `object` | The complex type of the extended location. |
 | `kind` | `string` | Gets the Kind. |
-| `keyPolicy` | `object` | KeyPolicy assigned to the storage account. |
-| `publicNetworkAccess` | `string` | Allow or disallow public network access to Storage Account. Value is optional but if passed in, must be 'Enabled' or 'Disabled'. |
-| `routingPreference` | `object` | Routing preference defines the type of network, either microsoft or internet routing to be used to deliver the user data, the default option is microsoft routing |
-| `privateEndpointConnections` | `array` | List of private endpoint connection associated with the specified storage account |
-| `allowBlobPublicAccess` | `boolean` | Allow or disallow public access to all blobs or containers in the storage account. The default interpretation is true for this property. |
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Properties of the storage account. |
+| `sku` | `object` | The SKU of the storage account. |
+| `tags` | `object` | Resource tags. |
+| `extendedLocation` | `object` | The complex type of the extended location. |
+| `identity` | `object` | Identity for the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,13 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Name of the connection. |
-| `hubVirtualNetworkConnection` | `object` | Reference to another subresource. |
-| `peerIp` | `string` | Peer IP. |
-| `peerAsn` | `integer` | Peer ASN. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `type` | `string` | Connection type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `connectionState` | `string` | The current state of the VirtualHub to Peer. |
+| `properties` | `object` | Properties of the bgp connection. |
+| `type` | `string` | Connection type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

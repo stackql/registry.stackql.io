@@ -29,14 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `privateEndpoint` | `object` | The Private Endpoint resource. |
-| `privateLinkServiceConnectionState` | `object` | A collection of information about the state of the connection between service consumer and provider. |
-| `provisioningState` | `string` | The current provisioning state. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `properties` | `object` | Properties of the PrivateEndpointConnectProperties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnections_Get` | `SELECT` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the specified private endpoint connection associated with the storage account. |
 | `PrivateEndpointConnections_List` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | List all the private endpoint connections associated with the storage account. |
 | `PrivateEndpointConnections_Delete` | `DELETE` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Deletes the specified private endpoint connection associated with the storage account. |
-| `PrivateEndpointConnections_Get` | `EXEC` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the specified private endpoint connection associated with the storage account. |
 | `PrivateEndpointConnections_Put` | `EXEC` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Update the state of specified private endpoint connection associated with the storage account. |

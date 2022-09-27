@@ -28,11 +28,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `creationTime` | `string` | Specifies the UTC creation time of the policy. |
-| `state` | `string` | Specifies the state of the Advanced Threat Protection, whether it is enabled or disabled or a state has not been applied yet on the specific database or server. |
+| `properties` | `object` | Properties of an Advanced Threat Protection state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedInstanceAdvancedThreatProtectionSettings_Get` | `SELECT` | `advancedThreatProtectionName, managedInstanceName, resourceGroupName, subscriptionId` | Get a managed instance's Advanced Threat Protection state. |
 | `ManagedInstanceAdvancedThreatProtectionSettings_ListByInstance` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId` | Get the managed instance's Advanced Threat Protection settings. |
 | `ManagedInstanceAdvancedThreatProtectionSettings_CreateOrUpdate` | `INSERT` | `advancedThreatProtectionName, managedInstanceName, resourceGroupName, subscriptionId` | Creates or updates Advanced Threat Protection settings. |
-| `ManagedInstanceAdvancedThreatProtectionSettings_Get` | `EXEC` | `advancedThreatProtectionName, managedInstanceName, resourceGroupName, subscriptionId` | Get a managed instance's Advanced Threat Protection state. |

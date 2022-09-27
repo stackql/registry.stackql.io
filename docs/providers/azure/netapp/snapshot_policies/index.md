@@ -27,21 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `weeklySchedule` | `object` | Weekly Schedule properties, make a snapshot every week at a specific day or days |
-| `enabled` | `boolean` | The property to decide policy is enabled or not |
-| `provisioningState` | `string` | Azure lifecycle management |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `monthlySchedule` | `object` | Monthly Schedule properties |
-| `dailySchedule` | `object` | Daily Schedule properties |
-| `location` | `string` | The geo-location where the resource lives |
 | `tags` | `object` | Resource tags. |
-| `hourlySchedule` | `object` | Hourly Schedule properties |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Snapshot policy properties |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SnapshotPolicies_Get` | `SELECT` | `accountName, resourceGroupName, snapshotPolicyName, subscriptionId` | Get a snapshot Policy |
 | `SnapshotPolicies_List` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | List snapshot policy |
-| `SnapshotPolicies_Create` | `INSERT` | `accountName, resourceGroupName, snapshotPolicyName, subscriptionId, data__location` | Create a snapshot policy |
+| `SnapshotPolicies_Create` | `INSERT` | `accountName, resourceGroupName, snapshotPolicyName, subscriptionId, data__location, data__properties` | Create a snapshot policy |
 | `SnapshotPolicies_Delete` | `DELETE` | `accountName, resourceGroupName, snapshotPolicyName, subscriptionId` | Delete snapshot policy |
-| `SnapshotPolicies_Get` | `EXEC` | `accountName, resourceGroupName, snapshotPolicyName, subscriptionId` | Get a snapshot Policy |
 | `SnapshotPolicies_ListVolumes` | `EXEC` | `accountName, resourceGroupName, snapshotPolicyName, subscriptionId` | Get volumes associated with snapshot policy |
 | `SnapshotPolicies_Update` | `EXEC` | `accountName, resourceGroupName, snapshotPolicyName, subscriptionId` | Patch a snapshot policy |

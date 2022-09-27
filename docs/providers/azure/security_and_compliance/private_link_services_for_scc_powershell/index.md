@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
-| `etag` | `string` | An etag associated with the resource, used for optimistic concurrency when editing it. |
 | `type` | `string` | The resource type. |
-| `identity` | `object` | Setting indicating whether the service has a managed identity associated with it. |
+| `etag` | `string` | An etag associated with the resource, used for optimistic concurrency when editing it. |
 | `properties` | `object` | The properties of a service instance. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `tags` | `object` | The resource tags. |
-| `kind` | `string` | The kind of the service. |
 | `location` | `string` | The resource location. |
+| `kind` | `string` | The kind of the service. |
+| `tags` | `object` | The resource tags. |
+| `identity` | `object` | Setting indicating whether the service has a managed identity associated with it. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `privateLinkServicesForSCCPowershell_Get` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | Get the metadata of a privateLinkServicesForSCCPowershell resource. |
 | `privateLinkServicesForSCCPowershell_List` | `SELECT` | `subscriptionId` | Get all the privateLinkServicesForSCCPowershell instances in a subscription. |
 | `privateLinkServicesForSCCPowershell_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Get all the service instances in a resource group. |
 | `privateLinkServicesForSCCPowershell_CreateOrUpdate` | `INSERT` | `resourceGroupName, resourceName, subscriptionId` | Create or update the metadata of a privateLinkServicesForSCCPowershell instance. |
 | `privateLinkServicesForSCCPowershell_Delete` | `DELETE` | `resourceGroupName, resourceName, subscriptionId` | Delete a service instance. |
-| `privateLinkServicesForSCCPowershell_Get` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Get the metadata of a privateLinkServicesForSCCPowershell resource. |
 | `privateLinkServicesForSCCPowershell_Update` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Update the metadata of a privateLinkServicesForSCCPowershell instance. |

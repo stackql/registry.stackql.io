@@ -25,16 +25,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `provisioningState` | `string` | Provisioning state of managed instance DTC. |
-| `securitySettings` | `object` | The Security Settings of managed instance DTC. |
-| `dtcEnabled` | `boolean` | Active status of managed instance DTC. |
-| `dtcHostNameDnsSuffix` | `string` | Host name dns suffix of managed instance DTC. |
-| `externalDnsSuffixSearchList` | `array` | External dns suffix search list of managed instance DTC. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedInstanceDtcs_Get` | `SELECT` | `dtcName, managedInstanceName, resourceGroupName, subscriptionId` | Gets managed instance DTC settings. |
 | `ManagedInstanceDtcs_ListByManagedInstance` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId` | Gets a list of managed instance DTC settings. |
 | `ManagedInstanceDtcs_CreateOrUpdate` | `INSERT` | `dtcName, managedInstanceName, resourceGroupName, subscriptionId` | Updates managed instance DTC settings. |
-| `ManagedInstanceDtcs_Get` | `EXEC` | `dtcName, managedInstanceName, resourceGroupName, subscriptionId` | Gets managed instance DTC settings. |

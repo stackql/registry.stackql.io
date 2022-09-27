@@ -22,7 +22,7 @@ Service Fabric Managed Clusters
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Service Fabric Managed Clusters (Microsoft.ServiceFabric)</td></tr>
 <tr><td><b>Description</b></td><td>Service Fabric Managed Clusters</td></tr>
-<tr><td><b>Id</b></td><td><code>service_fabric_managed_clusters:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>service_fabric_managed_clusters:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

@@ -30,12 +30,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | String Id used to locate any resource on Azure. |
 | `name` | `string` | Name of this resource. |
 | `type` | `string` | Type of this resource. |
-| `blueprintName` | `string` | Name of the published blueprint definition. |
-| `changeNotes` | `string` | Version-specific change notes. |
+| `properties` | `object` | Schema for published blueprint definition properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PublishedBlueprints_Get` | `SELECT` | `blueprintName, resourceScope, versionId` | Get a published version of a blueprint definition. |
 | `PublishedBlueprints_List` | `SELECT` | `blueprintName, resourceScope` | List published versions of given blueprint definition. |
-| `PublishedBlueprints_Create` | `INSERT` | `blueprintName, resourceScope, versionId` | Publish a new version of the blueprint definition with the latest artifacts. Published blueprint definitions are immutable. |
+| `PublishedBlueprints_Create` | `INSERT` | `blueprintName, resourceScope, versionId, data__properties` | Publish a new version of the blueprint definition with the latest artifacts. Published blueprint definitions are immutable. |
 | `PublishedBlueprints_Delete` | `DELETE` | `blueprintName, resourceScope, versionId` | Delete a published version of a blueprint definition. |
-| `PublishedBlueprints_Get` | `EXEC` | `blueprintName, resourceScope, versionId` | Get a published version of a blueprint definition. |

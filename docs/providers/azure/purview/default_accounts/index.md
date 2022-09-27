@@ -25,10 +25,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `scopeType` | `string` | The scope where the default account is set. |
+| `subscriptionId` | `string` | The subscription ID of the account that is set as the default. |
+| `accountName` | `string` | The name of the account that is set as the default. |
+| `resourceGroupName` | `string` | The resource group name of the account that is set as the default. |
+| `scope` | `string` | The scope object ID. For example, sub ID or tenant ID. |
+| `scopeTenantId` | `string` | The scope tenant in which the default account is set. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `DefaultAccounts_Get` | `EXEC` | `api-version, scopeTenantId, scopeType` | Get the default account for the scope. |
+| `DefaultAccounts_Get` | `SELECT` | `api-version, scopeTenantId, scopeType` | Get the default account for the scope. |
 | `DefaultAccounts_Remove` | `EXEC` | `api-version, scopeTenantId, scopeType` | Removes the default account from the scope. |
 | `DefaultAccounts_Set` | `EXEC` | `api-version` | Sets the default account for the scope. |

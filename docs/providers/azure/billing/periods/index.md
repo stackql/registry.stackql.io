@@ -29,12 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `invoiceIds` | `array` | Array of invoice ids that associated with. |
+| `properties` | `object` | The properties of the billing period. |
 | `type` | `string` | Resource type. |
-| `billingPeriodEndDate` | `string` | The end of the date range covered by the billing period. |
-| `billingPeriodStartDate` | `string` | The start of the date range covered by the billing period. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `BillingPeriods_Get` | `SELECT` | `billingPeriodName, subscriptionId` | Gets a named billing period.  This is only supported for Azure Web-Direct subscriptions. Other subscription types which were not purchased directly through the Azure web portal are not supported through this preview API. |
 | `BillingPeriods_List` | `SELECT` | `subscriptionId` | Lists the available billing periods for a subscription in reverse chronological order. This is only supported for Azure Web-Direct subscriptions. Other subscription types which were not purchased directly through the Azure web portal are not supported through this preview API. |
-| `BillingPeriods_Get` | `EXEC` | `billingPeriodName, subscriptionId` | Gets a named billing period.  This is only supported for Azure Web-Direct subscriptions. Other subscription types which were not purchased directly through the Azure web portal are not supported through this preview API. |

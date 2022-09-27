@@ -29,19 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `egressVpnSiteLinkConnections` | `array` | List of egress VpnSiteLinkConnections. |
-| `ingressVpnSiteLinkConnections` | `array` | List of ingress VpnSiteLinkConnections. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `internalMappings` | `array` | The private IP address internal mapping for NAT. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `externalMappings` | `array` | The private IP address external mapping for NAT. |
-| `ipConfigurationId` | `string` | The IP Configuration ID this NAT rule applies to. |
+| `properties` | `object` | Parameters for VpnGatewayNatRule. |
 | `type` | `string` | Resource type. |
-| `mode` | `string` | The Source NAT direction of a VPN NAT. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `NatRules_Get` | `SELECT` | `gatewayName, natRuleName, resourceGroupName, subscriptionId` | Retrieves the details of a nat ruleGet. |
 | `NatRules_ListByVpnGateway` | `SELECT` | `gatewayName, resourceGroupName, subscriptionId` | Retrieves all nat rules for a particular virtual wan vpn gateway. |
 | `NatRules_CreateOrUpdate` | `INSERT` | `gatewayName, natRuleName, resourceGroupName, subscriptionId` | Creates a nat rule to a scalable vpn gateway if it doesn't exist else updates the existing nat rules. |
 | `NatRules_Delete` | `DELETE` | `gatewayName, natRuleName, resourceGroupName, subscriptionId` | Deletes a nat rule. |
-| `NatRules_Get` | `EXEC` | `gatewayName, natRuleName, resourceGroupName, subscriptionId` | Retrieves the details of a nat ruleGet. |

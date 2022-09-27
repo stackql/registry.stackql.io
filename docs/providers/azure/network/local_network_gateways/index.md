@@ -29,21 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `resourceGuid` | `string` | The resource GUID property of the local network gateway resource. |
-| `gatewayIpAddress` | `string` | IP address of local network gateway. |
-| `type` | `string` | Resource type. |
-| `localNetworkAddressSpace` | `object` | AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network. |
+| `properties` | `object` | LocalNetworkGateway properties. |
 | `tags` | `object` | Resource tags. |
-| `fqdn` | `string` | FQDN of local network gateway. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `bgpSettings` | `object` | BGP settings details. |
-| `location` | `string` | Resource location. |
+| `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `LocalNetworkGateways_Get` | `SELECT` | `localNetworkGatewayName, resourceGroupName, subscriptionId` | Gets the specified local network gateway in a resource group. |
 | `LocalNetworkGateways_List` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all the local network gateways in a resource group. |
-| `LocalNetworkGateways_CreateOrUpdate` | `INSERT` | `localNetworkGatewayName, resourceGroupName, subscriptionId` | Creates or updates a local network gateway in the specified resource group. |
+| `LocalNetworkGateways_CreateOrUpdate` | `INSERT` | `localNetworkGatewayName, resourceGroupName, subscriptionId, data__properties` | Creates or updates a local network gateway in the specified resource group. |
 | `LocalNetworkGateways_Delete` | `DELETE` | `localNetworkGatewayName, resourceGroupName, subscriptionId` | Deletes the specified local network gateway. |
-| `LocalNetworkGateways_Get` | `EXEC` | `localNetworkGatewayName, resourceGroupName, subscriptionId` | Gets the specified local network gateway in a resource group. |
 | `LocalNetworkGateways_UpdateTags` | `EXEC` | `localNetworkGatewayName, resourceGroupName, subscriptionId` | Updates a local network gateway tags. |

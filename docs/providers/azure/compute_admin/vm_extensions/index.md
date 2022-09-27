@@ -29,20 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `isSystemExtension` | `boolean` | Indicates if the extension is for the system. |
-| `provisioningState` | `string` | The provisioning state of the resource. |
-| `vmOsType` | `string` | Operating system type. |
 | `location` | `string` | Location of the resource. |
-| `vmScaleSetEnabled` | `boolean` | Value indicating whether the extension is enabled for virtual machine scale set support. |
-| `publisher` | `string` | The publisher of the VM Extension |
-| `computeRole` | `string` | Compute role |
+| `properties` | `object` | Properties of a Virtual Machine Extension Image. |
 | `type` | `string` | Type of Resource. |
-| `sourceBlob` | `object` | Azure or AzureStack blob information. |
-| `supportMultipleExtensions` | `boolean` | True if supports multiple extensions. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VMExtensions_Get` | `SELECT` | `location, publisher, subscriptionId, type, version` | Returns requested Virtual Machine Extension Image matching publisher, type, version. |
 | `VMExtensions_List` | `SELECT` | `location, subscriptionId` | List of all Virtual Machine Extension Images for the current location are returned. |
 | `VMExtensions_Create` | `INSERT` | `location, publisher, subscriptionId, type, version` | Create a Virtual Machine Extension Image with publisher, version. |
 | `VMExtensions_Delete` | `DELETE` | `location, publisher, subscriptionId, type, version` | Deletes specified Virtual Machine Extension Image. |
-| `VMExtensions_Get` | `EXEC` | `location, publisher, subscriptionId, type, version` | Returns requested Virtual Machine Extension Image matching publisher, type, version. |

@@ -25,9 +25,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | The access review default settings id. This is only going to be default |
+| `name` | `string` | The access review default settings name. This is always going to be Access Review Default Settings |
+| `properties` | `object` | Settings of an Access Review. |
+| `type` | `string` | The resource type. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `AccessReviewDefaultSettings_Get` | `EXEC` | `subscriptionId` |
+| `AccessReviewDefaultSettings_Get` | `SELECT` | `subscriptionId` |
 | `AccessReviewDefaultSettings_Put` | `EXEC` | `subscriptionId` |

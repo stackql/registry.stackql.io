@@ -22,7 +22,7 @@ Serial Console
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Serial Console (Microsoft.SerialConsole)</td></tr>
 <tr><td><b>Description</b></td><td>Serial Console</td></tr>
-<tr><td><b>Id</b></td><td><code>serial_console:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>serial_console:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

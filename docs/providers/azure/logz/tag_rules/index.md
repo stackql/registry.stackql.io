@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The id of the rule set. |
 | `name` | `string` | Name of the rule set. |
-| `properties` | `object` | Definition of the properties for a TagRules resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | The type of the rule set. |
+| `properties` | `object` | Definition of the properties for a TagRules resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `TagRules_Get` | `SELECT` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |
 | `TagRules_List` | `SELECT` | `monitorName, resourceGroupName, subscriptionId` |
 | `TagRules_CreateOrUpdate` | `INSERT` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |
 | `TagRules_Delete` | `DELETE` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |
-| `TagRules_Get` | `EXEC` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |

@@ -25,11 +25,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource ID. |
+| `name` | `string` | Resource Name. |
+| `location` | `string` | Resource Location. |
+| `properties` | `object` | The properties for service name. |
+| `type` | `string` | Resource Type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `StorageServices_Get` | `SELECT` | `resourceGroup, serviceName, subscriptionId` | Returns the specified storage service. |
 | `StorageServices_Create` | `INSERT` | `resourceGroup, serviceName, subscriptionId` | Create the specified storage resource. |
-| `StorageServices_Get` | `EXEC` | `resourceGroup, serviceName, subscriptionId` | Returns the specified storage service. |
 | `StorageServices_ListRG` | `EXEC` | `resourceGroup, subscriptionId` | Returns the storage services list under the specified resource group and subscription. |
 | `StorageServices_ListSub` | `EXEC` | `subscriptionId` | Returns the storage services list under the specified subscription. |

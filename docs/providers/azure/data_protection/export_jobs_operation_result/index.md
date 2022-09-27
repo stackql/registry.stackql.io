@@ -25,8 +25,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `blobUrl` | `string` | URL of the blob into which the serialized string of list of jobs is exported. |
+| `excelFileBlobSasKey` | `string` | SAS key to access the ExcelFile blob. |
+| `excelFileBlobUrl` | `string` | URL of the blob into which the ExcelFile is uploaded. |
+| `blobSasKey` | `string` | SAS key to access the blob. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `ExportJobsOperationResult_Get` | `EXEC` | `api-version, operationId, resourceGroupName, subscriptionId, vaultName` |
+| `ExportJobsOperationResult_Get` | `SELECT` | `api-version, operationId, resourceGroupName, subscriptionId, vaultName` |

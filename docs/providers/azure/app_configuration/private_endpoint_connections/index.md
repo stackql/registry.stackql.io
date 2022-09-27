@@ -29,14 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
+| `properties` | `object` | Properties of a private endpoint connection. |
 | `type` | `string` | The type of the resource. |
-| `privateEndpoint` | `object` | Private endpoint which a connection belongs to. |
-| `privateLinkServiceConnectionState` | `object` | The state of a private link service connection. |
-| `provisioningState` | `string` | The provisioning status of the private endpoint connection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnections_Get` | `SELECT` | `configStoreName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the specified private endpoint connection associated with the configuration store. |
 | `PrivateEndpointConnections_ListByConfigurationStore` | `SELECT` | `configStoreName, resourceGroupName, subscriptionId` | Lists all private endpoint connections for a configuration store. |
 | `PrivateEndpointConnections_CreateOrUpdate` | `INSERT` | `configStoreName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Update the state of the specified private endpoint connection associated with the configuration store. |
 | `PrivateEndpointConnections_Delete` | `DELETE` | `configStoreName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Deletes a private endpoint connection. |
-| `PrivateEndpointConnections_Get` | `EXEC` | `configStoreName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the specified private endpoint connection associated with the configuration store. |

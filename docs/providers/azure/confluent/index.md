@@ -22,7 +22,7 @@ Fully Managed Apache Kafka® on Azure
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Fully Managed Apache Kafka® on Azure (Microsoft.Confluent)</td></tr>
 <tr><td><b>Description</b></td><td>Fully Managed Apache Kafka® on Azure</td></tr>
-<tr><td><b>Id</b></td><td><code>confluent:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>confluent:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

@@ -25,14 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `username` | `string` | The credential user name. |
-| `password` | `string` | The credential password. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `JobCredentials_Get` | `SELECT` | `credentialName, jobAgentName, resourceGroupName, serverName, subscriptionId` | Gets a jobs credential. |
 | `JobCredentials_ListByAgent` | `SELECT` | `jobAgentName, resourceGroupName, serverName, subscriptionId` | Gets a list of jobs credentials. |
 | `JobCredentials_CreateOrUpdate` | `INSERT` | `credentialName, jobAgentName, resourceGroupName, serverName, subscriptionId` | Creates or updates a job credential. |
 | `JobCredentials_Delete` | `DELETE` | `credentialName, jobAgentName, resourceGroupName, serverName, subscriptionId` | Deletes a job credential. |
-| `JobCredentials_Get` | `EXEC` | `credentialName, jobAgentName, resourceGroupName, serverName, subscriptionId` | Gets a jobs credential. |

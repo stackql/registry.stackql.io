@@ -29,31 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `monthToDateCharges` | `object` | The amount. |
-| `skuDescription` | `string` | The sku description of the Azure plan for the subscription. |
-| `customerId` | `string` | The ID of the customer for whom the subscription was created. The field is applicable only for Microsoft Partner Agreement billing account. |
-| `billingProfileId` | `string` | The ID of the billing profile to which the subscription is billed. |
-| `skuId` | `string` | The sku ID of the Azure plan for the subscription. |
+| `properties` | `object` | The billing properties of a subscription. |
 | `type` | `string` | Resource type. |
-| `customerDisplayName` | `string` | The name of the customer for whom the subscription was created. The field is applicable only for Microsoft Partner Agreement billing account. |
-| `suspensionReasons` | `array` | The suspension reason for a subscription. Applies only to subscriptions in Microsoft Online Services Program billing accounts. |
-| `reseller` | `object` | Details of the reseller. |
-| `invoiceSectionId` | `string` | The ID of the invoice section to which the subscription is billed. |
-| `lastMonthCharges` | `object` | The amount. |
-| `subscriptionBillingStatus` | `string` | The current billing status of the subscription. |
-| `subscriptionId` | `string` | The ID of the subscription. |
-| `billingProfileDisplayName` | `string` | The name of the billing profile to which the subscription is billed. |
-| `costCenter` | `string` | The cost center applied to the subscription. |
-| `invoiceSectionDisplayName` | `string` | The name of the invoice section to which the subscription is billed. |
-| `displayName` | `string` | The name of the subscription. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `BillingSubscriptions_Get` | `SELECT` | `billingAccountName, subscriptionId` | Gets a subscription by its ID. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement and Microsoft Partner Agreement. |
 | `BillingSubscriptions_ListByBillingAccount` | `SELECT` | `billingAccountName` | Lists the subscriptions for a billing account. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement or Microsoft Partner Agreement. |
 | `BillingSubscriptions_ListByBillingProfile` | `SELECT` | `billingAccountName, billingProfileName` | Lists the subscriptions that are billed to a billing profile. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement or Microsoft Partner Agreement. |
 | `BillingSubscriptions_ListByCustomer` | `SELECT` | `billingAccountName, customerName` | Lists the subscriptions for a customer. The operation is supported only for billing accounts with agreement type Microsoft Partner Agreement. |
 | `BillingSubscriptions_ListByInvoiceSection` | `SELECT` | `billingAccountName, billingProfileName, invoiceSectionName` | Lists the subscriptions that are billed to an invoice section. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement. |
-| `BillingSubscriptions_Get` | `EXEC` | `billingAccountName, subscriptionId` | Gets a subscription by its ID. The operation is supported for billing accounts with agreement type Microsoft Customer Agreement and Microsoft Partner Agreement. |
 | `BillingSubscriptions_Move` | `EXEC` | `billingAccountName, subscriptionId, data__destinationInvoiceSectionId` | Moves a subscription's charges to a new invoice section. The new invoice section must belong to the same billing profile as the existing invoice section. This operation is supported for billing accounts with agreement type Microsoft Customer Agreement. |
 | `BillingSubscriptions_Update` | `EXEC` | `billingAccountName, subscriptionId` | Updates the properties of a billing subscription. Currently, cost center can be updated. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement. |
 | `BillingSubscriptions_ValidateMove` | `EXEC` | `billingAccountName, subscriptionId, data__destinationInvoiceSectionId` | Validates if a subscription's charges can be moved to a new invoice section. This operation is supported for billing accounts with agreement type Microsoft Customer Agreement. |

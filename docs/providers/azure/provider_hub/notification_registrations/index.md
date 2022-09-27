@@ -34,7 +34,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `NotificationRegistrations_Get` | `SELECT` | `notificationRegistrationName, providerNamespace, subscriptionId` | Gets the notification registration details. |
 | `NotificationRegistrations_ListByProviderRegistration` | `SELECT` | `providerNamespace, subscriptionId` | Gets the list of the notification registrations for the given provider. |
 | `NotificationRegistrations_CreateOrUpdate` | `INSERT` | `notificationRegistrationName, providerNamespace, subscriptionId` | Creates or updates a notification registration. |
 | `NotificationRegistrations_Delete` | `DELETE` | `notificationRegistrationName, providerNamespace, subscriptionId` | Deletes a notification registration. |
-| `NotificationRegistrations_Get` | `EXEC` | `notificationRegistrationName, providerNamespace, subscriptionId` | Gets the notification registration details. |

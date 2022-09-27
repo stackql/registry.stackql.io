@@ -27,12 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `usageMetrics` | `array` | List of usage metrics for the region. |
-| `alertSummary` | `object` | Summary of the alerts. |
-| `location` | `string` | The Azure Region where the resource lives |
+| `properties` | `object` | Contains information related to the health of a region. |
 | `tags` | `object` | Resource tags. |
+| `location` | `string` | The Azure Region where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RegionHealths_Get` | `SELECT` | `location, resourceGroupName, subscriptionId` | Returns the requested health status of a region. |
 | `RegionHealths_List` | `SELECT` | `resourceGroupName, subscriptionId` | Returns the list of all health status for the region. |
-| `RegionHealths_Get` | `EXEC` | `location, resourceGroupName, subscriptionId` | Returns the requested health status of a region. |

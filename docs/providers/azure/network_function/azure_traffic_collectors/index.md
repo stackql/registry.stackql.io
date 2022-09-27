@@ -25,11 +25,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource ID. |
+| `name` | `string` | Resource name. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | Azure Traffic Collector resource properties. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AzureTrafficCollectors_Get` | `SELECT` | `azureTrafficCollectorName, resourceGroupName, subscriptionId` | Gets the specified Azure Traffic Collector in a specified resource group |
 | `AzureTrafficCollectors_CreateOrUpdate` | `INSERT` | `azureTrafficCollectorName, resourceGroupName, subscriptionId` | Creates or updates a Azure Traffic Collector resource |
 | `AzureTrafficCollectors_Delete` | `DELETE` | `azureTrafficCollectorName, resourceGroupName, subscriptionId` | Deletes a specified Azure Traffic Collector resource. |
-| `AzureTrafficCollectors_Get` | `EXEC` | `azureTrafficCollectorName, resourceGroupName, subscriptionId` | Gets the specified Azure Traffic Collector in a specified resource group |
 | `AzureTrafficCollectors_UpdateTags` | `EXEC` | `azureTrafficCollectorName, resourceGroupName, subscriptionId` | Updates the specified Azure Traffic Collector tags. |

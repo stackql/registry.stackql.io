@@ -29,16 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `description` | `string` | Free-form schema entity description. |
-| `document` | `object` | Global Schema Document Properties. |
-| `schemaType` | `string` | Schema Type. Immutable. |
+| `properties` | `object` | Schema create or update contract Properties. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `value` | `` | Json-encoded string for non json-based schema. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `GlobalSchema_Get` | `SELECT` | `resourceGroupName, schemaId, serviceName, subscriptionId` | Gets the details of the Schema specified by its identifier. |
 | `GlobalSchema_ListByService` | `SELECT` | `resourceGroupName, serviceName, subscriptionId` | Lists a collection of schemas registered with service instance. |
 | `GlobalSchema_CreateOrUpdate` | `INSERT` | `resourceGroupName, schemaId, serviceName, subscriptionId` | Creates new or updates existing specified Schema of the API Management service instance. |
 | `GlobalSchema_Delete` | `DELETE` | `If-Match, resourceGroupName, schemaId, serviceName, subscriptionId` | Deletes specific Schema. |
-| `GlobalSchema_Get` | `EXEC` | `resourceGroupName, schemaId, serviceName, subscriptionId` | Gets the details of the Schema specified by its identifier. |
 | `GlobalSchema_GetEntityTag` | `EXEC` | `resourceGroupName, schemaId, serviceName, subscriptionId` | Gets the entity state (Etag) version of the Schema specified by its identifier. |

@@ -21,11 +21,12 @@ See also:
 
 ## Installation
 ```bash
-REGISTRY PULL azure v0.2.0;
+REGISTRY PULL azure v0.3.0;
 ```
 
 ## Authentication
 ```javascript
+
 {
   "azure": {
     /**
@@ -46,13 +47,6 @@ REGISTRY PULL azure v0.2.0;
     "valuePrefix": string, 
   }
 }
-```
-### Example (PowerShell)
-```powershell
-
-$Env:AZ_ACCESS_TOKEN = "$(az account get-access-token --query accessToken --output tsv)".Trim("`r")
-$Auth = "{ 'azure': { 'type': 'api_key', 'valuePrefix': 'Bearer ', 'credentialsenvvar': 'AZ_ACCESS_TOKEN' } }"
-stackql.exe shell --auth=$Auth
 
 ```
 ### Example (Mac/Linux)
@@ -62,6 +56,14 @@ AZ_ACCESS_TOKEN_RAW=$(az account get-access-token --query accessToken --output t
 export AZ_ACCESS_TOKEN=`echo $AZ_ACCESS_TOKEN_RAW | tr -d '\r'`
 AUTH='{ "azure": { "type": "api_key", "valuePrefix": "Bearer ", "credentialsenvvar": "AZ_ACCESS_TOKEN" } }'
 stackql shell --auth="${AUTH}"
+
+```
+### Example (PowerShell)
+```powershell
+
+$Env:AZ_ACCESS_TOKEN = "$(az account get-access-token --query accessToken --output tsv)".Trim("`r")
+$Auth = "{ 'azure': { 'type': 'api_key', 'valuePrefix': 'Bearer ', 'credentialsenvvar': 'AZ_ACCESS_TOKEN' } }"
+stackql.exe shell --auth=$Auth
 
 ```
 ## Services
@@ -116,6 +118,7 @@ stackql shell --auth="${AUTH}"
 <a href="/providers/azure/guest_configuration/">guest_configuration</a><br />
 <a href="/providers/azure/hardware_security_modules/">hardware_security_modules</a><br />
 <a href="/providers/azure/hdinsight/">hdinsight</a><br />
+<a href="/providers/azure/hybrid_aks/">hybrid_aks</a><br />
 <a href="/providers/azure/hybrid_compute/">hybrid_compute</a><br />
 <a href="/providers/azure/hybrid_connectivity/">hybrid_connectivity</a><br />
 <a href="/providers/azure/hybrid_data_manager/">hybrid_data_manager</a><br />
@@ -135,9 +138,9 @@ stackql shell --auth="${AUTH}"
 <a href="/providers/azure/machine_learning_experimentation/">machine_learning_experimentation</a><br />
 <a href="/providers/azure/machine_learning_services/">machine_learning_services</a><br />
 <a href="/providers/azure/maintenance/">maintenance</a><br />
-<a href="/providers/azure/managed_network/">managed_network</a><br />
 </div>
 <div class="providerDocColumn">
+<a href="/providers/azure/managed_network/">managed_network</a><br />
 <a href="/providers/azure/managed_service_identity/">managed_service_identity</a><br />
 <a href="/providers/azure/managed_services/">managed_services</a><br />
 <a href="/providers/azure/management_groups/">management_groups</a><br />

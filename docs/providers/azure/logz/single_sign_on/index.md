@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ARM id of the resource. |
 | `name` | `string` | Name of the configuration. |
-| `type` | `string` | The type of the resource. |
 | `properties` | `object` |  |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `type` | `string` | The type of the resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `SingleSignOn_Get` | `SELECT` | `configurationName, monitorName, resourceGroupName, subscriptionId` |
 | `SingleSignOn_List` | `SELECT` | `monitorName, resourceGroupName, subscriptionId` |
 | `SingleSignOn_CreateOrUpdate` | `INSERT` | `configurationName, monitorName, resourceGroupName, subscriptionId` |
-| `SingleSignOn_Get` | `EXEC` | `configurationName, monitorName, resourceGroupName, subscriptionId` |

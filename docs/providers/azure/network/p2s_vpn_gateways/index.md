@@ -29,21 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `vpnServerConfiguration` | `object` | Reference to another subresource. |
-| `location` | `string` | Resource location. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `type` | `string` | Resource type. |
-| `vpnClientConnectionHealth` | `object` | VpnClientConnectionHealth properties. |
-| `customDnsServers` | `array` | List of all customer specified DNS servers IP addresses. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `isRoutingPreferenceInternet` | `boolean` | Enable Routing Preference property for the Public IP Interface of the P2SVpnGateway. |
-| `p2SConnectionConfigurations` | `array` | List of all p2s connection configurations of the gateway. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | Parameters for P2SVpnGateway. |
 | `tags` | `object` | Resource tags. |
-| `vpnGatewayScaleUnit` | `integer` | The scale unit for this p2s vpn gateway. |
-| `virtualHub` | `object` | Reference to another subresource. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `P2sVpnGateways_Get` | `SELECT` | `gatewayName, resourceGroupName, subscriptionId` | Retrieves the details of a virtual wan p2s vpn gateway. |
 | `P2sVpnGateways_List` | `SELECT` | `subscriptionId` | Lists all the P2SVpnGateways in a subscription. |
 | `P2sVpnGateways_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all the P2SVpnGateways in a resource group. |
 | `P2sVpnGateways_CreateOrUpdate` | `INSERT` | `gatewayName, resourceGroupName, subscriptionId, data__location` | Creates a virtual wan p2s vpn gateway if it doesn't exist else updates the existing gateway. |
@@ -51,7 +45,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `P2SVpnGateways_Reset` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId` | Resets the primary of the p2s vpn gateway in the specified resource group. |
 | `P2sVpnGateways_DisconnectP2sVpnConnections` | `EXEC` | `p2sVpnGatewayName, resourceGroupName, subscriptionId` | Disconnect P2S vpn connections of the virtual wan P2SVpnGateway in the specified resource group. |
 | `P2sVpnGateways_GenerateVpnProfile` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId` | Generates VPN profile for P2S client of the P2SVpnGateway in the specified resource group. |
-| `P2sVpnGateways_Get` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId` | Retrieves the details of a virtual wan p2s vpn gateway. |
 | `P2sVpnGateways_GetP2sVpnConnectionHealth` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId` | Gets the connection health of P2S clients of the virtual wan P2SVpnGateway in the specified resource group. |
 | `P2sVpnGateways_GetP2sVpnConnectionHealthDetailed` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId` | Gets the sas url to get the connection health detail of P2S clients of the virtual wan P2SVpnGateway in the specified resource group. |
 | `P2sVpnGateways_UpdateTags` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId` | Updates virtual wan p2s vpn gateway tags. |

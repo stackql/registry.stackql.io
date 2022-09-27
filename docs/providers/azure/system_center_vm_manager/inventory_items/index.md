@@ -27,17 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `inventoryItemName` | `string` | Gets the Managed Object name in VMM for the inventory item. |
-| `inventoryType` | `string` | The inventory type. |
-| `kind` | `string` | Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type; e.g. ApiApps are a kind of Microsoft.Web/sites type.  If supported, the resource provider must validate and persist this value. |
-| `managedResourceId` | `string` | Gets the tracked resource id corresponding to the inventory resource. |
-| `provisioningState` | `string` | Gets the provisioning state. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `uuid` | `string` | Gets the UUID (which is assigned by VMM) for the inventory item. |
+| `kind` | `string` | Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type; e.g. ApiApps are a kind of Microsoft.Web/sites type.  If supported, the resource provider must validate and persist this value. |
+| `properties` | `object` | Defines the resource properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `InventoryItems_Get` | `SELECT` | `inventoryItemName, resourceGroupName, subscriptionId, vmmServerName` | Shows an inventory item. |
 | `InventoryItems_ListByVMMServer` | `SELECT` | `resourceGroupName, subscriptionId, vmmServerName` | Returns the list of inventoryItems in the given VMMServer. |
-| `InventoryItems_Create` | `INSERT` | `inventoryItemName, resourceGroupName, subscriptionId, vmmServerName` | Create Or Update InventoryItem. |
+| `InventoryItems_Create` | `INSERT` | `inventoryItemName, resourceGroupName, subscriptionId, vmmServerName, data__properties` | Create Or Update InventoryItem. |
 | `InventoryItems_Delete` | `DELETE` | `inventoryItemName, resourceGroupName, subscriptionId, vmmServerName` | Deletes an inventoryItem. |
-| `InventoryItems_Get` | `EXEC` | `inventoryItemName, resourceGroupName, subscriptionId, vmmServerName` | Shows an inventory item. |

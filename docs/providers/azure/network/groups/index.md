@@ -29,15 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `description` | `string` | A description of the network group. |
-| `provisioningState` | `string` | The current provisioning state. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `properties` | `object` | Properties of network group |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `NetworkGroups_Get` | `SELECT` |  | Gets the specified network group. |
 | `NetworkGroups_List` | `SELECT` | `networkManagerName, resourceGroupName, subscriptionId` | Lists the specified network group. |
 | `NetworkGroups_CreateOrUpdate` | `INSERT` |  | Creates or updates a network group. |
 | `NetworkGroups_Delete` | `DELETE` |  | Deletes a network group. |
-| `NetworkGroups_Get` | `EXEC` |  | Gets the specified network group. |

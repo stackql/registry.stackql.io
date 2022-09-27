@@ -29,6 +29,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `TrafficManagerUserMetricsKeys_Get` | `SELECT` | `subscriptionId` | Get the subscription-level key used for Real User Metrics collection. |
 | `TrafficManagerUserMetricsKeys_CreateOrUpdate` | `INSERT` | `subscriptionId` | Create or update a subscription-level key used for Real User Metrics collection. |
 | `TrafficManagerUserMetricsKeys_Delete` | `DELETE` | `subscriptionId` | Delete a subscription-level key used for Real User Metrics collection. |
-| `TrafficManagerUserMetricsKeys_Get` | `EXEC` | `subscriptionId` | Get the subscription-level key used for Real User Metrics collection. |

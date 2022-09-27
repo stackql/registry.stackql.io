@@ -27,19 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `tags` | `object` | Resource tags. |
 | `location` | `string` | Resource location. |
 | `properties` | `object` | Event Hubs Cluster properties supplied in responses in List or Get operations. |
 | `sku` | `object` | SKU parameters particular to a cluster instance. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Clusters_Get` | `SELECT` | `clusterName, resourceGroupName, subscriptionId` | Gets the resource description of the specified Event Hubs Cluster. |
 | `Clusters_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists the available Event Hubs Clusters within an ARM resource group |
 | `Clusters_ListBySubscription` | `SELECT` | `subscriptionId` | Lists the available Event Hubs Clusters within an ARM resource group |
 | `Clusters_CreateOrUpdate` | `INSERT` | `clusterName, resourceGroupName, subscriptionId` | Creates or updates an instance of an Event Hubs Cluster. |
 | `Clusters_Delete` | `DELETE` | `clusterName, resourceGroupName, subscriptionId` | Deletes an existing Event Hubs Cluster. This operation is idempotent. |
-| `Clusters_Get` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | Gets the resource description of the specified Event Hubs Cluster. |
 | `Clusters_ListAvailableClusterRegion` | `EXEC` | `subscriptionId` | List the quantity of available pre-provisioned Event Hubs Clusters, indexed by Azure region. |
 | `Clusters_ListNamespaces` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | List all Event Hubs Namespace IDs in an Event Hubs Dedicated Cluster. |
 | `Clusters_Update` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | Modifies mutable properties on the Event Hubs Cluster. This operation is idempotent. |

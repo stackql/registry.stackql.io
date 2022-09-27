@@ -22,7 +22,7 @@ Stream Analytics
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Stream Analytics (Microsoft.StreamAnalytics)</td></tr>
 <tr><td><b>Description</b></td><td>Stream Analytics</td></tr>
-<tr><td><b>Id</b></td><td><code>stream_analytics:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>stream_analytics:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

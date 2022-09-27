@@ -25,11 +25,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `properties` | `object` | Device group properties |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DeviceGroups_Get` | `SELECT` | `deviceGroupName, iotDefenderLocation, subscriptionId` | Get device group |
 | `DeviceGroups_List` | `SELECT` | `iotDefenderLocation, subscriptionId` | List device groups |
 | `DeviceGroups_CreateOrUpdate` | `INSERT` | `deviceGroupName, iotDefenderLocation, subscriptionId` | Create or update device group |
 | `DeviceGroups_Delete` | `DELETE` | `deviceGroupName, iotDefenderLocation, subscriptionId` | Delete device group |
-| `DeviceGroups_Get` | `EXEC` | `deviceGroupName, iotDefenderLocation, subscriptionId` | Get device group |

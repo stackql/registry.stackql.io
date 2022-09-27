@@ -29,27 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `startDate` | `string` | Subscription activation date. The setting is for audit purposes only and the subscription is not automatically activated. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.<br /> |
-| `stateComment` | `string` | Optional subscription comment added by an administrator when the state is changed to the 'rejected'. |
-| `notificationDate` | `string` | Upcoming subscription expiration notification date. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.<br /> |
-| `state` | `string` | Subscription state. Possible states are * active – the subscription is active, * suspended – the subscription is blocked, and the subscriber cannot call any APIs of the product, * submitted – the subscription request has been made by the developer, but has not yet been approved or rejected, * rejected – the subscription request has been denied by an administrator, * cancelled – the subscription has been cancelled by the developer or administrator, * expired – the subscription reached its expiration date and was deactivated. |
-| `primaryKey` | `string` | Subscription primary key. This property will not be filled on 'GET' operations! Use '/listSecrets' POST request to get the value. |
-| `endDate` | `string` | Date when subscription was cancelled or expired. The setting is for audit purposes only and the subscription is not automatically cancelled. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.<br /> |
-| `ownerId` | `string` | The user resource identifier of the subscription owner. The value is a valid relative URL in the format of /users/&#123;userId&#125; where &#123;userId&#125; is a user identifier. |
-| `displayName` | `string` | The name of the subscription, or null if the subscription has no name. |
-| `allowTracing` | `boolean` | Determines whether tracing is enabled |
-| `expirationDate` | `string` | Subscription expiration date. The setting is for audit purposes only and the subscription is not automatically expired. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.<br /> |
-| `secondaryKey` | `string` | Subscription secondary key. This property will not be filled on 'GET' operations! Use '/listSecrets' POST request to get the value. |
-| `scope` | `string` | Scope like /products/&#123;productId&#125; or /apis or /apis/&#123;apiId&#125;. |
+| `properties` | `object` | Subscription details. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `createdDate` | `string` | Subscription creation date. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.<br /> |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Subscription_Get` | `SELECT` | `resourceGroupName, serviceName, sid, subscriptionId` | Gets the specified Subscription entity. |
 | `Subscription_List` | `SELECT` | `resourceGroupName, serviceName, subscriptionId` | Lists all subscriptions of the API Management service instance. |
 | `Subscription_CreateOrUpdate` | `INSERT` | `resourceGroupName, serviceName, sid, subscriptionId` | Creates or updates the subscription of specified user to the specified product. |
 | `Subscription_Delete` | `DELETE` | `If-Match, resourceGroupName, serviceName, sid, subscriptionId` | Deletes the specified subscription. |
-| `Subscription_Get` | `EXEC` | `resourceGroupName, serviceName, sid, subscriptionId` | Gets the specified Subscription entity. |
 | `Subscription_GetEntityTag` | `EXEC` | `resourceGroupName, serviceName, sid, subscriptionId` | Gets the entity state (Etag) version of the apimanagement subscription specified by its identifier. |
 | `Subscription_ListSecrets` | `EXEC` | `resourceGroupName, serviceName, sid, subscriptionId` | Gets the specified Subscription keys. |
 | `Subscription_RegeneratePrimaryKey` | `EXEC` | `resourceGroupName, serviceName, sid, subscriptionId` | Regenerates primary key of existing subscription of the API Management service instance. |

@@ -22,7 +22,7 @@ The Microsoft Azure Network management API provides a RESTful set of web service
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Network Management Client (Microsoft.Network)</td></tr>
 <tr><td><b>Description</b></td><td>The Microsoft Azure Network management API provides a RESTful set of web services that interact with Microsoft Azure Networks service to manage your network resources. The API has entities that capture the relationship between an end user and the Microsoft Azure Networks service.</td></tr>
-<tr><td><b>Id</b></td><td><code>network:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>network:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -32,6 +32,8 @@ The Microsoft Azure Network management API provides a RESTful set of web service
 <a href="/providers/azure/network/admin_rules/">admin_rules</a><br />
 <a href="/providers/azure/network/application_gateway_private_endpoint_connections/">application_gateway_private_endpoint_connections</a><br />
 <a href="/providers/azure/network/application_gateway_private_link_resources/">application_gateway_private_link_resources</a><br />
+<a href="/providers/azure/network/application_gateway_waf_dynamic_manifests/">application_gateway_waf_dynamic_manifests</a><br />
+<a href="/providers/azure/network/application_gateway_waf_dynamic_manifests_default/">application_gateway_waf_dynamic_manifests_default</a><br />
 <a href="/providers/azure/network/application_gateways/">application_gateways</a><br />
 <a href="/providers/azure/network/application_security_groups/">application_security_groups</a><br />
 <a href="/providers/azure/network/available_delegations/">available_delegations</a><br />
@@ -116,6 +118,7 @@ The Microsoft Azure Network management API provides a RESTful set of web service
 <a href="/providers/azure/network/resource_navigation_links/">resource_navigation_links</a><br />
 <a href="/providers/azure/network/route_filter_rules/">route_filter_rules</a><br />
 <a href="/providers/azure/network/route_filters/">route_filters</a><br />
+<a href="/providers/azure/network/route_maps/">route_maps</a><br />
 <a href="/providers/azure/network/route_tables/">route_tables</a><br />
 <a href="/providers/azure/network/routes/">routes</a><br />
 <a href="/providers/azure/network/routing_intent/">routing_intent</a><br />
@@ -133,6 +136,7 @@ The Microsoft Azure Network management API provides a RESTful set of web service
 <a href="/providers/azure/network/subnets/">subnets</a><br />
 <a href="/providers/azure/network/subscription_network_manager_connections/">subscription_network_manager_connections</a><br />
 <a href="/providers/azure/network/usages/">usages</a><br />
+<a href="/providers/azure/network/vip_swap/">vip_swap</a><br />
 <a href="/providers/azure/network/virtual_appliance_sites/">virtual_appliance_sites</a><br />
 <a href="/providers/azure/network/virtual_appliance_skus/">virtual_appliance_skus</a><br />
 <a href="/providers/azure/network/virtual_appliances/">virtual_appliances</a><br />

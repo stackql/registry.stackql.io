@@ -27,30 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `replicaCapacity` | `integer` | The maximum number of replicas that a master server can have. |
 | `sku` | `object` | Billing information related properties of a server. |
-| `fullyQualifiedDomainName` | `string` | The fully qualified domain name of a server. |
-| `replicationRole` | `string` | The replication role of the server. |
-| `location` | `string` | The geo-location where the resource lives |
 | `tags` | `object` | Resource tags. |
-| `administratorLogin` | `string` | The administrator's login name of a server. Can only be specified when the server is being created (and is required for creation). |
-| `publicNetworkAccess` | `string` | Whether or not public network access is allowed for this server. Value is optional but if passed in, must be 'Enabled' or 'Disabled' |
-| `minimalTlsVersion` | `string` | Enforce a minimal Tls version for the server. |
-| `sslEnforcement` | `string` | Enable ssl enforcement or not when connect to server. |
-| `version` | `string` | The version of a server. |
-| `earliestRestoreDate` | `string` | Earliest restore point creation time (ISO8601 format) |
-| `storageProfile` | `object` | Storage Profile properties of a server |
-| `privateEndpointConnections` | `array` | List of private endpoint connections on a server |
-| `userVisibleState` | `string` | A state of a server that is visible to user. |
-| `masterServerId` | `string` | The master server id of a replica server. |
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | The properties of a server. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Servers_Get` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Gets information about a server. |
 | `Servers_List` | `SELECT` | `subscriptionId` | List all the servers in a given subscription. |
 | `Servers_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | List all the servers in a given resource group. |
 | `Servers_Create` | `INSERT` | `resourceGroupName, serverName, subscriptionId, data__location, data__properties` | Creates a new server or updates an existing server. The update action will overwrite the existing server. |
 | `Servers_Delete` | `DELETE` | `resourceGroupName, serverName, subscriptionId` | Deletes a server. |
-| `Servers_Get` | `EXEC` | `resourceGroupName, serverName, subscriptionId` | Gets information about a server. |
 | `Servers_Restart` | `EXEC` | `resourceGroupName, serverName, subscriptionId` | Restarts a server. |
 | `Servers_Start` | `EXEC` | `resourceGroupName, serverName, subscriptionId` | Starts a stopped server. |
 | `Servers_Stop` | `EXEC` | `resourceGroupName, serverName, subscriptionId` | Stops a running server. |

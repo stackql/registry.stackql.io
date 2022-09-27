@@ -27,18 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `version` | `integer` | The version number of the query language. The current version is 2 and is the default. |
-| `category` | `string` | The category of the saved search. This helps the user to find a saved search faster.  |
-| `displayName` | `string` | Saved search display name. |
 | `etag` | `string` | The ETag of the saved search. To override an existing saved search, use "*" or specify the current Etag |
-| `functionAlias` | `string` | The function alias if query serves as a function. |
-| `functionParameters` | `string` | The optional function parameters if query serves as a function. Value should be in the following format: 'param-name1:type1 = default_value1, param-name2:type2 = default_value2'. For more examples and proper syntax please refer to https://docs.microsoft.com/en-us/azure/kusto/query/functions/user-defined-functions. |
-| `query` | `string` | The query expression for the saved search. |
-| `tags` | `array` | The tags attached to the saved search. |
+| `properties` | `object` | Value object for saved search results. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SavedSearches_Get` | `SELECT` | `resourceGroupName, savedSearchId, subscriptionId, workspaceName` | Gets the specified saved search for a given workspace. |
 | `SavedSearches_ListByWorkspace` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets the saved searches for a given Log Analytics Workspace |
-| `SavedSearches_CreateOrUpdate` | `INSERT` | `resourceGroupName, savedSearchId, subscriptionId, workspaceName` | Creates or updates a saved search for a given workspace. |
+| `SavedSearches_CreateOrUpdate` | `INSERT` | `resourceGroupName, savedSearchId, subscriptionId, workspaceName, data__properties` | Creates or updates a saved search for a given workspace. |
 | `SavedSearches_Delete` | `DELETE` | `resourceGroupName, savedSearchId, subscriptionId, workspaceName` | Deletes the specified saved search in a given workspace. |
-| `SavedSearches_Get` | `EXEC` | `resourceGroupName, savedSearchId, subscriptionId, workspaceName` | Gets the specified saved search for a given workspace. |

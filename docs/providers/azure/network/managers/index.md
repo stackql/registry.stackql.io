@@ -29,21 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `description` | `string` | A description of the network manager. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | Properties of Managed Network |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
-| `networkManagerScopeAccesses` | `array` | Scope Access. |
-| `provisioningState` | `string` | The current provisioning state. |
 | `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `networkManagerScopes` | `object` | Scope of Network Manager. |
-| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `NetworkManagers_Get` | `SELECT` |  | Gets the specified Network Manager. |
 | `NetworkManagers_List` | `SELECT` | `resourceGroupName, subscriptionId` | List network managers in a resource group. |
 | `NetworkManagers_ListBySubscription` | `SELECT` | `subscriptionId` | List all network managers in a subscription. |
 | `NetworkManagers_CreateOrUpdate` | `INSERT` |  | Creates or updates a Network Manager. |
 | `NetworkManagers_Delete` | `DELETE` |  | Deletes a network manager. |
-| `NetworkManagers_Get` | `EXEC` |  | Gets the specified Network Manager. |
 | `NetworkManagers_Patch` | `EXEC` |  | Patch NetworkManager. |

@@ -27,21 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | The geo-location where the resource lives |
-| `tags` | `object` | Resource tags. |
-| `kind` | `string` | The Kind (type) of Enterprise Policy |
-| `systemId` | `string` | The internally assigned unique identifier of the resource. |
 | `identity` | `object` | The identity of the EnterprisePolicy. |
-| `lockbox` | `object` | Settings concerning lockbox. |
-| `encryption` | `object` | The encryption settings for a configuration store. |
+| `kind` | `string` | The Kind (type) of Enterprise Policy |
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | The properties that define configuration for the enterprise policy. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `networkInjection` | `object` | Settings concerning network injection. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `EnterprisePolicies_Get` | `SELECT` | `enterprisePolicyName, resourceGroupName, subscriptionId` | Get information about an EnterprisePolicy |
 | `EnterprisePolicies_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Retrieve a list of EnterprisePolicies within a given resource group |
 | `EnterprisePolicies_ListBySubscription` | `SELECT` | `subscriptionId` | Retrieve a list of EnterprisePolicies within a subscription |
 | `EnterprisePolicies_CreateOrUpdate` | `INSERT` | `enterprisePolicyName, resourceGroupName, subscriptionId, data__kind` | Creates an EnterprisePolicy |
 | `EnterprisePolicies_Delete` | `DELETE` | `enterprisePolicyName, resourceGroupName, subscriptionId` | Delete an EnterprisePolicy |
-| `EnterprisePolicies_Get` | `EXEC` | `enterprisePolicyName, resourceGroupName, subscriptionId` | Get information about an EnterprisePolicy |
 | `EnterprisePolicies_Update` | `EXEC` | `enterprisePolicyName, resourceGroupName, subscriptionId` | Updates an EnterprisePolicy |

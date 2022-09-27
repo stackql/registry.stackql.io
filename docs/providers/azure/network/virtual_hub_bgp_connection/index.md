@@ -25,10 +25,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource ID. |
+| `name` | `string` | Name of the connection. |
+| `properties` | `object` | Properties of the bgp connection. |
+| `type` | `string` | Connection type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualHubBgpConnection_Get` | `SELECT` | `connectionName, resourceGroupName, subscriptionId, virtualHubName` | Retrieves the details of a Virtual Hub Bgp Connection. |
 | `VirtualHubBgpConnection_CreateOrUpdate` | `INSERT` | `connectionName, resourceGroupName, subscriptionId, virtualHubName` | Creates a VirtualHubBgpConnection resource if it doesn't exist else updates the existing VirtualHubBgpConnection. |
 | `VirtualHubBgpConnection_Delete` | `DELETE` | `connectionName, resourceGroupName, subscriptionId, virtualHubName` | Deletes a VirtualHubBgpConnection. |
-| `VirtualHubBgpConnection_Get` | `EXEC` | `connectionName, resourceGroupName, subscriptionId, virtualHubName` | Retrieves the details of a Virtual Hub Bgp Connection. |

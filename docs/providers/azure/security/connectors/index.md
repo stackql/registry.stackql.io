@@ -30,12 +30,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `authenticationDetails` | `object` | Settings for cloud authentication management |
-| `hybridComputeSettings` | `object` | Settings for hybrid compute management |
+| `properties` | `object` | Describes properties of a connector setting |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Connectors_Get` | `SELECT` | `api-version, connectorName, subscriptionId` | Details of a specific cloud account connector |
 | `Connectors_List` | `SELECT` | `api-version, subscriptionId` | Cloud accounts connectors of a subscription |
 | `Connectors_CreateOrUpdate` | `INSERT` | `api-version, connectorName, subscriptionId` | Create a cloud account connector or update an existing one. Connect to your cloud account. For AWS, use either account credentials or role-based authentication. For GCP, use account organization credentials. |
 | `Connectors_Delete` | `DELETE` | `api-version, connectorName, subscriptionId` | Delete a cloud account connector from a subscription |
-| `Connectors_Get` | `EXEC` | `api-version, connectorName, subscriptionId` | Details of a specific cloud account connector |

@@ -29,28 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `supportsHibernation` | `boolean` | Indicates the OS on a disk supports hibernation. |
-| `familyId` | `string` | id of the backing snapshot's MIS family |
-| `hyperVGeneration` | `string` | The hypervisor generation of the Virtual Machine. Applicable to OS disks only. |
-| `sourceResourceLocation` | `string` | Location of source disk or source disk restore point when source resource is from a different region. |
-| `securityProfile` | `object` | Contains the security related information for the resource. |
-| `supportedCapabilities` | `object` | List of supported capabilities persisted on the disk resource for VM use. |
-| `sourceResourceId` | `string` | arm id of source disk or source disk restore point. |
-| `encryption` | `object` | Encryption at rest settings for disk or snapshot |
-| `timeCreated` | `string` | The timestamp of restorePoint creation |
-| `osType` | `string` | The Operating System type. |
-| `publicNetworkAccess` | `string` | Policy for controlling export on the disk. |
+| `properties` | `object` | Properties of an incremental disk restore point |
 | `type` | `string` | Resource type |
-| `replicationState` | `string` | Replication state of disk restore point when source resource is from a different region. |
-| `diskAccessId` | `string` | ARM id of the DiskAccess resource for using private endpoints on disks. |
-| `networkAccessPolicy` | `string` | Policy for accessing the disk via network. |
-| `purchasePlan` | `object` | Used for establishing the purchase context of any 3rd Party artifact through MarketPlace. |
-| `completionPercent` | `number` | Percentage complete for the background copy of disk restore point when source resource is from a different region. |
-| `sourceUniqueId` | `string` | unique incarnation id of the source disk |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DiskRestorePoint_Get` | `SELECT` | `diskRestorePointName, resourceGroupName, restorePointCollectionName, subscriptionId, vmRestorePointName` | Get disk restorePoint resource |
 | `DiskRestorePoint_ListByRestorePoint` | `SELECT` | `resourceGroupName, restorePointCollectionName, subscriptionId, vmRestorePointName` | Lists diskRestorePoints under a vmRestorePoint. |
-| `DiskRestorePoint_Get` | `EXEC` | `diskRestorePointName, resourceGroupName, restorePointCollectionName, subscriptionId, vmRestorePointName` | Get disk restorePoint resource |
 | `DiskRestorePoint_GrantAccess` | `EXEC` | `diskRestorePointName, resourceGroupName, restorePointCollectionName, subscriptionId, vmRestorePointName, data__access, data__durationInSeconds` | Grants access to a diskRestorePoint. |
 | `DiskRestorePoint_RevokeAccess` | `EXEC` | `diskRestorePointName, resourceGroupName, restorePointCollectionName, subscriptionId, vmRestorePointName` | Revokes access to a diskRestorePoint. |

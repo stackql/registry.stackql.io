@@ -22,7 +22,7 @@ REST APIs for orchestrating deployments using the Azure Deployment Manager (ADM)
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Azure Deployment Manager (Microsoft.DeploymentManager)</td></tr>
 <tr><td><b>Description</b></td><td>REST APIs for orchestrating deployments using the Azure Deployment Manager (ADM). See https://docs.microsoft.com/en-us/azure-resource-manager/deployment-manager-overview for more information.</td></tr>
-<tr><td><b>Id</b></td><td><code>deployment_manager:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>deployment_manager:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

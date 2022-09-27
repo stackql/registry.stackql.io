@@ -29,11 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
+| `location` | `string` | Resource Location |
 | `properties` | `object` | The properties of a monitoring event. |
 | `type` | `string` | Resource Type |
-| `location` | `string` | Resource Location |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReplicationEvents_Get` | `SELECT` | `api-version, eventName, resourceGroupName, resourceName, subscriptionId` | The operation to get the details of an Azure Site recovery event. |
 | `ReplicationEvents_List` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` | Gets the list of Azure Site Recovery events for the vault. |
-| `ReplicationEvents_Get` | `EXEC` | `api-version, eventName, resourceGroupName, resourceName, subscriptionId` | The operation to get the details of an Azure Site recovery event. |

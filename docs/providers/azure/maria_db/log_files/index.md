@@ -28,11 +28,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | The name of the log file. |
-| `lastModifiedTime` | `string` | Last modified timestamp of the log file. |
-| `sizeInKB` | `integer` | Size of the log file. |
-| `type` | `string` | Type of the log file. |
-| `url` | `string` | The url to download the log file from. |
-| `createdTime` | `string` | Creation timestamp of the log file. |
+| `properties` | `object` | The properties of a log file. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

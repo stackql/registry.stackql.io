@@ -29,17 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `externalMappings` | `array` | The private IP address external mapping for NAT. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `properties` | `object` | Parameters for VirtualNetworkGatewayNatRule. |
 | `type` | `string` | Resource type. |
-| `ipConfigurationId` | `string` | The IP Configuration ID this NAT rule applies to. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `mode` | `string` | The Source NAT direction of a VPN NAT. |
-| `internalMappings` | `array` | The private IP address internal mapping for NAT. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualNetworkGatewayNatRules_Get` | `SELECT` | `natRuleName, resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Retrieves the details of a nat rule. |
 | `VirtualNetworkGatewayNatRules_ListByVirtualNetworkGateway` | `SELECT` | `resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Retrieves all nat rules for a particular virtual network gateway. |
 | `VirtualNetworkGatewayNatRules_CreateOrUpdate` | `INSERT` | `natRuleName, resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Creates a nat rule to a scalable virtual network gateway if it doesn't exist else updates the existing nat rules. |
 | `VirtualNetworkGatewayNatRules_Delete` | `DELETE` | `natRuleName, resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Deletes a nat rule. |
-| `VirtualNetworkGatewayNatRules_Get` | `EXEC` | `natRuleName, resourceGroupName, subscriptionId, virtualNetworkGatewayName` | Retrieves the details of a nat rule. |

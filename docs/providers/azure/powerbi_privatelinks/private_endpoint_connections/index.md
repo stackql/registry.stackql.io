@@ -29,15 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Specifies the id of the resource. |
 | `name` | `string` | Specifies the name of the resource. |
-| `privateEndpoint` | `object` |  |
-| `privateLinkServiceConnectionState` | `object` | ConnectionState information. |
-| `provisioningState` | `string` | Provisioning state of the Private Endpoint Connection. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | Specifies the type of the resource. |
+| `properties` | `object` |  |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnections_Get` | `SELECT` | `azureResourceName, privateEndpointName, resourceGroupName, subscriptionId` | Get a specific private endpoint connection for Power BI by private endpoint name. |
 | `PrivateEndpointConnections_ListByResource` | `SELECT` | `azureResourceName, resourceGroupName, subscriptionId` | Gets private endpoint connection for Power BI. |
 | `PrivateEndpointConnections_Create` | `INSERT` | `azureResourceName, privateEndpointName, resourceGroupName, subscriptionId` | Updates the status of Private Endpoint Connection object. Used to approve or reject a connection. |
 | `PrivateEndpointConnections_Delete` | `DELETE` | `azureResourceName, privateEndpointName, resourceGroupName, subscriptionId` | Deletes a private endpoint connection for Power BI by private endpoint name. |
-| `PrivateEndpointConnections_Get` | `EXEC` | `azureResourceName, privateEndpointName, resourceGroupName, subscriptionId` | Get a specific private endpoint connection for Power BI by private endpoint name. |

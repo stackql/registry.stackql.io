@@ -22,7 +22,7 @@ Private DNS
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Private DNS (Microsoft.Network)</td></tr>
 <tr><td><b>Description</b></td><td>Private DNS</td></tr>
-<tr><td><b>Id</b></td><td><code>private_dns:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>private_dns:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

@@ -25,8 +25,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | The id of the long running operation. |
+| `name` | `string` | The name of the long running operation. |
+| `properties` | `object` | The URL to download the generated report. |
+| `type` | `string` | The type of the long running operation. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `GenerateDetailedCostReportOperationResults_Get` | `EXEC` | `operationId, scope` |
+| `GenerateDetailedCostReportOperationResults_Get` | `SELECT` | `operationId, scope` |

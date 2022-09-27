@@ -29,20 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `description` | `string` | A description of the connectivity configuration. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `properties` | `object` | Properties of network manager connectivity configuration |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `hubs` | `array` | List of hubItems |
 | `type` | `string` | Resource type. |
-| `appliesToGroups` | `array` | Groups for configuration |
-| `connectivityTopology` | `string` | Connectivity topology type. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `isGlobal` | `string` | Flag if global mesh is supported. |
-| `deleteExistingPeering` | `string` | Flag if need to remove current existing peerings. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ConnectivityConfigurations_Get` | `SELECT` |  | Gets a Network Connectivity Configuration, specified by the resource group, network manager name, and connectivity Configuration name |
 | `ConnectivityConfigurations_List` | `SELECT` | `networkManagerName, resourceGroupName, subscriptionId` | Lists all the network manager connectivity configuration in a specified network manager. |
 | `ConnectivityConfigurations_CreateOrUpdate` | `INSERT` |  | Creates/Updates a new network manager connectivity configuration |
 | `ConnectivityConfigurations_Delete` | `DELETE` |  | Deletes a network manager connectivity configuration, specified by the resource group, network manager name, and connectivity configuration name |
-| `ConnectivityConfigurations_Get` | `EXEC` |  | Gets a Network Connectivity Configuration, specified by the resource group, network manager name, and connectivity Configuration name |

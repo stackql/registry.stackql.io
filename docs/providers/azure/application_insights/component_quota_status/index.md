@@ -25,8 +25,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `AppId` | `string` | The Application ID for the Application Insights component. |
+| `ExpirationTime` | `string` | Date and time when the daily data volume cap will be reset, and data ingestion will resume. |
+| `ShouldBeThrottled` | `boolean` | The daily data volume cap is met, and data ingestion will be stopped. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `ComponentQuotaStatus_Get` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` |
+| `ComponentQuotaStatus_Get` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` |

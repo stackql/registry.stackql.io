@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
-| `type` | `string` | The resource type. |
 | `etag` | `string` | Etag identifies change in the resource. |
 | `properties` | `object` | A managed Virtual Network associated with the Azure Data Factory |
+| `type` | `string` | The resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedVirtualNetworks_Get` | `SELECT` | `api-version, factoryName, managedVirtualNetworkName, resourceGroupName, subscriptionId` | Gets a managed Virtual Network. |
 | `ManagedVirtualNetworks_ListByFactory` | `SELECT` | `api-version, factoryName, resourceGroupName, subscriptionId` | Lists managed Virtual Networks. |
 | `ManagedVirtualNetworks_CreateOrUpdate` | `INSERT` | `api-version, factoryName, managedVirtualNetworkName, resourceGroupName, subscriptionId, data__properties` | Creates or updates a managed Virtual Network. |
-| `ManagedVirtualNetworks_Get` | `EXEC` | `api-version, factoryName, managedVirtualNetworkName, resourceGroupName, subscriptionId` | Gets a managed Virtual Network. |

@@ -22,7 +22,7 @@ DB for PostgreSql HSC
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>DB for PostgreSql HSC (Microsoft.DBForPostgreSql)</td></tr>
 <tr><td><b>Description</b></td><td>DB for PostgreSql HSC</td></tr>
-<tr><td><b>Id</b></td><td><code>postgresql_hsc:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>postgresql_hsc:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

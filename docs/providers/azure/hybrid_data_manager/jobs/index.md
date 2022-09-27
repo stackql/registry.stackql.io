@@ -29,25 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Id of the object. |
 | `name` | `string` | Name of the object. |
-| `totalItemsToProcess` | `integer` | Number of items to be processed by the job in total |
-| `status` | `string` | Status of the job. |
-| `totalBytesToProcess` | `integer` | Number of bytes to be processed by the job in total. |
-| `dataSourceName` | `string` | Name of the data source on which the job was triggered. |
-| `type` | `string` | Type of the object. |
-| `isCancellable` | `string` | Describes whether the job is cancellable. |
-| `dataSinkName` | `string` | Name of the data sink on which the job was triggered. |
-| `details` | `object` | Job details. |
+| `properties` | `object` | Job Properties |
 | `startTime` | `string` | Time at which the job was started in UTC ISO 8601 format. |
+| `status` | `string` | Status of the job. |
+| `type` | `string` | Type of the object. |
 | `endTime` | `string` | Time at which the job ended in UTC ISO 8601 format. |
 | `error` | `object` | Top level error for the job. |
-| `itemsProcessed` | `integer` | Number of items processed by the job as of now |
-| `bytesProcessed` | `integer` | Number of bytes processed by the job as of now. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Jobs_Get` | `SELECT` | `dataManagerName, dataServiceName, jobDefinitionName, jobId, resourceGroupName, subscriptionId` | This method gets a data manager job given the jobId. |
 | `Jobs_ListByDataManager` | `SELECT` | `dataManagerName, resourceGroupName, subscriptionId` | This method gets all the jobs at the data manager resource level. |
 | `Jobs_ListByDataService` | `SELECT` | `dataManagerName, dataServiceName, resourceGroupName, subscriptionId` | This method gets all the jobs of a data service type in a given resource. |
 | `Jobs_ListByJobDefinition` | `SELECT` | `dataManagerName, dataServiceName, jobDefinitionName, resourceGroupName, subscriptionId` | This method gets all the jobs of a given job definition. |
 | `Jobs_Cancel` | `EXEC` | `dataManagerName, dataServiceName, jobDefinitionName, jobId, resourceGroupName, subscriptionId` | Cancels the given job. |
-| `Jobs_Get` | `EXEC` | `dataManagerName, dataServiceName, jobDefinitionName, jobId, resourceGroupName, subscriptionId` | This method gets a data manager job given the jobId. |
 | `Jobs_Resume` | `EXEC` | `dataManagerName, dataServiceName, jobDefinitionName, jobId, resourceGroupName, subscriptionId` | Resumes the given job. |

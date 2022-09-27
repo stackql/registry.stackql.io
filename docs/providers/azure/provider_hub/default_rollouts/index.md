@@ -29,8 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DefaultRollouts_Get` | `SELECT` | `providerNamespace, rolloutName, subscriptionId` | Gets the default rollout details. |
 | `DefaultRollouts_ListByProviderRegistration` | `SELECT` | `providerNamespace, subscriptionId` | Gets the list of the rollouts for the given provider. |
 | `DefaultRollouts_CreateOrUpdate` | `INSERT` | `providerNamespace, rolloutName, subscriptionId` | Creates or updates the rollout details. |
 | `DefaultRollouts_Delete` | `DELETE` | `providerNamespace, rolloutName, subscriptionId` | Deletes the rollout resource. Rollout must be in terminal state. |
-| `DefaultRollouts_Get` | `EXEC` | `providerNamespace, rolloutName, subscriptionId` | Gets the default rollout details. |
 | `DefaultRollouts_Stop` | `EXEC` | `providerNamespace, rolloutName, subscriptionId` | Stops or cancels the rollout, if in progress. |

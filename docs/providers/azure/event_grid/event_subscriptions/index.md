@@ -27,29 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
-| `name` | `string` | The name of the resource |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `destination` | `object` | Information about the destination for an event subscription. |
-| `deliveryWithResourceIdentity` | `object` | Information about the delivery for an event subscription with resource identity. |
-| `deadLetterDestination` | `object` | Information about the dead letter destination for an event subscription. To configure a deadletter destination, do not directly instantiate an object of this class. Instead, instantiate an object of a derived class. Currently, StorageBlobDeadLetterDestination is the only class that derives from this class. |
-| `eventDeliverySchema` | `string` | The event delivery schema for the event subscription. |
-| `expirationTimeUtc` | `string` | Expiration time of the event subscription. |
-| `filter` | `object` | Filter for the Event Subscription. |
-| `topic` | `string` | Name of the topic of the event subscription. |
-| `retryPolicy` | `object` | Information about the retry policy for an event subscription. |
-| `provisioningState` | `string` | Provisioning state of the event subscription. |
+| `id` | `string` | Fully qualified identifier of the resource. |
+| `name` | `string` | Name of the resource. |
+| `properties` | `object` | Properties of the Event Subscription. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `deadLetterWithResourceIdentity` | `object` | Information about the deadletter destination with resource identity. |
-| `labels` | `array` | List of user defined labels. |
+| `type` | `string` | Type of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `EventSubscriptions_Get` | `SELECT` | `eventSubscriptionName, scope` | Get properties of an event subscription. |
 | `EventSubscriptions_ListByDomainTopic` | `SELECT` | `domainName, resourceGroupName, subscriptionId, topicName` | List all event subscriptions that have been created for a specific domain topic. |
 | `EventSubscriptions_ListByResource` | `SELECT` | `providerNamespace, resourceGroupName, resourceName, resourceTypeName, subscriptionId` | List all event subscriptions that have been created for a specific resource. |
 | `EventSubscriptions_CreateOrUpdate` | `INSERT` | `eventSubscriptionName, scope` | Asynchronously creates a new event subscription or updates an existing event subscription based on the specified scope. |
 | `EventSubscriptions_Delete` | `DELETE` | `eventSubscriptionName, scope` | Delete an existing event subscription. |
-| `EventSubscriptions_Get` | `EXEC` | `eventSubscriptionName, scope` | Get properties of an event subscription. |
 | `EventSubscriptions_GetDeliveryAttributes` | `EXEC` | `eventSubscriptionName, scope` | Get all delivery attributes for an event subscription. |
 | `EventSubscriptions_GetFullUrl` | `EXEC` | `eventSubscriptionName, scope` | Get the full endpoint URL for an event subscription. |
 | `EventSubscriptions_ListGlobalByResourceGroup` | `EXEC` | `resourceGroupName, subscriptionId` | List all global event subscriptions under a specific Azure subscription and resource group. |

@@ -25,17 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `tenantId` | `string` | Tenant ID of the administrator. |
-| `administratorType` | `string` | Type of the sever administrator. |
-| `azureADOnlyAuthentication` | `boolean` | Azure Active Directory only Authentication enabled. |
-| `login` | `string` | Login name of the server administrator. |
-| `sid` | `string` | SID (object ID) of the server administrator. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ServerAzureADAdministrators_Get` | `SELECT` | `administratorName, resourceGroupName, serverName, subscriptionId` | Gets a Azure Active Directory administrator. |
 | `ServerAzureADAdministrators_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Gets a list of Azure Active Directory administrators in a server. |
 | `ServerAzureADAdministrators_CreateOrUpdate` | `INSERT` | `administratorName, resourceGroupName, serverName, subscriptionId` | Creates or updates an existing Azure Active Directory administrator. |
 | `ServerAzureADAdministrators_Delete` | `DELETE` | `administratorName, resourceGroupName, serverName, subscriptionId` | Deletes the Azure Active Directory administrator with the given name. |
-| `ServerAzureADAdministrators_Get` | `EXEC` | `administratorName, resourceGroupName, serverName, subscriptionId` | Gets a Azure Active Directory administrator. |

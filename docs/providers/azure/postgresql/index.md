@@ -22,7 +22,7 @@ DB for PostgreSQL
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>DB for PostgreSQL (Microsoft.DBforPostgreSQL)</td></tr>
 <tr><td><b>Description</b></td><td>DB for PostgreSQL</td></tr>
-<tr><td><b>Id</b></td><td><code>postgresql:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>postgresql:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

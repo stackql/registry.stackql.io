@@ -25,8 +25,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `created` | `string` | The timestamp at which this record was created |
+| `domain` | `string` | The domain for this whois record |
+| `expires` | `string` | The timestamp at which this record will expire |
+| `parsedWhois` | `object` | The whois record for a given domain |
+| `server` | `string` | The hostname of this registrar's whois server |
+| `updated` | `string` | The timestamp at which this record was last updated |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `DomainWhois_Get` | `EXEC` | `domain, resourceGroupName, subscriptionId` |
+| `DomainWhois_Get` | `SELECT` | `domain, resourceGroupName, subscriptionId` |

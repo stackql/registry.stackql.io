@@ -27,13 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | The geo-location where the resource lives |
-| `tags` | `object` | Resource tags. |
+| `location` | `string` | Resource location |
+| `properties` | `object` | Properties of the reference data set. |
+| `tags` | `object` | Resource tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReferenceDataSets_Get` | `SELECT` | `environmentName, referenceDataSetName, resourceGroupName, subscriptionId` | Gets the reference data set with the specified name in the specified environment. |
 | `ReferenceDataSets_ListByEnvironment` | `SELECT` | `environmentName, resourceGroupName, subscriptionId` | Lists all the available reference data sets associated with the subscription and within the specified resource group and environment. |
-| `ReferenceDataSets_CreateOrUpdate` | `INSERT` | `environmentName, referenceDataSetName, resourceGroupName, subscriptionId` | Create or update a reference data set in the specified environment. |
+| `ReferenceDataSets_CreateOrUpdate` | `INSERT` | `environmentName, referenceDataSetName, resourceGroupName, subscriptionId, data__properties` | Create or update a reference data set in the specified environment. |
 | `ReferenceDataSets_Delete` | `DELETE` | `environmentName, referenceDataSetName, resourceGroupName, subscriptionId` | Deletes the reference data set with the specified name in the specified subscription, resource group, and environment |
-| `ReferenceDataSets_Get` | `EXEC` | `environmentName, referenceDataSetName, resourceGroupName, subscriptionId` | Gets the reference data set with the specified name in the specified environment. |
 | `ReferenceDataSets_Update` | `EXEC` | `environmentName, referenceDataSetName, resourceGroupName, subscriptionId` | Updates the reference data set with the specified name in the specified subscription, resource group, and environment. |

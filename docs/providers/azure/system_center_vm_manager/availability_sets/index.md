@@ -29,20 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
-| `location` | `string` | Gets or sets the location. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `provisioningState` | `string` | Gets or sets the provisioning state. |
-| `type` | `string` | Resource Type |
-| `vmmServerId` | `string` | ARM Id of the vmmServer resource in which this resource resides. |
-| `availabilitySetName` | `string` | Name of the availability set. |
 | `tags` | `object` | Resource tags |
+| `type` | `string` | Resource Type |
 | `extendedLocation` | `object` | The extended location. |
+| `location` | `string` | Gets or sets the location. |
+| `properties` | `object` | Defines the resource properties. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AvailabilitySets_Get` | `SELECT` | `availabilitySetName, resourceGroupName, subscriptionId` | Implements AvailabilitySet GET method. |
 | `AvailabilitySets_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | List of AvailabilitySets in a resource group. |
 | `AvailabilitySets_ListBySubscription` | `SELECT` | `subscriptionId` | List of AvailabilitySets in a subscription. |
 | `AvailabilitySets_CreateOrUpdate` | `INSERT` | `availabilitySetName, resourceGroupName, subscriptionId` | Onboards the ScVmm availability set as an Azure resource. |
 | `AvailabilitySets_Delete` | `DELETE` | `availabilitySetName, resourceGroupName, subscriptionId` | Deregisters the ScVmm availability set from Azure. |
-| `AvailabilitySets_Get` | `EXEC` | `availabilitySetName, resourceGroupName, subscriptionId` | Implements AvailabilitySet GET method. |
 | `AvailabilitySets_Update` | `EXEC` | `availabilitySetName, resourceGroupName, subscriptionId` | Updates the AvailabilitySets resource. |

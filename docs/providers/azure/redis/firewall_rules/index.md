@@ -25,14 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `endIP` | `string` | highest IP address included in the range |
-| `startIP` | `string` | lowest IP address included in the range |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `FirewallRules_Get` | `SELECT` | `cacheName, resourceGroupName, ruleName, subscriptionId` | Gets a single firewall rule in a specified redis cache. |
 | `FirewallRules_List` | `SELECT` | `cacheName, resourceGroupName, subscriptionId` | Gets all firewall rules in the specified redis cache. |
-| `FirewallRules_CreateOrUpdate` | `INSERT` | `cacheName, resourceGroupName, ruleName, subscriptionId` | Create or update a redis cache firewall rule |
+| `FirewallRules_CreateOrUpdate` | `INSERT` | `cacheName, resourceGroupName, ruleName, subscriptionId, data__properties` | Create or update a redis cache firewall rule |
 | `FirewallRules_Delete` | `DELETE` | `cacheName, resourceGroupName, ruleName, subscriptionId` | Deletes a single firewall rule in a specified redis cache. |
-| `FirewallRules_Get` | `EXEC` | `cacheName, resourceGroupName, ruleName, subscriptionId` | Gets a single firewall rule in a specified redis cache. |

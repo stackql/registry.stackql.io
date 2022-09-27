@@ -30,13 +30,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `weight` | `integer` | The relative weight for this specific control in each of your subscriptions. Used when calculating an aggregated score for this control across all of your subscriptions. |
-| `definition` | `object` | Information about the security control. |
-| `score` | `object` | Calculation result data |
-| `unhealthyResourceCount` | `integer` | Number of unhealthy resources in the control |
-| `displayName` | `string` | User friendly display name of the control |
-| `healthyResourceCount` | `integer` | Number of healthy resources in the control |
-| `notApplicableResourceCount` | `integer` | Number of not applicable resources in the control |
+| `properties` | `object` | Calculation result data in control level |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

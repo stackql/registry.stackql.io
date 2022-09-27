@@ -25,15 +25,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `groupMembers` | `array` | Group members information for the server trust group. |
-| `trustScopes` | `array` | Trust scope of the server trust group. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ServerTrustGroups_Get` | `SELECT` | `locationName, resourceGroupName, serverTrustGroupName, subscriptionId` | Gets a server trust group. |
 | `ServerTrustGroups_ListByInstance` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId` | Gets a server trust groups by instance name. |
 | `ServerTrustGroups_ListByLocation` | `SELECT` | `locationName, resourceGroupName, subscriptionId` | Lists a server trust group. |
 | `ServerTrustGroups_CreateOrUpdate` | `INSERT` | `locationName, resourceGroupName, serverTrustGroupName, subscriptionId` | Creates or updates a server trust group. |
 | `ServerTrustGroups_Delete` | `DELETE` | `locationName, resourceGroupName, serverTrustGroupName, subscriptionId` | Deletes a server trust group. |
-| `ServerTrustGroups_Get` | `EXEC` | `locationName, resourceGroupName, serverTrustGroupName, subscriptionId` | Gets a server trust group. |

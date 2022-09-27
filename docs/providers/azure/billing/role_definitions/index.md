@@ -29,9 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `description` | `string` | The role description |
-| `permissions` | `array` | The billingPermissions the role has |
-| `roleName` | `string` | The name of the role |
+| `properties` | `object` | The properties of the a role definition. |
 | `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

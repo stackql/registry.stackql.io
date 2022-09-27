@@ -29,19 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
-| `tags` | `object` | Resource tags |
-| `queryPackId` | `string` | The unique ID of your application. This field cannot be changed. |
-| `type` | `string` | Azure resource type |
-| `timeModified` | `string` | Last modified date of the Log Analytics QueryPack, in ISO 8601 format. |
-| `timeCreated` | `string` | Creation Date for the Log Analytics QueryPack, in ISO 8601 format. |
-| `provisioningState` | `string` | Current state of this QueryPack: whether or not is has been provisioned within the resource group it is defined. Users cannot change this value but are able to read from it. Values will include Succeeded, Deploying, Canceled, and Failed. |
 | `location` | `string` | Resource location |
+| `properties` | `object` | Properties that define a Log Analytics QueryPack resource. |
+| `tags` | `object` | Resource tags |
+| `type` | `string` | Azure resource type |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `QueryPacks_Get` | `SELECT` | `queryPackName, resourceGroupName, subscriptionId` | Returns a Log Analytics QueryPack. |
 | `QueryPacks_List` | `SELECT` | `subscriptionId` | Gets a list of all Log Analytics QueryPacks within a subscription. |
 | `QueryPacks_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets a list of Log Analytics QueryPacks within a resource group. |
-| `QueryPacks_CreateOrUpdate` | `INSERT` | `queryPackName, resourceGroupName, subscriptionId` | Creates (or updates) a Log Analytics QueryPack. Note: You cannot specify a different value for InstrumentationKey nor AppId in the Put operation. |
+| `QueryPacks_CreateOrUpdate` | `INSERT` | `queryPackName, resourceGroupName, subscriptionId, data__properties` | Creates (or updates) a Log Analytics QueryPack. Note: You cannot specify a different value for InstrumentationKey nor AppId in the Put operation. |
 | `QueryPacks_Delete` | `DELETE` | `queryPackName, resourceGroupName, subscriptionId` | Deletes a Log Analytics QueryPack. |
-| `QueryPacks_Get` | `EXEC` | `queryPackName, resourceGroupName, subscriptionId` | Returns a Log Analytics QueryPack. |
+| `QueryPacks_CreateOrUpdateWithoutName` | `EXEC` | `resourceGroupName, subscriptionId, data__properties` | Creates a Log Analytics QueryPack. Note: You cannot specify a different value for InstrumentationKey nor AppId in the Put operation. |
 | `QueryPacks_UpdateTags` | `EXEC` | `queryPackName, resourceGroupName, subscriptionId` | Updates an existing QueryPack's tags. To update other fields use the CreateOrUpdate method. |

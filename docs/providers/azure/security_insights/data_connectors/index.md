@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `kind` | `string` | The kind of the data connector |
 | `etag` | `string` | Etag of the azure resource |
+| `kind` | `string` | The kind of the data connector |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DataConnectors_Get` | `SELECT` | `dataConnectorId, resourceGroupName, subscriptionId, workspaceName` | Gets a data connector. |
 | `DataConnectors_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets all data connectors. |
 | `DataConnectors_CreateOrUpdate` | `INSERT` | `dataConnectorId, resourceGroupName, subscriptionId, workspaceName, data__kind` | Creates or updates the data connector. |
 | `DataConnectors_Delete` | `DELETE` | `dataConnectorId, resourceGroupName, subscriptionId, workspaceName` | Delete the data connector. |
 | `DataConnectors_Connect` | `EXEC` | `dataConnectorId, resourceGroupName, subscriptionId, workspaceName` | Connects a data connector. |
 | `DataConnectors_Disconnect` | `EXEC` | `dataConnectorId, resourceGroupName, subscriptionId, workspaceName` | Disconnect a data connector. |
-| `DataConnectors_Get` | `EXEC` | `dataConnectorId, resourceGroupName, subscriptionId, workspaceName` | Gets a data connector. |

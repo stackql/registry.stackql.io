@@ -30,8 +30,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
 | `type` | `string` | Resource type |
-| `vaultName` | `string` | Vault Name |
-| `location` | `string` | Resource location |
+| `properties` | `object` | Vault properties |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

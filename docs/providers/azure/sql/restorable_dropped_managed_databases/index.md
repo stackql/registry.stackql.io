@@ -27,14 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `creationDate` | `string` | The creation date of the database (ISO8601 format). |
-| `databaseName` | `string` | The name of the database. |
-| `deletionDate` | `string` | The deletion date of the database (ISO8601 format). |
-| `earliestRestoreDate` | `string` | The earliest restore date of the database (ISO8601 format). |
-| `location` | `string` | Resource location. |
 | `tags` | `object` | Resource tags. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | The restorable dropped managed database's properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RestorableDroppedManagedDatabases_Get` | `SELECT` | `managedInstanceName, resourceGroupName, restorableDroppedDatabaseId, subscriptionId` | Gets a restorable dropped managed database. |
 | `RestorableDroppedManagedDatabases_ListByInstance` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId` | Gets a list of restorable dropped managed databases. |
-| `RestorableDroppedManagedDatabases_Get` | `EXEC` | `managedInstanceName, resourceGroupName, restorableDroppedDatabaseId, subscriptionId` | Gets a restorable dropped managed database. |

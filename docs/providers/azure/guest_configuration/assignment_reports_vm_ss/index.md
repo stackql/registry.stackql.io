@@ -33,5 +33,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `GuestConfigurationAssignmentReportsVMSS_Get` | `SELECT` | `id, name, resourceGroupName, subscriptionId, vmssName` | Get a report for the VMSS guest configuration assignment, by reportId. |
 | `GuestConfigurationAssignmentReportsVMSS_List` | `SELECT` | `name, resourceGroupName, subscriptionId, vmssName` | List all reports for the VMSS guest configuration assignment, latest report first. |
-| `GuestConfigurationAssignmentReportsVMSS_Get` | `EXEC` | `id, name, resourceGroupName, subscriptionId, vmssName` | Get a report for the VMSS guest configuration assignment, by reportId. |

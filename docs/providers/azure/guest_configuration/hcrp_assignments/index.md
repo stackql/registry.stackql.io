@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `properties` | `object` | Guest configuration assignment properties. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `properties` | `object` | Guest configuration assignment properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `GuestConfigurationHCRPAssignments_Get` | `SELECT` | `guestConfigurationAssignmentName, machineName, resourceGroupName, subscriptionId` | Get information about a guest configuration assignment |
 | `GuestConfigurationHCRPAssignments_List` | `SELECT` | `machineName, resourceGroupName, subscriptionId` | List all guest configuration assignments for an ARC machine. |
 | `GuestConfigurationHCRPAssignments_CreateOrUpdate` | `INSERT` | `guestConfigurationAssignmentName, machineName, resourceGroupName, subscriptionId` | Creates an association between a ARC machine and guest configuration |
 | `GuestConfigurationHCRPAssignments_Delete` | `DELETE` | `guestConfigurationAssignmentName, machineName, resourceGroupName, subscriptionId` | Delete a guest configuration assignment |
-| `GuestConfigurationHCRPAssignments_Get` | `EXEC` | `guestConfigurationAssignmentName, machineName, resourceGroupName, subscriptionId` | Get information about a guest configuration assignment |

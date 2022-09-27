@@ -29,17 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within the set of outbound rules used by the load balancer. This name can be used to access the resource. |
-| `enableTcpReset` | `boolean` | Receive bidirectional TCP Reset on TCP flow idle timeout or unexpected connection termination. This element is only used when the protocol is set to TCP. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `protocol` | `string` | The protocol for the outbound rule in load balancer. |
-| `frontendIPConfigurations` | `array` | The Frontend IP addresses of the load balancer. |
+| `properties` | `object` | Outbound rule of the load balancer. |
 | `type` | `string` | Type of the resource. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `allocatedOutboundPorts` | `integer` | The number of outbound ports to be used for NAT. |
-| `idleTimeoutInMinutes` | `integer` | The timeout for the TCP idle connection. |
-| `backendAddressPool` | `object` | Reference to another subresource. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `LoadBalancerOutboundRules_Get` | `SELECT` | `loadBalancerName, outboundRuleName, resourceGroupName, subscriptionId` | Gets the specified load balancer outbound rule. |
 | `LoadBalancerOutboundRules_List` | `SELECT` | `loadBalancerName, resourceGroupName, subscriptionId` | Gets all the outbound rules in a load balancer. |
-| `LoadBalancerOutboundRules_Get` | `EXEC` | `loadBalancerName, outboundRuleName, resourceGroupName, subscriptionId` | Gets the specified load balancer outbound rule. |

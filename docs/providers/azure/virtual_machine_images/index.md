@@ -22,7 +22,7 @@ Virtual Machine Images
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Virtual Machine Images (Microsoft.VirtualMachineImages)</td></tr>
 <tr><td><b>Description</b></td><td>Virtual Machine Images</td></tr>
-<tr><td><b>Id</b></td><td><code>virtual_machine_images:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>virtual_machine_images:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

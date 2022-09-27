@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
-| `subscriptionId` | `string` | Identifier of the subscription receiving the delegated offer. |
+| `location` | `string` | Location of the resource |
+| `properties` | `object` | Properties for an offer delegation. |
 | `tags` | `object` | List of key-value pairs. |
 | `type` | `string` | Type of resource. |
-| `location` | `string` | Location of the resource |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `OfferDelegations_Get` | `SELECT` | `offer, offerDelegationName, resourceGroupName, subscriptionId` | Get the specified offer delegation. |
 | `OfferDelegations_List` | `SELECT` | `offer, resourceGroupName, subscriptionId` | Get the list of offer delegations. |
 | `OfferDelegations_CreateOrUpdate` | `INSERT` | `offer, offerDelegationName, resourceGroupName, subscriptionId` | Create or update the offer delegation. |
 | `OfferDelegations_Delete` | `DELETE` | `offer, offerDelegationName, resourceGroupName, subscriptionId` | Delete the specified offer delegation. |
-| `OfferDelegations_Get` | `EXEC` | `offer, offerDelegationName, resourceGroupName, subscriptionId` | Get the specified offer delegation. |

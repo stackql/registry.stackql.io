@@ -27,13 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `createdDate` | `string` | The date when this private endpoint was created. |
 | `etag` | `string` | Unique opaque string (generally a GUID) that represents the metadata state of the resource (private endpoint) and changes whenever the resource is updated. Required on PUT (CreateOrUpdate) requests. |
-| `manualPrivateLinkServiceConnections` | `array` | A list of connections to the remote resource. Immutable after it is set. |
+| `properties` | `object` | The properties associated with a private endpoint. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpoints_Get` | `SELECT` | `clusterName, privateEndpointName, resourceGroupName, subscriptionId` | Gets information about the specified Private Endpoint. |
 | `PrivateEndpoints_ListByCluster` | `SELECT` | `clusterName, resourceGroupName, subscriptionId` | Lists the private endpoints in the cluster. |
 | `PrivateEndpoints_CreateOrUpdate` | `INSERT` | `clusterName, privateEndpointName, resourceGroupName, subscriptionId` | Creates a Stream Analytics Private Endpoint or replaces an already existing Private Endpoint. |
 | `PrivateEndpoints_Delete` | `DELETE` | `clusterName, privateEndpointName, resourceGroupName, subscriptionId` | Delete the specified private endpoint. |
-| `PrivateEndpoints_Get` | `EXEC` | `clusterName, privateEndpointName, resourceGroupName, subscriptionId` | Gets information about the specified Private Endpoint. |

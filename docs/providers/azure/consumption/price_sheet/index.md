@@ -25,9 +25,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | The full qualified ARM ID of an event. |
+| `name` | `string` | The ID that uniquely identifies an event.  |
+| `properties` | `object` | price sheet result. It contains the pricesheet associated with billing period |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type. |
+| `etag` | `string` | The etag for the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `PriceSheet_Get` | `EXEC` | `subscriptionId` | Gets the price sheet for a subscription. Price sheet is available via this API only for May 1, 2014 or later. |
+| `PriceSheet_Get` | `SELECT` | `subscriptionId` | Gets the price sheet for a subscription. Price sheet is available via this API only for May 1, 2014 or later. |
 | `PriceSheet_GetByBillingPeriod` | `EXEC` | `billingPeriodName, subscriptionId` | Get the price sheet for a scope by subscriptionId and billing period. Price sheet is available via this API only for May 1, 2014 or later. |

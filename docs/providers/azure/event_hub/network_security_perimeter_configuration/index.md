@@ -27,13 +27,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `networkSecurityPerimeter` | `object` | NetworkSecurityPerimeter related information |
-| `profile` | `object` | Information about current network profile |
-| `provisioningIssues` | `array` | List of Provisioning Issues if any |
-| `provisioningState` | `string` | Provisioning state of NetworkSecurityPerimeter configuration propagation |
-| `resourceAssociation` | `object` | Information about resource association |
-| `tags` | `object` | Resource tags. |
 | `location` | `string` | Resource location. |
+| `properties` | `object` | Properties of NetworkSecurityPerimeterConfiguration |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

@@ -27,21 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `origins` | `array` | The source of the content being delivered via CDN. |
-| `provisioningState` | `string` | Provisioning status of the endpoint. |
-| `resourceState` | `string` | Resource status of the endpoint. |
 | `tags` | `object` | Resource tags. |
-| `customDomains` | `array` | The custom domains under the endpoint. |
-| `hostName` | `string` | The host name of the endpoint structured as &#123;endpointName&#125;.&#123;DNSZone&#125;, e.g. contoso.azureedge.net |
 | `location` | `string` | Resource location. |
-| `originGroups` | `array` | The origin groups comprising of origins that are used for load balancing the traffic based on availability. |
+| `properties` | `object` | The JSON object that contains the properties required to create an endpoint. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Endpoints_Get` | `SELECT` | `endpointName, profileName, resourceGroupName, subscriptionId` | Gets an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. |
 | `Endpoints_ListByProfile` | `SELECT` | `profileName, resourceGroupName, subscriptionId` | Lists existing CDN endpoints. |
 | `Endpoints_Create` | `INSERT` | `endpointName, profileName, resourceGroupName, subscriptionId` | Creates a new CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. |
 | `Endpoints_Delete` | `DELETE` | `endpointName, profileName, resourceGroupName, subscriptionId` | Deletes an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. |
-| `Endpoints_Get` | `EXEC` | `endpointName, profileName, resourceGroupName, subscriptionId` | Gets an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile. |
 | `Endpoints_ListResourceUsage` | `EXEC` | `endpointName, profileName, resourceGroupName, subscriptionId` | Checks the quota and usage of geo filters and custom domains under the given endpoint. |
 | `Endpoints_LoadContent` | `EXEC` | `endpointName, profileName, resourceGroupName, subscriptionId, data__contentPaths` | Pre-loads a content to CDN. Available for Verizon Profiles. |
 | `Endpoints_PurgeContent` | `EXEC` | `endpointName, profileName, resourceGroupName, subscriptionId, data__contentPaths` | Removes a content from CDN. |

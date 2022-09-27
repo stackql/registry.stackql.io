@@ -29,4 +29,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `SqlPoolDataWarehouseUserActivities_Get` | `EXEC` | `dataWarehouseUserActivityName, resourceGroupName, sqlPoolName, subscriptionId, workspaceName` |
+| `SqlPoolDataWarehouseUserActivities_Get` | `SELECT` | `dataWarehouseUserActivityName, resourceGroupName, sqlPoolName, subscriptionId, workspaceName` |

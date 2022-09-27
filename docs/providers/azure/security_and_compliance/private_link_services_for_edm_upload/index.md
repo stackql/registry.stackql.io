@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
-| `type` | `string` | The resource type. |
-| `tags` | `object` | The resource tags. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `location` | `string` | The resource location. |
 | `kind` | `string` | The kind of the service. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `etag` | `string` | An etag associated with the resource, used for optimistic concurrency when editing it. |
-| `identity` | `object` | Setting indicating whether the service has a managed identity associated with it. |
+| `tags` | `object` | The resource tags. |
+| `location` | `string` | The resource location. |
 | `properties` | `object` | The properties of a service instance. |
+| `identity` | `object` | Setting indicating whether the service has a managed identity associated with it. |
+| `type` | `string` | The resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `privateLinkServicesForEDMUpload_Get` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | Get the metadata of a privateLinkServicesForEDMUpload resource. |
 | `privateLinkServicesForEDMUpload_List` | `SELECT` | `subscriptionId` | Get all the privateLinkServicesForEDMUpload instances in a subscription. |
 | `privateLinkServicesForEDMUpload_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Get all the service instances in a resource group. |
 | `privateLinkServicesForEDMUpload_CreateOrUpdate` | `INSERT` | `resourceGroupName, resourceName, subscriptionId` | Create or update the metadata of a privateLinkServicesForEDMUpload instance. |
-| `privateLinkServicesForEDMUpload_Get` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Get the metadata of a privateLinkServicesForEDMUpload resource. |
 | `privateLinkServicesForEDMUpload_Update` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Update the metadata of a privateLinkServicesForEDMUpload instance. |

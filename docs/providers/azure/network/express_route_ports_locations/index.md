@@ -29,15 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `address` | `string` | Address of peering location. |
-| `contact` | `string` | Contact details of peering locations. |
 | `location` | `string` | Resource location. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `properties` | `object` | Properties specific to ExpressRoutePorts peering location resources. |
 | `tags` | `object` | Resource tags. |
-| `availableBandwidths` | `array` | The inventory of available ExpressRoutePort bandwidths. |
 | `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ExpressRoutePortsLocations_Get` | `SELECT` | `locationName, subscriptionId` | Retrieves a single ExpressRoutePort peering location, including the list of available bandwidths available at said peering location. |
 | `ExpressRoutePortsLocations_List` | `SELECT` | `subscriptionId` | Retrieves all ExpressRoutePort peering locations. Does not return available bandwidths for each location. Available bandwidths can only be obtained when retrieving a specific peering location. |
-| `ExpressRoutePortsLocations_Get` | `EXEC` | `locationName, subscriptionId` | Retrieves a single ExpressRoutePort peering location, including the list of available bandwidths available at said peering location. |

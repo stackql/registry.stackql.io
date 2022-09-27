@@ -35,7 +35,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Locations_Get` | `SELECT` | `location, subscriptionId` | Get the specified location. |
 | `Locations_List` | `SELECT` | `subscriptionId` | Get a list of all AzureStack location. |
 | `Locations_CreateOrUpdate` | `INSERT` | `location, subscriptionId` | Updates the specified location. |
-| `Locations_Get` | `EXEC` | `location, subscriptionId` | Get the specified location. |
 | `Locations_GetOperationsStatus` | `EXEC` | `location, operationsStatusName, subscriptionId` | Get the operation status. |

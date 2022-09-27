@@ -35,7 +35,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `SubAccountTagRules_Get` | `SELECT` | `monitorName, resourceGroupName, ruleSetName, subAccountName, subscriptionId` |
 | `SubAccountTagRules_List` | `SELECT` | `monitorName, resourceGroupName, subAccountName, subscriptionId` |
 | `SubAccountTagRules_CreateOrUpdate` | `INSERT` | `monitorName, resourceGroupName, ruleSetName, subAccountName, subscriptionId` |
 | `SubAccountTagRules_Delete` | `DELETE` | `monitorName, resourceGroupName, ruleSetName, subAccountName, subscriptionId` |
-| `SubAccountTagRules_Get` | `EXEC` | `monitorName, resourceGroupName, ruleSetName, subAccountName, subscriptionId` |

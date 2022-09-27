@@ -30,13 +30,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource Name. |
 | `location` | `string` | Resource Location. |
-| `numberOfStorageAccounts` | `integer` | Total number of storage accounts. |
+| `properties` | `object` | Storage quota properties. |
 | `type` | `string` | Resource Type. |
-| `capacityInGb` | `integer` | Maximum capacity (GB). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `StorageQuotas_Get` | `SELECT` | `location, quotaName, subscriptionId` | Returns the specified storage quota. |
 | `StorageQuotas_List` | `SELECT` | `location, subscriptionId` | Returns a list of storage quotas at the given location. |
 | `StorageQuotas_CreateOrUpdate` | `INSERT` | `location, quotaName, subscriptionId` | Create or update an existing storage quota. |
 | `StorageQuotas_Delete` | `DELETE` | `location, quotaName, subscriptionId` | Delete an existing quota |
-| `StorageQuotas_Get` | `EXEC` | `location, quotaName, subscriptionId` | Returns the specified storage quota. |

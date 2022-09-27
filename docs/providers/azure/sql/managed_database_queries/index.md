@@ -25,13 +25,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `queryId` | `string` | Unique query id (unique within one database). |
-| `startTime` | `string` | The start time for the metric (ISO-8601 format). |
-| `databaseName` | `string` | Database name of the database in which this query was executed. |
-| `endTime` | `string` | The end time for the metric (ISO-8601 format). |
-| `intervals` | `array` | List of intervals with appropriate metric data |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

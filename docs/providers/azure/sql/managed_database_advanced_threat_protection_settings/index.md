@@ -27,12 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `state` | `string` | Specifies the state of the Advanced Threat Protection, whether it is enabled or disabled or a state has not been applied yet on the specific database or server. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `creationTime` | `string` | Specifies the UTC creation time of the policy. |
+| `properties` | `object` | Properties of an Advanced Threat Protection state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedDatabaseAdvancedThreatProtectionSettings_Get` | `SELECT` | `advancedThreatProtectionName, databaseName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a managed database's Advanced Threat Protection state. |
 | `ManagedDatabaseAdvancedThreatProtectionSettings_ListByDatabase` | `SELECT` | `databaseName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a list of managed database's Advanced Threat Protection states. |
 | `ManagedDatabaseAdvancedThreatProtectionSettings_CreateOrUpdate` | `INSERT` | `advancedThreatProtectionName, databaseName, managedInstanceName, resourceGroupName, subscriptionId` | Creates or updates a managed database's Advanced Threat Protection state. |
-| `ManagedDatabaseAdvancedThreatProtectionSettings_Get` | `EXEC` | `advancedThreatProtectionName, databaseName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a managed database's Advanced Threat Protection state. |

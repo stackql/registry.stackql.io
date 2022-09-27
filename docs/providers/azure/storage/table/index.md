@@ -29,14 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `signedIdentifiers` | `array` | List of stored access policies specified on the table. |
-| `tableName` | `string` | Table name under the specified account |
+| `properties` | `object` |  |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Table_Get` | `SELECT` | `accountName, resourceGroupName, subscriptionId, tableName` | Gets the table with the specified table name, under the specified account if it exists. |
 | `Table_List` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | Gets a list of all the tables under the specified storage account |
 | `Table_Create` | `INSERT` | `accountName, resourceGroupName, subscriptionId, tableName` | Creates a new table with the specified table name, under the specified account. |
 | `Table_Delete` | `DELETE` | `accountName, resourceGroupName, subscriptionId, tableName` | Deletes the table with the specified table name, under the specified account if it exists. |
-| `Table_Get` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName` | Gets the table with the specified table name, under the specified account if it exists. |
 | `Table_Update` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName` | Creates a new table with the specified table name, under the specified account. |

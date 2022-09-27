@@ -29,5 +29,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `EndpointCertificates_Get` | `SELECT` | `endpointType, managedInstanceName, resourceGroupName, subscriptionId` | Gets a certificate used on the endpoint with the given id. |
 | `EndpointCertificates_ListByInstance` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId` | List certificates used on endpoints on the target instance. |
-| `EndpointCertificates_Get` | `EXEC` | `endpointType, managedInstanceName, resourceGroupName, subscriptionId` | Gets a certificate used on the endpoint with the given id. |

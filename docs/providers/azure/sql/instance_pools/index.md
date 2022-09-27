@@ -27,18 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `licenseType` | `string` | The license type. Possible values are 'LicenseIncluded' (price for SQL license is included) and 'BasePrice' (without SQL license price). |
 | `location` | `string` | Resource location. |
+| `properties` | `object` | Properties of an instance pool. |
 | `sku` | `object` | An ARM Resource SKU. |
-| `subnetId` | `string` | Resource ID of the subnet to place this instance pool in. |
 | `tags` | `object` | Resource tags. |
-| `vCores` | `integer` | Count of vCores belonging to this instance pool. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `InstancePools_Get` | `SELECT` | `instancePoolName, resourceGroupName, subscriptionId` | Gets an instance pool. |
 | `InstancePools_List` | `SELECT` | `subscriptionId` | Gets a list of all instance pools in the subscription. |
 | `InstancePools_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets a list of instance pools in the resource group |
 | `InstancePools_CreateOrUpdate` | `INSERT` | `instancePoolName, resourceGroupName, subscriptionId, data__location` | Creates or updates an instance pool. |
 | `InstancePools_Delete` | `DELETE` | `instancePoolName, resourceGroupName, subscriptionId` | Deletes an instance pool |
-| `InstancePools_Get` | `EXEC` | `instancePoolName, resourceGroupName, subscriptionId` | Gets an instance pool. |
 | `InstancePools_Update` | `EXEC` | `instancePoolName, resourceGroupName, subscriptionId` | Updates an instance pool. |

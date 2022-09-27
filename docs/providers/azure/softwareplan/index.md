@@ -22,7 +22,7 @@ Software Plan
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Software Plan (Microsoft.SoftwarePlan)</td></tr>
 <tr><td><b>Description</b></td><td>Software Plan</td></tr>
-<tr><td><b>Id</b></td><td><code>softwareplan:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>softwareplan:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

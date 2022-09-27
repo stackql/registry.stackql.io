@@ -27,13 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | The Azure Region where the resource lives |
-| `serviceLocation` | `string` | Location of the service. |
 | `tags` | `object` | Resource tags. |
-| `displayName` | `string` | Name of the service. |
-| `infraURI` | `string` | The route prefix to the service. |
+| `location` | `string` | The Azure Region where the resource lives |
+| `properties` | `object` | Holds information about the health of a service. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ServiceHealths_Get` | `SELECT` | `location, resourceGroupName, serviceHealth, subscriptionId` | Returns the requested service health object. |
 | `ServiceHealths_List` | `SELECT` | `location, resourceGroupName, subscriptionId` | Returns the list of all resource provider health states. |
-| `ServiceHealths_Get` | `EXEC` | `location, resourceGroupName, serviceHealth, subscriptionId` | Returns the requested service health object. |

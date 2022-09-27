@@ -22,7 +22,7 @@ Managed Service Identity
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Managed Service Identity (Microsoft.ManagedIdentity)</td></tr>
 <tr><td><b>Description</b></td><td>Managed Service Identity</td></tr>
-<tr><td><b>Id</b></td><td><code>managed_service_identity:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>managed_service_identity:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

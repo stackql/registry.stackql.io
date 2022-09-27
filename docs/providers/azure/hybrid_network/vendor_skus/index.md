@@ -27,20 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `deploymentMode` | `string` | The sku deployment mode. |
-| `managedApplicationParameters` | `object` | The parameters for the managed application. |
-| `managedApplicationTemplate` | `object` | The template for the managed application deployment. |
-| `networkFunctionType` | `string` | The network function type. |
-| `skuType` | `string` | Sku type. |
-| `networkFunctionTemplate` | `object` | The network function template. |
+| `properties` | `object` | Sku properties |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `preview` | `boolean` | Indicates if the vendor sku is in preview mode. |
-| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VendorSkus_Get` | `SELECT` | `skuName, subscriptionId, vendorName` | Gets information about the specified sku. |
 | `VendorSkus_List` | `SELECT` | `subscriptionId, vendorName` | Lists all the skus of a vendor. |
 | `VendorSkus_CreateOrUpdate` | `INSERT` | `skuName, subscriptionId, vendorName` | Creates or updates a sku. This operation can take up to 2 hours to complete. This is expected service behavior. |
 | `VendorSkus_Delete` | `DELETE` | `skuName, subscriptionId, vendorName` | Deletes the specified sku. This operation can take up to 2 hours to complete. This is expected service behavior. |
-| `VendorSkus_Get` | `EXEC` | `skuName, subscriptionId, vendorName` | Gets information about the specified sku. |
 | `VendorSkus_ListCredential` | `EXEC` | `skuName, subscriptionId, vendorName` | Generate credentials for publishing SKU images. |

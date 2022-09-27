@@ -25,10 +25,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id represents the complete path to the resource. |
+| `name` | `string` | Resource name associated with the resource. |
+| `etag` | `string` | Optional ETag. |
+| `properties` | `object` | Vault extended information. |
+| `type` | `string` | Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/... |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VaultExtendedInfo_Get` | `SELECT` | `api-version, resourceGroupName, subscriptionId, vaultName` | Get the vault extended info. |
 | `VaultExtendedInfo_CreateOrUpdate` | `INSERT` | `api-version, resourceGroupName, subscriptionId, vaultName` | Create vault extended info. |
-| `VaultExtendedInfo_Get` | `EXEC` | `api-version, resourceGroupName, subscriptionId, vaultName` | Get the vault extended info. |
 | `VaultExtendedInfo_Update` | `EXEC` | `api-version, resourceGroupName, subscriptionId, vaultName` | Update vault extended info. |

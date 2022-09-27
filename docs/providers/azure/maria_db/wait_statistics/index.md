@@ -25,19 +25,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `queryId` | `integer` | Database query identifier. |
-| `count` | `integer` | Wait event count observed in this time interval. |
-| `userId` | `integer` | Database user identifier. |
-| `endTime` | `string` | Observation end time. |
-| `eventName` | `string` | Wait event name. |
-| `databaseName` | `string` | Database Name. |
-| `startTime` | `string` | Observation start time. |
-| `eventTypeName` | `string` | Wait event type name. |
-| `totalTimeInMs` | `number` | Total time of wait in milliseconds in this time interval. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `WaitStatistics_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Retrieve wait statistics for specified aggregation window. |
-| `WaitStatistics_Get` | `EXEC` | `resourceGroupName, serverName, subscriptionId, waitStatisticsId` | Retrieve wait statistics for specified identifier. |
+| `WaitStatistics_Get` | `SELECT` | `resourceGroupName, serverName, subscriptionId, waitStatisticsId` | Retrieve wait statistics for specified identifier. |
+| `WaitStatistics_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId, data__properties` | Retrieve wait statistics for specified aggregation window. |

@@ -30,19 +30,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
 | `type` | `string` | Type of Resource. |
-| `virtualMachineCount` | `integer` | Maximum number of virtual machines allowed. |
-| `availabilitySetCount` | `integer` | Maximum number of availability sets allowed. |
-| `partitionedGpuCount` | `integer` | Maximum number of partitioned gpus allowed. |
-| `maxAllocationPremiumManagedDisksAndSnapshots` | `integer` | Maximum number of managed disks and snapshots of type premium allowed. |
 | `location` | `string` | Location of the resource. |
-| `ddagpuCount` | `integer` | Maximum number of dda gpus allowed. |
-| `vmScaleSetCount` | `integer` | Maximum number of scale sets allowed. |
-| `coresLimit` | `integer` | Maximum number of cores allowed. |
-| `maxAllocationStandardManagedDisksAndSnapshots` | `integer` | Maximum number of managed disks and snapshots of type standard allowed. |
+| `properties` | `object` | Properties for a Compute Quota |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Quotas_Get` | `SELECT` | `location, quotaName, subscriptionId` | Get an existing Compute Quota. |
 | `Quotas_List` | `SELECT` | `location, subscriptionId` | Get a list of existing Compute quotas. |
 | `Quotas_CreateOrUpdate` | `INSERT` | `location, quotaName, subscriptionId` | Creates or Updates a Compute Quota with the provided quota parameters. |
 | `Quotas_Delete` | `DELETE` | `location, quotaName, subscriptionId` | Delete an existing Compute quota. |
-| `Quotas_Get` | `EXEC` | `location, quotaName, subscriptionId` | Get an existing Compute Quota. |

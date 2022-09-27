@@ -25,12 +25,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `current` | `integer` | The current quota value. |
-| `default` | `integer` | The default quota value. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `NetAppResourceQuotaLimits_Get` | `SELECT` | `location, quotaLimitName, subscriptionId` | Get the default and current subscription quota limit |
 | `NetAppResourceQuotaLimits_List` | `SELECT` | `location, subscriptionId` | Get the default and current limits for quotas |
-| `NetAppResourceQuotaLimits_Get` | `EXEC` | `location, quotaLimitName, subscriptionId` | Get the default and current subscription quota limit |

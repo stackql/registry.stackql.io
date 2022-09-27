@@ -25,11 +25,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id represents the complete path to the resource. |
+| `name` | `string` | Resource name associated with the resource. |
+| `properties` | `object` | Base class for container with backup items. Containers with specific workloads are derived from this class. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/... |
+| `eTag` | `string` | Optional ETag. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `ProtectionContainers_Get` | `EXEC` | `api-version, containerName, fabricName, resourceGroupName, subscriptionId, vaultName` | Gets details of the specific container registered to your Recovery Services Vault. |
+| `ProtectionContainers_Get` | `SELECT` | `api-version, containerName, fabricName, resourceGroupName, subscriptionId, vaultName` | Gets details of the specific container registered to your Recovery Services Vault. |
 | `ProtectionContainers_Inquire` | `EXEC` | `api-version, containerName, fabricName, resourceGroupName, subscriptionId, vaultName` | This is an async operation and the results should be tracked using location header or Azure-async-url. |
 | `ProtectionContainers_Refresh` | `EXEC` | `api-version, fabricName, resourceGroupName, subscriptionId, vaultName` | Discovers all the containers in the subscription that can be backed up to Recovery Services Vault. This is an<br />asynchronous operation. To know the status of the operation, call GetRefreshOperationResult API. |
 | `ProtectionContainers_Register` | `EXEC` | `api-version, containerName, fabricName, resourceGroupName, subscriptionId, vaultName` | Registers the container with Recovery Services vault.<br />This is an asynchronous operation. To track the operation status, use location header to call get latest status of<br />the operation. |

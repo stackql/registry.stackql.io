@@ -25,9 +25,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `properties` | `object` | The properties of a database data masking policy. |
+| `kind` | `string` | The kind of data masking policy. Metadata, used for Azure portal. |
+| `location` | `string` | The location of the data masking policy. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DataMaskingPolicies_Get` | `SELECT` | `dataMaskingPolicyName, databaseName, resourceGroupName, serverName, subscriptionId` | Gets a database data masking policy. |
 | `DataMaskingPolicies_CreateOrUpdate` | `INSERT` | `dataMaskingPolicyName, databaseName, resourceGroupName, serverName, subscriptionId` | Creates or updates a database data masking policy |
-| `DataMaskingPolicies_Get` | `EXEC` | `dataMaskingPolicyName, databaseName, resourceGroupName, serverName, subscriptionId` | Gets a database data masking policy. |

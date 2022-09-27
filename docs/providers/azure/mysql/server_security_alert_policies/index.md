@@ -25,18 +25,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `retentionDays` | `integer` | Specifies the number of days to keep in the Threat Detection audit logs. |
-| `state` | `string` | Specifies the state of the policy, whether it is enabled or disabled. |
-| `storageAccountAccessKey` | `string` | Specifies the identifier key of the Threat Detection audit storage account. |
-| `storageEndpoint` | `string` | Specifies the blob storage endpoint (e.g. https://MyAccount.blob.core.windows.net). This blob storage will hold all Threat Detection audit logs. |
-| `disabledAlerts` | `array` | Specifies an array of alerts that are disabled. Allowed values are: Sql_Injection, Sql_Injection_Vulnerability, Access_Anomaly |
-| `emailAccountAdmins` | `boolean` | Specifies that the alert is sent to the account administrators. |
-| `emailAddresses` | `array` | Specifies an array of e-mail addresses to which the alert is sent. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ServerSecurityAlertPolicies_Get` | `SELECT` | `resourceGroupName, securityAlertPolicyName, serverName, subscriptionId` | Get a server's security alert policy. |
 | `ServerSecurityAlertPolicies_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Get the server's threat detection policies. |
 | `ServerSecurityAlertPolicies_CreateOrUpdate` | `INSERT` | `resourceGroupName, securityAlertPolicyName, serverName, subscriptionId` | Creates or updates a threat detection policy. |
-| `ServerSecurityAlertPolicies_Get` | `EXEC` | `resourceGroupName, securityAlertPolicyName, serverName, subscriptionId` | Get a server's security alert policy. |

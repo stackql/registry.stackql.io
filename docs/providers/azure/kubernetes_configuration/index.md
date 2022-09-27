@@ -22,7 +22,7 @@ Use these APIs to create Source Control Configuration resources through ARM, for
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Source Control Configuration Client (Microsoft.KubernetesConfiguration)</td></tr>
 <tr><td><b>Description</b></td><td>Use these APIs to create Source Control Configuration resources through ARM, for Kubernetes Clusters.</td></tr>
-<tr><td><b>Id</b></td><td><code>kubernetes_configuration:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>kubernetes_configuration:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

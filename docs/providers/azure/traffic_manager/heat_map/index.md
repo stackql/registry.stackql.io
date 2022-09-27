@@ -29,4 +29,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `HeatMap_Get` | `EXEC` | `heatMapType, profileName, resourceGroupName, subscriptionId` |
+| `HeatMap_Get` | `SELECT` | `heatMapType, profileName, resourceGroupName, subscriptionId` |

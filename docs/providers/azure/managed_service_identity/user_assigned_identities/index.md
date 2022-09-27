@@ -27,16 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `tenantId` | `string` | The tenant ID of resource. |
 | `type` | `string` | The identity type. |
 | `principalId` | `string` | The principal ID of resource identity. |
+| `tenantId` | `string` | The tenant ID of resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `UserAssignedIdentities_Get` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | Gets the identity. |
 | `UserAssignedIdentities_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all the userAssignedIdentities available under the specified ResourceGroup. |
 | `UserAssignedIdentities_ListBySubscription` | `SELECT` | `subscriptionId` | Lists all the userAssignedIdentities available under the specified subscription. |
 | `UserAssignedIdentities_CreateOrUpdate` | `INSERT` | `resourceGroupName, resourceName, subscriptionId` | Create or update an identity in the specified subscription and resource group. |
 | `UserAssignedIdentities_Delete` | `DELETE` | `resourceGroupName, resourceName, subscriptionId` | Deletes the identity. |
-| `UserAssignedIdentities_Get` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Gets the identity. |
 | `UserAssignedIdentities_ListAssociatedResources` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Lists the associated resources for this identity. |
 | `UserAssignedIdentities_Update` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Update an identity in the specified subscription and resource group. |

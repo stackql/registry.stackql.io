@@ -29,14 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
+| `properties` | `object` | Policy contract Properties. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `value` | `string` | Contents of the Policy as defined by the format. |
-| `format` | `string` | Format of the policyContent. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Policy_Get` | `SELECT` | `policyId, resourceGroupName, serviceName, subscriptionId` | Get the Global policy definition of the Api Management service. |
 | `Policy_ListByService` | `SELECT` | `resourceGroupName, serviceName, subscriptionId` | Lists all the Global Policy definitions of the Api Management service. |
 | `Policy_CreateOrUpdate` | `INSERT` | `policyId, resourceGroupName, serviceName, subscriptionId` | Creates or updates the global policy configuration of the Api Management service. |
 | `Policy_Delete` | `DELETE` | `If-Match, policyId, resourceGroupName, serviceName, subscriptionId` | Deletes the global policy configuration of the Api Management Service. |
-| `Policy_Get` | `EXEC` | `policyId, resourceGroupName, serviceName, subscriptionId` | Get the Global policy definition of the Api Management service. |
 | `Policy_GetEntityTag` | `EXEC` | `policyId, resourceGroupName, serviceName, subscriptionId` | Gets the entity state (Etag) version of the Global policy definition in the Api Management service. |

@@ -27,15 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `relatedResourceKind` | `string` | The resource kind of the related resource |
-| `relatedResourceName` | `string` | The name of the related resource |
-| `relatedResourceType` | `string` | The resource type of the related resource |
 | `etag` | `string` | Etag of the azure resource |
-| `relatedResourceId` | `string` | The resource ID of the related resource |
+| `properties` | `object` | Relation property bag. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IncidentRelations_Get` | `SELECT` | `incidentId, relationName, resourceGroupName, subscriptionId, workspaceName` | Gets an incident relation. |
 | `IncidentRelations_List` | `SELECT` | `incidentId, resourceGroupName, subscriptionId, workspaceName` | Gets all incident relations. |
 | `IncidentRelations_CreateOrUpdate` | `INSERT` | `incidentId, relationName, resourceGroupName, subscriptionId, workspaceName` | Creates or updates the incident relation. |
 | `IncidentRelations_Delete` | `DELETE` | `incidentId, relationName, resourceGroupName, subscriptionId, workspaceName` | Delete the incident relation. |
-| `IncidentRelations_Get` | `EXEC` | `incidentId, relationName, resourceGroupName, subscriptionId, workspaceName` | Gets an incident relation. |

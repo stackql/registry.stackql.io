@@ -29,5 +29,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `AFDProfiles_CheckHostNameAvailability` | `EXEC` | `profileName, resourceGroupName, subscriptionId, data__hostName` | Check the name availability of a host name. |
-| `AFDProfiles_ListResourceUsage` | `EXEC` | `profileName, resourceGroupName, subscriptionId` | Checks the quota and actual usage of AzureFrontDoor endpoints under the given CDN profile. |
+| `AFDProfiles_CheckHostNameAvailability` | `EXEC` | `profileName, resourceGroupName, subscriptionId, data__hostName` | Validates the custom domain mapping to ensure it maps to the correct CDN endpoint in DNS. |
+| `AFDProfiles_ListResourceUsage` | `EXEC` | `profileName, resourceGroupName, subscriptionId` | Checks the quota and actual usage of endpoints under the given CDN profile. |

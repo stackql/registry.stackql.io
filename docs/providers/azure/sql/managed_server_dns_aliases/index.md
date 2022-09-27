@@ -25,15 +25,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `azureDnsRecord` | `string` | The fully qualified DNS record for managed server alias |
-| `publicAzureDnsRecord` | `string` | The fully qualified public DNS record for managed server alias |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedServerDnsAliases_Get` | `SELECT` | `dnsAliasName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a server DNS alias. |
 | `ManagedServerDnsAliases_ListByManagedInstance` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId` | Gets a list of managed server DNS aliases for a managed server. |
 | `ManagedServerDnsAliases_CreateOrUpdate` | `INSERT` | `dnsAliasName, managedInstanceName, resourceGroupName, subscriptionId` | Creates a managed server DNS alias. |
 | `ManagedServerDnsAliases_Delete` | `DELETE` | `dnsAliasName, managedInstanceName, resourceGroupName, subscriptionId` | Deletes the managed server DNS alias with the given name. |
 | `ManagedServerDnsAliases_Acquire` | `EXEC` | `dnsAliasName, managedInstanceName, resourceGroupName, subscriptionId, data__oldManagedServerDnsAliasResourceId` | Acquires managed server DNS alias from another managed server. |
-| `ManagedServerDnsAliases_Get` | `EXEC` | `dnsAliasName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a server DNS alias. |

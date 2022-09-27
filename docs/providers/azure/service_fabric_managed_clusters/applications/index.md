@@ -29,21 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource identifier. |
 | `name` | `string` | Azure resource name. |
-| `identity` | `object` | Describes the managed identities for an Azure resource. |
-| `version` | `string` | The version of the application type as defined in the application manifest.<br />This name must be the full Arm Resource ID for the referenced application type version.<br /> |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `managedIdentities` | `array` | List of user assigned identities for the application, each mapped to a friendly name. |
-| `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response |
-| `tags` | `object` | Azure resource tags. |
 | `type` | `string` | Azure resource type. |
+| `identity` | `object` | Describes the managed identities for an Azure resource. |
 | `location` | `string` | Resource location depends on the parent resource. |
-| `parameters` | `object` | List of application parameters with overridden values from their default values specified in the application manifest. |
-| `upgradePolicy` | `object` | Describes the policy for a monitored application upgrade. |
+| `properties` | `object` | The application resource properties. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `tags` | `object` | Azure resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Applications_Get` | `SELECT` | `api-version, applicationName, clusterName, resourceGroupName, subscriptionId` | Get a Service Fabric managed application resource created or in the process of being created in the Service Fabric cluster resource. |
 | `Applications_List` | `SELECT` | `api-version, clusterName, resourceGroupName, subscriptionId` | Gets all managed application resources created or in the process of being created in the Service Fabric cluster resource. |
 | `Applications_CreateOrUpdate` | `INSERT` | `api-version, applicationName, clusterName, resourceGroupName, subscriptionId` | Create or update a Service Fabric managed application resource with the specified name. |
 | `Applications_Delete` | `DELETE` | `api-version, applicationName, clusterName, resourceGroupName, subscriptionId` | Delete a Service Fabric managed application resource with the specified name. |
-| `Applications_Get` | `EXEC` | `api-version, applicationName, clusterName, resourceGroupName, subscriptionId` | Get a Service Fabric managed application resource created or in the process of being created in the Service Fabric cluster resource. |
 | `Applications_Update` | `EXEC` | `api-version, applicationName, clusterName, resourceGroupName, subscriptionId` | Updates the tags of an application resource of a given managed cluster. |

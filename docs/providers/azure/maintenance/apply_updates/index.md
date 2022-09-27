@@ -27,17 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
-| `name` | `string` | The name of the resource |
-| `lastUpdateTime` | `string` | Last Update time |
-| `resourceId` | `string` | The resourceId |
-| `status` | `string` | The status |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `id` | `string` | Fully qualified identifier of the resource |
+| `name` | `string` | Name of the resource |
+| `properties` | `object` | Properties for apply update |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `type` | `string` | Type of the resource |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ApplyUpdates_Get` | `SELECT` | `applyUpdateName, providerName, resourceGroupName, resourceName, resourceType, subscriptionId` | Track maintenance updates to resource |
 | `ApplyUpdates_List` | `SELECT` | `subscriptionId` |  |
 | `ApplyUpdates_CreateOrUpdate` | `INSERT` | `providerName, resourceGroupName, resourceName, resourceType, subscriptionId` | Apply maintenance updates to resource |
 | `ApplyUpdates_CreateOrUpdateParent` | `EXEC` | `providerName, resourceGroupName, resourceName, resourceParentName, resourceParentType, resourceType, subscriptionId` | Apply maintenance updates to resource with parent |
-| `ApplyUpdates_Get` | `EXEC` | `applyUpdateName, providerName, resourceGroupName, resourceName, resourceType, subscriptionId` | Track maintenance updates to resource |
 | `ApplyUpdates_GetParent` | `EXEC` | `applyUpdateName, providerName, resourceGroupName, resourceName, resourceParentName, resourceParentType, resourceType, subscriptionId` | Track maintenance updates to resource with parent |

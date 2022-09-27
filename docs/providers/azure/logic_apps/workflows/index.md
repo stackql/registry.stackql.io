@@ -29,26 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `type` | `string` | Gets the resource type. |
-| `integrationServiceEnvironment` | `object` | The resource reference. |
-| `version` | `string` | Gets the version. |
-| `createdTime` | `string` | Gets the created time. |
 | `identity` | `object` | Managed service identity properties. |
-| `definition` | `object` |  |
-| `tags` | `object` | The resource tags. |
-| `parameters` | `object` | The parameters. |
 | `location` | `string` | The resource location. |
-| `accessEndpoint` | `string` | Gets the access endpoint. |
-| `integrationAccount` | `object` | The resource reference. |
-| `provisioningState` | `string` | The workflow provisioning state. |
-| `state` | `string` | The workflow state. |
-| `accessControl` | `object` | The access control configuration. |
-| `sku` | `object` | The sku type. |
-| `endpointsConfiguration` | `object` | The endpoints configuration. |
-| `changedTime` | `string` | Gets the changed time. |
+| `properties` | `object` | The workflow properties. |
+| `tags` | `object` | The resource tags. |
+| `type` | `string` | Gets the resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Workflows_Get` | `SELECT` | `api-version, resourceGroupName, subscriptionId, workflowName` | Gets a workflow. |
 | `Workflows_ListByResourceGroup` | `SELECT` | `api-version, resourceGroupName, subscriptionId` | Gets a list of workflows by resource group. |
 | `Workflows_ListBySubscription` | `SELECT` | `api-version, subscriptionId` | Gets a list of workflows by subscription. |
 | `Workflows_CreateOrUpdate` | `INSERT` | `api-version, resourceGroupName, subscriptionId, workflowName` | Creates or updates a workflow. |
@@ -56,7 +45,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `Workflows_Disable` | `EXEC` | `api-version, resourceGroupName, subscriptionId, workflowName` | Disables a workflow. |
 | `Workflows_Enable` | `EXEC` | `api-version, resourceGroupName, subscriptionId, workflowName` | Enables a workflow. |
 | `Workflows_GenerateUpgradedDefinition` | `EXEC` | `api-version, resourceGroupName, subscriptionId, workflowName` | Generates the upgraded definition for a workflow. |
-| `Workflows_Get` | `EXEC` | `api-version, resourceGroupName, subscriptionId, workflowName` | Gets a workflow. |
 | `Workflows_ListCallbackUrl` | `EXEC` | `api-version, resourceGroupName, subscriptionId, workflowName` | Get the workflow callback Url. |
 | `Workflows_ListSwagger` | `EXEC` | `api-version, resourceGroupName, subscriptionId, workflowName` | Gets an OpenAPI definition for the workflow. |
 | `Workflows_Move` | `EXEC` | `api-version, resourceGroupName, subscriptionId, workflowName` | Moves an existing workflow. |

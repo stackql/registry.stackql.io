@@ -28,17 +28,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified identifier. |
-| `routingResourceManagerType` | `string` | Resource manager type. |
-| `tenantId` | `string` | Directory tenant identifier. |
-| `offerId` | `string` | Identifier of the offer under the scope of a delegated provider. |
 | `subscriptionId` | `string` | Subscription identifier. |
+| `tenantId` | `string` | Directory tenant identifier. |
+| `state` | `string` | Subscription notification state. |
 | `delegatedProviderSubscriptionId` | `string` | Parent DelegatedProvider subscription identifier. |
 | `displayName` | `string` | Subscription name. |
 | `externalReferenceId` | `string` | External reference identifier. |
 | `owner` | `string` | Subscription owner. |
-| `state` | `string` | Subscription notification state. |
+| `offerId` | `string` | Identifier of the offer under the scope of a delegated provider. |
+| `routingResourceManagerType` | `string` | Resource manager type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DelegatedProviders_Get` | `SELECT` | `delegatedProvider, subscriptionId` | Get the specified delegated provider. |
 | `DelegatedProviders_List` | `SELECT` | `subscriptionId` | Get the list of delegatedProviders. |
-| `DelegatedProviders_Get` | `EXEC` | `delegatedProvider, subscriptionId` | Get the specified delegated provider. |

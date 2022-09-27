@@ -25,15 +25,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `managedBy` | `string` | Resource that manages the sensitivity label. |
+| `properties` | `object` | Properties of a sensitivity label. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SensitivityLabels_Get` | `SELECT` | `columnName, databaseName, resourceGroupName, schemaName, sensitivityLabelSource, serverName, subscriptionId, tableName` | Gets the sensitivity label of a given column |
 | `SensitivityLabels_CreateOrUpdate` | `INSERT` | `columnName, databaseName, resourceGroupName, schemaName, sensitivityLabelSource, serverName, subscriptionId, tableName` | Creates or updates the sensitivity label of a given column |
 | `SensitivityLabels_Delete` | `DELETE` | `columnName, databaseName, resourceGroupName, schemaName, sensitivityLabelSource, serverName, subscriptionId, tableName` | Deletes the sensitivity label of a given column |
 | `SensitivityLabels_DisableRecommendation` | `EXEC` | `columnName, databaseName, resourceGroupName, schemaName, sensitivityLabelSource, serverName, subscriptionId, tableName` | Disables sensitivity recommendations on a given column |
 | `SensitivityLabels_EnableRecommendation` | `EXEC` | `columnName, databaseName, resourceGroupName, schemaName, sensitivityLabelSource, serverName, subscriptionId, tableName` | Enables sensitivity recommendations on a given column (recommendations are enabled by default on all columns) |
-| `SensitivityLabels_Get` | `EXEC` | `columnName, databaseName, resourceGroupName, schemaName, sensitivityLabelSource, serverName, subscriptionId, tableName` | Gets the sensitivity label of a given column |
 | `SensitivityLabels_ListCurrentByDatabase` | `EXEC` | `databaseName, resourceGroupName, serverName, subscriptionId` | Gets the sensitivity labels of a given database |
 | `SensitivityLabels_ListRecommendedByDatabase` | `EXEC` | `databaseName, resourceGroupName, serverName, subscriptionId` | Gets the sensitivity labels of a given database |
 | `SensitivityLabels_Update` | `EXEC` | `databaseName, resourceGroupName, serverName, subscriptionId` | Update sensitivity labels of a given database using an operations batch. |

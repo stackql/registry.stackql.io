@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
-| `properties` | `object` | The properties of a service instance. |
-| `location` | `string` | The resource location. |
 | `kind` | `string` | The kind of the service. |
+| `properties` | `object` | The properties of a service instance. |
 | `etag` | `string` | An etag associated with the resource, used for optimistic concurrency when editing it. |
+| `location` | `string` | The resource location. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | The resource type. |
 | `identity` | `object` | Setting indicating whether the service has a managed identity associated with it. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | The resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `privateLinkServicesForM365ComplianceCenter_Get` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | Get the metadata of a privateLinkServicesForM365ComplianceCenter resource. |
 | `privateLinkServicesForM365ComplianceCenter_List` | `SELECT` | `subscriptionId` | Get all the privateLinkServicesForM365ComplianceCenter instances in a subscription. |
 | `privateLinkServicesForM365ComplianceCenter_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Get all the service instances in a resource group. |
 | `privateLinkServicesForM365ComplianceCenter_CreateOrUpdate` | `INSERT` | `resourceGroupName, resourceName, subscriptionId` | Create or update the metadata of a privateLinkServicesForM365ComplianceCenter instance. |
 | `privateLinkServicesForM365ComplianceCenter_Delete` | `DELETE` | `resourceGroupName, resourceName, subscriptionId` | Delete a service instance. |
-| `privateLinkServicesForM365ComplianceCenter_Get` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Get the metadata of a privateLinkServicesForM365ComplianceCenter resource. |
 | `privateLinkServicesForM365ComplianceCenter_Update` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Update the metadata of a privateLinkServicesForM365ComplianceCenter instance. |

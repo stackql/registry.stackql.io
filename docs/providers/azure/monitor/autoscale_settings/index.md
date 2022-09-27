@@ -27,24 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Azure resource Id |
-| `name` | `string` | the name of the autoscale setting. |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
+| `name` | `string` | The name of the resource |
+| `properties` | `object` | A setting that contains all of the configuration for the automatic scaling of a resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
-| `enabled` | `boolean` | the enabled flag. Specifies whether automatic scaling is enabled for the resource. The default value is 'false'. |
-| `targetResourceLocation` | `string` | the location of the resource that the autoscale setting should be added to. |
-| `profiles` | `array` | the collection of automatic scaling profiles that specify different scaling parameters for different time periods. A maximum of 20 profiles can be specified. |
-| `targetResourceUri` | `string` | the resource identifier of the resource that the autoscale setting should be added to. |
-| `notifications` | `array` | the collection of notifications. |
-| `predictiveAutoscalePolicy` | `object` | The parameters for enabling predictive autoscale. |
-| `location` | `string` | Resource location |
-| `type` | `string` | Azure resource type |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AutoscaleSettings_Get` | `SELECT` | `autoscaleSettingName, resourceGroupName, subscriptionId` | Gets an autoscale setting |
 | `AutoscaleSettings_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists the autoscale settings for a resource group |
 | `AutoscaleSettings_ListBySubscription` | `SELECT` | `subscriptionId` | Lists the autoscale settings for a subscription |
-| `AutoscaleSettings_CreateOrUpdate` | `INSERT` | `autoscaleSettingName, resourceGroupName, subscriptionId` | Creates or updates an autoscale setting. |
+| `AutoscaleSettings_CreateOrUpdate` | `INSERT` | `autoscaleSettingName, resourceGroupName, subscriptionId, data__properties` | Creates or updates an autoscale setting. |
 | `AutoscaleSettings_Delete` | `DELETE` | `autoscaleSettingName, resourceGroupName, subscriptionId` | Deletes and autoscale setting |
-| `AutoscaleSettings_Get` | `EXEC` | `autoscaleSettingName, resourceGroupName, subscriptionId` | Gets an autoscale setting |
 | `AutoscaleSettings_Update` | `EXEC` | `autoscaleSettingName, resourceGroupName, subscriptionId` | Updates an existing AutoscaleSettingsResource. To update other fields use the CreateOrUpdate method. |

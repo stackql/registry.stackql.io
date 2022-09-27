@@ -29,17 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Name of the Ip Configuration. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `subnet` | `object` | Subnet in a virtual network resource. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `publicIPAddress` | `object` | Public IP address resource. |
+| `properties` | `object` | Properties of IP configuration. |
 | `type` | `string` | Ipconfiguration type. |
-| `privateIPAllocationMethod` | `string` | IP address allocation method. |
-| `privateIPAddress` | `string` | The private IP address of the IP configuration. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualHubIpConfiguration_Get` | `SELECT` | `ipConfigName, resourceGroupName, subscriptionId, virtualHubName` | Retrieves the details of a Virtual Hub Ip configuration. |
 | `VirtualHubIpConfiguration_List` | `SELECT` | `resourceGroupName, subscriptionId, virtualHubName` | Retrieves the details of all VirtualHubIpConfigurations. |
 | `VirtualHubIpConfiguration_CreateOrUpdate` | `INSERT` | `ipConfigName, resourceGroupName, subscriptionId, virtualHubName` | Creates a VirtualHubIpConfiguration resource if it doesn't exist else updates the existing VirtualHubIpConfiguration. |
 | `VirtualHubIpConfiguration_Delete` | `DELETE` | `ipConfigName, resourceGroupName, subscriptionId, virtualHubName` | Deletes a VirtualHubIpConfiguration. |
-| `VirtualHubIpConfiguration_Get` | `EXEC` | `ipConfigName, resourceGroupName, subscriptionId, virtualHubName` | Retrieves the details of a Virtual Hub Ip configuration. |

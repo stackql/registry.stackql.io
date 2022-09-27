@@ -27,26 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `tags` | `object` | Resource tags. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `liftrResourceCategory` | `string` | Liftr resource category |
-| `marketplaceSubscriptionStatus` | `string` | Flag specifying the Marketplace Subscription Status of the resource. If payment is not made in time, the resource will go in Suspended state. |
 | `identity` | `object` | The properties of the managed service identities assigned to this resource. |
-| `provisioningState` | `string` | Provisioning state of the monitoring resource |
-| `monitoringStatus` | `string` | Flag specifying if the resource monitoring is enabled or disabled. |
-| `planData` | `object` | Billing plan information. |
-| `liftrResourcePreference` | `integer` | The priority of the resource. |
-| `userInfo` | `object` | User info. |
 | `location` | `string` | The geo-location where the resource lives |
-| `dynatraceEnvironmentProperties` | `object` | Properties of the Dynatrace environment. |
+| `properties` | `object` | Properties specific to the monitor resource. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `Monitors_Get` | `SELECT` | `monitorName, resourceGroupName, subscriptionId` |
 | `Monitors_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` |
 | `Monitors_ListBySubscriptionId` | `SELECT` | `subscriptionId` |
-| `Monitors_CreateOrUpdate` | `INSERT` | `monitorName, resourceGroupName, subscriptionId` |
+| `Monitors_CreateOrUpdate` | `INSERT` | `monitorName, resourceGroupName, subscriptionId, data__properties` |
 | `Monitors_Delete` | `DELETE` | `monitorName, resourceGroupName, subscriptionId` |
-| `Monitors_Get` | `EXEC` | `monitorName, resourceGroupName, subscriptionId` |
 | `Monitors_GetAccountCredentials` | `EXEC` | `monitorName, resourceGroupName, subscriptionId` |
 | `Monitors_GetSSODetails` | `EXEC` | `monitorName, resourceGroupName, subscriptionId` |
 | `Monitors_GetVMHostPayload` | `EXEC` | `monitorName, resourceGroupName, subscriptionId` |

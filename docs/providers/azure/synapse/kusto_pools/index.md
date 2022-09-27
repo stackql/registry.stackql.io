@@ -27,31 +27,22 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `sku` | `object` | Azure SKU definition. |
-| `enableStreamingIngest` | `boolean` | A boolean value that indicates if the streaming ingest is enabled. |
-| `languageExtensions` | `object` | The list of language extension objects. |
-| `provisioningState` | `string` | The provisioned state of the resource. |
-| `uri` | `string` | The Kusto Pool URI. |
-| `location` | `string` | The geo-location where the resource lives |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
-| `stateReason` | `string` | The reason for the Kusto Pool's current state. |
-| `workspaceUID` | `string` | The workspace unique identifier. |
-| `enablePurge` | `boolean` | A boolean value that indicates if the purge operations are enabled. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `dataIngestionUri` | `string` | The Kusto Pool data ingestion URI. |
-| `optimizedAutoscale` | `object` | A class that contains the optimized auto scale definition. |
-| `state` | `string` | The state of the resource. |
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Class representing the Kusto pool properties. |
+| `sku` | `object` | Azure SKU definition. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `KustoPools_Get` | `SELECT` | `kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Gets a Kusto pool. |
 | `KustoPools_ListByWorkspace` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | List all Kusto pools |
 | `KustoPools_CreateOrUpdate` | `INSERT` | `kustoPoolName, resourceGroupName, subscriptionId, workspaceName, data__sku` | Create or update a Kusto pool. |
 | `KustoPools_Delete` | `DELETE` | `kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Deletes a Kusto pool. |
 | `KustoPools_AddLanguageExtensions` | `EXEC` | `kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Add a list of language extensions that can run within KQL queries. |
 | `KustoPools_CheckNameAvailability` | `EXEC` | `location, subscriptionId, data__name, data__type` | Checks that the kusto pool name is valid and is not already in use. |
 | `KustoPools_DetachFollowerDatabases` | `EXEC` | `kustoPoolName, resourceGroupName, subscriptionId, workspaceName, data__attachedDatabaseConfigurationName, data__clusterResourceId` | Detaches all followers of a database owned by this Kusto Pool. |
-| `KustoPools_Get` | `EXEC` | `kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Gets a Kusto pool. |
 | `KustoPools_ListFollowerDatabases` | `EXEC` | `kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Returns a list of databases that are owned by this Kusto Pool and were followed by another Kusto Pool. |
 | `KustoPools_ListLanguageExtensions` | `EXEC` | `kustoPoolName, resourceGroupName, subscriptionId, workspaceName` | Returns a list of language extensions that can run within KQL queries. |
 | `KustoPools_ListSkus` | `EXEC` | `subscriptionId` | Lists eligible SKUs for Kusto Pool resource. |

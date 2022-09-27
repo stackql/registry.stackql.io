@@ -30,13 +30,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
 | `location` | `string` | Resource location |
-| `provisioningState` | `string` | Azure lifecycle management |
+| `properties` | `object` | Volume group properties |
 | `type` | `string` | Resource type |
-| `groupMetaData` | `object` | Volume group properties |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VolumeGroups_Get` | `SELECT` | `accountName, resourceGroupName, subscriptionId, volumeGroupName` | Get details of the specified volume group |
 | `VolumeGroups_ListByNetAppAccount` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | List all volume groups for given account |
 | `VolumeGroups_Create` | `INSERT` | `accountName, resourceGroupName, subscriptionId, volumeGroupName` | Create a volume group along with specified volumes |
 | `VolumeGroups_Delete` | `DELETE` | `accountName, resourceGroupName, subscriptionId, volumeGroupName` | Delete the specified volume group only if there are no volumes under volume group. |
-| `VolumeGroups_Get` | `EXEC` | `accountName, resourceGroupName, subscriptionId, volumeGroupName` | Get details of the specified volume group |

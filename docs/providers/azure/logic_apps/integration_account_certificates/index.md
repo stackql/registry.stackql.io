@@ -29,18 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `publicCertificate` | `string` | The public certificate. |
-| `key` | `object` | The reference to the key vault key. |
-| `metadata` | `object` | The metadata. |
-| `type` | `string` | Gets the resource type. |
-| `createdTime` | `string` | The created time. |
-| `changedTime` | `string` | The changed time. |
+| `properties` | `object` | The integration account certificate properties. |
 | `tags` | `object` | The resource tags. |
+| `type` | `string` | Gets the resource type. |
 | `location` | `string` | The resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IntegrationAccountCertificates_Get` | `SELECT` | `api-version, certificateName, integrationAccountName, resourceGroupName, subscriptionId` | Gets an integration account certificate. |
 | `IntegrationAccountCertificates_List` | `SELECT` | `api-version, integrationAccountName, resourceGroupName, subscriptionId` | Gets a list of integration account certificates. |
-| `IntegrationAccountCertificates_CreateOrUpdate` | `INSERT` | `api-version, certificateName, integrationAccountName, resourceGroupName, subscriptionId` | Creates or updates an integration account certificate. |
+| `IntegrationAccountCertificates_CreateOrUpdate` | `INSERT` | `api-version, certificateName, integrationAccountName, resourceGroupName, subscriptionId, data__properties` | Creates or updates an integration account certificate. |
 | `IntegrationAccountCertificates_Delete` | `DELETE` | `api-version, certificateName, integrationAccountName, resourceGroupName, subscriptionId` | Deletes an integration account certificate. |
-| `IntegrationAccountCertificates_Get` | `EXEC` | `api-version, certificateName, integrationAccountName, resourceGroupName, subscriptionId` | Gets an integration account certificate. |

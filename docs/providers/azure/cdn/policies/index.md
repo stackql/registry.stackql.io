@@ -27,22 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `provisioningState` | `string` | Provisioning state of the WebApplicationFirewallPolicy. |
 | `location` | `string` | Resource location. |
-| `customRules` | `object` | Defines contents of custom rules |
-| `etag` | `string` | Gets a unique read-only string that changes whenever the resource is updated. |
-| `rateLimitRules` | `object` | Defines contents of rate limit rules |
-| `managedRules` | `object` | Defines the list of managed rule sets for the policy. |
-| `policySettings` | `object` | Defines contents of a web application firewall global configuration |
-| `resourceState` | `string` |  |
+| `properties` | `object` | Defines CDN web application firewall policy properties. |
 | `sku` | `object` | Standard_Verizon = The SKU name for a Standard Verizon CDN profile.<br />Premium_Verizon = The SKU name for a Premium Verizon CDN profile.<br />Custom_Verizon = The SKU name for a Custom Verizon CDN profile.<br />Standard_Akamai = The SKU name for an Akamai CDN profile.<br />Standard_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using GB based billing model.<br />Standard_Microsoft = The SKU name for a Standard Microsoft CDN profile.<br />Standard_AzureFrontDoor =  The SKU name for an Azure Front Door Standard profile.<br />Premium_AzureFrontDoor = The SKU name for an Azure Front Door Premium profile.<br />Standard_955BandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using 95-5 peak bandwidth billing model.<br />Standard_AvgBandWidth_ChinaCdn = The SKU name for a China CDN profile for VOD, Web and download scenarios using monthly average peak bandwidth billing model.<br />StandardPlus_ChinaCdn = The SKU name for a China CDN profile for live-streaming using GB based billing model.<br />StandardPlus_955BandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using 95-5 peak bandwidth billing model.<br />StandardPlus_AvgBandWidth_ChinaCdn = The SKU name for a China CDN live-streaming profile using monthly average peak bandwidth billing model.<br /> |
 | `tags` | `object` | Resource tags. |
-| `endpointLinks` | `array` | Describes Azure CDN endpoints associated with this Web Application Firewall policy. |
+| `etag` | `string` | Gets a unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Policies_Get` | `SELECT` | `policyName, resourceGroupName, subscriptionId` | Retrieve protection policy with specified name within a resource group. |
 | `Policies_List` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all of the protection policies within a resource group. |
 | `Policies_CreateOrUpdate` | `INSERT` | `policyName, resourceGroupName, subscriptionId, data__sku` | Create or update policy with specified rule set name within a resource group. |
 | `Policies_Delete` | `DELETE` | `policyName, resourceGroupName, subscriptionId` | Deletes Policy |
-| `Policies_Get` | `EXEC` | `policyName, resourceGroupName, subscriptionId` | Retrieve protection policy with specified name within a resource group. |
 | `Policies_Update` | `EXEC` | `policyName, resourceGroupName, subscriptionId` | Update an existing CdnWebApplicationFirewallPolicy with the specified policy name under the specified subscription and resource group |

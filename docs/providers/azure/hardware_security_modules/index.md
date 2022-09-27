@@ -22,7 +22,7 @@ Hardware Security Modules
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Hardware Security Modules (Microsoft.HardwareSecurityModules)</td></tr>
 <tr><td><b>Description</b></td><td>Hardware Security Modules</td></tr>
-<tr><td><b>Id</b></td><td><code>hardware_security_modules:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>hardware_security_modules:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

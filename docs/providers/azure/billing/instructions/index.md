@@ -29,14 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `startDate` | `string` | The date this billing instruction goes into effect. |
 | `type` | `string` | Resource type. |
-| `amount` | `number` | The amount budgeted for this billing instruction. |
-| `creationDate` | `string` | The date this billing instruction was created. |
-| `endDate` | `string` | The date this billing instruction is no longer in effect. |
+| `properties` | `object` | A billing instruction used during invoice generation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Instructions_Get` | `SELECT` | `billingAccountName, billingProfileName, instructionName` | Get the instruction by name. These are custom billing instructions and are only applicable for certain customers. |
 | `Instructions_ListByBillingProfile` | `SELECT` | `billingAccountName, billingProfileName` | Lists the instructions by billing profile id. |
-| `Instructions_Get` | `EXEC` | `billingAccountName, billingProfileName, instructionName` | Get the instruction by name. These are custom billing instructions and are only applicable for certain customers. |
 | `Instructions_Put` | `EXEC` | `billingAccountName, billingProfileName, instructionName` | Creates or updates an instruction. These are custom billing instructions and are only applicable for certain customers. |

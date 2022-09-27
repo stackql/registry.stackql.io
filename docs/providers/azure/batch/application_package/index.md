@@ -29,18 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `etag` | `string` | The ETag of the resource, used for concurrency statements. |
-| `state` | `string` | The current state of the application package. |
-| `format` | `string` | The format of the application package, if the package is active. |
-| `lastActivationTime` | `string` | The time at which the package was last activated, if the package is active. |
-| `storageUrlExpiry` | `string` | The UTC time at which the Azure Storage URL will expire. |
+| `properties` | `object` | Properties of an application package |
 | `type` | `string` | The type of the resource. |
-| `storageUrl` | `string` | The URL for the application package in Azure Storage. |
+| `etag` | `string` | The ETag of the resource, used for concurrency statements. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ApplicationPackage_Get` | `SELECT` | `accountName, applicationName, resourceGroupName, subscriptionId, versionName` | Gets information about the specified application package. |
 | `ApplicationPackage_List` | `SELECT` | `accountName, applicationName, resourceGroupName, subscriptionId` | Lists all of the application packages in the specified application. |
 | `ApplicationPackage_Create` | `INSERT` | `accountName, applicationName, resourceGroupName, subscriptionId, versionName` | Creates an application package record. The record contains a storageUrl where the package should be uploaded to.  Once it is uploaded the `ApplicationPackage` needs to be activated using `ApplicationPackageActive` before it can be used. If the auto storage account was configured to use storage keys, the URL returned will contain a SAS. |
 | `ApplicationPackage_Delete` | `DELETE` | `accountName, applicationName, resourceGroupName, subscriptionId, versionName` | Deletes an application package record and its associated binary file. |
 | `ApplicationPackage_Activate` | `EXEC` | `accountName, applicationName, resourceGroupName, subscriptionId, versionName, data__format` | Activates the specified application package. This should be done after the `ApplicationPackage` was created and uploaded. This needs to be done before an `ApplicationPackage` can be used on Pools or Tasks. |
-| `ApplicationPackage_Get` | `EXEC` | `accountName, applicationName, resourceGroupName, subscriptionId, versionName` | Gets information about the specified application package. |

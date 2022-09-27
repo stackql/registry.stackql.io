@@ -29,18 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource Name. |
-| `tags` | `object` | Resource tags. |
-| `type` | `string` | Resource type. |
-| `extendedLocation` | `object` | Extended Location. |
 | `kind` | `string` | Kind of resource. |
 | `location` | `string` | Resource Location. |
 | `properties` | `object` | KubeEnvironment resource specific properties |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type. |
+| `extendedLocation` | `object` | Extended Location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `KubeEnvironments_Get` | `SELECT` | `name, resourceGroupName, subscriptionId` | Description for Get the properties of a Kubernetes Environment. |
 | `KubeEnvironments_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Description for Get all the Kubernetes Environments in a resource group. |
 | `KubeEnvironments_ListBySubscription` | `SELECT` | `subscriptionId` | Description for Get all Kubernetes Environments for a subscription. |
 | `KubeEnvironments_CreateOrUpdate` | `INSERT` | `name, resourceGroupName, subscriptionId` | Description for Creates or updates a Kubernetes Environment. |
 | `KubeEnvironments_Delete` | `DELETE` | `name, resourceGroupName, subscriptionId` | Description for Delete a Kubernetes Environment. |
-| `KubeEnvironments_Get` | `EXEC` | `name, resourceGroupName, subscriptionId` | Description for Get the properties of a Kubernetes Environment. |
 | `KubeEnvironments_Update` | `EXEC` | `name, resourceGroupName, subscriptionId` | Description for Creates or updates a Kubernetes Environment. |

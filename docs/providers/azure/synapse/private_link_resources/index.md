@@ -29,5 +29,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateLinkResources_Get` | `SELECT` | `privateLinkResourceName, resourceGroupName, subscriptionId, workspaceName` | Get private link resource in workspace |
 | `PrivateLinkResources_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Get all private link resources for a workspaces |
-| `PrivateLinkResources_Get` | `EXEC` | `privateLinkResourceName, resourceGroupName, subscriptionId, workspaceName` | Get private link resource in workspace |

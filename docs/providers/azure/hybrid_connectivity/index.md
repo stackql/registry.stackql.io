@@ -22,7 +22,7 @@ Hybrid Connectivity
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Hybrid Connectivity (Microsoft.HybridConnectivity)</td></tr>
 <tr><td><b>Description</b></td><td>Hybrid Connectivity</td></tr>
-<tr><td><b>Id</b></td><td><code>hybrid_connectivity:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>hybrid_connectivity:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

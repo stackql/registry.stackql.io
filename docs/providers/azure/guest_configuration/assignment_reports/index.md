@@ -33,5 +33,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `GuestConfigurationAssignmentReports_Get` | `SELECT` | `guestConfigurationAssignmentName, reportId, resourceGroupName, subscriptionId, vmName` | Get a report for the guest configuration assignment, by reportId. |
 | `GuestConfigurationAssignmentReports_List` | `SELECT` | `guestConfigurationAssignmentName, resourceGroupName, subscriptionId, vmName` | List all reports for the guest configuration assignment, latest report first. |
-| `GuestConfigurationAssignmentReports_Get` | `EXEC` | `guestConfigurationAssignmentName, reportId, resourceGroupName, subscriptionId, vmName` | Get a report for the guest configuration assignment, by reportId. |

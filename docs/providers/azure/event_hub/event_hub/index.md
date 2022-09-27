@@ -36,12 +36,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `EventHubs_Get` | `SELECT` | `eventHubName, namespaceName, resourceGroupName, subscriptionId` | Gets an Event Hubs description for the specified Event Hub. |
 | `EventHubs_ListByNamespace` | `SELECT` | `namespaceName, resourceGroupName, subscriptionId` | Gets all the Event Hubs in a Namespace. |
 | `EventHubs_CreateOrUpdate` | `INSERT` | `eventHubName, namespaceName, resourceGroupName, subscriptionId` | Creates or updates a new Event Hub as a nested resource within a Namespace. |
 | `EventHubs_Delete` | `DELETE` | `eventHubName, namespaceName, resourceGroupName, subscriptionId` | Deletes an Event Hub from the specified Namespace and resource group. |
 | `EventHubs_CreateOrUpdateAuthorizationRule` | `EXEC` | `authorizationRuleName, eventHubName, namespaceName, resourceGroupName, subscriptionId` | Creates or updates an AuthorizationRule for the specified Event Hub. Creation/update of the AuthorizationRule will take a few seconds to take effect. |
 | `EventHubs_DeleteAuthorizationRule` | `EXEC` | `authorizationRuleName, eventHubName, namespaceName, resourceGroupName, subscriptionId` | Deletes an Event Hub AuthorizationRule. |
-| `EventHubs_Get` | `EXEC` | `eventHubName, namespaceName, resourceGroupName, subscriptionId` | Gets an Event Hubs description for the specified Event Hub. |
 | `EventHubs_GetAuthorizationRule` | `EXEC` | `authorizationRuleName, eventHubName, namespaceName, resourceGroupName, subscriptionId` | Gets an AuthorizationRule for an Event Hub by rule name. |
 | `EventHubs_ListAuthorizationRules` | `EXEC` | `eventHubName, namespaceName, resourceGroupName, subscriptionId` | Gets the authorization rules for an Event Hub. |
 | `EventHubs_ListKeys` | `EXEC` | `authorizationRuleName, eventHubName, namespaceName, resourceGroupName, subscriptionId` | Gets the ACS and SAS connection strings for the Event Hub. |

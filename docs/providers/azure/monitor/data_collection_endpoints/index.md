@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `type` | `string` | The type of the resource. |
-| `location` | `string` | The geo-location where the resource lives. |
 | `tags` | `object` | Resource tags. |
-| `properties` | `object` | Resource properties. |
+| `type` | `string` | The type of the resource. |
 | `etag` | `string` | Resource entity tag (ETag). |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `location` | `string` | The geo-location where the resource lives. |
+| `properties` | `object` | Resource properties. |
 | `kind` | `string` | The kind of the resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `DataCollectionEndpoints_Get` | `SELECT` | `dataCollectionEndpointName, resourceGroupName, subscriptionId` |
 | `DataCollectionEndpoints_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` |
 | `DataCollectionEndpoints_ListBySubscription` | `SELECT` | `subscriptionId` |
 | `DataCollectionEndpoints_Create` | `INSERT` | `dataCollectionEndpointName, resourceGroupName, subscriptionId, data__location` |
 | `DataCollectionEndpoints_Delete` | `DELETE` | `dataCollectionEndpointName, resourceGroupName, subscriptionId` |
-| `DataCollectionEndpoints_Get` | `EXEC` | `dataCollectionEndpointName, resourceGroupName, subscriptionId` |
 | `DataCollectionEndpoints_Update` | `EXEC` | `dataCollectionEndpointName, resourceGroupName, subscriptionId` |

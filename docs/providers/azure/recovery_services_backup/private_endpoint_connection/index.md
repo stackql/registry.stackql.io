@@ -25,10 +25,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id represents the complete path to the resource. |
+| `name` | `string` | Resource name associated with the resource. |
+| `properties` | `object` | Private Endpoint Connection Response Properties |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/... |
+| `eTag` | `string` | Optional ETag. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnection_Get` | `SELECT` | `api-version, privateEndpointConnectionName, resourceGroupName, subscriptionId, vaultName` | Get Private Endpoint Connection. This call is made by Backup Admin. |
 | `PrivateEndpointConnection_Delete` | `DELETE` | `api-version, privateEndpointConnectionName, resourceGroupName, subscriptionId, vaultName` | Delete Private Endpoint requests. This call is made by Backup Admin. |
-| `PrivateEndpointConnection_Get` | `EXEC` | `api-version, privateEndpointConnectionName, resourceGroupName, subscriptionId, vaultName` | Get Private Endpoint Connection. This call is made by Backup Admin. |
 | `PrivateEndpointConnection_Put` | `EXEC` | `api-version, privateEndpointConnectionName, resourceGroupName, subscriptionId, vaultName` | Approve or Reject Private Endpoint requests. This call is made by Backup Admin. |

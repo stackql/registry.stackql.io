@@ -29,12 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `requiredZoneNames` | `array` | The list of required DNS zone names of the private link resource. |
+| `properties` | `object` | Properties of a private link resource. |
 | `type` | `string` | The type of the resource. |
-| `groupId` | `string` | The private link resource group id. |
-| `requiredMembers` | `array` | The private link resource required member names. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateLinkResources_Get` | `SELECT` | `configStoreName, groupName, resourceGroupName, subscriptionId` | Gets a private link resource that need to be created for a configuration store. |
 | `PrivateLinkResources_ListByConfigurationStore` | `SELECT` | `configStoreName, resourceGroupName, subscriptionId` | Gets the private link resources that need to be created for a configuration store. |
-| `PrivateLinkResources_Get` | `EXEC` | `configStoreName, groupName, resourceGroupName, subscriptionId` | Gets a private link resource that need to be created for a configuration store. |

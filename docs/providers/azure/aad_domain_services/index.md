@@ -22,7 +22,7 @@ The AAD Domain Services API.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Domain Services Resource Provider (Microsoft.Aad)</td></tr>
 <tr><td><b>Description</b></td><td>The AAD Domain Services API.</td></tr>
-<tr><td><b>Id</b></td><td><code>aad_domain_services:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>aad_domain_services:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

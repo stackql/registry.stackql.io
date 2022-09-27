@@ -29,21 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `purchasedDate` | `string` | The date when the lot was added. |
-| `status` | `string` | The status of the lot. |
-| `originalAmount` | `object` | The amount plus currency . |
-| `source` | `string` | The source of the lot. |
-| `closedBalance` | `object` | The amount plus currency . |
-| `originalAmountInBillingCurrency` | `object` | The amount with exchange rate. |
+| `properties` | `object` | The lot properties. |
 | `type` | `string` | Resource type. |
-| `billingCurrency` | `string` | The billing currency of the lot. |
-| `startDate` | `string` | The date when the lot became effective. |
-| `eTag` | `string` | The eTag for the resource. |
-| `expirationDate` | `string` | The expiration date of a lot. |
-| `closedBalanceInBillingCurrency` | `object` | The amount with exchange rate. |
-| `reseller` | `object` | The reseller properties. |
-| `creditCurrency` | `string` | The currency of the lot. |
-| `poNumber` | `string` | The po number of the invoice on which the lot was added. This property is not available for ConsumptionCommitment lots. |
+| `eTag` | `string` | eTag of the resource. To handle concurrent update scenario, this field will be used to determine whether the user is updating the latest version or not. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

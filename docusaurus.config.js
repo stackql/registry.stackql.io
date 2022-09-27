@@ -60,7 +60,7 @@ const config = {
     announcementBar: {
       id: 'support_us',
       content:
-      `${azureSvg} Microsoft Azure provider for StackQL available now, If you like StackQL, give it a ⭐️ on GitHub`,
+      `${azureSvg} Microsoft Azure and ${awsSvg} AWS providers for StackQL available now, If you like StackQL, give it a ⭐️ on GitHub`,
       backgroundColor: '#A9BCD0',
       textColor: '#1A4E82',
       isCloseable: true,

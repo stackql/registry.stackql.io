@@ -29,20 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `virtualHub` | `object` | Virtual Hub identifier. |
-| `type` | `string` | Resource type. |
 | `tags` | `object` | Resource tags. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `autoScaleConfiguration` | `` | Configuration for auto scaling. |
-| `location` | `string` | Resource location. |
+| `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `expressRouteConnections` | `array` | List of ExpressRoute connections to the ExpressRoute gateway. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | ExpressRoute gateway resource properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ExpressRouteGateways_Get` | `SELECT` | `expressRouteGatewayName, resourceGroupName, subscriptionId` | Fetches the details of a ExpressRoute gateway in a resource group. |
 | `ExpressRouteGateways_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists ExpressRoute gateways in a given resource group. |
 | `ExpressRouteGateways_ListBySubscription` | `SELECT` | `subscriptionId` | Lists ExpressRoute gateways under a given subscription. |
 | `ExpressRouteGateways_CreateOrUpdate` | `INSERT` | `expressRouteGatewayName, resourceGroupName, subscriptionId` | Creates or updates a ExpressRoute gateway in a specified resource group. |
 | `ExpressRouteGateways_Delete` | `DELETE` | `expressRouteGatewayName, resourceGroupName, subscriptionId` | Deletes the specified ExpressRoute gateway in a resource group. An ExpressRoute gateway resource can only be deleted when there are no connection subresources. |
-| `ExpressRouteGateways_Get` | `EXEC` | `expressRouteGatewayName, resourceGroupName, subscriptionId` | Fetches the details of a ExpressRoute gateway in a resource group. |
 | `ExpressRouteGateways_UpdateTags` | `EXEC` | `expressRouteGatewayName, resourceGroupName, subscriptionId` | Updates express route gateway tags. |

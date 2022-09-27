@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
+| `location` | `string` | Resource Location |
 | `properties` | `object` | Storage object properties. |
 | `type` | `string` | Resource Type |
-| `location` | `string` | Resource Location |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReplicationStorageClassifications_Get` | `SELECT` | `api-version, fabricName, resourceGroupName, resourceName, storageClassificationName, subscriptionId` | Gets the details of the specified storage classification. |
 | `ReplicationStorageClassifications_List` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` | Lists the storage classifications in the vault. |
 | `ReplicationStorageClassifications_ListByReplicationFabrics` | `SELECT` | `api-version, fabricName, resourceGroupName, resourceName, subscriptionId` | Lists the storage classifications available in the specified fabric. |
-| `ReplicationStorageClassifications_Get` | `EXEC` | `api-version, fabricName, resourceGroupName, resourceName, storageClassificationName, subscriptionId` | Gets the details of the specified storage classification. |

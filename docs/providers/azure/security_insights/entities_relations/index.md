@@ -27,11 +27,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `relatedResourceId` | `string` | The resource ID of the related resource |
-| `relatedResourceKind` | `string` | The resource kind of the related resource |
-| `relatedResourceName` | `string` | The name of the related resource |
-| `relatedResourceType` | `string` | The resource type of the related resource |
 | `etag` | `string` | Etag of the azure resource |
+| `properties` | `object` | Relation property bag. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

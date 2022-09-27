@@ -27,13 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `properties` | `object` | This type describes properties of a volume resource. |
 | `tags` | `object` | Resource tags. |
 | `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Volume_Get` | `SELECT` | `api-version, resourceGroupName, subscriptionId, volumeResourceName` | Gets the information about the volume resource with the given name. The information include the description and other properties of the volume. |
 | `Volume_ListByResourceGroup` | `SELECT` | `api-version, resourceGroupName, subscriptionId` | Gets the information about all volume resources in a given resource group. The information include the description and other properties of the Volume. |
 | `Volume_ListBySubscription` | `SELECT` | `api-version, subscriptionId` | Gets the information about all volume resources in a given resource group. The information include the description and other properties of the volume. |
-| `Volume_Create` | `INSERT` | `api-version, resourceGroupName, subscriptionId, volumeResourceName` | Creates a volume resource with the specified name, description and properties. If a volume resource with the same name exists, then it is updated with the specified description and properties. |
+| `Volume_Create` | `INSERT` | `api-version, resourceGroupName, subscriptionId, volumeResourceName, data__properties` | Creates a volume resource with the specified name, description and properties. If a volume resource with the same name exists, then it is updated with the specified description and properties. |
 | `Volume_Delete` | `DELETE` | `api-version, resourceGroupName, subscriptionId, volumeResourceName` | Deletes the volume resource identified by the name. |
-| `Volume_Get` | `EXEC` | `api-version, resourceGroupName, subscriptionId, volumeResourceName` | Gets the information about the volume resource with the given name. The information include the description and other properties of the volume. |

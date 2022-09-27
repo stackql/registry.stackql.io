@@ -35,8 +35,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Entities_Get` | `SELECT` | `entityId, resourceGroupName, subscriptionId, workspaceName` | Gets an entity. |
 | `Entities_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets all entities. |
 | `Entities_Expand` | `EXEC` | `entityId, resourceGroupName, subscriptionId, workspaceName` | Expands an entity. |
-| `Entities_Get` | `EXEC` | `entityId, resourceGroupName, subscriptionId, workspaceName` | Gets an entity. |
 | `Entities_GetInsights` | `EXEC` | `entityId, resourceGroupName, subscriptionId, workspaceName, data__endTime, data__startTime` | Execute Insights for an entity. |
 | `Entities_Queries` | `EXEC` | `entityId, kind, resourceGroupName, subscriptionId, workspaceName` | Get Insights and Activities for an entity. |

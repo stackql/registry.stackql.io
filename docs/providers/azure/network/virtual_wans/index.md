@@ -29,23 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `type` | `string` | Resource type. |
-| `vpnSites` | `array` | List of VpnSites in the VirtualWAN. |
-| `location` | `string` | Resource location. |
-| `allowVnetToVnetTraffic` | `boolean` | True if Vnet to Vnet traffic is allowed. |
-| `virtualHubs` | `array` | List of VirtualHubs in the VirtualWAN. |
-| `disableVpnEncryption` | `boolean` | Vpn encryption to be disabled or not. |
-| `office365LocalBreakoutCategory` | `string` | The office traffic category. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `properties` | `object` | Parameters for VirtualWAN. |
 | `tags` | `object` | Resource tags. |
-| `allowBranchToBranchTraffic` | `boolean` | True if branch to branch traffic is allowed. |
+| `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualWans_Get` | `SELECT` | `VirtualWANName, resourceGroupName, subscriptionId` | Retrieves the details of a VirtualWAN. |
 | `VirtualWans_List` | `SELECT` | `subscriptionId` | Lists all the VirtualWANs in a subscription. |
 | `VirtualWans_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all the VirtualWANs in a resource group. |
 | `VirtualWans_CreateOrUpdate` | `INSERT` | `VirtualWANName, resourceGroupName, subscriptionId, data__location` | Creates a VirtualWAN resource if it doesn't exist else updates the existing VirtualWAN. |
 | `VirtualWans_Delete` | `DELETE` | `VirtualWANName, resourceGroupName, subscriptionId` | Deletes a VirtualWAN. |
-| `VirtualWans_Get` | `EXEC` | `VirtualWANName, resourceGroupName, subscriptionId` | Retrieves the details of a VirtualWAN. |
 | `VirtualWans_UpdateTags` | `EXEC` | `VirtualWANName, resourceGroupName, subscriptionId` | Updates a VirtualWAN tags. |

@@ -27,27 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `creationDate` | `string` | Date the SQL pool was created |
+| `properties` | `object` | Properties of a SQL Analytics pool |
+| `sku` | `object` | The resource model definition representing SKU |
 | `tags` | `object` | Resource tags. |
-| `recoverableDatabaseId` | `string` | Backup database to restore from |
-| `createMode` | `string` | Specifies the mode of sql pool creation.<br /><br />Default: regular sql pool creation.<br /><br />PointInTimeRestore: Creates a sql pool by restoring a point in time backup of an existing sql pool. sourceDatabaseId must be specified as the resource ID of the existing sql pool, and restorePointInTime must be specified.<br /><br />Recovery: Creates a sql pool by a geo-replicated backup. sourceDatabaseId  must be specified as the recoverableDatabaseId to restore.<br /><br />Restore: Creates a sql pool by restoring a backup of a deleted sql  pool. SourceDatabaseId should be the sql pool's original resource ID. SourceDatabaseId and sourceDatabaseDeletionDate must be specified. |
-| `restorePointInTime` | `string` | Snapshot time to restore |
-| `provisioningState` | `string` | Resource state |
-| `collation` | `string` | Collation mode |
-| `sku` | `object` | SQL pool SKU |
 | `location` | `string` | The geo-location where the resource lives |
-| `maxSizeBytes` | `integer` | Maximum size in bytes |
-| `sourceDatabaseId` | `string` | Source database to create from |
-| `sourceDatabaseDeletionDate` | `string` | Specifies the time that the sql pool was deleted |
-| `status` | `string` | Resource status |
-| `storageAccountType` | `string` | The storage account type used to store backups for this sql pool. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SqlPools_Get` | `SELECT` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Get SQL pool properties |
 | `SqlPools_ListByWorkspace` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | List all SQL pools |
 | `SqlPools_Create` | `INSERT` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Create a SQL pool |
 | `SqlPools_Delete` | `DELETE` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Delete a SQL pool |
-| `SqlPools_Get` | `EXEC` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Get SQL pool properties |
 | `SqlPools_Pause` | `EXEC` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Pause a SQL pool |
 | `SqlPools_Rename` | `EXEC` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName, data__id` | Rename a SQL pool. |
 | `SqlPools_Resume` | `EXEC` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Resume a SQL pool |

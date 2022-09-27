@@ -25,14 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `uniqueId` | `string` | Unique Id |
-| `syncGroupStatus` | `string` | Sync group status |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SyncGroups_Get` | `SELECT` | `resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Get a given SyncGroup. |
 | `SyncGroups_ListByStorageSyncService` | `SELECT` | `resourceGroupName, storageSyncServiceName, subscriptionId` | Get a SyncGroup List. |
 | `SyncGroups_Create` | `INSERT` | `resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Create a new SyncGroup. |
 | `SyncGroups_Delete` | `DELETE` | `resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Delete a given SyncGroup. |
-| `SyncGroups_Get` | `EXEC` | `resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Get a given SyncGroup. |

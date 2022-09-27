@@ -27,15 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `nextLink` | `string` | The continuation token for the next page of results. |
-| `value` | `array` | Enumeration of the Virtual Network DNS Forwarding Ruleset. |
+| `properties` | `object` | Represents the properties of a DNS forwarding ruleset. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `tags` | `object` | Resource tags. |
+| `etag` | `string` | ETag of the DNS forwarding ruleset. |
+| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DnsForwardingRulesets_Get` | `SELECT` | `dnsForwardingRulesetName, resourceGroupName, subscriptionId` | Gets a DNS forwarding ruleset properties. |
 | `DnsForwardingRulesets_List` | `SELECT` | `subscriptionId` | Lists DNS forwarding rulesets in all resource groups of a subscription. |
 | `DnsForwardingRulesets_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists DNS forwarding rulesets within a resource group. |
 | `DnsForwardingRulesets_ListByVirtualNetwork` | `SELECT` | `resourceGroupName, subscriptionId, virtualNetworkName` | Lists DNS forwarding ruleset resource IDs attached to a virtual network. |
-| `DnsForwardingRulesets_CreateOrUpdate` | `INSERT` | `dnsForwardingRulesetName, resourceGroupName, subscriptionId` | Creates or updates a DNS forwarding ruleset. |
+| `DnsForwardingRulesets_CreateOrUpdate` | `INSERT` | `dnsForwardingRulesetName, resourceGroupName, subscriptionId, data__properties` | Creates or updates a DNS forwarding ruleset. |
 | `DnsForwardingRulesets_Delete` | `DELETE` | `dnsForwardingRulesetName, resourceGroupName, subscriptionId` | Deletes a DNS forwarding ruleset. WARNING: This operation cannot be undone. All forwarding rules within the ruleset will be deleted. |
-| `DnsForwardingRulesets_Get` | `EXEC` | `dnsForwardingRulesetName, resourceGroupName, subscriptionId` | Gets a DNS forwarding ruleset properties. |
 | `DnsForwardingRulesets_Update` | `EXEC` | `dnsForwardingRulesetName, resourceGroupName, subscriptionId` | Updates a DNS forwarding ruleset. |

@@ -27,17 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `uri` | `string` | The URI of the server key. |
 | `kind` | `string` | Kind of encryption protector. This is metadata used for the Azure portal experience. |
 | `location` | `string` | Resource location. |
-| `serverKeyName` | `string` | The name of the server key. |
-| `serverKeyType` | `string` | The encryption protector type like 'ServiceManaged', 'AzureKeyVault'. |
-| `subregion` | `string` | Subregion of the encryption protector. |
-| `thumbprint` | `string` | Thumbprint of the server key. |
+| `properties` | `object` | Properties for an encryption protector execution. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WorkspaceManagedSqlServerEncryptionProtector_Get` | `SELECT` | `encryptionProtectorName, resourceGroupName, subscriptionId, workspaceName` | Get workspace managed sql server's encryption protector. |
 | `WorkspaceManagedSqlServerEncryptionProtector_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Get list of encryption protectors for workspace managed sql server. |
 | `WorkspaceManagedSqlServerEncryptionProtector_CreateOrUpdate` | `INSERT` | `encryptionProtectorName, resourceGroupName, subscriptionId, workspaceName` | Updates workspace managed sql server's encryption protector. |
-| `WorkspaceManagedSqlServerEncryptionProtector_Get` | `EXEC` | `encryptionProtectorName, resourceGroupName, subscriptionId, workspaceName` | Get workspace managed sql server's encryption protector. |
 | `WorkspaceManagedSqlServerEncryptionProtector_Revalidate` | `EXEC` | `encryptionProtectorName, resourceGroupName, subscriptionId, workspaceName` | Revalidates workspace managed sql server's existing encryption protector. |

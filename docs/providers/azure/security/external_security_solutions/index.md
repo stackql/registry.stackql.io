@@ -27,11 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `nextLink` | `string` | The URI to fetch the next page. |
-| `value` | `array` |  |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
+| `name` | `string` | The name of the resource |
+| `kind` | `string` | The kind of the external solution |
+| `location` | `string` | Location where the resource is stored |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ExternalSecuritySolutions_Get` | `SELECT` | `api-version, ascLocation, externalSecuritySolutionsName, resourceGroupName, subscriptionId` | Gets a specific external Security Solution. |
 | `ExternalSecuritySolutions_List` | `SELECT` | `api-version, subscriptionId` | Gets a list of external security solutions for the subscription. |
 | `ExternalSecuritySolutions_ListByHomeRegion` | `SELECT` | `api-version, ascLocation, subscriptionId` | Gets a list of external Security Solutions for the subscription and location. |
-| `ExternalSecuritySolutions_Get` | `EXEC` | `api-version, ascLocation, externalSecuritySolutionsName, resourceGroupName, subscriptionId` | Gets a specific external Security Solution. |

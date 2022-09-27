@@ -22,7 +22,7 @@ Capacity Reservations
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Capacity Reservations (Microsoft.Capacity)</td></tr>
 <tr><td><b>Description</b></td><td>Capacity Reservations</td></tr>
-<tr><td><b>Id</b></td><td><code>reservations:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>reservations:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -30,6 +30,7 @@ Capacity Reservations
 <div class="providerDocColumn">
 <a href="/providers/azure/reservations/applied_reservation/">applied_reservation</a><br />
 <a href="/providers/azure/reservations/calculate_exchange/">calculate_exchange</a><br />
+<a href="/providers/azure/reservations/calculate_refund/">calculate_refund</a><br />
 <a href="/providers/azure/reservations/catalog/">catalog</a><br />
 <a href="/providers/azure/reservations/exchange/">exchange</a><br />
 <a href="/providers/azure/reservations/operation/">operation</a><br />
@@ -39,5 +40,6 @@ Capacity Reservations
 <a href="/providers/azure/reservations/quota_request_status/">quota_request_status</a><br />
 <a href="/providers/azure/reservations/reservation/">reservation</a><br />
 <a href="/providers/azure/reservations/reservation_order/">reservation_order</a><br />
+<a href="/providers/azure/reservations/return/">return</a><br />
 </div>
 </div>

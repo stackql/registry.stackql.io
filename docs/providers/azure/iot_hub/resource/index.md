@@ -29,17 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
-| `properties` | `object` | The properties of an IoT hub. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `tags` | `object` | The resource tags. |
+| `location` | `string` | The resource location. |
+| `sku` | `object` | Information about the SKU of the IoT hub. |
 | `type` | `string` | The resource type. |
 | `identity` | `object` |  |
-| `location` | `string` | The resource location. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `sku` | `object` | Information about the SKU of the IoT hub. |
-| `tags` | `object` | The resource tags. |
+| `properties` | `object` | The properties of an IoT hub. |
 | `etag` | `string` | The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IotHubResource_Get` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` | Get the non-security related metadata of an IoT hub. |
 | `IotHubResource_ListByResourceGroup` | `SELECT` | `api-version, resourceGroupName, subscriptionId` | Get all the IoT hubs in a resource group. |
 | `IotHubResource_ListBySubscription` | `SELECT` | `api-version, subscriptionId` | Get all the IoT hubs in a subscription. |
 | `IotHubResource_CreateOrUpdate` | `INSERT` | `api-version, resourceGroupName, resourceName, subscriptionId, data__sku` | Create or update the metadata of an Iot hub. The usual pattern to modify a property is to retrieve the IoT hub metadata and security metadata, and then combine them with the modified values in a new body to update the IoT hub. |
@@ -48,7 +49,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `IotHubResource_CreateEventHubConsumerGroup` | `EXEC` | `api-version, eventHubEndpointName, name, resourceGroupName, resourceName, subscriptionId, data__properties` | Add a consumer group to an Event Hub-compatible endpoint in an IoT hub. |
 | `IotHubResource_DeleteEventHubConsumerGroup` | `EXEC` | `api-version, eventHubEndpointName, name, resourceGroupName, resourceName, subscriptionId` | Delete a consumer group from an Event Hub-compatible endpoint in an IoT hub. |
 | `IotHubResource_ExportDevices` | `EXEC` | `api-version, resourceGroupName, resourceName, subscriptionId, data__excludeKeys, data__exportBlobContainerUri` | Exports all the device identities in the IoT hub identity registry to an Azure Storage blob container. For more information, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-identity-registry#import-and-export-device-identities. |
-| `IotHubResource_Get` | `EXEC` | `api-version, resourceGroupName, resourceName, subscriptionId` | Get the non-security related metadata of an IoT hub. |
 | `IotHubResource_GetEndpointHealth` | `EXEC` | `api-version, iotHubName, resourceGroupName, subscriptionId` | Get the health for routing endpoints. |
 | `IotHubResource_GetEventHubConsumerGroup` | `EXEC` | `api-version, eventHubEndpointName, name, resourceGroupName, resourceName, subscriptionId` | Get a consumer group from the Event Hub-compatible device-to-cloud endpoint for an IoT hub. |
 | `IotHubResource_GetJob` | `EXEC` | `api-version, jobId, resourceGroupName, resourceName, subscriptionId` | Get the details of a job from an IoT hub. For more information, see: https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-identity-registry. |

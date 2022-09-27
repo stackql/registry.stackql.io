@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
+| `properties` | `object` | Container registry configuration property. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `maximumCapacityInGiB` | `integer` | Total storage capacity (GiB) which can used by the registry. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ContainerRegistryConfiguration_Get` | `SELECT` | `configurationName, location, subscriptionId` | Returns the specified configuration details. |
 | `ContainerRegistryConfiguration_List` | `SELECT` | `location, subscriptionId` | Returns a list of configuration at the given location. |
 | `ContainerRegistryConfiguration_Delete` | `DELETE` | `configurationName, location, subscriptionId` | Delete an existing container registry configuration |
-| `ContainerRegistryConfiguration_Get` | `EXEC` | `configurationName, location, subscriptionId` | Returns the specified configuration details. |
-| `ContainerRegistryConfiguration_Put` | `EXEC` | `configurationName, location, subscriptionId` | Configure container registry overall configuration properties. |
+| `ContainerRegistryConfiguration_Put` | `EXEC` | `configurationName, location, subscriptionId, data__properties` | Configure container registry overall configuration properties. |

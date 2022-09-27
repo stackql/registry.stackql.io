@@ -27,18 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `postgresqlVersion` | `string` | The PostgreSQL version. |
-| `state` | `string` | A state of a server group/server that is visible to user. |
+| `properties` | `object` | The properties of a server in server group. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `standbyAvailabilityZone` | `string` | Standby Availability Zone information of the server group. |
-| `availabilityZone` | `string` | Availability Zone information of the server group. |
-| `fullyQualifiedDomainName` | `string` | The fully qualified domain name of a server. |
-| `role` | `string` | The role of a server. |
-| `haState` | `string` | A state of a server role group/server that is visible to user for HA feature. |
-| `administratorLogin` | `string` | The administrator's login name of a servers in server group. |
-| `citusVersion` | `string` | The Citus version. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Servers_Get` | `SELECT` | `resourceGroupName, serverGroupName, serverName, subscriptionId` | Gets information about a server in server group. |
 | `Servers_ListByServerGroup` | `SELECT` | `resourceGroupName, serverGroupName, subscriptionId` | Lists servers of a server group. |
-| `Servers_Get` | `EXEC` | `resourceGroupName, serverGroupName, serverName, subscriptionId` | Gets information about a server in server group. |

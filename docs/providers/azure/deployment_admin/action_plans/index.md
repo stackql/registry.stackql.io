@@ -29,21 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `error` | `object` | Error response. |
-| `resourceGroupName` | `string` | The target resource group name |
-| `location` | `string` | Location of the resource. |
-| `endTime` | `string` | The deployment end time |
-| `eTag` | `string` | Entity tag of the resource |
-| `actionPlanUri` | `string` | Action plan uri |
-| `startTime` | `string` | The deployment start time |
-| `provisioningState` | `string` | The provisioning state |
-| `subscriptionId` | `string` | The target subscription identifier |
-| `parameters` | `object` | Error information |
-| `actionPlanInstanceId` | `string` | Action plan instance identifier |
 | `type` | `string` | Type of Resource. |
-| `blobContainerName` | `string` | Blob container name storing the deployment data |
+| `eTag` | `string` | Entity tag of the resource |
+| `location` | `string` | Location of the resource. |
+| `properties` | `object` | Action Plan Properties |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ActionPlans_Get` | `SELECT` | `planId, subscriptionId` | Gets the specified action plan |
 | `ActionPlans_List` | `SELECT` | `subscriptionId` | Gets the list of action plans |
-| `ActionPlans_Get` | `EXEC` | `planId, subscriptionId` | Gets the specified action plan |

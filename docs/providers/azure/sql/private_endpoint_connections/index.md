@@ -25,15 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `privateEndpoint` | `object` |  |
-| `privateLinkServiceConnectionState` | `object` |  |
-| `provisioningState` | `string` | State of the private endpoint connection. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnections_Get` | `SELECT` | `privateEndpointConnectionName, resourceGroupName, serverName, subscriptionId` | Gets a private endpoint connection. |
 | `PrivateEndpointConnections_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Gets all private endpoint connections on a server. |
 | `PrivateEndpointConnections_CreateOrUpdate` | `INSERT` | `privateEndpointConnectionName, resourceGroupName, serverName, subscriptionId` | Approve or reject a private endpoint connection with a given name. |
 | `PrivateEndpointConnections_Delete` | `DELETE` | `privateEndpointConnectionName, resourceGroupName, serverName, subscriptionId` | Deletes a private endpoint connection with a given name. |
-| `PrivateEndpointConnections_Get` | `EXEC` | `privateEndpointConnectionName, resourceGroupName, serverName, subscriptionId` | Gets a private endpoint connection. |

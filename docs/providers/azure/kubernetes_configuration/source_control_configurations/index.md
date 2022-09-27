@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `properties` | `object` | Properties to create a Source Control Configuration resource |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SourceControlConfigurations_Get` | `SELECT` | `clusterName, clusterResourceName, clusterRp, resourceGroupName, sourceControlConfigurationName, subscriptionId` | Gets details of the Source Control Configuration. |
 | `SourceControlConfigurations_List` | `SELECT` | `clusterName, clusterResourceName, clusterRp, resourceGroupName, subscriptionId` | List all Source Control Configurations. |
 | `SourceControlConfigurations_CreateOrUpdate` | `INSERT` | `clusterName, clusterResourceName, clusterRp, resourceGroupName, sourceControlConfigurationName, subscriptionId` | Create a new Kubernetes Source Control Configuration. |
 | `SourceControlConfigurations_Delete` | `DELETE` | `clusterName, clusterResourceName, clusterRp, resourceGroupName, sourceControlConfigurationName, subscriptionId` | This will delete the YAML file used to set up the Source control configuration, thus stopping future sync from the source repo. |
-| `SourceControlConfigurations_Get` | `EXEC` | `clusterName, clusterResourceName, clusterRp, resourceGroupName, sourceControlConfigurationName, subscriptionId` | Gets details of the Source Control Configuration. |

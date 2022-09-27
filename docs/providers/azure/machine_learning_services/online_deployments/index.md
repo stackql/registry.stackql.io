@@ -27,19 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `kind` | `string` | Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. |
 | `location` | `string` | The geo-location where the resource lives |
 | `properties` | `object` |  |
 | `sku` | `object` | The resource model definition representing SKU |
 | `tags` | `object` | Resource tags. |
 | `identity` | `object` | Managed service identity (system assigned and/or user assigned identities) |
+| `kind` | `string` | Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `OnlineDeployments_Get` | `SELECT` | `deploymentName, endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `OnlineDeployments_List` | `SELECT` | `endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `OnlineDeployments_CreateOrUpdate` | `INSERT` | `deploymentName, endpointName, resourceGroupName, subscriptionId, workspaceName, data__location, data__properties` |
 | `OnlineDeployments_Delete` | `DELETE` | `deploymentName, endpointName, resourceGroupName, subscriptionId, workspaceName` |
-| `OnlineDeployments_Get` | `EXEC` | `deploymentName, endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `OnlineDeployments_GetLogs` | `EXEC` | `deploymentName, endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `OnlineDeployments_ListSkus` | `EXEC` | `deploymentName, endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `OnlineDeployments_Update` | `EXEC` | `deploymentName, endpointName, resourceGroupName, subscriptionId, workspaceName` |

@@ -27,14 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `serverKeyType` | `string` | The key type like 'AzureKeyVault'. |
-| `uri` | `string` | The URI of the key. |
-| `creationDate` | `string` | The key creation date. |
 | `kind` | `string` | Kind of encryption protector used to protect the key. |
+| `properties` | `object` | Properties for a key execution. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ServerKeys_Get` | `SELECT` | `keyName, resourceGroupName, serverName, subscriptionId` | Gets a MySQL Server key. |
 | `ServerKeys_List` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Gets a list of  Server keys. |
 | `ServerKeys_CreateOrUpdate` | `INSERT` | `keyName, resourceGroupName, serverName, subscriptionId` | Creates or updates a MySQL Server key. |
 | `ServerKeys_Delete` | `DELETE` | `keyName, resourceGroupName, serverName, subscriptionId` | Deletes the MySQL Server key with the given name. |
-| `ServerKeys_Get` | `EXEC` | `keyName, resourceGroupName, serverName, subscriptionId` | Gets a MySQL Server key. |

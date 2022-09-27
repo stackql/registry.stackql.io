@@ -27,10 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `properties` | `object` | Properties of a private link resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `properties` | `object` | Properties of a private link resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `PrivateLinkResources_Get` | `SELECT` | `groupName, resourceGroupName, scopeName, subscriptionId` |
 | `PrivateLinkResources_ListByPrivateLinkScope` | `SELECT` | `resourceGroupName, scopeName, subscriptionId` |
-| `PrivateLinkResources_Get` | `EXEC` | `groupName, resourceGroupName, scopeName, subscriptionId` |

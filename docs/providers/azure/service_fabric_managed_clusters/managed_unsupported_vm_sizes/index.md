@@ -34,5 +34,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `managedUnsupportedVMSizes_Get` | `SELECT` | `api-version, location, subscriptionId, vmSize` | Get unsupported vm size for Service Fabric Managed Clusters. |
 | `managedUnsupportedVMSizes_List` | `SELECT` | `api-version, location, subscriptionId` | Get the lists of unsupported vm sizes for Service Fabric Managed Clusters. |
-| `managedUnsupportedVMSizes_Get` | `EXEC` | `api-version, location, subscriptionId, vmSize` | Get unsupported vm size for Service Fabric Managed Clusters. |

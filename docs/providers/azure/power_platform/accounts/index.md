@@ -27,17 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `description` | `string` | The description of the account. |
+| `properties` | `object` | The properties that define configuration for the account. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `systemId` | `string` | The internally assigned unique identifier of the resource. |
 | `tags` | `object` | Resource tags. |
 | `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Accounts_Get` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | Get information about an account. |
 | `Accounts_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Retrieve a list of accounts within a given resource group. |
 | `Accounts_ListBySubscription` | `SELECT` | `subscriptionId` | Retrieve a list of accounts within a subscription. |
 | `Accounts_CreateOrUpdate` | `INSERT` | `accountName, resourceGroupName, subscriptionId` | Creates an account. |
 | `Accounts_Delete` | `DELETE` | `accountName, resourceGroupName, subscriptionId` | Delete an account. |
-| `Accounts_Get` | `EXEC` | `accountName, resourceGroupName, subscriptionId` | Get information about an account. |
 | `Accounts_Update` | `EXEC` | `accountName, resourceGroupName, subscriptionId` | Updates an account. |

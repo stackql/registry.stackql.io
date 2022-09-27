@@ -25,12 +25,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `nextLink` | `string` | The uri to fetch the next page of shared galleries. Call ListNext() with this to fetch the next page of shared galleries. |
-| `value` | `array` | A list of shared galleries. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SharedGalleries_Get` | `SELECT` | `galleryUniqueName, location, subscriptionId` | Get a shared gallery by subscription id or tenant id. |
 | `SharedGalleries_List` | `SELECT` | `location, subscriptionId` | List shared galleries by subscription id or tenant id. |
-| `SharedGalleries_Get` | `EXEC` | `galleryUniqueName, location, subscriptionId` | Get a shared gallery by subscription id or tenant id. |

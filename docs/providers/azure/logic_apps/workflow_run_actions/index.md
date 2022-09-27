@@ -29,21 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the workflow run action name. |
-| `status` | `string` | The workflow status. |
 | `type` | `string` | Gets the workflow run action type. |
-| `trackingId` | `string` | Gets the tracking id. |
-| `outputsLink` | `object` | The content link. |
-| `code` | `string` | Gets the code. |
-| `error` | `object` |  |
-| `retryHistory` | `array` | Gets the retry histories. |
-| `startTime` | `string` | Gets the start time. |
-| `trackedProperties` | `object` |  |
-| `correlation` | `object` | The workflow run action correlation properties. |
-| `inputsLink` | `object` | The content link. |
-| `endTime` | `string` | Gets the end time. |
+| `properties` | `object` | The workflow run action properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WorkflowRunActions_Get` | `SELECT` | `actionName, api-version, resourceGroupName, runName, subscriptionId, workflowName` | Gets a workflow run action. |
 | `WorkflowRunActions_List` | `SELECT` | `api-version, resourceGroupName, runName, subscriptionId, workflowName` | Gets a list of workflow run actions. |
-| `WorkflowRunActions_Get` | `EXEC` | `actionName, api-version, resourceGroupName, runName, subscriptionId, workflowName` | Gets a workflow run action. |
 | `WorkflowRunActions_ListExpressionTraces` | `EXEC` | `actionName, api-version, resourceGroupName, runName, subscriptionId, workflowName` | Lists a workflow run expression trace. |

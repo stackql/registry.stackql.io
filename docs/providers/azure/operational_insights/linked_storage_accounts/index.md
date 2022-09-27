@@ -25,14 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `storageAccountIds` | `array` | Linked storage accounts resources ids. |
-| `dataSourceType` | `string` | Linked storage accounts type. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `LinkedStorageAccounts_Get` | `SELECT` | `dataSourceType, resourceGroupName, subscriptionId, workspaceName` | Gets all linked storage account of a specific data source type associated with the specified workspace. |
 | `LinkedStorageAccounts_ListByWorkspace` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets all linked storage accounts associated with the specified workspace, storage accounts will be sorted by their data source type. |
-| `LinkedStorageAccounts_CreateOrUpdate` | `INSERT` | `dataSourceType, resourceGroupName, subscriptionId, workspaceName` | Create or Update a link relation between current workspace and a group of storage accounts of a specific data source type. |
+| `LinkedStorageAccounts_CreateOrUpdate` | `INSERT` | `dataSourceType, resourceGroupName, subscriptionId, workspaceName, data__properties` | Create or Update a link relation between current workspace and a group of storage accounts of a specific data source type. |
 | `LinkedStorageAccounts_Delete` | `DELETE` | `dataSourceType, resourceGroupName, subscriptionId, workspaceName` | Deletes all linked storage accounts of a specific data source type associated with the specified workspace. |
-| `LinkedStorageAccounts_Get` | `EXEC` | `dataSourceType, resourceGroupName, subscriptionId, workspaceName` | Gets all linked storage account of a specific data source type associated with the specified workspace. |

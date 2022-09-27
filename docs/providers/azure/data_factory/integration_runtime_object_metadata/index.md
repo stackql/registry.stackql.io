@@ -25,9 +25,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `value` | `array` | List of SSIS object metadata. |
+| `nextLink` | `string` | The link to the next page of results, if any remaining results exist. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `IntegrationRuntimeObjectMetadata_Get` | `EXEC` | `api-version, factoryName, integrationRuntimeName, resourceGroupName, subscriptionId` | Get a SSIS integration runtime object metadata by specified path. The return is pageable metadata list. |
+| `IntegrationRuntimeObjectMetadata_Get` | `SELECT` | `api-version, factoryName, integrationRuntimeName, resourceGroupName, subscriptionId` | Get a SSIS integration runtime object metadata by specified path. The return is pageable metadata list. |
 | `IntegrationRuntimeObjectMetadata_Refresh` | `EXEC` | `api-version, factoryName, integrationRuntimeName, resourceGroupName, subscriptionId` | Refresh a SSIS integration runtime object metadata. |

@@ -29,15 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ARM ID of the resource. |
 | `name` | `string` | The role instance name. |
-| `operationalState` | `string` | The operational state of the role instance. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `properties` | `object` | The role instance properties of the network function. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | The type of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RoleInstances_Get` | `SELECT` | `locationName, roleInstanceName, serviceKey, subscriptionId, vendorName` | Gets the information of role instance of vendor network function. |
 | `RoleInstances_List` | `SELECT` | `locationName, serviceKey, subscriptionId, vendorName` | Lists the information of role instances of vendor network function. |
-| `RoleInstances_Get` | `EXEC` | `locationName, roleInstanceName, serviceKey, subscriptionId, vendorName` | Gets the information of role instance of vendor network function. |
 | `RoleInstances_Restart` | `EXEC` | `locationName, roleInstanceName, serviceKey, subscriptionId, vendorName` | Restarts a role instance of a vendor network function. |
 | `RoleInstances_Start` | `EXEC` | `locationName, roleInstanceName, serviceKey, subscriptionId, vendorName` | Starts a role instance of a vendor network function. |
 | `RoleInstances_Stop` | `EXEC` | `locationName, roleInstanceName, serviceKey, subscriptionId, vendorName` | Powers off (stop) a role instance of a vendor network function. |

@@ -29,6 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Skus_Get` | `SELECT` | `providerNamespace, resourceType, sku, subscriptionId` | Gets the sku details for the given resource type and sku name. |
 | `Skus_ListByResourceTypeRegistrations` | `SELECT` | `providerNamespace, resourceType, subscriptionId` | Gets the list of skus for the given resource type. |
 | `Skus_ListByResourceTypeRegistrationsNestedResourceTypeFirst` | `SELECT` | `nestedResourceTypeFirst, providerNamespace, resourceType, subscriptionId` | Gets the list of skus for the given resource type. |
 | `Skus_ListByResourceTypeRegistrationsNestedResourceTypeSecond` | `SELECT` | `nestedResourceTypeFirst, nestedResourceTypeSecond, providerNamespace, resourceType, subscriptionId` | Gets the list of skus for the given resource type. |
@@ -41,7 +42,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `Skus_DeleteNestedResourceTypeFirst` | `EXEC` | `nestedResourceTypeFirst, providerNamespace, resourceType, sku, subscriptionId` | Deletes a resource type sku. |
 | `Skus_DeleteNestedResourceTypeSecond` | `EXEC` | `nestedResourceTypeFirst, nestedResourceTypeSecond, providerNamespace, resourceType, sku, subscriptionId` | Deletes a resource type sku. |
 | `Skus_DeleteNestedResourceTypeThird` | `EXEC` | `nestedResourceTypeFirst, nestedResourceTypeSecond, nestedResourceTypeThird, providerNamespace, resourceType, sku, subscriptionId` | Deletes a resource type sku. |
-| `Skus_Get` | `EXEC` | `providerNamespace, resourceType, sku, subscriptionId` | Gets the sku details for the given resource type and sku name. |
 | `Skus_GetNestedResourceTypeFirst` | `EXEC` | `nestedResourceTypeFirst, providerNamespace, resourceType, sku, subscriptionId` | Gets the sku details for the given resource type and sku name. |
 | `Skus_GetNestedResourceTypeSecond` | `EXEC` | `nestedResourceTypeFirst, nestedResourceTypeSecond, providerNamespace, resourceType, sku, subscriptionId` | Gets the sku details for the given resource type and sku name. |
 | `Skus_GetNestedResourceTypeThird` | `EXEC` | `nestedResourceTypeFirst, nestedResourceTypeSecond, nestedResourceTypeThird, providerNamespace, resourceType, sku, subscriptionId` | Gets the sku details for the given resource type and sku name. |

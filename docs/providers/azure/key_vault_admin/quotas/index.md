@@ -31,6 +31,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `name` | `string` | Name of the resource. |
 | `type` | `string` | Type of resource. |
 | `location` | `string` | Location where resource is location. |
+| `properties` | `object` | Properties for keyvault quotas. |
 | `tags` | `object` | List of key value pairs. |
 ## Methods
 | Name | Accessible by | Required Params |
