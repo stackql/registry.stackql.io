@@ -29,16 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `routeFilterRuleType` | `string` | The rule type of the rule. |
-| `access` | `string` | Access to be allowed or denied. |
-| `communities` | `array` | The collection for bgp community values to filter on. e.g. ['12076:5010','12076:5020']. |
+| `properties` | `object` | Route Filter Rule Resource. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RouteFilterRules_Get` | `SELECT` | `resourceGroupName, routeFilterName, ruleName, subscriptionId` | Gets the specified rule from a route filter. |
 | `RouteFilterRules_ListByRouteFilter` | `SELECT` | `resourceGroupName, routeFilterName, subscriptionId` | Gets all RouteFilterRules in a route filter. |
 | `RouteFilterRules_CreateOrUpdate` | `INSERT` | `resourceGroupName, routeFilterName, ruleName, subscriptionId` | Creates or updates a route in the specified route filter. |
 | `RouteFilterRules_Delete` | `DELETE` | `resourceGroupName, routeFilterName, ruleName, subscriptionId` | Deletes the specified rule from a route filter. |
-| `RouteFilterRules_Get` | `EXEC` | `resourceGroupName, routeFilterName, ruleName, subscriptionId` | Gets the specified rule from a route filter. |

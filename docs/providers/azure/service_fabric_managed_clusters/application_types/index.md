@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource identifier. |
 | `name` | `string` | Azure resource name. |
-| `location` | `string` | Resource location depends on the parent resource. |
-| `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Azure resource tags. |
 | `type` | `string` | Azure resource type. |
+| `location` | `string` | Resource location depends on the parent resource. |
+| `properties` | `object` | The application type name properties |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ApplicationTypes_Get` | `SELECT` | `api-version, applicationTypeName, clusterName, resourceGroupName, subscriptionId` | Get a Service Fabric application type name resource created or in the process of being created in the Service Fabric managed cluster resource. |
 | `ApplicationTypes_List` | `SELECT` | `api-version, clusterName, resourceGroupName, subscriptionId` | Gets all application type name resources created or in the process of being created in the Service Fabric managed cluster resource. |
 | `ApplicationTypes_CreateOrUpdate` | `INSERT` | `api-version, applicationTypeName, clusterName, resourceGroupName, subscriptionId` | Create or update a Service Fabric managed application type name resource with the specified name. |
 | `ApplicationTypes_Delete` | `DELETE` | `api-version, applicationTypeName, clusterName, resourceGroupName, subscriptionId` | Delete a Service Fabric managed application type name resource with the specified name. |
-| `ApplicationTypes_Get` | `EXEC` | `api-version, applicationTypeName, clusterName, resourceGroupName, subscriptionId` | Get a Service Fabric application type name resource created or in the process of being created in the Service Fabric managed cluster resource. |
 | `ApplicationTypes_Update` | `EXEC` | `api-version, applicationTypeName, clusterName, resourceGroupName, subscriptionId` | Updates the tags of an application type resource of a given managed cluster. |

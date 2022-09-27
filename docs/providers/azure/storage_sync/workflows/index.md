@@ -25,19 +25,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `operation` | `string` | Type of the Operation Direction |
-| `status` | `string` | Type of the Workflow Status |
-| `steps` | `string` | workflow steps |
-| `commandName` | `string` | workflow command name. |
-| `createdTimestamp` | `string` | workflow created timestamp. |
-| `lastOperationId` | `string` | workflow last operation identifier. |
-| `lastStatusTimestamp` | `string` | workflow last status timestamp. |
-| `lastStepName` | `string` | last step name |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Workflows_Get` | `SELECT` | `resourceGroupName, storageSyncServiceName, subscriptionId, workflowId` | Get Workflows resource |
 | `Workflows_ListByStorageSyncService` | `SELECT` | `resourceGroupName, storageSyncServiceName, subscriptionId` | Get a Workflow List |
 | `Workflows_Abort` | `EXEC` | `resourceGroupName, storageSyncServiceName, subscriptionId, workflowId` | Abort the given workflow. |
-| `Workflows_Get` | `EXEC` | `resourceGroupName, storageSyncServiceName, subscriptionId, workflowId` | Get Workflows resource |

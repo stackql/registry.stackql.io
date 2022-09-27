@@ -29,29 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `etherType` | `string` | Ether type of the physical port. |
-| `bandwidthInGbps` | `integer` | Bandwidth of procured ports in Gbps. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `provisionedBandwidthInGbps` | `number` | Aggregate Gbps of associated circuit bandwidths. |
-| `allocationDate` | `string` | Date of the physical port allocation to be used in Letter of Authorization. |
-| `links` | `array` | The set of physical links of the ExpressRoutePort resource. |
-| `peeringLocation` | `string` | The name of the peering location that the ExpressRoutePort is mapped to physically. |
-| `tags` | `object` | Resource tags. |
-| `identity` | `object` | Identity for the resource. |
-| `type` | `string` | Resource type. |
-| `encapsulation` | `string` | Encapsulation method on physical ports. |
-| `resourceGuid` | `string` | The resource GUID property of the express route port resource. |
-| `mtu` | `string` | Maximum transmission unit of the physical port pair(s). |
-| `location` | `string` | Resource location. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `circuits` | `array` | Reference the ExpressRoute circuit(s) that are provisioned on this ExpressRoutePort resource. |
+| `identity` | `object` | Identity for the resource. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | Properties specific to ExpressRoutePort resources. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ExpressRoutePorts_Get` | `SELECT` | `expressRoutePortName, resourceGroupName, subscriptionId` | Retrieves the requested ExpressRoutePort resource. |
 | `ExpressRoutePorts_List` | `SELECT` | `subscriptionId` | List all the ExpressRoutePort resources in the specified subscription. |
 | `ExpressRoutePorts_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | List all the ExpressRoutePort resources in the specified resource group. |
 | `ExpressRoutePorts_CreateOrUpdate` | `INSERT` | `expressRoutePortName, resourceGroupName, subscriptionId` | Creates or updates the specified ExpressRoutePort resource. |
 | `ExpressRoutePorts_Delete` | `DELETE` | `expressRoutePortName, resourceGroupName, subscriptionId` | Deletes the specified ExpressRoutePort resource. |
 | `ExpressRoutePorts_GenerateLOA` | `EXEC` | `expressRoutePortName, resourceGroupName, subscriptionId, data__customerName` | Generate a letter of authorization for the requested ExpressRoutePort resource. |
-| `ExpressRoutePorts_Get` | `EXEC` | `expressRoutePortName, resourceGroupName, subscriptionId` | Retrieves the requested ExpressRoutePort resource. |
 | `ExpressRoutePorts_UpdateTags` | `EXEC` | `expressRoutePortName, resourceGroupName, subscriptionId` | Update ExpressRoutePort tags. |

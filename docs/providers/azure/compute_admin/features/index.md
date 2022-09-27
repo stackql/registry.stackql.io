@@ -29,16 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `enabledTenantSubscriptionIds` | `array` | List of subscription identifiers which have the feature enabled. |
-| `featureName` | `string` | The name of the feature. |
-| `globalFeatureSettings` | `object` | Higher-priority global feature flags. |
-| `location` | `string` | Location of the resource. |
+| `properties` | `object` | Properties of features. |
 | `type` | `string` | Type of Resource. |
+| `location` | `string` | Location of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Features_Get` | `SELECT` | `featureName, location, subscriptionId` | Get an existing feature. |
 | `Features_List` | `SELECT` | `location, subscriptionId` | Get a list of existing features. |
 | `DisableTenantSubscriptionFeature` | `EXEC` | `featureName, location, subscriptionId` | Disable the tenant subscription feature. |
 | `EnableTenantSubscriptionFeature` | `EXEC` | `featureName, location, subscriptionId` | Enable the tenant subscription feature. |
-| `Features_Get` | `EXEC` | `featureName, location, subscriptionId` | Get an existing feature. |
 | `UpdateGlobalFeatureSettings` | `EXEC` | `featureName, location, subscriptionId` | Update the feature settings. |

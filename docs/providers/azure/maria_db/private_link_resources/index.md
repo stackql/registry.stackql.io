@@ -29,5 +29,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateLinkResources_Get` | `SELECT` | `groupName, resourceGroupName, serverName, subscriptionId` | Gets a private link resource for MariaDB server. |
 | `PrivateLinkResources_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Gets the private link resources for MariaDB server. |
-| `PrivateLinkResources_Get` | `EXEC` | `groupName, resourceGroupName, serverName, subscriptionId` | Gets a private link resource for MariaDB server. |

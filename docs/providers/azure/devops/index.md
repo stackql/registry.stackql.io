@@ -22,7 +22,7 @@ Azure DevOps Resource Provider
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Azure DevOps (Microsoft.DevOps)</td></tr>
 <tr><td><b>Description</b></td><td>Azure DevOps Resource Provider</td></tr>
-<tr><td><b>Id</b></td><td><code>devops:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>devops:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

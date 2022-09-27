@@ -29,26 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `location` | `string` | Resource location |
-| `createdAt` | `string` | The time the namespace was created. |
-| `subscriptionId` | `string` | The Id of the Azure subscription associated with the namespace. |
-| `serviceBusEndpoint` | `string` | Endpoint you can use to perform NotificationHub operations. |
-| `tags` | `object` | Resource tags |
-| `provisioningState` | `string` | Provisioning state of the Namespace. |
-| `enabled` | `boolean` | Whether or not the namespace is currently enabled. |
-| `scaleUnit` | `string` | ScaleUnit where the namespace gets created |
-| `critical` | `boolean` | Whether or not the namespace is set as Critical. |
-| `metricId` | `string` | Identifier for Azure Insights metrics |
 | `type` | `string` | Resource type |
-| `region` | `string` | Specifies the targeted region in which the namespace should be created. It can be any of the following values: Australia East, Australia Southeast, Central US, East US, East US 2, West US, North Central US, South Central US, East Asia, Southeast Asia, Brazil South, Japan East, Japan West, North Europe, West Europe |
-| `namespaceType` | `string` | The namespace type. |
-| `status` | `string` | Status of the namespace. It can be any of these values:1 = Created/Active2 = Creating3 = Suspended4 = Deleting |
-| `updatedAt` | `string` | The time the namespace was updated. |
+| `location` | `string` | Resource location |
+| `properties` | `object` | Namespace properties. |
 | `sku` | `object` | The Sku description for a namespace |
-| `dataCenter` | `string` | Data center for the namespace |
+| `tags` | `object` | Resource tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Namespaces_Get` | `SELECT` | `namespaceName, resourceGroupName, subscriptionId` | Returns the description for the specified namespace. |
 | `Namespaces_List` | `SELECT` | `resourceGroupName, subscriptionId` | Lists the available namespaces within a resourceGroup. |
 | `Namespaces_ListAll` | `SELECT` | `subscriptionId` | Lists all the available namespaces within the subscription irrespective of the resourceGroups. |
 | `Namespaces_CreateOrUpdate` | `INSERT` | `namespaceName, resourceGroupName, subscriptionId, data__location` | Creates/Updates a service namespace. Once created, this namespace's resource manifest is immutable. This operation is idempotent. |
@@ -56,7 +45,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `Namespaces_CheckAvailability` | `EXEC` | `subscriptionId, data__name` | Checks the availability of the given service namespace across all Azure subscriptions. This is useful because the domain name is created based on the service namespace name. |
 | `Namespaces_CreateOrUpdateAuthorizationRule` | `EXEC` | `authorizationRuleName, namespaceName, resourceGroupName, subscriptionId, data__properties` | Creates an authorization rule for a namespace |
 | `Namespaces_DeleteAuthorizationRule` | `EXEC` | `authorizationRuleName, namespaceName, resourceGroupName, subscriptionId` | Deletes a namespace authorization rule |
-| `Namespaces_Get` | `EXEC` | `namespaceName, resourceGroupName, subscriptionId` | Returns the description for the specified namespace. |
 | `Namespaces_GetAuthorizationRule` | `EXEC` | `authorizationRuleName, namespaceName, resourceGroupName, subscriptionId` | Gets an authorization rule for a namespace by name. |
 | `Namespaces_ListAuthorizationRules` | `EXEC` | `namespaceName, resourceGroupName, subscriptionId` | Gets the authorization rules for a namespace. |
 | `Namespaces_ListKeys` | `EXEC` | `authorizationRuleName, namespaceName, resourceGroupName, subscriptionId` | Gets the Primary and Secondary ConnectionStrings to the namespace  |

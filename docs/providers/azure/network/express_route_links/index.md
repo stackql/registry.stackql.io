@@ -29,17 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Name of child port resource that is unique among child port resources of the parent. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `interfaceName` | `string` | Name of Azure router interface. |
-| `patchPanelId` | `string` | Mapping between physical port to patch panel port. |
-| `macSecConfig` | `object` | ExpressRouteLink Mac Security Configuration. |
-| `rackId` | `string` | Mapping of physical patch panel to rack. |
+| `properties` | `object` | Properties specific to ExpressRouteLink resources. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `connectorType` | `string` | Physical fiber port type. |
-| `routerName` | `string` | Name of Azure router associated with physical port. |
-| `adminState` | `string` | Administrative state of the physical port. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ExpressRouteLinks_Get` | `SELECT` | `expressRoutePortName, linkName, resourceGroupName, subscriptionId` | Retrieves the specified ExpressRouteLink resource. |
 | `ExpressRouteLinks_List` | `SELECT` | `expressRoutePortName, resourceGroupName, subscriptionId` | Retrieve the ExpressRouteLink sub-resources of the specified ExpressRoutePort resource. |
-| `ExpressRouteLinks_Get` | `EXEC` | `expressRoutePortName, linkName, resourceGroupName, subscriptionId` | Retrieves the specified ExpressRouteLink resource. |

@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `properties` | `object` | ContainerApp resource specific properties |
-| `tags` | `object` | Resource tags. |
 | `identity` | `object` | Managed service identity (system assigned and/or user assigned identities) |
 | `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | ContainerApp resource specific properties |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ContainerApps_Get` | `SELECT` | `containerAppName, resourceGroupName, subscriptionId` |  |
 | `ContainerApps_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` |  |
 | `ContainerApps_ListBySubscription` | `SELECT` | `subscriptionId` |  |
 | `ContainerApps_CreateOrUpdate` | `INSERT` | `containerAppName, resourceGroupName, subscriptionId` | Create or update a Container App. |
 | `ContainerApps_Delete` | `DELETE` | `containerAppName, resourceGroupName, subscriptionId` | Delete a Container App. |
-| `ContainerApps_Get` | `EXEC` | `containerAppName, resourceGroupName, subscriptionId` |  |
 | `ContainerApps_ListCustomHostNameAnalysis` | `EXEC` | `containerAppName, resourceGroupName, subscriptionId` |  |
 | `ContainerApps_ListSecrets` | `EXEC` | `containerAppName, resourceGroupName, subscriptionId` |  |
 | `ContainerApps_Update` | `EXEC` | `containerAppName, resourceGroupName, subscriptionId` | Patches a Container App using JSON Merge Patch |

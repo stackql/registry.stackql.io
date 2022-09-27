@@ -22,7 +22,7 @@ Use these APIs to manage Azure CDN resources through the Azure Resource Manager.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cdn Management Client (Microsoft.Cdn)</td></tr>
 <tr><td><b>Description</b></td><td>Use these APIs to manage Azure CDN resources through the Azure Resource Manager. You must make sure that requests made to these resources are secure.</td></tr>
-<tr><td><b>Id</b></td><td><code>cdn:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cdn:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

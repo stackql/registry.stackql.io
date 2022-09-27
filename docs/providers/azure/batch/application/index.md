@@ -29,16 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
+| `properties` | `object` | The properties associated with the Application. |
 | `type` | `string` | The type of the resource. |
-| `allowUpdates` | `boolean` | A value indicating whether packages within the application may be overwritten using the same version string. |
-| `defaultVersion` | `string` | The package to use if a client requests the application but does not specify a version. This property can only be set to the name of an existing package. |
-| `displayName` | `string` | The display name for the application. |
 | `etag` | `string` | The ETag of the resource, used for concurrency statements. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Application_Get` | `SELECT` | `accountName, applicationName, resourceGroupName, subscriptionId` | Gets information about the specified application. |
 | `Application_List` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | Lists all of the applications in the specified account. |
 | `Application_Create` | `INSERT` | `accountName, applicationName, resourceGroupName, subscriptionId` | Adds an application to the specified Batch account. |
 | `Application_Delete` | `DELETE` | `accountName, applicationName, resourceGroupName, subscriptionId` | Deletes an application. |
-| `Application_Get` | `EXEC` | `accountName, applicationName, resourceGroupName, subscriptionId` | Gets information about the specified application. |
 | `Application_Update` | `EXEC` | `accountName, applicationName, resourceGroupName, subscriptionId` | Updates settings for the specified application. |

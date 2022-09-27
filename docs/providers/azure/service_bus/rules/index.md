@@ -29,17 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `correlationFilter` | `object` | Represents the correlation filter expression. |
-| `sqlFilter` | `object` | Represents a filter which is a composition of an expression and an action that is executed in the pub/sub pipeline. |
-| `location` | `string` | The geo-location where the resource lives |
-| `filterType` | `string` | Rule filter types |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.EventHub/Namespaces" or "Microsoft.EventHub/Namespaces/EventHubs" |
-| `action` | `object` | Represents the filter actions which are allowed for the transformation of a message that have been matched by a filter expression. |
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Description of Rule Resource. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Rules_Get` | `SELECT` | `namespaceName, resourceGroupName, ruleName, subscriptionId, subscriptionName, topicName` | Retrieves the description for the specified rule. |
 | `Rules_ListBySubscriptions` | `SELECT` | `namespaceName, resourceGroupName, subscriptionId, subscriptionName, topicName` | List all the rules within given topic-subscription |
 | `Rules_CreateOrUpdate` | `INSERT` | `namespaceName, resourceGroupName, ruleName, subscriptionId, subscriptionName, topicName` | Creates a new rule and updates an existing rule |
 | `Rules_Delete` | `DELETE` | `namespaceName, resourceGroupName, ruleName, subscriptionId, subscriptionName, topicName` | Deletes an existing rule. |
-| `Rules_Get` | `EXEC` | `namespaceName, resourceGroupName, ruleName, subscriptionId, subscriptionName, topicName` | Retrieves the description for the specified rule. |

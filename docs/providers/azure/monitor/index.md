@@ -22,7 +22,7 @@ Monitor
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Monitor (Microsoft.Insights)</td></tr>
 <tr><td><b>Description</b></td><td>Monitor</td></tr>
-<tr><td><b>Id</b></td><td><code>monitor:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>monitor:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

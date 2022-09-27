@@ -29,16 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `privateLinkServiceConnectionState` | `object` | The private link service connection state of the private endpoint connection |
-| `provisioningState` | `string` |  |
+| `properties` | `object` | Private endpoint connection properties. |
 | `type` | `string` | The type of the resource. |
 | `etag` | `string` | The ETag of the resource, used for concurrency statements. |
-| `groupIds` | `array` | The value has one and only one group id. |
-| `privateEndpoint` | `object` | The private endpoint of the private endpoint connection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnection_Get` | `SELECT` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets information about the specified private endpoint connection. |
 | `PrivateEndpointConnection_ListByBatchAccount` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | Lists all of the private endpoint connections in the specified account. |
 | `PrivateEndpointConnection_Delete` | `DELETE` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Deletes the specified private endpoint connection. |
-| `PrivateEndpointConnection_Get` | `EXEC` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets information about the specified private endpoint connection. |
 | `PrivateEndpointConnection_Update` | `EXEC` | `accountName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Updates the properties of an existing private endpoint connection. |

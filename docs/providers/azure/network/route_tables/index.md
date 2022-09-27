@@ -30,20 +30,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `resourceGuid` | `string` | The resource GUID property of the route table. |
-| `subnets` | `array` | A collection of references to subnets. |
 | `location` | `string` | Resource location. |
-| `routes` | `array` | Collection of routes contained within a route table. |
-| `type` | `string` | Resource type. |
-| `disableBgpRoutePropagation` | `boolean` | Whether to disable the routes learned by BGP on that route table. True means disable. |
+| `properties` | `object` | Route Table resource. |
 | `tags` | `object` | Resource tags. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RouteTables_Get` | `SELECT` | `resourceGroupName, routeTableName, subscriptionId` | Gets the specified route table. |
 | `RouteTables_List` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all route tables in a resource group. |
 | `RouteTables_ListAll` | `SELECT` | `subscriptionId` | Gets all route tables in a subscription. |
 | `RouteTables_CreateOrUpdate` | `INSERT` | `resourceGroupName, routeTableName, subscriptionId` | Create or updates a route table in a specified resource group. |
 | `RouteTables_Delete` | `DELETE` | `resourceGroupName, routeTableName, subscriptionId` | Deletes the specified route table. |
-| `RouteTables_Get` | `EXEC` | `resourceGroupName, routeTableName, subscriptionId` | Gets the specified route table. |
 | `RouteTables_UpdateTags` | `EXEC` | `resourceGroupName, routeTableName, subscriptionId` | Updates a route table tags. |

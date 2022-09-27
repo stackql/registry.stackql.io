@@ -25,9 +25,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource ID. |
+| `name` | `string` | Resource Name. |
+| `location` | `string` | Resource Location. |
+| `properties` | `object` | Properties of storage setting. |
+| `type` | `string` | Resource Type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `StorageSettings_Get` | `EXEC` | `location, subscriptionId` | Returns the storage resource provider settings. |
+| `StorageSettings_Get` | `SELECT` | `location, subscriptionId` | Returns the storage resource provider settings. |
 | `StorageSettings_Update` | `EXEC` | `location, subscriptionId` | Update storage resource provider settings. |

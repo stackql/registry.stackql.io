@@ -29,16 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `etag` | `string` | The ETag of the virtual network link. |
 | `location` | `string` | The Azure Region where the resource lives |
-| `provisioningState` | `string` | The provisioning state of the resource. This is a read-only property and any attempt to set this value will be ignored. |
-| `registrationEnabled` | `boolean` | Is auto-registration of virtual machine records in the virtual network in the Private DNS zone enabled? |
+| `properties` | `object` | Represents the properties of the Private DNS zone. |
 | `tags` | `object` | Resource tags. |
-| `virtualNetwork` | `object` | Reference to another subresource. |
-| `virtualNetworkLinkState` | `string` | The status of the virtual network link to the Private DNS zone. Possible values are 'InProgress' and 'Done'. This is a read-only property and any attempt to set this value will be ignored. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualNetworkLinks_Get` | `SELECT` | `privateZoneName, resourceGroupName, subscriptionId, virtualNetworkLinkName` | Gets a virtual network link to the specified Private DNS zone. |
 | `VirtualNetworkLinks_List` | `SELECT` | `privateZoneName, resourceGroupName, subscriptionId` | Lists the virtual network links to the specified Private DNS zone. |
 | `VirtualNetworkLinks_CreateOrUpdate` | `INSERT` | `privateZoneName, resourceGroupName, subscriptionId, virtualNetworkLinkName` | Creates or updates a virtual network link to the specified Private DNS zone. |
 | `VirtualNetworkLinks_Delete` | `DELETE` | `privateZoneName, resourceGroupName, subscriptionId, virtualNetworkLinkName` | Deletes a virtual network link to the specified Private DNS zone. WARNING: In case of a registration virtual network, all auto-registered DNS records in the zone for the virtual network will also be deleted. This operation cannot be undone. |
-| `VirtualNetworkLinks_Get` | `EXEC` | `privateZoneName, resourceGroupName, subscriptionId, virtualNetworkLinkName` | Gets a virtual network link to the specified Private DNS zone. |
 | `VirtualNetworkLinks_Update` | `EXEC` | `privateZoneName, resourceGroupName, subscriptionId, virtualNetworkLinkName` | Updates a virtual network link to the specified Private DNS zone. |

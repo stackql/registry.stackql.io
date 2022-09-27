@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
-| `properties` | `object` | The nested object which contains the information and credential which can be used to connect with related store or compute resource. |
 | `type` | `string` | The resource type. |
 | `etag` | `string` | Etag identifies change in the resource. |
+| `properties` | `object` | The nested object which contains the information and credential which can be used to connect with related store or compute resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `LinkedServices_Get` | `SELECT` | `api-version, factoryName, linkedServiceName, resourceGroupName, subscriptionId` | Gets a linked service. |
 | `LinkedServices_ListByFactory` | `SELECT` | `api-version, factoryName, resourceGroupName, subscriptionId` | Lists linked services. |
 | `LinkedServices_CreateOrUpdate` | `INSERT` | `api-version, factoryName, linkedServiceName, resourceGroupName, subscriptionId, data__properties` | Creates or updates a linked service. |
 | `LinkedServices_Delete` | `DELETE` | `api-version, factoryName, linkedServiceName, resourceGroupName, subscriptionId` | Deletes a linked service. |
-| `LinkedServices_Get` | `EXEC` | `api-version, factoryName, linkedServiceName, resourceGroupName, subscriptionId` | Gets a linked service. |

@@ -25,8 +25,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Fully qualified ID for the async operation. |
+| `name` | `string` | Name of the async operation. |
+| `properties` | `object` | Additional information, if available. |
+| `status` | `string` | Operation status. |
+| `error` | `object` | The error detail. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `FluxConfigOperationStatus_Get` | `EXEC` | `clusterName, clusterResourceName, clusterRp, fluxConfigurationName, operationId, resourceGroupName, subscriptionId` |
+| `FluxConfigOperationStatus_Get` | `SELECT` | `clusterName, clusterResourceName, clusterRp, fluxConfigurationName, operationId, resourceGroupName, subscriptionId` |

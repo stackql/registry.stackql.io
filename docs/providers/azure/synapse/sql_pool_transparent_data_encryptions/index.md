@@ -27,11 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `properties` | `object` | Represents the properties of a database transparent data encryption. |
 | `location` | `string` | Resource location. |
-| `status` | `string` | The status of the database transparent data encryption. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SqlPoolTransparentDataEncryptions_Get` | `SELECT` | `resourceGroupName, sqlPoolName, subscriptionId, transparentDataEncryptionName, workspaceName` | Get a SQL pool's transparent data encryption configuration. |
 | `SqlPoolTransparentDataEncryptions_List` | `SELECT` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Get list of SQL pool's transparent data encryption configurations. |
 | `SqlPoolTransparentDataEncryptions_CreateOrUpdate` | `INSERT` | `resourceGroupName, sqlPoolName, subscriptionId, transparentDataEncryptionName, workspaceName` | Creates or updates a Sql pool's transparent data encryption configuration. |
-| `SqlPoolTransparentDataEncryptions_Get` | `EXEC` | `resourceGroupName, sqlPoolName, subscriptionId, transparentDataEncryptionName, workspaceName` | Get a SQL pool's transparent data encryption configuration. |

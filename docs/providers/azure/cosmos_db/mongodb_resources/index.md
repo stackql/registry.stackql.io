@@ -29,8 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `MongoDBResources_CreateUpdateMongoDBCollection` | `EXEC` | `accountName, collectionName, databaseName, resourceGroupName, subscriptionId` | Create or update an Azure Cosmos DB MongoDB Collection |
-| `MongoDBResources_CreateUpdateMongoDBDatabase` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Create or updates Azure Cosmos DB MongoDB database |
+| `MongoDBResources_CreateUpdateMongoDBCollection` | `EXEC` | `accountName, collectionName, databaseName, resourceGroupName, subscriptionId, data__properties` | Create or update an Azure Cosmos DB MongoDB Collection |
+| `MongoDBResources_CreateUpdateMongoDBDatabase` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId, data__properties` | Create or updates Azure Cosmos DB MongoDB database |
 | `MongoDBResources_CreateUpdateMongoRoleDefinition` | `EXEC` | `accountName, mongoRoleDefinitionId, resourceGroupName, subscriptionId` | Creates or updates an Azure Cosmos DB Mongo Role Definition. |
 | `MongoDBResources_CreateUpdateMongoUserDefinition` | `EXEC` | `accountName, mongoUserDefinitionId, resourceGroupName, subscriptionId` | Creates or updates an Azure Cosmos DB Mongo User Definition. |
 | `MongoDBResources_DeleteMongoDBCollection` | `EXEC` | `accountName, collectionName, databaseName, resourceGroupName, subscriptionId` | Deletes an existing Azure Cosmos DB MongoDB Collection. |
@@ -52,8 +52,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `MongoDBResources_MigrateMongoDBCollectionToManualThroughput` | `EXEC` | `accountName, collectionName, databaseName, resourceGroupName, subscriptionId` | Migrate an Azure Cosmos DB MongoDB collection from autoscale to manual throughput |
 | `MongoDBResources_MigrateMongoDBDatabaseToAutoscale` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Migrate an Azure Cosmos DB MongoDB database from manual throughput to autoscale |
 | `MongoDBResources_MigrateMongoDBDatabaseToManualThroughput` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Migrate an Azure Cosmos DB MongoDB database from autoscale to manual throughput |
-| `MongoDBResources_MongoDBContainerRedistributeThroughput` | `EXEC` | `accountName, collectionName, databaseName, resourceGroupName, subscriptionId` | Redistribute throughput for an Azure Cosmos DB MongoDB container |
-| `MongoDBResources_MongoDBContainerRetrieveThroughputDistribution` | `EXEC` | `accountName, collectionName, databaseName, resourceGroupName, subscriptionId` | Retrieve throughput distribution for an Azure Cosmos DB MongoDB container |
+| `MongoDBResources_MongoDBContainerRedistributeThroughput` | `EXEC` | `accountName, collectionName, databaseName, resourceGroupName, subscriptionId, data__properties` | Redistribute throughput for an Azure Cosmos DB MongoDB container |
+| `MongoDBResources_MongoDBContainerRetrieveThroughputDistribution` | `EXEC` | `accountName, collectionName, databaseName, resourceGroupName, subscriptionId, data__properties` | Retrieve throughput distribution for an Azure Cosmos DB MongoDB container |
+| `MongoDBResources_MongoDBDatabaseRedistributeThroughput` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId, data__properties` | Redistribute throughput for an Azure Cosmos DB MongoDB database |
+| `MongoDBResources_MongoDBDatabaseRetrieveThroughputDistribution` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId, data__properties` | Retrieve throughput distribution for an Azure Cosmos DB MongoDB database |
 | `MongoDBResources_RetrieveContinuousBackupInformation` | `EXEC` | `accountName, collectionName, databaseName, resourceGroupName, subscriptionId` | Retrieves continuous backup information for a Mongodb collection. |
-| `MongoDBResources_UpdateMongoDBCollectionThroughput` | `EXEC` | `accountName, collectionName, databaseName, resourceGroupName, subscriptionId` | Update the RUs per second of an Azure Cosmos DB MongoDB collection |
-| `MongoDBResources_UpdateMongoDBDatabaseThroughput` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId` | Update RUs per second of the an Azure Cosmos DB MongoDB database |
+| `MongoDBResources_UpdateMongoDBCollectionThroughput` | `EXEC` | `accountName, collectionName, databaseName, resourceGroupName, subscriptionId, data__properties` | Update the RUs per second of an Azure Cosmos DB MongoDB collection |
+| `MongoDBResources_UpdateMongoDBDatabaseThroughput` | `EXEC` | `accountName, databaseName, resourceGroupName, subscriptionId, data__properties` | Update RUs per second of the an Azure Cosmos DB MongoDB database |

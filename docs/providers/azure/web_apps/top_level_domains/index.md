@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource Name. |
+| `type` | `string` | Resource type. |
 | `kind` | `string` | Kind of resource. |
 | `properties` | `object` | TopLevelDomain resource specific properties |
-| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `TopLevelDomains_Get` | `SELECT` | `name, subscriptionId` | Description for Get details of a top-level domain. |
 | `TopLevelDomains_List` | `SELECT` | `subscriptionId` | Description for Get all top-level domains supported for registration. |
-| `TopLevelDomains_Get` | `EXEC` | `name, subscriptionId` | Description for Get details of a top-level domain. |
 | `TopLevelDomains_ListAgreements` | `EXEC` | `name, subscriptionId` | Description for Gets all legal agreements that user needs to accept before purchasing a domain. |

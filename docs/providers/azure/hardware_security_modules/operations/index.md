@@ -29,7 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `name` | `string` | The name of the Dedicated HSM Resource Provider Operation. |
 | `display` | `` | The display string. |
-| `isDataAction` | `string` | Gets or sets a value indicating whether it is a data plane action |
+| `isDataAction` | `boolean` | Gets or sets a value indicating whether it is a data plane action |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

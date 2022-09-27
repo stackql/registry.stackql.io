@@ -27,21 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | The geo-location where the resource lives |
-| `identity` | `object` | Managed identity generic object. |
-| `resourceGroups` | `object` | Names and locations of resource group placeholders. |
-| `blueprintId` | `string` | ID of the published version of a blueprint definition. |
-| `locks` | `object` | Defines how resources deployed by a blueprint assignment are locked. |
-| `parameters` | `object` | Blueprint assignment parameter values. |
-| `provisioningState` | `string` | State of the blueprint assignment. |
-| `status` | `object` | The status of a blueprint assignment. This field is readonly. |
 | `tags` | `object` | Resource tags. |
-| `scope` | `string` | The target subscription scope of the blueprint assignment (format: '/subscriptions/&#123;subscriptionId&#125;'). For management group level assignments, the property is required. |
+| `identity` | `object` | Managed identity generic object. |
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Detailed properties for a blueprint assignment. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Assignments_Get` | `SELECT` | `assignmentName, resourceScope` | Get a blueprint assignment. |
 | `Assignments_List` | `SELECT` | `resourceScope` | List blueprint assignments within a subscription or a management group. |
-| `Assignments_CreateOrUpdate` | `INSERT` | `assignmentName, resourceScope, data__identity` | Create or update a blueprint assignment. |
+| `Assignments_CreateOrUpdate` | `INSERT` | `assignmentName, resourceScope, data__identity, data__properties` | Create or update a blueprint assignment. |
 | `Assignments_Delete` | `DELETE` | `assignmentName, resourceScope` | Delete a blueprint assignment. |
-| `Assignments_Get` | `EXEC` | `assignmentName, resourceScope` | Get a blueprint assignment. |
 | `Assignments_WhoIsBlueprint` | `EXEC` | `assignmentName, resourceScope` | Get Blueprints service SPN objectId |

@@ -27,16 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | Resource location. |
+| `properties` | `object` | Properties of a job agent. |
 | `sku` | `object` | An ARM Resource SKU. |
-| `state` | `string` | The state of the job agent. |
 | `tags` | `object` | Resource tags. |
-| `databaseId` | `string` | Resource ID of the database to store job metadata in. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `JobAgents_Get` | `SELECT` | `jobAgentName, resourceGroupName, serverName, subscriptionId` | Gets a job agent. |
 | `JobAgents_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Gets a list of job agents in a server. |
 | `JobAgents_CreateOrUpdate` | `INSERT` | `jobAgentName, resourceGroupName, serverName, subscriptionId, data__location` | Creates or updates a job agent. |
 | `JobAgents_Delete` | `DELETE` | `jobAgentName, resourceGroupName, serverName, subscriptionId` | Deletes a job agent. |
-| `JobAgents_Get` | `EXEC` | `jobAgentName, resourceGroupName, serverName, subscriptionId` | Gets a job agent. |
 | `JobAgents_Update` | `EXEC` | `jobAgentName, resourceGroupName, serverName, subscriptionId` | Updates a job agent. |

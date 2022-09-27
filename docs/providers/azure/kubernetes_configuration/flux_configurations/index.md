@@ -32,8 +32,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `FluxConfigurations_Get` | `SELECT` | `clusterName, clusterResourceName, clusterRp, fluxConfigurationName, resourceGroupName, subscriptionId` | Gets details of the Flux Configuration. |
 | `FluxConfigurations_List` | `SELECT` | `clusterName, clusterResourceName, clusterRp, resourceGroupName, subscriptionId` | List all Flux Configurations. |
 | `FluxConfigurations_CreateOrUpdate` | `INSERT` | `clusterName, clusterResourceName, clusterRp, fluxConfigurationName, resourceGroupName, subscriptionId` | Create a new Kubernetes Flux Configuration. |
 | `FluxConfigurations_Delete` | `DELETE` | `clusterName, clusterResourceName, clusterRp, fluxConfigurationName, resourceGroupName, subscriptionId` | This will delete the YAML file used to set up the Flux Configuration, thus stopping future sync from the source repo. |
-| `FluxConfigurations_Get` | `EXEC` | `clusterName, clusterResourceName, clusterRp, fluxConfigurationName, resourceGroupName, subscriptionId` | Gets details of the Flux Configuration. |
 | `FluxConfigurations_Update` | `EXEC` | `clusterName, clusterResourceName, clusterRp, fluxConfigurationName, resourceGroupName, subscriptionId` | Update an existing Kubernetes Flux Configuration. |

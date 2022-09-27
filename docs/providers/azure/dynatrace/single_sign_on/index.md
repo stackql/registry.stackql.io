@@ -28,14 +28,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `aadDomains` | `array` | array of Aad(azure active directory) domains |
-| `enterpriseAppId` | `string` | Version of the Dynatrace agent installed on the VM. |
-| `provisioningState` | `string` | Provisioning state of the monitoring resource |
-| `singleSignOnState` | `string` | Various states of the SSO resource |
-| `singleSignOnUrl` | `string` | The login URL specific to this Dynatrace Environment |
+| `properties` | `object` | The details of a Dynatrace single sign-on. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `SingleSignOn_Get` | `SELECT` | `configurationName, monitorName, resourceGroupName, subscriptionId` |
 | `SingleSignOn_List` | `SELECT` | `monitorName, resourceGroupName, subscriptionId` |
-| `SingleSignOn_CreateOrUpdate` | `INSERT` | `configurationName, monitorName, resourceGroupName, subscriptionId` |
-| `SingleSignOn_Get` | `EXEC` | `configurationName, monitorName, resourceGroupName, subscriptionId` |
+| `SingleSignOn_CreateOrUpdate` | `INSERT` | `configurationName, monitorName, resourceGroupName, subscriptionId, data__properties` |

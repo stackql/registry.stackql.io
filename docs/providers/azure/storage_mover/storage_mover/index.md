@@ -27,17 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `description` | `string` | A description for the Storage Mover. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
 | `location` | `string` | The geo-location where the resource lives |
-| `provisioningState` | `string` | The provisioning state of this resource. |
+| `properties` | `object` | The resource specific properties for the Storage Mover resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `StorageMovers_Get` | `SELECT` | `resourceGroupName, storageMoverName, subscriptionId` | Gets a Storage Mover resource. |
 | `StorageMovers_List` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all Storage Movers in a resource group. |
 | `StorageMovers_ListBySubscription` | `SELECT` | `subscriptionId` | Lists all Storage Movers in a subscription. |
 | `StorageMovers_CreateOrUpdate` | `INSERT` | `resourceGroupName, storageMoverName, subscriptionId` | Creates or updates a top-level Storage Mover resource. |
 | `StorageMovers_Delete` | `DELETE` | `resourceGroupName, storageMoverName, subscriptionId` | Deletes a Storage Mover resource. |
-| `StorageMovers_Get` | `EXEC` | `resourceGroupName, storageMoverName, subscriptionId` | Gets a Storage Mover resource. |
 | `StorageMovers_Update` | `EXEC` | `resourceGroupName, storageMoverName, subscriptionId` | Updates properties for a Storage Mover resource. Properties not specified in the request body will be unchanged. |

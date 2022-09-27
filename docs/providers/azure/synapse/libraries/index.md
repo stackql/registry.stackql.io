@@ -25,15 +25,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `name` | `string` | Name of the library. |
-| `provisioningStatus` | `string` | Provisioning status of the library/package. |
-| `type` | `string` | Type of the library. |
-| `uploadedTimestamp` | `string` | The last update time of the library. |
-| `containerName` | `string` | Storage blob container name. |
-| `creatorId` | `string` | Creator Id of the library/package. |
-| `path` | `string` | Storage blob path of library. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

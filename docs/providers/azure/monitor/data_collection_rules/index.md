@@ -29,19 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `type` | `string` | The type of the resource. |
+| `tags` | `object` | Resource tags. |
+| `etag` | `string` | Resource entity tag (ETag). |
 | `kind` | `string` | The kind of the resource. |
 | `location` | `string` | The geo-location where the resource lives. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `tags` | `object` | Resource tags. |
-| `etag` | `string` | Resource entity tag (ETag). |
+| `type` | `string` | The type of the resource. |
 | `properties` | `object` | Resource properties. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `DataCollectionRules_Get` | `SELECT` | `dataCollectionRuleName, resourceGroupName, subscriptionId` |
 | `DataCollectionRules_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` |
 | `DataCollectionRules_ListBySubscription` | `SELECT` | `subscriptionId` |
 | `DataCollectionRules_Create` | `INSERT` | `dataCollectionRuleName, resourceGroupName, subscriptionId, data__location` |
 | `DataCollectionRules_Delete` | `DELETE` | `dataCollectionRuleName, resourceGroupName, subscriptionId` |
-| `DataCollectionRules_Get` | `EXEC` | `dataCollectionRuleName, resourceGroupName, subscriptionId` |
 | `DataCollectionRules_Update` | `EXEC` | `dataCollectionRuleName, resourceGroupName, subscriptionId` |

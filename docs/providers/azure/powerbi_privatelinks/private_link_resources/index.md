@@ -29,12 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified identifier of the resource. |
 | `name` | `string` | Name of the resource. |
-| `requiredMembers` | `array` | The private link resource required member names. |
-| `requiredZoneNames` | `array` | The private link resource Private link DNS zone name. |
+| `properties` | `object` | Properties of a private link resource. |
 | `type` | `string` | Type of the resource. |
-| `groupId` | `string` | The private link resource group id. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateLinkResources_Get` | `SELECT` | `azureResourceName, privateLinkResourceName, resourceGroupName, subscriptionId` | Get properties of a private link resource. |
 | `PrivateLinkResources_ListByResource` | `SELECT` | `azureResourceName, resourceGroupName, subscriptionId` | List private link resources under a specific Power BI resource. |
-| `PrivateLinkResources_Get` | `EXEC` | `azureResourceName, privateLinkResourceName, resourceGroupName, subscriptionId` | Get properties of a private link resource. |

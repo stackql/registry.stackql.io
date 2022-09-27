@@ -27,15 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `logRules` | `object` | Set of rules for sending logs for the Monitor resource. |
-| `metricRules` | `object` | Set of rules for sending metrics for the Monitor resource. |
-| `provisioningState` | `string` | Provisioning state of the monitoring resource |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `properties` | `object` | Properties for the Tag rules resource of a Monitor account. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `TagRules_Get` | `SELECT` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |
 | `TagRules_List` | `SELECT` | `monitorName, resourceGroupName, subscriptionId` |
-| `TagRules_CreateOrUpdate` | `INSERT` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |
+| `TagRules_CreateOrUpdate` | `INSERT` | `monitorName, resourceGroupName, ruleSetName, subscriptionId, data__properties` |
 | `TagRules_Delete` | `DELETE` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |
-| `TagRules_Get` | `EXEC` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |
 | `TagRules_Update` | `EXEC` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |

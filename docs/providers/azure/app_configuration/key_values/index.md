@@ -29,19 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `label` | `string` | A value used to group key-values.<br />The label is used in unison with the key to uniquely identify a key-value. |
-| `lastModified` | `string` | The last time a modifying operation was performed on the given key-value. |
+| `properties` | `object` | All key-value properties. |
 | `type` | `string` | The type of the resource. |
-| `key` | `string` | The primary identifier of a key-value.<br />The key is used in unison with the label to uniquely identify a key-value. |
-| `eTag` | `string` | An ETag indicating the state of a key-value within a configuration store. |
-| `locked` | `boolean` | A value indicating whether the key-value is locked.<br />A locked key-value may not be modified until it is unlocked. |
-| `value` | `string` | The value of the key-value. |
-| `contentType` | `string` | The content type of the key-value's value.<br />Providing a proper content-type can enable transformations of values when they are retrieved by applications. |
-| `tags` | `object` | A dictionary of tags that can help identify what a key-value may be applicable for. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `KeyValues_Get` | `SELECT` | `configStoreName, keyValueName, resourceGroupName, subscriptionId` | Gets the properties of the specified key-value. |
 | `KeyValues_ListByConfigurationStore` | `SELECT` | `configStoreName, resourceGroupName, subscriptionId` | Lists the key-values for a given configuration store. |
 | `KeyValues_CreateOrUpdate` | `INSERT` | `configStoreName, keyValueName, resourceGroupName, subscriptionId` | Creates a key-value. |
 | `KeyValues_Delete` | `DELETE` | `configStoreName, keyValueName, resourceGroupName, subscriptionId` | Deletes a key-value. |
-| `KeyValues_Get` | `EXEC` | `configStoreName, keyValueName, resourceGroupName, subscriptionId` | Gets the properties of the specified key-value. |

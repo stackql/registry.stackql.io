@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
-| `name` | `string` | The name of the resource |
-| `resourceId` | `string` | The unique resourceId |
-| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `id` | `string` | Fully qualified identifier of the resource |
+| `name` | `string` | Name of the resource |
 | `location` | `string` | Location of the resource |
-| `maintenanceConfigurationId` | `string` | The maintenance configuration Id |
+| `properties` | `object` | Properties for configuration assignment |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `type` | `string` | Type of the resource |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

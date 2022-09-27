@@ -27,22 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Azure resource Id |
-| `name` | `string` | Azure resource name |
-| `categories` | `array` | the categories of the logs. These categories are created as is convenient to the user. Some values are: 'Write', 'Delete', and/or 'Action.' |
-| `location` | `string` | Resource location |
-| `retentionPolicy` | `object` | Specifies the retention policy for the log. |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
+| `name` | `string` | The name of the resource |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `serviceBusRuleId` | `string` | The service bus rule ID of the service bus namespace in which you would like to have Event Hubs created for streaming the Activity Log. The rule ID is of the format: '&#123;service bus resource ID&#125;/authorizationrules/&#123;key name&#125;'. |
-| `locations` | `array` | List of regions for which Activity Log events should be stored or streamed. It is a comma separated list of valid ARM locations including the 'global' location. |
-| `storageAccountId` | `string` | the resource id of the storage account to which you would like to send the Activity Log. |
-| `type` | `string` | Azure resource type |
-| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `properties` | `object` | The log profile properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `LogProfiles_Get` | `SELECT` | `logProfileName, subscriptionId` | Gets the log profile. |
 | `LogProfiles_List` | `SELECT` | `subscriptionId` | List the log profiles. |
-| `LogProfiles_CreateOrUpdate` | `INSERT` | `logProfileName, subscriptionId` | Create or update a log profile in Azure Monitoring REST API. |
+| `LogProfiles_CreateOrUpdate` | `INSERT` | `logProfileName, subscriptionId, data__properties` | Create or update a log profile in Azure Monitoring REST API. |
 | `LogProfiles_Delete` | `DELETE` | `logProfileName, subscriptionId` | Deletes the log profile. |
-| `LogProfiles_Get` | `EXEC` | `logProfileName, subscriptionId` | Gets the log profile. |
 | `LogProfiles_Update` | `EXEC` | `logProfileName, subscriptionId` | Updates an existing LogProfilesResource. To update other fields use the CreateOrUpdate method. |

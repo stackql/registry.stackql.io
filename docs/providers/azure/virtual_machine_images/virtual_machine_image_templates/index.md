@@ -27,29 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `lastRunStatus` | `object` | Describes the latest status of running an image template |
-| `source` | `object` | Describes a virtual machine image source for building, customizing and distributing |
 | `location` | `string` | The geo-location where the resource lives |
-| `exactStagingResourceGroup` | `string` | The staging resource group id in the same subscription as the image template that will be used to build the image. This read-only field differs from 'stagingResourceGroup' only if the value specified in the 'stagingResourceGroup' field is empty. |
-| `buildTimeoutInMinutes` | `integer` | Maximum duration to wait while building the image template (includes all customizations, validations, and distributions). Omit or specify 0 to use the default (4 hours). |
-| `stagingResourceGroup` | `string` | The staging resource group id in the same subscription as the image template that will be used to build the image. If this field is empty, a resource group with a random name will be created. If the resource group specified in this field doesn't exist, it will be created with the same name. If the resource group specified exists, it must be empty and in the same region as the image template. The resource group created will be deleted during template deletion if this field is empty or the resource group specified doesn't exist, but if the resource group specified exists the resources created in the resource group will be deleted during template deletion and the resource group itself will remain. |
-| `distribute` | `array` | The distribution targets where the image output needs to go to. |
-| `provisioningState` | `string` | Provisioning state of the resource |
+| `properties` | `object` | Describes the properties of an image template |
 | `tags` | `object` | Resource tags. |
-| `vmProfile` | `object` | Describes the virtual machines used to build and validate images |
 | `identity` | `object` | Identity for the image template. |
-| `validate` | `object` | Configuration options and list of validations to be performed on the resulting image. |
-| `provisioningError` | `object` | Describes the error happened when create or update an image template |
-| `customize` | `array` | Specifies the properties used to describe the customization steps of the image, like Image source etc |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualMachineImageTemplates_Get` | `SELECT` | `imageTemplateName, resourceGroupName, subscriptionId` | Get information about a virtual machine image template |
 | `VirtualMachineImageTemplates_List` | `SELECT` | `subscriptionId` | Gets information about the VM image templates associated with the subscription. |
 | `VirtualMachineImageTemplates_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets information about the VM image templates associated with the specified resource group. |
 | `VirtualMachineImageTemplates_CreateOrUpdate` | `INSERT` | `imageTemplateName, resourceGroupName, subscriptionId, data__identity` | Create or update a virtual machine image template |
 | `VirtualMachineImageTemplates_Delete` | `DELETE` | `imageTemplateName, resourceGroupName, subscriptionId` | Delete a virtual machine image template |
 | `VirtualMachineImageTemplates_Cancel` | `EXEC` | `imageTemplateName, resourceGroupName, subscriptionId` | Cancel the long running image build based on the image template |
-| `VirtualMachineImageTemplates_Get` | `EXEC` | `imageTemplateName, resourceGroupName, subscriptionId` | Get information about a virtual machine image template |
 | `VirtualMachineImageTemplates_GetRunOutput` | `EXEC` | `imageTemplateName, resourceGroupName, runOutputName, subscriptionId` | Get the specified run output for the specified image template resource |
 | `VirtualMachineImageTemplates_ListRunOutputs` | `EXEC` | `imageTemplateName, resourceGroupName, subscriptionId` | List all run outputs for the specified Image Template resource |
 | `VirtualMachineImageTemplates_Run` | `EXEC` | `imageTemplateName, resourceGroupName, subscriptionId` | Create artifacts from a existing image template |

@@ -36,9 +36,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `BatchEndpoints_Get` | `SELECT` | `endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `BatchEndpoints_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` |
 | `BatchEndpoints_CreateOrUpdate` | `INSERT` | `endpointName, resourceGroupName, subscriptionId, workspaceName, data__location, data__properties` |
 | `BatchEndpoints_Delete` | `DELETE` | `endpointName, resourceGroupName, subscriptionId, workspaceName` |
-| `BatchEndpoints_Get` | `EXEC` | `endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `BatchEndpoints_ListKeys` | `EXEC` | `endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `BatchEndpoints_Update` | `EXEC` | `endpointName, resourceGroupName, subscriptionId, workspaceName` |

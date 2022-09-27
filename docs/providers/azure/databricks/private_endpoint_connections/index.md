@@ -34,7 +34,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnections_Get` | `SELECT` | `privateEndpointConnectionName, resourceGroupName, subscriptionId, workspaceName` | Get a private endpoint connection properties for a workspace |
 | `PrivateEndpointConnections_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | List private endpoint connections of the workspace |
 | `PrivateEndpointConnections_Create` | `INSERT` | `privateEndpointConnectionName, resourceGroupName, subscriptionId, workspaceName, data__properties` | Update the status of a private endpoint connection with the specified name |
 | `PrivateEndpointConnections_Delete` | `DELETE` | `privateEndpointConnectionName, resourceGroupName, subscriptionId, workspaceName` | Remove private endpoint connection with the specified name |
-| `PrivateEndpointConnections_Get` | `EXEC` | `privateEndpointConnectionName, resourceGroupName, subscriptionId, workspaceName` | Get a private endpoint connection properties for a workspace |

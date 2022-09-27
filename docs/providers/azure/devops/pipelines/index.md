@@ -29,19 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
-| `organization` | `object` | Reference to an Azure DevOps Organization. |
-| `pipelineId` | `integer` | Unique identifier of the Azure Pipeline within the Azure DevOps Project. |
-| `project` | `object` | Reference to an Azure DevOps Project. |
 | `type` | `string` | Resource Type |
-| `bootstrapConfiguration` | `object` | Configuration used to bootstrap a Pipeline. |
 | `location` | `string` | Resource Location |
+| `properties` | `object` | Custom properties of a Pipeline. |
 | `tags` | `object` | Resource Tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Pipelines_Get` | `SELECT` | `pipelineName, resourceGroupName, subscriptionId` | Gets an existing Azure Pipeline. |
 | `Pipelines_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all Azure Pipelines under the specified resource group. |
 | `Pipelines_ListBySubscription` | `SELECT` | `subscriptionId` | Lists all Azure Pipelines under the specified subscription. |
-| `Pipelines_CreateOrUpdate` | `INSERT` | `pipelineName, resourceGroupName, subscriptionId` | Creates or updates an Azure Pipeline. |
+| `Pipelines_CreateOrUpdate` | `INSERT` | `pipelineName, resourceGroupName, subscriptionId, data__properties` | Creates or updates an Azure Pipeline. |
 | `Pipelines_Delete` | `DELETE` | `pipelineName, resourceGroupName, subscriptionId` | Deletes an Azure Pipeline. |
-| `Pipelines_Get` | `EXEC` | `pipelineName, resourceGroupName, subscriptionId` | Gets an existing Azure Pipeline. |
 | `Pipelines_Update` | `EXEC` | `pipelineName, resourceGroupName, subscriptionId` | Updates the properties of an Azure Pipeline. Currently, only tags can be updated. |

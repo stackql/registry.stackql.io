@@ -28,15 +28,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `id` | `string` | Identifier in the tenant subscription context. |
-| `planId` | `string` | Plan identifier in the tenant subscription context. |
 | `provisioningState` | `string` | Provisioning state for subscriptions service resources, for example, resource provider registration. |
 | `acquisitionId` | `string` | Acquisition identifier. |
 | `acquisitionTime` | `string` | Acquisition time. |
 | `externalReferenceId` | `string` | External reference identifier. |
+| `planId` | `string` | Plan identifier in the tenant subscription context. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AcquiredPlans_Get` | `SELECT` | `planAcquisitionId, subscriptionId, targetSubscriptionId` | Gets the specified plan acquired by a subscription consuming the offer. |
 | `AcquiredPlans_List` | `SELECT` | `subscriptionId, targetSubscriptionId` | Get a collection of all acquired plans that subscription has access to. |
 | `AcquiredPlans_Create` | `INSERT` | `planAcquisitionId, subscriptionId, targetSubscriptionId` | Creates an acquired plan. |
 | `AcquiredPlans_Delete` | `DELETE` | `planAcquisitionId, subscriptionId, targetSubscriptionId` | Deletes an acquired plan. |
-| `AcquiredPlans_Get` | `EXEC` | `planAcquisitionId, subscriptionId, targetSubscriptionId` | Gets the specified plan acquired by a subscription consuming the offer. |

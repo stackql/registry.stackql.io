@@ -29,20 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` |  |
 | `name` | `string` |  |
-| `integrationRuntimeState` | `string` | Current state of the Integration runtime. |
 | `location` | `string` |  |
-| `provisioningState` | `string` | Provisioning state to track the async operation status. |
+| `properties` | `object` | The SQL Migration Service properties. |
 | `systemData` | `object` |  |
 | `tags` | `object` |  |
 | `type` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SqlMigrationServices_Get` | `SELECT` | `resourceGroupName, sqlMigrationServiceName, subscriptionId` | Retrieve the Database Migration Service |
 | `SqlMigrationServices_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Retrieve all SQL migration services in the resource group. |
 | `SqlMigrationServices_ListBySubscription` | `SELECT` | `subscriptionId` | Retrieve all SQL migration services in the subscriptions. |
 | `SqlMigrationServices_CreateOrUpdate` | `INSERT` | `resourceGroupName, sqlMigrationServiceName, subscriptionId` | Create or Update Database Migration Service. |
 | `SqlMigrationServices_Delete` | `DELETE` | `resourceGroupName, sqlMigrationServiceName, subscriptionId` | Delete Database Migration Service. |
-| `SqlMigrationServices_Get` | `EXEC` | `resourceGroupName, sqlMigrationServiceName, subscriptionId` | Retrieve the Database Migration Service |
 | `SqlMigrationServices_Update` | `EXEC` | `resourceGroupName, sqlMigrationServiceName, subscriptionId` | Update Database Migration Service. |
 | `SqlMigrationServices_deleteNode` | `EXEC` | `resourceGroupName, sqlMigrationServiceName, subscriptionId` | Delete the integration runtime node. |
 | `SqlMigrationServices_listAuthKeys` | `EXEC` | `resourceGroupName, sqlMigrationServiceName, subscriptionId` | Retrieve the List of Authentication Keys for Self Hosted Integration Runtime. |

@@ -25,20 +25,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `databaseNames` | `array` | The list of database names. |
-| `metricName` | `string` | Metric name. |
-| `aggregationFunction` | `string` | Aggregation function name. |
-| `metricDisplayName` | `string` | Metric display name. |
-| `metricValueUnit` | `string` | Metric value unit. |
-| `startTime` | `string` | Observation start time. |
-| `endTime` | `string` | Observation end time. |
-| `queryExecutionCount` | `integer` | Number of query executions in this time interval. |
-| `queryId` | `string` | Database query identifier. |
-| `metricValue` | `number` | Metric value. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `TopQueryStatistics_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Retrieve the Query-Store top queries for specified metric and aggregation. |
-| `TopQueryStatistics_Get` | `EXEC` | `queryStatisticId, resourceGroupName, serverName, subscriptionId` | Retrieve the query statistic for specified identifier. |
+| `TopQueryStatistics_Get` | `SELECT` | `queryStatisticId, resourceGroupName, serverName, subscriptionId` | Retrieve the query statistic for specified identifier. |
+| `TopQueryStatistics_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId, data__properties` | Retrieve the Query-Store top queries for specified metric and aggregation. |

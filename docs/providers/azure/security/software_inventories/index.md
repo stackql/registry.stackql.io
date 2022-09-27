@@ -29,19 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `version` | `string` | Version number of the software product. |
-| `deviceId` | `string` | Unique identifier for the virtual machine in the service. |
-| `vendor` | `string` | Name of the software vendor. |
-| `osPlatform` | `string` | Platform of the operating system running on the device. |
-| `numberOfKnownVulnerabilities` | `integer` | Number of weaknesses. |
+| `properties` | `object` | Software Inventory resource properties |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `endOfSupportStatus` | `string` | End of support status. |
-| `firstSeenAt` | `string` | First time that the software was seen in the device. |
-| `endOfSupportDate` | `string` | The end of support date in case the product is upcoming end of support. |
-| `softwareName` | `string` | Name of the software product. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SoftwareInventories_Get` | `SELECT` | `api-version, resourceGroupName, resourceName, resourceNamespace, resourceType, softwareName, subscriptionId` | Gets a single software data of the virtual machine. |
 | `SoftwareInventories_ListByExtendedResource` | `SELECT` | `api-version, resourceGroupName, resourceName, resourceNamespace, resourceType, subscriptionId` | Gets the software inventory of the virtual machine. |
 | `SoftwareInventories_ListBySubscription` | `SELECT` | `api-version, subscriptionId` | Gets the software inventory of all virtual machines in the subscriptions. |
-| `SoftwareInventories_Get` | `EXEC` | `api-version, resourceGroupName, resourceName, resourceNamespace, resourceType, softwareName, subscriptionId` | Gets a single software data of the virtual machine. |

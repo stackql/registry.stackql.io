@@ -27,15 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `restorePointType` | `string` | The type of restore point |
-| `earliestRestoreDate` | `string` | The earliest time to which this database can be restored |
 | `location` | `string` | Resource location. |
-| `restorePointCreationDate` | `string` | The time the backup was taken |
-| `restorePointLabel` | `string` | The label of restore point for backup request by user |
+| `properties` | `object` | Properties of a database restore point |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SqlPoolRestorePoints_Get` | `SELECT` | `resourceGroupName, restorePointName, sqlPoolName, subscriptionId, workspaceName` | Gets a restore point. |
 | `SqlPoolRestorePoints_List` | `SELECT` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName` | Get SQL pool backup information |
 | `SqlPoolRestorePoints_Create` | `INSERT` | `resourceGroupName, sqlPoolName, subscriptionId, workspaceName, data__restorePointLabel` | Creates a restore point for a data warehouse. |
 | `SqlPoolRestorePoints_Delete` | `DELETE` | `resourceGroupName, restorePointName, sqlPoolName, subscriptionId, workspaceName` | Deletes a restore point. |
-| `SqlPoolRestorePoints_Get` | `EXEC` | `resourceGroupName, restorePointName, sqlPoolName, subscriptionId, workspaceName` | Gets a restore point. |

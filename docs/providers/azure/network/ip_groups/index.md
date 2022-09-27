@@ -30,19 +30,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
 | `location` | `string` | Resource location. |
-| `type` | `string` | Resource type. |
-| `ipAddresses` | `array` | IpAddresses/IpAddressPrefixes in the IpGroups resource. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `properties` | `object` | The IpGroups property information. |
 | `tags` | `object` | Resource tags. |
-| `firewallPolicies` | `array` | List of references to Firewall Policies resources that this IpGroups is associated with. |
-| `firewalls` | `array` | List of references to Firewall resources that this IpGroups is associated with. |
+| `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IpGroups_Get` | `SELECT` | `ipGroupsName, resourceGroupName, subscriptionId` | Gets the specified ipGroups. |
 | `IpGroups_List` | `SELECT` | `subscriptionId` | Gets all IpGroups in a subscription. |
 | `IpGroups_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all IpGroups in a resource group. |
 | `IpGroups_CreateOrUpdate` | `INSERT` | `ipGroupsName, resourceGroupName, subscriptionId` | Creates or updates an ipGroups in a specified resource group. |
 | `IpGroups_Delete` | `DELETE` | `ipGroupsName, resourceGroupName, subscriptionId` | Deletes the specified ipGroups. |
-| `IpGroups_Get` | `EXEC` | `ipGroupsName, resourceGroupName, subscriptionId` | Gets the specified ipGroups. |
 | `IpGroups_UpdateGroups` | `EXEC` | `ipGroupsName, resourceGroupName, subscriptionId` | Updates tags of an IpGroups resource. |

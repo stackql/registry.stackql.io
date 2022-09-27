@@ -29,17 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource. |
-| `expressRouteCircuitPeering` | `object` | ExpressRoute circuit peering identifier. |
-| `routingWeight` | `integer` | The routing weight associated to the connection. |
-| `expressRouteGatewayBypass` | `boolean` | Enable FastPath to vWan Firewall hub. |
-| `enableInternetSecurity` | `boolean` | Enable internet security. |
-| `routingConfiguration` | `object` | Routing Configuration indicating the associated and propagated route tables for this connection. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `authorizationKey` | `string` | Authorization key to establish the connection. |
+| `properties` | `object` | Properties of the ExpressRouteConnection subresource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ExpressRouteConnections_Get` | `SELECT` | `connectionName, expressRouteGatewayName, resourceGroupName, subscriptionId` | Gets the specified ExpressRouteConnection. |
 | `ExpressRouteConnections_List` | `SELECT` | `expressRouteGatewayName, resourceGroupName, subscriptionId` | Lists ExpressRouteConnections. |
 | `ExpressRouteConnections_CreateOrUpdate` | `INSERT` | `connectionName, expressRouteGatewayName, resourceGroupName, subscriptionId, data__name` | Creates a connection between an ExpressRoute gateway and an ExpressRoute circuit. |
 | `ExpressRouteConnections_Delete` | `DELETE` | `connectionName, expressRouteGatewayName, resourceGroupName, subscriptionId` | Deletes a connection to a ExpressRoute circuit. |
-| `ExpressRouteConnections_Get` | `EXEC` | `connectionName, expressRouteGatewayName, resourceGroupName, subscriptionId` | Gets the specified ExpressRouteConnection. |

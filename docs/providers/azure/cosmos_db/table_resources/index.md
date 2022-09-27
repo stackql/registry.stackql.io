@@ -29,7 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `TableResources_CreateUpdateTable` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName` | Create or update an Azure Cosmos DB Table |
+| `TableResources_CreateUpdateTable` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName, data__properties` | Create or update an Azure Cosmos DB Table |
 | `TableResources_DeleteTable` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName` | Deletes an existing Azure Cosmos DB Table. |
 | `TableResources_GetTable` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName` | Gets the Tables under an existing Azure Cosmos DB database account with the provided name. |
 | `TableResources_GetTableThroughput` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName` | Gets the RUs per second of the Table under an existing Azure Cosmos DB database account with the provided name. |
@@ -37,4 +37,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `TableResources_MigrateTableToAutoscale` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName` | Migrate an Azure Cosmos DB Table from manual throughput to autoscale |
 | `TableResources_MigrateTableToManualThroughput` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName` | Migrate an Azure Cosmos DB Table from autoscale to manual throughput |
 | `TableResources_RetrieveContinuousBackupInformation` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName` | Retrieves continuous backup information for a table. |
-| `TableResources_UpdateTableThroughput` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName` | Update RUs per second of an Azure Cosmos DB Table |
+| `TableResources_UpdateTableThroughput` | `EXEC` | `accountName, resourceGroupName, subscriptionId, tableName, data__properties` | Update RUs per second of an Azure Cosmos DB Table |

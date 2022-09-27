@@ -25,12 +25,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `groupId` | `string` | Group Id of the private link resource |
-| `requiredMembers` | `array` | Required members of the private link resource |
-| `requiredZoneNames` | `array` | Required private DNS zone names |
-| `shareablePrivateLinkResourceTypes` | `array` | The list of resources that are onboarded to private link service |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

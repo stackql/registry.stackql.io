@@ -29,15 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `enabled` | `boolean` | Determines whether direct access is enabled. |
-| `principalId` | `string` | Principal (User) Identifier. |
+| `properties` | `object` | Tenant access information contract of the API Management service. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `TenantAccess_Get` | `SELECT` | `accessName, resourceGroupName, serviceName, subscriptionId` | Get tenant access information details without secrets. |
 | `TenantAccess_ListByService` | `SELECT` | `resourceGroupName, serviceName, subscriptionId` | Returns list of access infos - for Git and Management endpoints. |
 | `TenantAccess_Create` | `INSERT` | `If-Match, accessName, resourceGroupName, serviceName, subscriptionId` | Update tenant access information details. |
-| `TenantAccess_Get` | `EXEC` | `accessName, resourceGroupName, serviceName, subscriptionId` | Get tenant access information details without secrets. |
 | `TenantAccess_GetEntityTag` | `EXEC` | `accessName, resourceGroupName, serviceName, subscriptionId` | Tenant access metadata |
 | `TenantAccess_ListSecrets` | `EXEC` | `accessName, resourceGroupName, serviceName, subscriptionId` | Get tenant access information details. |
 | `TenantAccess_RegeneratePrimaryKey` | `EXEC` | `accessName, resourceGroupName, serviceName, subscriptionId` | Regenerate primary access key |

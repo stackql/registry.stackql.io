@@ -25,16 +25,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `recommendationType` | `string` | Recommendation action type. |
-| `sessionId` | `string` | Recommendation action session identifier. |
-| `actionId` | `integer` | Recommendation action identifier. |
-| `advisorName` | `string` | Advisor name. |
-| `createdTime` | `string` | Recommendation action creation time. |
-| `details` | `object` | Recommendation action details. |
-| `expirationTime` | `string` | Recommendation action expiration time. |
-| `reason` | `string` | Recommendation action reason. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

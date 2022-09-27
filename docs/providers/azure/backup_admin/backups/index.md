@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
+| `properties` | `object` | Properties for a backup. |
 | `tags` | `object` | List of key value pairs. |
 | `type` | `string` | Type of resource. |
-| `backupInfo` | `object` | Holds information for a backup. |
 | `location` | `string` | Location of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Backups_Get` | `SELECT` | `backup, location, resourceGroupName, subscriptionId` | Returns a backup from a location based on name. |
 | `Backups_List` | `SELECT` | `location, resourceGroupName, subscriptionId` | Returns a list of backups from a location. |
-| `Backups_Get` | `EXEC` | `backup, location, resourceGroupName, subscriptionId` | Returns a backup from a location based on name. |
 | `Backups_Restore` | `EXEC` | `backup, location, resourceGroupName, subscriptionId` | Restore a backup. |

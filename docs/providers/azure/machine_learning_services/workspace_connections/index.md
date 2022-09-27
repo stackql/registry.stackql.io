@@ -35,7 +35,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `WorkspaceConnections_Get` | `SELECT` | `connectionName, resourceGroupName, subscriptionId, workspaceName` |
 | `WorkspaceConnections_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` |
 | `WorkspaceConnections_Create` | `INSERT` | `connectionName, resourceGroupName, subscriptionId, workspaceName, data__properties` |
 | `WorkspaceConnections_Delete` | `DELETE` | `connectionName, resourceGroupName, subscriptionId, workspaceName` |
-| `WorkspaceConnections_Get` | `EXEC` | `connectionName, resourceGroupName, subscriptionId, workspaceName` |

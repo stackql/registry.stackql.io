@@ -25,16 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `deletionTime` | `string` | The deletion time of the deleted server. |
-| `fullyQualifiedDomainName` | `string` | The fully qualified domain name of the server. |
-| `originalId` | `string` | The original ID of the server before deletion. |
-| `version` | `string` | The version of the deleted server. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DeletedServers_Get` | `SELECT` | `deletedServerName, locationName, subscriptionId` | Gets a deleted server. |
 | `DeletedServers_List` | `SELECT` | `subscriptionId` | Gets a list of all deleted servers in a subscription. |
 | `DeletedServers_ListByLocation` | `SELECT` | `locationName, subscriptionId` | Gets a list of deleted servers for a location. |
-| `DeletedServers_Get` | `EXEC` | `deletedServerName, locationName, subscriptionId` | Gets a deleted server. |
 | `DeletedServers_Recover` | `EXEC` | `deletedServerName, locationName, subscriptionId` | Recovers a deleted server. |

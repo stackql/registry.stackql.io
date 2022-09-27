@@ -29,15 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `thresholdRules` | `array` | The list of custom alert threshold rules. |
-| `timeWindowRules` | `array` | The list of custom alert time-window rules. |
+| `properties` | `object` | describes properties of a security group. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `allowlistRules` | `array` | The allow-list custom alert rules. |
-| `denylistRules` | `array` | The deny-list custom alert rules. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DeviceSecurityGroups_Get` | `SELECT` | `api-version, deviceSecurityGroupName, resourceId` | Use this method to get the device security group for the specified IoT Hub resource. |
 | `DeviceSecurityGroups_List` | `SELECT` | `api-version, resourceId` | Use this method get the list of device security groups for the specified IoT Hub resource. |
 | `DeviceSecurityGroups_CreateOrUpdate` | `INSERT` | `api-version, deviceSecurityGroupName, resourceId` | Use this method to creates or updates the device security group on a specified IoT Hub resource. |
 | `DeviceSecurityGroups_Delete` | `DELETE` | `api-version, deviceSecurityGroupName, resourceId` | User this method to deletes the device security group. |
-| `DeviceSecurityGroups_Get` | `EXEC` | `api-version, deviceSecurityGroupName, resourceId` | Use this method to get the device security group for the specified IoT Hub resource. |

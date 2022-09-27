@@ -29,22 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The unique resource identifier of the database account. |
 | `name` | `string` | The name of the database account. |
-| `status` | `string` | Job Status |
-| `source` | `object` | Base class for all DataTransfer source/sink |
-| `error` | `object` | Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also follows the OData error response format.) |
+| `properties` | `object` | The properties of a DataTransfer Job |
 | `type` | `string` | The type of Azure resource. |
-| `processedCount` | `integer` | Processed Count. |
-| `totalCount` | `integer` | Total Count. |
-| `destination` | `object` | Base class for all DataTransfer source/sink |
-| `workerCount` | `integer` | Worker count |
-| `jobName` | `string` | Job Name |
-| `lastUpdatedUtcTime` | `string` | Last Updated Time (ISO-8601 format). |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DataTransferJobs_Get` | `SELECT` | `accountName, jobName, resourceGroupName, subscriptionId` | Get a Data Transfer Job. |
 | `DataTransferJobs_ListByDatabaseAccount` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | Get a list of Data Transfer jobs. |
 | `DataTransferJobs_Create` | `INSERT` | `accountName, jobName, resourceGroupName, subscriptionId, data__properties` | Creates a Data Transfer Job. |
 | `DataTransferJobs_Cancel` | `EXEC` | `accountName, jobName, resourceGroupName, subscriptionId` | Cancels a Data Transfer Job. |
-| `DataTransferJobs_Get` | `EXEC` | `accountName, jobName, resourceGroupName, subscriptionId` | Get a Data Transfer Job. |
 | `DataTransferJobs_Pause` | `EXEC` | `accountName, jobName, resourceGroupName, subscriptionId` | Pause a Data Transfer Job. |
 | `DataTransferJobs_Resume` | `EXEC` | `accountName, jobName, resourceGroupName, subscriptionId` | Resumes a Data Transfer Job. |

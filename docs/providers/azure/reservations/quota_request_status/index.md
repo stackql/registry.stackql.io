@@ -29,13 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Quota request ID. |
 | `name` | `string` | Quota request name. |
-| `provisioningState` | `string` | The quota request status. |
-| `requestSubmitTime` | `string` | The time when the quota request was submitted using format: yyyy-MM-ddTHH:mm:ssZ as specified by the ISO 8601 standard. |
+| `properties` | `object` | The details of quota request. |
 | `type` | `string` | Resource type |
-| `value` | `array` | The quotaRequests. |
-| `message` | `string` | User friendly status message. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `QuotaRequestStatus_Get` | `SELECT` | `id, location, providerId, subscriptionId` | For the specified Azure region (location), get the details and status of the quota request by the quota request ID for the resources of the resource provider. The PUT request for the quota (service limit) returns a response with the requestId parameter. |
 | `QuotaRequestStatus_List` | `SELECT` | `location, providerId, subscriptionId` | For the specified Azure region (location), subscription, and resource provider, get the history of the quota requests for the past year. To select specific quota requests, use the oData filter. |
-| `QuotaRequestStatus_Get` | `EXEC` | `id, location, providerId, subscriptionId` | For the specified Azure region (location), get the details and status of the quota request by the quota request ID for the resources of the resource provider. The PUT request for the quota (service limit) returns a response with the requestId parameter. |

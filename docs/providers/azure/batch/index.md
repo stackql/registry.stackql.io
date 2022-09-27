@@ -22,7 +22,7 @@ The Batch Management Client.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Batch Management Client (Microsoft.Batch)</td></tr>
 <tr><td><b>Description</b></td><td>The Batch Management Client.</td></tr>
-<tr><td><b>Id</b></td><td><code>batch:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>batch:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

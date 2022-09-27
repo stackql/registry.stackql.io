@@ -29,20 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `protectionMode` | `object` | The protection mode of the collection/file types. Exe/Msi/Script are used for Windows, Executable is used for Linux. |
-| `enforcementMode` | `string` | The application control policy enforcement/protection mode of the machine group |
-| `recommendationStatus` | `string` | The initial recommendation status of the machine group or machine |
-| `pathRecommendations` | `array` |  |
-| `vmRecommendations` | `array` |  |
-| `location` | `string` | Location where the resource is stored |
-| `sourceSystem` | `string` | The source type of the machine group |
-| `configurationStatus` | `string` | The configuration status of the machines group or machine or rule |
-| `issues` | `array` |  |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `location` | `string` | Location where the resource is stored |
+| `properties` | `object` | Represents a machines group and set of rules to be allowed running on a machine |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AdaptiveApplicationControls_Get` | `SELECT` | `api-version, ascLocation, groupName, subscriptionId` | Gets an application control VM/server group. |
 | `AdaptiveApplicationControls_List` | `SELECT` | `api-version, subscriptionId` | Gets a list of application control machine groups for the subscription. |
 | `AdaptiveApplicationControls_Delete` | `DELETE` | `api-version, ascLocation, groupName, subscriptionId` | Delete an application control machine group |
-| `AdaptiveApplicationControls_Get` | `EXEC` | `api-version, ascLocation, groupName, subscriptionId` | Gets an application control VM/server group. |
-| `AdaptiveApplicationControls_Put` | `EXEC` | `api-version, ascLocation, groupName, subscriptionId` | Update an application control machine group |
+| `AdaptiveApplicationControls_Put` | `EXEC` | `api-version, ascLocation, groupName, subscriptionId, data__properties` | Update an application control machine group |

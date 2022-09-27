@@ -29,12 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `description` | `string` | User friendly description of the control |
-| `displayName` | `string` | User friendly display name of the control |
-| `maxScore` | `integer` | Maximum control score (0..10) |
-| `source` | `object` | The type of the security control (For example, BuiltIn) |
+| `properties` | `object` | Security Control Definition Properties. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `assessmentDefinitions` | `array` | array of azure resource IDs |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

@@ -29,8 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Gets Unique ARM identifier for this object. |
 | `name` | `string` | Gets the name of this object. |
-| `properties` | `object` | Properties model for replication eligibility results API. |
 | `type` | `string` | Gets the object type. |
+| `properties` | `object` | Properties model for replication eligibility results API. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

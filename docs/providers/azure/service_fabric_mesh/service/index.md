@@ -30,8 +30,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Fully qualified identifier for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `type` | `string` | The type of the resource. Ex- Microsoft.Compute/virtualMachines or Microsoft.Storage/storageAccounts. |
+| `properties` | `object` | This type describes properties of a service resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Service_Get` | `SELECT` | `api-version, applicationResourceName, resourceGroupName, serviceResourceName, subscriptionId` | Gets the information about the service resource with the given name. The information include the description and other properties of the service. |
 | `Service_List` | `SELECT` | `api-version, applicationResourceName, resourceGroupName, subscriptionId` | Gets the information about all services of an application resource. The information include the description and other properties of the Service. |
-| `Service_Get` | `EXEC` | `api-version, applicationResourceName, resourceGroupName, serviceResourceName, subscriptionId` | Gets the information about the service resource with the given name. The information include the description and other properties of the service. |

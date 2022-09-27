@@ -27,13 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | This type describes properties of an application resource. |
 | `tags` | `object` | Resource tags. |
+| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Application_Get` | `SELECT` | `api-version, applicationResourceName, resourceGroupName, subscriptionId` | Gets the information about the application resource with the given name. The information include the description and other properties of the application. |
 | `Application_ListByResourceGroup` | `SELECT` | `api-version, resourceGroupName, subscriptionId` | Gets the information about all application resources in a given resource group. The information include the description and other properties of the Application. |
 | `Application_ListBySubscription` | `SELECT` | `api-version, subscriptionId` | Gets the information about all application resources in a given resource group. The information include the description and other properties of the application. |
-| `Application_Create` | `INSERT` | `api-version, applicationResourceName, resourceGroupName, subscriptionId` | Creates an application resource with the specified name, description and properties. If an application resource with the same name exists, then it is updated with the specified description and properties. |
+| `Application_Create` | `INSERT` | `api-version, applicationResourceName, resourceGroupName, subscriptionId, data__properties` | Creates an application resource with the specified name, description and properties. If an application resource with the same name exists, then it is updated with the specified description and properties. |
 | `Application_Delete` | `DELETE` | `api-version, applicationResourceName, resourceGroupName, subscriptionId` | Deletes the application resource identified by the name. |
-| `Application_Get` | `EXEC` | `api-version, applicationResourceName, resourceGroupName, subscriptionId` | Gets the information about the application resource with the given name. The information include the description and other properties of the application. |

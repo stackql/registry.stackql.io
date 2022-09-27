@@ -29,5 +29,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RecoverableManagedDatabases_Get` | `SELECT` | `managedInstanceName, recoverableDatabaseName, resourceGroupName, subscriptionId` | Gets a recoverable managed database. |
 | `RecoverableManagedDatabases_ListByInstance` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId` | Gets a list of recoverable managed databases. |
-| `RecoverableManagedDatabases_Get` | `EXEC` | `managedInstanceName, recoverableDatabaseName, resourceGroupName, subscriptionId` | Gets a recoverable managed database. |

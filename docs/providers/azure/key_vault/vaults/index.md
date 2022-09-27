@@ -37,12 +37,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Vaults_Get` | `SELECT` | `resourceGroupName, subscriptionId, vaultName` | Gets the specified Azure key vault. |
 | `Vaults_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | The List operation gets information about the vaults associated with the subscription and within the specified resource group. |
 | `Vaults_ListBySubscription` | `SELECT` | `subscriptionId` | The List operation gets information about the vaults associated with the subscription. |
 | `Vaults_CreateOrUpdate` | `INSERT` | `resourceGroupName, subscriptionId, vaultName, data__location, data__properties` | Create or update a key vault in the specified subscription. |
 | `Vaults_Delete` | `DELETE` | `resourceGroupName, subscriptionId, vaultName` | Deletes the specified Azure key vault. |
 | `Vaults_CheckNameAvailability` | `EXEC` | `subscriptionId, data__name, data__type` | Checks that the vault name is valid and is not already in use. |
-| `Vaults_Get` | `EXEC` | `resourceGroupName, subscriptionId, vaultName` | Gets the specified Azure key vault. |
 | `Vaults_GetDeleted` | `EXEC` | `location, subscriptionId, vaultName` | Gets the deleted Azure key vault. |
 | `Vaults_List` | `EXEC` | `$filter, api-version, subscriptionId` | The List operation gets information about the vaults associated with the subscription. |
 | `Vaults_ListDeleted` | `EXEC` | `subscriptionId` | Gets information about the deleted vaults in a subscription. |

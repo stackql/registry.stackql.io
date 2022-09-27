@@ -37,12 +37,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `CassandraClusters_Get` | `SELECT` | `clusterName, resourceGroupName, subscriptionId` | Get the properties of a managed Cassandra cluster. |
 | `CassandraClusters_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | List all managed Cassandra clusters in this resource group. |
 | `CassandraClusters_ListBySubscription` | `SELECT` | `subscriptionId` | List all managed Cassandra clusters in this subscription. |
 | `CassandraClusters_Delete` | `DELETE` | `clusterName, resourceGroupName, subscriptionId` | Deletes a managed Cassandra cluster. |
 | `CassandraClusters_CreateUpdate` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | Create or update a managed Cassandra cluster. When updating, you must specify all writable properties. To update only some properties, use PATCH. |
 | `CassandraClusters_Deallocate` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | Deallocate the Managed Cassandra Cluster and Associated Data Centers. Deallocation will deallocate the host virtual machine of this cluster, and reserved the data disk. This won't do anything on an already deallocated cluster. Use Start to restart the cluster. |
-| `CassandraClusters_Get` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | Get the properties of a managed Cassandra cluster. |
 | `CassandraClusters_GetBackup` | `EXEC` | `backupId, clusterName, resourceGroupName, subscriptionId` | Get the properties of an individual backup of this cluster that is available to restore. |
 | `CassandraClusters_InvokeCommand` | `EXEC` | `clusterName, resourceGroupName, subscriptionId, data__command, data__host` | Invoke a command like nodetool for cassandra maintenance  |
 | `CassandraClusters_ListBackups` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | List the backups of this cluster that are available to restore. |

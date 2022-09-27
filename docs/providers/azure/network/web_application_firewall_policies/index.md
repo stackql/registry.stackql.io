@@ -30,22 +30,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
 | `location` | `string` | Resource location. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `resourceState` | `string` | Resource status of the policy. |
-| `customRules` | `array` | The custom rules inside the policy. |
-| `applicationGateways` | `array` | A collection of references to application gateways. |
-| `pathBasedRules` | `array` | A collection of references to application gateway path rules. |
-| `managedRules` | `object` | Allow to exclude some variable satisfy the condition for the WAF check. |
+| `properties` | `object` | Defines web application firewall policy properties. |
 | `tags` | `object` | Resource tags. |
-| `policySettings` | `object` | Defines contents of a web application firewall global configuration. |
 | `type` | `string` | Resource type. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `httpListeners` | `array` | A collection of references to application gateway http listeners. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WebApplicationFirewallPolicies_Get` | `SELECT` | `policyName, resourceGroupName, subscriptionId` | Retrieve protection policy with specified name within a resource group. |
 | `WebApplicationFirewallPolicies_List` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all of the protection policies within a resource group. |
 | `WebApplicationFirewallPolicies_ListAll` | `SELECT` | `subscriptionId` | Gets all the WAF policies in a subscription. |
 | `WebApplicationFirewallPolicies_CreateOrUpdate` | `INSERT` | `policyName, resourceGroupName, subscriptionId` | Creates or update policy with specified rule set name within a resource group. |
 | `WebApplicationFirewallPolicies_Delete` | `DELETE` | `policyName, resourceGroupName, subscriptionId` | Deletes Policy. |
-| `WebApplicationFirewallPolicies_Get` | `EXEC` | `policyName, resourceGroupName, subscriptionId` | Retrieve protection policy with specified name within a resource group. |

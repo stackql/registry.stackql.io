@@ -27,22 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | The geo-location where the resource lives |
-| `weeklyBackupsToKeep` | `integer` | Weekly backups count to keep |
-| `tags` | `object` | Resource tags. |
-| `volumesAssigned` | `integer` | Volumes using current backup policy |
-| `dailyBackupsToKeep` | `integer` | Daily backups count to keep |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `monthlyBackupsToKeep` | `integer` | Monthly backups count to keep |
-| `volumeBackups` | `array` | A list of volumes assigned to this policy |
-| `backupPolicyId` | `string` | Backup Policy Resource ID |
-| `enabled` | `boolean` | The property to decide policy is enabled or not |
-| `provisioningState` | `string` | Azure lifecycle management |
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Backup policy properties |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `BackupPolicies_Get` | `SELECT` | `accountName, backupPolicyName, resourceGroupName, subscriptionId` | Get a particular backup Policy |
 | `BackupPolicies_List` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | List backup policies for Netapp Account |
-| `BackupPolicies_Create` | `INSERT` | `accountName, backupPolicyName, resourceGroupName, subscriptionId, data__location` | Create a backup policy for Netapp Account |
+| `BackupPolicies_Create` | `INSERT` | `accountName, backupPolicyName, resourceGroupName, subscriptionId, data__location, data__properties` | Create a backup policy for Netapp Account |
 | `BackupPolicies_Delete` | `DELETE` | `accountName, backupPolicyName, resourceGroupName, subscriptionId` | Delete backup policy |
-| `BackupPolicies_Get` | `EXEC` | `accountName, backupPolicyName, resourceGroupName, subscriptionId` | Get a particular backup Policy |
 | `BackupPolicies_Update` | `EXEC` | `accountName, backupPolicyName, resourceGroupName, subscriptionId` | Patch a backup policy for Netapp Account |

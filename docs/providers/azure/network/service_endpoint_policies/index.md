@@ -29,23 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `type` | `string` | Resource type. |
-| `kind` | `string` | Kind of service endpoint policy. This is metadata used for the Azure portal experience. |
-| `serviceEndpointPolicyDefinitions` | `array` | A collection of service endpoint policy definitions of the service endpoint policy. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `serviceAlias` | `string` | The alias indicating if the policy belongs to a service |
-| `subnets` | `array` | A collection of references to subnets. |
-| `contextualServiceEndpointPolicies` | `array` | A collection of contextual service endpoint policy. |
-| `tags` | `object` | Resource tags. |
-| `location` | `string` | Resource location. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `resourceGuid` | `string` | The resource GUID property of the service endpoint policy resource. |
+| `kind` | `string` | Kind of service endpoint policy. This is metadata used for the Azure portal experience. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | Service Endpoint Policy resource. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ServiceEndpointPolicies_Get` | `SELECT` | `resourceGroupName, serviceEndpointPolicyName, subscriptionId` | Gets the specified service Endpoint Policies in a specified resource group. |
 | `ServiceEndpointPolicies_List` | `SELECT` | `subscriptionId` | Gets all the service endpoint policies in a subscription. |
 | `ServiceEndpointPolicies_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all service endpoint Policies in a resource group. |
 | `ServiceEndpointPolicies_CreateOrUpdate` | `INSERT` | `resourceGroupName, serviceEndpointPolicyName, subscriptionId` | Creates or updates a service Endpoint Policies. |
 | `ServiceEndpointPolicies_Delete` | `DELETE` | `resourceGroupName, serviceEndpointPolicyName, subscriptionId` | Deletes the specified service endpoint policy. |
-| `ServiceEndpointPolicies_Get` | `EXEC` | `resourceGroupName, serviceEndpointPolicyName, subscriptionId` | Gets the specified service Endpoint Policies in a specified resource group. |
 | `ServiceEndpointPolicies_UpdateTags` | `EXEC` | `resourceGroupName, serviceEndpointPolicyName, subscriptionId` | Updates tags of a service endpoint policy. |

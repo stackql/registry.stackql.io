@@ -25,8 +25,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `nextLink` | `string` | Gets or sets the value of  next link. |
+| `summaryCollection` | `object` | Summary Collection. |
+| `totalCount` | `integer` | Gets the total count. |
+| `value` | `array` | Gets or sets the list of unresolved dependencies. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `UnresolvedDependencies_Get` | `EXEC` | `api-version, moveCollectionName, resourceGroupName, subscriptionId` |
+| `UnresolvedDependencies_Get` | `SELECT` | `api-version, moveCollectionName, resourceGroupName, subscriptionId` |

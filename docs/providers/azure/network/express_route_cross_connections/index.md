@@ -29,27 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `bandwidthInMbps` | `integer` | The circuit bandwidth In Mbps. |
-| `tags` | `object` | Resource tags. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `expressRouteCircuit` | `object` | Reference to an express route circuit. |
-| `peerings` | `array` | The list of peerings. |
-| `serviceProviderProvisioningState` | `string` | The ServiceProviderProvisioningState state of the resource. |
-| `sTag` | `integer` | The identifier of the circuit traffic. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `serviceProviderNotes` | `string` | Additional read only notes set by the connectivity provider. |
-| `peeringLocation` | `string` | The peering location of the ExpressRoute circuit. |
-| `type` | `string` | Resource type. |
-| `secondaryAzurePort` | `string` | The name of the secondary port. |
 | `location` | `string` | Resource location. |
-| `primaryAzurePort` | `string` | The name of the primary port. |
+| `properties` | `object` | Properties of ExpressRouteCrossConnection. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ExpressRouteCrossConnections_Get` | `SELECT` | `crossConnectionName, resourceGroupName, subscriptionId` | Gets details about the specified ExpressRouteCrossConnection. |
 | `ExpressRouteCrossConnections_List` | `SELECT` | `subscriptionId` | Retrieves all the ExpressRouteCrossConnections in a subscription. |
 | `ExpressRouteCrossConnections_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Retrieves all the ExpressRouteCrossConnections in a resource group. |
 | `ExpressRouteCrossConnections_CreateOrUpdate` | `INSERT` | `crossConnectionName, resourceGroupName, subscriptionId` | Update the specified ExpressRouteCrossConnection. |
-| `ExpressRouteCrossConnections_Get` | `EXEC` | `crossConnectionName, resourceGroupName, subscriptionId` | Gets details about the specified ExpressRouteCrossConnection. |
 | `ExpressRouteCrossConnections_ListArpTable` | `EXEC` | `crossConnectionName, devicePath, peeringName, resourceGroupName, subscriptionId` | Gets the currently advertised ARP table associated with the express route cross connection in a resource group. |
 | `ExpressRouteCrossConnections_ListRoutesTable` | `EXEC` | `crossConnectionName, devicePath, peeringName, resourceGroupName, subscriptionId` | Gets the currently advertised routes table associated with the express route cross connection in a resource group. |
 | `ExpressRouteCrossConnections_ListRoutesTableSummary` | `EXEC` | `crossConnectionName, devicePath, peeringName, resourceGroupName, subscriptionId` | Gets the route table summary associated with the express route cross connection in a resource group. |

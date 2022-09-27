@@ -29,12 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Specifies the resource identifier of the resource. |
 | `name` | `string` | Specifies the name of the resource. |
-| `location` | `string` | Specifies the location of the resource. |
-| `privateEndpointConnections` | `array` | Specifies the private endpoint connections of the resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Specifies the tags of the resource. |
-| `tenantId` | `string` | Specifies the tenant id of the resource. |
 | `type` | `string` | Specifies the type of the resource. |
+| `location` | `string` | Specifies the location of the resource. |
+| `properties` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

@@ -25,10 +25,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id represents the complete path to the resource. |
+| `name` | `string` | Resource name associated with the resource. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/... |
+| `eTag` | `string` | Optional ETag. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | The resource storage details. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `BackupResourceStorageConfigsNonCRR_Get` | `EXEC` | `api-version, resourceGroupName, subscriptionId, vaultName` | Fetches resource storage config. |
+| `BackupResourceStorageConfigsNonCRR_Get` | `SELECT` | `api-version, resourceGroupName, subscriptionId, vaultName` | Fetches resource storage config. |
 | `BackupResourceStorageConfigsNonCRR_Update` | `EXEC` | `api-version, resourceGroupName, subscriptionId, vaultName` | Updates vault storage model type. |
 | `BackupResourceStorageConfigsNonCRR_patch` | `EXEC` | `api-version, resourceGroupName, subscriptionId, vaultName` | Updates vault storage model type. |

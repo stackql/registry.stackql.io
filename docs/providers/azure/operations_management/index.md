@@ -22,7 +22,7 @@ Azure Log Analytics - Operations Management
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Azure Log Analytics - Operations Management (Microsoft.OperationsManagement)</td></tr>
 <tr><td><b>Description</b></td><td>Azure Log Analytics - Operations Management</td></tr>
-<tr><td><b>Id</b></td><td><code>operations_management:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>operations_management:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

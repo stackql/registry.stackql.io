@@ -27,37 +27,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `bytesNoTransferNeeded` | `integer` | Bytes of data that will not be transferred, as they are already found on target (e.g. mirror mode). |
-| `scanStatus` | `string` | The status of Agent's scanning of source. |
-| `bytesTransferred` | `integer` | Bytes of data successfully transferred to target. |
-| `sourceResourceId` | `string` | Fully qualified resource id of source Endpoint. This id may no longer exist. |
-| `targetProperties` | `object` | Copy of Endpoint resource's properties at time of Job Run creation. |
-| `bytesExcluded` | `integer` | Bytes of data that will not be transferred, as they are excluded by user configuration. |
-| `sourceProperties` | `object` | Copy of source Endpoint resource's properties at time of Job Run creation. |
-| `error` | `object` | Error type |
-| `executionEndTime` | `string` | End time of the run. Null if Agent has not reported that the job has ended. |
-| `agentName` | `string` | Name of the Agent assigned to this run. |
-| `itemsFailed` | `integer` | Number of items that were attempted to transfer and failed. |
-| `bytesFailed` | `integer` | Bytes of data that were attempted to transfer and failed. |
+| `properties` | `object` | Job run properties. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `bytesScanned` | `integer` | Bytes of data scanned so far in source. |
-| `provisioningState` | `string` | The provisioning state of this resource. |
-| `lastStatusUpdate` | `string` | The last updated time of the Job Run. |
-| `bytesUnsupported` | `integer` | Bytes of data that will not be transferred, as they are unsupported on target. |
-| `jobDefinitionProperties` | `object` | Copy of parent Job Definition's properties at time of Job Run creation. |
-| `status` | `string` | The state of the job execution. |
-| `itemsNoTransferNeeded` | `integer` | Number of items that will not be transferred, as they are already found on target (e.g. mirror mode). |
-| `itemsUnsupported` | `integer` | Number of items that will not be transferred, as they are unsupported on target. |
-| `itemsExcluded` | `integer` | Number of items that will not be transferred, as they are excluded by user configuration. |
-| `executionStartTime` | `string` | Start time of the run. Null if no Agent reported that the job has started. |
-| `targetName` | `string` | Name of target Endpoint resource. This resource may no longer exist. |
-| `itemsScanned` | `integer` | Number of items scanned so far in source. |
-| `targetResourceId` | `string` | Fully qualified resource id of of Endpoint. This id may no longer exist. |
-| `sourceName` | `string` | Name of source Endpoint resource. This resource may no longer exist. |
-| `agentResourceId` | `string` | Fully qualified resource id of the Agent assigned to this run. |
-| `itemsTransferred` | `integer` | Number of items successfully transferred to target. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `JobRuns_Get` | `SELECT` | `jobDefinitionName, jobRunName, projectName, resourceGroupName, storageMoverName, subscriptionId` | Gets a Job Run resource. |
 | `JobRuns_List` | `SELECT` | `jobDefinitionName, projectName, resourceGroupName, storageMoverName, subscriptionId` | Lists all Job Runs in a Job Definition. |
-| `JobRuns_Get` | `EXEC` | `jobDefinitionName, jobRunName, projectName, resourceGroupName, storageMoverName, subscriptionId` | Gets a Job Run resource. |

@@ -29,19 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `ipv6CircuitConnectionConfig` | `object` | IPv6 Circuit Connection properties for global reach. |
-| `addressPrefix` | `string` | /29 IP address space to carve out Customer addresses for tunnels. |
-| `authorizationKey` | `string` | The authorization key. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `circuitConnectionStatus` | `string` | Express Route Circuit connection state. |
 | `type` | `string` | Type of the resource. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `expressRouteCircuitPeering` | `object` | Reference to another subresource. |
-| `peerExpressRouteCircuitPeering` | `object` | Reference to another subresource. |
+| `properties` | `object` | Properties of the express route circuit connection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ExpressRouteCircuitConnections_Get` | `SELECT` | `circuitName, connectionName, peeringName, resourceGroupName, subscriptionId` | Gets the specified Express Route Circuit Connection from the specified express route circuit. |
 | `ExpressRouteCircuitConnections_List` | `SELECT` | `circuitName, peeringName, resourceGroupName, subscriptionId` | Gets all global reach connections associated with a private peering in an express route circuit. |
 | `ExpressRouteCircuitConnections_CreateOrUpdate` | `INSERT` | `circuitName, connectionName, peeringName, resourceGroupName, subscriptionId` | Creates or updates a Express Route Circuit Connection in the specified express route circuits. |
 | `ExpressRouteCircuitConnections_Delete` | `DELETE` | `circuitName, connectionName, peeringName, resourceGroupName, subscriptionId` | Deletes the specified Express Route Circuit Connection from the specified express route circuit. |
-| `ExpressRouteCircuitConnections_Get` | `EXEC` | `circuitName, connectionName, peeringName, resourceGroupName, subscriptionId` | Gets the specified Express Route Circuit Connection from the specified express route circuit. |

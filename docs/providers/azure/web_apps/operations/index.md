@@ -43,6 +43,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `Move` | `EXEC` | `resourceGroupName, subscriptionId` | Description for Move resources between resource groups. |
 | `UpdatePublishingUser` | `EXEC` |  | Description for Updates publishing user |
 | `UpdateSourceControl` | `EXEC` | `sourceControlType` | Description for Updates source control token |
-| `Validate` | `EXEC` | `resourceGroupName, subscriptionId, data__location, data__name, data__type` | Description for Validate if a resource can be created. |
+| `Validate` | `EXEC` | `resourceGroupName, subscriptionId, data__location, data__name, data__properties, data__type` | Description for Validate if a resource can be created. |
 | `ValidateMove` | `EXEC` | `resourceGroupName, subscriptionId` | Description for Validate whether a resource can be moved. |
 | `VerifyHostingEnvironmentVnet` | `EXEC` | `subscriptionId` | Description for Verifies if this VNET is compatible with an App Service Environment by analyzing the Network Security Group rules. |

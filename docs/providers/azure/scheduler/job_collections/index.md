@@ -36,11 +36,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `JobCollections_Get` | `SELECT` | `api-version, jobCollectionName, resourceGroupName, subscriptionId` | Gets a job collection. |
 | `JobCollections_ListByResourceGroup` | `SELECT` | `api-version, resourceGroupName, subscriptionId` | Gets all job collections under specified resource group. |
 | `JobCollections_ListBySubscription` | `SELECT` | `api-version, subscriptionId` | Gets all job collections under specified subscription. |
 | `JobCollections_CreateOrUpdate` | `INSERT` | `api-version, jobCollectionName, resourceGroupName, subscriptionId` | Provisions a new job collection or updates an existing job collection. |
 | `JobCollections_Delete` | `DELETE` | `api-version, jobCollectionName, resourceGroupName, subscriptionId` | Deletes a job collection. |
 | `JobCollections_Disable` | `EXEC` | `api-version, jobCollectionName, resourceGroupName, subscriptionId` | Disables all of the jobs in the job collection. |
 | `JobCollections_Enable` | `EXEC` | `api-version, jobCollectionName, resourceGroupName, subscriptionId` | Enables all of the jobs in the job collection. |
-| `JobCollections_Get` | `EXEC` | `api-version, jobCollectionName, resourceGroupName, subscriptionId` | Gets a job collection. |
 | `JobCollections_Patch` | `EXEC` | `api-version, jobCollectionName, resourceGroupName, subscriptionId` | Patches an existing job collection. |

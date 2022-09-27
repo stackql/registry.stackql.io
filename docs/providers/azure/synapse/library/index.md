@@ -29,4 +29,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `Library_Get` | `EXEC` | `libraryName, resourceGroupName, subscriptionId, workspaceName` |
+| `Library_Get` | `SELECT` | `libraryName, resourceGroupName, subscriptionId, workspaceName` |

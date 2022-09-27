@@ -29,15 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | String Id used to locate any resource on Azure. |
 | `name` | `string` | Name of this resource. |
+| `properties` | `object` | Properties of AssignmentOperation. |
 | `type` | `string` | Type of this resource. |
-| `timeStarted` | `string` | Start time of the underlying deployment. |
-| `timeCreated` | `string` | Create time of this blueprint assignment operation. |
-| `assignmentState` | `string` | State of this blueprint assignment operation. |
-| `blueprintVersion` | `string` | The published version of the blueprint definition used for the blueprint assignment operation. |
-| `timeFinished` | `string` | Finish time of the overall underlying deployments. |
-| `deployments` | `array` | List of jobs in this blueprint assignment operation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AssignmentOperations_Get` | `SELECT` | `assignmentName, assignmentOperationName, resourceScope` | Get a blueprint assignment operation. |
 | `AssignmentOperations_List` | `SELECT` | `assignmentName, resourceScope` | List operations for given blueprint assignment within a subscription or a management group. |
-| `AssignmentOperations_Get` | `EXEC` | `assignmentName, assignmentOperationName, resourceScope` | Get a blueprint assignment operation. |

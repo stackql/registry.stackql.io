@@ -27,16 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `privateEndpointConnections` | `array` | List of private endpoint connections |
-| `provisioningState` | `string` | PrivateLinkHub provisioning state |
-| `tags` | `object` | Resource tags. |
 | `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | PrivateLinkHub properties |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateLinkHubs_Get` | `SELECT` |  | Gets a privateLinkHub |
 | `PrivateLinkHubs_List` | `SELECT` | `subscriptionId` | Returns a list of privateLinkHubs in a subscription |
 | `PrivateLinkHubs_ListByResourceGroup` | `SELECT` |  | Returns a list of privateLinkHubs in a resource group |
 | `PrivateLinkHubs_CreateOrUpdate` | `INSERT` |  | Creates or updates a privateLinkHub |
 | `PrivateLinkHubs_Delete` | `DELETE` |  | Deletes a privateLinkHub |
-| `PrivateLinkHubs_Get` | `EXEC` |  | Gets a privateLinkHub |
 | `PrivateLinkHubs_Update` | `EXEC` |  | Updates a privateLinkHub |

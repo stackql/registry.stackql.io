@@ -27,22 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `resourceState` | `string` | Current resource status |
-| `privateEndpointConnections` | `array` | List of private endpoint connections associated with the specified RedisEnterprise cluster |
-| `redisVersion` | `string` | Version of redis the cluster supports, e.g. '6' |
 | `tags` | `object` | Resource tags. |
-| `minimumTlsVersion` | `string` | The minimum TLS version for the cluster to support, e.g. '1.2' |
-| `provisioningState` | `string` | Current provisioning status |
-| `hostName` | `string` | DNS name of the cluster endpoint |
-| `location` | `string` | The geo-location where the resource lives |
 | `zones` | `array` | The Availability Zones where this cluster will be deployed. |
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Properties of RedisEnterprise clusters, as opposed to general resource properties like location, tags |
 | `sku` | `object` | SKU parameters supplied to the create RedisEnterprise operation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RedisEnterprise_Get` | `SELECT` | `clusterName, resourceGroupName, subscriptionId` | Gets information about a RedisEnterprise cluster |
 | `RedisEnterprise_List` | `SELECT` | `subscriptionId` | Gets all RedisEnterprise clusters in the specified subscription. |
 | `RedisEnterprise_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all RedisEnterprise clusters in a resource group. |
 | `RedisEnterprise_Create` | `INSERT` | `clusterName, resourceGroupName, subscriptionId, data__sku` | Creates or updates an existing (overwrite/recreate, with potential downtime) cache cluster |
 | `RedisEnterprise_Delete` | `DELETE` | `clusterName, resourceGroupName, subscriptionId` | Deletes a RedisEnterprise cache cluster. |
-| `RedisEnterprise_Get` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | Gets information about a RedisEnterprise cluster |
 | `RedisEnterprise_Update` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | Updates an existing RedisEnterprise cluster |

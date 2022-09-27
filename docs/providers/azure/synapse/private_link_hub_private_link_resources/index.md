@@ -29,5 +29,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateLinkHubPrivateLinkResources_Get` | `SELECT` | `privateLinkHubName, privateLinkResourceName, resourceGroupName, subscriptionId` | Get private link resource in private link hub |
 | `PrivateLinkHubPrivateLinkResources_List` | `SELECT` | `privateLinkHubName, resourceGroupName, subscriptionId` | Get all private link resources for a private link hub |
-| `PrivateLinkHubPrivateLinkResources_Get` | `EXEC` | `privateLinkHubName, privateLinkResourceName, resourceGroupName, subscriptionId` | Get private link resource in private link hub |

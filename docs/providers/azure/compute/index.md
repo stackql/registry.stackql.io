@@ -22,7 +22,7 @@ The Compute Management Client.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Compute Management Client (Microsoft.Compute)</td></tr>
 <tr><td><b>Description</b></td><td>The Compute Management Client.</td></tr>
-<tr><td><b>Id</b></td><td><code>compute:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>compute:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

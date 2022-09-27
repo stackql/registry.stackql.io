@@ -29,23 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `description` | `string` | The operation description |
-| `actionPlanOperationId` | `string` | Action plan operation identifier |
-| `blobContainerName` | `string` | Blob container name storing the deployment data |
-| `provisioningState` | `string` | The provisioning state |
-| `outputs` | `object` | The action plan operation outputs in JToken format |
-| `parameters` | `object` | The deployment parameters in JToken format |
-| `startTime` | `string` | The deployment start time |
-| `error` | `object` | Error response. |
-| `eTag` | `string` | Entity tag of the resource |
 | `location` | `string` | Location of the resource. |
-| `endTime` | `string` | The deployment end time |
-| `title` | `string` | The operation title |
-| `actionPlanInstanceId` | `string` | Action plan instance identifier |
-| `subscriptionId` | `string` | The target subscription identifier |
+| `properties` | `object` | Action Plan Operation Properties |
 | `type` | `string` | Type of Resource. |
+| `eTag` | `string` | Entity tag of the resource |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ActionPlanOperations_Get` | `SELECT` | `operationId, planId, subscriptionId` | Gets the specified action plan operation |
 | `ActionPlanOperations_List` | `SELECT` | `planId, subscriptionId` | Lists the action plan operations |
-| `ActionPlanOperations_Get` | `EXEC` | `operationId, planId, subscriptionId` | Gets the specified action plan operation |

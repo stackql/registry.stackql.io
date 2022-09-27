@@ -35,6 +35,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReplicationProtectionIntents_Get` | `SELECT` | `api-version, intentObjectName, resourceGroupName, resourceName, subscriptionId` | Gets the details of an ASR replication protection intent. |
 | `ReplicationProtectionIntents_List` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` | Gets the list of ASR replication protection intent objects in the vault. |
 | `ReplicationProtectionIntents_Create` | `INSERT` | `api-version, intentObjectName, resourceGroupName, resourceName, subscriptionId` | The operation to create an ASR replication protection intent item. |
-| `ReplicationProtectionIntents_Get` | `EXEC` | `api-version, intentObjectName, resourceGroupName, resourceName, subscriptionId` | Gets the details of an ASR replication protection intent. |

@@ -25,26 +25,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `description` | `string` | The operation description. |
-| `operationFriendlyName` | `string` | The friendly name of operation. |
-| `isUserError` | `boolean` | Whether or not the error is a user error. |
-| `operation` | `string` | The name of operation. |
-| `managedInstanceName` | `string` | The name of the managed instance the operation is being performed on. |
-| `operationSteps` | `object` | The steps of a managed instance operation. |
-| `errorCode` | `integer` | The operation error code. |
-| `percentComplete` | `integer` | The percentage of the operation completed. |
-| `errorSeverity` | `integer` | The operation error severity. |
-| `estimatedCompletionTime` | `string` | The estimated completion time of the operation. |
-| `startTime` | `string` | The operation start time. |
-| `operationParameters` | `object` | The parameters of a managed instance operation. |
-| `isCancellable` | `boolean` | Whether the operation can be cancelled. |
-| `errorDescription` | `string` | The operation error description. |
-| `state` | `string` | The operation state. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedInstanceOperations_Get` | `SELECT` | `managedInstanceName, operationId, resourceGroupName, subscriptionId` | Gets a management operation on a managed instance. |
 | `ManagedInstanceOperations_ListByManagedInstance` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId` | Gets a list of operations performed on the managed instance. |
 | `ManagedInstanceOperations_Cancel` | `EXEC` | `managedInstanceName, operationId, resourceGroupName, subscriptionId` | Cancels the asynchronous operation on the managed instance. |
-| `ManagedInstanceOperations_Get` | `EXEC` | `managedInstanceName, operationId, resourceGroupName, subscriptionId` | Gets a management operation on a managed instance. |

@@ -27,12 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `properties` | `object` | Properties of a hub. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WebPubSubHubs_Get` | `SELECT` | `hubName, resourceGroupName, resourceName, subscriptionId` | Get a hub setting. |
 | `WebPubSubHubs_List` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | List hub settings. |
 | `WebPubSubHubs_CreateOrUpdate` | `INSERT` | `hubName, resourceGroupName, resourceName, subscriptionId, data__properties` | Create or update a hub setting. |
 | `WebPubSubHubs_Delete` | `DELETE` | `hubName, resourceGroupName, resourceName, subscriptionId` | Delete a hub setting. |
-| `WebPubSubHubs_Get` | `EXEC` | `hubName, resourceGroupName, resourceName, subscriptionId` | Get a hub setting. |

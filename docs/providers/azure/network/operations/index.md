@@ -29,7 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `name` | `string` | Operation name: &#123;provider&#125;/&#123;resource&#125;/&#123;operation&#125;. |
 | `origin` | `string` | Origin of the operation. |
-| `serviceSpecification` | `` | Specification of the service. |
+| `properties` | `object` | Description of operation properties format. |
 | `display` | `` | Display metadata associated with the operation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

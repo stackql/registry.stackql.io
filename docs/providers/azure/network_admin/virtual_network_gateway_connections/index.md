@@ -29,20 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
-| `subscriptionId` | `string` | Subscription Id of the Virtual Network Gateway Connection. |
-| `connectionState` | `object` | Virtual Network Gateway Connection state. |
-| `location` | `string` | Region location of resource. |
-| `virtualNetworkGatewayName` | `string` | Name of the associated Virtual Network Gateway. |
 | `tags` | `object` | List of key value pairs. |
-| `provisioningState` | `string` | Provisioning State of the Virtual Network Gateway Connection. |
-| `sku` | `string` | SKU of the associated Virtual Network Gateway. |
-| `capacityReserved` | `number` | Gateway capacity reserved by this connection. |
-| `virtualNetworkGatewayIPAddress` | `string` | IP address of the associated Virtual Network Gateway. |
-| `resourceGroup` | `string` | Resource Group of the Virtual Network Gateway Connection. |
-| `totalStampCapacity` | `number` | Total amount of Gateway capacity that is available on this stamp. |
-| `localNetworkGatewayIPAddress` | `string` | IP address of the associated Local Network Gateway. |
 | `type` | `string` | Type of resource. |
-| `localNetworkGatewayName` | `string` | Name of the associated Local Network Gateway. |
+| `location` | `string` | Region location of resource. |
+| `properties` | `object` | Virtual Network Gateway Connection properties. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

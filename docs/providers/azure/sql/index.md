@@ -22,7 +22,7 @@ SQL
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>SQL (Microsoft.Sql)</td></tr>
 <tr><td><b>Description</b></td><td>SQL</td></tr>
-<tr><td><b>Id</b></td><td><code>sql:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>sql:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources
@@ -44,6 +44,12 @@ SQL
 <a href="/providers/azure/sql/database_recommended_actions/">database_recommended_actions</a><br />
 <a href="/providers/azure/sql/database_schemas/">database_schemas</a><br />
 <a href="/providers/azure/sql/database_security_alert_policies/">database_security_alert_policies</a><br />
+<a href="/providers/azure/sql/database_sql_vulnerability_assessment_baselines/">database_sql_vulnerability_assessment_baselines</a><br />
+<a href="/providers/azure/sql/database_sql_vulnerability_assessment_execute_scan/">database_sql_vulnerability_assessment_execute_scan</a><br />
+<a href="/providers/azure/sql/database_sql_vulnerability_assessment_rule_baselines/">database_sql_vulnerability_assessment_rule_baselines</a><br />
+<a href="/providers/azure/sql/database_sql_vulnerability_assessment_scan_result/">database_sql_vulnerability_assessment_scan_result</a><br />
+<a href="/providers/azure/sql/database_sql_vulnerability_assessment_scans/">database_sql_vulnerability_assessment_scans</a><br />
+<a href="/providers/azure/sql/database_sql_vulnerability_assessments_settings/">database_sql_vulnerability_assessments_settings</a><br />
 <a href="/providers/azure/sql/database_tables/">database_tables</a><br />
 <a href="/providers/azure/sql/database_usages/">database_usages</a><br />
 <a href="/providers/azure/sql/database_vulnerability_assessment_rule_baselines/">database_vulnerability_assessment_rule_baselines</a><br />
@@ -84,6 +90,7 @@ SQL
 <a href="/providers/azure/sql/managed_backup_short_term_retention_policies/">managed_backup_short_term_retention_policies</a><br />
 <a href="/providers/azure/sql/managed_database_advanced_threat_protection_settings/">managed_database_advanced_threat_protection_settings</a><br />
 <a href="/providers/azure/sql/managed_database_columns/">managed_database_columns</a><br />
+<a href="/providers/azure/sql/managed_database_move_operations/">managed_database_move_operations</a><br />
 <a href="/providers/azure/sql/managed_database_queries/">managed_database_queries</a><br />
 <a href="/providers/azure/sql/managed_database_recommended_sensitivity_labels/">managed_database_recommended_sensitivity_labels</a><br />
 <a href="/providers/azure/sql/managed_database_restore_details/">managed_database_restore_details</a><br />
@@ -92,10 +99,10 @@ SQL
 <a href="/providers/azure/sql/managed_database_security_events/">managed_database_security_events</a><br />
 <a href="/providers/azure/sql/managed_database_sensitivity_labels/">managed_database_sensitivity_labels</a><br />
 <a href="/providers/azure/sql/managed_database_tables/">managed_database_tables</a><br />
-</div>
-<div class="providerDocColumn">
 <a href="/providers/azure/sql/managed_database_transparent_data_encryption/">managed_database_transparent_data_encryption</a><br />
 <a href="/providers/azure/sql/managed_database_vulnerability_assessment_rule_baselines/">managed_database_vulnerability_assessment_rule_baselines</a><br />
+</div>
+<div class="providerDocColumn">
 <a href="/providers/azure/sql/managed_database_vulnerability_assessment_scans/">managed_database_vulnerability_assessment_scans</a><br />
 <a href="/providers/azure/sql/managed_database_vulnerability_assessments/">managed_database_vulnerability_assessments</a><br />
 <a href="/providers/azure/sql/managed_databases/">managed_databases</a><br />
@@ -147,6 +154,7 @@ SQL
 <a href="/providers/azure/sql/servers/">servers</a><br />
 <a href="/providers/azure/sql/service_objectives/">service_objectives</a><br />
 <a href="/providers/azure/sql/subscription_usages/">subscription_usages</a><br />
+<a href="/providers/azure/sql/synapse_link_workspaces/">synapse_link_workspaces</a><br />
 <a href="/providers/azure/sql/sync_agents/">sync_agents</a><br />
 <a href="/providers/azure/sql/sync_groups/">sync_groups</a><br />
 <a href="/providers/azure/sql/sync_members/">sync_members</a><br />
@@ -156,6 +164,15 @@ SQL
 <a href="/providers/azure/sql/usages/">usages</a><br />
 <a href="/providers/azure/sql/virtual_clusters/">virtual_clusters</a><br />
 <a href="/providers/azure/sql/virtual_network_rules/">virtual_network_rules</a><br />
+<a href="/providers/azure/sql/vulnerability_assessment_baseline/">vulnerability_assessment_baseline</a><br />
+<a href="/providers/azure/sql/vulnerability_assessment_baselines/">vulnerability_assessment_baselines</a><br />
+<a href="/providers/azure/sql/vulnerability_assessment_execute_scan/">vulnerability_assessment_execute_scan</a><br />
+<a href="/providers/azure/sql/vulnerability_assessment_rule_baseline/">vulnerability_assessment_rule_baseline</a><br />
+<a href="/providers/azure/sql/vulnerability_assessment_rule_baselines/">vulnerability_assessment_rule_baselines</a><br />
+<a href="/providers/azure/sql/vulnerability_assessment_scan_result/">vulnerability_assessment_scan_result</a><br />
+<a href="/providers/azure/sql/vulnerability_assessment_scans/">vulnerability_assessment_scans</a><br />
+<a href="/providers/azure/sql/vulnerability_assessments/">vulnerability_assessments</a><br />
+<a href="/providers/azure/sql/vulnerability_assessments_settings/">vulnerability_assessments_settings</a><br />
 <a href="/providers/azure/sql/workload_classifiers/">workload_classifiers</a><br />
 <a href="/providers/azure/sql/workload_groups/">workload_groups</a><br />
 </div>

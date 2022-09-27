@@ -27,15 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `author` | `object` | Information on the client (user or application) that made some action |
-| `createdTimeUtc` | `string` | The time the comment was created |
+| `properties` | `object` | Incident comment property bag. |
 | `etag` | `string` | Etag of the azure resource |
-| `lastModifiedTimeUtc` | `string` | The time the comment was updated |
-| `message` | `string` | The comment message |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IncidentComments_Get` | `SELECT` | `incidentCommentId, incidentId, resourceGroupName, subscriptionId, workspaceName` | Gets an incident comment. |
 | `IncidentComments_List` | `SELECT` | `incidentId, resourceGroupName, subscriptionId, workspaceName` | Gets all incident comments. |
 | `IncidentComments_CreateOrUpdate` | `INSERT` | `incidentCommentId, incidentId, resourceGroupName, subscriptionId, workspaceName` | Creates or updates the incident comment. |
 | `IncidentComments_Delete` | `DELETE` | `incidentCommentId, incidentId, resourceGroupName, subscriptionId, workspaceName` | Delete the incident comment. |
-| `IncidentComments_Get` | `EXEC` | `incidentCommentId, incidentId, resourceGroupName, subscriptionId, workspaceName` | Gets an incident comment. |

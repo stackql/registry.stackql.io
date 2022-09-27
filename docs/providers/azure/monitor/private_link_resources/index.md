@@ -27,17 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Azure resource Id |
-| `name` | `string` | Azure resource name |
-| `requiredZoneNames` | `array` | The private link resource Private link DNS zone name. |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
+| `name` | `string` | The name of the resource |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `properties` | `object` | Properties of a private link resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `requiredMembers` | `array` | The private link resource required member names. |
-| `type` | `string` | Azure resource type |
-| `groupId` | `string` | The private link resource group id. |
-| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
-| `location` | `string` | Resource location |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `PrivateLinkResources_Get` | `SELECT` | `groupName, resourceGroupName, scopeName, subscriptionId` |
 | `PrivateLinkResources_ListByPrivateLinkScope` | `SELECT` | `resourceGroupName, scopeName, subscriptionId` |
-| `PrivateLinkResources_Get` | `EXEC` | `groupName, resourceGroupName, scopeName, subscriptionId` |

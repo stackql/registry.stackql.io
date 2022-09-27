@@ -29,21 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `tier` | `string` | The Tier of agent machine |
-| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
-| `count` | `integer` | The count of agent machine |
-| `os` | `string` | The OS of agent machine |
-| `provisioningState` | `string` | The provisioning state of this agent pool |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | The tags of the resource. |
 | `type` | `string` | The type of the resource. |
-| `virtualNetworkSubnetResourceId` | `string` | The Virtual Network Subnet Resource Id of the agent machine |
+| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
+| `properties` | `object` | The properties of agent pool. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AgentPools_Get` | `SELECT` | `agentPoolName, registryName, resourceGroupName, subscriptionId` | Gets the detailed information for a given agent pool. |
 | `AgentPools_List` | `SELECT` | `registryName, resourceGroupName, subscriptionId` | Lists all the agent pools for a specified container registry. |
 | `AgentPools_Create` | `INSERT` | `agentPoolName, registryName, resourceGroupName, subscriptionId` | Creates an agent pool for a container registry with the specified parameters. |
 | `AgentPools_Delete` | `DELETE` | `agentPoolName, registryName, resourceGroupName, subscriptionId` | Deletes a specified agent pool resource. |
-| `AgentPools_Get` | `EXEC` | `agentPoolName, registryName, resourceGroupName, subscriptionId` | Gets the detailed information for a given agent pool. |
 | `AgentPools_GetQueueStatus` | `EXEC` | `agentPoolName, registryName, resourceGroupName, subscriptionId` | Gets the count of queued runs for a given agent pool. |
 | `AgentPools_Update` | `EXEC` | `agentPoolName, registryName, resourceGroupName, subscriptionId` | Updates an agent pool with the specified parameters. |

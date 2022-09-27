@@ -29,16 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `description` | `string` | A description of the security configuration. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `provisioningState` | `string` | The current provisioning state. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | Resource type. |
-| `applyOnNetworkIntentPolicyBasedServices` | `array` | Enum list of network intent policy based services. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `properties` | `object` | Defines the security admin configuration properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SecurityAdminConfigurations_Get` | `SELECT` |  | Retrieves a network manager security admin configuration. |
 | `SecurityAdminConfigurations_List` | `SELECT` | `networkManagerName, resourceGroupName, subscriptionId` | Lists all the network manager security admin configurations in a network manager, in a paginated format. |
 | `SecurityAdminConfigurations_CreateOrUpdate` | `INSERT` |  | Creates or updates a network manager security admin configuration. |
 | `SecurityAdminConfigurations_Delete` | `DELETE` |  | Deletes a network manager security admin configuration. |
-| `SecurityAdminConfigurations_Get` | `EXEC` |  | Retrieves a network manager security admin configuration. |

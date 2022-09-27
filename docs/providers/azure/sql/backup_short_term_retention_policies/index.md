@@ -25,14 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `retentionDays` | `integer` | The backup retention period in days. This is how many days Point-in-Time Restore will be supported. |
-| `diffBackupIntervalInHours` | `integer` | The differential backup interval in hours. This is how many interval hours between each differential backup will be supported. This is only applicable to live databases but not dropped databases. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `BackupShortTermRetentionPolicies_Get` | `SELECT` | `databaseName, policyName, resourceGroupName, serverName, subscriptionId` | Gets a database's short term retention policy. |
 | `BackupShortTermRetentionPolicies_ListByDatabase` | `SELECT` | `databaseName, resourceGroupName, serverName, subscriptionId` | Gets a database's short term retention policy. |
 | `BackupShortTermRetentionPolicies_CreateOrUpdate` | `INSERT` | `databaseName, policyName, resourceGroupName, serverName, subscriptionId` | Updates a database's short term retention policy. |
-| `BackupShortTermRetentionPolicies_Get` | `EXEC` | `databaseName, policyName, resourceGroupName, serverName, subscriptionId` | Gets a database's short term retention policy. |
 | `BackupShortTermRetentionPolicies_Update` | `EXEC` | `databaseName, policyName, resourceGroupName, serverName, subscriptionId` | Updates a database's short term retention policy. |

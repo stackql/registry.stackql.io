@@ -32,7 +32,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `EntityQueries_Get` | `SELECT` | `entityQueryId, resourceGroupName, subscriptionId, workspaceName` | Gets an entity query. |
 | `EntityQueries_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets all entity queries. |
 | `EntityQueries_CreateOrUpdate` | `INSERT` | `entityQueryId, resourceGroupName, subscriptionId, workspaceName, data__kind` | Creates or updates the entity query. |
 | `EntityQueries_Delete` | `DELETE` | `entityQueryId, resourceGroupName, subscriptionId, workspaceName` | Delete the entity query. |
-| `EntityQueries_Get` | `EXEC` | `entityQueryId, resourceGroupName, subscriptionId, workspaceName` | Gets an entity query. |

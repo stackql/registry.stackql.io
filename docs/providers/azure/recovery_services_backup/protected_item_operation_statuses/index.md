@@ -25,8 +25,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | ID of the operation. |
+| `name` | `string` | Name of the operation. |
+| `properties` | `object` | Base class for additional information of operation status. |
+| `startTime` | `string` | Operation start time. Format: ISO-8601. |
+| `status` | `string` | Operation status. |
+| `endTime` | `string` | Operation end time. Format: ISO-8601. |
+| `error` | `object` | Error information associated with operation status call. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `ProtectedItemOperationStatuses_Get` | `EXEC` | `api-version, containerName, fabricName, operationId, protectedItemName, resourceGroupName, subscriptionId, vaultName` |
+| `ProtectedItemOperationStatuses_Get` | `SELECT` | `api-version, containerName, fabricName, operationId, protectedItemName, resourceGroupName, subscriptionId, vaultName` |

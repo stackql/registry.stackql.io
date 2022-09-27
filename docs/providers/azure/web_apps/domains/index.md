@@ -29,14 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource Name. |
-| `kind` | `string` | Kind of resource. |
-| `location` | `string` | Resource Location. |
 | `properties` | `object` | Domain resource specific properties |
 | `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource type. |
+| `kind` | `string` | Kind of resource. |
+| `location` | `string` | Resource Location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Domains_Get` | `SELECT` | `domainName, resourceGroupName, subscriptionId` | Description for Get a domain. |
 | `Domains_List` | `SELECT` | `subscriptionId` | Description for Get all domains in a subscription. |
 | `Domains_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Description for Get all domains in a resource group. |
 | `Domains_CreateOrUpdate` | `INSERT` | `domainName, resourceGroupName, subscriptionId` | Description for Creates or updates a domain. |
@@ -44,7 +45,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `Domains_CheckAvailability` | `EXEC` | `subscriptionId` | Description for Check if a domain is available for registration. |
 | `Domains_CreateOrUpdateOwnershipIdentifier` | `EXEC` | `domainName, name, resourceGroupName, subscriptionId` | Description for Creates an ownership identifier for a domain or updates identifier details for an existing identifier |
 | `Domains_DeleteOwnershipIdentifier` | `EXEC` | `domainName, name, resourceGroupName, subscriptionId` | Description for Delete ownership identifier for domain |
-| `Domains_Get` | `EXEC` | `domainName, resourceGroupName, subscriptionId` | Description for Get a domain. |
 | `Domains_GetControlCenterSsoRequest` | `EXEC` | `subscriptionId` | Description for Generate a single sign-on request for the domain management portal. |
 | `Domains_GetOwnershipIdentifier` | `EXEC` | `domainName, name, resourceGroupName, subscriptionId` | Description for Get ownership identifier for domain |
 | `Domains_ListOwnershipIdentifiers` | `EXEC` | `domainName, resourceGroupName, subscriptionId` | Description for Lists domain ownership identifiers. |

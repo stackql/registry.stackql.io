@@ -29,4 +29,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `ComponentAvailableFeatures_Get` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` |
+| `ComponentAvailableFeatures_Get` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` |

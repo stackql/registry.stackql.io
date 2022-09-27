@@ -29,24 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `provisioningState` | `string` | Azure lifecycle management |
-| `backupType` | `string` | Type of backup Manual or Scheduled |
-| `creationDate` | `string` | The creation date of the backup |
-| `label` | `string` | Label for backup |
-| `useExistingSnapshot` | `boolean` | Manual backup an already existing snapshot. This will always be false for scheduled backups and true/false for manual backups |
-| `volumeName` | `string` | Volume name |
 | `type` | `string` | Resource type |
-| `size` | `integer` | Size of backup |
-| `backupId` | `string` | UUID v4 used to identify the Backup |
-| `failureReason` | `string` | Failure reason |
 | `location` | `string` | Resource location |
+| `properties` | `object` | Backup properties |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Backups_Get` | `SELECT` | `accountName, backupName, poolName, resourceGroupName, subscriptionId, volumeName` | Gets the specified backup of the volume |
 | `Backups_List` | `SELECT` | `accountName, poolName, resourceGroupName, subscriptionId, volumeName` | List all backups for a volume |
-| `Backups_Create` | `INSERT` | `accountName, backupName, poolName, resourceGroupName, subscriptionId, volumeName, data__location` | Create a backup for the volume |
+| `Backups_Create` | `INSERT` | `accountName, backupName, poolName, resourceGroupName, subscriptionId, volumeName, data__location, data__properties` | Create a backup for the volume |
 | `Backups_Delete` | `DELETE` | `accountName, backupName, poolName, resourceGroupName, subscriptionId, volumeName` | Delete a backup of the volume |
-| `Backups_Get` | `EXEC` | `accountName, backupName, poolName, resourceGroupName, subscriptionId, volumeName` | Gets the specified backup of the volume |
 | `Backups_GetStatus` | `EXEC` | `accountName, poolName, resourceGroupName, subscriptionId, volumeName` | Get the status of the backup for a volume |
 | `Backups_GetVolumeRestoreStatus` | `EXEC` | `accountName, poolName, resourceGroupName, subscriptionId, volumeName` | Get the status of the restore for a volume |
 | `Backups_Update` | `EXEC` | `accountName, backupName, poolName, resourceGroupName, subscriptionId, volumeName` | Patch a backup for the volume |

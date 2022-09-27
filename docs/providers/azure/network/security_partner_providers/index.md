@@ -29,20 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `properties` | `object` | Properties of the Security Partner Provider. |
 | `tags` | `object` | Resource tags. |
-| `provisioningState` | `string` | The current provisioning state. |
 | `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 | `location` | `string` | Resource location. |
-| `connectionStatus` | `string` | The current state of the connection with Security Partner Provider. |
-| `virtualHub` | `object` | Reference to another subresource. |
-| `securityProviderName` | `string` | The Security Providers. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SecurityPartnerProviders_Get` | `SELECT` | `resourceGroupName, securityPartnerProviderName, subscriptionId` | Gets the specified Security Partner Provider. |
 | `SecurityPartnerProviders_List` | `SELECT` | `subscriptionId` | Gets all the Security Partner Providers in a subscription. |
 | `SecurityPartnerProviders_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all Security Partner Providers in a resource group. |
 | `SecurityPartnerProviders_CreateOrUpdate` | `INSERT` | `resourceGroupName, securityPartnerProviderName, subscriptionId` | Creates or updates the specified Security Partner Provider. |
 | `SecurityPartnerProviders_Delete` | `DELETE` | `resourceGroupName, securityPartnerProviderName, subscriptionId` | Deletes the specified Security Partner Provider. |
-| `SecurityPartnerProviders_Get` | `EXEC` | `resourceGroupName, securityPartnerProviderName, subscriptionId` | Gets the specified Security Partner Provider. |
 | `SecurityPartnerProviders_UpdateTags` | `EXEC` | `resourceGroupName, securityPartnerProviderName, subscriptionId` | Updates tags of a Security Partner Provider resource. |

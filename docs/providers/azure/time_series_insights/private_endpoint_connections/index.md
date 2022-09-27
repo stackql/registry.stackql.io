@@ -29,15 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `privateEndpoint` | `object` | The Private Endpoint resource. |
-| `privateLinkServiceConnectionState` | `object` | A collection of information about the state of the connection between service consumer and provider. |
-| `provisioningState` | `string` | The current provisioning state. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `groupIds` | `array` | A list of private links resource group ids |
+| `properties` | `object` | Properties of the PrivateEndpointConnectProperties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnections_Get` | `SELECT` | `environmentName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the details of the private endpoint connection of the environment in the given resource group. |
 | `PrivateEndpointConnections_ListByEnvironment` | `SELECT` | `environmentName, resourceGroupName, subscriptionId` | Gets a list of all private endpoint connections in the given environment. |
 | `PrivateEndpointConnections_CreateOrUpdate` | `INSERT` | `environmentName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Updates a Private Endpoint connection of the environment in the given resource group. |
 | `PrivateEndpointConnections_Delete` | `DELETE` | `environmentName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Disconnects the private endpoint connection and deletes it from the environment. |
-| `PrivateEndpointConnections_Get` | `EXEC` | `environmentName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the details of the private endpoint connection of the environment in the given resource group. |

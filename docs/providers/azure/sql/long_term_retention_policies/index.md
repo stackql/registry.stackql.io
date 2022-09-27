@@ -25,15 +25,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `monthlyRetention` | `string` | The monthly retention policy for an LTR backup in an ISO 8601 format. |
-| `weekOfYear` | `integer` | The week of year to take the yearly backup in an ISO 8601 format. |
-| `weeklyRetention` | `string` | The weekly retention policy for an LTR backup in an ISO 8601 format. |
-| `yearlyRetention` | `string` | The yearly retention policy for an LTR backup in an ISO 8601 format. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `LongTermRetentionPolicies_Get` | `SELECT` | `databaseName, policyName, resourceGroupName, serverName, subscriptionId` | Gets a database's long term retention policy. |
 | `LongTermRetentionPolicies_ListByDatabase` | `SELECT` | `databaseName, resourceGroupName, serverName, subscriptionId` | Gets a database's long term retention policy. |
 | `LongTermRetentionPolicies_CreateOrUpdate` | `INSERT` | `databaseName, policyName, resourceGroupName, serverName, subscriptionId` | Sets a database's long term retention policy. |
-| `LongTermRetentionPolicies_Get` | `EXEC` | `databaseName, policyName, resourceGroupName, serverName, subscriptionId` | Gets a database's long term retention policy. |

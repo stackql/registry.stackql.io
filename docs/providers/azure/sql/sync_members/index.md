@@ -25,27 +25,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `databaseType` | `string` | Database type of the sync member. |
-| `privateEndpointName` | `string` | Private endpoint name of the sync member if use private link connection is enabled, for sync members in Azure. |
-| `syncMemberAzureDatabaseResourceId` | `string` | ARM resource id of the sync member logical database, for sync members in Azure. |
-| `password` | `string` | Password of the member database in the sync member. |
-| `usePrivateLinkConnection` | `boolean` | Whether to use private link connection. |
-| `serverName` | `string` | Server name of the member database in the sync member |
-| `databaseName` | `string` | Database name of the member database in the sync member. |
-| `syncState` | `string` | Sync state of the sync member. |
-| `syncDirection` | `string` | Sync direction of the sync member. |
-| `syncAgentId` | `string` | ARM resource id of the sync agent in the sync member. |
-| `userName` | `string` | User name of the member database in the sync member. |
-| `sqlServerDatabaseId` | `string` | SQL Server database id of the sync member. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SyncMembers_Get` | `SELECT` | `databaseName, resourceGroupName, serverName, subscriptionId, syncGroupName, syncMemberName` | Gets a sync member. |
 | `SyncMembers_ListBySyncGroup` | `SELECT` | `databaseName, resourceGroupName, serverName, subscriptionId, syncGroupName` | Lists sync members in the given sync group. |
 | `SyncMembers_CreateOrUpdate` | `INSERT` | `databaseName, resourceGroupName, serverName, subscriptionId, syncGroupName, syncMemberName` | Creates or updates a sync member. |
 | `SyncMembers_Delete` | `DELETE` | `databaseName, resourceGroupName, serverName, subscriptionId, syncGroupName, syncMemberName` | Deletes a sync member. |
-| `SyncMembers_Get` | `EXEC` | `databaseName, resourceGroupName, serverName, subscriptionId, syncGroupName, syncMemberName` | Gets a sync member. |
 | `SyncMembers_ListMemberSchemas` | `EXEC` | `databaseName, resourceGroupName, serverName, subscriptionId, syncGroupName, syncMemberName` | Gets a sync member database schema. |
 | `SyncMembers_RefreshMemberSchema` | `EXEC` | `databaseName, resourceGroupName, serverName, subscriptionId, syncGroupName, syncMemberName` | Refreshes a sync member database schema. |
 | `SyncMembers_Update` | `EXEC` | `databaseName, resourceGroupName, serverName, subscriptionId, syncGroupName, syncMemberName` | Updates an existing sync member. |

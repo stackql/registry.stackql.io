@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
-| `location` | `string` | Resource Location |
 | `properties` | `object` | Network Properties. |
 | `type` | `string` | Resource Type |
+| `location` | `string` | Resource Location |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReplicationNetworks_Get` | `SELECT` | `api-version, fabricName, networkName, resourceGroupName, resourceName, subscriptionId` | Gets the details of a network. |
 | `ReplicationNetworks_List` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` | Lists the networks available in a vault. |
 | `ReplicationNetworks_ListByReplicationFabrics` | `SELECT` | `api-version, fabricName, resourceGroupName, resourceName, subscriptionId` | Lists the networks available for a fabric. |
-| `ReplicationNetworks_Get` | `EXEC` | `api-version, fabricName, networkName, resourceGroupName, resourceName, subscriptionId` | Gets the details of a network. |

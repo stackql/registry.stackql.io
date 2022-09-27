@@ -29,14 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
+| `properties` | `object` | Properties of Virtual Network Tap configuration. |
 | `type` | `string` | Sub Resource type. |
-| `virtualNetworkTap` | `object` | Virtual Network Tap resource. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `provisioningState` | `string` | The current provisioning state. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `NetworkInterfaceTapConfigurations_Get` | `SELECT` | `networkInterfaceName, resourceGroupName, subscriptionId, tapConfigurationName` | Get the specified tap configuration on a network interface. |
 | `NetworkInterfaceTapConfigurations_List` | `SELECT` | `networkInterfaceName, resourceGroupName, subscriptionId` | Get all Tap configurations in a network interface. |
 | `NetworkInterfaceTapConfigurations_CreateOrUpdate` | `INSERT` | `networkInterfaceName, resourceGroupName, subscriptionId, tapConfigurationName` | Creates or updates a Tap configuration in the specified NetworkInterface. |
 | `NetworkInterfaceTapConfigurations_Delete` | `DELETE` | `networkInterfaceName, resourceGroupName, subscriptionId, tapConfigurationName` | Deletes the specified tap configuration from the NetworkInterface. |
-| `NetworkInterfaceTapConfigurations_Get` | `EXEC` | `networkInterfaceName, resourceGroupName, subscriptionId, tapConfigurationName` | Get the specified tap configuration on a network interface. |

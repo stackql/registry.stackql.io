@@ -29,11 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Id of the object. |
 | `name` | `string` | Name of the object. |
-| `dataServiceLevel1Key` | `object` | Encryption Key. |
-| `dataServiceLevel2Key` | `object` | Encryption Key. |
+| `properties` | `object` | PublicKey Properties |
 | `type` | `string` | Type of the object. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PublicKeys_Get` | `SELECT` | `dataManagerName, publicKeyName, resourceGroupName, subscriptionId` | This method gets the public keys. |
 | `PublicKeys_ListByDataManager` | `SELECT` | `dataManagerName, resourceGroupName, subscriptionId` | This method gets the list view of public keys, however it will only have one element. |
-| `PublicKeys_Get` | `EXEC` | `dataManagerName, publicKeyName, resourceGroupName, subscriptionId` | This method gets the public keys. |

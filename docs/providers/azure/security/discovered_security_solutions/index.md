@@ -29,15 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `location` | `string` | Location where the resource is stored |
-| `offer` | `string` | The security solutions' image offer |
-| `publisher` | `string` | The security solutions' image publisher |
-| `securityFamily` | `string` | The security family of the discovered solution |
-| `sku` | `string` | The security solutions' image sku |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `location` | `string` | Location where the resource is stored |
+| `properties` | `object` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DiscoveredSecuritySolutions_Get` | `SELECT` | `api-version, ascLocation, discoveredSecuritySolutionName, resourceGroupName, subscriptionId` | Gets a specific discovered Security Solution. |
 | `DiscoveredSecuritySolutions_List` | `SELECT` | `api-version, subscriptionId` | Gets a list of discovered Security Solutions for the subscription. |
 | `DiscoveredSecuritySolutions_ListByHomeRegion` | `SELECT` | `api-version, ascLocation, subscriptionId` | Gets a list of discovered Security Solutions for the subscription and location. |
-| `DiscoveredSecuritySolutions_Get` | `EXEC` | `api-version, ascLocation, discoveredSecuritySolutionName, resourceGroupName, subscriptionId` | Gets a specific discovered Security Solution. |

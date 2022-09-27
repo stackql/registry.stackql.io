@@ -29,17 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `routingConfiguration` | `object` | Routing Configuration indicating the associated and propagated route tables for this connection. |
-| `allowHubToRemoteVnetTransit` | `boolean` | Deprecated: VirtualHub to RemoteVnet transit to enabled or not. |
+| `properties` | `object` | Parameters for HubVirtualNetworkConnection. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `enableInternetSecurity` | `boolean` | Enable internet security. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `allowRemoteVnetToUseHubVnetGateways` | `boolean` | Deprecated: Allow RemoteVnet to use Virtual Hub's gateways. |
-| `remoteVirtualNetwork` | `object` | Reference to another subresource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `HubVirtualNetworkConnections_Get` | `SELECT` | `connectionName, resourceGroupName, subscriptionId, virtualHubName` | Retrieves the details of a HubVirtualNetworkConnection. |
 | `HubVirtualNetworkConnections_List` | `SELECT` | `resourceGroupName, subscriptionId, virtualHubName` | Retrieves the details of all HubVirtualNetworkConnections. |
 | `HubVirtualNetworkConnections_CreateOrUpdate` | `INSERT` | `connectionName, resourceGroupName, subscriptionId, virtualHubName` | Creates a hub virtual network connection if it doesn't exist else updates the existing one. |
 | `HubVirtualNetworkConnections_Delete` | `DELETE` | `connectionName, resourceGroupName, subscriptionId, virtualHubName` | Deletes a HubVirtualNetworkConnection. |
-| `HubVirtualNetworkConnections_Get` | `EXEC` | `connectionName, resourceGroupName, subscriptionId, virtualHubName` | Retrieves the details of a HubVirtualNetworkConnection. |

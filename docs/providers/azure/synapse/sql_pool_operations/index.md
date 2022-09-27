@@ -25,22 +25,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `description` | `string` | The operation description. |
-| `databaseName` | `string` | The name of the Sql pool the operation is being performed on. |
-| `estimatedCompletionTime` | `string` | The estimated completion time of the operation. |
-| `startTime` | `string` | The operation start time. |
-| `isUserError` | `boolean` | Whether or not the error is a user error. |
-| `errorCode` | `integer` | The operation error code. |
-| `operation` | `string` | The name of operation. |
-| `operationFriendlyName` | `string` | The friendly name of operation. |
-| `percentComplete` | `integer` | The percentage of the operation completed. |
-| `state` | `string` | The operation state. |
-| `errorDescription` | `string` | The operation error description. |
-| `isCancellable` | `boolean` | Whether the operation can be cancelled. |
-| `errorSeverity` | `integer` | The operation error severity. |
-| `serverName` | `string` | The name of the server. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

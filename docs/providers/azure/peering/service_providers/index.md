@@ -29,8 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `peeringLocations` | `array` | The list of locations at which the service provider peers with Microsoft. |
-| `serviceProviderName` | `string` | The name of the service provider. |
+| `properties` | `object` | The properties that define connectivity to the Peering Service Provider. |
 | `type` | `string` | The type of the resource. |
 ## Methods
 | Name | Accessible by | Required Params |

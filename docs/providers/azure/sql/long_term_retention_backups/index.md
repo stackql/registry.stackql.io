@@ -25,19 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `requestedBackupStorageRedundancy` | `string` | The storage redundancy type of the backup |
-| `serverCreateTime` | `string` | The create time of the server. |
-| `serverName` | `string` | The server name that the backup database belong to. |
-| `backupExpirationTime` | `string` | The time the long term retention backup will expire. |
-| `backupStorageRedundancy` | `string` | The storage redundancy type of the backup |
-| `backupTime` | `string` | The time the backup was taken |
-| `databaseDeletionTime` | `string` | The delete time of the database |
-| `databaseName` | `string` | The name of the database the backup belong to |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `LongTermRetentionBackups_Get` | `SELECT` | `backupName, locationName, longTermRetentionDatabaseName, longTermRetentionServerName, subscriptionId` | Gets a long term retention backup. |
 | `LongTermRetentionBackups_ListByDatabase` | `SELECT` | `locationName, longTermRetentionDatabaseName, longTermRetentionServerName, subscriptionId` | Lists all long term retention backups for a database. |
 | `LongTermRetentionBackups_ListByLocation` | `SELECT` | `locationName, subscriptionId` | Lists the long term retention backups for a given location. |
 | `LongTermRetentionBackups_ListByResourceGroupDatabase` | `SELECT` | `locationName, longTermRetentionDatabaseName, longTermRetentionServerName, resourceGroupName, subscriptionId` | Lists all long term retention backups for a database. |
@@ -48,7 +40,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `LongTermRetentionBackups_DeleteByResourceGroup` | `DELETE` | `backupName, locationName, longTermRetentionDatabaseName, longTermRetentionServerName, resourceGroupName, subscriptionId` | Deletes a long term retention backup. |
 | `LongTermRetentionBackups_Copy` | `EXEC` | `backupName, locationName, longTermRetentionDatabaseName, longTermRetentionServerName, subscriptionId` | Copy an existing long term retention backup. |
 | `LongTermRetentionBackups_CopyByResourceGroup` | `EXEC` | `backupName, locationName, longTermRetentionDatabaseName, longTermRetentionServerName, resourceGroupName, subscriptionId` | Copy an existing long term retention backup to a different server. |
-| `LongTermRetentionBackups_Get` | `EXEC` | `backupName, locationName, longTermRetentionDatabaseName, longTermRetentionServerName, subscriptionId` | Gets a long term retention backup. |
 | `LongTermRetentionBackups_GetByResourceGroup` | `EXEC` | `backupName, locationName, longTermRetentionDatabaseName, longTermRetentionServerName, resourceGroupName, subscriptionId` | Gets a long term retention backup. |
 | `LongTermRetentionBackups_Update` | `EXEC` | `backupName, locationName, longTermRetentionDatabaseName, longTermRetentionServerName, subscriptionId` | Updates an existing long term retention backup. |
 | `LongTermRetentionBackups_UpdateByResourceGroup` | `EXEC` | `backupName, locationName, longTermRetentionDatabaseName, longTermRetentionServerName, resourceGroupName, subscriptionId` | Updates an existing long term retention backup. |

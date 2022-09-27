@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
+| `location` | `string` | The geo-location where the resource lives |
 | `properties` | `object` |  |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.EventHub/Namespaces" or "Microsoft.EventHub/Namespaces/EventHubs" |
-| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SchemaRegistry_Get` | `SELECT` | `namespaceName, resourceGroupName, schemaGroupName, subscriptionId` |  |
 | `SchemaRegistry_ListByNamespace` | `SELECT` | `namespaceName, resourceGroupName, subscriptionId` | Gets all the Schema Groups in a Namespace. |
 | `SchemaRegistry_CreateOrUpdate` | `INSERT` | `namespaceName, resourceGroupName, schemaGroupName, subscriptionId` |  |
 | `SchemaRegistry_Delete` | `DELETE` | `namespaceName, resourceGroupName, schemaGroupName, subscriptionId` |  |
-| `SchemaRegistry_Get` | `EXEC` | `namespaceName, resourceGroupName, schemaGroupName, subscriptionId` |  |

@@ -29,13 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified identifier of the resource. |
 | `name` | `string` | Name of the resource. |
-| `requiredMembers` | `array` |  |
-| `requiredZoneNames` | `array` |  |
+| `properties` | `object` |  |
 | `type` | `string` | Type of the resource. |
-| `displayName` | `string` |  |
-| `groupId` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateLinkResources_Get` | `SELECT` | `parentName, parentType, privateLinkResourceName, resourceGroupName, subscriptionId` | Get properties of a private link resource. |
 | `PrivateLinkResources_ListByResource` | `SELECT` | `parentName, parentType, resourceGroupName, subscriptionId` | List all the private link resources under a topic, domain, or partner namespace. |
-| `PrivateLinkResources_Get` | `EXEC` | `parentName, parentType, privateLinkResourceName, resourceGroupName, subscriptionId` | Get properties of a private link resource. |

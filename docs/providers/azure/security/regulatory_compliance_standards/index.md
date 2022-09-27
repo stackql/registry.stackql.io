@@ -29,14 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `passedControls` | `integer` | The number of supported regulatory compliance controls of the given standard with a passed state |
-| `skippedControls` | `integer` | The number of supported regulatory compliance controls of the given standard with a skipped state |
-| `state` | `string` | Aggregative state based on the standard's supported controls states |
+| `properties` | `object` | Regulatory compliance standard data |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `unsupportedControls` | `integer` | The number of regulatory compliance controls of the given standard which are unsupported by automated assessments |
-| `failedControls` | `integer` | The number of supported regulatory compliance controls of the given standard with a failed state |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RegulatoryComplianceStandards_Get` | `SELECT` | `api-version, regulatoryComplianceStandardName, subscriptionId` | Supported regulatory compliance details state for selected standard |
 | `RegulatoryComplianceStandards_List` | `SELECT` | `api-version, subscriptionId` | Supported regulatory compliance standards details and state |
-| `RegulatoryComplianceStandards_Get` | `EXEC` | `api-version, regulatoryComplianceStandardName, subscriptionId` | Supported regulatory compliance details state for selected standard |

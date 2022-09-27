@@ -22,7 +22,7 @@ Management Groups
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Management Groups (Microsoft.Management)</td></tr>
 <tr><td><b>Description</b></td><td>Management Groups</td></tr>
-<tr><td><b>Id</b></td><td><code>management_groups:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>management_groups:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

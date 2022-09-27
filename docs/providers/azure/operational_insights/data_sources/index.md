@@ -34,7 +34,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DataSources_Get` | `SELECT` | `dataSourceName, resourceGroupName, subscriptionId, workspaceName` | Gets a datasource instance. |
 | `DataSources_ListByWorkspace` | `SELECT` | `$filter, resourceGroupName, subscriptionId, workspaceName` | Gets the first page of data source instances in a workspace with the link to the next page. |
 | `DataSources_CreateOrUpdate` | `INSERT` | `dataSourceName, resourceGroupName, subscriptionId, workspaceName, data__kind, data__properties` | Create or update a data source. |
 | `DataSources_Delete` | `DELETE` | `dataSourceName, resourceGroupName, subscriptionId, workspaceName` | Deletes a data source instance. |
-| `DataSources_Get` | `EXEC` | `dataSourceName, resourceGroupName, subscriptionId, workspaceName` | Gets a datasource instance. |

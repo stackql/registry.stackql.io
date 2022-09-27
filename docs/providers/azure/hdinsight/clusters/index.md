@@ -27,22 +27,22 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
 | `zones` | `array` | The availability zones. |
 | `etag` | `string` | The ETag for the resource |
 | `identity` | `object` | Identity for the cluster. |
 | `location` | `string` | The geo-location where the resource lives |
 | `properties` | `object` | The properties of cluster. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Clusters_Get` | `SELECT` | `clusterName, resourceGroupName, subscriptionId` | Gets the specified cluster. |
 | `Clusters_List` | `SELECT` | `subscriptionId` | Lists all the HDInsight clusters under the subscription. |
 | `Clusters_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists the HDInsight clusters in a resource group. |
 | `Clusters_Create` | `INSERT` | `clusterName, resourceGroupName, subscriptionId` | Creates a new HDInsight cluster with the specified parameters. |
 | `Clusters_Delete` | `DELETE` | `clusterName, resourceGroupName, subscriptionId` | Deletes the specified HDInsight cluster. |
 | `Clusters_ExecuteScriptActions` | `EXEC` | `clusterName, resourceGroupName, subscriptionId, data__persistOnSuccess` | Executes script actions on the specified HDInsight cluster. |
-| `Clusters_Get` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | Gets the specified cluster. |
 | `Clusters_GetAzureAsyncOperationStatus` | `EXEC` | `clusterName, operationId, resourceGroupName, subscriptionId` | The the async operation status. |
 | `Clusters_GetGatewaySettings` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | Gets the gateway settings for the specified cluster. |
 | `Clusters_Resize` | `EXEC` | `clusterName, resourceGroupName, roleName, subscriptionId` | Resizes the specified HDInsight cluster to the specified size. |

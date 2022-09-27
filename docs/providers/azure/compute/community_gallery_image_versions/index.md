@@ -28,15 +28,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `name` | `string` | Resource name |
+| `properties` | `object` | Describes the properties of a gallery image version. |
 | `type` | `string` | Resource type |
-| `endOfLifeDate` | `string` | The end of life date of the gallery image version Definition. This property can be used for decommissioning purposes. This property is updatable. |
-| `excludeFromLatest` | `boolean` | If set to true, Virtual Machines deployed from the latest version of the Image Definition won't use this Image Version. |
 | `identifier` | `object` | The identifier information of community gallery. |
 | `location` | `string` | Resource location |
-| `publishedDate` | `string` | The published date of the gallery image version Definition. This property can be used for decommissioning purposes. This property is updatable. |
-| `storageProfile` | `object` | This is the storage profile of a Gallery Image Version. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `CommunityGalleryImageVersions_Get` | `SELECT` | `galleryImageName, galleryImageVersionName, location, publicGalleryName, subscriptionId` | Get a community gallery image version. |
 | `CommunityGalleryImageVersions_List` | `SELECT` | `galleryImageName, location, publicGalleryName, subscriptionId` | List community gallery image versions inside an image. |
-| `CommunityGalleryImageVersions_Get` | `EXEC` | `galleryImageName, galleryImageVersionName, location, publicGalleryName, subscriptionId` | Get a community gallery image version. |

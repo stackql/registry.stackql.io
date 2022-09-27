@@ -30,9 +30,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | The access review reviewer id. |
 | `name` | `string` | The access review reviewer id. |
 | `type` | `string` | The resource type. |
-| `userDisplayName` | `string` | The display name of the reviewer |
-| `userPrincipalName` | `string` | The user principal name of the reviewer |
-| `createdDateTime` | `string` | Date Time when the reviewer was contacted. |
+| `properties` | `object` | Properties of access review contacted reviewer. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

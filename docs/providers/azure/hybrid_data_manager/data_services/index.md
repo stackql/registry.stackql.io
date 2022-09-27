@@ -29,12 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Id of the object. |
 | `name` | `string` | Name of the object. |
-| `state` | `string` | State of the data service. |
-| `supportedDataSinkTypes` | `array` | Supported data store types which can be used as a sink. |
-| `supportedDataSourceTypes` | `array` | Supported data store types which can be used as a source. |
+| `properties` | `object` | Data Service properties. |
 | `type` | `string` | Type of the object. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DataServices_Get` | `SELECT` | `dataManagerName, dataServiceName, resourceGroupName, subscriptionId` | Gets the data service that matches the data service name given. |
 | `DataServices_ListByDataManager` | `SELECT` | `dataManagerName, resourceGroupName, subscriptionId` | This method gets all the data services. |
-| `DataServices_Get` | `EXEC` | `dataManagerName, dataServiceName, resourceGroupName, subscriptionId` | Gets the data service that matches the data service name given. |

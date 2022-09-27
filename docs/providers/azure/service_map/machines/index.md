@@ -33,8 +33,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Machines_Get` | `SELECT` | `machineName, resourceGroupName, subscriptionId, workspaceName` | Returns the specified machine. |
 | `Machines_ListByWorkspace` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Returns a collection of machines matching the specified conditions.  The returned collection represents either machines that are active/live during the specified interval  of time (`live=true` and `startTime`/`endTime` are specified) or that are known to have existed at or  some time prior to the specified point in time (`live=false` and `timestamp` is specified). |
-| `Machines_Get` | `EXEC` | `machineName, resourceGroupName, subscriptionId, workspaceName` | Returns the specified machine. |
 | `Machines_GetLiveness` | `EXEC` | `machineName, resourceGroupName, subscriptionId, workspaceName` | Obtains the liveness status of the machine during the specified time interval. |
 | `Machines_ListConnections` | `EXEC` | `machineName, resourceGroupName, subscriptionId, workspaceName` | Returns a collection of connections terminating or originating at the specified machine |
 | `Machines_ListMachineGroupMembership` | `EXEC` | `machineName, resourceGroupName, subscriptionId, workspaceName` | Returns a collection of machine groups this machine belongs to during the specified time interval. |

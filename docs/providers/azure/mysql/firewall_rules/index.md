@@ -25,14 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `endIpAddress` | `string` | The end IP address of the server firewall rule. Must be IPv4 format. |
-| `startIpAddress` | `string` | The start IP address of the server firewall rule. Must be IPv4 format. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `FirewallRules_Get` | `SELECT` | `firewallRuleName, resourceGroupName, serverName, subscriptionId` | Gets information about a server firewall rule. |
 | `FirewallRules_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | List all the firewall rules in a given server. |
-| `FirewallRules_CreateOrUpdate` | `INSERT` | `firewallRuleName, resourceGroupName, serverName, subscriptionId` | Creates a new firewall rule or updates an existing firewall rule. |
+| `FirewallRules_CreateOrUpdate` | `INSERT` | `firewallRuleName, resourceGroupName, serverName, subscriptionId, data__properties` | Creates a new firewall rule or updates an existing firewall rule. |
 | `FirewallRules_Delete` | `DELETE` | `firewallRuleName, resourceGroupName, serverName, subscriptionId` | Deletes a server firewall rule. |
-| `FirewallRules_Get` | `EXEC` | `firewallRuleName, resourceGroupName, serverName, subscriptionId` | Gets information about a server firewall rule. |

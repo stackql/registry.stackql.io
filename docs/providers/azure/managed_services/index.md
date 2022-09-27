@@ -22,7 +22,7 @@ Managed Services
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Managed Services (Microsoft.ManagedServices)</td></tr>
 <tr><td><b>Description</b></td><td>Managed Services</td></tr>
-<tr><td><b>Id</b></td><td><code>managed_services:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>managed_services:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

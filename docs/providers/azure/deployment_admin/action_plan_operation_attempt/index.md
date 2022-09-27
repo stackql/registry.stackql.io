@@ -29,11 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
+| `properties` | `object` | Operation Attempt Properties. |
 | `type` | `string` | Type of Resource. |
-| `endTime` | `string` | The deployment end time |
 | `location` | `string` | Location of the resource. |
-| `provisioningState` | `string` | Provisioning state of the resource. |
-| `startTime` | `string` | The deployment start time |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

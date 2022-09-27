@@ -27,18 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `family` | `string` | If the service has different generations of hardware, for the same SKU, then that can be captured here. |
-| `location` | `string` | Resource location. |
-| `maintenanceConfigurationId` | `string` | Specifies maintenance configuration id to apply to this virtual cluster. |
-| `subnetId` | `string` | Subnet resource ID for the virtual cluster. |
 | `tags` | `object` | Resource tags. |
-| `childResources` | `array` | List of resources in this virtual cluster. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | The properties of a virtual cluster. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualClusters_Get` | `SELECT` | `resourceGroupName, subscriptionId, virtualClusterName` | Gets a virtual cluster. |
 | `VirtualClusters_List` | `SELECT` | `subscriptionId` | Gets a list of all virtualClusters in the subscription. |
 | `VirtualClusters_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets a list of virtual clusters in a resource group. |
 | `VirtualClusters_Delete` | `DELETE` | `resourceGroupName, subscriptionId, virtualClusterName` | Deletes a virtual cluster. |
-| `VirtualClusters_Get` | `EXEC` | `resourceGroupName, subscriptionId, virtualClusterName` | Gets a virtual cluster. |
-| `VirtualClusters_Update` | `EXEC` | `resourceGroupName, subscriptionId, virtualClusterName` | Updates a virtual cluster. |
+| `VirtualClusters_Update` | `EXEC` | `resourceGroupName, subscriptionId, virtualClusterName` | Updates an existing virtual cluster. |
 | `VirtualClusters_UpdateDnsServers` | `EXEC` | `resourceGroupName, subscriptionId, virtualClusterName` | Synchronizes the DNS server settings used by the managed instances inside the given virtual cluster. |

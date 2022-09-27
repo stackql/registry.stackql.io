@@ -29,11 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `group` | `string` | The name of the group that the category belongs to. |
+| `properties` | `object` | Azure Web Category Properties. |
 | `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WebCategories_Get` | `SELECT` | `name, subscriptionId` | Gets the specified Azure Web Category. |
 | `WebCategories_ListBySubscription` | `SELECT` | `subscriptionId` | Gets all the Azure Web Categories in a subscription. |
-| `WebCategories_Get` | `EXEC` | `name, subscriptionId` | Gets the specified Azure Web Category. |

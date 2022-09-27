@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ARM id of the monitor resource. |
 | `name` | `string` | Name of the monitor resource. |
-| `location` | `string` |  |
-| `properties` | `object` | Properties specific to the monitor resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` |  |
 | `type` | `string` | The type of the monitor resource. |
 | `identity` | `object` |  |
+| `location` | `string` |  |
+| `properties` | `object` | Properties specific to the monitor resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `Monitors_Get` | `SELECT` | `monitorName, resourceGroupName, subscriptionId` |
 | `Monitors_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` |
 | `Monitors_ListBySubscription` | `SELECT` | `subscriptionId` |
 | `Monitors_Create` | `INSERT` | `monitorName, resourceGroupName, subscriptionId, data__location` |
 | `Monitors_Delete` | `DELETE` | `monitorName, resourceGroupName, subscriptionId` |
-| `Monitors_Get` | `EXEC` | `monitorName, resourceGroupName, subscriptionId` |
 | `Monitors_ListMonitoredResources` | `EXEC` | `monitorName, resourceGroupName, subscriptionId` |
 | `Monitors_ListUserRoles` | `EXEC` | `monitorName, resourceGroupName, subscriptionId` |
 | `Monitors_Update` | `EXEC` | `monitorName, resourceGroupName, subscriptionId` |

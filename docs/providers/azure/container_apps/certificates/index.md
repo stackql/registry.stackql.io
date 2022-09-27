@@ -27,14 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | The geo-location where the resource lives |
 | `properties` | `object` | Certificate resource specific properties |
 | `tags` | `object` | Resource tags. |
+| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Certificates_Get` | `SELECT` | `certificateName, environmentName, resourceGroupName, subscriptionId` |  |
 | `Certificates_List` | `SELECT` | `environmentName, resourceGroupName, subscriptionId` |  |
 | `Certificates_CreateOrUpdate` | `INSERT` | `certificateName, environmentName, resourceGroupName, subscriptionId` |  |
 | `Certificates_Delete` | `DELETE` | `certificateName, environmentName, resourceGroupName, subscriptionId` |  |
-| `Certificates_Get` | `EXEC` | `certificateName, environmentName, resourceGroupName, subscriptionId` |  |
 | `Certificates_Update` | `EXEC` | `certificateName, environmentName, resourceGroupName, subscriptionId` | Patches a certificate. Currently only patching of tags is supported |

@@ -29,29 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `type` | `string` | Resource type. |
-| `publicIPAddresses` | `array` | The list of all referenced PublicIPAddresses. |
-| `ipPrefix` | `string` | The allocated Prefix. |
-| `tags` | `object` | Resource tags. |
-| `zones` | `array` | A list of availability zones denoting the IP allocated for the resource needs to come from. |
-| `extendedLocation` | `object` | ExtendedLocation complex type. |
-| `prefixLength` | `integer` | The Length of the Public IP Prefix. |
-| `customIPPrefix` | `object` | Reference to another subresource. |
-| `resourceGuid` | `string` | The resource GUID property of the public IP prefix resource. |
-| `ipTags` | `array` | The list of tags associated with the public IP prefix. |
-| `publicIPAddressVersion` | `string` | IP address version. |
-| `location` | `string` | Resource location. |
 | `sku` | `object` | SKU of a public IP prefix. |
-| `natGateway` | `object` | Nat Gateway resource. |
-| `loadBalancerFrontendIpConfiguration` | `object` | Reference to another subresource. |
+| `properties` | `object` | Public IP prefix properties. |
+| `type` | `string` | Resource type. |
+| `zones` | `array` | A list of availability zones denoting the IP allocated for the resource needs to come from. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `tags` | `object` | Resource tags. |
+| `extendedLocation` | `object` | ExtendedLocation complex type. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PublicIPPrefixes_Get` | `SELECT` | `publicIpPrefixName, resourceGroupName, subscriptionId` | Gets the specified public IP prefix in a specified resource group. |
 | `PublicIPPrefixes_List` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all public IP prefixes in a resource group. |
 | `PublicIPPrefixes_ListAll` | `SELECT` | `subscriptionId` | Gets all the public IP prefixes in a subscription. |
 | `PublicIPPrefixes_CreateOrUpdate` | `INSERT` | `publicIpPrefixName, resourceGroupName, subscriptionId` | Creates or updates a static or dynamic public IP prefix. |
 | `PublicIPPrefixes_Delete` | `DELETE` | `publicIpPrefixName, resourceGroupName, subscriptionId` | Deletes the specified public IP prefix. |
-| `PublicIPPrefixes_Get` | `EXEC` | `publicIpPrefixName, resourceGroupName, subscriptionId` | Gets the specified public IP prefix in a specified resource group. |
 | `PublicIPPrefixes_UpdateTags` | `EXEC` | `publicIpPrefixName, resourceGroupName, subscriptionId` | Updates public IP prefix tags. |

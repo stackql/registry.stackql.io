@@ -25,8 +25,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | The operation id. |
+| `httpStatus` | `string` | Http status for the async operation. |
+| `response` | `string` | Response for the async operation. |
+| `operation` | `object` | Async operation content |
+| `operationStartTime` | `string` | Operation start time. |
+| `locationHeader` | `string` | Location header for async operation. |
+| `subscriptionId` | `string` | Subscription id for async operation. |
+| `context` | `object` | Operation request context. |
+| `operationEndTime` | `string` | Operation end time. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `AsyncOperations_Get` | `EXEC` | `asyncOperationId, location, subscriptionId` |
+| `AsyncOperations_Get` | `SELECT` | `asyncOperationId, location, subscriptionId` |

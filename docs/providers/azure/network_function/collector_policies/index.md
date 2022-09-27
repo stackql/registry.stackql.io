@@ -29,18 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `type` | `string` | Resource type. |
 | `location` | `string` | Resource location. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `properties` | `object` | Collection policy properties. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `ingestionPolicy` | `object` | Ingestion Policy properties. |
 | `tags` | `object` | Resource tags. |
-| `emissionPolicies` | `array` | Emission policies. |
+| `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `CollectorPolicies_Get` | `SELECT` | `azureTrafficCollectorName, collectorPolicyName, resourceGroupName, subscriptionId` | Gets the collector policy in a specified Traffic Collector |
 | `CollectorPolicies_List` | `SELECT` | `azureTrafficCollectorName, resourceGroupName, subscriptionId` | Return list of Collector policies in a Azure Traffic Collector |
 | `CollectorPolicies_CreateOrUpdate` | `INSERT` | `azureTrafficCollectorName, collectorPolicyName, resourceGroupName, subscriptionId` | Creates or updates a Collector Policy resource |
 | `CollectorPolicies_Delete` | `DELETE` | `azureTrafficCollectorName, collectorPolicyName, resourceGroupName, subscriptionId` | Deletes a specified Collector Policy resource. |
-| `CollectorPolicies_Get` | `EXEC` | `azureTrafficCollectorName, collectorPolicyName, resourceGroupName, subscriptionId` | Gets the collector policy in a specified Traffic Collector |

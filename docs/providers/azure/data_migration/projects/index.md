@@ -29,24 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` |  |
 | `name` | `string` |  |
-| `targetPlatform` | `string` | Target platform of the project |
 | `systemData` | `object` |  |
-| `targetConnectionInfo` | `object` | Defines the connection properties of a server |
-| `type` | `string` |  |
-| `azureAuthenticationInfo` | `object` | Azure Active Directory Application |
-| `databasesInfo` | `array` | List of DatabaseInfo |
-| `location` | `string` |  |
-| `provisioningState` | `string` | The project's provisioning state |
-| `sourceConnectionInfo` | `object` | Defines the connection properties of a server |
-| `sourcePlatform` | `string` | Source platform of the project |
-| `creationTime` | `string` | UTC Date and time when project was created |
 | `tags` | `object` |  |
+| `type` | `string` |  |
 | `etag` | `string` | HTTP strong entity tag value. This is ignored if submitted. |
+| `location` | `string` |  |
+| `properties` | `object` | Project-specific properties |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Projects_Get` | `SELECT` |  | The project resource is a nested resource representing a stored migration project. The GET method retrieves information about a project. |
 | `Projects_List` | `SELECT` | `api-version, groupName, serviceName, subscriptionId` | The project resource is a nested resource representing a stored migration project. This method returns a list of projects owned by a service resource. |
 | `Projects_CreateOrUpdate` | `INSERT` |  | The project resource is a nested resource representing a stored migration project. The PUT method creates a new project or updates an existing one. |
 | `Projects_Delete` | `DELETE` |  | The project resource is a nested resource representing a stored migration project. The DELETE method deletes a project. |
-| `Projects_Get` | `EXEC` |  | The project resource is a nested resource representing a stored migration project. The GET method retrieves information about a project. |
 | `Projects_Update` | `EXEC` |  | The project resource is a nested resource representing a stored migration project. The PATCH method updates an existing project. |

@@ -25,9 +25,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id represents the complete path to the resource. |
+| `name` | `string` | Resource name associated with the resource. |
+| `properties` | `object` |  |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/... |
+| `eTag` | `string` | Optional ETag. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `BackupResourceEncryptionConfigs_Get` | `EXEC` | `api-version, resourceGroupName, subscriptionId, vaultName` | Fetches Vault Encryption config. |
+| `BackupResourceEncryptionConfigs_Get` | `SELECT` | `api-version, resourceGroupName, subscriptionId, vaultName` | Fetches Vault Encryption config. |
 | `BackupResourceEncryptionConfigs_Update` | `EXEC` | `api-version, resourceGroupName, subscriptionId, vaultName` | Updates Vault encryption config. |

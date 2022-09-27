@@ -25,21 +25,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `name` | `string` | Name of the sync agent. |
-| `isUpToDate` | `boolean` | If the sync agent version is up to date. |
-| `lastAliveTime` | `string` | Last alive time of the sync agent. |
-| `state` | `string` | State of the sync agent. |
-| `syncDatabaseId` | `string` | ARM resource id of the sync database in the sync agent. |
-| `version` | `string` | Version of the sync agent. |
-| `expiryTime` | `string` | Expiration time of the sync agent version. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SyncAgents_Get` | `SELECT` | `resourceGroupName, serverName, subscriptionId, syncAgentName` | Gets a sync agent. |
 | `SyncAgents_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Lists sync agents in a server. |
 | `SyncAgents_CreateOrUpdate` | `INSERT` | `resourceGroupName, serverName, subscriptionId, syncAgentName` | Creates or updates a sync agent. |
 | `SyncAgents_Delete` | `DELETE` | `resourceGroupName, serverName, subscriptionId, syncAgentName` | Deletes a sync agent. |
 | `SyncAgents_GenerateKey` | `EXEC` | `resourceGroupName, serverName, subscriptionId, syncAgentName` | Generates a sync agent key. |
-| `SyncAgents_Get` | `EXEC` | `resourceGroupName, serverName, subscriptionId, syncAgentName` | Gets a sync agent. |
 | `SyncAgents_ListLinkedDatabases` | `EXEC` | `resourceGroupName, serverName, subscriptionId, syncAgentName` | Lists databases linked to a sync agent. |

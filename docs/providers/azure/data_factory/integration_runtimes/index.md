@@ -29,17 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
+| `type` | `string` | The resource type. |
 | `etag` | `string` | Etag identifies change in the resource. |
 | `properties` | `object` | Azure Data Factory nested object which serves as a compute resource for activities. |
-| `type` | `string` | The resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IntegrationRuntimes_Get` | `SELECT` | `api-version, factoryName, integrationRuntimeName, resourceGroupName, subscriptionId` | Gets an integration runtime. |
 | `IntegrationRuntimes_ListByFactory` | `SELECT` | `api-version, factoryName, resourceGroupName, subscriptionId` | Lists integration runtimes. |
 | `IntegrationRuntimes_CreateOrUpdate` | `INSERT` | `api-version, factoryName, integrationRuntimeName, resourceGroupName, subscriptionId, data__properties` | Creates or updates an integration runtime. |
 | `IntegrationRuntimes_Delete` | `DELETE` | `api-version, factoryName, integrationRuntimeName, resourceGroupName, subscriptionId` | Deletes an integration runtime. |
 | `IntegrationRuntimes_CreateLinkedIntegrationRuntime` | `EXEC` | `api-version, factoryName, integrationRuntimeName, resourceGroupName, subscriptionId` | Create a linked integration runtime entry in a shared integration runtime. |
-| `IntegrationRuntimes_Get` | `EXEC` | `api-version, factoryName, integrationRuntimeName, resourceGroupName, subscriptionId` | Gets an integration runtime. |
 | `IntegrationRuntimes_GetConnectionInfo` | `EXEC` | `api-version, factoryName, integrationRuntimeName, resourceGroupName, subscriptionId` | Gets the on-premises integration runtime connection information for encrypting the on-premises data source credentials. |
 | `IntegrationRuntimes_GetMonitoringData` | `EXEC` | `api-version, factoryName, integrationRuntimeName, resourceGroupName, subscriptionId` | Get the integration runtime monitoring data, which includes the monitor data for all the nodes under this integration runtime. |
 | `IntegrationRuntimes_GetStatus` | `EXEC` | `api-version, factoryName, integrationRuntimeName, resourceGroupName, subscriptionId` | Gets detailed status information for an integration runtime. |

@@ -25,10 +25,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id |
+| `name` | `string` | Resource name |
+| `tags` | `object` | Resource tags |
+| `type` | `string` | Resource type |
+| `location` | `string` | Resource location |
+| `properties` | `object` | Describes the properties of a Virtual Machine Extension Image. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `VirtualMachineExtensionImages_Get` | `EXEC` | `location, publisherName, subscriptionId, type, version` | Gets a virtual machine extension image. |
+| `VirtualMachineExtensionImages_Get` | `SELECT` | `location, publisherName, subscriptionId, type, version` | Gets a virtual machine extension image. |
 | `VirtualMachineExtensionImages_ListTypes` | `EXEC` | `location, publisherName, subscriptionId` | Gets a list of virtual machine extension image types. |
 | `VirtualMachineExtensionImages_ListVersions` | `EXEC` | `location, publisherName, subscriptionId, type` | Gets a list of virtual machine extension image versions. |

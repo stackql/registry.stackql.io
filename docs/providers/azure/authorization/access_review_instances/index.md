@@ -29,12 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The access review instance id. |
 | `name` | `string` | The access review instance name. |
-| `endDateTime` | `string` | The DateTime when the review instance is scheduled to end. |
-| `reviewers` | `array` | This is the collection of reviewers. |
-| `reviewersType` | `string` | This field specifies the type of reviewers for a review. Usually for a review, reviewers are explicitly assigned. However, in some cases, the reviewers may not be assigned and instead be chosen dynamically. For example managers review or self review. |
-| `status` | `string` | This read-only field specifies the status of an access review instance. |
-| `startDateTime` | `string` | The DateTime when the review instance is scheduled to be start. |
-| `backupReviewers` | `array` | This is the collection of backup reviewers. |
+| `properties` | `object` | Access Review Instance properties. |
 | `type` | `string` | The resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |

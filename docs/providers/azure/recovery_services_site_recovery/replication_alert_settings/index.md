@@ -35,6 +35,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReplicationAlertSettings_Get` | `SELECT` | `alertSettingName, api-version, resourceGroupName, resourceName, subscriptionId` | Gets the details of the specified email notification(alert) configuration. |
 | `ReplicationAlertSettings_List` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` | Gets the list of email notification(alert) configurations for the vault. |
 | `ReplicationAlertSettings_Create` | `INSERT` | `alertSettingName, api-version, resourceGroupName, resourceName, subscriptionId` | Create or update an email notification(alert) configuration. |
-| `ReplicationAlertSettings_Get` | `EXEC` | `alertSettingName, api-version, resourceGroupName, resourceName, subscriptionId` | Gets the details of the specified email notification(alert) configuration. |

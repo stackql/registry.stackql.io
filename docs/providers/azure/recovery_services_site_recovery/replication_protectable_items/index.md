@@ -35,5 +35,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReplicationProtectableItems_Get` | `SELECT` | `api-version, fabricName, protectableItemName, protectionContainerName, resourceGroupName, resourceName, subscriptionId` | The operation to get the details of a protectable item. |
 | `ReplicationProtectableItems_ListByReplicationProtectionContainers` | `SELECT` | `api-version, fabricName, protectionContainerName, resourceGroupName, resourceName, subscriptionId` | Lists the protectable items in a protection container. |
-| `ReplicationProtectableItems_Get` | `EXEC` | `api-version, fabricName, protectableItemName, protectionContainerName, resourceGroupName, resourceName, subscriptionId` | The operation to get the details of a protectable item. |

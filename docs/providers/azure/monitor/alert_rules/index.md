@@ -27,25 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Azure resource Id |
-| `name` | `string` | the name of the alert rule. |
-| `description` | `string` | the description of the alert rule that will be included in the alert email. |
-| `location` | `string` | Resource location |
-| `isEnabled` | `boolean` | the flag that indicates whether the alert rule is enabled. |
-| `provisioningState` | `string` | the provisioning state. |
-| `lastUpdatedTime` | `string` | Last time the rule was updated in ISO8601 format. |
-| `condition` | `object` | The condition that results in the alert rule being activated. |
-| `actions` | `array` | the array of actions that are performed when the alert rule becomes active, and when an alert condition is resolved. |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
+| `name` | `string` | The name of the resource |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `action` | `object` | The action that is performed when the alert rule becomes active, and when an alert condition is resolved. |
-| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
-| `type` | `string` | Azure resource type |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `properties` | `object` | An alert rule. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AlertRules_Get` | `SELECT` | `resourceGroupName, ruleName, subscriptionId` | Gets a classic metric alert rule |
 | `AlertRules_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | List the classic metric alert rules within a resource group. |
 | `AlertRules_ListBySubscription` | `SELECT` | `subscriptionId` | List the classic metric alert rules within a subscription. |
-| `AlertRules_CreateOrUpdate` | `INSERT` | `resourceGroupName, ruleName, subscriptionId` | Creates or updates a classic metric alert rule. |
+| `AlertRules_CreateOrUpdate` | `INSERT` | `resourceGroupName, ruleName, subscriptionId, data__properties` | Creates or updates a classic metric alert rule. |
 | `AlertRules_Delete` | `DELETE` | `resourceGroupName, ruleName, subscriptionId` | Deletes a classic metric alert rule |
-| `AlertRules_Get` | `EXEC` | `resourceGroupName, ruleName, subscriptionId` | Gets a classic metric alert rule |
 | `AlertRules_Update` | `EXEC` | `resourceGroupName, ruleName, subscriptionId` | Updates an existing classic metric AlertRuleResource. To update other fields use the CreateOrUpdate method. |

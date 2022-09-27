@@ -29,34 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `zones` | `array` | The virtual machine scale set zones. NOTE: Availability zones can only be set when you create the scale set |
-| `scaleInPolicy` | `object` | Describes a scale-in policy for a virtual machine scale set. |
-| `extendedLocation` | `object` | The complex type of the extended location. |
-| `sku` | `object` | Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. |
-| `spotRestorePolicy` | `object` | Specifies the Spot-Try-Restore properties for the virtual machine scale set. &lt;br&gt;&lt;br&gt; With this property customer can enable or disable automatic restore of the evicted Spot VMSS VM instances opportunistically based on capacity availability and pricing constraint. |
-| `orchestrationMode` | `string` | Specifies the orchestration mode for the virtual machine scale set. |
-| `location` | `string` | Resource location |
-| `singlePlacementGroup` | `boolean` | When true this limits the scale set to a single placement group, of max size 100 virtual machines. NOTE: If singlePlacementGroup is true, it may be modified to false. However, if singlePlacementGroup is false, it may not be modified to true. |
-| `platformFaultDomainCount` | `integer` | Fault Domain count for each placement group. |
-| `automaticRepairsPolicy` | `object` | Specifies the configuration parameters for automatic repairs on the virtual machine scale set. |
 | `identity` | `object` | Identity for the virtual machine scale set. |
-| `doNotRunExtensionsOnOverprovisionedVMs` | `boolean` | When Overprovision is enabled, extensions are launched only on the requested number of VMs which are finally kept. This property will hence ensure that the extensions do not run on the extra overprovisioned VMs. |
-| `proximityPlacementGroup` | `object` |  |
-| `virtualMachineProfile` | `object` | Describes a virtual machine scale set virtual machine profile. |
-| `upgradePolicy` | `object` | Describes an upgrade policy - automatic, manual, or rolling. |
-| `timeCreated` | `string` | Specifies the time at which the Virtual Machine Scale Set resource was created.&lt;br&gt;&lt;br&gt;Minimum api-version: 2022-03-01. |
+| `sku` | `object` | Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. |
+| `extendedLocation` | `object` | The complex type of the extended location. |
 | `type` | `string` | Resource type |
-| `plan` | `object` | Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use.  In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started -&gt;**. Enter any required information and then click **Save**. |
-| `provisioningState` | `string` | The provisioning state, which only appears in the response. |
-| `uniqueId` | `string` | Specifies the ID which uniquely identifies a Virtual Machine Scale Set. |
-| `hostGroup` | `object` |  |
-| `overprovision` | `boolean` | Specifies whether the Virtual Machine Scale Set should be overprovisioned. |
-| `zoneBalance` | `boolean` | Whether to force strictly even Virtual Machine distribution cross x-zones in case there is zone outage. zoneBalance property can only be set if the zones property of the scale set contains more than one zone. If there are no zones or only one zone specified, then zoneBalance property should not be set. |
-| `additionalCapabilities` | `object` | Enables or disables a capability on the virtual machine or virtual machine scale set. |
 | `tags` | `object` | Resource tags |
+| `plan` | `object` | Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use.  In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started -&gt;**. Enter any required information and then click **Save**. |
+| `properties` | `object` | Describes the properties of a Virtual Machine Scale Set. |
+| `location` | `string` | Resource location |
+| `zones` | `array` | The virtual machine scale set zones. NOTE: Availability zones can only be set when you create the scale set |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualMachineScaleSets_Get` | `SELECT` | `resourceGroupName, subscriptionId, vmScaleSetName` | Display information about a virtual machine scale set. |
 | `VirtualMachineScaleSets_List` | `SELECT` | `resourceGroupName, subscriptionId` | Gets a list of all VM scale sets under a resource group. |
 | `VirtualMachineScaleSets_ListAll` | `SELECT` | `subscriptionId` | Gets a list of all VM Scale Sets in the subscription, regardless of the associated resource group. Use nextLink property in the response to get the next page of VM Scale Sets. Do this till nextLink is null to fetch all the VM Scale Sets. |
 | `VirtualMachineScaleSets_ListByLocation` | `SELECT` | `location, subscriptionId` | Gets all the VM scale sets under the specified subscription for the specified location. |
@@ -66,7 +51,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `VirtualMachineScaleSets_Deallocate` | `EXEC` | `resourceGroupName, subscriptionId, vmScaleSetName` | Deallocates specific virtual machines in a VM scale set. Shuts down the virtual machines and releases the compute resources. You are not billed for the compute resources that this virtual machine scale set deallocates. |
 | `VirtualMachineScaleSets_DeleteInstances` | `EXEC` | `resourceGroupName, subscriptionId, vmScaleSetName, data__instanceIds` | Deletes virtual machines in a VM scale set. |
 | `VirtualMachineScaleSets_ForceRecoveryServiceFabricPlatformUpdateDomainWalk` | `EXEC` | `platformUpdateDomain, resourceGroupName, subscriptionId, vmScaleSetName` | Manual platform update domain walk to update virtual machines in a service fabric virtual machine scale set. |
-| `VirtualMachineScaleSets_Get` | `EXEC` | `resourceGroupName, subscriptionId, vmScaleSetName` | Display information about a virtual machine scale set. |
 | `VirtualMachineScaleSets_GetInstanceView` | `EXEC` | `resourceGroupName, subscriptionId, vmScaleSetName` | Gets the status of a VM scale set instance. |
 | `VirtualMachineScaleSets_GetOSUpgradeHistory` | `EXEC` | `resourceGroupName, subscriptionId, vmScaleSetName` | Gets list of OS upgrades on a VM scale set instance. |
 | `VirtualMachineScaleSets_ListSkus` | `EXEC` | `resourceGroupName, subscriptionId, vmScaleSetName` | Gets a list of SKUs available for your VM scale set, including the minimum and maximum VM instances allowed for each SKU. |

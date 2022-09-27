@@ -25,11 +25,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `kind` | `string` | Additional resource type qualifier. |
+| `properties` | `object` | Resource properties. |
+| `etag` | `string` | Resource ETAG. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `Ports_Get` | `EXEC` | `machineName, portName, resourceGroupName, subscriptionId, workspaceName` | Returns the specified port. The port must be live during the specified time interval. If the port is not live during the interval, status 404 (Not Found) is returned. |
+| `Ports_Get` | `SELECT` | `machineName, portName, resourceGroupName, subscriptionId, workspaceName` | Returns the specified port. The port must be live during the specified time interval. If the port is not live during the interval, status 404 (Not Found) is returned. |
 | `Ports_GetLiveness` | `EXEC` | `machineName, portName, resourceGroupName, subscriptionId, workspaceName` | Obtains the liveness status of the port during the specified time interval. |
 | `Ports_ListAcceptingProcesses` | `EXEC` | `machineName, portName, resourceGroupName, subscriptionId, workspaceName` | Returns a collection of processes accepting on the specified port |
 | `Ports_ListConnections` | `EXEC` | `machineName, portName, resourceGroupName, subscriptionId, workspaceName` | Returns a collection of connections established via the specified port. |

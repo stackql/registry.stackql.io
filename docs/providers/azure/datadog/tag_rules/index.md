@@ -35,6 +35,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `TagRules_Get` | `SELECT` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |
 | `TagRules_List` | `SELECT` | `monitorName, resourceGroupName, subscriptionId` |
 | `TagRules_CreateOrUpdate` | `INSERT` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |
-| `TagRules_Get` | `EXEC` | `monitorName, resourceGroupName, ruleSetName, subscriptionId` |

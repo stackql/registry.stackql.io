@@ -27,18 +27,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `emailAddresses` | `array` | Specifies an array of e-mail addresses to which the alert is sent. |
-| `retentionDays` | `integer` | Specifies the number of days to keep in the Threat Detection audit logs. |
-| `storageEndpoint` | `string` | Specifies the blob storage endpoint (e.g. https://MyAccount.blob.core.windows.net). This blob storage will hold all Threat Detection audit logs. |
-| `emailAccountAdmins` | `boolean` | Specifies that the alert is sent to the account administrators. |
-| `disabledAlerts` | `array` | Specifies an array of alerts that are disabled. Allowed values are: Sql_Injection, Sql_Injection_Vulnerability, Access_Anomaly, Data_Exfiltration, Unsafe_Action, Brute_Force |
-| `storageAccountAccessKey` | `string` | Specifies the identifier key of the Threat Detection audit storage account. |
-| `state` | `string` | Specifies the state of the policy, whether it is enabled or disabled or a policy has not been applied yet on the specific database. |
-| `creationTime` | `string` | Specifies the UTC creation time of the policy. |
+| `properties` | `object` | Properties of a security alert policy. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ServerSecurityAlertPolicies_Get` | `SELECT` | `resourceGroupName, securityAlertPolicyName, serverName, subscriptionId` | Get a server's security alert policy. |
 | `ServerSecurityAlertPolicies_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Get the server's threat detection policies. |
 | `ServerSecurityAlertPolicies_CreateOrUpdate` | `INSERT` | `resourceGroupName, securityAlertPolicyName, serverName, subscriptionId` | Creates or updates a threat detection policy. |
-| `ServerSecurityAlertPolicies_Get` | `EXEC` | `resourceGroupName, securityAlertPolicyName, serverName, subscriptionId` | Get a server's security alert policy. |

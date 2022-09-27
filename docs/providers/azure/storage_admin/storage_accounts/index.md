@@ -29,32 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource Name. |
-| `accessTier` | `string` | Access tier for storage account |
-| `primaryEndpoints` | `object` | The URLs that are used to perform a retrieval of a public BLOB, queue, or table object. |
-| `supportsHttpsTrafficOnly` | `boolean` | Storage account supports https traffic only or not |
-| `tenantResourceGroupName` | `string` | The name of resource group under which the storage account locates. |
-| `location` | `string` | Resource Location. |
-| `tenantStorageAccountName` | `string` | Storage account name from tenant view. |
+| `properties` | `object` | Properties of a storage account. |
 | `tags` | `object` | Resource tags. |
-| `tenantSubscriptionId` | `string` | Subscription ID of the subscription under which the storage account locates. |
-| `provisioningState` | `string` | Storage account state. |
 | `type` | `string` | Resource Type. |
-| `healthState` | `string` | Health state for storage account |
-| `faultDomain` | `string` | The fault domain for the storage account. |
 | `kind` | `string` | The kind of storage account |
-| `accountType` | `string` | Storage account type. |
-| `encryption` | `object` | Storage encryption setting |
-| `statusOfPrimary` | `string` | Gets the status indicating whether the primary location of the storage account is available or unavailable. |
-| `accountStatus` | `string` | The state of storage account in WAC. |
-| `tenantViewId` | `string` | Resource URI of storage account from tenant view. |
-| `accountId` | `string` | Internal storage account ID, which is not visible to tenant. |
-| `deletedTime` | `string` | The date-time when the storage account was deleted. |
-| `creationTime` | `string` | The creation date and time of storage account in UTC. |
-| `primaryLocation` | `string` | The primary location for the storage account. |
+| `location` | `string` | Resource Location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `StorageAccounts_Get` | `SELECT` | `accountId, location, subscriptionId` | Returns the requested storage account. |
 | `StorageAccounts_List` | `SELECT` | `location, subscriptionId` | Returns a list of storage accounts. |
-| `StorageAccounts_Get` | `EXEC` | `accountId, location, subscriptionId` | Returns the requested storage account. |
 | `StorageAccounts_ReclaimStorageCapacity` | `EXEC` | `location, subscriptionId` | Start reclaim storage capacity on deleted storage objects. |
 | `StorageAccounts_Undelete` | `EXEC` | `accountId, location, subscriptionId` | Undelete a deleted storage account with new account name if the a new name is provided. |

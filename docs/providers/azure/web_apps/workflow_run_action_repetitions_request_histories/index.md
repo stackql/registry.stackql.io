@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
+| `properties` | `object` | The request history. |
 | `tags` | `object` | The resource tags. |
 | `type` | `string` | Gets the resource type. |
 | `location` | `string` | The resource location. |
-| `properties` | `object` | The request history. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WorkflowRunActionRepetitionsRequestHistories_Get` | `SELECT` | `actionName, name, repetitionName, requestHistoryName, resourceGroupName, runName, subscriptionId, workflowName` | Gets a workflow run repetition request history. |
 | `WorkflowRunActionRepetitionsRequestHistories_List` | `SELECT` | `actionName, name, repetitionName, resourceGroupName, runName, subscriptionId, workflowName` | List a workflow run repetition request history. |
-| `WorkflowRunActionRepetitionsRequestHistories_Get` | `EXEC` | `actionName, name, repetitionName, requestHistoryName, resourceGroupName, runName, subscriptionId, workflowName` | Gets a workflow run repetition request history. |

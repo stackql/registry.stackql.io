@@ -29,17 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
-| `description` | `string` | Description of offer. |
+| `location` | `string` | Location of the resource |
+| `properties` | `object` | Properties for an delegated provider. |
 | `tags` | `object` | List of key-value pairs. |
 | `type` | `string` | Type of resource. |
-| `externalReferenceId` | `string` | External reference identifier. |
-| `location` | `string` | Location of the resource |
-| `accessibilityState` | `string` | Represents the state of the offer |
-| `subscriptionCount` | `integer` | Current subscription count. |
-| `displayName` | `string` | Display name of offer. |
-| `delegatedOfferId` | `string` | The delegated offer identifier. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DelegatedProviderOffers_Get` | `SELECT` | `delegatedProviderSubscriptionId, offer, subscriptionId` | Get the specified delegated provider offer. |
 | `DelegatedProviderOffers_List` | `SELECT` | `delegatedProviderSubscriptionId, subscriptionId` | Get the list of delegated provider offers. |
-| `DelegatedProviderOffers_Get` | `EXEC` | `delegatedProviderSubscriptionId, offer, subscriptionId` | Get the specified delegated provider offer. |

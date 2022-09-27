@@ -29,9 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `link` | `string` | Link to the external resource. |
-| `linkedResourceType` | `string` | Resource type of the linked resource. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `properties` | `object` | Properties of ResourceNavigationLink. |
 | `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods

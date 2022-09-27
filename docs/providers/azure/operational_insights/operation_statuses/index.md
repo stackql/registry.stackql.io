@@ -25,8 +25,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | The operation Id. |
+| `name` | `string` | The operation name. |
+| `startTime` | `string` | The start time of the operation. |
+| `status` | `string` | The status of the operation. |
+| `endTime` | `string` | The end time of the operation. |
+| `error` | `object` | Common error response for all Azure Resource Manager APIs to return error details for failed operations. (This also follows the OData error response format.) |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `OperationStatuses_Get` | `EXEC` | `asyncOperationId, location, subscriptionId` |
+| `OperationStatuses_Get` | `SELECT` | `asyncOperationId, location, subscriptionId` |

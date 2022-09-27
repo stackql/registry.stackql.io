@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
-| `location` | `string` | Resource Location |
 | `properties` | `object` | Protection profile custom data details. |
 | `type` | `string` | Resource Type |
+| `location` | `string` | Resource Location |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReplicationProtectionContainers_Get` | `SELECT` | `api-version, fabricName, protectionContainerName, resourceGroupName, resourceName, subscriptionId` | Gets the details of a protection container. |
 | `ReplicationProtectionContainers_List` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` | Lists the protection containers in a vault. |
 | `ReplicationProtectionContainers_ListByReplicationFabrics` | `SELECT` | `api-version, fabricName, resourceGroupName, resourceName, subscriptionId` | Lists the protection containers in the specified fabric. |
 | `ReplicationProtectionContainers_Create` | `INSERT` | `api-version, fabricName, protectionContainerName, resourceGroupName, resourceName, subscriptionId` | Operation to create a protection container. |
 | `ReplicationProtectionContainers_Delete` | `DELETE` | `api-version, fabricName, protectionContainerName, resourceGroupName, resourceName, subscriptionId` | Operation to remove a protection container. |
 | `ReplicationProtectionContainers_DiscoverProtectableItem` | `EXEC` | `api-version, fabricName, protectionContainerName, resourceGroupName, resourceName, subscriptionId` | The operation to a add a protectable item to a protection container(Add physical server). |
-| `ReplicationProtectionContainers_Get` | `EXEC` | `api-version, fabricName, protectionContainerName, resourceGroupName, resourceName, subscriptionId` | Gets the details of a protection container. |
 | `ReplicationProtectionContainers_SwitchProtection` | `EXEC` | `api-version, fabricName, protectionContainerName, resourceGroupName, resourceName, subscriptionId` | Operation to switch protection from one container to another or one replication provider to another. |

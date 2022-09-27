@@ -29,16 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
+| `properties` | `object` | The properties that define a peer's ASN. |
 | `type` | `string` | The type of the resource. |
-| `validationState` | `string` | The validation state of the ASN associated with the peer. |
-| `errorMessage` | `string` | The error message for the validation state |
-| `peerAsn` | `integer` | The Autonomous System Number (ASN) of the peer. |
-| `peerContactDetail` | `array` | The contact details of the peer. |
-| `peerName` | `string` | The name of the peer. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PeerAsns_Get` | `SELECT` | `peerAsnName, subscriptionId` | Gets the peer ASN with the specified name under the given subscription. |
 | `PeerAsns_ListBySubscription` | `SELECT` | `subscriptionId` | Lists all of the peer ASNs under the given subscription. |
 | `PeerAsns_CreateOrUpdate` | `INSERT` | `peerAsnName, subscriptionId` | Creates a new peer ASN or updates an existing peer ASN with the specified name under the given subscription. |
 | `PeerAsns_Delete` | `DELETE` | `peerAsnName, subscriptionId` | Deletes an existing peer ASN with the specified name under the given subscription. |
-| `PeerAsns_Get` | `EXEC` | `peerAsnName, subscriptionId` | Gets the peer ASN with the specified name under the given subscription. |

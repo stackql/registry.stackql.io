@@ -29,20 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
-| `properties` | `object` | The properties of a service instance. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `tags` | `object` | The resource tags. |
-| `etag` | `string` | An etag associated with the resource, used for optimistic concurrency when editing it. |
-| `identity` | `object` | Setting indicating whether the service has a managed identity associated with it. |
 | `location` | `string` | The resource location. |
-| `type` | `string` | The resource type. |
+| `properties` | `object` | The properties of a service instance. |
 | `kind` | `string` | The kind of the service. |
+| `etag` | `string` | An etag associated with the resource, used for optimistic concurrency when editing it. |
+| `type` | `string` | The resource type. |
+| `tags` | `object` | The resource tags. |
+| `identity` | `object` | Setting indicating whether the service has a managed identity associated with it. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `privateLinkServicesForMIPPolicySync_Get` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | Get the metadata of a privateLinkServicesForMIPPolicySync resource. |
 | `privateLinkServicesForMIPPolicySync_List` | `SELECT` | `subscriptionId` | Get all the privateLinkServicesForMIPPolicySync instances in a subscription. |
 | `privateLinkServicesForMIPPolicySync_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Get all the service instances in a resource group. |
 | `privateLinkServicesForMIPPolicySync_CreateOrUpdate` | `INSERT` | `resourceGroupName, resourceName, subscriptionId` | Create or update the metadata of a privateLinkServicesForMIPPolicySync instance. |
 | `privateLinkServicesForMIPPolicySync_Delete` | `DELETE` | `resourceGroupName, resourceName, subscriptionId` | Delete a service instance. |
-| `privateLinkServicesForMIPPolicySync_Get` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Get the metadata of a privateLinkServicesForMIPPolicySync resource. |
 | `privateLinkServicesForMIPPolicySync_Update` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Update the metadata of a privateLinkServicesForMIPPolicySync instance. |

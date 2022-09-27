@@ -29,4 +29,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `ManagedDatabaseRestoreDetails_Get` | `EXEC` | `databaseName, managedInstanceName, resourceGroupName, restoreDetailsName, subscriptionId` |
+| `ManagedDatabaseRestoreDetails_Get` | `SELECT` | `databaseName, managedInstanceName, resourceGroupName, restoreDetailsName, subscriptionId` |

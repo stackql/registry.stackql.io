@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `type` | `string` | Gets the resource type. |
 | `location` | `string` | The resource location. |
-| `repetitionIndexes` | `array` | The repetition indexes. |
+| `properties` | `object` | The workflow run action repetition properties definition. |
 | `tags` | `object` | The resource tags. |
+| `type` | `string` | Gets the resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WorkflowRunActionRepetitions_Get` | `SELECT` | `actionName, name, repetitionName, resourceGroupName, runName, subscriptionId, workflowName` | Get a workflow run action repetition. |
 | `WorkflowRunActionRepetitions_List` | `SELECT` | `actionName, name, resourceGroupName, runName, subscriptionId, workflowName` | Get all of a workflow run action repetitions. |
-| `WorkflowRunActionRepetitions_Get` | `EXEC` | `actionName, name, repetitionName, resourceGroupName, runName, subscriptionId, workflowName` | Get a workflow run action repetition. |
 | `WorkflowRunActionRepetitions_ListExpressionTraces` | `EXEC` | `actionName, name, repetitionName, resourceGroupName, runName, subscriptionId, workflowName` | Lists a workflow run expression trace. |

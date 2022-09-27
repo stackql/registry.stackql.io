@@ -30,13 +30,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `value` | `string` | Contents of the Policy as defined by the format. |
-| `format` | `string` | Format of the policyContent. |
+| `properties` | `object` | Policy contract Properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ProductPolicy_Get` | `SELECT` | `policyId, productId, resourceGroupName, serviceName, subscriptionId` | Get the policy configuration at the Product level. |
 | `ProductPolicy_ListByProduct` | `SELECT` | `productId, resourceGroupName, serviceName, subscriptionId` | Get the policy configuration at the Product level. |
 | `ProductPolicy_CreateOrUpdate` | `INSERT` | `policyId, productId, resourceGroupName, serviceName, subscriptionId` | Creates or updates policy configuration for the Product. |
 | `ProductPolicy_Delete` | `DELETE` | `If-Match, policyId, productId, resourceGroupName, serviceName, subscriptionId` | Deletes the policy configuration at the Product. |
-| `ProductPolicy_Get` | `EXEC` | `policyId, productId, resourceGroupName, serviceName, subscriptionId` | Get the policy configuration at the Product level. |
 | `ProductPolicy_GetEntityTag` | `EXEC` | `policyId, productId, resourceGroupName, serviceName, subscriptionId` | Get the ETag of the policy configuration at the Product level. |

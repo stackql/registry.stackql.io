@@ -32,7 +32,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AlertRules_Get` | `SELECT` | `resourceGroupName, ruleId, subscriptionId, workspaceName` | Gets the alert rule. |
 | `AlertRules_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets all alert rules. |
 | `AlertRules_CreateOrUpdate` | `INSERT` | `resourceGroupName, ruleId, subscriptionId, workspaceName, data__kind` | Creates or updates the alert rule. |
 | `AlertRules_Delete` | `DELETE` | `resourceGroupName, ruleId, subscriptionId, workspaceName` | Delete the alert rule. |
-| `AlertRules_Get` | `EXEC` | `resourceGroupName, ruleId, subscriptionId, workspaceName` | Gets the alert rule. |

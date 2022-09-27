@@ -29,39 +29,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `p2SVpnGateway` | `object` | Reference to another subresource. |
-| `virtualRouterIps` | `array` | VirtualRouter IPs. |
-| `routeTable` | `object` | VirtualHub route table. |
-| `tags` | `object` | Resource tags. |
-| `virtualWan` | `object` | Reference to another subresource. |
-| `virtualRouterAsn` | `integer` | VirtualRouter ASN. |
-| `securityPartnerProvider` | `object` | Reference to another subresource. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `securityProviderName` | `string` | The Security Provider name. |
-| `bgpConnections` | `array` | List of references to Bgp Connections. |
 | `kind` | `string` | Kind of service virtual hub. This is metadata used for the Azure portal experience for Route Server. |
-| `hubRoutingPreference` | `string` | The hub routing preference gateway types |
-| `azureFirewall` | `object` | Reference to another subresource. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `addressPrefix` | `string` | Address-prefix for this VirtualHub. |
-| `preferredRoutingGateway` | `string` | The preferred routing gateway types |
-| `routingState` | `string` | The current routing state of the VirtualHub. |
-| `virtualHubRouteTableV2s` | `array` | List of all virtual hub route table v2s associated with this VirtualHub. |
-| `expressRouteGateway` | `object` | Reference to another subresource. |
-| `vpnGateway` | `object` | Reference to another subresource. |
-| `type` | `string` | Resource type. |
-| `sku` | `string` | The sku of this VirtualHub. |
 | `location` | `string` | Resource location. |
-| `virtualRouterAutoScaleConfiguration` | `object` | The VirtualHub Router autoscale configuration. |
-| `allowBranchToBranchTraffic` | `boolean` | Flag to control transit for VirtualRouter hub. |
-| `ipConfigurations` | `array` | List of references to IpConfigurations. |
+| `properties` | `object` | Parameters for VirtualHub. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualHubs_Get` | `SELECT` | `resourceGroupName, subscriptionId, virtualHubName` | Retrieves the details of a VirtualHub. |
 | `VirtualHubs_List` | `SELECT` | `subscriptionId` | Lists all the VirtualHubs in a subscription. |
 | `VirtualHubs_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all the VirtualHubs in a resource group. |
 | `VirtualHubs_CreateOrUpdate` | `INSERT` | `resourceGroupName, subscriptionId, virtualHubName, data__location` | Creates a VirtualHub resource if it doesn't exist else updates the existing VirtualHub. |
 | `VirtualHubs_Delete` | `DELETE` | `resourceGroupName, subscriptionId, virtualHubName` | Deletes a VirtualHub. |
-| `VirtualHubs_Get` | `EXEC` | `resourceGroupName, subscriptionId, virtualHubName` | Retrieves the details of a VirtualHub. |
 | `VirtualHubs_GetEffectiveVirtualHubRoutes` | `EXEC` | `resourceGroupName, subscriptionId, virtualHubName` | Gets the effective routes configured for the Virtual Hub resource or the specified resource . |
+| `VirtualHubs_GetInboundRoutes` | `EXEC` | `resourceGroupName, subscriptionId, virtualHubName` | Gets the inbound routes configured for the Virtual Hub on a particular connection. |
+| `VirtualHubs_GetOutboundRoutes` | `EXEC` | `resourceGroupName, subscriptionId, virtualHubName` | Gets the outbound routes configured for the Virtual Hub on a particular connection. |
 | `VirtualHubs_UpdateTags` | `EXEC` | `resourceGroupName, subscriptionId, virtualHubName` | Updates VirtualHub tags. |

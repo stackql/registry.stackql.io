@@ -29,12 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `validationKey` | `string` | A base64-encoded validation key to validate, that a request is coming from Azure API Management. |
-| `subscriptions` | `object` | Subscriptions delegation settings properties. |
-| `termsOfService` | `object` | Terms of service contract properties. |
-| `url` | `string` | A delegation Url. |
-| `userRegistration` | `object` | User registration delegation settings properties. |
-| `enabled` | `boolean` | Redirect Anonymous users to the Sign-In page. |
+| `properties` | `object` | Sign-in settings contract properties. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params |

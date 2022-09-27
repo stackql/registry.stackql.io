@@ -29,21 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `virtualRouterAsn` | `integer` | VirtualRouter ASN. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `virtualRouterIps` | `array` | VirtualRouter IPs. |
-| `type` | `string` | Resource type. |
-| `tags` | `object` | Resource tags. |
-| `hostedSubnet` | `object` | Reference to another subresource. |
 | `location` | `string` | Resource location. |
-| `peerings` | `array` | List of references to VirtualRouterPeerings. |
+| `properties` | `object` | Virtual Router definition. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `hostedGateway` | `object` | Reference to another subresource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualRouters_Get` | `SELECT` | `resourceGroupName, subscriptionId, virtualRouterName` | Gets the specified Virtual Router. |
 | `VirtualRouters_List` | `SELECT` | `subscriptionId` | Gets all the Virtual Routers in a subscription. |
 | `VirtualRouters_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all Virtual Routers in a resource group. |
 | `VirtualRouters_CreateOrUpdate` | `INSERT` | `resourceGroupName, subscriptionId, virtualRouterName` | Creates or updates the specified Virtual Router. |
 | `VirtualRouters_Delete` | `DELETE` | `resourceGroupName, subscriptionId, virtualRouterName` | Deletes the specified Virtual Router. |
-| `VirtualRouters_Get` | `EXEC` | `resourceGroupName, subscriptionId, virtualRouterName` | Gets the specified Virtual Router. |

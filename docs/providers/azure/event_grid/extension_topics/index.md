@@ -25,8 +25,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Fully qualified identifier of the resource. |
+| `name` | `string` | Name of the resource. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `type` | `string` | Type of the resource. |
+| `properties` | `object` | Properties of the Extension Topic |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `ExtensionTopics_Get` | `EXEC` | `scope` |
+| `ExtensionTopics_Get` | `SELECT` | `scope` |

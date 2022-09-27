@@ -29,30 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Azure resource Id |
 | `name` | `string` | Azure resource name |
-| `provisioningState` | `string` | Current state of this component, whether or not is has been provisioned within the resource group it is defined. Users cannot change this value but are able to read from it. Values will include Succeeded, Deploying, Canceled, and Failed. |
 | `type` | `string` | Azure resource type |
-| `Kind` | `string` | The kind of web test this is, valid choices are ping, multistep and standard. |
-| `Name` | `string` | User defined name if this WebTest. |
-| `Frequency` | `integer` | Interval in seconds between test runs for this WebTest. Default value is 300. |
-| `Enabled` | `boolean` | Is the test actively being monitored. |
-| `ValidationRules` | `object` | The collection of validation rule properties |
-| `location` | `string` | Resource location |
-| `Locations` | `array` | A list of where to physically run the tests from to give global coverage for accessibility of your application. |
-| `tags` | `` | Resource tags |
-| `RetryEnabled` | `boolean` | Allow for retries should this WebTest fail. |
-| `Timeout` | `integer` | Seconds until this WebTest will timeout and fail. Default value is 30. |
-| `Description` | `string` | User defined description for this WebTest. |
-| `Configuration` | `object` | An XML configuration specification for a WebTest. |
-| `Request` | `object` | The collection of request properties |
-| `SyntheticMonitorId` | `string` | Unique ID of this WebTest. This is typically the same value as the Name field. |
 | `kind` | `string` | The kind of WebTest that this web test watches. Choices are ping, multistep and standard. |
+| `location` | `string` | Resource location |
+| `properties` | `object` | Metadata describing a web test for an Azure resource. |
+| `tags` | `` | Resource tags |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WebTests_Get` | `SELECT` | `resourceGroupName, subscriptionId, webTestName` | Get a specific Application Insights web test definition. |
 | `WebTests_List` | `SELECT` | `subscriptionId` | Get all Application Insights web test definitions for the specified subscription. |
 | `WebTests_ListByComponent` | `SELECT` | `componentName, resourceGroupName, subscriptionId` | Get all Application Insights web tests defined for the specified component. |
 | `WebTests_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Get all Application Insights web tests defined for the specified resource group. |
 | `WebTests_CreateOrUpdate` | `INSERT` | `resourceGroupName, subscriptionId, webTestName` | Creates or updates an Application Insights web test definition. |
 | `WebTests_Delete` | `DELETE` | `resourceGroupName, subscriptionId, webTestName` | Deletes an Application Insights web test. |
-| `WebTests_Get` | `EXEC` | `resourceGroupName, subscriptionId, webTestName` | Get a specific Application Insights web test definition. |
 | `WebTests_UpdateTags` | `EXEC` | `resourceGroupName, subscriptionId, webTestName` | Updates the tags associated with an Application Insights web test. |

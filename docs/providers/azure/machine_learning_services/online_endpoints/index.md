@@ -27,19 +27,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `identity` | `object` | Managed service identity (system assigned and/or user assigned identities) |
-| `kind` | `string` | Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. |
 | `location` | `string` | The geo-location where the resource lives |
 | `properties` | `object` | Online endpoint configuration |
 | `sku` | `object` | The resource model definition representing SKU |
 | `tags` | `object` | Resource tags. |
+| `identity` | `object` | Managed service identity (system assigned and/or user assigned identities) |
+| `kind` | `string` | Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `OnlineEndpoints_Get` | `SELECT` | `endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `OnlineEndpoints_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` |
 | `OnlineEndpoints_CreateOrUpdate` | `INSERT` | `endpointName, resourceGroupName, subscriptionId, workspaceName, data__location, data__properties` |
 | `OnlineEndpoints_Delete` | `DELETE` | `endpointName, resourceGroupName, subscriptionId, workspaceName` |
-| `OnlineEndpoints_Get` | `EXEC` | `endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `OnlineEndpoints_GetToken` | `EXEC` | `endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `OnlineEndpoints_ListKeys` | `EXEC` | `endpointName, resourceGroupName, subscriptionId, workspaceName` |
 | `OnlineEndpoints_RegenerateKeys` | `EXEC` | `endpointName, resourceGroupName, subscriptionId, workspaceName, data__keyType` |

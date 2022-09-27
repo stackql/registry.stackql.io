@@ -29,7 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies_Get` | `SELECT` | `managedInstanceName, policyName, resourceGroupName, restorableDroppedDatabaseId, subscriptionId` | Gets a dropped database's short term retention policy. |
 | `ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies_ListByRestorableDroppedDatabase` | `SELECT` | `managedInstanceName, resourceGroupName, restorableDroppedDatabaseId, subscriptionId` | Gets a dropped database's short term retention policy list. |
 | `ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies_CreateOrUpdate` | `INSERT` | `managedInstanceName, policyName, resourceGroupName, restorableDroppedDatabaseId, subscriptionId` | Sets a database's short term retention policy. |
-| `ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies_Get` | `EXEC` | `managedInstanceName, policyName, resourceGroupName, restorableDroppedDatabaseId, subscriptionId` | Gets a dropped database's short term retention policy. |
 | `ManagedRestorableDroppedDatabaseBackupShortTermRetentionPolicies_Update` | `EXEC` | `managedInstanceName, policyName, resourceGroupName, restorableDroppedDatabaseId, subscriptionId` | Sets a database's short term retention policy. |

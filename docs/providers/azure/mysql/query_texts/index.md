@@ -25,12 +25,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `queryId` | `string` | Query identifier unique to the server. |
-| `queryText` | `string` | Query text. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `QueryTexts_Get` | `SELECT` | `queryId, resourceGroupName, serverName, subscriptionId` | Retrieve the Query-Store query texts for the queryId. |
 | `QueryTexts_ListByServer` | `SELECT` | `queryIds, resourceGroupName, serverName, subscriptionId` | Retrieve the Query-Store query texts for specified queryIds. |
-| `QueryTexts_Get` | `EXEC` | `queryId, resourceGroupName, serverName, subscriptionId` | Retrieve the Query-Store query texts for the queryId. |

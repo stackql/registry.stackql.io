@@ -25,17 +25,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `domainValidationState` | `string` | Provisioning substate shows the progress of custom HTTPS enabling/disabling process step by step. DCV stands for DomainControlValidation. |
-| `hostName` | `string` | The host name of the domain. Must be a domain name. |
-| `validationProperties` | `object` | The JSON object that contains the properties to validate a domain. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AFDCustomDomains_Get` | `SELECT` | `customDomainName, profileName, resourceGroupName, subscriptionId` | Gets an existing AzureFrontDoor domain with the specified domain name under the specified subscription, resource group and profile. |
 | `AFDCustomDomains_ListByProfile` | `SELECT` | `profileName, resourceGroupName, subscriptionId` | Lists existing AzureFrontDoor domains. |
 | `AFDCustomDomains_Create` | `INSERT` | `customDomainName, profileName, resourceGroupName, subscriptionId` | Creates a new domain within the specified profile. |
 | `AFDCustomDomains_Delete` | `DELETE` | `customDomainName, profileName, resourceGroupName, subscriptionId` | Deletes an existing AzureFrontDoor domain with the specified domain name under the specified subscription, resource group and profile. |
-| `AFDCustomDomains_Get` | `EXEC` | `customDomainName, profileName, resourceGroupName, subscriptionId` | Gets an existing AzureFrontDoor domain with the specified domain name under the specified subscription, resource group and profile. |
 | `AFDCustomDomains_RefreshValidationToken` | `EXEC` | `customDomainName, profileName, resourceGroupName, subscriptionId` | Updates the domain validation token. |
 | `AFDCustomDomains_Update` | `EXEC` | `customDomainName, profileName, resourceGroupName, subscriptionId` | Updates an existing domain within a profile. |

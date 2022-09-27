@@ -25,14 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `isActiveCMK` | `boolean` | Used to activate the workspace after a customer managed key is provided. |
-| `keyVaultUrl` | `string` | The Key Vault Url of the workspace key. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Keys_Get` | `SELECT` | `keyName, resourceGroupName, subscriptionId, workspaceName` | Gets a workspace key |
 | `Keys_ListByWorkspace` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Returns a list of keys in a workspace |
 | `Keys_CreateOrUpdate` | `INSERT` | `keyName, resourceGroupName, subscriptionId, workspaceName` | Creates or updates a workspace key |
 | `Keys_Delete` | `DELETE` | `keyName, resourceGroupName, subscriptionId, workspaceName` | Deletes a workspace key |
-| `Keys_Get` | `EXEC` | `keyName, resourceGroupName, subscriptionId, workspaceName` | Gets a workspace key |

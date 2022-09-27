@@ -29,16 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ARM id of the resource. |
 | `name` | `string` | The name of the agreement. |
+| `properties` | `object` | Terms properties for Marketplace and Confluent. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `accepted` | `boolean` | If any version of the terms have been accepted, otherwise false. |
-| `signature` | `string` | Terms signature. |
-| `privacyPolicyLink` | `string` | Link to the privacy policy of the publisher. |
-| `plan` | `string` | Plan identifier string. |
-| `publisher` | `string` | Publisher identifier string. |
-| `retrieveDatetime` | `string` | Date and time in UTC of when the terms were accepted. This is empty if Accepted is false. |
-| `product` | `string` | Product identifier string. |
 | `type` | `string` | The type of the agreement. |
-| `licenseTextLink` | `string` | Link to HTML with Microsoft and Publisher terms. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

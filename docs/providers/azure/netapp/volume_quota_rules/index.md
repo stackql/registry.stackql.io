@@ -27,17 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `properties` | `object` | Volume Quota Rule properties |
 | `tags` | `object` | Resource tags. |
 | `location` | `string` | The geo-location where the resource lives |
-| `provisioningState` | `string` | Gets the status of the VolumeQuotaRule at the time the operation was called. |
-| `quotaSizeInKiBs` | `integer` | Size of quota |
-| `quotaTarget` | `string` | UserID/GroupID/SID based on the quota target type. UserID and groupID can be found by running ‘id’ or ‘getent’ command for the user or group and SID can be found by running &lt;wmic useraccount where name='user-name' get sid&gt; |
-| `quotaType` | `string` | Type of quota |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VolumeQuotaRules_Get` | `SELECT` | `accountName, poolName, resourceGroupName, subscriptionId, volumeName, volumeQuotaRuleName` | Get details of the specified quota rule |
 | `VolumeQuotaRules_ListByVolume` | `SELECT` | `accountName, poolName, resourceGroupName, subscriptionId, volumeName` | List all quota rules associated with the volume |
 | `VolumeQuotaRules_Create` | `INSERT` | `accountName, poolName, resourceGroupName, subscriptionId, volumeName, volumeQuotaRuleName` | Create the specified quota rule within the given volume |
 | `VolumeQuotaRules_Delete` | `DELETE` | `accountName, poolName, resourceGroupName, subscriptionId, volumeName, volumeQuotaRuleName` | Delete quota rule |
-| `VolumeQuotaRules_Get` | `EXEC` | `accountName, poolName, resourceGroupName, subscriptionId, volumeName, volumeQuotaRuleName` | Get details of the specified quota rule |
 | `VolumeQuotaRules_Update` | `EXEC` | `accountName, poolName, resourceGroupName, subscriptionId, volumeName, volumeQuotaRuleName` | Patch a quota rule |

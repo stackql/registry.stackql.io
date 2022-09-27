@@ -32,7 +32,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ProductSettings_Get` | `SELECT` | `resourceGroupName, settingsName, subscriptionId, workspaceName` | Gets a setting. |
 | `ProductSettings_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | List of all the settings |
 | `ProductSettings_Delete` | `DELETE` | `resourceGroupName, settingsName, subscriptionId, workspaceName` | Delete setting of the product. |
-| `ProductSettings_Get` | `EXEC` | `resourceGroupName, settingsName, subscriptionId, workspaceName` | Gets a setting. |
 | `ProductSettings_Update` | `EXEC` | `resourceGroupName, settingsName, subscriptionId, workspaceName, data__kind` | Updates setting. |

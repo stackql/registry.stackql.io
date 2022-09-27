@@ -25,8 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `value` | `array` | A collection of private link resources |
+| `nextLink` | `string` | A link for the next page of private link resources. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `PrivateLinkResources_Get` | `EXEC` | `namespaceName, resourceGroupName, subscriptionId` |
+| `PrivateLinkResources_Get` | `SELECT` | `namespaceName, resourceGroupName, subscriptionId` |

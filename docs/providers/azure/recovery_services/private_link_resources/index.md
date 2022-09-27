@@ -29,12 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified identifier of the resource. |
 | `name` | `string` | Name of the resource. |
-| `requiredZoneNames` | `array` | The private link resource Private link DNS zone name. |
 | `type` | `string` | e.g. Microsoft.RecoveryServices/vaults/privateLinkResources |
-| `groupId` | `string` | e.g. f9ad6492-33d4-4690-9999-6bfd52a0d081 (Backup) or f9ad6492-33d4-4690-9999-6bfd52a0d082 (SiteRecovery) |
-| `requiredMembers` | `array` | [backup-ecs1, backup-prot1, backup-prot1b, backup-prot1c, backup-id1] |
+| `properties` | `object` | Properties of the private link resource. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `PrivateLinkResources_Get` | `SELECT` | `api-version, privateLinkResourceName, resourceGroupName, subscriptionId, vaultName` |
 | `PrivateLinkResources_List` | `SELECT` | `api-version, resourceGroupName, subscriptionId, vaultName` |
-| `PrivateLinkResources_Get` | `EXEC` | `api-version, privateLinkResourceName, resourceGroupName, subscriptionId, vaultName` |

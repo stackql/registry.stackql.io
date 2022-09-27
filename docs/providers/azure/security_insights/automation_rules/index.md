@@ -27,19 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `actions` | `array` | The actions to execute when the automation rule is triggered. |
-| `triggeringLogic` | `object` | Describes automation rule triggering logic. |
-| `createdTimeUtc` | `string` | The time the automation rule was created. |
-| `lastModifiedTimeUtc` | `string` | The last time the automation rule was updated. |
-| `displayName` | `string` | The display name of the automation rule. |
+| `properties` | `object` | Automation rule properties |
 | `etag` | `string` | Etag of the azure resource |
-| `lastModifiedBy` | `object` | Information on the client (user or application) that made some action |
-| `order` | `integer` | The order of execution of the automation rule. |
-| `createdBy` | `object` | Information on the client (user or application) that made some action |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AutomationRules_Get` | `SELECT` | `automationRuleId, resourceGroupName, subscriptionId, workspaceName` | Gets the automation rule. |
 | `AutomationRules_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets all automation rules. |
-| `AutomationRules_CreateOrUpdate` | `INSERT` | `automationRuleId, resourceGroupName, subscriptionId, workspaceName` | Creates or updates the automation rule. |
+| `AutomationRules_CreateOrUpdate` | `INSERT` | `automationRuleId, resourceGroupName, subscriptionId, workspaceName, data__properties` | Creates or updates the automation rule. |
 | `AutomationRules_Delete` | `DELETE` | `automationRuleId, resourceGroupName, subscriptionId, workspaceName` | Delete the automation rule. |
-| `AutomationRules_Get` | `EXEC` | `automationRuleId, resourceGroupName, subscriptionId, workspaceName` | Gets the automation rule. |

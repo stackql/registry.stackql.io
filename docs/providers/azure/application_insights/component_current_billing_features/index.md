@@ -25,9 +25,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `CurrentBillingFeatures` | `array` | Current enabled pricing plan. When the component is in the Enterprise plan, this will list both 'Basic' and 'Application Insights Enterprise'. |
+| `DataVolumeCap` | `object` | An Application Insights component daily data volume cap |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `ComponentCurrentBillingFeatures_Get` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Returns current billing features for an Application Insights component. |
+| `ComponentCurrentBillingFeatures_Get` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | Returns current billing features for an Application Insights component. |
 | `ComponentCurrentBillingFeatures_Update` | `EXEC` | `resourceGroupName, resourceName, subscriptionId` | Update current billing features for an Application Insights component. |

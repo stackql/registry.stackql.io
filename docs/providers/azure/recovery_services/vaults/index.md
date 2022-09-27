@@ -27,20 +27,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `location` | `string` | Resource location. |
-| `properties` | `object` | Properties of the vault. |
 | `sku` | `object` | Identifies the unique system identifier for each Azure resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
 | `identity` | `object` | Identity for the resource. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | Properties of the vault. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Vaults_Get` | `SELECT` | `api-version, resourceGroupName, subscriptionId, vaultName` | Get the Vault details. |
 | `Vaults_ListByResourceGroup` | `SELECT` | `api-version, resourceGroupName, subscriptionId` | Retrieve a list of Vaults. |
 | `Vaults_ListBySubscriptionId` | `SELECT` | `api-version, subscriptionId` | Fetches all the resources of the specified type in the subscription. |
 | `Vaults_CreateOrUpdate` | `INSERT` | `api-version, resourceGroupName, subscriptionId, vaultName` | Creates or updates a Recovery Services vault. |
 | `Vaults_Delete` | `DELETE` | `api-version, resourceGroupName, subscriptionId, vaultName` | Deletes a vault. |
 | `GetOperationResult` | `EXEC` | `api-version, operationId, resourceGroupName, subscriptionId, vaultName` | Gets the operation result for a resource. |
 | `GetOperationStatus` | `EXEC` | `api-version, operationId, resourceGroupName, subscriptionId, vaultName` | Gets the operation status for a resource. |
-| `Vaults_Get` | `EXEC` | `api-version, resourceGroupName, subscriptionId, vaultName` | Get the Vault details. |
 | `Vaults_Update` | `EXEC` | `api-version, resourceGroupName, subscriptionId, vaultName` | Updates the vault. |

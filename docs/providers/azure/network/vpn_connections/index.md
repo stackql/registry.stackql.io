@@ -29,32 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `routingConfiguration` | `object` | Routing Configuration indicating the associated and propagated route tables for this connection. |
-| `ingressBytesTransferred` | `integer` | Ingress bytes transferred. |
-| `ipsecPolicies` | `array` | The IPSec Policies to be considered by this connection. |
-| `trafficSelectorPolicies` | `array` | The Traffic Selector Policies to be considered by this connection. |
-| `useLocalAzureIpAddress` | `boolean` | Use local azure ip to initiate connection. |
-| `usePolicyBasedTrafficSelectors` | `boolean` | Enable policy-based traffic selectors. |
-| `enableInternetSecurity` | `boolean` | Enable internet security. |
-| `routingWeight` | `integer` | Routing weight for vpn connection. |
-| `remoteVpnSite` | `object` | Reference to another subresource. |
-| `sharedKey` | `string` | SharedKey for the vpn connection. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `enableBgp` | `boolean` | EnableBgp flag. |
-| `egressBytesTransferred` | `integer` | Egress bytes transferred. |
-| `dpdTimeoutSeconds` | `integer` | DPD timeout in seconds for vpn connection. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `vpnLinkConnections` | `array` | List of all vpn site link connections to the gateway. |
-| `connectionBandwidth` | `integer` | Expected bandwidth in MBPS. |
-| `vpnConnectionProtocolType` | `string` | Gateway connection protocol. |
-| `enableRateLimiting` | `boolean` | EnableBgp flag. |
-| `connectionStatus` | `string` | The current state of the vpn connection. |
+| `properties` | `object` | Parameters for VpnConnection. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VpnConnections_Get` | `SELECT` | `connectionName, gatewayName, resourceGroupName, subscriptionId` | Retrieves the details of a vpn connection. |
 | `VpnConnections_ListByVpnGateway` | `SELECT` | `gatewayName, resourceGroupName, subscriptionId` | Retrieves all vpn connections for a particular virtual wan vpn gateway. |
 | `VpnConnections_CreateOrUpdate` | `INSERT` | `connectionName, gatewayName, resourceGroupName, subscriptionId` | Creates a vpn connection to a scalable vpn gateway if it doesn't exist else updates the existing connection. |
 | `VpnConnections_Delete` | `DELETE` | `connectionName, gatewayName, resourceGroupName, subscriptionId` | Deletes a vpn connection. |
-| `VpnConnections_Get` | `EXEC` | `connectionName, gatewayName, resourceGroupName, subscriptionId` | Retrieves the details of a vpn connection. |
 | `VpnConnections_StartPacketCapture` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId, vpnConnectionName` | Starts packet capture on Vpn connection in the specified resource group. |
 | `VpnConnections_StopPacketCapture` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId, vpnConnectionName` | Stops packet capture on Vpn connection in the specified resource group. |

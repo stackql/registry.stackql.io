@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id represents the complete path to the resource. |
 | `name` | `string` | Resource name associated with the resource. |
-| `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/... |
 | `eTag` | `string` | Optional ETag. |
 | `location` | `string` | Resource location. |
 | `properties` | `object` | The base backup engine class. All workload specific backup engines derive from this class. |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `BackupEngines_Get` | `SELECT` | `api-version, backupEngineName, resourceGroupName, subscriptionId, vaultName` | Returns backup management server registered to Recovery Services Vault. |
 | `BackupEngines_List` | `SELECT` | `api-version, resourceGroupName, subscriptionId, vaultName` | Backup management servers registered to Recovery Services Vault. Returns a pageable list of servers. |
-| `BackupEngines_Get` | `EXEC` | `api-version, backupEngineName, resourceGroupName, subscriptionId, vaultName` | Returns backup management server registered to Recovery Services Vault. |

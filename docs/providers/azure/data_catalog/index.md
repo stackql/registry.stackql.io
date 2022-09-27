@@ -22,7 +22,7 @@ The Azure Data Catalog Resource Provider Services API.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Azure Data Catalog Resource Provider (Microsoft.DataCatalog)</td></tr>
 <tr><td><b>Description</b></td><td>The Azure Data Catalog Resource Provider Services API.</td></tr>
-<tr><td><b>Id</b></td><td><code>data_catalog:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>data_catalog:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

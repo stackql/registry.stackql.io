@@ -29,16 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `labels` | `object` | Dictionary of metadata associated with the invoice section. |
-| `targetCloud` | `string` | Possible cloud environments. |
-| `state` | `string` | Identifies the state of an invoice section. |
-| `displayName` | `string` | The name of the invoice section. |
-| `tags` | `object` | Dictionary of metadata associated with the invoice section. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain &lt; &gt; % & \ ? / |
+| `properties` | `object` | The properties of an invoice section. |
 | `type` | `string` | Resource type. |
-| `systemId` | `string` | The system generated unique identifier for an invoice section. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `InvoiceSections_Get` | `SELECT` | `billingAccountName, billingProfileName, invoiceSectionName` | Gets an invoice section by its ID. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement. |
 | `InvoiceSections_ListByBillingProfile` | `SELECT` | `billingAccountName, billingProfileName` | Lists the invoice sections that a user has access to. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement. |
 | `InvoiceSections_CreateOrUpdate` | `INSERT` | `billingAccountName, billingProfileName, invoiceSectionName` | Creates or updates an invoice section. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement. |
-| `InvoiceSections_Get` | `EXEC` | `billingAccountName, billingProfileName, invoiceSectionName` | Gets an invoice section by its ID. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement. |

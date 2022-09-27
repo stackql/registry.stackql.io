@@ -29,20 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `description` | `string` | The description of this workspace. |
-| `accountId` | `string` | The immutable id of the team account which contains this workspace. |
-| `friendlyName` | `string` | The friendly name for this workspace. This will be the workspace name in the arm id when the workspace object gets created |
-| `provisioningState` | `string` | The current deployment state of team account workspace resource. The provisioningState is to indicate states for resource provisioning. |
-| `workspaceId` | `string` | The immutable id of this workspace. |
+| `properties` | `object` | The properties of a machine learning team account workspace. |
 | `tags` | `object` | The tags of the resource. |
-| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
 | `type` | `string` | The type of the resource. |
-| `creationDate` | `string` | The creation date of the machine learning workspace in ISO8601 format. |
+| `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Workspaces_Get` | `SELECT` | `accountName, resourceGroupName, subscriptionId, workspaceName` | Gets the properties of the specified machine learning workspace. |
 | `Workspaces_ListByAccounts` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | Lists all the available machine learning workspaces under the specified team account. |
 | `Workspaces_CreateOrUpdate` | `INSERT` | `accountName, resourceGroupName, subscriptionId, workspaceName` | Creates or updates a machine learning workspace with the specified parameters. |
 | `Workspaces_Delete` | `DELETE` | `accountName, resourceGroupName, subscriptionId, workspaceName` | Deletes a machine learning workspace. |
-| `Workspaces_Get` | `EXEC` | `accountName, resourceGroupName, subscriptionId, workspaceName` | Gets the properties of the specified machine learning workspace. |
 | `Workspaces_Update` | `EXEC` | `accountName, resourceGroupName, subscriptionId, workspaceName` | Updates a machine learning workspace with the specified parameters. |

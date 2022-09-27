@@ -36,9 +36,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `MigrationConfigs_Get` | `SELECT` | `configName, namespaceName, resourceGroupName, subscriptionId` | Retrieves Migration Config |
 | `MigrationConfigs_List` | `SELECT` | `namespaceName, resourceGroupName, subscriptionId` | Gets all migrationConfigurations |
 | `MigrationConfigs_Delete` | `DELETE` | `configName, namespaceName, resourceGroupName, subscriptionId` | Deletes a MigrationConfiguration |
 | `MigrationConfigs_CompleteMigration` | `EXEC` | `configName, namespaceName, resourceGroupName, subscriptionId` | This operation Completes Migration of entities by pointing the connection strings to Premium namespace and any entities created after the operation will be under Premium Namespace. CompleteMigration operation will fail when entity migration is in-progress. |
 | `MigrationConfigs_CreateAndStartMigration` | `EXEC` | `configName, namespaceName, resourceGroupName, subscriptionId` | Creates Migration configuration and starts migration of entities from Standard to Premium namespace |
-| `MigrationConfigs_Get` | `EXEC` | `configName, namespaceName, resourceGroupName, subscriptionId` | Retrieves Migration Config |
 | `MigrationConfigs_Revert` | `EXEC` | `configName, namespaceName, resourceGroupName, subscriptionId` | This operation reverts Migration |

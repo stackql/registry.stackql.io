@@ -29,7 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedInstanceAzureADOnlyAuthentications_Get` | `SELECT` | `authenticationName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a specific Azure Active Directory only authentication property. |
 | `ManagedInstanceAzureADOnlyAuthentications_ListByInstance` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId` | Gets a list of server Azure Active Directory only authentications. |
 | `ManagedInstanceAzureADOnlyAuthentications_CreateOrUpdate` | `INSERT` | `authenticationName, managedInstanceName, resourceGroupName, subscriptionId` | Sets Server Active Directory only authentication property or updates an existing server Active Directory only authentication property. |
 | `ManagedInstanceAzureADOnlyAuthentications_Delete` | `DELETE` | `authenticationName, managedInstanceName, resourceGroupName, subscriptionId` | Deletes an existing server Active Directory only authentication property. |
-| `ManagedInstanceAzureADOnlyAuthentications_Get` | `EXEC` | `authenticationName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a specific Azure Active Directory only authentication property. |

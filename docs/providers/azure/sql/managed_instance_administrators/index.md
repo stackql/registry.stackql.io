@@ -25,16 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `administratorType` | `string` | Type of the managed instance administrator. |
-| `login` | `string` | Login name of the managed instance administrator. |
-| `sid` | `string` | SID (object ID) of the managed instance administrator. |
-| `tenantId` | `string` | Tenant ID of the managed instance administrator. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedInstanceAdministrators_Get` | `SELECT` | `administratorName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a managed instance administrator. |
 | `ManagedInstanceAdministrators_ListByInstance` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId` | Gets a list of managed instance administrators. |
 | `ManagedInstanceAdministrators_CreateOrUpdate` | `INSERT` | `administratorName, managedInstanceName, resourceGroupName, subscriptionId` | Creates or updates a managed instance administrator. |
 | `ManagedInstanceAdministrators_Delete` | `DELETE` | `administratorName, managedInstanceName, resourceGroupName, subscriptionId` | Deletes a managed instance administrator. |
-| `ManagedInstanceAdministrators_Get` | `EXEC` | `administratorName, managedInstanceName, resourceGroupName, subscriptionId` | Gets a managed instance administrator. |

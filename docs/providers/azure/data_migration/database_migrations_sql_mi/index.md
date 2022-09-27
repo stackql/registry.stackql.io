@@ -25,11 +25,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` |  |
+| `name` | `string` |  |
+| `properties` | `object` | Database Migration Resource properties for SQL Managed Instance. |
+| `systemData` | `object` |  |
+| `type` | `string` |  |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DatabaseMigrationsSqlMi_Get` | `SELECT` | `managedInstanceName, resourceGroupName, subscriptionId, targetDbName` | Retrieve the specified database migration for a given SQL Managed Instance. |
 | `DatabaseMigrationsSqlMi_CreateOrUpdate` | `INSERT` | `managedInstanceName, resourceGroupName, subscriptionId, targetDbName` | Create a new database migration to a given SQL Managed Instance. |
-| `DatabaseMigrationsSqlMi_Get` | `EXEC` | `managedInstanceName, resourceGroupName, subscriptionId, targetDbName` | Retrieve the specified database migration for a given SQL Managed Instance. |
 | `DatabaseMigrationsSqlMi_cancel` | `EXEC` | `managedInstanceName, resourceGroupName, subscriptionId, targetDbName` | Stop in-progress database migration to SQL Managed Instance. |
 | `DatabaseMigrationsSqlMi_cutover` | `EXEC` | `managedInstanceName, resourceGroupName, subscriptionId, targetDbName` | Initiate cutover for in-progress online database migration to SQL Managed Instance. |

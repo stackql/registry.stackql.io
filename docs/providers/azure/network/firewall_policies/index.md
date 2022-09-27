@@ -29,32 +29,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `sku` | `object` | SKU of Firewall policy. |
-| `identity` | `object` | Identity for the resource. |
-| `intrusionDetection` | `object` | Configuration for intrusion detection mode and rules. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `basePolicy` | `object` | Reference to another subresource. |
-| `explicitProxy` | `object` | Explicit Proxy Settings in Firewall Policy. |
-| `transportSecurity` | `object` | Configuration needed to perform TLS termination & initiation. |
-| `dnsSettings` | `object` | DNS Proxy Settings in Firewall Policy. |
-| `threatIntelWhitelist` | `object` | ThreatIntel Whitelist for Firewall Policy. |
-| `location` | `string` | Resource location. |
 | `type` | `string` | Resource type. |
-| `ruleCollectionGroups` | `array` | List of references to FirewallPolicyRuleCollectionGroups. |
-| `snat` | `object` | The private IP addresses/IP ranges to which traffic will not be SNAT. |
-| `childPolicies` | `array` | List of references to Child Firewall Policies. |
-| `firewalls` | `array` | List of references to Azure Firewalls that this Firewall Policy is associated with. |
-| `sql` | `object` | SQL Settings in Firewall Policy. |
-| `threatIntelMode` | `string` | The operation mode for Threat Intel. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `identity` | `object` | Identity for the resource. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | Firewall Policy definition. |
 | `tags` | `object` | Resource tags. |
-| `insights` | `object` | Firewall Policy Insights. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `FirewallPolicies_Get` | `SELECT` | `firewallPolicyName, resourceGroupName, subscriptionId` | Gets the specified Firewall Policy. |
 | `FirewallPolicies_List` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all Firewall Policies in a resource group. |
 | `FirewallPolicies_ListAll` | `SELECT` | `subscriptionId` | Gets all the Firewall Policies in a subscription. |
 | `FirewallPolicies_CreateOrUpdate` | `INSERT` | `firewallPolicyName, resourceGroupName, subscriptionId` | Creates or updates the specified Firewall Policy. |
 | `FirewallPolicies_Delete` | `DELETE` | `firewallPolicyName, resourceGroupName, subscriptionId` | Deletes the specified Firewall Policy. |
-| `FirewallPolicies_Get` | `EXEC` | `firewallPolicyName, resourceGroupName, subscriptionId` | Gets the specified Firewall Policy. |
 | `FirewallPolicies_UpdateTags` | `EXEC` | `firewallPolicyName, resourceGroupName, subscriptionId` | Updates tags of a Azure Firewall Policy resource. |

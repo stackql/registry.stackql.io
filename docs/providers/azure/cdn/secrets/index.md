@@ -25,14 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `profileName` | `string` | The name of the profile which holds the secret. |
-| `parameters` | `object` | The json object containing secret parameters |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Secrets_Get` | `SELECT` | `profileName, resourceGroupName, secretName, subscriptionId` | Gets an existing Secret within a profile. |
 | `Secrets_ListByProfile` | `SELECT` | `profileName, resourceGroupName, subscriptionId` | Lists existing AzureFrontDoor secrets. |
 | `Secrets_Create` | `INSERT` | `profileName, resourceGroupName, secretName, subscriptionId` | Creates a new Secret within the specified profile. |
 | `Secrets_Delete` | `DELETE` | `profileName, resourceGroupName, secretName, subscriptionId` | Deletes an existing Secret within profile. |
-| `Secrets_Get` | `EXEC` | `profileName, resourceGroupName, secretName, subscriptionId` | Gets an existing Secret within a profile. |

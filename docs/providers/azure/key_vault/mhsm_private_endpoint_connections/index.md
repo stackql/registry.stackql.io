@@ -29,19 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The Azure Resource Manager resource ID for the managed HSM Pool. |
 | `name` | `string` | The name of the managed HSM Pool. |
-| `tags` | `object` | Resource tags |
-| `sku` | `object` | SKU details |
-| `privateLinkServiceConnectionState` | `object` | An object that represents the approval state of the private link connection. |
-| `location` | `string` | The supported Azure location where the managed HSM Pool should be created. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `type` | `string` | The resource type of the managed HSM Pool. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the key vault resource. |
+| `properties` | `object` | Properties of the private endpoint connection resource. |
+| `location` | `string` | The supported Azure location where the managed HSM Pool should be created. |
+| `tags` | `object` | Resource tags |
+| `type` | `string` | The resource type of the managed HSM Pool. |
 | `etag` | `string` | Modified whenever there is a change in the state of private endpoint connection. |
-| `privateEndpoint` | `object` | Private endpoint object properties. |
+| `sku` | `object` | SKU details |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `MHSMPrivateEndpointConnections_Get` | `SELECT` | `name, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the specified private endpoint connection associated with the managed HSM Pool. |
 | `MHSMPrivateEndpointConnections_ListByResource` | `SELECT` | `name, resourceGroupName, subscriptionId` | The List operation gets information about the private endpoint connections associated with the managed HSM Pool. |
 | `MHSMPrivateEndpointConnections_Delete` | `DELETE` | `name, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Deletes the specified private endpoint connection associated with the managed hsm pool. |
-| `MHSMPrivateEndpointConnections_Get` | `EXEC` | `name, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the specified private endpoint connection associated with the managed HSM Pool. |
 | `MHSMPrivateEndpointConnections_Put` | `EXEC` | `name, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Updates the specified private endpoint connection associated with the managed hsm pool. |

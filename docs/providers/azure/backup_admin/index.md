@@ -22,7 +22,7 @@ The Admin Backup Management Client.
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Backup Management Client (Microsoft.Backup.Admin)</td></tr>
 <tr><td><b>Description</b></td><td>The Admin Backup Management Client.</td></tr>
-<tr><td><b>Id</b></td><td><code>backup_admin:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>backup_admin:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

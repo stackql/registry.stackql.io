@@ -29,12 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `score` | `object` | Calculation result data |
+| `properties` | `object` | Describes properties of a calculated secure score. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `weight` | `integer` | The relative weight for each subscription. Used when calculating an aggregated secure score for multiple subscriptions. |
-| `displayName` | `string` | The initiative’s name |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SecureScores_Get` | `SELECT` | `api-version, secureScoreName, subscriptionId` | Get secure score for a specific Microsoft Defender for Cloud initiative within your current scope. For the ASC Default initiative, use 'ascScore'. |
 | `SecureScores_List` | `SELECT` | `api-version, subscriptionId` | List secure scores for all your Microsoft Defender for Cloud initiatives within your current scope. |
-| `SecureScores_Get` | `EXEC` | `api-version, secureScoreName, subscriptionId` | Get secure score for a specific Microsoft Defender for Cloud initiative within your current scope. For the ASC Default initiative, use 'ascScore'. |

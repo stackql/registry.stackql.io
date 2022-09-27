@@ -30,22 +30,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
 | `tags` | `object` | The resource tags. |
-| `providerPrimaryPeeringLocation` | `string` | The primary peering (Microsoft/service provider) location to be used for customer traffic. |
-| `providerBackupPeeringLocation` | `string` | The backup peering (Microsoft/service provider) location to be used for customer traffic. |
-| `peeringServiceLocation` | `string` | The location (state/province) of the customer. |
-| `provisioningState` | `string` | The provisioning state of the resource. |
-| `peeringServiceProvider` | `string` | The name of the service provider. |
-| `sku` | `object` | The SKU that defines the type of the peering service. |
-| `logAnalyticsWorkspaceProperties` | `object` | The properties that define a Log Analytics Workspace. |
 | `type` | `string` | The type of the resource. |
 | `location` | `string` | The location of the resource. |
+| `properties` | `object` | The properties that define connectivity to the Peering Service. |
+| `sku` | `object` | The SKU that defines the type of the peering service. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PeeringServices_Get` | `SELECT` | `peeringServiceName, resourceGroupName, subscriptionId` | Gets an existing peering service with the specified name under the given subscription and resource group. |
 | `PeeringServices_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all of the peering services under the given subscription and resource group. |
 | `PeeringServices_ListBySubscription` | `SELECT` | `subscriptionId` | Lists all of the peerings under the given subscription. |
 | `PeeringServices_CreateOrUpdate` | `INSERT` | `peeringServiceName, resourceGroupName, subscriptionId, data__location` | Creates a new peering service or updates an existing peering with the specified name under the given subscription and resource group. |
 | `PeeringServices_Delete` | `DELETE` | `peeringServiceName, resourceGroupName, subscriptionId` | Deletes an existing peering service with the specified name under the given subscription and resource group. |
-| `PeeringServices_Get` | `EXEC` | `peeringServiceName, resourceGroupName, subscriptionId` | Gets an existing peering service with the specified name under the given subscription and resource group. |
 | `PeeringServices_InitializeConnectionMonitor` | `EXEC` | `subscriptionId` | Initialize Peering Service for Connection Monitor functionality |
 | `PeeringServices_Update` | `EXEC` | `peeringServiceName, resourceGroupName, subscriptionId` | Updates tags for a peering service with the specified name under the given subscription and resource group. |

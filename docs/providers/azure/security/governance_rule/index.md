@@ -29,18 +29,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `description` | `string` | description of the governanceRule |
-| `ruleType` | `string` | The rule type of the governance rule, defines the source of the rule e.g. Integrated |
-| `rulePriority` | `integer` | The governance rule priority, priority to the lower number. Rules with the same priority on the same subscription will not be allowed |
-| `remediationTimeframe` | `string` | Governance rule remediation timeframe - this is the time that will affect on the grace-period duration e.g. 7.00:00:00 - means 7 days |
-| `sourceResourceType` | `string` | The governance rule source, what the rule affects, e.g. Assessments |
-| `isDisabled` | `boolean` | Defines whether the rule is active/inactive |
-| `displayName` | `string` | display name of the governanceRule |
-| `conditionSets` | `array` | The governance rule conditionSets - see examples |
-| `governanceEmailNotification` | `object` | The governance email weekly notification configuration. |
-| `isGracePeriod` | `boolean` | Defines whether there is a grace period on the governance rule |
+| `properties` | `object` | Describes properties of an governanceRule |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `ownerSource` | `object` | Describe the owner source of governance rule |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

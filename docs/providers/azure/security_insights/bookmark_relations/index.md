@@ -28,14 +28,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
 | `etag` | `string` | Etag of the azure resource |
-| `relatedResourceId` | `string` | The resource ID of the related resource |
-| `relatedResourceKind` | `string` | The resource kind of the related resource |
-| `relatedResourceName` | `string` | The name of the related resource |
-| `relatedResourceType` | `string` | The resource type of the related resource |
+| `properties` | `object` | Relation property bag. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `BookmarkRelations_Get` | `SELECT` | `bookmarkId, relationName, resourceGroupName, subscriptionId, workspaceName` | Gets a bookmark relation. |
 | `BookmarkRelations_List` | `SELECT` | `bookmarkId, resourceGroupName, subscriptionId, workspaceName` | Gets all bookmark relations. |
 | `BookmarkRelations_CreateOrUpdate` | `INSERT` | `bookmarkId, relationName, resourceGroupName, subscriptionId, workspaceName` | Creates the bookmark relation. |
 | `BookmarkRelations_Delete` | `DELETE` | `bookmarkId, relationName, resourceGroupName, subscriptionId, workspaceName` | Delete the bookmark relation. |
-| `BookmarkRelations_Get` | `EXEC` | `bookmarkId, relationName, resourceGroupName, subscriptionId, workspaceName` | Gets a bookmark relation. |

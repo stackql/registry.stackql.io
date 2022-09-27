@@ -36,7 +36,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ApplicationGroup_Get` | `SELECT` | `applicationGroupName, namespaceName, resourceGroupName, subscriptionId` | Gets an ApplicationGroup for a Namespace. |
 | `ApplicationGroup_ListByNamespace` | `SELECT` | `namespaceName, resourceGroupName, subscriptionId` | Gets a list of application groups for a Namespace. |
 | `ApplicationGroup_Delete` | `DELETE` | `applicationGroupName, namespaceName, resourceGroupName, subscriptionId` | Deletes an ApplicationGroup for a Namespace. |
 | `ApplicationGroup_CreateOrUpdateApplicationGroup` | `EXEC` | `applicationGroupName, namespaceName, resourceGroupName, subscriptionId` | Creates or updates an ApplicationGroup for a Namespace. |
-| `ApplicationGroup_Get` | `EXEC` | `applicationGroupName, namespaceName, resourceGroupName, subscriptionId` | Gets an ApplicationGroup for a Namespace. |

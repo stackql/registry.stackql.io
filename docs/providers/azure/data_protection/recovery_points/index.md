@@ -29,11 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id represents the complete path to the resource. |
 | `name` | `string` | Resource name associated with the resource. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/... |
 | `properties` | `object` | Azure backup recoveryPoint |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RecoveryPoints_Get` | `SELECT` | `api-version, backupInstanceName, recoveryPointId, resourceGroupName, subscriptionId, vaultName` | Gets a Recovery Point using recoveryPointId for a Datasource. |
 | `RecoveryPoints_List` | `SELECT` | `api-version, backupInstanceName, resourceGroupName, subscriptionId, vaultName` | Returns a list of Recovery Points for a DataSource in a vault. |
-| `RecoveryPoints_Get` | `EXEC` | `api-version, backupInstanceName, recoveryPointId, resourceGroupName, subscriptionId, vaultName` | Gets a Recovery Point using recoveryPointId for a Datasource. |

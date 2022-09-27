@@ -29,19 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `description` | `string` | Description of the Email Template. |
-| `parameters` | `array` | Email Template Parameter values. |
-| `title` | `string` | Title of the Template. |
+| `properties` | `object` | Email Template Contract properties. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `subject` | `string` | Subject of the Template. |
-| `isDefault` | `boolean` | Whether the template is the default template provided by API Management or has been edited. |
-| `body` | `string` | Email Template Body. This should be a valid XDocument |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `EmailTemplate_Get` | `SELECT` | `resourceGroupName, serviceName, subscriptionId, templateName` | Gets the details of the email template specified by its identifier. |
 | `EmailTemplate_ListByService` | `SELECT` | `resourceGroupName, serviceName, subscriptionId` | Gets all email templates |
 | `EmailTemplate_CreateOrUpdate` | `INSERT` | `resourceGroupName, serviceName, subscriptionId, templateName` | Updates an Email Template. |
 | `EmailTemplate_Delete` | `DELETE` | `If-Match, resourceGroupName, serviceName, subscriptionId, templateName` | Reset the Email Template to default template provided by the API Management service instance. |
-| `EmailTemplate_Get` | `EXEC` | `resourceGroupName, serviceName, subscriptionId, templateName` | Gets the details of the email template specified by its identifier. |
 | `EmailTemplate_GetEntityTag` | `EXEC` | `resourceGroupName, serviceName, subscriptionId, templateName` | Gets the entity state (Etag) version of the email template specified by its identifier. |
 | `EmailTemplate_Update` | `EXEC` | `If-Match, resourceGroupName, serviceName, subscriptionId, templateName` | Updates API Management email template |

@@ -22,7 +22,7 @@ Various APIs for managing resources in attestation service. This primarily encom
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Attestation Management Client (Microsoft.Attestation)</td></tr>
 <tr><td><b>Description</b></td><td>Various APIs for managing resources in attestation service. This primarily encompasses per-provider management.</td></tr>
-<tr><td><b>Id</b></td><td><code>attestation:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>attestation:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

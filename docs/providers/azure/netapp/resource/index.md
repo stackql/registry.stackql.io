@@ -32,3 +32,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `NetAppResource_CheckFilePathAvailability` | `EXEC` | `location, subscriptionId, data__name, data__subnetId` | Check if a file path is available. |
 | `NetAppResource_CheckNameAvailability` | `EXEC` | `location, subscriptionId, data__name, data__resourceGroup, data__type` | Check if a resource name is available. |
 | `NetAppResource_CheckQuotaAvailability` | `EXEC` | `location, subscriptionId, data__name, data__resourceGroup, data__type` | Check if a quota is available. |
+| `NetAppResource_QueryRegionInfo` | `EXEC` | `location, subscriptionId` | Provides storage to network proximity and logical zone mapping information. |

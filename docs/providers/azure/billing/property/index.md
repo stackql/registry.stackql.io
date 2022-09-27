@@ -25,9 +25,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id. |
+| `name` | `string` | Resource name. |
+| `properties` | `object` | The billing property. |
+| `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `BillingProperty_Get` | `EXEC` | `subscriptionId` | Get the billing properties for a subscription. This operation is not supported for billing accounts with agreement type Enterprise Agreement. |
+| `BillingProperty_Get` | `SELECT` | `subscriptionId` | Get the billing properties for a subscription. This operation is not supported for billing accounts with agreement type Enterprise Agreement. |
 | `BillingProperty_Update` | `EXEC` | `subscriptionId` | Updates the billing property of a subscription. Currently, cost center can be updated. The operation is supported only for billing accounts with agreement type Microsoft Customer Agreement. |

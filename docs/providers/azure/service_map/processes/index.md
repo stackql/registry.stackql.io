@@ -25,11 +25,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `kind` | `string` | Additional resource type qualifier. |
+| `properties` | `object` | Resource properties. |
+| `etag` | `string` | Resource ETAG. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `Processes_Get` | `EXEC` | `machineName, processName, resourceGroupName, subscriptionId, workspaceName` | Returns the specified process. |
+| `Processes_Get` | `SELECT` | `machineName, processName, resourceGroupName, subscriptionId, workspaceName` | Returns the specified process. |
 | `Processes_GetLiveness` | `EXEC` | `machineName, processName, resourceGroupName, subscriptionId, workspaceName` | Obtains the liveness status of the process during the specified time interval. |
 | `Processes_ListAcceptingPorts` | `EXEC` | `machineName, processName, resourceGroupName, subscriptionId, workspaceName` | Returns a collection of ports on which this process is accepting |
 | `Processes_ListConnections` | `EXEC` | `machineName, processName, resourceGroupName, subscriptionId, workspaceName` | Returns a collection of connections terminating or originating at the specified process |

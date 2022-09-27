@@ -29,39 +29,23 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `identity` | `object` | Identity for the virtual machine. |
-| `plan` | `object` | Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use.  In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started -&gt;**. Enter any required information and then click **Save**. |
-| `hardwareProfile` | `object` | Specifies the hardware settings for the virtual machine. |
-| `vmId` | `string` | Azure VM unique ID. |
-| `modelDefinitionApplied` | `string` | Specifies whether the model applied to the virtual machine is the model of the virtual machine scale set or the customized model for the virtual machine. |
 | `sku` | `object` | Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. |
-| `resources` | `array` | The virtual machine child extension resources. |
-| `networkProfile` | `object` | Specifies the network interfaces or the networking configuration of the virtual machine. |
-| `location` | `string` | Resource location |
-| `availabilitySet` | `object` |  |
-| `latestModelApplied` | `boolean` | Specifies whether the latest model has been applied to the virtual machine. |
-| `additionalCapabilities` | `object` | Enables or disables a capability on the virtual machine or virtual machine scale set. |
 | `type` | `string` | Resource type |
-| `provisioningState` | `string` | The provisioning state, which only appears in the response. |
-| `userData` | `string` | UserData for the VM, which must be base-64 encoded. Customer should not pass any secrets in here. &lt;br&gt;&lt;br&gt;Minimum api-version: 2021-03-01 |
-| `securityProfile` | `object` | Specifies the Security profile settings for the virtual machine or virtual machine scale set. |
-| `instanceView` | `object` | The instance view of a virtual machine scale set VM. |
-| `protectionPolicy` | `object` | The protection policy of a virtual machine scale set VM. |
-| `networkProfileConfiguration` | `object` | Describes a virtual machine scale set VM network profile. |
-| `diagnosticsProfile` | `object` | Specifies the boot diagnostic settings state. &lt;br&gt;&lt;br&gt;Minimum api-version: 2015-06-15. |
-| `zones` | `array` | The virtual machine zones. |
-| `osProfile` | `object` | Specifies the operating system settings for the virtual machine. Some of the settings cannot be changed once VM is provisioned. |
 | `tags` | `object` | Resource tags |
+| `properties` | `object` | Describes the properties of a virtual machine scale set virtual machine. |
+| `identity` | `object` | Identity for the virtual machine. |
+| `location` | `string` | Resource location |
+| `resources` | `array` | The virtual machine child extension resources. |
 | `instanceId` | `string` | The virtual machine instance ID. |
-| `storageProfile` | `object` | Specifies the storage settings for the virtual machine disks. |
-| `licenseType` | `string` | Specifies that the image or disk that is being used was licensed on-premises. &lt;br&gt;&lt;br&gt; Possible values for Windows Server operating system are: &lt;br&gt;&lt;br&gt; Windows_Client &lt;br&gt;&lt;br&gt; Windows_Server &lt;br&gt;&lt;br&gt; Possible values for Linux Server operating system are: &lt;br&gt;&lt;br&gt; RHEL_BYOS (for RHEL) &lt;br&gt;&lt;br&gt; SLES_BYOS (for SUSE) &lt;br&gt;&lt;br&gt; For more information, see [Azure Hybrid Use Benefit for Windows Server](https://docs.microsoft.com/azure/virtual-machines/windows/hybrid-use-benefit-licensing) &lt;br&gt;&lt;br&gt; [Azure Hybrid Use Benefit for Linux Server](https://docs.microsoft.com/azure/virtual-machines/linux/azure-hybrid-benefit-linux) &lt;br&gt;&lt;br&gt; Minimum api-version: 2015-06-15 |
+| `plan` | `object` | Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use.  In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started -&gt;**. Enter any required information and then click **Save**. |
+| `zones` | `array` | The virtual machine zones. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualMachineScaleSetVMs_Get` | `SELECT` | `instanceId, resourceGroupName, subscriptionId, vmScaleSetName` | Gets a virtual machine from a VM scale set. |
 | `VirtualMachineScaleSetVMs_List` | `SELECT` | `resourceGroupName, subscriptionId, virtualMachineScaleSetName` | Gets a list of all virtual machines in a VM scale sets. |
 | `VirtualMachineScaleSetVMs_Delete` | `DELETE` | `instanceId, resourceGroupName, subscriptionId, vmScaleSetName` | Deletes a virtual machine from a VM scale set. |
 | `VirtualMachineScaleSetVMs_Deallocate` | `EXEC` | `instanceId, resourceGroupName, subscriptionId, vmScaleSetName` | Deallocates a specific virtual machine in a VM scale set. Shuts down the virtual machine and releases the compute resources it uses. You are not billed for the compute resources of this virtual machine once it is deallocated. |
-| `VirtualMachineScaleSetVMs_Get` | `EXEC` | `instanceId, resourceGroupName, subscriptionId, vmScaleSetName` | Gets a virtual machine from a VM scale set. |
 | `VirtualMachineScaleSetVMs_GetInstanceView` | `EXEC` | `instanceId, resourceGroupName, subscriptionId, vmScaleSetName` | Gets the status of a virtual machine from a VM scale set. |
 | `VirtualMachineScaleSetVMs_PerformMaintenance` | `EXEC` | `instanceId, resourceGroupName, subscriptionId, vmScaleSetName` | Performs maintenance on a virtual machine in a VM scale set. |
 | `VirtualMachineScaleSetVMs_PowerOff` | `EXEC` | `instanceId, resourceGroupName, subscriptionId, vmScaleSetName` | Power off (stop) a virtual machine in a VM scale set. Note that resources are still attached and you are getting charged for the resources. Instead, use deallocate to release resources and avoid charges. |

@@ -29,18 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
-| `options` | `array` | The list of all options configured for the pipeline. |
-| `source` | `object` | The properties of the import pipeline source. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `trigger` | `object` |  |
-| `type` | `string` | The type of the resource. |
-| `provisioningState` | `string` | The provisioning state of the pipeline at the time the operation was called. |
-| `location` | `string` | The location of the import pipeline. |
 | `identity` | `object` | Managed identity for the resource. |
+| `location` | `string` | The location of the import pipeline. |
+| `properties` | `object` | The properties of an import pipeline. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `type` | `string` | The type of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ImportPipelines_Get` | `SELECT` | `importPipelineName, registryName, resourceGroupName, subscriptionId` | Gets the properties of the import pipeline. |
 | `ImportPipelines_List` | `SELECT` | `registryName, resourceGroupName, subscriptionId` | Lists all import pipelines for the specified container registry. |
 | `ImportPipelines_Create` | `INSERT` | `importPipelineName, registryName, resourceGroupName, subscriptionId` | Creates an import pipeline for a container registry with the specified parameters. |
 | `ImportPipelines_Delete` | `DELETE` | `importPipelineName, registryName, resourceGroupName, subscriptionId` | Deletes an import pipeline from a container registry. |
-| `ImportPipelines_Get` | `EXEC` | `importPipelineName, registryName, resourceGroupName, subscriptionId` | Gets the properties of the import pipeline. |

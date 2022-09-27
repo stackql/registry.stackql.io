@@ -29,17 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `fileContainerId` | `string` | File container resource identifier containing product manifest. |
-| `isUpdatable` | `boolean` | Value indicating whether the package is applicable for update. |
 | `type` | `string` | Type of Resource. |
 | `location` | `string` | Location of the resource. |
-| `isDeployable` | `boolean` | Value indicating whether the package is applicable for deployment. |
-| `provisioningState` | `string` | Provisioning state of the resource. |
-| `productDeploymentId` | `string` | The identifier of product deployment; null if this version is not installed. |
+| `properties` | `object` | Properties for Product package. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ProductPackages_Get` | `SELECT` | `packageId, subscriptionId` | Retrieves the specific product package details. |
 | `ProductPackages_List` | `SELECT` | `subscriptionId` | Returns an array of product packages. |
 | `ProductPackages_Create` | `INSERT` | `packageId, subscriptionId` | Creates a new product package. |
 | `ProductPackages_Delete` | `DELETE` | `packageId, subscriptionId` | Deletes a product package. |
-| `ProductPackages_Get` | `EXEC` | `packageId, subscriptionId` | Retrieves the specific product package details. |

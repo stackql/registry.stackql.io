@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `kind` | `string` | Metadata used for the Azure portal experience. |
 | `location` | `string` | Resource location. |
-| `connectionType` | `string` | The server connection type. |
+| `properties` | `object` | The properties of a server connection policy. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ServerConnectionPolicies_Get` | `SELECT` | `connectionPolicyName, resourceGroupName, serverName, subscriptionId` | Gets a server connection policy |
 | `ServerConnectionPolicies_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Lists connection policy |
 | `ServerConnectionPolicies_CreateOrUpdate` | `INSERT` | `connectionPolicyName, resourceGroupName, serverName, subscriptionId` | Updates a server connection policy |
-| `ServerConnectionPolicies_Get` | `EXEC` | `connectionPolicyName, resourceGroupName, serverName, subscriptionId` | Gets a server connection policy |

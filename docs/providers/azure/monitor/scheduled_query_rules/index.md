@@ -27,29 +27,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Azure resource Id |
-| `name` | `string` | Azure resource name |
-| `description` | `string` | The description of the Log Search rule. |
-| `lastUpdatedTime` | `string` | Last time the rule was updated in IS08601 format. |
-| `source` | `object` | Specifies the log search query. |
-| `enabled` | `string` | The flag which indicates whether the Log Search rule is enabled. Value should be true or false |
-| `action` | `object` | Action descriptor. |
-| `location` | `string` | Resource location |
-| `isLegacyLogAnalyticsRule` | `boolean` | True if alert rule is legacy Log Analytic rule |
-| `autoMitigate` | `boolean` | The flag that indicates whether the alert should be automatically resolved or not. The default is false. |
-| `displayName` | `string` | The display name of the alert rule |
-| `provisioningState` | `string` | Provisioning state of the scheduled query rule |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
+| `name` | `string` | The name of the resource |
+| `kind` | `string` | Indicates the type of scheduled query rule. The default is LogAlert. |
+| `properties` | `object` | scheduled query rule Definition |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
+| `etag` | `string` | The etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal etag convention.  Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.  |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `type` | `string` | Azure resource type |
-| `createdWithApiVersion` | `string` | The api-version used when creating this alert rule |
-| `schedule` | `object` | Defines how often to run the search and the time interval. |
-| `tags` | `object` | Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater in length than 128 characters and a value no greater in length than 256 characters. |
+| `tags` | `object` | Resource tags. |
+| `location` | `string` | The geo-location where the resource lives |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `ScheduledQueryRules_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | List the Log Search rules within a resource group. |
-| `ScheduledQueryRules_ListBySubscription` | `SELECT` | `subscriptionId` | List the Log Search rules within a subscription group. |
-| `ScheduledQueryRules_CreateOrUpdate` | `INSERT` | `resourceGroupName, ruleName, subscriptionId` | Creates or updates an log search rule. |
-| `ScheduledQueryRules_Delete` | `DELETE` | `resourceGroupName, ruleName, subscriptionId` | Deletes a Log Search rule |
-| `ScheduledQueryRules_Get` | `EXEC` | `resourceGroupName, ruleName, subscriptionId` | Gets an Log Search rule |
-| `ScheduledQueryRules_Update` | `EXEC` | `resourceGroupName, ruleName, subscriptionId` | Update log search Rule. |
+| `ScheduledQueryRules_Get` | `SELECT` | `resourceGroupName, ruleName, subscriptionId` | Retrieve an scheduled query rule definition. |
+| `ScheduledQueryRules_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Retrieve scheduled query rule definitions in a resource group. |
+| `ScheduledQueryRules_ListBySubscription` | `SELECT` | `subscriptionId` | Retrieve a scheduled query rule definitions in a subscription. |
+| `ScheduledQueryRules_CreateOrUpdate` | `INSERT` | `resourceGroupName, ruleName, subscriptionId, data__location, data__properties` | Creates or updates a scheduled query rule. |
+| `ScheduledQueryRules_Delete` | `DELETE` | `resourceGroupName, ruleName, subscriptionId` | Deletes a scheduled query rule. |
+| `ScheduledQueryRules_Update` | `EXEC` | `resourceGroupName, ruleName, subscriptionId` | Update a scheduled query rule. |

@@ -29,9 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `CassandraResources_CreateUpdateCassandraKeyspace` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId` | Create or update an Azure Cosmos DB Cassandra keyspace |
-| `CassandraResources_CreateUpdateCassandraTable` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, tableName` | Create or update an Azure Cosmos DB Cassandra Table |
-| `CassandraResources_CreateUpdateCassandraView` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, viewName` | Create or update an Azure Cosmos DB Cassandra View |
+| `CassandraResources_CreateUpdateCassandraKeyspace` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, data__properties` | Create or update an Azure Cosmos DB Cassandra keyspace |
+| `CassandraResources_CreateUpdateCassandraTable` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, tableName, data__properties` | Create or update an Azure Cosmos DB Cassandra Table |
+| `CassandraResources_CreateUpdateCassandraView` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, viewName, data__properties` | Create or update an Azure Cosmos DB Cassandra View |
 | `CassandraResources_DeleteCassandraKeyspace` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId` | Deletes an existing Azure Cosmos DB Cassandra keyspace. |
 | `CassandraResources_DeleteCassandraTable` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, tableName` | Deletes an existing Azure Cosmos DB Cassandra table. |
 | `CassandraResources_DeleteCassandraView` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, viewName` | Deletes an existing Azure Cosmos DB Cassandra view. |
@@ -50,6 +50,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `CassandraResources_MigrateCassandraTableToManualThroughput` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, tableName` | Migrate an Azure Cosmos DB Cassandra table from autoscale to manual throughput |
 | `CassandraResources_MigrateCassandraViewToAutoscale` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, viewName` | Migrate an Azure Cosmos DB Cassandra view from manual throughput to autoscale |
 | `CassandraResources_MigrateCassandraViewToManualThroughput` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, viewName` | Migrate an Azure Cosmos DB Cassandra view from autoscale to manual throughput |
-| `CassandraResources_UpdateCassandraKeyspaceThroughput` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId` | Update RUs per second of an Azure Cosmos DB Cassandra Keyspace |
-| `CassandraResources_UpdateCassandraTableThroughput` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, tableName` | Update RUs per second of an Azure Cosmos DB Cassandra table |
-| `CassandraResources_UpdateCassandraViewThroughput` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, viewName` | Update RUs per second of an Azure Cosmos DB Cassandra view |
+| `CassandraResources_UpdateCassandraKeyspaceThroughput` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, data__properties` | Update RUs per second of an Azure Cosmos DB Cassandra Keyspace |
+| `CassandraResources_UpdateCassandraTableThroughput` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, tableName, data__properties` | Update RUs per second of an Azure Cosmos DB Cassandra table |
+| `CassandraResources_UpdateCassandraViewThroughput` | `EXEC` | `accountName, keyspaceName, resourceGroupName, subscriptionId, viewName, data__properties` | Update RUs per second of an Azure Cosmos DB Cassandra view |

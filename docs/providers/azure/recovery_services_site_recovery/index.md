@@ -22,7 +22,7 @@ Recovery Services Site Recovery
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Recovery Services Site Recovery (Microsoft.RecoveryServices)</td></tr>
 <tr><td><b>Description</b></td><td>Recovery Services Site Recovery</td></tr>
-<tr><td><b>Id</b></td><td><code>recovery_services_site_recovery:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>recovery_services_site_recovery:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

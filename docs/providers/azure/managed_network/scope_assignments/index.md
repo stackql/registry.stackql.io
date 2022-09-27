@@ -29,7 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ScopeAssignments_Get` | `SELECT` | `scope, scopeAssignmentName` | Get the specified scope assignment. |
 | `ScopeAssignments_List` | `SELECT` | `scope` | Get the specified scope assignment. |
 | `ScopeAssignments_CreateOrUpdate` | `INSERT` | `scope, scopeAssignmentName` | Creates a scope assignment. |
 | `ScopeAssignments_Delete` | `DELETE` | `scope, scopeAssignmentName` | Deletes a scope assignment. |
-| `ScopeAssignments_Get` | `EXEC` | `scope, scopeAssignmentName` | Get the specified scope assignment. |

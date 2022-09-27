@@ -25,8 +25,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `operation` | `object` | Base class for operation result info. |
+| `statusCode` | `string` | HTTP Status Code of the operation. |
+| `headers` | `object` | HTTP headers associated with this operation. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `ExportJobsOperationResults_Get` | `EXEC` | `api-version, operationId, resourceGroupName, subscriptionId, vaultName` |
+| `ExportJobsOperationResults_Get` | `SELECT` | `api-version, operationId, resourceGroupName, subscriptionId, vaultName` |

@@ -27,29 +27,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `enablePurgeProtection` | `boolean` | Property specifying whether protection against purge is enabled for this configuration store. |
-| `provisioningState` | `string` | The provisioning state of the configuration store. |
-| `creationDate` | `string` | The creation date of configuration store. |
-| `softDeleteRetentionInDays` | `integer` | The amount of time in days that the configuration store will be retained when it is soft deleted. |
-| `publicNetworkAccess` | `string` | Control permission for data plane traffic coming from public networks while private endpoint is enabled. |
+| `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | The properties of a configuration store. |
 | `sku` | `object` | Describes a configuration store SKU. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `identity` | `object` | An identity that can be associated with a resource. |
-| `encryption` | `object` | The encryption settings for a configuration store. |
-| `location` | `string` | The geo-location where the resource lives |
 | `tags` | `object` | Resource tags. |
-| `disableLocalAuth` | `boolean` | Disables all authentication methods other than AAD authentication. |
-| `endpoint` | `string` | The DNS endpoint where the configuration store API will be available. |
-| `createMode` | `string` | Indicates whether the configuration store need to be recovered. |
-| `privateEndpointConnections` | `array` | The list of private endpoint connections that are set up for this resource. |
+| `identity` | `object` | An identity that can be associated with a resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ConfigurationStores_Get` | `SELECT` | `configStoreName, resourceGroupName, subscriptionId` | Gets the properties of the specified configuration store. |
 | `ConfigurationStores_List` | `SELECT` | `subscriptionId` | Lists the configuration stores for a given subscription. |
 | `ConfigurationStores_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists the configuration stores for a given resource group. |
 | `ConfigurationStores_Create` | `INSERT` | `configStoreName, resourceGroupName, subscriptionId, data__location, data__sku` | Creates a configuration store with the specified parameters. |
 | `ConfigurationStores_Delete` | `DELETE` | `configStoreName, resourceGroupName, subscriptionId` | Deletes a configuration store. |
-| `ConfigurationStores_Get` | `EXEC` | `configStoreName, resourceGroupName, subscriptionId` | Gets the properties of the specified configuration store. |
 | `ConfigurationStores_GetDeleted` | `EXEC` | `configStoreName, location, subscriptionId` | Gets a deleted Azure app configuration store. |
 | `ConfigurationStores_ListDeleted` | `EXEC` | `subscriptionId` | Gets information about the deleted configuration stores in a subscription. |
 | `ConfigurationStores_ListKeys` | `EXEC` | `configStoreName, resourceGroupName, subscriptionId` | Lists the access key for the specified configuration store. |

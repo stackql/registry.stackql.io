@@ -29,21 +29,21 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource Name. |
-| `location` | `string` | Resource Location. |
-| `properties` | `object` | AppServiceCertificateOrder resource specific properties |
 | `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource type. |
 | `kind` | `string` | Kind of resource. |
+| `location` | `string` | Resource Location. |
+| `properties` | `object` | AppServiceCertificateOrder resource specific properties |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AppServiceCertificateOrders_Get` | `SELECT` | `certificateOrderName, resourceGroupName, subscriptionId` | Description for Get a certificate order. |
 | `AppServiceCertificateOrders_List` | `SELECT` | `subscriptionId` | Description for List all certificate orders in a subscription. |
 | `AppServiceCertificateOrders_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Description for Get certificate orders in a resource group. |
 | `AppServiceCertificateOrders_CreateOrUpdate` | `INSERT` | `certificateOrderName, resourceGroupName, subscriptionId` | Description for Create or update a certificate purchase order. |
 | `AppServiceCertificateOrders_Delete` | `DELETE` | `certificateOrderName, resourceGroupName, subscriptionId` | Description for Delete an existing certificate order. |
 | `AppServiceCertificateOrders_CreateOrUpdateCertificate` | `EXEC` | `certificateOrderName, name, resourceGroupName, subscriptionId` | Description for Creates or updates a certificate and associates with key vault secret. |
 | `AppServiceCertificateOrders_DeleteCertificate` | `EXEC` | `certificateOrderName, name, resourceGroupName, subscriptionId` | Description for Delete the certificate associated with a certificate order. |
-| `AppServiceCertificateOrders_Get` | `EXEC` | `certificateOrderName, resourceGroupName, subscriptionId` | Description for Get a certificate order. |
 | `AppServiceCertificateOrders_GetCertificate` | `EXEC` | `certificateOrderName, name, resourceGroupName, subscriptionId` | Description for Get the certificate associated with a certificate order. |
 | `AppServiceCertificateOrders_ListCertificates` | `EXEC` | `certificateOrderName, resourceGroupName, subscriptionId` | Description for List all certificates associated with a certificate order. |
 | `AppServiceCertificateOrders_Reissue` | `EXEC` | `certificateOrderName, resourceGroupName, subscriptionId` | Description for Reissue an existing certificate order. |

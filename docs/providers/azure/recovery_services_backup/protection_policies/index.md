@@ -25,10 +25,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id represents the complete path to the resource. |
+| `name` | `string` | Resource name associated with the resource. |
+| `properties` | `object` | Base class for backup policy. Workload-specific backup policies are derived from this class. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/... |
+| `eTag` | `string` | Optional ETag. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ProtectionPolicies_Get` | `SELECT` | `api-version, policyName, resourceGroupName, subscriptionId, vaultName` | Provides the details of the backup policies associated to Recovery Services Vault. This is an asynchronous<br />operation. Status of the operation can be fetched using GetPolicyOperationResult API. |
 | `ProtectionPolicies_CreateOrUpdate` | `INSERT` | `api-version, policyName, resourceGroupName, subscriptionId, vaultName` | Creates or modifies a backup policy. This is an asynchronous operation. Status of the operation can be fetched<br />using GetPolicyOperationResult API. |
 | `ProtectionPolicies_Delete` | `DELETE` | `api-version, policyName, resourceGroupName, subscriptionId, vaultName` | Deletes specified backup policy from your Recovery Services Vault. This is an asynchronous operation. Status of the<br />operation can be fetched using GetProtectionPolicyOperationResult API. |
-| `ProtectionPolicies_Get` | `EXEC` | `api-version, policyName, resourceGroupName, subscriptionId, vaultName` | Provides the details of the backup policies associated to Recovery Services Vault. This is an asynchronous<br />operation. Status of the operation can be fetched using GetPolicyOperationResult API. |

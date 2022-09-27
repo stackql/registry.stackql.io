@@ -27,16 +27,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `provisioningState` | `string` | Provisioning state of the Extension proxy resource. |
+| `properties` | `object` | Status of Arc Extension for a particular node in HCI Cluster. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `aggregateState` | `string` | Aggregate state of Arc Extensions across the nodes in this HCI cluster. |
-| `extensionParameters` | `object` | Describes the properties of a Machine Extension. This object mirrors the definition in HybridCompute. |
-| `perNodeExtensionDetails` | `array` | State of Arc Extension in each of the nodes. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Extensions_Get` | `SELECT` | `arcSettingName, clusterName, extensionName, resourceGroupName, subscriptionId` | Get particular Arc Extension of HCI Cluster. |
 | `Extensions_ListByArcSetting` | `SELECT` | `arcSettingName, clusterName, resourceGroupName, subscriptionId` | List all Extensions under ArcSetting resource. |
 | `Extensions_Create` | `INSERT` | `arcSettingName, clusterName, extensionName, resourceGroupName, subscriptionId` | Create Extension for HCI cluster. |
 | `Extensions_Delete` | `DELETE` | `arcSettingName, clusterName, extensionName, resourceGroupName, subscriptionId` | Delete particular Arc Extension of HCI Cluster. |
-| `Extensions_Get` | `EXEC` | `arcSettingName, clusterName, extensionName, resourceGroupName, subscriptionId` | Get particular Arc Extension of HCI Cluster. |
 | `Extensions_Update` | `EXEC` | `arcSettingName, clusterName, extensionName, resourceGroupName, subscriptionId` | Update Extension for HCI cluster. |

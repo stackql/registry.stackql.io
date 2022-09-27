@@ -25,15 +25,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `status` | `string` | Operation status. |
-| `databaseName` | `string` | Database name. |
-| `errorMessage` | `string` | Error message. |
-| `lastModifiedTime` | `string` | Last modified time. |
-| `requestId` | `string` | Request Id. |
-| `requestType` | `string` | Request type. |
-| `serverName` | `string` | Server name. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

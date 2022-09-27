@@ -22,7 +22,7 @@ Azure Cosmos DB Database Service Resource Provider REST API
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Cosmos DB (Microsoft.DocumentDB)</td></tr>
 <tr><td><b>Description</b></td><td>Azure Cosmos DB Database Service Resource Provider REST API</td></tr>
-<tr><td><b>Id</b></td><td><code>cosmos_db:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>cosmos_db:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

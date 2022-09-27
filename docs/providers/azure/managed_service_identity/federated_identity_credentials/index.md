@@ -25,15 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `subject` | `string` | The identifier of the external identity. |
-| `audiences` | `array` | The list of audiences that can appear in the issued token. |
-| `issuer` | `string` | The URL of the issuer to be trusted. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `FederatedIdentityCredentials_Get` | `SELECT` | `federatedIdentityCredentialResourceName, resourceGroupName, resourceName, subscriptionId` | Gets the federated identity credential. |
 | `FederatedIdentityCredentials_List` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | Lists all the federated identity credentials under the specified user assigned identity. |
 | `FederatedIdentityCredentials_CreateOrUpdate` | `INSERT` | `federatedIdentityCredentialResourceName, resourceGroupName, resourceName, subscriptionId` | Create or update a federated identity credential under the specified user assigned identity. |
 | `FederatedIdentityCredentials_Delete` | `DELETE` | `federatedIdentityCredentialResourceName, resourceGroupName, resourceName, subscriptionId` | Deletes the federated identity credential. |
-| `FederatedIdentityCredentials_Get` | `EXEC` | `federatedIdentityCredentialResourceName, resourceGroupName, resourceName, subscriptionId` | Gets the federated identity credential. |

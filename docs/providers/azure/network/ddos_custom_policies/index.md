@@ -25,11 +25,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource ID. |
+| `name` | `string` | Resource name. |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | DDoS custom policy properties. |
+| `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DdosCustomPolicies_Get` | `SELECT` | `ddosCustomPolicyName, resourceGroupName, subscriptionId` | Gets information about the specified DDoS custom policy. |
 | `DdosCustomPolicies_CreateOrUpdate` | `INSERT` | `ddosCustomPolicyName, resourceGroupName, subscriptionId` | Creates or updates a DDoS custom policy. |
 | `DdosCustomPolicies_Delete` | `DELETE` | `ddosCustomPolicyName, resourceGroupName, subscriptionId` | Deletes the specified DDoS custom policy. |
-| `DdosCustomPolicies_Get` | `EXEC` | `ddosCustomPolicyName, resourceGroupName, subscriptionId` | Gets information about the specified DDoS custom policy. |
 | `DdosCustomPolicies_UpdateTags` | `EXEC` | `ddosCustomPolicyName, resourceGroupName, subscriptionId` | Update a DDoS custom policy tags. |

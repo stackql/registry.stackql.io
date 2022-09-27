@@ -29,34 +29,20 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `bandwidthInGbps` | `number` | The bandwidth of the circuit when the circuit is provisioned on an ExpressRoutePort resource. |
-| `expressRoutePort` | `object` | Reference to another subresource. |
-| `allowClassicOperations` | `boolean` | Allow classic operations. |
+| `properties` | `object` | Properties of ExpressRouteCircuit. |
 | `sku` | `object` | Contains SKU in an ExpressRouteCircuit. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `globalReachEnabled` | `boolean` | Flag denoting global reach status. |
-| `peerings` | `array` | The list of peerings. |
-| `stag` | `integer` | The identifier of the circuit traffic. Outer tag for QinQ encapsulation. |
-| `location` | `string` | Resource location. |
-| `gatewayManagerEtag` | `string` | The GatewayManager Etag. |
-| `serviceProviderNotes` | `string` | The ServiceProviderNotes. |
-| `serviceProviderProvisioningState` | `string` | The ServiceProviderProvisioningState state of the resource. |
-| `type` | `string` | Resource type. |
-| `authorizationKey` | `string` | The authorizationKey. |
-| `serviceProviderProperties` | `object` | Contains ServiceProviderProperties in an ExpressRouteCircuit. |
-| `circuitProvisioningState` | `string` | The CircuitProvisioningState state of the resource. |
-| `serviceKey` | `string` | The ServiceKey. |
-| `authorizations` | `array` | The list of authorizations. |
 | `tags` | `object` | Resource tags. |
+| `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ExpressRouteCircuits_Get` | `SELECT` | `circuitName, resourceGroupName, subscriptionId` | Gets information about the specified express route circuit. |
 | `ExpressRouteCircuits_List` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all the express route circuits in a resource group. |
 | `ExpressRouteCircuits_ListAll` | `SELECT` | `subscriptionId` | Gets all the express route circuits in a subscription. |
 | `ExpressRouteCircuits_CreateOrUpdate` | `INSERT` | `circuitName, resourceGroupName, subscriptionId` | Creates or updates an express route circuit. |
 | `ExpressRouteCircuits_Delete` | `DELETE` | `circuitName, resourceGroupName, subscriptionId` | Deletes the specified express route circuit. |
-| `ExpressRouteCircuits_Get` | `EXEC` | `circuitName, resourceGroupName, subscriptionId` | Gets information about the specified express route circuit. |
 | `ExpressRouteCircuits_GetPeeringStats` | `EXEC` | `circuitName, peeringName, resourceGroupName, subscriptionId` | Gets all stats from an express route circuit in a resource group. |
 | `ExpressRouteCircuits_GetStats` | `EXEC` | `circuitName, resourceGroupName, subscriptionId` | Gets all the stats from an express route circuit in a resource group. |
 | `ExpressRouteCircuits_ListArpTable` | `EXEC` | `circuitName, devicePath, peeringName, resourceGroupName, subscriptionId` | Gets the currently advertised ARP table associated with the express route circuit in a resource group. |

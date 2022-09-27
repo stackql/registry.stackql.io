@@ -29,26 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
-| `sharedKey` | `string` | SharedKey for the vpn connection. |
-| `vpnGatewayCustomBgpAddresses` | `array` | vpnGatewayCustomBgpAddresses used by this connection. |
-| `ipsecPolicies` | `array` | The IPSec Policies to be considered by this connection. |
-| `routingWeight` | `integer` | Routing weight for vpn connection. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `ingressBytesTransferred` | `integer` | Ingress bytes transferred. |
-| `vpnLinkConnectionMode` | `string` | Vpn link connection mode. |
-| `connectionBandwidth` | `integer` | Expected bandwidth in MBPS. |
-| `useLocalAzureIpAddress` | `boolean` | Use local azure ip to initiate connection. |
+| `properties` | `object` | Parameters for VpnConnection. |
 | `type` | `string` | Resource type. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `ingressNatRules` | `array` | List of ingress NatRules. |
-| `egressNatRules` | `array` | List of egress NatRules. |
-| `vpnConnectionProtocolType` | `string` | Gateway connection protocol. |
-| `usePolicyBasedTrafficSelectors` | `boolean` | Enable policy-based traffic selectors. |
-| `enableBgp` | `boolean` | EnableBgp flag. |
-| `connectionStatus` | `string` | The current state of the vpn connection. |
-| `egressBytesTransferred` | `integer` | Egress bytes transferred. |
-| `enableRateLimiting` | `boolean` | EnableBgp flag. |
-| `vpnSiteLink` | `object` | Reference to another subresource. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

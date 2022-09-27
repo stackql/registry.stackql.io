@@ -29,18 +29,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `peeringLocation` | `string` | The peering location of the port pair. |
-| `overprovisionFactor` | `integer` | Overprovisioning factor for the port pair. |
-| `remainingBandwidthInMbps` | `integer` | Remaining Bandwidth of the port in Mbps |
-| `location` | `string` | Resource location. |
-| `secondaryAzurePort` | `string` | The name of the secondary port. |
-| `type` | `string` | Resource type. |
-| `usedBandwidthInMbps` | `integer` | Used Bandwidth of the port in Mbps |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `primaryAzurePort` | `string` | The name of the primary port. |
-| `portBandwidthInMbps` | `integer` | Bandwidth of the port in Mbps |
+| `properties` | `object` | Properties of ExpressRouteProviderPort. |
 | `tags` | `object` | Resource tags. |
-| `portPairDescriptor` | `string` | The name of the port pair. |
+| `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

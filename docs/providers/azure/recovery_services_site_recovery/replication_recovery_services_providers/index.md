@@ -29,16 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource Name |
-| `type` | `string` | Resource Type |
 | `location` | `string` | Resource Location |
 | `properties` | `object` | Recovery services provider properties. |
+| `type` | `string` | Resource Type |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReplicationRecoveryServicesProviders_Get` | `SELECT` | `api-version, fabricName, providerName, resourceGroupName, resourceName, subscriptionId` | Gets the details of registered recovery services provider. |
 | `ReplicationRecoveryServicesProviders_List` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` | Lists the registered recovery services providers in the vault. |
 | `ReplicationRecoveryServicesProviders_ListByReplicationFabrics` | `SELECT` | `api-version, fabricName, resourceGroupName, resourceName, subscriptionId` | Lists the registered recovery services providers for the specified fabric. |
 | `ReplicationRecoveryServicesProviders_Create` | `INSERT` | `api-version, fabricName, providerName, resourceGroupName, resourceName, subscriptionId, data__properties` | The operation to add a recovery services provider. |
 | `ReplicationRecoveryServicesProviders_Delete` | `DELETE` | `api-version, fabricName, providerName, resourceGroupName, resourceName, subscriptionId` | The operation to removes/delete(unregister) a recovery services provider from the vault. |
-| `ReplicationRecoveryServicesProviders_Get` | `EXEC` | `api-version, fabricName, providerName, resourceGroupName, resourceName, subscriptionId` | Gets the details of registered recovery services provider. |
 | `ReplicationRecoveryServicesProviders_Purge` | `EXEC` | `api-version, fabricName, providerName, resourceGroupName, resourceName, subscriptionId` | The operation to purge(force delete) a recovery services provider from the vault. |
 | `ReplicationRecoveryServicesProviders_RefreshProvider` | `EXEC` | `api-version, fabricName, providerName, resourceGroupName, resourceName, subscriptionId` | The operation to refresh the information from the recovery services provider. |

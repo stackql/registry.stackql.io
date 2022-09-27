@@ -27,26 +27,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `lastModifiedDate` | `string` | The last time the cluster was updated. |
-| `capacityReservationProperties` | `object` | The Capacity Reservation properties. |
-| `billingType` | `string` | Configures whether billing will be only on the cluster or each workspace will be billed by its proportional use. This does not change the overall billing, only how it will be distributed. Default value is 'Cluster' |
 | `sku` | `object` | The cluster sku definition. |
 | `tags` | `object` | Resource tags. |
-| `provisioningState` | `string` | The provisioning state of the cluster. |
-| `associatedWorkspaces` | `array` | The list of Log Analytics workspaces associated with the cluster |
 | `identity` | `object` | Identity for the resource. |
-| `isAvailabilityZonesEnabled` | `boolean` | Sets whether the cluster will support availability zones. This can be set as true only in regions where Azure Data Explorer support Availability Zones. This Property can not be modified after cluster creation. Default value is 'true' if region supports Availability Zones. |
 | `location` | `string` | The geo-location where the resource lives |
-| `createdDate` | `string` | The cluster creation time |
-| `clusterId` | `string` | The ID associated with the cluster. |
-| `isDoubleEncryptionEnabled` | `boolean` | Configures whether cluster will use double encryption. This Property can not be modified after cluster creation. Default value is 'true' |
-| `keyVaultProperties` | `object` | The key vault properties. |
+| `properties` | `object` | Cluster properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Clusters_Get` | `SELECT` | `clusterName, resourceGroupName, subscriptionId` | Gets a Log Analytics cluster instance. |
 | `Clusters_List` | `SELECT` | `subscriptionId` | Gets the Log Analytics clusters in a subscription. |
 | `Clusters_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets Log Analytics clusters in a resource group. |
 | `Clusters_CreateOrUpdate` | `INSERT` | `clusterName, resourceGroupName, subscriptionId` | Create or update a Log Analytics cluster. |
 | `Clusters_Delete` | `DELETE` | `clusterName, resourceGroupName, subscriptionId` | Deletes a cluster instance. |
-| `Clusters_Get` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | Gets a Log Analytics cluster instance. |
 | `Clusters_Update` | `EXEC` | `clusterName, resourceGroupName, subscriptionId` | Updates a Log Analytics cluster. |

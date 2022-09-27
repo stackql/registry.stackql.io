@@ -25,10 +25,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | Resource Id |
+| `name` | `string` | Resource name |
+| `type` | `string` | Resource type |
+| `properties` | `object` | The restore point properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RestorePoints_Get` | `SELECT` | `resourceGroupName, restorePointCollectionName, restorePointName, subscriptionId` | The operation to get the restore point. |
 | `RestorePoints_Create` | `INSERT` | `resourceGroupName, restorePointCollectionName, restorePointName, subscriptionId` | The operation to create the restore point. Updating properties of an existing restore point is not allowed |
 | `RestorePoints_Delete` | `DELETE` | `resourceGroupName, restorePointCollectionName, restorePointName, subscriptionId` | The operation to delete the restore point. |
-| `RestorePoints_Get` | `EXEC` | `resourceGroupName, restorePointCollectionName, restorePointName, subscriptionId` | The operation to get the restore point. |

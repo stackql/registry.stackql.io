@@ -25,15 +25,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `description` | `string` | The description for the service level objective. |
-| `isDefault` | `boolean` | Gets whether the service level objective is the default service objective. |
-| `isSystem` | `boolean` | Gets whether the service level objective is a system service objective. |
-| `serviceObjectiveName` | `string` | The name for the service objective. |
-| `enabled` | `boolean` | Gets whether the service level objective is enabled. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ServiceObjectives_Get` | `SELECT` | `resourceGroupName, serverName, serviceObjectiveName, subscriptionId` | Gets a database service objective. |
 | `ServiceObjectives_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | Returns database service objectives. |
-| `ServiceObjectives_Get` | `EXEC` | `resourceGroupName, serverName, serviceObjectiveName, subscriptionId` | Gets a database service objective. |

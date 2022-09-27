@@ -27,26 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | Resource Id |
-| `name` | `string` | Resource name |
-| `containerId` | `string` | The OuContainer name |
-| `location` | `string` | Resource location |
-| `distinguishedName` | `string` | Distinguished Name of OuContainer instance |
-| `type` | `string` | Resource type |
-| `tenantId` | `string` | Azure Active Directory tenant id |
-| `deploymentId` | `string` | The Deployment id |
-| `tags` | `object` | Resource tags |
-| `serviceStatus` | `string` | Status of OuContainer instance |
-| `domainName` | `string` | The domain name of Domain Services. |
-| `provisioningState` | `string` | The current deployment or provisioning state, which only appears in the response. |
-| `accounts` | `array` | The list of container accounts |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `etag` | `string` | Resource etag |
+| `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
+| `name` | `string` | The name of the resource |
+| `properties` | `object` | Properties of the OuContainer. |
+| `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `OuContainer_Get` | `SELECT` | `domainServiceName, ouContainerName, resourceGroupName, subscriptionId` | Get OuContainer in DomainService instance. |
 | `OuContainer_List` | `SELECT` | `domainServiceName, resourceGroupName, subscriptionId` | The List of OuContainers in DomainService instance. |
 | `OuContainer_Create` | `INSERT` | `domainServiceName, ouContainerName, resourceGroupName, subscriptionId` | The Create OuContainer operation creates a new OuContainer under the specified Domain Service instance. |
 | `OuContainer_Delete` | `DELETE` | `domainServiceName, ouContainerName, resourceGroupName, subscriptionId` | The Delete OuContainer operation deletes specified OuContainer. |
-| `OuContainer_Get` | `EXEC` | `domainServiceName, ouContainerName, resourceGroupName, subscriptionId` | Get OuContainer in DomainService instance. |
 | `OuContainer_Update` | `EXEC` | `domainServiceName, ouContainerName, resourceGroupName, subscriptionId` | The Update OuContainer operation can be used to update the existing OuContainers. |

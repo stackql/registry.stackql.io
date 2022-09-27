@@ -27,20 +27,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `id` | `string` | The rule Id. |
-| `ruleState` | `string` | The rule state. Used to delete a rule. To delete an existing rule, specify the schemaName, tableName, columnName, maskingFunction, and specify ruleState as disabled. However, if the rule doesn't already exist, the rule will be created with ruleState set to enabled, regardless of the provided value of ruleState. |
-| `schemaName` | `string` | The schema name on which the data masking rule is applied. |
-| `columnName` | `string` | The column name on which the data masking rule is applied. |
-| `suffixSize` | `string` | If maskingFunction is set to Text, the number of characters to show unmasked at the end of the string. Otherwise, this parameter will be ignored. |
 | `location` | `string` | The location of the data masking rule. |
-| `numberTo` | `string` | The numberTo property of the data masking rule. Required if maskingFunction is set to Number, otherwise this parameter will be ignored. |
-| `tableName` | `string` | The table name on which the data masking rule is applied. |
-| `maskingFunction` | `string` | The masking function that is used for the data masking rule. |
-| `aliasName` | `string` | The alias name. This is a legacy parameter and is no longer used. |
-| `replacementString` | `string` | If maskingFunction is set to Text, the character to use for masking the unexposed part of the string. Otherwise, this parameter will be ignored. |
+| `properties` | `object` | The properties of a database data masking rule. |
 | `kind` | `string` | The kind of Data Masking Rule. Metadata, used for Azure portal. |
-| `prefixSize` | `string` | If maskingFunction is set to Text, the number of characters to show unmasked in the beginning of the string. Otherwise, this parameter will be ignored. |
-| `numberFrom` | `string` | The numberFrom property of the masking rule. Required if maskingFunction is set to Number, otherwise this parameter will be ignored. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|

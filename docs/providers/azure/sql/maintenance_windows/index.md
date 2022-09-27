@@ -29,5 +29,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `MaintenanceWindows_Get` | `SELECT` | `databaseName, maintenanceWindowName, resourceGroupName, serverName, subscriptionId` | Gets maintenance windows settings for a database. |
 | `MaintenanceWindows_CreateOrUpdate` | `INSERT` | `databaseName, maintenanceWindowName, resourceGroupName, serverName, subscriptionId` | Sets maintenance windows settings for a database. |
-| `MaintenanceWindows_Get` | `EXEC` | `databaseName, maintenanceWindowName, resourceGroupName, serverName, subscriptionId` | Gets maintenance windows settings for a database. |

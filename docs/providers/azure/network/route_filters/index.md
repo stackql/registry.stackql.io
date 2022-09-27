@@ -29,20 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
+| `properties` | `object` | Route Filter Resource. |
 | `tags` | `object` | Resource tags. |
-| `peerings` | `array` | A collection of references to express route circuit peerings. |
-| `location` | `string` | Resource location. |
-| `ipv6Peerings` | `array` | A collection of references to express route circuit ipv6 peerings. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `rules` | `array` | Collection of RouteFilterRules contained within a route filter. |
 | `type` | `string` | Resource type. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `RouteFilters_Get` | `SELECT` | `resourceGroupName, routeFilterName, subscriptionId` | Gets the specified route filter. |
 | `RouteFilters_List` | `SELECT` | `subscriptionId` | Gets all route filters in a subscription. |
 | `RouteFilters_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all route filters in a resource group. |
 | `RouteFilters_CreateOrUpdate` | `INSERT` | `resourceGroupName, routeFilterName, subscriptionId, data__location` | Creates or updates a route filter in a specified resource group. |
 | `RouteFilters_Delete` | `DELETE` | `resourceGroupName, routeFilterName, subscriptionId` | Deletes the specified route filter. |
-| `RouteFilters_Get` | `EXEC` | `resourceGroupName, routeFilterName, subscriptionId` | Gets the specified route filter. |
 | `RouteFilters_UpdateTags` | `EXEC` | `resourceGroupName, routeFilterName, subscriptionId` | Updates tags of a route filter. |

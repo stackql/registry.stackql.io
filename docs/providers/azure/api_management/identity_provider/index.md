@@ -30,15 +30,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
-| `clientId` | `string` | Client Id of the Application in the external Identity Provider. It is App ID for Facebook login, Client ID for Google login, App ID for Microsoft. |
-| `clientSecret` | `string` | Client secret of the Application in external Identity Provider, used to authenticate login request. For example, it is App Secret for Facebook login, API Key for Google login, Public Key for Microsoft. This property will not be filled on 'GET' operations! Use '/listSecrets' POST request to get the value. |
+| `properties` | `object` | The external Identity Providers like Facebook, Google, Microsoft, Twitter or Azure Active Directory which can be used to enable access to the API Management service developer portal for all users. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IdentityProvider_Get` | `SELECT` | `identityProviderName, resourceGroupName, serviceName, subscriptionId` | Gets the configuration details of the identity Provider configured in specified service instance. |
 | `IdentityProvider_ListByService` | `SELECT` | `resourceGroupName, serviceName, subscriptionId` | Lists a collection of Identity Provider configured in the specified service instance. |
 | `IdentityProvider_CreateOrUpdate` | `INSERT` | `identityProviderName, resourceGroupName, serviceName, subscriptionId` | Creates or Updates the IdentityProvider configuration. |
 | `IdentityProvider_Delete` | `DELETE` | `If-Match, identityProviderName, resourceGroupName, serviceName, subscriptionId` | Deletes the specified identity provider configuration. |
-| `IdentityProvider_Get` | `EXEC` | `identityProviderName, resourceGroupName, serviceName, subscriptionId` | Gets the configuration details of the identity Provider configured in specified service instance. |
 | `IdentityProvider_GetEntityTag` | `EXEC` | `identityProviderName, resourceGroupName, serviceName, subscriptionId` | Gets the entity state (Etag) version of the identityProvider specified by its identifier. |
 | `IdentityProvider_ListSecrets` | `EXEC` | `identityProviderName, resourceGroupName, serviceName, subscriptionId` | Gets the client secret details of the Identity Provider. |
 | `IdentityProvider_Update` | `EXEC` | `If-Match, identityProviderName, resourceGroupName, serviceName, subscriptionId` | Updates an existing IdentityProvider configuration. |

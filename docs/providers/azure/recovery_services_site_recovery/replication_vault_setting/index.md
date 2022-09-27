@@ -35,6 +35,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ReplicationVaultSetting_Get` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId, vaultSettingName` | Gets the vault setting. This includes the Migration Hub connection settings. |
 | `ReplicationVaultSetting_List` | `SELECT` | `api-version, resourceGroupName, resourceName, subscriptionId` | Gets the list of vault setting. This includes the Migration Hub connection settings. |
 | `ReplicationVaultSetting_Create` | `INSERT` | `api-version, resourceGroupName, resourceName, subscriptionId, vaultSettingName, data__properties` | The operation to configure vault setting. |
-| `ReplicationVaultSetting_Get` | `EXEC` | `api-version, resourceGroupName, resourceName, subscriptionId, vaultSettingName` | Gets the vault setting. This includes the Migration Hub connection settings. |

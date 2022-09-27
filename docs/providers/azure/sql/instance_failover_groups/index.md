@@ -25,20 +25,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `partnerRegions` | `array` | Partner region information for the failover group. |
-| `readOnlyEndpoint` | `object` | Read-only endpoint of the failover group instance. |
-| `readWriteEndpoint` | `object` | Read-write endpoint of the failover group instance. |
-| `replicationRole` | `string` | Local replication role of the failover group instance. |
-| `replicationState` | `string` | Replication state of the failover group instance. |
-| `managedInstancePairs` | `array` | List of managed instance pairs in the failover group. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `InstanceFailoverGroups_Get` | `SELECT` | `failoverGroupName, locationName, resourceGroupName, subscriptionId` | Gets a failover group. |
 | `InstanceFailoverGroups_ListByLocation` | `SELECT` | `locationName, resourceGroupName, subscriptionId` | Lists the failover groups in a location. |
 | `InstanceFailoverGroups_CreateOrUpdate` | `INSERT` | `failoverGroupName, locationName, resourceGroupName, subscriptionId` | Creates or updates a failover group. |
 | `InstanceFailoverGroups_Delete` | `DELETE` | `failoverGroupName, locationName, resourceGroupName, subscriptionId` | Deletes a failover group. |
 | `InstanceFailoverGroups_Failover` | `EXEC` | `failoverGroupName, locationName, resourceGroupName, subscriptionId` | Fails over from the current primary managed instance to this managed instance. |
 | `InstanceFailoverGroups_ForceFailoverAllowDataLoss` | `EXEC` | `failoverGroupName, locationName, resourceGroupName, subscriptionId` | Fails over from the current primary managed instance to this managed instance. This operation might result in data loss. |
-| `InstanceFailoverGroups_Get` | `EXEC` | `failoverGroupName, locationName, resourceGroupName, subscriptionId` | Gets a failover group. |

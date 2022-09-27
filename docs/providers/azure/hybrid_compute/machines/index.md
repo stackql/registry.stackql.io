@@ -27,18 +27,18 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `properties` | `object` | Describes the properties of a hybrid machine. |
 | `resources` | `array` | The list of extensions affiliated to the machine |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
 | `identity` | `object` | Identity for the resource. |
 | `location` | `string` | The geo-location where the resource lives |
+| `properties` | `object` | Describes the properties of a hybrid machine. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Machines_Get` | `SELECT` | `machineName, resourceGroupName, subscriptionId` | Retrieves information about the model view or the instance view of a hybrid machine. |
 | `Machines_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all the hybrid machines in the specified resource group. Use the nextLink property in the response to get the next page of hybrid machines. |
 | `Machines_ListBySubscription` | `SELECT` | `subscriptionId` | Lists all the hybrid machines in the specified subscription. Use the nextLink property in the response to get the next page of hybrid machines. |
 | `Machines_CreateOrUpdate` | `INSERT` | `machineName, resourceGroupName, subscriptionId` | The operation to create or update a hybrid machine. Please note some properties can be set only during machine creation. |
 | `Machines_Delete` | `DELETE` | `machineName, resourceGroupName, subscriptionId` | The operation to delete a hybrid machine. |
-| `Machines_Get` | `EXEC` | `machineName, resourceGroupName, subscriptionId` | Retrieves information about the model view or the instance view of a hybrid machine. |
 | `Machines_Update` | `EXEC` | `machineName, resourceGroupName, subscriptionId` | The operation to update a hybrid machine. |

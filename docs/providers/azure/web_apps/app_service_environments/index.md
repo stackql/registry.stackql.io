@@ -29,33 +29,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource Name. |
-| `upgradePreference` | `string` | Upgrade Preference |
-| `suspended` | `boolean` | &lt;code&gt;true&lt;/code&gt; if the App Service Environment is suspended; otherwise, &lt;code&gt;false&lt;/code&gt;. The environment can be suspended, e.g. when the management endpoint is no longer available<br /> (most likely because NSG blocked the incoming traffic). |
-| `networkingConfiguration` | `object` | Full view of networking configuration for an ASE. |
-| `dedicatedHostCount` | `integer` | Dedicated Host Count |
-| `hasLinuxWorkers` | `boolean` | Flag that displays whether an ASE has linux workers or not |
-| `userWhitelistedIpRanges` | `array` | User added ip ranges to whitelist on ASE db |
-| `internalLoadBalancingMode` | `string` | Specifies which endpoints to serve internally in the Virtual Network for the App Service Environment. |
-| `multiRoleCount` | `integer` | Number of front-end instances. |
-| `multiSize` | `string` | Front-end VM size, e.g. "Medium", "Large". |
-| `maximumNumberOfMachines` | `integer` | Maximum number of VMs in the App Service Environment. |
-| `frontEndScaleFactor` | `integer` | Scale factor for front-ends. |
+| `properties` | `object` | Description of an App Service Environment. |
 | `tags` | `object` | Resource tags. |
-| `location` | `string` | Resource Location. |
-| `dnsSuffix` | `string` | DNS suffix of the App Service Environment. |
-| `ipsslAddressCount` | `integer` | Number of IP SSL addresses reserved for the App Service Environment. |
-| `customDnsSuffixConfiguration` | `object` | Full view of the custom domain suffix configuration for ASEv3. |
-| `provisioningState` | `string` | Provisioning state of the App Service Environment. |
-| `upgradeAvailability` | `string` | Whether an upgrade is available for this App Service Environment. |
-| `virtualNetwork` | `object` | Specification for using a Virtual Network. |
-| `zoneRedundant` | `boolean` | Whether or not this App Service Environment is zone-redundant. |
-| `status` | `string` | Current status of the App Service Environment. |
-| `clusterSettings` | `array` | Custom settings for changing the behavior of the App Service Environment. |
 | `type` | `string` | Resource type. |
 | `kind` | `string` | Kind of resource. |
+| `location` | `string` | Resource Location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AppServiceEnvironments_Get` | `SELECT` | `name, resourceGroupName, subscriptionId` | Description for Get the properties of an App Service Environment. |
 | `AppServiceEnvironments_List` | `SELECT` | `subscriptionId` | Description for Get all App Service Environments for a subscription. |
 | `AppServiceEnvironments_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Description for Get all App Service Environments in a resource group. |
 | `AppServiceEnvironments_CreateOrUpdate` | `INSERT` | `name, resourceGroupName, subscriptionId` | Description for Create or update an App Service Environment. |
@@ -66,7 +48,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `AppServiceEnvironments_CreateOrUpdateWorkerPool` | `EXEC` | `name, resourceGroupName, subscriptionId, workerPoolName` | Description for Create or update a worker pool. |
 | `AppServiceEnvironments_DeleteAseCustomDnsSuffixConfiguration` | `EXEC` | `name, resourceGroupName, subscriptionId` |  |
 | `AppServiceEnvironments_DeletePrivateEndpointConnection` | `EXEC` | `name, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Description for Deletes a private endpoint connection |
-| `AppServiceEnvironments_Get` | `EXEC` | `name, resourceGroupName, subscriptionId` | Description for Get the properties of an App Service Environment. |
 | `AppServiceEnvironments_GetAseCustomDnsSuffixConfiguration` | `EXEC` | `name, resourceGroupName, subscriptionId` |  |
 | `AppServiceEnvironments_GetAseV3NetworkingConfiguration` | `EXEC` | `name, resourceGroupName, subscriptionId` | Description for Get networking configuration of an App Service Environment |
 | `AppServiceEnvironments_GetDiagnosticsItem` | `EXEC` | `diagnosticsName, name, resourceGroupName, subscriptionId` | Description for Get a diagnostics item for an App Service Environment. |

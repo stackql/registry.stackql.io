@@ -25,8 +25,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | The operation id. |
+| `name` | `string` | The operation name. |
+| `error` | `object` | The error detail. |
+| `startTime` | `string` | The operation start time. |
+| `status` | `string` | The operation status. |
+| `endTime` | `string` | The operation end time. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `PrivateLinkServiceResourceOperationResults_Get` | `EXEC` | `operationId, subscriptionId` |
+| `PrivateLinkServiceResourceOperationResults_Get` | `SELECT` | `operationId, subscriptionId` |

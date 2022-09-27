@@ -29,14 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `contentType` | `string` | Must be a valid a media type used in a Content-Type header as defined in the RFC 2616. Media type of the schema document (e.g. application/json, application/xml). &lt;/br&gt; - `Swagger` Schema use `application/vnd.ms-azure-apim.swagger.definitions+json` &lt;/br&gt; - `WSDL` Schema use `application/vnd.ms-azure-apim.xsd+xml` &lt;/br&gt; - `OpenApi` Schema use `application/vnd.oai.openapi.components+json` &lt;/br&gt; - `WADL Schema` use `application/vnd.ms-azure-apim.wadl.grammars+xml`. |
-| `document` | `object` | Api Schema Document Properties. |
+| `properties` | `object` | API Schema create or update contract Properties. |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ApiSchema_Get` | `SELECT` | `apiId, resourceGroupName, schemaId, serviceName, subscriptionId` | Get the schema configuration at the API level. |
 | `ApiSchema_ListByApi` | `SELECT` | `apiId, resourceGroupName, serviceName, subscriptionId` | Get the schema configuration at the API level. |
 | `ApiSchema_CreateOrUpdate` | `INSERT` | `apiId, resourceGroupName, schemaId, serviceName, subscriptionId` | Creates or updates schema configuration for the API. |
 | `ApiSchema_Delete` | `DELETE` | `If-Match, apiId, resourceGroupName, schemaId, serviceName, subscriptionId` | Deletes the schema configuration at the Api. |
-| `ApiSchema_Get` | `EXEC` | `apiId, resourceGroupName, schemaId, serviceName, subscriptionId` | Get the schema configuration at the API level. |
 | `ApiSchema_GetEntityTag` | `EXEC` | `apiId, resourceGroupName, schemaId, serviceName, subscriptionId` | Gets the entity state (Etag) version of the schema specified by its identifier. |

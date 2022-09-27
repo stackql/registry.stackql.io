@@ -29,13 +29,9 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The ID of the resource. |
 | `name` | `string` | The name of the resource. |
-| `peeringLocation` | `string` | The name of the peering location. |
-| `country` | `string` | The country in which the peering location exists. |
-| `exchange` | `object` | The properties that define an exchange peering location. |
-| `direct` | `object` | The properties that define a direct peering location. |
-| `kind` | `string` | The kind of peering that the peering location supports. |
+| `properties` | `object` | The properties that define a peering location. |
 | `type` | `string` | The type of the resource. |
-| `azureRegion` | `string` | The Azure region associated with the peering location. |
+| `kind` | `string` | The kind of peering that the peering location supports. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|

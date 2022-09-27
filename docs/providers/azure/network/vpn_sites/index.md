@@ -29,26 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `isSecuritySite` | `boolean` | IsSecuritySite flag. |
-| `location` | `string` | Resource location. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `virtualWan` | `object` | Reference to another subresource. |
-| `vpnSiteLinks` | `array` | List of all vpn site links. |
+| `properties` | `object` | Parameters for VpnSite. |
 | `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource type. |
-| `bgpProperties` | `object` | BGP settings details. |
-| `o365Policy` | `object` | The Office365 breakout policy. |
-| `siteKey` | `string` | The key for vpn-site that can be used for connections. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `ipAddress` | `string` | The ip-address for the vpn-site. |
-| `addressSpace` | `object` | AddressSpace contains an array of IP address ranges that can be used by subnets of the virtual network. |
-| `deviceProperties` | `object` | List of properties of the device. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `location` | `string` | Resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VpnSites_Get` | `SELECT` | `resourceGroupName, subscriptionId, vpnSiteName` | Retrieves the details of a VPN site. |
 | `VpnSites_List` | `SELECT` | `subscriptionId` | Lists all the VpnSites in a subscription. |
 | `VpnSites_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all the vpnSites in a resource group. |
 | `VpnSites_CreateOrUpdate` | `INSERT` | `resourceGroupName, subscriptionId, vpnSiteName, data__location` | Creates a VpnSite resource if it doesn't exist else updates the existing VpnSite. |
 | `VpnSites_Delete` | `DELETE` | `resourceGroupName, subscriptionId, vpnSiteName` | Deletes a VpnSite. |
-| `VpnSites_Get` | `EXEC` | `resourceGroupName, subscriptionId, vpnSiteName` | Retrieves the details of a VPN site. |
 | `VpnSites_UpdateTags` | `EXEC` | `resourceGroupName, subscriptionId, vpnSiteName` | Updates VpnSite tags. |

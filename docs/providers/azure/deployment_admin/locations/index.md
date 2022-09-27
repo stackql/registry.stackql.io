@@ -30,6 +30,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
 | `location` | `string` | Location of the resource. |
+| `properties` | `object` | Location Admin Properties |
 | `type` | `string` | Type of Resource. |
 | `eTag` | `string` | Entity tag of the resource |
 ## Methods

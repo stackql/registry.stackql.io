@@ -30,21 +30,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
 | `location` | `string` | Resource location. |
-| `provisioningState` | `string` | The current provisioning state. |
-| `destinationLoadBalancerFrontEndIPConfiguration` | `object` | Frontend IP address of the load balancer. |
-| `destinationPort` | `integer` | The VXLAN destination port that will receive the tapped traffic. |
-| `resourceGuid` | `string` | The resource GUID property of the virtual network tap resource. |
+| `properties` | `object` | Virtual Network Tap properties. |
+| `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `networkInterfaceTapConfigurations` | `array` | Specifies the list of resource IDs for the network interface IP configuration that needs to be tapped. |
-| `tags` | `object` | Resource tags. |
-| `destinationNetworkInterfaceIPConfiguration` | `object` | IPConfiguration in a network interface. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualNetworkTaps_Get` | `SELECT` | `resourceGroupName, subscriptionId, tapName` | Gets information about the specified virtual network tap. |
 | `VirtualNetworkTaps_ListAll` | `SELECT` | `subscriptionId` | Gets all the VirtualNetworkTaps in a subscription. |
 | `VirtualNetworkTaps_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all the VirtualNetworkTaps in a subscription. |
 | `VirtualNetworkTaps_CreateOrUpdate` | `INSERT` | `resourceGroupName, subscriptionId, tapName` | Creates or updates a Virtual Network Tap. |
 | `VirtualNetworkTaps_Delete` | `DELETE` | `resourceGroupName, subscriptionId, tapName` | Deletes the specified virtual network tap. |
-| `VirtualNetworkTaps_Get` | `EXEC` | `resourceGroupName, subscriptionId, tapName` | Gets information about the specified virtual network tap. |
 | `VirtualNetworkTaps_UpdateTags` | `EXEC` | `resourceGroupName, subscriptionId, tapName` | Updates an VirtualNetworkTap tags. |

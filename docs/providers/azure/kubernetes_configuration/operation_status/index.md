@@ -35,5 +35,5 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `OperationStatus_Get` | `SELECT` | `clusterName, clusterResourceName, clusterRp, extensionName, operationId, resourceGroupName, subscriptionId` | Get Async Operation status |
 | `OperationStatus_List` | `SELECT` | `clusterName, clusterResourceName, clusterRp, resourceGroupName, subscriptionId` | List Async Operations, currently in progress, in a cluster |
-| `OperationStatus_Get` | `EXEC` | `clusterName, clusterResourceName, clusterRp, extensionName, operationId, resourceGroupName, subscriptionId` | Get Async Operation status |

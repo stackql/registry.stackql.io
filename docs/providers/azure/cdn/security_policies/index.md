@@ -25,15 +25,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `parameters` | `object` | The json object containing security policy parameters |
-| `profileName` | `string` | The name of the profile which holds the security policy. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SecurityPolicies_Get` | `SELECT` | `profileName, resourceGroupName, securityPolicyName, subscriptionId` | Gets an existing security policy within a profile. |
 | `SecurityPolicies_ListByProfile` | `SELECT` | `profileName, resourceGroupName, subscriptionId` | Lists security policies associated with the profile |
 | `SecurityPolicies_Create` | `INSERT` | `profileName, resourceGroupName, securityPolicyName, subscriptionId` | Creates a new security policy within the specified profile. |
 | `SecurityPolicies_Delete` | `DELETE` | `profileName, resourceGroupName, securityPolicyName, subscriptionId` | Deletes an existing security policy within profile. |
-| `SecurityPolicies_Get` | `EXEC` | `profileName, resourceGroupName, securityPolicyName, subscriptionId` | Gets an existing security policy within a profile. |
 | `SecurityPolicies_Patch` | `EXEC` | `profileName, resourceGroupName, securityPolicyName, subscriptionId` | Updates an existing security policy within a profile. |

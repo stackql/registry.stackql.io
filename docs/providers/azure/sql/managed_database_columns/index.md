@@ -25,15 +25,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `columnType` | `string` | The column data type. |
-| `isComputed` | `boolean` | Whether or not the column is computed. |
-| `memoryOptimized` | `boolean` | Whether or not the column belongs to a memory optimized table. |
-| `temporalType` | `string` | The table temporal type. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedDatabaseColumns_Get` | `SELECT` | `columnName, databaseName, managedInstanceName, resourceGroupName, schemaName, subscriptionId, tableName` | Get managed database column |
 | `ManagedDatabaseColumns_ListByDatabase` | `SELECT` | `databaseName, managedInstanceName, resourceGroupName, subscriptionId` | List managed database columns |
 | `ManagedDatabaseColumns_ListByTable` | `SELECT` | `databaseName, managedInstanceName, resourceGroupName, schemaName, subscriptionId, tableName` | List managed database columns |
-| `ManagedDatabaseColumns_Get` | `EXEC` | `columnName, databaseName, managedInstanceName, resourceGroupName, schemaName, subscriptionId, tableName` | Get managed database column |

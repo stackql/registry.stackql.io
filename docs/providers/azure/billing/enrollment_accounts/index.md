@@ -29,10 +29,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id. |
 | `name` | `string` | Resource name. |
-| `principalName` | `string` | The account owner's principal name. |
+| `properties` | `object` | The properties of the enrollment account. |
 | `type` | `string` | Resource type. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `EnrollmentAccounts_Get` | `SELECT` | `name` | Gets a enrollment account by name. |
 | `EnrollmentAccounts_List` | `SELECT` |  | Lists the enrollment accounts the caller has access to. |
-| `EnrollmentAccounts_Get` | `EXEC` | `name` | Gets a enrollment account by name. |

@@ -22,7 +22,7 @@ PowerBI Embedded
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>PowerBI Embedded (Microsoft.PowerBI)</td></tr>
 <tr><td><b>Description</b></td><td>PowerBI Embedded</td></tr>
-<tr><td><b>Id</b></td><td><code>powerbi_embedded:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>powerbi_embedded:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

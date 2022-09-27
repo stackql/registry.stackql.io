@@ -27,22 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `scaleType` | `string` | Scale type. |
-| `clusterManagerType` | `string` | Type of cluster manager: Windows Server Failover Cluster (WSFC), implied by the scale type of the group and the OS type. |
-| `location` | `string` | The geo-location where the resource lives |
+| `location` | `string` | Resource location. |
+| `properties` | `object` | The properties of a SQL virtual machine group. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `wsfcDomainProfile` | `object` | Active Directory account details to operate Windows Server Failover Cluster. |
-| `provisioningState` | `string` | Provisioning state to track the async operation status. |
-| `clusterConfiguration` | `string` | Cluster type. |
-| `sqlImageSku` | `string` | SQL image sku. |
 | `tags` | `object` | Resource tags. |
-| `sqlImageOffer` | `string` | SQL image offer. Examples may include SQL2016-WS2016, SQL2017-WS2016. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `SqlVirtualMachineGroups_Get` | `SELECT` | `resourceGroupName, sqlVirtualMachineGroupName, subscriptionId` | Gets a SQL virtual machine group. |
 | `SqlVirtualMachineGroups_List` | `SELECT` | `subscriptionId` | Gets all SQL virtual machine groups in a subscription. |
 | `SqlVirtualMachineGroups_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all SQL virtual machine groups in a resource group. |
 | `SqlVirtualMachineGroups_CreateOrUpdate` | `INSERT` | `resourceGroupName, sqlVirtualMachineGroupName, subscriptionId, data__location` | Creates or updates a SQL virtual machine group. |
 | `SqlVirtualMachineGroups_Delete` | `DELETE` | `resourceGroupName, sqlVirtualMachineGroupName, subscriptionId` | Deletes a SQL virtual machine group. |
-| `SqlVirtualMachineGroups_Get` | `EXEC` | `resourceGroupName, sqlVirtualMachineGroupName, subscriptionId` | Gets a SQL virtual machine group. |
 | `SqlVirtualMachineGroups_Update` | `EXEC` | `resourceGroupName, sqlVirtualMachineGroupName, subscriptionId` | Updates SQL virtual machine group tags. |

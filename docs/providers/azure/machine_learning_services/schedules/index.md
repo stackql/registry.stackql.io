@@ -35,7 +35,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `Schedules_Get` | `SELECT` | `name, resourceGroupName, subscriptionId, workspaceName` |
 | `Schedules_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` |
 | `Schedules_CreateOrUpdate` | `INSERT` | `name, resourceGroupName, subscriptionId, workspaceName, data__properties` |
 | `Schedules_Delete` | `DELETE` | `name, resourceGroupName, subscriptionId, workspaceName` |
-| `Schedules_Get` | `EXEC` | `name, resourceGroupName, subscriptionId, workspaceName` |

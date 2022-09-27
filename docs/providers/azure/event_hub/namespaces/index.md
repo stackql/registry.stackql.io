@@ -27,15 +27,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `identity` | `object` | Properties to configure Identity for Bring your Own Keys |
-| `location` | `string` | Resource location. |
-| `properties` | `` | Namespace properties supplied for create namespace operation. |
 | `sku` | `object` | SKU parameters supplied to the create namespace operation |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | Resource tags. |
+| `identity` | `object` | Properties to configure Identity for Bring your Own Keys |
+| `location` | `string` | Resource location. |
+| `properties` | `` | Namespace properties supplied for create namespace operation. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Namespaces_Get` | `SELECT` | `namespaceName, resourceGroupName, subscriptionId` | Gets the description of the specified namespace. |
 | `Namespaces_List` | `SELECT` | `subscriptionId` | Lists all the available Namespaces within a subscription, irrespective of the resource groups. |
 | `Namespaces_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists the available Namespaces within a resource group. |
 | `Namespaces_CreateOrUpdate` | `INSERT` | `namespaceName, resourceGroupName, subscriptionId` | Creates or updates a namespace. Once created, this namespace's resource manifest is immutable. This operation is idempotent. |
@@ -44,7 +45,6 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 | `Namespaces_CreateOrUpdateAuthorizationRule` | `EXEC` | `authorizationRuleName, namespaceName, resourceGroupName, subscriptionId` | Creates or updates an AuthorizationRule for a Namespace. |
 | `Namespaces_CreateOrUpdateNetworkRuleSet` | `EXEC` | `namespaceName, resourceGroupName, subscriptionId` | Create or update NetworkRuleSet for a Namespace. |
 | `Namespaces_DeleteAuthorizationRule` | `EXEC` | `authorizationRuleName, namespaceName, resourceGroupName, subscriptionId` | Deletes an AuthorizationRule for a Namespace. |
-| `Namespaces_Get` | `EXEC` | `namespaceName, resourceGroupName, subscriptionId` | Gets the description of the specified namespace. |
 | `Namespaces_GetAuthorizationRule` | `EXEC` | `authorizationRuleName, namespaceName, resourceGroupName, subscriptionId` | Gets an AuthorizationRule for a Namespace by rule name. |
 | `Namespaces_GetNetworkRuleSet` | `EXEC` | `namespaceName, resourceGroupName, subscriptionId` | Gets NetworkRuleSet for a Namespace. |
 | `Namespaces_ListAuthorizationRules` | `EXEC` | `namespaceName, resourceGroupName, subscriptionId` | Gets a list of authorization rules for a Namespace. |

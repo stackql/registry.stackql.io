@@ -25,16 +25,11 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `privateEndpoint` | `object` | Private endpoint object properties. |
-| `privateLinkConnectionTags` | `object` | A container holding only the Tags for a resource, allowing the user to update the tags on a PrivateLinkConnection instance. |
-| `privateLinkServiceConnectionState` | `object` | An object that represents the approval state of the private link connection. |
-| `provisioningState` | `string` | The current provisioning state. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PrivateEndpointConnections_Get` | `SELECT` | `policyName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the specified private endpoint connection associated with the given policy. |
 | `PrivateEndpointConnections_ListByPolicyName` | `SELECT` | `policyName, resourceGroupName, subscriptionId` | Lists all Private Endpoint Connections for the given policy. |
 | `PrivateEndpointConnections_Create` | `INSERT` | `policyName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Creates specified private endpoint connection associated with the given policy. |
 | `PrivateEndpointConnections_Delete` | `DELETE` | `policyName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Deletes the specified private endpoint connection associated with the given policy. |
-| `PrivateEndpointConnections_Get` | `EXEC` | `policyName, privateEndpointConnectionName, resourceGroupName, subscriptionId` | Gets the specified private endpoint connection associated with the given policy. |

@@ -29,19 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource ID. |
 | `name` | `string` | The name of the resource. |
+| `properties` | `object` | The properties of a replication. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `tags` | `object` | The tags of the resource. |
 | `type` | `string` | The type of the resource. |
-| `zoneRedundancy` | `string` | Whether or not zone redundancy is enabled for this container registry replication |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `location` | `string` | The location of the resource. This cannot be changed after the resource is created. |
-| `provisioningState` | `string` | The provisioning state of the replication at the time the operation was called. |
-| `regionEndpointEnabled` | `boolean` | Specifies whether the replication's regional endpoint is enabled. Requests will not be routed to a replication whose regional endpoint is disabled, however its data will continue to be synced with other replications. |
-| `status` | `object` | The status of an Azure resource at the time the operation was called. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Replications_Get` | `SELECT` | `registryName, replicationName, resourceGroupName, subscriptionId` | Gets the properties of the specified replication. |
 | `Replications_List` | `SELECT` | `registryName, resourceGroupName, subscriptionId` | Lists all the replications for the specified container registry. |
 | `Replications_Create` | `INSERT` | `registryName, replicationName, resourceGroupName, subscriptionId` | Creates a replication for a container registry with the specified parameters. |
 | `Replications_Delete` | `DELETE` | `registryName, replicationName, resourceGroupName, subscriptionId` | Deletes a replication from a container registry. |
-| `Replications_Get` | `EXEC` | `registryName, replicationName, resourceGroupName, subscriptionId` | Gets the properties of the specified replication. |
 | `Replications_Update` | `EXEC` | `registryName, replicationName, resourceGroupName, subscriptionId` | Updates a replication for a container registry with the specified parameters. |

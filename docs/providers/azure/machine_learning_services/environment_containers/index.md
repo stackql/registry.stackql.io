@@ -35,7 +35,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `EnvironmentContainers_Get` | `SELECT` | `name, resourceGroupName, subscriptionId, workspaceName` |
 | `EnvironmentContainers_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` |
 | `EnvironmentContainers_CreateOrUpdate` | `INSERT` | `name, resourceGroupName, subscriptionId, workspaceName, data__properties` |
 | `EnvironmentContainers_Delete` | `DELETE` | `name, resourceGroupName, subscriptionId, workspaceName` |
-| `EnvironmentContainers_Get` | `EXEC` | `name, resourceGroupName, subscriptionId, workspaceName` |

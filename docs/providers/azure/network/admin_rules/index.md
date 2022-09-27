@@ -29,14 +29,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `kind` | `string` | Whether the rule is custom or default. |
-| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 | `type` | `string` | Resource type. |
 | `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
+| `kind` | `string` | Whether the rule is custom or default. |
+| `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AdminRules_Get` | `SELECT` |  | Gets a network manager security configuration admin rule. |
 | `AdminRules_List` | `SELECT` |  | List all network manager security configuration admin rules. |
 | `AdminRules_CreateOrUpdate` | `INSERT` | `data__kind` | Creates or updates an admin rule. |
 | `AdminRules_Delete` | `DELETE` |  | Deletes an admin rule. |
-| `AdminRules_Get` | `EXEC` |  | Gets a network manager security configuration admin rule. |

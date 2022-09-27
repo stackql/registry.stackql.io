@@ -29,16 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Id of the object. |
 | `name` | `string` | Name of the object. |
-| `extendedProperties` | `object` | A generic json used differently by each data source type. |
-| `repositoryId` | `string` | Arm Id for the manager resource to which the data source is associated. This is optional. |
-| `state` | `string` | State of the data source. |
 | `type` | `string` | Type of the object. |
-| `customerSecrets` | `array` | List of customer secrets containing a key identifier and key value. The key identifier is a way for the specific data source to understand the key. Value contains customer secret encrypted by the encryptionKeys. |
-| `dataStoreTypeId` | `string` | The arm id of the data store type. |
+| `properties` | `object` | Data Store for sources and sinks |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `DataStores_Get` | `SELECT` | `dataManagerName, dataStoreName, resourceGroupName, subscriptionId` | This method gets the data store/repository by name. |
 | `DataStores_ListByDataManager` | `SELECT` | `dataManagerName, resourceGroupName, subscriptionId` | Gets all the data stores/repositories in the given resource. |
-| `DataStores_CreateOrUpdate` | `INSERT` | `dataManagerName, dataStoreName, resourceGroupName, subscriptionId` | Creates or updates the data store/repository in the data manager. |
+| `DataStores_CreateOrUpdate` | `INSERT` | `dataManagerName, dataStoreName, resourceGroupName, subscriptionId, data__properties` | Creates or updates the data store/repository in the data manager. |
 | `DataStores_Delete` | `DELETE` | `dataManagerName, dataStoreName, resourceGroupName, subscriptionId` | This method deletes the given data store/repository. |
-| `DataStores_Get` | `EXEC` | `dataManagerName, dataStoreName, resourceGroupName, subscriptionId` | This method gets the data store/repository by name. |

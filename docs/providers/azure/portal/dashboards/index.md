@@ -29,17 +29,16 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | Resource name |
-| `location` | `string` | Resource location |
-| `metadata` | `object` | The dashboard metadata. |
+| `properties` | `object` | The shared dashboard properties. |
 | `tags` | `object` | Resource tags |
 | `type` | `string` | Resource type |
-| `lenses` | `array` | The dashboard lenses. |
+| `location` | `string` | Resource location |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Dashboards_Get` | `SELECT` | `dashboardName, resourceGroupName, subscriptionId` | Gets the Dashboard. |
 | `Dashboards_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Gets all the Dashboards within a resource group. |
 | `Dashboards_ListBySubscription` | `SELECT` | `subscriptionId` | Gets all the dashboards within a subscription. |
 | `Dashboards_CreateOrUpdate` | `INSERT` | `dashboardName, resourceGroupName, subscriptionId, data__location` | Creates or updates a Dashboard. |
 | `Dashboards_Delete` | `DELETE` | `dashboardName, resourceGroupName, subscriptionId` | Deletes the Dashboard. |
-| `Dashboards_Get` | `EXEC` | `dashboardName, resourceGroupName, subscriptionId` | Gets the Dashboard. |
 | `Dashboards_Update` | `EXEC` | `dashboardName, resourceGroupName, subscriptionId` | Updates an existing Dashboard. |

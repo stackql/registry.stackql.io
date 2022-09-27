@@ -27,14 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `properties` | `object` | Linked service properties. |
 | `tags` | `object` | Resource tags. |
-| `writeAccessResourceId` | `string` | The resource id of the resource that will be linked to the workspace. This should be used for linking resources which require write access |
-| `provisioningState` | `string` | The provisioning state of the linked service. |
-| `resourceId` | `string` | The resource id of the resource that will be linked to the workspace. This should be used for linking resources which require read access |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `LinkedServices_Get` | `SELECT` | `linkedServiceName, resourceGroupName, subscriptionId, workspaceName` | Gets a linked service instance. |
 | `LinkedServices_ListByWorkspace` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Gets the linked services instances in a workspace. |
-| `LinkedServices_CreateOrUpdate` | `INSERT` | `linkedServiceName, resourceGroupName, subscriptionId, workspaceName` | Create or update a linked service. |
+| `LinkedServices_CreateOrUpdate` | `INSERT` | `linkedServiceName, resourceGroupName, subscriptionId, workspaceName, data__properties` | Create or update a linked service. |
 | `LinkedServices_Delete` | `DELETE` | `linkedServiceName, resourceGroupName, subscriptionId, workspaceName` | Deletes a linked service instance. |
-| `LinkedServices_Get` | `EXEC` | `linkedServiceName, resourceGroupName, subscriptionId, workspaceName` | Gets a linked service instance. |

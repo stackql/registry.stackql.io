@@ -29,14 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The identification of the result |
 | `name` | `string` | The name of the result |
-| `osType` | `string` | Cluster operating system, the default will be Windows |
-| `supportExpiryUtc` | `string` | The date of expiry of support of the version. |
+| `properties` | `object` | The detail of the Service Fabric runtime version result |
 | `type` | `string` | The result resource type |
-| `clusterCodeVersion` | `string` | The Service Fabric runtime version of the cluster. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ManagedClusterVersion_Get` | `SELECT` | `api-version, clusterVersion, location, subscriptionId` | Gets information about an available Service Fabric managed cluster code version. |
 | `ManagedClusterVersion_List` | `SELECT` | `api-version, location, subscriptionId` | Gets all available code versions for Service Fabric cluster resources by location. |
 | `ManagedClusterVersion_ListByEnvironment` | `SELECT` | `api-version, environment, location, subscriptionId` | Gets all available code versions for Service Fabric cluster resources by environment. |
-| `ManagedClusterVersion_Get` | `EXEC` | `api-version, clusterVersion, location, subscriptionId` | Gets information about an available Service Fabric managed cluster code version. |
 | `ManagedClusterVersion_GetByEnvironment` | `EXEC` | `api-version, clusterVersion, environment, location, subscriptionId` | Gets information about an available Service Fabric cluster code version by environment. |

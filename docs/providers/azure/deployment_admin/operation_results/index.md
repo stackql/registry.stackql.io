@@ -25,8 +25,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | ID of the resource. |
+| `name` | `string` | Name of the resource. |
+| `startTime` | `string` | The deployment start time |
+| `status` | `string` | Specifies the state of the Operation result. |
+| `endTime` | `string` | The deployment end time |
+| `percentComplete` | `number` | Percentage completed. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `OperationResults_Get` | `EXEC` | `location, operationResultId, subscriptionId` |
+| `OperationResults_Get` | `SELECT` | `location, operationResultId, subscriptionId` |

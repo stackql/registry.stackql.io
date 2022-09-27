@@ -25,17 +25,10 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `description` | `string` | Description of the configuration. |
-| `allowedValues` | `string` | Allowed values of the configuration. |
-| `dataType` | `string` | Data type of the configuration. |
-| `defaultValue` | `string` | Default value of the configuration. |
-| `source` | `string` | Source of the configuration. |
-| `value` | `string` | Value of the configuration. |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Configurations_Get` | `SELECT` | `configurationName, resourceGroupName, serverName, subscriptionId` | Gets information about a configuration of server. |
 | `Configurations_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | List all the configurations in a given server. |
 | `Configurations_CreateOrUpdate` | `INSERT` | `configurationName, resourceGroupName, serverName, subscriptionId` | Updates a configuration of a server. |
-| `Configurations_Get` | `EXEC` | `configurationName, resourceGroupName, serverName, subscriptionId` | Gets information about a configuration of server. |

@@ -27,13 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
+| `properties` | `object` | The properties of a database. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `charset` | `string` | The charset of the database. |
-| `collation` | `string` | The collation of the database. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Databases_Get` | `SELECT` | `databaseName, resourceGroupName, serverName, subscriptionId` | Gets information about a database. |
 | `Databases_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | List all the databases in a given server. |
 | `Databases_Create` | `INSERT` | `databaseName, resourceGroupName, serverName, subscriptionId` | Creates a new database or updates an existing database. |
 | `Databases_Delete` | `DELETE` | `databaseName, resourceGroupName, serverName, subscriptionId` | Deletes a database. |
-| `Databases_Get` | `EXEC` | `databaseName, resourceGroupName, serverName, subscriptionId` | Gets information about a database. |

@@ -22,7 +22,7 @@ Container Instance Management Client
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Container Instance Management Client (Microsoft.ContainerInstance)</td></tr>
 <tr><td><b>Description</b></td><td>Container Instance Management Client</td></tr>
-<tr><td><b>Id</b></td><td><code>container_instance:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>container_instance:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

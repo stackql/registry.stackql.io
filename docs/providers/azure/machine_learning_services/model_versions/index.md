@@ -35,7 +35,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `ModelVersions_Get` | `SELECT` | `name, resourceGroupName, subscriptionId, version, workspaceName` |
 | `ModelVersions_List` | `SELECT` | `name, resourceGroupName, subscriptionId, workspaceName` |
 | `ModelVersions_CreateOrUpdate` | `INSERT` | `name, resourceGroupName, subscriptionId, version, workspaceName, data__properties` |
 | `ModelVersions_Delete` | `DELETE` | `name, resourceGroupName, subscriptionId, version, workspaceName` |
-| `ModelVersions_Get` | `EXEC` | `name, resourceGroupName, subscriptionId, version, workspaceName` |

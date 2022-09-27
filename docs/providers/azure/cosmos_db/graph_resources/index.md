@@ -29,7 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `GraphResources_CreateUpdateGraph` | `EXEC` | `accountName, graphName, resourceGroupName, subscriptionId` | Create or update an Azure Cosmos DB Graph. |
+| `GraphResources_CreateUpdateGraph` | `EXEC` | `accountName, graphName, resourceGroupName, subscriptionId, data__properties` | Create or update an Azure Cosmos DB Graph. |
 | `GraphResources_DeleteGraphResource` | `EXEC` | `accountName, graphName, resourceGroupName, subscriptionId` | Deletes an existing Azure Cosmos DB Graph Resource. |
 | `GraphResources_GetGraph` | `EXEC` | `accountName, graphName, resourceGroupName, subscriptionId` | Gets the Graph resource under an existing Azure Cosmos DB database account with the provided name. |
 | `GraphResources_ListGraphs` | `EXEC` | `accountName, resourceGroupName, subscriptionId` | Lists the graphs under an existing Azure Cosmos DB database account. |

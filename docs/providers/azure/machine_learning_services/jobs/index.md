@@ -35,8 +35,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
+| `Jobs_Get` | `SELECT` | `id, resourceGroupName, subscriptionId, workspaceName` |
 | `Jobs_List` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` |
 | `Jobs_CreateOrUpdate` | `INSERT` | `id, resourceGroupName, subscriptionId, workspaceName, data__properties` |
 | `Jobs_Delete` | `DELETE` | `id, resourceGroupName, subscriptionId, workspaceName` |
 | `Jobs_Cancel` | `EXEC` | `id, resourceGroupName, subscriptionId, workspaceName` |
-| `Jobs_Get` | `EXEC` | `id, resourceGroupName, subscriptionId, workspaceName` |

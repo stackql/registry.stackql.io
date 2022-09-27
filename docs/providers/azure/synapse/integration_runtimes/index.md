@@ -29,12 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IntegrationRuntimes_Get` | `SELECT` | `integrationRuntimeName, resourceGroupName, subscriptionId, workspaceName` | Get an integration runtime |
 | `IntegrationRuntimes_ListByWorkspace` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | List all integration runtimes |
 | `IntegrationRuntimes_Create` | `INSERT` | `integrationRuntimeName, resourceGroupName, subscriptionId, workspaceName, data__properties` | Create an integration runtime |
 | `IntegrationRuntimes_Delete` | `DELETE` | `integrationRuntimeName, resourceGroupName, subscriptionId, workspaceName` | Delete an integration runtime |
 | `IntegrationRuntimes_DisableInteractiveQuery` | `EXEC` | `integrationRuntimeName, resourceGroupName, subscriptionId, workspaceName` | Disable interactive query in integration runtime |
 | `IntegrationRuntimes_EnableInteractiveQuery` | `EXEC` | `integrationRuntimeName, resourceGroupName, subscriptionId, workspaceName` | Enable interactive query in integration runtime |
-| `IntegrationRuntimes_Get` | `EXEC` | `integrationRuntimeName, resourceGroupName, subscriptionId, workspaceName` | Get an integration runtime |
 | `IntegrationRuntimes_ListOutboundNetworkDependenciesEndpoints` | `EXEC` | `integrationRuntimeName, resourceGroupName, subscriptionId, workspaceName` | Gets the list of outbound network dependencies for a given Azure-SSIS integration runtime. |
 | `IntegrationRuntimes_Start` | `EXEC` | `integrationRuntimeName, resourceGroupName, subscriptionId, workspaceName` | Start an integration runtime |
 | `IntegrationRuntimes_Stop` | `EXEC` | `integrationRuntimeName, resourceGroupName, subscriptionId, workspaceName` | Stop an integration runtime |

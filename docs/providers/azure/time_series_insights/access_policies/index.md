@@ -29,15 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Fully qualified resource ID for the resource. Ex - /subscriptions/&#123;subscriptionId&#125;/resourceGroups/&#123;resourceGroupName&#125;/providers/&#123;resourceProviderNamespace&#125;/&#123;resourceType&#125;/&#123;resourceName&#125; |
 | `name` | `string` | The name of the resource |
-| `description` | `string` | An description of the access policy. |
-| `principalObjectId` | `string` | The objectId of the principal in Azure Active Directory. |
-| `roles` | `array` | The list of roles the principal is assigned on the environment. |
+| `properties` | `object` |  |
 | `type` | `string` | The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `AccessPolicies_Get` | `SELECT` | `accessPolicyName, environmentName, resourceGroupName, subscriptionId` | Gets the access policy with the specified name in the specified environment. |
 | `AccessPolicies_ListByEnvironment` | `SELECT` | `environmentName, resourceGroupName, subscriptionId` | Lists all the available access policies associated with the environment. |
-| `AccessPolicies_CreateOrUpdate` | `INSERT` | `accessPolicyName, environmentName, resourceGroupName, subscriptionId` | Create or update an access policy in the specified environment. |
+| `AccessPolicies_CreateOrUpdate` | `INSERT` | `accessPolicyName, environmentName, resourceGroupName, subscriptionId, data__properties` | Create or update an access policy in the specified environment. |
 | `AccessPolicies_Delete` | `DELETE` | `accessPolicyName, environmentName, resourceGroupName, subscriptionId` | Deletes the access policy with the specified name in the specified subscription, resource group, and environment |
-| `AccessPolicies_Get` | `EXEC` | `accessPolicyName, environmentName, resourceGroupName, subscriptionId` | Gets the access policy with the specified name in the specified environment. |
 | `AccessPolicies_Update` | `EXEC` | `accessPolicyName, environmentName, resourceGroupName, subscriptionId` | Updates the access policy with the specified name in the specified subscription, resource group, and environment. |

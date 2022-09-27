@@ -25,25 +25,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `lastOperationName` | `string` | Resource Last Operation Name |
-| `storageAccountTenantId` | `string` | Storage Account Tenant Id |
-| `changeEnumerationStatus` | `object` | Cloud endpoint change enumeration status object |
-| `azureFileShareName` | `string` | Azure file share name |
-| `backupEnabled` | `string` | Backup Enabled |
-| `lastWorkflowId` | `string` | CloudEndpoint lastWorkflowId |
-| `friendlyName` | `string` | Friendly Name |
-| `provisioningState` | `string` | CloudEndpoint Provisioning State |
-| `storageAccountResourceId` | `string` | Storage Account Resource Id |
-| `partnershipId` | `string` | Partnership Id |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `CloudEndpoints_Get` | `SELECT` | `cloudEndpointName, resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Get a given CloudEndpoint. |
 | `CloudEndpoints_ListBySyncGroup` | `SELECT` | `resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Get a CloudEndpoint List. |
 | `CloudEndpoints_Create` | `INSERT` | `cloudEndpointName, resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Create a new CloudEndpoint. |
 | `CloudEndpoints_Delete` | `DELETE` | `cloudEndpointName, resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Delete a given CloudEndpoint. |
-| `CloudEndpoints_Get` | `EXEC` | `cloudEndpointName, resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Get a given CloudEndpoint. |
+| `CloudEndpoints_AfsShareMetadataCertificatePublicKeys` | `EXEC` | `cloudEndpointName, resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Get the AFS file share metadata signing certificate public keys. |
 | `CloudEndpoints_PostBackup` | `EXEC` | `cloudEndpointName, resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Post Backup a given CloudEndpoint. |
 | `CloudEndpoints_PostRestore` | `EXEC` | `cloudEndpointName, resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Post Restore a given CloudEndpoint. |
 | `CloudEndpoints_PreBackup` | `EXEC` | `cloudEndpointName, resourceGroupName, storageSyncServiceName, subscriptionId, syncGroupName` | Pre Backup a given CloudEndpoint. |

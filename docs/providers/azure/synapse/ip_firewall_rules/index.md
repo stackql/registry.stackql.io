@@ -25,16 +25,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-| Name | Datatype | Description |
-|:-----|:---------|:------------|
-| `provisioningState` | `string` | Resource provisioning state |
-| `startIpAddress` | `string` | The start IP address of the firewall rule. Must be IPv4 format |
-| `endIpAddress` | `string` | The end IP address of the firewall rule. Must be IPv4 format. Must be greater than or equal to startIpAddress |
+`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IpFirewallRules_Get` | `SELECT` | `resourceGroupName, ruleName, subscriptionId, workspaceName` | Get a firewall rule |
 | `IpFirewallRules_ListByWorkspace` | `SELECT` | `resourceGroupName, subscriptionId, workspaceName` | Returns a list of firewall rules |
 | `IpFirewallRules_CreateOrUpdate` | `INSERT` | `resourceGroupName, ruleName, subscriptionId, workspaceName` | Creates or updates a firewall rule |
 | `IpFirewallRules_Delete` | `DELETE` | `resourceGroupName, ruleName, subscriptionId, workspaceName` | Deletes a firewall rule |
-| `IpFirewallRules_Get` | `EXEC` | `resourceGroupName, ruleName, subscriptionId, workspaceName` | Get a firewall rule |
 | `IpFirewallRules_ReplaceAll` | `EXEC` | `resourceGroupName, subscriptionId, workspaceName` | Replaces firewall rules |

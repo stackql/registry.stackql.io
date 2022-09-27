@@ -29,4 +29,4 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `privateLinkResources_Get` | `EXEC` | `api-version, factoryName, resourceGroupName, subscriptionId` |
+| `privateLinkResources_Get` | `SELECT` | `api-version, factoryName, resourceGroupName, subscriptionId` |

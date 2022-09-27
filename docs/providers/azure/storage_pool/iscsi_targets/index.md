@@ -27,23 +27,15 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `status` | `string` | Operational status of the resource. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
-| `endpoints` | `array` | List of private IPv4 addresses to connect to the iSCSI Target. |
-| `provisioningState` | `string` | Provisioning state of the iSCSI Target. |
 | `managedBy` | `string` | Azure resource id. Indicates if this resource is managed by another Azure resource. |
-| `sessions` | `array` | List of identifiers for active sessions on the iSCSI target |
-| `targetIqn` | `string` | iSCSI Target IQN (iSCSI Qualified Name); example: "iqn.2005-03.org.iscsi:server". |
-| `port` | `integer` | The port used by iSCSI Target portal group. |
-| `luns` | `array` | List of LUNs to be exposed through iSCSI Target. |
 | `managedByExtended` | `array` | List of Azure resource ids that manage this resource. |
-| `aclMode` | `string` | ACL mode for iSCSI Target. |
-| `staticAcls` | `array` | Access Control List (ACL) for an iSCSI Target; defines LUN masking policy |
+| `properties` | `object` | Response properties for iSCSI Target operations. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `IscsiTargets_Get` | `SELECT` | `diskPoolName, iscsiTargetName, resourceGroupName, subscriptionId` | Get an iSCSI Target. |
 | `IscsiTargets_ListByDiskPool` | `SELECT` | `diskPoolName, resourceGroupName, subscriptionId` | Get iSCSI Targets in a Disk pool. |
-| `IscsiTargets_CreateOrUpdate` | `INSERT` | `diskPoolName, iscsiTargetName, resourceGroupName, subscriptionId` | Create or Update an iSCSI Target. |
+| `IscsiTargets_CreateOrUpdate` | `INSERT` | `diskPoolName, iscsiTargetName, resourceGroupName, subscriptionId, data__properties` | Create or Update an iSCSI Target. |
 | `IscsiTargets_Delete` | `DELETE` | `diskPoolName, iscsiTargetName, resourceGroupName, subscriptionId` | Delete an iSCSI Target. |
-| `IscsiTargets_Get` | `EXEC` | `diskPoolName, iscsiTargetName, resourceGroupName, subscriptionId` | Get an iSCSI Target. |
-| `IscsiTargets_Update` | `EXEC` | `diskPoolName, iscsiTargetName, resourceGroupName, subscriptionId` | Update an iSCSI Target. |
+| `IscsiTargets_Update` | `EXEC` | `diskPoolName, iscsiTargetName, resourceGroupName, subscriptionId, data__properties` | Update an iSCSI Target. |

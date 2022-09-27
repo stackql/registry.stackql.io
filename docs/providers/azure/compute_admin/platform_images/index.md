@@ -29,16 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | ID of the resource. |
 | `name` | `string` | Name of the resource. |
-| `details` | `object` | Information about the disk image. |
-| `location` | `string` | Location of the resource. |
-| `osDisk` | `object` | Operating system disk. |
-| `provisioningState` | `string` | The provisioning state of the resource. |
+| `properties` | `object` | Properties of platform image. |
 | `type` | `string` | Type of Resource. |
-| `dataDisks` | `array` | Data disks used by the platform image. |
+| `location` | `string` | Location of the resource. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `PlatformImages_Get` | `SELECT` | `location, offer, publisher, sku, subscriptionId, version` | Returns the specific platform image matching publisher, offer, skus and version. |
 | `PlatformImages_List` | `SELECT` | `location, subscriptionId` | Returns a list of all platform images. |
 | `PlatformImages_Create` | `INSERT` | `location, offer, publisher, sku, subscriptionId, version` | Creates a new platform image with given publisher, offer, skus and version. |
 | `PlatformImages_Delete` | `DELETE` | `location, offer, publisher, sku, subscriptionId, version` | Delete a platform image |
-| `PlatformImages_Get` | `EXEC` | `location, offer, publisher, sku, subscriptionId, version` | Returns the specific platform image matching publisher, offer, skus and version. |

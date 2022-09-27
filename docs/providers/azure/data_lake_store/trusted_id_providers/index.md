@@ -29,13 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
+| `properties` | `object` | The trusted identity provider properties. |
 | `type` | `string` | The resource type. |
-| `idProvider` | `string` | The URL of this trusted identity provider. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `TrustedIdProviders_Get` | `SELECT` | `accountName, resourceGroupName, subscriptionId, trustedIdProviderName` | Gets the specified Data Lake Store trusted identity provider. |
 | `TrustedIdProviders_ListByAccount` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | Lists the Data Lake Store trusted identity providers within the specified Data Lake Store account. |
-| `TrustedIdProviders_CreateOrUpdate` | `INSERT` | `accountName, resourceGroupName, subscriptionId, trustedIdProviderName` | Creates or updates the specified trusted identity provider. During update, the trusted identity provider with the specified name will be replaced with this new provider |
+| `TrustedIdProviders_CreateOrUpdate` | `INSERT` | `accountName, resourceGroupName, subscriptionId, trustedIdProviderName, data__properties` | Creates or updates the specified trusted identity provider. During update, the trusted identity provider with the specified name will be replaced with this new provider |
 | `TrustedIdProviders_Delete` | `DELETE` | `accountName, resourceGroupName, subscriptionId, trustedIdProviderName` | Deletes the specified trusted identity provider from the specified Data Lake Store account |
-| `TrustedIdProviders_Get` | `EXEC` | `accountName, resourceGroupName, subscriptionId, trustedIdProviderName` | Gets the specified Data Lake Store trusted identity provider. |
 | `TrustedIdProviders_Update` | `EXEC` | `accountName, resourceGroupName, subscriptionId, trustedIdProviderName` | Updates the specified trusted identity provider. |

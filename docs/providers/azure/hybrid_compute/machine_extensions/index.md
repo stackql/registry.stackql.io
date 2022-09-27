@@ -34,8 +34,8 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `MachineExtensions_Get` | `SELECT` | `extensionName, machineName, resourceGroupName, subscriptionId` | The operation to get the extension. |
 | `MachineExtensions_List` | `SELECT` | `machineName, resourceGroupName, subscriptionId` | The operation to get all extensions of a non-Azure machine |
 | `MachineExtensions_CreateOrUpdate` | `INSERT` | `extensionName, machineName, resourceGroupName, subscriptionId` | The operation to create or update the extension. |
 | `MachineExtensions_Delete` | `DELETE` | `extensionName, machineName, resourceGroupName, subscriptionId` | The operation to delete the extension. |
-| `MachineExtensions_Get` | `EXEC` | `extensionName, machineName, resourceGroupName, subscriptionId` | The operation to get the extension. |
 | `MachineExtensions_Update` | `EXEC` | `extensionName, machineName, resourceGroupName, subscriptionId` | The operation to create or update the extension. |

@@ -29,21 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the workflow trigger name. |
-| `changedTime` | `string` | Gets the changed time. |
-| `lastExecutionTime` | `string` | Gets the last execution time. |
-| `state` | `string` | The workflow state. |
+| `properties` | `object` | The workflow trigger properties. |
 | `type` | `string` | Gets the workflow trigger type. |
-| `nextExecutionTime` | `string` | Gets the next execution time. |
-| `workflow` | `object` | The resource reference. |
-| `recurrence` | `object` | The workflow trigger recurrence. |
-| `provisioningState` | `string` | The workflow trigger provisioning state. |
-| `createdTime` | `string` | Gets the created time. |
-| `status` | `string` | The workflow status. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WorkflowTriggers_Get` | `SELECT` | `name, resourceGroupName, subscriptionId, triggerName, workflowName` | Gets a workflow trigger. |
 | `WorkflowTriggers_List` | `SELECT` | `name, resourceGroupName, subscriptionId, workflowName` | Gets a list of workflow triggers. |
-| `WorkflowTriggers_Get` | `EXEC` | `name, resourceGroupName, subscriptionId, triggerName, workflowName` | Gets a workflow trigger. |
 | `WorkflowTriggers_GetSchemaJson` | `EXEC` | `name, resourceGroupName, subscriptionId, triggerName, workflowName` | Get the trigger schema as JSON. |
 | `WorkflowTriggers_ListCallbackUrl` | `EXEC` | `name, resourceGroupName, subscriptionId, triggerName, workflowName` | Get the callback URL for a workflow trigger. |
 | `WorkflowTriggers_Run` | `EXEC` | `name, resourceGroupName, subscriptionId, triggerName, workflowName` | Runs a workflow trigger. |

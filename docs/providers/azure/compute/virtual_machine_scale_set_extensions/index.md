@@ -29,23 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource Id |
 | `name` | `string` | The name of the extension. |
-| `settings` | `object` | Json formatted public settings for the extension. |
-| `autoUpgradeMinorVersion` | `boolean` | Indicates whether the extension should use a newer minor version if one is available at deployment time. Once deployed, however, the extension will not upgrade minor versions unless redeployed, even with this property set to true. |
-| `typeHandlerVersion` | `string` | Specifies the version of the script handler. |
-| `protectedSettingsFromKeyVault` | `object` | The extensions protected settings that are passed by reference, and consumed from key vault |
-| `enableAutomaticUpgrade` | `boolean` | Indicates whether the extension should be automatically upgraded by the platform if there is a newer version of the extension available. |
-| `forceUpdateTag` | `string` | If a value is provided and is different from the previous value, the extension handler will be forced to update even if the extension configuration has not changed. |
-| `publisher` | `string` | The name of the extension handler publisher. |
-| `suppressFailures` | `boolean` | Indicates whether failures stemming from the extension will be suppressed (Operational failures such as not connecting to the VM will not be suppressed regardless of this value). The default is false. |
-| `protectedSettings` | `object` | The extension can contain either protectedSettings or protectedSettingsFromKeyVault or no protected settings at all. |
-| `provisioningState` | `string` | The provisioning state, which only appears in the response. |
+| `properties` | `object` | Describes the properties of a Virtual Machine Scale Set Extension. |
 | `type` | `string` | Resource type |
-| `provisionAfterExtensions` | `array` | Collection of extension names after which this extension needs to be provisioned. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VirtualMachineScaleSetExtensions_Get` | `SELECT` | `resourceGroupName, subscriptionId, vmScaleSetName, vmssExtensionName` | The operation to get the extension. |
 | `VirtualMachineScaleSetExtensions_List` | `SELECT` | `resourceGroupName, subscriptionId, vmScaleSetName` | Gets a list of all extensions in a VM scale set. |
 | `VirtualMachineScaleSetExtensions_CreateOrUpdate` | `INSERT` | `resourceGroupName, subscriptionId, vmScaleSetName, vmssExtensionName` | The operation to create or update an extension. |
 | `VirtualMachineScaleSetExtensions_Delete` | `DELETE` | `resourceGroupName, subscriptionId, vmScaleSetName, vmssExtensionName` | The operation to delete the extension. |
-| `VirtualMachineScaleSetExtensions_Get` | `EXEC` | `resourceGroupName, subscriptionId, vmScaleSetName, vmssExtensionName` | The operation to get the extension. |
 | `VirtualMachineScaleSetExtensions_Update` | `EXEC` | `resourceGroupName, subscriptionId, vmScaleSetName, vmssExtensionName` | The operation to update an extension. |

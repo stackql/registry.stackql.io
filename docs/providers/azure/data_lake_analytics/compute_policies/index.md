@@ -29,16 +29,13 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource identifier. |
 | `name` | `string` | The resource name. |
-| `objectId` | `string` | The AAD object identifier for the entity to create a policy for. |
-| `objectType` | `string` | The type of AAD object the object identifier refers to. |
+| `properties` | `object` | The compute policy properties. |
 | `type` | `string` | The resource type. |
-| `maxDegreeOfParallelismPerJob` | `integer` | The maximum degree of parallelism per job this user can use to submit jobs. |
-| `minPriorityPerJob` | `integer` | The minimum priority per job this user can use to submit jobs. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ComputePolicies_Get` | `SELECT` | `accountName, computePolicyName, resourceGroupName, subscriptionId` | Gets the specified Data Lake Analytics compute policy. |
 | `ComputePolicies_ListByAccount` | `SELECT` | `accountName, resourceGroupName, subscriptionId` | Lists the Data Lake Analytics compute policies within the specified Data Lake Analytics account. An account supports, at most, 50 policies |
-| `ComputePolicies_CreateOrUpdate` | `INSERT` | `accountName, computePolicyName, resourceGroupName, subscriptionId` | Creates or updates the specified compute policy. During update, the compute policy with the specified name will be replaced with this new compute policy. An account supports, at most, 50 policies |
+| `ComputePolicies_CreateOrUpdate` | `INSERT` | `accountName, computePolicyName, resourceGroupName, subscriptionId, data__properties` | Creates or updates the specified compute policy. During update, the compute policy with the specified name will be replaced with this new compute policy. An account supports, at most, 50 policies |
 | `ComputePolicies_Delete` | `DELETE` | `accountName, computePolicyName, resourceGroupName, subscriptionId` | Deletes the specified compute policy from the specified Data Lake Analytics account |
-| `ComputePolicies_Get` | `EXEC` | `accountName, computePolicyName, resourceGroupName, subscriptionId` | Gets the specified Data Lake Analytics compute policy. |
 | `ComputePolicies_Update` | `EXEC` | `accountName, computePolicyName, resourceGroupName, subscriptionId` | Updates the specified compute policy. |

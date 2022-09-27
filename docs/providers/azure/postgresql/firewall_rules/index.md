@@ -27,13 +27,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `endIpAddress` | `string` | The end IP address of the server firewall rule. Must be IPv4 format. |
-| `startIpAddress` | `string` | The start IP address of the server firewall rule. Must be IPv4 format. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `properties` | `object` | The properties of a server firewall rule. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `FirewallRules_Get` | `SELECT` | `firewallRuleName, resourceGroupName, serverName, subscriptionId` | List all the firewall rules in a given server. |
 | `FirewallRules_ListByServer` | `SELECT` | `resourceGroupName, serverName, subscriptionId` | List all the firewall rules in a given PostgreSQL server. |
-| `FirewallRules_CreateOrUpdate` | `INSERT` | `firewallRuleName, resourceGroupName, serverName, subscriptionId` | Creates a new firewall rule or updates an existing firewall rule. |
+| `FirewallRules_CreateOrUpdate` | `INSERT` | `firewallRuleName, resourceGroupName, serverName, subscriptionId, data__properties` | Creates a new firewall rule or updates an existing firewall rule. |
 | `FirewallRules_Delete` | `DELETE` | `firewallRuleName, resourceGroupName, serverName, subscriptionId` | Deletes a PostgreSQL server firewall rule. |
-| `FirewallRules_Get` | `EXEC` | `firewallRuleName, resourceGroupName, serverName, subscriptionId` | List all the firewall rules in a given server. |

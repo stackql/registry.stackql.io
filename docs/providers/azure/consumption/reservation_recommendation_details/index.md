@@ -25,8 +25,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `id` | `string` | The full qualified ARM ID of an event. |
+| `name` | `string` | The ID that uniquely identifies an event.  |
+| `type` | `string` | Resource type. |
+| `etag` | `string` | The etag for the resource. |
+| `location` | `string` | Resource Location. |
+| `properties` | `object` | The properties of the reservation recommendation. |
+| `sku` | `string` | Resource sku |
+| `tags` | `object` | Resource tags. |
 ## Methods
 | Name | Accessible by | Required Params |
 |:-----|:--------------|:----------------|
-| `ReservationRecommendationDetails_Get` | `EXEC` | `lookBackPeriod, product, region, resourceScope, scope, term` |
+| `ReservationRecommendationDetails_Get` | `SELECT` | `lookBackPeriod, product, region, resourceScope, scope, term` |

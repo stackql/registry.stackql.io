@@ -27,30 +27,30 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `ExportId` | `string` | The unique ID of the export configuration inside an Application Insights component. It is auto generated when the Continuous Export configuration is created. |
-| `LastGapTime` | `string` | The last time the Continuous Export configuration started failing. |
 | `StorageName` | `string` | The name of the destination storage account. |
-| `LastSuccessTime` | `string` | The last time data was successfully delivered to the destination storage container for this Continuous Export configuration. |
-| `ContainerName` | `string` | The name of the destination storage container. |
-| `PermanentErrorReason` | `string` | This is the reason the Continuous Export configuration started failing. It can be 'AzureStorageNotFound' or 'AzureStorageAccessDenied'. |
-| `InstrumentationKey` | `string` | The instrumentation key of the Application Insights component. |
-| `LastUserUpdate` | `string` | Last time the Continuous Export configuration was updated. |
-| `RecordTypes` | `string` | This comma separated list of document types that will be exported. The possible values include 'Requests', 'Event', 'Exceptions', 'Metrics', 'PageViews', 'PageViewPerformance', 'Rdd', 'PerformanceCounters', 'Availability', 'Messages'. |
-| `NotificationQueueEnabled` | `string` | Deprecated |
-| `DestinationAccountId` | `string` | The name of destination account. |
-| `ExportStatus` | `string` | This indicates current Continuous Export configuration status. The possible values are 'Preparing', 'Success', 'Failure'. |
-| `ApplicationName` | `string` | The name of the Application Insights component. |
-| `SubscriptionId` | `string` | The subscription of the Application Insights component. |
-| `DestinationStorageSubscriptionId` | `string` | The destination storage account subscription ID. |
 | `DestinationType` | `string` | The destination type. |
+| `LastSuccessTime` | `string` | The last time data was successfully delivered to the destination storage container for this Continuous Export configuration. |
 | `ResourceGroup` | `string` | The resource group of the Application Insights component. |
-| `DestinationStorageLocationId` | `string` | The destination account location ID. |
+| `LastUserUpdate` | `string` | Last time the Continuous Export configuration was updated. |
 | `IsUserEnabled` | `string` | This will be 'true' if the Continuous Export configuration is enabled, otherwise it will be 'false'. |
+| `PermanentErrorReason` | `string` | This is the reason the Continuous Export configuration started failing. It can be 'AzureStorageNotFound' or 'AzureStorageAccessDenied'. |
+| `ApplicationName` | `string` | The name of the Application Insights component. |
+| `ExportStatus` | `string` | This indicates current Continuous Export configuration status. The possible values are 'Preparing', 'Success', 'Failure'. |
+| `RecordTypes` | `string` | This comma separated list of document types that will be exported. The possible values include 'Requests', 'Event', 'Exceptions', 'Metrics', 'PageViews', 'PageViewPerformance', 'Rdd', 'PerformanceCounters', 'Availability', 'Messages'. |
+| `DestinationStorageSubscriptionId` | `string` | The destination storage account subscription ID. |
+| `DestinationStorageLocationId` | `string` | The destination account location ID. |
+| `DestinationAccountId` | `string` | The name of destination account. |
+| `LastGapTime` | `string` | The last time the Continuous Export configuration started failing. |
+| `ExportId` | `string` | The unique ID of the export configuration inside an Application Insights component. It is auto generated when the Continuous Export configuration is created. |
+| `SubscriptionId` | `string` | The subscription of the Application Insights component. |
+| `ContainerName` | `string` | The name of the destination storage container. |
+| `NotificationQueueEnabled` | `string` | Deprecated |
+| `InstrumentationKey` | `string` | The instrumentation key of the Application Insights component. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ExportConfigurations_Get` | `SELECT` | `exportId, resourceGroupName, resourceName, subscriptionId` | Get the Continuous Export configuration for this export id. |
 | `ExportConfigurations_List` | `SELECT` | `resourceGroupName, resourceName, subscriptionId` | Gets a list of Continuous Export configuration of an Application Insights component. |
 | `ExportConfigurations_Create` | `INSERT` | `resourceGroupName, resourceName, subscriptionId` | Create a Continuous Export configuration of an Application Insights component. |
 | `ExportConfigurations_Delete` | `DELETE` | `exportId, resourceGroupName, resourceName, subscriptionId` | Delete a Continuous Export configuration of an Application Insights component. |
-| `ExportConfigurations_Get` | `EXEC` | `exportId, resourceGroupName, resourceName, subscriptionId` | Get the Continuous Export configuration for this export id. |
 | `ExportConfigurations_Update` | `EXEC` | `exportId, resourceGroupName, resourceName, subscriptionId` | Update the Continuous Export configuration for this export id. |

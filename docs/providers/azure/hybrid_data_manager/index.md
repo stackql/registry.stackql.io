@@ -22,7 +22,7 @@ Hybrid Data Manager
 <tr><td><b>Type</b></td><td>Service</td></tr>
 <tr><td><b>Title</b></td><td>Hybrid Data Manager (Microsoft.HybridData)</td></tr>
 <tr><td><b>Description</b></td><td>Hybrid Data Manager</td></tr>
-<tr><td><b>Id</b></td><td><code>hybrid_data_manager:v0.2.0</code></td></tr>
+<tr><td><b>Id</b></td><td><code>hybrid_data_manager:v0.3.0</code></td></tr>
 </tbody></table>
 
 ## Resources

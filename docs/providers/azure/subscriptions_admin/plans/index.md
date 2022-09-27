@@ -29,22 +29,17 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | URI of the resource. |
 | `name` | `string` | Name of the resource. |
-| `description` | `string` | Description of the plan. |
-| `externalReferenceId` | `string` | External reference identifier. |
+| `properties` | `object` | Properties of a plan. |
 | `tags` | `object` | List of key-value pairs. |
 | `type` | `string` | Type of resource. |
-| `displayName` | `string` | Display name. |
-| `skuIds` | `array` | SKU identifiers. |
 | `location` | `string` | Location of the resource |
-| `quotaIds` | `array` | Quota identifiers under the plan. |
-| `subscriptionCount` | `integer` | Subscription count. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `Plans_Get` | `SELECT` | `plan, resourceGroupName, subscriptionId` | Get the specified plan. |
 | `Plans_List` | `SELECT` | `resourceGroupName, subscriptionId` | Get the list of plans under a resource group. |
 | `Plans_ListAll` | `SELECT` | `subscriptionId` | List all plans across all subscriptions. |
 | `Plans_CreateOrUpdate` | `INSERT` | `plan, resourceGroupName, subscriptionId` | Create or update the plan. |
 | `Plans_Delete` | `DELETE` | `plan, resourceGroupName, subscriptionId` | Delete the specified plan. |
-| `Plans_Get` | `EXEC` | `plan, resourceGroupName, subscriptionId` | Get the specified plan. |
 | `Plans_ListMetricDefinitions` | `EXEC` | `plan, resourceGroupName, subscriptionId` | Get the metric definitions of the specified plan. |
 | `Plans_ListMetrics` | `EXEC` | `plan, resourceGroupName, subscriptionId` | Get the metrics of the specified plan. |

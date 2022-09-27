@@ -25,10 +25,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 </tbody></table>
 
 ## Fields
-`SELECT` not supported for this resource, use `SHOW METHODS` to view available operations for the resource and then invoke a supported method using the `EXEC` command  
+| Name | Datatype | Description |
+|:-----|:---------|:------------|
+| `etag` | `string` | Resource ETAG. |
+| `kind` | `string` | Additional resource type qualifier. |
+| `properties` | `object` | Resource properties. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
-| `ClientGroups_Get` | `EXEC` | `clientGroupName, resourceGroupName, subscriptionId, workspaceName` | Retrieves the specified client group |
+| `ClientGroups_Get` | `SELECT` | `clientGroupName, resourceGroupName, subscriptionId, workspaceName` | Retrieves the specified client group |
 | `ClientGroups_GetMembersCount` | `EXEC` | `clientGroupName, resourceGroupName, subscriptionId, workspaceName` | Returns the approximate number of members in the client group. |
 | `ClientGroups_ListMembers` | `EXEC` | `clientGroupName, resourceGroupName, subscriptionId, workspaceName` | Returns the members of the client group during the specified time interval. |

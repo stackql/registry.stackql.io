@@ -29,7 +29,7 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The unique resource Identifier of the ARM resource. |
 | `name` | `string` | The name of the ARM resource. |
-| `resource` | `object` | The resource of an Azure Cosmos DB Gremlin graph event |
+| `properties` | `object` | The properties of an Azure Cosmos DB Gremlin graph event |
 | `type` | `string` | The type of Azure resource. |
 ## Methods
 | Name | Accessible by | Required Params |

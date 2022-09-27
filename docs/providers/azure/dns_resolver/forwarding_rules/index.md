@@ -27,18 +27,14 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 ## Fields
 | Name | Datatype | Description |
 |:-----|:---------|:------------|
-| `targetDnsServers` | `array` | DNS servers to forward the DNS query to. |
-| `domainName` | `string` | The domain name for the forwarding rule. |
-| `etag` | `string` | ETag of the forwarding rule. |
-| `forwardingRuleState` | `string` | The state of forwarding rule. |
-| `metadata` | `object` | Metadata attached to the forwarding rule. |
-| `provisioningState` | `string` | The current provisioning state of the resource. |
+| `properties` | `object` | Represents the properties of a forwarding rule within a DNS forwarding ruleset. |
 | `systemData` | `object` | Metadata pertaining to creation and last modification of the resource. |
+| `etag` | `string` | ETag of the forwarding rule. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `ForwardingRules_Get` | `SELECT` | `dnsForwardingRulesetName, forwardingRuleName, resourceGroupName, subscriptionId` | Gets properties of a forwarding rule in a DNS forwarding ruleset. |
 | `ForwardingRules_List` | `SELECT` | `dnsForwardingRulesetName, resourceGroupName, subscriptionId` | Lists forwarding rules in a DNS forwarding ruleset. |
-| `ForwardingRules_CreateOrUpdate` | `INSERT` | `dnsForwardingRulesetName, forwardingRuleName, resourceGroupName, subscriptionId` | Creates or updates a forwarding rule in a DNS forwarding ruleset. |
+| `ForwardingRules_CreateOrUpdate` | `INSERT` | `dnsForwardingRulesetName, forwardingRuleName, resourceGroupName, subscriptionId, data__properties` | Creates or updates a forwarding rule in a DNS forwarding ruleset. |
 | `ForwardingRules_Delete` | `DELETE` | `dnsForwardingRulesetName, forwardingRuleName, resourceGroupName, subscriptionId` | Deletes a forwarding rule in a DNS forwarding ruleset. WARNING: This operation cannot be undone. |
-| `ForwardingRules_Get` | `EXEC` | `dnsForwardingRulesetName, forwardingRuleName, resourceGroupName, subscriptionId` | Gets properties of a forwarding rule in a DNS forwarding ruleset. |
 | `ForwardingRules_Update` | `EXEC` | `dnsForwardingRulesetName, forwardingRuleName, resourceGroupName, subscriptionId` | Updates a forwarding rule in a DNS forwarding ruleset. |

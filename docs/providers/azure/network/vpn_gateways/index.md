@@ -29,27 +29,19 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | Resource ID. |
 | `name` | `string` | Resource name. |
-| `natRules` | `array` | List of all the nat Rules associated with the gateway. |
-| `enableBgpRouteTranslationForNat` | `boolean` | Enable BGP routes translation for NAT on this VpnGateway. |
-| `tags` | `object` | Resource tags. |
 | `location` | `string` | Resource location. |
-| `connections` | `array` | List of all vpn connections to the gateway. |
-| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
-| `virtualHub` | `object` | Reference to another subresource. |
-| `bgpSettings` | `object` | BGP settings details. |
-| `vpnGatewayScaleUnit` | `integer` | The scale unit for this vpn gateway. |
+| `properties` | `object` | Parameters for VpnGateway. |
+| `tags` | `object` | Resource tags. |
 | `type` | `string` | Resource type. |
-| `ipConfigurations` | `array` | List of all IPs configured on the gateway. |
-| `isRoutingPreferenceInternet` | `boolean` | Enable Routing Preference property for the Public IP Interface of the VpnGateway. |
-| `provisioningState` | `string` | The current provisioning state. |
+| `etag` | `string` | A unique read-only string that changes whenever the resource is updated. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `VpnGateways_Get` | `SELECT` | `gatewayName, resourceGroupName, subscriptionId` | Retrieves the details of a virtual wan vpn gateway. |
 | `VpnGateways_List` | `SELECT` | `subscriptionId` | Lists all the VpnGateways in a subscription. |
 | `VpnGateways_ListByResourceGroup` | `SELECT` | `resourceGroupName, subscriptionId` | Lists all the VpnGateways in a resource group. |
 | `VpnGateways_CreateOrUpdate` | `INSERT` | `gatewayName, resourceGroupName, subscriptionId, data__location` | Creates a virtual wan vpn gateway if it doesn't exist else updates the existing gateway. |
 | `VpnGateways_Delete` | `DELETE` | `gatewayName, resourceGroupName, subscriptionId` | Deletes a virtual wan vpn gateway. |
-| `VpnGateways_Get` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId` | Retrieves the details of a virtual wan vpn gateway. |
 | `VpnGateways_Reset` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId` | Resets the primary of the vpn gateway in the specified resource group. |
 | `VpnGateways_StartPacketCapture` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId` | Starts packet capture on vpn gateway in the specified resource group. |
 | `VpnGateways_StopPacketCapture` | `EXEC` | `gatewayName, resourceGroupName, subscriptionId` | Stops packet capture on vpn gateway in the specified resource group. |

@@ -29,23 +29,12 @@ image: /img/providers/azure/stackql-azure-provider-featured-image.png
 |:-----|:---------|:------------|
 | `id` | `string` | The resource id. |
 | `name` | `string` | Gets the resource name. |
-| `provisioningState` | `string` | The workflow provisioning state. |
-| `version` | `string` | Gets the version. |
-| `changedTime` | `string` | Gets the changed time. |
-| `state` | `string` | The workflow state. |
+| `properties` | `object` | The workflow version properties. |
 | `tags` | `object` | The resource tags. |
-| `location` | `string` | The resource location. |
-| `accessControl` | `object` | The access control configuration. |
-| `sku` | `object` | The sku type. |
-| `createdTime` | `string` | Gets the created time. |
 | `type` | `string` | Gets the resource type. |
-| `parameters` | `object` | The parameters. |
-| `accessEndpoint` | `string` | Gets the access endpoint. |
-| `integrationAccount` | `object` | The resource reference. |
-| `definition` | `object` |  |
-| `endpointsConfiguration` | `object` | The endpoints configuration. |
+| `location` | `string` | The resource location. |
 ## Methods
 | Name | Accessible by | Required Params | Description |
 |:-----|:--------------|:----------------|:------------|
+| `WorkflowVersions_Get` | `SELECT` | `name, resourceGroupName, subscriptionId, versionId, workflowName` | Gets a workflow version. |
 | `WorkflowVersions_List` | `SELECT` | `name, resourceGroupName, subscriptionId, workflowName` | Gets a list of workflow versions. |
-| `WorkflowVersions_Get` | `EXEC` | `name, resourceGroupName, subscriptionId, versionId, workflowName` | Gets a workflow version. |
